@@ -36,9 +36,8 @@ $ yarn
 $ yarn start
 ```
 
-The first command is for linking dependencies. The seconds starts a local development
-server and open up a browser window. Most changes are reflected live without having
-to restart the server.
+The first command is for linking dependencies. The seconds starts a local development server and open up a browser window.
+Most changes are reflected live without having to restart the server.
 
 ### Build
 
@@ -50,5 +49,4 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-Just push your changes to the `master` branch and they will be automatically
-deployed at `https://essif-lab.pages.grnet.gr/framework/`
+Just push your changes to the `master` branch and they will be automatically deployed at https://essif-lab.pages.grnet.gr/framework/

@@ -1,8 +1,8 @@
 module.exports = {
   title: 'ESSIF-Lab',
   tagline: 'ESSIF-Lab Framework',
-  url: 'https://essif-lab.pages.grnet.gr/essif-lab',
-  baseUrl: process.env.STAGING && process.env.STAGING === 'true' ? '/essif-lab/' : '/',
+  url: 'https://essif-lab.pages.grnet.gr/framework',
+  baseUrl: process.env.STAGING && process.env.STAGING === 'true' ? '/framework/' : '/',
   favicon: 'imgages/favicon.ico',
   organizationName: 'grnet',
   projectName: 'essif-lab',
@@ -16,7 +16,7 @@ module.exports = {
         {to: 'docs/essif-lab-vision-and-purpose', label: 'Vision', position: 'left'},
         {to: 'docs/introduction', label: 'Quick intro', position: 'left'},
         {
-          href: 'https://gitlab.grnet.gr/essif-lab/essif-lab',
+          href: 'https://gitlab.grnet.gr/essif-lab/framework',
           label: 'Gitlab',
           position: 'right',
         },
