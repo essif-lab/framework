@@ -36,7 +36,7 @@ $ yarn
 $ yarn start
 ```
 
-The first command is for linking dependencies. The second starts a local development server and open up a browser window.
+The first command is for linking dependencies. The second starts a local development server and opens up a browser window.
 Most changes are reflected live without having to restart the server.
 
 ### Build
