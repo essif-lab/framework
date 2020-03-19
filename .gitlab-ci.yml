@@ -1,0 +1,21 @@
+image: node:latest
+
+cache:
+  untracked: true
+  paths:
+    - node_modules/
+
+before_script:
+  - yarn
+  - ls -rtlh
+
+pages:
+  script:
+    - STAGING=true  yarn build
+    - rm -rf public
+    - mv build public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
