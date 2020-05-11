@@ -14,7 +14,7 @@ module.exports = {
       },
       links: [
         {to: 'docs/essif-lab-vision-and-purpose', label: 'Vision', position: 'left'},
-        {to: 'docs/introduction', label: 'Quick intro', position: 'left'},
+        {to: 'https://gitlab.grnet.gr/essif-lab/framework/docs/introduction', label: 'Quick intro', position: 'left'},
         {
           href: 'https://gitlab.grnet.gr/essif-lab/framework',
           label: 'Gitlab',
