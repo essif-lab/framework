@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'ESSIF-Lab',
-  tagline: 'ESSIF-Lab Framework',
+  title: 'eSSIF-Lab',
+  tagline: 'eSSIF-Lab Framework',
   url: 'https://essif-lab.pages.grnet.gr/framework',
   baseUrl: process.env.STAGING && process.env.STAGING === 'true' ? '/framework/' : '/',
   favicon: 'imgages/favicon.ico',
@@ -52,7 +52,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} ESSIF-Lab, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} eSSIF-Lab - EU H2020 Research and Innovation Programme - Grant Agreement Nº 871932 - Built with Docusaurus.`,
     },
   },
   presets: [

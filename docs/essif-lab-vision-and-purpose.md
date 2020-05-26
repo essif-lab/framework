@@ -1,10 +1,7 @@
-<p align="center"><img src=".\images\EU-flag.jpg" style="zoom:5%;" /> <img src=".\images\eSSIF-Lab logo.png" style="zoom:75%;" /></p>
-
-eSSIF-Lab is funded by the European Commission, as part of the Horizon 2020 Research and Innovation Programme, under Grant Agreement Nº 871932 and it’s framed under[ ](http://ngi.eu/)[*Next Generation Internet Initiative*](http://ngi.eu/).
-
-# eSSIF-Lab Vision and Purpose
-
-<p align="center">Author: Rieks Joosten (TNO)</p>
+---
+id: vision-and-purpose
+title: Vision and Purpose
+---
 
 It is the eSSIF-Lab vision that Self-sovereign Identity (SSI) will *empower European citizens (as well as other individuals, of course)* by providing new means to manage privacy, eliminating logins, and making electronic transactions much faster and much safer, both via the Internet and in real, physical life. SSI will *empower European organisations and governments* by providing new means to speed up, secure and automate transactions with citizens, customers, suppliers and partners, resulting in tens of billions of euros savings annually on administrative costs in Europe. SSI will be *a new business ecosystem paradigm* with thousands of new jobs, many new job categories and new business opportunities for existing and new European companies. And last but certainly not least, SSI fosters *inclusiveness* and supports organizations and citizens to exercise their rights and fulfil their duties under the GDPR.
 
@@ -32,7 +29,7 @@ Perhaps the most important contribution that the eSSIF-Lab project aims to make,
 
 The figure below is a high-level visualization of the filling in and validation parts:
 
-![eSSIF-Lab - vision context](.\images\eSSIF-Lab%20-%20vision%20context.png)
+![eSSIF-Lab - vision context](localhost:3000/static/images/eSSIF-Lab-vision-context.png)
 
 *Figure 1. High-level visualization of the filling in and validation of a form.*
 

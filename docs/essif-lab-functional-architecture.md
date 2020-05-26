@@ -1,13 +1,7 @@
-<p align="center"><img src=".\images\EU-flag.jpg" style="zoom:5%;" /> <img src=".\images\eSSIF-Lab logo.png" style="zoom:75%;" /></p>
-
-eSSIF-Lab is funded by the European Commission, as part of the Horizon 2020 Research and Innovation Programme, under Grant Agreement Nº 871932 and it’s framed under[ ](http://ngi.eu/)[*Next Generation Internet Initiative*](http://ngi.eu/).
-
-
-
-# eSSIF-Lab Functional Architecture
-<p align="center">Author(s): Rieks Joosten (TNO)</p>
-
-
+---
+id: functional-architecture
+title: Functional Architecture
+---
 
 The purpose of the functional architecture and its views is to
 
@@ -37,7 +31,7 @@ However, the participants of a business transaction are different parties, which
 
 Every agent that communicates with another actor for the purpose of progressing a transaction, will need to be sufficiently sure (to the extent necessary for the value of the transaction) that the actor that it is communicating with, is in fact an agent of the peer party of its owner. We will use the term ‘**peer agent (of a specific agent, in the context of a single transaction)**’ to refer to an actor with which the specific agent has a communications session, and for which it has obtained sufficient assurance that it is an agent of the peer party of its owner. Note that establishing whether or not an actor is a peer agent does not necessarily require knowing who the peer party actually is.
 
-![eSSIF-Lab Single Party Functional Architecture Overview](.\images\eSSIF-Lab-architecture.png)
+![eSSIF-Lab Single Party Functional Architecture Overview](@site/static/images/eSSIF-Lab-architecture.png)
 
 *Figure 1. eSSIF-Lab Single Party Functional Architecture Overview.*
 

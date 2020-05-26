@@ -37,7 +37,8 @@ $ yarn start
 ```
 
 The first command is for linking dependencies. The second starts a local development server and opens up a browser window.
-Most changes are reflected live without having to restart the server.
+Note that not all browsers work with this - for example, Microsoft Edge doesn't work. Chrome and FireFox however do.
+When developing, most changes are reflected live without having to restart the server.
 
 ### Build
 
