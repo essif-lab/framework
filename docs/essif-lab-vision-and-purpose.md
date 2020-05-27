@@ -9,9 +9,9 @@ The current situation is that (SSI) solutions that are being created and brought
 
 The situation we would like to see is one in which we have SSI-enabled, interoperable and scalable technologies, that form an infrastructure that every application in any vertical can use in a very easy manner, for the exchange of verified (personal and non-personal) data. In that situation people, businesses and governments think more about the information they need and/or provide as they conduct business transactions. They no longer need to be concerned about the SSI technologies that have empowered them to make this happen.
 
-| The **purpose of the eSSIF-Lab** ...                         |
-| ------------------------------------------------------------ |
-| ... is to specify, develop and validate technological and non-technological means that support people, businesses and governments to think about, design and operate their (information) processes and (electronically) conduct business transactions with one another. |
+:::tip **The purpose of the eSSIF-Lab...**
+... is to specify, develop and validate technological and non-technological means that support people, businesses and governments to think about, design and operate their (information) processes and (electronically) conduct business transactions with one another.
+:::
 
 The context of the eSSIF-Lab vision can be found in articles 8-10 of the [*European Convention on Human Rights (ECHR)*](https://www.echr.coe.int/Pages/home.aspx?p=basictexts/convention), that state the rights of individuals regarding their privacy, and their freedoms to collect, process, store, and express information in a self-sovereign fashion, i.e. in a way that they can decide for themselves. This is without prejudice to Member States’ laws that exist to protect their national security, public safety, the economic well-being of the country, health or morals or the rights and freedoms of others, or to prevent disorder or crime. The eSSIF-Lab vision extends these rights and freedoms - within the limits of the law - to public and private organizations. Thus, we say that individuals as well as public and private organizations (that we collectively refer to as ‘parties’) are self-sovereign<sup>[1]</sup>.
 
@@ -29,7 +29,7 @@ Perhaps the most important contribution that the eSSIF-Lab project aims to make,
 
 The figure below is a high-level visualization of the filling in and validation parts:
 
-![eSSIF-Lab - vision context](localhost:3000/static/images/eSSIF-Lab-vision-context.png)
+![eSSIF-Lab - vision context](https://essif-lab.pages.grnet.gr/framework/images/eSSIF-Lab-vision-context.png)
 
 *Figure 1. High-level visualization of the filling in and validation of a form.*
 
