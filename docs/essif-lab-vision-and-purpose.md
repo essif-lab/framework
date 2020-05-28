@@ -27,11 +27,11 @@ In order for this to work, the provider must design the form such that when a re
 
 Perhaps the most important contribution that the eSSIF-Lab project aims to make, is to create a ubiquitously used infrastructure for designing, filling in, and validating forms (not just web-forms, but also for ‘forms’ - e.g. JSON objects - in API requests). The benefits this will bring are enormous, but outside the scope of this document to list.
 
-![Relationship](https://essif-lab.pages.grnet.gr/framework//images/Relationship-among-eSSIF-Lab-open-calls.png)
+![Relationship](../images/Relationship-among-eSSIF-Lab-open-calls.png)
 
 The figure below is a high-level visualization of the filling in and validation parts:
 
-![eSSIF-Lab - vision context](https://essif-lab.pages.grnet.gr/framework//images/vision-context.png)
+![eSSIF-Lab - vision context](../images/vision-context.png)
 
 *Figure 1. High-level visualization of the filling in and validation of a form.*
 

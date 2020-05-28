@@ -30,7 +30,7 @@ However, the participants of a business transaction are different parties, which
 
 Every agent that communicates with another actor for the purpose of progressing a transaction, will need to be sufficiently sure (to the extent necessary for the value of the transaction) that the actor that it is communicating with, is in fact an agent of the peer party of its owner. We will use the term ‘**peer agent (of a specific agent, in the context of a single transaction)**’ to refer to an actor with which the specific agent has a communications session, and for which it has obtained sufficient assurance that it is an agent of the peer party of its owner. Note that establishing whether or not an actor is a peer agent does not necessarily require knowing who the peer party actually is.
 
-![eSSIF-Lab Single Party Functional Architecture Overview](https://essif-lab.pages.grnet.gr/framework//images/functional-architecture.png)
+![eSSIF-Lab Single Party Functional Architecture Overview](../images/functional-architecture.png)
 
 *Figure 1. eSSIF-Lab Single Party Functional Architecture Overview.*
 
@@ -365,7 +365,7 @@ It is a task of the TVE to orchestrate the inputs: different parts of the form m
 
 Because of this orchestration, the interface to the verifier component can be quite simple; it is shown in the image below:
 
-![Generic Verification with SSI service](https://essif-lab.pages.grnet.gr/framework//images/generic-verification-with-ssi-service.png)
+![Generic Verification with SSI service](../images/generic-verification-with-ssi-service.png)
 
 The request identifier is included in messages between the TVE and verifier so as to allow them to handle different transactions at the same time.
 
@@ -375,5 +375,5 @@ We assume that the provider has specified the form and the associated validation
 
 [text still needs to be written\]
 
-![Generic Issuing with SSI service](https://essif-lab.pages.grnet.gr/framework//images/generic-issuing-with-ssi-service.png)
+![Generic Issuing with SSI service](../images/generic-issuing-with-ssi-service.png)
 
