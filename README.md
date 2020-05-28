@@ -20,7 +20,7 @@ among sections and is self-explanatory (compare with the sidebar appearing [here
 (see for example [here](https://essif-lab.pages.grnet.gr/essif-lab/docs/infrastructure)).
 
 Images must be put inside `static` and referred to with their _absolute_ urls.
-Example: ![eSSIF-Lab logo](https://essif-lab.pages.grnet.gr/framework/images/eSSIF-Lab%20logo.png)
+Example: ![eSSIF-Lab logo](https://essif-lab.pages.grnet.gr/framework//images/eSSIF-Lab%20logo.png)
 (note that the `static` directory is missing, as this links to the DEPLOYED environment.)
 
 ### Installation
