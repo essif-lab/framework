@@ -27,13 +27,9 @@ In order for this to work, the provider must design the form such that when a re
 
 Perhaps the most important contribution that the eSSIF-Lab project aims to make, is to create a ubiquitously used infrastructure for designing, filling in, and validating forms (not just web-forms, but also for ‘forms’ - e.g. JSON objects - in API requests). The benefits this will bring are enormous, but outside the scope of this document to list.
 
-![Relationship](../images/Relationship-among-eSSIF-Lab-open-calls.png)
-
 The figure below is a high-level visualization of the filling in and validation parts:
 
-![eSSIF-Lab - vision context](../images/vision-context.png)
-
-*Figure 1. High-level visualization of the filling in and validation of a form.*
+![eSSIF-Lab - vision context](../images/vision-context.png) *Figure 1. High-level visualization of the filling in and validation of a form.*
 
 The transaction that is envisaged here is the issuing of a parking permit. Participants are a person (requestor) that requests such a permit, and an organization (provider) that can issue such a permit. The requestor has one electronic agent *RA*, i.e. an SSI-aware app on his mobile phone that can access a secure storage that contains ‘credentials’, i.e. data that is digitally signed by some third party, thus attesting to the truth of that data. The provider has two agents: one is an SSI-aware component *PA* that works with the web-server that presents the form, and the other is a person *P* whose task is to validate any data (on behalf of the provider) that is not validated electronically. The form itself contains a means, e.g. a QR-code or a deep-link, that allows *RA* and *PA* to set up a secure communications channel (e.g. SSL, DIDComm) and agree on the specific form that needs to be filled in.
 
