@@ -1,9 +1,9 @@
 ---
 id: vision-and-purpose
-title: Vision and Purpose
+title: eSSIF-Lab Vision and Purpose
 ---
 
-It is the eSSIF-Lab vision that Self-sovereign Identity (SSI) will *empower European citizens (as well as other individuals, of course)* by providing new means to manage privacy, eliminating logins, and making electronic transactions much faster and much safer, both via the Internet and in real, physical life. SSI will *empower European organisations and governments* by providing new means to speed up, secure and automate transactions with citizens, customers, suppliers and partners, resulting in tens of billions of euros savings annually on administrative costs in Europe. SSI will be *a new business ecosystem paradigm* with thousands of new jobs, many new job categories and new business opportunities for existing and new European companies. And last but certainly not least, SSI fosters *inclusiveness* and supports organizations and citizens to exercise their rights and fulfil their duties under the GDPR.
+It is the eSSIF-Lab vision that Self-Sovereign Identity (SSI) will *empower European citizens (as well as other individuals, of course)* by providing new means to manage privacy, eliminating logins, and making electronic transactions much faster and much safer, both via the Internet and in real, physical life. SSI will *empower European organisations and governments* by providing new means to speed up, secure and automate transactions with citizens, customers, suppliers and partners, resulting in tens of billions of euros savings annually on administrative costs in Europe. SSI will be *a new business ecosystem paradigm* with thousands of new jobs, many new job categories and new business opportunities for existing and new European companies. And last but certainly not least, SSI fosters *inclusiveness* and supports organizations and citizens to exercise their rights and fulfil their duties under the GDPR.
 
 The current situation is that (SSI) solutions that are being created and brought to the market, often have specific applications in mind for which they provide a solution (vertical ‘stovepipes’), many have some kind of centralized governance/control, others have privacy issues, and none that we know of are interoperable with other such solutions.
 

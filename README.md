@@ -19,9 +19,11 @@ among sections and is self-explanatory (compare with the sidebar appearing [here
 (that is, tagged with `##`) will appear at the right part of the page
 (see for example [here](https://essif-lab.pages.grnet.gr/essif-lab/docs/infrastructure)).
 
-Images must be put inside `static` and referred to with their _absolute_ urls.
-Example: ![eSSIF-Lab logo](https://essif-lab.pages.grnet.gr/framework//images/eSSIF-Lab%20logo.png)
-(note that the `static` directory is missing, as this links to the DEPLOYED environment.)
+Images must be put inside the directory `static/images` and developers must refer to them using _relative_ urls.
+Example: ![eSSIF-Lab logo](../images/eSSIF-Lab%20logo.png)
+Docusaurus knows that the `../images` directory is inside the `static` directory, and thus process correctly.
+The deployment pipe will convert `../images/` in such links to their _*absolute*_ urls.
+Of course, if you want to link to images on the web, you can still use absolute urls.
 
 ### Installation
 
