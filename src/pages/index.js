@@ -11,7 +11,7 @@ function CustomFeature() {
   const logoUrl = useBaseUrl('images/eSSIF-Lab logo.png');
   const title = 'Horizon 2020';
   const description =
-    ' Funded by the European Commission, as part of the Horizon 2020 Research and Innovation Programme.';
+    ' Funded by the European Commission, as part of the Horizon 2020 Research and Innovation Programme under grant agreement Nº 871932.';
 
   return (
     <div
