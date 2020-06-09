@@ -1,7 +1,6 @@
 # eSSIF-Lab Framework
 
-This repo contains the documents that describe the vision, architecture and other
-topics that are relevant to the eSSIF-Lab Framework.
+This repo contains the source documents of the [eSSIF-Lab framework](https://essif-lab.pages.grnet.gr/framework/), such as its vision, architecture and other relevant topics.
 
 ## Writing docs
 

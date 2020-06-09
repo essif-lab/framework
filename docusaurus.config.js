@@ -13,7 +13,7 @@ module.exports = {
         src: 'images/eSSIF-Lab logo.png',
       },
       links: [
-        {to: 'docs/introduction', label: 'Quick intro', position: 'left'},
+        {to: 'docs/introduction', label: 'Introduction', position: 'left'},
         {to: 'docs/vision-and-purpose', label: 'Vision', position: 'left'},
         {to: 'docs/functional-architecture', label: 'Functional Architecture', position: 'left'},
         {
