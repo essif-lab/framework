@@ -1,6 +1,6 @@
 ---
 id: functional-architecture
-title: Functional Architecture
+title: eSSIF-Lab Functional Architecture
 ---
 
 The purpose of the functional architecture and its views is to
@@ -304,7 +304,8 @@ This chapter explains at a high level how electronic business transactions are b
 
 ### 5.1.  Overview
 
-<img src="../images/high-level-trx-overview.png" alt="eSSIF-Lab - high level trx overview" style="zoom:40%;"/>The adjacent figure shows how a transaction is conducted at the highest abstraction level. One party, called the ‘Requester’, sends a request for a product or service to another party (that we will call the ‘Provider’). Then, they start to negotiate a ‘transaction agreement’, which means that they exchange data through various channels for the purpose of establishing the details of the product/service to be provided and the compensation, data needed to mitigate transaction risks, etc., all of which is necessary for the parties to (individually/subjectively) decide whether or not to commit to the transaction. Section 3.2 provides more detail about this phase.
+![eSSIF-Lab - high level trx overview](../images/high-level-trx-overview.png)
+The adjacent figure shows how a transaction is conducted at the highest abstraction level. One party, called the ‘Requester’, sends a request for a product or service to another party (that we will call the ‘Provider’). Then, they start to negotiate a ‘transaction agreement’, which means that they exchange data through various channels for the purpose of establishing the details of the product/service to be provided and the compensation, data needed to mitigate transaction risks, etc., all of which is necessary for the parties to (individually/subjectively) decide whether or not to commit to the transaction. Section 3.2 provides more detail about this phase.
 
 After commitment, the producer works to provide the product or service, and the requester arranges the compensation. This phase is entirely up to the business, and hence out of scope of this document.
 
@@ -318,7 +319,8 @@ Please note that while transactions are symmetrical in nature (i.e. both request
 
 This phase starts by the requester sending a transaction request to the provider, and ends whenever either one of the parties quits, or both parties commit.
 
-<img src="../images/high-level-trx-negotiation.png" alt="eSSIF-Lab - high level trx negotiation" style="zoom:40%;"/>The adjacent figure shows the high-level interactions during this phase. It starts by the requester sending a request for a product or service to the provider. Typically, this would lead to the provider presenting a (web) form the requester must fill in. In the eSSIF-Lab context, the form will also provide a means for setting up a SSI communications channel, i.e. a secure communications channel through which provider and requester can both request and obtain (presentations of) credentials, the contents of which they can use to fill in the form. Then, after the form is ‘clean’, i.e. contains sufficient information for deciding whether or not to commit to the transaction, this phase ends.
+![eSSIF-Lab - high level trx negotiation](../images/high-level-trx-negotiation.png)
+The adjacent figure shows the high-level interactions during this phase. It starts by the requester sending a request for a product or service to the provider. Typically, this would lead to the provider presenting a (web) form the requester must fill in. In the eSSIF-Lab context, the form will also provide a means for setting up a SSI communications channel, i.e. a secure communications channel through which provider and requester can both request and obtain (presentations of) credentials, the contents of which they can use to fill in the form. Then, after the form is ‘clean’, i.e. contains sufficient information for deciding whether or not to commit to the transaction, this phase ends.
 
 Note that forms may contain fields that are required only in specific circumstances. It may only be possible to assess whether or not such circumstances apply after some (other) fields have been filled in. This means that the phase for requesting credential presentations and responding to such requests may very well consist of multiple requests and associated responses.
 
