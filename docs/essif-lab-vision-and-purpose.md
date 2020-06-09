@@ -43,4 +43,4 @@ When the transaction has been completed, both participants can issue a credentia
 
 [2] A good mental model for describing and designing transactions and their participants is provided by [*DEMO*](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations).
 
-[3] Since transactions are symmetric, the requestor could also have a form that the provider needs to fill in so as to provide the requestor with the data it needs to\ commit to that transaction. We have left that out of this description for the sake of simplicity. 
+[3] Since transactions are symmetric, the requestor could also have a form that the provider needs to fill in so as to provide the requestor with the data it needs to commit to that transaction. We have left that out of this description for the sake of simplicity. 
