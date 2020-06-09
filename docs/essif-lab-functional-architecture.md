@@ -30,7 +30,7 @@ However, the participants of a business transaction are different parties, which
 
 Every agent that communicates with another actor for the purpose of progressing a transaction, will need to be sufficiently sure (to the extent necessary for the value of the transaction) that the actor that it is communicating with, is in fact an agent of the peer party of its owner. We will use the term ‘**peer agent (of a specific agent, in the context of a single transaction)**’ to refer to an actor with which the specific agent has a communications session, and for which it has obtained sufficient assurance that it is an agent of the peer party of its owner. Note that establishing whether or not an actor is a peer agent does not necessarily require knowing who the peer party actually is.
 
-![eSSIF-Lab Single Party Functional Architecture Overview](../images/functional-architecture.png)
+![eSSIF-Lab Single Party Functional Architecture Overview](https://essif-lab.pages.grnet.gr/framework//images/functional-architecture.png)
 
 *Figure 1. eSSIF-Lab Single Party Functional Architecture Overview.*
 
@@ -102,7 +102,7 @@ The **SSI Tech APIs** interface layer is the union of the interfaces that the co
 
 This section details the functional specifications of the components that are in scope of the eSSIF-Lab infrastructure, i.e. in the green (rounded) rectangle as shown in the figure below:
 
-![eSSIF-Lab functional components that are part of the eSSIF-Lab infrastructure](../images/functional-architecture-infra.png)
+![eSSIF-Lab functional components that are part of the eSSIF-Lab infrastructure](https://essif-lab.pages.grnet.gr/framework//images/functional-architecture-infra.png)
 
 *Figure 2: eSSIF-Lab infrastructural (functional) components.*
 
@@ -304,7 +304,7 @@ This chapter explains at a high level how electronic business transactions are b
 
 ### 5.1.  Overview
 
-![eSSIF-Lab - high level trx overview](../images/high-level-trx-overview.png)
+![eSSIF-Lab - high level trx overview](https://essif-lab.pages.grnet.gr/framework//images/high-level-trx-overview.png)
 The adjacent figure shows how a transaction is conducted at the highest abstraction level. One party, called the ‘Requester’, sends a request for a product or service to another party (that we will call the ‘Provider’). Then, they start to negotiate a ‘transaction agreement’, which means that they exchange data through various channels for the purpose of establishing the details of the product/service to be provided and the compensation, data needed to mitigate transaction risks, etc., all of which is necessary for the parties to (individually/subjectively) decide whether or not to commit to the transaction. Section 3.2 provides more detail about this phase.
 
 After commitment, the producer works to provide the product or service, and the requester arranges the compensation. This phase is entirely up to the business, and hence out of scope of this document.
@@ -319,7 +319,7 @@ Please note that while transactions are symmetrical in nature (i.e. both request
 
 This phase starts by the requester sending a transaction request to the provider, and ends whenever either one of the parties quits, or both parties commit.
 
-![eSSIF-Lab - high level trx negotiation](../images/high-level-trx-negotiation.png)
+![eSSIF-Lab - high level trx negotiation](https://essif-lab.pages.grnet.gr/framework//images/high-level-trx-negotiation.png)
 The adjacent figure shows the high-level interactions during this phase. It starts by the requester sending a request for a product or service to the provider. Typically, this would lead to the provider presenting a (web) form the requester must fill in. In the eSSIF-Lab context, the form will also provide a means for setting up a SSI communications channel, i.e. a secure communications channel through which provider and requester can both request and obtain (presentations of) credentials, the contents of which they can use to fill in the form. Then, after the form is ‘clean’, i.e. contains sufficient information for deciding whether or not to commit to the transaction, this phase ends.
 
 Note that forms may contain fields that are required only in specific circumstances. It may only be possible to assess whether or not such circumstances apply after some (other) fields have been filled in. This means that the phase for requesting credential presentations and responding to such requests may very well consist of multiple requests and associated responses.
@@ -367,7 +367,7 @@ It is a task of the TVE to orchestrate the inputs: different parts of the form m
 
 Because of this orchestration, the interface to the verifier component can be quite simple; it is shown in the image below:
 
-![Generic Verification with SSI service](../images/generic-verification-with-ssi-service.png)
+![Generic Verification with SSI service](https://essif-lab.pages.grnet.gr/framework//images/generic-verification-with-ssi-service.png)
 
 The request identifier is included in messages between the TVE and verifier so as to allow them to handle different transactions at the same time.
 
@@ -377,4 +377,4 @@ We assume that the provider has specified the form and the associated validation
 
 [text still needs to be written\]
 
-![Generic Issuing with SSI service](../images/generic-issuing-with-ssi-service.png)
+![Generic Issuing with SSI service](https://essif-lab.pages.grnet.gr/framework//images/generic-issuing-with-ssi-service.png)
