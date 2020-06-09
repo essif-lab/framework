@@ -25,3 +25,7 @@ topics that are relevant to the eSSIF-Lab Framework. Currently, it contains:
 
 - [Vision and purpose](vision-and-purpose)
 - [Functional architecture](functional-architecture)
+
+## Acknowledgement
+
+This site is part of the eSSIF-Lab project that has received funding from the [European Union’s Horizon 2020 Research and Innovation Programme] under grant agreement Nº 871932.
