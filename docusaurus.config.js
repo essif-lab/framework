@@ -63,7 +63,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+	     'https://essif-lab.pages.grnet.gr/framework/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
