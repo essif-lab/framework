@@ -1,4 +1,7 @@
-<p align="center"><img src="images/EU-flag.jpg" height="80";" /> <img src="images/eSSIF-Lab logo.png" height="80";" /></p>
+---
+id: ssi-standards
+title: ssi-standards
+---
 
 eSSIF-Lab is funded by the European Commission, as part of the Horizon 2020 Research and Innovation Programme, under Grant Agreement Nº 871932 and it’s framed under[ ](http://ngi.eu/)[*Next Generation Internet Initiative*](http://ngi.eu/).
 
