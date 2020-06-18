@@ -62,8 +62,8 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-	     'https://essif-lab.pages.grnet.gr/framework/',
+		# editUrl:
+		# 'https://essif-lab.pages.grnet.gr/framework/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
