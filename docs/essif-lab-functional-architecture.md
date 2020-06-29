@@ -94,9 +94,9 @@ It is expected that there are already some interfaces out there that may turn ou
 
 There are two interface layers in this architecture
 
-The \`**ESSIF Glue**\` interface layer consists of a set of API’s between the Transaction (Validation) Engine and Transaction Result Dispatcher on the one hand, and the WHIV components on the other hand. The specification of these API’s can be found in \[reference needed\]. The purpose of these APIs is to make calling the WHIV functions as simple as possible, given the functions of the Transaction Result Dispatcher and Transaction (Validation) Engine. Ultimately, we would like to see these API’s standardized. Having such APIs allows different parties to create their own version of the WHIV components, supporting the SSI technologies as they see fit, and shrinking or expanding functionalities as they feel appropriate. Parties can then select such WHIV components as they see fit.
+The \`**ESSIF Glue**\` interface layer consists of a set of APIs between the Transaction (Validation) Engine and Transaction Result Dispatcher on the one hand, and the WHIV components on the other hand.<!-- The specification of these APIs can be found in \[reference needed\].--> The purpose of these APIs is to make calling the WHIV functions as simple as possible, given the functions of the Transaction Result Dispatcher and Transaction (Validation) Engine. Ultimately, we would like to see these APIs standardized. Having such APIs allows different parties to create their own version of the WHIV components, supporting the SSI technologies as they see fit, and shrinking or expanding functionalities as they feel appropriate. Parties can then select such WHIV components as they see fit.
 
-The **SSI Tech APIs** interface layer is the union of the interfaces that the components that are in it provide. Any standardization in there is outside the scope of eSSIF-Lab.
+The **SSI Tech APIs** interface layer is the union of the interfaces of the components within it. Any standardization in there is outside the scope of eSSIF-Lab.
 
 ## 3.  eSSIF-Lab Infrastructure Functional Components
 
@@ -136,11 +136,9 @@ In order to make the TVE work, a Validation Policy (or TVE Policy) is created by
 
     -   the mapping between fields in such credentials and fields in the form to be filled in.
 
--   (anything else?)
-
 The Policy must be designed in such a way that it is extendable as new features will be called for in the future.
 
-The ability to create new transaction contexts and the availability of the TVE Policy enable the TVE to request the Verifier component of its owner to obtain credentials of the types that it can use to fill in the transaction form when they satisfy the verification and validation requirements of its owner. The specification of such requests is given in \[reference needed\].
+The ability to create new transaction contexts and the availability of the TVE Policy enable the TVE to request the Verifier component of its owner to obtain credentials of the types that it can use to fill in the transaction form when they satisfy the verification and validation requirements of its owner.<!-- The specification of such requests is given in \[reference needed\]. -->
 
 When the Verifier returns such data (which comes with a list of proofs that the Verifier has checked), the TVE must then validate that data, i.e. determine whether or not it is valid for the specific transaction it is assembling the data for. The validation rules are party-specific and hence come from the TVE policy. For simple cases, validation can simply consist of checking whether or not all verification proofs succeeded. At the other end of the validation spectrum, the TVE itself must make validation decisions, either electronically (according to the TVE policy) or by ‘outsourcing’ such decisions to human agents of its owner by providing an appropriate validation user interface.
 
@@ -148,7 +146,7 @@ As long as data is needed, the TVE can intermittently request the verifier to pr
 
 -----
 
-[TVE.1] This feature ensures that the transaction is really two-way, and both parties can request credentials from the other. For example, a web-shop can then ask for a (delivery)address credential, and the customer can ask for a credential issued e.g. by the chamber of commerce that the web-shop is a legitimate company (and not some maffia website).
+[TVE.1] This feature ensures that the transaction is really two-way, and both parties can request credentials from the other. For example, a web-shop can then ask for a (delivery) address credential, and the customer can ask for a credential issued e.g. by the chamber of commerce that the web-shop is a legitimate company (and not some maffia website).
 
 [TVE.2] It may well be that this functionality can somehow be split off in the (near) future.
 
@@ -178,7 +176,6 @@ This request message should contain at least
 -   the (credential type, issuer) pairs that may satisfy the request, and to each of these additional data, e.g. the URI of the endpoint where the issuer issues such credentials, the maximum age of the credential, etc.
 -   meta-data that may be useful for the holder (or its owner), e.g. texts stating the purpose(s) for which the data will be used ([*GDPR*](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679&from=EN) Art. 5.1.b), or requesting consent ([*GDPR*](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679&from=EN) Art. 7.2) “in an intelligible and easily accessible form, using clear and plain language”.
 -   a signature of the Verifiers owner, for the purpose of showing compliance with the [*GDPR*](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679&from=EN) (e.g. Art 28.3.h), and enabling the Holder’s owner to obtain proof that the Verifiers owner has violated the [*GDPR*](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679&from=EN)’s minimization principle asked for data for a particular purpose, which can be used in an argument in disputes about data minimization ([*GDPR*](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679&from=EN) Art. 5.1.c).
--   (anything else?)
 
 The request message must be designed in such a way that it is extendable as new features will be called for in the future.
 
@@ -203,7 +200,6 @@ In order to make the Holder component work, a Holder Policy/Preferences object i
 -   whether or not credentials may be collected ‘on the fly’;
 -   how to choose between credentials that all satisfy a presentation request (and whether the Holder can make such choices by itself, or whether or not human interaction is required);
 -   the kinds of events and data to write to a holder-audit-log.
--   (anything else?)
 
 ### 3.4.  Transaction Result Dispatcher and Issuing Policy
 
@@ -259,7 +255,6 @@ The primary purpose of the Wallet Component is to (securely) store data, and in 
 
 -   credentials - both those that have been issued by the issuer (i.e. self-signed credentials) and those that have been obtained from issuers of other parties, and
 -   (private) keys e.g. for signing/sealing data on behalf of its owner.
--   \[anything else?\]
 
 Other kinds of data may be stored by a wallet as well - we will have to see what is practical and makes sense.
 
@@ -273,7 +268,7 @@ By ‘securely storing data’ we mean that such data
 
 It is expected that components other than the Holder and Issuer will (arise and) need access. One example could be a component that is capable of securely signing data on behalf of the owner. Another example could be a component that implements some kind of credential revocation functionality.
 
-Human Beings cannot directly access any Wallet component, not even the ones they own. They need an electronic agent that is capable of authenticating them as (an agent of) the party that owns the Wallet component, and upon successful authentication provides a User Interface through which the Human Being can instruct this electronic agent to manage the Wallet’s contents.
+Human beings cannot directly access any Wallet component, not even the ones they own. They need an electronic agent that is capable of authenticating them as (an agent of) the party that owns the Wallet component, and upon successful authentication provides a User Interface through which the Human Being can instruct this electronic agent to manage the Wallet’s contents.
 
 In order to make the Wallet component work, a Wallet Policy/Preferences object is created by, or on behalf of the owner, the contents of which remains to be specified.
 
