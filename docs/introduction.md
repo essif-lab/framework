@@ -18,13 +18,14 @@ At the start, eSSIF-Lab is one of the European [NGI projects](https://www.ngi.eu
 and helps (EU) parties that want to contribute by publishing [open calls](https://essif-lab.eu/?page_id=134) 
 to which such parties can submit work proposals that eSSIF-Lab will then consider for funding.
 
-## eSSIF-Lab Framework repository
+## eSSIF-Lab Framework Repository
 
 This repo contains the documents that describe the vision, architecture and other
 topics that are relevant to the eSSIF-Lab Framework. Currently, it contains:
 
 - [Vision and purpose](vision-and-purpose)
 - [Functional architecture](functional-architecture)
+- [SSI standards](ssi-standards)
 
 ## Acknowledgement
 
