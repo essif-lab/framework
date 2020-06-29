@@ -16,7 +16,7 @@ In order to serve such purposes, we have found out that it is necessary that to 
 
 This distinction is necessary because actors do things that parties are accountable for. In order to know which party is accountable for what actions, we need the ability to link parties and actors. When an actor acts and a (single) specific party is accountable for that, we say that the actor is an ‘**agent**’ for or of that party (at that particular point in time). We say that this actor acts ‘**on behalf of**’ that party. When an SSI component acts as an agent for/on behalf of some party, we call it an \`**SSI-agent**\`, and we say that this party is the ‘**owner**’ of that component. Also, we use the term \`**(electronic or human) colleague (of an agent)**\` to refer to any other (electronic or human) agent that acts on behalf of the same party as this agent.
 
-Given these definitions, it is obvious that parties are not necessarily capable of acting. However, we also would like to be able to generically use phrases such as ‘party X does Y’. To this end we introduce the term \`**organization**\` as the collection of one specific party and every of its agents, and when we say ‘party X does Y’, we mean to say that there is an agent that does Y, where that agent belongs to the same organization as the specified party..
+Given these definitions, it is obvious that parties are not necessarily capable of acting. However, we also would like to be able to generically use phrases such as ‘party X does Y’. To this end we introduce the term \`**organization**\` as the collection of one specific party and every one of its agents, and when we say ‘party X does Y’, we mean to say that there is an agent that does Y, where that agent belongs to the same organization as the specified party.
 
 We caution that the notions of being an ‘agent’, ‘owner’, ‘colleague’, and being part of an ‘organization’ are dynamic; they may frequently change over time and are never self-evident.
 
@@ -28,13 +28,13 @@ Figure 1 shows the initial *functional* eSSIF-Lab architecture, and its scope, c
 
 However, the participants of a business transaction are different parties, which means that the negotiation, commitment and execution thereof is done by agents of different parties. Assuming that a single transaction has two participating parties, we will use the term ‘**peer party (of a specific party, in the context of a single transaction)**’ to refer to the participating party in that transaction that is not the specific party itself.
 
-Every agent that communicates with another actor for the purpose of progressing a transaction, will need to be sufficiently sure (to the extent necessary for the value of the transaction) that the actor that it is communicating with, is in fact an agent of the peer party of its owner. We will use the term ‘**peer agent (of a specific agent, in the context of a single transaction)**’ to refer to an actor with which the specific agent has a communications session, and for which it has obtained sufficient assurance that it is an agent of the peer party of its owner. Note that establishing whether or not an actor is a peer agent does not necessarily require knowing who the peer party actually is.
+Every agent that communicates with another actor for the purpose of progressing a transaction with a peer party, will need to be sufficiently certain (to the extent necessary for the value of the transaction) that the actor that it is communicating with, is in fact an agent of the peer party (through the membership of the agent's owner). We will use the term ‘**peer agent (of a specific agent, in the context of a single transaction)**’ to refer to an actor with which the specific agent has a communications session, and for which it has obtained sufficient assurance that it is an agent of the peer party. Note that establishing whether or not an actor is a peer agent does not necessarily require knowing who the peer party actually is.
 
 ![eSSIF-Lab Single Party Functional Architecture Overview](https://essif-lab.pages.grnet.gr/framework//images/functional-architecture.png)
 
 *Figure 1. eSSIF-Lab Single Party Functional Architecture Overview.*
 
-We use the following coloring conventions in this figure: red(dish) is business related, which means that we do not consider this to be part of the SSI Infrastructure. Brown is used for policies, which are defined by (or on behalf) of the Owner of the component that uses them to configure themselves, and/or act according to the Owner’s preferences and policies. Green is used for generic SSI infrastructure related functions, and blue represents functions that may be implemented as ‘plug-ins’ for specific SSI-related technologies.
+We use the following coloring conventions in this figure: red is business related, which means that we do not consider this to be part of the SSI Infrastructure. Brown is used for policies, which are defined by (or on behalf) of the owner of the component that uses them to configure themselves, and/or act according to the owner’s preferences and policies. Green is used for generic SSI infrastructure related functions, and blue represents functions that may be implemented as ‘plug-ins’ for specific SSI-related technologies.
 
 The remainder of this chapter describes the layers and their components at a high abstraction level. <!--Further details on components, such as design decisions, can be found in \[reference\].-->
 
@@ -46,7 +46,7 @@ The top layer (in the red rounded rectangle) has the functions of actual busines
 
 The lower business layer contains two functional components, one for initiating transactions and the other for stating transaction results (as per the [*DEMO*](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations) method), each of which with an associated business policy that contains business-specific policies/preferences.
 
-The task of the **Transaction (Validation) Engine** (or **TVE**) is to handle and initiate requests from/to peer agents to engage in some kind of transaction, by negotiating and exchanging data (through one or more, physical or electronic communication channels), and to produce a transaction form whose contents is complete and valid, enabling an appropriate colleague to decide whether or not to engage in the transaction. Note that negotiating a transaction has two parts: requesting a peer agent to provide data that its owner needs, and providing data on behalf of its owner that a peer agent requests. After all, a business transaction can only start after all parties have decided to commit, which they can only do after each of them has obtained the information it (subjectively) needs to do so. Also note that data that the TVE must ensure that the transaction context is properly maintained if it chooses to exchange data through different communication channels.
+The task of the **Transaction (Validation) Engine** (or **TVE**) is to handle and initiate requests from/to peer agents to engage in some kind of transaction, by negotiating and exchanging data (through one or more, physical or electronic communication channels), and to produce a transaction form whose contents are complete and valid, enabling an appropriate colleague to decide whether or not to engage in the transaction. Note that negotiating a transaction has two parts: requesting a peer agent to provide data that its owner needs, and providing data on behalf of its owner that a peer agent requests. After all, a business transaction can only start after all parties have decided to commit, which they can only do after each of them has obtained the information it (subjectively) needs to do so. Also note that data that the TVE must ensure that the transaction context is properly maintained if it chooses to exchange data through different communication channels.
 
 The task of the **Transaction Result Dispatcher** (or **TRD**) is to state the (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other parties. Since such state-data may change, issuing data that supersedes an earlier state implies the revocation of such a state.
 
@@ -94,9 +94,9 @@ It is expected that there are already some interfaces out there that may turn ou
 
 There are two interface layers in this architecture
 
-The \`**ESSIF Glue**\` interface layer consists of a set of API’s between the Transaction (Validation) Engine and Transaction Result Dispatcher on the one hand, and the WHIV components on the other hand. The specification of these API’s can be found in \[reference needed\]. The purpose of these APIs is to make calling the WHIV functions as simple as possible, given the functions of the Transaction Result Dispatcher and Transaction (Validation) Engine. Ultimately, we would like to see these API’s standardized. Having such APIs allows different parties to create their own version of the WHIV components, supporting the SSI technologies as they see fit, and shrinking or expanding functionalities as they feel appropriate. Parties can then select such WHIV components as they see fit.
+The \`**ESSIF Glue**\` interface layer consists of a set of APIs between the Transaction (Validation) Engine and Transaction Result Dispatcher on the one hand, and the WHIV components on the other hand.<!-- The specification of these APIs can be found in \[reference needed\].--> The purpose of these APIs is to make calling the WHIV functions as simple as possible, given the functions of the Transaction Result Dispatcher and Transaction (Validation) Engine. Ultimately, we would like to see these APIs standardized. Having such APIs allows different parties to create their own version of the WHIV components, supporting the SSI technologies as they see fit, and shrinking or expanding functionalities as they feel appropriate. Parties can then select such WHIV components as they see fit.
 
-The **SSI Tech APIs** interface layer is the union of the interfaces that the components that are in it provide. Any standardization in there is outside the scope of eSSIF-Lab.
+The **SSI Tech APIs** interface layer is the union of the interfaces of the components within it. Any standardization in there is outside the scope of eSSIF-Lab.
 
 ## 3.  eSSIF-Lab Infrastructure Functional Components
 
@@ -136,11 +136,9 @@ In order to make the TVE work, a Validation Policy (or TVE Policy) is created by
 
     -   the mapping between fields in such credentials and fields in the form to be filled in.
 
--   (anything else?)
-
 The Policy must be designed in such a way that it is extendable as new features will be called for in the future.
 
-The ability to create new transaction contexts and the availability of the TVE Policy enable the TVE to request the Verifier component of its owner to obtain credentials of the types that it can use to fill in the transaction form when they satisfy the verification and validation requirements of its owner. The specification of such requests is given in \[reference needed\].
+The ability to create new transaction contexts and the availability of the TVE Policy enable the TVE to request the Verifier component of its owner to obtain credentials of the types that it can use to fill in the transaction form when they satisfy the verification and validation requirements of its owner.<!-- The specification of such requests is given in \[reference needed\]. -->
 
 When the Verifier returns such data (which comes with a list of proofs that the Verifier has checked), the TVE must then validate that data, i.e. determine whether or not it is valid for the specific transaction it is assembling the data for. The validation rules are party-specific and hence come from the TVE policy. For simple cases, validation can simply consist of checking whether or not all verification proofs succeeded. At the other end of the validation spectrum, the TVE itself must make validation decisions, either electronically (according to the TVE policy) or by ‘outsourcing’ such decisions to human agents of its owner by providing an appropriate validation user interface.
 
@@ -148,7 +146,7 @@ As long as data is needed, the TVE can intermittently request the verifier to pr
 
 -----
 
-[TVE.1] This feature ensures that the transaction is really two-way, and both parties can request credentials from the other. For example, a web-shop can then ask for a (delivery)address credential, and the customer can ask for a credential issued e.g. by the chamber of commerce that the web-shop is a legitimate company (and not some maffia website).
+[TVE.1] This feature ensures that the transaction is really two-way, and both parties can request credentials from the other. For example, a web-shop can then ask for a (delivery) address credential, and the customer can ask for a credential issued e.g. by the chamber of commerce that the web-shop is a legitimate company (and not some maffia website).
 
 [TVE.2] It may well be that this functionality can somehow be split off in the (near) future.
 
@@ -178,7 +176,6 @@ This request message should contain at least
 -   the (credential type, issuer) pairs that may satisfy the request, and to each of these additional data, e.g. the URI of the endpoint where the issuer issues such credentials, the maximum age of the credential, etc.
 -   meta-data that may be useful for the holder (or its owner), e.g. texts stating the purpose(s) for which the data will be used ([*GDPR*](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679&from=EN) Art. 5.1.b), or requesting consent ([*GDPR*](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679&from=EN) Art. 7.2) “in an intelligible and easily accessible form, using clear and plain language”.
 -   a signature of the Verifiers owner, for the purpose of showing compliance with the [*GDPR*](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679&from=EN) (e.g. Art 28.3.h), and enabling the Holder’s owner to obtain proof that the Verifiers owner has violated the [*GDPR*](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679&from=EN)’s minimization principle asked for data for a particular purpose, which can be used in an argument in disputes about data minimization ([*GDPR*](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679&from=EN) Art. 5.1.c).
--   (anything else?)
 
 The request message must be designed in such a way that it is extendable as new features will be called for in the future.
 
@@ -192,9 +189,9 @@ Then, the verifier will send a message to the TVE, containing the transaction-id
 
 The purpose of the Holder component is to handle Presentation Requests that it receives from Verifier components (both of its own owner, and of other parties), and responding to such requests.
 
-Typically, a Holder component would access its owners Wallet to check if it has a credential that it can use to construct a Presentation (=response) that satisfies the received request.
+Typically, a Holder component would access its owner's Wallet to check if it has a credential that it can use to construct a Presentation (i.e. response) that satisfies the received request.
 
-It may happen that the Wallet does not have such a credential. However, for every (credential, issuer) pair, the request should specify the URI that is capable of issuing such a credential. If or when the Holder Policy/Preferences permits this, the Holder then requests its owner’s TVE to initiate a new transaction that will get the credential from that issuer, for which a clean transaction form would then consist of one that contains said credential. The Holder would then store it in its owner’s Wallet, and then proceed to service the presentation request as if it had obtained that credential from its owner’s Wallet.
+It may happen that the Wallet does not have such a credential. However, for every (credential, issuer) pair, the request should specify the URI that is capable of issuing such a credential. If or when the Holder Policy/Preferences permit this, the Holder then requests its owner’s TVE to initiate a new transaction that will get the credential from that issuer, for which a clean transaction form would then consist of one that contains said credential. The Holder would then store it in its owner’s Wallet, and then proceed to service the presentation request as if it had obtained that credential from its owner’s Wallet.
 
 It may also happen that the Wallet has multiple credentials that satisfy the request, in which case the Holder must choose the one to use for constructing the presentation. Again, the Holder Policy/Preferences will specify how this choice needs to be made, and whether or not this can be done automatically by the Holder. If not, the Holder will need to provide for an interaction with a human colleague that will make such decisions.
 
@@ -203,11 +200,10 @@ In order to make the Holder component work, a Holder Policy/Preferences object i
 -   whether or not credentials may be collected ‘on the fly’;
 -   how to choose between credentials that all satisfy a presentation request (and whether the Holder can make such choices by itself, or whether or not human interaction is required);
 -   the kinds of events and data to write to a holder-audit-log.
--   (anything else?)
 
 ### 3.4.  Transaction Result Dispatcher and Issuing Policy
 
-The purpose of the TRD component is to state the (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other parties. A special kind of result is the (provisioning of) a credential that its Owner already has created.
+The purpose of the TRD component is to state the (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other parties. A special kind of result is the (provisioning of) a credential that its owner already has created.
 
 Typically, and at any point in time, parties are capable of expressing statements about entities that they know to exist. They could express statements about individuals, about themselves, the state of transactions, and so on. We will use the term ‘**subject (of a statement of a party)**’ to refer to the entity that this party knows to exist, and about whom/which the statement has been made.
 
@@ -259,7 +255,6 @@ The primary purpose of the Wallet Component is to (securely) store data, and in 
 
 -   credentials - both those that have been issued by the issuer (i.e. self-signed credentials) and those that have been obtained from issuers of other parties, and
 -   (private) keys e.g. for signing/sealing data on behalf of its owner.
--   \[anything else?\]
 
 Other kinds of data may be stored by a wallet as well - we will have to see what is practical and makes sense.
 
@@ -273,7 +268,7 @@ By ‘securely storing data’ we mean that such data
 
 It is expected that components other than the Holder and Issuer will (arise and) need access. One example could be a component that is capable of securely signing data on behalf of the owner. Another example could be a component that implements some kind of credential revocation functionality.
 
-Human Beings cannot directly access any Wallet component, not even the ones they own. They need an electronic agent that is capable of authenticating them as (an agent of) the party that owns the Wallet component, and upon successful authentication provides a User Interface through which the Human Being can instruct this electronic agent to manage the Wallet’s contents.
+Human beings cannot directly access any Wallet component, not even the ones they own. They need an electronic agent that is capable of authenticating them as (an agent of) the party that owns the Wallet component, and upon successful authentication provides a User Interface through which the Human Being can instruct this electronic agent to manage the Wallet’s contents.
 
 In order to make the Wallet component work, a Wallet Policy/Preferences object is created by, or on behalf of the owner, the contents of which remains to be specified.
 
@@ -326,7 +321,7 @@ Note that forms may contain fields that are required only in specific circumstan
 
 In the example of the parking permit, the municipality might ask for a credential that proves the requester is a citizen that is a registered inhabitant of said municipality, a credential stating its residential address, a credential stating the make and license plate of the vehicle for which a parking permit is requested, etc. All this is subject to the policy that the municipality has established for issuing such permits, and hence, it must be expected to differ between municipalities.
 
-An example of conditionally required fields would be when the requester wants the municipality to customize the parking lot, e.g. because the requester has disabilities. Assessing such circumstances depends on the (optional) field where the requester must state any disabilities it has, and when that is the case, the requester may be asked to fill in fields such as whether or not a parking lot has to be customized (painted blue, with a sign stating that it is reserved for the provided license-place, or the kind of charging device if (s)he has an electric vehicle).
+An example of conditionally required fields would be when the requester wants the municipality to customize the parking lot, e.g. because the requester has disabilities. Assessing such circumstances depends on the (optional) field where the requester must state any disabilities they have, and when that is the case, the requester may be asked to fill in fields such as whether or not a parking lot has to be customized (painted blue, with a sign stating that it is reserved for the provided license-place, or the kind of charging device if they have an electric vehicle).
 
 Conversely, the citizen might request the (alleged) municipality to provide credentials, e.g. to prove that it is actually an official municipality of the country it is part of. This would provide assurance to the citizen that it would actually be paying the fees to that municipality rather than to e.g. a rogue organization that might have spoofed the website of the municipality.
 
@@ -343,7 +338,7 @@ We foresee two ways in which credentials can be issued:
 
 ## 6.  Detailed Transaction Flows
 
-**this section is being constructed now (it is only for the very curious to read...)**
+**this section is work in progress but is included to provide further intuition**
 
 This chapter explains the details of how electronic business transactions are being conducted using the eSSIF-Lab architectural components as described in chapter 2. We keep on using the parking permit example that we introduced in section 1.1. for illustrative purposes.
 
