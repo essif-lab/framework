@@ -1,20 +1,9 @@
 ---
 id: ssi-standards
-title: ssi-standards
+title: SSI Standards
 ---
 
-eSSIF-Lab is funded by the European Commission, as part of the Horizon 2020 Research and Innovation Programme, under Grant Agreement Nº 871932 and it’s framed under[ ](http://ngi.eu/)[*Next Generation Internet Initiative*](http://ngi.eu/).
-
-
-
-# SSI Standards
-<p align="center">Author(s): Oskar van Deventer (TNO)</p>
-
-
-
 The purpose of this document is to provide an overview of standards for self-sovereign identity (SSI) and their relevance to eSSIF-Lab.
-
-
 
 ## 1.  Introduction
 
@@ -51,8 +40,8 @@ Key components of an [Aries solution](https://github.com/hyperledger/aries) are:
 
 - [agents](https://github.com/hyperledger/aries-rfcs/blob/master/concepts/0004-agents/README.md),
 - [DID communications](https://github.com/hyperledger/aries-rfcs/blob/master/concepts/0005-didcomm/README.md),
-- [protocols](https://github.com/hyperledger/aries-rfcs/blob/master/concepts/0003-protocols/README.md)
-- and [key management](https://github.com/hyperledger/aries-rfcs/blob/master/concepts/0051-dkms/README.md)
+- [protocols](https://github.com/hyperledger/aries-rfcs/blob/master/concepts/0003-protocols/README.md),
+- and [key management](https://github.com/hyperledger/aries-rfcs/blob/master/concepts/0051-dkms/README.md).
 
 Moreover, Hyperledger Aries develops a set of Request for Comment (RFCs) that describe important topics standardize across the Aries ecosystem. There are 2 types of Aries RFCs:
 
@@ -67,21 +56,23 @@ RFCs are for developers *building on* Aries. They don't provide guidance on how 
 [Hyperledger Ursa](https://www.hyperledger.org/use/ursa) is a shared cryptographic library, it enables implementations to avoid duplicating other cryptographic work and hopefully increase security in the process. The library is an opt-in repository (for Hyperledger and non Hyperledger projects) to place and use crypto. Hyperledger Ursa consists of sub-projects, which are cohesive implementations of cryptographic code or interfaces to cryptographic code. The Ursa repository can be found [here](https://github.com/hyperledger/ursa).
 
 
-## 7.  DIF: Decentralized identity
+## 7.  DIF: Decentralized identity Foundation
 
 [Decentralized Identity Foundation](https://identity.foundation/) (DIF) is an engineering-driven organization focused on developing the foundational elements necessary to establish an open ecosystem for decentralized identity and ensure interop between all participants.
 
 DIF builds on W3C and Hyperledger work referenced above. Some of its work originates from Hyperledger Aries and has been moved to DIF for more effective management of IPR. DIF has among others the following working groups.
 
 * [Identifiers and Discovery](https://identity.foundation/working-groups/identifiers-discovery.html): A key piece of the decentralized identity equation is how people, organizations, and devices can be identified and located without centralized systems of identifiers (e.g. email addresses). DIF members are actively working on protocols and implementations that enable creation, resolution, and discovery of decentralized identifiers and names across decentralized systems, like blockchains and distributed ledgers.
+* [Storage and Compute](https://identity.foundation/working-groups/storage-compute.html): Secure, encrypted, privacy-preserving storage and computation of data is a critical component of decentralized identity systems. As with identifiers and names must be self-sovereign to the owning entity, a user's identity data must remain private, only accessible to the entities they allow. DIF members are actively developing specs and reference implementations for provider-agnostic, run-anywhere solutions that provides these features.
 * [Authentication](https://identity.foundation/working-groups/authentication.html): Designing and implementing DID-based authentication specs, standards, and libraries used in authenticating DIDs across a wide variety of exchanges and use cases.
 * [Claims and Credentials](https://identity.foundation/working-groups/claims-credentials.html): The ability to verify the claims and assertions of identities is key in establishing trust among entities on a decentralized system that lacks a centralized hierarchy. The DIF Foundation has recently begun work on defining the specs, protocols, and tools it can provide to the ecosystem to help ecosystem participants and their customers easily integrate DID-signed claims into their apps and services.
 * [DID Communication](https://identity.foundation/working-groups/did-comm.html): Produce one or more high-quality specs that embody a method (“DIDComm”) for secure, private and (where applicable) authenticated message-based communication, where trust is rooted in DIDs and depends on the messages themselves, not on the external properties of the transport(s) used. 
-* [Secure Data Storage](https://identity.foundation/working-groups/secure-data-storage.html): Create one or more specifications to establish a foundational layer for secure data storage (including personal data), specifically              data models for storage and transport, syntax, data at rest protection, CRUD API, access control, synchronization, and at least a minimum viable HTTP-based interface compatible with W3C DIDs/VCs.
+* [Secure Data Storage](https://identity.foundation/working-groups/secure-data-storage.html): Create one or more specifications to establish a foundational layer for secure data storage (including personal data), specifically data models for storage and transport, syntax, data at rest protection, CRUD API, access control, synchronization, and at least a minimum viable HTTP-based interface compatible with W3C DIDs/VCs.
 
 ## 7.  Sovrin: SSI blockchain
 
 The [Sovrin Foundation](https://sovrin.org/) is a private-sector, international non-profit that was established to govern the world's first self-sovereign identity (SSI) network. The Sovrin blockchain network is based on Hyperledger Indy. Sovrin is governed by the [Sovrin Governance Framework](https://sovrin.org/library/sovrin-governance-framework/), which is a set of official documents that include legal agreements between participants in Sovrin. The services of Sovrin are registrations on the Sovrin blockchain: DIDs and DID Documents, VC schemas (generic), VC definitions (issuer-specific) and VC revocations. From 2017-2020, Sovrin has been funded via donations (Sovrin Alliance) and sale of future SOV tokens. In 2020, Sovrin started a transition process, revising its financing and structure.
+
 ## 8.  Trust-over-IP: full-stack governance
 
 The [Trust-over-IP foundation](https://trustoverip.org/) was founded mid 2020. It is defining a complete architecture for Internet-scale digital trust that combines both cryptographic trust at the machine layer and human trust at the business, legal, and social layers. It is has the following working group, as well as a few more that are still being started.
