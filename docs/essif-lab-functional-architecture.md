@@ -98,9 +98,15 @@ It is expected that there are already some interfaces out there that may turn ou
 
 There are two interface layers in this architecture
 
-The \`**ESSIF Glue**\` interface layer consists of a set of APIs between the Transaction (Validation) Engine and Transaction Result Dispatcher on the one hand, and the WHIV components on the other hand.<!-- The specification of these APIs can be found in \[reference needed\].--> The purpose of these APIs is to make calling the WHIV functions as simple as possible, given the functions of the Transaction Result Dispatcher and Transaction (Validation) Engine. Ultimately, we would like to see these APIs standardized. Having such APIs allows different Parties to create their own version of the WHIV components, supporting the SSI technologies as they see fit, and shrinking or expanding functionalities as they feel appropriate. Parties can then select such WHIV components as they see fit.
+The \`**ESSIF Glue**\` interface layer consists of a set of APIs between the TVE and TRD on the one hand, and the WHIV components on the other hand.<sup>[API.1]</sup>  The purpose of these APIs is to make calling the WHIV functions as simple as possible, given the functions of the Transaction Result Dispatcher and Transaction (Validation) Engine. Ultimately, we would like to see these APIs standardized. Having such APIs allows different Parties to create their own version of the WHIV components, supporting the SSI technologies as they see fit, and shrinking or expanding functionalities as they feel appropriate. Parties can then select such WHIV components as they see fit.
 
 The **SSI Tech APIs** interface layer is the union of the interfaces of the components within it. Any standardization in there is outside the scope of eSSIF-Lab.
+
+-------
+
+[API.1] When the specification of these APIs becomes available, a link thereto will be made available her.
+
+-------
 
 ## 3.  eSSIF-Lab Infrastructure Functional Components
 
@@ -142,7 +148,7 @@ In order to make the TVE work, a Validation Policy (or TVE Policy) is created by
 
 The Policy must be designed in such a way that it is extendable as new features will be called for in the future.
 
-The ability to create new transaction contexts and the availability of the TVE Policy enable the TVE to request the Verifier component of its Owner to obtain credentials of the types that it can use to fill in the transaction form when they satisfy the verification and validation requirements of its Owner.<!-- The specification of such requests is given in \[reference needed\]. -->
+The ability to create new transaction contexts and the availability of the TVE Policy enable the TVE to request the Verifier component of its Owner to obtain credentials of the types that it can use to fill in the transaction form when they satisfy the verification and validation requirements of its Owner.<sup>[TVE.7]</sup>
 
 When the Verifier returns such data (which comes with a list of proofs that the Verifier has checked), the TVE must then validate that data, i.e. determine whether or not it is valid for the specific transaction it is assembling the data for. The validation rules are Party-specific and hence come from the TVE policy. For simple cases, validation can simply consist of checking whether or not all verification proofs succeeded. At the other end of the validation spectrum, the TVE itself must make validation decisions, either electronically (according to the TVE policy) or by ‘outsourcing’ such decisions to human Agents of its Owner by providing an appropriate validation user interface.
 
@@ -161,6 +167,8 @@ As long as data is needed, the TVE can intermittently request the verifier to pr
 [TVE.5] Inconsistent or incoherent data is necessary for various purposes. First, it allows for correct further processing of the transaction. A non-existent postal code, or one that doesn’t match the delivery address, may hinder a fluent transaction processing, resulting in additional costs and processing times. Another purpose is the early warning or detection of possible fraud/abuse. Remember that part of the data is being asked for reducing transaction risk, and checking consistency/coherence of such data is part of the risk mitigation process.
 
 [TVE.6] This enables the TVE to pass the endpoint URI on to the Verifier when it requests for such a credential, which in turn can send it to the holder of other Parties enabling them to obtain the credential from that issuer endpoint if that other Party does not have that credential in its wallet. The endpoint URI can in fact be put in the policy, because the (human) Agent that creates/maintains the policy would need to know that the issuing Party is actually issuing such credentials, what their contents means, etc., and hence is capable of tracking down the URI where that Party issues the credentials.
+
+[TVE.7] A reference to this specification will be added when it becomes available (draft or otherwise).
 
 -----
 
@@ -252,7 +260,6 @@ After the issuer has created a credential (in one or more formats), it checks th
 -----
 
 
-
 ### 3.6.  Wallet Component, and its Policy/Preferences
 
 The primary purpose of the Wallet Component is to (securely) store data, and in particular:
@@ -277,6 +284,14 @@ Human beings cannot directly access any Wallet component, not even the ones they
 In order to make the Wallet component work, a Wallet Policy/Preferences object is created by, or on behalf of the Owner, the contents of which remains to be specified.
 
 ## 4.  Initial SSI-Agent Network Architecture
+
+:::info
+*The eSSIF-Lab functional architecture is not final. This chapter is an example of how work that is currently being done may already be documented for the purpose of furthering discussions and providing inspiration to readers.*
+:::
+
+Parties need to deploy (technical) components that act as their Agents. Individuals would typically have a mobile app whose user interface allows them to fulfill any or all of the roles of holder, verifier and issuer. Wallet functionality may be included in this app, but it might equally well live in the cloud, as a second (technical) Agent. An individual might also have (cloud) servers that Agents of other parties may contact for conducting transactions without the need for the individual itself to do something. All of this holds equally well for larger Organizations. 
+
+It is conceivable that the set of SSI functions is spread over multiple (technical) Agents, in which case there is going to be a need for such Agents to contact one another, and conduct transactions in a way that may differ from doing that with Agents of other Parties. Basically, this can be seen as Colleagues interacting with one another to get things done within one Organization. Seen from the outside, it looks like every Organization has a (smaller or larger) network of Agents. This chapter provides more details on this topic.
 
 The SSI-Agent Network Architecture has two viewpoints:
 
@@ -303,7 +318,10 @@ This chapter explains at a high level how electronic business transactions are b
 
 ### 5.1.  Overview
 
+<br/>
+
 ![eSSIF-Lab - high level trx overview](https://essif-lab.pages.grnet.gr/framework//images/high-level-trx-overview.png)
+
 The adjacent figure shows how a transaction is conducted at the highest abstraction level. One Party, called the ‘Requester’, sends a request for a product or service to another Party (that we will call the ‘Provider’). Then, they start to negotiate a ‘transaction agreement’, which means that they exchange data through various channels for the purpose of establishing the details of the product/service to be provided and the compensation, data needed to mitigate transaction risks, etc., all of which is necessary for the Parties to (individually/subjectively) decide whether or not to commit to the transaction. Section 3.2 provides more detail about this phase.
 
 After commitment, the producer works to provide the product or service, and the requester arranges the compensation. This phase is entirely up to the business, and hence out of scope of this document.
@@ -342,7 +360,9 @@ We foresee two ways in which credentials can be issued:
 
 ## 6.  Detailed Transaction Flows
 
-**this section is work in progress but is included to provide further intuition**
+:::info
+*The eSSIF-Lab functional architecture is not final. This chapter is an example of how work that is currently being done may already be documented for the purpose of furthering discussions and providing inspiration to readers.*
+:::
 
 This chapter explains the details of how electronic business transactions are being conducted using the eSSIF-Lab architectural components as described in chapter 2. We keep on using the parking permit example that we introduced in section 1.1. for illustrative purposes.
 
@@ -351,6 +371,10 @@ Note that both Parties, requester and provider, each have components as describe
 When reading the next sections, please be aware that when a component of one of these Parties communicates with another component, this other component may be of the same Party, as well as of the other Party. Figure 2 only shows components that belong to a single Party.
 
 ### 6.1.  Starting a Transaction
+
+:::info
+*The eSSIF-Lab functional architecture is not final. This section is an example of how work that is currently being done may already be documented for the purpose of furthering discussions and providing inspiration to readers.*
+:::
 
 The requester starts the transaction by pointing his web-browser to a web-page of the provider that (a) explains how to get a parking permit, and (b) provides a parking-permit application form that needs to be filled in. Technically, this means that the browser does a GET request to an endpoint that is serviced by the providers TVE component.
 
@@ -374,6 +398,8 @@ We assume that the provider has specified the form and the associated validation
 
 ### 6.2.  Stating a Transaction
 
-[text still needs to be written\]
+:::info
+*The eSSIF-Lab functional architecture is not final. This section is an example of how work that is currently being done may already be documented for the purpose of furthering discussions and providing inspiration to readers.*
+:::
 
 ![Generic Issuing with SSI service](https://essif-lab.pages.grnet.gr/framework//images/generic-issuing-with-ssi-service.png)
