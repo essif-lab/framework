@@ -3,7 +3,7 @@ id: ssi-standards
 title: SSI Standards
 ---
 
-The purpose of this document is to provide an overview of standards for self-sovereign identity (SSI) and their relevance to eSSIF-Lab.
+The purpose of this document is to provide an overview of standards activities for self-sovereign identity (SSI) and their relevance to eSSIF-Lab.
 
 ## 1.  Introduction
 
