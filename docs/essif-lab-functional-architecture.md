@@ -98,13 +98,9 @@ It is expected that there are already some interfaces out there that may turn ou
 
 There are two interface layers in this architecture
 
-The \`**ESSIF Glue**\` interface layer consists of a set of APIs between the TVE and TRD on the one hand, and the WHIV components on the other hand.<sup>[API.1]</sup>  The purpose of these APIs is to make calling the WHIV functions as simple as possible, given the functions of the Transaction Result Dispatcher and Transaction (Validation) Engine. Ultimately, we would like to see these APIs standardized. Having such APIs allows different Parties to create their own version of the WHIV components, supporting the SSI technologies as they see fit, and shrinking or expanding functionalities as they feel appropriate. Parties can then select such WHIV components as they see fit.
+The \`**ESSIF Glue**\` interface layer consists of a set of APIs between the TVE and TRD on the one hand, and the WHIV components on the other hand. The current version of its specifications can be found in the eSSIF-Lab [SSI Service repository](https://gitlab.grnet.gr/essif-lab/tno-ssi-service/developer-docs). The purpose of these APIs is to make calling the WHIV functions as simple as possible, given the functions of the Transaction Result Dispatcher and Transaction (Validation) Engine. Ultimately, we would like to see these APIs standardized. Having such APIs allows different Parties to create their own version of the WHIV components, supporting the SSI technologies as they see fit, and shrinking or expanding functionalities as they feel appropriate. Parties can then select such WHIV components as they see fit.
 
 The **SSI Tech APIs** interface layer is the union of the interfaces of the components within it. Any standardization in there is outside the scope of eSSIF-Lab.
-
--------
-
-[API.1] When the specification of these APIs becomes available, a link thereto will be made available her.
 
 -------
 
