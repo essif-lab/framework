@@ -5,6 +5,8 @@ title: eSSIF-Lab Concepts and Terminology
 
 The purpose of the eSSIF-Lab Terminology is to provide mental models that all of its stakeholders interpret in sufficiently the same way, so as to be able to talk, think and discuss about what it is we try to achieve and ways to achieve this.
 
+The initial version of this terminology is still under construction.
+
 ## Introduction
 
 Contributors to and users of eSSIF-Lab come from various backgrounds. Their culture may not be Western. English may not be their native tongue. They may be experts in non-technological topics. Working with one another presumes a setting where participants have some level of shared understanding. Often, sharing one's understanding at a superficial level suffices. Other situations require that underlying concepts are shared in a more in-depth fashion. It's like cars: people buying, selling, or driving cars do not need in-depth shared knowledge about cars, whereas (maintenance or construction) engineers or liability lawyers need to share a deeper knowledge of how cars do (or do not) work.
@@ -17,9 +19,9 @@ The Concepts and Terminology part of eSSIF-Lab aims helps eSSIF-Lab community pa
 
 The traditional tool for fostering common understanding is using glossaries, i.e. alphabetical lists of words relating to a specific subject, text, or dialect, with explanations; a brief dictionary ([OED](https://www.lexico.com/definition/glossary)). Examples include the [Sovrin Glossary](https://sovrin.org/library/glossary/) and the [NIST Glossary](https://csrc.nist.gov/glossary). Other initiatives attempt to provide more background, e.g. the [terminology for talking about privacy by data minimization](https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf) by Pfitzmann and Hansen (2010), or the [EBSI Terminology (login required)](https://ec.europa.eu/cefdigital/wiki/display/EBP/EBSI+Terminology).
 
-The eSSIF-Lab project will also develop a [Glossary](glossary).
+The eSSIF-Lab project will also develop a [Glossary](essif-lab-glossary).
 
-However, since the use of such glossaries is limited to short explanations, we will also provide (a) mental model(s) that provide a more in-depth explanation of the concepts that underly the words listed in the [Glossary](glossary).
+However, since the use of such glossaries is limited to short explanations, we will also provide (a) mental model(s) that provide a more in-depth explanation of the concepts that underly the words listed in the [eSSIF-Lab Glossary](essif-lab-glossary). 
 
 ## Mental Models
 
