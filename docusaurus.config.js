@@ -17,6 +17,7 @@ module.exports = {
         {to: 'docs/vision-and-purpose', label: 'Vision', position: 'left'},
         {to: 'docs/functional-architecture', label: 'Functional Architecture', position: 'left'},
         {to: 'docs/ssi-standards', label: 'SSI Standardization', position: 'left'},
+        {to: 'docs/terminology', label: 'Terminology', position: 'right'},
         {
           href: 'https://gitlab.grnet.gr/essif-lab/framework',
           label: 'Gitlab',
