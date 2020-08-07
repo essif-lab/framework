@@ -59,6 +59,10 @@ Here are some examples:
 Basically, anything you (or anyone else) can think of qualifies. That includes people, organizations, documents, data, ideas, etc. Things that you do not know that exist, but others do, also qualify.
 Since there is nothing that you, or someone else, can come up with that does not satisfy the criterion, everything qualifies as an Entity. We need the term as a basis for creating intensional definitions.
 
+:::tip 
+**The following definitions will be moved to a separate eSSIF-Lab Terminology section**
+:::
+
 ### Definition
 **Entity that comprises at a minimum**:
 
