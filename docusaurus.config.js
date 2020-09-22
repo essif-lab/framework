@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'eSSIF-Lab Framework',
   url: 'https://essif-lab.pages.grnet.gr/framework',
   baseUrl: process.env.STAGING && process.env.STAGING === 'true' ? '/framework/' : '/',
-  favicon: 'imgages/favicon.ico',
+  favicon: 'images/favicon.ico',
   organizationName: 'grnet',
   projectName: 'essif-lab',
   themeConfig: {
