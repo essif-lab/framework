@@ -1,6 +1,10 @@
 # README for terminology-related files.
 
+This directory contains the artefacts that can be used to generate Pages that explain concepts and terms, as well for generating a Glossary. These artefacts are expected to provide a rigorous underpinning of the decisions that have led to the specification of the semantics of the various terms.
+
 This document states the requirements for files in this directory, such that they can properly processed into useful and useable Docusaurus documentation.
+
+[Other text to be added, e.g.: 'How to contribute']
 
 ## Filenames
 
@@ -24,4 +28,3 @@ The `terminology/templates` directory contains templates for each of the <type>s
 Any term can be referred to in any documentation file, using the syntax %%<termref>%%, where <termref> is either the <conceptid> of a concept
 
 - <sometext> is a text that will be displayed as if it were a term
-

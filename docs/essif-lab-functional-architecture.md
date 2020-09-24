@@ -320,7 +320,7 @@ This chapter explains at a high level how electronic business transactions are b
 
 The adjacent figure shows how a transaction is conducted at the highest abstraction level. One Party, called the ‘Requester’, sends a request for a product or service to another Party (that we will call the ‘Provider’). Then, they start to negotiate a ‘transaction agreement’, which means that they exchange data through various channels for the purpose of establishing the details of the product/service to be provided and the compensation, data needed to mitigate transaction risks, etc., all of which is necessary for the Parties to (individually/subjectively) decide whether or not to commit to the transaction. Section 3.2 provides more detail about this phase.
 
-After commitment, the producer works to provide the product or service, and the requester arranges the compensation. This phase is entirely up to the business, and hence out of scope of this document.
+After commitment, the producer works to provide the %%product|essiflab-concept-product%% or service, and the requester arranges the compensation. This phase is entirely up to the business, and hence out of scope of this document.
 
 When all is done, Parties may issue a (signed) statement that specifies the results. Section 3.3. provides some more details about this phase.
 

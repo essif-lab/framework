@@ -1,25 +1,23 @@
-import Term from '../src/components/Term'
-
 ---
-id: term-<ExistingScope>-<NewTerm>
-title: Term: <NewTerm> (Scope:<ExistingScope>)
+id: <ExistingScopeID>-4-term-<NewTermID>
+title: Term: <New Term> (Scope: <Existing Scope>)
+scopeid: <ExistingScopeID>
+termid: <NewTermID>
+conceptref: <ExistingConceptScopeID>:<ExistingTermID>
+hoverText: "<Text that pops up when the user hovers over a reference to this term>"
 ---
-<!--A Term is a word or phrase that is used in at least one scope (context and/or for specific purposes) to refer to `<ExistingConcept>`, which is an existing %%concept%%.
-Please change every instance of 
-- `<ExistingScope>` into a text that refers to an existing %%scope%%;
-- `<ExistingConcept>` into a text that refers to an existing %%concept%%;
-- `NewTerm` into the term that this file links to `<ExistingConcept` within `ExistingScope>`.
+<!--A Term is a word or phrase that is used in at least one scope (context and/or for specific purposes) to refer to some concept.
+Please fill in the placeholders in this file as follows:
+- `<ExistingScopeID>`: machine readable text that identifies the scope in which this term is defined;
+- `<Existing Scope>`: human readable text that identifies the scope in which this term is defined;
+- `<NewTermID>`: machine readable text that identifies this term within <ExistingScopeID>;
+- `<New Term>`: human readable text that identifies this term within <Existing Scope>;
+- `<ExistingConceptScopeID>`: identifier of the scope in which the concept, to which the new term will refer, is known;
+- `<ExistingTermID>`: machine readable identifier that identifies a concept within <ExistingConceptScopeID>
 -->
 
-## Scope
-<!-- *REQUIRED* Short text (label, abbreviation) used to refer to the %%scope%% within which the %%term%% is defined. The default is essifLab.-->
-essifLab
-
-## Concept
-<!-- *REQUIRED* Specify the %%concept-file%% that serves as the definition of the %%concept%% to which `NewTerm` will refer-->
-
 ## Purpose
-<!--State the purpose(s) for which it is necessary (or at least: desirable) to define `NewTerm`.-->
+<!--State the purpose(s) for which it is necessary (or at least: desirable) to define <New Term>.-->
 
 <!--
 ---
