@@ -3,7 +3,7 @@ id: terminology
 title: eSSIF-Lab Concepts and Terminology
 ---
 
-:::tip **UNDER CONSTRUCTION**
+:::info **UNDER CONSTRUCTION**
 This initial version of the eSSIF-Lab Terminology is currently under construction.
 :::
 
