@@ -72,25 +72,6 @@ Note that this definition satisfies itself. Also note that a definition may be u
 ### Concept
 **A named set of entities that satisfy a criterion that specifies the necessary and sufficient conditions for being a member of that set**
 
-### Relation
-**A named set of entity-pairs (L,R), and a criterion C(SRC,TGT), where:**
-
-- **SRC and TGT are Concepts;**
-- **L is an element of SRC and R is an element of TGT;**
-- **the name of the relation combined with SRC and TGT identifies the set;**
-- **C(L,R) is satisfied.**
-
-For example, a relation could be defined by:
-
-- name=‘is owner of’
-- SRC=’Party’ and TGT=’Entity’ and
-- C(SRC,TGT)=‘SRC is the owner of TGT’
-
-This relation contains all pairs (X,Y) for which Party X is the owner of Y. The set of entity-pairs (L,R) is called the extension of the relation. The criterion C(L,R) is also referred to as the intension of the relation (as, together with this definition, it intensionally defines the relation)
-
-### Rule (or Constraint)
-**A Relation the intension of which consists of pairs that do not satisfy a specified expression that consists of concept (elements) and relations, and that can logically be evaluated.**
-
 ### Pattern
 **A coherent set of Concepts, Relations between these Concepts, and Rules that are expressed in terms of these Concepts and Relations.**
 
