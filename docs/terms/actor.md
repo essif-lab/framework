@@ -1,11 +1,25 @@
 ---
 id: actor
-title: Actor
-hoverText: "An entity capable of performing formal actions (person, computer)"
+title: "Concept: Actor (Scope: eSSIF-Lab)"
+scopeid: essifLab
+termid: actor
+hoverText: "Entity that can act (do things), e.g. people, machines, but not organizations."
 ---
 
-## Scope
+## Criterion:
+Entity that is capable of acting (doing things).
 
-## Criterion
+## Examples:
+People obviously qualify, as do robots and other machines. Stones, pictures, ideas, etc. do not qualify.
 
-## Examples
+We specifically note that enterprises, governments, and other organizations do not qualify. 
+
+### Background:
+further background on this concept is provided by the ['Party-Action' pattern|essifLab-pattern-party-action]
+
+---
+[^1]: Reasoning means: inferring conclusions from data, regardless of the kind of logic that is being used, or whether the reasoning is coherent, or consistent.
+
+[^2]: This means that the party can do this all by itself. For humans, the rights for this are laid down e.g. in the [ECHR](https://www.echr.coe.int "European Convention of Human Rights") ([ECHR articles 9-11](https://www.echr.coe.int/Documents/Convention_ENG.pdf))
+
+[^3]: While the case can be made that (some) electronic components can reason, they do not do so in a self-sovereign fashion as intended by this definition. We do not want to discuss AI-equipment here.
