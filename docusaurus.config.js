@@ -1,3 +1,4 @@
+const path = require('path');
 module.exports = {
   title: 'eSSIF-Lab',
   tagline: 'eSSIF-Lab Framework',
@@ -73,4 +74,7 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    path.resolve(__dirname, './plugins/terminology-parser')
+  ]
 };

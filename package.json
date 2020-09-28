@@ -6,11 +6,14 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy"
+    "deploy": "docusaurus deploy",
+    "parse": "docusaurus parse",
+    "glossary": "docusaurus glossary"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.60",
     "@docusaurus/preset-classic": "^2.0.0-alpha.60",
+    "@material-ui/core": "^4.11.0",
     "classnames": "^2.2.6",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
@@ -26,5 +29,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "parse-md": "^2.0.4"
   }
 }
