@@ -1,7 +1,6 @@
 ---
 id: functional-architecture
 title: eSSIF-Lab Functional Architecture
-scopeid: essifLab
 ---
 
 The purpose of the functional architecture and its views is to
