@@ -8,14 +8,14 @@ This document states the requirements for files in this directory, such that the
 
 ## Filenames
 
-All file MUST have the structure: `<termid>.mdx`, where <termid> is the (all lowercase) identifier of a term (including the term that is used when defining a concept). They MUST be a lowercase identifier that only uses charancters `a`-`z` and `-`.
+All file MUST have the structure: `<termid>.mdx`, where `<termid>` is the (all lowercase) identifier of a term (including the term that is used when defining a concept). They MUST be a lowercase identifier that only uses charancters `a`-`z` and `-`.
 
 ## Templates
 
-The `terms/templates` directory contains templates for each of the <type>s. A template file has comments that hold, amongst others, requirements for the contents of instances of that template.
+The `terms/templates` directory contains templates for each of the `<type>`s. A template file has comments that hold, amongst others, requirements for the contents of instances of that template.
 
 ## Referring to terms in documentation files
 
-Any term can be referred to in any documentation file, using the syntax %%<termref>%%, where <termref> is either the <conceptid> of a concept
+Any term can be referred to in any documentation file, using the syntax %%`<termref>`%%, where `<termref>` is either the `<conceptid>` of a concept
 
-- <sometext> is a text that will be displayed as if it were a term
+- `<sometext>` is a text that will be displayed as if it were a term
