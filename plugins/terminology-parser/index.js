@@ -46,7 +46,7 @@ function parser(err, files) {
     console.log('Error', err);
   } else {
     // Iterate through the .md(x) files
-    for(let filepath of files.filter(filepath => filepath != './docs/instructions.md')) {
+    for(let filepath of files.filter(filepath => filepath != './docs/terminology-plugin-instructions.md')) {
       fs.readFile(filepath, 'utf8', function(err, content) {
         if (err) throw err;
         // Regex for finding the pattern:  %token_1,token_2%
