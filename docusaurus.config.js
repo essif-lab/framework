@@ -7,6 +7,7 @@ module.exports = {
   favicon: 'images/favicon.ico',
   organizationName: 'grnet',
   projectName: 'essif-lab',
+  onBrokenLinks: 'log',
   themeConfig: {
     navbar: {
       // title: 'ESSIF-Lab',
