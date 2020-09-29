@@ -16,6 +16,6 @@ The `terms/templates` directory contains templates for each of the `<type>`s. A 
 
 ## Referring to terms in documentation files
 
-Any term can be referred to in any documentation file, using the syntax %%`<termref>`%%, where `<termref>` is either the `<conceptid>` of a concept
+Any term can be referred to in any documentation file, using the syntax `<termref>`  where `<termref>` is either the `<conceptid>` of a concept
 
 - `<sometext>` is a text that will be displayed as if it were a term

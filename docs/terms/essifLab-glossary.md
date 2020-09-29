@@ -15,17 +15,17 @@ This glossary lists the basic concepts that are needed by the various stakeholde
 <!--Here, the sources should be identified from which the glossary entries (and their descriptions) are to be collected-->
 
 ### Include
-<!--Specify the %%scope-files|scope-file%% that are to serve as a source for this glossary-->
+<!--Specify the scope-file that are to serve as a source for this glossary-->
 * eSSIF-Lab
 
 ### Terms
-<!--Specify the %%term-files|term-file%% that are to serve as a source for this glossary. If a term is defined in a scope as well as in a %%term-file%%, the latter takes precedence.-->
+<!--Specify the term-files that are to serve as a source for this glossary. If a term is defined in a scope as well as in a term-file  the latter takes precedence.-->
 
 ### Patterns
-<!--Specify the %%pattern-files|pattern-file%% that are to serve as a source for this glossary. If a term is defined in a scope or as a term as well as in a %%pattern-file%%, the latter takes precedence.-->
+<!--Specify the pattern-files that are to serve as a source for this glossary. If a term is defined in a scope or as a term as well as in a pattern-file, the latter takes precedence.-->
 
 ### Concepts
-<!--Specify the %%concept-files|concept-file%% that are to serve as a source for this glossary. If a term is defined in a scope, or as a term, or in a pattern as well as in a %%concept-file%%, the latter takes precedence.-->
+<!--Specify the concept-files that are to serve as a source for this glossary. If a term is defined in a scope, or as a term, or in a pattern as well as in a concept-file  the latter takes precedence.-->
 
 <!--
 ---

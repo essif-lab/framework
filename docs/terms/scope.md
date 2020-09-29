@@ -1,39 +1,33 @@
 ---
-id: scope
-title: "Concept: Scope (Scope: essifLabTerminology)"
+id: essifLabTerminology-scope
+title: eSSIF-Lab Terminology
 scopeid: essifLabTerminology
-termid: scope
-hoverText: "a scope or context is [more text"
+hoverText: "<essifLabTerminology-scope hovertext>"
 ---
 
-:::info
-just for testing
-:::
+## Governance
+<!--This section identifies the organizational body (Jurisdiction) that governs the scope. Optionally, a reference to the governance framework/procedures may be made.-->
+The [eSSIF-Lab project](https://essif-lab.eu/) governs the terminology within this scope, according to the procedures mentioned in the [eSSIF-Lab Framework](https://essif-lab.pages.grnet.gr/framework/docs/terminology/).
 
-## Short Description
-<!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
-A Scope is an alphabetically sorted list of termsort) explanations, usually aimed to help people understand texts around a certain (set of) topic(s) in some context(s). However, a glossary may also be created for the purpose of being included in other glossaries (as a construction aid to such glossaries), or for still other purposes.
+## Objectives/Issues
+<!--State the purpose for having the scope in terms of objectives that are aimed for and/or issues that are to be addressed.-->
+Contributors to and users of eSSIF-Lab come from various backgrounds. Their culture may not be Western. English may not be their native tongue. They may be experts in non-technological topics. Working with one another presumes a setting where participants have some level of shared understanding. Often, sharing one's understanding at a superficial level suffices. Other situations require that underlying concepts are shared in a more in-depth fashion. It's like cars: people buying, selling, or driving cars do not need in-depth shared knowledge about cars, whereas (maintenance or construction) engineers or liability lawyers need to share a deeper knowledge of how cars do (or do not) work.
 
-## Purpose
-<!--Describe why the concept is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What objectives does it help realize? Why is this conceptevant within its scope of definition?-->
-A scope may serve various purposes, the most important one of which would be to help people understand texts around a certain (set of) topic(s) in some context(s).
+We expect to see situations of "language confusion", i.e. in which people use words or phrases, the intension (not: intention) of which differs from the interpretation of some listeners/readers. Sometimes a casual glance at a dictionary or glossary is the solution. In other cases, deeper understanding matters, e.g. in when drafting specifications or contracts. Then we need more than a set of definitions.
 
-## Criteria
-<!--REQUIRED--How is this concept different from related ideas? What are essential characteristics that must be true? This is where you specify the [intensional definition](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions) of the concept, i.e. the necessary and sufficient conditions for when the term should be used. This makes that the conceptomes crystal clear. In the case of nouns, this is equivalent to specifying the properties that an object needs to have in order to be counted as a referent of the term.-->
-an alphabetical list of words with (short) explanations, that exists for the purpose of helping people to get a first understanding of the meaning of these words in at least one specific context.
+The Concepts and Terminology part of eSSIF-Lab aims helps eSSIF-Lab community participants understand one another at whatever level of precision they need.
 
-## Examples
-<!--This (optional) section contains examples, both of what satisfies the definition (and hence qualifies as an instance of Glossary), ans what does not. If you can think of examples for which the criterion may not (always) work, then describe them, too, and inform the reader why this hasn't affected the definition (yet) - e.g. because such cases are irrelevant to the scope within which the term is defined.-->
-Examples include the [eSSIF-Lab Glossary](essif-lab-glossary), the [Sovrin Glossary](https://sovrin.org/library/glossary/), the [Glossary of Internet Terms](https://www.internetsociety.org/internet/glossary-internet-terms/), the glossary of the [NIST Computer Security Resource Center](https://csrc.nist.gov/glossary), and glossaries for Legal Terms, e.g. of the [US](https://www.uscourts.gov/glossary), [Singapore](https://www.supremecourt.gov.sg/services/self-help-services/glossary-of-terms), the [UK](https://www.copfs.gov.uk/involved-in-a-case/glossary-of-legal-terms).
+## Scope URI
+<!--Optionally specify the URI by which this scope may be identified-->
 
-## Related Concepts
-<!--This (optional) section lists words/phrases that are encountered in other contexts that have the same or a sufficiently similar meaning as Glossary. In this section you may point out the (subtle) differences between Glossary and this related terminology. This helps readers better/deeper understand Glossary, and how it may be used to relate to existing texts. Ideally, such references are accompanied with links to (preferredly authoritative) sources.-->
-- Scope - this is more extensive; it may include e.g. information on pronunciation, etymology, usage, example sentences,synonyms, etc. See [askdifference.com](https://www.askdifference.com/scope-vs-glossary/)
-- Vocabulary - this is a body of words used in a particular language or field of expertise. A Glossary can (alphabetically) list such words.
+## Inclusions
+<!--This scope may include other scopes, which means that everything in that other scope is also considered part of this scope. In case of collisions, this scope MUST provide a means to resolve such conflicts without modifying anything in included scopes. For eSSIF-Lab, we include `essifLabTerminology`-->
 
 ## Notes
-<!--This (optional) section is the place to put anything for which there is no other good place to put it.-->
-The [eSSIF-Lab Glossary](essif-lab-glossary) contains the words that are defined within the scope of the [eSSIF-Lab framework](introduction).
+<!--Anything els that's worth mentioning.-->
+
+## Tags
+<!--Add hash tags here that allow us to group concepts in useful ways.-->
 
 <!--
 ---

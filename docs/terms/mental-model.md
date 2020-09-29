@@ -6,9 +6,11 @@ patternid: mental-model
 hoverText: "This pattern captures the foundational concepts and relations that we need for creating, maintaining and using  (decentralized) vocabularies (terminologies) that groups of people can use for the specific purposes they pursue."
 ---
 
+import { Term } from '..\..\src\components'
+
 ## Purpose
 <!--Concisely describe what can you do with the pattern that is (at least) harder if you didn't have it.-->
-This pattern captures the foundational concepts and relations that we need for creating, maintaining and using  vocabularies (terminologies) that groups of people can use for the specific purposes they pursue. Alternatively, we need these concepts to allow people to use 'decentralized vocabularies' that %%parties|party%% may create, maintain and use in a self-sovereign fashion - which means that each of them decides for itself what terms to use in what meaning, yet be able to communicate with other such %%parties|party%% in such a way that a correct understanding of what the other means, can more or less be guaranteed.
+This pattern captures the foundational concepts and relations that we need for creating, maintaining and using  vocabularies (terminologies) that groups of people can use for the specific purposes they pursue. Alternatively, we need these concepts to allow people to use 'decentralized vocabularies' that <Term popup="Entity that has knowledge about what exists, ways to reason with that knowledge, and ways for making decisions in a Self-Sovereign fashion." reference="party">parties</Term> may create, maintain and use in a self-sovereign fashion - which means that each of them decides for itself what terms to use in what meaning, yet be able to communicate with other such <Term popup="Entity that has knowledge about what exists, ways to reason with that knowledge, and ways for making decisions in a Self-Sovereign fashion." reference="party">parties</Term> in such a way that a correct understanding of what the other means, can more or less be guaranteed.
 
 ## Introduction
 <!--Gently introduce the pattern, by referring to real-world situations and using colloquial terms, so that when someone has read the text, (s)he knows what it is about, and is ready to delve into the specifics of the pattern-->

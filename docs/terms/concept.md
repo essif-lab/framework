@@ -6,6 +6,8 @@ termid: concept
 hoverText: "A Concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing."
 ---
 
+import { Term } from '..\..\src\components'
+
 ## Short Description
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
 A Concept tries to capture the idea behind a classification of entities[^1], allowing us to reason about everything in the class as if it were one thing. For example, the ideas ([mental representations](https://en.wikipedia.org/wiki/Mental_representation)) you have when processing the sentences "I can drink beer from a beer glass' and 'I can drink beer from a coffee mug' shows that the concepts that are behind 'beer glass' and 'coffee mug' differ. Note that in order to communicate about this idea, we also need a word or phrase (i.e.: a termat we can use to refer to (instances of) this idea.
@@ -22,8 +24,8 @@ A (description/specification of a) Concept MUST be [intensionally defined](https
 <!--Provide a few sentences in which you give examples that obviously qualify as instances of `Concept`, and that do NOT obviously qualify. Also, provide examples that are not (so) obvious, but help users to better understand its intension.-->
 
 ## Related Concepts
-<!--Link to any %%concepts|concept%% that are similar but distinct, with a note about the relationship.-->
-* %%Term%% is a label that is used in some context to refer to a %%Concept%%[^2], the set of entities that satisfy the concept's criteria, or an arbitrary element of that set. Different contexts may use different terms to refer to a single concept. In a single context, a single term should be used to refer to an individual concept.
+<!--Link to any <Term popup="A Concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing." reference="concept">concepts</Term> that are similar but distinct, with a note about the relationship.-->
+* Term is a label that is used in some context to refer to a %%Concept%%[^2], the set of entities that satisfy the concept's criteria, or an arbitrary element of that set. Different contexts may use different terms to refer to a single concept. In a single context, a single term should be used to refer to an individual concept.
 
 * Concept ... ("Scope") is related in several ways. First, there is (precisely, or at most one) Scope that governs the definition/specification of the Concept. Second, there may be (any number of) Scopes that use the Concept, i.e. within which Terms are defined that refer to the Concept
 
