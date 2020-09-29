@@ -1,5 +1,9 @@
 image: node:13.7
 
+stages:
+  - build
+  - deploy
+
 before_script:
   - node -v
 
@@ -11,7 +15,15 @@ cache:
 before_script:
   - yarn
 
+build:
+  stage: build
+  script:
+    - yarn parse
+    - yarn glossary
+    - STAGING=true yarn build
+
 pages:
+  stage: deploy
   script:
     - STAGING=true  yarn build
     - rm -rf public
