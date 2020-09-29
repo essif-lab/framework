@@ -53,3 +53,34 @@ This command generates static content into the `build` directory and can be serv
 ### Deployment
 
 Just push your changes to the `master` branch and they will be automatically deployed at https://essif-lab.pages.grnet.gr/framework/
+
+### Terminology/Glossary functionality
+
+This project has a plugin integrated that can generate terms in a useful way so contributors can write a special syntax to reference terms and generate a glossary based on those terms.
+
+In order to test this functionality locally, you can use Docker and/or Docker Compose, as follows.
+
+### Docker
+
+You can run the following commands to see the output of the website, just as it will look like when deployed to a production environment:
+
+```
+docker build -t essif-lab-terminology:latest .
+docker run -ti -p 5000:5000 essif-lab-terminology:latest
+```
+
+You can then visit http://localhost:5000 to view the website
+
+To stop docker from running, you can just hit `ctrl+c` in the terminal window.
+
+### Docker Compose
+
+Docker Compose is a wrapper of docker, so you can run less commands to do the same job as you would do with docker commands. You only need to run:
+
+```
+docker-compose up --force-recreate --build
+```
+
+and then visit http://localhost:5000 to view the website.
+
+To stop docker-compose, just like docker, hit `ctrl+c` in the terminal window.
