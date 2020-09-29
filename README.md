@@ -58,9 +58,11 @@ Just push your changes to the `master` branch and they will be automatically dep
 
 This project has a plugin integrated that can generate terms in a useful way so contributors can write a special syntax to reference terms and generate a glossary based on those terms.
 
-In order to test this functionality locally, you can use Docker and/or Docker Compose, as follows.
+This plugin is designed to work in the pre-build stage. This means, it is strongly suggested that you do **not** run manually
+the script in your local computer (or at least do not commit changes). In order to view the final result, you can instead use
+Docker and/or Docker Compose, as follows.
 
-### Docker
+#### Docker
 
 You can run the following commands to see the output of the website, just as it will look like when deployed to a production environment:
 
@@ -73,7 +75,7 @@ You can then visit http://localhost:5000 to view the website
 
 To stop docker from running, you can just hit `ctrl+c` in the terminal window.
 
-### Docker Compose
+#### Docker Compose
 
 Docker Compose is a wrapper of docker, so you can run less commands to do the same job as you would do with docker commands. You only need to run:
 
