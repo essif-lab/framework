@@ -1,31 +1,30 @@
 # README for terminology-related files.
 
 :::info
-under construction
+The entire terminology section is still experimental/under construction
 :::
 
-This document states the requirements for files in this directory, such that they can properly processed into useful and usable Docusaurus documentation.
+## Purpose
 
-## Filenames
+The purpose of the eSSIF-Lab Terminology Corpus is to help people that want or need to
+- understand the gist of texts about various topics (learners, CxO's);
+- write texts on (a) specific topic(s) (authors);
+- deeply understand texts (reviewers, domain experts);
+- prevent and/or resolve misunderstandings with others working on the same/similar topics (engineers);
+- make (e.g. design) decisions concerning specific topics based on solid, consistent and coherent arguments;
+- create code and/or data models for automation purposes;
+- etc.
 
-All file MUST have the structure: `<scopeid>-<type>-<instanceid>.mdx`, where
+We have an [introduction](terminology) that explains how we go about all this.
 
-- `<scopeid>` is the (all lowercase) identifier of an existing scope, i.e. the file `<scopeid>-1-scope.mdx` must exist.
-- `<type>` MUST be any of the following:
-  - `scope`
-  - `pattern`
-  - `concept`
-  - `term`
-  - `glossary`
-- `<instanceid>` MUST be a lowercase identifier that only uses characters `a`-`z` and `-`.
+## Directory Contents
 
-## Templates
+- Directories:
+  - `eSSIFLab`, which contains all the documents for the scope `eSSIFLab`; its subdirectories contain the documents for the various subscopes, as appropriate.
+  - `templates` (directory) contains templates that authors may use to [contribute to, or specify new content](readme-making-contributions).
 
-The `terminology/templates` directory contains templates for each of the types. A template file has comments that hold, amongst others, requirements for the contents of instances of that template.
-
-## Referring to terms in documentation files
-
-Any term can be referred to in any documentation file, using the syntax `%%<termref>%%`, where `<termref>` is either the `<conceptid>` of a concept
-
-- `<sometext>` is a text that will be displayed as if it were a term
-
+- Files:
+  - [terminology](terminology) specifies the purposes that the terminology work intends to serve, and the ways in which this is done.
+  - [readme-making-contributions](readme-making-contributions) is a guide for people that want to create, generate or update new ***content***.
+  - [readme-generator-extensions](readme-generator-extensions) is a guide for people that want to create or modify the generators that produce the actual terminological artifacts from the content produced by authors.
+  - [scope-registration.json](scope-registration.json) defines the set of root-scopes, and may define a subscope tree within them.
