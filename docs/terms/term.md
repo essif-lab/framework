@@ -20,7 +20,7 @@ Understanding words or phrases uttered by others requires that we are able to 't
 
 ## Criteria
 <!--How is this concept different from related ideas? What are essential characteristics that must be true? This is where you specify the [intensional definition](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions) of the concept, i.e. the necessary and sufficient conditions for when the term should be used. This makes that the conceptomes crystal clear. In the case of nouns, this is equivalent to specifying the properties that an object needs to have in order to be counted as a referent of the term.-->
-A Term MUST be a word or phrase that is linked to at least one %%context|scope%% and refers to precisely one %%concept|concept%%. 
+A Term MUST be a word or phrase that is linked to at least one %%context|scope%% and refers to precisely one %%concept|concept%%.
 
 ## Examples
 <!--Provide a few sentences in which you give examples that obviously qualify as instances of `Term`, and that do NOT obviously qualify. Also, provide examples that are not (so) obvious, but help users to better understand its intension.-->

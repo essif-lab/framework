@@ -14,4 +14,4 @@ Something toward which effort is directed: an aim, goal, or end of action ([Merr
 Anything that, according to a %%Party|party%% c.q. its way of thinking, is important to be realized, qualifies as an Objective (and identifies its owner as that %%Party|party%%)
 
 ### Xxx:
-The %%Knowledge|knowledge%%/judgements of a %%Party|party%% are what makes something an %%Objectiv%%e (owned by that %%Party|party%%).
+The %%Knowledge|knowledge%%/judgements of a %%Party|party%% are what makes something an %%Objective (owned by that Party|party%%).

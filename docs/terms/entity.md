@@ -4,13 +4,12 @@ title: "Entity"
 scopeid: essifLab
 type: concept
 typeid: entity
-hoverText: "Something that is known to exist"
+hoverText: "something that is done by an actor"
 ---
 
 ## Criterion:
-Something that is known to exist within some %%knowledge|knowledge%%
 
 ## Criterion:
 Something, anything, that some %%party|party%% knows to exist
 
-### Xxx:
+### Background:

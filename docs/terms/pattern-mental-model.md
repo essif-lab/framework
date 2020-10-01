@@ -1,5 +1,5 @@
 ---
-id: pattern-mental-model
+id: essifLabTerminology-pattern-mental-model
 title: "Pattern: Mental Models (Scope: essifLabTerminology)"
 scopeid: essifLabTerminology
 type: pattern
