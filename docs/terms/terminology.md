@@ -32,7 +32,7 @@ People use %%words and phrases (terms)|term%% to (tangibly) refer to the (intang
 
 The Concepts and Terminology part of eSSIF-Lab aims helps eSSIF-Lab community participants understand one another at whatever level of precision they need. This chapter presents a number of aids we will develop/maintain to serve that purpose.
 
-[semantics]: we use the term semantics|semantics%% to refer to the mapping between terms|term%% and %%concepts|concept%%. We use the term %%scope|scope%% ([OED](https://www.lexico.com/definition/scope)) to refer to the extent of the area or subject matter that a semantics is relevant and/or being used. From this definition, it seems obvious that every %%party|party%% has - and maintains - its own (subjective) semantics. The (erroneous) assumption that people (automatically) share a semantics is the cause of many misunderstandings.
+[semantics]: we use the term semantics|semantics%% to refer to the mapping between terms|term%% and %%concepts|concept%%. We use the term %%scope|scope%% ([OED](https://www.lexico.com/definition/scope)) to refer to the extent of the area or subject matter that a semantics is relevant and/or being used. From this definition, it seems obvious that every %%party|party%% has - and maintains - its own (subjective) semantics. The (erroneous) assumption that people (automatically) share a semantics is the cause of many misunderstandings. 
 
 ## Concepts, Terminologies, Glossaries, Dictionaries, etc.
 
