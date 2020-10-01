@@ -1,16 +1,15 @@
 ---
 id: owner
-title: "Concept: Owner (Scope: eSSIF-Lab)"
+title: "Owner"
 scopeid: essifLab
-termid: owner
+type: concept
+typeid: owner
 hoverText: "a Party that has the legal or rightful title to control something."
 ---
 
-import { Term } from '..\..\src\components'
-
 ## Short Description
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
-The property of a <Term popup="Entity that has knowledge about what exists, ways to reason with that knowledge, and ways for making decisions in a Self-Sovereign fashion." reference="party">Party</Term> that has the legal or rightful title to control something. We interpret 'legal' and 'rightful' as terms that apply to _any_ <Term popup="<Text that pops up when the user hovers over a reference to this concept>" reference="jurisdiction">Jurisdiction</Term> (that is: not just legal/national jurisdictions, but also those of other organizations/parties). 
+The property of a %%Party|party%% that has the legal or rightful title to control something. We interpret 'legal' and 'rightful' as terms that apply to _any_ %%Jurisdiction|jurisdiction%% (that is: not just legal/national jurisdictions, but also those of other organizations/parties).
 
 ## Purpose
 <!--Describe why the concept is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What objectives does it help realize? Why is this concept relevant within its scope of definition?-->

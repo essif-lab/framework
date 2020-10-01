@@ -1,9 +1,10 @@
 ---
 id: jurisdiction
-title: "Concept: Jurisdiction (Scope: eSSIF-Lab)"
+title: "Jurisdiction"
 scopeid: essifLab
-termid: jurisdiction
-hoverText: "<Text that pops up when the user hovers over a reference to this concept>"
+type: concept
+typeid: jurisdiction
+hoverText: "jurisdiction - popuptext"
 ---
 
 ## Short Description

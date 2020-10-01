@@ -1,9 +1,10 @@
 ---
 id: tve
-title: "Concept: TVE - Transaction Validation Engine (Scope: eSSIF-Lab)"
+title: "TVE - Transaction Validation Engine"
 scopeid: essifLab
-termid: tve
-hoverText: "<Text that pops up when the user hovers over a reference to this concept>"
+type: concept
+typeid: tve
+hoverText: "tve - popuptext"
 ---
 
 ## Short Description

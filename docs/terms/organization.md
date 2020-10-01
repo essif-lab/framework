@@ -1,8 +1,9 @@
 ---
 id: organization
-title: "Concept: Organization (Scope: eSSIF-Lab)"
+title: "Organization"
 scopeid: essifLab
-termid: organization
+type: concept
+typeid: organization
 hoverText: "popuptext for Organization tbd"
 ---
 

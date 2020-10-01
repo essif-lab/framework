@@ -1,9 +1,10 @@
 ---
 id: action
-title: "Concept: Action (Scope: eSSIF-Lab)"
+title: "Action"
 scopeid: essifLab
-termid: action
-hoverText: "something that is done by an actor"
+type: concept
+typeid: action
+hoverText: "hovertext for 'action'"
 ---
 
 ## Criterion:

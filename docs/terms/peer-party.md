@@ -1,17 +1,16 @@
 ---
 id: peer-party
-title: "Term: Peer Party (Scope: eSSIF-Lab)"
+title: "Peer Party"
 scopeid: essifLab
-termid: peer-party
+type: term
+typeid: peer-party
 conceptref: essifLab:party
 hoverText: "(Peer Party of a Party): the other Party that is a participant in a transaction of that Party."
 ---
 
-import { Term } from '..\..\src\components'
-
 ## Purpose
 <!--State the purpose(s) for which it is necessary (or at least: desirable) to define <New Term>.-->
-Within the context of a (business) transaction, at least two <Term popup="Entity that has knowledge about what exists, ways to reason with that knowledge, and ways for making decisions in a Self-Sovereign fashion." reference="party">Parties</Term> participate. From the perspective of any such party, we need the ability to refer to (any of) the other party/parties.
+Within the context of a (business) transaction, at least two %%Parties|party%% participate. From the perspective of any such party, we need the ability to refer to (any of) the other party/parties.
 
 ## Notes
 <!--Usually, the meaning of a term will not be _exactly_ the same as that of the concept to which it refers. Often, there are slight differences in meaning, or the term may emphasize specific characteristics of the concept, so as to accommodate specific needs of the scope in which it is defined. Please describe such deviations/emphasized characteristics in this section, and which needs that helps accommodate.-->

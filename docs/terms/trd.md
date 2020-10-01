@@ -1,9 +1,10 @@
 ---
 id: trd
-title: "Concept: TRD - Transaction Result Dispatcher (Scope: eSSIF-Lab)"
+title: "TRD - Transaction Result Dispatcher"
 scopeid: essifLab
-termid: trd
-hoverText: "<Text that pops up when the user hovers over a reference to this concept>"
+type: concept
+typeid: trd
+hoverText: "trd - popuptext"
 ---
 
 ## Short Description

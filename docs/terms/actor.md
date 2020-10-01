@@ -1,8 +1,9 @@
 ---
 id: actor
-title: "Concept: Actor (Scope: eSSIF-Lab)"
+title: "Actor"
 scopeid: essifLab
-termid: actor
+type: concept
+typeid: actor
 hoverText: "Entity that can act (do things), e.g. people, machines, but not organizations."
 ---
 
@@ -12,7 +13,7 @@ Entity that is capable of acting (doing things).
 ## Examples:
 People obviously qualify, as do robots and other machines. Stones, pictures, ideas, etc. do not qualify.
 
-We specifically note that enterprises, governments, and other organizations do not qualify. 
+We specifically note that enterprises, governments, and other organizations do not qualify.
 
 ### Background:
 further background on this concept is provided by the ['Party-Action' pattern|essifLab-pattern-party-action]
