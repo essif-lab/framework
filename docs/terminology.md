@@ -36,7 +36,7 @@ People use <Term popup="undefined" reference="term">words and phrases (terms)</T
 
 The Concepts and Terminology part of eSSIF-Lab aims helps eSSIF-Lab community participants understand one another at whatever level of precision they need. This chapter presents a number of aids we will develop/maintain to serve that purpose.
 
-[semantics]: we use the term <Term popup="semantics popover" reference="semantics">semantics</Term> to refer to the mapping between <Term popup="undefined" reference="term">terms</Term> and <Term popup="A Concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing." reference="concept">concepts</Term>. We use the term <Term popup="<essifLabTerminology-scope hovertext>" reference="scope">scope</Term> ([OED](https://www.lexico.com/definition/scope)) to refer to the extent of the area or subject matter that a semantics is relevant and/or being used. From this definition, it seems obvious that every <Term popup="Entity that has knowledge about what exists, ways to reason with that knowledge, and ways for making decisions in a Self-Sovereign fashion." reference="party">party</Term> has - and maintains - its own (subjective) semantics. The (erroneous) assumption that people (automatically) share a semantics is the cause of many misunderstandings. 
+[semantics]: we use the term <Term popup="semantics popover" reference="semantics">semantics</Term> to refer to the mapping between <Term popup="undefined" reference="term">terms</Term> and <Term popup="A Concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing." reference="concept">concepts</Term>. We use the term <Term popup="<essifLabTerminology-scope hovertext>" reference="scope">scope</Term> ([OED](https://www.lexico.com/definition/scope)) to refer to the extent of the area or subject matter that a semantics is relevant and/or being used. From this definition, it seems obvious that every <Term popup="Entity that has knowledge about what exists, ways to reason with that knowledge, and ways for making decisions in a Self-Sovereign fashion." reference="party">party</Term> has - and maintains - its own (subjective) semantics. The (erroneous) assumption that people (automatically) share a semantics is the cause of many misunderstandings.
 
 ## Concepts, Terminologies, Glossaries, Dictionaries, etc.
 
@@ -87,6 +87,10 @@ Here are some examples:
 
 Basically, anything you (or anyone else) can think of qualifies. That includes people, organizations, documents, data, ideas, etc. Things that you do not know that exist, but others do, also qualify.
 Since there is nothing that you, or someone else, can come up with that does not satisfy the criterion, everything qualifies as an Entity. We need the term as a basis for creating intensional definitions.
+
+:::note 
+**The following definitions will be moved to a separate eSSIF-Lab Terminology section**
+:::
 
 ### Definition
 **Entity that comprises at a minimum:
