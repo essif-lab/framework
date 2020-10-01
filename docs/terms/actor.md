@@ -16,7 +16,7 @@ People obviously qualify, as do robots and other machines. Stones, pictures, ide
 We specifically note that enterprises, governments, and other organizations do not qualify.
 
 ### Background:
-further background on this concept is provided by the ['Party-Action' pattern|essifLab-pattern-party-action]
+further background on this concept is provided by the ['Party-Action' pattern|pattern-party-action]
 
 ---
 [^1]: Reasoning means: inferring conclusions from data, regardless of the kind of logic that is being used, or whether the reasoning is coherent, or consistent.

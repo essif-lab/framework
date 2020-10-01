@@ -2,7 +2,8 @@
 id: dictionary
 title: "Concept: Dictionary (Scope: essifLabTerminology)"
 scopeid: essifLabTerminology
-termid: dictionary
+type: concept
+typeid: dictionary
 hoverText: "an alphabetically sorted list of termsort) explanations, usually aimed to help people understand texts around a certain (set of) topic(s) in some context(s)."
 ---
 

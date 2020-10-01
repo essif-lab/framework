@@ -2,11 +2,10 @@
 id: concept
 title: "Concept: Concept (Scope: essifLabTerminology)"
 scopeid: essifLabTerminology
-termid: concept
+type: concept
+typeid: concept
 hoverText: "A Concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing."
 ---
-
-import { Term } from '..\..\src\components'
 
 ## Short Description
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
@@ -18,14 +17,14 @@ Working together is easier when you and your peers share the same ideas. We need
 
 ## Criteria
 <!--REQUIRED--How is this concept different from related ideas? What are essential characteristics that must be true? This is where you specify the [intensional definition](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions) of the concept, i.e. the necessary and sufficient conditions for when the term should be used. This makes that the conceptomes crystal clear. In the case of nouns, this is equivalent to specifying the properties that an object needs to have in order to be counted as a referent of the term.-->
-A (description/specification of a) Concept MUST be [intensionally defined](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions), i.e. associated with a criterion that can be used to determine whether or not someone or something qualifies as (an instance of) that Concept, and that has the property that it has been shown that the vast majority of contributors and other users apply it in the same manner in different situations (i.e. they arrive at the same conclusion as to whether or not someone or something qualifies under that criterion in any given situation). 
+A (description/specification of a) Concept MUST be [intensionally defined](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions), i.e. associated with a criterion that can be used to determine whether or not someone or something qualifies as (an instance of) that Concept, and that has the property that it has been shown that the vast majority of contributors and other users apply it in the same manner in different situations (i.e. they arrive at the same conclusion as to whether or not someone or something qualifies under that criterion in any given situation).
 
 ## Examples
 <!--Provide a few sentences in which you give examples that obviously qualify as instances of `Concept`, and that do NOT obviously qualify. Also, provide examples that are not (so) obvious, but help users to better understand its intension.-->
 
 ## Related Concepts
-<!--Link to any <Term popup="A Concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing." reference="concept">concepts</Term> that are similar but distinct, with a note about the relationship.-->
-* Term is a label that is used in some context to refer to a %%Concept%%[^2], the set of entities that satisfy the concept's criteria, or an arbitrary element of that set. Different contexts may use different terms to refer to a single concept. In a single context, a single term should be used to refer to an individual concept.
+<!--Link to any %%concepts|concept%% that are similar but distinct, with a note about the relationship.-->
+* Term is a label that is used in some context to refer to a %%Concept|concept%%[^2], the set of entities that satisfy the concept's criteria, or an arbitrary element of that set. Different contexts may use different terms to refer to a single concept. In a single context, a single term should be used to refer to an individual concept.
 
 * Concept ... ("Scope") is related in several ways. First, there is (precisely, or at most one) Scope that governs the definition/specification of the Concept. Second, there may be (any number of) Scopes that use the Concept, i.e. within which Terms are defined that refer to the Concept
 
@@ -55,7 +54,7 @@ A (description/specification of a) Concept MUST be [intensionally defined](https
 There is an important [distinction](https://simple.wikipedia.org/wiki/Concept) between concepts and the (multitude of) terms (names, labels) that we need to be able to talk and reason (argue) about them. Please consider that
 
 * different terms are used in different contexts for the same concept
-* in different contexts, a single term may refer to different concepts 
+* in different contexts, a single term may refer to different concepts
 * to resolve terminological disputes, which usually are about the 'correct' meaning of a term, try to establish the criteria that the different participants use for the concept behind the term. That helps participants understand each others (different) positions, and provides a better basis for resolving the conflict.
 
 ---

@@ -1,8 +1,9 @@
 ---
 id: transaction-validation-engine
-title: "Concept: transaction-validation-engine (Scope: eSSIF-Lab)"
+title: "transaction-validation-engine"
 scopeid: essifLab
-termid: transaction-validation-engine
+type: concept
+typeid: transaction-validation-engine
 hoverText: "transaction-validation-engine"
 ---
 

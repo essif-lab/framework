@@ -1,8 +1,9 @@
 ---
 id: scope-file
-title: "Concept: Scope-file (Scope: eSSIF-Lab)"
+title: "Scope-file"
 scopeid: essifLab
-termid: scope-file
+type: concept
+typeid: scope-file
 hoverText: "scope-file popover"
 ---
 

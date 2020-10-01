@@ -4,7 +4,7 @@ title: "TRD - Transaction Result Dispatcher"
 scopeid: essifLab
 type: concept
 typeid: trd
-hoverText: "trd - popuptext"
+hoverText: "trd - popuptext t.b.d."
 ---
 
 ## Short Description

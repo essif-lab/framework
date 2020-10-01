@@ -8,7 +8,7 @@ hoverText: "Agent (of a Party): Actor that is currently working on behalf of a P
 ---
 
 ## Short Description
-An %%Actor|actor%% that is executing on action on behalf of some %%Party|party%%, which means that the execution of that action is subject to the conditions and other guidance set by that Party, then we say the Actor acts as an Agent of that Party. A Person, that is both an Actor and a Party can hence be seen as its own Agent. Agency is further detailed in the ['Party-Action' pattern|essifLab-pattern-party-action].
+An %%Actor|actor%% that is executing on action on behalf of some %%Party|party%%, which means that the execution of that action is subject to the conditions and other guidance set by that Party, then we say the Actor acts as an Agent of that Party. A Person, that is both an Actor and a Party can hence be seen as its own Agent. Agency is further detailed in the ['Party-Action' pattern|pattern-party-action].
 
 ## Criterion:
 %%Actor|actor%% that is momentarily executing an action on behalf of a %%Party|party%%.

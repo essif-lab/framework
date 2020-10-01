@@ -2,7 +2,8 @@
 id: semantics
 title: "Concept: Concept (Scope: essifLabTerminology)"
 scopeid: essifLabTerminology
-termid: semantics
+type: concept
+typeid: semantics
 hoverText: "semantics popover"
 ---
 

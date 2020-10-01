@@ -1,8 +1,9 @@
 ---
 id: eSSIFGlue
-title: "Concept: eSSIF-Glue (Scope: eSSIF-Lab)"
+title: "eSSIF-Glue"
 scopeid: essifLab
-termid: eSSIFGlue
+type: concept
+typeid: eSSIFGlue
 hoverText: "eSSIFGlue"
 ---
 

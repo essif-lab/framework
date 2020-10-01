@@ -2,7 +2,7 @@
 id: essifLabTerminology-scope
 title: eSSIF-Lab Terminology
 scopeid: essifLabTerminology
-hoverText: "<essifLabTerminology-scope hovertext>"
+hoverText: "essifLabTerminology - popuptext t.b.d"
 ---
 
 ## Governance

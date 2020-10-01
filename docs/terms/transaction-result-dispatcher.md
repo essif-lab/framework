@@ -1,8 +1,9 @@
 ---
 id: transaction-result-dispatcher
-title: "Concept: Transaction Result Dispatcher (Scope: eSSIF-Lab)"
+title: "Transaction Result Dispatcher"
 scopeid: essifLab
-termid: transaction-result-dispatcher
+type: concept
+typeid: transaction-result-dispatcher
 hoverText: "hovertext for transaction-result-dispatcher"
 ---
 

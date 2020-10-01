@@ -3,7 +3,7 @@ id: essifLabTerminology-glossary
 title: Glossary of eSSIF-Lab Terminology
 scopeid: essifLabTerminology
 glossaryid: glossary
-hoverText: "<Text that pops up when the user hovers over a reference to this eSSIF-Lab Terminology glossary>"
+hoverText: "glossary - popuptext t.b.d."
 ---
 
 ## Purpose

@@ -1,8 +1,9 @@
 ---
 id: term-file
-title: "Concept: Term-file (Scope: eSSIF-Lab)"
+title: "Term-file"
 scopeid: essifLab
-termid: term-file
+type: concept
+typeid: term-file
 hoverText: "term-file popover"
 ---
 

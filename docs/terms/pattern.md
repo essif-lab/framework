@@ -1,8 +1,9 @@
 ---
 id: pattern
-title: "Concept: Pattern (Scope: eSSIF-Lab)"
+title: "Pattern"
 scopeid: essifLab
-termid: pattern
+type: concept
+typeid: pattern
 hoverText: "pattern popover text"
 ---
 

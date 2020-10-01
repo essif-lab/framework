@@ -4,8 +4,6 @@ title: "eSSIF-Lab: Concepts and Terminology"
 scopeid: essifLab
 ---
 
-import { Term } from '..\..\src\components'
-
 :::info **UNDER CONSTRUCTION**
 *This (initial version of the) terminology chapter is currently under construction. If you feel like making a contribution, please contact [the editor](mailto:rieks.joosten@tno.nl)*
 :::
@@ -20,44 +18,44 @@ This is far from trivial, and hence we expect to see situations of "language con
 
 This chapter reflects the learnings of eSSIf-Lab with respect to what such additional needs are, and provides the backgrounds of the methods, means and/or tools that may help to accommodate such needs. Here is a summary:
 
-1. People that read a text may need help in understanding various words or phrases, particularly if they are not very familiar with the subject matter (they may be learning, and/or the text doesn't have an associated glossary), or come from another society. For such purposes, it helps to have an alphabetically sorted lists of words and phrases, each of which associated with one or more meanings or explanations that such words/phrases may have. We call this list a <Term popup="an alphabetically sorted list of termsort) explanations, usually aimed to help people understand texts around a certain (set of) topic(s) in some context(s)." reference="dictionary">dictionary</Term>. The eSSIF-Lab project intends to look into the possibility and necessity of generating a dictionary of SSI-related words and phrases based on the materials that are readily available; if it turns out this is beneficial, the eSSIF-Lab will contribute to the extent that is allowed by the project constraints.
-2. Authors (e.g. of programming code, or articles of various kinds) that produce text on a particular topic, will want the words and phrases they use to be associated with a single meaning. This also holds for people that want to discuss a particular topic. For purposes such as these, it helps to have an alphabetically sorted lists of words and phrases, each of which associated with a single meaning or explanation that they can refer to. We call such lists <Term popup="<Text that pops up when the user hovers over a reference to this eSSIF-Lab Terminology glossary>" reference="glossary">glossaries</Term>. The eSSIF-Lab project intends to allow for the automated generation of such glossaries whenever a specific need for that exists.
+1. People that read a text may need help in understanding various words or phrases, particularly if they are not very familiar with the subject matter (they may be learning, and/or the text doesn't have an associated glossary), or come from another society. For such purposes, it helps to have an alphabetically sorted lists of words and phrases, each of which associated with one or more meanings or explanations that such words/phrases may have. We call this list a %%dictionary|dictionary%%. The eSSIF-Lab project intends to look into the possibility and necessity of generating a dictionary of SSI-related words and phrases based on the materials that are readily available; if it turns out this is beneficial, the eSSIF-Lab will contribute to the extent that is allowed by the project constraints.
+2. Authors (e.g. of programming code, or articles of various kinds) that produce text on a particular topic, will want the words and phrases they use to be associated with a single meaning. This also holds for people that want to discuss a particular topic. For purposes such as these, it helps to have an alphabetically sorted lists of words and phrases, each of which associated with a single meaning or explanation that they can refer to. We call such lists %%glossaries|glossary%%. The eSSIF-Lab project intends to allow for the automated generation of such glossaries whenever a specific need for that exists.
 3. People may find they need to better understand the ideas/concepts that terms refer to, e.g. because their thoughts keep running around in circles, they cannot get software to work in a generic fashion, etc. The eSSIF-Lab project intends to provide a (structured) repository where people can store texts that
-    - describe what we call a <Term popup="pattern popover text" reference="pattern">pattern</Term> or <Term popup="pattern popover text" reference="pattern">mental model</Term>, i.e. a coherent set of <Term popup="A Concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing." reference="concept">concepts</Term>, relations between these concepts, and rules/constraints that apply. A pattern also motivates its existence, and provides examples of when and how it can be used in a purposeful way;
-    - specify individual <Term popup="A Concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing." reference="concept">concepts</Term> in a precise and in-depth manner, beyond what is possible by the texts used in patterns;
-    - specify how specific words or phrases (<Term popup="a word or phrase that is used in at least one scope/context to refer to a specific concept." reference="term">terms</Term>) are mapped onto such <Term popup="A Concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing." reference="concept">concepts</Term> within specific scopes/contexts;
-    - specify a <Term popup="<essifLabTerminology-scope hovertext>" reference="scope">scope (or context)</Term>, i.e. the extent of the area or subject matter within which we define patterns, concepts, terms and glossaries, allowing patterns to be used in a limited scope, terms to be have different meanings in different scopes, etc.
+    - describe what we call a %%pattern|pattern%% or %%mental model|pattern%%, i.e. a coherent set of %%concepts|concept%%, relations between these concepts, and rules/constraints that apply. A pattern also motivates its existence, and provides examples of when and how it can be used in a purposeful way;
+    - specify individual %%concepts|concept%% in a precise and in-depth manner, beyond what is possible by the texts used in patterns;
+    - specify how specific words or phrases (%%terms|term%%) are mapped onto such %%concepts|concept%% within specific scopes/contexts;
+    - specify a %%scope (or context)|scope%%, i.e. the extent of the area or subject matter within which we define patterns, concepts, terms and glossaries, allowing patterns to be used in a limited scope, terms to be have different meanings in different scopes, etc.
 
-## Context 
+## Context
 
-People use <Term popup="a word or phrase that is used in at least one scope/context to refer to a specific concept." reference="term">words and phrases (terms)</Term> to (tangibly) refer to the (intangible) <Term popup="A Concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing." reference="concept">ideas and thoughts (concepts)</Term> they have, e.g. about what exists in the world, judgements they have, etc.<sup>[semantics]</sup>  This mapping of terms and concepts, which we call '[semantics](wikipedia/semantics)', that is unique for each <Term popup="Entity that has knowledge about what exists, ways to reason with that knowledge, and ways for making decisions in a Self-Sovereign fashion." reference="party">person or organization</Term>, enables them to reflect on their thoughts, and to convey such thoughts to others. Good communication however requires that the semantics of the communicating parties is sufficiently the same, so that the recipient of a communication will interpret it such that it means (sufficiently) the same to him as the communication means to its sender.
+People use %%words and phrases (terms)|term%% to (tangibly) refer to the (intangible) %%ideas and thoughts (concepts)|concept%% they have, e.g. about what exists in the world, judgements they have, etc.<sup>[semantics]</sup>  This mapping of terms and concepts, which we call '[semantics](wikipedia/semantics)', that is unique for each %%person or organization|party%%, enables them to reflect on their thoughts, and to convey such thoughts to others. Good communication however requires that the semantics of the communicating parties is sufficiently the same, so that the recipient of a communication will interpret it such that it means (sufficiently) the same to him as the communication means to its sender.
 
 The Concepts and Terminology part of eSSIF-Lab aims helps eSSIF-Lab community participants understand one another at whatever level of precision they need. This chapter presents a number of aids we will develop/maintain to serve that purpose.
 
-[semantics]: we use the term semantics|semantics<Term popup="a word or phrase that is used in at least one scope/context to refer to a specific concept." reference="term"> to refer to the mapping between terms</Term> and <Term popup="A Concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing." reference="concept">concepts</Term>. We use the term <Term popup="<essifLabTerminology-scope hovertext>" reference="scope">scope</Term> ([OED](https://www.lexico.com/definition/scope)) to refer to the extent of the area or subject matter that a semantics is relevant and/or being used. From this definition, it seems obvious that every <Term popup="Entity that has knowledge about what exists, ways to reason with that knowledge, and ways for making decisions in a Self-Sovereign fashion." reference="party">party</Term> has - and maintains - its own (subjective) semantics. The (erroneous) assumption that people (automatically) share a semantics is the cause of many misunderstandings. 
+[semantics]: we use the term semantics|semantics%% to refer to the mapping between terms|term%% and %%concepts|concept%%. We use the term %%scope|scope%% ([OED](https://www.lexico.com/definition/scope)) to refer to the extent of the area or subject matter that a semantics is relevant and/or being used. From this definition, it seems obvious that every %%party|party%% has - and maintains - its own (subjective) semantics. The (erroneous) assumption that people (automatically) share a semantics is the cause of many misunderstandings.
 
 ## Concepts, Terminologies, Glossaries, Dictionaries, etc.
 
-Conveying one's thoughts is deciding which words or phrases to use for referring to the ideas or <Term popup="A Concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing." reference="concept">concepts</Term> that one is thinking about. We will use the word <Term popup="a word or phrase that is used in at least one scope/context to refer to a specific concept." reference="term">Term</Term> to refer to a word or phrase, that is used in some <Term popup="<essifLabTerminology-scope hovertext>" reference="scope">context (or: scope)</Term> to refer to a specific concept. Hence, a Term can mean different things in different contexts. Examples are "localhost", or "mommy". Also, different Terms that are used in different contexts may still refer to the same concept. For example, the person referred to as "Rieks" in some contexts is known as "Mr. Joosten" in other contexts.
+Conveying one's thoughts is deciding which words or phrases to use for referring to the ideas or %%concepts|concept%% that one is thinking about. We will use the word %%Term|term%% to refer to a word or phrase, that is used in some %%context (or: scope)|scope%% to refer to a specific concept. Hence, a Term can mean different things in different contexts. Examples are "localhost", or "mommy". Also, different Terms that are used in different contexts may still refer to the same concept. For example, the person referred to as "Rieks" in some contexts is known as "Mr. Joosten" in other contexts.
 
-Because of this, generally dealing with terminologies, i.e. sets of words or phrases with a presumed meaning, is a difficult topic, demonstrated e.g. by the work of Pfitzmann and Hansen who created a [terminology for talking about privacy by data minimization](https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf) (2010), the development of which took over a decade, and has seen over 30 revisions. 
+Because of this, generally dealing with terminologies, i.e. sets of words or phrases with a presumed meaning, is a difficult topic, demonstrated e.g. by the work of Pfitzmann and Hansen who created a [terminology for talking about privacy by data minimization](https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf) (2010), the development of which took over a decade, and has seen over 30 revisions.
 
-A commonly used tool for fostering common understanding are <Term popup="<Text that pops up when the user hovers over a reference to this eSSIF-Lab Terminology glossary>" reference="glossary">glossaries</Term>, i.e. an alphabetically sorted lists of words and phrases that relate to a specific subject (or text, dialect, ...) with explanations ([OED](https://www.lexico.com/definition/glossary)). 
+A commonly used tool for fostering common understanding are %%glossaries|glossary%%, i.e. an alphabetically sorted lists of words and phrases that relate to a specific subject (or text, dialect, ...) with explanations ([OED](https://www.lexico.com/definition/glossary)).
 
-Glossaries come in two basic flavors. One flavor, which we will call <Term popup="an alphabetically sorted list of termsort) explanations, usually aimed to help people understand texts around a certain (set of) topic(s) in some context(s)." reference="dictionary">dictionary</Term>, is a glossary where each term is associated with multiple meanings. An example is the [NIST Glossary](https://csrc.nist.gov/glossary). It allows people that hear or read about something to search for a meaning that is appropriate for the context of that communication.
+Glossaries come in two basic flavors. One flavor, which we will call %%dictionary|dictionary%%, is a glossary where each term is associated with multiple meanings. An example is the [NIST Glossary](https://csrc.nist.gov/glossary). It allows people that hear or read about something to search for a meaning that is appropriate for the context of that communication.
 
 The other flavor (for which we do not yet have a term to distinguish it from dictionaries), is a glossary that is about one specific topic/subject, and lists a set of terms that have a single meaning, that together form a coherent and consistent terminology, and serves one or more specific purposes regarding this topic/subject. An example is the [Sovrin Glossary](https://sovrin.org/library/glossary/). Such glossaries allow people e.g. to write code, or an article about the topic.
 
 The eSSIF-Lab project will develop glossaries (of the second kind) as needed, and for specific purposes<sup>[1]</sup>. The idea is to just develop the specification of a glossary (specifying its purpose(s), the set of terms that are to be included, and the way in which the descriptions can be obtained), and then 'simply' generate the glossary. Doing so allows the automated generation and updating of glossaries.
 
-[1]: Too often have we observed that people seem to think that the mere fact of having a glossary makes (many or all) terminological issues go away, and that in practice that is not the case. We seek to define glossaries only if they are demonstrably fit-for-(some)-purpose. 
+[1]: Too often have we observed that people seem to think that the mere fact of having a glossary makes (many or all) terminological issues go away, and that in practice that is not the case. We seek to define glossaries only if they are demonstrably fit-for-(some)-purpose.
 
 ## Mental Models
 
-A Mental Model, or Conceptual Model, is a set of of concepts (i.e. entity classes), relations between such concepts (i.e. sets of pairs of members of classes that a relation connects), and rules/constraints expressed in terms of these relations and concepts. 
+A Mental Model, or Conceptual Model, is a set of of concepts (i.e. entity classes), relations between such concepts (i.e. sets of pairs of members of classes that a relation connects), and rules/constraints expressed in terms of these relations and concepts.
 
 The first purpose of a Mental Model is to help us think and reason about a certain topic or issue.
-One signal that indicates the need of such a model is when we’re running circles in our thoughts, and we have this feeling of not understanding, of the topic being (too) complex. Often, we are thinking in terms of concepts that are not fit for the objectives we pursue. 
+One signal that indicates the need of such a model is when we’re running circles in our thoughts, and we have this feeling of not understanding, of the topic being (too) complex. Often, we are thinking in terms of concepts that are not fit for the objectives we pursue.
 
 So a mental model requires careful construction, that allows the choices for its elements to be validated against many use-cases. Such validation instills trust that our model elements (concepts, relations, rules) are well-chosen. It also provides us with the experience (usually after some time) that it has made our thinking easier, and we are better equipped to resolve issues.
 
@@ -74,7 +72,7 @@ We attempt to create definitions that are both acceptable for business people ye
 - readers are likely to make the same judgements when using them, and
 - these distinctions are relevant for our purposes. That’s the important stuff.
 
-The actual texts we choose as the name for a concept is of secondary importance; if in a particular context other names are more suitable, you can rename them there without loss of meaning or consistency. 
+The actual texts we choose as the name for a concept is of secondary importance; if in a particular context other names are more suitable, you can rename them there without loss of meaning or consistency.
 
 Together with these criteria, we provide a limited set of examples to help the reader to visualize the defined concepts, and to point out possibly unexpected consequences of the criteria. Also, we may motivate the need for having a concept by showing its relevance for the model.
 
@@ -99,10 +97,10 @@ For the purposes of this document, the scope of every Definition is this Documen
 Note that this definition satisfies itself. Also note that a definition may be used in multiple scopes, where a scope that wants to use the definition that has been defined in another scope, may replace that name with one of its own choosing. This way the meaning expressed by the definition remains preserved.
 
 ### Concept
-**A named set of entities that satisfy a criterion that specifies the necessary and sufficient conditions for being a member of that set** 
+**A named set of entities that satisfy a criterion that specifies the necessary and sufficient conditions for being a member of that set**
 
 ### Relation
-**A named set of entity-pairs (L,R), and a criterion C(SRC,TGT), where 
+**A named set of entity-pairs (L,R), and a criterion C(SRC,TGT), where
 
 - SRC and TGT are Concepts;
 - L is an element of SRC and R is an element of TGT;
@@ -112,7 +110,7 @@ Note that this definition satisfies itself. Also note that a definition may be u
 For example, a relation could be defined by:
 
 - name=‘is owner of’
-- SRC=’Party’ and TGT=’Entity’ and 
+- SRC=’Party’ and TGT=’Entity’ and
 - C(SRC,TGT)=‘SRC is the owner of TGT’
 
 This relation contains all pairs (X,Y) for which Party X is the owner of Y. The set of entity-pairs (L,R) is called the extension of the relation. The criterion C(L,R) is also referred to as the intension of the relation (as, together with this definition, it intensionally defines the relation)
@@ -121,9 +119,9 @@ This relation contains all pairs (X,Y) for which Party X is the owner of Y. The 
 **A Relation the intension of which consists of pairs that do not satisfy a specified expression that consists of concept (elements) and relations, and that can logically be evaluated.**
 
 ### Pattern
-** A coherent set of Concepts, Relations between these Concepts, and Rules that are expressed in terms of these Concepts and Relations.** 
+** A coherent set of Concepts, Relations between these Concepts, and Rules that are expressed in terms of these Concepts and Relations.**
 
-We need Patterns as a mechanism for ‘chopping up’ mental models, in order to accommodate for the human disability to consciously oversee and think about more than 7 +/- 2 Concepts (including attributes, Relations, and Rules). 
+We need Patterns as a mechanism for ‘chopping up’ mental models, in order to accommodate for the human disability to consciously oversee and think about more than 7 +/- 2 Concepts (including attributes, Relations, and Rules).
 Patterns may be associated with texts e.g. for motivating its existence, explaining its purpose, etc.
 
 ## Notations
@@ -133,7 +131,7 @@ Also, we capitalize words in mid-sentence whenever it is used in the meaning as 
 
 Patterns will be visualized in this document using a UML-like notation, as follows:
 
-- a rectangle represents a (named) concept. Concepts serve as entity-classes. Their (operational) extensions, i.e. the respective sets of (runtime) instances, are disjunct. 
+- a rectangle represents a (named) concept. Concepts serve as entity-classes. Their (operational) extensions, i.e. the respective sets of (runtime) instances, are disjunct.
 - a solid line with a closed arrowhead represent a (named) relation/association between the two concepts it connects. The concept at the arrowhead is called the ‘target concept’ (TGT) for that relation. The concept at the other end is called the ‘source concept’ (SRC) for that relation. Names are chosen such that `<SRC> <relation name> <TGT>` is a phrase that suggests the intension(al definition) of that relation.
 - a dashed line signifies that its intension is created by combination the intensions of other relations (it is a ‘shorthand’ for a path of other relations).
 - an open-ended arrow is an ‘ISA’ relation, which can be read as `<SRC> ISA <TGT>`. It means that SRC is a specialization of TGT (which is a generalization of SRC). Thus, SRC must satisfy all constraints that TGT must satisfy, and has all attributes (including properties) that TGT has.
