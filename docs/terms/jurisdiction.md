@@ -4,7 +4,7 @@ title: "Jurisdiction"
 scopeid: essifLab
 type: concept
 typeid: jurisdiction
-hoverText: "jurisdiction - popuptext t.b.d."
+hoverText: "jurisdiction - popuptext"
 ---
 
 ## Short Description

@@ -2,15 +2,14 @@
 id: pattern-jurisdictions
 title: "Pattern: Jurisdictions (Scope: eSSIF-Lab)"
 scopeid: essifLab
-type: pattern
-typeid: jurisdictions
-hoverText: "jurisdiction pattern - popuptext t.b.d."
+patternid: jurisdictions
+hoverText: "pattern-jurisdictions - hovertext"
 ---
 <!-- A pattern captures/describes a set of concepts, relations between them, and rules or constraints that (instances) thereof comply with. As such, it is a concise and possibly formal description of a coherent set of ideas, a mental model if you will, that can be used to facilitate one's thinking about/with these concepts.
 Please fill in the placeholders in this file as follows:
-- `<ExistingScopeID>`: machine readable text that identifies the scope in which this pattern is defined;
+- `<existing-scopeID>`: machine readable text that identifies the scope in which this pattern is defined;
 - `<Existing Scope>`: human readable text that identifies the scope in which this pattern is defined;
-- `<NewPatternID>`: machine readable text that identifies this pattern within <ExistingScopeID>;
+- `<NewPatternID>`: machine readable text that identifies this pattern within <existing-scopeID>;
 - `<New Pattern>`: human readable text that identifies this pattern within <Existing Scope>;
 -->
 

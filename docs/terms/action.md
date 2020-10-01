@@ -4,7 +4,7 @@ title: "Action"
 scopeid: essifLab
 type: concept
 typeid: action
-hoverText: "something that is done by an actor"
+hoverText: "hovertext for 'action'"
 ---
 
 ## Criterion:

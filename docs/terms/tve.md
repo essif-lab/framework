@@ -4,7 +4,7 @@ title: "TVE - Transaction Validation Engine"
 scopeid: essifLab
 type: concept
 typeid: tve
-hoverText: "tve - popuptext t.b.d."
+hoverText: "tve - popuptext"
 ---
 
 ## Short Description
