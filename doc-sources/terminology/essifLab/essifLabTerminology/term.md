@@ -53,7 +53,7 @@ A Term MUST be a word or phrase that is linked to at least one %%context|scope%%
 There is an important [distinction](https://simple.wikipedia.org/wiki/Concept) between concepts and the (multitude of) terms (names, labels) that we need to be able to talk and reason (argue) about them. Please consider that
 
 * different terms are used in different contexts for the same concept
-* in different contexts, a single term may refer to different concepts 
+* in different contexts, a single term may refer to different concepts
 * to resolve terminological disputes, which usually are about the 'correct' meaning of a term, try to establish the criteria that the different participants use for the concept behind the term. That helps participants understand each others (different) positions, and provides a better basis for resolving the conflict.
 
 ---

@@ -10,13 +10,14 @@ hoverText: "a Party that has the legal or rightful title to control something."
 
 ## Short Description
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
-The property of a %%Party|party%% that has the legal or rightful title to control something. We interpret 'legal' and 'rightful' as terms that apply to _any_ %%Jurisdiction|jurisdiction%% (that is: not just legal/national jurisdictions, but also those of other organizations/parties). 
+The property of a %%Party|party%% that has the legal or rightful title to control something. We interpret 'legal' and 'rightful' as terms that apply to _any_ %%Jurisdiction|jurisdiction%% (that is: not just %%legal/national jurisdictions|legal-jurisdiction%%, but also those of other %%organizations|organization%% (%%parties|party%%). 
 
 ## Purpose
 <!--Describe why the concept is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What objectives does it help realize? Why is this concept relevant within its scope of definition?-->
 
 ## Criteria
 <!--REQUIRED--How is this concept different from related ideas? What are essential characteristics that must be true? This is where you specify the [intensional definition](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions) of the concept, i.e. the necessary and sufficient conditions for when the term should be used. This makes that the concept becomes crystal clear. In the case of nouns, this is equivalent to specifying the properties that an object needs to have in order to be counted as a referent of the term.-->
+A %%Party|party%% is said to be the **owner** of some %%entity|entity%% if and only if the party and the entity are %%legal entities|legal-entity%% in some %%jurisdiction|jurisdiction%%, and within the scope of that jurisdiction the party has the legal or rightful title to control the entity.
 
 ## Examples
 <!--Provide a few sentences in which you give examples that obviously qualify as instances of `<New Term>`, and that do NOT obviously qualify. Also, provide examples that are not (so) obvious, but help users to better understand its intension.-->

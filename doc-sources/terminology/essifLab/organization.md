@@ -5,45 +5,26 @@ scopeid: essifLab
 type: concept
 typeid: organization
 stage: draft
-hoverText: "popuptext for Organization tbd"
+hoverText: "a group of people that work to realize one or more objectives"
 ---
 
 ## Short Description
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
+An **Organization** is a group of people that work to realize one or more objectives. Enterprises and governments are the prototypical examples. However, parts of enterprises (e.g. divisions, departments, business units) should also be considered organizations. This also holds for governments and governmental bodies.
 
 ## Purpose
 <!--Describe why the concept is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What objectives does it help realize? Why is this concept relevant within its scope of definition?-->
+The purpose of documenting this term is to provide additional clarity w.r.t. definitions given in english dictionaries. Also, we need this notion as it is used in the eSSIF-Lab %%party-action pattern|pattern-party-action%%.
 
 ## Criteria
-<!--REQUIRED--How is this concept different from related ideas? What are essential characteristics that must be true? This is where you specify the [intensional definition](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions) of the concept, i.e. the necessary and sufficient conditions for when the term should be used. This makes that the concept becomes crystal clear. In the case of nouns, this is equivalent to specifying the properties that an object needs to have in order to be counted as a referent of the term.-->
+A (non-empty) group of people that work to realize a (non-empty) set of objectives.
 
 ## Examples
 <!--Provide a few sentences in which you give examples that obviously qualify as instances of `<New Term>`, and that do NOT obviously qualify. Also, provide examples that are not (so) obvious, but help users to better understand its intension.-->
-
-## Related Concepts
-<!--Link to any concepts that are similar but distinct, with a note about the relationship.-->
-
-## Domains
-<!--In which general knowledge ecosystems or mental model families does this concept play a role?-->
-
-## Tags
-<!--Add hash tags here that allow us to group concepts in useful ways.-->
-
-## Use-cases
-<!--This (optional) section specifies an (optional) introductory paragraph, and a level-3 (i.e. `###`) subsection for every use case it describes. Every such use-case SHOULD
-- describe the situation/context of the use-case;
-- show how to apply `<New Term>` to/in that situation;
-- shows the relevance of having `<New Term>` for the use-case as opposed to not having it.-->
+- Enterprises and governments are the prototypical examples.
+- Parts of enterprises (e.g. divisions, departments, business units) and governmental bodies also qualify.
+- Individual persons satisfy the criteria and hence qualify (see the Notes below). 
 
 ## Notes
 <!--This (optional) section is the place to put anything for which there is no other good place to put it.-->
-
-<!--
----
-## Footnotes
-
-[//]: # This (optional) section contains any footnotes that may have been specified in the text above.
-
-[^1]: the text for footnote [^1] goes here.
-
--->
+- One may question whether or not a single person can be a 'group of people' (who would obviously work to realize its personal objectives) and hence qualify as an organization. The answer to this question is however irrelevant within our context, because we reason with the concept %%party|party%% rather than the concepts organization and/or person.
