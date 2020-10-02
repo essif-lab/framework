@@ -1,6 +1,6 @@
 ---
-id: essifLabTerminology-scope
-title: eSSIF-Lab Terminology
+id: scope
+title: "Scope: essifLabTerminology"
 scopeid: essifLabTerminology
 hoverText: "essifLabTerminology - popuptext t.b.d"
 ---

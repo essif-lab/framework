@@ -1,5 +1,5 @@
 ---
-id: essifLabTerminology-glossary
+id: glossary
 title: Glossary of eSSIF-Lab Terminology
 scopeid: essifLabTerminology
 glossaryid: glossary

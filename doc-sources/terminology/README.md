@@ -27,4 +27,3 @@ We have an [introduction](terminology) that explains how we go about all this.
   - [terminology](terminology) specifies the purposes that the terminology work intends to serve, and the ways in which this is done.
   - [readme-making-contributions](readme-making-contributions) is a guide for people that want to create, generate or update new ***content***.
   - [readme-generator-extensions](readme-generator-extensions) is a guide for people that want to create or modify the generators that produce the actual terminological artifacts from the content produced by authors.
-  - [scope-registration.json](scope-registration.json) defines the set of root-scopes, and may define a subscope tree within them.

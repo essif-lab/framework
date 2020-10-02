@@ -113,6 +113,6 @@ Done in 1.53s.
 This will generate a file in `./docs/glossary.md` where every term that has been
 mentioned above, will be populated in the `glossary.md` page.
 
-When the project is up and running, you can visit the glossary on the `/docs/essif-lab-glossary` page:
+When the project is up and running, you can visit the glossary on the `/docs/essifLab-glossary` page:
 
  <img alt="glossary-page" src={useBaseUrl('images/glossary-page.png')}/>

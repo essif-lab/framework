@@ -1,5 +1,5 @@
 ---
-id: essif-lab-glossary
+id: essifLab-glossary
 title: eSSIF-Lab Glossary
 ---
 
