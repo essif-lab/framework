@@ -4,6 +4,7 @@ title: "Concept: Concept (Scope: essifLabTerminology)"
 scopeid: essifLabTerminology
 type: concept
 typeid: semantics
+stage: draft
 hoverText: "semantics popover"
 ---
 

@@ -1,9 +1,10 @@
 ---
 id: concept
-title: "Concept: Concept (Scope: essifLabTerminology)"
+title: "Concept"
 scopeid: essifLabTerminology
 type: concept
 typeid: concept
+stage: draft
 hoverText: "A Concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing."
 ---
 
@@ -51,7 +52,7 @@ A (description/specification of a) Concept MUST be [intensionally defined](https
 
 ## Notes
 <!--This (optional) section is the place to put anything for which there is no other good place to put it.-->
-There is an important [distinction](https://simple.wikipedia.org/wiki/Concept) between concepts and the (multitude of) terms (names, labels) that we need to be able to talk and reason (argue) about them. Please consider that
+There is an important [distinction between concepts and the (multitude of) terms](https://simple.wikipedia.org/wiki/Concept) (names, labels) that we need to be able to talk and reason (argue) about them. Please consider that
 
 * different terms are used in different contexts for the same concept
 * in different contexts, a single term may refer to different concepts

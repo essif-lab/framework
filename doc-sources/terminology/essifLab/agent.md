@@ -4,6 +4,7 @@ title: "Agent"
 scopeid: essifLab
 type: concept
 typeid: agent
+stage: draft
 hoverText: "Agent (of a Party): Actor that is currently working on behalf of a Party."
 ---
 

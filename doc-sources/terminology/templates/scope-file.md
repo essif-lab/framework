@@ -4,6 +4,7 @@ title: "Scope: <New Scope>"
 scopeid: <existing-scopeID>
 type: scope
 typeid: <new-subscopeID>
+stage: draft
 hoverText: "<Text that pops up when the user hovers over a reference to this item>"
 ---
 <!--A scope is something within which concepts can be associated with terms, thereby creating a vocabulary that can be used to meaningfully express ideas, arguments, etc.

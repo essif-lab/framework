@@ -1,6 +1,7 @@
 ---
 id: readme-making-contributions
 title: Making Contributions to the Terminology Corpus
+stage: draft
 hoverText: "Click on the text to navigate to the instructions on how to contribute to the terminology."
 ---
 

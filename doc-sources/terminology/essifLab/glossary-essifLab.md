@@ -4,6 +4,7 @@ title: Glossary of eSSIF-Lab
 scopeid: essifLab
 type: glossary
 typeid: essifLab
+stage: draft
 hoverText: "essifLab-glossary - popuptext tbd"
 ---
 <!--A glossary is a list of terms with (short) explanations, usually aimed to help people understand texts around a certain (set of) topic(s) in some context(s).-->

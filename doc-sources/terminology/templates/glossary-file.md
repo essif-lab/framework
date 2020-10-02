@@ -4,6 +4,7 @@ title: "Title text for this glossary"
 scopeid: <existing-scopeID>
 type: glossary
 typeid: <new-glossaryID>
+stage: draft
 hoverText: "<Text that pops up when the user hovers over a reference to this glossary>"
 ---
 <!--A glossary is an alphabetically sorted list of terms with (short) explanations, usually aimed to help people understand texts around a certain (set of) topic(s) in some context(s).

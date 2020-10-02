@@ -4,6 +4,7 @@ title: "Scope: eSSIF-Lab Terminology"
 scopeid: essifLabTerminology
 type: scope
 typeid: essifLabTerminology
+stage: draft
 hoverText: "scope essifLabTerminology - popuptext tbd"
 ---
 

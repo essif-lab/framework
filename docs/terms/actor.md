@@ -4,23 +4,25 @@ title: "Actor"
 scopeid: essifLab
 type: concept
 typeid: actor
+stage: draft
 hoverText: "Entity that can act (do things), e.g. people, machines, but not organizations."
 ---
 
+## Short Description
+An **Actor** is someone or something that can actually do things, such as people or machines. Actors will generally do things, i.e. execute %%actions|action%% in different ways, depending on the context, or the %%party|party%% for whom they do this.
+
+## Purpose
+The ability to distinguish between (non)actors allows one to determine which (kinds of) actors are capable of executing which (kinds of) %%actions|action%%, specifically since %%organizations|organization%% do not qualify as an actor (they need actors to get things done).
+
 ## Criterion:
-Entity that is capable of acting (doing things).
+Entity that is capable of actually executing %%actions|action%% (acting, doing things).
 
 ## Examples:
-People obviously qualify, as do robots and other machines. Stones, pictures, ideas, etc. do not qualify.
 
-We specifically note that enterprises, governments, and other organizations do not qualify.
+- People (human beings) obviously qualify, as do robots and other machines.
+- Stones, pictures, ideas, etc. do not qualify.
+- Software applications qualify, provided they are actually running on hardware. An app that is just sitting e.g. on a mobile phone but isn't executed does not qualify.
+- Enterprises, governments, and other %%organizations|organization%% do not qualify. 
 
-### Background:
-further background on this concept is provided by the ['Party-Action' pattern|pattern-party-action]
-
----
-[^1]: Reasoning means: inferring conclusions from data, regardless of the kind of logic that is being used, or whether the reasoning is coherent, or consistent.
-
-[^2]: This means that the party can do this all by itself. For humans, the rights for this are laid down e.g. in the [ECHR](https://www.echr.coe.int "European Convention of Human Rights") ([ECHR articles 9-11](https://www.echr.coe.int/Documents/Convention_ENG.pdf))
-
-[^3]: While the case can be made that (some) electronic components can reason, they do not do so in a self-sovereign fashion as intended by this definition. We do not want to discuss AI-equipment here.
+## Background:
+The %%party-action pattern|pattern-party-action%% provides an overview of how this concept fits in with related concepts.

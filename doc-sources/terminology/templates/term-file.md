@@ -5,6 +5,7 @@ scopeid: <existing-scopeID>
 type: term
 typeid: <new-termID>
 conceptref: <ExistingConceptScopeID>:<ExistingtermID>
+stage: draft
 hoverText: "<Text that pops up when the user hovers over a reference to this term>"
 ---
 <!--A Term is a word or phrase that is used in at least one scope (context and/or for specific purposes) to refer to some concept.

@@ -4,6 +4,7 @@ title: "Organization"
 scopeid: essifLab
 type: concept
 typeid: organization
+stage: draft
 hoverText: "popuptext for Organization tbd"
 ---
 

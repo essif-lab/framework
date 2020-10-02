@@ -4,6 +4,7 @@ title: "Pattern"
 scopeid: essifLab
 type: concept
 typeid: pattern
+stage: draft
 hoverText: "pattern popover text"
 ---
 

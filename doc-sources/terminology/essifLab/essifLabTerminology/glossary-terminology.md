@@ -4,6 +4,7 @@ title: Glossary of eSSIF-Lab Terminology
 scopeid: essifLabTerminology
 type: glossary
 typeid: essifLabTerminology
+stage: draft
 hoverText: "essifLabTerminology-glossary - popuptext tbd"
 ---
 

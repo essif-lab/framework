@@ -4,14 +4,21 @@ title: "Objective"
 scopeid: essifLab
 type: concept
 typeid: objective
-hoverText: "Something toward which effort is directed: an aim, goal, or end of action"
+stage: draft
+hoverText: "Something toward which effort is directed: an aim, goal, or end of action (Merriam-Webster)"
 ---
 
+## Short Description
+**Objectives** drive %%parties|party%% as they make their goals explicit, the primary one of which is also referred to as the **mission** of that party. A party's objectives are part of its %%knowledge|knowledge%%. When made available to %%agents|agent%% of that party, these agents can do the work that is needed to reach these goals (realize the party's objectives).
+
+## Purpose
+The ability to distinguish between (non)objectives is relevant as objectives are the drivers behind the reasoning and decisions that %%parties|party%% make, the policies and working instructions that they specify so that its %%agents|agent%% know what to do, when to do it, and how to do it. Moreover, objectives are 1-1 associated with risks (i.e. the level of uncertainty that the party experiences regarding whether a specific objective is going to be appropriately realized). Finally, objectives must be known in order to obtain (personal) data according to the [GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+
 ## Criterion:
-Something toward which effort is directed: an aim, goal, or end of action ([Merriam-Webster](https://www.merriam-webster.com/dictionary/objective))
+A text representing something toward which a %%party|party%% directs its efforts: an aim, goal, or end of action.
 
 ## Examples:
-Anything that, according to a %%Party|party%% c.q. its way of thinking, is important to be realized, qualifies as an Objective (and identifies its owner as that %%Party|party%%)
+- generically: anything that, according to a %%Party|party%% c.q. its way of thinking, is important to be realized, qualifies as an Objective (and identifies its owner as that %%Party|party%%).
+- most people have the objective 'stay alive'.
+- the equivalent in organizations is 'continuation of its existence' (many operate 'business-continuity processes' to realize this, and to identify and mitigate any associated risks).
 
-### Xxx:
-The %%Knowledge|knowledge%%/judgements of a %%Party|party%% are what makes something an %%Objective (owned by that Party|party%%).

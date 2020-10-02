@@ -1,9 +1,10 @@
 ---
 id: pattern-mental-model
-title: "Pattern: Mental Models (Scope: essifLabTerminology)"
+title: "Pattern: Mental Models"
 scopeid: essifLabTerminology
 type: pattern
 typeid: mental-model
+stage: draft
 hoverText: "This pattern captures the foundational concepts and relations that we need for creating, maintaining and using  (decentralized) vocabularies (terminologies) that groups of people can use for the specific purposes they pursue."
 ---
 

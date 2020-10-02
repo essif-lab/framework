@@ -4,14 +4,19 @@ title: "Agent"
 scopeid: essifLab
 type: concept
 typeid: agent
-hoverText: "Agent (of a Party): Actor that is currently working on behalf of a Party."
+stage: draft
+hoverText: "An actor that is (at that point in time) executing an action for, or on behalf of a Party."
 ---
 
 ## Short Description
-An %%Actor|actor%% that is executing on action on behalf of some %%Party|party%%, which means that the execution of that action is subject to the conditions and other guidance set by that Party, then we say the Actor acts as an Agent of that Party. A Person, that is both an Actor and a Party can hence be seen as its own Agent. Agency is further detailed in the ['Party-Action' pattern|pattern-party-action].
+%%Actors|actor%% execute %%actions|action%% for, or on behalf of some %%party|party%%, because parties are not considered to be capable of acting.[^1] Agents must act in accordance with the party for which they execute such actions, which means that for every kind of action, such parties must provide the proper guidance for their agents, e.g. in terms of policies (rules), working instructions, programs etc. We use the term %%digital agent|digital-agent%%
+
+## Purpose
+The ability to distinguish between (non)agents is relevant in many situations, including:
+- electronic communication: the agent 
 
 ## Criterion:
-%%Actor|actor%% that is momentarily executing an action on behalf of a %%Party|party%%.
+a property that is attributed to an %%Actor|actor%% whenever it is executing an action for, or on behalf of some %%party|party%%.
 
 ## Examples:
 
@@ -22,3 +27,6 @@ An %%Actor|actor%% that is executing on action on behalf of some %%Party|party%%
 - A company that makes cars may use robots that weld parts of a car together; these robots acts as Agents for that company.
 - A (running) webserver that accepts product orders for a retailer acts as a (digital) Agent for that retailer.
 - A wallet app that runs on a phone and that is exclusively used by a single person acts as a (digital) Agent for that person.
+
+## Background:
+The %%party-action pattern|pattern-party-action%% provides an overview of how this concept fits in with related concepts.

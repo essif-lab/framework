@@ -4,6 +4,7 @@ title: "Jurisdiction"
 scopeid: essifLab
 type: concept
 typeid: jurisdiction
+stage: draft
 hoverText: "jurisdiction - popuptext t.b.d."
 ---
 

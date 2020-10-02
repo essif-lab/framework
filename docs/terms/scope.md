@@ -2,6 +2,7 @@
 id: scope
 title: "Scope: essifLabTerminology"
 scopeid: essifLabTerminology
+stage: draft
 hoverText: "essifLabTerminology - popuptext t.b.d"
 ---
 

@@ -4,6 +4,7 @@ title: "Knowledge"
 scopeid: essifLab
 type: concept
 typeid: knowledge
+stage: draft
 hoverText: "knowledge popover text"
 ---
 

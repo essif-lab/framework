@@ -4,6 +4,7 @@ title: "Title text for this dictionary"
 scopeid: <existing-scopeID>
 type: dictionary
 typeid: <new-dictionaryID>
+stage: draft
 hoverText: "<Text that pops up when the user hovers over a reference to this Dictionary>"
 ---
 <!--A dictionary is an alphabetically sorted list of terms with associated meanings that originate from multiple scopes.

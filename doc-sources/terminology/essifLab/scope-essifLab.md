@@ -1,8 +1,11 @@
 ---
-id: essifLabTerminology-scope
-title: eSSIF-Lab Terminology
-scopeid: essifLabTerminology
-hoverText: "essifLabTerminology - popuptext t.b.d"
+id: essifLab-scope
+title: "Scope: eSSIF-Lab"
+scopeid: essifLab
+type: scope
+typeid: essifLab
+stage: draft
+hoverText: "scope essifLab - popuptext tbd"
 ---
 
 ## Governance

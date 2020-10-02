@@ -4,6 +4,7 @@ title: "Objective"
 scopeid: essifLab
 type: concept
 typeid: objective
+stage: draft
 hoverText: "Something toward which effort is directed: an aim, goal, or end of action"
 ---
 

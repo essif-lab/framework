@@ -4,6 +4,7 @@ title: "Pattern: <name of the pattern>"
 scopeid: <existing-scopeID>
 type: pattern
 typeid: <new-patternID>
+stage: draft
 hoverText: "<Text that pops up when the user hovers over a reference to this pattern>"
 ---
 <!-- A pattern captures/describes a set of concepts, relations between them, and rules or constraints that (instances) thereof comply with. As such, it is a concise and possibly formal description of a coherent set of ideas, a mental model if you will, that can be used to facilitate one's thinking about/with these concepts.

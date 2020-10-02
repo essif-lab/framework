@@ -4,6 +4,7 @@ title: "Term"
 scopeid: essifLabTerminology
 type: concept
 typeid: term
+stage: draft
 hoverText: "a word or phrase that is used in at least one scope/context to refer to a specific concept."
 ---
 

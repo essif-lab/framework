@@ -4,12 +4,15 @@ title: "Entity"
 scopeid: essifLab
 type: concept
 typeid: entity
-hoverText: "something that is done by an actor"
+stage: draft
+hoverText: "something that is known to exist"
 ---
 
-## Criterion:
+## Short Description
+Whenever you know that somethings exists, be it another person, yourself, some computer, an extinct animal, a thought, an idea, a JSON-object, ..., _anything_ you can think of, is what the term **Entity** refers to.
+
+## Purpose
+This term enables us to refer to anything, or to postulate the existence of something, without further specifying what it is, or how it might be named.
 
 ## Criterion:
 Something, anything, that some %%party|party%% knows to exist
-
-### Background:

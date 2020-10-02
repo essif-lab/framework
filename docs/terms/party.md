@@ -4,8 +4,13 @@ title: "Party"
 scopeid: essifLab
 type: concept
 typeid: party
+stage: draft
 hoverText: "Entity that has knowledge about what exists, ways to reason with that knowledge, and ways for making decisions in a Self-Sovereign fashion."
 ---
+
+## Short Description
+
+## Purpose
 
 ## Criterion:
 Entity that has knowledge about what exists, ways to reason[^1] with that knowledge, and ways for making decisions in a Self-Sovereign[^2] fashion.
@@ -14,8 +19,6 @@ Entity that has knowledge about what exists, ways to reason[^1] with that knowle
 People obviously qualify. Enterprises, governments, and other organizations also qualify as they can be seen as having their own knowledge (e.g. in their registrations, databases etc.), ways to reason with that knowledge (business rules, exercised by their employees or IT systems), and making decision.
 
 Stones, pictures, ideas, etc. do not qualify. Also, electronic components do not qualify[^3].
-
-### xxx:
 to be elaborated
 
 ---

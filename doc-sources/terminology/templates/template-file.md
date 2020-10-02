@@ -4,6 +4,7 @@ title: "<title of rendered document>"
 scopeid: <scopeID>
 type: <type>
 typeid: <typeID>
+stage: draft
 hoverText: "<Text that pops up when the user hovers over a reference to this document>"
 ---
 <!--This template specifies the docusaurus attribtues that must be in place for the terminology-plugin to function properly. For specific generators, additional content may be required. That should be specified in the individual templates that specify the artifacts that such generators create.

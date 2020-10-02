@@ -4,6 +4,7 @@ title: "<New Term>"
 scopeid: <existing-scopeID>
 type: concept
 typeid: <new-termID>
+stage: draft
 hoverText: "<Text that pops up when the user hovers over a reference to this concept>"
 ---
 <!--A concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing. This file specifies the idea(s) that, within the scope of `<existing-scopeID>` will be referred to using <New Term>.

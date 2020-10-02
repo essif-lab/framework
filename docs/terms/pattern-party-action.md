@@ -4,6 +4,7 @@ title: "Pattern: Party-Action (Scope: eSSIF-Lab)"
 scopeid: essifLab
 type: pattern
 typeid: party-action
+stage: draft
 hoverText: "This pattern captures the foundational concepts and relations that we need for thinking about people (human beings), organizations, and how they interact with one another in a decentralized, self-sovereign way - which means that each of them decides for itself whether or not to interact with others, how to conduct such interactions, etc., thereby only taking external influences into account if they want, or have some need to do so."
 ---
 

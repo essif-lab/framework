@@ -4,17 +4,20 @@ title: "Jurisdiction"
 scopeid: essifLab
 type: concept
 typeid: jurisdiction
+stage: draft
 hoverText: "jurisdiction - popuptext t.b.d."
 ---
 
 ## Short Description
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
+A **Jurisdiction** is the composition of one %%scope|scope%%, one %%legal system|legal-system%% and one %%party|party%% that operates the legal system within that scope. While most people are familiar with what we call %%legal jurisdictions|legal-jurisdiction%%, please observe that %%organizations|organization%% habitually will have rules (business policies) in place, enforce them (to some extent), and have ways of resolving conflicts, and therefore qualify as a jurisdiction. Specifically, multi-national organizations are known to operate multiple jurisdictions, aliging the scopes with the scopes of other (often legal) jurisdictions for the purpose of preventing situations in which conflicting rules apply, which would lead to many effort-intensive conflict-resolution cases.
 
 ## Purpose
 <!--Describe why the concept is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What objectives does it help realize? Why is this concept relevant within its scope of definition?-->
+The ability to distinguish between (non)jurisdictions is a very generic enabler for us to tell which rules (laws, policies, guidelines, etc.) will apply in which situations, which %%party|party%% governs and enforces these rules, and where we should look to resolve any conflicts.
 
 ## Criteria
-<!--REQUIRED--How is this concept different from related ideas? What are essential characteristics that must be true? This is where you specify the [intensional definition](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions) of the concept, i.e. the necessary and sufficient conditions for when the term should be used. This makes that the concept becomes crystal clear. In the case of nouns, this is equivalent to specifying the properties that an object needs to have in order to be counted as a referent of the term.-->
+the composition of one %%scope|scope%%, one %%legal system|legal-system%% and one %%party|party%% that operates the legal system within that scope.
 
 ## Examples
 <!--Provide a few sentences in which you give examples that obviously qualify as instances of `<New Term>`, and that do NOT obviously qualify. Also, provide examples that are not (so) obvious, but help users to better understand its intension.-->
