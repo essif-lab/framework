@@ -1,5 +1,5 @@
 ---
-id: pattern-party-action
+id: pattern-party-actor-action
 title: "Pattern: Party-Action (Scope: eSSIF-Lab)"
 scopeid: essifLab
 type: pattern
@@ -18,7 +18,7 @@ TL;DR: This pattern models that %%Parties|party%% (humans, organizations) perfor
 
 `<image src=pattern-Party-action.png />`
 
-The essential characteristic of %%Parties|party%% is their 1-1 link with %%Knowledge|knowledge%%, which they continually update and use e.g. for reasoning, decision making, and determining e.g. what to do, when, and with whom. %%Knowledge|knowledge%% not only includes (observable) facts, but also opinions, e.g. regarding the %%Entities|entity%% it knows to exist, relations between them, and rules (constraints, [logic](https://en.wikipedia.org/wiki/Logic)[^1]) that can be used to classify and reasoning about them, and for making decisions. 
+The essential characteristic of %%Parties|party%% is their 1-1 link with %%Knowledge|knowledge%%, which they continually update and use e.g. for reasoning, decision making, and determining e.g. what to do, when, and with whom. %%Knowledge|knowledge%% not only includes (observable) facts, but also opinions, e.g. regarding the %%Entities|entity%% it knows to exist, relations between them, and rules (constraints, [logic](https://en.wikipedia.org/wiki/Logic)[^1]) that can be used to classify and reasoning about them, and for making decisions.
 
 Perhaps the most important idea in this pattern is that our %%Party|party%% concept is not considered to (be able to) act, and they need %%Actors|actor%% (i.e. %%Entities|entity%% that _can_ act) to act on their behalf and thus make them perform. This does, however,  not preclude having %%Entities|entity%% that are both %%Party|party%% and %%Actor|actor%% - e.g. humans - and that such %%Entities|entity%% can act on their ‘own’ behalf. And we can continue to use the commonly used form of speech in which a %%Party|party%% performs some Action  by realizing that this means that there is (at least) one %%Actor|actor%% that is actually executing that %%Action|action%%.
 

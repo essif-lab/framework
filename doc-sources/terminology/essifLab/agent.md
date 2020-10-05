@@ -29,4 +29,4 @@ a property that is attributed to an %%Actor|actor%% whenever it is executing an 
 - A wallet app that runs on a phone and that is exclusively used by a single person acts as a (digital) Agent for that person.
 
 ## Background:
-The %%party-action pattern|pattern-party-action%% provides an overview of how this concept fits in with related concepts.
+The %%party-action pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.

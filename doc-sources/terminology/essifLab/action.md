@@ -26,4 +26,4 @@ An **Action** is something that is done by an actor, can be considered a single 
 - OED defines Action as the fact or process of doing something, typically to achieve an aim ([OED](https://www.lexico.com/definition/action)), which is too generic for our purposes.
 
 ## Background:
-The %%party-action pattern|pattern-party-action%% provides an overview of how this concept fits in with related concepts.
+The %%party-action pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.

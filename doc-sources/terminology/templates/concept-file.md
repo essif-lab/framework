@@ -30,6 +30,9 @@ Please fill in the placeholders in this file as follows:
 ## Related Concepts
 <!--Link to any concepts that are similar but distinct, with a note about the relationship.-->
 
+## Background:
+<!--Mention and link to the patterns in which this concept plays a (significant) role (possibly explaining the reason/purpose if appropriate), e.g.: The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.-->
+
 ## Domains
 <!--In which general knowledge ecosystems or mental model families does this concept play a role?-->
 
