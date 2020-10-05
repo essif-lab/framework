@@ -26,9 +26,14 @@ The traditional tool for fostering common understanding is using glossaries, i.e
 
 The eSSIF-Lab project will also develop a [Glossary](essifLab-glossary).
 
-However, since the use of such glossaries is limited to short explanations, we will also provide (a) mental model(s) that provide a more in-depth explanation of the concepts that underly the words listed in the [eSSIF-Lab Glossary](essifLab-glossary). 
+However, since the use of such glossaries is limited to short explanations, we will also provide (a) mental model(s) that provide a more in-depth explanation of the concepts that underly the words listed in the [eSSIF-Lab Glossary](essifLab-glossary).
 
 ## Mental Models
+
+We have the following mental (conceptual) models:
+
+
+
 
 A Mental Model, or Conceptual Model, is a set of of concepts (i.e. entity classes), relations between such concepts (i.e. sets of pairs of members of classes that a relation connects), and rules/constraints expressed in terms of these relations and concepts.
 
@@ -77,45 +82,3 @@ Since there is nothing that you, or someone else, can come up with that does not
 **For the purposes of this document, the scope of every Definition is this Document (with its objectives that have been specified above).**
 
 Note that this definition satisfies itself. Also note that a definition may be used in multiple scopes, where a scope that wants to use the definition that has been defined in another scope, may replace that name with one of its own choosing. This way the meaning expressed by the definition remains preserved.
-
-### Concept
-**A named set of entities that satisfy a criterion that specifies the necessary and sufficient conditions for being a member of that set**
-
-### Relation
-**A named set of entity-pairs (L,R), and a criterion C(SRC,TGT), where:**
-
-- **SRC and TGT are Concepts;**
-- **L is an element of SRC and R is an element of TGT;**
-- **the name of the relation combined with SRC and TGT identifies the set;**
-- **C(L,R) is satisfied.**
-
-For example, a relation could be defined by:
-
-- name=‘is owner of’
-- SRC=’Party’ and TGT=’Entity’ and
-- C(SRC,TGT)=‘SRC is the owner of TGT’
-
-This relation contains all pairs (X,Y) for which Party X is the owner of Y. The set of entity-pairs (L,R) is called the extension of the relation. The criterion C(L,R) is also referred to as the intension of the relation (as, together with this definition, it intensionally defines the relation)
-
-### Rule (or Constraint)
-**A Relation the intension of which consists of pairs that do not satisfy a specified expression that consists of concept (elements) and relations, and that can logically be evaluated.**
-
-### Pattern
-**A coherent set of Concepts, Relations between these Concepts, and Rules that are expressed in terms of these Concepts and Relations.**
-
-We need Patterns as a mechanism for ‘chopping up’ mental models, in order to accommodate for the human disability to consciously oversee and think about more than 7 +/- 2 Concepts (including attributes, Relations, and Rules).
-Patterns may be associated with texts e.g. for motivating its existence, explaining its purpose, etc.
-
-## Notations
-We shall use keywords such as “shall”, “should”, “may” etc. as defined by [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
-
-Also, we capitalize words in mid-sentence whenever it is used in the meaning as provided by a corresponding Definition. This allows us to also use the more colloquial meanings of words (by not capitalizing them). We appreciate any feedback regarding our (im)proper use of this kind of capitalization of words.
-
-Patterns will be visualized in this document using a UML-like notation, as follows:
-
-- a **rectangle** represents a (named) concept. Concepts serve as entity-classes. Their (operational) extensions, i.e. the respective sets of (runtime) instances, are disjunct.
-- a **solid line with a closed arrowhead** represent a (named) relation/association between the two concepts it connects. The concept at the arrowhead is called the ‘target concept’ (TGT) for that relation. The concept at the other end is called the ‘source concept’ (SRC) for that relation. Names are chosen such that `<SRC> <relation name> <TGT>` is a phrase that suggests the intension(al definition) of that relation.
-- a **dashed line** signifies that its intension is created by combination the intensions of other relations (it is a ‘shorthand’ for a path of other relations).
-- an **open-ended arrow** is an ‘ISA’ relation, which can be read as `<SRC> ISA <TGT>`. It means that SRC is a specialization of TGT (which is a generalization of SRC). Thus, SRC must satisfy all constraints that TGT must satisfy, and has all attributes (including properties) that TGT has.
-- **Multiplicities** use the [n..m] notation. When a multiplicity is omitted, [0..n] is intended.
-- A **concept that is coloured red(dish)** represents a notion that is commonly used ‘in the wild’ (and hence needs not be defined here), relates to one or more concepts we need for the pattern, yet is not the same. We include such ‘red concepts’ to help readers identify and subsequently bridge gaps between commonly held thoughts and the (sometimes subtly) different meanings we need in our model.

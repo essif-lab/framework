@@ -1,18 +1,18 @@
 ---
-id: <new-concept-termID>
-title: "<New Term>"
-scopeid: <existing-scopeID>
+id: conceptID
+title: "NameOfNewConcept"
+scopeid: scopeID
 type: concept
-typeid: <new-concept-termID>
+typeid: conceptID
 stage: draft
-hoverText: "<Text that pops up when the user hovers over a reference to this concept>"
+hoverText: "popuptext for 'conceptID' (tbd)"
 ---
-<!--A concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing. This file specifies the idea(s) that, within the scope of `<existing-scopeID>` will be referred to using <New Term>.
+<!--A concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing. This file specifies the idea(s) that, within the scope of `<existing-scopeID>` will be referred to using `<New Term>`.
 Please fill in the placeholders in this file as follows:
 - `<existing-scopeID>`: machine readable text that identifies the scope in which this term is defined;
 - `<Existing Scope>`: human readable text that identifies the scope in which this term is defined;
-- `<new-termID>`: machine readable text that identifies this term within <existing-scopeID>;
-- `<New Term>`: human readable text that identifies this term within <Existing Scope>;
+- `<new-termID>`: machine readable text that identifies this term within `<existing-scopeID>`;
+- `<New Term>`: human readable text that identifies this term within `<Existing Scope>`;
 -->
 
 ## Short Description

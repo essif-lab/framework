@@ -27,3 +27,7 @@ A system in which rules are defined ([legislature](https://en.wikipedia.org/wiki
 - all sorts of associations, societies, clubs, unions would qualify as a jurisdiction.
 - families have a legal system, where the rules may or may not change regularly, enforcement may not always be consistent, and conflict resolution may be ad-hoc.
 - individual people can be said to have a legal system of their own, containing e.g. rules for ethics and morals.
+
+## Background:
+<!--Mention and link to the patterns in which this concept plays a (significant) role (possibly explaining the reason/purpose if appropriate), e.g.: -->
+The %%jurisdiction pattern|pattern-jurisdiction%% provides an overview of how this concept fits in with related concepts.

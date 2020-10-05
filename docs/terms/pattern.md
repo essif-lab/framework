@@ -15,3 +15,7 @@ hoverText: "pattern popover text"
 ## Criterion:
 
 ## Examples:
+
+
+## Background:
+The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.

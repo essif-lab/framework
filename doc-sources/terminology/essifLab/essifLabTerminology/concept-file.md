@@ -9,7 +9,7 @@ hoverText: "a file that defines/specifies a concept"
 ---
 
 ## Short Description
-A **concept-file** is a file that contains documentation about a specific %%concept|concept%%. To faciliate authors, a self-explanatory [template file](terminology/templates/concept-file.md) is available.
+A **concept-file** is a file that contains documentation about a specific %%concept|concept%%. To faciliate authors, a self-explanatory [template file](doc-sources/terminology/templates/concept-file.md) is available.
 
 ## Purpose
 The ability for people to determine whether or not they are talking about the same 'thing' (idea, concept), is prerequisite for knowing that they (correctly) understand one another - which doesn't imply they agree with each other. Concept files provide the documentation of such %%things|concept%% that contribute to this ability.

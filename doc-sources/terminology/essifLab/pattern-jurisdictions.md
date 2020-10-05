@@ -1,5 +1,5 @@
 ---
-id: pattern-jurisdictions
+id: pattern-jurisdiction
 title: "Pattern: Jurisdictions (Scope: eSSIF-Lab)"
 scopeid: essifLab
 type: pattern
