@@ -20,7 +20,7 @@ function getImportStatement(filePath) {
   var absoluteTermPath = path.resolve('./src/components');
   // Find the relative path between the file to be modified and the Term plugin
   var relativePath = path.relative(filePath, absoluteTermPath);
-  var importTerm = `\n\nimport { Term } from '${relativePath}'`;
+  var importTerm = `\n\nimport { Term } from '${relativePath}'\n`;
 
   return importTerm
 }
