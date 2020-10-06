@@ -24,9 +24,9 @@ The Concepts and Terminology part of eSSIF-Lab aims helps eSSIF-Lab community pa
 
 The traditional tool for fostering common understanding is using glossaries, i.e. alphabetical lists of words relating to a specific subject, text, or dialect, with explanations; a brief dictionary ([OED](https://www.lexico.com/definition/glossary)). Examples include the [Sovrin Glossary](https://sovrin.org/library/glossary/) and the [NIST Glossary](https://csrc.nist.gov/glossary). Other initiatives attempt to provide more background, e.g. the [terminology for talking about privacy by data minimization](https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf) by Pfitzmann and Hansen (2010), or the [EBSI Terminology (login required)](https://ec.europa.eu/cefdigital/wiki/display/EBP/EBSI+Terminology).
 
-The eSSIF-Lab project will also develop a [Glossary](essifLab-glossary).
+The eSSIF-Lab project will also develop a [Glossary](/docs/essifLab-glossary).
 
-However, since the use of such glossaries is limited to short explanations, we will also provide (a) mental model(s) that provide a more in-depth explanation of the concepts that underly the words listed in the [eSSIF-Lab Glossary](essifLab-glossary).
+However, since the use of such glossaries is limited to short explanations, we will also provide (a) mental model(s) that provide a more in-depth explanation of the concepts that underly the words listed in the [eSSIF-Lab Glossary](/docs/essifLab-glossary). 
 
 ## Mental Models
 

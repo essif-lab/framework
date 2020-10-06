@@ -1,5 +1,5 @@
 ---
-id: essifLab-term-digital-agent
+id: digital-agent
 title: "Digital Agent"
 scopeid: essifLab
 type: term

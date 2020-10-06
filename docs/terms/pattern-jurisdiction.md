@@ -1,12 +1,14 @@
 ---
 id: pattern-jurisdiction
-title: "Pattern: Jurisdictions (Scope: eSSIF-Lab)"
+title: "Pattern: Jurisdiction (Scope: eSSIF-Lab)"
 scopeid: essifLab
 type: pattern
-typeid: jurisdictions
+typeid: jurisdiction
 stage: draft
-hoverText: "jurisdiction pattern - popuptext t.b.d."
+hoverText: "The jurisdiction pattern captures the concepts and relations that explain what a generic jurisdiction consists of, and relates it to parties and legal entities."
 ---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Purpose
 <!-- Concisely describe what can you do with the pattern that is (at least) harder if you didn't have it. -->
@@ -29,8 +31,11 @@ Jurisdictions also in terms of the legal system they apply. Different jurisdicti
 Note that all the rules, processes and decisions must be part of the %%knowledge|knowledge%% of the party that runs the jurisdiction.
 
 ## Formalized model
-This pattern focuses on the essence of %%jurisdictions|jurisdiction%% (using the concepts ‘%%Party|party%%’ and ‘%%Knowledge|knowledge%%’ as defined in the ‘%%Party-Action pattern|pattern-party-actor-action%%’). The pattern diagram uses commonly known [notations and conventions](notations-and-conventions):
+Here is a visual representation of this pattern, using the following [notations and conventions](/docs/notations-and-conventions#pattern-diagram-notations):
 
-[Conceptual model of the 'Jurisdiction' pattern](../images/patterns/pattern-jurisdiction.png) ([legend](notations-and-conventions))
+<img
+  alt="Conceptual model of the 'Jurisdiction' pattern"
+  src={useBaseUrl('images/patterns/pattern-jurisdiction.png')}
+/>;
 
 The figure shows that a %%jurisdiction|jurisdiction%% comprises a single %%scope|scope%%, a (single) %%legal system|legal-system%% system and a %%party|party%% that operates this Legal System within the Scope (which it controls). The Legal System applies to %%Entities|entity%% that are known in the jurisdiction (e.g. registered with the party as per the rules of the legal system, leading to their being registered/represented in the %%knowledge|knowledge%% of that party). These are what, specifically for %%legal jurisdictions|legal-jurisdiction%% are called %%legal entities|legal-entity%%.
