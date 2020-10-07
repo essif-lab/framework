@@ -31,6 +31,9 @@ A (description/specification of a) Concept MUST be [intensionally defined](https
 
 * %%Mental(or Conceptual) Model|pattern%% is a collection of concepts, relations between such concepts, and constraint rules that (elements of) such concepts and relations must satisfy. Such [models](https://en.wikipedia.org/wiki/Conceptual_model) are used to help people know, understand, or simulate a subject the model represents.
 
+## Background:
+The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
+
 ## Domains
 <!--In which general knowledge ecosystems or mental model families does this concepty a role?-->
 * essifLab

@@ -1,6 +1,6 @@
 ---
-id: essifLab-glossary
-title: "eSSIF-Lab Glossary"
+id: essifLab-pattern-list
+title: "eSSIF-Lab List of Patterns"
 ---
 
 :::note Editor's note

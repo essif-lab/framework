@@ -28,6 +28,8 @@ A Term MUST be a word or phrase that is linked to at least one %%context|scope%%
 ## Related Concepts
 <!--Link to any %%concepts|concept%% that are similar but distinct, with a note about the relationship.-->
 
+## Background:
+The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
 
 ## Domains
 <!--In which general knowledge ecosystems or mental model families does this concepty a role?-->

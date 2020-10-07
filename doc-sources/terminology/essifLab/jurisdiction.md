@@ -25,17 +25,9 @@ the composition of one %%scope|scope%%, one %%legal system|legal-system%% and on
 ## Related Concepts
 <!--Link to any concepts that are similar but distinct, with a note about the relationship.-->
 
-## Domains
-<!--In which general knowledge ecosystems or mental model families does this concept play a role?-->
-
-## Tags
-<!--Add hash tags here that allow us to group concepts in useful ways.-->
-
-## Use-cases
-<!--This (optional) section specifies an (optional) introductory paragraph, and a level-3 (i.e. `###`) subsection for every use case it describes. Every such use-case SHOULD
-- describe the situation/context of the use-case;
-- show how to apply `<New Term>` to/in that situation;
-- shows the relevance of having `<New Term>` for the use-case as opposed to not having it.-->
+## Background:
+<!--Mention and link to the patterns in which this concept plays a (significant) role (possibly explaining the reason/purpose if appropriate), e.g.: -->
+The %%jurisdiction pattern|pattern-jurisdiction%% provides an overview of how this concept fits in with related concepts.
 
 ## Notes
 <!--This (optional) section is the place to put anything for which there is no other good place to put it.-->

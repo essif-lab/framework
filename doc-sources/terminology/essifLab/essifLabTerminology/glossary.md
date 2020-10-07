@@ -26,8 +26,11 @@ Examples include the [eSSIF-Lab Glossary](/docs/essifLab-glossary), the [Sovrin 
 
 ## Related Concepts
 <!--This (optional) section lists words/phrases that are encountered in other contexts that have the same or a sufficiently similar meaning as Glossary. In this section you may point out the (subtle) differences between Glossary and this related terminology. This helps readers better/deeper understand Glossary, and how it may be used to relate to existing texts. Ideally, such references are accompanied with links to (preferredly authoritative) sources.-->
-- Dictionary - this is more extensive; it usually includes multiple meanings of words, and may include additional information e.g. on pronunciation, etymology, usage, example sentences,synonyms, etc. See [askdifference.com](https://www.askdifference.com/dictionary-vs-glossary/)
-- Vocabulary - this is a body of words used in a particular language or field of expertise. A Glossary can provide the meaning of each word for use within the scope(s) for which the Glossary is created.
+- %%Dictionary|dictionary%% - this is more extensive; it usually includes multiple meanings of words, and may include additional information e.g. on pronunciation, etymology, usage, example sentences,synonyms, etc. See [askdifference.com](https://www.askdifference.com/dictionary-vs-glossary/)
+- [Vocabulary](https://en.wikipedia.org/wiki/Vocabulary) - this is a set of familiar words witin a particular/persons's language or field of expertise. A Dictionary can provide the various meanings of each such words.
+
+## Background:
+The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
 
 ## Notes
 <!--This (optional) section is the place to put anything for which there is no other good place to put it.-->

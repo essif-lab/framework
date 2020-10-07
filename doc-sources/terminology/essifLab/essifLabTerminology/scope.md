@@ -1,34 +1,44 @@
 ---
 id: scope
-title: "Scope: essifLabTerminology"
-scopeid: essifLabTerminology
+title: "Scope"
+scopeid: eSSIFLab
+type: concept
+typeid: scope
 stage: draft
-hoverText: "essifLabTerminology - popuptext t.b.d"
+hoverText: "the extent of the area or subject matter (which we use to define patterns, concepts, terms and glossaries in)."
 ---
 
-## Governance
-<!--This section identifies the organizational body (Jurisdiction) that governs the scope. Optionally, a reference to the governance framework/procedures may be made.-->
-The [eSSIF-Lab project](https://essif-lab.eu/) governs the terminology within this scope, according to the procedures mentioned in the [eSSIF-Lab Framework](https://essif-lab.pages.grnet.gr/framework/docs/terminology/).
+## Short Description
+<!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
+A **scope** (in the eSSIFLab context) is the extent of the area or subject matter (as in [OED](https://www.lexico.com/definition/scope). We use it to define patterns, concepts, terms and glossaries in, but a scope may serve other (additional) purposes. Scopes may overlap, or be nested. It is comparable to [Namespeces](https://en.wikipedia.org/wiki/Namespace), were it not that entities other than names (signs that are used to identify/refer to objects of various kinds) can reside in a scope as it is defined here.
 
-## Objectives/Issues
-<!--State the purpose for having the scope in terms of objectives that are aimed for and/or issues that are to be addressed.-->
-Contributors to and users of eSSIF-Lab come from various backgrounds. Their culture may not be Western. English may not be their native tongue. They may be experts in non-technological topics. Working with one another presumes a setting where participants have some level of shared understanding. Often, sharing one's understanding at a superficial level suffices. Other situations require that underlying concepts are shared in a more in-depth fashion. It's like cars: people buying, selling, or driving cars do not need in-depth shared knowledge about cars, whereas (maintenance or construction) engineers or liability lawyers need to share a deeper knowledge of how cars do (or do not) work.
+## Purpose
+<!--Describe why the concept is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What objectives does it help realize? Why is this concept relevant within its scope of definition?-->
+This allows each %%term|term%% (words, phrases) to be used in a limited scope, for specific purposes. The fact that terms are 'scoped' implies that a term may have _different_ meanings, depending on the scope within which it is used. Also, it allows us to author documentation in a 'scoped' fashion, allowing different groups of people to author, use and disseminate their documentation (including documentation about their ideas (%%patterns|pattern%%), %%concepts|concept%%, and %%terms|term%%.)
 
-We expect to see situations of "language confusion", i.e. in which people use words or phrases, the intension (not: intention) of which differs from the interpretation of some listeners/readers. Sometimes a casual glance at a dictionary or glossary is the solution. In other cases, deeper understanding matters, e.g. in when drafting specifications or contracts. Then we need more than a set of definitions.
+## Criteria
+<!--REQUIRED--How is this concept different from related ideas? What are essential characteristics that must be true? This is where you specify the [intensional definition](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions) of the concept, i.e. the necessary and sufficient conditions for when the term should be used. This makes that the concept becomes crystal clear. In the case of nouns, this is equivalent to specifying the properties that an object needs to have in order to be counted as a referent of the term.-->
+a (virtual) demarcation that serves particular purposes.
 
-The Concepts and Terminology part of eSSIF-Lab aims helps eSSIF-Lab community participants understand one another at whatever level of precision they need.
+## Examples
+<!--Provide a few sentences in which you give examples that obviously qualify as instances of `Scope`, and that do NOT obviously qualify. Also, provide examples that are not (so) obvious, but help users to better understand its intension.-->
 
-## Scope URI
-<!--Optionally specify the URI by which this scope may be identified-->
+## Related Concepts
+<!--Link to any concepts that are similar but distinct, with a note about the relationship.-->
 
-## Inclusions
-<!--This scope may include other scopes, which means that everything in that other scope is also considered part of this scope. In case of collisions, this scope MUST provide a means to resolve such conflicts without modifying anything in included scopes. For eSSIF-Lab, we include `essifLabTerminology`-->
+## Background:
+<!--Mention and link to the patterns in which this concept plays a (significant) role (possibly explaining the reason/purpose if appropriate), e.g.: -->
+The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
+
+## Use-cases
+<!--This (optional) section specifies an (optional) introductory paragraph, and a level-3 (i.e. `###`) subsection for every use case it describes. Every such use-case SHOULD
+- describe the situation/context of the use-case;
+- show how to apply `Scope` to/in that situation;
+- shows the relevance of having `Scope` for the use-case as opposed to not having it.-->
 
 ## Notes
-<!--Anything els that's worth mentioning.-->
-
-## Tags
-<!--Add hash tags here that allow us to group concepts in useful ways.-->
+<!--This (optional) section is the place to put anything for which there is no other good place to put it.-->
+- Scopes within which a certain %%concept|concept%% is known, may still use different terms to refer to the concept. That's the reason for having %%definitions|definition%% that specify criteria for determining whether or not something qualifies as (an instance of) some concept: we cannot rely on different scopes necessarily using the same terms for that.
 
 <!--
 ---
