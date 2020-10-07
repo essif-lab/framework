@@ -1,6 +1,6 @@
 ---
 id: pattern-party-actor-action
-title: "Pattern: Party-Action (Scope: eSSIF-Lab)"
+title: "Pattern: Party-Action"
 scopeid: essifLab
 type: pattern
 typeid: party-action

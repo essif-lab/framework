@@ -1,6 +1,6 @@
 ---
 id: scope
-title: "Scope (as a concept)"
+title: "Scope"
 scopeid: eSSIFLab
 type: concept
 typeid: scope

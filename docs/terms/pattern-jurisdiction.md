@@ -1,6 +1,6 @@
 ---
 id: pattern-jurisdiction
-title: "Pattern: Jurisdiction (Scope: eSSIF-Lab)"
+title: "Pattern: Jurisdiction"
 scopeid: essifLab
 type: pattern
 typeid: jurisdiction
@@ -36,6 +36,6 @@ Here is a visual representation of this pattern, using the following [notations 
 <img
   alt="Conceptual model of the 'Jurisdiction' pattern"
   src={useBaseUrl('images/patterns/pattern-jurisdiction.png')}
-/>;
+/>
 
 The figure shows that a %%jurisdiction|jurisdiction%% comprises a single %%scope|scope%%, a (single) %%legal system|legal-system%% system and a %%party|party%% that operates this Legal System within the Scope (which it controls). The Legal System applies to %%Entities|entity%% that are known in the jurisdiction (e.g. registered with the party as per the rules of the legal system, leading to their being registered/represented in the %%knowledge|knowledge%% of that party). These are what, specifically for %%legal jurisdictions|legal-jurisdiction%% are called %%legal entities|legal-entity%%.

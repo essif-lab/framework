@@ -1,6 +1,6 @@
 ---
 id: glossary
-title: "Glossary (Concept)"
+title: "Glossary"
 scopeid: essifLabTerminology
 type: concept
 typeid: glossary

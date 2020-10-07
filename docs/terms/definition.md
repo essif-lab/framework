@@ -27,7 +27,7 @@ Entity that comprises at a minimum:
 ## Examples
 <!--Provide a few sentences in which you give examples that obviously qualify as instances of `Concept`, and that do NOT obviously qualify. Also, provide examples that are not (so) obvious, but help users to better understand its intension.-->
 - The definition of the term %%definition|definition%% (a) is defined in, and hence valid in the scope `eSSIFLab`, (b) specifies a criterion (see the `Criteria` section above), and (c) is relevant (see the `Purpose` section above), and (d) has a name (i.e. `definition`) associated with it. Since it satisfies the criteria of `definition`, it can be referred to as 'the definition of `definition`'.
-- The %%concepts|concept%% defined within the scope eSSIFLab have definitions associated with them, where the criteria, relevance and terms are defined in the %%concept-file%% of that concept.
+- The %%concepts|concept%% defined within the scope eSSIFLab have definitions associated with them, where the criteria, relevance and terms are defined in the %%concept-file|concept-file%% of that concept.
 
 ## Related Concepts
 <!--Link to any %%concepts|concept%% that are similar but distinct, with a note about the relationship.-->

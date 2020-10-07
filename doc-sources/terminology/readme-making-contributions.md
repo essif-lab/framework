@@ -18,37 +18,37 @@ In order to contribute, you first need to understand the [ideas/concepts behind 
 
 ## Scope-files
 
-:::info editors note
+:::info Editors Note
 Content may be provided by TNO.
 :::
 
 ## Concept-files
 
-:::info editors note
+:::info Editors Note
 Content may be provided by TNO.
 :::
 
 ## Term-files
 
-:::info editors note
+:::info Editors Note
 Content may be provided by TNO.
 :::
 
 ## Pattern-files
 
-:::info editors note
+:::info Editors Note
 Content may be provided by TNO.
 :::
 
 ## Glossary-files
 
-:::info editors note
+:::info Editors Note
 Content may be provided by TNO.
 :::
 
 ## Dictionary-files
 
-:::info editors note
+:::info Editors Note
 Content may be provided by TNO.
 :::
 

@@ -1,9 +1,9 @@
 ---
 id: pattern-party-actor-action
-title: "Pattern: Party-Action (Scope: eSSIF-Lab)"
+title: "Pattern: Party-Actor-Action"
 scopeid: essifLab
 type: pattern
-typeid: party-action
+typeid: party-actor-action
 stage: draft
 hoverText: "This pattern captures the foundational concepts and relations that we need for thinking about how things get done. It answers questions such as: 'Who/what does things?', 'How are their actions being guided/controlled?', 'Who controls whom/what?', 'Who/what may be held accountable?'"
 ---
@@ -15,37 +15,32 @@ This pattern captures the foundational concepts and relations that we need for t
 
 ## Purpose
 <!--Concisely describe what can you do with the pattern that is (at least) harder if you didn't have it.-->
-In order for people or organizations to decide what to do (themselves), what to ask others to do (for which these others generally require some form of compensation, how to know that the associated risks are worth taking, this pattern provides a simple mental model that provides the basis for thinking/reasoning about such questions. 
+In order for people or organizations to decide what to do (themselves), what to ask others to do (for which these others generally require some form of compensation, how to know that the associated risks are worth taking, this pattern provides a simple mental model that provides the basis for thinking/reasoning about such questions.
 
 ## Introduction
 <!--Gently introduce the pattern, by referring to real-world situations and using colloquial terms, so that when someone has read the text, (s)he knows what it is about, and is ready to delve into the specifics of the pattern-->
-One may readily observe that in some way, people (humans) and %%organizations|organization%% are similar. This is indicated e.g. by the notion of 'personality' that many %%legal jurisdictions%% assign to (specific kinds of) organizations. It allows rights and duties to be assigned to people and organizations alike. It also means that people and organizations can be held accountable, and be subjected to prosecution.
+One may readily observe that in some way, people (humans) and %%organizations|organization%% are similar. This is indicated e.g. by the notion of 'personality' that many %%legal jurisdictions|legal-jurisdiction%% assign to (specific kinds of) organizations. It allows rights and duties to be assigned to people and organizations alike. It also means that people and organizations can be held accountable, and be subjected to prosecution.
 
-One may also readily observe that in other ways, people and organizations differ. For example, people eat and drink, whereas organizations do not. People can sit behind a computer keyboard, type texts, hit the `Enter` button, e.g. to send an email. Organizations cannot do that. In short: people can act (do things), whereas organizations cannot.
+The main characteristic that people and organizations share, is everyone of them maintains (a body of) %%knowledge|knowledge%%. They acquire knowledge by observing the world around them, processing such observations, storing all that (using specific (tangible) representations of these (intangible) things, and sharing/disseminating it with others (here again, (tangible) representations must be used). We introduce the term %%party|party%% to refer to %%entities|entity%% that share this characteristic of maintaining (a body of) knowledge. Both people and organizations qualify as such.
 
-Our language allows us to say things that are untrue if taken literally, yet can become true when interpreted figuratively - but in a specific sense. If ACME is an organization and someone says: "I just received an email from ACME", this cannot be literally true as organizations cannot send emails. It is either a person or a computer system that has actually sent it. There is a broad consensus that the appropriate (figurative) way to interpret the sentence is to assume that there is a person or something else that can send mails, that has sent it while 'working for ACME'. 
+One may also readily observe that in other ways, people and organizations differ. For example, people eat and drink, whereas organizations do not. People can sit behind a computer keyboard, type texts, hit the `Enter` button, e.g. to send an email. Organizations cannot do that. In short: people can act (do things), whereas organizations cannot. The characteristic that sets people and organizations apart is the ability to act.
 
+We will use the term %%actor|actor%% to refer to %%entities|entity%% that are capable of acting (doing things). People will qualify, whereas organizations do not.
 
+Notwithstanding that organizations cannot act, it is quite common to hear statements that seem to imply that they can. If ACME is an organization and someone says: "I just received mail from ACME", this cannot be literally true as organizations cannot send messages. It is either a person or a computer system that has actually sent it. Statements such as these must therefor be interpreted in a figurative way, as a 'shorthand' for 'I just received mail that was sent by some %%actor|actor%% that was `working for` ACME', where `working for` may have various meanings:
 
-This pattern models that %%Parties|party%% (humans, organizations) perform %%Actions|action%% for the purpose of realizing their %%Objectives|objective%%. %%Parties|party%% are not considered to actually execute such %%Actions|action%%; they have (human and non-human) %%Actors|actor%% that work for them, execute such %%Actions|action%%, using the %%Party|party%%’s %%Knowledge|knowledge%% as the (authoritative) guidance for executing the %%Actions|action%% (as well as any other relevant %%Knowledge|knowledge%% they can access).
+1. ACME may be the %%owner|owner% of that actor. This would be the case if the mail was sent by one of ACME's running business applications.
+2. ACME may employ, or otherwise hire that actor. This would be the case if one of its employees sent the mail, or a business application that is owned by another party sent the mail on behalf of ACME. How this works is the subject of the pattern %%Mandates, Delegation and Hiring|pattern-mandates-delegation-hiring%%.
 
-<img
-  alt="Conceptual model of the 'Party-Actor-Action' pattern"
-  src={useBaseUrl('images/patterns/pattern-party-actor-action.png')}
-/>;
+Note that owning, employing (or hiring) an actor is a condition that usually exists for a considerable time, at least in the order of days (weeks, months). However, some actors (e.g. humans) are capable of multi-tasking, i.e. they can do several actions (pretty much) simultaneously. For example, a person that is working for some organization may make a personal phone call, or send a personal email during working hours. This shows that the 'working for` (some party) condition can mean two things: either it is the status/condition 
+- that allows/enables the actor to act on behalf of some party. We refer to that as `working for`, e.g. `actor A works for party P`.
+- the status/condition that an actor is executing a specific %%action|action%% on behalf of that party at some given point in time. We refer to that condition as `is acting on behalf of` or `is executing an action on behalf of`. We expect that whenever an actor is acting on behalf of some party, it must also work for that party.
 
+%%Actions|action%% can usually be executed in different ways. For example, sending a mail on behalf of some organization may require that the mail template and logo of that organization be used. Or accepting an order usually requires a check to see the order is 'clean', i.e. can be processed by others in the organization. What a 'clean-order check' comprises is to be determined by the organization.
 
-The essential characteristic of %%Parties|party%% is their 1-1 link with %%Knowledge|knowledge%%, which they continually update and use e.g. for reasoning, decision making, and determining e.g. what to do, when, and with whom. %%Knowledge|knowledge%% not only includes (observable) facts, but also opinions, e.g. regarding the %%Entities|entity%% it knows to exist, relations between them, and rules (constraints, [logic](https://en.wikipedia.org/wiki/Logic)[^1]) that can be used to classify and reasoning about them, and for making decisions.
+So in general, the execution of an action is (primarily) guided by the policies, working instructions etc. (i.e.: the %%knowledge|knowledge%%) of the party on whose behalf that action is executed. The actor can still use other, additional knowledge (of other parties) that it has access to, but the primary guidance that it *must* use originates from the party on whose behalf it executes the action. In the previous example, a person that would send mail on behalf of the organization would use its official paper, format the mail according to the organization's templates, comply with any other applicable requirements, and then use the knowledge of itself (as a person is a party) to provide the content, phrase sentences, etc.
 
-Perhaps the most important idea in this pattern is that our %%Party|party%% concept is not considered to (be able to) act, and they need %%Actors|actor%% (i.e. %%Entities|entity%% that _can_ act) to act on their behalf and thus make them perform. This does, however,  not preclude having %%Entities|entity%% that are both %%Party|party%% and %%Actor|actor%% - e.g. humans - and that such %%Entities|entity%% can act on their ‘own’ behalf. And we can continue to use the commonly used form of speech in which a %%Party|party%% performs some Action  by realizing that this means that there is (at least) one %%Actor|actor%% that is actually executing that %%Action|action%%.
-
-In this pattern, %%Knowledge|knowledge%% takes center stage. %%Knowledge|knowledge%% contains %%Objectives|objective%% to be realized and managed. This not only triggers all sorts of %%Actions|action%% to be performed, but also guides their execution in terms of when an Action should start, when it terminates, which %%Actors|actor%% qualify for executing it, etc. Everything that is specific for a %%Party|party%% is reflected in its %%Knowledge|knowledge%%.
-
-This works well for human beings, which are both a %%Party|party%% and an %%Actor|actor%%. So a human being can act, implying itself as an %%Actor|actor%%, and using its personal %%Knowledge|knowledge%% as guidance. The model also works when a human being (as a %%Party|party%%) may hire someone else (as an %%Actor|actor%%), e.g. to fill in his tax return form. This other is guided by the %%Knowledge|knowledge%% of the human being that hired him, and uses its own %%Knowledge|knowledge%% for the details of filling in the tax form.
-
-It also works well for organizations, which are typically companies, enterprises, governments or parts thereof, i.e. groups of human beings and possibly other %%Actors|actor%% that, as a group, fit the criteria for being a %%Party|party%%. This group of %%Actors|actor%% would typically work to realize the organization’s %%Objectives|objective%%, being guided by the organization’s %%Knowledge|knowledge%% (registrations, policies, etc.). Like human beings, an organization may (have an appropriate %%Actor|actor%%) decide to hire or fire %%Actors|actor%% for longer or shorter periods.
-
-%%Parties|party%% set %%Objectives|objective%% that they seek to achieve, the most basic of which perhaps is its mission, or its ‘raison d'être’, to the realization of which all of its %%Actions|action%% are (ultimately) aimed. Every Objective is owned by a single %%Party|party%% (we do not consider ‘shared objectives’[^2]).
+Finally, we note that a party `owns` %%objectives|objective%% that it seeks to fulfill or realize, and these are part of its knowledge. The relevance of this is that a large number of the decisions that parties make have to do with their managing their %%risks|risk%% (which [ISO 27000](https://www.iso.org/obp/ui#iso:std:iso-iec:27000:ed-4:v1:en)) defines as 'effect of uncertainty on objectives'), each of which is related to one or more of its objectives.
 
 ## Formalized model
 Here is a visual representation of this pattern, using the following [notations and conventions](/docs/notations-and-conventions#pattern-diagram-notations):
@@ -53,9 +48,11 @@ Here is a visual representation of this pattern, using the following [notations 
 <img
   alt="Conceptual model of the 'Party-Actor-Action' pattern"
   src={useBaseUrl('images/patterns/pattern-party-actor-action.png')}
-/>;
+/>
 
-The essential characteristic of %%Parties|party%% is their 1-1 link with %%Knowledge|knowledge%%, which they continually update and use e.g. for reasoning, decision making, and determining e.g. what to do, when, and with whom. %%Knowledge|knowledge%% not only includes (observable) facts, but also opinions, e.g. regarding the %%Entities|entity%% it knows to exist, relations between them, and rules (constraints, [logic](https://en.wikipedia.org/wiki/Logic)[^1]) that can be used to classify and reasoning about them, and for making decisions. 
+It shows that %%Parties|party%% (humans, organizations) perform %%Actions|action%% for the purpose of realizing their %%Objectives|objective%%. %%Parties|party%% are not considered to actually execute such %%Actions|action%%; they have (human and non-human) %%Actors|actor%% that work for them, execute such %%Actions|action%%, using the %%Party|party%%’s %%Knowledge|knowledge%% as the (authoritative) guidance for executing the %%Actions|action%% (as well as any other relevant %%Knowledge|knowledge%% they can access).
+
+The essential characteristic of %%Parties|party%% is their 1-1 link with %%Knowledge|knowledge%%, which they continually update and use e.g. for reasoning, decision making, and determining e.g. what to do, when, and with whom. %%Knowledge|knowledge%% not only includes (observable) facts, but also opinions, e.g. regarding the %%Entities|entity%% it knows to exist, relations between them, and rules (constraints, [logic](https://en.wikipedia.org/wiki/Logic)[^1]) that can be used to classify and reasoning about them, and for making decisions.
 
 Perhaps the most important idea in this pattern is that our %%Party|party%% concept is not considered to (be able to) act, and they need %%Actors|actor%% (i.e. %%Entities|entity%% that _can_ act) to act on their behalf and thus make them perform. This does, however,  not preclude having %%Entities|entity%% that are both %%Party|party%% and %%Actor|actor%% - e.g. humans - and that such %%Entities|entity%% can act on their ‘own’ behalf. And we can continue to use the commonly used form of speech in which a %%Party|party%% performs some Action  by realizing that this means that there is (at least) one %%Actor|actor%% that is actually executing that %%Action|action%%.
 
