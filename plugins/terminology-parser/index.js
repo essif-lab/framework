@@ -15,6 +15,17 @@ String.prototype.insert = function(index, string) {
   return string + this;
 };
 
+function getRelativePath(source,target) {
+  // calculate relative path from each file's parent dir
+  const sourceDir = source.substr(0, source.lastIndexOf("/"));
+  const targetDir = target.substr(0, target.lastIndexOf("/"));
+  const relative_url = path.relative(sourceDir, targetDir);
+  // construct the final url by appending the target's filename
+  // if the relative url is empty, it means that the referenced
+  // term is in the same dir, so add a `.`
+  return relative_url === '' ? '.' + target.substr(target.lastIndexOf("/")) : relative_url + target.substr(target.lastIndexOf("/"));
+}
+
 function getImportStatement(filePath) {
   var filePath = path.dirname(filePath);
   var absoluteTermPath = path.resolve('./src/components');
@@ -49,7 +60,7 @@ async function parser(err, files) {
     for(let filepath of files.filter(filepath => filepath != './docs/terminology-plugin-instructions.md')) {
       let content = '';
       try {
-      content = await fs.promises.readFile(filepath, 'utf8')
+        content = await fs.promises.readFile(filepath, 'utf8')
       } catch(err) {
         console.log(err)
       }
@@ -70,8 +81,11 @@ async function parser(err, files) {
           // Get the popup text for the term
           let hoverText = await getHoverText(referencePath);
 
+          const current_file_path = path.resolve(process.cwd(), filepath);
+          const term_path = path.resolve(process.cwd(), TERMS_DIR, reference);
+          const new_final_url = getRelativePath(current_file_path, term_path);
           var new_text = ('<Term popup="' + hoverText + '" reference="' +
-              reference + '">' + text + '</Term>');
+              new_final_url + '">' + text + '</Term>');
           content = content.replace(regex_match, new_text);
         }
         // Find the index of the 2nd occurrence of '---'
