@@ -18,8 +18,8 @@ module.exports = {
         {to: 'docs/introduction', label: 'Introduction', position: 'left'},
         {to: 'docs/vision-and-purpose', label: 'Vision', position: 'left'},
         {to: 'docs/functional-architecture', label: 'Functional Architecture', position: 'left'},
-        {to: 'docs/ssi-standards', label: 'SSI Standardization', position: 'left'},
-        {to: 'docs/terminology', label: 'Terminology', position: 'right'},
+        {to: 'docs/terminology', label: 'Terminology', position: 'left'},
+        {to: 'docs/ssi-standards', label: 'SSI Standardization', position: 'right'},
         {
           href: 'https://gitlab.grnet.gr/essif-lab/framework',
           label: 'Gitlab',
@@ -30,29 +30,62 @@ module.exports = {
     footer: {
       style: 'dark',
       links: [
-        // {
-        //   title: 'Framework',
-        //   items: [
-        //     {
-        //       label: 'Introduction',
-        //       to: 'docs/introduction'
-        //     },
-        //     {
-        //       label: 'Architecture',
-        //       to: 'docs/architecture'
-        //     },
-        //     {
-        //       label: 'Open calls',
-        //       to: 'docs/open_calls'
-        //     },
-        //   ],
-        // },
         {
-          title: 'Social',
+          title: 'Project',
           items: [
+            {
+              label: 'Project site',
+              href: 'https://essif-lab.eu/'
+            },
+            // {
+            //   label: 'Apply for Infrastructure open call',
+            //   href: 'https://essif-lab-infrastructure-oriented.fundingbox.com/'
+            // },
+            {
+              label: 'Open Calls',
+              href: 'https://essif-lab.eu/open-calls/'
+            },
+            // {
+            //   label: 'News and Events',
+            //   href: 'https://essif-lab.eu/news-and-events/'
+            // },
             {
               label: 'Gitlab',
               href: 'https://gitlab.grnet.gr/essif-lab/essif-lab',
+            },
+          ],
+        },
+        {
+          title: 'eSSIF-lab Framework',
+          items: [
+            {
+              label: 'Introduction',
+              to: 'docs/introduction'
+            },
+            {
+              label: 'Functional Architecture',
+              to: 'docs/functional-architecture'
+            },
+            {
+              label: 'SSI standardization',
+              to: 'docs/ssi-standards'
+            },
+          ],
+        },
+        {
+          title: 'eSSIF-lab Terminology',
+          items: [
+            {
+              label: 'Introduction',
+              to: 'docs/terminology'
+            },
+            {
+              label: 'Glossary',
+              to: 'docs/essifLab-glossary'
+            },
+            {
+              label: 'Mental Models',
+              to: 'docs/essifLab-pattern-list'
             },
           ],
         },

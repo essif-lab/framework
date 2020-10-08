@@ -1,6 +1,7 @@
 ---
 id: functional-architecture
 title: eSSIF-Lab Functional Architecture
+sidebar_label: Functional Architecture
 scopeid: essifLab
 ---
 
