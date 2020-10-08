@@ -18,5 +18,5 @@ In order for people to properly reason and/or communicate ideas (%%concepts|conc
 A **terminology** is a set of %%terms%% that are used by a group of %%parties|party%% to reason and communicate about some specific topic(s).
 
 ## Examples
-- The set of words listed in the [eSSIF-Lab glossary](/docs/essifLab-glossary) are used within the eSSIF-Lab community for reasoning and communicating about topics that serve the [vision and purpose](/docs/vision-and-purpose) of the [eSSIF-Lab project](https://essif-lab.eu/). This constitutes the `eSSIF-Lab terminology`.
+- The set of words listed in the [eSSIF-Lab glossary](../essifLab-glossary) are used within the eSSIF-Lab community for reasoning and communicating about topics that serve the [vision and purpose](../vision-and-purpose) of the [eSSIF-Lab project](https://essif-lab.eu/). This constitutes the `eSSIF-Lab terminology`.
 - The set of words listed in the [Sovrin glossary](https://sovrin.org/library/glossary/) are used within the Sovrin Governance Framework and its Controlled Documents to understand the meaning of the terms that the authors intended to convey. Thus they comprise the `Sovrin terminology`.

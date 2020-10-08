@@ -22,7 +22,7 @@ an alphabetical list of words or phrases with (short) explanations, that exists 
 
 ## Examples
 <!--This (optional) section contains examples, both of what satisfies the definition (and hence qualifies as an instance of Glossary), ans what does not. If you can think of examples for which the criterion may not (always) work, then describe them, too, and inform the reader why this hasn't affected the definition (yet) - e.g. because such cases are irrelevant to the scope within which the term is defined.-->
-Examples include the [eSSIF-Lab Glossary](/docs/essifLab-glossary), the [Sovrin Glossary](https://sovrin.org/library/glossary/), the [Glossary of Internet Terms](https://www.internetsociety.org/internet/glossary-internet-terms/), and glossaries for Legal Terms, e.g. of the [US](https://www.uscourts.gov/glossary), [Singapore](https://www.supremecourt.gov.sg/services/self-help-services/glossary-of-terms), the [UK](https://www.copfs.gov.uk/involved-in-a-case/glossary-of-legal-terms).
+Examples include the [eSSIF-Lab Glossary](../essifLab-glossary), the [Sovrin Glossary](https://sovrin.org/library/glossary/), the [Glossary of Internet Terms](https://www.internetsociety.org/internet/glossary-internet-terms/), and glossaries for Legal Terms, e.g. of the [US](https://www.uscourts.gov/glossary), [Singapore](https://www.supremecourt.gov.sg/services/self-help-services/glossary-of-terms), the [UK](https://www.copfs.gov.uk/involved-in-a-case/glossary-of-legal-terms).
 
 ## Related Concepts
 <!--This (optional) section lists words/phrases that are encountered in other contexts that have the same or a sufficiently similar meaning as Glossary. In this section you may point out the (subtle) differences between Glossary and this related terminology. This helps readers better/deeper understand Glossary, and how it may be used to relate to existing texts. Ideally, such references are accompanied with links to (preferredly authoritative) sources.-->
@@ -34,7 +34,7 @@ The %%terminology pattern|pattern-terminology%% provides an overview of how this
 
 ## Notes
 <!--This (optional) section is the place to put anything for which there is no other good place to put it.-->
-The [eSSIF-Lab Glossary](/docs/essifLab-glossary) contains the words that are defined within the scope of the [eSSIF-Lab framework](/docs/introduction).
+The [eSSIF-Lab Glossary](../essifLab-glossary) contains the words that are defined within the scope of the [eSSIF-Lab framework](../introduction).
 
 <!--
 ---

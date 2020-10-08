@@ -43,7 +43,7 @@ So in general, the execution of an action is (primarily) guided by the policies,
 Finally, we note that a party `owns` %%objectives|objective%% that it seeks to fulfill or realize, and these are part of its knowledge. The relevance of this is that a large number of the decisions that parties make have to do with their managing their %%risks|risk%% (which [ISO 27000](https://www.iso.org/obp/ui#iso:std:iso-iec:27000:ed-4:v1:en)) defines as 'effect of uncertainty on objectives'), each of which is related to one or more of its objectives.
 
 ## Formalized model
-Here is a visual representation of this pattern, using the following [notations and conventions](/docs/notations-and-conventions#pattern-diagram-notations):
+Here is a visual representation of this pattern, using the following [notations and conventions](../notations-and-conventions#pattern-diagram-notations):
 
 <img
   alt="Conceptual model of the 'Party-Actor-Action' pattern"

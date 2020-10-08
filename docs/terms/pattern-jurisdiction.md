@@ -31,7 +31,7 @@ Jurisdictions also in terms of the legal system they apply. Different jurisdicti
 Note that all the rules, processes and decisions must be part of the %%knowledge|knowledge%% of the party that runs the jurisdiction.
 
 ## Formalized model
-Here is a visual representation of this pattern, using the following [notations and conventions](/docs/notations-and-conventions#pattern-diagram-notations):
+Here is a visual representation of this pattern, using the following [notations and conventions](../notations-and-conventions#pattern-diagram-notations):
 
 <img
   alt="Conceptual model of the 'Jurisdiction' pattern"
