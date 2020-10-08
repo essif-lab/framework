@@ -1,6 +1,7 @@
 ---
 id: terminology
 title: "eSSIF-Lab: Concepts and Terminology"
+sidebar_label: Terminology
 scopeid: essifLab
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: notations-and-conventions
 title: Notations and Conventions Used in this Documentation
+sidebar_label: Notations
 ---
 
 Here, we provide an overview of the notations and conventions being used within eSSIF-Lab.
