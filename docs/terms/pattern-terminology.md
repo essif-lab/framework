@@ -5,7 +5,7 @@ scopeid: essifLab
 type: pattern
 typeid: terminology
 stage: draft
-hoverText: "The eSSIF-Lab Terminology Corupos pattern (further text remains to be written)."
+hoverText: "The eSSIF-Lab Terminology Corpus pattern (further text remains to be written)."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

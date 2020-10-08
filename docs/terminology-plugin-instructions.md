@@ -4,7 +4,6 @@ title: Terminology & Glossary plugin docs
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-
 ### How it works
 
 This plugin parses docs in two ways:

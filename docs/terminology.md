@@ -1,6 +1,6 @@
 ---
 id: terminology
-title: "eSSIF-Lab: Concepts and Terminology"
+title: "eSSIF-Lab Concepts and Terminology"
 sidebar_label: Terminology
 scopeid: essifLab
 ---
@@ -9,11 +9,9 @@ scopeid: essifLab
 *This (initial version of the) terminology chapter is currently under construction. If you feel like making a contribution, please contact [the editor](mailto:rieks.joosten@tno.nl)*
 :::
 
-The purpose of the eSSIF-Lab Terminology is to provide mental models that all of its stakeholders interpret in sufficiently the same way, so as to be able to talk, think and discuss about what it is we try to achieve and ways to achieve this.
+The eSSIF-Lab Terminology and Concepts effort is directed at providing tools, terminologies and (mental/conceptual) models, the purpose of which is to enable/facilitate its stakeholders in understanding one another as they communicate about topics that concern eSSIF-Lab (specifically: its arechitecture and components), and also to write document(ation)s in such a way that the other stakeholders have less trouble with understanding.
 
-The initial version of this terminology is still under construction.
-
-## Introduction
+## Motivation
 
 Contributors to and users of eSSIF-Lab come from various backgrounds. Their culture may not be Western. English may not be their native tongue. They may be experts in non-technological topics. Working with one another presumes a setting where participants have some level of shared understanding. Often, sharing one's understanding at a superficial level suffices. Other situations require that underlying concepts are shared in a more in-depth fashion. It's like cars: people buying, selling, or driving cars do not need in-depth shared knowledge about cars, whereas (maintenance or construction) engineers or liability lawyers need to share a deeper knowledge of how cars do (or do not) work.
 
@@ -21,19 +19,19 @@ We expect to see situations of "language confusion", i.e. in which people use wo
 
 The Concepts and Terminology part of eSSIF-Lab aims helps eSSIF-Lab community participants understand one another at whatever level of precision they need.
 
-## Glossaries
+## Terminological Artifacts
+
+the eSSIF-Lab Concepts and Terminology effort aims to produce artifacts that help stakeholders for the purposes mentioned above. Currently, this comprises:
+
+- A set of (documented/defined) terms that can be easily referred to by document authors, according to [these instructions](./terminology-plugin-instructions).
+- A [Glossary](./essifLab-glossary) that lists these terms, and is automagically updated as contributions to the eSSIF-Lab Terminology Corpus are being made.
+- A set of %%mental models|mental model%% that provide backgrounds about how specific %%concepts|concept%% relate to one another.
+
+Depending on the needs of stakeholders, additional artifacts may be created/generated.
+
+## Glossaries are useful, but do not solve all problems
 
 The traditional tool for fostering common understanding is using glossaries, i.e. alphabetical lists of words relating to a specific subject, text, or dialect, with explanations; a brief dictionary ([OED](https://www.lexico.com/definition/glossary)). Examples include the [Sovrin Glossary](https://sovrin.org/library/glossary/) and the [NIST Glossary](https://csrc.nist.gov/glossary). Other initiatives attempt to provide more background, e.g. the [terminology for talking about privacy by data minimization](https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf) by Pfitzmann and Hansen (2010), or the [EBSI Terminology (login required)](https://ec.europa.eu/cefdigital/wiki/display/EBP/EBSI+Terminology).
-
-The eSSIF-Lab project will also develop a [Glossary](./essifLab-glossary).
-
-However, since the use of such glossaries is limited to short explanations, we will also provide (a) mental model(s) that provide a more in-depth explanation of the concepts that underly the words listed in the [eSSIF-Lab Glossary](./essifLab-glossary). 
-
-## Mental Models
-
-We have the following mental (conceptual) models:
-
-
 
 
 A Mental Model, or Conceptual Model, is a set of of concepts (i.e. entity classes), relations between such concepts (i.e. sets of pairs of members of classes that a relation connects), and rules/constraints expressed in terms of these relations and concepts.
@@ -59,27 +57,3 @@ We attempt to create definitions that are both acceptable for business people ye
 The actual texts we choose as the name for a concept is of secondary importance; if in a particular context other names are more suitable, you can rename them there without loss of meaning or consistency.
 
 Together with these criteria, we provide a limited set of examples to help the reader to visualize the defined concepts, and to point out possibly unexpected consequences of the criteria. Also, we may motivate the need for having a concept by showing its relevance for the model.
-
-Here are some examples:
-
-### Entity
-**someone or something that is known/thought of**.
-
-Basically, anything you (or anyone else) can think of qualifies. That includes people, organizations, documents, data, ideas, etc. Things that you do not know that exist, but others do, also qualify.
-Since there is nothing that you, or someone else, can come up with that does not satisfy the criterion, everything qualifies as an Entity. We need the term as a basis for creating intensional definitions.
-
-:::note
-**The following definitions will be moved to a separate eSSIF-Lab Terminology section**
-:::
-
-### Definition
-**Entity that comprises at a minimum**:
-
-- **a non-empty set of scopes in each of which specific objectives are being pursued;**
-- **a criterion that specifies the necessary and sufficient conditions for being an instance of a named class;**
-- **a set of arguments and/or use-cases (that SHOULD not be empty), and that show the relevance of making this distinction within the scope (and for its objectives);**
-- **a name that is created and used within the scope that created the definition, for the purpose of referring to the class, or using it as a placeholder for its instances.**
-
-**For the purposes of this document, the scope of every Definition is this Document (with its objectives that have been specified above).**
-
-Note that this definition satisfies itself. Also note that a definition may be used in multiple scopes, where a scope that wants to use the definition that has been defined in another scope, may replace that name with one of its own choosing. This way the meaning expressed by the definition remains preserved.
