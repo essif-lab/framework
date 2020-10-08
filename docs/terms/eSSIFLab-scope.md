@@ -5,7 +5,7 @@ scopeid: essifLabTerminology
 type: scope
 typeid: eSSIFLab
 stage: draft
-hoverText: "specification of the eSSIF-Lab scope"
+hoverText: "ESSIFLab: specification of the eSSIF-Lab scope."
 ---
 
 ## Governance

@@ -1,11 +1,11 @@
 ---
 id: pattern-terminology
-title: "Pattern: eSSIF-Lab Terminology Corpus"
+title: "eSSIF-Lab Terminology Corpus"
 scopeid: essifLab
 type: pattern
 typeid: terminology
 stage: draft
-hoverText: "pattern-terminology - hovertext"
+hoverText: "The eSSIF-Lab Terminology Corupos pattern (further text remains to be written)."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

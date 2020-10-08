@@ -5,7 +5,7 @@ scopeid: essifLabTerminology
 type: concept
 typeid: concept
 stage: draft
-hoverText: "A Concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing."
+hoverText: "Concept: A Concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing."
 ---
 
 ## Short Description

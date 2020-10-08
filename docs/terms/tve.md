@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: tve
 stage: draft
-hoverText: "tve - popuptext t.b.d."
+hoverText: "TVE = Transaction Validation Engine."
 ---
 
 ## Short Description

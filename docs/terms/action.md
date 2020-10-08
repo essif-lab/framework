@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: action
 stage: draft
-hoverText: "something that is actually done/executed by a single actor (as a single operation) for some party within a specific context"
+hoverText: "Action: something that is actually done/executed by a single actor (as a single operation) for some party within a specific context."
 ---
 
 ## Short Description

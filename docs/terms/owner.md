@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: owner
 stage: draft
-hoverText: "a Party that has the legal or rightful title to control something."
+hoverText: "Owner: a Party that has the legal or rightful title to control something."
 ---
 
 ## Short Description

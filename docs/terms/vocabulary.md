@@ -5,7 +5,7 @@ scopeid: essifLabTerminology
 type: concept
 typeid: vocabulary
 stage: draft
-hoverText: "the sum or stock of words employed by a language, group, individual, or work or in a field of knowledge."
+hoverText: "Vocabulary: the sum or stock of words employed by a language, group, individual, or work or in a field of knowledge."
 ---
 
 ## Short Description

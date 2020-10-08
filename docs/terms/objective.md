@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: objective
 stage: draft
-hoverText: "Something toward which effort is directed: an aim, goal, or end of action (Merriam-Webster)"
+hoverText: "Objective: Something toward which effort is directed: an aim, goal, or end of action (Merriam-Webster)."
 ---
 
 ## Short Description

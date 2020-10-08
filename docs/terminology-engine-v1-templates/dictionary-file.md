@@ -5,7 +5,7 @@ scopeid: scopeID
 type: dictionary
 typeid: dictionaryID
 stage: draft
-hoverText: "popuptext for 'dictionaryID' (tbd)"
+hoverText: "DictionaryID: popuptext for 'dictionaryID' (tbd)."
 ---
 <!--A dictionary is an alphabetically sorted list of terms with associated meanings that originate from multiple scopes.
 This template lets you define the specifications according to which a specific dictionary is generated.

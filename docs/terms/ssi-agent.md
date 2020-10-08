@@ -6,7 +6,7 @@ type: term
 typeid: ssi-agent
 conceptref: essifLab:Agent
 stage: draft
-hoverText: "Agent that provides SSI services."
+hoverText: "SSI-Agent: an agent that provides SSI services."
 ---
 
 ## Purpose

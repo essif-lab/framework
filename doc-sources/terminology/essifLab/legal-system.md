@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: legal-system
 stage: draft
-hoverText: "a system in which rules are defined, and mechanisms for their enforcement and conflict resolution are (implicitly or explicitly) specified."
+hoverText: "Legal-system: a system in which rules are defined, and mechanisms for their enforcement and conflict resolution are (implicitly or explicitly) specified."
 ---
 
 ## Short Description

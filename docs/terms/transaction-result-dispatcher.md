@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: transaction-result-dispatcher
 stage: draft
-hoverText: "hovertext for transaction-result-dispatcher"
+hoverText: "Transaction Result Dispatcher (TRD): hovertext tbd."
 ---
 
 ## Short Description

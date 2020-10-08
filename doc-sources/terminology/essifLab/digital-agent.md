@@ -6,7 +6,7 @@ type: term
 typeid: digital-agent
 conceptref: ":Agent"
 stage: draft
-hoverText: "An Actor in the digital world (e.g. a running app, or a web-server) that executes actions for a specific party"
+hoverText: "An Actor in the digital world (e.g. a running app, or a web-server) that executes actions for a specific party."
 ---
 
 ## Purpose

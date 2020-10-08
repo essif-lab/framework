@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: jurisdiction
 stage: draft
-hoverText: "jurisdiction - popuptext t.b.d."
+hoverText: "Jurisdiction: a legal system (legislation, enforcement thereof, and conflict resolution) that is operated by a party in a certain scope."
 ---
 
 ## Short Description

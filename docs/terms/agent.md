@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: agent
 stage: draft
-hoverText: "An actor that is (at that point in time) executing an action for, or on behalf of a Party."
+hoverText: "Agent: An actor that is (at that point in time) executing an action for, or on behalf of a Party."
 ---
 
 ## Short Description

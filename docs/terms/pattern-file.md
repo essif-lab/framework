@@ -5,7 +5,7 @@ scopeid: essifLab
 type: pattern
 typeid: pattern-file
 stage: draft
-hoverText: "a file that defines/specifies a pattern"
+hoverText: "Pattern-file: a file that defines/specifies a pattern."
 ---
 
 ## Short Description

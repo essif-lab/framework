@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: concept-file
 stage: draft
-hoverText: "a file that defines/specifies a concept"
+hoverText: "Concept-file: a file that defines/specifies a concept."
 ---
 
 ## Short Description

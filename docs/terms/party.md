@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: party
 stage: draft
-hoverText: "Entity that has knowledge about what exists, ways to reason with that knowledge, and ways for making decisions in a Self-Sovereign fashion."
+hoverText: "Party: Entity that has knowledge about what exists, ways to reason with that knowledge, and ways for making decisions in a Self-Sovereign fashion."
 ---
 
 ## Short Description

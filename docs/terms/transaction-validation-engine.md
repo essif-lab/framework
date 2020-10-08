@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: transaction-validation-engine
 stage: draft
-hoverText: "transaction-validation-engine"
+hoverText: "Transaction Validation Engine (TVE): hovertext tbd."
 ---
 
 ## Short Description

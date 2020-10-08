@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: organization
 stage: draft
-hoverText: "a group of people that work to realize one or more objectives"
+hoverText: "Organization: a group of people that work to realize one or more objectives."
 ---
 
 ## Short Description

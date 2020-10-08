@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: entity
 stage: draft
-hoverText: "something that is known to exist"
+hoverText: "Entity: something that is known to exist."
 ---
 
 ## Short Description

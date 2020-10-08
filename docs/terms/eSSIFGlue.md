@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: eSSIFGlue
 stage: draft
-hoverText: "eSSIFGlue"
+hoverText: "eSSIFGlue."
 ---
 
 ## Short Description

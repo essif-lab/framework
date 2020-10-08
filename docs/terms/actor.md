@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: actor
 stage: draft
-hoverText: "Entity that can act (do things), e.g. people, machines, but not organizations."
+hoverText: "Actor: Entity that can act (do things), e.g. people, machines, but not organizations."
 ---
 
 ## Short Description

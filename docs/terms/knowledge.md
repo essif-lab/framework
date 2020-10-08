@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: knowledge
 stage: draft
-hoverText: "The (intangible) sum of what is known by a party, as well as the familiarity, awareness or understanding of someone or something by that party"
+hoverText: "Knowledge: The (intangible) sum of what is known by a party, as well as the familiarity, awareness or understanding of someone or something by that party."
 ---
 
 ## Short Description
