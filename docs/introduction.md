@@ -1,31 +1,28 @@
 ---
 id: introduction
 title: Introduction
+sidebar_label: eSSIF-Lab
 ---
 
 The European Self-Sovereign Identity Lab ([eSSIF-Lab](https://essif-lab.eu/)) views itself as an ecosystem of parties 
 that work together to make existing (and new) Self-Sovereign Identity (SSI) technology into 
 a scalable and interoperable infrastructure that businesses can use very easily
 for conducting (business) transactions with other businesses and individuals alike.
-Typically, the libraries, code or components for the infrastructure should be open source.
 
-In order to support the use of such an infrastructure by businesses and individuals,
-eSSIF-Lab parties also create applications and other tooling to support such actual use
-on top of the interoperable infrastructure, which may or may not be open source,
-and are expected to be used as/in products of organizations that want to make this their business.
+It has been started as one of the [NGI](https://www.ngi.eu/) [projects](https://www.ngi.eu/ngi-projects/) of the European commission.
 
-At the start, eSSIF-Lab is one of the European [NGI projects](https://www.ngi.eu/ngi-projects/)
-and helps (EU) parties that want to contribute by publishing [open calls](https://essif-lab.eu/?page_id=134) 
-to which such parties can submit work proposals that eSSIF-Lab will then consider for funding.
+The eSSIF-Lab project [seeks to fund (EU) SME's](https://essif-lab.eu/open-calls/) that want to contribute to the eSSIF-Lab vision by
+- making open-source technologcal components available that may be considered part of an (e)SSI(F-Lab) infrastructure (comparable with the roads/highways of various kinds). Such an infrastructure must remain business-agnostic, be interoperable with technologies of others (also outside eSSIF-Lab), and scalable. Typically, infrastructural components facilitate business applications to make use of SSI technologies. See the [infrastructure open call](https://essif-lab-infrastructure-oriented.fundingbox.com/) for details.
+- making open-source technological components available that are not necessarily part of the infrastructure, but extend it to provide value for businesses that want to connect to such infrastructure (comparable with driveways, that connect parking lots or garages to a road). Examples include components that implement e.g. eIDAS signing, credential revocation mechanisms, or credential catalogues. In this call, funding must also be used to demonstrate the business value of the contribution. The [call for these kinds of contributions](https://essif-lab-first-business-oriented.fundingbox.com/) has passed.
+- making a technological project that actually uses the components that are produced in the aforementioned calls, and demonstrates that a business can be made with that. Such projects typically validate the infrastructural components and its extensions. The [call for such contributions](https://essif-lab.eu/open-calls/) is expected to launch in late spring 2021.
 
-## eSSIF-Lab Framework Repository
-
-This repo contains the documents that describe the vision, architecture and other
-topics that are relevant to the eSSIF-Lab Framework. Currently, it contains:
+One of the overarching activities in eSSIF-Lab is the design, maintenance and validation of its framework, which currently consists of documents that describe:
 
 - [Vision and purpose](vision-and-purpose)
 - [Functional architecture](functional-architecture)
-- [SSI standards](ssi-standards)
+- [Concepts & Terminology](terminology)
+
+For interop purposes, we also maintain a page related to [SSI standards](ssi-standards).
 
 ## Acknowledgement
 

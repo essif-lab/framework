@@ -1,37 +1,33 @@
-import Term from '../src/components/Term'
-
 ---
-id: concept-<ExistingScope>-<NewConcept>
-title: Concept proposal for: <NewConcept> (Scope: <ExistingScope>)
+id: ExistingScopeID-conceptproposal-NewTermID
+title: "Concept proposal for: <NewTermID> (Scope: <Existing Scope>)"
+scopeid: <ExistingScopeID>
+term: <NewTerm>
+hoverText: "<Text that pops up when the user hovers over a reference to this concept>"
 ---
-<!--Replace 'NewConcept' with the name for the concept you want to define. Then, provide contents for the sections as you wish. You MUST provide contents for the sections 'Scope of definition', 'Short Description' and 'Criteria'-->
-
-## Scope
-<!-- *REQUIRED* Short text (label, abbreviation) used to refer to the %%scope%% within which the %%concept%% is defined. The default is essifLab.-->
-essifLab
-
-Identify the (single) %%scope%% within which 'NewConcept' is used as the %%term%% to refer to the %%concept%% that this document defines. We use:
-
-- "essiflab" to identify the %%scope%% for the basic terminology used in the [eSSIF-Lab framework](https://essif-lab.pages.grnet.gr/framework).
-- "essiflabTerminology" as the %%scope%% for discussions and topics related to the creation of glossaries, concept-definitions, etc.
-
-You may refer to any scope for which a %%scope-file%% exists.
+<!--A concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing. This file specifies the idea(s) that, within the scope of `<ExistingScopeID>` will be referred to using <New Term>.
+Please fill in the placeholders in this file as follows:
+- `<ExistingScopeID>`: identifier of the scope in which the term is defined;
+- `<Existing Scope>`: human readable text that identifies the scope in which this item is defined;
+- `<NewTerm>`: term that will identify the concept within <ExisingScopeID>;
+- `<ExistingTerm>`: term by which the concept is concept is known in that scope
+-->
 
 ## One-line Summary
-A single sentence that describe the %%concept%% to a layperson with reasonable accuracy. This line may be used to explain `Concept` in a glossary, or as a popover text when it is referred to in other documentation.
+A single sentence that describe the concept to a layperson with reasonable accuracy. This line may be used to explain `Concept` in a glossary, or as a popover text when it is referred to in other documentation.
 
 For example: "A warm-blooded animal, often having fur or hair, that produces milk to feed its young."
 
 ## Short Description
-in 1-3 sentences that describe the %%concept%% to a layperson with reasonable accuracy.
+in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.
 
 For example, the concept of a "mammal" in biology might be described as: "A warm-blooded animal, often having fur or hair, that produces milk to feed its young. Examples include rats, whales, and bats." A diagram could be included, if appropriate. The goal here is not perfect clarity; that's the focus of the 'Criteria' section.
 
 ## Purpose
-Describe why the %%concept%% is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What objectives does it help realize? Why is this %%concept%% relevant within its %%scope%% of definition?
+Describe why the concept is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What objectives does it help realize? Why is this concept relevant within its scope of definition?
 
 ## Criteria
-How is this %%concept%% different from related ideas? What are essential characteristics that must be true? This is where you specify the [intensional definition](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions) of the %%concept%%, i.e. the necessary and sufficient conditions for when the term should be used. This makes that the %%concept%% becomes crystal clear. In the case of nouns, this is equivalent to specifying the properties that an object needs to have in order to be counted as a referent of the term.
+How is this concept different from related ideas? What are essential characteristics that must be true? This is where you specify the [intensional definition](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions) of the concept, i.e. the necessary and sufficient conditions for when the term should be used. This makes that the concept becomes crystal clear. In the case of nouns, this is equivalent to specifying the properties that an object needs to have in order to be counted as a referent of the term.
 
 a vertibrate that has mammary glands, a neocortex in the brain and 3 middle ear bones.
 
@@ -41,13 +37,13 @@ Provide a few sentences in which you give examples that obviously qualify as ins
 Primates (humans, monkeys), rodents (mice, rats), bats, and others qualify. Birds and reptiles do not (they lack mammary glands). [Platypus](https://en.wikipedia.org/wiki/Platypus)[^1] is also a mammal, even though it lays eggs.
 
 ## Related Concepts
-Link to any %%concepts:concept%% that are similar but distinct, with a note about the relationship. For example:
+Link to any concepts that are similar but distinct, with a note about the relationship. For example:
 
-* %%offspring (of a mammal):offspring%% is the set of %%mammals:mammal%% that are born from that mammal.
-* %%mate (of a mammal):mate%% is any %%mammal%% of the same species with which the %%mammal%% has created %%ofspring%%.
+* offspring (of a mammal) is the set of mammals that are born from that mammal.
+* mate (of a mammal) is any mammal of the same species with which the mammal has created ofspring.
 
 ## Domains
-In which general knowledge ecosystems or mental model families does this %%concept%% play a role? For example:
+In which general knowledge ecosystems or mental model families does this concept play a role? For example:
 
 * Biology
 

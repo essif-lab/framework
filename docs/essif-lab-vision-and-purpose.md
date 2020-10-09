@@ -1,6 +1,7 @@
 ---
 id: vision-and-purpose
 title: eSSIF-Lab Vision and Purpose
+sidebar_label: Vision and Purpose
 ---
 
 The eSSIF-Lab vision is that Self-sovereign Identity (SSI) will *empower European and other citizens* by providing new means to manage privacy by eliminating logins and making electronic transactions fast and safe both in the Internet and in physical life. SSI will *empower European organisations and governments* by providing new means to speed up, secure and automate transactions with citizens, customers, suppliers and partners, resulting in tens of billions of euros savings annually on administrative costs in Europe. SSI will be *a new business ecosystem paradigm* with thousands of new jobs, many new job categories and new business opportunities for existing and new European companies. And last, but certainly not least, SSI fosters *inclusiveness* and supports organizations and citizens to exercise their rights and fulfil their duties under the GDPR.

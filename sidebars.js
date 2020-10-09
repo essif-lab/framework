@@ -3,7 +3,7 @@ module.exports = {
     'Framework':
     [
         // 'introduction',
-        // 'architecture',
+        // 'functional-architecture',
         // 'open_calls',
     ],
     'Functional Architecture':
@@ -17,4 +17,12 @@ module.exports = {
         // 'detailed_transaction_flows'
     ]
   },
+  sidebar_for_terminology: {
+    'Terminology':
+    [
+      { type: 'doc', id: 'terminology' },
+      { type: 'doc', id: 'essifLab-glossary' },
+      { type: 'doc', id: 'essifLab-pattern-list' },
+    ],
+  }
 };
