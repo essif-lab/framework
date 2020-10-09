@@ -25,7 +25,7 @@ the eSSIF-Lab Concepts and Terminology effort aims to produce artifacts that hel
 
 - A set of (documented/defined) terms that can be easily referred to by document authors, according to [these instructions](./terminology-plugin-instructions).
 - A [Glossary](./essifLab-glossary) that lists these terms, and is automagically updated as contributions to the eSSIF-Lab Terminology Corpus are being made.
-- A set of %%mental models|mental model%% that provide backgrounds about how specific %%concepts|concept%% relate to one another.
+- A set of %%mental models|mental-model%% that provide backgrounds about how specific %%concepts|concept%% relate to one another.
 
 Depending on the needs of stakeholders, additional artifacts may be created/generated.
 

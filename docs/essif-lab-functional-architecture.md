@@ -4,8 +4,6 @@ title: eSSIF-Lab Functional Architecture
 scopeid: essifLab
 ---
 
-import { Term } from '../src/components'
-
 The purpose of the functional architecture and its views is to
 
 -   **provide mental models** that all of its stakeholders interpret in sufficiently the same way, so as to be able to talk, think and discuss about what it is we try to achieve and ways to achieve this;
@@ -52,9 +50,9 @@ The top layer (in the red rounded rectangle) has the functions of actual busines
 
 The lower business layer contains two functional components, one for initiating transactions and the other for stating transaction results (as per the [*DEMO*](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations) method), each of which with an associated business policy that contains business-specific policies/preferences.
 
-The task of the %%Transaction Validation Engine|tve%% (or %%TVE|tve%%) is to handle and initiate requests from/to Peer Agents to engage in some kind of transaction, by negotiating and exchanging data (through one or more, physical or electronic communication channels), and to produce a transaction form whose contents are complete and valid, enabling an appropriate Colleague to decide whether or not to engage in the transaction. Note that negotiating a transaction has two parts: requesting a Peer Agent to provide data that its Owner needs, and providing data on behalf of its Owner that a Peer Agent requests. After all, a business transaction can only start after all Parties have decided to commit, which they can only do after each of them has obtained the information it (subjectively) needs to do so. Also note that data that the TVE must ensure that the transaction context is properly maintained if it chooses to exchange data through different communication channels.
+The task of the %%Transaction Validation Engine|transaction-validation-engine%% (or %%TVE|transaction-validation-engine%%) is to handle and initiate requests from/to Peer Agents to engage in some kind of transaction, by negotiating and exchanging data (through one or more, physical or electronic communication channels), and to produce a transaction form whose contents are complete and valid, enabling an appropriate Colleague to decide whether or not to engage in the transaction. Note that negotiating a transaction has two parts: requesting a Peer Agent to provide data that its Owner needs, and providing data on behalf of its Owner that a Peer Agent requests. After all, a business transaction can only start after all Parties have decided to commit, which they can only do after each of them has obtained the information it (subjectively) needs to do so. Also note that data that the TVE must ensure that the transaction context is properly maintained if it chooses to exchange data through different communication channels.
 
-The task of the %%Transaction Result Dispatcher|tre%% (or %%TRE|tre%%) is to state the (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other Parties. Since such state-data may change, issuing data that supersedes an earlier state implies the revocation of such a state.
+The task of the %%Transaction Result Dispatcher|transaction-result-dispatcher%% (or %%TRE|transaction-result-dispatcher%%) is to state the (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other Parties. Since such state-data may change, issuing data that supersedes an earlier state implies the revocation of such a state.
 
 Note that both components are within scope of eSSIF-Lab architecture, but NOT in scope of the eSSIF-Lab infrastructure, as they are too business-specific.
 
@@ -100,7 +98,7 @@ It is expected that there are already some interfaces out there that may turn ou
 
 There are two interface layers in this architecture
 
-The %%ESSIF Glue|essif-glue%% interface layer consists of a [documented set of APIs](https://gitlab.grnet.gr/essif-lab/tno-ssi-service/developer-docs) between the TVE and TRD on the one hand, and the WHIV components on the other hand. The purpose of these APIs is to make calling the WHIV functions as simple as possible, given the functions of the Transaction Result Dispatcher and Transaction (Validation) Engine. Ultimately, we would like to see these APIs standardized. Having such APIs allows different Parties to create their own version of the WHIV components, supporting the SSI technologies as they see fit, and shrinking or expanding functionalities as they feel appropriate. Parties can then select such WHIV components as they see fit.
+The %%ESSIF Glue|eSSIFGlue%% interface layer consists of a [documented set of APIs](https://gitlab.grnet.gr/essif-lab/tno-ssi-service/developer-docs) between the TVE and TRD on the one hand, and the WHIV components on the other hand. The purpose of these APIs is to make calling the WHIV functions as simple as possible, given the functions of the Transaction Result Dispatcher and Transaction (Validation) Engine. Ultimately, we would like to see these APIs standardized. Having such APIs allows different Parties to create their own version of the WHIV components, supporting the SSI technologies as they see fit, and shrinking or expanding functionalities as they feel appropriate. Parties can then select such WHIV components as they see fit.
 
 The **SSI Tech APIs** interface layer is the union of the interfaces of the components within it. Any standardization in there is outside the scope of eSSIF-Lab.
 
@@ -322,7 +320,7 @@ This chapter explains at a high level how electronic business transactions are b
 
 The adjacent figure shows how a transaction is conducted at the highest abstraction level. One Party, called the ‘Requester’, sends a request for a product or service to another Party (that we will call the ‘Provider’). Then, they start to negotiate a ‘transaction agreement’, which means that they exchange data through various channels for the purpose of establishing the details of the product/service to be provided and the compensation, data needed to mitigate transaction risks, etc., all of which is necessary for the Parties to (individually/subjectively) decide whether or not to commit to the transaction. Section 3.2 provides more detail about this phase.
 
-After commitment, the producer works to provide the %%product|product%% or service, and the requester arranges the compensation. This phase is entirely up to the business, and hence out of scope of this document.
+After commitment, the producer works to provide the product or service, and the requester arranges the compensation. This phase is entirely up to the business, and hence out of scope of this document.
 
 When all is done, Parties may issue a (signed) statement that specifies the results. Section 3.3. provides some more details about this phase.
 
