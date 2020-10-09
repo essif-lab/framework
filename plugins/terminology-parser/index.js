@@ -121,11 +121,13 @@ async function getGlossaryTerms(files) {
     //gather all metadata
     let { metadata } = parseMD(content)
     //keep only the required keys
-    arr.push({
-      title: metadata.title,
-      hoverText: metadata.hoverText,
-      filepath: filepath.slice(1,-3),
-    });
+    if (metadata.title) {
+      arr.push({
+        title: metadata.title,
+        hoverText: metadata.hoverText,
+        filepath: filepath.slice(1,-3),
+      });
+    }
   }
   return arr;
 }
@@ -162,7 +164,7 @@ async function parseGlossary(err, files) {
   //get all terms in an array of objects
   const data = await getGlossaryTerms(files);
   //sort them alphabeteically
-  data.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
+  data.sort((a,b) => (a.title.toLowerCase() > b.title.toLowerCase()) ? 1 : ((b.title.toLowerCase() > a.title.toLowerCase()) ? -1 : 0));
   //write the glossary.md file
   generateGlossary(data);
 }
