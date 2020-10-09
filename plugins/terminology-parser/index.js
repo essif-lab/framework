@@ -84,8 +84,13 @@ async function parser(err, files) {
           const current_file_path = path.resolve(process.cwd(), filepath);
           const term_path = path.resolve(process.cwd(), TERMS_DIR, reference);
           const new_final_url = getRelativePath(current_file_path, term_path);
-          var new_text = ('<Term popup="' + hoverText + '" reference="' +
-              new_final_url + '">' + text + '</Term>');
+          if (hoverText === undefined) {
+            var new_text = ('<Term reference="' + new_final_url + '">' +
+                text + '</Term>');
+          } else {
+            var new_text = ('<Term popup="' + hoverText + '" reference="' +
+                new_final_url + '">' + text + '</Term>');
+          }
           content = content.replace(regex_match, new_text);
         }
         // Find the index of the 2nd occurrence of '---'
