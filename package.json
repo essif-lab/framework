@@ -11,8 +11,8 @@
     "glossary": "docusaurus glossary"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.60",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.60",
+    "@docusaurus/core": "^2.0.0-alpha.65",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.65",
     "@material-ui/core": "^4.11.0",
     "classnames": "^2.2.6",
     "react": "^16.8.4",
