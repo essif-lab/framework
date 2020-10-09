@@ -23,6 +23,7 @@ module.exports = {
       { type: 'doc', id: 'terminology' },
       { type: 'doc', id: 'essifLab-glossary' },
       { type: 'doc', id: 'essifLab-pattern-list' },
+      { type: 'doc', id: 'notations-and-conventions' },
     ],
   }
 };

@@ -11,8 +11,8 @@ hoverText: "DictionaryID: popuptext for 'dictionaryID' (tbd)."
 This template lets you define the specifications according to which a specific dictionary is generated.
 -->
 
-## Purpose
+### Purpose
 <!--State the purpose(s) that this dictionary aims to fulfill, in such a way that readers can easily determine whether or not it is useful for them to use it. This text appears as the introduction of the (generated) dictionary.-->
 
-## Scopes
+### Scopes
 <!--This section specifies the various scopes from which terms are included in the dictionary-->

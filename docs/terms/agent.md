@@ -5,20 +5,20 @@ scopeid: essifLab
 type: concept
 typeid: agent
 stage: draft
-hoverText: "Agent: An actor that is (at that point in time) executing an action for, or on behalf of a Party."
+hoverText: "Agent: An actor that is (at that point in time) executing an action for, or on behalf of a Party (the Principal of that actor)."
 ---
 
-## Short Description
-%%Actors|actor%% execute %%actions|action%% for, or on behalf of some %%party|party%%, because parties are not considered to be capable of acting.[^1] Agents must act in accordance with the party for which they execute such actions, which means that for every kind of action, such parties must provide the proper guidance for their agents, e.g. in terms of policies (rules), working instructions, programs etc. We use the term %%digital agent|digital-agent%%
+### Short Description
+%%Actors|actor%% execute %%actions|action%% for, or on behalf of some %%party|party%% (the %%principal|principal%% of that agent), because parties are not considered to be capable of acting.[^1] Agents must act in accordance with their %%principal|principal%%, which means that for every kind of action, the principal must provide the proper guidance for their agents, e.g. in terms of policies (rules), working instructions, programs etc. We use the term %%digital agent|digital-agent%% to refer to agents that operate in a digital domain.
 
-## Purpose
+### Purpose
 The ability to distinguish between (non)agents is relevant in many situations, including:
 - electronic communication: the agent 
 
-## Criterion:
-a property that is attributed to an %%Actor|actor%% whenever it is executing an action for, or on behalf of some %%party|party%%.
+### Criterion
+a property that is attributed to an %%Actor|actor%% whenever it is executing an action for, or on behalf of some %%party|party%% (its %%principal|principal%%).
 
-## Examples:
+### Examples
 
 - A person that is 'doing its own things' acts as an Agent for himself.
 - A person that does things for his employer acts as an Agent for that employer.
@@ -28,5 +28,5 @@ a property that is attributed to an %%Actor|actor%% whenever it is executing an 
 - A (running) webserver that accepts product orders for a retailer acts as a (digital) Agent for that retailer.
 - A wallet app that runs on a phone and that is exclusively used by a single person acts as a (digital) Agent for that person.
 
-## Background:
+### Background
 The %%party-action pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.

@@ -18,15 +18,15 @@ Please fill in the placeholders in this file as follows:
 - `<ExistingtermID>`: machine readable identifier that identifies a concept within <ExistingConceptScopeID>
 -->
 
-## Purpose
+### Purpose
 <!--State the purpose(s) for which it is necessary (or at least: desirable) to define <New Term>.-->
 
-## Notes
+### Notes
 <!--Usually, the meaning of a term will not be _exactly_ the same as that of the concept to which it refers. Often, there are slight differences in meaning, or the term may emphasize specific characteristics of the concept, so as to accommodate specific needs of the scope in which it is defined. Please describe such deviations/emphasized characteristics in this section, and which needs that helps accommodate.-->
 
 <!--
 ---
-## Footnotes
+### Footnotes
 
 [//]: # This (optional) section contains any footnotes that may have been specified in the text above.
 

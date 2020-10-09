@@ -1,6 +1,6 @@
 ---
 id: pattern-mandates-delegation-hiring
-title: "Pattern: Mandates, Delegation and Hiring"
+title: "Mandates, Delegation and Hiring"
 scopeid: essifLab
 type: pattern
 typeid: mandates-delegation-hiring

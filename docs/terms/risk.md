@@ -12,12 +12,12 @@ hoverText: "Risk: the deviation of the expected realization (e.g. results) of an
 TNO is expected to produce the first draft of this document
 :::
 
-## Short Description
+### Short Description
 
-## Purpose
+### Purpose
 
-## Criterion:
+### Criterion
 
-## References
+### References
 
 [1]: NRM, [ISO 27000:2016](https://www.iso.org/obp/ui#iso:std:iso-iec:27000:ed-4:v1:en)
