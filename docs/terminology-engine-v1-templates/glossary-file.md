@@ -14,10 +14,10 @@ Please fill in the placeholders in this file as follows:
 - `<new-glossaryID>`: identifier by which the glossary can be identified within <existing-scopeID>;
 -->
 
-## Purpose
+### Purpose
 <!--State the purpose(s) that this glossary aims to fulfill, in such a way that readers can easily determine whether or not it is useful for them to use it.-->
 
-## Sources
+### Sources
 <!--This section specifies the sources from which the glossary entries (and their descriptions) are to be collected. All terms from all sources are included in the glossary. If that is too much, then you should revert to stating individual terms, patterns or concepts (see below).-->
 
 ### Terms
@@ -34,7 +34,7 @@ Please fill in the placeholders in this file as follows:
 
 <!--
 ---
-## Footnotes
+### Footnotes
 
 [//]: # This (optional) section contains any footnotes that may have been specified in the text above.
 

@@ -10,11 +10,11 @@ hoverText: "The Jurisdictions pattern captures the concepts and relations that e
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Purpose
+### Purpose
 <!-- Concisely describe what can you do with the pattern that is (at least) harder if you didn't have it. -->
 The **Jurisdiction pattern** captures the concepts and relations that explain how generic %%jurisdictions|jurisdiction%%  work, and can be constructed. It shows that it can be seen as the composition of one %%scope|scope%%, one %%legal system|legal-system%% and one %%party|party%% that operates the legal system within that scope.
 
-## Introduction
+### Introduction
 <!-- Gently introduce the pattern, by referring to real-world situations and using colloquial terms, so that when someone has read the text, (s)he knows what it is about, and is ready to delve into the specifics of the pattern. -->
 While most people are familiar with what we call %%legal jurisdictions|legal-jurisdiction%%, one readily observes that the characteristics of a jurisdiction - i.e. a %%scope|scope%% within which some party organizes that rules/laws/policies are being made, enforced and conflicts resolved - can be found outside of jurisdictions in numerous other contexts. For example,
 
@@ -30,7 +30,7 @@ Jurisdictions also in terms of the legal system they apply. Different jurisdicti
 
 Note that all the rules, processes and decisions must be part of the %%knowledge|knowledge%% of the party that runs the jurisdiction.
 
-## Formalized model
+### Formalized model
 Here is a visual representation of this pattern, using the following [notations and conventions](../notations-and-conventions#pattern-diagram-notations):
 
 <img

@@ -10,14 +10,14 @@ hoverText: "The Parties, Actors and Actions pattern captures the foundational co
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Summary
+### Summary
 This pattern captures the foundational concepts and relations that we need for thinking about how things get done. It answers questions such as: "Who/what does things?", "How are their actions being guided/controlled?", "Who controls whom/what?", "Who/what may be held accountable?". It provides a way of looking at people (human beings), organizations, and how they interact with one another in a decentralized, self-sovereign way - which means that each of them decides for itself whether or not to interact with others, how to conduct such interactions, etc., thereby only taking external influences into account if they want, or have some need to do so.
 
-## Purpose
+### Purpose
 <!--Concisely describe what can you do with the pattern that is (at least) harder if you didn't have it.-->
 In order for people or organizations to decide what to do (themselves), what to ask others to do (for which these others generally require some form of compensation, how to know that the associated risks are worth taking, this pattern provides a simple mental model that provides the basis for thinking/reasoning about such questions. 
 
-## Introduction
+### Introduction
 <!--Gently introduce the pattern, by referring to real-world situations and using colloquial terms, so that when someone has read the text, (s)he knows what it is about, and is ready to delve into the specifics of the pattern-->
 One may readily observe that in some way, people (humans) and %%organizations|organization%% are similar. This is indicated e.g. by the notion of 'personality' that many %%legal jurisdictions|legal-jurisdiction%% assign to (specific kinds of) organizations. It allows rights and duties to be assigned to people and organizations alike. It also means that people and organizations can be held accountable, and be subjected to prosecution.
 
@@ -42,7 +42,7 @@ So in general, the execution of an action is (primarily) guided by the policies,
 
 Finally, we note that a party `owns` %%objectives|objective%% that it seeks to fulfill or realize, and these are part of its knowledge. The relevance of this is that a large number of the decisions that parties make have to do with their managing their %%risks|risk%% (which [ISO 27000](https://www.iso.org/obp/ui#iso:std:iso-iec:27000:ed-4:v1:en)) defines as 'effect of uncertainty on objectives'), each of which is related to one or more of its objectives.
 
-## Formalized model
+### Formalized model
 Here is a visual representation of this pattern, using the following [notations and conventions](../notations-and-conventions#pattern-diagram-notations):
 
 <img
@@ -52,7 +52,7 @@ Here is a visual representation of this pattern, using the following [notations 
 
 It shows that %%Parties|party%% (humans, organizations) perform %%Actions|action%% for the purpose of realizing their %%Objectives|objective%%. %%Parties|party%% are not considered to actually execute such %%Actions|action%%; they have (human and non-human) %%Actors|actor%% that work for them, execute such %%Actions|action%%, using the %%Party|party%%’s %%Knowledge|knowledge%% as the (authoritative) guidance for executing the %%Actions|action%% (as well as any other relevant %%Knowledge|knowledge%% they can access).
 
-The essential characteristic of %%Parties|party%% is their 1-1 link with %%Knowledge|knowledge%%, which they continually update and use e.g. for reasoning, decision making, and determining e.g. what to do, when, and with whom. %%Knowledge|knowledge%% not only includes (observable) facts, but also opinions, e.g. regarding the %%Entities|entity%% it knows to exist, relations between them, and rules (constraints, [logic](https://en.wikipedia.org/wiki/Logic)[^1]) that can be used to classify and reasoning about them, and for making decisions.
+The essential characteristic of %%Parties|party%% is their 1-1 link with %%Knowledge|knowledge%%, which they continually update and use e.g. for reasoning, decision making, and determining e.g. what to do, when, and with whom. %%Knowledge|knowledge%% not only includes (observable) facts, but also opinions, e.g. regarding the %%Entities|entity%% it knows to exist, relations between them, and rules (constraints, [logic](https://en.wikipedia.org/wiki/Logic)[^1]) that can be used to classify and reasoning about them, and for making decisions. 
 
 Perhaps the most important idea in this pattern is that our %%Party|party%% concept is not considered to (be able to) act, and they need %%Actors|actor%% (i.e. %%Entities|entity%% that _can_ act) to act on their behalf and thus make them perform. This does, however,  not preclude having %%Entities|entity%% that are both %%Party|party%% and %%Actor|actor%% - e.g. humans - and that such %%Entities|entity%% can act on their ‘own’ behalf. And we can continue to use the commonly used form of speech in which a %%Party|party%% performs some Action  by realizing that this means that there is (at least) one %%Actor|actor%% that is actually executing that %%Action|action%%.
 
@@ -65,7 +65,7 @@ It also works well for organizations, which are typically companies, enterprises
 %%Parties|party%% set %%Objectives|objective%% that they seek to achieve, the most basic of which perhaps is its mission, or its ‘raison d'être’, to the realization of which all of its %%Actions|action%% are (ultimately) aimed. Every Objective is owned by a single %%Party|party%% (we do not consider ‘shared objectives’[^2]).
 
 ---
-## Footnotes
+### Footnotes
 <!--This (optional) section contains any footnotes that may have been specified in the text above.-->
 
 [^1]: I.e. “logic is the analysis and appraisal of arguments (Gensler, Harry J. (2017) [2002]. "Chapter 1: Introduction". Introduction to logic (3rd ed.). New York: Routledge. p. 1. [doi:10.4324/9781315693361](https://doi.org/10.4324%2F9781315693361). [ISBN 9781138910591](https://en.wikipedia.org/wiki/Special:BookSources/9781138910591). OCLC [957680480](https://www.worldcat.org/oclc/957680480).)

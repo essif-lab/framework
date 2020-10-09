@@ -8,11 +8,11 @@ stage: draft
 hoverText: "Pattern: A limited set of concepts (ideas), relations between them, and constraints, such that together they form a coherent and consistent whole."
 ---
 
-## Short Description
+### Short Description
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
 A **pattern** (also called **mental model** or **conceptual model**) captures a limited set of %%concepts|concept%% (ideas), relations between them, and constraints, such that together they form a coherent and consistent whole. Patterns use (tangible) %%terms|term%% to refer to these (intangible) concepts and relations, so in order to be consistent, a pattern must reside in the scope that defines these concepts and relations. A pattern may also 'connect' concepts of different scopes (preferably no more than two), which you might call an 'interconnection pattern' between these scopes. 
 
-## Purpose
+### Purpose
 <!--Describe why the concept is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What objectives does it help realize? Why is this conceptevant within its scope of definition?-->
 A (good) pattern can be used
 - to facilitate one's thinking and reasoning about a specific subject/topic, and/or deepen one's understanding of it.
@@ -20,11 +20,11 @@ A (good) pattern can be used
 - to efficiently discuss and improve %%definitions|definition%% of the %%concepts|concept%% and relations in the pattern.
 - to write texts using precisely defined language.
 
-## Criteria
+### Criteria
 <!--REQUIRED--How is this concept different from related ideas? What are essential characteristics that must be true? This is where you specify the [intensional definition](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions) of the concept, i.e. the necessary and sufficient conditions for when the term should be used. This makes that the conceptomes crystal clear. In the case of nouns, this is equivalent to specifying the properties that an object needs to have in order to be counted as a referent of the term.-->
 a limited set of %%concepts|concept%% (preferably not exceeding 7+/-2)[^1], relations between such concepts, and constraints, such that together they form a coherent and consistent whole that can be used to explain one's thinking about a specific topic within a specific %%scope|scope%%.
 
-## Notes
+### Notes
 
 The first purpose of a pattern is to help us think and reason about a certain topic or issue.
 One signal that indicates the need of such a model is when we’re running circles in our thoughts, and we have this feeling of not understanding, of the topic being (too) complex. Often, we are thinking in terms of concepts that are not fit for the objectives we pursue.
@@ -37,12 +37,12 @@ This careful construction must ensure that the mental model gets different prope
 
 In the end, the pattern needs to be expressed in several, different ways, depending on whom we want to convey the ideas behind it to. Business people generally need simple models that allow them to (roughly) grasp its gist. Software architects need models with precise definitions that allow them to use its elements in (formal) reasonings. Software engineers (programmers) need all the details that allow them to create applications and databases that work according to the model’s intent. So the level of detail that an expression of the model provides, makes it useful or useless to different audiences.
 
-## Background:
+### Background
 The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
 
 <!--
 ---
-## Footnotes
+### Footnotes
 
 [//]: # This (optional) section contains any footnotes that may have been specified in the text above.
 

@@ -1,21 +1,21 @@
 ---
 id: notations-and-conventions
-title: Notations and Conventions Used in this Documentation
-sidebar_label: Notations
+title: Notations and Conventions
 ---
 
-Here, we provide an overview of the notations and conventions being used within eSSIF-Lab.
+This document provides an overview of the notations and conventions being used within eSSIF-Lab.
 
 
-## RFC 2119
+### RFC 2119
 We shall use keywords such as “shall”, “should”, “may” etc. as defined by [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-## Capitalization of words in mid-sentence
-Also, we capitalize words in mid-sentence whenever it is used in the meaning as provided by a corresponding Definition. This allows us to also use the more colloquial meanings of words (by not capitalizing them). We appreciate any feedback regarding our (im)proper use of this kind of capitalization of words.
+### Capitalization of words in mid-sentence
+A word in mid-sentence that is capitalized is a %%term|term%% that has a %%definition|definition%% in the %%Corpus of Terminology|corpus%%. This allows readers to distinguish between the more colloquial meanings of words (by not capitalizing them) and those that are actually defined. We appreciate any feedback regarding our (im)proper use of this kind of capitalization of words.
 
-We are working towards deprecating this convention, as we now have better ways to refer to %%definitions|definition%%.
+:::note
+We are working towards deprecating this convention, as we now have better ways of referring to words that are defined in the eSSIF-Lab Corpus..
 
-## Pattern diagram notations
+### Pattern diagram notations
 
 %%Pattern|pattern%% diagrams will be visualized in this document using a UML-like notation, as follows:
 

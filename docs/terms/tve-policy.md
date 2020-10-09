@@ -1,21 +1,21 @@
 ---
-id: transaction-validation-engine
-title: "Transaction Validation Engine (TVE)"
+id: tve-policy
+title: "TVE Policy"
 scopeid: essifLab
 type: concept
-typeid: transaction-validation-engine
+typeid: tve-policy
 stage: draft
-hoverText: "Transaction Validation Engine (TVE): a functional component that provides business applications with forms that users have filled in, and where the content of such forms is valid for making decision(s) by this application."
+hoverText: "TVE Policy: a machine readable policy that enables an operational TVE component to function according to the rules of the party on whose behalf this component acts."
 ---
 
 ## Short Description
-A **Transaction Validation Engine (TVE)** is a functional component that provides business applications with forms that users have filled in, and where the content of such forms is valid for making decision(s) by this application. The TVE uses a %%TVE-policy|tve-policy%% to learn about the applicable (business) rules of the %%Party%% on whose behalf the TVE works. The TVE uses the %%eSSIF-Glue|essif-glue%% interface to access the %%Wallet|wallet%%, %%Holder|holder%%, %%Issuer|issuer%% and %%Verifier|verifier%% functionalities.
+A **Transaction (Validation) Engine** or **TVE** is a functional component that provides business applications with forms that users have filled in, and where the content of such forms is valid for making decision(s) by this application. The TVE uses a machine readable TVE-policy 
 
 ## Purpose
-The purpose of the Transaction Validation Engine (TVE) is to produce (transaction-type specific) data structures or forms, each of which contains the necessary and sufficient data that allows (an %%agent|agent%% of) its %%owner|owner%% to decide whether or not to engage in a (new) transaction of the specified type.
+The purpose of the Transaction (Validation) Engine (TVE) is to produce (transaction-type specific) data structures or forms, each of which contains the necessary and sufficient data that allows (an %%agent|agent%% of) its %%owner|owner%% to decide whether or not to engage in a (new) transaction of the specified type.
 
 ## Criteria
-A **Transaction Validation Engine (TVE)** is a component in the [eSSIF-Lab functional architecture](..\functional-architecture\) whose function is to produce (transaction-type specific) data structures or forms, each of which contains the necessary and sufficient data that allows (an %%agent|agent%% of) its %%owner|owner%% to decide whether or not to engage in a (new) transaction of the specified type.
+A **Transaction (Validation) Engine** or **TVE** is a component in the [eSSIF-Lab functional architecture](..\functional-architecture\) whos function is to produce (transaction-type specific) data structures or forms, each of which contains the necessary and sufficient data that allows (an %%agent|agent%% of) its %%owner|owner%% to decide whether or not to engage in a (new) transaction of the specified type.
 
 ## Functionality
 
