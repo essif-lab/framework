@@ -129,7 +129,13 @@ function generateGlossary(data) {
   //append all markdown terms in a variable
   let content = "";
   data.forEach(item => {
-    content = content +  `\n\n- **[${item.title}](${item.filepath})**: ${item.hoverText}\n`;
+    if (item.title !== undefined) {
+      if (item.hoverText === undefined) {
+        content = content +  `\n\n- **[${item.title}](${item.filepath})**\n`;
+      } else {
+        content = content +  `\n\n- **[${item.title}](${item.filepath})**: ${item.hoverText}\n`;
+      }
+    }
   })
   fs.readFile(glossaryPath, 'utf8', function(err, glossaryContent) {
     if (err) throw err;
