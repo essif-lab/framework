@@ -6,7 +6,7 @@ termid: concept
 hoverText: "A Concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing."
 ---
 
-import { Term } from '..\..\src\components'
+import { Term } from '../../src/components'
 
 ## Short Description
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
