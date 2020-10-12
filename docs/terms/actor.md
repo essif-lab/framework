@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: actor
 stage: draft
-hoverText: "Actor: Entity that can act (do things), e.g. people, machines, but not organizations."
+hoverText: "Actor: Entity that can act (do things), e.g. people, machines, but not Organizations."
 ---
 
 ### Short Description
@@ -25,4 +25,4 @@ Entity that is capable of actually executing %%actions|action%% (acting, doing t
 - Enterprises, governments, and other %%organizations|organization%% do not qualify. 
 
 ### Background
-The %%party-action pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.
+The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.

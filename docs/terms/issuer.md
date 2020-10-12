@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: issuer
 stage: draft
-hoverText: "Issuer (functional component): the capability to construct credentials from data objects, according to the rules of its principal's issuer-policy (specifically regarding the way in which the credential is to be digitally signed), and pass it to the wallet-component of its principal allowing it to be issued."
+hoverText: "Issuer (functional component): the capability to construct Credentials from data objects, according to the rules of its Principal's issuer-policy (specifically regarding the way in which the Credential is to be digitally signed), and pass it to the Wallet-component of its Principal allowing it to be issued."
 ---
 
 ## Short Description

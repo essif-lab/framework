@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: organization
 stage: draft
-hoverText: "Organization: a group of people that work to realize one or more objectives."
+hoverText: "Organization: a group of people that work to realize one or more Objectives."
 ---
 
 ### Short Description
@@ -14,7 +14,7 @@ An **Organization** is a group of people that work to realize one or more object
 
 ### Purpose
 <!--Describe why the concept is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What objectives does it help realize? Why is this concept relevant within its scope of definition?-->
-The purpose of documenting this term is to provide additional clarity w.r.t. definitions given in english dictionaries. Also, we need this notion as it is used in the eSSIF-Lab %%party-action pattern|pattern-party-actor-action%%.
+The purpose of documenting this term is to provide additional clarity w.r.t. definitions given in english dictionaries. Also, we need this notion as it is used in the eSSIF-Lab %%Parties, Actors and Actions pattern|pattern-party-actor-action%%.
 
 ### Criteria
 A (non-empty) group of people that work to realize a (non-empty) set of objectives.

@@ -5,7 +5,7 @@ scopeid: eSSIFLab
 type: concept
 typeid: scope
 stage: draft
-hoverText: "Scope: the extent of the area or subject matter (which we use to define patterns, concepts, terms and glossaries in)."
+hoverText: "Scope: the extent of the area or subject matter (which we use to define Patterns, Concepts, Terms and Glossaries in)."
 ---
 
 ### Short Description

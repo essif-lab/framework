@@ -5,7 +5,7 @@ scopeid: essifLab
 type: pattern
 typeid: terminology
 stage: draft
-hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between terminology terms such as 'concept', 'term', 'pattern', 'mental model', 'glossary' etc."
+hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

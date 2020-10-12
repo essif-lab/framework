@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: transaction-result-dispatcher
 stage: draft
-hoverText: "Transaction Result Dispatcher (TRD): a functional component that is capable of stating (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other Parties."
+hoverText: "Transaction Result Dispatcher (TRD): a functional component that is capable of stating (various, sometimes intermediary) results of Business Transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other Parties."
 ---
 
 ## Short Description

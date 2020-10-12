@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: colleague
 stage: draft
-hoverText: "Colleague (of an Agent): An actor that is an Agent for the same Principal."
+hoverText: "Colleague (of an Agent): any other Agent that has the same Principal (i.e. Party on whose behalf they exeucte Actions)."
 ---
 
 :::info Editor's note

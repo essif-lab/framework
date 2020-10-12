@@ -5,7 +5,7 @@ scopeid: essifLabTerminology
 type: concept
 typeid: semantics
 stage: draft
-hoverText: "Semantics: a mapping between the (tangible/textual) terms and (intangible) ideas/concepts - their meaning."
+hoverText: "Semantics: a mapping between the (tangible/textual) Terms and (intangible) ideas/Concepts - their meaning."
 ---
 
 ### Short Description

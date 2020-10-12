@@ -5,7 +5,7 @@ scopeid: essifLab
 type: term
 typeid: legal-entity
 stage: draft
-hoverText: "Legal-entity: an entity that is known by and recognized to exist in a jurisdiction."
+hoverText: "Legal-entity: an Entity that is known by and recognized to exist in a Jurisdiction."
 ---
 
 ### Short Description

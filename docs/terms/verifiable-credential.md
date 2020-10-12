@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: verifiable-credential
 stage: draft
-hoverText: "Verifiable Credential: credential that comes with assurances regarding its provenance (the party that issued it) and its integrity (the property that the credential is the same as it was when issued)."
+hoverText: "Verifiable Credential: Credential that comes with assurances regarding its provenance (the Party that issued it) and its integrity (the property that the Credential data has not been tampered with in transit, i.e. is the same as when issued)."
 ---
 
 :::info Editor's note
