@@ -8,6 +8,13 @@ module.exports = {
   organizationName: 'grnet',
   projectName: 'essif-lab',
   onBrokenLinks: 'log',
+  scripts: [
+    {
+      src: '/framework/js/fix-location.js',
+      async: false,
+      defer: false,
+    },
+  ],
   themeConfig: {
     navbar: {
       // title: 'ESSIF-Lab',
