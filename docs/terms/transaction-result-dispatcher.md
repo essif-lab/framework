@@ -9,12 +9,12 @@ hoverText: "Transaction Result Dispatcher (TRD): a functional component that is 
 ---
 
 ## Short Description
-A **Transaction Result Dispatcher (TRD)** is a functional component that applications (that work for some %%Party%%) can call to communicate things such as: 
+A **Transaction Result Dispatcher (TRD)** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that applications (that work for some %%Party|party%%) can call to communicate things such as: 
 - the results of a business transaction (e.g. statements to confirm that a transaction happened, thereby supplying appropriate details)
 - the status of a business transaction (e.g. that an order has been received in good order, that delivery of an order is dealyed or otherwise changed)
 - knowledge (including judgements) that this Party has about %%Entities|entity%% (people, organizations, things, orders, deliveries, etc.)
 
-The TRD uses a %%TRD-policy|trd-policy%% to learn about the applicable (business) rules of the %%Party%% on whose behalf it works.
+The TRD uses a %%TRD-policy|trd-policy%% to learn about the applicable (business) rules of its %%principal|principal%%. Such a policy may specify e.g. which types of credentials its principal is willing to (have) issue(d), to whom such credentials may be issued and the kinds of assurances that must be obtained before doing so, etcetera.
 
 The TRD uses the %%eSSIF-Glue|essif-glue%% interface to access the %%Wallet|wallet%%, %%Holder|holder%%, %%Issuer|issuer%% and %%Verifier|verifier%% functionalities.
 
@@ -22,14 +22,14 @@ The TRD uses the %%eSSIF-Glue|essif-glue%% interface to access the %%Wallet|wall
 The purpose of the TRD component is to state the (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other Parties. A special kind of result is the (provisioning of) a credential that its Owner already has created.
 
 ## Criteria
-A **Transaction Result Dispatcher (TRD)** is a component in the [eSSIF-Lab functional architecture](..\functional-architecture\) that is capable of stating (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other %%Parties|Party%%.
+A **Transaction Result Dispatcher (TRD)** is a component in the [eSSIF-Lab functional architecture](../functional-architecture) that is capable of stating (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other %%Parties|party%%.
 
 ## Functionality
 Typically, and at any point in time, Parties are capable of expressing statements about entities that they know to exist. They could express statements about individuals, about themselves, the state of transactions, and so on. We will use the term ‘**subject (of a statement of a Party)**’ to refer to the entity that this Party knows to exist, and about whom/which the statement has been made.
 
 We will use the term ‘**subject-id (of a statement of a Party)**’ to refer to the representation that this Party has chosen to use for referring to the subject in said statement. A subject-id must have the property of being an identifier within every administrative context that this Party uses. It need not be humanly interpretable (and preferably is not).
 
-Parties need to specify the kinds of credentials they are willing to issue, the class of entities (e.g. people, cars, Organizations) for which it will issue them, and the information schema (structure) that it will use in credentials of such kinds.<sup>[TRD.1]</sup> This allows the TRD to construct data objects that conform to this information schema, and present it to the Issuer component for actual issuing.
+Parties need to specify the kinds of credentials they are willing to issue, the class of entities (e.g. people, cars, Organizations) for which it will issue them, and the information schema (structure) that it will use in credentials of such kinds.[^1] This allows the TRD to construct data objects that conform to this information schema, and present it to the Issuer component for actual issuing.
 
 The TRD Issuing Policy specifies the kinds of (linked-)data-objects that credentials may be created for. This allows the TRD to construct such a (linked-)data-objects for every subject-id that identifies a subject of the class for which a credential can be issued, which can subsequently be sent to the Issuer component that can turn it into a credential of a specific sort.
 
@@ -39,4 +39,4 @@ The TRD may either push credential data to the Issuer component, so that the Iss
 
 -----
 
-[TRD.1] We assume/stipulate that the Party maintains a credential catalogue that contains this, and other information about every kind of credential that it issues, and that such catalogues are available to other Parties that want or need to use such credentials.
+[^1]: We assume/stipulate that the Party maintains a credential catalogue that contains this, and other information about every kind of credential that it issues, and that such catalogues are available to other Parties that want or need to use such credentials.
