@@ -2,27 +2,18 @@
 id: digital-policy
 title: "Digital Policy"
 scopeid: essifLab
-type: term
+type: concept
 typeid: digital-policy
 conceptref: ":Policy"
 stage: draft
-hoverText: "Digital Policy: a (set of) machine readable rules, working instructions or other guidance for the execution of one or more kinds of actions, that digital agents have access to and must use when executing such actions."
+hoverText: "Digital Policy: a machine-readable document that contains rules, working instructions or other guidance for digital agents so as to enable them to execute actions on behalf of the author of that policy."
 ---
 
 ### Short Description
-A **digital policy** is a (set of) machine readable rules, working instructions or other guidance for the execution of one or more kinds of %%actions|action%%. A %%digital agent|digital-agent%% must have access to the digital policy that its %%principal|principal%% has established for the kind of action that the agent is executing on the principal's behalf. 
-
-It should be part of the principal's governance processes to establish, maintain and evaluate digital policies for every kind of action that its agents may execute.
-
-The principal must ensure that its %%digital actors|digital-actor%% can access the appropriate policies when needed.
+A **digital policy** is an artifact that is derived from, and represents, a %%policy|policy%% for the purpose of being useable in the digital realm.
 
 ### Purpose
-The purpose of **digital policies** is to enable %%parties|party%% to provide its %%digial agents|digital-agent%% with the rules and other guidance that they need to automaticallly execute %%actions|action%% that comply with such rules. 
+<!--State the purpose(s) for which it is necessary (or at least: desirable) to define <New Term>.-->
+The ability to distinguish between (non)digital policies allows us to exclusively talk about machine-readable policies, i.e. policies that are to be used by harsoftware/hardware %%actors|actor%%.
 
-### Criterion
-A **digital policy** is 
-- a (set of) machine readable rules, working instructions or other guidance for the execution of one or more kinds of %%actions|action%%;
-- is authored by a single %%Party|party%% (the author or %%owner|owner%% of the digital policy);
-- is accessable to, and must be complied with by a %%digital agent|digital-agent%% of that policy's author when it executes an action of the kind to which the digital policy applies.
-
-
+See also: %%Policy|policy%%.

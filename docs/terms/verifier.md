@@ -9,7 +9,7 @@ hoverText: "Verifier: a functional component that is capable of "
 ---
 
 ## Short Description
-A **Verifier** is 
+A **Verifier** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that 
 
 The **verifier** functionality is to support the TVE as it tries to acquire credentials from some other Party for the purpose of negotiating a business transaction. It does so by creating Presentation Requests (or Presentation Definition as it is called in the [draft DIF specfication for Presentation Exchange](https://identity.foundation/presentation-exchange)) that ask for such credentials, sending them to a holder component of another Party, receiving a response to such a request (which we call a ‘Presentation’), verifying the Presentation, i.e. checking the signature and other proofs of the veracity of both the construction of the Presentation as well as its contents, thus providing the TVE with verified data.
 
@@ -18,7 +18,7 @@ The **verifier** functionality is to support the TVE as it tries to acquire cred
 The purpose of the Verifier function is.
 
 ## Criteria
-A **Verifier** is a component in the [eSSIF-Lab functional architecture](..\functional-architecture\) whose function is to ... (tbd).
+A **Verifier** is a component in the [eSSIF-Lab functional architecture](../functional-architecture) whose function is to ... (tbd).
 
 ## Functionality
 

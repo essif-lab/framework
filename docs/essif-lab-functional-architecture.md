@@ -14,7 +14,11 @@ The purpose of the functional architecture and its views is to
 
 ## 1.  Basic Terminology
 
-In order to serve such purposes, we have found out that it is necessary that to make a strict and consequent distinction between people and Organizations that are capable of making decisions and bearing responsibility/accountability (we will use the term ‘%%Party|party%%’ for that) and people and ‘things’ that are capable of acting/doing things (we will use the term ‘%%Actor|actor%%’ for that). This means that an Organization is always a Party, whereas we consider a person to be a Party at one time and an Actor at another time, and computers/robots (and SSI components) are always an Actor.
+In order to serve such purposes, we have found out that it is necessary that to make a strict and consequent distinction between people and Organizations that are capable of making decisions and bearing responsibility/accountability (we will use the term ‘%%Party|party%%’ for that) and people and ‘things’ that are capable of acting/doing things (we will use the term ‘%%Actor|actor%%’ for that). All %%Organizations|organization%% are %%Parties|party%%, whereas we consider a person (human being) to be both a %%Party|party%% (in cases where reasoning, decision making and bearing responsibility are in order), and an %%actor|actor%% (in cases where the person is actually doing things). More details backgrounds are given in the %%mental model|mental-model%% '%%Parties, Actors and Actions|pattern-party-actor-action%%' and the documentation of the concepts used therin.
+
+:::note Editor's note
+TNO to edit remainder of this section (make it shorter), because users can click on the various terms if they want to know more. 
+:::
 
 This distinction is necessary because Actors do things that Parties are accountable for. In order to know which Party is accountable for what actions, we need the ability to link Parties and Actors. When an Actor acts and a (single) specific Party is accountable for that, we say that the Actor is an ‘%%Agent|agent%%’ for or of that Party (at that particular point in time). We say that this Actor acts ‘**on behalf of**’ that Party. Note that both humans and (running) applications may serve as Agents (human Agent or digital/electronic Agent respectively). A digital Agent that has one or more of the SSI functionalities we describe further down will be called an '%%SSI-Agent|ssi-agent%%', and we say that the Party on whose behalf it operates is the ‘%%Owner|owner%%’ of that Agent. Also, we use the term '**(digital/electronic or human) Colleague (of an Agent)**' to refer to any other (electronic or human) Agent that acts on behalf of the same Party as this Agent.
 
@@ -26,7 +30,7 @@ Also, to serve the aforementioned purposes, we cannot fix the architecture (and 
 
 ## 2.  Functional Architecture Overview
 
-Figure 1 shows the initial *functional* eSSIF-Lab architecture, and its scope, context and *functional* components each of which is a (*functional*) Agent for the same Party (meaning that they are all part of the same Organization as defined above, and they are all (digital) ‘Colleagues’ of one another).
+Figure 1 shows the initial *functional* eSSIF-Lab architecture, and its scope, context and *functional* components each of which is a (*functional*) %%agent|agent%% for the same %%party|party%% (meaning that they are all part of the same %%organization|organization%% as defined above, and they are all %%(digital) ‘Colleagues’|digital-colleague%% of one another).
 
 Please be aware that *functional* capabilities, components, Agents, etc. do not necessarily coincide with *technical* capabilities, components, Agents, etc. The technical components can be deployed (downloaded, installed, run), whereas a functional component is a provider of a specified set of capabilities/functionalities an implementation of which can be made part of a technical component. So it is conceivable that a technical component contains an implementation of wallet, holder and verifier functional components as well as other functionalities that are not described here, e.g. related to UX, setting preferences, and more. In this functional architecture, the default type of components, Agents etc. are *functional*.
 
