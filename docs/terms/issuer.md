@@ -9,14 +9,14 @@ hoverText: "Issuer: a functional component that is capable of "
 ---
 
 ## Short Description
-The **issuer** is an (architectural) function that structures sets of (related) statements/claims (e.g. as produced by the %%TRD|trd%%) in a packate, adds metadata which includes e.g. a timestamp at which this was done, ensures that it is digitally signed on behalf of its %%owner|owner%%,  signature by which third Parties can prove its provenance and integrity. Another function of the issuer is to handle revocation (and (un)suspension) of credentials that it has issued. For such tasks, it relies on functions that are made available by the SSI Protocols and Crypto Layer.
+An **issuer** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that structures sets of (related) statements/claims (e.g. as produced by the %%TRD|trd%%) in a packate, adds metadata which includes e.g. a timestamp at which this was done, ensures that it is digitally signed on behalf of its %%owner|owner%%,  signature by which third Parties can prove its provenance and integrity. Another function of the issuer is to handle revocation (and (un)suspension) of credentials that it has issued. For such tasks, it relies on functions that are made available by the SSI Protocols and Crypto Layer.
 
 
 ## Purpose
 The purpose of the Issuer function is.
 
 ## Criteria
-A **Issuer** is a component in the [eSSIF-Lab functional architecture](..\functional-architecture\) whose function is to ... (tbd).
+A **Issuer** is a component in the [eSSIF-Lab functional architecture](../functional-architecture) whose function is to ... (tbd).
 
 ## Functionality
 

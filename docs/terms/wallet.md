@@ -9,7 +9,7 @@ hoverText: "Wallet: a functional component that is capable of "
 ---
 
 ## Short Description
-A **Wallet** is 
+A **Wallet** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that 
 
 
 The **wallet** functionality includes the (secure) storage of credentials - both those that have been issued by the issuer (i.e. self-signed credentials) and those that have been obtained from issuers of other Parties. Another task of the wallet is to (securely) store (private) keys that can be used to sign or seal data on behalf of its Owner. Perhaps the most important task of the Wallet is to ensure that credentials and keys can only become available to another component if they have the same (single) Owner, and will become available if such other component implements a functionality that needs it.
@@ -20,7 +20,7 @@ The **wallet** functionality includes the (secure) storage of credentials - both
 The purpose of the Wallet function is.
 
 ## Criteria
-A **Wallet** is a component in the [eSSIF-Lab functional architecture](..\functional-architecture\) whose function is to ... (tbd).
+A **Wallet** is a component in the [eSSIF-Lab functional architecture](../functional-architecture) whose function is to ... (tbd).
 
 ## Functionality
 

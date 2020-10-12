@@ -1,28 +1,42 @@
 # eSSIF-Lab Framework
 
-This repo contains the source documents of the [eSSIF-Lab framework](https://essif-lab.pages.grnet.gr/framework/), such as its vision, architecture and other relevant topics.
+This repo contains files that are used to generate the the [eSSIF-Lab framework](https://essif-lab.pages.grnet.gr/framework/) website, which includes the eSSIF-Lab vision, functional architecture, terminology and other relevant topics.
 
-## Writing docs
+This website is generated using [Docusaurus 2](https://v2.docusaurus.io/) (and a custom plugin developed by [GRNET](https://grnet.gr/en/) for handling terminology).
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/).
+## Writing Docusaurus Documents
 
-Documentation content must appear in `.md` files inside the `docs` folder.
+Docusaurs requires documentation content to appear in `.md` files inside the `docs` folder.
 Each file defines the following attributes at its very beginning:
 
 - `id`, by which the file is referred to across the project
 - `title`, appearing at the top of the file's display
 - `sidebar_label`, the file's name appearing in the sidebar
 
-The `sidebars.js` file contains the basic mechanism for distributing content
-among sections and is self-explanatory (compare with the sidebar appearing [here](https://essif-lab.pages.grnet.gr/essif-lab/docs/introduction)). Subsections within the `.md` file
-(that is, tagged with `##`) will appear at the right part of the page
-(see for example [here](https://essif-lab.pages.grnet.gr/essif-lab/docs/infrastructure)).
+Documentation on these and other header fields can be found [here](https://v2.docusaurus.io/docs/markdown-features#markdown-headers). 
 
-Images must be put inside the directory `static/images` and developers must refer to them using _relative_ urls.
+The Terminology Engine plugin of GRNET uses additional header fields. These are (or will be) defined [here](./docs/terminology-contributions).
+
+The `sidebars.js` file contains the basic mechanism for [distributing content among sections](https://v2.docusaurus.io/docs/docs-introduction#sidebar) and is self-explanatory (compare with the sidebar appearing [here](https://essif-lab.pages.grnet.gr/essif-lab/docs/introduction)). Subsections within the `.md` file (that is, tagged with `##`) will appear at the right part of the page (see for example [here](https://essif-lab.pages.grnet.gr/essif-lab/docs/infrastructure)).
+
+## Inserting Images in docs
+<!-- **DEPRECATED** Images must be put inside the directory `static/images` and developers must refer to them using _relative_ urls.
 Example: ![eSSIF-Lab logo](../images/eSSIF-Lab%20logo.png)
 Docusaurus knows that the `../images` directory is inside the `static` directory, and thus process correctly.
 The deployment pipe will convert `../images/` in such links to their _*absolute*_ urls.
-Of course, if you want to link to images on the web, you can still use absolute urls.
+Of course, if you want to link to images on the web, you can still use absolute urls. -->
+
+If you want to add an image, say `example.png`, here is what you do:
+- first, add the image to the `/static/images` directory (or `/static/images/subdir-path/`)
+- then, in your document, add a line behind the docusaurus header that says: `import useBaseUrl from '@docusaurus/useBaseUrl';`
+- next, in your document, at the place where you want the image to be presented, insert the following snippet:
+```html
+<img
+  alt="text-that-shows-if-the-image-cannot-be-found"
+  src={useBaseUrl('images/example.png')}
+/>
+```
+(or `src={useBaseUrl('images/subdir-path/example.png')}` if you added the image file there).
 
 ### Installation
 

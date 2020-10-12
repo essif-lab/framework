@@ -8,15 +8,9 @@ stage: draft
 hoverText: "Risk: the deviation of the expected realization (e.g. results) of an objective of a party."
 ---
 
-:::info Editors Note
-TNO is expected to produce the first draft of this document
+:::info Editor's note
+TNO to provide the content of this file.
 :::
-
-### Short Description
-
-### Purpose
-
-### Criterion
 
 ### References
 

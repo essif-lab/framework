@@ -6,13 +6,14 @@ type: term
 typeid: ssi-agent
 conceptref: essifLab:Agent
 stage: draft
-hoverText: "SSI-Agent: an agent that provides SSI services."
+hoverText: "SSI-Agent: a digital agent that provides one or more of the SSI functionalities (issuer, holder, verifier, wallet) to its principal."
 ---
+
+### Short Description
+An **SSI-agent** is a %%digital agent|digital-agent%% that provides one or more of the SSI functionalities (i.e. %%issuer|issuer%%, %%holder|holder%%, %%verifier|verifier%%, %%wallet|wallet%%) to its %%principal|principal%%. 
 
 ### Purpose
 <!--State the purpose(s) for which it is necessary (or at least: desirable) to define <New Term>.-->
+The ability to distinguish between (non)SSI agents allows us to exclusively talk about agents that provide some or all of the SSI functionalities (i.e. %%issuer|issuer%%, %%holder|holder%%, %%verifier|verifier%%, %%wallet|wallet%%).
 
-
-### Notes
-<!--Usually, the meaning of a term will not be _exactly_ the same as that of the concept to which it refers. Often, there are slight differences in meaning, or the term may emphasize specific characteristics of the concept, so as to accommodate specific needs of the scope in which it is defined. Please describe such deviations/emphasized characteristics in this section, and which needs that helps accommodate.-->
-
+See also: %%digital agent|digital-agent%%, and %%agent|agent%%.

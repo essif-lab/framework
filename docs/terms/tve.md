@@ -1,6 +1,6 @@
 ---
 id: tve
-title: "TVE - Transaction Validation Engine"
+title: "TVE"
 scopeid: essifLab
 type: concept
 typeid: tve

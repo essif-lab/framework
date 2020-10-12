@@ -1,6 +1,6 @@
 ---
 id: trd
-title: "TRD - Transaction Result Dispatcher"
+title: "TRD"
 scopeid: essifLab
 type: concept
 typeid: trd
