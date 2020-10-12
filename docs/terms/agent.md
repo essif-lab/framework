@@ -9,7 +9,8 @@ hoverText: "Agent: An actor that is (at that point in time) executing an action 
 ---
 
 ### Short Description
-%%Actors|actor%% execute %%actions|action%% for, or on behalf of some %%party|party%% (the %%principal|principal%% of that agent), because parties are not considered to be capable of acting.[^1] Agents must act in accordance with their %%principal|principal%%, which means that for every kind of action, the principal must provide the proper guidance for their agents, e.g. in terms of policies (rules), working instructions, programs etc. We use the term %%digital agent|digital-agent%% to refer to agents that operate in a digital domain.
+%%Actors|actor%% execute %%actions|action%% for, or on behalf of some %%party|party%% (the %%principal|principal%% of that agent),
+because parties are not considered to be capable of acting. Agents must act in accordance with their %%principal|principal%%, which means that for every kind of action, the principal must provide the proper guidance for their agents, e.g. in terms of policies (rules), working instructions, programs etc. We use the term %%digital agent|digital-agent%% to refer to agents that operate in a digital domain.
 
 ### Purpose
 The ability to distinguish between (non)agents is relevant in many situations, including:
