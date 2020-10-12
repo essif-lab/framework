@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: verifier
 stage: draft
-hoverText: "Verifier: a functional component that is capable of "
+hoverText: "Verifier (functional component): the capability to request peer-agents to present (provide) data from credentials (of a specified kind, issued by specified parties), and to verify such responses (check structure, signatures, dates), according to its principal's verifier-policy."
 ---
 
 ## Short Description

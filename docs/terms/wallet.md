@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: wallet
 stage: draft
-hoverText: "Wallet: a functional component that is capable of "
+hoverText: "Wallet (functional component): the capability to securely store data as requested by colleague-agents, and to provide stored data to colleague-agents or peer-agents, all in compliance with the rules of the wallet-policy of its principal."
 ---
 
 ## Short Description
