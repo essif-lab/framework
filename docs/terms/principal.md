@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: principal
 stage: draft
-hoverText: "Principal: A Party for whom, or on behalf of whom, an Actor works (the latter is then an Agent for that Party)."
+hoverText: "Principal (of an Actor): A Party for whom, or on behalf of whom, the Actor works (the latter is then an Agent for that Party)."
 ---
 
 ### Short Description
@@ -24,4 +24,4 @@ The **principal** (of an %%actor|actor%%) is the %%party|party%% for whom the ac
 - When a person is doing things for his employer, the latter is his Principal.
 
 ### Background
-The %%party-action pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.
+The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.

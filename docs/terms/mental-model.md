@@ -6,7 +6,7 @@ type: term
 typeid: mental-model
 conceptref: essifLab:pattern
 stage: draft
-hoverText: "Mental Model: a casual and formal description (pattern) of a set of concepts, relations between them, and constraints, that provide a specific 'viewpoint', or 'way of thinking' about a certain topic."
+hoverText: "Mental Model: a casual and formal description (Pattern) of a set of Concepts, relations between them, and constraints, that provide a specific 'viewpoint', or 'way of thinking' about a certain topic."
 ---
 
 :::info Editor's note

@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: trd-policy
 stage: draft
-hoverText: "TRD Policy: a machine readable policy that enables an operational TRD component to function according to the rules of the party on whose behalf this component acts."
+hoverText: "TRD Policy: a Digital Policy that enables an operational TRD component to function according to the rules of its Policy Governor."
 ---
 
 ## Short Description

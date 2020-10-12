@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: verified-data
 stage: draft
-hoverText: "Verified Data: data of which some party has established that it is a truthful representation of what its author intended it to mean when the data was created."
+hoverText: "Verified Data: data of which some Party has established that it is a truthful representation of what its author intended it to mean when the data was created."
 ---
 
 :::info Editor's note

@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: tve-policy
 stage: draft
-hoverText: "TVE Policy: a machine readable policy that enables an operational TVE component to function according to the rules of its principal."
+hoverText: "TVE Policy: a Digital Policy that enables an operational TVE component to function according to the rules of its Policy Governor."
 ---
 
 ## Short Description

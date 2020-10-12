@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: policy
 stage: draft
-hoverText: "Policy: a (set of) rules, working instructions or other guidance for the execution of one or more kinds of actions, that agents (a) have access to, (b) can interpret as intended by their principal (i.e. policy owner) and (c) must use when executing such actions."
+hoverText: "Policy: a (set of) rules, working instructions or other guidance for the execution of one or more kinds of Actions, that Agents (a) have access to, (b) can interpret as intended by their Principal (i.e. policy Owner) and (c) must use when executing such Actions."
 ---
 
 ### Short Description

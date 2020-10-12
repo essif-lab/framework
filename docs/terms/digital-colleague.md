@@ -6,11 +6,10 @@ type: term
 typeid: digital-colleague
 conceptref: ":Colleague"
 stage: draft
-hoverText: "Digital Colleague (of an Agent): a digital actor that is an agent of the same principal."
+hoverText: "Digital Colleague (of an Agent): any (other) Digital Agent that has the same Principal (i.e. Party on whose behalf they exeucte Actions)."
 ---
 
 ### Purpose
-<!--State the purpose(s) for which it is necessary (or at least: desirable) to define <New Term>.-->
 The ability to distinguish between (non)digital colleagues allows us to reason and communicate about the set of %%digital actors|digital-actor%% that are %%agents|agent%% for a single **principal|principal%%.
 
 See also: %%colleague|colleague%%.

@@ -5,7 +5,7 @@ scopeid: essifLab
 type: glossary
 typeid: glossary-file
 stage: draft
-hoverText: "Glossary-file: a file that defines/specifies a glossary."
+hoverText: "Glossary-file: a file that defines/specifies a Glossary."
 ---
 
 ### Short Description

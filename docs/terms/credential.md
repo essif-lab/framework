@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: credential
 stage: draft
-hoverText: "Credential: data, representing a set of statements made by one party (the author of the credential)."
+hoverText: "Credential: data, representing a set of statements made by one Party (the author of the credential)."
 ---
 
 :::info Editor's note
