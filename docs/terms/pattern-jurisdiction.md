@@ -5,7 +5,7 @@ scopeid: essifLab
 type: pattern
 typeid: jurisdiction
 stage: draft
-hoverText: "The Jurisdictions pattern captures the concepts and relations that explain what a generic jurisdiction consists of, and relates it to parties and legal entities."
+hoverText: "The Jurisdictions pattern captures the Concepts and relations that explain what a generic Jurisdiction consists of, and relates it to Parties and Legal Entities."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

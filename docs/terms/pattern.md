@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: pattern
 stage: draft
-hoverText: "Pattern: A limited set of concepts (ideas), relations between them, and constraints, such that together they form a coherent and consistent whole."
+hoverText: "Pattern: A limited set of Concepts (ideas), relations between them, and constraints, such that together they form a coherent and consistent whole."
 ---
 
 ### Short Description

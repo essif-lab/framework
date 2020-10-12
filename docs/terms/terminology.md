@@ -5,7 +5,7 @@ scopeid: essifLabTerminology
 type: concept
 typeid: terminology
 stage: draft
-hoverText: "Terminology: the set of terms that are used for communicating about a some specific topic(s)."
+hoverText: "Terminology: the set of Terms that are used for communicating about a some specific topic(s)."
 ---
 
 ### Short Description

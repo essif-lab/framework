@@ -6,7 +6,7 @@ type: concept
 typeid: digital-policy
 conceptref: ":Policy"
 stage: draft
-hoverText: "Digital Policy: a machine-readable document that contains rules, working instructions or other guidance for digital agents so as to enable them to execute actions on behalf of the author of that policy."
+hoverText: "Digital Policy: a machine-readable Policy (i.e. document that contains rules, working instructions or other guidance for Agents that can interpret such documents, so as to enable them to execute Actions on behalf of the Policy's author)."
 ---
 
 ### Short Description
