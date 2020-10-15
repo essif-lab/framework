@@ -5,11 +5,11 @@ scopeid: essifLab
 type: concept
 typeid: employer
 stage: draft
-hoverText: "Employer (of an Actor): a Party on whose behalf this Actor might execute Ations."
+hoverText: "Employer (of an Actor): a Party on whose behalf this Actor (called an Employee of that Party) might execute Ations."
 ---
 
 :::info Editor's note
-TNO to provide the content of this file.
+TNO (or others) to provide the content of this file.
 :::
 
 ### Background

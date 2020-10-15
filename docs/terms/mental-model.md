@@ -10,7 +10,7 @@ hoverText: "Mental Model: a casual and formal description (Pattern) of a set of 
 ---
 
 :::info Editor's note
-TNO to provide the content of this file.
+TNO (or others) to provide the content of this file.
 :::
 
 See also: %%pattern|pattern%%.

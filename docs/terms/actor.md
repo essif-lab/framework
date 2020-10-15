@@ -24,5 +24,11 @@ Entity that is capable of actually executing %%actions|action%% (acting, doing t
 - Software applications qualify, provided they are actually running on hardware. An app that is just sitting e.g. on a mobile phone but isn't executed does not qualify.
 - Enterprises, governments, and other %%organizations|organization%% do not qualify. 
 
+### Related concepts
+- %%digital actor|digital-actor%%
+- %%peer actor|peer-actor%%
+- %%agent|agent%%
+- %%principal|principal%%
+
 ### Background
 The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.

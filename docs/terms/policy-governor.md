@@ -9,13 +9,20 @@ hoverText: "Policy Governor (of a Policy): the Party that is the Owner of the Po
 ---
 
 :::info Editor's note
-TNO to provide the content of this file.
+TNO (or others) to provide the content of this file.
 :::
 
+
+### Background
+The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.
+
 ### Related Concepts
+- %%Governance|governance%%
+- %%Governor|policy-governor%%
+- %%Policy|policy%%
 - %%Digital Policy|digital-policy%%
-- %%TRD Policy|trd-policy%%
-- %%TVE Policy|tve-policy%%
+- %%Data Discloser Policy|data-collector-policy%%
+- %%Data Collector Policy|data-collector-policy%%
 - %%Verifier Policy|verifier-policy%%
 - %%Issuer Policy|issuer-policy%%
 - %%Holder Policy|holder-policy%%

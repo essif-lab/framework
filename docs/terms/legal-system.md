@@ -30,4 +30,4 @@ A system in which rules are defined ([legislature](https://en.wikipedia.org/wiki
 
 ### Background
 <!--Mention and link to the patterns in which this concept plays a (significant) role (possibly explaining the reason/purpose if appropriate), e.g.: -->
-The %%jurisdiction pattern|pattern-jurisdiction%% provides an overview of how this concept fits in with related concepts.
+The %%Jurisdictions pattern|pattern-jurisdiction%% provides an overview of how this concept fits in with related concepts.

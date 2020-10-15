@@ -22,9 +22,10 @@ module.exports = {
         src: 'images/eSSIF-Lab logo.png',
       },
       items: [
-        {to: 'docs/introduction', label: 'Introduction', position: 'left'},
+        {to: 'docs/project', label: 'Project', position: 'left'},
         {to: 'docs/vision-and-purpose', label: 'Vision', position: 'left'},
         {to: 'docs/functional-architecture', label: 'Functional Architecture', position: 'left'},
+        {to: 'docs/governance', label: 'Governance', position: 'left'},
         {to: 'docs/terminology', label: 'Terminology', position: 'left'},
         {to: 'docs/ssi-standards', label: 'SSI Standardization', position: 'right'},
         {
@@ -66,8 +67,8 @@ module.exports = {
           title: 'eSSIF-lab Framework',
           items: [
             {
-              label: 'Introduction',
-              to: 'docs/introduction'
+              label: 'Project',
+              to: 'docs/project'
             },
             {
               label: 'Functional Architecture',

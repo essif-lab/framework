@@ -5,12 +5,12 @@ scopeid: essifLabTerminology
 type: concept
 typeid: glossary
 stage: draft
-hoverText: "Glossary: an alphabetically sorted list of Terms with explanations, usually aimed to help people understand texts around a certain (set of) topic(s) in some context(s)."
+hoverText: "Glossary: an alphabetically sorted list of Terms with the (single) meaning it has in (at least) one context."
 ---
 
 ### Short Description
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
-A **glossary** is an alphabetically sorted list of %%terms|term%% with explanations, usually aimed to help people understand texts around a certain (set of) topic(s) in some context(s). However, a glossary may also be created for the purpose of being included in other glossaries (as a construction aid to such glossaries), or for still other purposes.
+A **glossary** is an alphabetically sorted list of %%terms|term%% with explanations, usually aimed to help people understand texts around a certain (set of) topic(s) in (at least) one context. A glossary may also be created for the purpose of being included in other glossaries (as a construction aid to such glossaries), or for still other purposes.
 
 ### Purpose
 <!--Describe why the concept is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What objectives does it help realize? Why is this conceptevant within its scope of definition?-->
@@ -34,7 +34,7 @@ The %%terminology pattern|pattern-terminology%% provides an overview of how this
 
 ### Notes
 <!--This (optional) section is the place to put anything for which there is no other good place to put it.-->
-The [eSSIF-Lab Glossary](../essifLab-glossary) contains the words that are defined within the scope of the [eSSIF-Lab framework](../introduction).
+The [eSSIF-Lab Glossary](../essifLab-glossary) contains the words that are defined within the scope of the [eSSIF-Lab framework](../project).
 
 <!--
 ---

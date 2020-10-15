@@ -6,7 +6,7 @@ type: term
 typeid: peer-party
 conceptref: essifLab:party
 stage: draft
-hoverText: "Peer Party (of some other Party): the Party that is a participant in a Business Transaction of that other Party."
+hoverText: "Peer Party (of some other Party that is a participant in a Business Transaction): the Party that also participates in that Business Transaction."
 ---
 
 ### Purpose

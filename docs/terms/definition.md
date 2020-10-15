@@ -5,7 +5,7 @@ scopeid: essifLabTerminology
 type: concept
 typeid: definition
 stage: draft
-hoverText: "Definition: a text that helps Parties deeply/truly understand the meaning of a Term."
+hoverText: "Definition: a text that helps Parties deeply/truly understand the meaning of, or Concepts behind, a Term."
 ---
 
 ### Short Description

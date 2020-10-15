@@ -1,7 +1,7 @@
 ---
-id: introduction
-title: Introduction
-sidebar_label: eSSIF-Lab
+id: project
+title: The eSSIF-Lab Project
+sidebar_label: eSSIF-Lab Project
 ---
 
 The European Self-Sovereign Identity Lab ([eSSIF-Lab](https://essif-lab.eu/)) views itself as an ecosystem of parties 
@@ -20,7 +20,7 @@ One of the overarching activities in eSSIF-Lab is the design, maintenance and va
 
 - [Vision and purpose](vision-and-purpose)
 - [Functional architecture](functional-architecture)
-- [Concepts & Terminology](terminology)
+- [Terminology](terminology)
 
 For interop purposes, we also maintain a page related to [SSI standards](ssi-standards).
 

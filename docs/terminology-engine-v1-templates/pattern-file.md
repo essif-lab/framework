@@ -24,7 +24,7 @@ Please fill in the placeholders in this file as follows:
 ### Notations
 <!-- This (optional) section specifies the notations that are used, or refers to such a specification. -->
 
-## <!-- any number of other sections, as is fit for describing the pattern -->
+### <!-- any number of other sections, as is fit for describing the pattern -->
 <!-- text as appropriate for such a section -->
 
 <!--

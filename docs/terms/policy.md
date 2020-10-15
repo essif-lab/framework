@@ -26,6 +26,21 @@ The purpose of **policies** is to enable %%parties|party%% to provide its %%agen
 ### Criterion
 A **policy** is 
 - a (set of) rules, working instructions and/or other guidance for the execution of one or more kinds of %%actions|action%%;
-- is authored by a single %%Party|party%% (the author or %%owner|owner%% of the policy);
-- may have multiple representations of the rules, working instructions and/or other guidance, which are derived from the policy itself, in such a way that that any %%actor|actor%% that has a right or duty to execute an %%action|action%% on behalf of the policy's author can do so according to its intentions; 
-- is accessable to, and must be complied with by an %%agent|agent%% of that policy's author when it executes an action of the kind to which the policy applies.
+- governed by a single %%Party|party%% (the %%Governor|policy-governor%% of the policy) that decides what goes in the policy and what does not;
+- may have multiple representations of the rules, working instructions and/or other guidance, which are derived from the policy itself, in such a way that that any %%actor|actor%% that has a right or duty to execute an %%action|action%% on behalf of the  %%policy's governor|policy-governor%% can do so according to its intentions; 
+- is accessable to, and must be complied with by an %%agent|agent%% of that %%policy's governor|policy-governor%% when it executes an action of the kind to which the policy applies.
+
+### Background
+The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.
+
+### Related Concepts
+- %%Governance|governance%%
+- %%Governor|policy-governor%%
+- %%Policy|policy%%
+- %%Digital Policy|digital-policy%%
+- %%Data Discloser Policy|data-collector-policy%%
+- %%Data Collector Policy|data-collector-policy%%
+- %%Verifier Policy|verifier-policy%%
+- %%Issuer Policy|issuer-policy%%
+- %%Holder Policy|holder-policy%%
+- %%Wallet Policy|wallet-policy%%

@@ -6,7 +6,7 @@ type: term
 typeid: legal-jurisdiction
 conceptref: essifLab:jurisdiction
 stage: draft
-hoverText: "Legal Jurisdiction: a Jurisdiction that is operated by a governmental body."
+hoverText: "Legal Jurisdiction: a Jurisdiction that is governed/operated by a governmental body."
 ---
 
 ### Purpose
@@ -15,4 +15,4 @@ We need the term **legal jurisdiction** because it is common practice for people
 
 ### Background
 <!--Mention and link to the patterns in which this concept plays a (significant) role (possibly explaining the reason/purpose if appropriate), e.g.: -->
-The %%jurisdiction pattern|pattern-jurisdiction%% provides an overview of how this concept fits in with related concepts.
+The %%Jurisdictions pattern|pattern-jurisdiction%% provides an overview of how this concept fits in with related concepts.

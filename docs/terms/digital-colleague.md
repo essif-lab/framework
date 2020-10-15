@@ -6,7 +6,7 @@ type: term
 typeid: digital-colleague
 conceptref: ":Colleague"
 stage: draft
-hoverText: "Digital Colleague (of an Agent): any (other) Digital Agent that has the same Principal (i.e. Party on whose behalf they exeucte Actions)."
+hoverText: "Digital Colleagues: two or more Digital Agents that all have the same Principal (i.e. Party on whose behalf they exeucte Actions)."
 ---
 
 ### Purpose

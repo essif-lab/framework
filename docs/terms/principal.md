@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: principal
 stage: draft
-hoverText: "Principal (of an Actor): A Party for whom, or on behalf of whom, the Actor works (the latter is then an Agent for that Party)."
+hoverText: "Principal (of an Actor): A Party for whom, or on behalf of whom, the Actor works (this Actor is then called an Agent of that Party)."
 ---
 
 ### Short Description

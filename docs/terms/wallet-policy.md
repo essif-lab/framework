@@ -9,7 +9,7 @@ hoverText: "Wallet Policy: a Digital Policy that enables an operational Wallet c
 ---
 
 :::info Editor's note
-TNO to provide the content of this file.
+TNO (or others) to provide the content of this file.
 :::
 
 ### Related Concepts

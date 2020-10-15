@@ -5,7 +5,7 @@ scopeid: essifLabTerminology
 type: concept
 typeid: dictionary
 stage: draft
-hoverText: "Dictionary: an alphabetically sorted list of Terms and explanations, usually aimed to help people understand texts around a certain (set of) topic(s) in some context(s)."
+hoverText: "Dictionary: an alphabetically sorted list of Terms with various meanings they may have in different contexts."
 ---
 
 ### Short Description
