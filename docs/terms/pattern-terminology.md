@@ -11,5 +11,5 @@ hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Te
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::info Editor's note
-TNO to provide the content of this file.
+TNO (or others) to provide the content of this file.
 :::

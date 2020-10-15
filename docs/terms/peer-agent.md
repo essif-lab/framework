@@ -6,8 +6,12 @@ type: term
 typeid: peer-agent
 conceptref: essifLab:Agent
 stage: draft
-hoverText: "Peer Agent (of another Agent): the Agent with whom this other Agent is communicating in the context of a Business Transaction."
+hoverText: "Peer Agent (of some other Agent in a Communication Session): the Agent with whom/which this other Agent is communicating in that Communications Session."
 ---
+
+:::info Editors' note
+TNO (or others) to revise the contents of this file.
+:::
 
 ### Purpose
 <!--State the purpose(s) for which it is necessary (or at least: desirable) to define <New Term>.-->

@@ -9,5 +9,5 @@ hoverText: "Corpus (of Terminology): the documentation that describes the Knowle
 ---
 
 :::info Editor's note
-TNO to provide the content of this file.
+TNO (or others) to provide the content of this file.
 :::

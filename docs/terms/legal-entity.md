@@ -27,4 +27,4 @@ A **Legal Entity** is an %%entity|entity%% that is known by and recognized to ex
 
 ### Background
 <!--Mention and link to the patterns in which this concept plays a (significant) role (possibly explaining the reason/purpose if appropriate), e.g.: -->
-The %%jurisdiction pattern|pattern-jurisdiction%% provides an overview of how this concept fits in with related concepts.
+The %%Jurisdictions pattern|pattern-jurisdiction%% provides an overview of how this concept fits in with related concepts.

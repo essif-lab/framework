@@ -8,21 +8,24 @@ stage: draft
 hoverText: "Issuer (functional component): the capability to construct Credentials from data objects, according to the rules of its Principal's issuer-policy (specifically regarding the way in which the Credential is to be digitally signed), and pass it to the Wallet-component of its Principal allowing it to be issued."
 ---
 
-## Short Description
-An **issuer** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that structures sets of (related) statements/claims (e.g. as produced by the %%TRD|trd%%) in a packate, adds metadata which includes e.g. a timestamp at which this was done, ensures that it is digitally signed on behalf of its %%owner|owner%%,  signature by which third Parties can prove its provenance and integrity. Another function of the issuer is to handle revocation (and (un)suspension) of credentials that it has issued. For such tasks, it relies on functions that are made available by the SSI Protocols and Crypto Layer.
+:::info Editor's note
+TNO (or others) to provide additional content of this file.
+:::
 
+### Short Description
+An **issuer** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that structures sets of (related) statements/claims (e.g. as produced by the %%Data Discloser|data-discloser%%) in a package, adds metadata which includes e.g. a timestamp at which this was done, ensures that it is digitally signed on behalf of its %%owner|owner%% (so that third %%parties|party%% can prove its provenance and integrity). Another function of the issuer is to handle revocation (and (un)suspension) of credentials that it has issued. For such tasks, it relies on functions that are made available by the SSI Protocols and Crypto Layer.
 
-## Purpose
+### Purpose
 The purpose of the Issuer function is.
 
-## Criteria
+### Criteria
 A **Issuer** is a component in the [eSSIF-Lab functional architecture](../functional-architecture) whose function is to ... (tbd).
 
-## Functionality
+### Functionality
 
 The purpose of the Issuer component is to issue ‘credentials’, i.e. digital constructs that contain
 
--   sets of (related) statements or claims (e.g. as produced by the TRD)
+-   sets of (related) statements or claims (e.g. as produced by the Data Discloser)
 -   metadata (e.g. type of credential, date of issuing and expiration, endpoints, e.g. for revocation checking, credential definition, credential advertisements, credential enforcement policy, etc.)
 -   proofs (e.g. a digital signature by which third Parties can prove its provenance and integrity.
 

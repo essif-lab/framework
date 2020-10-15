@@ -5,11 +5,11 @@ scopeid: essifLab
 type: concept
 typeid: employee
 stage: draft
-hoverText: "Employee (of a Party): an Actor for whom/which it is realistic that it might execute Actions on behalf of that Party."
+hoverText: "Employee (of a Party): an Actor for whom/which it is realistic that it might execute Actions on behalf of that Party (called the Employer of that Actor)."
 ---
 
 :::info Editor's note
-TNO to provide the content of this file.
+TNO (or others) to provide the content of this file.
 :::
 
 ### Background

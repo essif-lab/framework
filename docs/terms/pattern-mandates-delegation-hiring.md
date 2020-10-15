@@ -11,6 +11,6 @@ hoverText: "The Mandates, Delegation and Hiring pattern (which remains to be doc
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::info Editor's note
-TNO to provide the content of this file.
+TNO (or others) to provide the content of this file.
 :::
 

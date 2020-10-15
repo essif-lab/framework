@@ -8,25 +8,33 @@ stage: draft
 hoverText: "Verifier (functional component): the capability to request Peer Agents to present (provide) data from credentials (of a specified kind, issued by specified Parties), and to verify such responses (check structure, signatures, dates), according to its Principal's Verifier Policy."
 ---
 
-## Short Description
-A **Verifier** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that 
+### Short Description
+A **Verifier** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that supports the %%data collector|data-collector%% as it tries to acquire %%(verifiable) credentials|credential%% from (an %%agent|agent%% of) some other %%party|party%%, for the purpose of negotiating a business transaction.
 
-The **verifier** functionality is to support the TVE as it tries to acquire credentials from some other Party for the purpose of negotiating a business transaction. It does so by creating Presentation Requests (or Presentation Definition as it is called in the [draft DIF specfication for Presentation Exchange](https://identity.foundation/presentation-exchange)) that ask for such credentials, sending them to a holder component of another Party, receiving a response to such a request (which we call a ‘Presentation’), verifying the Presentation, i.e. checking the signature and other proofs of the veracity of both the construction of the Presentation as well as its contents, thus providing the TVE with verified data.
+It does so by:
+- creating %%Presentation Requests|presentation-request%% (or Presentation Definition as it is called in the [draft DIF specfication for Presentation Exchange](https://identity.foundation/presentation-exchange)) that ask for such credentials, 
+- sending them to an %%agent|agent%% of that other %%party|party%% that provides %%holder|holder%% functionality,
+- receiving a response from that %%agent|agent%% to the %%presentation-request%% (i.e. a '%%Presentation|presentation%%'), 
+- verifying that %%presentation|presentation%%, i.e. checking the signature and other proofs of the veracity of both the construction of the presentation and its contents
+- returning the data that the %%data collector|data-collector%% requested, optionally with a report about which verification checks succeeded and/or which failed.
 
+:::info Editor's note
+TNO (or others) to provide additional content of this file.
+:::
 
-## Purpose
+### Purpose
 The purpose of the Verifier function is.
 
-## Criteria
+### Criteria
 A **Verifier** is a component in the [eSSIF-Lab functional architecture](../functional-architecture) whose function is to ... (tbd).
 
-## Functionality
+### Functionality
 
-The purpose of the Verifier component is to support the Transaction (Validation) Engine by providing it with a single, simple API that it can use to request and obtain data that it needs to produce a clean transaction form, as well as the results of checking verification proofs (this is also why it is called the ‘verifier’ component).
+The purpose of the Verifier component is to support the Data Collector by providing it with a single, simple API that it can use to request and obtain data that it needs to produce a clean transaction form, as well as the results of checking verification proofs (this is also why it is called the ‘verifier’ component).
 
-Typically, the TVE would ask the Verifier to provide a credential that it can use to fill in a (coherent set of) field(s) in the transaction form. It is realistic to think that credentials from different issuers - trusted by the Verifier’s Owner - can be used for this purpose. However, it is also realistic that such credentials will not use the same credential definition - they might well use different schemes to provide such data. Therefore, the TVE should specify a list of pairs (credential-type, issuer) instances of which could all be used to provide the data it needs - which it can obtain from the TVE policy.
+Typically, the Data Collector would ask the Verifier to provide a credential that it can use to fill in a (coherent set of) field(s) in the transaction form. It is realistic to think that credentials from different issuers - trusted by the Verifier’s Owner - can be used for this purpose. However, it is also realistic that such credentials will not use the same credential definition - they might well use different schemes to provide such data. Therefore, the Data Collector should specify a list of pairs (credential-type, issuer) instances of which could all be used to provide the data it needs - which it can obtain from the Data Collector policy.
 
-Then, the Verifier needs to know the address and protocol that it can use to reach a Holder component owned by the Party that its Owner is trying to negotiate the transaction with. The TVE specifies this as part of the request - and it can do so because it has received the original request, and does all communications channel handling.
+Then, the Verifier needs to know the address and protocol that it can use to reach a Holder component owned by the Party that its Owner is trying to negotiate the transaction with. The Data Collector specifies this as part of the request - and it can do so because it has received the original request, and does all communications channel handling.
 
 Verifiers are not expected to handle every kind of credential (e.g. VC’s, ABC’s, etc.) that exists, but rather a specific subset. For (at least one of) the credential types, the Verifier can construct a so-called presentation request, i.e. a message that is specific for the credential type and/or associated protocol, which it can then send to the Holder’s address.
 
@@ -43,4 +51,4 @@ In order to make the Verifier component work, a Verifier Policy/Preferences obje
 
 A response to this request (called a Presentation) will be obtained from a Holder component of the Peer Party. This response will contain a reference to the request, allowing the Verifier to combine them. The Verifier will then check that the data in the response is a credential that it has asked for (correct type/issuer), verify the proofs that are provided (predominantly the digital signature), and do some additional checks (e.g. whether or not the credential has expired, is revoked, and such).
 
-Then, the verifier will send a message to the TVE, containing the transaction-id, the data it has received, and the results of the various checks.
+Then, the verifier will send a message to the Data Collector, containing the transaction-id, the data it has received, and the results of the various checks.
