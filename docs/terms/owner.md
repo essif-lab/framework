@@ -5,37 +5,25 @@ scopeid: essifLab
 type: concept
 typeid: owner
 stage: draft
-hoverText: "Owner (of an Entity): the role that a Party performs when it is exercizing its legal or rightful title to control that Entity."
+hoverText: "Owner (of an Entity): the role that a Party performs when it is exercizing its legal, rightful or natural title to control that Entity."
 ---
 
 ### Short Description
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
-An **Owner** is a role that a %%Party|party%% performs when it is exercizing its legal or rightful title to control some %%entity|entity%%. We interpret 'legal' and 'rightful' as terms that apply to _any_ %%Jurisdiction|jurisdiction%% (that is: not just %%legal/national jurisdictions|legal-jurisdiction%%, but also those of other %%organizations|organization%% (%%parties|party%%).
+An **Owner** is a role that a %%party|party%% performs when it is exercizing its legal, rightful or natural title to control some %%entity|entity%%. 
+
+We interpret 'legal' and 'rightful' as terms that apply to _any_ %%jurisdiction|jurisdiction%% (that is: not just %%legal/national jurisdictions|legal-jurisdiction%%, but also those of other %%organizations|organization%% (%%parties|party%%).
+
+We take 'natural' as a title that is provided by nature, as in 'the owner of an %%assertion|assertion%%'.
+
+For futher details, see %%ownership|ownership%%.
 
 ### Purpose
-<!--Describe why the concept is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What objectives does it help realize? Why is this concept relevant within its scope of definition?-->
+The ability to distinguish between (non)owners of an %%entity|entity%% enables one to identify the %%party|party%% and the duties (and rights) it has regarding the %%owned|owned%%. One may want to do so either to establish whether or not the %%owned|owned%% %%entity|entity%%, e.g. if it is an %%actor|actor%%, can be trusted to behave according to its %%owner's|owner%% %%policies|policy%%. Or, one may want to do this in order to settle a dispute it has.
 
 ### Criteria
-<!--REQUIRED--How is this concept different from related ideas? What are essential characteristics that must be true? This is where you specify the [intensional definition](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions) of the concept, i.e. the necessary and sufficient conditions for when the term should be used. This makes that the concept becomes crystal clear. In the case of nouns, this is equivalent to specifying the properties that an object needs to have in order to be counted as a referent of the term.-->
-A %%Party|party%% is said to be the **owner** of some %%entity|entity%% if and only if the party and the entity are %%legal entities|legal-entity%% in some %%jurisdiction|jurisdiction%%, within the scope of which that party has the legal or rightful title to control the entity.
-
-### Examples
-<!--Provide a few sentences in which you give examples that obviously qualify as instances of `<New Term>`, and that do NOT obviously qualify. Also, provide examples that are not (so) obvious, but help users to better understand its intension.-->
+A %%party|party%% is said to be the **owner** of some %%(legal) entity|legal-entity%% in some %%jurisdiction|jurisdiction%% if and only if an %%ownership relation|ownership%% exists with that %%jurisdiction|jurisdiction%%.
 
 ### Related Concepts
-<!--Link to any concepts that are similar but distinct, with a note about the relationship.-->
-
-### Domains
-<!--In which general knowledge ecosystems or mental model families does this concept play a role?-->
-
-### Tags
-<!--Add hash tags here that allow us to group concepts in useful ways.-->
-
-### Use-cases
-<!--This (optional) section specifies an (optional) introductory paragraph, and a level-3 (i.e. `###`) subsection for every use case it describes. Every such use-case SHOULD
-- describe the situation/context of the use-case;
-- show how to apply `<New Term>` to/in that situation;
-- shows the relevance of having `<New Term>` for the use-case as opposed to not having it.-->
-
-### Notes
-<!--This (optional) section is the place to put anything for which there is no other good place to put it.-->
+- %%Ownership relation|ownership%%
+- %%Owned|owned%%

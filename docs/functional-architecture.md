@@ -5,8 +5,6 @@ sidebar_label: Functional Architecture
 scopeid: essifLab
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ## Purpose
 
 It is the intention of the eSSIF-Lab project to develop this functional architecture into a generic, and common basis that parties from different backgrounds can use e.g. for:

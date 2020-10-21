@@ -9,14 +9,14 @@ hoverText: "Agent (of a Party): an Actor that is executing an Action for, or on 
 ---
 
 ### Short Description
-An **Agent** is an %%actor|actor%% that is executing an action %%action|action%% for, or on behalf of some %%party|party%% (which we call the %%principal|principal%% of that agent). During the time interval in which the action is executed, the actor may execute other actions in other execution-contexts, on behalf of the same or another party. However, for the execution of a single %%action|action%%, the actor is an agent for precisely one principal. It is assumed that the principal provides its agents with the %%policies|policy%% that provide the agents with the rules, working-instructions and/or other guidance that they need to comply with when exeucting the action.
+An **Agent** is an %%actor|actor%% that is executing an action %%action|action%% for, or on behalf of some %%party|party%% (which we call the %%principal|principal%% of that agent). During the time interval in which the action is executed, the actor may execute other actions in other execution-contexts, on behalf of the same or another %%party|party%%. However, for the execution of a single %%action|action%%, the actor is an agent for precisely one principal. It is assumed that the principal provides its agents with the %%policies|policy%% that provide the agents with the rules, working-instructions, preferences and other guidance that they need to comply with when exeucting the action.
 
 ### Purpose
 The ability to distinguish between (non)agents is relevant in many situations, including:
 - electronic communication: the agent 
 
 ### Criterion
-An **Agent** is a role that an %%actor|actor%% fulfills with respect to some %%party|party%% when that actor is executing some %%action|action%% for, or on behalf of that party.
+An **Agent** is a role that an %%actor|actor%% fulfills with respect to some %%party|party%% when that actor is executing some %%action|action%% for, or on behalf of that %%party|party%%.
 
 ### Examples
 
