@@ -6,7 +6,7 @@ type: term
 typeid: peer-actor
 conceptref: essifLab:Actor
 stage: draft
-hoverText: "Peer Actor (of some other Actor in a Communication Session): the Actor with whom/which this other Actor is communicating in that Communications Session."
+hoverText: "Peer Actor (of some other Actor in a Communication Session): the Actor with whom/which this other Actor is communicating in that Communication Session."
 ---
 
 :::info Editors' note

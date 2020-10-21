@@ -139,7 +139,7 @@ e.g. `./docs/terms/party.md`. You can use the following syntax to reference
 this term in your documentation page:
 
 ```
-Some content that wants to reference the %%Party|party%% term
+Some content that wants to reference the %%party|party%% term
 ```
 
 When the script runs, this will be replaced as follows:

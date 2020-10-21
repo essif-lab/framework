@@ -30,7 +30,7 @@ the composition of one %%scope|scope%%, one %%legal system|legal-system%% and on
 The %%Jurisdictions pattern|pattern-jurisdiction%% provides an overview of how this concept fits in with related concepts.
 
 ### Notes
-<!--This (optional) section is the place to put anything for which there is no other good place to put it.-->
+The case can be made for Nature to qualify as a jurisdiction, postulating that this jurisdiction has a universal scope, its %%party|party%% would be 'Nature' itself (which can be argued to qualify as a %%party|party%%), and the %%legal system|legal-system%% that Nature operates are the 'laws of nature' (which Nature defines, enforces and settles disputes in). If one adopts this view, then people become (natural) %%owners|owner%% of e.g. %%assertions|assertion%%, their %%knowledge|knowledge%% etc. Also, natural resources (e.g. rivers) would be %%legal entities|legal-entity%% in that jurisdiction, since they are 'known, and recognized to exist' by Nature.
 
 <!--
 ---

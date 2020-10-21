@@ -25,7 +25,7 @@ A **Wallet** is a component in the [eSSIF-Lab functional architecture](../functi
 
 The primary purpose of the Wallet Component is to (securely) store data, and in particular:
 
--   credentials - both those that have been issued by the issuer (i.e. self-signed credentials) and those that have been obtained from issuers of other Parties, and
+-   credentials - both those that have been issued by the issuer (i.e. self-signed credentials) and those that have been obtained from issuers of other %%parties|party%%, and
 -   (private) keys e.g. for signing/sealing data on behalf of its Owner.
 
 Other kinds of data may be stored by a wallet as well - we will have to see what is practical and makes sense.
@@ -40,7 +40,7 @@ By ‘securely storing data’ we mean that such data
 
 It is expected that components other than the Holder and Issuer will (arise and) need access. One example could be a component that is capable of securely signing data on behalf of the Owner. Another example could be a component that implements some kind of credential revocation functionality.
 
-Human beings cannot directly access any Wallet component, not even the ones they own. They need an electronic Agent that is capable of authenticating them as (an Agent of) the Party that owns the Wallet component, and upon successful authentication provides a User Interface through which the Human Being can instruct this electronic Agent to manage the Wallet’s contents.
+Human beings cannot directly access any Wallet component, not even the ones they own. They need an electronic Agent that is capable of authenticating them as (an Agent of) the %%party|party%% that owns the Wallet component, and upon successful authentication provides a User Interface through which the Human Being can instruct this electronic Agent to manage the Wallet’s contents.
 
 In order to make the Wallet component work, a Wallet Policy/Preferences object is created by, or on behalf of the Owner, the contents of which remains to be specified.
 

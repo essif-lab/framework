@@ -9,14 +9,14 @@ hoverText: "Verifier (functional component): the capability to request Peer Agen
 ---
 
 ### Short Description
-A **Verifier** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that supports the %%data collector|data-collector%% as it tries to acquire %%(verifiable) credentials|credential%% from (an %%agent|agent%% of) some other %%party|party%%, for the purpose of negotiating a business transaction.
+A **Verifier** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that supports the %%Transaction Data Collector|transaction-data-collector%% as it tries to acquire %%(verifiable) credentials|credential%% from (an %%agent|agent%% of) some other %%party|party%%, for the purpose of negotiating a %%business transaction|business-transaction%%.
 
 It does so by:
 - creating %%Presentation Requests|presentation-request%% (or Presentation Definition as it is called in the [draft DIF specfication for Presentation Exchange](https://identity.foundation/presentation-exchange)) that ask for such credentials, 
 - sending them to an %%agent|agent%% of that other %%party|party%% that provides %%holder|holder%% functionality,
-- receiving a response from that %%agent|agent%% to the %%presentation-request%% (i.e. a '%%Presentation|presentation%%'), 
+- receiving a response from that %%agent|agent%% to the %%presentation request|presentation-request%% (i.e. a '%%Presentation|presentation%%'), 
 - verifying that %%presentation|presentation%%, i.e. checking the signature and other proofs of the veracity of both the construction of the presentation and its contents
-- returning the data that the %%data collector|data-collector%% requested, optionally with a report about which verification checks succeeded and/or which failed.
+- returning the data that the %%Transaction Data Collector|transaction-data-collector%% requested, optionally with a report about which verification checks succeeded and/or which failed.
 
 :::info Editor's note
 TNO (or others) to provide additional content of this file.
@@ -30,11 +30,11 @@ A **Verifier** is a component in the [eSSIF-Lab functional architecture](../func
 
 ### Functionality
 
-The purpose of the Verifier component is to support the Data Collector by providing it with a single, simple API that it can use to request and obtain data that it needs to produce a clean transaction form, as well as the results of checking verification proofs (this is also why it is called the ‘verifier’ component).
+The purpose of the Verifier component is to support the Transaction Data Collector by providing it with a single, simple API that it can use to request and obtain data that it needs to produce a clean transaction form, as well as the results of checking verification proofs (this is also why it is called the ‘verifier’ component).
 
-Typically, the Data Collector would ask the Verifier to provide a credential that it can use to fill in a (coherent set of) field(s) in the transaction form. It is realistic to think that credentials from different issuers - trusted by the Verifier’s Owner - can be used for this purpose. However, it is also realistic that such credentials will not use the same credential definition - they might well use different schemes to provide such data. Therefore, the Data Collector should specify a list of pairs (credential-type, issuer) instances of which could all be used to provide the data it needs - which it can obtain from the Data Collector policy.
+Typically, the Transaction Data Collector would ask the Verifier to provide a credential that it can use to fill in a (coherent set of) field(s) in the transaction form. It is realistic to think that credentials from different issuers - trusted by the Verifier’s Owner - can be used for this purpose. However, it is also realistic that such credentials will not use the same credential definition - they might well use different schemes to provide such data. Therefore, the Transaction Data Collector should specify a list of pairs (credential-type, issuer) instances of which could all be used to provide the data it needs - which it can obtain from the Transaction Data Collector policy.
 
-Then, the Verifier needs to know the address and protocol that it can use to reach a Holder component owned by the Party that its Owner is trying to negotiate the transaction with. The Data Collector specifies this as part of the request - and it can do so because it has received the original request, and does all communications channel handling.
+Then, the Verifier needs to know the address and protocol that it can use to reach a Holder component owned by the %%party|party%% that its Owner is trying to negotiate the transaction with. The Transaction Data Collector specifies this as part of the request - and it can do so because it has received the original request, and does all %%communication channel|communication-channel%% handling.
 
 Verifiers are not expected to handle every kind of credential (e.g. VC’s, ABC’s, etc.) that exists, but rather a specific subset. For (at least one of) the credential types, the Verifier can construct a so-called presentation request, i.e. a message that is specific for the credential type and/or associated protocol, which it can then send to the Holder’s address.
 
@@ -49,6 +49,6 @@ The request message must be designed in such a way that it is extendable as new 
 
 In order to make the Verifier component work, a Verifier Policy/Preferences object is created by, or on behalf of the Owner, which specifies at least: \[to be elaborated\]
 
-A response to this request (called a Presentation) will be obtained from a Holder component of the Peer Party. This response will contain a reference to the request, allowing the Verifier to combine them. The Verifier will then check that the data in the response is a credential that it has asked for (correct type/issuer), verify the proofs that are provided (predominantly the digital signature), and do some additional checks (e.g. whether or not the credential has expired, is revoked, and such).
+A response to this request (called a Presentation) will be obtained from a Holder component of the Peer %%party|party%%. This response will contain a reference to the request, allowing the Verifier to combine them. The Verifier will then check that the data in the response is a credential that it has asked for (correct type/issuer), verify the proofs that are provided (predominantly the digital signature), and do some additional checks (e.g. whether or not the credential has expired, is revoked, and such).
 
-Then, the verifier will send a message to the Data Collector, containing the transaction-id, the data it has received, and the results of the various checks.
+Then, the verifier will send a message to the Transaction Data Collector, containing the transaction-id, the data it has received, and the results of the various checks.

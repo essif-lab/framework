@@ -21,8 +21,8 @@ The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides 
 - %%Governor|policy-governor%%
 - %%Policy|policy%%
 - %%Digital Policy|digital-policy%%
-- %%Data Discloser Policy|data-collector-policy%%
-- %%Data Collector Policy|data-collector-policy%%
+- %%Transaction Data Discloser Policy|transaction-data-collector-policy%%
+- %%Transaction Data Collector Policy|transaction-data-collector-policy%%
 - %%Verifier Policy|verifier-policy%%
 - %%Issuer Policy|issuer-policy%%
 - %%Holder Policy|holder-policy%%

@@ -8,8 +8,6 @@ stage: draft
 hoverText: "Pattern-file: a file that defines/specifies a Pattern."
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ### Short Description
 A **pattern-file** is a file that describes a %%pattern|pattern%%. To faciliate authors, a self-explanatory [template file](/terminology-engine-v1-templates/pattern-file.md) is available.
 
