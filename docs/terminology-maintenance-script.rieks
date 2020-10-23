@@ -1,0 +1,188 @@
+// Purpose: replace %-marked words (including some varieties such as plurals) with %%-syntax for those words.
+
+// This is a script that can be run by the Batch Replacer extension of VSCode .
+// Press Ctrl-Shift-P as you are editing this script, then search for `Batch Replacer`, and execute it.
+
+// Executing the script will do the following replacements consecutively:
+// 1. `%text with possibly spaces%` --> `%%text with possibly spaces%%`
+// 2. `%text-without-spaces` --> `%%text-without-spaces%%` (some punctuation around it is allowed)
+// 3. `%%Show Text%%` --> `%%Show Text|Show-Text%%` (sorry, we cannot make the reftext lowercase)
+// Now, you have to manually execute /(?<=\|)([A-Z][^%]*)(?=%%)/\L$1/g/
+// 4. `|ref-text%% is being checked to see if modifications need to be made (e.g. plurals to singular etc.)
+// 5. There is a cleanup phase that removes any %%...|...%% syntax from the docusaurus header, markdown headers, and <img /> constructs.
+
+// Complex regular expressions can be created using variables. Variables are applied to the entire script, and should be defined at the beginning of the script. Variables are defined as ... = "..." and are used as %{...}. Variables can only be used in the replace and replace-regex instructions.
+// variables can reference themselves and be overwritten - see documentation of 'batch replacer' extension
+
+beg = "(?<=\W%%)"
+mid = "(?<=\|)"
+end = "(?=%%\W)"
+
+dutyright = "(?:dut(?:y|ies)|rights?)"
+dutyright = "%{dutyright}(?:-*(?:/|and|or|and/or)-*%{dutyright})?"
+dutyrighttype = "%{dutyright}-types?"
+
+// If you do not specify the files to work on, the replace will be global (throughout the workspace).
+// `filter "document.txt"`           - document.txt file in the root folder
+// `filter "Documents/document.txt"` - document.txt file in the Documents folder in the root folder
+// `filter "**/document.txt"`        - document.txt files anywhere
+// `filter "*.txt"`                  - any .txt file in the root folder
+// `filter "**/*.txt"`               - any .txt file
+
+filter "docs/terms/credential-type.md"
+
+// PREPROCESSING: convert single-%-notations into %%-notations.
+
+// We might want to 'undo' %%...|...%% markers in case some 'show text' needs to be associated wiht another 'reftext'
+// replace-regex "(\W%)%([^\|\n\r]+)\|[^%\n\r]+%(%\W)"
+// with "$1$2$3"
+
+// First, convert %show text% into %%show text%%
+replace-regex "(?<=\s%)(([\w/-]|'|\s)*)(?=%([,.]?\s|-\w))"
+with "%$1%"
+
+// Only thereafter can we convert %showtext (words without trailing `%`-char) into %%showtext%%
+replace-regex "(?<=\s%)(([\w/-]|')*)(?=[,.]?\s)"
+with "%$1%%"
+
+// Then, we can expand %%show text%% into %%show text|show text%%
+replace-regex "(?<=\W%%)([^\|]*?)(?=%%\W)"
+with "$1|$1"
+
+// Next, we convert the latter part into lowercase
+replace-regex "(?<=\|)([^A-Z%]*?[A-Z].*?)(?=%%)"
+with-case "lowercase"
+
+// Next, we replace whitespace in `lowercase show text` instances with `-` characters
+replace-regex "(?<=\|)([^%\|\n\r\s]+)\s+([^%]+)(?=%%)"
+with "$1-$2"
+replace-regex "(?<=\|)([^%\|\n\r\s]+)\s+([^%]+)(?=%%)"
+with "$1-$2"
+replace-regex "(?<=\|)([^%\|\n\r\s]+)\s+([^%]+)(?=%%)"
+with "$1-$2"
+replace-regex "(?<=\|)([^%\|\n\r\s]+)\s+([^%]+)(?=%%)"
+with "$1-$2"
+replace-regex "(?<=\|)([^%\|\n\r\s]+)\s+([^%]+)(?=%%)"
+with "$1-$2"
+
+// ACTUAL PROCESSING: now we need to convert well-known `lowercase-show-text`s to appropriate `reftexts`
+
+// [A]
+replace-regex "%{mid}(action|actor|agent|assertion|author)'?s%{end}"
+with "$1"
+
+// [B]
+replace-regex "%{mid}(business-transaction)'?s?%{end}"
+with "$1"
+
+// [C]
+// for 'claim', see 'statement'
+replace-regex "%{mid}(colleague|concept|credential(-type)?|commitment-decision)'?s?%{end}"
+with "$1"
+
+replace-regex "%{mid}communications?-(channel|session)'?s?%{end}"
+with "communication-$1"
+
+// [D]
+replace-regex "%{mid}(definition|dependent|dictionary-file|dictionary|documentation-interop)'?s?%{end}"
+with "$1"
+replace-regex "%{mid}(?:electronic-|digital-)(actor|agent|colleague|communication-channel|policy)'?s%{end}"
+with "digital-$1"
+
+replace-regex "%{mid}(%{dutyrighttype}|%{dutyright})%{end}"
+with "pattern-duties-and-rights"
+
+replace-regex "%{mid}data-(collector|discloser)-polic(y's|ies)%{end}"
+with "data-$1-policy"
+replace-regex "%{mid}data-(collector|discloser)'?s?%{end}"
+with "data-$1"
+
+// [E]
+replace-regex "%{mid}(employee|employer)'?s%{end}"
+with "$1"
+replace-regex "%{mid}(legal-)?entit(y's|ies)%{end}"
+with "$1entity"
+
+// [G]
+replace-regex "%{mid}(glossary-file|guardian(ship)?(-relationship)?(-type)?)'?s%{end}"
+with "$1"
+replace-regex "%{mid}glossar(y's|ies)%{end}"
+with "glossary"
+replace-regex "%{mid}guardianship(-relationship)?%{end}"
+with "guardianship"
+replace-regex "%{mid}guardianship(-relationship)?-type%{end}"
+with "guardianship-type"
+replace-regex "%{mid}govern(or)?s?%{end}"
+with "governance"
+
+// [H-I-J-K] (all holder, issuer, verifier and wallet stuff, too)
+// for associated policies, see [P]
+replace-regex "%{mid}(holder|issuer|verifier|wallet|identifier|jurisdiction(-governor)?|knowledge(-governor)?)'?s%{end}"
+with "$1"
+
+// [L-M]
+replace-regex "%{mid}(legal-jurisdiction|legal-system|mental-model)'?s%{end}"
+with "$1"
+// for 'legal entities', see 'entities'
+
+// [O]
+replace-regex "%{mid}(objective|organization|owned|owner|ownership)'?s%{end}"
+with "$1"
+
+// [P]
+replace-regex "%{mid}(participant|pattern-file|pattern|(peer-)(actor|agent)|policy-governor|presentation-request|presentation|principal)'?s%{end}"
+with "$1"
+replace-regex "%{mid}(|peer-)part(y's|ies)%{end}"
+with "$1party"
+replace-regex "%{mid}(|issuer-|holder-|verifier-|wallet-|transaction-data-(collector|discloser)-)polic(y's|ies)%{end}"
+with "$1policy"
+
+// [R-S]
+// For 'rights', see [D]uties
+replace-regex "%{mid}(risk|scope-file|scope|ssi-agent)'?s%{end}"
+with "$1"
+replace-regex "%{mid}(statement|claim)'?s%{end}"
+with "assertion"
+
+// [T]
+// for transaction data collector/discloers policies, see [P]
+replace-regex "%{mid}(term-file|term|transaction-(agreement|data-(collector|discloser)|form|proposal))'?s%{end}"
+with "$1"
+replace-regex "%{mid}transaction'?s?%{end}"
+with "business-transaction"
+
+// [V]
+// for verifier stuff - see holder
+replace-regex "%{mid}(verifiable-credential|verifier)'?s%{end}"
+with "$1"
+replace-regex "%{mid}vocabular(y's|ies)%{end}"
+with "vocabulary"
+
+// [W]
+// for wallet stuff - see holder
+
+// CLEANING UP UNINTENDED CHANGES
+
+// Remove all `%%showtext|reftext%%` in docusaurus header.
+replace-regex "(^---\s*\nid:(?:.|[\n\r])*?)%%([^\|]*)\|([^%]*)%%((?:.|[\n\r])*\n---)"
+with "$1$2$4"
+replace-regex "(^---\s*\nid:(?:.|[\n\r])*?)%%([^\|]*)\|([^%]*)%%((?:.|[\n\r])*\n---)"
+with "$1$2$4"
+replace-regex "(^---\s*\nid:(?:.|[\n\r])*?)%%([^\|]*)\|([^%]*)%%((?:.|[\n\r])*\n---)"
+with "$1$2$4"
+replace-regex "(^---\s*\nid:(?:.|[\n\r])*?)%%([^\|]*)\|([^%]*)%%((?:.|[\n\r])*\n---)"
+with "$1$2$4"
+replace-regex "(^---\s*\nid:(?:.|[\n\r])*?)%%([^\|]*)\|([^%]*)%%((?:.|[\n\r])*\n---)"
+with "$1$2$4"
+
+// Remove all `%%showtext|reftext%%` occurrences in markdown headers
+replace-regex "(^#+\s+.*?)%%([^\|]*)\|([^%]*)%%(.*$)"
+with "$1$2$4"
+replace-regex "(^#+\s+.*?)%%([^\|]*)\|([^%]*)%%(.*$)"
+with "$1$2$4"
+
+// Remove all `%%showtext|reftext%%` occurrences in `<img />`-constructs
+replace-regex "(<img(?:.|[\n\r])*?)%%([^\|]*)\|([^%]*)%%((?:.|[\n\r])*)(?=/>)"
+with "$1$2$4"
+replace-regex "(<img(?:.|[\n\r])*?)%%([^\|]*)\|([^%]*)%%((?:.|[\n\r])*)(?=/>)"
+with "$1$2$4"

@@ -8,6 +8,8 @@ stage: draft
 hoverText: "The Jurisdictions pattern captures the Concepts and relations that explain what a generic Jurisdiction consists of, and relates it to Parties and Legal Entities."
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 ### Purpose
 <!-- Concisely describe what can you do with the pattern that is (at least) harder if you didn't have it. -->
 The **Jurisdiction pattern** captures the concepts and relations that explain how generic %%jurisdictions|jurisdiction%%  work, and can be constructed. It shows that it can be seen as the composition of one %%scope|scope%%, one %%legal system|legal-system%% and one %%party|party%% that operates the legal system within that scope.

@@ -24,5 +24,9 @@ The ability to distinguish between assertions and non-assertions, and particular
 ### Criterion
 An **Assertion** is any declaration/statement that is made by one specific %%party|party%%.
 
+### Notes
+- Assertions may be ambiguous (multi-interpretable), which may result in misundertandings. The authoritative meaning of an %%assertion|assertion%% is determined by (the %%semantics|semantics%% that was applied by) the %%party|party%% that has uttered/authored it.
+- Assertions may or may not be true. That is not only because 'truth' is subjective (every %%party|party%% may decide whether or not something is true), but also because the %%party|party%% that uttered/authored the %%assertion|assertion%% cannot substantiate the assertion, or lie outright.
+
 -----
 [^1]: we postulate that 'Nature' is the %%jurisdiction|jurisdiction%% in which the associated %%ownership relation|ownership%% exists; so one might also call this 'natural ownership'.

@@ -8,6 +8,8 @@ stage: draft
 hoverText: "The Parties, Actors and Actions pattern captures the foundational concepts and relations that we need for thinking about how things get done. It answers questions such as: 'Who/what does things?', 'How are their actions being guided/controlled?', 'Who controls whom/what?', 'Who/what may be held accountable?'."
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 ### Summary
 This pattern captures the foundational concepts and relations that we need for thinking about how things get done. It answers questions such as: "Who/what does things?", "How are their actions being guided/controlled?", "Who controls whom/what?", "Who/what may be held accountable?". It provides a way of looking at people (human beings), organizations, and how they interact with one another in a decentralized, self-sovereign way - which means that each of them decides for itself whether or not to interact with others, how to conduct such interactions, etc., thereby only taking external influences into account if they want, or have some need to do so.
 
