@@ -31,7 +31,7 @@ function getAutoIncludeStatements(filePath) {
   var absoluteTermPath = path.resolve('./src/components');
   // Find the relative path between the file to be modified and the Term plugin
   var relativePath = path.relative(filePath, absoluteTermPath);
-  var importTerms = `\n\nimport useBaseUrl from '@docusaurus/useBaseUrl'\nimport { Term } from '${relativePath}'\n`;
+  var importTerms = `\n\nimport { Term } from '${relativePath}'\n`;
 
   return importTerms
 }

@@ -2,7 +2,7 @@
 id: terminology-plugin-instructions
 title: Terminology & Glossary plugin docs
 ---
-import useBaseUrl from '@docusaurus/useBaseUrl'; // All other .md files get this statement automatically added.
+import useBaseUrl from '@docusaurus/useBaseUrl'; // All other .md files may get this statement automatically added.
 
 ### How it works
 

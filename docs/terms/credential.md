@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: credential
 stage: draft
-hoverText: "Credential: data, representing a set of statements (claims, assertions), authored and signed by, or on behalf of, a specific Party."
+hoverText: "Credential: data, representing a set of Assertions (claims, statements), authored and signed by, or on behalf of, a specific Party."
 ---
 
 ### Short Description
