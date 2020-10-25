@@ -39,8 +39,8 @@ replace-regex "[‘’]"
 with "'"
 
 // We might want to 'undo' %%...|...%% markers in case some 'show text' needs to be associated wiht another 'reftext'
-// replace-regex "(\W%)%([^\|\n\r]+)\|[^%\n\r]+%(%\W)"
-// with "$1$2$3"
+// replace-regex "(?<=\W)%%([^\|\n\r]+)\|[^%\n\r]+%%(?=\W)"
+// with "%$1%"
 
 // First, convert %show text% into %%show text%%
 // Test set: none may match: %verif%er, %verif"ier%, "%verifier%", `%verifier%`
@@ -56,8 +56,8 @@ replace-regex "(?<=(?:\s\(?'?|/)%)((\w+((/|-|’|')\w)?)+)(?='?\)?[:;,.!?]*(\[[^
 with "%$1%%"
 
 // Then, we can expand %%show text%% into %%show text|show text%%
-replace-regex "(?<=\W%%)([^\|]*?)(?=%%\W)"
-with "$1|$1"
+replace-regex "(?<=\W)%%([^\|]*?)%%(?=\W)"
+with "%%$1|$1%%"
 
 // Next, we convert the latter part into lowercase
 replace-regex "(?<=\|)([^A-Z%]*?[A-Z].*?)(?=%%)"
@@ -151,7 +151,7 @@ with "$1policy"
 // For 'rights', see [D]uties
 replace-regex "%{mid}(risk|scope-file|scope|ssi-agent)%{ss}%{end}"
 with "$1"
-replace-regex "%{mid}(statement|claim)%{ss}%{end}"
+replace-regex "%{mid}(statement|claim|statement%{ss}/claim)%{ss}%{end}"
 with "assertion"
 
 // [T]
