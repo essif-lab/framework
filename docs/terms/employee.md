@@ -12,7 +12,10 @@ hoverText: "Employee (of a Party): an Actor for whom/which it is realistic that 
 TNO (or others) to provide the content of this file.
 :::
 
-### Background
+### Short Description
+
 The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.
 
-### Related Concepts
+### Purpose
+
+### Criteria

@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: commitment-decision
 stage: draft
-hoverText: "Commitment Decision (of a Party regarding a Business Transaction): the decision of that Party regarding whether or not to commit to that Business Transaction, i.e. (promise) to fulfill the obligations that the associated Business Transaction Agreement assigns to that Party."
+hoverText: "Commitment Decision (of a Party in a Business Transaction): the decision of that Party whether or not to commit to that Business Transaction, i.e. (promise) to fulfill the obligations that the associated Business Transaction Agreement Proposal would impose on that Party once it were signed."
 ---
 
 :::info Editor's note

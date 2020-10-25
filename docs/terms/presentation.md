@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: presentation
 stage: draft
-hoverText: "Presentation: a (signed) digital message that contains data derived from one or more Verifiable Credentials (that have been issued by Agents of one or more Parties), as a response to a specific Presentation Request of a Verifier component."
+hoverText: "Presentation: a (signed) digital message that a Holder component may send to a Verifier component that contains data derived from one or more Verifiable Credentials (that (a Colleague component of) the Holder component has received from Issuer components of one or more Parties), as a response to a specific Presentation Request of a Verifier component."
 ---
 
 ### Short Description

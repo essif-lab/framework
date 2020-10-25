@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: guardianship
 stage: draft
-hoverText: "Guardianship (of a one Party over an Entity in a Jurisdiction): the rights and duties of that Party, defined and enforced in that Jurisdiction, for the purpose of caring for and/or protecting/guarding/defending that Entity."
+hoverText: "Guardianship (of a Party over an Entity in a Jurisdiction): the rights and duties of that Party, defined and enforced in that Jurisdiction, for the purpose of caring for and/or protecting/guarding/defending that Entity."
 ---
 
 :::info Editor's Note
@@ -19,6 +19,8 @@ in which one of these %%entities|entity%% (called the %%owner|owner%%) is entitl
 
 We may use the phrase %%natural guardianship%% to refer to an guardianship relation that exists in the %%jurisdiction|jurisdiction%% 'Nature' (see the notes of %%jurisdiction|jurisdiction%%). This enables us to talk about things as 'the (natural) guardianship of an %%assertion|assertion%%'.
 
+The %%Guardianship pattern|pattern-guardianship%% provides an overview of how this concept fits in with related concepts.
+
 ### Purpose
 **Guardianship** is a means by which %%jurisdictions|jurisdiction%% provide assurances to %%parties|party%% (within its scope) that they can enjoy, dispose of and control in pretty much any way they like. The %%legal system|legal-system%% of the %%jurisdiction|jurisdiction%% specifies these rights, and provides ways in which the %%owner|owner%% can exercize them (that provides the assurance).
 
@@ -31,6 +33,3 @@ An **guardianship** is a relationship between two %%legal entities|legal-entity%
 
 ### Notes
 - Owning something does not imply posessing it (and vice versa). For example, if you find a coin that doesn't belong to you, you possess it but do not own it. Also, its rightful owner obviously owns it, but doesn't possess it at that point in time.
-
-### Background
-The %%Guardianship pattern|pattern-guardianship%% provides an overview of how this concept fits in with related concepts.
