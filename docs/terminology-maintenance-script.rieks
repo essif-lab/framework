@@ -17,7 +17,7 @@
 beg = "(?<=\W%%)"
 mid = "(?<=\|)"
 end = "(?=%%\W)"
-ss = "(?:['’]?s)?"
+ss = "(?:['’]?s|\(s\))?"
 
 dutyright = "(?:dut(?:y|ies)|rights?)"
 dutyright = "%{dutyright}(?:-*(?:/|and|or|and/or)-*%{dutyright})?"
@@ -34,21 +34,25 @@ filter "docs/functional-architecture.md"
 
 // PREPROCESSING: convert single-%-notations into %%-notations.
 
+// Convert quotes so that only two types remain: ' an "For starte
+replace-regex "[‘’]"
+with "'"
+
 // We might want to 'undo' %%...|...%% markers in case some 'show text' needs to be associated wiht another 'reftext'
 // replace-regex "(\W%)%([^\|\n\r]+)\|[^%\n\r]+%(%\W)"
 // with "$1$2$3"
 
 // First, convert %show text% into %%show text%%
 // Test set: none may match: %verif%er, %verif"ier%, "%verifier%", `%verifier%`
-// Test set: all must match:  %my verifier%, (%verifiers%), %verifier's%, %verifier’s%, (%(ver)/ifier%):., %(our) (vfyr)%, %verifier's%. %verifier’s%.....
+// Test set: all must match:  %my verifier%, ('%verifiers%'), %verifier's%, %verifier’s%, (%(ver)/ifier%):., %(our) (vfyr)%, %verifier's%. %verifier’s%... single-%party%), '**subject (of a %party%)**' to 
 // replace-regex "(?<=\s\(?%)(\w|\s|\(|\)|[/-’'"])+(?=%([)":,.!?]*\s|-\w))"
-replace-regex "(?<=\s\(?%)([^%]+)(?=%(([):,.!?]|\[[^\]]*\]){0,2}\s|-\w))"
+replace-regex "(?<=[-\s]\(?'?%)([^%]+)(?=%(([*_):;,.'!?]|\[[^\]]*\]){0,5}\s|-\w))"
 with "%$1%"
 
 // Only thereafter can we convert %showtext (words without trailing `%`-char) into %%showtext%%
 // Test set: none may match: %verif%er, %(our) (verifier)%,
-// Test set: all must match: %verifier non-matching-text, %verifiers, %verifier's, %verifier’s, %verifier:, (%verifiers), %verifier's..... %verifier’s,?.!?
-replace-regex "(?<=(?:\s\(?|/)%)((\w+((/|-|’|')\w)?)+)(?=(\)?[:,.!?]*\s))"
+// Test set: all must match: %verifier %verifiers, '%verifier'), %verifier's, %verifier’s, %verifier:, (%verifiers), %verifier's..... %verifier’s,?.!?  its %principal.[^DC.4] Also a %party)'
+replace-regex "(?<=(?:\s\(?'?|/)%)((\w+((/|-|’|')\w)?)+)(?='?\)?[:;,.!?]*(\[[^\]]*\])?\s)"
 with "%$1%%"
 
 // Then, we can expand %%show text%% into %%show text|show text%%
