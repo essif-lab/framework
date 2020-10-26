@@ -15,3 +15,4 @@ start_server.bat
 *.lnk
 docs/vscode-%%-batch-replacer.txt
 **/zzz-*
+docs/test.md

@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: data-collector
 stage: draft
-hoverText: "Data Collector: a functional component that collects sufficient and Validated Data for deciding whether or not a request (typically for a product or a service) is to be serviced."
+hoverText: "Data Collector: a functional component that is capable of collecting data from various Parties in the context of some Business Transaction, and Validating this data for the purpose of making one (or more) decision(s)."
 ---
 
 ### Short Description
@@ -50,24 +50,24 @@ It will be deleted in the (near?) future.
 Typically, the Data Collector would start a transaction either
 
 -   when it receives a request from some Agent of another Party for engaging in a transaction of a specific kind.
--   when it is instructed by, or on behalf of its Owner, to request a specific kind of transaction to some Agent of another Party.[^one]
+-   when it is instructed by, or on behalf of its Principal, to request a specific kind of transaction to some Agent of another Party.[^one]
 
-In either case, a transaction form (object, context) has to be created that matches the kind of transaction, and a ‘**transaction-id**’ must be generated that identifies this form/object/context. It will be used for binding incoming or outgoing messages to this transaction, enabling communications to remain congruent, not only with the Agent that requested the transaction, but also with other Agents from the same Owner and/or using different communication channels.
+In either case, a transaction form (object, context) has to be created that matches the kind of transaction, and a ‘**transaction-id**’ must be generated that identifies this form/object/context. It will be used for binding incoming or outgoing messages to this transaction, enabling communications to remain congruent, not only with the Agent that requested the transaction, but also with other Agents from the same Principal and/or using different communication channels.
 
 Handling/managing the various communication channels through which data can be exchanged is also a task of the Data Collector[^2]. One reason for this is that negotiating a transaction not only requires data to be acquired, but also to be provided to the peer participant. Another reason is that the peer participant may use multiple Agents to provide such data, e.g. human Agents (that might use web-browsers, social-media apps, phones, or physical visits), SSI Agents (that use the SSI infrastructure), or other electronic Agents (e.g. services that can provide data when appropriate permissions are submitted - e.g. user consent tokens).
 
 Thus, the Data Collector is generally considered capable of obtaining data through different communication channels. However, the technical tracks of eSSIF-Lab will exclusively focus on the communication channel through which credentials can be requested and obtained. Any extensions or business productization of Data Collector designs may be considered in the business tracks of eSSIF-Lab. The latter is not considered any further in this section.
 
-In order to acquire data through SSI mechanisms for filling in a form for a specific kind of transaction, the Data Collector needs to know what kinds of credentials it should ask for, which Parties its Owner trusts to issue such credentials, what kinds of verification proofs for such credentials must hold and which may be disregarded.[^3] Also, when the Data Collector gets a credential that satisfies the necessary verification proofs, it needs a way to map the contents of that credential to the structure of the transaction context that is used internally by (other systems of) its Owner.[^4] Also, as the Data Collector gets more and more data - which it may get through multiple, different channels - it needs to determine whether or not the resulting set is sufficiently consistent and coherent.[^5]
+In order to acquire data through SSI mechanisms for filling in a form for a specific kind of transaction, the Data Collector needs to know what kinds of credentials it should ask for, which Parties its Principal trusts to issue such credentials, what kinds of verification proofs for such credentials must hold and which may be disregarded.[^3] Also, when the Data Collector gets a credential that satisfies the necessary verification proofs, it needs a way to map the contents of that credential to the structure of the transaction context that is used internally by (other systems of) its Principal.[^4] Also, as the Data Collector gets more and more data - which it may get through multiple, different channels - it needs to determine whether or not the resulting set is sufficiently consistent and coherent.[^5]
 
-In order to make the Data Collector work, a Validation Policy (or Data Collector Policy) is created by, or on behalf of the Owner, which specifies at least:
+In order to make the Data Collector work, a Validation Policy (or Data Collector Policy) is created by, or on behalf of its Principal, which specifies at least:
 
--   the kinds of transactions the Owner is willing to (electronically) engage in, from both the requester and the provider perspectives;
+-   the kinds of transactions the Principal is willing to (electronically) engage in, from both the requester and the provider perspectives;
 -   for each such transaction type:
 
     -   the criteria (business rules) that should be used to determine that the form is ‘clean’, i.e. that the necessary and sufficient data have been obtained and that they are consistent, coherent, and suitable for making a transaction commitment decision.
 
-    -   the kinds of credentials and issuers that the Owner is willing to accept as sources for valid data; (optionally?), the endpoint URI at which issuing Parties do the actual credential issuing may be specified[^6].
+    -   the kinds of credentials and issuers that the Principal is willing to accept as sources for valid data; (optionally?), the endpoint URI at which issuing Parties do the actual credential issuing may be specified[^6].
 
     -   for each kind of credential: the verification proofs that must hold to be accepted as a source for valid data.
 
@@ -75,9 +75,9 @@ In order to make the Data Collector work, a Validation Policy (or Data Collector
 
 The Policy must be designed in such a way that it is extendable as new features will be called for in the future.
 
-The ability to create new transaction contexts and the availability of the Data Collector Policy enable the Data Collector to request the Verifier component of its Owner to obtain credentials of the types that it can use to fill in the transaction form when they satisfy the verification and validation requirements of its Owner.[^7]
+The ability to create new transaction contexts and the availability of the Data Collector Policy enable the Data Collector to request the Verifier component of its Principal to obtain credentials of the types that it can use to fill in the transaction form when they satisfy the verification and validation requirements of its Principal.[^7]
 
-When the Verifier returns such data (which comes with a list of proofs that the Verifier has checked), the Data Collector must then validate that data, i.e. determine whether or not it is valid for the specific transaction it is assembling the data for. The validation rules are Party-specific and hence come from the Data Collector policy. For simple cases, validation can simply consist of checking whether or not all verification proofs succeeded. At the other end of the validation spectrum, the Data Collector itself must make validation decisions, either electronically (according to the Data Collector policy) or by ‘outsourcing’ such decisions to human Agents of its Owner by providing an appropriate validation user interface.
+When the Verifier returns such data (which comes with a list of proofs that the Verifier has checked), the Data Collector must then validate that data, i.e. determine whether or not it is valid for the specific transaction it is assembling the data for. The validation rules are Party-specific and hence come from the Data Collector policy. For simple cases, validation can simply consist of checking whether or not all verification proofs succeeded. At the other end of the validation spectrum, the Data Collector itself must make validation decisions, either electronically (according to the Data Collector policy) or by ‘outsourcing’ such decisions to human Agents of its Principal by providing an appropriate validation user interface.
 
 As long as data is needed, the Data Collector can intermittently request the verifier to produce it (or it can use other communication channels, which is outside scope for now). It does so until it times out, or the form has become ‘clean’.
 
@@ -98,9 +98,9 @@ TNO to revise the footnote markers
 
 [^2]: It may well be that this functionality can somehow be split off in the (near) future.
 
-[^3]: For high-value transactions, verification proofs are more important than for low-value transactions. This is to be decided by the Owner of the Data Collector. An example from the physical world: in order to obtain a visa for China, it is required that your passport (credential) remains valid for 3 months after the end of your visit. But in order to identify yourself at the reception desk of a hotel, your passport may have expired several years.
+[^3]: For high-value transactions, verification proofs are more important than for low-value transactions. This is to be decided by the Principal of the Data Collector. An example from the physical world: in order to obtain a visa for China, it is required that your passport (credential) remains valid for 3 months after the end of your visit. But in order to identify yourself at the reception desk of a hotel, your passport may have expired several years.
 
-[^4]: For example, a credential that contains an address uses a specific schema to specify addresses, e.g. the ‘PostalAddress’ as defined by schema.org. This schema differs quite a bit from that of Dutch addresses as [*defined*](https://bag.basisregistraties.overheid.nl/def/bag) by the official (authentic) Dutch Registration of Addresses and Buildings (BAG). It may also well differ from the structure of addresses that databases of the Owner have implemented. Mapping allows such cases to be accommodated for.
+[^4]: For example, a credential that contains an address uses a specific schema to specify addresses, e.g. the ‘PostalAddress’ as defined by schema.org. This schema differs quite a bit from that of Dutch addresses as [*defined*](https://bag.basisregistraties.overheid.nl/def/bag) by the official (authentic) Dutch Registration of Addresses and Buildings (BAG). It may also well differ from the structure of addresses that databases of the Principal have implemented. Mapping allows such cases to be accommodated for.
 
 [^5]: Inconsistent or incoherent data is necessary for various purposes. First, it allows for correct further processing of the transaction. A non-existent postal code, or one that doesn’t match the delivery address, may hinder a fluent transaction processing, resulting in additional costs and processing times. Another purpose is the early warning or detection of possible fraud/abuse. Remember that part of the data is being asked for reducing transaction risk, and checking consistency/coherence of such data is part of the risk mitigation process.
 

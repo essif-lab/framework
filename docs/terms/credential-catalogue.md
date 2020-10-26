@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: credential-catalogue
 stage: draft
-hoverText: "Credential Catalogue (functional component): the capability to register and advertise Credential Types and any related information that its governing Party decides to disclose for enabling other Parties to decide whether or not it is beneficial for them to request Credentials of such type for some kind(s) of decisions of theirs."
+hoverText: "Credential Catalogue (functional component): the capability to register and advertise the information about Credential Types that their respective Governing Parties have decided to disclose so as to enable other Parties to decide whether or not it is beneficial for them to use Credentials of such types."
 ---
 
 :::info Editor's note

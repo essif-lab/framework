@@ -12,6 +12,8 @@ hoverText: "Concept: the ideas/thoughts behind a classification of Entities (wha
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
 A Concept tries to capture the idea behind a classification of entities[^1], allowing us to reason about everything in the class as if it were one thing. For example, the ideas ([mental representations](https://en.wikipedia.org/wiki/Mental_representation)) you have when processing the sentences "I can drink beer from a beer glass' and 'I can drink beer from a coffee mug' shows that the concepts that are behind 'beer glass' and 'coffee mug' differ. Note that in order to communicate about this idea, we also need a word or phrase (i.e.: a termat we can use to refer to (instances of) this idea.
 
+The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
+
 ### Purpose
 <!--Describe why the concept is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What objectives does it help realize? Why is this conceptevant within its scope of definition?-->
 Working together is easier when you and your peers share the same ideas. We need a way to test and ensure, that you and your peers _actually_ have the same understanding, for the purpose of making cooperation easier. Doing so is expected to not only reduce the number of terminological discussions, but also improve the efficiency and effectiveness of the remaining discussions.
@@ -30,9 +32,6 @@ A (description/specification of a) Concept MUST be [intensionally defined](https
 * %%Scope|scope%% is related in several ways. First, there is (precisely, or at most one) Scope that governs the definition/specification of the Concept. Second, there may be (any number of) Scopes that use the Concept, i.e. within which Terms are defined that refer to the Concept
 
 * %%Mental(or Conceptual) Model|pattern%% is a collection of concepts, relations between such concepts, and constraint rules that (elements of) such concepts and relations must satisfy. Such [models](https://en.wikipedia.org/wiki/Conceptual_model) are used to help people know, understand, or simulate a subject the model represents.
-
-### Background
-The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
 
 ### Domains
 <!--In which general knowledge ecosystems or mental model families does this concepty a role?-->

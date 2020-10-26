@@ -1,6 +1,6 @@
 ---
 id: semantics
-title: "Concept"
+title: "Semantics"
 scopeid: essifLabTerminology
 type: concept
 typeid: semantics

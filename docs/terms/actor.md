@@ -11,6 +11,8 @@ hoverText: "Actor: Entity that can act (do things), e.g. people, machines, but n
 ### Short Description
 An **Actor** is someone or something that can actually do things, such as people or machines. Actors will generally do things, i.e. execute %%actions|action%% in different ways, depending on the context, or the %%party|party%% for whom they do this.
 
+The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.
+
 ### Purpose
 The ability to distinguish between (non)actors allows one to determine which (kinds of) actors are capable of executing which (kinds of) %%actions|action%%, specifically since %%organizations|organization%% do not qualify as an actor (they need actors to get things done).
 
@@ -29,6 +31,3 @@ Entity that is capable of actually executing %%actions|action%% (acting, doing t
 - %%peer actor|peer-actor%%
 - %%agent|agent%%
 - %%principal|principal%%
-
-### Background
-The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.
