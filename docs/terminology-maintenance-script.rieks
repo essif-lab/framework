@@ -174,15 +174,15 @@ with "vocabulary"
 // CLEANING UP UNINTENDED CHANGES
 
 // Remove all `%%showtext|reftext%%` in docusaurus header.
-replace-regex "(^---\s*\nid:(?:.|[\n\r])*?)%%([^\|]*)\|([^%]*)%%((?:.|[\n\r])*\n---)"
+replace-regex "(^---\s*\nid:(?:[^%]*[\n\r]){0,8})[^%]*%%([^\|]*)\|([^%]*)%%(?:[^%]*[\n\r]){0,8}---"
 with "$1$2$4"
-replace-regex "(^---\s*\nid:(?:.|[\n\r])*?)%%([^\|]*)\|([^%]*)%%((?:.|[\n\r])*\n---)"
+replace-regex "(^---\s*\nid:(?:[^%]*[\n\r]){0,8})[^%]*%%([^\|]*)\|([^%]*)%%(?:[^%]*[\n\r]){0,8}---"
 with "$1$2$4"
-replace-regex "(^---\s*\nid:(?:.|[\n\r])*?)%%([^\|]*)\|([^%]*)%%((?:.|[\n\r])*\n---)"
+replace-regex "(^---\s*\nid:(?:[^%]*[\n\r]){0,8})[^%]*%%([^\|]*)\|([^%]*)%%(?:[^%]*[\n\r]){0,8}---"
 with "$1$2$4"
-replace-regex "(^---\s*\nid:(?:.|[\n\r])*?)%%([^\|]*)\|([^%]*)%%((?:.|[\n\r])*\n---)"
+replace-regex "(^---\s*\nid:(?:[^%]*[\n\r]){0,8})[^%]*%%([^\|]*)\|([^%]*)%%(?:[^%]*[\n\r]){0,8}---"
 with "$1$2$4"
-replace-regex "(^---\s*\nid:(?:.|[\n\r])*?)%%([^\|]*)\|([^%]*)%%((?:.|[\n\r])*\n---)"
+replace-regex "(^---\s*\nid:(?:[^%]*[\n\r]){0,8})[^%]*%%([^\|]*)\|([^%]*)%%(?:[^%]*[\n\r]){0,8}---"
 with "$1$2$4"
 
 // Remove all `%%showtext|reftext%%` occurrences in markdown headers
