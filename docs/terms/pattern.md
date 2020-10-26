@@ -6,6 +6,7 @@ type: concept
 typeid: pattern
 stage: draft
 hoverText: "Pattern: A limited set of Concepts (ideas), relations between them, and constraints, such that together they form a coherent and consistent whole."
+glossaryText: "A limited set of %Concepts% (ideas), relations between them, and constraints, such that together they form a coherent and consistent whole."
 ---
 
 ### Short Description

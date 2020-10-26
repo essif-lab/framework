@@ -6,6 +6,7 @@ type: concept
 typeid: ownership
 stage: draft
 hoverText: "Ownership (of an Entity over another in a Jurisdiction): the rights and duties, as defined and enforced in that Jurisdiction, of that Entity to enjoy, dispose of, and control the other Entity."
+glossaryText: "the rights and duties, as defined and enforced in that %Jurisdiction%, of that %Entity% to enjoy, dispose of, and control the other %Entity%."
 ---
 
 ### Short Description

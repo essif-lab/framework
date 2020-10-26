@@ -6,6 +6,7 @@ type: concept
 typeid: knowledge-governor
 stage: draft
 hoverText: "Governor (of a Knowledge): the Party that is 1-1 associated with that knowledge."
+glossaryText: "the %Party% that is 1-1 associated with that knowledge."
 ---
 
 :::info Editor's note

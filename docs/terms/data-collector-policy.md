@@ -6,6 +6,7 @@ type: concept
 typeid: data-collector-policy
 stage: draft
 hoverText: "Data Collector Policy: a Digital Policy that enables an operational Data Collector component to function according to the rules of its Policy Governor."
+glossaryText: "a %Digital Policy% that enables an operational %Data Collector% component to function according to the rules of its %Policy Governor%."
 ---
 
 ### Short Description

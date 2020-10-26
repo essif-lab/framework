@@ -6,6 +6,7 @@ type: concept
 typeid: issuer
 stage: draft
 hoverText: "Issuer (functional component): the capability to construct Credentials from data objects, according to the content of its Principal's Issuer-Policy (specifically regarding the way in which the Credential is to be digitally signed), and pass it to the Wallet-component of its Principal allowing it to be issued."
+glossaryText: "the capability to construct %Credentials% from data objects, according to the content of its %Principal%'s %Issuer%-Policy (specifically regarding the way in which the %Credential% is to be digitally signed), and pass it to the %Wallet%-component of its %Principal% allowing it to be issued."
 ---
 
 :::info Editor's note

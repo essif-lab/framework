@@ -6,6 +6,7 @@ type: concept
 typeid: dependent
 stage: draft
 hoverText: "Dependent (of an Party in a Jurisdiction): the Entity for the caring for and/or protecting/guarding/defending of which a Guardianship Relationship has been established with that Entity within that Jurisdiction."
+glossaryText: "the %Entity% for the caring for and/or protecting/guarding/defending of which a %Guardianship Relationship% has been established with that %Entity% within that %Jurisdiction%."
 ---
 
 :::info Editor's Note

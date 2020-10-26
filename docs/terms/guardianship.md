@@ -6,6 +6,7 @@ type: concept
 typeid: guardianship
 stage: draft
 hoverText: "Guardianship (of a Party over an Entity in a Jurisdiction): the rights and duties of that Party, defined and enforced in that Jurisdiction, for the purpose of caring for and/or protecting/guarding/defending that Entity."
+glossaryText: "the rights and duties of that %Party%, defined and enforced in that %Jurisdiction%, for the purpose of caring for and/or protecting/guarding/defending that %Entity%."
 ---
 
 :::info Editor's Note

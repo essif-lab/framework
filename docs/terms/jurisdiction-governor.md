@@ -6,6 +6,7 @@ type: concept
 typeid: jurisdiction-governor
 stage: draft
 hoverText: "Governor (of a Jurisdiction): the Party that operates the Legal System of that Jurisdiction."
+glossaryText: "the %Party% that operates the %Legal System% of that %Jurisdiction%."
 ---
 
 :::info Editor's note

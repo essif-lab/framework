@@ -6,6 +6,7 @@ type: concept
 typeid: agent
 stage: draft
 hoverText: "Agent (of a Party): an Actor that is executing an Action on behalf of a Party (called the Principal of that Actor)."
+glossaryText: "an %Actor% that is executing an %Action% on behalf of a %Party% (called the %Principal% of that %Actor%)."
 ---
 
 ### Short Description

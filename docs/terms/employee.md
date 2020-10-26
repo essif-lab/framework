@@ -6,6 +6,7 @@ type: concept
 typeid: employee
 stage: draft
 hoverText: "Employee (of a Party): an Actor for whom/which it is realistic that it might execute Actions on behalf of that Party (called the Employer of that Actor)."
+glossaryText: "an %Actor% for whom/which it is realistic that it might execute %Actions% on behalf of that %Party% (called the %Employer% of that %Actor%)."
 ---
 
 :::info Editor's note

@@ -6,6 +6,7 @@ type: concept
 typeid: data-discloser
 stage: draft
 hoverText: "Data Discloser: a functional component that is capable of disclosing data to (Agents of) other Parties, e.g. in the form of Credentials."
+glossaryText: "a functional component that is capable of disclosing data to (Agents of) other %Parties%, e.g. in the form of %Credentials%."
 ---
 
 ### Short Description

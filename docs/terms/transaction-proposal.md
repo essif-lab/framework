@@ -6,6 +6,7 @@ type: concept
 typeid: transaction-proposal
 stage: draft
 hoverText: "Transaction Proposal (for a specific Business Transaction): a Transaction Agreement that is 'in-the-making' (ranging from an empty document to a document that would be a Transaction Agreement if it were signed by all Participants)"
+glossaryText: "a %Transaction Agreement% that is 'in-the-making' (ranging from an empty document to a document that would be a %Transaction Agreement% if it were signed by all %Participants%)"
 ---
 
 :::info Editor's note

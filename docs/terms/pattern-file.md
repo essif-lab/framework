@@ -6,6 +6,7 @@ type: pattern
 typeid: pattern-file
 stage: draft
 hoverText: "Pattern-file: a file whose contents describes/documents a Pattern."
+glossaryText: "a file whose contents describes/documents a %Pattern%."
 ---
 
 ### Short Description

@@ -6,6 +6,7 @@ type: concept
 typeid: transaction-data-discloser-policy
 stage: draft
 hoverText: "Transaction Data Discloser Policy: a Digital Policy that enables an operational Transaction Data Discloser component to function according to the rules of its Policy Governor."
+glossaryText: "a %Digital Policy% that enables an operational %Transaction Data Discloser% component to function according to the rules of its %Policy Governor%."
 ---
 
 ### Short Description

@@ -7,6 +7,7 @@ typeid: digital-colleague
 conceptref: ":Colleague"
 stage: draft
 hoverText: "Digital Colleagues: two or more Digital Agents that all have the same Principal (i.e. Party on whose behalf they exeucte Actions)."
+glossaryText: "two or more %Digital Agents% that all have the same %Principal% (i.e. %Party% on whose behalf they exeucte %Actions%)."
 ---
 
 ### Purpose

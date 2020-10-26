@@ -6,6 +6,7 @@ type: concept
 typeid: owner
 stage: draft
 hoverText: "Owner (of an Entity): the role that a Party performs when it is exercizing its legal, rightful or natural title to control that Entity."
+glossaryText: "the role that a %Party% performs when it is exercizing its legal, rightful or natural title to control that %Entity%."
 ---
 
 ### Short Description

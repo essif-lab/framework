@@ -6,6 +6,7 @@ type: concept
 typeid: verifiable-credential
 stage: draft
 hoverText: "Verifiable Credential: Credential that comes with assurances regarding its provenance (the Party that issued it) and its integrity (the property that the Credential data has not been tampered with in transit, i.e. is the same as when issued)."
+glossaryText: "Credential that comes with assurances regarding its provenance (the %Party% that issued it) and its integrity (the property that the %Credential% data has not been tampered with in transit, i.e. is the same as when issued)."
 ---
 
 :::info Editor's note

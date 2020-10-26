@@ -6,6 +6,7 @@ type: concept
 typeid: identifier
 stage: draft
 hoverText: "Identifier: a character string that is being used for the identification of some Entity (yet may refer to 0, 1, or more Entities, depending on the context within which it is being used)."
+glossaryText: "a character string that is being used for the identification of some %Entity% (yet may refer to 0, 1, or more %Entities%, depending on the context within which it is being used)."
 ---
 
 ### Short Description

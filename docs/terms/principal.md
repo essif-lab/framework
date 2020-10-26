@@ -6,6 +6,7 @@ type: concept
 typeid: principal
 stage: draft
 hoverText: "Principal (of an Actor): the Party for whom, or on behalf of whom, the Actor is executing an Action (this Actor is then called an Agent of that Party)."
+glossaryText: "the %Party% for whom, or on behalf of whom, the %Actor% is executing an %Action% (this %Actor% is then called an %Agent% of that %Party%)."
 ---
 
 :::info Editor's noet

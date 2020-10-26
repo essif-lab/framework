@@ -6,6 +6,7 @@ type: concept
 typeid: Party
 stage: draft
 hoverText: "Party: an Entity that has Objectives, Knowledge about what exists, rules that (should) apply, and some capability that allows it to reason, make decisions, generate and maintain Knowledge etc. in a Self-Sovereign fashion; Humans and Organizations ar the typical examples."
+glossaryText: "an %Entity% that has %Objectives%, %Knowledge% about what exists, rules that (should) apply, and some capability that allows it to reason, make decisions, generate and maintain %Knowledge% etc. in a %Self%-Sovereign fashion; %Humans% and %Organizations% ar the typical examples."
 ---
 
 ### Short Description

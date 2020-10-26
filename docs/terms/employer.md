@@ -6,6 +6,7 @@ type: concept
 typeid: employer
 stage: draft
 hoverText: "Employer (of an Actor): a Party on whose behalf this Actor (called an Employee of that Party) might execute Actions."
+glossaryText: "a %Party% on whose behalf this %Actor% (called an %Employee% of that %Party%) might execute %Actions%."
 ---
 
 :::info Editor's note

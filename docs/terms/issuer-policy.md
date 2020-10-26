@@ -6,6 +6,7 @@ type: concept
 typeid: issuer-policy
 stage: draft
 hoverText: "Issuer Policy: a Digital Policy that enables an operational Issuer component to function according to the rules of its Policy Governor."
+glossaryText: "a %Digital Policy% that enables an operational %Issuer% component to function according to the rules of its %Policy Governor%."
 ---
 
 :::info Editor's note
