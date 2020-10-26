@@ -174,16 +174,16 @@ with "vocabulary"
 // CLEANING UP UNINTENDED CHANGES
 
 // Remove all `%%showtext|reftext%%` in docusaurus header.
-replace-regex "(^---\s*\nid:(?:[^%]*[\n\r]){0,8})[^%]*%%([^\|]*)\|([^%]*)%%(?:[^%]*[\n\r]){0,8}---"
-with "$1$2$4"
-replace-regex "(^---\s*\nid:(?:[^%]*[\n\r]){0,8})[^%]*%%([^\|]*)\|([^%]*)%%(?:[^%]*[\n\r]){0,8}---"
-with "$1$2$4"
-replace-regex "(^---\s*\nid:(?:[^%]*[\n\r]){0,8})[^%]*%%([^\|]*)\|([^%]*)%%(?:[^%]*[\n\r]){0,8}---"
-with "$1$2$4"
-replace-regex "(^---\s*\nid:(?:[^%]*[\n\r]){0,8})[^%]*%%([^\|]*)\|([^%]*)%%(?:[^%]*[\n\r]){0,8}---"
-with "$1$2$4"
-replace-regex "(^---\s*\nid:(?:[^%]*[\n\r]){0,8})[^%]*%%([^\|]*)\|([^%]*)%%(?:[^%]*[\n\r]){0,8}---"
-with "$1$2$4"
+replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
+with "$1$2"
+replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
+with "$1$2"
+replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
+with "$1$2"
+replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
+with "$1$2"
+replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
+with "$1$2"
 
 // Remove all `%%showtext|reftext%%` occurrences in markdown headers
 replace-regex "(^#+\s+.*?)%%([^\|]*)\|([^%]*)%%(.*$)"
@@ -192,7 +192,7 @@ replace-regex "(^#+\s+.*?)%%([^\|]*)\|([^%]*)%%(.*$)"
 with "$1$2$4"
 
 // Remove all `%%showtext|reftext%%` occurrences in `<img />`-constructs
-replace-regex "(<img(?:.|[\n\r])*?)%%([^\|]*)\|([^%]*)%%((?:.|[\n\r])*)(?=/>)"
-with "$1$2$4"
-replace-regex "(<img(?:.|[\n\r])*?)%%([^\|]*)\|([^%]*)%%((?:.|[\n\r])*)(?=/>)"
-with "$1$2$4"
+replace-regex "(<img(?:(?:.|[\n])(?!/>))*?)%%([^\|]*)\|(?:[^%]*)%%"
+with "$1$2"
+replace-regex "(<img(?:(?:.|[\n])(?!/>))*?)%%([^\|]*)\|(?:[^%]*)%%"
+with "$1$2"
