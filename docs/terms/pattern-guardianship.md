@@ -25,7 +25,7 @@ The term ‘%%guardianship|guardianship%%’ has many definitions/descriptions. 
 - “One who has the care of the person or property of another” or “One that guards” (both from [Merriam-Webster](https://www.merriam-webster.com/dictionary/%%guardianship|guardianship%%)),
 - “The state or duty of being a guardian”, where ‘guardian’ is defined as “A person who has the legal right and responsibility of taking care of someone who cannot take care of himself or herself” or “Someone who protects something” ([Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/)), or
 - “The status of being a protector, advocate, or proxy for a person” ([Sovrin %%Guardianship|guardianship%% Task Force whitepaper](https://sovrin.org/wp-content/uploads/%%Guardianship|guardianship%%-Whitepaper.pdf)), which defines ‘guardian’ as “An organization or person protecting another person and possibly their property”.
-- “The legal, social, or organizational responsibility of serving as a Guardian” ([Sovrin Glossary](https://docs.google.com/document/d/1gfIz5TT0cNp2kxGMLFXr19x1uoZsruUe_0glHst2fZ8/edit)), which also defines ‘guardian’ as  “An Id%%entity|entity%% Owner who administers Id%%entity|entity%% Data, Wallets, and/or Agents on behalf of a %%Dependent|dependent%%”.
+- “The legal, social, or organizational responsibility of serving as a Guardian” ([Sovrin Glossary](https://docs.google.com/document/d/1gfIz5TT0cNp2kxGMLFXr19x1uoZsruUe_0glHst2fZ8/edit)), which also defines ‘guardian’ as  “An Identity Owner who administers identity Data, Wallets, and/or Agents on behalf of a %%Dependent|dependent%%”.
 
 So, it seems that most people will acknowledge that '%%guardianship|guardianship%%' is a relation between
 

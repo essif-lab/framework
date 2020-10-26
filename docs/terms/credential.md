@@ -9,7 +9,7 @@ hoverText: "Credential: data, representing a set of Assertions (claims, statemen
 ---
 
 ### Short Description
-A **credential** is a set of (related) %%assertions|assertion%% (also referred to as claims, or statements), to which metadata is added (e.g. date of issuing), and a number of proofs, which typically include a  proof of provenance (i.e. proof that it was created by, or on behalf of, a specific %%party|party%%), and a proof of integrity (i.e. proof that the data hasn't changed since it was issued). 
+A **credential** is a set of (related) %%assertions|assertion%% (also referred to as claims, or statements), to which metadata is added (e.g. date of issuing), and a number of proofs, which typically include a  proof of provenance (i.e. proof that it was created on behalf of a specific %%party|party%%), and a proof of integrity (i.e. proof that the data hasn't changed since it was issued). 
 
 In physical credentials, such as drivers licenses and passports, proofs of integrity usually apply to the physical document itself. They come in a variety of forms, such as the structure of the paper, holograms, watermarks, or (embedded) chips. The proof of provenance usually consists of the form-format of the credential and %%assertions|assertion%% about the document issuer.
 

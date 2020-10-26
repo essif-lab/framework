@@ -19,7 +19,7 @@ The Transaction Data Discloser uses a %%Transaction Data Discloser policy|transa
 The Transaction Data Discloser uses the %%eSSIF-Glue|essif-glue%% interface to access the %%Wallet|wallet%%, %%Holder|holder%%, %%Issuer|issuer%% and %%Verifier|verifier%% functionalities.
 
 ### Purpose
-The purpose of the Transaction Data Discloser component is to state the (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other %%parties|party%%. A special kind of result is the (provisioning of) a credential that its Owner already has created.
+The purpose of the Transaction Data Discloser component is to state the (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other %%parties|party%%. A special kind of result is the (provisioning of) a credential that its Principal already has created.
 
 ### Criteria
 A **Transaction Data Discloser** is a component in the [eSSIF-Lab functional architecture](../functional-architecture) that is capable of stating (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other %%Parties|party%%.

@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: business-transaction
 stage: draft
-hoverText: "Business Transaction: the exchange of goods, services, funds, or data between some Parties (called ‘participants’ of the transaction)."
+hoverText: "Business Transaction: the exchange of goods, services, funds, or data between some Parties (called Participants of the Transaction)."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

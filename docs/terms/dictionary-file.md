@@ -5,7 +5,7 @@ scopeid: essifLab
 type: dictionary
 typeid: dictionary-file
 stage: draft
-hoverText: "Dictionary-file: a file that specifies the contents of a Dictionary."
+hoverText: "Dictionary-file: a file whose contents specifies the contents of a Dictionary."
 ---
 
 ### Short Description

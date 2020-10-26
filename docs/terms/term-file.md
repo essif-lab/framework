@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: term-file
 stage: draft
-hoverText: "Term-file: a file that defines/specifies a Term."
+hoverText: "Term-file: a file whose contents defines/specifies a Term."
 ---
 
 ### Short Description

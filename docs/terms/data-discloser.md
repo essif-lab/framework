@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: data-discloser
 stage: draft
-hoverText: "Data Discloser: a functional component that is capable of disclosing data."
+hoverText: "Data Discloser: a functional component that is capable of disclosing data to (Agents of) other Parties, e.g. in the form of Credentials."
 ---
 
 ### Short Description
@@ -19,7 +19,7 @@ The Data Discloser uses a %%data-collector-policy|data-collector-policy%% to lea
 The Data Discloser uses the %%eSSIF-Glue|essif-glue%% interface to access the %%Wallet|wallet%%, %%Holder|holder%%, %%Issuer|issuer%% and %%Verifier|verifier%% functionalities.
 
 ### Purpose
-The purpose of the Data Discloser component is to state the (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other Parties. A special kind of result is the (provisioning of) a credential that its Owner already has created.
+The purpose of the Data Discloser component is to state the (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other Parties. A special kind of result is the (provisioning of) a credential that its Principal already has created.
 
 ### Criteria
 A **Data Discloser** is a component in the [eSSIF-Lab functional architecture](../functional-architecture) that is capable of stating (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other %%Parties|party%%.
