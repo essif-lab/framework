@@ -6,7 +6,7 @@ type: concept
 typeid: transaction-data-collector-policy
 stage: draft
 hoverText: "Transaction Data Collector Policy: a Digital Policy that enables an operational Transaction Data Collector component to function according to the rules of its Policy Governor."
-glossaryText: "a %Digital Policy% that enables an operational %Transaction Data Collector% component to function according to the rules of its %Policy Governor%."
+glossaryText: "a %%digital policy|digital-policy%% that enables an operational %%transaction data collector|transaction-data-collector%% component to function according to the rules of its %%policy governor|policy-governor%%."
 ---
 
 ### Short Description

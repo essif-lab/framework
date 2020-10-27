@@ -6,7 +6,7 @@ type: concept
 typeid: guardianship-type
 stage: draft
 hoverText: "Guardianship-type (in a Jurisdiction): a class of Guardianships (relationships) within the Jurisdiction that has defined it."
-glossaryText: "a class of %Guardianships% (relationships) within the %Jurisdiction% that has defined it."
+glossaryText: "a class of %%guardianships|guardianship%% (relationships) within the %%jurisdiction|jurisdiction%% that has defined it."
 ---
 
 ### Short Description

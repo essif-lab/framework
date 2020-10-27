@@ -6,7 +6,7 @@ type: concept
 typeid: data-discloser
 stage: draft
 hoverText: "Data Discloser: a functional component that is capable of disclosing data to (Agents of) other Parties, e.g. in the form of Credentials."
-glossaryText: "a functional component that is capable of disclosing data to (Agents of) other %Parties%, e.g. in the form of %Credentials%."
+glossaryText: "a functional component that is capable of disclosing data to (Agents of) other %%parties|party%%, e.g. in the form of %%credentials|credential%%."
 ---
 
 ### Short Description
@@ -26,9 +26,9 @@ The purpose of the Data Discloser component is to state the (various, sometimes 
 A **Data Discloser** is a component in the [eSSIF-Lab functional architecture](../functional-architecture) that is capable of stating (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other %%Parties|party%%.
 
 ### Functionality
-Typically, and at any point in time, Parties are capable of expressing statements about entities that they know to exist. They could express statements about individuals, about themselves, the state of transactions, and so on. We will use the term ‘**subject (of a statement of a Party)**’ to refer to the entity that this Party knows to exist, and about whom/which the statement has been made.
+Typically, and at any point in time, Parties are capable of expressing statements about entities that they know to exist. They could express statements about individuals, about themselves, the state of transactions, and so on. We will use the term '**subject (of a statement of a Party)**' to refer to the entity that this Party knows to exist, and about whom/which the statement has been made.
 
-We will use the term ‘**subject-id (of a statement of a Party)**’ to refer to the representation that this Party has chosen to use for referring to the subject in said statement. A subject-id must have the property of being an identifier within every administrative context that this Party uses. It need not be humanly interpretable (and preferably is not).
+We will use the term '**subject-id (of a statement of a Party)**' to refer to the representation that this Party has chosen to use for referring to the subject in said statement. A subject-id must have the property of being an identifier within every administrative context that this Party uses. It need not be humanly interpretable (and preferably is not).
 
 Parties need to specify the kinds of credentials they are willing to issue, the class of entities (e.g. people, cars, Organizations) for which it will issue them, and the information schema (structure) that it will use in credentials of such kinds.[^1] This allows the Data Discloser to construct data objects that conform to this information schema, and present it to the Issuer component for actual issuing.
 

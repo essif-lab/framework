@@ -3,10 +3,6 @@ id: ssi-standards
 title: SSI Standards
 ---
 
-<!-- **KEEP THIS LINE HERE - RIEKS NEEDS IT!!**
-     ^(---\s*\nid:(?:[^%]*\n|(?:glossarytext):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)
--->
-
 The purpose of this document is to provide an overview of standards activities for self-sovereign identity (SSI) and their relevance to eSSIF-Lab.
 
 ## 1.  Introduction

@@ -6,7 +6,7 @@ type: concept
 typeid: commitment-decision
 stage: draft
 hoverText: "Commitment Decision (of a Party in a Business Transaction): the decision of that Party whether or not to commit to that Business Transaction, i.e. (promise) to fulfill the obligations that the associated Business Transaction Agreement Proposal would impose on that Party once it were signed."
-glossaryText: "the decision of that %Party% whether or not to commit to that %Business Transaction%, i.e. (promise) to fulfill the obligations that the associated %Business Transaction Agreement Proposal% would impose on that %Party% once it were signed."
+glossaryText: "the decision of that %%party|party%% whether or not to commit to that %%business transaction|business-transaction%%, i.e. (promise) to fulfill the obligations that the associated %%business transaction agreement proposal|business-transaction-agreement-proposal%% would impose on that %%party|party%% once it were signed."
 ---
 
 :::info Editor's note

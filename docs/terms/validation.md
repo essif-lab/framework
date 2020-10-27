@@ -6,7 +6,7 @@ type: concept
 typeid: validation
 stage: draft
 hoverText: "Validation (of data): the process that a Party uses to determine whether or not that data is valid to be used for some specific purpose(s) of that Party."
-glossaryText: "the process that a %Party% uses to determine whether or not that data is valid to be used for some specific purpose(s) of that %Party%."
+glossaryText: "the process that a %%party|party%% uses to determine whether or not that data is valid to be used for some specific purpose(s) of that %%party|party%%."
 ---
 
 :::info Editor's note

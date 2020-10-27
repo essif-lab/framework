@@ -6,7 +6,7 @@ type: concept
 typeid: identifier
 stage: draft
 hoverText: "Identifier: a character string that is being used for the identification of some Entity (yet may refer to 0, 1, or more Entities, depending on the context within which it is being used)."
-glossaryText: "a character string that is being used for the identification of some %Entity% (yet may refer to 0, 1, or more %Entities%, depending on the context within which it is being used)."
+glossaryText: "a character string that is being used for the identification of some %%entity|entity%% (yet may refer to 0, 1, or more %%entities|entity%%, depending on the context within which it is being used)."
 ---
 
 ### Short Description
@@ -35,7 +35,7 @@ The lack of (identifying) scopes of identification becomes an issue when a %%par
 If Bob had just met Alice for the first time, and hadn't seen her coming in a car, then Alice must acquaint Bob with the existence of the %%entity|entity%% that she refers to with `my car`, e.g. by pointing her finger to it, or describing the make, brand and license plate or some other characteristic that allows Bob to single out her car (in the context of their meeting one another). Then, Bob can 'register' the existence of that car in his %%knowledge|knowledge%% (optionally tagging it with an identifier of his own, e.g. `Alice's car`), and associate it with the attribute (party='Alice', identifier='`my car`'). It is important to have the "party='Alice'" part in there, because other parties, (e.g. Carol) may also use an identifier `my car`, which would and should then refer to another car. This shows that the scope of interpretation for an identifier has to do with the (%%knowledge|knowledge%% of) %%parties|party%% that use it, and that understanding the intended meaning requires a proper identification of that scope.
 
 -----
-[^1]: This is the definition of [RFC 3986, Section 1.1.](https://tools.ietf.org/html/rfc3986#section-1.1) but without the requirement of complying with URI syntax constraints. Note that there is consensus in the literature about this. For example, [(Allen, 2016)](http://www.lifewithalacrity.com/2016/04/the-path-to-self-soverereign-identity.html) defines ‘Identifier’ as “A name or other label that uniquely identifies an identity.”. [Pfitzmann and Hansen, 2010](https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf) say (in footnote 57): “A name or another bit string”. The [DID-core specification](https://www.w3.org/TR/did-core/) of W3C [defines ‘decentralized identifiers’ as specializations of URIs](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers). 
+[^1]: This is the definition of [RFC 3986, Section 1.1.](https://tools.ietf.org/html/rfc3986#section-1.1) but without the requirement of complying with URI syntax constraints. Note that there is consensus in the literature about this. For example, [(Allen, 2016)](http://www.lifewithalacrity.com/2016/04/the-path-to-self-soverereign-identity.html) defines 'Identifier' as “A name or other label that uniquely identifies an identity.”. [Pfitzmann and Hansen, 2010](https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf) say (in footnote 57): “A name or another bit string”. The [DID-core specification](https://www.w3.org/TR/did-core/) of W3C [defines 'decentralized identifiers' as specializations of URIs](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers). 
 
 [^2]: While Pfitzmann and Hansen talk about 'attackers', it is trivial to also include 'non-attackers', i.e. your average user.
 

@@ -6,7 +6,7 @@ type: concept
 typeid: organization
 stage: draft
 hoverText: "Organization: a group of people that work to realize one or more Objectives."
-glossaryText: "a group of people that work to realize one or more %Objectives%."
+glossaryText: "a group of people that work to realize one or more %%objectives|objective%%."
 ---
 
 ### Short Description

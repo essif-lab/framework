@@ -6,7 +6,7 @@ type: dictionary
 typeid: dictionary-file
 stage: draft
 hoverText: "Dictionary-file: a file whose contents specifies the contents of a Dictionary."
-glossaryText: "a file whose contents specifies the contents of a %Dictionary%."
+glossaryText: "a file whose contents specifies the contents of a %%dictionary|dictionary%%."
 ---
 
 ### Short Description
