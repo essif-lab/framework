@@ -22,7 +22,7 @@ function CustomFeature() {
       )}>
       <div className={styles.featuredImages}>
         <img src={flagUrl} alt="Horizon 2020" />
-        <img src={logoUrl} alt="eSSIF Lab logo" />
+        <img src={logoUrl} alt="eSSIF-Lab logo" />
       </div>
       <h3>{title}</h3>
       <p>{description}</p>
@@ -47,7 +47,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/introduction')}>
+              to={useBaseUrl('docs/project')}>
               Get Started
             </Link>
           </div>

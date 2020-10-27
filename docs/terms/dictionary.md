@@ -5,12 +5,15 @@ scopeid: essifLabTerminology
 type: concept
 typeid: dictionary
 stage: draft
-hoverText: "Dictionary: an alphabetically sorted list of Terms and explanations, usually aimed to help people understand texts around a certain (set of) topic(s) in some context(s)."
+hoverText: "Dictionary: an alphabetically sorted list of Terms with various meanings they may have in different contexts."
+glossaryText: "an alphabetically sorted list of %Terms% with various meanings they may have in different contexts."
 ---
 
 ### Short Description
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
 A Dictionary is an alphabetically sorted list of terms and explanations. Each term may have multiple such explanations, which come from different %%scopes/contexts|scope%%. 
+
+The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 <!--Describe why the concept is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What objectives does it help realize? Why is this conceptevant within its scope of definition?-->
@@ -28,9 +31,6 @@ Examples include the [NIST Computer Security Resource Center](https://csrc.nist.
 <!--This (optional) section lists words/phrases that are encountered in other contexts that have the same or a sufficiently similar meaning as Glossary. In this section you may point out the (subtle) differences between Glossary and this related terminology. This helps readers better/deeper understand Glossary, and how it may be used to relate to existing texts. Ideally, such references are accompanied with links to (preferredly authoritative) sources.-->
 - %%Glossary|glossary%% - this is a list of words with a single meaning, that serves more specific purposes than a dictionary.
 - [Vocabulary](https://en.wikipedia.org/wiki/Vocabulary) - this is a set of familiar words witin a particular/persons's language or field of expertise. A Dictionary can provide the various meanings of each such words.
-
-### Background
-The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
 
 ### Notes
 <!--This (optional) section is the place to put anything for which there is no other good place to put it.-->

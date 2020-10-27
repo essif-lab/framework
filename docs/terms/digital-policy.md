@@ -6,8 +6,13 @@ type: concept
 typeid: digital-policy
 conceptref: ":Policy"
 stage: draft
-hoverText: "Digital Policy: a machine-readable Policy (i.e. document that contains rules, working instructions or other guidance for Agents that can interpret such documents, so as to enable them to execute Actions on behalf of the Policy's author)."
+hoverText: "Digital Policy (of a Party, for Action types): a machine-readable Policy that enables Digital Agents whose Principal is the Policy's Governor, to execute Actions of such types in compliance with that Policy (i.e.: according to the rules, working-instructions, preferences and other guidance specified therein)."
+glossaryText: "a machine-readable %Policy% that enables %Digital Agents% whose %Principal% is the %Policy%'s %Governor%, to execute %Actions% of such types in compliance with that %Policy% (i.e.: according to the rules, working-instructions, preferences and other guidance specified therein)."
 ---
+
+:::info Editor's note
+TNO (or others) to provide further content of this file.
+:::
 
 ### Short Description
 A **digital policy** is an artifact that is derived from, and represents, a %%policy|policy%% for the purpose of being useable in the digital realm.

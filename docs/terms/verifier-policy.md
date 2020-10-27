@@ -6,10 +6,11 @@ type: concept
 typeid: verifier-policy
 stage: draft
 hoverText: "Verifier Policy: a Digital Policy that enables an operational Verifier component to function according to the rules of its Policy Governor."
+glossaryText: "a %Digital Policy% that enables an operational %Verifier% component to function according to the rules of its %Policy Governor%."
 ---
 
 :::info Editor's note
-TNO to provide the content of this file.
+TNO (or others) to provide the content of this file.
 :::
 
 ### Related Concepts

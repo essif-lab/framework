@@ -5,12 +5,15 @@ scopeid: essifLabTerminology
 type: concept
 typeid: definition
 stage: draft
-hoverText: "Definition: a text that helps Parties deeply/truly understand the meaning of a Term."
+hoverText: "Definition: a text that helps Parties to understand the meaning of (and Concepts behind) a Term, ideally in such a way that these Parties can determine whether or not they make the same distinction."
+glossaryText: "a text that helps %Parties% to understand the meaning of (and %Concepts% behind) a %Term%, ideally in such a way that these %Parties% can determine whether or not they make the same distinction."
 ---
 
 ### Short Description
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
-A **Definition** is a text that helps parties truly understand the meaning of a %%term|term%% as it is used in a communication. Because [terms are scoped](terminology), this 'truly understanding' of one another isn't trivial. Therefore, we insist that the explanatory text be a criterion that parties are expected to use in the same way in some %%scope(s)|scope%%, allowing them to establish whether or not they make the same determination as to whether or not something qualifies to be refered to by that term in a way that is independent of whether or not the (alledged) meaning is relevant for the purposes they pursue within that scope.
+A **Definition** is a text that helps %%parties|party%% truly understand the meaning of a %%term|term%% as it is used in a communication. Because [terms are scoped](terminology), this 'truly understanding' of one another isn't trivial. Therefore, we insist that the explanatory text be a criterion that %%parties|party%% are expected to use in the same way in some %%scope(s)|scope%%, allowing them to establish whether or not they make the same determination as to whether or not something qualifies to be refered to by that term in a way that is independent of whether or not the (alledged) meaning is relevant for the purposes they pursue within that scope.
+
+The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 <!--Describe why the concept is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What objectives does it help realize? Why is this conceptevant within its scope of definition?-->
@@ -36,9 +39,6 @@ Entity that comprises at a minimum:
 * %%Scope|scope%% is related in several ways. First, there is (precisely, or at most one) Scope that governs the definition/specification of the Concept. Second, there may be (any number of) Scopes that use the Concept, i.e. within which Terms are defined that refer to the Concept
 
 * %%Mental(or Conceptual) Model|pattern%% is a collection of concepts, relations between such concepts, and constraint rules that (elements of) such concepts and relations must satisfy. Such [models](https://en.wikipedia.org/wiki/Conceptual_model) are used to help people know, understand, or simulate a subject the model represents.
-
-### Background
-The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
 
 ### Use-cases
 <!--This (optional) section specifies an (optional) introductory paragraph, and a level-3 (i.e. `###`) subsection for every use case it describes. Every such use-case SHOULD

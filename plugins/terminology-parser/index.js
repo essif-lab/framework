@@ -26,14 +26,14 @@ function getRelativePath(source,target) {
   return relative_url === '' ? '.' + target.substr(target.lastIndexOf("/")) : relative_url + target.substr(target.lastIndexOf("/"));
 }
 
-function getImportStatement(filePath) {
+function getAutoIncludeStatements(filePath) {
   var filePath = path.dirname(filePath);
   var absoluteTermPath = path.resolve('./src/components');
   // Find the relative path between the file to be modified and the Term plugin
   var relativePath = path.relative(filePath, absoluteTermPath);
-  var importTerm = `\n\nimport { Term } from '${relativePath}'\n`;
+  var importTerms = `\n\nimport { Term } from '${relativePath}'\n`;
 
-  return importTerm
+  return importTerms
 }
 
 async function getHoverText(filePath) {
@@ -96,8 +96,8 @@ async function parser(err, files) {
         // Find the index of the 2nd occurrence of '---'
         var indexOfSecond = content.indexOf(searchTerm, 1);
         // Add the import statement
-        var importStatement = getImportStatement(filepath);
-        content = content.insert(indexOfSecond + 3, importStatement);
+        var autoIncludeStatements = getAutoIncludeStatements(filepath);
+        content = content.insert(indexOfSecond + 3, autoIncludeStatements);
 
         // Write the file with the updated content
         fs.writeFile(filepath, content, 'utf8', function (err) {

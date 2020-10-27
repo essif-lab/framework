@@ -5,8 +5,6 @@ sidebar_label: Contributing to the Terminology Effort
 scopeid: essifLab
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 :::info **UNDER CONSTRUCTION**
 TNO to provide further contents
 :::

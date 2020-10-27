@@ -8,8 +8,6 @@ stage: draft
 hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 :::info Editor's note
-TNO to provide the content of this file.
+TNO (or others) to provide the content of this file.
 :::

@@ -13,3 +13,6 @@ yarn-error.log*
 start_server.bat
 *.ffs_batch
 *.lnk
+docs/vscode-%%-batch-replacer.txt
+**/zzz-*
+docs/test.md

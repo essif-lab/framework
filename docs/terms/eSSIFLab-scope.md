@@ -6,6 +6,7 @@ type: scope
 typeid: eSSIFLab
 stage: draft
 hoverText: "ESSIFLab: specification of the eSSIF-Lab scope."
+glossaryText: "specification of the eSSIF-Lab scope."
 ---
 
 ### Governance
@@ -28,19 +29,3 @@ The Concepts and Terminology part of eSSIF-Lab aims helps eSSIF-Lab community pa
 
 ### Background
 The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
-
-### Notes
-<!--Anything els that's worth mentioning.-->
-
-### Tags
-<!--Add hash tags here that allow us to group concepts in useful ways.-->
-
-<!--
----
-### Footnotes
-
-[//]: # This (optional) section contains any footnotes that may have been specified in the text above.
-
-[^1]: the text for footnote [^1] goes here.
-
--->

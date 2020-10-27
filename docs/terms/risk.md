@@ -5,11 +5,12 @@ scopeid: essifLab
 type: concept
 typeid: risk
 stage: draft
-hoverText: "Risk: the deviation of the expected realization (e.g. results) of an Objective of a Party."
+hoverText: "Risk (of a Party's Objective): the deviation of the expected realization (e.g. results) of that Party's Objective."
+glossaryText: "the deviation of the expected realization (e.g. results) of that %Party%'s %Objective%."
 ---
 
 :::info Editor's note
-TNO to provide the content of this file.
+TNO (or others) to provide the content of this file.
 :::
 
 ### References

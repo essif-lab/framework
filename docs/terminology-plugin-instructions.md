@@ -2,7 +2,7 @@
 id: terminology-plugin-instructions
 title: Terminology & Glossary plugin docs
 ---
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import useBaseUrl from '@docusaurus/useBaseUrl'; // All other .md files may get this statement automatically added.
 
 ### How it works
 
@@ -40,7 +40,7 @@ e.g. `./docs/terms/party.md`. You can use the following syntax to reference
 this term in your documentation page:
 
 ```
-Some content that wants to reference the %%Party|party%% term
+Some content that wants to reference the %%party|party%% term
 ```
 
 When the script runs, this will be replaced as follows:
@@ -96,7 +96,6 @@ and running, you can visit the test example on the `/docs/replacement-test` page
 
 <img alt="replacement-test" src={useBaseUrl('images/replacement-test.png')}/>
 
-
 ## Generate the glossary page
 
 If everything works well with the above procedure, you can then generate a
@@ -115,4 +114,4 @@ mentioned above, will be populated in the `glossary.md` page.
 
 When the project is up and running, you can visit the glossary on the `/docs/essifLab-glossary` page:
 
- <img alt="glossary-page" src={useBaseUrl('images/glossary-page.png')}/>
+ <img alt="glossary-page" src={useBaseUrl('docs/essifLab-glossary.md')}/>

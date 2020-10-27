@@ -5,14 +5,18 @@ scopeid: essifLab
 type: concept
 typeid: employer
 stage: draft
-hoverText: "Employer (of an Actor): a Party on whose behalf this Actor might execute Ations."
+hoverText: "Employer (of an Actor): a Party on whose behalf this Actor (called an Employee of that Party) might execute Actions."
+glossaryText: "a %Party% on whose behalf this %Actor% (called an %Employee% of that %Party%) might execute %Actions%."
 ---
 
 :::info Editor's note
-TNO to provide the content of this file.
+TNO (or others) to provide the content of this file.
 :::
 
-### Background
+### Short Description
+
 The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.
 
-### Related Concepts
+### Purpose
+
+### Criteria

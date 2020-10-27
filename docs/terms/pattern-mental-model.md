@@ -23,7 +23,7 @@ Different terms can be used to identify the same concept. Car and Automobile are
 ### Notations
 <!--This (optional) section specifies the notations that are used, or refers to such a specification.-->
 
-## <!-- any number of other sections, as is fit for describing the pattern -->
+### <!-- any number of other sections, as is fit for describing the pattern -->
 <!--text as appropriate for such a section -->
 
 <!--
