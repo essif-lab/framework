@@ -30,7 +30,7 @@ dutyrighttype = "%{dutyright}-types?"
 // `filter "*.txt"`                  - any .txt file in the root folder
 // `filter "**/*.txt"`               - any .txt file
 
-filter "docs/functional-architecture.md"
+filter "docs/terms/*.md"
 
 // PREPROCESSING: convert single-%-notations into %%-notations.
 

@@ -26,4 +26,4 @@ For interop purposes, we also maintain a page related to [SSI standards](ssi-sta
 
 ## Acknowledgement
 
-This site is part of the eSSIF-Lab project that has received funding from the [European Union’s Horizon 2020 Research and Innovation Programme] under grant agreement Nº 871932.
+This site is part of the eSSIF-Lab project that has received funding from the [European Union's Horizon 2020 Research and Innovation Programme] under grant agreement Nº 871932.
