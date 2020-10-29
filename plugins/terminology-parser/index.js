@@ -140,11 +140,10 @@ async function getGlossaryTerms(files) {
 
             let referencePath = TERMS_DIR + reference + '.md';
             // Get the popup text for the term
+            // Get the popup text for the term
             let hoverText = await getHoverText(referencePath);
-
-            const current_file_path = path.resolve(process.cwd(), filepath);
-            const term_path = path.resolve(process.cwd(), TERMS_DIR, reference);
-            const new_final_url = getRelativePath(current_file_path, term_path);
+            
+            const new_final_url = referencePath.slice(1,-3);
             if (hoverText === undefined) {
               var new_text = ('<Term reference="' + new_final_url + '">' +
                   text + '</Term>');
@@ -163,8 +162,6 @@ async function getGlossaryTerms(files) {
         glossaryText: glossaryContent,
         filepath: filepath.slice(1,-3),
       });
-    } else {
-      console.log(metadata.type);
     }
   }
   return arr;
