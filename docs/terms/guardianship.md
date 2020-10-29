@@ -6,6 +6,7 @@ type: concept
 typeid: guardianship
 stage: draft
 hoverText: "Guardianship (of a Party over an Entity in a Jurisdiction): the rights and duties of that Party, defined and enforced in that Jurisdiction, for the purpose of caring for and/or protecting/guarding/defending that Entity."
+glossaryText: "the rights and duties of that %%party^party%%, defined and enforced in that %%jurisdiction^jurisdiction%%, for the purpose of caring for and/or protecting/guarding/defending that %%entity^entity%%."
 ---
 
 :::info Editor's Note
@@ -17,7 +18,9 @@ TNO to revise all below texts.
 
 in which one of these %%entities|entity%% (called the %%owner|owner%%) is entitled to enjoy, dispose of, and control the other %%entity|entity%% in an pretty much absolute (sovereign) fashion. Any guardianship relationship is grounded in ((the rules of) the %%legal system|legal-system%% of) a specific %%jurisdiction|jurisdiction%%, that maintains and enforces these rules, and that has means to resolve any disputes arising from that. To do this, both %%entities|entity%% must be %%legal entities|legal-entity%% in that %%jurisdiction|jurisdiction%%.
 
-We may use the phrase %%natural guardianship%% to refer to an guardianship relation that exists in the %%jurisdiction|jurisdiction%% 'Nature' (see the notes of %%jurisdiction|jurisdiction%%). This enables us to talk about things as 'the (natural) guardianship of an %%assertion|assertion%%'.
+We may use the phrase %%natural guardianship|guardianship%% to refer to an guardianship relation that exists in the %%jurisdiction|jurisdiction%% 'Nature' (see the notes of %%jurisdiction|jurisdiction%%). This enables us to talk about things as 'the (natural) guardianship of an %%assertion|assertion%%'.
+
+The %%Guardianship pattern|pattern-guardianship%% provides an overview of how this concept fits in with related concepts.
 
 The %%Guardianship pattern|pattern-guardianship%% provides an overview of how this concept fits in with related concepts.
 

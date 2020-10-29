@@ -1,0 +1,19 @@
+// Purpose: resolve all merge conflicts by accepting the CURRENT changes (change $1 to $2 to accept INCOMING changese)
+
+// This is a script that can be run by the Batch Replacer extension of VSCode .
+// Press Ctrl-Shift-P as you are editing this script, then search for `Batch Replacer`, and execute it.
+
+// If you do not specify the files to work on, the replace will be global (throughout the workspace).
+// `filter "document.txt"`           - document.txt file in the root folder
+// `filter "Documents/document.txt"` - document.txt file in the Documents folder in the root folder
+// `filter "**/document.txt"`        - document.txt files anywhere
+// `filter "*.txt"`                  - any .txt file in the root folder
+// `filter "**/*.txt"`               - any .txt file
+
+filter "docs/**/*.md"
+
+replace-regex "^<<<<<<<.*\n((?:.*\n)*)=======\n((?:.*\n)*)>>>>>>>.*\n"
+// To accept CURRENT changes
+with "$1"
+// To accept INCOMING changes
+// with "$2"

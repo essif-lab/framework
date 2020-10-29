@@ -58,6 +58,7 @@ async function parser(err, files) {
   } else {
     // Iterate through the .md(x) files
     for(let filepath of files.filter(filepath => filepath != './docs/terminology-plugin-instructions.md')) {
+      console.log('Filepath =', filepath);
       let content = '';
       try {
         content = await fs.promises.readFile(filepath, 'utf8')
@@ -121,10 +122,44 @@ async function getGlossaryTerms(files) {
     //gather all metadata
     let { metadata } = parseMD(content)
     //keep only the required keys
-    if (metadata.title) {
+    if (metadata.title && (metadata.type == "concept" || metadata.type == "term")) {
+      let glossaryContent = metadata.glossaryText;
+
+      if (glossaryContent) {
+        // Regex for finding the pattern:  %token_1,token_2%
+        reg = /\%%.*?\^.*?\%%/g;
+        // If there is at least one match between the content of the file and
+        // the regex, proceed
+        if ((regex_matches = glossaryContent.match(reg)) !== null) {
+          for(let regex_match of regex_matches) {
+            var token = regex_match.split('^');
+
+            // Find the path of the term
+            var reference = (token[1]).replace(/[%" ]/g, '');
+            var text = (token[0]).replace(/[%"]/g, '');
+
+            let referencePath = TERMS_DIR + reference + '.md';
+            // Get the popup text for the term
+            // Get the popup text for the term
+            let hoverText = await getHoverText(referencePath);
+            
+            const new_final_url = referencePath.slice(1,-3);
+            if (hoverText === undefined) {
+              var new_text = ('<Term reference="' + new_final_url + '">' +
+                  text + '</Term>');
+            } else {
+              var new_text = ('<Term popup="' + hoverText + '" reference="' +
+                  new_final_url + '">' + text + '</Term>');
+            }
+            glossaryContent = glossaryContent.replace(regex_match, new_text);
+          }
+        }
+      }
+
       arr.push({
         title: metadata.title,
         hoverText: metadata.hoverText,
+        glossaryText: glossaryContent,
         filepath: filepath.slice(1,-3),
       });
     }
@@ -135,20 +170,26 @@ async function getGlossaryTerms(files) {
 function generateGlossary(data) {
   //append all markdown terms in a variable
   let content = "";
+  let undefineds = "";
   data.forEach(item => {
     if (item.title !== undefined) {
       if (item.hoverText === undefined) {
-        content = content +  `\n\n- **[${item.title}](${item.filepath})**\n`;
+        undefineds = undefineds + `\n- [${item.title}](${item.filepath})\n`;
       } else {
-        content = content +  `\n\n- **[${item.title}](${item.filepath})**: ${item.hoverText}\n`;
+        content = content +  `\n\n### **[${item.title}](${item.filepath})**\n${item.glossaryText}\n`;
       }
     }
   })
+  if (undefineds !== "") {
+    content = content + "\n\n## Terms without glossary texts\n\n" + undefineds;
+  }
   fs.readFile(glossaryPath, 'utf8', function(err, glossaryContent) {
     if (err) throw err;
     var indexOfSecond = glossaryContent.indexOf(searchTerm, 1);
     newContent = glossaryContent.slice(0, indexOfSecond + 3);
-    newContent = newContent + content;
+    var autoIncludeStatements = getAutoIncludeStatements(glossaryPath);
+    newContent = newContent + autoIncludeStatements + content;
+
     // Write the list of terms to the glossary page
     fs.writeFile(glossaryPath, newContent, 'utf8', function (err) {
       if (err) return console.log(err);

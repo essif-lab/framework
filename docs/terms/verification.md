@@ -6,6 +6,7 @@ type: concept
 typeid: verification
 stage: draft
 hoverText: "Verification (of data): the process that a Party uses to determine whether or not what that data represents is in fact true (veracity)."
+glossaryText: "the process that a %%party^party%% uses to determine whether or not what that data represents is in fact true (veracity)."
 ---
 
 :::info Editor's note

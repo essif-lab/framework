@@ -6,6 +6,7 @@ type: concept
 typeid: Party
 stage: draft
 hoverText: "Party: an Entity that has Objectives, Knowledge about what exists, rules that (should) apply, and some capability that allows it to reason, make decisions, generate and maintain Knowledge etc. in a Self-Sovereign fashion; Humans and Organizations ar the typical examples."
+glossaryText: "an %%entity^entity%% that has %%objectives^objective%%, %%knowledge^knowledge%% about what exists, rules that (should) apply, and some capability that allows it to reason, make decisions, generate and maintain %%knowledge^knowledge%% etc. in a self-Sovereign fashion; humans and %%organizations^organization%% ar the typical examples."
 ---
 
 ### Short Description
@@ -16,7 +17,7 @@ The concept we know as 'party' serves a central role, and therefore occurs in va
 - the %%Jurisdictions pattern|pattern-jurisdiction%%, which shows that a %%party|party%% can operate the %%legal system|legal-system%% of a %%jurisdiction|jurisdiction%%, enforcing the rules in some scopes to the %%(legal) entities|legal-entity%% that it knows to exist and to which these rules apply.
 
 ### Purpose
-It is in one's mind - with one's knowledge - that objectives are being set, strategies are being devised, decisions are being made and so on. Specifically, conducting %%business transactions|business-transaction%% requires making numerous decisions, each of which is based on a subjective argument. The evaluation of such an argument requires the acquisition and processing of data, which implies additional decisions (that provide assurances that evaluation will arrive at the right conclusion), such as establishing:
+It is in one's mind - with one's knowledge - that objectives are being set, strategies are being devised, decisions are being made and so on. Specifically, conducting %%business transactions|transaction%% requires making numerous decisions, each of which is based on a subjective argument. The evaluation of such an argument requires the acquisition and processing of data, which implies additional decisions (that provide assurances that evaluation will arrive at the right conclusion), such as establishing:
 - which data is required,
 - what conditions such data should satisfy in order to be %%valid|validated-data%% for performing in the evaluation,
 - what sources may be trusted to provide data that is (sufficiently) true,

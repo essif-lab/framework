@@ -10,7 +10,8 @@
 // Now, you have to manually execute /(?<=\|)([A-Z][^%]*)(?=%%)/\L$1/g/
 // 4. `|ref-text%% is being checked to see if modifications need to be made (e.g. plurals to singular etc.)
 // 5. There is a cleanup phase that removes any %%...|...%% syntax from the docusaurus header, markdown headers, and <img /> constructs.
-
+replace-regex "^<<<<<<<.*\n((?:.*\n)*)=======\n((?:.*\n)*)>>>>>>>.*\n"
+with "$1"
 // Complex regular expressions can be created using variables. Variables are applied to the entire script, and should be defined at the beginning of the script. Variables are defined as ... = "..." and are used as %{...}. Variables can only be used in the replace and replace-regex instructions.
 // variables can reference themselves and be overwritten - see documentation of 'batch replacer' extension
 
@@ -18,6 +19,7 @@ beg = "(?<=\W%%)"
 mid = "(?<=\|)"
 end = "(?=%%\W)"
 ss = "(?:['’]?s|\(s\))?"
+yies = "(y|y['’]s|ies)"
 
 dutyright = "(?:dut(?:y|ies)|rights?)"
 dutyright = "%{dutyright}(?:-*(?:/|and|or|and/or)-*%{dutyright})?"
@@ -30,7 +32,7 @@ dutyrighttype = "%{dutyright}-types?"
 // `filter "*.txt"`                  - any .txt file in the root folder
 // `filter "**/*.txt"`               - any .txt file
 
-filter "docs/functional-architecture.md"
+filter "docs/terms/*.md"
 
 // PREPROCESSING: convert single-%-notations into %%-notations.
 
@@ -82,12 +84,12 @@ replace-regex "%{mid}(action|actor|agent|assertion|author)%{ss}%{end}"
 with "$1"
 
 // [B]
-replace-regex "%{mid}(business-transaction)%{ss}?%{end}"
-with "$1"
+-- for 'business-transaction' see 'transaction'
 
 // [C]
 // for 'claim', see 'statement'
 replace-regex "%{mid}(colleague|concept|credential(-type)?|commitment-decision)%{ss}?%{end}"
+replace-regex "%{mid}(colleague)(?:-agent)?%{ss}?%{end}"
 with "$1"
 
 replace-regex "%{mid}communications?-(channel|session)%{ss}?%{end}"
@@ -102,7 +104,7 @@ with "digital-$1"
 replace-regex "%{mid}(%{dutyrighttype}|%{dutyright})%{end}"
 with "pattern-duties-and-rights"
 
-replace-regex "%{mid}data-(collector|discloser)-polic(y's|ies)%{end}"
+replace-regex "%{mid}data-(collector|discloser)-polic%{yies}%{end}"
 with "data-$1-policy"
 replace-regex "%{mid}data-(collector|discloser)%{ss}?%{end}"
 with "data-$1"
@@ -110,13 +112,13 @@ with "data-$1"
 // [E]
 replace-regex "%{mid}(employee|employer)%{ss}%{end}"
 with "$1"
-replace-regex "%{mid}(legal-)?entit(y's|ies)%{end}"
+replace-regex "%{mid}(legal-)?entit%{yies}%{end}"
 with "$1entity"
 
 // [G]
 replace-regex "%{mid}(glossary-file|guardian(ship)?(-relationship)?(-type)?)%{ss}%{end}"
 with "$1"
-replace-regex "%{mid}glossar(y's|ies)%{end}"
+replace-regex "%{mid}glossar%{yies}%{end}"
 with "glossary"
 replace-regex "%{mid}guardianship(-relationship)?%{end}"
 with "guardianship"
@@ -124,6 +126,8 @@ replace-regex "%{mid}guardianship(-relationship)?-type%{end}"
 with "guardianship-type"
 replace-regex "%{mid}govern(or)?s?%{end}"
 with "governance"
+replace-regex "%{mid}(governed(?: by)?|governing-party)?s?%{end}"
+with "governor"
 
 // [H-I-J-K] (all holder, issuer, verifier and wallet stuff, too)
 // for associated policies, see [P]
@@ -136,15 +140,15 @@ with "$1"
 // for 'legal entities', see 'entities'
 
 // [O]
-replace-regex "%{mid}(objective|organization|owned|owner|ownership)%{ss}%{end}"
+replace-regex "%{mid}(?:natural-)?(objective|organization|owned|owner|ownership)%{ss}%{end}"
 with "$1"
 
 // [P]
 replace-regex "%{mid}(participant|pattern-file|pattern|(peer-)(actor|agent)|policy-governor|presentation-request|presentation|principal)%{ss}%{end}"
 with "$1"
-replace-regex "%{mid}(|peer-)part(y's|ies)%{end}"
+replace-regex "%{mid}(|peer-)part%{yies}%{end}"
 with "$1party"
-replace-regex "%{mid}(|issuer-|holder-|verifier-|wallet-|transaction-data-(collector|discloser)-)polic(y's|ies)%{end}"
+replace-regex "%{mid}(|issuer-|holder-|verifier-|wallet-|transaction-data-(collector|discloser)-)polic%{yies}%{end}"
 with "$1policy"
 
 // [R-S]
@@ -156,16 +160,16 @@ with "assertion"
 
 // [T]
 // for transaction data collector/discloers policies, see [P]
-replace-regex "%{mid}(term-file|term|transaction-(agreement|data-(collector|discloser)|form|proposal))%{ss}%{end}"
+replace-regex "%{mid}(?:business-)?(term-file|term|transaction(-agreement|-data-(collector|discloser)|-form|-proposal)?)%{ss}%{end}"
 with "$1"
-replace-regex "%{mid}transaction%{ss}?%{end}"
-with "business-transaction"
 
 // [V]
 // for verifier stuff - see holder
 replace-regex "%{mid}(verifiable-credential|verifier)%{ss}%{end}"
 with "$1"
-replace-regex "%{mid}vocabular(y's|ies)%{end}"
+replace-regex "%{mid}(data-)?validat(e|ing|ion)(-data)%{end}"
+with "validated-data"
+replace-regex "%{mid}vocabular%{yies}%{end}"
 with "vocabulary"
 
 // [W]
@@ -174,16 +178,17 @@ with "vocabulary"
 // CLEANING UP UNINTENDED CHANGES
 
 // Remove all `%%showtext|reftext%%` in docusaurus header.
-replace-regex "(^---\s*\nid:(?:[^%]*[\n\r]){0,8})[^%]*%%([^\|]*)\|([^%]*)%%(?:[^%]*[\n\r]){0,8}---"
-with "$1$2$4"
-replace-regex "(^---\s*\nid:(?:[^%]*[\n\r]){0,8})[^%]*%%([^\|]*)\|([^%]*)%%(?:[^%]*[\n\r]){0,8}---"
-with "$1$2$4"
-replace-regex "(^---\s*\nid:(?:[^%]*[\n\r]){0,8})[^%]*%%([^\|]*)\|([^%]*)%%(?:[^%]*[\n\r]){0,8}---"
-with "$1$2$4"
-replace-regex "(^---\s*\nid:(?:[^%]*[\n\r]){0,8})[^%]*%%([^\|]*)\|([^%]*)%%(?:[^%]*[\n\r]){0,8}---"
-with "$1$2$4"
-replace-regex "(^---\s*\nid:(?:[^%]*[\n\r]){0,8})[^%]*%%([^\|]*)\|([^%]*)%%(?:[^%]*[\n\r]){0,8}---"
-with "$1$2$4"
+// This has been commented out because for one reason or another, it doesn't work and sometimes makes the script not terminate.
+// replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
+// with "$1$2"
+// replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
+// with "$1$2"
+// replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
+// with "$1$2"
+// replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
+// with "$1$2"
+// replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
+// with "$1$2"
 
 // Remove all `%%showtext|reftext%%` occurrences in markdown headers
 replace-regex "(^#+\s+.*?)%%([^\|]*)\|([^%]*)%%(.*$)"
@@ -192,7 +197,7 @@ replace-regex "(^#+\s+.*?)%%([^\|]*)\|([^%]*)%%(.*$)"
 with "$1$2$4"
 
 // Remove all `%%showtext|reftext%%` occurrences in `<img />`-constructs
-replace-regex "(<img(?:.|[\n\r])*?)%%([^\|]*)\|([^%]*)%%((?:.|[\n\r])*)(?=/>)"
-with "$1$2$4"
-replace-regex "(<img(?:.|[\n\r])*?)%%([^\|]*)\|([^%]*)%%((?:.|[\n\r])*)(?=/>)"
-with "$1$2$4"
+replace-regex "(<img(?:(?:.|[\n])(?!/>))*?)%%([^\|]*)\|(?:[^%]*)%%"
+with "$1$2"
+replace-regex "(<img(?:(?:.|[\n])(?!/>))*?)%%([^\|]*)\|(?:[^%]*)%%"
+with "$1$2"
