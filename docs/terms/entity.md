@@ -6,6 +6,7 @@ type: concept
 typeid: entity
 stage: draft
 hoverText: "Entity: something that is known to exist."
+glossaryText: "something that is known to exist."
 ---
 
 ### Short Description

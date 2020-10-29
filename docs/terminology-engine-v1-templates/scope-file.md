@@ -6,6 +6,7 @@ type: scope
 typeid: scopeID
 stage: draft
 hoverText: "ScopeID: popuptext for 'scopeID' (tbd)."
+glossaryText: "popuptext for 'scopeID' (tbd)."
 ---
 <!--A scope is something within which concepts can be associated with terms, thereby creating a vocabulary that can be used to meaningfully express ideas, arguments, etc.
 Please fill in the placeholders in this file as follows:

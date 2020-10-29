@@ -63,7 +63,7 @@ and it needs to consist of the following structure:
 id: term
 title: Term page
 stage: draft
-hoverText: This hover text will appear in the documentation page that you reference this term
+hoverText: "This hover text will appear in the documentation page that you reference this term."
 ---
 
 ### Term explanation

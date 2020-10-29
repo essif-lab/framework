@@ -6,6 +6,7 @@ type: concept
 typeid: wallet
 stage: draft
 hoverText: "Wallet (functional component): the capability to securely store data as requested by Colleague Agents, and to provide stored data to Colleague Agents or Peer Agents, all in compliance with the rules of its Principal's Wallet Policy."
+glossaryText: "the capability to securely store data as requested by %%colleague agents^digital-colleague%%, and to provide stored data to %%colleague agents^digital-colleague%% or %%peer agents^peer-agent%%, all in compliance with the rules of its %%principal^principal%%'s %%wallet policy^wallet-policy%%."
 ---
 
 ### Short Description
@@ -30,7 +31,7 @@ The primary purpose of the Wallet Component is to (securely) store data, and in 
 
 Other kinds of data may be stored by a wallet as well - we will have to see what is practical and makes sense.
 
-By ‘securely storing data’ we mean that such data
+By 'securely storing data' we mean that such data
 
 -   remains available until a request is received from an electronic Colleague that is entitled to request deletion of such data;
 -   remains unchanged during the time in which it is stored;
@@ -40,7 +41,7 @@ By ‘securely storing data’ we mean that such data
 
 It is expected that components other than the Holder and Issuer will (arise and) need access. One example could be a component that is capable of securely signing data on behalf of the Principal. Another example could be a component that implements some kind of credential revocation functionality.
 
-Human beings cannot directly access any Wallet component, not even the ones they own. They need an electronic Agent that is capable of authenticating them as (an Agent of) the %%party|party%% that owns the Wallet component, and upon successful authentication provides a User Interface through which the Human Being can instruct this electronic Agent to manage the Wallet’s contents.
+Human beings cannot directly access any Wallet component, not even the ones they own. They need an electronic Agent that is capable of authenticating them as (an Agent of) the %%party|party%% that owns the Wallet component, and upon successful authentication provides a User Interface through which the Human Being can instruct this electronic Agent to manage the Wallet's contents.
 
 In order to make the Wallet component work, a Wallet Policy/Preferences object is created by, or on behalf of the Principal, the contents of which remains to be specified.
 

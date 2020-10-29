@@ -6,6 +6,7 @@ type: concept
 typeid: terminology
 stage: draft
 hoverText: "Terminology: the set of Terms that are used for communicating about a some specific topic(s)."
+glossaryText: "the set of %%terms^term%% that are used for communicating about a some specific topic(s)."
 ---
 
 ### Short Description

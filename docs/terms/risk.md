@@ -6,6 +6,7 @@ type: concept
 typeid: risk
 stage: draft
 hoverText: "Risk (of a Party's Objective): the deviation of the expected realization (e.g. results) of that Party's Objective."
+glossaryText: "the deviation of the expected realization (e.g. results) of that %%party^party%%'s %%objective^objective%%."
 ---
 
 :::info Editor's note

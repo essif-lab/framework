@@ -7,6 +7,7 @@ typeid: peer-agent
 conceptref: essifLab:Agent
 stage: draft
 hoverText: "Peer Agent (of some other Agent in a Communication Session): the Agent with whom/which this other Agent is communicating in that Communication Session."
+glossaryText: "the %%agent^agent%% with whom/which this other %%agent^agent%% is communicating in that %%communication session^communication-session%%."
 ---
 
 :::info Editors' note

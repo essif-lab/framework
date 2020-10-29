@@ -6,6 +6,7 @@ type: scope
 typeid: eSSIFLab
 stage: draft
 hoverText: "ESSIFLab: specification of the eSSIF-Lab scope."
+glossaryText: "specification of the eSSIF-Lab scope."
 ---
 
 ### Governance
