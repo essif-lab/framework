@@ -143,7 +143,9 @@ async function getGlossaryTerms(files) {
             // Get the popup text for the term
             let hoverText = await getHoverText(referencePath);
             
-            const new_final_url = referencePath.slice(1,-3);
+            const glossary_file_path = path.resolve(process.cwd(), glossaryPath);
+            const term_path = path.resolve(process.cwd(), TERMS_DIR, reference);
+            const new_final_url = getRelativePath(glossary_file_path, term_path);
             if (hoverText === undefined) {
               var new_text = ('<Term reference="' + new_final_url + '">' +
                   text + '</Term>');
@@ -173,7 +175,7 @@ function generateGlossary(data) {
   let undefineds = "";
   data.forEach(item => {
     if (item.title !== undefined) {
-      if (item.hoverText === undefined) {
+      if (item.glossaryText === undefined) {
         undefineds = undefineds + `\n- [${item.title}](${item.filepath})\n`;
       } else {
         content = content +  `\n\n### **[${item.title}](${item.filepath})**\n${item.glossaryText}\n`;
