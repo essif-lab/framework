@@ -22,8 +22,6 @@ We may use the phrase %%natural guardianship|guardianship%% to refer to an guard
 
 The %%Guardianship pattern|pattern-guardianship%% provides an overview of how this concept fits in with related concepts.
 
-The %%Guardianship pattern|pattern-guardianship%% provides an overview of how this concept fits in with related concepts.
-
 ### Purpose
 **Guardianship** is a means by which %%jurisdictions|jurisdiction%% provide assurances to %%parties|party%% (within its scope) that they can enjoy, dispose of and control in pretty much any way they like. The %%legal system|legal-system%% of the %%jurisdiction|jurisdiction%% specifies these rights, and provides ways in which the %%owner|owner%% can exercize them (that provides the assurance).
 
