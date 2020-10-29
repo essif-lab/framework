@@ -122,7 +122,7 @@ async function getGlossaryTerms(files) {
     //gather all metadata
     let { metadata } = parseMD(content)
     //keep only the required keys
-    if (metadata.title) {
+    if (metadata.title && (metadata.type == "concept" || metadata.type == "term")) {
       let glossaryContent = metadata.glossaryText;
 
       if (glossaryContent) {
@@ -163,6 +163,8 @@ async function getGlossaryTerms(files) {
         glossaryText: glossaryContent,
         filepath: filepath.slice(1,-3),
       });
+    } else {
+      console.log(metadata.type);
     }
   }
   return arr;
