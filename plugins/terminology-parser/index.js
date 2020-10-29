@@ -170,15 +170,19 @@ async function getGlossaryTerms(files) {
 function generateGlossary(data) {
   //append all markdown terms in a variable
   let content = "";
+  let undefineds = "";
   data.forEach(item => {
     if (item.title !== undefined) {
       if (item.hoverText === undefined) {
-        content = content +  `\n\n- **[${item.title}](${item.filepath})**\n`;
+        undefineds = undefineds + `\n- [${item.title}](${item.filepath})\n`;
       } else {
-        content = content +  `\n\n- **[${item.title}](${item.filepath})**: ${item.glossaryText}\n`;
+        content = content +  `\n\n### **[${item.title}](${item.filepath})**\n${item.glossaryText}\n`;
       }
     }
   })
+  if (undefineds !== "") {
+    content = content + "\n\n## Terms without glossary texts\n\n" + undefineds;
+  }
   fs.readFile(glossaryPath, 'utf8', function(err, glossaryContent) {
     if (err) throw err;
     var indexOfSecond = glossaryContent.indexOf(searchTerm, 1);
