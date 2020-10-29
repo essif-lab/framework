@@ -10,7 +10,8 @@
 // Now, you have to manually execute /(?<=\|)([A-Z][^%]*)(?=%%)/\L$1/g/
 // 4. `|ref-text%% is being checked to see if modifications need to be made (e.g. plurals to singular etc.)
 // 5. There is a cleanup phase that removes any %%...|...%% syntax from the docusaurus header, markdown headers, and <img /> constructs.
-
+replace-regex "^<<<<<<<.*\n((?:.*\n)*)=======\n((?:.*\n)*)>>>>>>>.*\n"
+with "$1"
 // Complex regular expressions can be created using variables. Variables are applied to the entire script, and should be defined at the beginning of the script. Variables are defined as ... = "..." and are used as %{...}. Variables can only be used in the replace and replace-regex instructions.
 // variables can reference themselves and be overwritten - see documentation of 'batch replacer' extension
 
