@@ -2,7 +2,7 @@
 id: pattern-file
 title: "Pattern-file"
 scopeid: essifLab
-type: pattern
+type: concept
 typeid: pattern-file
 stage: draft
 hoverText: "Pattern-file: a file whose contents describes/documents a Pattern."
