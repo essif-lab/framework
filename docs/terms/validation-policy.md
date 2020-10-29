@@ -6,7 +6,7 @@ type: concept
 typeid: validation-policy
 stage: draft
 hoverText: "Validation Policy: a Digital Policy that contains the rules, working-instructions, preferences and other guidance for determining whether or not data is valid for a specific purpose/objective of its Governor."
-glossaryText: "a %Digital Policy% that contains the rules, working-instructions, preferences and other guidance for determining whether or not data is valid for a specific purpose/objective of its %Governor%."
+glossaryText: "a %%digital policy|digital-policy%% that contains the rules, working-instructions, preferences and other guidance for determining whether or not data is valid for a specific purpose/objective of its %%governor|governance%%."
 ---
 
 :::info Editor's note

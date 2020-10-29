@@ -6,7 +6,7 @@ type: concept
 typeid: actor
 stage: draft
 hoverText: "Actor: Entity that can act (do things), e.g. people, machines, but not Organizations."
-glossaryText: "Entity that can act (do things), e.g. people, machines, but not %Organizations%."
+glossaryText: "Entity that can act (do things), e.g. people, machines, but not %%organizations|organization%%."
 ---
 
 ### Short Description

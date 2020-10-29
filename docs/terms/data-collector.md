@@ -6,7 +6,7 @@ type: concept
 typeid: data-collector
 stage: draft
 hoverText: "Data Collector: a functional component that is capable of collecting data from various Parties in the context of some Business Transaction, and Validating this data for the purpose of making one (or more) decision(s)."
-glossaryText: "a functional component that is capable of collecting data from various %Parties% in the context of some %Business Transaction%, and %Validating% this data for the purpose of making one (or more) decision(s)."
+glossaryText: "a functional component that is capable of collecting data from various %%parties|party%% in the context of some %%business transaction|business-transaction%%, and %%validating|validating%% this data for the purpose of making one (or more) decision(s)."
 ---
 
 ### Short Description
@@ -37,7 +37,7 @@ A **Data Collector** is a functional component in the [eSSIF-Lab functional arch
 - can use any appropriate communication channel with a %%peer-agent|peer-agent%% to:
   - request for data that, according to the %%Data Collector Policy|data-collector-policy%% is needed to decide whether or not to commit to the transaction;
   - process the responses to such requests, in an orchestrated way, thereby complying with the rules of its  %%principal's|principal%% %%Data Collector Policy|data-collector-policy%%, the result of which (in the end) is a set of %%validated data|validated-data%% that can serve the purpose of deciding whether or not to commit to the transaction;
-  - receive similar requests from its %%peer-party%%, and respond to such requests in compliance with the rules of its  %%principal's|principal%% %%Data Collector Policy|data-collector-policy%%;
+  - receive similar requests from its %%peer-party|peer-party%%, and respond to such requests in compliance with the rules of its  %%principal's|principal%% %%Data Collector Policy|data-collector-policy%%;
 - has a mechanism to ensure that within a %%transaction|business-transaction%%, it uses the latest (most receent) %%Data Collector Policy|data-collector-policy%% of its %%principal|principal%%.
 
 ### Deprecated - TVE Functionality
@@ -53,7 +53,7 @@ Typically, the Data Collector would start a transaction either
 -   when it receives a request from some Agent of another Party for engaging in a transaction of a specific kind.
 -   when it is instructed by, or on behalf of its Principal, to request a specific kind of transaction to some Agent of another Party.[^one]
 
-In either case, a transaction form (object, context) has to be created that matches the kind of transaction, and a ‘**transaction-id**’ must be generated that identifies this form/object/context. It will be used for binding incoming or outgoing messages to this transaction, enabling communications to remain congruent, not only with the Agent that requested the transaction, but also with other Agents from the same Principal and/or using different communication channels.
+In either case, a transaction form (object, context) has to be created that matches the kind of transaction, and a '**transaction-id**' must be generated that identifies this form/object/context. It will be used for binding incoming or outgoing messages to this transaction, enabling communications to remain congruent, not only with the Agent that requested the transaction, but also with other Agents from the same Principal and/or using different communication channels.
 
 Handling/managing the various communication channels through which data can be exchanged is also a task of the Data Collector[^2]. One reason for this is that negotiating a transaction not only requires data to be acquired, but also to be provided to the peer participant. Another reason is that the peer participant may use multiple Agents to provide such data, e.g. human Agents (that might use web-browsers, social-media apps, phones, or physical visits), SSI Agents (that use the SSI infrastructure), or other electronic Agents (e.g. services that can provide data when appropriate permissions are submitted - e.g. user consent tokens).
 
@@ -66,7 +66,7 @@ In order to make the Data Collector work, a Validation Policy (or Data Collector
 -   the kinds of transactions the Principal is willing to (electronically) engage in, from both the requester and the provider perspectives;
 -   for each such transaction type:
 
-    -   the criteria (business rules) that should be used to determine that the form is ‘clean’, i.e. that the necessary and sufficient data have been obtained and that they are consistent, coherent, and suitable for making a transaction commitment decision.
+    -   the criteria (business rules) that should be used to determine that the form is 'clean', i.e. that the necessary and sufficient data have been obtained and that they are consistent, coherent, and suitable for making a transaction commitment decision.
 
     -   the kinds of credentials and issuers that the Principal is willing to accept as sources for valid data; (optionally?), the endpoint URI at which issuing Parties do the actual credential issuing may be specified[^6].
 
@@ -78,9 +78,9 @@ The Policy must be designed in such a way that it is extendable as new features 
 
 The ability to create new transaction contexts and the availability of the Data Collector Policy enable the Data Collector to request the Verifier component of its Principal to obtain credentials of the types that it can use to fill in the transaction form when they satisfy the verification and validation requirements of its Principal.[^7]
 
-When the Verifier returns such data (which comes with a list of proofs that the Verifier has checked), the Data Collector must then validate that data, i.e. determine whether or not it is valid for the specific transaction it is assembling the data for. The validation rules are Party-specific and hence come from the Data Collector policy. For simple cases, validation can simply consist of checking whether or not all verification proofs succeeded. At the other end of the validation spectrum, the Data Collector itself must make validation decisions, either electronically (according to the Data Collector policy) or by ‘outsourcing’ such decisions to human Agents of its Principal by providing an appropriate validation user interface.
+When the Verifier returns such data (which comes with a list of proofs that the Verifier has checked), the Data Collector must then validate that data, i.e. determine whether or not it is valid for the specific transaction it is assembling the data for. The validation rules are Party-specific and hence come from the Data Collector policy. For simple cases, validation can simply consist of checking whether or not all verification proofs succeeded. At the other end of the validation spectrum, the Data Collector itself must make validation decisions, either electronically (according to the Data Collector policy) or by 'outsourcing' such decisions to human Agents of its Principal by providing an appropriate validation user interface.
 
-As long as data is needed, the Data Collector can intermittently request the verifier to produce it (or it can use other communication channels, which is outside scope for now). It does so until it times out, or the form has become ‘clean’.
+As long as data is needed, the Data Collector can intermittently request the verifier to produce it (or it can use other communication channels, which is outside scope for now). It does so until it times out, or the form has become 'clean'.
 
 -----
 ### Notes:
@@ -89,7 +89,7 @@ As long as data is needed, the Data Collector can intermittently request the ver
 TNO to revise the footnote markers
 :::
 
-[^1x]: In the same way that the data collector needs to collect data in order to be able to decide whether or not to commit, %%agents|agent%% of the %%peer party|peer-party%% need to collect data for making a similar commitment decision. Requests for such data are to be processed by the %%data discloser component|data-discloser%% under guidance of its %%data-discloser-policy%%.
+[^1x]: In the same way that the data collector needs to collect data in order to be able to decide whether or not to commit, %%agents|agent%% of the %%peer party|peer-party%% need to collect data for making a similar commitment decision. Requests for such data are to be processed by the %%data discloser component|data-discloser%% under guidance of its %%data-discloser-policy|data-discloser-policy%%.
 
 [^1a]: If the %%data collector policy|data-collector-policy%% specifies that data is to be collected for other purposes, the %%data collector|data-collector%% should then be provided a means to inform its %%peer party|peer-party%% of such purposes, and the policy should not specify that such data is required to make the commitment decision. 
 
@@ -101,9 +101,9 @@ TNO to revise the footnote markers
 
 [^3]: For high-value transactions, verification proofs are more important than for low-value transactions. This is to be decided by the Principal of the Data Collector. An example from the physical world: in order to obtain a visa for China, it is required that your passport (credential) remains valid for 3 months after the end of your visit. But in order to identify yourself at the reception desk of a hotel, your passport may have expired several years.
 
-[^4]: For example, a credential that contains an address uses a specific schema to specify addresses, e.g. the ‘PostalAddress’ as defined by schema.org. This schema differs quite a bit from that of Dutch addresses as [*defined*](https://bag.basisregistraties.overheid.nl/def/bag) by the official (authentic) Dutch Registration of Addresses and Buildings (BAG). It may also well differ from the structure of addresses that databases of the Principal have implemented. Mapping allows such cases to be accommodated for.
+[^4]: For example, a credential that contains an address uses a specific schema to specify addresses, e.g. the 'PostalAddress' as defined by schema.org. This schema differs quite a bit from that of Dutch addresses as [*defined*](https://bag.basisregistraties.overheid.nl/def/bag) by the official (authentic) Dutch Registration of Addresses and Buildings (BAG). It may also well differ from the structure of addresses that databases of the Principal have implemented. Mapping allows such cases to be accommodated for.
 
-[^5]: Inconsistent or incoherent data is necessary for various purposes. First, it allows for correct further processing of the transaction. A non-existent postal code, or one that doesn’t match the delivery address, may hinder a fluent transaction processing, resulting in additional costs and processing times. Another purpose is the early warning or detection of possible fraud/abuse. Remember that part of the data is being asked for reducing transaction risk, and checking consistency/coherence of such data is part of the risk mitigation process.
+[^5]: Inconsistent or incoherent data is necessary for various purposes. First, it allows for correct further processing of the transaction. A non-existent postal code, or one that doesn't match the delivery address, may hinder a fluent transaction processing, resulting in additional costs and processing times. Another purpose is the early warning or detection of possible fraud/abuse. Remember that part of the data is being asked for reducing transaction risk, and checking consistency/coherence of such data is part of the risk mitigation process.
 
 [^6]: This enables the Data Collector to pass the endpoint URI on to the Verifier when it requests for such a credential, which in turn can send it to the holder of other Parties enabling them to obtain the credential from that issuer endpoint if that other Party does not have that credential in its wallet. The endpoint URI can in fact be put in the policy, because the (human) Agent that creates/maintains the policy would need to know that the issuing Party is actually issuing such credentials, what their contents means, etc., and hence is capable of tracking down the URI where that Party issues the credentials.
 

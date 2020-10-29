@@ -174,16 +174,17 @@ with "vocabulary"
 // CLEANING UP UNINTENDED CHANGES
 
 // Remove all `%%showtext|reftext%%` in docusaurus header.
-replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
-with "$1$2"
-replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
-with "$1$2"
-replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
-with "$1$2"
-replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
-with "$1$2"
-replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
-with "$1$2"
+// This has been commented out because for one reason or another, it doesn't work and sometimes makes the script not terminate.
+// replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
+// with "$1$2"
+// replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
+// with "$1$2"
+// replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
+// with "$1$2"
+// replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
+// with "$1$2"
+// replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
+// with "$1$2"
 
 // Remove all `%%showtext|reftext%%` occurrences in markdown headers
 replace-regex "(^#+\s+.*?)%%([^\|]*)\|([^%]*)%%(.*$)"

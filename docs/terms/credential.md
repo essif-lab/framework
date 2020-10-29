@@ -6,7 +6,7 @@ type: concept
 typeid: credential
 stage: draft
 hoverText: "Credential: data, representing a set of Assertions (claims, statements), authored and signed by, or on behalf of, a specific Party."
-glossaryText: "data, representing a set of %Assertions% (claims, statements), authored and signed by, or on behalf of, a specific %Party%."
+glossaryText: "data, representing a set of %%assertions|assertion%% (claims, statements), authored and signed by, or on behalf of, a specific %%party|party%%."
 ---
 
 ### Short Description
@@ -16,7 +16,7 @@ In physical credentials, such as drivers licenses and passports, proofs of integ
 
 In digital credentials, such as (digital) certificates or %%verifiable credentials|verifiable-credential%%, the basic proofs (of provenance and integrity) usually consist of a digital signature of some kind. It therefor only 'works' for as long as the associated private/secret key actually remains a secret of the issuing %%party|party%%.
 
-Credentials whose %%assertions|assertion%% refer to some %%entity|entity%%, e.g. a person, an organization, an animal, a shipment, etc. In such cases, it must be possible for arbitrary %%parties|party%% to identify that %%entity|entity%%, and/or verify an %%assertion|assertion%% by some other %%party|party%% that identifies that %%entity%%. To this end, credentials may contain %%assertions|assertion%% about characteristics of that %%entity|entity%%, the idea being that if a %%party|party%% establishes that some %%entity|entity%% has (a sufficient number of) these characteristics, that %%entity|entity%% is the one bound to the credential. Attributes typically include one or more names, various dates, a photograph, etc. Other attributes might include biometrics, RFID-codes, bar-codes, etc.
+Credentials whose %%assertions|assertion%% refer to some %%entity|entity%%, e.g. a person, an organization, an animal, a shipment, etc. In such cases, it must be possible for arbitrary %%parties|party%% to identify that %%entity|entity%%, and/or verify an %%assertion|assertion%% by some other %%party|party%% that identifies that %%entity|entity%%. To this end, credentials may contain %%assertions|assertion%% about characteristics of that %%entity|entity%%, the idea being that if a %%party|party%% establishes that some %%entity|entity%% has (a sufficient number of) these characteristics, that %%entity|entity%% is the one bound to the credential. Attributes typically include one or more names, various dates, a photograph, etc. Other attributes might include biometrics, RFID-codes, bar-codes, etc.
 
 
 The signature on a credential may have other meanings. For example, a %%party|party%% may choose to only sign the credential data if it is convinced of the truth of the statements, in which case the credential 'payload' can be seen as an excerpt of the %%knowledge|knowledge%% of that %%party|party%%.
