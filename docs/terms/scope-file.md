@@ -6,7 +6,7 @@ type: concept
 typeid: scope-file
 stage: draft
 hoverText: "Scope-file: a file whose contents defines/specifies a Scope."
-glossaryText: "a file whose contents defines/specifies a %%scope|scope%%."
+glossaryText: "a file whose contents defines/specifies a %%scope^scope%%."
 ---
 
 ### Short Description

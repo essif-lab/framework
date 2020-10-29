@@ -6,7 +6,7 @@ type: concept
 typeid: objective
 stage: draft
 hoverText: "Objective: Something toward which a Party directs effort (an aim, goal, or end of action)."
-glossaryText: "Something toward which a %%party|party%% directs effort (an aim, goal, or end of action)."
+glossaryText: "Something toward which a %%party^party%% directs effort (an aim, goal, or end of action)."
 ---
 
 ### Short Description

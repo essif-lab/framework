@@ -6,11 +6,11 @@ type: concept
 typeid: verifier
 stage: draft
 hoverText: "Verifier (functional component): the capability to request Peer Agents to present (provide) data from credentials (of a specified kind, issued by specified Parties), and to verify such responses (check structure, signatures, dates), according to its Principal's Verifier Policy."
-glossaryText: "the capability to request %%peer agents|peer-agent%% to present (provide) data from credentials (of a specified kind, issued by specified %%parties|party%%), and to verify such responses (check structure, signatures, dates), according to its %%principal|principal%%'s %%verifier policy|verifier-policy%%."
+glossaryText: "the capability to request %%peer agents^peer-agent%% to present (provide) data from credentials (of a specified kind, issued by specified %%parties^party%%), and to verify such responses (check structure, signatures, dates), according to its %%principal^principal%%'s %%verifier policy^verifier-policy%%."
 ---
 
 ### Short Description
-A **Verifier** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that supports the %%Transaction Data Collector|transaction-data-collector%% as it tries to acquire %%(verifiable) credentials|credential%% from (an %%agent|agent%% of) some other %%party|party%%, for the purpose of negotiating a %%business transaction|business-transaction%%.
+A **Verifier** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that supports the %%Transaction Data Collector|transaction-data-collector%% as it tries to acquire %%(verifiable) credentials|credential%% from (an %%agent|agent%% of) some other %%party|party%%, for the purpose of negotiating a %%business transaction|transaction%%.
 
 It does so by:
 - creating %%Presentation Requests|presentation-request%% (or Presentation Definition as it is called in the [draft DIF specfication for Presentation Exchange](https://identity.foundation/presentation-exchange)) that ask for such credentials, 

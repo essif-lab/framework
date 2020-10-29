@@ -6,7 +6,7 @@ type: concept
 typeid: holder
 stage: draft
 hoverText: "Holder (functional component): the capability to handle presentation requests from a Peer Agent, produce the requested data (a presentation) according to its Principal's holder-policy, and send that in response to the request."
-glossaryText: "the capability to handle presentation requests from a %%peer agent|peer-agent%%, produce the requested data (a presentation) according to its %%principal|principal%%'s holder-policy, and send that in response to the request."
+glossaryText: "the capability to handle presentation requests from a %%peer agent^peer-agent%%, produce the requested data (a presentation) according to its %%principal^principal%%'s holder-policy, and send that in response to the request."
 ---
 
 ### Short Description

@@ -6,7 +6,7 @@ type: concept
 typeid: definition
 stage: draft
 hoverText: "Definition: a text that helps Parties to understand the meaning of (and Concepts behind) a Term, ideally in such a way that these Parties can determine whether or not they make the same distinction."
-glossaryText: "a text that helps %%parties|party%% to understand the meaning of (and %%concepts|concept%% behind) a %%term|term%%, ideally in such a way that these %%parties|party%% can determine whether or not they make the same distinction."
+glossaryText: "a text that helps %%parties^party%% to understand the meaning of (and %%concepts^concept%% behind) a %%term^term%%, ideally in such a way that these %%parties^party%% can determine whether or not they make the same distinction."
 ---
 
 ### Short Description

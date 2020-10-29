@@ -6,7 +6,7 @@ type: concept
 typeid: policy-governor
 stage: draft
 hoverText: "Policy Governor (of a Policy): the Party that is the Owner of the Policy and hence decides what goes in it and what not."
-glossaryText: "the %%party|party%% that is the %%owner|owner%% of the %%policy|policy%% and hence decides what goes in it and what not."
+glossaryText: "the %%party^party%% that is the %%owner^owner%% of the %%policy^policy%% and hence decides what goes in it and what not."
 ---
 
 :::info Editor's note

@@ -6,7 +6,7 @@ type: concept
 typeid: verfiable-data
 stage: draft
 hoverText: "Verifiable Data: data that comes with assurances regarding its provenance (the Party that issued it) and its integrity (the property that the Credential data has not been tampered with in transit, i.e. is the same as when created)."
-glossaryText: "data that comes with assurances regarding its provenance (the %%party|party%% that issued it) and its integrity (the property that the %%credential|credential%% data has not been tampered with in transit, i.e. is the same as when created)."
+glossaryText: "data that comes with assurances regarding its provenance (the %%party^party%% that issued it) and its integrity (the property that the %%credential^credential%% data has not been tampered with in transit, i.e. is the same as when created)."
 ---
 
 :::info Editor's note

@@ -6,7 +6,7 @@ type: concept
 typeid: communication-channel
 stage: draft
 hoverText: "Communication Channel: a (digital or non-digital) means by which two Actors can exchange messages with one another."
-glossaryText: "a (digital or non-digital) means by which two %%actors|actor%% can exchange messages with one another."
+glossaryText: "a (digital or non-digital) means by which two %%actors^actor%% can exchange messages with one another."
 ---
 
 :::info Editor's note

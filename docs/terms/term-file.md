@@ -6,7 +6,7 @@ type: concept
 typeid: term-file
 stage: draft
 hoverText: "Term-file: a file whose contents defines/specifies a Term."
-glossaryText: "a file whose contents defines/specifies a %%term|term%%."
+glossaryText: "a file whose contents defines/specifies a %%term^term%%."
 ---
 
 ### Short Description

@@ -6,7 +6,7 @@ type: concept
 typeid: dictionary
 stage: draft
 hoverText: "Dictionary: an alphabetically sorted list of Terms with various meanings they may have in different contexts."
-glossaryText: "an alphabetically sorted list of %%terms|term%% with various meanings they may have in different contexts."
+glossaryText: "an alphabetically sorted list of %%terms^term%% with various meanings they may have in different contexts."
 ---
 
 ### Short Description

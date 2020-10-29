@@ -6,7 +6,7 @@ type: concept
 typeid: data-collector
 stage: draft
 hoverText: "Data Collector: a functional component that is capable of collecting data from various Parties in the context of some Business Transaction, and Validating this data for the purpose of making one (or more) decision(s)."
-glossaryText: "a functional component that is capable of collecting data from various %%parties|party%% in the context of some %%business transaction|business-transaction%%, and %%validating|validating%% this data for the purpose of making one (or more) decision(s)."
+glossaryText: "a functional component that is capable of collecting data from various %%parties^party%% in the context of some %%business transaction^transaction%%, and %%validating^validated-data%% this data for the purpose of making one (or more) decision(s)."
 ---
 
 ### Short Description
@@ -16,29 +16,29 @@ A **Data Collector** is an (architectural) function (a functional component in t
 The purpose of a Data Collector is to collect sufficient and %%validated data|validated-data%% that eneables (an %%agent|agent%% of) its %%principal|principal%% to decide whether or not some request (typically for a product or a service) is to be serviced. 
 
 ### Functionality
-A data collector typically starts to collect data when it receives a request (e.g. to provide a product or service). The reception of such a request triggers the creation of a new %%business transaction|business-transaction%%. The task of the data collector is to collect %%validated data|validated-data%% that is sufficient for making a commitment decision (or, as [DEMO](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations) calls it: a 'promise' or 'quit' decision.)
+A data collector typically starts to collect data when it receives a request (e.g. to provide a product or service). The reception of such a request triggers the creation of a new %%business transaction|transaction%%. The task of the data collector is to collect %%validated data|validated-data%% that is sufficient for making a commitment decision (or, as [DEMO](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations) calls it: a 'promise' or 'quit' decision.)
 
 Starting the data collection for a transaction does NOT imply that the identity of the %%actors|actor%% from whom/which the request originated, is established (or authenticated). It also does NOT imply that the identity of the %%peer party|peer-party%% is established (or authenticated). The data collector simply proceeds to collect a sufficient amount of data such that the associated decision can be made, according to the rules, working-instructions and other guidance provided by its %%principal's|principal%% %%data collector policy|data-collector-policy%%. Such data may include identity data, but it also may not.
 
-Starting the data collection for a transaction implies that the data collector informs the %%data discloser component|data-discloser%% about the %%transaction|business-transaction%% that has just started, and the kind of that transaction. This allows the %%data discloser component|data-discloser%% to process requests for data from %%peer agents|peer-agent%%[^1x]
+Starting the data collection for a transaction implies that the data collector informs the %%data discloser component|data-discloser%% about the %%transaction|transaction%% that has just started, and the kind of that transaction. This allows the %%data discloser component|data-discloser%% to process requests for data from %%peer agents|peer-agent%%[^1x]
 
 All guidance that the data collector needs to collect the necessary and %%validated data|validated-data%% to make that decision is provided by the %%data collector policy|data-collector-policy%% that has been established by the data collector's %%principal|principal%%. Such a policy includes e.g. the kinds of data (and meta-data) required to make these kinds of decisions, criteria to distinguish between %%data that is valid|validated-data%% and data that is not, any data conversions that may be needed, etc.
 
-A data collector may multi-task, i.e. simultaneously/asynchronously collect data for multiple %%transactions|business-transaction%%. To organize this, messages that are exchanged with %%peer agents|peer-agent%% must contain an identifier that allows the data collector and its peer agents to identify the transaction to which each message belongs.
+A data collector may multi-task, i.e. simultaneously/asynchronously collect data for multiple %%transactions|transaction%%. To organize this, messages that are exchanged with %%peer agents|peer-agent%% must contain an identifier that allows the data collector and its peer agents to identify the transaction to which each message belongs.
 
-During the time in which a data collector is collecting data for a specific %%transaction|business-transaction%%, it may choose to setup, accept, and tear down %%communication sessions|communication-session%% with any %%actors|actor%%, if that is appropriate. This allows requests for data to be sent to different kinds of %%peer party|peer-party%%-%%agents|agent%%, e.g. human or %%digital|digital-agent%% agents. However, the data collector then must ensure that every of these %%agents|agent%% are all %%colleagues|colleague%%, i.e. have the %%peer party|peer-party%% as their %%principal|principal%%.
+During the time in which a data collector is collecting data for a specific %%transaction|transaction%%, it may choose to setup, accept, and tear down %%communication sessions|communication-session%% with any %%actors|actor%%, if that is appropriate. This allows requests for data to be sent to different kinds of %%peer party|peer-party%%-%%agents|agent%%, e.g. human or %%digital|digital-agent%% agents. However, the data collector then must ensure that every of these %%agents|agent%% are all %%colleagues|colleague%%, i.e. have the %%peer party|peer-party%% as their %%principal|principal%%.
 
 A data collector benefits from generic APIs or (G)UIs that allow it to simply ask for the data that it requires. Specifically for SSI, the data collector uses the %%eSSIF-Glue|essif-glue%% interface to access the %%Verifier|verifier%% functionalities.
 
 ### Criteria
 A **Data Collector** is a functional component in the [eSSIF-Lab functional architecture](../functional-architecture) that
-- services requests by %%digital|digital-agent%% and non-digital %%agents|agent%%, for providing a product or service, thereby starting a %%transaction|business-transaction%%;
+- services requests by %%digital|digital-agent%% and non-digital %%agents|agent%%, for providing a product or service, thereby starting a %%transaction|transaction%%;
 - can setup, accept and tear-down communication channels of various kinds, with %%digital|digital-colleague%% and/or non-digital %%colleagues|colleague%% of that %%requesting agent|agent%%,[^peer-agents] as appropriate for the data exchanges that are needed to conduct the transactions;
 - can use any appropriate communication channel with a %%peer-agent|peer-agent%% to:
   - request for data that, according to the %%Data Collector Policy|data-collector-policy%% is needed to decide whether or not to commit to the transaction;
   - process the responses to such requests, in an orchestrated way, thereby complying with the rules of its  %%principal's|principal%% %%Data Collector Policy|data-collector-policy%%, the result of which (in the end) is a set of %%validated data|validated-data%% that can serve the purpose of deciding whether or not to commit to the transaction;
   - receive similar requests from its %%peer-party|peer-party%%, and respond to such requests in compliance with the rules of its  %%principal's|principal%% %%Data Collector Policy|data-collector-policy%%;
-- has a mechanism to ensure that within a %%transaction|business-transaction%%, it uses the latest (most receent) %%Data Collector Policy|data-collector-policy%% of its %%principal|principal%%.
+- has a mechanism to ensure that within a %%transaction|transaction%%, it uses the latest (most receent) %%Data Collector Policy|data-collector-policy%% of its %%principal|principal%%.
 
 ### Deprecated - TVE Functionality
 

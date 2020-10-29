@@ -6,7 +6,7 @@ type: concept
 typeid: credential
 stage: draft
 hoverText: "Credential: data, representing a set of Assertions (claims, statements), authored and signed by, or on behalf of, a specific Party."
-glossaryText: "data, representing a set of %%assertions|assertion%% (claims, statements), authored and signed by, or on behalf of, a specific %%party|party%%."
+glossaryText: "data, representing a set of %%assertions^assertion%% (claims, statements), authored and signed by, or on behalf of, a specific %%party^party%%."
 ---
 
 ### Short Description

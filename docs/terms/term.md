@@ -6,7 +6,7 @@ type: concept
 typeid: term
 stage: draft
 hoverText: "Term: a word or phrase that is used in at least one Scope/context to refer to a specific Concept."
-glossaryText: "a word or phrase that is used in at least one %%scope|scope%%/context to refer to a specific %%concept|concept%%."
+glossaryText: "a word or phrase that is used in at least one %%scope^scope%%/context to refer to a specific %%concept^concept%%."
 ---
 
 ### Short Description

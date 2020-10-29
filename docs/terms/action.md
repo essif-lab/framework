@@ -6,7 +6,7 @@ type: concept
 typeid: action
 stage: draft
 hoverText: "Action: something that is actually done/executed - by a single Actor (on behalf of a given Party), as a single operation in a specific context."
-glossaryText: "something that is actually done/executed - by a single %%actor|actor%% (on behalf of a given %%party|party%%), as a single operation in a specific context."
+glossaryText: "something that is actually done/executed - by a single %%actor^actor%% (on behalf of a given %%party^party%%), as a single operation in a specific context."
 ---
 
 ### Short Description

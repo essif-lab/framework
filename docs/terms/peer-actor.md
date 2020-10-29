@@ -7,7 +7,7 @@ typeid: peer-actor
 conceptref: essifLab:Actor
 stage: draft
 hoverText: "Peer Actor (of some other Actor in a Communication Session): the Actor with whom/which this other Actor is communicating in that Communication Session."
-glossaryText: "the %%actor|actor%% with whom/which this other %%actor|actor%% is communicating in that %%communication session|communication-session%%."
+glossaryText: "the %%actor^actor%% with whom/which this other %%actor^actor%% is communicating in that %%communication session^communication-session%%."
 ---
 
 :::info Editors' note
