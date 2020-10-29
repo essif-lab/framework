@@ -58,6 +58,7 @@ async function parser(err, files) {
   } else {
     // Iterate through the .md(x) files
     for(let filepath of files.filter(filepath => filepath != './docs/terminology-plugin-instructions.md')) {
+      console.log('Filepath =', filepath);
       let content = '';
       try {
         content = await fs.promises.readFile(filepath, 'utf8')
