@@ -16,7 +16,7 @@ A **scope-file** is a file that contains the specification of a specific %%scope
 %%Scopes|scope%% enable people to focus, which is important as people's short-term memory is limited to 7 +/- 2 concepts (with attributes) [(Miller, 1956)](http://psychclassics.yorku.ca/Miller/). Hence, defining a scope - what is in it and what is not - is relevant as well. 
 
 ### Criterion
-a file that defines/specifies a %%scope|scope%.
+a file that defines/specifies a %%scope|scope%%.
 
 ### References
 

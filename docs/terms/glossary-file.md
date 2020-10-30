@@ -16,4 +16,4 @@ A **glossary-file** is a file that contains the specification of what does (not)
 %%Glossaries|glossary%% are %%dictionaries|dictionary%% that are limited to a specific purpose or %%scope|scope%%. They provide a single meaning for each term, enabling both authors and readers to quickly establish if they associate a term with the meaning as it is defined for that scope. 
 
 ### Criterion
-a file that defines/specifies a %%glossary|glossary%.
+a file that defines/specifies a %%glossary|glossary%%.
