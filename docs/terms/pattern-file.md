@@ -16,4 +16,4 @@ A **pattern-file** is a file that describes a %%pattern|pattern%%. To faciliate 
 Describing %%patterns|pattern%% enable users/readers to get a good idea of how related %%concepts|concept%% work together as a coherent and consistent whole. Mature patterns are generally simple, and make it much easier to think about the described concepts for someone that applies the pattern than it is for people that do not. 
 
 ### Criterion
-a file that defines/specifies a %%pattern|pattern%.
+a file that defines/specifies a %%pattern|pattern%%.
