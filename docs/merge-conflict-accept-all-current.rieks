@@ -1,3 +1,8 @@
+// Purpose: replace %-marked words (including some varieties such as plurals) with %%-syntax for those words.
+
+// This is a script that can be run by the Batch Replacer extension of VSCode.
+// Press Ctrl-Shift-P as you are editing this script, then search for `Batch Replacer`, and execute it.
+
 // Purpose: resolve all merge conflicts by either 
 // - uncommenting `with "$1"` to accept _all_ CURRENT changes
 // - uncommenting `with "$2"` to accept _all_ INCOMING changese

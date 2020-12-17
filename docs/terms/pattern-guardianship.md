@@ -1,6 +1,6 @@
 ---
 id: pattern-guardianship
-title: "Guardianship (Relationships)"
+title: "Guardianship"
 scopeid: essifLab
 type: pattern
 typeid: guardianship

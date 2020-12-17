@@ -4,18 +4,9 @@ title: "eSSIF-Lab Ways of Thinking"
 sidebar_label: Mental Models
 ---
 
-:::note Editor's note
-TNO to write the introduction paragraph
-Remainder of file to be generated (GRNET plugin/extension) - currently, the file is maintained 'by hand'
-:::
+Within eSSIF-Lab, we maintain a set of %%mental models|mental-model%%, i.e. casual and formal descriptions (patterns) of %%concepts|concept%%, relations between them, and constraints, that provide a specific 'viewpoint', or 'way of thinking' about a certain topic. They have been crafted so that they may serve as a basis for architecting, desiging, and implementing IT components and their governance processes.
 
-Within eSSIF-Lab, we maintain a set of %%mental models|mental-model%%, i.e. casual and formal descriptions (patterns) of %%concepts|concept%%, relations between them, and constraints, that provide a specific 'viewpoint', or 'way of thinking' about a certain topic. 
-
-:::info Editor's note
-While some of the topics listed below are pretty much done, others are still need more work.
-:::
-
-We currently have models for the following topics:
+Here is the alphabetically sorted index of models:
 
 - [Duties and Rights](./terms/pattern-duties-and-rights): The Duties and Rights pattern describes the relations between %%jurisdictions|jurisdiction%%, %%legal entities|legal-entity%% and the duties and rights they have within them.
 
@@ -27,4 +18,4 @@ We currently have models for the following topics:
 
 - [Parties, Actors and Actions](./terms/pattern-party-actor-action): The %%Parties|party%%, %%Actors|actor%% and %%Actions|action%% pattern captures the foundational %%concepts|concept%% and relations that we need for thinking about how things get done. It answers questions such as: 'Who/what does things?', 'How are their actions being guided/controlled?', 'Who controls whom/what?', 'Who/what may be held accountable?'.
 
-- [Terminology:](./terms/pattern-terminology): The eSSIF-Lab Terminology Pattern describes the relations between %%terminology|terminology%% artifacts such as '%%concept|concept%%', '%%term|term%%', '%%pattern|pattern%%', '%%mental model|mental-model%%', '%%glossary|glossary%%' etc.
+- [Terminology](./terms/pattern-terminology): The eSSIF-Lab Terminology Pattern describes the relations between %%terminology|terminology%% artifacts such as '%%concept|concept%%', '%%term|term%%', '%%pattern|pattern%%', '%%mental model|mental-model%%', '%%glossary|glossary%%' etc.

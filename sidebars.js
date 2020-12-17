@@ -25,5 +25,16 @@ module.exports = {
       { type: 'doc', id: 'essifLab-pattern-list' },
       { type: 'doc', id: 'notations-and-conventions' },
     ],
+  },
+  sidebar_for_mental_models: {
+    'Mental Models':
+    [
+      { type: 'doc', id: 'terms/pattern-party-actor-action' },
+      { type: 'doc', id: 'terms/pattern-jurisdiction' },
+      { type: 'doc', id: 'terms/pattern-duties-and-rights' },
+      { type: 'doc', id: 'terms/pattern-mandates-delegation-hiring' },
+      { type: 'doc', id: 'terms/pattern-guardianship' },
+      { type: 'doc', id: 'terms/pattern-terminology' },
+    ],
   }
 };
