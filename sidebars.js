@@ -3,8 +3,15 @@ module.exports = {
     'Framework':
     [
         // 'introduction',
+        // 'business-architecture',
         // 'functional-architecture',
-        // 'open_calls',
+        // 'open_calls'
+    ],
+    'Business Architecture':
+    [
+        // 'motive',
+        // 'terminology',
+        // 'overview'
     ],
     'Functional Architecture':
     [
@@ -15,7 +22,7 @@ module.exports = {
         // 'network_architecture',
         // 'high_level_transaction_flows',
         // 'detailed_transaction_flows'
-    ]
+    ],
   },
   sidebar_for_terminology: {
     'Terminology':

@@ -24,6 +24,7 @@ module.exports = {
       items: [
         {to: 'docs/project', label: 'Project', position: 'left'},
         {to: 'docs/vision-and-purpose', label: 'Vision', position: 'left'},
+        {to: 'docs/business-architecture', label: 'Business Architecture', position: 'left'},
         {to: 'docs/functional-architecture', label: 'Functional Architecture', position: 'left'},
         {to: 'docs/governance', label: 'Governance', position: 'left'},
         {to: 'docs/terminology', label: 'Terminology', position: 'left'},

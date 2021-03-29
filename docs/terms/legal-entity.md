@@ -27,3 +27,6 @@ A **Legal Entity** is an %%entity|entity%% that is known by and recognized to ex
 - citizens (organizations, etc.) that are registered in the citizens registration of some government, are legal entities in its jurisdiction.
 - a refugee that is screaming before a civil servant person (i.e. (s)he is alive and kicking, and really exists), yet is not registered in the governmental administration, does not exist for that administration, i.e. is not a legal entity in that jurisdiction.
 - whether or not some special stone qualifies as legal entity depends on whether or not it is known to exist in some jurisdiction.
+
+### Notes
+A legal entity does not necessarily have an existence outside of its %%jurisdiction|jurisdiction%%. For example, the rules of many legal jurisdictions specify criteria for entities to have their own legal rights and obligations - being a 'legal person' albeit not a human being (which is then called a 'natural person'). A 'limited liability partnership' or an 'incorporated entity' are examples of such constructs (for specific jurisdictions). See e.g. [Separate Legal Entities](https://hallellis.co.uk/separate-legal-entities-meaning/)
