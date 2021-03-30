@@ -13,7 +13,7 @@ const Term = ({children, reference, popup}) => {
   return (
     <Tooltip title={<span className='popup'>{popup}</span>} arrow={true}>
       <Link to={ get_pathname(reference) }>
-      	<span className='term'>{children}</span>
+        <span className='term'>{children}</span>
       </Link>
     </Tooltip>
   );

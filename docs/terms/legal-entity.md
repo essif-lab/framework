@@ -2,7 +2,7 @@
 id: legal-entity
 title: "Legal Entity"
 scopeid: essifLab
-type: term
+type: concept
 typeid: legal-entity
 stage: draft
 hoverText: "Legal Entity (of a Jurisdiction): an Entity that is known by, recognized to exist, and registered in that Jurisdiction."
