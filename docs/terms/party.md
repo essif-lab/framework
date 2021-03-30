@@ -10,12 +10,12 @@ glossaryText: "an %%entity^entity%% that sets its %%objectives^objective%%, main
 ---
 
 ### Short Description
-A **party** is an %%entity|entity%% that sets its %%objectives^objective%%, maintains its %%knowledge^knowledge%%, and uses that %%knowledge^knowledge%% to pursue its %%objectives^objective%% in an autonomous (sovereign) manner. One might say that they have a mind of their own. Typical examples are individual people and %%organizations|organization%%. Their minds (subjective knowledge) are what distinguishes one %%party|party%% from another, so every %%party|party%% is 1-1 related to its knowledge (mind).
+A **party** is an %%entity|entity%% that sets its %%objectives|objective%%, maintains its %%knowledge|knowledge%%, and uses that %%knowledge|knowledge%% to pursue its %%objectives|objective%% in an autonomous (sovereign) manner. One might say that they have a mind of their own. Typical examples are individual people and %%organizations|organization%%. Their minds (subjective knowledge) are what distinguishes one %%party|party%% from another, so every %%party|party%% is 1-1 related to its knowledge (mind).
 
 Specifically, every party autonomously manages its
-- %%knowledge (information)|knowledge%%. It means that every %%party%% gets to decide for itself what it believes to be true, what to trust (and what not), what objectives it wants to pursue, how much risks it wants to run, what are valid ways of reasoning (not necessarily logical), how to reach conclusions and make decisions. The knowledge of a party changes continuously as information is added, modified, or deleted - no reasons needed.
-- %%semantics%%, i.e. the mapping between parts of its knowledge and the %%data%% he uses to represent such parts, as well as the mapping between %%data%% that it receives and the meaning he interprets such data to be associated with. 
-- %%data%%, i.e. the tangible representation of a subset of its intangible %%knowledge%% that it uses to communicate with others, to remember (store), or process.
+- %%knowledge (information)|knowledge%%. It means that every %%party|party%% gets to decide for itself what it believes to be true, what to trust (and what not), what objectives it wants to pursue, how much risks it wants to run, what are valid ways of reasoning (not necessarily logical), how to reach conclusions and make decisions. The knowledge of a party changes continuously as information is added, modified, or deleted - no reasons needed.
+- %%semantics|semantics%%, i.e. the mapping between parts of its knowledge and the %%data|data%% he uses to represent such parts, as well as the mapping between %%data|data%% that it receives and the meaning he interprets such data to be associated with. 
+- %%data|data%%, i.e. the tangible representation of a subset of its intangible %%knowledge|knowledge%% that it uses to communicate with others, to remember (store), or process.
 
 It is important to note that:
 - parties do not have the ability to %%act|actor%%. The relation between parties, actors and acting is explained in the %%Parties, Actors and Actions pattern|pattern-party-actor-action%%.

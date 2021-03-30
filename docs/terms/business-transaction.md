@@ -9,4 +9,4 @@ hoverText: "Business Transaction: a Transaction that constitutes business of its
 glossaryText: "See: %%transaction^transaction%%."
 ---
 
-See: %%transaction^transaction%%
+See: %%transaction|transaction%%
