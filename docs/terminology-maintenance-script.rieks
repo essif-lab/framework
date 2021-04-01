@@ -7,11 +7,12 @@
 // Please note that if there are many files, execution may take some time...
 
 // Executing the script will do the following replacements consecutively:
-// 1. `%text with possibly spaces%` --> `%%text with possibly spaces%%`
-// 2. `%text-without-spaces` --> `%%text-without-spaces%%` (some punctuation around it is allowed)
+// 1. `%text that may include spaces%` --> `%%text that may include spaces%%`
+// 2. `%text-without-spaces` --> `%%text-without-spaces%%` (some (limited) punctuation around it is allowed)
 // 3. `%%Show Text%%` --> `%%Show Text|show-text%%` (we use the 'case-conversion hack' to make the reftext lowercase)
 // 4. `|ref-text%% is being checked to see if modifications need to be made (e.g. plurals to singular etc.)
-// 5. There is a cleanup phase that removes any %%...|...%% syntax from the docusaurus header, markdown headers, and <img /> constructs.
+// 5. There is a cleanup phase that removes any %%...|...%% syntax from markdown headers, and <img /> constructs.
+//    I have not found regexes that work in this script to clean up yaml front matter (docusaurs headers)
 
 // Complex regular expressions can be created using variables. Variables are applied to the entire script, and should be defined at the beginning of the script. Variables are defined as ... = "..." and are used as %{...}. Variables can only be used in the replace and replace-regex instructions.
 // variables can reference themselves and be overwritten - see documentation of 'batch replacer' extension
@@ -32,8 +33,9 @@ dutyrighttype = "%{dutyright}-types?"
 // `filter "**/document.txt"`        - document.txt files anywhere
 // `filter "*.txt"`                  - any .txt file in the root folder
 // `filter "**/*.txt"`               - any .txt file
+// `filter "**/*.adl, **/*.ifc"`     - any .adl and any .ifc file
 
-filter "docs/terms/*.md"
+filter "docs/**/*.md"
 
 // PREPROCESSING: convert single-%-notations into %%-notations.
 
