@@ -11,6 +11,8 @@
     "glossary": "docusaurus glossary"
   },
   "dependencies": {
+    "@docusaurus-terminology/parser": "^1.1.0",
+    "@docusaurus-terminology/term": "^1.0.0",
     "@docusaurus/core": "^2.0.0-alpha.65",
     "@docusaurus/preset-classic": "^2.0.0-alpha.65",
     "@material-ui/core": "^4.11.0",

@@ -118,6 +118,13 @@ module.exports = {
     ],
   ],
   plugins: [
-    path.resolve(__dirname, './plugins/terminology-parser')
+    [
+      '@docusaurus-terminology/parser',
+      {
+        termsDir: './docs/terms',
+        glossaryFilepath: './docs/glossary.md',
+        noParseFiles: ['./docs/terminology-plugin-instructions.md']
+      }
+    ]
   ]
 };
