@@ -7,6 +7,10 @@ scopeid: essifLab
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
+:::info Editor's note
+*This section is work in progress.*
+:::
+
 ## 1. Purpose
 
 Realizing the [eSSIF-Lab vision](vision-and-purpose) is a very challenging endeavour, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. There is 'ecosystem' complexity, i.e. different groups of organizations and/or people need artifacts that work for them as a group, both 'horizontally' and 'vertically', but no further than the context of that group.
