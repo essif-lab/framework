@@ -26,7 +26,7 @@ Here is a visual representation of this pattern, using the following [notations 
 
 <img
   alt="Conceptual model of the 'Duties-and-rights' pattern"
-  src={useBaseUrl('images/patterns/pattern-hohfeldian-duty-right.png')}
+  src={useBaseUrl('images/patterns/pattern-duties-and-rights.png')}
 />
 
 :::info Editor's note

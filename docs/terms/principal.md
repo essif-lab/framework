@@ -14,7 +14,7 @@ TNO to revise this text
 :::
 
 ### Short Description
-A **principal** is the term we use to refer to the %%party|party%% for which (on whose behalf) an %%agent|agent%% is executing an %%action|action%%. The Agent-Principal relation is an %%actor|actor%%-%%party|party%% relation where the %%actor|actor%% is executing an %%action|action%% on behalf of that %%party|party%%, and for the execution of which that %%party|party%% has established a %%policy|policy%% that the %%agent|agent%% must (or may) follow, and hence must have access to). For %%digital agents|digital-agent%%, 
+A **principal** is the term we use to refer to the %%party|party%% for which (on whose behalf) an %%agent|agent%% is executing an %%action|action%%. The Agent-Principal relation is an %%actor|actor%%-%%party|party%% relation where the %%actor|actor%% is executing an %%action|action%% on behalf of that %%party|party%%, and for the execution of which that %%party|party%% has established a %%policy|policy%% that the %%agent|agent%% must (or may) follow, and hence must have access to).
 
 The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.
 

@@ -34,7 +34,7 @@ The figure below is a high-level visualization of the filling in and validation 
 
 <img
   alt="High-level visualization of the filling in and validation of a form."
-  src={useBaseUrl('images/vision-context.png')}
+  src={useBaseUrl('images/eSSIF-Lab-vision-context.png')}
 />
 
 *Figure 1. High-level visualization of the filling in and validation of a form.*

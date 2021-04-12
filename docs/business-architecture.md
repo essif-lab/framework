@@ -1,7 +1,7 @@
 ---
-id: functional-architecture
-title: eSSIF-Lab Functional Architecture
-sidebar_label: Functional Architecture
+id: business-architecture
+title: eSSIF-Lab Business Architecture
+sidebar_label: Business Architecture
 scopeid: essifLab
 ---
 
@@ -11,16 +11,55 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 Realizing the [eSSIF-Lab vision](vision-and-purpose) is a very challenging endeavour, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. There is 'ecosystem' complexity, i.e. different groups of organizations and/or people need artifacts that work for them as a group, both 'horizontally' and 'vertically', but no further than the context of that group.
 
-The essif-Lab Functional Architecture aims to establish a %%terminology|terminology%%, %%mental models|mental-model%% and (generic) functionality that are intended to serve as a common basis that %%parties|party%% from different backgrounds can use e.g. for:
-- thinking and arguing about SSI-related topics and how that contributes to realizing the [eSSIF-Lab vision](vision-and-purpose);
-- creating technological components that provide functionalities that fit into the architecture and hence have a great chance to be, or quickly become, interoperable with tech components that other %%parties|party%% have developed;
-- discussing and resolving issues related to interfaces and protocols for tech components that provide such functionalities;
-- designing and developing technical applications that support individual businesses or business ecosystems, not only as they conduct %%business transactions|transaction%%, but also in order to govern the %%policies|policy%% they need to make the technology work as they intend.
+The essif-Lab Business Architecture aims to establish a %%terminology|terminology%%, %%mental models|mental-model%% and (generic) functionalities that are intended to serve as a common basis that %%parties|party%% from different backgrounds can use e.g. for:
+- thinking and reasoning about SSI-related topics and how that contributes to realizing the [eSSIF-Lab vision](vision-and-purpose);
+- creating business artifacts that help organizations to adopt SSI and transform their policies, information management, administrative processes and supporting business applications (systems) so that they can reap the benefits.
+- creating technology that provide the necessary IT functionalities that allow the supporting business applications to efficiently and effectively communicate with corresponding applications of other parties;
+- discussing and resolving issues related to the design and specifications of interfaces, protocols and policies, not only at the technological level, but also at the business process and compliance/policy levels;
+- designing and developing technical applications or platforms that support the management of such design and specification processes, both for individual parties as for business ecosystems.
 
 To this end, this document provides an overview of 
+- the world model that is being used to think/reason about the purposes of eSSIF-Lab, how to realize them, and how to communicate about all that;
 - the functions (capabilities) that individual %%parties|party%% need in order to electronically support %%business transactions|transaction%%;
 - the interactions between these functions that make such %%business transactions|transaction%% happen;
 - the various %%policies|policy%% that %%parties|party%% have to govern, and put in place in order for the technical components that provide these capabilities to function in accordance with their (subjective) rules, working-instructions and other guidance.
+
+## 2. World model (Scope, Context, Transactions)
+
+Like everyone else, eSSIF-Lab too has its own way of thinking and reasoning about the world. In this chapter, we highlight the most important concepts that you as a reader need to be aware of in order to understand what this business architecture is about, and what it allows you to do with it. Terms of which the meaning is particularly imporant to our world view are highlighted, and hovering over them shows you the definition that we use. If you want to dive deeper into their meanings, just click them.
+
+eSSIF-Lab sees the world (universe) as being filled with %%entities|entity%%, i.e. things (people and animals included) that exist. Our world view is shaped by the distinctions that eSSIF-Lab makes as it classifies such entities into well-defined categories, each of which having specific characteristics. 
+
+One such category are %%parties|party%%, i.e. %%entities|entity%% that have and maintain a sovereign/autonomous %%knowledge|knowledge%%, and use this to pursue their %%objectives|objective%%. Human beings or %%organizations|organization%% do this, and hence are parties. Another such category are %%actors|actor%%, i.e. %%entities|entity%% that are capable of acting, i.e. doing something. Think of human beings, or machines (including computers). Note that not all %%parties|party%% are %%actors|actor%% (e.g. %%organizations|organization%%), and not all %%actors|actor%% are %%parties|party%% (e.g. robots). Please read more about %%Parties, Actors and Actions|pattern-party-actor-action%% so that you really understand the distinctions and similarties between these terms, and how they relate to one another, because this is an important foundation of our architecture.
+
+Another important concept we use is that of a %%jurisdiction|jurisdiction%%, which we take to be %%parties|party%% that have and maintain rules, apply these rules to %%entities|legal-entity%% that they know to exist, enforce these rules in their %%scope of control|scope-of-control%%, and have a means to settle disputes. A %%legal jurisdiction|legal-jurisdiction%% is a jurisdiction operated by a nation state or other well-known governmental body. Other jurisdictions are abundant, e.g. organizations, families, and even individuals. Please read more about %%jurisdictions|pattern-jurisdiction%% so that you really understand what the concept is about, because this, too, is an important foundation of our architecture.
+
+### 2.1 eSSIF-Lab Scope
+
+In order to enable %%interactions|transaction%% between different %%parties|party%%, as described in the [eSSIF-Lab vision](vision-and-purpose), eSSIF-Lab focuses on the exchange and administration of relevant %data%, with a particular focus on the %%qualifications|qualified-data%% and other assurances that are provided and/or needed. This makes its results particularly relevant for administrative organizations such as governmental bodies, financial institutions and the like. However, *every* party will have use-cases in which it needs to (digitally) interact with other parties, so for them, the eSSIF-Lab work is relevant as well.
+
+A party usually cannot realize its objectives on its own. To do this, the party needs to get itself organized, e.g. by defining the kinds of %%actions|action%% that might help to further the objectives, purchasing/hiring %%actors|actor%% to do the work, managing the %%policies|policy%% that specify how such actors should operate (making the policies appropriately accessible and interpretable). We use the term %%governance|governance%% to refer to the activities/process that gets a party organized. The governance activities that are in scope of eSSIF-Lab relate to specifying the work, and maintaining the associated artifacts, that is related to the needs of parties as they (digitally) interact with one another.
+
+### 2.3 Business Transactions
+
+In the eSSIF-Lab world view, %%actors|actor%% interact with each other (as %%agents|agent%% for their %%principals|principal%%) to negotiate and execute %%transactions|transaction%%. An agent uses the %%knowledge|knowledge%% of its principal as its main guidance for such negotiations and execution. An agent may also use knowledge of other %%parties|party%% to fill in any gaps, or to provide additional details, as necessary.
+
+The participants of a transaction are %%parties|party%%, that employ %%actors|actor%% that do the associated work on their behalf. A party may employ different actors for executing different actions within a single transaction, each of which will use the knowledge of this party (its principal) to guide the execution of these actions, so that the entire transaction is performed according to how the party wants it to be done.
+
+The [*DEMO*](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations) transactions pattern (which is what we use) divides transactions in three phases:
+- a negotiation phase, in which one or more agents of each %%participant|participant%% exchange data for the purpose of establishing a %%contract|transaction-agreement%% that specifies what the %%transaction|transaction%% entails. This phase results either in a commitment decision of all participants, or the termination of the transaction because one of them quits.
+- an execution phase, in which (perhaps other) agents of the same principals work (execute actions) to fulfill the obligations of the agreement. This phase results in them stating that they have completed that work (or that they gave up).
+- the acceptance phase, in which one or more agents of each participant exchange data that leads to a decision to accept the results, or to escalate (e.g. start a law suit against the other participant)
+
+### 2.4 Issuers, Verifiers, Validators and Holders
+
+In the various phases of a %%transaction|transaction%%, each of its %%participants|participant%% may need (one or more of its agents) to do the following:
+- request the data that it needs for making the commitment or acceptance decision 
+- 
+
+
+
+
 
 ## 2. Functional Architecture Overview
 

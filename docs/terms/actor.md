@@ -8,7 +8,6 @@ stage: draft
 hoverText: "Actor: Entity that can act (do things), e.g. people, machines, but not Organizations."
 glossaryText: "Entity that can act (do things), e.g. people, machines, but not %%organizations^organization%%."
 ---
-
 ### Short Description
 An **Actor** is someone or something that can actually do things, such as people or machines. Actors will generally do things, i.e. execute %%actions|action%% in different ways, depending on the context, or the %%party|party%% for whom they do this.
 

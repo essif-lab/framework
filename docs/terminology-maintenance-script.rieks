@@ -1,17 +1,19 @@
 // Purpose: replace %-marked words (including some varieties such as plurals) with %%-syntax for those words.
 
-// This is a script that can be run by the Batch Replacer extension of VSCode .
+// This is a script that can be run by the Batch Replacer extension of VSCode.
+// You DO need to install the 'case conversion hack' files,
+// which you can find at https://github.com/angelo-mollame/batch-replacer/issues/11.
 // Press Ctrl-Shift-P as you are editing this script, then search for `Batch Replacer`, and execute it.
+// Please note that if there are many files, execution may take some time...
 
 // Executing the script will do the following replacements consecutively:
-// 1. `%text with possibly spaces%` --> `%%text with possibly spaces%%`
-// 2. `%text-without-spaces` --> `%%text-without-spaces%%` (some punctuation around it is allowed)
-// 3. `%%Show Text%%` --> `%%Show Text|Show-Text%%` (sorry, we cannot make the reftext lowercase)
-// Now, you have to manually execute /(?<=\|)([A-Z][^%]*)(?=%%)/\L$1/g/
+// 1. `%text that may include spaces%` --> `%%text that may include spaces%%`
+// 2. `%text-without-spaces` --> `%%text-without-spaces%%` (some (limited) punctuation around it is allowed)
+// 3. `%%Show Text%%` --> `%%Show Text|show-text%%` (we use the 'case-conversion hack' to make the reftext lowercase)
 // 4. `|ref-text%% is being checked to see if modifications need to be made (e.g. plurals to singular etc.)
-// 5. There is a cleanup phase that removes any %%...|...%% syntax from the docusaurus header, markdown headers, and <img /> constructs.
-replace-regex "^<<<<<<<.*\n((?:.*\n)*)=======\n((?:.*\n)*)>>>>>>>.*\n"
-with "$1"
+// 5. There is a cleanup phase that removes any %%...|...%% syntax from markdown headers, and <img /> constructs.
+//    I have not found regexes that work in this script to clean up yaml front matter (docusaurs headers)
+
 // Complex regular expressions can be created using variables. Variables are applied to the entire script, and should be defined at the beginning of the script. Variables are defined as ... = "..." and are used as %{...}. Variables can only be used in the replace and replace-regex instructions.
 // variables can reference themselves and be overwritten - see documentation of 'batch replacer' extension
 
@@ -31,16 +33,18 @@ dutyrighttype = "%{dutyright}-types?"
 // `filter "**/document.txt"`        - document.txt files anywhere
 // `filter "*.txt"`                  - any .txt file in the root folder
 // `filter "**/*.txt"`               - any .txt file
+// `filter "**/*.adl, **/*.ifc"`     - any .adl and any .ifc file
 
-filter "docs/terms/*.md"
+filter "docs/**/*.md"
 
 // PREPROCESSING: convert single-%-notations into %%-notations.
 
-// Convert quotes so that only two types remain: ' an "For starte
+// Convert quotes so that only two types remain: ' and "
 replace-regex "[‘’]"
 with "'"
 
 // We might want to 'undo' %%...|...%% markers in case some 'show text' needs to be associated wiht another 'reftext'
+// However, that wouldn't work e.g. for %%jurisdiction|party%% kind of constructs, so we don't do it
 // replace-regex "(?<=\W)%%([^\|\n\r]+)\|[^%\n\r]+%%(?=\W)"
 // with "%$1%"
 
@@ -58,7 +62,7 @@ replace-regex "(?<=(?:\s\(?'?|/)%)((\w+((/|-|’|')\w)?)+)(?='?\)?[:;,.!?]*(\[[^
 with "%$1%%"
 
 // Then, we can expand %%show text%% into %%show text|show text%%
-replace-regex "(?<=\W)%%([^\|]*?)%%(?=\W)"
+replace-regex "(?<=\W)%%([^\|\^]*?)%%(?=\W)"
 with "%%$1|$1%%"
 
 // Next, we convert the latter part into lowercase
@@ -84,11 +88,12 @@ replace-regex "%{mid}(action|actor|agent|assertion|author)%{ss}%{end}"
 with "$1"
 
 // [B]
--- for 'business-transaction' see 'transaction'
+// for 'business-transaction' see 'transaction'
 
 // [C]
 // for 'claim', see 'statement'
 replace-regex "%{mid}(colleague|concept|credential(-type)?|commitment-decision)%{ss}?%{end}"
+with "$1"
 replace-regex "%{mid}(colleague)(?:-agent)?%{ss}?%{end}"
 with "$1"
 
@@ -177,18 +182,24 @@ with "vocabulary"
 
 // CLEANING UP UNINTENDED CHANGES
 
-// Remove all `%%showtext|reftext%%` in docusaurus header.
-// This has been commented out because for one reason or another, it doesn't work and sometimes makes the script not terminate.
-// replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
-// with "$1$2"
-// replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
-// with "$1$2"
-// replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
-// with "$1$2"
-// replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
-// with "$1$2"
-// replace-regex "^(---\s*\nid:(?:[^%]*\n|(?:glossaryText):.*\n){1,10}[^%]*)%%([^\|]*)\|(?:[^%]*)%%(?=(?:.*[\n\r]){1,10}---)"
-// with "$1$2"
+// Replace %%Show text|ref-text%% with %%Show text^ref-text%% in glossaryText
+// However, that doesn't seem to work in this script (it does in VSCode search/replace)
+// replace-regex "^(glossaryText: "[^\|"]*?%%[^\|]+)\|(\w+%%[^"]*?"$\n)"
+// with "$1^$2"
+// replace-regex "^(glossaryText: "[^\|"]*?%%[^\|]+)\|(\w+%%[^"]*?"$\n)"
+// with "$1^$2"
+// replace-regex "^(glossaryText: "[^\|"]*?%%[^\|]+)\|(\w+%%[^"]*?"$\n)"
+// with "$1^$2"
+// replace-regex "^(glossaryText: "[^\|"]*?%%[^\|]+)\|(\w+%%[^"]*?"$\n)"
+// with "$1^$2"
+// replace-regex "^(glossaryText: "[^\|"]*?%%[^\|]+)\|(\w+%%[^"]*?"$\n)"
+// with "$1^$2"
+// replace-regex "^(glossaryText: "[^\|"]*?%%[^\|]+)\|(\w+%%[^"]*?"$\n)"
+// with "$1^$2"
+// replace-regex "^(glossaryText: "[^\|"]*?%%[^\|]+)\|(\w+%%[^"]*?"$\n)"
+// with "$1^$2"
+// replace-regex "^(glossaryText: "[^\|"]*?%%[^\|]+)\|(\w+%%[^"]*?"$\n)"
+// with "$1^$2"
 
 // Remove all `%%showtext|reftext%%` occurrences in markdown headers
 replace-regex "(^#+\s+.*?)%%([^\|]*)\|([^%]*)%%(.*$)"

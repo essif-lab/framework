@@ -24,6 +24,7 @@ module.exports = {
       items: [
         {to: 'docs/project', label: 'Project', position: 'left'},
         {to: 'docs/vision-and-purpose', label: 'Vision', position: 'left'},
+        {to: 'docs/business-architecture', label: 'Business Architecture', position: 'left'},
         {to: 'docs/functional-architecture', label: 'Functional Architecture', position: 'left'},
         {to: 'docs/governance', label: 'Governance', position: 'left'},
         {to: 'docs/terminology', label: 'Terminology', position: 'left'},
@@ -107,8 +108,8 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-		 editUrl:
-		 'https://gitlab.grnet.gr/essif-lab/framework/-/tree/master/',
+     editUrl:
+     'https://gitlab.grnet.gr/essif-lab/framework/-/tree/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -117,6 +118,13 @@ module.exports = {
     ],
   ],
   plugins: [
-    path.resolve(__dirname, './plugins/terminology-parser')
+    [
+      '@docusaurus-terminology/parser',
+      {
+        termsDir: './docs/terms',
+        glossaryFilepath: './docs/glossary.md',
+        noParseFiles: ['./docs/terminology-plugin-instructions.md']
+      }
+    ]
   ]
 };

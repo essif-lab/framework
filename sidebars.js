@@ -3,8 +3,15 @@ module.exports = {
     'Framework':
     [
         // 'introduction',
+        // 'business-architecture',
         // 'functional-architecture',
-        // 'open_calls',
+        // 'open_calls'
+    ],
+    'Business Architecture':
+    [
+        // 'motive',
+        // 'terminology',
+        // 'overview'
     ],
     'Functional Architecture':
     [
@@ -15,7 +22,7 @@ module.exports = {
         // 'network_architecture',
         // 'high_level_transaction_flows',
         // 'detailed_transaction_flows'
-    ]
+    ],
   },
   sidebar_for_terminology: {
     'Terminology':
@@ -24,6 +31,17 @@ module.exports = {
       { type: 'doc', id: 'essifLab-glossary' },
       { type: 'doc', id: 'essifLab-pattern-list' },
       { type: 'doc', id: 'notations-and-conventions' },
+    ],
+  },
+  sidebar_for_mental_models: {
+    'Mental Models':
+    [
+      { type: 'doc', id: 'terms/pattern-party-actor-action' },
+      { type: 'doc', id: 'terms/pattern-jurisdiction' },
+      { type: 'doc', id: 'terms/pattern-duties-and-rights' },
+      { type: 'doc', id: 'terms/pattern-mandates-delegation-hiring' },
+      { type: 'doc', id: 'terms/pattern-guardianship' },
+      { type: 'doc', id: 'terms/pattern-terminology' },
     ],
   }
 };
