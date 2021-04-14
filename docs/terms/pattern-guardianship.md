@@ -10,14 +10,17 @@ hoverText: "The Guardianships pattern captures the Concepts and relations that e
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
+:::info Editor's Note
+TNO to revise all below texts.
+:::
 ### Purpose
-The **Guardianship pattern** captures the concepts and relations that explain how generic guardianships work, and can be constructed. It shows that %%guardianship arrangements|guardianship%% are embedded in a %%jurisdiction|jurisdiction%% that govern such arrangements.
+The **Guardianship pattern** captures the concepts and relations that explain how generic guardianships work, and can be constructed. It shows that %%guardianship arrangements|guardianship-arrangement%% are embedded in a %%jurisdiction|jurisdiction%% that govern such arrangements.
 
 The contribution of this pattern is to establish a building block and terminology for constructing a consistent, coherent and sufficiently complete mental model that allows %%parties|party%% to convey guardianship-related ideas to other parties, without running the risk of being misunderstood, by expressing any guardianship-related use-case in terms of the model. This will enable us to draft requirements and specifications for infrastructural IT, and make a start with specifying standardizable data structures (schemas) for use in combination with VCs.
 
 ### Introduction
 The term 'guardianship' has many definitions/descriptions, such as:
-- “The position of protecting or defending something” or “The position of being legally responsible for the care of someone who is unable to manage their own affairs.” (both from the [Oxford dictionary](https://www.lexico.com/en/definition/guardianship)), 
+- “The position of protecting or defending something” or “The position of being legally responsible for the care of someone who is unable to manage their own affairs.” (both from the [Oxford dictionary](https://www.lexico.com/en/definition/guardianship)),
 - “One who has the care of the person or property of another” or “One that guards” (both from [Merriam-Webster](https://www.merriam-webster.com/dictionary/guardianship)),
 - “The state or duty of being a guardian”, where 'guardian' is defined as “A person who has the legal right and responsibility of taking care of someone who cannot take care of himself or herself” or “Someone who protects something” ([Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/)), or
 - “The status of being a protector, advocate, or proxy for a person” ([Sovrin Guardianship Task Force whitepaper](https://sovrin.org/wp-content/uploads/Guardianship-Whitepaper.pdf)), which defines 'guardian' as “An organization or person protecting another person and possibly their property”.
@@ -25,12 +28,12 @@ The term 'guardianship' has many definitions/descriptions, such as:
 
 So, it seems that most people will acknowledge that 'guardianship' is an arrangement between
 
-- someone (or an organization, collectively referred to as a '%%party|party%%') or something that is 'under %%guardianship|guardianship%%', i.e. being cared for, guarded, protected or defended - we call this the '%%dependent|dependent%%', and
+- someone (or an organization, collectively referred to as a '%%party|party%%') or something that is 'under %%guardianship|guardianship-arrangement%%', i.e. being cared for, guarded, protected or defended - we call this the '%%dependent|dependent%%', and
 - one or more %%parties|party%% that do this caring, guarding, protecting or defending - we call them '%%guardians|guardian%%'.
 
-Note that '%%dependent|dependent%%' and '%%guardian|guardian%%' are roles in a specific %%guardianship arrangement|guardianship%%. They do not have an independent existence (as e.g. a human being does). A 'dependent' or 'guardian' only exists for as long as the arrangement exists and the arrangement has assigned such roles.
+Note that '%%dependent|dependent%%' and '%%guardian|guardian%%' are roles in a specific %%guardianship arrangement|guardianship-arrangement%%. They do not have an independent existence (as e.g. a human being does). A 'dependent' or 'guardian' only exists for as long as the arrangement exists and the arrangement has assigned such roles.
 
-The actual activities that a %%guardian|guardian%% performs as (s)he cares for, guards, or … its %%dependent|dependent%% (in a specific %%guardianship arrangement|guardianship%%) differ from case to case, and from situation to situation. Still, in general we can say that a guardianship arrangement comes with %%rights and duties|pattern-duties-and-rights%% that enable (or force) a guardian to execute (or refrain from executing) specific actions - for the purpose of caring/guarding/… its dependent.
+The actual activities that a %%guardian|guardian%% performs as (s)he cares for, guards, or … its %%dependent|dependent%% (in a specific %%guardianship arrangement|guardianship-arrangement%%) differ from case to case, and from situation to situation. Still, in general we can say that a guardianship arrangement comes with %%rights and duties|pattern-duties-and-rights%% that enable (or force) a guardian to execute (or refrain from executing) specific actions - for the purpose of caring/guarding/… its dependent.
 
 A guardianship arrangement may also impose rights and duties to the dependent. For example, a guardianship arrangement that exists for the purpose of taking care of the financial situation of the dependent may impose a duty on the dependent to not engage in acts that may have significant financial consequences, such as committing itself to a loan.
 
@@ -56,11 +59,13 @@ In the figure, concepts are placed in one of three areas that are elaborated in 
 
 Different objectives lead to different kinds of guardianships. For example, the objective that children should be taken care of, get a good education etc. may lead to a guardianship type called 'Parenthood'. Others may lead to guardianship types such as 'Curatorship', 'Financial Administration', 'Legal Custody', etc.
 
-Note that dependents need not always be people. Enterprises can have curators that care for an enterprise that has trouble to continue its existence. A historical heritage site might also become a dependent in a specific kind of guardianship type.
+Note that dependents need not always be
+- people that are somehow very needy. The manager of a department in a company may be tasked to care for the wellbeing of the workers in his department, which doesn't require such workers to be incapable of doing that for themselves.
+- people. Enterprises can have curators that care for an enterprise that has trouble to continue its existence. A historical heritage site might also become a dependent in a specific kind of guardianship type. Even some kinds of %%ownership|ownership%% may qualify as a guardianship, which is the case when the rights and duties that the %%owner|owner%% has to enjoy, dispose of, and control the (%%owned|owned%%) entity also serve to care for, or defend that entity.
 
 Guardianship %%governance|governance%% is the acts/processes of governing/overseeing the control and direction of whatever relates to guardianships. It oversees and directs the establishment of %%guardianship types|guardianship-type%%, defining the various stakeholder roles and associating their rights and duties towards one another.
 
-The %%legal system|legal-system%% of the %%jurisdiction|jurisdiction%% that governs a guardianship type would contain (and enforce) the (process) rules for defining and modifying guardianship types. 
+The %%legal system|legal-system%% of the %%jurisdiction|jurisdiction%% that governs a guardianship type would contain (and enforce) the (process) rules for defining and modifying guardianship types.
 
 Similarly, that legal system would also specify the rules for creating, changing/updating, and destroying %%guardianship arrangements|guardianship-arrangement%% that instantiate such a guardianship type.
 
@@ -98,55 +103,12 @@ Next, every duty/right type can now be converted into a duty/right instance, by 
 2. "Dick may not enter into financial obligations";
 3. "Alice has a right to look into, and transfer money out of any bank account of Dick";
 4. "Joe must establish the a compenstation arrangement for Alice";
-5. "Every year, Alice must submit a written report to Joe in which (s)he accounts for all actions taken under the guardianship 1.rrangement;
+5. "Every year, Alice must submit a written report to Joe in which (s)he accounts for all actions taken under the guardianship arrangement;
 6. "Joe must review the rights and duties of an arrangement each year and update them if such is needed to better realize the objectives for which the arrangement exists".
 
 In the session where the guardianship arrangement is established, these rights and duties may be reviewed and amended as appropriate. In our example, after having established the role assignments (and implicitly the initially associated duties and rights), Joe may decide
- - to modify rule 3 to read: "Alice has a right to look into, and transfer money out of any bank account of Dick, except for Dick's savings account"
- - to add a rule that says: "Alice may only transfer funds out of Dick's savings account if that transfer has been explicity approved by Dick.
- This allows guardianship arrangements to be created and maintained in a way that is appropriate to the situation of all stakeholders.
+- to modify rule 3 to read: "Alice has a right to look into, and transfer money out of any bank account of Dick, except for Dick's savings account"
+- to add a rule that says: "Alice may only transfer funds out of Dick's savings account if that transfer has been explicity approved by Dick.
+This allows guardianship arrangements to be created and maintained in a way that is appropriate to the situation of all stakeholders.
 
 Note that in general, rights and duties may refer to entities other than the %%guardian|guardian%% or %%dependent|dependent%%, e.g. a third party against whom a right or duty may or must be exercised. Still, such rights and duties can only be formulated for entities that are recognized to exist, i.e. are legal entities for, the governing jurisdiction.
-
-
-
-
-The %%legal system|legal-system%% of a %%jurisdiction|jurisdiction%% may define (named) %%types of guardianship arrangements|guardianship-type%%, e.g. 'Parenthood' or 'Curatorship', before any actual such arrangement exists. %%Legal jurisdictions|legal-jurisdiction%% do that in their laws, while other jurisdictions may have other, perhaps more informal ways of defining them. A %%guardianship type|guardianship-type%% will specify a set of generic rights and duties (which we call Duty/Right Types) for the %%entities|entity%% that will be assigned the roles of %%guardian|guardian%%, %%dependent|dependent%%, and perhaps others.
-
-It is typical of a Duty/Right Type to NOT refer to individual %%entities|entity%%, but rather use placeholders that are to be filled in when a Duty/Right is created that is an instance of the Duty/Right Type.
-
-So typically, a %%jurisdiction|jurisdiction%% will define the set of %%guardianship types|guardianship-type%% that its %%legal system|legal-system%% supports. For each of them, the jurisdiction:
-
-- specifies the rules/laws that govern the creation and management of their instances,
-- ptionally specifying processes (and possibly providing some or all means) to monitor/police compliance, and
-- providing a mechanism for resolving disputes related to them.
-
-Typically, the task of creating a %%guardianship arrangement|guardianship%% (guardianship arrangement) consists of:
-
-- associating the guardianship arrangement with %%legal entities|legal-entity%% for the positions of '%%guardian|guardian%%' and '%%dependent|dependent%%';
-- associating the guardianship arrangement with an initial/default set of Hohfeldian Duties/Rights, the types of which are specified by the %%Guardianship|guardianship%% Type that the guardianship arrangement instantiates.
-- assigning values for the placeholders that occur in the specifications of such Duties/Rights
-
-The Task of managing a guardianship arrangement consists of adding, (un)suspending, revoking/removing instances of Duty/Right types that are meaningful in the %%Jurisdiction|jurisdiction%% as appropriate, and assigning values for any placeholders therein. Also, (un)suspending and/or revoking/invalidating the guardianship arrangement itself is part of that Task.
-
-Note that an artefact that contains the specification of a guardianship arrangement may need to take various forms. For every kind of Actor that is envisaged to read and process such a specification, it must be represented in a language (syntax and semantics) that such an Actor knows how to read and process. This could mean that the artefact is only, or both human readable (in one or more languages) or machine readable (in one or more schemas).
-
-### Notes
-
-Having defined a mental model for %%guardianship|guardianship%%, and having applied it to the Mya use-case, we can make some generic observations.
-
-1. %%guardianships|guardianship%% are typed in the same way that roles can be typed. The rights and duties that are associated with Roles that are assigned to e.g. a %%party|party%% (e.g. a department) will be quite different from those that are associated with Roles that are assigned to employees, or customers. We see this also happening with %%guardianships|guardianship%%: the rights and duties that are associated with a %%guardianship arrangement|guardianship%% where the %%guardian|guardian%% is the %%party|party%% that operates the %%legal system|legal-system%% of a %%Jurisdiction|jurisdiction%% and the %%dependent|dependent%% is a refugee is quite different from a %%guardianship arrangement|guardianship%% where the %%guardian|guardian%% and %%dependent|dependent%% are both refugees. One such difference is that in the first case, certain rights and duties can be delegated whereas in the latter case that is prohibited.
-2. the meaning of %%guardianship arrangements|guardianship%% is defined by a %%Jurisdiction|jurisdiction%% in the same way as the meaning of roles are defined by a %%Jurisdiction|jurisdiction%%. This meaning is given by the set of rights and duties that are assigned to the role/%%guardianship|guardianship%%, which in turn depend on the %%objectives|objective%% that the %%Jurisdiction|jurisdiction%% aims to contribute to by assigning them, and the Transaction Types and Transaction Type Roles it specifies in relation to this.
-3. perhaps %%guardianship|guardianship%% is not all that special: at a functional level, they work quite the same as roles do, the difference only lying in the fact that roles are an assignment of rights, duties etc. to a (semantically properly defined) single %%legal entity|legal-entity%% (e.g. a Refugee, an Employee, etc.), whereas a %%guardianship|guardianship%% is an assignment of rights, duties etc. to a (semantically properly defined) ordered pair of %%Legal Entities|legal-entity%% (the first of which is called '%%guardian|guardian%%' and the other is called '%%dependent|dependent%%').
-4. in a way, %%ownership|ownership%% may be considered a specialization of %%guardianship|guardianship%%. This is supported by the various definitions we find in different dictionaries - which all have a striking resemblance with definitions of '%%guardianship|guardianship%%'. Also, it is supported by the fact that:
-
-- a %%party|party%% that owns something (an %%entity|entity%%) is entitled to do transactions (with that %%entity|entity%%) that other Parties are not entitled to, e.g. selling it.
-- a %%party|party%% that owns an %%entity|entity%% typically protects or defends such %%entities|entity%% (their property); the %%party|party%% may also take care of it.
-- like %%guardianships|guardianship%%, duties, rights, privileges etc. are being assigned to %%ownership|ownership%% by a %%Jurisdiction|jurisdiction%%.
-- in the same way that a %%Jurisdiction|jurisdiction%% may have different kinds of %%guardianship|guardianship%%, they may have different kinds of %%ownership|ownership%% - a property that is well-known e.g. for corporations - and each kind of %%ownership|ownership%% may serve its own purposes.
-
-One might argue that because of these similarities, '%%ownership|ownership%%' and '%%guardianship|guardianship%%' are the same. However, there is a difference, which is can be found in the kind of %%objectives|objective%% that (the %%party|party%% that governs) the %%jurisdiction|jurisdiction%%) pursues:
-- %%ownership|ownership%% is about recognizing one's right to enjoy and (given some limitations) absolutely control something;
-- %%guardianship|guardianship%% is more about a duty to care, defend and protect someone or something.
-
-Since the %%Jurisdiction|jurisdiction%% model claims that %%Jurisdictions|jurisdiction%% own %%Objectives|objective%%, %%Guardianship|guardianship%% Types, and other things, this means that there is recursion, implying that %%Jurisdictions|jurisdiction%% are guardians of these things they own. Indeed, %%Jurisdictions|jurisdiction%% do have (implicit or explicit) rules that govern their %%Objectives|objective%%, %%Guardianship|guardianship%% Types, and whatever else they may have (by the very definition of %%Jurisdiction|jurisdiction%%).

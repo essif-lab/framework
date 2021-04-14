@@ -5,8 +5,8 @@ scopeid: essifLab
 type: concept
 typeid: guardian
 stage: draft
-hoverText: "Guardian (of an Entity in a Jurisdiction): the Party that is tasked to care for and/or protect/guard/defend that Entity, for the purpose of which a Guardianship Relationship has been established within that Jurisdiction."
-glossaryText: "the %%party^party%% that is tasked to care for and/or protect/guard/defend that %%entity^entity%%, for the purpose of which a %%guardianship relationship^guardianship%% has been established within that %%jurisdiction^jurisdiction%%."
+hoverText: "Guardian: a Party that has been assigned rights and duties in a Guardianship Arrangement for the purpose of caring for and/or protecting/guarding/defending the Entity that is the Dependent in that Guardianship Arrangement."
+glossaryText: "a %%party^party%% that has been assigned rights and duties in a %%Guardianship Arrangement^guardianship-arrangement%% for the purpose of caring for and/or protecting/guarding/defending the %%entity^entity%% that is the %%dependent^dependent%% in that Guardianship Arrangement."
 ---
 
 :::info Editor's Note

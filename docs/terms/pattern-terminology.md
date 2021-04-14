@@ -9,5 +9,5 @@ hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Te
 ---
 
 :::info Editor's note
-TNO (or others) to provide the content of this file.
+This is work in progress
 :::

@@ -5,7 +5,7 @@ scopeid: essifLabTerminology
 type: pattern
 typeid: mental-model
 stage: draft
-hoverText: "The Mental Mmodels pattern captures the foundational Concepts and relations that we need for creating, maintaining and using  (decentralized) Vocabularies (Terminologies) that groups of people can use for the specific purposes they pursue."
+hoverText: "The Mental Models pattern captures the foundational Concepts and relations that we need for creating, maintaining and using  (decentralized) Vocabularies (Terminologies) that groups of people can use for the specific purposes they pursue."
 ---
 
 ### Purpose

@@ -29,19 +29,31 @@ module.exports = {
     [
       { type: 'doc', id: 'terminology' },
       { type: 'doc', id: 'essifLab-glossary' },
-      { type: 'doc', id: 'essifLab-pattern-list' },
+      { type: 'category',
+        label: 'Mental Models',
+        items:
+        [
+          { type: 'doc', id: 'essifLab-pattern-list' },
+          { type: 'category',
+            label: 'Proposed models',
+            items:
+            [ { type: 'doc', id: 'terms/pattern-party-actor-action' },
+              { type: 'doc', id: 'terms/pattern-jurisdiction' },
+              { type: 'doc', id: 'terms/pattern-guardianship' },
+            ]
+          },
+          { type: 'category',
+            label: 'Envisaged models',
+            items:
+            [ { type: 'doc', id: 'terms/pattern-terminology' },
+              { type: 'doc', id: 'terms/pattern-duties-and-rights' },
+              { type: 'doc', id: 'terms/pattern-mandates-delegation-hiring' },
+              { type: 'doc', id: 'terms/pattern-decentralized-GRC' },
+            ]
+          },
+        ]
+      },
       { type: 'doc', id: 'notations-and-conventions' },
     ],
   },
-  sidebar_for_mental_models: {
-    'Mental Models':
-    [
-      { type: 'doc', id: 'terms/pattern-party-actor-action' },
-      { type: 'doc', id: 'terms/pattern-jurisdiction' },
-      { type: 'doc', id: 'terms/pattern-duties-and-rights' },
-      { type: 'doc', id: 'terms/pattern-mandates-delegation-hiring' },
-      { type: 'doc', id: 'terms/pattern-guardianship' },
-      { type: 'doc', id: 'terms/pattern-terminology' },
-    ],
-  }
 };

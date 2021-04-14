@@ -9,6 +9,5 @@ hoverText: "The Mandates, Delegation and Hiring pattern (which remains to be doc
 ---
 
 :::info Editor's note
-TNO (or others) to provide the content of this file.
+This is work that is being envisaged
 :::
-

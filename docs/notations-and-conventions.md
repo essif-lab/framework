@@ -12,14 +12,14 @@ We shall use keywords such as “shall”, “should”, “may” etc. as defin
 A word in mid-sentence that is capitalized is a %%term|term%% that has a %%definition|definition%% in the %%Corpus of Terminology|corpus%%. This allows readers to distinguish between the more colloquial meanings of words (by not capitalizing them) and those that are actually defined. We appreciate any feedback regarding our (im)proper use of this kind of capitalization of words.
 
 :::note
-We are working towards deprecating this convention, as we now have better ways of referring to words that are defined in the eSSIF-Lab Corpus..
+We are working towards deprecating this convention, as we now have better ways of referring to words that are defined in the eSSIF-Lab Corpus.
 :::
 
 ### Pattern diagram notations
 
 %%Pattern|pattern%% diagrams will be visualized in this document using a UML-like notation, as follows:
 
-- A **rectangle** represents a (named) concept that is explicitly defined. Concepts serve as entity-classes. Their (operational) extensions, i.e. the respective sets of (runtime) instances, are disjunct. 
+- A **rectangle** represents a (named) concept that is explicitly defined. Concepts serve as entity-classes. Their (operational) extensions, i.e. the respective sets of (runtime) instances, are disjunct.
 - A **rectangle that is coloured red(dish)** represents a (named) concept that is commonly used 'in the wild' (and hence needs not be defined here), relates to one or more concepts that are explicitly defined yet is not the same. We include such 'red concepts' to help readers identify and subsequently bridge gaps between commonly held thoughts and the (sometimes subtly) different meanings we need in our model.
 - A **solid line with a closed arrowhead** represent a (named) relation/association between the two concepts it connects. We may refer to the concept at the arrowhead as the 'target concept' (TGT) for that relation. Similarly, the concept at the other end will be referred to as the 'source concept' (SRC) for that relation. Names are chosen such that `<SRC> <relation name> <TGT>` is a phrase that suggests the intension(al definition) of that relation.
 - A **solid line with an open arrowhead** represents an 'ISA' relation, which can be read as `<SRC> ISA <TGT>`. It means that SRC is a specialization of TGT (which in turn is a generalization of SRC). It means that SRC must satisfy all constraints that TGT must satisfy, and also that it has all attributes (including properties) that TGT has.

@@ -27,4 +27,4 @@ An **ownership** is a relationship between two %%legal entities|legal-entity%% (
 
 ### Notes
 - Owning something does not imply posessing it (and vice versa). For example, if you find a coin that doesn't belong to you, you possess it but do not own it. Also, its rightful owner obviously owns it, but doesn't possess it at that point in time.
-- 
+- Ownership has no meaning outside of a %%jurisdiction|jurisdiction%% that defines *and* enforces the rights and duties of the owner to enjoy, dispose of, and control the owned.
