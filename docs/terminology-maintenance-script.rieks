@@ -212,3 +212,9 @@ replace-regex "(<img(?:(?:.|[\n])(?!/>))*?)%%([^\|]*)\|(?:[^%]*)%%"
 with "$1$2"
 replace-regex "(<img(?:(?:.|[\n])(?!/>))*?)%%([^\|]*)\|(?:[^%]*)%%"
 with "$1$2"
+
+// Remove all `%%showtext|reftext%%` occurrences in http(s)-references
+replace-regex "(\]\(http[^\)]*?)%%([^\^\|]*).*?%%"
+with "$1$2"
+replace-regex "(\]\(http[^\)]*?)%%([^\^\|]*).*?%%"
+with "$1$2"
