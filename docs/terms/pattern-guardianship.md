@@ -52,7 +52,7 @@ In the figure, concepts are placed in one of three areas that are elaborated in 
 
 #### Guardianship Governance
 
-%Parties% that pursue %objectives% related to the caring for, defending of specific %entities%, need to specify the kinds of entities that are to be cared for (which we call a %dependent%), establish the rules that specify what this care consists of and how it comes to pass, ensure that these rules are enforced, and provide a mechanism to resolve any disputes or unforeseen circumstances. In other words: such parties are %jurisdictions% whose %legal system% provides the rules, enforcement, and resolution mechanisms.
+%%Parties|party%% that pursue %%objectives|objective%% related to the caring for, defending of specific %%entities|entity%%, need to specify the kinds of entities that are to be cared for (which we call a %%dependent|dependent%%), establish the rules that specify what this care consists of and how it comes to pass, ensure that these rules are enforced, and provide a mechanism to resolve any disputes or unforeseen circumstances. In other words: such parties are %%jurisdictions|jurisdiction%% whose %%legal system|legal-system%% provides the rules, enforcement, and resolution mechanisms.
 
 Different objectives lead to different kinds of guardianships. For example, the objective that children should be taken care of, get a good education etc. may lead to a guardianship type called 'Parenthood'. Others may lead to guardianship types such as 'Curatorship', 'Financial Administration', 'Legal Custody', etc.
 
@@ -62,7 +62,7 @@ Guardianship %%governance|governance%% is the acts/processes of governing/overse
 
 The %%legal system|legal-system%% of the %%jurisdiction|jurisdiction%% that governs a guardianship type would contain (and enforce) the (process) rules for defining and modifying guardianship types. 
 
-Similarly, that legal system would also specify the rules for creating, changing/updating, and destroying %%guardianship arrangements|guardianship arrangement%% that instantiate such a guardianship type.
+Similarly, that legal system would also specify the rules for creating, changing/updating, and destroying %%guardianship arrangements|guardianship-arrangement%% that instantiate such a guardianship type.
 
 It seems obvious that the way in which the legal system enforces these rules, and settles any disputes, is a large part of the impact that guardianship arrangements will, or fail to have.
 
@@ -91,7 +91,7 @@ The example shows that
 
 The run-time aspect of guardianships is all about about the establishing, using and management of actual %%guardianships arrangements|guardianship-arrangement%%. This includes the assignment of %%legal entities|legal-entity%% to the various stakeholder roles, and the management of such assignments. It also includes the management of the actual rights and duties or such legal entities.
 
-Typically, the %%jurisdiction|jurisdiction%% that enforces (and governs) a %%guardianship type|guardianship type%% has rules that specify the conditions that allow a guardianship arrangement of that type to be created, including the %%parties|party%% that must do this. When a guardianship arrangement is established, it starts as a copy of the guardianship type that it instantiates. Then, the dependent-role is assigned to the legal entity that will be fulfilling that role, and so are most, if not all guardianship-roles. Note that the the rules that govern the guardianship arrangements may specify that a specific guardian-role is reserved for the party that manages the guardianship arrangement itself.
+Typically, the %%jurisdiction|jurisdiction%% that enforces (and governs) a %%guardianship type|guardianship-type%% has rules that specify the conditions that allow a guardianship arrangement of that type to be created, including the %%parties|party%% that must do this. When a guardianship arrangement is established, it starts as a copy of the guardianship type that it instantiates. Then, the dependent-role is assigned to the legal entity that will be fulfilling that role, and so are most, if not all guardianship-roles. Note that the the rules that govern the guardianship arrangements may specify that a specific guardian-role is reserved for the party that manages the guardianship arrangement itself.
 
 Next, every duty/right type can now be converted into a duty/right instance, by replacing the role names by the names of the legal entities that fulfill the role. For example, assume that a guardianship arrangement is established in which Dick is assigned the role of 'person placed under administration', Alice the 'financial administrator' and Joe is the 'judge', whose role is to manage and supervise the guardianship arrangement. Then, the rights and duties would become:
 1. "Alice must ensure that Dick has sufficient funds to pay for housing and food";
@@ -106,7 +106,7 @@ In the session where the guardianship arrangement is established, these rights a
  - to add a rule that says: "Alice may only transfer funds out of Dick's savings account if that transfer has been explicity approved by Dick.
  This allows guardianship arrangements to be created and maintained in a way that is appropriate to the situation of all stakeholders.
 
-Note that in general, rights and duties may refer to entities other than the %guardian% or %dependent%, e.g. a third party against whom a right or duty may or must be exercised. Still, such rights and duties can only be formulated for entities that are recognized to exist, i.e. are legal entities for, the governing jurisdiction.
+Note that in general, rights and duties may refer to entities other than the %%guardian|guardian%% or %%dependent|dependent%%, e.g. a third party against whom a right or duty may or must be exercised. Still, such rights and duties can only be formulated for entities that are recognized to exist, i.e. are legal entities for, the governing jurisdiction.
 
 
 

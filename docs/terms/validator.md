@@ -10,7 +10,7 @@ glossaryText: "the capability to determine whether or not %%(verified) data^veri
 ---
 
 ### Short Description
-A **validator** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that supports the %%Transaction Data Collector|transaction-data-collector%% as it tries to determine whether or not data obtained by the %verifier% comes with the assurances that are needed to be used for specific purpose(s).
+A **validator** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that supports the %%Transaction Data Collector|transaction-data-collector%% as it tries to determine whether or not data obtained by the %%verifier|verifier%% comes with the assurances that are needed to be used for specific purpose(s).
 
 :::info Editor's note
 TNO (or others) to provide additional content of this file.
