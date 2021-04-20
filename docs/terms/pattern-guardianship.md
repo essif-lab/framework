@@ -10,9 +10,6 @@ hoverText: "The Guardianships pattern captures the Concepts and relations that e
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-:::info Editor's Note
-TNO to revise all below texts.
-:::
 ### Purpose
 The **Guardianship pattern** captures the concepts and relations that explain how generic guardianships work, and can be constructed. It shows that %%guardianship arrangements|guardianship-arrangement%% are embedded in a %%jurisdiction|jurisdiction%% that govern such arrangements.
 
