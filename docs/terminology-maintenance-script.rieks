@@ -1,4 +1,6 @@
-// Purpose: replace %-marked words (including some varieties such as plurals) with %%-syntax for those words.
+// Purposes:
+// - replace %-marked words with %%-syntax for those words.
+// - replace varieties of specific eSSIF-Lab phrases (e.g. plurals, word combinations) with the appropriate `reftext` references
 
 // This is a script that can be run by the Batch Replacer extension of VSCode.
 // You DO need to install the 'case conversion hack' files,
@@ -49,17 +51,20 @@ with "'"
 // with "%$1%"
 
 // First, convert %show text% into %%show text%%
+// Use test sets: use the replace-regex to find texts in this file. Matches should match, non-matches should not.
 // Test set: none may match: %verif%er, %verif"ier%, "%verifier%", `%verifier%`
-// Test set: all must match:  %my verifier%, ('%verifiers%'), %verifier's%, %verifier’s%, (%(ver)/ifier%):., %(our) (vfyr)%, %verifier's%. %verifier’s%... single-%party%), '**subject (of a %party%)**' to
+// Test set: all must match:  %my verifier%, ('%verifiers%'), %verifier's%, %verifier’s%, (%(ver)/ifier%):., %vfd|verifier data%
+// Test set: all must also match:  %(our) (vfyr)%, %verifier's%. %verifier’s%... single-%party%), '**subject (of a %party%)**'
 // replace-regex "(?<=\s\(?%)(\w|\s|\(|\)|[/-’'"])+(?=%([)":,.!?]*\s|-\w))"
-replace-regex "(?<=[-\s]\(?'?%)([^%]+)(?=%(([*_):;,.'!?]|\[[^\]]*\]){0,5}\s|-\w))"
+replace-regex "(?<=[-\s]\(?'?%)([^%"]+)(?=%(([*_):;,.'!?]|\[[^\]]*\]){0,5}\s|-\w))"
 with "%$1%"
 
+// We do not use this replacement any more because authors make too many mistakes when trying to use it.
 // Only thereafter can we convert %showtext (words without trailing `%`-char) into %%showtext%%
 // Test set: none may match: %verif%er, %(our) (verifier)%,
 // Test set: all must match: %verifier %verifiers, '%verifier'), %verifier's, %verifier’s, %verifier:, (%verifiers), %verifier's..... %verifier’s,?.!?  its %principal.[^DC.4] Also a %party)'
-replace-regex "(?<=(?:\s\(?'?|/)%)((\w+((/|-|’|')\w)?)+)(?='?\)?[:;,.!?]*(\[[^\]]*\])?\s)"
-with "%$1%%"
+// replace-regex "(?<=(?:\s\(?'?|/)%)((\w+((/|-|’|')\w)?)+)(?='?\)?[:;,.!?]*(\[[^\]]*\])?\s)"
+// with "%$1%%"
 
 // Then, we can expand %%show text%% into %%show text|show text%%
 replace-regex "(?<=\W)%%([^\|\^]*?)%%(?=\W)"
@@ -84,7 +89,7 @@ with "$1-$2"
 // ACTUAL PROCESSING: now we need to convert well-known `lowercase-show-text`s to appropriate `reftexts`
 
 // [A]
-replace-regex "%{mid}(action|actor|agent|assertion|author)%{ss}%{end}"
+replace-regex "%{mid}(action(-type)?|actor|agent|assertion|author)%{ss}%{end}"
 with "$1"
 
 // [B]
@@ -92,27 +97,28 @@ with "$1"
 
 // [C]
 // for 'claim', see 'statement'
-replace-regex "%{mid}(colleague|concept|credential(-type)?|commitment-decision)%{ss}?%{end}"
+replace-regex "%{mid}(colleague|concept(-file)?|credential(-type)?(-catalogue)?|commitment-decision)%{ss}?%{end}"
 with "$1"
 replace-regex "%{mid}(colleague)(?:-agent)?%{ss}?%{end}"
 with "$1"
-
 replace-regex "%{mid}communications?-(channel|session)%{ss}?%{end}"
 with "communication-$1"
 
 // [D]
-replace-regex "%{mid}(definition|dependent|dictionary-file|dictionary|documentation-interop)%{ss}?%{end}"
-with "$1"
-replace-regex "%{mid}\(?(?:electronic|digital)\)?-(actor|agent|colleague|communication-channel|policy)%{ss}%{end}"
-with "digital-$1"
-
-replace-regex "%{mid}(%{dutyrighttype}|%{dutyright})%{end}"
-with "pattern-duties-and-rights"
-
 replace-regex "%{mid}data-(collector|discloser)-polic%{yies}%{end}"
 with "data-$1-policy"
 replace-regex "%{mid}data-(collector|discloser)%{ss}?%{end}"
 with "data-$1"
+
+replace-regex "%{mid}(definition|dependent|dictionary(-file)?)%{ss}?%{end}"
+with "$1"
+replace-regex "%{mid}\(?(?:electronic|digital)\)?-(actor|agent|colleague|communication-channel)%{ss}%{end}"
+with "digital-$1"
+replace-regex "%{mid}\(?(?:electronic|digital)\)?-(polic)%{yies}%{end}"
+with "digital-$1"
+
+replace-regex "%{mid}(%{dutyrighttype}|%{dutyright})%{end}"
+with "pattern-duties-and-rights"
 
 // [E]
 replace-regex "%{mid}(employee|employer)%{ss}%{end}"
@@ -121,22 +127,24 @@ replace-regex "%{mid}(legal-)?entit%{yies}%{end}"
 with "$1entity"
 
 // [G]
-replace-regex "%{mid}(glossary-file|guardian(ship)?(-arrangement)?(-type)?)%{ss}%{end}"
-with "$1"
 replace-regex "%{mid}glossar%{yies}%{end}"
 with "glossary"
-replace-regex "%{mid}guardianship(-arrangement)?%{end}"
+replace-regex "%{mid}(glossary-file|guardian|governor)%{ss}%{end}"
+with "$1"
+replace-regex "%{mid}guardianship(-arrangement)?%{ss}%{end}"
 with "guardianship-arrangement"
-replace-regex "%{mid}guardianship(-arrangement)?-type%{end}"
+replace-regex "%{mid}guardianship(-arrangement)?-type%{ss}%{end}"
 with "guardianship-type"
-replace-regex "%{mid}govern(or)?s?%{end}"
+replace-regex "%{mid}governs?%{end}"
 with "governance"
 replace-regex "%{mid}(governed(?: by)?|governing-party)?s?%{end}"
 with "governor"
 
 // [H-I-J-K] (all holder, issuer, verifier and wallet stuff, too)
 // for associated policies, see [P]
-replace-regex "%{mid}(holder|issuer|verifier|wallet|identifier|jurisdiction(-governor)?|knowledge(-governor)?)%{ss}%{end}"
+replace-regex "%{mid}(holder|issuer|verifier|validator|wallet|identifier|jurisdiction(-governor)?|knowledge(-governor)?)%{ss}%{end}"
+with "$1"
+replace-regex "%{mid}((holder|issuer|verifier|validation|wallet)-polic)%{yies}%{end}"
 with "$1"
 
 // [L-M]
@@ -149,14 +157,15 @@ replace-regex "%{mid}(?:natural-)?(objective|organization|owned|owner|ownership)
 with "$1"
 
 // [P]
-replace-regex "%{mid}(participant|pattern-file|pattern|(peer-)(actor|agent)|policy-governor|presentation-request|presentation|principal)%{ss}%{end}"
+replace-regex "%{mid}(participant|pattern-file|pattern|peer-(actor|agent)|policy-governor|presentation(-request)?|principal)%{ss}%{end}"
 with "$1"
-replace-regex "%{mid}(|peer-)part%{yies}%{end}"
+replace-regex "%{mid}(peer-)?part%{yies}%{end}"
 with "$1party"
-replace-regex "%{mid}(|issuer-|holder-|verifier-|wallet-|transaction-data-(collector|discloser)-)polic%{yies}%{end}"
+// For holder, issuer, verifier and wallet policies, see [H-I-J-K]
+replace-regex "%{mid}(|transaction-data-(collector|discloser)-)polic%{yies}%{end}"
 with "$1policy"
 
-// [R-S]
+// [Q-R-S]
 // For 'rights', see [D]uties
 replace-regex "%{mid}(risk|scope-file|scope|ssi-agent)%{ss}%{end}"
 with "$1"
@@ -165,12 +174,12 @@ with "assertion"
 
 // [T]
 // for transaction data collector/discloers policies, see [P]
-replace-regex "%{mid}(?:business-)?(term-file|term|transaction(-agreement|-data-(collector|discloser)|-form|-proposal)?)%{ss}%{end}"
+replace-regex "%{mid}(?:business-)?(term(-file)?|transaction(-agreement|-id|-data-(collector|discloser)|-form|-proposal|-request|-type)?)%{ss}%{end}"
 with "$1"
 
 // [V]
-// for verifier stuff - see holder
-replace-regex "%{mid}(verifiable-credential|verifier)%{ss}%{end}"
+// for verifier and validator stuff - see holder
+replace-regex "%{mid}(verifiable-credential)%{ss}%{end}"
 with "$1"
 replace-regex "%{mid}(data-)?validat(e|ing|ion)(-data)%{end}"
 with "validated-data"

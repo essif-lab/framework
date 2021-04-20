@@ -5,21 +5,25 @@ scopeid: essifLab
 type: concept
 typeid: qualified-data
 stage: draft
-hoverText: "Qualified Data: data that comes with assurances, at least regarding its provenance and integrity, and that can be combined electronically in semantically valid ways."
-glossaryText: "%%data^data%% that comes with assurances, at least regarding its provenance and integrity, and that can be combined electronically in semantically valid ways."
+hoverText: "Qualified Data: data that comes with assurances, at least regarding its provenance and integrity (immutability), that make this data valid to be used for specific purposes of individual Parties."
+glossaryText: "%%data^data%% that comes with assurances, at least regarding its provenance and integrity (immutability), that make this data valid to be used for specific purposes of individual %%parties^party%%."
 ---
 
 ### Short Description
-**Qualified data** is %%data|data%% that comes with assurances, at least regarding its provenance and integrity, and that can be combined electronically in semantically valid ways.
+**Qualified data** is %%data|data%% that comes with assurances, at least regarding its provenance and integrity (immutability), that make this data valid to be used for specific purposes of individual %%parties^party%%.
+
+Qualified data has two perspectives:
+1. The usage (or %%validation|validation%%) perspective. Whether or not data qualifies for use depends on the %%party|party%% using it, and also the purpose (context) for which it is used. From this perspective, qualfied data *is* data that if it were validated, would qualify as actually being %%valid|validated-data%%.
+2. The provisioning perspective. Strictly speaking, %%parties|party%% cannot provision qualified data as they have no clue what it takes for that data to be %%valid|validated-data%%. A party that creates qualified data would not not all specific purposes for which the data is actually going to be used.
 
 For verifiers
 
 Qualified data comes in two flavors:
-- as data that satisfies the requirements of the %%party|party%% that will be using it, e.g. for decision making. Since parties are autonomous (self-sovereign), such requirements must be expected to be subjective: every party will have its 
+- as data that satisfies the requirements of the %%party|party%% that will be using it, e.g. for decision making. Since parties are autonomous (self-sovereign), such requirements must be expected to be subjective: every party will have its
 
 ### Purpose
 The ability to distinguish between (non)qualified-datas is relevant in many situations, including:
-- electronic communication: the qualified-data 
+- electronic communication: the qualified-data
 
 ### Criterion
 The **qualified-data** (of an %%actor|actor%%) is the %%party|party%% for whom the actor is an %%agent|agent%%, i.e. on whose behalf the actor is (in the process of) executing some %%action|action%%.
@@ -40,16 +44,16 @@ From the issuer perspective, it isn't all that important what the 'envelope' is 
 In short, as an issuer, a party is interested in creating value from sharing knowledge about other entities. A party's “issuer” governance process is concerned with making (and continually reviewing and updating) decisions about e.g.:
 - the kinds of qualified data it is willing to provide (what they consist of, what characteristics are to be ensured, liability to take, etc.;
 - the kinds of credentials ('envelopes') it is willing to use for providing that data;
-- under which conditions such credentials may be issued (e.g. only to a party that is mentioned in the qualified data); 
+- under which conditions such credentials may be issued (e.g. only to a party that is mentioned in the qualified data);
 - how all this is communicated: published, advertised and marketed (both in machine-readable and human readable form, for different purposes/audiences).
 
 #### Validator perspective
 
-In its role as a %%validator|validator%%, a %%party|party%% is seeking to create value by efficiently obtaining data that is valid for further processing for specific purposes. Such processing includes doing computations with the data, or using it as a value for a variable/placeholder in a rule that needs to be evaluated for the purpose of making some decision. One may think of this as that the party has various 'formulae' that it needs to be processed or evaluated for specific purposes, and doing so requires the 'variables' (fields) of these formulae to be assigned a value. 
+In its role as a %%validator|validator%%, a %%party|party%% is seeking to create value by efficiently obtaining data that is valid for further processing for specific purposes. Such processing includes doing computations with the data, or using it as a value for a variable/placeholder in a rule that needs to be evaluated for the purpose of making some decision. One may think of this as that the party has various 'formulae' that it needs to be processed or evaluated for specific purposes, and doing so requires the 'variables' (fields) of these formulae to be assigned a value.
 
 The validator perspective is about obtaining such data, determining whether or not evaluation of the formula would be valid if the data were assigned to specific variables (%%validation|validation%%), and if so, assign the obtained data to such variables.
 
-Obtaining data through the SSI infrastructure requires that the party first needs to track down which issuers exist and what kinds of credentials they issue, i.e. the kinds of data that they contain, and further characteristics. It is needed to create and maintain a mapping between (fields) from credentials from specific issuers and 'variables' in the formulae that it uses in its business processes. Such a mapping would also include 'validation criteria', i.e. formulae whose variables can be populated by the meta-data of credentials, such the expiration date, and that are used to decide whether or not data from a credential can serve as the value of a variable in the formula. We will refer to such mappings (and their validation criteria) as a 'validation policy'. 
+Obtaining data through the SSI infrastructure requires that the party first needs to track down which issuers exist and what kinds of credentials they issue, i.e. the kinds of data that they contain, and further characteristics. It is needed to create and maintain a mapping between (fields) from credentials from specific issuers and 'variables' in the formulae that it uses in its business processes. Such a mapping would also include 'validation criteria', i.e. formulae whose variables can be populated by the meta-data of credentials, such the expiration date, and that are used to decide whether or not data from a credential can serve as the value of a variable in the formula. We will refer to such mappings (and their validation criteria) as a 'validation policy'.
 
 Machine-readable validation policies enable generic IT to collect data for populating a formula using the SSI infrastructure, with the guarantee that such data is valid for the purpose in which the formula is used. Human-readable validation policies enable the designated employees of the organization to do the same, using other kinds of infrastructure (e.g. Internet, phone, mail, …).
 

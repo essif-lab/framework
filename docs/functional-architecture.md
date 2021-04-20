@@ -21,7 +21,7 @@ The essif-Lab Functional Architecture aims to establish a %%terminology|terminol
 - discussing and resolving issues related to interfaces and protocols for tech components that provide such functionalities;
 - designing and developing technical applications that support individual businesses or business ecosystems, not only as they conduct %%business transactions|transaction%%, but also in order to govern the %%policies|policy%% they need to make the technology work as they intend.
 
-To this end, this document provides an overview of 
+To this end, this document provides an overview of
 - the functions (capabilities) that individual %%parties|party%% need in order to electronically support %%business transactions|transaction%%;
 - the interactions between these functions that make such %%business transactions|transaction%% happen;
 - the various %%policies|policy%% that %%parties|party%% have to govern, and put in place in order for the technical components that provide these capabilities to function in accordance with their (subjective) rules, working-instructions and other guidance.

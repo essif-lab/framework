@@ -77,7 +77,9 @@ The define-time aspect of guardianships is all about about the design of %%guard
 
 A guardianship type basically defines a set of duties and rights and a set of stakeholder roles that allow these duties and rights to be assigned to, or directed at. Note that one part of such rights and duties pertain to the realization of the objective(s) that the guardianship type was created for, while another part pertains to the management- and governance processes.
 
-In our example of a 'Financial Guardianship', we could have stakeholder roles such as "Financial Administrator", "Judge" and "Party placed under administration", and associate rights and duties e.g. as follows:
+Every guardianship type has one stakeholder role that is (also) referred to as its dependent (role). The other roles may be referred to as guardian roles. Different guardianship types may use different role(name)s to refer to their respective dependent roles.
+
+In our example of a 'Financial Guardianship', we could have stakeholder roles such as "Financial Administrator", "Judge" and "Party placed under administration" (which is the dependent role), and associate rights and duties e.g. as follows:
 1. "[Financial Administrator] must ensure that [Party placed under administration] has sufficient funds to pay for housing and food";
 2. "[Party placed under administration] may not enter into financial obligations";
 3. "[Financial Administrator] has a right to look into, and transfer money out of any bank account of [Party placed under administration]";
@@ -86,6 +88,7 @@ In our example of a 'Financial Guardianship', we could have stakeholder roles su
 6. "[Judge] must review the rights and duties of an arrangement each year and update them if such is needed to better realize the objectives for which the arrangement exists".
 
 The example shows that
+- there is no such thing as 'the dependent (role)'; in the define-time context, the phrase 'dependent' is specific for a guardianship type, and only serves as a placeholder for one of its stakeholder roles.
 - names of stakeholder roles only serve as placeholders, that will be assigned %%parties|party%% when the guardianship type is instantiated;
 - the various roles are implicitly defined by the rights and duties that have been assigned to them - there is no real need to explicitly describe them;
 - multiple parties may be caring for a dependent in their own specific way (in the example, the Judge cares by ensuring that the Financial Administrator does not prey on the party that is placed under administration);
@@ -96,7 +99,7 @@ The example shows that
 
 The run-time aspect of guardianships is all about about the establishing, using and management of actual %%guardianships arrangements|guardianship-arrangement%%. This includes the assignment of %%legal entities|legal-entity%% to the various stakeholder roles, and the management of such assignments. It also includes the management of the actual rights and duties or such legal entities.
 
-Typically, the %%jurisdiction|jurisdiction%% that enforces (and governs) a %%guardianship type|guardianship-type%% has rules that specify the conditions that allow a guardianship arrangement of that type to be created, including the %%parties|party%% that must do this. When a guardianship arrangement is established, it starts as a copy of the guardianship type that it instantiates. Then, the dependent-role is assigned to the legal entity that will be fulfilling that role, and so are most, if not all guardianship-roles. Note that the the rules that govern the guardianship arrangements may specify that a specific guardian-role is reserved for the party that manages the guardianship arrangement itself.
+Typically, the %%jurisdiction|jurisdiction%% that enforces (and governs) a %%guardianship type|guardianship-type%% has rules that specify the conditions that allow a guardianship arrangement of that type to be created, including the %%parties|party%% that must do this. When a guardianship arrangement is established, it starts as a copy of the guardianship type that it instantiates. Then, the dependent-role is assigned to the legal entity that will be fulfilling that role (or more legal entities if that is appropriate). Similarly, most, if not all guardianship-roles are assigned to a legal entity. Note that the the rules that govern the guardianship arrangements may specify that a specific guardian-role is reserved for the party that manages the guardianship arrangement itself.
 
 Next, every duty/right type can now be converted into a duty/right instance, by replacing the role names by the names of the legal entities that fulfill the role. For example, assume that a guardianship arrangement is established in which Dick is assigned the role of 'person placed under administration', Alice the 'financial administrator' and Joe is the 'judge', whose role is to manage and supervise the guardianship arrangement. Then, the rights and duties would become:
 1. "Alice must ensure that Dick has sufficient funds to pay for housing and food";

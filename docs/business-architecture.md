@@ -22,7 +22,7 @@ The essif-Lab Business Architecture aims to establish a %%terminology|terminolog
 - discussing and resolving issues related to the design and specifications of interfaces, protocols and policies, not only at the technological level, but also at the business process and compliance/policy levels;
 - designing and developing technical applications or platforms that support the management of such design and specification processes, both for individual parties as for business ecosystems.
 
-To this end, this document provides an overview of 
+To this end, this document provides an overview of
 - the world model that is being used to think/reason about the purposes of eSSIF-Lab, how to realize them, and how to communicate about all that;
 - the functions (capabilities) that individual %%parties|party%% need in order to electronically support %%business transactions|transaction%%;
 - the interactions between these functions that make such %%business transactions|transaction%% happen;
@@ -32,7 +32,7 @@ To this end, this document provides an overview of
 
 Like everyone else, eSSIF-Lab too has its own way of thinking and reasoning about the world. In this chapter, we highlight the most important concepts that you as a reader need to be aware of in order to understand what this business architecture is about, and what it allows you to do with it. Terms of which the meaning is particularly imporant to our world view are highlighted, and hovering over them shows you the definition that we use. If you want to dive deeper into their meanings, just click them.
 
-eSSIF-Lab sees the world (universe) as being filled with %%entities|entity%%, i.e. things (people and animals included) that exist. Our world view is shaped by the distinctions that eSSIF-Lab makes as it classifies such entities into well-defined categories, each of which having specific characteristics. 
+eSSIF-Lab sees the world (universe) as being filled with %%entities|entity%%, i.e. things (people and animals included) that exist. Our world view is shaped by the distinctions that eSSIF-Lab makes as it classifies such entities into well-defined categories, each of which having specific characteristics.
 
 One such category are %%parties|party%%, i.e. %%entities|entity%% that have and maintain a sovereign/autonomous %%knowledge|knowledge%%, and use this to pursue their %%objectives|objective%%. Human beings or %%organizations|organization%% do this, and hence are parties. Another such category are %%actors|actor%%, i.e. %%entities|entity%% that are capable of acting, i.e. doing something. Think of human beings, or machines (including computers). Note that not all %%parties|party%% are %%actors|actor%% (e.g. %%organizations|organization%%), and not all %%actors|actor%% are %%parties|party%% (e.g. robots). Please read more about %%Parties, Actors and Actions|pattern-party-actor-action%% so that you really understand the distinctions and similarties between these terms, and how they relate to one another, because this is an important foundation of our architecture.
 
@@ -58,8 +58,8 @@ The [*DEMO*](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_fo
 ### 2.4 Issuers, Verifiers, Validators and Holders
 
 In the various phases of a %%transaction|transaction%%, each of its %%participants|participant%% may need (one or more of its agents) to do the following:
-- request the data that it needs for making the commitment or acceptance decision 
-- 
+- request the data that it needs for making the commitment or acceptance decision
+-
 
 
 
