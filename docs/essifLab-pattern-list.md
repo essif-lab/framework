@@ -26,6 +26,9 @@ These are models that are either not very mature, or placeholders for models tha
 ### [Terminology](./terms/pattern-terminology)
 The envisaged [eSSIF-Lab Terminology Pattern](./terms/pattern-terminology) will describe the relations between %%terminology|terminology%% artifacts such as '%%concept|concept%%', '%%term|term%%', '%%pattern|pattern%%', '%%mental model|mental-model%%', '%%glossary|glossary%%' etc.
 
+### [Identity](./terms/pattern-identity)
+The envisaged [eSSIF-Lab Identity Pattern](./terms/pattern-identity) will describe the relations between a formalized notion of identity and credentials. Note that identity is very different from %%identifier|identifier%%.
+
 ### [Mandates, Delegation and Hiring](./terms/pattern-mandates-delegation-hiring)
 The envisaged [Mandates, Delegation and Hiring pattern](./terms/pattern-mandates-delegation-hiring) will capture the ideas behind Mandating, Delegating, Hiring and their relations. It will extend the [Parties, Actors and Actions pattern](./terms/pattern-party-actor-action) with concepts that describe how the %%ownership|ownership%% and `works for` relations between %%parties|party%% and %%actors|actor%% are to be (de)populated, and how to determine for %%party|party%% the %%actor|actor%% is working as it executes an %%action|action%%.
 
