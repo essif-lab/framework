@@ -18,16 +18,16 @@ before_script:
 build:
   stage: build
   script:
-    - yarn parse
-    - yarn glossary
+    - STAGING=true yarn docusaurus parse
+    - STAGING=true yarn docusaurus glossary
     - STAGING=true yarn build
 
 pages:
   stage: deploy
   script:
-    - yarn parse
-    - yarn glossary
-    - STAGING=true  yarn build
+    - STAGING=true yarn docusaurus parse
+    - STAGING=true yarn docusaurus glossary
+    - STAGING=true yarn build
     - rm -rf public
     - mv build public
   artifacts:
