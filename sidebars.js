@@ -47,6 +47,7 @@ module.exports = {
             items:
             [ { type: 'doc', id: 'terms/pattern-terminology' },
               { type: 'doc', id: 'terms/pattern-identity' },
+              { type: 'doc', id: 'terms/pattern-identifier' },
               { type: 'doc', id: 'terms/pattern-duties-and-rights' },
               { type: 'doc', id: 'terms/pattern-mandates-delegation-hiring' },
               { type: 'doc', id: 'terms/pattern-decentralized-GRC' },
