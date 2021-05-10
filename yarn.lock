@@ -1109,10 +1109,10 @@
     "@francoischalifour/autocomplete-preset-algolia" "^1.0.0-alpha.28"
     algoliasearch "^4.0.0"
 
-"@docusaurus-terminology/parser@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@docusaurus-terminology/parser/-/parser-1.2.0.tgz#b9ade3c1c5e7bfb67ed874b57752514614771466"
-  integrity sha512-LLA7poMduNY4r9rxOW7OyvMcr7uC0KhnuNNNbp8wzm+G8QECm3fXadG18CeTbYNU3A19XqmTwmpVGguDYjPVPw==
+"@docusaurus-terminology/parser@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@docusaurus-terminology/parser/-/parser-1.2.1.tgz#1f9b4161c6c2a642a2c30d156c108edc53eaf263"
+  integrity sha512-lNs3qkeI9SYmK3+1XFe6Amld/yFRq41tH//tFykZ33YcMhymS2XUBfQ5D9xSlsv9qn5RAL2cdXmvb+9a4e5uTw==
   dependencies:
     git-diff "^2.0.6"
     globby "^11.0.1"

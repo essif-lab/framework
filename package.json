@@ -11,7 +11,7 @@
     "glossary": "docusaurus glossary"
   },
   "dependencies": {
-    "@docusaurus-terminology/parser": "^1.2.0",
+    "@docusaurus-terminology/parser": "^1.2.1",
     "@docusaurus-terminology/term": "^1.0.0",
     "@docusaurus/core": "^2.0.0-alpha.65",
     "@docusaurus/preset-classic": "^2.0.0-alpha.65",
