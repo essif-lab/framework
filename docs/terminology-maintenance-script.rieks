@@ -97,6 +97,8 @@ with "$1"
 
 // [C]
 // for 'claim', see 'statement'
+replace-regex "%{mid}(communit)%{yies}%{end}"
+with "$1y"
 replace-regex "%{mid}(colleague|concept(-file)?|credential(-type)?(-catalogue)?|commitment-decision)%{ss}?%{end}"
 with "$1"
 replace-regex "%{mid}(colleague)(?:-agent)?%{ss}?%{end}"
@@ -115,7 +117,7 @@ with "$1"
 replace-regex "%{mid}\(?(?:electronic|digital)\)?-(actor|agent|colleague|communication-channel)%{ss}%{end}"
 with "digital-$1"
 replace-regex "%{mid}\(?(?:electronic|digital)\)?-(polic)%{yies}%{end}"
-with "digital-$1"
+with "digital-$1y"
 
 replace-regex "%{mid}(%{dutyrighttype}|%{dutyright})%{end}"
 with "pattern-duties-and-rights"
@@ -145,7 +147,7 @@ with "governor"
 replace-regex "%{mid}(holder|issuer|verifier|validator|wallet|identifier|jurisdiction(-governor)?|knowledge(-governor)?)%{ss}%{end}"
 with "$1"
 replace-regex "%{mid}((holder|issuer|verifier|validation|wallet)-polic)%{yies}%{end}"
-with "$1"
+with "$1y"
 
 // [L-M]
 replace-regex "%{mid}(legal-jurisdiction|legal-system|mental-model)%{ss}%{end}"
@@ -167,6 +169,8 @@ with "$1policy"
 
 // [Q-R-S]
 // For 'rights', see [D]uties
+replace-regex "%{mid}scopes-of-control%{end}"
+with "scope-of-control"
 replace-regex "%{mid}(risk|scope-file|scope|ssi-agent)%{ss}%{end}"
 with "$1"
 replace-regex "%{mid}(statement|claim|statement%{ss}/claim)%{ss}%{end}"

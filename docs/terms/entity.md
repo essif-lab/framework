@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: entity
 stage: draft
-hoverText: "Entity: something that is known to exist."
+hoverText: "Entity: someone or something that is known to exist."
 glossaryText: "someone or something that is known to exist."
 ---
 
@@ -15,7 +15,7 @@ Whenever you know that somethings exists, be it another person, yourself, some c
 The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
-This term enables us to refer to anything, or to postulate the existence of something, without further specifying what it is, or how it might be named. 
+This term enables us to refer to anything, or to postulate the existence of something, without further specifying what it is, or how it might be named.
 
 ### Criterion
 Something, anything, that some %%party|party%% knows to exist
