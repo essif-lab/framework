@@ -20,7 +20,7 @@ The %%terminology pattern|pattern-terminology%% provides an overview of how this
 Understanding words or phrases uttered by others requires that we are able to 'translate' them terms into terms that we habitually use. While this is mostly an automatism, and it often is not necessary to be all that precise, this may be different when they relate to stuff we find important. The ability to refer to a specific %%concept|concept%% with a specific text or phrase, where this 'linking' is limited to a specific (or several) context(s) helps us to better interpret the intentsion of what others convey in spoken or written language.
 
 ### Criteria
-A Term MUST be a word or phrase that is linked to at least one %%context|scope%% and refers to precisely one %%concept|concept%%. 
+A Term MUST be a word or phrase that is linked to at least one %%context|scope%% and refers to precisely one %%concept|concept%%.
 
 ### Domains
 <!--In which general knowledge ecosystems or mental model families does this concepty a role?-->

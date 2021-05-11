@@ -13,7 +13,7 @@ Each file defines the following attributes at its very beginning:
 - `title`, appearing at the top of the file's display
 - `sidebar_label`, the file's name appearing in the sidebar
 
-Documentation on these and other header fields can be found [here](https://v2.docusaurus.io/docs/markdown-features#markdown-headers). 
+Documentation on these and other header fields can be found [here](https://v2.docusaurus.io/docs/markdown-features#markdown-headers).
 
 The Terminology Engine plugin of GRNET uses additional header fields. These are (or will be) defined [here](./docs/terminology-contributions).
 
@@ -21,7 +21,7 @@ The `sidebars.js` file contains the basic mechanism for [distributing content am
 
 ## Inserting Images in docs
 <!-- **DEPRECATED** Images must be put inside the directory `static/images` and developers must refer to them using _relative_ urls.
-Example: ![eSSIF-Lab logo](../images/eSSIF-Lab%20logo.png)
+Example: ![eSSIF-Lab logo](../images/essif-lab%20logo.png)
 Docusaurus knows that the `../images` directory is inside the `static` directory, and thus process correctly.
 The deployment pipe will convert `../images/` in such links to their _*absolute*_ urls.
 Of course, if you want to link to images on the web, you can still use absolute urls. -->
@@ -81,8 +81,8 @@ Docker and/or Docker Compose, as follows.
 You can run the following commands to see the output of the website, just as it will look like when deployed to a production environment:
 
 ```
-docker build -t essif-lab-terminology:latest .
-docker run -ti -p 5000:5000 essif-lab-terminology:latest
+docker build -t eSSIF-Lab-terminology:latest .
+docker run -ti -p 5000:5000 eSSIF-Lab-terminology:latest
 ```
 
 You can then visit http://localhost:5000 to view the website

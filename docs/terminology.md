@@ -17,12 +17,12 @@ The traditional tool for fostering common understanding is using %%glossaries|gl
 
 Traditional tools usually come with drawbacks that reduce their practical usefulness in this electronic era: dictionaries leave their user to decide which of the various meanings a term may have was intended, glossaries typically provide a single meaning, but lack a specification of the scope/context in which they are applied or authoritative, and documents rarely explain the ideas (concepts) behind terms they use.
 
-The eSSIF-Lab terminology effort is an attempt to improve on this, by 
+The eSSIF-Lab terminology effort is an attempt to improve on this, by
 - creating and using tools that help authors and readers to understand the texts the create/read;
 - creating and maintaining a %%Terminology Corpus|corpus%% that documents such understanding;
 - automatically regenerate terminological artifacts (e.g. %%glossaries|glossary%% or %%dictionaries|dictionary%%) as the corpus is being updated.
 
-As the corpus is being used, we expect ideas for improvement 
+As the corpus is being used, we expect ideas for improvement
 - of the tools (both for authors and readers alike). Please create an [issue in the eSSIF-Lab framework repo](https://gitlab.grnet.gr/essif-lab/framework/-/issues);
 - of the terminology, patterns, etc. Please create a pull-request for the changes on the [eSSIF-Lab framework repo](https://gitlab.grnet.gr/essif-lab/framework/-/merge_requests).
 
@@ -46,4 +46,3 @@ Here are some characteristics of the tools being supplied:
 - When an author writes a text in which he wants to tag a term with its definition, (s)he simply writes `\%\%text-to-be-tagged|referenceid\%\%`, where `referenceid` is usually the term name. For details, please refer to the [instruction for authors](TBD)
 - Author wants to contribute to the Corpus of Terminology, i.e. modify existing documents or creating new ones, are supported by [templates](TBD) and [guidance for authoring terminology documents](TBD).
 - The glossary will be automatically updated as contributions to the terminology orpus are being made merged into the master branch.
-

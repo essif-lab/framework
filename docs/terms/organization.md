@@ -20,7 +20,7 @@ A %%party|party%% that is associated with a (non-empty) group of %%actors|actor%
 ### Examples
 - Enterprises and governments are the prototypical examples.
 - Parts of enterprises (e.g. divisions, departments, business units) and governmental bodies also qualify.
-- Individual persons satisfy the criteria and hence qualify (see the Notes below). 
+- Individual persons satisfy the criteria and hence qualify (see the Notes below).
 
 ### Notes
 One may question whether or not a single person can be a 'group of people' (who would obviously work to realize its personal objectives) and hence qualify as an organization. The answer to this question is however irrelevant within our context, because we reason with the concept %%party|party%% rather than the concepts organization and/or person.

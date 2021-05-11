@@ -34,11 +34,11 @@ The figure below is a high-level visualization of the filling in and validation 
 
 <img
   alt="High-level visualization of the filling in and validation of a form."
-  src={useBaseUrl('images/eSSIF-Lab-vision-context.png')}
+  src={useBaseUrl('images/essif-lab-vision-context.png')}
 />
 
 *Figure 1. High-level visualization of the filling in and validation of a form.*
- 
+
 The transaction that is envisaged here is the issuing of a parking permit. Participants are a person (requestor) that requests such a permit, and an organization (provider) that can issue such a permit. The requestor has one electronic agent, *the Requestor Agent (RA)*, i.e. an SSI-aware app on their mobile phone that can access a secure storage that contains 'credentials', i.e. data that is digitally signed by some third %%party|party%%, thus attesting to the truth of that data. The provider has two agents: one is an SSI-aware component *Provider Agent (PA_* that works with the web-server that presents the form, and the other is a person *P* whose task is to validate any data (on behalf of the provider) that is not validated electronically. The form itself contains a means, e.g. a QR-code or a deep-link, that allows *RA* and *PA* to set up a secure %%communication channel|communication-channel%% (e.g. SSL, [DIDComm](https://openssi.github.io/peer-did-method-spec/)) and agree on the specific form that needs to be filled in.
 
 After the *RA* and *PA* have established a %%communication channel|communication-channel%% and agree on the form to be filled in, *PA* informs *RA* about the information it needs to fill in the form, and the requirements that this information should satisfy[^1]. *RA* then checks its data store to see whether or not such data is available, sends such data to *PA*, which subsequently validates it and uses it to fill in (appropriate parts of) the form. Finally, *P* validates the remaining data, which either results in a 'clean' form, i.e. a form that contains valid data that can subsequently be used to decide whether or not to provide the parking permit, or a message to the requester informing him about missing and/or invalid data.
