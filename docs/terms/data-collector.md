@@ -13,7 +13,7 @@ glossaryText: "a functional component that is capable of collecting data from va
 A **Data Collector** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that a %%party|party%% may use to collect sufficient and %%validated data|validated-data%% for deciding whether or not a request (typically for a product or a service) is to be serviced.
 
 ### Purpose
-The purpose of a Data Collector is to collect sufficient and %%validated data|validated-data%% that eneables (an %%agent|agent%% of) its %%principal|principal%% to decide whether or not some request (typically for a product or a service) is to be serviced. 
+The purpose of a Data Collector is to collect sufficient and %%validated data|validated-data%% that eneables (an %%agent|agent%% of) its %%principal|principal%% to decide whether or not some request (typically for a product or a service) is to be serviced.
 
 ### Functionality
 A data collector typically starts to collect data when it receives a request (e.g. to provide a product or service). The reception of such a request triggers the creation of a new %%business transaction|transaction%%. The task of the data collector is to collect %%validated data|validated-data%% that is sufficient for making a commitment decision (or, as [DEMO](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations) calls it: a 'promise' or 'quit' decision.)
@@ -91,7 +91,7 @@ TNO to revise the footnote markers
 
 [^1x]: In the same way that the data collector needs to collect data in order to be able to decide whether or not to commit, %%agents|agent%% of the %%peer party|peer-party%% need to collect data for making a similar commitment decision. Requests for such data are to be processed by the %%data discloser component|data-discloser%% under guidance of its %%data-discloser-policy|data-discloser-policy%%.
 
-[^1a]: If the %%data collector policy|data-collector-policy%% specifies that data is to be collected for other purposes, the %%data collector|data-collector%% should then be provided a means to inform its %%peer party|peer-party%% of such purposes, and the policy should not specify that such data is required to make the commitment decision. 
+[^1a]: If the %%data collector policy|data-collector-policy%% specifies that data is to be collected for other purposes, the %%data collector|data-collector%% should then be provided a means to inform its %%peer party|peer-party%% of such purposes, and the policy should not specify that such data is required to make the commitment decision.
 
 [^1 (peer-agents)]: Note that such agents have then become so-called %%peer-agents|peer-agent%% (of the Data Collector) for that specific transaction. Also, the (single!) %%principal|principal%% of these %%peer-agents|peer-agent%% is the %%peer-party|peer-party%% of the %%principal|principal%% of the Data Collector (again, for that specific transaction).
 

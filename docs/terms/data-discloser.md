@@ -10,7 +10,7 @@ glossaryText: "a functional component that is capable of disclosing data to (Age
 ---
 
 ### Short Description
-A **Data Discloser** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that applications (that work for some %%Party|party%%) can call to communicate things such as: 
+A **Data Discloser** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that applications (that work for some %%Party|party%%) can call to communicate things such as:
 - the results of a business transaction (e.g. statements to confirm that a transaction happened, thereby supplying appropriate details)
 - the status of a business transaction (e.g. that an order has been received in good order, that delivery of an order is dealyed or otherwise changed)
 - knowledge (including judgements) that this Party has about %%Entities|entity%% (people, organizations, things, orders, deliveries, etc.)

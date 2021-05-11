@@ -13,9 +13,9 @@ glossaryText: "the capability to request %%peer agents^peer-agent%% to present (
 A **Verifier** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that supports the %%Transaction Data Collector|transaction-data-collector%% as it tries to acquire %%(verifiable) credentials|credential%% from (an %%agent|agent%% of) some other %%party|party%%, for the purpose of negotiating a %%business transaction|transaction%%.
 
 It does so by:
-- creating %%Presentation Requests|presentation-request%% (or Presentation Definition as it is called in the [draft DIF specfication for Presentation Exchange](https://identity.foundation/presentation-exchange)) that ask for such credentials, 
+- creating %%Presentation Requests|presentation-request%% (or Presentation Definition as it is called in the [draft DIF specfication for Presentation Exchange](https://identity.foundation/presentation-exchange)) that ask for such credentials,
 - sending them to an %%agent|agent%% of that other %%party|party%% that provides %%holder|holder%% functionality,
-- receiving a response from that %%agent|agent%% to the %%presentation request|presentation-request%% (i.e. a '%%Presentation|presentation%%'), 
+- receiving a response from that %%agent|agent%% to the %%presentation request|presentation-request%% (i.e. a '%%Presentation|presentation%%'),
 - verifying that %%presentation|presentation%%, i.e. checking the signature and other proofs of the veracity of both the construction of the presentation and its contents
 - returning the data that the %%Transaction Data Collector|transaction-data-collector%% requested, optionally with a report about which verification checks succeeded and/or which failed.
 

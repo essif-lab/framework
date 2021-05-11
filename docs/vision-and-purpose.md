@@ -32,7 +32,7 @@ This functional architecture is a work-in-progress that is currently being condu
 
 In order to achieve '%%documentation interoperability|documentation-interop%%', we think that contributing %%parties|party%%
 - should develop (learn, actively use and continually improve upon) a small set of %%terms|term%% that can be used as a basis for exchanging ideas (%%concepts|concept%%), discussions, etc. We suggest to start with the terms used (and defined) by the %%"Parties, Actors and Actions" pattern|pattern-party-actor-action%%, and to extend on that as we go.
-- should develop their documentation using these terms, and adding additional terminology if they think this helps others to understand their documentation. The eSSIF-Lab project is developing tooling (a '[Terminology Engine](terminology-contributions)') that allows for this. 
+- should develop their documentation using these terms, and adding additional terminology if they think this helps others to understand their documentation. The eSSIF-Lab project is developing tooling (a '[Terminology Engine](terminology-contributions)') that allows for this.
 - ideally help to improve this tooling.
 
 --------
@@ -40,4 +40,3 @@ In order to achieve '%%documentation interoperability|documentation-interop%%', 
 [^1]: We realize that by doing this we have a different definition of what self-sovereignty entails than many others. We are open to suggestions for a better phrase.
 
 [^2]: A good model for describing and designing %%business transactions|transaction%% and their participants is provided by [*DEMO*](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations).
-

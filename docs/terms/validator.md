@@ -23,4 +23,3 @@ The purpose of the validator function is.
 A **validator** is a component in the [eSSIF-Lab functional architecture](../functional-architecture) whose function is to ... (tbd).
 
 ### Functionality
-

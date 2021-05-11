@@ -15,7 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 Realizing the [eSSIF-Lab vision](vision-and-purpose) is a very challenging endeavour, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. There is 'ecosystem' complexity, i.e. different groups of organizations and/or people need artifacts that work for them as a group, both 'horizontally' and 'vertically', but no further than the context of that group.
 
-The essif-Lab Business Architecture aims to establish a %%terminology|terminology%%, %%mental models|mental-model%% and (generic) functionalities that are intended to serve as a common basis that %%parties|party%% from different backgrounds can use e.g. for:
+The eSSIF-Lab Business Architecture aims to establish a %%terminology|terminology%%, %%mental models|mental-model%% and (generic) functionalities that are intended to serve as a common basis that %%parties|party%% from different backgrounds can use e.g. for:
 - thinking and reasoning about SSI-related topics and how that contributes to realizing the [eSSIF-Lab vision](vision-and-purpose);
 - creating business artifacts that help organizations to adopt SSI and transform their policies, information management, administrative processes and supporting business applications (systems) so that they can reap the benefits.
 - creating technology that provide the necessary IT functionalities that allow the supporting business applications to efficiently and effectively communicate with corresponding applications of other parties;
@@ -79,7 +79,7 @@ The figure below is an overview of the most important *functional* components th
 
 <img
   alt="eSSIF-Lab Single Party Functional Architecture Overview"
-  src={useBaseUrl('images/eSSIF-Lab-functional-architecture.png')}
+  src={useBaseUrl('images/essif-lab-functional-architecture.png')}
 />
 
 *Figure 1. eSSIF-Lab Single Party Functional Architecture Overview.*
@@ -156,7 +156,7 @@ This section details the functional specifications of the components that are in
 
 <img
   alt="eSSIF-Lab infrastructural (functional) components"
-  src={useBaseUrl('images/eSSIF-Lab-functional-architecture-infra.png')}
+  src={useBaseUrl('images/essif-lab-functional-architecture-infra.png')}
 />
 
 *Figure 2: eSSIF-Lab infrastructural (functional) components.*
@@ -366,7 +366,7 @@ This chapter explains at a high level how electronic %%business transactions|tra
 
 <img
   alt="High-level transaction overview"
-  src={useBaseUrl('images/eSSIF-Lab-high-level-trx-overview.png')}
+  src={useBaseUrl('images/essif-lab-high-level-trx-overview.png')}
 />
 
 *Figure 3: High-level transaction overview.*
@@ -377,7 +377,7 @@ After commitment, the producer works to provide the product or service, and the 
 
 When all is done, %%parties|party%% may issue a (signed) %%statement|assertion%% that specifies the results. Section 3.3. provides some more details about this phase.
 
-In the example of the parking permit, a citizen (requester) sends a request to its municipality (provider) for obtaining a parking permit (the product/service). Then, the citizen fills in an online form (and uploads necessary PDFs) to enable the municipality to decide whether or not to produce the requested permit. The eSSIF-lab architecture adds a secondary, %%electronic communication channel|digital-communication-channel%% that allows citizens to fill in the forms by using e.g. an SSI app on their phone. When the form is complete, the municipality decides whether or not to produce and issue the permit, which it can do as usual. It can also issue a %%credential|credential%% that states the result of the %%transaction|transaction%%, i.e. contains the details of the parking permit.
+In the example of the parking permit, a citizen (requester) sends a request to its municipality (provider) for obtaining a parking permit (the product/service). Then, the citizen fills in an online form (and uploads necessary PDFs) to enable the municipality to decide whether or not to produce the requested permit. The eSSIF-Lab architecture adds a secondary, %%electronic communication channel|digital-communication-channel%% that allows citizens to fill in the forms by using e.g. an SSI app on their phone. When the form is complete, the municipality decides whether or not to produce and issue the permit, which it can do as usual. It can also issue a %%credential|credential%% that states the result of the %%transaction|transaction%%, i.e. contains the details of the parking permit.
 
 Please note that while %%transactions|transaction%% are symmetrical in nature (i.e. both requester and provider need data from the other so as to decide whether or not to commit to the %%transaction|transaction%%), there is an implicit asymmetry in that activities that %%parties|party%% perform are ordered in time, which implies e.g. that the commitment decisions of both %%parties|party%% cannot be done at the same time. Also, in practice, it often happens that a %%party|party%% requires the other %%party|party%% to have executed (and stated) its part of the %%transaction|transaction%% before it actually commits to the %%transaction|transaction%%. For example, a provider may require the requester to have paid for the product before it is being shipped out. Consequently, the protocols for exchanging data/%credentials% will need to support such 'asynchronous' ways of working.
 
@@ -387,7 +387,7 @@ This phase starts by the requester sending a %%transaction request|transaction-r
 
 <img
   alt="High-level transaction negotiation"
-  src={useBaseUrl('images/eSSIF-Lab-high-level-trx-negotiation.png')}
+  src={useBaseUrl('images/essif-lab-high-level-trx-negotiation.png')}
 />
 
 *Figure 4: High-level transaction negotiation.*
