@@ -91,6 +91,8 @@ with "$1-$2"
 // [A]
 replace-regex "%{mid}(action(-type)?|actor|agent|assertion|author)%{ss}%{end}"
 with "$1"
+replace-regex "%{mid}\(?(decentralized|centralized|)\)?authorit%{yies}?%{end}"
+with "authority"
 
 // [B]
 // for 'business-transaction' see 'transaction'
@@ -148,6 +150,10 @@ replace-regex "%{mid}(holder|issuer|verifier|validator|wallet|identifier|jurisdi
 with "$1"
 replace-regex "%{mid}((holder|issuer|verifier|validation|wallet)-polic)%{yies}%{end}"
 with "$1y"
+replace-regex "%{mid}(identifier)%{ss}%{end}"
+with "$1"
+replace-regex "%{mid}((?:partial-)?identit)%{yies}%{end}"
+with "$1y"
 
 // [L-M]
 replace-regex "%{mid}(legal-jurisdiction|legal-system|mental-model)%{ss}%{end}"
@@ -169,16 +175,18 @@ with "$1policy"
 
 // [Q-R-S]
 // For 'rights', see [D]uties
-replace-regex "%{mid}scopes-of-control%{end}"
-with "scope-of-control"
 replace-regex "%{mid}(risk|scope-file|scope|ssi-agent)%{ss}%{end}"
 with "$1"
+replace-regex "%{mid}scopes-of-control%{end}"
+with "scope-of-control"
 replace-regex "%{mid}(statement|claim|statement%{ss}/claim)%{ss}%{end}"
 with "assertion"
+replace-regex "%{mid}(ssi|self-sovereign-identity-\(ssi\)|self-sovereign-identity)%{end}"
+with "self-sovereign-identity"
 
 // [T]
 // for transaction data collector/discloers policies, see [P]
-replace-regex "%{mid}(?:business-)?(term(-file)?|transaction(-agreement|-id|-data-(collector|discloser)|-form|-proposal|-request|-type)?)%{ss}%{end}"
+replace-regex "%{mid}(?:\(?business\)?-)?(term(-file)?|transaction(-agreement|-id|-data-(collector|discloser)|-form|-proposal|-request|-type)?)%{ss}%{end}"
 with "$1"
 
 // [V]
