@@ -24,8 +24,8 @@ The eSSIF-Lab Framework aims to establish a varied set of articles/documents, %%
 - seek to contribute to technical developments in SSI, and want backgrounds about various functionalities
   - that exist in the context of SSI infrastructure;
   - that are needed to connect business applications to such infrastructure;
-  - that facilitate %%communities|community%% and %%ecosystems|ecosystems%% of %%parties|party%% that use SSI.
-- seek to contribute to the creation and management of %%communities|community%% and %%ecosystems|ecosystems%% of %%parties|party%% that use SSI that operate with decentralized authorities, i.e. authorities that respect the autonomy of other %partie%s by refraining from imposing e.g. rules or duties on them that they then must comply with (or else...)).
+  - that facilitate %%communities|community%% and %%ecosystems|ecosystem%% of %%parties|party%% that use SSI.
+- seek to contribute to the creation and management of %%communities|community%% and %%ecosystems|ecosystem%% of %%parties|party%% that use SSI that operate with decentralized authorities, i.e. authorities that respect the autonomy of other %partie%s by refraining from imposing e.g. rules or duties on them that they then must comply with (or else...)).
 - seek a deeper understanding about the %%concepts|concept%% and %%mental models|mental-model%% behind SSI, allowing them to contribute new ideas, applications and services for SSI.
 
 This document provides an overview of
@@ -51,7 +51,7 @@ The following statements represent some of the ideas and principles that we have
 
 2. %%Parties|party%% will use their capabilities as they see fit, as they are autonomous (or: self-sovereign, i.e. sovereign over their own %%knowledge|knowledge%%). While they are free to choose whether or not to comply with laws, rules and regulations, they cannot choose the consequences that other parties will attach to their behaviour, as these other parties are autonomous as well. We see that in practice: a person that drives a car on a highway with a speed limit of 55 mph in the desert of Arizona may well decide to go faster than that, depending on his assessment of the consequences it may have (of being caught and fined).
 
-3. A %%party|party%% is autonomous in the data it collects about other %%entities|entity%%, the judgements it makes, the characteristics it attributes, etc. We use the term %%partial identity|partial-identity%% (of an entity), as coined by [Pfitzmann and Hansen](https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf), to refer to all knowledge that the party has about that entity (which we call the 'subject' of that partial identity). Obviously, this party %%owns|owns%% (and controls) the partial identity. A party does not control the partial identities for which it is the subject, except the one that it owns itself (its self-image). This is in contrast with what many people (want to) believe. It is also reality.
+3. A %%party|party%% is autonomous in the data it collects about other %%entities|entity%%, the judgements it makes, the characteristics it attributes, etc. We use the term %%partial identity|partial-identity%% (of an entity), as coined by [Pfitzmann and Hansen (2010)](https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf), to refer to all knowledge that the party has about that entity (which we call the 'subject' of that partial identity). Obviously, this party is the %%owner|owner%% (and hence controls) the partial identity. A party does not control the partial identities for which it is the subject, except the one that it owns itself (its self-image). This is in contrast with what many people (want to) believe. It is also reality.
 
 4. It is reasonable to consider the %%identity|identity%% (of an %%entity|entity%%, called the subject of the identity) as the union or composition of all partial identities of that subject. But actually, we haven't found any purpose for defining it - there does not seem to be a single use-case that is relevant within our scope for which it would be meaningful to define it.
 
@@ -77,7 +77,7 @@ Another fundamental category is called %%actor|actor%%, which is defined as an %
 
 A particular contribution of this framework is that because of consequently distinguishing between %%parties|party%% and %%actors|actor%%, it becomes possible (and necessary) to determine which actor executes what action on behalf of what party, which is particularly relevant in the context of two interacting/transacting parties. Further details are given in the %%party-actor-action pattern|pattern-party-actor-action%%
 
-A third fundamental category is called %%jurisdiction|jurisdiction%%, which is a foundational concept for organizing collaborations between %%parties|party%%, e.g. in %%communities|community%% or %%ecosystems|ecosystems%%. Basically, a jurisdiction acts as an %%authority|authority%% that has mechanisms for for defining and maintaining rules, enforcement thereof, and a mechanism for resolving conflicts within its %%scope of control|scope-of-control%%. More details can be found in the %%jurisdictions pattern|pattern-jurisdiction%%.
+A third fundamental category is called %%jurisdiction|jurisdiction%%, which is a foundational concept for organizing collaborations between %%parties|party%%, e.g. in %%communities|community%% or %%ecosystems|ecosystem%%. Basically, a jurisdiction acts as an %%authority|authority%% that has mechanisms for for defining and maintaining rules, enforcement thereof, and a mechanism for resolving conflicts within its %%scope of control|scope-of-control%%. More details can be found in the %%jurisdictions pattern|pattern-jurisdiction%%.
 
 ### 2.1 eSSIF-Lab Scope
 

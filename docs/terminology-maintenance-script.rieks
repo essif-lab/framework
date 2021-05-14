@@ -125,7 +125,7 @@ replace-regex "%{mid}(%{dutyrighttype}|%{dutyright})%{end}"
 with "pattern-duties-and-rights"
 
 // [E]
-replace-regex "%{mid}(employee|employer)%{ss}%{end}"
+replace-regex "%{mid}(ecosystem|employee|employer)%{ss}%{end}"
 with "$1"
 replace-regex "%{mid}(legal-)?entit%{yies}%{end}"
 with "$1entity"
@@ -204,23 +204,24 @@ with "vocabulary"
 // CLEANING UP UNINTENDED CHANGES
 
 // Replace %%Show text|ref-text%% with %%Show text^ref-text%% in glossaryText
-// However, that doesn't seem to work in this script (it does in VSCode search/replace)
-// replace-regex "^(glossaryText: "[^\|"]*?%%[^\|]+)\|(\w+%%[^"]*?"$\n)"
-// with "$1^$2"
-// replace-regex "^(glossaryText: "[^\|"]*?%%[^\|]+)\|(\w+%%[^"]*?"$\n)"
-// with "$1^$2"
-// replace-regex "^(glossaryText: "[^\|"]*?%%[^\|]+)\|(\w+%%[^"]*?"$\n)"
-// with "$1^$2"
-// replace-regex "^(glossaryText: "[^\|"]*?%%[^\|]+)\|(\w+%%[^"]*?"$\n)"
-// with "$1^$2"
-// replace-regex "^(glossaryText: "[^\|"]*?%%[^\|]+)\|(\w+%%[^"]*?"$\n)"
-// with "$1^$2"
-// replace-regex "^(glossaryText: "[^\|"]*?%%[^\|]+)\|(\w+%%[^"]*?"$\n)"
-// with "$1^$2"
-// replace-regex "^(glossaryText: "[^\|"]*?%%[^\|]+)\|(\w+%%[^"]*?"$\n)"
-// with "$1^$2"
-// replace-regex "^(glossaryText: "[^\|"]*?%%[^\|]+)\|(\w+%%[^"]*?"$\n)"
-// with "$1^$2"
+// Note that using `^` e.g. in `^glossaryText` doesn't work in this script (while it does in VSCode search/replace)
+// Also note that we need the separator `\|` to be in a group because otherwise, replacing won't work (perhaps that's a bug?)
+replace-regex "(?<=glossaryText:)(\s*")([^\|"]+?)\|((?:-|\w)+%%)"
+with "$1$2^$3"
+replace-regex "(?<=glossaryText:)(\s*")([^\|"]+?)\|((?:-|\w)+%%)"
+with "$1$2^$3"
+replace-regex "(?<=glossaryText:)(\s*")([^\|"]+?)\|((?:-|\w)+%%)"
+with "$1$2^$3"
+replace-regex "(?<=glossaryText:)(\s*")([^\|"]+?)\|((?:-|\w)+%%)"
+with "$1$2^$3"
+replace-regex "(?<=glossaryText:)(\s*")([^\|"]+?)\|((?:-|\w)+%%)"
+with "$1$2^$3"
+replace-regex "(?<=glossaryText:)(\s*")([^\|"]+?)\|((?:-|\w)+%%)"
+with "$1$2^$3"
+replace-regex "(?<=glossaryText:)(\s*")([^\|"]+?)\|((?:-|\w)+%%)"
+with "$1$2^$3"
+replace-regex "(?<=glossaryText:)(\s*")([^\|"]+?)\|((?:-|\w)+%%)"
+with "$1$2^$3"
 
 // Remove all `%%showtext|reftext%%` occurrences in markdown headers
 replace-regex "(^#+\s+.*?)%%([^\|]*)\|([^%]*)%%(.*$)"

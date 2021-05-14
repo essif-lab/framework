@@ -12,7 +12,7 @@ hoverText: "The eSSIF-Lab Identity Pattern describes one of many ways one can th
 This is work in progress
 :::
 
-The idea here is to define 'identity' as the set of all attributes that pertain to some entity (insipred by the work of Pfitzer and Hansen).
+The idea here is to define 'identity' as the set of all attributes that pertain to some entity (insipred by the work of [Pfitzmann and Hansen (2010)](https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf)).
 
 Since:
 - an attribute of an entity is an expression of a characteristic that a Party has attributed to that entity;
