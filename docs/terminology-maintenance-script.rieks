@@ -175,7 +175,7 @@ with "$1policy"
 
 // [Q-R-S]
 // For 'rights', see [D]uties
-replace-regex "%{mid}(risk|scope-file|scope|ssi-agent)%{ss}%{end}"
+replace-regex "%{mid}(risk|role(?:-name)|scope(?:-file)|ssi-agent)%{ss}%{end}"
 with "$1"
 replace-regex "%{mid}scopes-of-control%{end}"
 with "scope-of-control"
