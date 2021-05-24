@@ -1,12 +1,12 @@
 ---
-id: governance
+id: essifLab-governance
 title: eSSIF-Lab Governance
 sidebar_label: Governance
 scopeid: essifLab
 ---
 
 ## Purpose
-The [eSSIF-Lab functional architecture](functional-architecture) identifies and describes a variety of generic SSI functions (capabilities), such as %%holder|holder%%, %%verifier|verifier%%, %%issuer|issuer%%, %%wallet|wallet%%, and more. An %%actor|actor%% that can provide such (generic) capabilities can only _actually_ provide them for a %%party|party%% if it knows how to to comply with the %%rules, working-instructions, preferences and other guidance|policy%% of that %%party|party%%.
+The [eSSIF-Lab functional architecture](essifLab-fw-func-arch) identifies and describes a variety of generic SSI functions (capabilities), such as %%holder|holder%%, %%verifier|verifier%%, %%issuer|issuer%%, %%wallet|wallet%%, and more. An %%actor|actor%% that can provide such (generic) capabilities can only _actually_ provide them for a %%party|party%% if it knows how to to comply with the %%rules, working-instructions, preferences and other guidance|policy%% of that %%party|party%%.
 
 **Governance** is the process by which %%parties|party%% decide how to make decisions, how %%actors|actor%% that work on their behalf are to behave and operate, and ensure this guidance ends up in some document which we will call a %%policy|policy%%.
 

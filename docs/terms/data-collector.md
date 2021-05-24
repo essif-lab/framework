@@ -10,7 +10,7 @@ glossaryText: "a functional component that is capable of collecting data from va
 ---
 
 ### Short Description
-A **Data Collector** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that a %%party|party%% may use to collect sufficient and %%validated data|validated-data%% for deciding whether or not a request (typically for a product or a service) is to be serviced.
+A **Data Collector** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that a %%party|party%% may use to collect sufficient and %%validated data|validated-data%% for deciding whether or not a request (typically for a product or a service) is to be serviced.
 
 ### Purpose
 The purpose of a Data Collector is to collect sufficient and %%validated data|validated-data%% that eneables (an %%agent|agent%% of) its %%principal|principal%% to decide whether or not some request (typically for a product or a service) is to be serviced.
@@ -31,7 +31,7 @@ During the time in which a data collector is collecting data for a specific %%tr
 A data collector benefits from generic APIs or (G)UIs that allow it to simply ask for the data that it requires. Specifically for SSI, the data collector uses the %%eSSIF-Glue|essif-glue%% interface to access the %%Verifier|verifier%% functionalities.
 
 ### Criteria
-A **Data Collector** is a functional component in the [eSSIF-Lab functional architecture](../functional-architecture) that
+A **Data Collector** is a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch) that
 - services requests by %%digital|digital-agent%% and non-digital %%agents|agent%%, for providing a product or service, thereby starting a %%transaction|transaction%%;
 - can setup, accept and tear-down communication channels of various kinds, with %%digital|digital-colleague%% and/or non-digital %%colleagues|colleague%% of that %%requesting agent|agent%%,[^peer-agents] as appropriate for the data exchanges that are needed to conduct the transactions;
 - can use any appropriate communication channel with a %%peer-agent|peer-agent%% to:

@@ -10,7 +10,7 @@ glossaryText: "%%data^data%% that comes with assurances, at least regarding its 
 ---
 
 ### Short Description
-**Qualified data** is %%data|data%% that comes with assurances, at least regarding its provenance and integrity (immutability), that make this data valid to be used for specific purposes of individual %%parties^party%%.
+**Qualified data** is %%data|data%% that comes with assurances, at least regarding its provenance and integrity (immutability), that make this data valid to be used for specific purposes of individual %%parties|party%%.
 
 Qualified data has two perspectives:
 1. The usage (or %%validation|validation%%) perspective. Whether or not data qualifies for use depends on the %%party|party%% using it, and also the purpose (context) for which it is used. From this perspective, qualfied data *is* data that if it were validated, would qualify as actually being %%valid|validated-data%%.

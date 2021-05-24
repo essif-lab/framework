@@ -22,7 +22,7 @@ One may readily observe that in some way, people (humans) and organizations are 
 
 The main characteristic that people and %%organizations|organization%% share, is that each of them autonomously sets its own (subjective) %%objectives|objective%%, maintains its own (subjective) %%knowledge|knowledge%%, and uses that to pursue these objectives. This characteristic qualifies them as %%parties|party%%.
 
-One may also readily observe that in other ways, people and %%organizations|organization%% differ. For example, people eat and drink, whereas organizations do not. People can sit behind a computer keyboard, type texts, hit the 'Enter' button, e.g. to send an email. Organizations cannot do that. In short: people can act (do things), and hence qualify as %%actors|actor%%. Organizations cannot do things (act) and hence do not qualify as an actor. This is what sets people and organizations apart. 
+One may also readily observe that in other ways, people and %%organizations|organization%% differ. For example, people eat and drink, whereas organizations do not. People can sit behind a computer keyboard, type texts, hit the 'Enter' button, e.g. to send an email. Organizations cannot do that. In short: people can act (do things), and hence qualify as %%actors|actor%%. Organizations cannot do things (act) and hence do not qualify as an actor. This is what sets people and organizations apart.
 
 #### %%Parties|party%% and %%Actors|actor%%
 
@@ -46,7 +46,7 @@ The second way is where an %%actor|actor%% `works for` a %%party|party%%, based 
 
 The %%policies|policy%% that govern the execution of an %%action|action%% are part of the %%knowledge|knowledge%% of the %%party|party%% on whose behalf the action is being executed. As a concequence, an %%actor|actor%% that executes the action must be able to access (the knowledge that) the policy (is part of). Also, the actor must use that policy as its primary guidance for executing the action.
 
-Note that this does not imply that the actor cannot use knowledge from other sources (parties) as well. In particular, human actors are typically responsible (not necessarily accountable) for their doings and may hence use their own knowledge. They may also look for complementary, third party knowledge, e.g. on the Internet or in a library. However, using the %%principal's|principal%% knowledge as the primary guidance is important if that principal is to be held accountable. 
+Note that this does not imply that the actor cannot use knowledge from other sources (parties) as well. In particular, human actors are typically responsible (not necessarily accountable) for their doings and may hence use their own knowledge. They may also look for complementary, third party knowledge, e.g. on the Internet or in a library. However, using the %%principal's|principal%% knowledge as the primary guidance is important if that principal is to be held accountable.
 
 #### Realizing %%Objectives|objective%%
 
@@ -64,7 +64,7 @@ Here is a visual representation of this pattern, using the following [notations 
 
 It shows that %%parties|party%% (humans, organizations) perform %%actions|action%% for the purpose of realizing their %%objectives|objective%%. %%Parties|party%% are not considered to actually execute such %%actions|action%%; they have (human and non-human) %%actors|actor%% that work for them, execute such %%actions|action%%, using the %%party|party%%'s %%knowledge|knowledge%% as the (authoritative) guidance for executing the %%actions|action%% (as well as any other relevant %%knowledge|knowledge%% they can access).
 
-The essential characteristic of %%parties|party%% is their 1-1 link with %%knowledge|knowledge%%, which they continually update and use e.g. for reasoning, decision making, and determining e.g. what to do, when, and with whom. %%Knowledge|knowledge%% not only includes (observable) facts, but also opinions, e.g. regarding the %%entities|entity%% it knows to exist, relations between them, and rules (constraints, [logic](https://en.wikipedia.org/wiki/Logic)[^2]) that can be used to classify and reasoning about them, and for making decisions. 
+The essential characteristic of %%parties|party%% is their 1-1 link with %%knowledge|knowledge%%, which they continually update and use e.g. for reasoning, decision making, and determining e.g. what to do, when, and with whom. %%Knowledge|knowledge%% not only includes (observable) facts, but also opinions, e.g. regarding the %%entities|entity%% it knows to exist, relations between them, and rules (constraints, [logic](https://en.wikipedia.org/wiki/Logic)[^2]) that can be used to classify and reasoning about them, and for making decisions.
 
 Perhaps the most important idea in this pattern is that our %%party|party%% concept is not considered to (be able to) act, and they need %%actors|actor%% (i.e. %%Entities|entity%% that _can_ act) to act on their behalf and thus make them perform. This does, however,  not preclude having %%entities|entity%% that are both %%party|party%% and %%actor|actor%% - e.g. humans - and that such %%entities|entity%% can act on their 'own' behalf. And we can continue to use the commonly used form of speech in which a %%party|party%% performs some Action  by realizing that this means that there is (at least) one %%actor|actor%% that is actually executing that %%action|action%%.
 

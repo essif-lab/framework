@@ -1,5 +1,5 @@
 ---
-id: essifLab-pattern-list
+id: essifLab-mental-models
 title: "eSSIF-Lab Ways of Thinking"
 sidebar_label: Overview
 scopeid: essifLab

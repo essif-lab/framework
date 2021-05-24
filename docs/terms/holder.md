@@ -10,7 +10,7 @@ glossaryText: "the capability to handle presentation requests from a %%peer agen
 ---
 
 ### Short Description
-A **Holder** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that handles %%Presentation Requests|presentation-request%% that it receives from %%verifier|verifier%% components (of other %%parties|party%%, but also of its own %%owner|owner%%). Typically, this means looking for the requested data in the Principal's %%wallet|wallet%%, and using it to construct a Presentation (=response). However, if the Wallet doesn't have it, the Holder may negotiate a transaction with a component of the designated %%issuer|issuer%% for the purpose of obtaining the needed credential, which - when obtained - it can subsequently store in the wallet and use in the Presentation.
+A **Holder** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that handles %%Presentation Requests|presentation-request%% that it receives from %%verifier|verifier%% components (of other %%parties|party%%, but also of its own %%owner|owner%%). Typically, this means looking for the requested data in the Principal's %%wallet|wallet%%, and using it to construct a Presentation (=response). However, if the Wallet doesn't have it, the Holder may negotiate a transaction with a component of the designated %%issuer|issuer%% for the purpose of obtaining the needed credential, which - when obtained - it can subsequently store in the wallet and use in the Presentation.
 
 :::info Editor's note
 TNO (or others) to provide additional content of this file.
@@ -20,7 +20,7 @@ TNO (or others) to provide additional content of this file.
 The purpose of the Holder component is to handle Presentation Requests that it receives from %%verifier|verifier%% components (both of its own %%owner|owner%%, and of other %%parties|party%%), and responding to such requests.
 
 ### Criteria
-A **Holder** is a component in the [eSSIF-Lab functional architecture](../functional-architecture) whose function is to handle Presentation Requests that it receives from %%verifier|verifier%% components (both of its %%owner|owner%%, and of other %%Parties|party%%).
+A **Holder** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch) whose function is to handle Presentation Requests that it receives from %%verifier|verifier%% components (both of its %%owner|owner%%, and of other %%Parties|party%%).
 
 ### Functionality
 

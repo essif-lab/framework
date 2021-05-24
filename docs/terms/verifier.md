@@ -10,7 +10,7 @@ glossaryText: "the capability to request %%peer agents^peer-agent%% to present (
 ---
 
 ### Short Description
-A **Verifier** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that supports the %%Transaction Data Collector|transaction-data-collector%% as it tries to acquire %%(verifiable) credentials|credential%% from (an %%agent|agent%% of) some other %%party|party%%, for the purpose of negotiating a %%business transaction|transaction%%.
+A **Verifier** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that supports the %%Transaction Data Collector|transaction-data-collector%% as it tries to acquire %%(verifiable) credentials|credential%% from (an %%agent|agent%% of) some other %%party|party%%, for the purpose of negotiating a %%business transaction|transaction%%.
 
 It does so by:
 - creating %%Presentation Requests|presentation-request%% (or Presentation Definition as it is called in the [draft DIF specfication for Presentation Exchange](https://identity.foundation/presentation-exchange)) that ask for such credentials,
@@ -27,7 +27,7 @@ TNO (or others) to provide additional content of this file.
 The purpose of the Verifier function is.
 
 ### Criteria
-A **Verifier** is a component in the [eSSIF-Lab functional architecture](../functional-architecture) whose function is to ... (tbd).
+A **Verifier** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch) whose function is to ... (tbd).
 
 ### Functionality
 

@@ -28,4 +28,4 @@ Examples include the [eSSIF-Lab Glossary](../essifLab-glossary), the [Sovrin Glo
 - [Vocabulary](https://en.wikipedia.org/wiki/Vocabulary) - this is a set of familiar words witin a particular/persons's language or field of expertise. A Dictionary can provide the various meanings of each such words.
 
 ### Notes
-The [eSSIF-Lab Glossary](../essifLab-glossary) contains the words that are defined within the scope of the [eSSIF-Lab framework](../project).
+The [eSSIF-Lab Glossary](../essifLab-glossary) contains the words that are defined within the scope of the [eSSIF-Lab framework](../essifLab-project).

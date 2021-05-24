@@ -14,13 +14,13 @@ TNO (or others) to provide additional content of this file.
 :::
 
 ### Short Description
-An **issuer** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that structures sets of (related) statements/claims (e.g. as produced by the %%Transaction Data Discloser|transaction-data-discloser%%) in a package, adds metadata which includes e.g. a timestamp at which this was done, ensures that it is digitally signed on behalf of its %%owner|owner%% (so that third %%parties|party%% can prove its provenance and integrity). Another function of the issuer is to handle revocation (and (un)suspension) of credentials that it has issued. For such tasks, it relies on functions that are made available by the SSI Protocols and Crypto Layer.
+An **issuer** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that structures sets of (related) statements/claims (e.g. as produced by the %%Transaction Data Discloser|transaction-data-discloser%%) in a package, adds metadata which includes e.g. a timestamp at which this was done, ensures that it is digitally signed on behalf of its %%owner|owner%% (so that third %%parties|party%% can prove its provenance and integrity). Another function of the issuer is to handle revocation (and (un)suspension) of credentials that it has issued. For such tasks, it relies on functions that are made available by the SSI Protocols and Crypto Layer.
 
 ### Purpose
 The purpose of the Issuer function is.
 
 ### Criteria
-A **Issuer** is a component in the [eSSIF-Lab functional architecture](../functional-architecture) whose function is to ... (tbd).
+A **Issuer** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch) whose function is to ... (tbd).
 
 ### Functionality
 

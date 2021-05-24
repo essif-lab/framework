@@ -4,9 +4,18 @@ title: eSSIF-Lab Vision and Purpose
 sidebar_label: Vision and Purpose
 ---
 
-## Vision
+## eSSIF-Lab Objectives
 
-The eSSIF-Lab vision is that Self-sovereign Identity (SSI) will *empower European and other citizens* by providing new means to manage privacy by eliminating logins and making electronic transactions fast and safe both in the Internet and in physical life. SSI will *empower European organisations and governments* by providing new means to speed up, secure and automate transactions with citizens, customers, suppliers and partners, resulting in tens of billions of euros savings annually on administrative costs in Europe. SSI will be *a new business ecosystem paradigm* with thousands of new jobs, many new job categories and new business opportunities for existing and new European companies. And last, but certainly not least, SSI fosters *inclusiveness* and supports organizations and citizens to exercise their rights and fulfil their duties under the GDPR.
+The objectives that the eSSIF-Lab project aims to realize include:
+- *empower European and other citizens* by providing them with new means that help them to electronically negotiate and conduct transactions. These new means will make electronic transactions fast and safe both in the Internet and in physical life, and eliminate logins.
+- *empower European and other organizations and governments* by providing new means to speed up, secure and automate transactions with citizens, customers, suppliers and partners, resulting in tens of billions of euros savings annually on administrative costs in Europe.
+- ensure these new means support organizations and citizens to exercise their rights and fulfil their duties under the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/data-protection-eu_en).
+- stimulate these new means foster *inclusiveness*.
+- stimulate the pervasive use of *new business ecosystem paradigms* with thousands of new jobs, many new job categories and new business opportunities for existing and new European companies.
+
+:::tip We use the phrase **'Self-Sovereign Identity'** or **SSI**...
+to refer to the collection of these new means and the concepts and  mental models that are behind them.
+:::
 
 The current situation is that SSI solutions that are being created and brought to the market either target specific applications for which they provide a vertical solution ('stovepipes'), many need some kind of centralized governance/control, others have privacy issues, and none that we know of are interoperable with other such solutions.
 
@@ -15,7 +24,7 @@ The situation we would like to see is one in which we have SSI-enabled, interope
 ## Purpose
 
 :::tip **The purpose of the eSSIF-Lab...**
-... is to specify, develop and validate technological and non-technological (e.g. governance) means that support people, businesses and governments to think about, design and operate their (information) processes and conduct %%business transactions|transaction%% with one another that are electronically supported using SSI technology.
+... is to specify, develop and validate technological and non-technological (e.g. governance) means that support people, businesses and governments to think about, design, adapt, and operate their (information) processes such that they can negotiate and conduct %%business transactions|transaction%% with one another using the electronic support provided by the various SSI technologies.
 :::
 
 ## Context

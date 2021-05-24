@@ -47,7 +47,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/project')}>
+              to={useBaseUrl('docs/essifLab-project')}>
               Get Started
             </Link>
           </div>
