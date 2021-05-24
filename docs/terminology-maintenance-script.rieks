@@ -95,6 +95,8 @@ with "$1-$2"
 // For 'autonomous|autonomy', see 'self-sovereignty'
 replace-regex "%{mid}(action(-type)?|actor|agent|assertion|author)%{ss}%{end}"
 with "$1"
+replace-regex "%{mid}(ssi-)?(ac%{ss}|assurance-communit%{yies})%{end}"
+with "ssi-assurance-community"
 replace-regex "%{mid}\(?(decentralized|centralized|)\)?authorit%{yies}?%{end}"
 with "authority"
 

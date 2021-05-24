@@ -13,7 +13,7 @@ From the [perspective of eSSIF-Lab](essifLab-vision) this "what's truly importan
 
 We are aware that others have different ideas about what SSI is. That's ok - it is consistent with our ideas that others are also autonomous, self-sovereign parties. However, it does suggest that it may be worthwhile to postulate the principles that eSSIF-Lab uses to underpin its vision, framework, etc.
 
-The purpose of this section is to provide the eSSIF-Lab principles on which our [eSSIF-Lab Framework](essifLab-framework) is based. We have written them down to allow readers for some of whom they may seem a bit controversial, to better understand the framework, enabling them to follow the lines of reasoning that we use, the choices (e.g. for terminology) that we have made, and enable them to decide whether or not to adopt (parts of) the framework.
+The purpose of this section is to provide the eSSIF-Lab principles on which our [eSSIF-Lab Framework](essifLab-fw) is based. We have written them down to allow readers for some of whom they may seem a bit controversial, to better understand the framework, enabling them to follow the lines of reasoning that we use, the choices (e.g. for terminology) that we have made, and enable them to decide whether or not to adopt (parts of) the framework.
 
 ## Freedom of Information (Knowledge)
 

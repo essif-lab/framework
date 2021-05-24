@@ -9,11 +9,10 @@ The European Self-Sovereign Identity Lab ([eSSIF-Lab](https://essif-lab.eu/)) vi
 
 To learn more, we have a description on the following topics:
 - [Vision](essifLab-vision)
-- [Purpose](essifLab-purpose)
 - [Objectives](essifLab-objectives)
 - [Principles](essifLab-principles)
 - [Project](essifLab-project)
-- [Framework](essifLab-framework)
+- [Framework](essifLab-fw)
 - [Governance architecture](essifLab-governance)
 - [Business architecture](essifLab-fw-bus-arch)
 - [Functional architecture](essifLab-fw-func-arch)

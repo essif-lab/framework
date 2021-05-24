@@ -10,14 +10,14 @@ glossaryText: "the union of all %%partial identities^partial-identity%% of which
 ---
 
 ### Short Description
-**Identity** is a term that is heavily debated. For [our purposes](../essifLab-purpose), it is useful to see the identity of a person as the union of all characteristics, judgements and other %%knowledge|knowledge%% that %%parties|party%% have about that person. Generalizing this idea, we say that the identity of any %%entity|entity%% consists of the combined %%knowledge|knowledge%% (that is: of all %%parties|party%% that know) about this entity.
+**Identity** is a term that is heavily debated. For our purposes, it is useful to see the identity of a person as the union of all characteristics, judgements and other %%knowledge|knowledge%% that %%parties|party%% have about that person. Generalizing this idea, we say that the identity of any %%entity|entity%% consists of the combined %%knowledge|knowledge%% (that is: of all %%parties|party%% that know) about this entity.
 
 Inspired by [Pfitzmann and Hansen (2010)](https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf), we define a %%partial identity|partial-identity%% (of an %%entity|entity%%) as all the %%knowledge|knowledge%% that a single, specific %%party|party%% has about that entity (= the 'subject' of the %%partial identity|partial-identity%%). The identity of an entity is then the union/collection of all of its %%partial identities|partial-identity%%.
 
 The [Self-Identity](https://en.wikipedia.org/wiki/Self-concept) or [Self-concept](https://en.wikipedia.org/wiki/Self-concept) of a %%party|party%% is the %%partial identity|partial-identity%% of which it is both the subject and the %%owner|owner%%.
 
 ### Purpose
-The purpose of defining the term **Identity** is to make people aware that within the context of [our framework](../essifLab-framework) SSI as we see it
+The purpose of defining the term **Identity** is to make people aware that within the context of [our framework](../essifLab-fw) SSI as we see it
 
 ### Criterion
 An **Identity** is a character string that is being used for identification purposes by a specific %%party|party%%.

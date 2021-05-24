@@ -4,7 +4,6 @@ module.exports = {
     [
       { type: 'doc', id: 'essifLab' },
       { type: 'doc', id: 'essifLab-vision' },
-      { type: 'doc', id: 'essifLab-purpose' },
       { type: 'doc', id: 'essifLab-objectives' },
       { type: 'doc', id: 'essifLab-principles' },
       { type: 'doc', id: 'essifLab-project' },
@@ -12,7 +11,7 @@ module.exports = {
         label: 'Framework',
         items:
         [
-          { type: 'doc', id: 'essifLab-framework' },
+          { type: 'doc', id: 'essifLab-fw' },
           { type: 'doc', id: 'essifLab-governance' },
           { type: 'doc', id: 'essifLab-fw-bus-arch' },
           { type: 'doc', id: 'essifLab-fw-func-arch' },

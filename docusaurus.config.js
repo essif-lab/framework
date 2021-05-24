@@ -48,10 +48,6 @@ module.exports = {
               to: 'docs/essifLab-vision'
             },
             {
-              label: 'Purpose',
-              to: 'docs/essifLab-purpose'
-            },
-            {
               label: 'Objectives',
               to: 'docs/essifLab-objectives'
             },
@@ -83,7 +79,7 @@ module.exports = {
           items: [
             {
               label: 'Framework',
-              to: 'docs/essifLab-framework'
+              to: 'docs/essifLab-fw'
             },
             {
               label: 'Governance',

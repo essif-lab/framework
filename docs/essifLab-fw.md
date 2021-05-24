@@ -1,5 +1,5 @@
 ---
-id: essifLab-framework
+id: essifLab-fw
 title: eSSIF-Lab Framework
 sidebar_label: Framework
 scopeid: essifLab
@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 *This section is work in progress.*
 :::
 
-The main [purpose](essifLab-purpose) of [eSSIF-Lab](essifLab) is to realize its [vision](essifLab-vision). This is quite a challenge, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. And there is '%%ecosystem|ecosystem%%' complexity, i.e. different groups of %%organizations|organization%% and/or people (%%parties|party%%) need artifacts that work for them as a group, both 'horizontally' and 'vertically', but no further than the context of that group.
+The main purpose of [eSSIF-Lab](essifLab) is to realize its [vision](essifLab-vision). This is quite a challenge, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. There is '%%ecosystem|ecosystem%%' complexity, i.e. different groups of %%organizations|organization%% and/or people (%%parties|party%%) need artifacts that work for them as a group, both 'horizontally' and 'vertically', but no further than the context of that group.
 
 The eSSIF-Lab Framework aims to establish a varied set of articles/documents, %%terminology|terminology%%, and %%mental models|mental-model%% that individual %%parties|party%% from different backgrounds can use e.g. as they
 - seek to use SSI, and want to learn about:
