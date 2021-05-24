@@ -47,4 +47,4 @@ When the transaction has been completed, both participants can issue a credentia
 
 --------
 
-[^1]: Since transactions are symmetric, the requestor could also have a form that the provider needs to fill in so as to provide the requestor with the data it needs to commit to that transaction. We have left that out of this description for the sake of simplicity. However, the [eSSIF-Lab functional architecture](../functional-architecture) does take this into account.
+[^1]: Since transactions are symmetric, the requestor could also have a form that the provider needs to fill in so as to provide the requestor with the data it needs to commit to that transaction. We have left that out of this description for the sake of simplicity. However, the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch) does take this into account.

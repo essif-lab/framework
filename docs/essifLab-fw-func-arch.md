@@ -1,7 +1,7 @@
 ---
-id: business-architecture
-title: eSSIF-Lab Business Architecture
-sidebar_label: Business Architecture
+id: essifLab-fw-func-arch
+title: eSSIF-Lab Functional Architecture
+sidebar_label: Functional Architecture
 scopeid: essifLab
 ---
 
@@ -15,55 +15,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 Realizing the [eSSIF-Lab vision](vision-and-purpose) is a very challenging endeavour, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. There is 'ecosystem' complexity, i.e. different groups of organizations and/or people need artifacts that work for them as a group, both 'horizontally' and 'vertically', but no further than the context of that group.
 
-The eSSIF-Lab Business Architecture aims to establish a %%terminology|terminology%%, %%mental models|mental-model%% and (generic) functionalities that are intended to serve as a common basis that %%parties|party%% from different backgrounds can use e.g. for:
-- thinking and reasoning about SSI-related topics and how that contributes to realizing the [eSSIF-Lab vision](vision-and-purpose);
-- creating business artifacts that help organizations to adopt SSI and transform their policies, information management, administrative processes and supporting business applications (systems) so that they can reap the benefits.
-- creating technology that provide the necessary IT functionalities that allow the supporting business applications to efficiently and effectively communicate with corresponding applications of other parties;
-- discussing and resolving issues related to the design and specifications of interfaces, protocols and policies, not only at the technological level, but also at the business process and compliance/policy levels;
-- designing and developing technical applications or platforms that support the management of such design and specification processes, both for individual parties as for business ecosystems.
+The eSSIF-Lab Functional Architecture aims to establish a %%terminology|terminology%%, %%mental models|mental-model%% and (generic) functionality that are intended to serve as a common basis that %%parties|party%% from different backgrounds can use e.g. for:
+- thinking and arguing about SSI-related topics and how that contributes to realizing the [eSSIF-Lab vision](vision-and-purpose);
+- creating technological components that provide functionalities that fit into the architecture and hence have a great chance to be, or quickly become, interoperable with tech components that other %%parties|party%% have developed;
+- discussing and resolving issues related to interfaces and protocols for tech components that provide such functionalities;
+- designing and developing technical applications that support individual businesses or business ecosystems, not only as they conduct %%business transactions|transaction%%, but also in order to govern the %%policies|policy%% they need to make the technology work as they intend.
 
 To this end, this document provides an overview of
-- the world model that is being used to think/reason about the purposes of eSSIF-Lab, how to realize them, and how to communicate about all that;
 - the functions (capabilities) that individual %%parties|party%% need in order to electronically support %%business transactions|transaction%%;
 - the interactions between these functions that make such %%business transactions|transaction%% happen;
 - the various %%policies|policy%% that %%parties|party%% have to govern, and put in place in order for the technical components that provide these capabilities to function in accordance with their (subjective) rules, working-instructions and other guidance.
-
-## 2. World model (Scope, Context, Transactions)
-
-Like everyone else, eSSIF-Lab too has its own way of thinking and reasoning about the world. In this chapter, we highlight the most important concepts that you as a reader need to be aware of in order to understand what this business architecture is about, and what it allows you to do with it. Terms of which the meaning is particularly imporant to our world view are highlighted, and hovering over them shows you the definition that we use. If you want to dive deeper into their meanings, just click them.
-
-eSSIF-Lab sees the world (universe) as being filled with %%entities|entity%%, i.e. things (people and animals included) that exist. Our world view is shaped by the distinctions that eSSIF-Lab makes as it classifies such entities into well-defined categories, each of which having specific characteristics.
-
-One such category are %%parties|party%%, i.e. %%entities|entity%% that have and maintain a sovereign/autonomous %%knowledge|knowledge%%, and use this to pursue their %%objectives|objective%%. Human beings or %%organizations|organization%% do this, and hence are parties. Another such category are %%actors|actor%%, i.e. %%entities|entity%% that are capable of acting, i.e. doing something. Think of human beings, or machines (including computers). Note that not all %%parties|party%% are %%actors|actor%% (e.g. %%organizations|organization%%), and not all %%actors|actor%% are %%parties|party%% (e.g. robots). Please read more about %%Parties, Actors and Actions|pattern-party-actor-action%% so that you really understand the distinctions and similarties between these terms, and how they relate to one another, because this is an important foundation of our architecture.
-
-Another important concept we use is that of a %%jurisdiction|jurisdiction%%, which we take to be %%parties|party%% that have and maintain rules, apply these rules to %%entities|legal-entity%% that they know to exist, enforce these rules in their %%scope of control|scope-of-control%%, and have a means to settle disputes. A %%legal jurisdiction|legal-jurisdiction%% is a jurisdiction operated by a nation state or other well-known governmental body. Other jurisdictions are abundant, e.g. organizations, families, and even individuals. Please read more about %%jurisdictions|pattern-jurisdiction%% so that you really understand what the concept is about, because this, too, is an important foundation of our architecture.
-
-### 2.1 eSSIF-Lab Scope
-
-In order to enable %%interactions|transaction%% between different %%parties|party%%, as described in the [eSSIF-Lab vision](vision-and-purpose), eSSIF-Lab focuses on the exchange and administration of relevant %%data|data%%, with a particular focus on the %%qualifications|qualified-data%% and other assurances that are provided and/or needed. This makes its results particularly relevant for administrative organizations such as governmental bodies, financial institutions and the like. However, *every* party will have use-cases in which it needs to (digitally) interact with other parties, so for them, the eSSIF-Lab work is relevant as well.
-
-A party usually cannot realize its objectives on its own. To do this, the party needs to get itself organized, e.g. by defining the kinds of %%actions|action%% that might help to further the objectives, purchasing/hiring %%actors|actor%% to do the work, managing the %%policies|policy%% that specify how such actors should operate (making the policies appropriately accessible and interpretable). We use the term %%governance|governance%% to refer to the activities/process that gets a party organized. The governance activities that are in scope of eSSIF-Lab relate to specifying the work, and maintaining the associated artifacts, that is related to the needs of parties as they (digitally) interact with one another.
-
-### 2.3 Business Transactions
-
-In the eSSIF-Lab world view, %%actors|actor%% interact with each other (as %%agents|agent%% for their %%principals|principal%%) to negotiate and execute %%transactions|transaction%%. An agent uses the %%knowledge|knowledge%% of its principal as its main guidance for such negotiations and execution. An agent may also use knowledge of other %%parties|party%% to fill in any gaps, or to provide additional details, as necessary.
-
-The participants of a transaction are %%parties|party%%, that employ %%actors|actor%% that do the associated work on their behalf. A party may employ different actors for executing different actions within a single transaction, each of which will use the knowledge of this party (its principal) to guide the execution of these actions, so that the entire transaction is performed according to how the party wants it to be done.
-
-The [*DEMO*](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations) transactions pattern (which is what we use) divides transactions in three phases:
-- a negotiation phase, in which one or more agents of each %%participant|participant%% exchange data for the purpose of establishing a %%contract|transaction-agreement%% that specifies what the %%transaction|transaction%% entails. This phase results either in a commitment decision of all participants, or the termination of the transaction because one of them quits.
-- an execution phase, in which (perhaps other) agents of the same principals work (execute actions) to fulfill the obligations of the agreement. This phase results in them stating that they have completed that work (or that they gave up).
-- the acceptance phase, in which one or more agents of each participant exchange data that leads to a decision to accept the results, or to escalate (e.g. start a law suit against the other participant)
-
-### 2.4 Issuers, Verifiers, Validators and Holders
-
-In the various phases of a %%transaction|transaction%%, each of its %%participants|participant%% may need (one or more of its agents) to do the following:
-- request the data that it needs for making the commitment or acceptance decision
--
-
-
-
-
 
 ## 2. Functional Architecture Overview
 
@@ -71,7 +32,7 @@ Figure 1 shows the initial *functional* eSSIF-Lab architecture, and its scope, c
 
 Please be aware that *functional* capabilities, components, %%agents|agent%%, etc. do not necessarily coincide with *technical* capabilities, components, %%agents|agent%%, etc. The technical components can be deployed (downloaded, installed, run), whereas a functional component is a provider of a specified set of capabilities/functionalities an implementation of which can be made part of a technical component. So it is conceivable that a technical component contains an implementation of %%issuer|issuer%%, %%wallet|wallet%%, %%holder|holder%% and %%verifier|verifier%% functional components as well as other functionalities that are not described here, e.g. related to UX, setting %%preferences|policy%%, and more. In this functional architecture, the default type of components, %%agents|agent%% etc. are *functional*.
 
-Since the %%participants|participant%% of a %%(business) transaction|transaction%% are different %%parties|party%%, the negotiation, commitment and execution of that %%transaction|transaction%% will be done by %%agents|agent%% of these %%parties|party%%. Assuming that a single %%transaction|transaction%% has two such %%parties|party%%, we will use the term '%%Peer Party|peer-party%% (of a specific %%party|party%%, in the context of a single %transaction)' to refer to the participating %%party|party%% in that %%transaction|transaction%% that is not the specific %%party|party%% itself.
+Since the %%participants|participant%% of a %%(business) transaction|transaction%% are different %%parties|party%%, the negotiation, commitment and execution of that %%transaction|transaction%% will be done by %%agents|agent%% of these %%parties|party%%. Assuming that a single %%transaction|transaction%% has two such %%parties|party%%, we will use the term '%%Peer Party|peer-party%% (of a specific %%party|party%%, in the context of a single %%transaction|transaction%%)' to refer to the participating %%party|party%% in that %%transaction|transaction%% that is not the specific %%party|party%% itself.
 
 When an %%agent|agent%% is involved in such a %%transaction|transaction%%, it will be communicating with a component that it assumes to be an %%agent|agent%% of the %%peer party|peer-party%% of its %%principal|principal%% (the %%agent|agent%% may obtain further assurances for that, but that's outside the scope for now). We will use the term '%%peer agent|peer-agent%% (of a specific %%agent|agent%%, in the context of a single %%transaction|transaction%%)' to refer to an %%actor|actor%% with which the specific %%agent|agent%% has a communication session. Note that establishing whether or not an %%actor|actor%% is a %%Peer Agent|peer-agent%% does not necessarily require knowing who the %%peer party|peer-party%% actually is.
 
@@ -238,7 +199,7 @@ The request message must be designed in such a way that it is extendable as new 
 
 In order to make the %%verifier|verifier%% component work, a %%verifier policy|verifier-policy%% object is created by, or on behalf of the %%principal|principal%%, which specifies at least: \[to be elaborated\]
 
-A response to this request (called a %%presentation|presentation%%) will be obtained from a %%holder|holder%% component of the %%peer party|peer-party%%. This response will contain a reference to the request, allowing the %%verifier|verifier%% to combine them. The %%verifier|verifier%% will then check that the data in the response is a %%credential|credential%% that it has asked for (correct type/%issuer%), verify the proofs that are provided (predominantly the digital signature), and do some additional checks (e.g. whether or not the %%credential|credential%% has expired, is revoked, and such).
+A response to this request (called a %%presentation|presentation%%) will be obtained from a %%holder|holder%% component of the %%peer party|peer-party%%. This response will contain a reference to the request, allowing the %%verifier|verifier%% to combine them. The %%verifier|verifier%% will then check that the data in the response is a %%credential|credential%% that it has asked for (correct type/%%issuer|issuer%%), verify the proofs that are provided (predominantly the digital signature), and do some additional checks (e.g. whether or not the %%credential|credential%% has expired, is revoked, and such).
 
 Then, the %%verifier|verifier%% will send a message to the %%data collector|data-collector%%, containing the %%transaction-id|transaction-id%%, the data it has received, and the results of the various checks.
 
@@ -345,7 +306,7 @@ The SSI-Agent Network Architecture has two viewpoints:
 An individual %%party|party%% may use the single-%%party|party%% SSI viewpoint to come to grips with concerns related to the creation and maintenance of its network of its %%electronic agent|digital-agent%%. The set of concerns would include:
 
 -   How can electronic components be onboarded as an %%agents|agent%% of this %%party|party%%?
--   How can the integrity of such %%electronic agent|digital-agent%% be stated in a trustworthy manner (do such components need some kind of accreditation certificate, do we need to come up with a service that can remotely test the integrity of a component and have it issue ephemeral integrity-certificates/%credentials%, …)?
+-   How can the integrity of such %%electronic agent|digital-agent%% be stated in a trustworthy manner (do such components need some kind of accreditation certificate, do we need to come up with a service that can remotely test the integrity of a component and have it issue ephemeral integrity-certificates/%%credentials|credential%%, …)?
 -   How can the %%party|party%% specify which of its %%agents|agent%% may talk with which other %%agents|agent%%, and for what purposes?
 -   How should a %%party|party%% specify the %%policies|policy%% for the various SSI functionalities - what kind of support would be useful here?
 -   …
@@ -379,7 +340,7 @@ When all is done, %%parties|party%% may issue a (signed) %%statement|assertion%%
 
 In the example of the parking permit, a citizen (requester) sends a request to its municipality (provider) for obtaining a parking permit (the product/service). Then, the citizen fills in an online form (and uploads necessary PDFs) to enable the municipality to decide whether or not to produce the requested permit. The eSSIF-Lab architecture adds a secondary, %%electronic communication channel|digital-communication-channel%% that allows citizens to fill in the forms by using e.g. an SSI app on their phone. When the form is complete, the municipality decides whether or not to produce and issue the permit, which it can do as usual. It can also issue a %%credential|credential%% that states the result of the %%transaction|transaction%%, i.e. contains the details of the parking permit.
 
-Please note that while %%transactions|transaction%% are symmetrical in nature (i.e. both requester and provider need data from the other so as to decide whether or not to commit to the %%transaction|transaction%%), there is an implicit asymmetry in that activities that %%parties|party%% perform are ordered in time, which implies e.g. that the commitment decisions of both %%parties|party%% cannot be done at the same time. Also, in practice, it often happens that a %%party|party%% requires the other %%party|party%% to have executed (and stated) its part of the %%transaction|transaction%% before it actually commits to the %%transaction|transaction%%. For example, a provider may require the requester to have paid for the product before it is being shipped out. Consequently, the protocols for exchanging data/%credentials% will need to support such 'asynchronous' ways of working.
+Please note that while %%transactions|transaction%% are symmetrical in nature (i.e. both requester and provider need data from the other so as to decide whether or not to commit to the %%transaction|transaction%%), there is an implicit asymmetry in that activities that %%parties|party%% perform are ordered in time, which implies e.g. that the commitment decisions of both %%parties|party%% cannot be done at the same time. Also, in practice, it often happens that a %%party|party%% requires the other %%party|party%% to have executed (and stated) its part of the %%transaction|transaction%% before it actually commits to the %%transaction|transaction%%. For example, a provider may require the requester to have paid for the product before it is being shipped out. Consequently, the protocols for exchanging data/%%credentials|credential%% will need to support such 'asynchronous' ways of working.
 
 ### 5.2.  Transaction Negotiation Phase
 

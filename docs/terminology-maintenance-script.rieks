@@ -37,6 +37,8 @@ dutyrighttype = "%{dutyright}-types?"
 // `filter "**/*.txt"`               - any .txt file
 // `filter "**/*.adl, **/*.ifc"`     - any .adl and any .ifc file
 
+// filter "docs/terms/identity.md"
+// filter "docs/**/*.md"
 filter "docs/**/*.md"
 
 // PREPROCESSING: convert single-%-notations into %%-notations.
@@ -50,13 +52,14 @@ with "'"
 // replace-regex "(?<=\W)%%([^\|\n\r]+)\|[^%\n\r]+%%(?=\W)"
 // with "%$1%"
 
-// First, convert %show text% into %%show text%%
+// First, convert %show text% into %%show text%% in most of the cases... (it isn't fool proof!)
 // Use test sets: use the replace-regex to find texts in this file. Matches should match, non-matches should not.
-// Test set: none may match: %verif%er, %verif"ier%, "%verifier%", `%verifier%`
-// Test set: all must match:  %my verifier%, ('%verifiers%'), %verifier's%, %verifier’s%, (%(ver)/ifier%):., %vfd|verifier data%
+// Test set: NONE MAY MATCH: %verif%er, %verif"ier%, "%verifier%", `%verifier%`
+// Test set: all must match: %my verifier%, ('%verifiers%'), %verifier's%, %verifier’s%, (%(ver)/ifier%):., %vfd|verifier data%
+// Test set: all must match: my/%verifier%, %my verifier%/. %verifier%."
+// Test set: all must match: %risks%/%objectives%
 // Test set: all must also match:  %(our) (vfyr)%, %verifier's%. %verifier’s%... single-%party%), '**subject (of a %party%)**'
-// replace-regex "(?<=\s\(?%)(\w|\s|\(|\)|[/-’'"])+(?=%([)":,.!?]*\s|-\w))"
-replace-regex "(?<=[-\s]\(?'?%)([^%"]+)(?=%(([*_):;,.'!?]|\[[^\]]*\]){0,5}\s|-\w))"
+replace-regex "(?<=(?:/|[-\s]\(?'?)%)([^%"]+)(?=%(([*_)/:;,.'"!?]|\[[^\]]*\]){0,5}(\s|/)|-\w))"
 with "%$1%"
 
 // We do not use this replacement any more because authors make too many mistakes when trying to use it.
@@ -89,6 +92,7 @@ with "$1-$2"
 // ACTUAL PROCESSING: now we need to convert well-known `lowercase-show-text`s to appropriate `reftexts`
 
 // [A]
+// For 'autonomous|autonomy', see 'self-sovereignty'
 replace-regex "%{mid}(action(-type)?|actor|agent|assertion|author)%{ss}%{end}"
 with "$1"
 replace-regex "%{mid}\(?(decentralized|centralized|)\)?authorit%{yies}?%{end}"
@@ -150,8 +154,8 @@ replace-regex "%{mid}(holder|issuer|verifier|validator|wallet|identifier|jurisdi
 with "$1"
 replace-regex "%{mid}((holder|issuer|verifier|validation|wallet)-polic)%{yies}%{end}"
 with "$1y"
-replace-regex "%{mid}(identifier)%{ss}%{end}"
-with "$1"
+replace-regex "%{mid}identif(y|ier?|ication)%{ss}%{end}"
+with "identifier"
 replace-regex "%{mid}((?:partial-)?identit)%{yies}%{end}"
 with "$1y"
 
@@ -161,7 +165,9 @@ with "$1"
 // for 'legal entities', see 'entities'
 
 // [O]
-replace-regex "%{mid}(?:natural-)?(objective|organization|owned|owner|ownership)%{ss}%{end}"
+replace-regex "%{mid}own(er)?%{ss}%{end}"
+with "owner"
+replace-regex "%{mid}(?:natural-)?(objective|organization|owned|ownership)%{ss}%{end}"
 with "$1"
 
 // [P]
@@ -173,16 +179,28 @@ with "$1party"
 replace-regex "%{mid}(|transaction-data-(collector|discloser)-)polic%{yies}%{end}"
 with "$1policy"
 
-// [Q-R-S]
+// [Q-R]
 // For 'rights', see [D]uties
-replace-regex "%{mid}(risk|role(?:-name)|scope(?:-file)|ssi-agent)%{ss}%{end}"
+replace-regex "%{mid}(risk|role|role-name)%{ss}%{end}"
+with "$1"
+replace-regex "%{mid}(\(?networked-\)?|\(?(\(?de\)?)centralized-\)?)?risk-management%{end}"
+with "risk-management"
+
+// [S]
+replace-regex "%{mid}(scope|scope-file|ssi-agent)%{ss}%{end}"
 with "$1"
 replace-regex "%{mid}scopes-of-control%{end}"
 with "scope-of-control"
 replace-regex "%{mid}(statement|claim|statement%{ss}/claim)%{ss}%{end}"
 with "assertion"
-replace-regex "%{mid}(ssi|self-sovereign-identity-\(ssi\)|self-sovereign-identity)%{end}"
+replace-regex "%{mid}(ssi|self-sovereign-identity-\(ssi\)|\(ssi\)-self-sovereign-identity|self-sovereign-identity)%{end}"
 with "self-sovereign-identity"
+replace-regex "%{mid}(self-sovereign|autonomous|autonomy)%{end}"
+with "self-sovereignty"
+replace-regex "%{mid}(ssi-ac)%{ss}%{end}"
+with "ssi-assurance-community"
+replace-regex "%{mid}(ssi-assurance-communit)%{yies}%{end}"
+with "ssi-assurance-community"
 
 // [T]
 // for transaction data collector/discloers policies, see [P]
@@ -193,8 +211,14 @@ with "$1"
 // for verifier and validator stuff - see holder
 replace-regex "%{mid}(verifiable-credential)%{ss}%{end}"
 with "$1"
-replace-regex "%{mid}(data-)?validat(e|ing|ion)(-data)%{end}"
+replace-regex "%{mid}(?:data-)?validat(?:e|ed|es|ing|ion)(-data)%{end}"
 with "validated-data"
+replace-regex "%{mid}(?:data-)?valid(?:|ate|ated|ates|ating|ation)%{end}"
+with "validation"
+replace-regex "%{mid}(?:data-)?(?:verif(y|ied|ies|ying|ication))(-data)%{end}"
+with "verified-data"
+replace-regex "%{mid}(?:data-)?(?:verif(y|ied|ies|ying|ication))%{end}"
+with "verification"
 replace-regex "%{mid}vocabular%{yies}%{end}"
 with "vocabulary"
 

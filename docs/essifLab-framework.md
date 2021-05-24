@@ -1,5 +1,5 @@
 ---
-id: framework
+id: essifLab-framework
 title: eSSIF-Lab Framework
 sidebar_label: Framework
 scopeid: essifLab
@@ -11,9 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 *This section is work in progress.*
 :::
 
-## 1. Purpose
-
-Realizing the [eSSIF-Lab vision](vision-and-purpose) is a very challenging endeavour, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. There is 'ecosystem' complexity, i.e. different groups of organizations and/or people need artifacts that work for them as a group, both 'horizontally' and 'vertically', but no further than the context of that group.
+The main [purpose](essifLab-purpose) of [eSSIF-Lab](essifLab) is to realize its [vision](essifLab-vision). This is quite a challenge, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. And there is '%%ecosystem|ecosystem%%' complexity, i.e. different groups of %%organizations|organization%% and/or people (%%parties|party%%) need artifacts that work for them as a group, both 'horizontally' and 'vertically', but no further than the context of that group.
 
 The eSSIF-Lab Framework aims to establish a varied set of articles/documents, %%terminology|terminology%%, and %%mental models|mental-model%% that individual %%parties|party%% from different backgrounds can use e.g. as they
 - seek to use SSI, and want to learn about:
@@ -25,59 +23,8 @@ The eSSIF-Lab Framework aims to establish a varied set of articles/documents, %%
   - that exist in the context of SSI infrastructure;
   - that are needed to connect business applications to such infrastructure;
   - that facilitate %%communities|community%% and %%ecosystems|ecosystem%% of %%parties|party%% that use SSI.
-- seek to contribute to the creation and management of %%communities|community%% and %%ecosystems|ecosystem%% of %%parties|party%% that use SSI that operate with decentralized authorities, i.e. authorities that respect the autonomy of other %partie%s by refraining from imposing e.g. rules or duties on them that they then must comply with (or else...)).
+- seek to contribute to the creation and management of %%communities|community%% and %%ecosystems|ecosystem%% of %%parties|party%% that use SSI that operate with decentralized authorities, i.e. authorities that respect the autonomy of other %%parties|party%% by refraining from imposing e.g. rules or duties on them that they then must comply with (or else...)).
 - seek a deeper understanding about the %%concepts|concept%% and %%mental models|mental-model%% behind SSI, allowing them to contribute new ideas, applications and services for SSI.
-
-This document provides an overview of
-- what SSI is from the eSSIF-Lab framework perspective
-- the context of the framework, i.e. a (conceptual) model of the world within which SSI functions and provides benefits;
-- the scope of the framework, i.e. a description of what it is the framework covers;
-- the focus of the framework, i.e. a model for describing (electronic) business transactions;
-- the way that we use terminology as an important element for the construction of the framework.
-
-## 2. What is (not) SSI - the eSSIF-Lab framework perspective
-
-The dialogue about what Self-Sovereign Identity (SSI) really is, that was started in the blog "[The Path to Self-Sovereign Identity](http://www.lifewithalacrity.com/2016/04/the-path-to-self-soverereign-identity.html)" by Christopher Allen in 2016, has not resulted in a consensus today. While some see the ten principles of SSI that Allen proposed as the definition of SSI, they have been formulated as "a departure point to provoke a discussion about what's truly important".
-
-In a subsequent section, we will elaborate on what's truly important from the perspective of the eSSIF-Lab Framework, which is to electronically support the negotiation and execution of %%(business) transactions|transaction%% between different %%parties|party%%. From this perspective, we use the term %%SSI|self-sovereign-identity%% to refer to concepts/ideas, architectures, processes and technologies that aim to support (autonomous) %%parties|party%% as they negotiate and execute electronic %%(business) transactions|transaction%% with one another.
-
-In this section, we want to point out (not extensively discuss) some basic ideas or principles that we consider to be true and valid, but of which we also found that others do not necessarily share them. We do that so that readers may understand how/what we think, enabling them to follow the lines of reasoning that we use, the choices (e.g. for terminology) that we have made, and enable them to decide whether or not to adopt (parts of) the framework.
-
-The following statements represent some of the ideas and principles that we have experienced to be true/valid in the real world, while also to be controversial - at least to some/many.
-
-1. According to (articles 8-10 of) the [*European Convention on Human Rights (ECHR)*](https://www.echr.coe.int/Pages/home.aspx?p=basictexts/convention), people are free to collect, process, store, and express information (about any %%entity|entity%%) in any way the like (making a few exceptions for cases when e.g. security of society is put at risk). This made us realize that
-  - these rights refer to fundamental, biological capabilities that people ar born with, and the ECHR is limiting these capabilities for exceptional cases.
-  - %%organizations|organization%% (governments, enterprises), too, have these capabilities, which implies that all %%parties|party%% have them.
-
-2. %%Parties|party%% will use their capabilities as they see fit, as they are autonomous (or: self-sovereign, i.e. sovereign over their own %%knowledge|knowledge%%). While they are free to choose whether or not to comply with laws, rules and regulations, they cannot choose the consequences that other parties will attach to their behaviour, as these other parties are autonomous as well. We see that in practice: a person that drives a car on a highway with a speed limit of 55 mph in the desert of Arizona may well decide to go faster than that, depending on his assessment of the consequences it may have (of being caught and fined).
-
-3. A %%party|party%% is autonomous in the data it collects about other %%entities|entity%%, the judgements it makes, the characteristics it attributes, etc. We use the term %%partial identity|partial-identity%% (of an entity), as coined by [Pfitzmann and Hansen (2010)](https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf), to refer to all knowledge that the party has about that entity (which we call the 'subject' of that partial identity). Obviously, this party is the %%owner|owner%% (and hence controls) the partial identity. A party does not control the partial identities for which it is the subject, except the one that it owns itself (its self-image). This is in contrast with what many people (want to) believe. It is also reality.
-
-4. It is reasonable to consider the %%identity|identity%% (of an %%entity|entity%%, called the subject of the identity) as the union or composition of all partial identities of that subject. But actually, we haven't found any purpose for defining it - there does not seem to be a single use-case that is relevant within our scope for which it would be meaningful to define it.
-
-5. [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986#section-1.1) (p5) says "An identifier embodies the information required to distinguish what is being identified from all other things within its scope of identification". One can easily see that this implies that an identifier is not something that that embodies information, but a property of something that embodies information. This 'something' will or won't have the identification property depending on the context. Still, we use the term %%identifier|identifier%% to refer to a character string that is being used for identification purposes. For details, see the %%identifier-pattern|pattern-identifier%%.
-
-6. What a piece of data means to a %%party|party%% is what it decides that it means, simply because this mapping between data and meaning (called %%semantics|semantics%%) is part of a party's %%knowledge|knowledge%%. This poses a communications problem: a party that wants to understand what another party means by data that the latter authors, must have the prerequisite knowledge that allows it to interpret that data using a sufficiently similar mapping as the author used. For digital data, so-called [schema's](https://en.wiktionary.org/wiki/schema) are said to provide such knowledge, but that is not enough. For example, if a party receives a piece of data that includes a "Alice is a friend of Bob", then even if we know the meaning of being a friend, and that friends must be humans, that doesn't say which real-world person corresponds with 'Alice' or 'Bob'. It is a hard problem for authors of data to provide %%identifiers|identifier%% that other parties can properly dereference, i.e. use to determine which real world entity the authore was actually referring to.
-
-7. There are several terms we want to stay away from, because they cause too much controverse, they miss the point, and we have found a way to do without them. Examples of such terms are 'identity', and 'trust'. We find that controverse, or missing the point often are the result of people mixing different concepts or ideas, or simply wanting to go too fast in their thoughts.
-
-8. Since %%parties|party%% are autonomous, they are also free to lie.
-
-## 2. Context (World Model)
-
-Like everyone else, eSSIF-Lab too has its own way of thinking and reasoning about the world. In this chapter, we highlight the most important concepts that you as a reader need to be aware of in order to understand what this framework is about, and what you can do with it. Terms of which the meaning is particularly imporant to our world view are highlighted, and hovering over a term shows you the definition that we use for it. If you want to dive deeper into the its meaning, just click it..
-
-eSSIF-Lab sees the world (universe) as being filled with %%entities|entity%%, i.e. things (people and animals included) that exist. Our world view is shaped by the distinctions that eSSIF-Lab makes as it classifies such entities into well-defined categories, each of which having specific characteristics.
-
-One of the most fundamental categories is called %%party|party%%. A party (typical examples of which are %%organizations|organization%% (governments, enterprises) and individual human beings) is defined as an %%entity|entity%% that manages and uses its own %%knowledge|knowledge%% autonomously. It is its own sovereign, i.e. within its %%scope of control|scope-of-control%%, everything is guided by its own, subjective %%knowledge|knowledge%%. This includes all decision making, execution of %%actions|action%%, %%risks|risk%%, %%governance|governance%%, etc., etc. We also postulate that every party has %%objectives|objective%% that it pursues. A large part of its knowledge revolves about managing these objectives (which includes %%governance|governance%% and risk management) and making sure they get realized.
-
-While parties are their own (self)sovereigns and in principle can do as they please, they live in a universe with many other parties, that are also 'self sovereigns'. This means that they need to come to terms with one another as they interact. Such %%interactions|transaction%% between parties is one of the focal points of this framework (see further down). Such interactions also influence the %%knowledge|knowledge%% of the participating parties.
-
-Another fundamental category is called %%actor|actor%%, which is defined as an %%entity|entity%% that can act (do things). It is important to note that some actors are parties (e.g. human beings) while others are not (e.g. robots, or organizations). As an actor does something (executing an %%action|action%%), it is assumed to use the %%knowledge|knowledge%% of a particular %%party|party%% as the main guidance for executing that action. Actors, including humans, may execute actions on behalf of multiple parties.
-
-A particular contribution of this framework is that because of consequently distinguishing between %%parties|party%% and %%actors|actor%%, it becomes possible (and necessary) to determine which actor executes what action on behalf of what party, which is particularly relevant in the context of two interacting/transacting parties. Further details are given in the %%party-actor-action pattern|pattern-party-actor-action%%
-
-A third fundamental category is called %%jurisdiction|jurisdiction%%, which is a foundational concept for organizing collaborations between %%parties|party%%, e.g. in %%communities|community%% or %%ecosystems|ecosystem%%. Basically, a jurisdiction acts as an %%authority|authority%% that has mechanisms for for defining and maintaining rules, enforcement thereof, and a mechanism for resolving conflicts within its %%scope of control|scope-of-control%%. More details can be found in the %%jurisdictions pattern|pattern-jurisdiction%%.
 
 ### 2.1 eSSIF-Lab Scope
 
@@ -112,7 +59,7 @@ Figure 1 shows the initial *functional* eSSIF-Lab architecture, and its scope, c
 
 Please be aware that *functional* capabilities, components, %%agents|agent%%, etc. do not necessarily coincide with *technical* capabilities, components, %%agents|agent%%, etc. The technical components can be deployed (downloaded, installed, run), whereas a functional component is a provider of a specified set of capabilities/functionalities an implementation of which can be made part of a technical component. So it is conceivable that a technical component contains an implementation of %%issuer|issuer%%, %%wallet|wallet%%, %%holder|holder%% and %%verifier|verifier%% functional components as well as other functionalities that are not described here, e.g. related to UX, setting %%preferences|policy%%, and more. In this functional architecture, the default type of components, %%agents|agent%% etc. are *functional*.
 
-Since the %%participants|participant%% of a %%(business) transaction|transaction%% are different %%parties|party%%, the negotiation, commitment and execution of that %%transaction|transaction%% will be done by %%agents|agent%% of these %%parties|party%%. Assuming that a single %%transaction|transaction%% has two such %%parties|party%%, we will use the term '%%Peer Party|peer-party%% (of a specific %%party|party%%, in the context of a single %transaction)' to refer to the participating %%party|party%% in that %%transaction|transaction%% that is not the specific %%party|party%% itself.
+Since the %%participants|participant%% of a %%(business) transaction|transaction%% are different %%parties|party%%, the negotiation, commitment and execution of that %%transaction|transaction%% will be done by %%agents|agent%% of these %%parties|party%%. Assuming that a single %%transaction|transaction%% has two such %%parties|party%%, we will use the term '%%Peer Party|peer-party%% (of a specific %%party|party%%, in the context of a single %%transaction|transaction%%)' to refer to the participating %%party|party%% in that %%transaction|transaction%% that is not the specific %%party|party%% itself.
 
 When an %%agent|agent%% is involved in such a %%transaction|transaction%%, it will be communicating with a component that it assumes to be an %%agent|agent%% of the %%peer party|peer-party%% of its %%principal|principal%% (the %%agent|agent%% may obtain further assurances for that, but that's outside the scope for now). We will use the term '%%peer agent|peer-agent%% (of a specific %%agent|agent%%, in the context of a single %%transaction|transaction%%)' to refer to an %%actor|actor%% with which the specific %%agent|agent%% has a communication session. Note that establishing whether or not an %%actor|actor%% is a %%Peer Agent|peer-agent%% does not necessarily require knowing who the %%peer party|peer-party%% actually is.
 
@@ -279,7 +226,7 @@ The request message must be designed in such a way that it is extendable as new 
 
 In order to make the %%verifier|verifier%% component work, a %%verifier policy|verifier-policy%% object is created by, or on behalf of the %%principal|principal%%, which specifies at least: \[to be elaborated\]
 
-A response to this request (called a %%presentation|presentation%%) will be obtained from a %%holder|holder%% component of the %%peer party|peer-party%%. This response will contain a reference to the request, allowing the %%verifier|verifier%% to combine them. The %%verifier|verifier%% will then check that the data in the response is a %%credential|credential%% that it has asked for (correct type/%issuer%), verify the proofs that are provided (predominantly the digital signature), and do some additional checks (e.g. whether or not the %%credential|credential%% has expired, is revoked, and such).
+A response to this request (called a %%presentation|presentation%%) will be obtained from a %%holder|holder%% component of the %%peer party|peer-party%%. This response will contain a reference to the request, allowing the %%verifier|verifier%% to combine them. The %%verifier|verifier%% will then check that the data in the response is a %%credential|credential%% that it has asked for (correct type/%%issuer|issuer%%), verify the proofs that are provided (predominantly the digital signature), and do some additional checks (e.g. whether or not the %%credential|credential%% has expired, is revoked, and such).
 
 Then, the %%verifier|verifier%% will send a message to the %%data collector|data-collector%%, containing the %%transaction-id|transaction-id%%, the data it has received, and the results of the various checks.
 
@@ -386,7 +333,7 @@ The SSI-Agent Network Architecture has two viewpoints:
 An individual %%party|party%% may use the single-%%party|party%% SSI viewpoint to come to grips with concerns related to the creation and maintenance of its network of its %%electronic agent|digital-agent%%. The set of concerns would include:
 
 -   How can electronic components be onboarded as an %%agents|agent%% of this %%party|party%%?
--   How can the integrity of such %%electronic agent|digital-agent%% be stated in a trustworthy manner (do such components need some kind of accreditation certificate, do we need to come up with a service that can remotely test the integrity of a component and have it issue ephemeral integrity-certificates/%credentials%, …)?
+-   How can the integrity of such %%electronic agent|digital-agent%% be stated in a trustworthy manner (do such components need some kind of accreditation certificate, do we need to come up with a service that can remotely test the integrity of a component and have it issue ephemeral integrity-certificates/%%credentials|credential%%, …)?
 -   How can the %%party|party%% specify which of its %%agents|agent%% may talk with which other %%agents|agent%%, and for what purposes?
 -   How should a %%party|party%% specify the %%policies|policy%% for the various SSI functionalities - what kind of support would be useful here?
 -   …
@@ -420,7 +367,7 @@ When all is done, %%parties|party%% may issue a (signed) %%statement|assertion%%
 
 In the example of the parking permit, a citizen (requester) sends a request to its municipality (provider) for obtaining a parking permit (the product/service). Then, the citizen fills in an online form (and uploads necessary PDFs) to enable the municipality to decide whether or not to produce the requested permit. The eSSIF-Lab architecture adds a secondary, %%electronic communication channel|digital-communication-channel%% that allows citizens to fill in the forms by using e.g. an SSI app on their phone. When the form is complete, the municipality decides whether or not to produce and issue the permit, which it can do as usual. It can also issue a %%credential|credential%% that states the result of the %%transaction|transaction%%, i.e. contains the details of the parking permit.
 
-Please note that while %%transactions|transaction%% are symmetrical in nature (i.e. both requester and provider need data from the other so as to decide whether or not to commit to the %%transaction|transaction%%), there is an implicit asymmetry in that activities that %%parties|party%% perform are ordered in time, which implies e.g. that the commitment decisions of both %%parties|party%% cannot be done at the same time. Also, in practice, it often happens that a %%party|party%% requires the other %%party|party%% to have executed (and stated) its part of the %%transaction|transaction%% before it actually commits to the %%transaction|transaction%%. For example, a provider may require the requester to have paid for the product before it is being shipped out. Consequently, the protocols for exchanging data/%credentials% will need to support such 'asynchronous' ways of working.
+Please note that while %%transactions|transaction%% are symmetrical in nature (i.e. both requester and provider need data from the other so as to decide whether or not to commit to the %%transaction|transaction%%), there is an implicit asymmetry in that activities that %%parties|party%% perform are ordered in time, which implies e.g. that the commitment decisions of both %%parties|party%% cannot be done at the same time. Also, in practice, it often happens that a %%party|party%% requires the other %%party|party%% to have executed (and stated) its part of the %%transaction|transaction%% before it actually commits to the %%transaction|transaction%%. For example, a provider may require the requester to have paid for the product before it is being shipped out. Consequently, the protocols for exchanging data/%%credentials|credential%% will need to support such 'asynchronous' ways of working.
 
 ### 5.2.  Transaction Negotiation Phase
 

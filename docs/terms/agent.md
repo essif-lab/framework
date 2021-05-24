@@ -16,10 +16,10 @@ The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides 
 
 ### Purpose
 The ability to distinguish between (non)agents is relevant in many situations, including:
-- electronic communication: the agent 
+- electronic communication: the agent
 
 ### Criterion
-An **Agent** is a role that an %%actor|actor%% fulfills with respect to some %%party|party%% when that actor is executing some %%action|action%% on behalf of that %%party|party%%.
+**Agent** is a %%role name|role-name%% that generically refers to an %%actor|actor%% that is executing some %%action|action%% on behalf of a %%party|party%%. 
 
 ### Examples
 

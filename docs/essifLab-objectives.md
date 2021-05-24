@@ -1,22 +1,27 @@
 ---
-id: vision-and-purpose
-title: eSSIF-Lab Vision and Purpose
-sidebar_label: Vision and Purpose
+id: essifLab-objectives
+title: eSSIF-Lab Objectives
+sidebar_label: Objectives
+scopeid: essifLab
 ---
 
-## eSSIF-Lab Objectives
+The %%objectives|objective%% that eSSIF-Lab aims to realize include:
+- *support individual people* with means that help them to electronically negotiate and conduct %%transactions|transaction%% in the widest sense of the word. Such means make it easier for them to participate in transactions, both in the Internet and in physical life. Criteria to determine that the objective is fulfilled include:
+  - logins (username, password) are eliminated.
+  - people can fill in forms (e.g. for applying for products or services) fast, and easily.
+  - people are protected from transacting with malicious %%parties|party%%.
+  - people find the provided means helpful as they seek to exercize their rights under privacy acts such as the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/data-protection-eu_en).
 
-The objectives that the eSSIF-Lab project aims to realize include:
-- *empower European and other citizens* by providing them with new means that help them to electronically negotiate and conduct transactions. These new means will make electronic transactions fast and safe both in the Internet and in physical life, and eliminate logins.
-- *empower European and other organizations and governments* by providing new means to speed up, secure and automate transactions with citizens, customers, suppliers and partners, resulting in tens of billions of euros savings annually on administrative costs in Europe.
-- ensure these new means support organizations and citizens to exercise their rights and fulfil their duties under the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/data-protection-eu_en).
-- stimulate these new means foster *inclusiveness*.
-- stimulate the pervasive use of *new business ecosystem paradigms* with thousands of new jobs, many new job categories and new business opportunities for existing and new European companies.
+- *support %%organizations|organization%%* (e.g. enterprises, governments) with means that help them to electronically negotiate and conduct %%transactions|transaction%% in the widest sense of the word. Such means make it easier for them to participate in transactions, both in the Internet and in physical life. Criteria to determine that the objective is fulfilled include:
+   - the costs of %%validating|validation%% the data that organizations need to determine whether or not to commit to a transaction, is significantly reduced.
+   - the lead time of (administrative) processes, such as applying for a product or service, is significantly reduced.
+   - the efforts of satisfying the requirements regarding their duties under privacy acts such as the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/data-protection-eu_en), and showing compliance, is significantly reduced.
 
-:::tip We use the phrase **'Self-Sovereign Identity'** or **SSI**...
-to refer to the collection of these new means and the concepts and  mental models that are behind them.
-:::
+- *support the creation of an %%SSI-Infrastructure|ssi-infrastructure%%*, that
+Criteria to determine that the objective is fulfilled include:
+   -
 
+- *support  assurance communities*, insofar the
 The current situation is that SSI solutions that are being created and brought to the market either target specific applications for which they provide a vertical solution ('stovepipes'), many need some kind of centralized governance/control, others have privacy issues, and none that we know of are interoperable with other such solutions.
 
 The situation we would like to see is one in which we have SSI-enabled, interoperable, scalable and business/information agnostic technologies, that form an infrastructure that every application for every %%party|party%% can use to serve its own objectives. This infrastructure, that enables the electronic exchange of verified (personal and non-personal) data, must be so easy to access and use for such %%parties|party%% that they will no longer need to be concerned about actual (SSI) technologies that have empowered them to make this happen. Rather, they will only need to think about, and decide which kinds of information they want to obtain for conducting specific %%business transactions|transaction%% and which %%parties|party%% they trust for providing such information. Also, they will need to think about, and decide which kinds of information they themselves are willing to provide to others in this new SSI world.

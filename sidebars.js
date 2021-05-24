@@ -1,28 +1,27 @@
 module.exports = {
-  sidebar_1: {
-    'Framework':
+  sidebar_for_essifLab: {
+    'eSSIF-Lab':
     [
-        // 'introduction',
-        // 'business-architecture',
-        // 'functional-architecture',
-        // 'open_calls'
-    ],
-    'Business Architecture':
-    [
-        // 'motive',
-        // 'terminology',
-        // 'overview'
-    ],
-    'Functional Architecture':
-    [
-        // 'motive',
-        // 'terminology',
-        // 'overview',
-        // 'infrastructure',
-        // 'network_architecture',
-        // 'high_level_transaction_flows',
-        // 'detailed_transaction_flows'
-    ],
+      { type: 'doc', id: 'essifLab' },
+      { type: 'doc', id: 'essifLab-vision' },
+      { type: 'doc', id: 'essifLab-purpose' },
+      { type: 'doc', id: 'essifLab-objectives' },
+      { type: 'doc', id: 'essifLab-principles' },
+      { type: 'doc', id: 'essifLab-project' },
+      { type: 'category',
+        label: 'Framework',
+        items:
+        [
+          { type: 'doc', id: 'essifLab-framework' },
+          { type: 'doc', id: 'essifLab-governance' },
+          { type: 'doc', id: 'essifLab-fw-bus-arch' },
+          { type: 'doc', id: 'essifLab-fw-func-arch' },
+          { type: 'doc', id: 'essifLab-pattern-list' },
+          { type: 'doc', id: 'terminology' },
+        ]
+      },
+      { type: 'doc', id: 'essifLab-glossary' },
+      ],
   },
   sidebar_for_terminology: {
     'Terminology':
