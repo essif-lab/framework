@@ -22,12 +22,9 @@ module.exports = {
         src: 'images/eSSIF-Lab logo.png',
       },
       items: [
-        {to: 'docs/project', label: 'Project', position: 'left'},
-        {to: 'docs/vision-and-purpose', label: 'Vision', position: 'left'},
-        {to: 'docs/business-architecture', label: 'Business Architecture', position: 'left'},
-        {to: 'docs/functional-architecture', label: 'Functional Architecture', position: 'left'},
-        {to: 'docs/governance', label: 'Governance', position: 'left'},
-        {to: 'docs/terminology', label: 'Terminology', position: 'left'},
+        {to: 'docs/essifLab', label: 'eSSIF-Lab', position: 'left'},
+        {to: 'docs/essifLab-project', label: 'EU Project', position: 'left'},
+        {to: 'docs/essifLab-glossary', label: 'Glossary', position: 'left'},
         {to: 'docs/ssi-standards', label: 'SSI Standardization', position: 'right'},
         {
           href: 'https://gitlab.grnet.gr/essif-lab/framework',
@@ -40,26 +37,39 @@ module.exports = {
       style: 'dark',
       links: [
         {
+          title: 'eSSIF-Lab',
+          items: [
+            {
+              label: 'Community',
+              to: 'docs/essifLab'
+            },
+            {
+              label: 'Vision',
+              to: 'docs/essifLab-vision'
+            },
+            {
+              label: 'Objectives',
+              to: 'docs/essifLab-objectives'
+            },
+            {
+              label: 'Principles',
+              to: 'docs/essifLab-principles'
+            },
+          ],
+        },
+        {
           title: 'Project',
           items: [
             {
-              label: 'Project site',
+              label: 'Project',
+              to: 'docs/essifLab-project'
+            },
+            {
+              label: 'Project website',
               href: 'https://essif-lab.eu/'
             },
-            // {
-            //   label: 'Apply for Infrastructure open call',
-            //   href: 'https://essif-lab-infrastructure-oriented.fundingbox.com/'
-            // },
             {
-              label: 'Open Calls',
-              href: 'https://essif-lab.eu/open-calls/'
-            },
-            // {
-            //   label: 'News and Events',
-            //   href: 'https://essif-lab.eu/news-and-events/'
-            // },
-            {
-              label: 'Gitlab',
+              label: 'Project gitlab',
               href: 'https://gitlab.grnet.gr/essif-lab/essif-lab',
             },
           ],
@@ -68,16 +78,20 @@ module.exports = {
           title: 'eSSIF-lab Framework',
           items: [
             {
-              label: 'Project',
-              to: 'docs/project'
+              label: 'Framework',
+              to: 'docs/essifLab-fw'
             },
             {
-              label: 'Functional Architecture',
-              to: 'docs/functional-architecture'
+              label: 'Governance',
+              to: 'docs/essifLab-governance'
             },
             {
-              label: 'SSI standardization',
-              to: 'docs/ssi-standards'
+              label: 'Business-architecture',
+              to: 'docs/essifLab-fw-bus-arch'
+            },
+            {
+              label: 'Functional-architecture',
+              to: 'docs/essifLab-fw-func-arch'
             },
           ],
         },

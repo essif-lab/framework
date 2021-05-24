@@ -10,7 +10,7 @@ glossaryText: "a functional component that collects sufficient and %%validated d
 ---
 
 ### Short Description
-A **Transaction Data Collector** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../functional-architecture)) that a %%party|party%% may use to collect sufficient and %%validated data|validated-data%% for deciding whether or not a request (typically for a product or a service) is to be serviced.
+A **Transaction Data Collector** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that a %%party|party%% may use to collect sufficient and %%validated data|validated-data%% for deciding whether or not a request (typically for a product or a service) is to be serviced.
 
 ### Purpose
 The purpose of a Transaction Data Collector is to collect sufficient and %%validated data|validated-data%% that eneables (an %%agent|agent%% of) its %%principal|principal%% to decide whether or not some request (typically for a product or a service) is to be serviced.
@@ -31,7 +31,7 @@ During the time in which a Transaction Data Collector is collecting data for a s
 A Transaction Data Collector benefits from generic APIs or (G)UIs that allow it to simply ask for the data that it requires. Specifically for SSI, the Transaction Data Collector uses the %%eSSIF-Glue|essif-glue%% interface to access the %%Verifier|verifier%% functionalities.
 
 ### Criteria
-A **Transaction Data Collector** is a functional component in the [eSSIF-Lab functional architecture](../functional-architecture) that
+A **Transaction Data Collector** is a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch) that
 - services requests by %%digital|digital-agent%% and non-digital %%agents|agent%%, for providing a product or service, thereby starting a %%transaction|transaction%%;
 - can setup, accept and tear-down %%communication channels|communication-channel%% of various kinds, with %%digital|digital-colleague%% and/or non-digital %%colleagues|colleague%% of that %%requesting agent|agent%%,[^peer-agents] as appropriate for the data exchanges that are needed to conduct the transactions;
 - can use any appropriate %%communication channel|communication-channel%% with a %%peer agent|peer-agent%% to:

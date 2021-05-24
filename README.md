@@ -17,7 +17,7 @@ Documentation on these and other header fields can be found [here](https://v2.do
 
 The Terminology Engine plugin of GRNET uses additional header fields. These are (or will be) defined [here](./docs/terminology-contributions).
 
-The `sidebars.js` file contains the basic mechanism for [distributing content among sections](https://v2.docusaurus.io/docs/docs-introduction#sidebar) and is self-explanatory (compare with the sidebar appearing [here](https://essif-lab.pages.grnet.gr/essif-lab/docs/project)). Subsections within the `.md` file (that is, tagged with `##`) will appear at the right part of the page (see for example [here](https://essif-lab.pages.grnet.gr/essif-lab/docs/infrastructure)).
+The `sidebars.js` file contains the basic mechanism for [distributing content among sections](https://v2.docusaurus.io/docs/docs-introduction#sidebar) and is self-explanatory (compare with the sidebar appearing [here](https://essif-lab.pages.grnet.gr/essif-lab/docs/essifLab-project)). Subsections within the `.md` file (that is, tagged with `##`) will appear at the right part of the page (see for example [here](https://essif-lab.pages.grnet.gr/essif-lab/docs/infrastructure)).
 
 ## Inserting Images in docs
 <!-- **DEPRECATED** Images must be put inside the directory `static/images` and developers must refer to them using _relative_ urls.
