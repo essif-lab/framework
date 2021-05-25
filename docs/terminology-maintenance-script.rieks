@@ -147,7 +147,7 @@ replace-regex "%{mid}guardianship(-arrangement)?-type%{ss}%{end}"
 with "guardianship-type"
 replace-regex "%{mid}governs?%{end}"
 with "governance"
-replace-regex "%{mid}(governed(?: by)?|governing-party)?s?%{end}"
+replace-regex "%{mid}(governed(?: by)?|governing-part%{yies})%{end}"
 with "governor"
 
 // [H-I-J-K] (all holder, issuer, verifier and wallet stuff, too)
@@ -226,6 +226,8 @@ with "vocabulary"
 
 // [W]
 // for wallet stuff - see holder
+replace-regex "%{mid}(essif-?lab-)?world-model(-pattern)?%{end}"
+with "pattern-world-model"
 
 // CLEANING UP UNINTENDED CHANGES
 

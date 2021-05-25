@@ -12,20 +12,20 @@ module.exports = {
         items:
         [
           { type: 'doc', id: 'essifLab-fw' },
+          { type: 'doc', id: 'essifLab-terminology' },
           { type: 'doc', id: 'essifLab-governance' },
           { type: 'doc', id: 'essifLab-fw-bus-arch' },
           { type: 'doc', id: 'essifLab-fw-func-arch' },
-          { type: 'doc', id: 'essifLab-pattern-list' },
-          { type: 'doc', id: 'terminology' },
         ]
       },
       { type: 'doc', id: 'essifLab-glossary' },
-      ],
+      { type: 'doc', id: 'essifLab-pattern-list' },
+    ],
   },
   sidebar_for_terminology: {
     'Terminology':
     [
-      { type: 'doc', id: 'terminology' },
+      { type: 'doc', id: 'essifLab-terminology' },
       { type: 'doc', id: 'essifLab-glossary' },
       { type: 'category',
         label: 'Mental Models',

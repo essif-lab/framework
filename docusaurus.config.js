@@ -100,7 +100,7 @@ module.exports = {
           items: [
             {
               label: 'Introduction',
-              to: 'docs/terminology'
+              to: 'docs/essifLab-terminology'
             },
             {
               label: 'Glossary',
@@ -138,7 +138,7 @@ module.exports = {
         termsDir: './docs/terms',
         glossaryFilepath: './docs/glossary.md',
         noParseFiles: ['./docs/terminology-plugin-instructions.md'],
-	glossaryPatternSeparator: '^'
+	      glossaryPatternSeparator: '^'
       }
     ]
   ]
