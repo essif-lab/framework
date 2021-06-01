@@ -206,6 +206,8 @@ with "ssi-assurance-community"
 
 // [T]
 // for transaction data collector/discloers policies, see [P]
+replace-regex "%{mid}(terminolog)%{yies}%{end}"
+with "$1y"
 replace-regex "%{mid}(?:\(?business\)?-)?(term(-file)?|transaction(-agreement|-id|-data-(collector|discloser)|-form|-proposal|-request|-type)?)%{ss}%{end}"
 with "$1"
 

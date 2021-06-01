@@ -5,12 +5,12 @@ sidebar_label: Terminology and Mental Models
 scopeid: essifLab
 ---
 
-When %parties% from various backgrounds (and cultures) work together, it is inevitable that misunderstandings occur, i.e. texts (written or spoken) are easily interpreted in ways other than what the author intended. More often than not, such misunderstandings go undetected, and rightfully so, as in most cases it doesn't cause serious problems.
+When %%parties|party%% from various backgrounds (and cultures) work together, it is inevitable that misunderstandings occur, i.e. texts (written or spoken) are easily interpreted in ways other than what the author intended. More often than not, such misunderstandings go undetected, and rightfully so, as in most cases it doesn't cause serious problems.
 
-In the context of [eSSIF-Lab](essifLab) we expect people from such various backgrounds (and cultures) to work together in order to realize its [objectives](essifLab-Objectives). Because of its nature, we must expect misunderstandings to become problematic. In order to prevent them, and also to efficiently and effectively resolve those that do occur, we provide mechanisms to detect such misunderstandings, develop %terminologies% that reduce the likelihood of them occurring, and resolve problems/disputes that may occur around %terms% and %definitions%. Using these mechanisms is not compulsory - they may be used (or not) as participants like.
+In the context of [eSSIF-Lab](essifLab) we expect people from such various backgrounds (and cultures) to work together in order to realize its [objectives](essifLab-Objectives). Because of its nature, we must expect misunderstandings to become problematic. In order to prevent them, and also to efficiently and effectively resolve those that do occur, we provide mechanisms to detect such misunderstandings, develop %%terminologies|terminology%% that reduce the likelihood of them occurring, and resolve problems/disputes that may occur around %%terms|term%% and %%definitions|definition%%. Using these mechanisms is not compulsory - they may be used (or not) as participants like.
 
 The mechanisms we provide include:
-- a %%process|terminology-process%% for managing the %meaning|definition% of %terms%;
+- a %%process|terminology-process%% for managing the %%meaning|definition%% of %%terms|term%%;
 - a [set of terms and definitions](essifLab-glossary) that are managed according to that process;
 - a [set of mental models](essifLab-pattern-list), each of which shows how various terms relate to one another in a consistent and coherent way;
 - a tool, i.e. [Docusaurus](https://docusaurus.io/) + [a plugin](terminology-plugin-instructions), that allows for making web-based documentation such as what you are looking at now.

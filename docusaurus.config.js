@@ -138,7 +138,8 @@ module.exports = {
         termsDir: './docs/terms',
         glossaryFilepath: './docs/glossary.md',
         noParseFiles: ['./docs/terminology-plugin-instructions.md'],
-	      glossaryPatternSeparator: '^'
+        glossaryPatternSeparator: '^',
+        glossaryTermPatterns: ['term', 'concept']
       }
     ]
   ]

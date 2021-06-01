@@ -5,6 +5,7 @@ sidebar_label: Objectives
 scopeid: essifLab
 ---
 
+<<<<<<< HEAD
 ## Purpose
 The purpose of the eSSIF-Lab is to specify, develop and validate technological and non-technological (e.g. governance) means that support people, businesses and governments to think about, design, adapt, and operate their (information) processes such that they can negotiate and conduct %%business transactions|transaction%% with one another using the electronic support provided by the various SSI technologies.
 
@@ -14,6 +15,15 @@ For this purpose, eSSIF-Lab has set the following %%objectives|objective%% to re
 ### Empower European and other citizens
 The results of the work done in eSSIF-Lab should contribute to provide individuals with means that help them to electronically negotiate and conduct %%transactions|transaction%% in the widest sense of the word. Such means make it easier for them to participate in transactions, both in the Internet and in physical life.
 
+=======
+:::tip **The purpose of the eSSIF-Lab...**
+... is to specify, develop and validate technological and non-technological (e.g. governance) means that support people, businesses and governments to think about, design, adapt, and operate their (information) processes such that they can negotiate and conduct %%business transactions|transaction%% with one another using the electronic support provided by the various SSI technologies.
+:::
+
+For this purpose, eSSIF-Lab has set the following %%objectives|objective%% to realize:
+
+- *support individual people*. The results of the work done in eSSIF-Lab should contribute to provide individuals with means that help them to electronically negotiate and conduct %%transactions|transaction%% in the widest sense of the word. Such means make it easier for them to participate in transactions, both in the Internet and in physical life.
+>>>>>>> origin/feature-glossaryTermPatterns
 Criteria to determine that the objective is fulfilled include:
   - logins (username, password) are eliminated.
   - people can fill in forms (e.g. for applying for products or services) fast, and easily.
