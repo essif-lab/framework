@@ -11,6 +11,7 @@ To learn more, we have a description on the following topics:
 - [Vision](essifLab-vision)
 - [Objectives](essifLab-objectives)
 - [Principles](essifLab-principles)
+- [Terminology](essifLab-terminology)
 - [Project](essifLab-project)
 - [Framework](essifLab-fw)
 - [Governance architecture](essifLab-governance)
