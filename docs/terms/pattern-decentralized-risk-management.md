@@ -55,7 +55,7 @@ The other two activities, 'Risk Communication and Consulation', and 'Monitoring 
 
 ## Networked Risk Management
 
-Our definition of %%risk|risk%% is well-aligned with that of ISO (i.e. "effect of uncertainty on objectives")
+%%Networked risk management|risk-management%% is a way for managing the %%risks|risk%% of a single %%party|party%%, taking into account that Our definitions of %%risk|risk%%, %%risk owner|risk-owner%% and other risk-related terms are aligned with those of ISO, but (contrary to those of) but there are some subtle differences. much more explicit
 In ISO standards, the person or entity (say: the %%party|party%%) with the accountability and authority to manage a risk is called the 'risk owner'.
 
 %%Networked Risk Management|risk-management%% is a management process that is run by (or on behalf of) a %%party|party%% for the purpose of managing the %%risks|risk%% that this party %%owns|owner%%.

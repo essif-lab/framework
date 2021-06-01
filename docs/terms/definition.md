@@ -5,31 +5,39 @@ scopeid: essifLabTerminology
 type: concept
 typeid: definition
 stage: draft
-hoverText: "Definition: a text that helps Parties to understand the meaning of (and Concepts behind) a Term, ideally in such a way that these Parties can determine whether or not they make the same distinction."
-glossaryText: "a text that helps %%parties^party%% to understand the meaning of (and %%concepts^concept%% behind) a %%term^term%%, ideally in such a way that these %%parties^party%% can determine whether or not they make the same distinction."
+hoverText: "Definition: a text that helps Parties to have the same understanding about the meaning of (and Concepts behind) a Term, ideally in such a way that these Parties can determine whether or not they make the same distinction."
+glossaryText: "a text that helps %%parties^party%% to have the same understanding about the meaning of (and %%concepts^concept%% behind) a %%term^term%%, ideally in such a way that these %%parties^party%% can determine whether or not they make the same distinction."
 ---
 
 ### Short Description
-<!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
-A **Definition** is a text that helps %%parties|party%% truly understand the meaning of a %%term|term%% as it is used in a communication. Because [terms are scoped](terminology), this 'truly understanding' of one another isn't trivial. Therefore, we insist that the explanatory text be a criterion that %%parties|party%% are expected to use in the same way in some %%scope(s)|scope%%, allowing them to establish whether or not they make the same determination as to whether or not something qualifies to be refered to by that term in a way that is independent of whether or not the (alledged) meaning is relevant for the purposes they pursue within that scope.
+A **Definition** is a text that helps %%parties|party%% to have the same understanding about the meaning of a %%term|term%%, and hence enables communications. The quality of a definition is the extent in which parties can use it to actually demonstrate that they have the same understanding.
+
+The problem that definitions (as we see them) contribute to solving is misunderstandings that may arise as every %%party|party%% has its own %%knowledge|knowledge%% and autonomously determines the %%semantics|semantics%% it uses to express itself in texts/speech/pictures, and interpret that of other parties. The fact that the semantics of parties is subjective makes it realistic to assume that the meaning that a party intends to convey as it expresses itself is not the same as how another party interprets that expression - a 'misunderstanding'.
+
+All parties have learned, with varying degrees of sophistication, to identify misunderstandings, and ways to recover from that.
+
+A common mechanism for reducing the likelihood of misunderstandings to occur, is to associate terms with texts that are crafted to help parties have the same understanding, i.e. definitions. This mechanism is sometimes overrated in the sense that definitions are often considered to be universally valid rather than only useful in specific [scopes](terminology).
+
+Therefore, we insist that such texts
+- are associated with a %%scope|scope%% within which they are considered to be valid/useful (for the %%objectives|objective%% that %%parties|party%% pursue in that %%scope|scope%%);
+- are phrased as a [criterion](https://www.lexico.com/definition/criterion) that every such %%party|party%% can evaluate so as to determine whether or not something qualifies to be refered to by that term.
+The quality of such texts is the extent in which parties reach the same conclusion as they evaluate the criterion in an arbitrary use-case that is relevant for the scope.
 
 The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
+The eSSIF-Lab %%terminology process|terminology-process%% provides guidance for making and maintaining quality definitions.
 
 ### Purpose
-<!--Describe why the concept is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What objectives does it help realize? Why is this conceptevant within its scope of definition?-->
 Working together is easier when you and your peers share the same ideas. We need a way to test and ensure, that you and your peers _actually_ have the same understanding, for the purpose of making cooperation easier. Doing so is expected to not only reduce the number of terminological discussions, but also improve the efficiency and effectiveness of the remaining discussions.
 
 ### Criteria
-<!--REQUIRED--How is this concept different from related ideas? What are essential characteristics that must be true? This is where you specify the [intensional definition](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions) of the concept, i.e. the necessary and sufficient conditions for when the term should be used. This makes that the conceptomes crystal clear. In the case of nouns, this is equivalent to specifying the properties that an object needs to have in order to be counted as a referent of the term.-->
-Entity that comprises at a minimum:
-- a non-empty set of %%scopes|scope%% in each of which specific objectives are being pursued;
-- a criterion that specifies the necessary and sufficient conditions for being an instance of a named class;
-- a set of arguments and/or use-cases (that SHOULD not be empty), and that show the relevance of making this distinction within the scope (and for its objectives);
-- a %%name|term%% that is created and used within the scope that created the definition, for the purpose of referring to (instances of) the class, or using it as a placeholder for its instances.
+A **definition** is a text that comprises at a minimum:
+- a non-empty set of %%scopes|scope%% in each of which specific %%objectives|objective%% are being pursued;
+- a [criterion](https://www.lexico.com/definition/criterion) that specifies the necessary and sufficient conditions for being an instance of a named class;
+- a %%name or phrase|term%% that is used within the %%scopes|scope%% to refer to (unidentified, or arbitrary, or specific) %%entities|entity%% that satisfy the criterion.
 
 ### Examples
 <!--Provide a few sentences in which you give examples that obviously qualify as instances of `Concept`, and that do NOT obviously qualify. Also, provide examples that are not (so) obvious, but help users to better understand its intension.-->
-- The definition of the term %%definition|definition%% (a) is defined in, and hence valid in the scope `eSSIFLab`, (b) specifies a criterion (see the `Criteria` section above), and (c) is relevant (see the `Purpose` section above), and (d) has a name (i.e. `definition`) associated with it. Since it satisfies the criteria of `definition`, it can be referred to as 'the definition of `definition`'.
+- The definition of the term %%definition|definition%% (a) is defined in, and hence valid in the scope `eSSIFLab`, (b) specifies a criterion (see the `Criteria` section above), and (d) has a name (i.e. `definition`) associated with it. Since it satisfies the criteria of `definition`, it can be referred to as 'the definition of `definition`'.
 - The %%concepts|concept%% defined within the scope eSSIFLab have definitions associated with them, where the criteria, relevance and terms are defined in the %%concept-file|concept-file%% of that concept.
 
 ### Related Concepts
@@ -56,6 +64,6 @@ You may want to create definitions that are both acceptable for business people 
 - you are convinced that the vast majority of people in your audience will *make the same judgements as you do when applying these criteria* in a situation that you and your audience consider relevant; and
 - the *ability to make this distinction is relevant* for one or more purposes of your intended audience.
 
-Note that the actual word or phrase you choose as the %%term|term%% name for a concept is much less important than the criteria you define. If in a particular %%context|scope%% another name would be more suitable, you can define another %%term|term%% for that other context (scope) that still refers to the concept you created the definition for. 
+Note that the actual word or phrase you choose as the %%term|term%% name for a concept is much less important than the criteria you define. If in a particular %%context|scope%% another name would be more suitable, you can define another %%term|term%% for that other context (scope) that still refers to the concept you created the definition for.
 
 The %%Terminology Corpus|corpus%% provides templates that help you do that, e.g. for %%defining concepts|concept-file%% and for %%defining terms|term-file%%.

@@ -13,10 +13,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ## 1. Purpose
 
-Realizing the [eSSIF-Lab vision](vision-and-purpose) is a very challenging endeavour, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. There is 'ecosystem' complexity, i.e. different groups of organizations and/or people need artifacts that work for them as a group, both 'horizontally' and 'vertically', but no further than the context of that group.
+Realizing the [eSSIF-Lab vision](essifLab-vision) is a very challenging endeavour, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. There is 'ecosystem' complexity, i.e. different groups of organizations and/or people need artifacts that work for them as a group, both 'horizontally' and 'vertically', but no further than the context of that group.
 
 The eSSIF-Lab Functional Architecture aims to establish a %%terminology|terminology%%, %%mental models|mental-model%% and (generic) functionality that are intended to serve as a common basis that %%parties|party%% from different backgrounds can use e.g. for:
-- thinking and arguing about SSI-related topics and how that contributes to realizing the [eSSIF-Lab vision](vision-and-purpose);
+- thinking and arguing about SSI-related topics and how that contributes to realizing the [eSSIF-Lab vision](essifLab-vision);
 - creating technological components that provide functionalities that fit into the architecture and hence have a great chance to be, or quickly become, interoperable with tech components that other %%parties|party%% have developed;
 - discussing and resolving issues related to interfaces and protocols for tech components that provide such functionalities;
 - designing and developing technical applications that support individual businesses or business ecosystems, not only as they conduct %%business transactions|transaction%%, but also in order to govern the %%policies|policy%% they need to make the technology work as they intend.

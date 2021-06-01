@@ -147,7 +147,7 @@ replace-regex "%{mid}guardianship(-arrangement)?-type%{ss}%{end}"
 with "guardianship-type"
 replace-regex "%{mid}governs?%{end}"
 with "governance"
-replace-regex "%{mid}(governed(?: by)?|governing-party)?s?%{end}"
+replace-regex "%{mid}(governed(?: by)?|governing-part%{yies})%{end}"
 with "governor"
 
 // [H-I-J-K] (all holder, issuer, verifier and wallet stuff, too)
@@ -206,6 +206,8 @@ with "ssi-assurance-community"
 
 // [T]
 // for transaction data collector/discloers policies, see [P]
+replace-regex "%{mid}(terminolog)%{yies}%{end}"
+with "$1y"
 replace-regex "%{mid}(?:\(?business\)?-)?(term(-file)?|transaction(-agreement|-id|-data-(collector|discloser)|-form|-proposal|-request|-type)?)%{ss}%{end}"
 with "$1"
 
@@ -226,6 +228,8 @@ with "vocabulary"
 
 // [W]
 // for wallet stuff - see holder
+replace-regex "%{mid}(essif-?lab-)?world-model(-pattern)?%{end}"
+with "pattern-world-model"
 
 // CLEANING UP UNINTENDED CHANGES
 

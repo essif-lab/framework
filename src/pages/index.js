@@ -47,8 +47,17 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
+              to={useBaseUrl('docs/essifLab')}>
+              Getting Started
+            </Link>
+            &nbsp;&nbsp;&nbsp;
+            <Link
+              className={classnames(
+                'button button--outline button--secondary button--lg',
+                styles.getStarted,
+              )}
               to={useBaseUrl('docs/essifLab-project')}>
-              Get Started
+              The EU Project
             </Link>
           </div>
         </div>
