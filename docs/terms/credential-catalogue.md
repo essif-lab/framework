@@ -12,3 +12,7 @@ glossaryText: "a functional component that has the capability to register and ad
 :::info Editor's note
 TNO to provide further content
 :::
+
+### Short Description
+
+A *Credential Catalogue* is a functional component that has the capability to register and advertise the information about Credential Types that their respective %%Governing Parties|governor%% have decided to disclose so as to enable other Parties to decide whether or not it is beneficial for them to use Credentials of such types.
