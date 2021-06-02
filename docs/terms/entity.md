@@ -7,6 +7,7 @@ typeid: entity
 stage: draft
 hoverText: "Entity: someone or something that is known to exist."
 glossaryText: "someone or something that is known to exist."
+date: 20210601
 ---
 
 ### Short Description

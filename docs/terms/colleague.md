@@ -7,6 +7,7 @@ typeid: colleague
 stage: draft
 hoverText: "Colleagues: two or more (digital or non-digital) Agents that have the same Principal (i.e. Party on whose behalf they exeucte Actions)."
 glossaryText: "two or more (digital or non-digital) %%agents^agent%% that have the same %%principal^principal%% (i.e. %%party^party%% on whose behalf they exeucte %%actions^action%%)."
+date: 20210601
 ---
 
 :::info Editor's note

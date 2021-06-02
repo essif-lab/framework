@@ -3,6 +3,7 @@ id: essifLab-governance
 title: eSSIF-Lab Governance
 sidebar_label: Governance
 scopeid: essifLab
+date: 20210601
 ---
 
 ## Purpose

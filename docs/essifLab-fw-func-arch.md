@@ -3,6 +3,7 @@ id: essifLab-fw-func-arch
 title: eSSIF-Lab Functional Architecture
 sidebar_label: Functional Architecture
 scopeid: essifLab
+date: 20210601
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

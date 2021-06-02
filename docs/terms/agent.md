@@ -7,6 +7,7 @@ typeid: agent
 stage: draft
 hoverText: "Agent (of a Party): an Actor that is executing an Action on behalf of a Party (called the Principal of that Actor)."
 glossaryText: "an %%actor^actor%% that is executing an %%action^action%% on behalf of a %%party^party%% (called the %%principal^principal%% of that %%actor^actor%%)."
+date: 20210601
 ---
 
 ### Short Description
@@ -19,7 +20,7 @@ The ability to distinguish between (non)agents is relevant in many situations, i
 - electronic communication: the agent
 
 ### Criterion
-**Agent** is a %%role name|role-name%% that generically refers to an %%actor|actor%% that is executing some %%action|action%% on behalf of a %%party|party%%. 
+**Agent** is a %%role name|role-name%% that generically refers to an %%actor|actor%% that is executing some %%action|action%% on behalf of a %%party|party%%.
 
 ### Examples
 

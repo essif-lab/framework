@@ -7,6 +7,7 @@ typeid: wallet-policy
 stage: draft
 hoverText: "Wallet Policy: a Digital Policy that enables an operational Wallet component to function according to the rules of its Policy Governor."
 glossaryText: "a %%digital policy^digital-policy%% that enables an operational %%wallet^wallet%% component to function according to the rules of its %%policy governor^policy-governor%%."
+date: 20210601
 ---
 
 :::info Editor's note

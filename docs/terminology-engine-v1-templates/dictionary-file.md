@@ -7,6 +7,7 @@ typeid: dictionaryID
 stage: draft
 hoverText: "DictionaryID: popuptext for 'dictionaryID' (tbd)."
 glossaryText: "popuptext for 'dictionaryID' (tbd)."
+date: 20210601
 ---
 <!--A dictionary is an alphabetically sorted list of terms with associated meanings that originate from multiple scopes.
 This template lets you define the specifications according to which a specific dictionary is generated.

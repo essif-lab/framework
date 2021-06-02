@@ -7,6 +7,7 @@ typeid: legal-system
 stage: draft
 hoverText: "Legal-system: a system in which rules are defined, and mechanisms for their enforcement and conflict resolution are (implicitly or explicitly) specified."
 glossaryText: "a system in which rules are defined, and mechanisms for their enforcement and conflict resolution are (implicitly or explicitly) specified."
+date: 20210601
 ---
 
 ### Short Description

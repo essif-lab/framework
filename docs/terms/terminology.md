@@ -7,6 +7,7 @@ typeid: terminology
 stage: draft
 hoverText: "Terminology (in a Scope): a set of Terms that all have a Definition within some Scope, and are used for reasoning and communicating about one or more specific topics."
 glossaryText: "a set of %%terms^term%% that all have a %%definition^definition%% within some %%scope(s)^scope%%, and are used for reasoning and communicating one or more specific topics."
+date: 20210601
 ---
 
 ### Short Description

@@ -8,6 +8,7 @@ conceptref: essifLab:Actor
 stage: draft
 hoverText: "Peer Actor (of some other Actor in a Communication Session): the Actor with whom/which this other Actor is communicating in that Communication Session."
 glossaryText: "the %%actor^actor%% with whom/which this other %%actor^actor%% is communicating in that %%communication session^communication-session%%."
+date: 20210601
 ---
 
 :::info Editors' note
@@ -19,4 +20,3 @@ The **peer actor** of some other %%actor|actor%% in a %%communication session|co
 
 ### Purpose
 From the perspective of an %%actor|actor%% that has a %%communication session|communication-session%% with antother actor, we need a term to refer to this other actor that is being communicated with.
-

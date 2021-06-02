@@ -7,6 +7,7 @@ typeid: termID
 conceptref: <ExistingConceptScopeID>:<ExistingtermID>
 stage: draft
 hoverText: "popuptext for 'termID' (tbd)."
+date: 20210601
 ---
 <!--A Term is a word or phrase that is used in at least one scope (context and/or for specific purposes) to refer to some concept.
 Please fill in the placeholders in this file as follows:

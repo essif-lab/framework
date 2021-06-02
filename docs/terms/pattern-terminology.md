@@ -6,6 +6,7 @@ type: pattern
 typeid: terminology
 stage: draft
 hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
+date: 20210601
 ---
 
 :::info Editor's note

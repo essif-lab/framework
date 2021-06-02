@@ -1,6 +1,7 @@
 ---
 id: terminology-plugin-instructions
 title: Terminology & Glossary plugin docs
+date: 20210601
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl'; // All other .md files may get this statement automatically added.
 
@@ -64,6 +65,7 @@ id: term
 title: Term page
 stage: draft
 hoverText: "This hover text will appear in the documentation page that you reference this term."
+date: 20210601
 ---
 
 ### Term explanation

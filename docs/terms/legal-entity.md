@@ -7,6 +7,7 @@ typeid: legal-entity
 stage: draft
 hoverText: "Legal Entity (of a Jurisdiction): an Entity that is known by, recognized to exist, and registered in that Jurisdiction."
 glossaryText: "an %%entity^entity%% that is known by, recognized to exist, and registered in that %%jurisdiction^jurisdiction%%."
+date: 20210601
 ---
 
 ### Short Description

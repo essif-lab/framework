@@ -7,6 +7,7 @@ typeid: terminology-process
 stage: draft
 hoverText: "Terminology Process: a method for recognizing misunderstandings as such, and creating or maintaining Definitions that resolve them."
 glossaryText: "a method for recognizing misunderstandings as such, and creating or maintaining %%definitions^definition%% that resolve them."
+date: 20210601
 ---
 
 ### Short Description

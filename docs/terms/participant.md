@@ -8,6 +8,7 @@ conceptref: essifLab:party
 stage: draft
 hoverText: "Participant (in/of a Business Transaction): a Party is negotiating (or has negotiated) a Business Transaction Agreement."
 glossaryText: "a %%party^party%% is negotiating (or has negotiated) a %%business transaction agreement^transaction-agreement%%."
+date: 20210601
 ---
 
 ### Purpose

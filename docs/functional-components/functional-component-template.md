@@ -7,8 +7,9 @@ typeid: <fcompid>
 stage: draft
 hoverText: "<short description that pops up when user hovers over a reference to this component."
 indexText: "<short description that is used in the FComp-Index; you can use double-percent constructs here"
+date: 20210601
 ---
-<-- Do the following: 
+<-- Do the following:
   - replace all `<fcompid>` occurrances with a string that is all lowercase. The string will be used for reference purposes, so it shouldn't be very long. The string may include `-` and it must not include whitespace.
   - replace `<Name of the Functional Component> (Acronym)>` with a string that states the name of your functional component, and the acronym that we can use to refer to it.
   - think of a good 'hoverText' and 'indexText'. In the 'indexText', you can use double-percent-constructs to help readers understand your texts better; such constructs produce pop-over texts, and links to the referred-to texts.
@@ -36,6 +37,6 @@ NOTE: This file contains further explanations in comments. You may need to edit 
 ### API 'xxx'
 <!-- specify the following items for the API:
   - the purpose(s) (what objective(s) does (using) the API realize). We need this to establish whether or not the API is fit for such purpose(s).
-  - a high-level protocol flow that allows people to understand its working at a functional level. 
+  - a high-level protocol flow that allows people to understand its working at a functional level.
   - a reference to the Open API specification of the API
 -->

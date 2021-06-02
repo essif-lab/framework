@@ -6,6 +6,7 @@ type: pattern
 typeid: guardianship
 stage: draft
 hoverText: "The Guardianships pattern captures the Concepts and relations that explain what a generic Guardianshipconsists of, and how it relates to Guardians, Dependents, Jurisdictions, etc."
+date: 20210601
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

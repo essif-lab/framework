@@ -3,6 +3,7 @@ id: essifLab-principles
 title: eSSIF-Lab Principles
 sidebar_label: Principles
 scopeid: essifLab
+date: 20210601
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
