@@ -27,7 +27,7 @@ We generalize this by defining the term %%party|party%% such that it encompasses
 
 %%Parties|party%% will use their capabilities as they see fit, as they are autonomous (or: self-sovereign, i.e. sovereign over their own %%knowledge|knowledge%%). While they are free to choose whether or not to comply with laws, rules and regulations, they cannot choose the consequences that other parties will attach to their behaviour, as these other parties are autonomous as well. We see that in practice: a person that drives a car on a highway with a speed limit of 55 mph in the desert of Arizona may well decide to go faster than that, depending on his assessment of the consequences it may have (of being caught and fined). In particular, every %%party|party%% is autonomous in the data it collects about other %%entities|entity%%, the judgements it makes, the characteristics it attributes, etc.
 
-## Identitis are not owned
+## Identities are not owned - Individuals do not control their identity
 
 'Identity' is a word that is difficult to define. Looking into the world we live in, it seems reasonable to say - and so do we - that 'who I am' is not only defined by how I think about myself (my self image), but also how others think about me, judge me, attribute me characteristics, etc. We take this position not because it has more truth than any other position, but because it is a greater help to us as we try to realize the eSSIF-Lab vision than any other position that we have contemplatede.
 
@@ -49,10 +49,6 @@ From this, it follows that:
 
 What a piece of %%data|data%% means to a %%party|party%% is what it decides that it means, simply because this mapping between data and meaning (called %%semantics|semantics%%) is part of a party's %%knowledge|knowledge%%. This poses a communications problem: a party that wants to understand what another party means by data that the latter authors, must have the prerequisite knowledge that allows it to interpret that data using a sufficiently similar mapping as the author used. For digital data, so-called [schema's](https://en.wiktionary.org/wiki/schema) are said to provide such knowledge, but that is not enough. For example, if a party receives a piece of data that includes a "Alice is a friend of Bob", then even if we know the meaning of being a friend, and that friends must be humans, that doesn't say which real-world person corresponds with 'Alice' or 'Bob'. It is a hard problem for authors of data to provide %%identifiers|identifier%% that other parties can properly dereference, i.e. use to determine which real world entity the authore was actually referring to.
 
-<<<<<<< HEAD
 ## Trust is subjective
-=======
-## Trust is a subjective decision
->>>>>>> origin/feature-glossaryTermPatterns
 
 %%Trust|trust%% is not something that is given, but something that %%parties|party%% (un)consciously assess, and decide about, and changes over time. Since parties are autonomous, their trust is highly subjective. As a consequence, the idea of having 'trusted registries', 'trusted issuers' that do not take this subjectivity into account basically act as %%(centralized) authorities|authority%%, denying that parties are autonomous. While we acknowledge that such ideas (have a right to) exist, we do not follow them.
