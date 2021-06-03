@@ -7,6 +7,7 @@ typeid: conceptID
 stage: draft
 hoverText: "ConceptID: popuptext for 'conceptID' (tbd)."
 glossaryText: "popuptext for 'conceptID' (tbd)."
+date: 20210601
 ---
 <!--A concept tries to capture the idea behind a classification of entities, allowing us to reason about everything in the class as if it were one thing. This file specifies the idea(s) that, within the scope of `<existing-scopeID>` will be referred to using `<New Term>`.
 Please fill in the placeholders in this file as follows:

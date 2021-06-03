@@ -158,10 +158,12 @@ Each term should have its own `.md` file, inside the `./docs/terms` directory,
 and it needs to consist of the following structure:
 
 ```title="./docs/terms/term.md"
+date: 20210601
 ---
 id: term
 title: Term page
 hoverText: "This hover text will appear in the documentation page that you reference this term."
+date: 20210601
 ---
 
 ### Term explanation

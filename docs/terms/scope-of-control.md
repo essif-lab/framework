@@ -7,10 +7,11 @@ typeid: scope-of-control
 stage: draft
 hoverText: "Scope of Control (of a Party): the extent of the area or subject matter that the Party controls."
 glossaryText: "the extent of the area or subject matter that a %%party^party%% controls."
+date: 20210601
 ---
 
 ### Short Description
-A **Scope of Control (of a Party)** is the extent of the area or subject matter (as in [OED](https://www.lexico.com/definition/scope) that the %%party|party%% controls. One might say that the party is 'sovereign' or 'autonomous' within its scope of control. 
+A **Scope of Control (of a Party)** is the extent of the area or subject matter (as in [OED](https://www.lexico.com/definition/scope) that the %%party|party%% controls. One might say that the party is 'sovereign' or 'autonomous' within its scope of control.
 
 A party that can also control (the behaviour of %%agents|agent%% of) other parties can be referred to as a %%jurisdiction|jurisdiction%% (see also the %%jurisdiction pattern|pattern-jurisdiction%%).
 

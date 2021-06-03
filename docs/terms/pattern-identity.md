@@ -6,6 +6,7 @@ type: pattern
 typeid: identity
 stage: draft
 hoverText: "The eSSIF-Lab Identity Pattern describes one of many ways one can think about 'Identity'."
+date: 20210601
 ---
 
 :::info Editor's note

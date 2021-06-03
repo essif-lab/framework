@@ -7,6 +7,7 @@ typeid: patternID
 stage: draft
 hoverText: "PatternID: popuptext for 'patternID' (tbd)."
 glossaryText: "popuptext for 'patternID' (tbd)."
+date: 20210601
 ---
 <!-- A pattern captures/describes a set of concepts, relations between them, and rules or constraints that (instances) thereof comply with. As such, it is a concise and possibly formal description of a coherent set of ideas, a mental model if you will, that can be used to facilitate one's thinking about/with these concepts.
 Please fill in the placeholders in this file as follows:

@@ -8,10 +8,11 @@ conceptref: essifLab:Agent
 stage: draft
 hoverText: "SSI-Agent: a Digital Agent that provides one or more of the SSI functionalities (Issuer, Holder, Verifier, Wallet) to its Principal."
 glossaryText: "a %%digital agent^digital-agent%% that provides one or more of the %%ssi functionalities^ssi-agent%% (%%issuer^issuer%%, %%holder^holder%%, %%verifier^verifier%%, %%wallet^wallet%%) to its %%principal^principal%%."
+date: 20210601
 ---
 
 ### Short Description
-An **SSI-agent** is a %%digital agent|digital-agent%% that provides one or more of the SSI functionalities (i.e. %%issuer|issuer%%, %%holder|holder%%, %%verifier|verifier%%, %%wallet|wallet%%) to its %%principal|principal%%. 
+An **SSI-agent** is a %%digital agent|digital-agent%% that provides one or more of the SSI functionalities (i.e. %%issuer|issuer%%, %%holder|holder%%, %%verifier|verifier%%, %%wallet|wallet%%) to its %%principal|principal%%.
 
 ### Purpose
 <!--State the purpose(s) for which it is necessary (or at least: desirable) to define <New Term>.-->

@@ -7,6 +7,7 @@ typeid: data-discloser-policy
 stage: draft
 hoverText: "Data Discloser Policy: a Digital Policy that enables an operational Data Discloser component to function according to the rules of its Policy Governor."
 glossaryText: "a %%digital policy^digital-policy%% that enables an operational %%data discloser^data-discloser%% component to function according to the rules of its %%policy governor^policy-governor%%."
+date: 20210601
 ---
 
 ### Short Description

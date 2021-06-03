@@ -7,6 +7,7 @@ typeid: actor
 stage: draft
 hoverText: "Actor: Entity that can act (do things), e.g. people, machines, but not Organizations."
 glossaryText: "Entity that can act (do things), e.g. people, machines, but not %%organizations^organization%%."
+date: 20210601
 ---
 ### Short Description
 An **Actor** is someone or something that can actually do things, such as people or machines. Actors will generally do things, i.e. execute %%actions|action%% in different ways, depending on the context, or the %%party|party%% for whom they do this.
@@ -24,7 +25,7 @@ Entity that is capable of actually executing %%actions|action%% (acting, doing t
 - People (human beings) obviously qualify, as do robots and other machines.
 - Stones, pictures, ideas, etc. do not qualify.
 - Software applications qualify, provided they are actually running on hardware. An app that is just sitting e.g. on a mobile phone but isn't executed does not qualify.
-- Enterprises, governments, and other %%organizations|organization%% do not qualify. 
+- Enterprises, governments, and other %%organizations|organization%% do not qualify.
 
 ### Related concepts
 - %%digital actor|digital-actor%%

@@ -7,13 +7,14 @@ typeid: scope-file
 stage: draft
 hoverText: "Scope-file: a file whose contents defines/specifies a Scope."
 glossaryText: "a file whose contents defines/specifies a %%scope^scope%%."
+date: 20210601
 ---
 
 ### Short Description
 A **scope-file** is a file that contains the specification of a specific %%scope|scope%%. To faciliate authors, a self-explanatory [template file](/terminology-engine-v1-templates/scope-file.md) is available.
 
 ### Purpose
-%%Scopes|scope%% enable people to focus, which is important as people's short-term memory is limited to 7 +/- 2 concepts (with attributes) [(Miller, 1956)](http://psychclassics.yorku.ca/Miller/). Hence, defining a scope - what is in it and what is not - is relevant as well. 
+%%Scopes|scope%% enable people to focus, which is important as people's short-term memory is limited to 7 +/- 2 concepts (with attributes) [(Miller, 1956)](http://psychclassics.yorku.ca/Miller/). Hence, defining a scope - what is in it and what is not - is relevant as well.
 
 ### Criterion
 a file that defines/specifies a %%scope|scope%%.

@@ -7,6 +7,7 @@ typeid: role-name
 stage: draft
 hoverText: "Role name: name (text) that refers to (and identifies) a Role in a a specific context."
 glossaryText: "name (text) that refers to (and identifies) a %%role^role%% in a specific context."
+date: 20210601
 ---
 
 ### Short Description

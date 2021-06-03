@@ -3,6 +3,7 @@ id: essifLab-fw
 title: eSSIF-Lab Framework
 sidebar_label: Framework
 scopeid: essifLab
+date: 20210601
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

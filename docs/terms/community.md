@@ -7,6 +7,7 @@ typeid: community
 stage: draft
 hoverText: "Community: an Organization that seeks to facilitate the cooperation between at least two Parties (its 'members') based on interests that these Parties share as each of them seeks to realize its own, individual Objectives."
 glossaryText: "an %%organization^organization%% that seeks to facilitate the cooperation between at least two %%parties^party%%  (its 'members') based on interests that these %%parties^party%% share as each of them seeks to realize its own, individual %%objectives^objective%%"
+date: 20210601
 ---
 
 ### Short Description

@@ -1,6 +1,7 @@
 ---
 id: notations-and-conventions
 title: Notations and Conventions
+date: 20210601
 ---
 
 This document provides an overview of the notations and conventions being used within eSSIF-Lab.

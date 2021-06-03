@@ -7,6 +7,7 @@ typeid: concept-file
 stage: draft
 hoverText: "Concept-file: a file whose contents defines/specifies a Concept."
 glossaryText: "a file whose contents defines/specifies a %%concept^concept%%."
+date: 20210601
 ---
 
 ### Short Description

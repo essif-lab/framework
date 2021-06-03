@@ -7,6 +7,7 @@ typeid: guardianship-arrangement
 stage: draft
 hoverText: "Guardianship Arrangement (in a Jurisdiction): a set of rights and duties between Legal Entities of the Jurisdiction that have been established and are enforced within that Jurisdiction for the purpose of caring for and/or protecting/guarding/defending one or more of these Entities."
 glossaryText: "Guardianship Arrangement (in a Jurisdiction): the specification of a set of rights and duties between %%legal entities^legal-entity%% of the %%jurisdiction^jurisdiction%% that enforces these rights and duties, for the purpose of caring for and/or protecting/guarding/defending one or more of these %%entities^legal-entity%%."
+date: 20210601
 ---
 
 ### Short Description

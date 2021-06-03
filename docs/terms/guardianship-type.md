@@ -7,6 +7,7 @@ typeid: guardianship-type
 stage: draft
 hoverText: "Guardianship-type (in a Jurisdiction): a class of Guardianship Arrangements within the Jurisdiction that governs and manages them."
 glossaryText: "a class of %%guardianship arrangements^guardianship-arrangement%% within the %%jurisdiction^jurisdiction%% that governs and manages them."
+date: 20210601
 ---
 
 :::info Editor's Note

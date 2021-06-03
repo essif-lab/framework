@@ -1,6 +1,7 @@
 ---
 id: ssi-standards
 title: SSI Standards
+date: 20210601
 ---
 
 The purpose of this document is to provide an overview of standards activities for self-sovereign identity (SSI) and their relevance to eSSIF-Lab.

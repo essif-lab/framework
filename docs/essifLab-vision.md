@@ -3,6 +3,7 @@ id: essifLab-vision
 title: eSSIF-Lab Vision
 sidebar_label: Vision
 scopeid: essifLab
+date: 20210601
 ---
 
 The European Self-Sovereign Identity Lab ([eSSIF-Lab](essifLab)) views itself as an %%ecosystem|ecosystem%% of %%parties|party%% that specify, develop, experiment with and validate technological and non-technological (e.g. governance) means that support people, businesses and governments (%%parties|party%%) to think about, design, adapt, and operate their (information) processes such that they can negotiate and conduct %%business transactions|transaction%% with one another using the electronic support provided by the various %%Self-Sovereign Identity (SSI)|self-sovereign-identity%% technologies.
