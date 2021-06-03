@@ -8,6 +8,7 @@ conceptref: essifLab:jurisdiction
 stage: draft
 hoverText: "Legal Jurisdiction: a Jurisdiction that is governed/operated by a governmental body."
 glossaryText: "a %%jurisdiction^jurisdiction%% that is governed/operated by a governmental body."
+date: 20210601
 ---
 
 ### Short Description

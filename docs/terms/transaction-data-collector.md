@@ -7,6 +7,7 @@ typeid: transaction-data-collector
 stage: draft
 hoverText: "Transaction Data Collector: a functional component that collects sufficient and Validated Data for deciding whether or not a request (typically for a product or a service) is to be serviced."
 glossaryText: "a functional component that collects sufficient and %%validated data^validated-data%% for deciding whether or not a request (typically for a product or a service) is to be serviced."
+date: 20210601
 ---
 
 ### Short Description

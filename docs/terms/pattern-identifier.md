@@ -6,6 +6,7 @@ type: pattern
 typeid: identifier
 stage: draft
 hoverText: "The eSSIF-Lab Identifier Pattern describes how Parties use texts (labels, symbols) to identify things they know to exist"
+date: 20210601
 ---
 
 :::info Editor's note

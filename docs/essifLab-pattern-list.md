@@ -3,6 +3,7 @@ id: essifLab-pattern-list
 title: "The eSSIF-Lab Mental Models"
 sidebar_label: Mental Models
 scopeid: essifLab
+date: 20210601
 ---
 
 Within eSSIF-Lab, we maintain a set of %%mental models|mental-model%%, i.e. casual and formal descriptions (%%patterns|pattern%%) of %%concepts|concept%%, relations between them, and constraints, that provide a specific 'viewpoint', or 'way of thinking' about a certain topic. They have been crafted so that they may serve as a basis for architecting, desiging, and implementing IT components and their governance processes.

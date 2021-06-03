@@ -7,6 +7,7 @@ typeid: partial-identity
 stage: draft
 hoverText: "Partial identity (of an Entity): the Knowledge that a specific Party (= the Owner of the partial identity) has about that Entity (= the 'subject' of the partial identity)."
 glossaryText: "the %%knowledge^knowledge%% that a specific %%party^party%% (= the %%owner^owner%% of the partial identity) has about that %%entity^entity%% (= the 'subject' of the partial identity)."
+date: 20210601
 ---
 
 ### Short Description

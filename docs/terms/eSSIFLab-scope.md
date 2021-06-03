@@ -7,6 +7,7 @@ typeid: eSSIFLab
 stage: draft
 hoverText: "ESSIFLab: specification of the eSSIF-Lab scope."
 glossaryText: "specification of the eSSIF-Lab scope."
+date: 20210601
 ---
 
 ### Governance

@@ -7,6 +7,7 @@ typeid: glossaryID
 stage: draft
 hoverText: "GlossaryID: popuptext for 'glossaryID' (tbd)."
 glossaryText: "popuptext for 'glossaryID' (tbd)."
+date: 20210601
 ---
 <!--A glossary is an alphabetically sorted list of terms with (short) explanations, usually aimed to help people understand texts around a certain (set of) topic(s) in some context(s).
 Please fill in the placeholders in this file as follows:

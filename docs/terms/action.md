@@ -7,6 +7,7 @@ typeid: action
 stage: draft
 hoverText: "Action: something that is actually done/executed - by a single Actor (on behalf of a given Party), as a single operation in a specific context."
 glossaryText: "something that is actually done/executed - by a single %%actor^actor%% (on behalf of a given %%party^party%%), as a single operation in a specific context."
+date: 20210601
 ---
 
 ### Short Description
@@ -29,4 +30,3 @@ An **Action** is something that is done by an actor, can be considered a single 
 - OED defines Action as the fact or process of doing something, typically to achieve an aim ([OED](https://www.lexico.com/definition/action)), which is too generic for our purposes.
 - %%actor|actor%%
 - %%agent|agent%%
-

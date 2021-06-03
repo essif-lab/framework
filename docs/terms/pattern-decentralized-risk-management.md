@@ -6,6 +6,7 @@ type: pattern
 typeid: decentralized-risk-management
 stage: draft
 hoverText: "The Decentralized Risk Management pattern describes how Parties can deal with the Risks associated with their Objectives, i.e. ensure that the Objectives they pursue are properly realized and they become/remain successful."
+date: 20210601
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

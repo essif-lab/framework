@@ -7,6 +7,7 @@ typeid: digital-communication-channel
 stage: draft
 hoverText: "Digital Communication Channel: a digital means by which two Digital Actors can exchange messages with one another."
 glossaryText: "a digital means by which two %%digital actors^digital-actor%% can exchange messages with one another."
+date: 20210601
 ---
 
 :::info Editor's note

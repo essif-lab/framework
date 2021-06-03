@@ -7,6 +7,7 @@ typeid: transaction
 stage: draft
 hoverText: "Transaction: the exchange of goods, services, funds, or data between some Parties (called Participants of the Transaction)."
 glossaryText: "the exchange of goods, services, funds, or data between some %%parties^party%% (called %%participants^participant%% of the %%transaction^transaction%%)."
+date: 20210601
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

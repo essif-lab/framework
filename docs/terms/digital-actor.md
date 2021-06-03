@@ -8,6 +8,7 @@ conceptref: ":Actor"
 stage: draft
 hoverText: "Digital Actor: an Actor in the digital world (e.g. a running app, or a web-server)."
 glossaryText: "an %%actor^actor%% in the digital world (e.g. a running app, or a web-server)."
+date: 20210601
 ---
 
 ### Purpose

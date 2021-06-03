@@ -7,6 +7,7 @@ typeid: organization
 stage: draft
 hoverText: "Organization: a Party that is associated with a group of Actors that work to realize its Objectives."
 glossaryText: "a %%party^party%% that is associated with a group of %%actors^actor%% that work to realize its %%objectives^objective%%."
+date: 20210601
 ---
 ### Short Description
 An **Organization** is a %%party|party%% that is associated with a group of %%actors|actor%% that work to realize its %%objectives|objective%%. Enterprises and governments are the prototypical examples. However, parts of enterprises (e.g. divisions, departments, business units) should also be considered organizations. This also holds for governments and governmental bodies.

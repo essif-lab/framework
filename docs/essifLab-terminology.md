@@ -3,6 +3,7 @@ id: essifLab-terminology
 title: "Terminology and Mental Models"
 sidebar_label: Terminology and Mental Models
 scopeid: essifLab
+date: 20210601
 ---
 
 When %%parties|party%% from various backgrounds (and cultures) work together, it is inevitable that misunderstandings occur, i.e. texts (written or spoken) are easily interpreted in ways other than what the author intended. More often than not, such misunderstandings go undetected, and rightfully so, as in most cases it doesn't cause serious problems.

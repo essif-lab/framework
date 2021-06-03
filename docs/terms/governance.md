@@ -7,6 +7,7 @@ typeid: governance
 stage: draft
 hoverText: "Governance: the act or process of governing or overseeing the control and direction of something (Merriam-Webster)."
 glossaryText: "the act or process of governing or overseeing the control and direction of something (Merriam-Webster)."
+date: 20210601
 ---
 
 ### Short Description

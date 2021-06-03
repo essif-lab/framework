@@ -7,6 +7,7 @@ typeid: transaction-data-discloser
 stage: draft
 hoverText: "Transaction Data Discloser: a functional component that is capable of disclosing data."
 glossaryText: "a functional component that is capable of disclosing data."
+date: 20210601
 ---
 
 ### Short Description

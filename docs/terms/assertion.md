@@ -7,6 +7,7 @@ typeid: assertion
 stage: draft
 hoverText: "Assertion: a declaration/statement, made by a specific Party, that something is the case."
 glossaryText: "a declaration/statement, made by a specific %%party^party%%, that something is the case."
+date: 20210601
 ---
 
 ### Short Description

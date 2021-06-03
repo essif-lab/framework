@@ -7,6 +7,7 @@ typeid: identity
 stage: draft
 hoverText: "Identity (of an Entity): the union of all Partial Identities of which the Entity is the subject."
 glossaryText: "the union of all %%partial identities^partial-identity%% of which the %%entity^entity%% is the subject."
+date: 20210601
 ---
 
 ### Short Description

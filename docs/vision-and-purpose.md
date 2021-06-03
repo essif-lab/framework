@@ -2,6 +2,7 @@
 id: vision-and-purpose
 title: eSSIF-Lab Vision and Purpose
 sidebar_label: Vision and Purpose
+date: 20210601
 ---
 
 ## eSSIF-Lab Objectives

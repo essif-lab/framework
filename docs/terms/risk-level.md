@@ -7,6 +7,7 @@ typeid: risk-level
 stage: draft
 hoverText: "Risk level (of an Objective): a measure for the deviation of the intended realization (results) of a specific Objective, that its Owner uses to represent the priority with which the Risk of that Objective should be reckoned with."
 glossaryText: "a measure for the deviation of the intended realization (results) of a specific %%objective^objective%% that its %%owner^owner%% uses to represent the priority with which the %%risk^risk%% of that %%objective^objective%% should be reckoned with."
+date: 20210601
 ---
 
 ### Short Description
@@ -24,7 +25,7 @@ Every %%party|party%% that has a %%risk management|risk-management%% process in 
 Note the difference between risk-level and %%risk|risk%%: where risk-level is about _expected_ effects that uncertainties of various kinds may have on the realization of its associated %%objective|objective%%, %%risk|risk%% is about the kinds of (or: _possible_)  effects that such uncertainties can have.
 
 ### Purpose
-The purpose of risk-levels is that it enables the %%party|party%% that has defined them to compare them, which allows it to prioritize the %%risks|risk%%/%%objectives|objective%% that it needs to manage. 
+The purpose of risk-levels is that it enables the %%party|party%% that has defined them to compare them, which allows it to prioritize the %%risks|risk%%/%%objectives|objective%% that it needs to manage.
 
 ### References
 

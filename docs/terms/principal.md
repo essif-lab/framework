@@ -7,6 +7,7 @@ typeid: principal
 stage: draft
 hoverText: "Principal (of an Actor): the Party for whom, or on behalf of whom, the Actor is executing an Action (this Actor is then called an Agent of that Party)."
 glossaryText: "the %%party^party%% for whom, or on behalf of whom, the %%actor^actor%% is executing an %%action^action%% (this %%actor^actor%% is then called an %%agent^agent%% of that %%party^party%%)."
+date: 20210601
 ---
 
 :::info Editor's noet
@@ -20,7 +21,7 @@ The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides 
 
 ### Purpose
 The ability to distinguish between (non)principals is relevant in many situations, including:
-- electronic communication: the principal 
+- electronic communication: the principal
 
 ### Criterion
 The **principal** (of an %%actor|actor%%) is the %%party|party%% for whom the actor is an %%agent|agent%%, i.e. on whose behalf the actor is (in the process of) executing some %%action|action%%.

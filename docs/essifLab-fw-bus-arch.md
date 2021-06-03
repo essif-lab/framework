@@ -3,6 +3,7 @@ id: essifLab-fw-bus-arch
 title: eSSIF-Lab Business Architecture
 sidebar_label: Business Architecture
 scopeid: essifLab
+date: 20210601
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

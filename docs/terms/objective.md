@@ -7,6 +7,7 @@ typeid: objective
 stage: draft
 hoverText: "Objective: Something toward which a Party directs effort (an aim, goal, or end of action)."
 glossaryText: "Something toward which a %%party^party%% directs effort (an aim, goal, or end of action)."
+date: 20210601
 ---
 
 ### Short Description
@@ -22,4 +23,3 @@ A text representing something toward which a %%party|party%% directs its efforts
 - generically: anything that, according to a %%party|party%% c.q. its way of thinking, is important to be realized, qualifies as an Objective (and identifies its owner as that %%party|party%%).
 - most people have the objective 'stay alive'.
 - the equivalent in organizations is 'continuation of its existence' (many operate 'business-continuity processes' to realize this, and to identify and mitigate any associated risks).
-

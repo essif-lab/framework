@@ -7,6 +7,7 @@ typeid: trust
 stage: draft
 hoverText: "Trust (of a Party in X): the measure of belief or confidence that this party has in X"
 glossaryText: "the measure of belief or confidence that a %%party^party%% has in X (someone, something, ...)."
+date: 20210601
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

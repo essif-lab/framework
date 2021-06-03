@@ -7,6 +7,7 @@ typeid: data-collector
 stage: draft
 hoverText: "Data Collector: a functional component that is capable of collecting data from various Parties in the context of some Business Transaction, and Validating this data for the purpose of making one (or more) decision(s)."
 glossaryText: "a functional component that is capable of collecting data from various %%parties^party%% in the context of some %%business transaction^transaction%%, and %%validating^validated-data%% this data for the purpose of making one (or more) decision(s)."
+date: 20210601
 ---
 
 ### Short Description
