@@ -25,7 +25,7 @@ Criteria to determine that the objective is fulfilled include:
 The results of the work done in eSSIF-Lab should contribute to provide %%organizations|organization%% (e.g. enterprises, governments) with means that help them to electronically negotiate and conduct %%transactions|transaction%% in the widest sense of the word. Such means make it easier for them to participate in transactions, both in the Internet and in physical life.
 
 Criteria to determine that the objective is fulfilled include:
-   - the costs of %%validating|validation%% the data that organizations need to determine whether or not to commit to a transaction, is significantly reduced.
+   - the costs of %%validating|validate%% the data that organizations need to determine whether or not to commit to a transaction, is significantly reduced.
    - the lead time of (administrative) processes, such as applying for a product or service, is significantly reduced.
    - the efforts of satisfying the requirements regarding their duties under privacy acts such as the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/data-protection-eu_en), and showing compliance, is significantly reduced.
    - *new business ecosystem paradigms* materialize, with thousands of new jobs, many new job categories and new business opportunities for existing and new European companies.

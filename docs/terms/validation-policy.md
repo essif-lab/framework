@@ -17,4 +17,4 @@ TNO (or others) to provide the content of this file.
 ### Related Concepts
 - %%Digital Policy|digital-policy%%
 - %%Policy Governor|policy-governor%%
-- %%Validation|validation%%
+- %%Validation|validate%%
