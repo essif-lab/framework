@@ -12,7 +12,7 @@ date: 20210601
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Purpose
-The **Jurisdiction pattern** captures the concepts and relations that explain how one can perceive a generic %%jurisdiction|jurisdiction%%, how it works, and how it can be put to use in SSI contexts.
+The **Jurisdiction pattern** captures the concepts and relations that explain how one can perceive a generic %%jurisdiction|jurisdiction%%, how it works, and how it can be put to use in %%SSI contexts|self-sovereign-identity%%.
 
 ### Introduction
 Many people are familiar with what we call %%legal jurisdictions|legal-jurisdiction%%, e.g. a government that has a %%legal system|legal-system%% in place which it applies to %%entities|entity%% that it knows to exist in its %%scope of control|scope-of-control%%.

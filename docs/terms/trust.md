@@ -10,10 +10,11 @@ glossaryText: "the measure of belief or confidence that a %%party^party%% has in
 date: 20210601
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
+### Short Description
+**Trust** (of a %%party|party%% in X) is the measure of belief or confidence that this party has in X. X can be anyone or anything. One can trust a president - e.g. to make the right decisions. One may trust one's own judgements or conscience.
 
-:::info Editor's note
-TNO (or others) to provide content/revisions.
-:::
+Trust is not something that is given, but something that %%parties|party%% (un)consciously assess, and decide about, and changes over time. Since parties are autonomous, their trust is highly subjective. As a consequence, the idea of having 'trusted registries', 'trusted issuers' that do not take this subjectivity into account basically act as %%(centralized) authorities|authority%%, denying that parties are autonomous. While we acknowledge that such ideas (have a right to) exist, we do not follow them.
 
-We need to explain that trust is subjective: I need not trust what you trust and vice versa. I may need other assurances to lower/raise my trust than you do to raise your trust. Parties are autonomous in assessing their levels of trust.
+So trust has a few basic issues, in that it is often not clear
+- who the actual party is in which the belief or confidence is rooted.
+- what X is - what it is that the party believes, o confides in.
