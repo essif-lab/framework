@@ -26,7 +26,7 @@ The eSSIF-Lab project also contributes to the design, maintenance and validation
 
 ## Background
 
-The current situation (2020/2021) is that electronic support for such transactions is very limited. In most cases, people have to type in data, most of which already exists in electronic form but isn't readily available for (re)use. People may need to copy data from papers, or scan papers and upload these scans. On the provider side, this data has to be %%verified|verification%% and %%validated|validation%%, which takes time and effort, often from human employees.
+The current situation (2020/2021) is that electronic support for such transactions is very limited. In most cases, people have to type in data, most of which already exists in electronic form but isn't readily available for (re)use. People may need to copy data from papers, or scan papers and upload these scans. On the provider side, this data has to be %%verified|verify%% and %%validated|validate%%, which takes time and effort, often from human employees.
 
 However, there are also initiatives where IT-systems provide APIs for obtaining data that such systems could disclose. Such APIs are typically custom for the IT system, and need to be managed, not only at the provider side but also at the side of organizations that use the APIs: any changes in the API spec have to be signalled by such organizations, and projects have to be executed to accommodate such changes. Such management is estimated to be in the order of 80% of the total cost of ownership (TCO). This, together with the observation that often departments that manage the APIs are not the actual users of such APIs, make that this solution is not desireable.
 

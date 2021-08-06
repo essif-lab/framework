@@ -19,7 +19,7 @@ Traditional risk management (RM) frameworks, such as [ISO 31000](https://www.iso
 
 However, these frameworks don't provide practical guidance for all situations. For example, it is well-known that SMEs or other parties that do not have the required (expert) knowledge, time and other resources to setup and run such processes, are pretty much left to their own devices. Also, %%SSI|self-sovereign-identity%% provides contexts for which the traditional RM frameworks do not provide the necessary guidance.
 
-This pattern provides a way of thinking about %%risks|risk%% that is suitable for SSI contexts (and as a side-effect, it may be userful for SME's (and the like) as well). It is not intended to replace these other frameworks, but rather as a complementary mechanism. Where the existing frameworks mostly focus on the internal workings of %%parties|party%%, our mechanisms mostly focuses on risks related to interactions between parties.
+This pattern provides a way of thinking about %%risks|risk%% that is suitable for %%SSI contexts|self-sovereign-identity%% (and as a side-effect, it may be userful for SME's (and the like) as well). It is not intended to replace these other frameworks, but rather as a complementary mechanism. Where the existing frameworks mostly focus on the internal workings of %%parties|party%%, our mechanisms mostly focuses on risks related to interactions between parties.
 
 ## The Generic Risk Management Process (according to ISO)
 

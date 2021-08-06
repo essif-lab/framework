@@ -25,7 +25,7 @@ Criteria to determine that the objective is fulfilled include:
 The results of the work done in eSSIF-Lab should contribute to provide %%organizations|organization%% (e.g. enterprises, governments) with means that help them to electronically negotiate and conduct %%transactions|transaction%% in the widest sense of the word. Such means make it easier for them to participate in transactions, both in the Internet and in physical life.
 
 Criteria to determine that the objective is fulfilled include:
-   - the costs of %%validating|validation%% the data that organizations need to determine whether or not to commit to a transaction, is significantly reduced.
+   - the costs of %%validating|validate%% the data that organizations need to determine whether or not to commit to a transaction, is significantly reduced.
    - the lead time of (administrative) processes, such as applying for a product or service, is significantly reduced.
    - the efforts of satisfying the requirements regarding their duties under privacy acts such as the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/data-protection-eu_en), and showing compliance, is significantly reduced.
    - *new business ecosystem paradigms* materialize, with thousands of new jobs, many new job categories and new business opportunities for existing and new European companies.
@@ -35,7 +35,7 @@ The %%SSI-Infrastructure|ssi-infrastructure%%* is the 'hard' (IT) Infrastructure
 Criteria to determine that the objective is fulfilled include:
 - 'horizontal interoperability', i.e. the components that are part of the %%SSI Infrastructure|ssi-infrastructure%% work (interoperate) with other components of that infrastructure;
 - 'vertical interoperability', i.e. the components that are part of the %%SSI Infrastructure|ssi-infrastructure%% can be used very easily by application software and other non-infrastructural (technical) components,
-- 'documentation interoperability', i.e. ensuring/facilitating that documentation of the infrastructural (and perhaps other) components can use a single, well-defined %%terminology|terminology%% that is based on validated %%mental models|mental-model%%.
+- 'documentation interoperability', i.e. ensuring/facilitating that documentation of the infrastructural (and perhaps other) components can use a single, well-defined %%terminology|terminology%% that is based on validated %%mental models|pattern%%.
 
 ### Design and Develop SSI Assurance Communities
 %%SSI Assurance Communities|ssi-assurance-community%% (ACs) is the 'soft' Infrastructure that complements the (hard) %%SSI Infrastructure|ssi-infrastructure%%. The result of the work done in eSSIF-Lab should contribute to the creation (and maintenance) of %%communities|community%% that provide governance, management and optionally technical components and or services that facilitate the adoption of SSI and transformation of its members internal organization, processes and IT, such that it can start, or continue to use the %%SSI infrastructure|ssi-infrastructure%% and reap its projected benefits.
