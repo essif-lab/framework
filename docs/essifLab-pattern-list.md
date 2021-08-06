@@ -25,7 +25,11 @@ The [Guardianship pattern](./terms/pattern-guardianship) captures the %%concepts
 
 These are models that we think go a long way to being mature, but may contain flaws we haven't detected yet.
 ### [Identity](./terms/pattern-identity)
-The envisaged [eSSIF-Lab Identity Pattern](./terms/pattern-identity) will describe the relations between a formalized notion of %%identity|identity%% and %%credentials|credential%%. Note that %%identity|identity%% is very different from %%identifier|identifier%%.
+The [eSSIF-Lab Identity Pattern](./terms/pattern-identity)
+- discusses difficulties that exist with the various/numerous meanings of the term 'identity',
+- postulates a %%definition for identity|identity%% that relates to what a person or another entity actually _is_,
+- shows that it is comprised of %%partial identities|partial-identity%% that are the actual artifacts we need to focus on in %%SSI contexts|self-sovereign-identity%%, and
+- shows how this relates to (attributes in) %%credentials|credential%%.
 
 ## Envisaged Models
 
