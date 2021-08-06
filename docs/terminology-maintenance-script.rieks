@@ -152,17 +152,17 @@ with "governor"
 
 // [H-I-J-K] (all holder, issuer, verifier and wallet stuff, too)
 // for associated policies, see [P]
-replace-regex "%{mid}(holder|issuer|verifier|validator|wallet|identifier|jurisdiction(-governor)?|knowledge(-governor)?)%{ss}%{end}"
+replace-regex "%{mid}(holder|issuer|verifier|validator|wallet|jurisdiction(-governor)?|knowledge(-governor)?)%{ss}%{end}"
 with "$1"
 replace-regex "%{mid}((holder|issuer|verifier|validation|wallet)-polic)%{yies}%{end}"
 with "$1y"
-replace-regex "%{mid}identif(y|ier?|ication)%{ss}%{end}"
+replace-regex "%{mid}identif(y|ying|ier?|ication)%{ss}%{end}"
 with "identifier"
 replace-regex "%{mid}((?:partial-)?identit)%{yies}%{end}"
 with "$1y"
 
 // [L-M]
-replace-regex "%{mid}(legal-jurisdiction|legal-system|mental-model)%{ss}%{end}"
+replace-regex "%{mid}(legal-jurisdiction|legal-system)%{ss}%{end}"
 with "$1"
 // for 'legal entities', see 'entities'
 
@@ -173,10 +173,14 @@ replace-regex "%{mid}(?:natural-)?(objective|organization|owned|ownership)%{ss}%
 with "$1"
 
 // [P]
-replace-regex "%{mid}(participant|pattern-file|pattern|peer-(actor|agent)|policy-governor|presentation(-request)?|principal)%{ss}%{end}"
+replace-regex "%{mid}(pattern|mental-model|conceptual-model)%{ss}%{end}"
+with "pattern"
+replace-regex "%{mid}(participant|pattern-file|peer-(actor|agent)|policy-governor|presentation(-request)?|principal)%{ss}%{end}"
 with "$1"
 replace-regex "%{mid}(peer-)?part%{yies}%{end}"
 with "$1party"
+replace-regex "%{mid}([a-z].*?)-pattern%{end}"
+with "pattern-$1"
 // For holder, issuer, verifier and wallet policies, see [H-I-J-K]
 replace-regex "%{mid}(|transaction-data-(collector|discloser)-)polic%{yies}%{end}"
 with "$1policy"
@@ -193,9 +197,9 @@ replace-regex "%{mid}(scope|scope-file|ssi-agent)%{ss}%{end}"
 with "$1"
 replace-regex "%{mid}scopes-of-control%{end}"
 with "scope-of-control"
-replace-regex "%{mid}(statement|claim|statement%{ss}/claim)%{ss}%{end}"
+replace-regex "%{mid}(assertion|statement|claim|statement%{ss}/claim)%{ss}%{end}"
 with "assertion"
-replace-regex "%{mid}(ssi|self-sovereign-identity-\(ssi\)|\(ssi\)-self-sovereign-identity|self-sovereign-identity)%{end}"
+replace-regex "%{mid}(ssi|self-sovereign-identity-\(ssi\)|\(ssi\)-self-sovereign-identity|self-sovereign-identity)(-contexts?)?%{end}"
 with "self-sovereign-identity"
 replace-regex "%{mid}(self-sovereign|autonomous|autonomy)%{end}"
 with "self-sovereignty"
@@ -215,14 +219,10 @@ with "$1"
 // for verifier and validator stuff - see holder
 replace-regex "%{mid}(verifiable-credential)%{ss}%{end}"
 with "$1"
-replace-regex "%{mid}(?:data-)?validat(?:e|ed|es|ing|ion)(-data)%{end}"
-with "validated-data"
-replace-regex "%{mid}(?:data-)?valid(?:|ate|ated|ates|ating|ation)%{end}"
-with "validation"
-replace-regex "%{mid}(?:data-)?(?:verif(y|ied|ies|ying|ication))(-data)%{end}"
-with "verified-data"
+replace-regex "%{mid}(?:data-)?(?:valid|validat(ing|ion)|validate(d|s))%{end}"
+with "validate"
 replace-regex "%{mid}(?:data-)?(?:verif(y|ied|ies|ying|ication))%{end}"
-with "verification"
+with "verify"
 replace-regex "%{mid}vocabular%{yies}%{end}"
 with "vocabulary"
 

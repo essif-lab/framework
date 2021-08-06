@@ -5,13 +5,15 @@ scopeid: essifLab
 type: concept
 typeid: pattern
 stage: draft
-hoverText: "Pattern: A limited set of Concepts (ideas), relations between them, and constraints, such that together they form a coherent and consistent whole."
-glossaryText: "A limited set of %%concepts^concept%% (ideas), relations between them, and constraints, such that together they form a coherent and consistent whole."
-date: 20210601
+hoverText: "Pattern (Mental Model): A description, both casual and formal, of a set of Concepts (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
+glossaryText: "A description, both casual and formal, of a set of %%concepts^concept%% (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
+date: 20210804
 ---
 
 ### Short Description
-A **pattern** (also called **mental model** or **conceptual model**) captures a limited set of %%concepts|concept%% (ideas), relations between them, and constraints, such that together they form a coherent and consistent whole. Patterns use (tangible) %%terms|term%% to refer to these (intangible) concepts and relations, so in order to be consistent, a pattern must reside in the scope that defines these concepts and relations. A pattern may also 'connect' concepts of different scopes (preferably no more than two), which you might call an 'interconnection pattern' between these scopes.
+A **pattern** (also called **mental model** or **conceptual model**) captures a limited set of %%concepts|concept%% (ideas), relations between them, and constraints, such that together they form a coherent and consistent whole. They have been crafted so that they may serve as a basis for architecting, desiging, and implementing IT components and their governance processes.
+
+Patterns use (tangible) %%terms|term%% to refer to these (intangible) concepts and relations, so in order to be consistent, a pattern must reside in the scope that defines these concepts and relations. A pattern may also 'connect' concepts of different scopes (preferably no more than two), which you might call an 'interconnection pattern' between these scopes.
 
 The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
 

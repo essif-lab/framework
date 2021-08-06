@@ -26,6 +26,7 @@ The quality of such texts is the extent in which parties reach the same conclusi
 
 The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
 The eSSIF-Lab %%terminology process|terminology-process%% provides guidance for making and maintaining quality definitions.
+Practical guidance is provided by the report "[On Terminology, and the Resolution of Related Issues](http://resolver.tudelft.nl/uuid:964a90da-da81-4d38-9f45-84f3f5fa96b3)".
 
 ### Purpose
 Working together is easier when you and your peers share the same ideas. We need a way to test and ensure, that you and your peers _actually_ have the same understanding, for the purpose of making cooperation easier. Doing so is expected to not only reduce the number of terminological discussions, but also improve the efficiency and effectiveness of the remaining discussions.
@@ -67,4 +68,4 @@ You may want to create definitions that are both acceptable for business people 
 
 Note that the actual word or phrase you choose as the %%term|term%% name for a concept is much less important than the criteria you define. If in a particular %%context|scope%% another name would be more suitable, you can define another %%term|term%% for that other context (scope) that still refers to the concept you created the definition for.
 
-The %%Terminology Corpus|corpus%% provides templates that help you do that, e.g. for %%defining concepts|concept-file%% and for %%defining terms|term-file%%.
+The %%Terminology Corpus|corpus%% provides templates that help you do that, e.g. for %%defining concepts|concept-file%% and for %%defining terms|term-file%%. The report [On Terminology, and the Resolution of Related Issues](http://resolver.tudelft.nl/uuid:964a90da-da81-4d38-9f45-84f3f5fa96b3) provides further practical guidance for establishing and maintaining umnambiguous and relevant terminology.

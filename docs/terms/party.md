@@ -25,7 +25,7 @@ It is important to note that:
 ### Purpose
 It is in one's mind - with one's knowledge - that objectives are being set, strategies are being devised, decisions are being made and so on. Specifically, interacting with others, e.g. to conduct %%business transactions|transaction%%, requires making numerous decisions, each of which is based on a subjective argument. The evaluation of such an argument requires the acquisition and processing of data, which implies additional decisions (that provide assurances that evaluation will arrive at the right conclusion), such as establishing:
 - which data is required,
-- what conditions such data should satisfy in order to be %%valid|validated-data%% for performing in the evaluation,
+- what conditions such data should satisfy in order to be %%valid|validate%% for performing in the evaluation,
 - what sources may be trusted to provide data that is (sufficiently) true,
 etcetera. For all of this, it is beneficial to introduce a concept that captures this idea of %%knowledge|knowledge%% or mind in terms of _the_ entity that has it at its disposition, governs it, and has it used to realize its %%objectoves|objective%%.
 

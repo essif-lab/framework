@@ -14,7 +14,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 The main purpose of [eSSIF-Lab](essifLab) is to realize its [vision](essifLab-vision). This is quite a challenge, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. There is '%%ecosystem|ecosystem%%' complexity, i.e. different groups of %%organizations|organization%% and/or people (%%parties|party%%) need artifacts that work for them as a group, both 'horizontally' and 'vertically', but no further than the context of that group.
 
-The eSSIF-Lab Framework aims to establish a varied set of articles/documents, %%terminology|terminology%%, and %%mental models|mental-model%% that individual %%parties|party%% from different backgrounds can use e.g. as they
+The eSSIF-Lab Framework aims to establish a varied set of articles/documents, %%terminology|terminology%%, and %%mental models|pattern%% that individual %%parties|party%% from different backgrounds can use e.g. as they
 - seek to use SSI, and want to learn about:
   - benefits they may reap when they start to adopt SSI technologies;
   - topics to consider for increasing levels of maturity;
@@ -25,7 +25,7 @@ The eSSIF-Lab Framework aims to establish a varied set of articles/documents, %%
   - that are needed to connect business applications to such infrastructure;
   - that facilitate %%communities|community%% and %%ecosystems|ecosystem%% of %%parties|party%% that use SSI.
 - seek to contribute to the creation and management of %%communities|community%% and %%ecosystems|ecosystem%% of %%parties|party%% that use SSI that operate with decentralized authorities, i.e. authorities that respect the autonomy of other %%parties|party%% by refraining from imposing e.g. rules or duties on them that they then must comply with (or else...)).
-- seek a deeper understanding about the %%concepts|concept%% and %%mental models|mental-model%% behind SSI, allowing them to contribute new ideas, applications and services for SSI.
+- seek a deeper understanding about the %%concepts|concept%% and %%mental models|pattern%% behind SSI, allowing them to contribute new ideas, applications and services for SSI.
 
 ### 2.1 eSSIF-Lab Scope
 

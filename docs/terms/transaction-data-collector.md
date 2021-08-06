@@ -6,24 +6,24 @@ type: concept
 typeid: transaction-data-collector
 stage: draft
 hoverText: "Transaction Data Collector: a functional component that collects sufficient and Validated Data for deciding whether or not a request (typically for a product or a service) is to be serviced."
-glossaryText: "a functional component that collects sufficient and %%validated data^validated-data%% for deciding whether or not a request (typically for a product or a service) is to be serviced."
+glossaryText: "a functional component that collects sufficient and %%validated^validate%% data for deciding whether or not a request (typically for a product or a service) is to be serviced."
 date: 20210601
 ---
 
 ### Short Description
-A **Transaction Data Collector** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that a %%party|party%% may use to collect sufficient and %%validated data|validated-data%% for deciding whether or not a request (typically for a product or a service) is to be serviced.
+A **Transaction Data Collector** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that a %%party|party%% may use to collect sufficient and %%validated|validate%% data for deciding whether or not a request (typically for a product or a service) is to be serviced.
 
 ### Purpose
-The purpose of a Transaction Data Collector is to collect sufficient and %%validated data|validated-data%% that eneables (an %%agent|agent%% of) its %%principal|principal%% to decide whether or not some request (typically for a product or a service) is to be serviced.
+The purpose of a Transaction Data Collector is to collect sufficient and %%validated|validate%% data that eneables (an %%agent|agent%% of) its %%principal|principal%% to decide whether or not some request (typically for a product or a service) is to be serviced.
 
 ### Functionality
-A Transaction Data Collector typically starts to collect data when it receives a request (e.g. to provide a product or service). The reception of such a request triggers the creation of a new %%business transaction|transaction%%. The task of the Transaction Data Collector is to collect %%validated data|validated-data%% that is sufficient for making a %%commitment decision|commitment-decision%% (or, as [DEMO](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations) calls it: a 'promise' or 'quit' decision.)
+A Transaction Data Collector typically starts to collect data when it receives a request (e.g. to provide a product or service). The reception of such a request triggers the creation of a new %%business transaction|transaction%%. The task of the Transaction Data Collector is to collect %%validated|validate%% data that is sufficient for making a %%commitment decision|commitment-decision%% (or, as [DEMO](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations) calls it: a 'promise' or 'quit' decision.)
 
 Starting the data collection for a transaction does NOT imply that the identity of the %%actors|actor%% from whom/which the request originated, is established (or authenticated). It also does NOT imply that the identity of the %%peer %%party|party%%|peer-party%% is established (or authenticated). The Transaction Data Collector simply proceeds to collect a sufficient amount of data such that the associated decision can be made, according to the rules, working-instructions, preferences and other guidance provided by its %%principal's|principal%% %%Transaction Data Collector policy|transaction-data-collector-policy%%. Such data may include identity data, but it also may not.
 
 Starting the data collection for a transaction implies that the Transaction Data Collector informs the %%Transaction Data Discloser component|transaction-data-discloser%% about the %%transaction|transaction%% that has just started, and the kind of that transaction. This allows the %%Transaction Data Discloser component|transaction-data-discloser%% to process requests for data from %%peer agents|peer-agent%%[^1x]
 
-All guidance that the Transaction Data Collector needs to collect the necessary and %%validated data|validated-data%% to make that decision is provided by the %%Transaction Data Collector policy|transaction-data-collector-policy%% that has been established by the Transaction Data Collector's %%principal|principal%%. Such a policy includes e.g. the kinds of data (and meta-data) required to make these kinds of decisions, criteria to distinguish between %%data that is valid|validated-data%% and data that is not, any data conversions that may be needed, etc.
+All guidance that the Transaction Data Collector needs to collect the necessary and %%validated|validate%% data to make that decision is provided by the %%Transaction Data Collector policy|transaction-data-collector-policy%% that has been established by the Transaction Data Collector's %%principal|principal%%. Such a policy includes e.g. the kinds of data (and meta-data) required to make these kinds of decisions, criteria to distinguish between data that is %%valid|validate%% and data that is not, any data conversions that may be needed, etc.
 
 A Transaction Data Collector may multi-task, i.e. simultaneously/asynchronously collect data for multiple %%transactions|transaction%%. To organize this, messages that are exchanged with %%peer agents|peer-agent%% must contain an identifier that allows the Transaction Data Collector and its %%peer agents|peer-agent%% to identify the transaction to which each message belongs.
 
@@ -37,7 +37,7 @@ A **Transaction Data Collector** is a functional component in the [eSSIF-Lab fun
 - can setup, accept and tear-down %%communication channels|communication-channel%% of various kinds, with %%digital|digital-colleague%% and/or non-digital %%colleagues|colleague%% of that %%requesting agent|agent%%,[^peer-agents] as appropriate for the data exchanges that are needed to conduct the transactions;
 - can use any appropriate %%communication channel|communication-channel%% with a %%peer agent|peer-agent%% to:
   - request for data that, according to the %%Transaction Data Collector Policy|transaction-data-collector-policy%% is needed to decide whether or not to commit to the transaction;
-  - process the responses to such requests, in an orchestrated way, thereby complying with the rules of its  %%principal's|principal%% %%Transaction Data Collector Policy|transaction-data-collector-policy%%, the result of which (in the end) is a set of %%validated data|validated-data%% that can serve the purpose of deciding whether or not to commit to the transaction;
+  - process the responses to such requests, in an orchestrated way, thereby complying with the rules of its  %%principal's|principal%% %%Transaction Data Collector Policy|transaction-data-collector-policy%%, the result of which (in the end) is a set of %%validated|validate%% data that can serve the purpose of deciding whether or not to commit to the transaction;
   - receive similar requests from its %%peer %%party|party%%|peer-party%%, and respond to such requests in compliance with the rules of its  %%principal's|principal%% %%Transaction Data Collector Policy|transaction-data-collector-policy%%;
 - has a mechanism to ensure that within a %%transaction|transaction%%, it uses the latest (most receent) %%Transaction Data Collector Policy|transaction-data-collector-policy%% of its %%principal|principal%%.
 

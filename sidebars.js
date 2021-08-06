@@ -41,14 +41,20 @@ module.exports = {
             ]
           },
           { type: 'category',
+            label: 'Reviewable models',
+            items:
+            [ { type: 'doc', id: 'terms/pattern-identity' },
+            ]
+          },
+          { type: 'category',
             label: 'Envisaged models',
             items:
             [ { type: 'doc', id: 'terms/pattern-terminology' },
-              { type: 'doc', id: 'terms/pattern-identity' },
-              { type: 'doc', id: 'terms/pattern-identifier' },
-              { type: 'doc', id: 'terms/pattern-duties-and-rights' },
-              { type: 'doc', id: 'terms/pattern-mandates-delegation-hiring' },
+              { type: 'doc', id: 'terms/pattern-identification' },
+              { type: 'doc', id: 'terms/pattern-decision-making' },
               { type: 'doc', id: 'terms/pattern-decentralized-GRC' },
+              { type: 'doc', id: 'terms/pattern-mandates-delegation-hiring' },
+              { type: 'doc', id: 'terms/pattern-duties-and-rights' },
             ]
           },
         ]
