@@ -27,11 +27,6 @@ These are models that we think go a long way to being mature, but may contain fl
 ### [Identity](./terms/pattern-identity)
 The envisaged [eSSIF-Lab Identity Pattern](./terms/pattern-identity) will describe the relations between a formalized notion of %%identity|identity%% and %%credentials|credential%%. Note that %%identity|identity%% is very different from %%identifier|identifier%%.
 
-## Models that are in the process of being drafted (can be previewed)
-
-These are models we've started to document, but they're not finished. You must expect flaws, omissions etc. However, you may (already) find some inspiration in the texts.
-### [Decentralized Governance, Risk Management and Compliance (GRC)](./terms/pattern-decentralized-GRC)
-The envisaged [Decentralized GRC pattern](./terms/pattern-decentralized-GRC) will describe how %%parties|party%% can set objectives, and pursue them to be succesful. The latter means that the party must be capable of assessing and managing the risks associated with not realizing them. In a decentralized world, this means that it needs to depend on other parties, that may or may not be too reliable. Also, it means that the party must be able to set and realize objectives to satisfy requirements of other parties (compliance).
 ## Envisaged Models
 
 These are placeholders for models that we think we could document, but haven't come around to doing.
@@ -41,6 +36,9 @@ The envisaged [eSSIF-Lab Terminology Pattern](./terms/pattern-terminology) will 
 
 ### [Identifiers](./terms/pattern-identification)
 The envisaged [eSSIF-Lab Identity Pattern](./terms/pattern-identification) will describe the conceptual nature of %%identifiers|identifier%%. Note that %%identifiers|identifier%% are very different from %%identities|identity%%.
+
+### [Decentralized Governance, Risk Management and Compliance (GRC)](./terms/pattern-decentralized-GRC)
+The envisaged [Decentralized GRC pattern](./terms/pattern-decentralized-GRC) will describe how %%parties|party%% can set objectives, and pursue them to be succesful. The latter means that the party must be capable of assessing and managing the risks associated with not realizing them. In a decentralized world, this means that it needs to depend on other parties, that may or may not be too reliable. Also, it means that the party must be able to set and realize objectives to satisfy requirements of other parties (compliance).
 
 ### [Mandates, Delegation and Hiring](./terms/pattern-mandates-delegation-hiring)
 The envisaged [Mandates, Delegation and Hiring pattern](./terms/pattern-mandates-delegation-hiring) will capture the ideas behind Mandating, Delegating, Hiring and their relations. It will extend the [Parties, Actors and Actions pattern](./terms/pattern-party-actor-action) with concepts that describe how the %%ownership|ownership%% and `works for` relations between %%parties|party%% and %%actors|actor%% are to be (de)populated, and how to determine for %%party|party%% the %%actor|actor%% is working as it executes an %%action|action%%.
