@@ -156,7 +156,7 @@ replace-regex "%{mid}(holder|issuer|verifier|validator|wallet|jurisdiction(-gove
 with "$1"
 replace-regex "%{mid}((holder|issuer|verifier|validation|wallet)-polic)%{yies}%{end}"
 with "$1y"
-replace-regex "%{mid}identif(y|ier?|ication)%{ss}%{end}"
+replace-regex "%{mid}identif(y|ying|ier?|ication)%{ss}%{end}"
 with "identifier"
 replace-regex "%{mid}((?:partial-)?identit)%{yies}%{end}"
 with "$1y"
