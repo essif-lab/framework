@@ -19,10 +19,14 @@ This is work that is being envisaged.
 The **Identification pattern** captures the concepts and relations that help to explain the mechanisms that %%parties|party%% use in order to %%identify|identify%% things they know to exist, and mechanisms for communicating with another party such that both parties can identify an entity and know whether or not they identify the same entity.
 
 ### Introduction
-Identification can be an act, executed by or on behalf of a %%party|party%%, the result of which is that one %%entity|entity%% is selected from a set of (known) %%entities|entity%%. It happens, for example, if you open the door for someone, and you recognize which of the persons that you know to exist this is, then you have identified that person. Having identified this person allows you to access other knowledge you have about him/her. If you do not have a recollection of that person, i.e. you do not know of that person's existence, then you cannot identify him/her.
+Identification can be an act, executed by or on behalf of a %%party|party%%, the result of which is that one %%entity|entity%% is selected from a set of (known) %%entities|entity%%. It happens, for example, if you open the door for someone, and you recognize which of the persons that you know to exist this is, then you have identified that person. Having identified this person allows you to subsequently access everything you know about him/her, i.e. the %%partial identity|partial-identity%% of him/her that is in your %%knowledge|knowledge%%, and of which the person is said to be the 'subject'.
 
-[To be further revised from here]
+If you do not have a recollection of that person, i.e. your knowledge has no partial identity of that person, then you obviously cannot identify him/her. 
 
+However, you can start to create a %%partial identity|partial-identity%% for that person, i.e. attribute the person with characteristics that are meaningful to you (see als the %%identity pattern|pattern-identity%%), of which you would accumulate more and more over time, and change them as you gain experience with him/her. Note that such a %%partial identity|partial-identity%% is distinct from its subject, i.e. the person to which the characteristics (that make up the %%partial identity|partial-identity%%) are attributed. In order to identify this %%partial identity|partial-identity%%, a knowledge usually has an %%identifier|identifier%% that allows it to distinguish between this partial identity and all others it contains. As this identifier can also be seen as a characteristic that is attributed to the person, it is also part of that person's partial identity. It is customary to refer to this identifier as the 'subject identifier' of the partial identity.
+
+[REVISE FURTHER FROM HERE]
+- idea: there needs to be a way to identify a person, i.e. recall its partial identity. An often used way is to use the subject identifier, but one may also use other subsets of attributed characteristics.
 
 
 For example, in a court of law, a witness can be asked to identify the person that caused the mischief, i.e. select that person from the set of people that are present. As another example, when a user logs into a computer system, this system needs to identify the the user's account, i.e. select that account from all other accounts.
