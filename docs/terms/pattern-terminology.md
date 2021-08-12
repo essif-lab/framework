@@ -9,8 +9,10 @@ hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Te
 date: 20210601
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 :::info Editor's note
-This is work in progress
+This is work that is being envisaged.
 :::
 
 The idea here is to describe how terms are scoped ('namespaces' is the term used by SW-engineers), how parties govern such scopes/namespaces, and that if you use criteria to define/specify terms, people can test if they have the same understanding of a term by making sure that everyone reaches the same conclusions as they evaluate such criteria in various relevant use-cases.

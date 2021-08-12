@@ -12,7 +12,7 @@ date: 20210601
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note
-This is work in progress
+This is work that is being envisaged.
 :::
 ### Purpose
 <!-- Concisely describe what can you do with the pattern that is (at least) harder if you didn't have it. -->

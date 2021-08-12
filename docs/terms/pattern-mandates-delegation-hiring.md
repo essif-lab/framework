@@ -9,8 +9,10 @@ hoverText: "The Mandates, Delegation and Hiring pattern (which remains to be doc
 date: 20210601
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 :::info Editor's note
-This is work that is being envisaged
+This is work that is being envisaged.
 :::
 
 The idea here is to observe that:
