@@ -15,7 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 This is work that is being envisaged.
 :::
 
-## Purpose
+### Purpose
 The **Identification pattern** captures the concepts and relations that help to explain the mechanisms that %%parties|party%% use in order to %%identify|identify%% things they know to exist, and mechanisms for communicating with another party such that both parties can identify an entity and know whether or not they identify the same entity.
 
 ### Introduction
