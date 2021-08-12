@@ -12,7 +12,7 @@ date: 20210804
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note
-This is work in progress
+This is work that is being envisaged.
 :::
 ### Purpose
 The **Decision making pattern** captures the %%concepts|concept%% and relations that explain how %%parties|party%% would, could, or should reason in order to reach good conclusions and make good decisions. This can be used as a basis for understanding the information needs of  %%parties|party%% as they need to decide e.g. whether or not to commit to a %%transaction|transaction%% proposal, or whether or not data is %%valid|validate%% for some purpose. This pattern is based on [Toulmin's use of arguments](https://www.cambridge.org/core/books/uses-of-argument/26CF801BC12004587B66778297D5567C) (of which a pragmatical text can be found [here](https://owl.purdue.edu/owl/general_writing/academic_writing/historical_perspectives_on_argumentation/toulmin_argument.html)).

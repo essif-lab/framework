@@ -10,6 +10,12 @@ glossaryText: "The set of %%concepts^concept%%, relations between them (%%patter
 date: 20210601
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
+:::info Editor's note
+This is work that is being envisaged.
+:::
+
 The **eSSIF-Lab World Model** consists of
 - the set of %%concepts|concept%%, as listed in the [Glossary](../essifLab-Glossary),
 - relations between these concepts, as explained in the various concept-descriptions, and in the various %%patterns|pattern%%, as listed in the [Patterns List](../essifLab-pattern-list).

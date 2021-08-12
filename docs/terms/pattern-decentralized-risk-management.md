@@ -12,7 +12,7 @@ date: 20210601
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note
-This is work in progress
+This is work that is being envisaged.
 :::
 
 Traditional risk management (RM) frameworks, such as [ISO 31000](https://www.iso.org/obp/ui/#iso:std:iso:31000:ed-2:v1:en), [COSO](https://www.coso.org/Pages/default.aspx), or [NIST 800-30](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf) have emerged in a time where %%centralized organizational leadership|authority%% and auditing, and cyclic ([PDCA](https://en.wikipedia.org/wiki/PDCA)) processes for risk management, were prevalent. Most (large) enterprises have adopted (a mix of) them, and many have been certified (e.g. against [ISO 9001](https://www.iso.org/iso-9001-quality-management.html) or [ISO 27001](https://www.iso.org/isoiec-27001-information-security.html)) thereby demonstrating they govern and run the associated (risk)management processes as intended, and are compliant with such standards and often also with applicable regulations.

@@ -9,6 +9,12 @@ hoverText: "The Mental Models pattern captures the foundational Concepts and rel
 date: 20210601
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
+:::info Editor's note
+This is work that is being envisaged.
+:::
+
 ### Purpose
 <!--Concisely describe what can you do with the pattern that is (at least) harder if you didn't have it.-->
 This pattern captures the foundational concepts and relations that we need for creating, maintaining and using  vocabularies (terminologies) that groups of people can use for the specific purposes they pursue. Alternatively, we need these concepts to allow people to use 'decentralized vocabularies' that %%parties|party%% may create, maintain and use in a self-sovereign fashion - which means that each of them decides for itself what terms to use in what meaning, yet be able to communicate with other such %%parties|party%% in such a way that a correct understanding of what the other means, can more or less be guaranteed.

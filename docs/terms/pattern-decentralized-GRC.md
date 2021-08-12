@@ -12,7 +12,7 @@ date: 20210601
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note
-This is work in progress
+This is work that is being envisaged.
 :::
 
 # Decentralized, Governance, Risk Management and Compliance
