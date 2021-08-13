@@ -12,7 +12,7 @@ Self-sovereign identity (SSI) is work in progress, which includes the work on st
 
 ## 2.  W3C CCG: Credentials Community Group
 
-The [W3C Credentials Community Group](https://www.w3.org/community/credentials/) explores the creation, storage, presentation, verification, and user control of credentials. It focuses on a verifiable credential (a set of claims) created by an issuer about a subject—a person, group, or thing—and seek solutions inclusive of approaches such as: self-sovereign identity; presentation of proofs by the bearer; data minimization; and centralized, federated, and decentralized registry and identity systems. Its tasks include drafting and incubating Internet specifications for further standardization and prototyping and testing reference implementations.
+The [W3C Credentials Community Group](https://www.w3.org/community/credentials/) explores the creation, storage, presentation, verification, and user control of credentials. It focuses on a verifiable credential (a set of claims) created by an issuer about a %%subject|subject%% — a person, group, or thing — and seek solutions inclusive of approaches such as: self-sovereign identity; presentation of proofs by the bearer; data minimization; and centralized, federated, and decentralized registry and identity systems. Its tasks include drafting and incubating Internet specifications for further standardization and prototyping and testing reference implementations.
 
 W3C CCG has published a first version of [Verifiable Claims Data Model and Representations 1.0](https://www.w3.org/2017/05/vc-data-model/CGFR/2017-05-01/) in May 2017. That specification introduces verifiable claims as follows.
 
