@@ -26,10 +26,10 @@ The term 'identity' is [used in many ways](https://en.wikipedia.org/wiki/Identit
 
 The figure below illustrates the concept of/idea that the _being_ of a person, i.e. who the person is, is determined by everyone that has ideasknows about this person.
 
-In our model, we postulate that %%identity|identity%% is related to who or what an %%entity|entity%% actually _is_, and that this is the combined perception/%%knowledge|knowledge%% of all %%parties|party%% that know about that entity's existence.
+In our model, we postulate that %%identity|identity%% is related to who or what an %%entity|entity%% actually _is_, and that this is the combined perception (%%knowledge|knowledge%%) of all %%parties|party%% that know about that entity's existence.
 
 <img
-  alt="Various partial identities for %%subject|subject%% Piet van der Kluns, including a self-identity"
+  alt="Various partial identities for subject Piet van der Kluns, including a self-identity"
   src={useBaseUrl('images/eSSIF-Lab-partial-identities.png')}
 />
 
