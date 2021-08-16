@@ -39,7 +39,7 @@ We also need to talk about actors for which it is realistic that they might do s
 
 One way is where the %%party|party%% has a %%legal or rightful title to control (own)|owner%% the actor.[^1] This would e.g. be the case if the actor were a computer program (a running mail client or mail server, or an app running on a mobile device). We use the term `owns` to relate a party with an actor for which this is the case. In this relation `owns`, the %%actor|actor%% plays the role of the %%owned|owned%%, and the %%party|party%% plays the role of the %%owner|owner%%.
 
-The second way is where an %%actor|actor%% `works for` a %%party|party%%, based e.g. on some kind of agreement or contract. A party can hire an actor that it doesn't own, i.e. create arrangements with other parties that enable the actor to work for that party. How such `works for` relationships may start or cease to exist, and be modified, is the subject of the pattern %%mandates, Delegation and Hiring|pattern-mandates-delegation-hiring%%.
+The second way is where an %%actor|actor%% `works for` a %%party|party%%, based e.g. on some kind of agreement or contract. A party can hire an actor that it doesn't own, i.e. create arrangements with other parties that enable the actor to work for that party. How such `works for` relationships may start or cease to exist, and be modified, is the topic of the pattern %%mandates, Delegation and Hiring|pattern-mandates-delegation-hiring%%.
 
 #### %%Action|action%% Execution
 

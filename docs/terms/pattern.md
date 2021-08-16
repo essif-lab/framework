@@ -19,8 +19,8 @@ The %%terminology pattern|pattern-terminology%% provides an overview of how this
 
 ### Purpose
 A (good) pattern can be used
-- to facilitate one's thinking and reasoning about a specific subject/topic, and/or deepen one's understanding of it.
-- to effectively explain backgrounds of one's reasoning/understanding of the pattern's subject.
+- to facilitate one's thinking and reasoning about a specific topic, and/or deepen one's understanding of it.
+- to effectively explain backgrounds of one's reasoning/understanding of the pattern's topic.
 - to efficiently discuss and improve %%definitions|definition%% of the %%concepts|concept%% and relations in the pattern.
 - to write texts using precisely defined language.
 

@@ -27,17 +27,17 @@ The purpose of the Transaction Data Discloser component is to state the (various
 A **Transaction Data Discloser** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch) that is capable of stating (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other %%Parties|party%%.
 
 ### Functionality
-Typically, and at any point in time, %%parties|party%% are capable of expressing statements about entities that they know to exist. They could express statements about individuals, about themselves, the state of transactions, and so on. We will use the term '**subject (of a statement of a %%party|party%%)**' to refer to the entity that this %%party|party%% knows to exist, and about whom/which the statement has been made.
+Typically, and at any point in time, %%parties|party%% are capable of expressing statements about entities that they know to exist. They could express statements about individuals, about themselves, the state of transactions, and so on. We will use the term '**%subject% (of a statement of a %%party|party%%)**' to refer to the entity that this %%party|party%% knows to exist, and about whom/which the statement has been made.
 
-We will use the term '**subject-id (of a statement of a %%party|party%%)**' to refer to the representation that this %%party|party%% has chosen to use for referring to the subject in said statement. A subject-id must have the property of being an identifier within every administrative context that this %%party|party%% uses. It need not be humanly interpretable (and preferably is not).
+We will use the term '**subject-id (of a statement of a %%party|party%%)**' to refer to the representation that this %%party|party%% has chosen to use for referring to the %%subject|subject%% in said statement. A subject-id must have the property of being an identifier within every administrative context that this %%party|party%% uses. It need not be humanly interpretable (and preferably is not).
 
 Parties need to specify the kinds of credentials they are willing to issue, the class of entities (e.g. people, cars, Organizations) for which it will issue them, and the information schema (structure) that it will use in credentials of such kinds.[^1] This allows the Transaction Data Discloser to construct data objects that conform to this information schema, and present it to the Issuer component for actual issuing.
 
-The Transaction Data Discloser Issuing Policy specifies the kinds of (linked-)data-objects that credentials may be created for. This allows the Transaction Data Discloser to construct such a (linked-)data-objects for every subject-id that identifies a subject of the class for which a credential can be issued, which can subsequently be sent to the Issuer component that can turn it into a credential of a specific sort.
+The Transaction Data Discloser Issuing Policy specifies the kinds of (linked-)data-objects that credentials may be created for. This allows the Transaction Data Discloser to construct such a (linked-)data-objects for every subject-id that identifies a %%subject|subject%% of the class for which a credential can be issued, which can subsequently be sent to the Issuer component that can turn it into a credential of a specific sort.
 
 You can think of the Transaction Data Discloser as the component that pulls all data together that can be put in a credential (e.g. in a passport), and the Issuer as the component that puts the data in an (empty) passport, and signing it so as to create the actual credential.
 
-The Transaction Data Discloser may either push credential data to the Issuer component, so that the Issuer always has up-to-date credentials, or it can wait until the Issuer requests credential data for the creation of a credential of a specific type for a specific subject.
+The Transaction Data Discloser may either push credential data to the Issuer component, so that the Issuer always has up-to-date credentials, or it can wait until the Issuer requests credential data for the creation of a credential of a specific type for a specific %%subject|subject%%.
 
 -----
 
