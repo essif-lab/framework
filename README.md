@@ -138,14 +138,14 @@ Say you want to reference a term that exists under the `./docs/terms/` directory
 e.g. `./docs/terms/party.md`. You can use the following syntax to reference
 this term in your documentation page:
 
-```
+```m
 Some content that wants to reference the %%party|party%% term
 ```
 
 When the script runs, this will be replaced as follows:
 
-```
-Some content that wants to reference the <Term reference="party" popup="Popup text">Party</Term> term
+```html
+Some content that wants to reference the <Term reference="party" popup="hovertext provided in the party.md file">Party</Term> term
 ```
 
 which supports the functionality explained above.
@@ -154,15 +154,16 @@ which supports the functionality explained above.
 
 This plugin assumes that you follow the structure, as explained below:
 
-Each term should have its own `.md` file, inside the `./docs/terms` directory,
-and it needs to consist of the following structure:
+Each term should have its own `.md` file, inside the `./docs/terms` directory. For example, you can define the term `term` in file `term.md`, which would then exist as `./docs/terms/term.md`.
 
-```title="./docs/terms/term.md"
-date: 20210601
+These files must have the following structure:
+
+```md
 ---
 id: term
 title: Term page
-hoverText: "This hover text will appear in the documentation page that you reference this term."
+hoverText: "This text will appear as a popup when the term is referenced in a documentation page."
+glossaryText: "This text will appear as a description of the term in the glossary that is generated."
 date: 20210601
 ---
 
@@ -171,9 +172,15 @@ date: 20210601
 content here
 ```
 
-> Pay attention to the `hoverText` attribute, as it's important to provide this
+>Pay attention to the `hoverText` attribute, as it's important to provide this
 >attribute (along with the default docusaurus attributes), so the plugin can
 >fetch the correct popup text to show when referencing a term.
+>The `hoverText` MUST NOT contain %%-references!
+
+>The `glossaryText` attribute may contain references to (other) terms,
+>but, for technical reasons, the syntax is slightly different:
+>You should write `%%term text^term-name%%` (i.e. not use the `|`
+>character as in  `%%term text|term-name%%`
 
 ### Running the script
 
