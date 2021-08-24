@@ -8,7 +8,7 @@ import styles from './styles.module.css';
 
 function CustomFeature() {
   const flagUrl = useBaseUrl('images/EU-flag.jpg');
-  const logoUrl = useBaseUrl('images/eSSIF-Lab logo.png');
+  const logoUrl = useBaseUrl('images/essif-lab-logo.png');
   const title = 'Horizon 2020';
   const description =
     ' Funded by the European Commission, as part of the Horizon 2020 Research and Innovation Programme under grant agreement Nº 871932.';

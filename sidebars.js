@@ -19,7 +19,38 @@ module.exports = {
         ]
       },
       { type: 'doc', id: 'essifLab-glossary' },
-      { type: 'doc', id: 'essifLab-pattern-list' },
+      { type: 'category',
+        label: 'Mental Models',
+        items:
+        [
+          { type: 'doc', id: 'essifLab-pattern-list' },
+          { type: 'category',
+            label: 'Stable models',
+            items:
+            [ { type: 'doc', id: 'terms/pattern-party-actor-action' },
+              { type: 'doc', id: 'terms/pattern-jurisdiction' },
+              { type: 'doc', id: 'terms/pattern-guardianship' },
+            ]
+          },
+          { type: 'category',
+            label: 'Reviewable models',
+            items:
+            [ { type: 'doc', id: 'terms/pattern-identity' },
+            ]
+          },
+          { type: 'category',
+            label: 'Envisaged models',
+            items:
+            [ { type: 'doc', id: 'terms/pattern-terminology' },
+              { type: 'doc', id: 'terms/pattern-identification' },
+              { type: 'doc', id: 'terms/pattern-decision-making' },
+              { type: 'doc', id: 'terms/pattern-decentralized-GRC' },
+              { type: 'doc', id: 'terms/pattern-mandates-delegation-hiring' },
+              { type: 'doc', id: 'terms/pattern-duties-and-rights' },
+            ]
+          },
+        ]
+      },
     ],
   },
   sidebar_for_terminology: {
@@ -33,7 +64,7 @@ module.exports = {
         [
           { type: 'doc', id: 'essifLab-pattern-list' },
           { type: 'category',
-            label: 'Proposed models',
+            label: 'Stable models',
             items:
             [ { type: 'doc', id: 'terms/pattern-party-actor-action' },
               { type: 'doc', id: 'terms/pattern-jurisdiction' },

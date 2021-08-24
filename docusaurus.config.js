@@ -19,12 +19,13 @@ module.exports = {
     navbar: {
       // title: 'ESSIF-Lab',
       logo: {
-        src: 'images/eSSIF-Lab logo.png',
+        src: 'images/essif-lab-logo.png',
       },
       items: [
         {to: 'docs/essifLab', label: 'eSSIF-Lab', position: 'left'},
         {to: 'docs/essifLab-project', label: 'EU Project', position: 'left'},
         {to: 'docs/essifLab-glossary', label: 'Glossary', position: 'left'},
+        {to: 'docs/essifLab-pattern-list', label: 'Mental Models', position: 'left'},
         {to: 'docs/ssi-standards', label: 'SSI Standardization', position: 'right'},
         {
           href: 'https://gitlab.grnet.gr/essif-lab/framework',
@@ -113,7 +114,19 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} eSSIF-Lab - EU H2020 Research and Innovation Programme - Grant Agreement Nº 871932 - Built with Docusaurus.`,
+      copyright: `<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+                    <span property="dct:title">The eSSIF-Lab Framework</span> is licensed under
+                    <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+                    CC BY-SA 4.0
+                      <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                             src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
+                      <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                             src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
+                      <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                             src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
+                    </a>.&nbsp&nbsp(Copyright © 2019-${new Date().getFullYear()} by <span property="cc:attributionName">eSSIF-Lab</span>).</p>
+                    Work mostly funded under EU H2020 Research and Innovation Programme
+                     - Grant Agreement Nº <a href=https://cordis.europa.eu/project/id/871932>871932</a>.`,
     },
   },
   presets: [

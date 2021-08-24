@@ -27,7 +27,7 @@ The following figure, that also appeared in ISO standards 31000 and 27005, shows
 
 <img
   alt="High-level transaction negotiation"
-  src={useBaseUrl('images/essif-Lab-ISO-risk-management-process.png')}
+  src={useBaseUrl('images/essif-lab-iso-risk-management-process.png')}
 />
 
 *Figure 1: Activities in a Generic ISO Risk Management Process.*

@@ -1,16 +1,16 @@
 ---
 id: essifLab-pattern-list
-title: "The eSSIF-Lab Mental Models"
-sidebar_label: Mental Models
+title: "Overview of eSSIF-Lab Mental Models"
+sidebar_label: Overview
 scopeid: essifLab
-date: 20210601
+date: 20210816
 ---
 
 Within eSSIF-Lab, we maintain a set of %%mental models|pattern%% or %%patterns|pattern%%, which are descriptions, both casual and formal, of sets of %%concepts|concept%% (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic. They have been crafted so that they may serve as a basis for architecting, desiging, and implementing IT components and their governance processes.
 
-## Validated Models
+## Stable Models
 
-These are models that are quite mature. They have been applied during several years in various circumstances, and have shown to be valid (when consistently and consequently applied). Therefore, they are proposed for widespread use (and further evaluation/validation).
+These are models that are mature (stable). They have been applied during several years in various circumstances, and have shown to be valid (when consistently and consequently applied). Therefore, they are proposed for widespread use (and further evaluation/validation).
 
 ### [Parties, Actors and Actions](./terms/pattern-party-actor-action)
 The [Parties, Actors and Actions pattern](./terms/pattern-party-actor-action) captures the foundational %%concepts|concept%% and relations that we need for thinking about how things get done. It answers questions such as: 'Who/what does things?', 'How are their actions being guided/controlled?', 'Who controls whom/what?', 'Who/what may be held accountable?'.
