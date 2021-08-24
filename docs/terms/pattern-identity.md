@@ -30,7 +30,7 @@ In our model, we postulate that %%identity|identity%% is related to who or what 
 
 <img
   alt="Various partial identities for subject Piet van der Kluns, including a self-identity"
-  src={useBaseUrl('images/eSSIF-Lab-partial-identities.png')}
+  src={useBaseUrl('images/essif-lab-partial-identities.png')}
 />
 
 The figure has a person in its center (the 'protagonist' of the example) calls himself Piet van der Kluns, and perceives himself as being 28 years old, humorous and sporty. The other figures (a judge, a photographer, a colleague, and a mechanic) represent %%parties|party%%, each of which has its own view on the protagonist. The photographer finds him expressionless and dull, his colleague considers Piet to be reliable and helpful. They all have their own, subjective view on the protagonist, which can be expressed in terms of judgements and characteristics that they attribute to the protagonist. The number of parties that know about the protagonist will initially be very small, but will become larger over time. Also, the judgements and characteristics that parties attribute to the protogonist will develop and change over time.
