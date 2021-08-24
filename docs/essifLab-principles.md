@@ -43,7 +43,7 @@ From this, it follows that:
 
 ## Identifiers are properties - not things
 
-[RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986#section-1.1) (p5) says "An identifier embodies the information required to distinguish what is being identified from all other things within its scope of identification". One can easily see that this implies that an identifier is not something that that embodies information, but a property of something that embodies information. This 'something' will or won't have the identification property depending on the context. Still, we use the term %%identifier|identifier%% to refer to a character string that is being used for identification purposes. For details, see the %%identifier-pattern|pattern-identification%%.
+[RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986#section-1.1) (p5) says "An identifier embodies the information required to distinguish what is being identified from all other things within its scope of identification". One can easily see that this implies that an identifier is not something that that embodies information, but a property of something that embodies information. This 'something' will or won't have the identification property depending on the context. Still, we use the term %%identifier|identifier%% to refer to a character string that is being used for identification purposes. For details, see the %%identification pattern|pattern-identification%% and the %%identifier pattern|pattern-identifier%%.
 
 ## You do not know what others mean
 
