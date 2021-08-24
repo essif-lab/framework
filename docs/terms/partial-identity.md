@@ -19,4 +19,4 @@ A %%party|party%% does not control the partial identities of which it is the %%s
 
 Parties that issue %%credentials|credential%% about an %%entity|entity%% thus author and issue %%claims|assertion%% that are part of the %%partial identity|partial-identity%% that this party has about the entity. If that party is coherent and consistent in its knowledge, and does not lie, then we may assume that the set of claims in the credential of an issuer is also coherent and consistent, and that this party believes that the knowledge represented by such claims is true (which still may or may not be the case).
 
-For further details, see the %%identity pattern|pattern-identity%%.
+For further details, see the %%identity pattern|pattern-identity%%. Related topics can be found in the %%identification pattern|pattern-identification%% and the %%identifier pattern|pattern-identifier%%.

@@ -12,11 +12,13 @@ date: 20210803
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note
-This is work that is being envisaged.
+This is work in progress and needs discussion.
 :::
 
 ### Purpose
 The **Identification pattern** captures the concepts and relations that help to explain the mechanisms that a %%party|party%% uses to %%identify|identify%% %%entities|entity%%, and mechanisms for communicating with another party such that both parties can identify an entity and know whether or not they identify the same entity.
+
+Related topics can be found in the %%identity pattern|pattern-identity%% and the %%identifier pattern|pattern-identifier%%.
 
 ### Introduction
 In 'the wild', terms such as [identify](https://www.merriam-webster.com/dictionary/identify), [identification](https://www.merriam-webster.com/dictionary/identification), [identity](https://www.merriam-webster.com/dictionary/identity) are defined such that the can be used without all too many problems in everyday discussions. However, if we want to use these terms for our [purposes](../essifLab-objectives), their definition must be much more precise, particularly because we want to use them in IT-contexts. Lets show this by example.
@@ -31,11 +33,11 @@ We will elaborate on both.
 
 #### 1. Identification: selecting a %%partial identity|partial-identity%%
 
-Suppose you are at home and someone rings at the frontdoor. When you open the door you visually examine the person in front of you, the person may say things (and you may ask things), the purpose of all this being that you 'establish the identity of' ([Merriam-Webster, identify, 1a](https://www.merriam-webster.com/dictionary/identify)), where 'identity' would be 'the distinguishing character or personality of an individual' ([Merriam-Webster, identity, 1a](https://www.merriam-webster.com/dictionary/identity)).
+Suppose you are at home and the doorbell rings. When you open the door you see a person of which you will gather further characteristics (properties), e.g. by observing their looks, by characterizing that person's voice (pitch, intonation), and interpreting what the person says, etc. You may even elicit further observations, e.g. by asking things. All of this serves the purpose of 'establishing the identity of' ([Merriam-Webster, identify, 1a](https://www.merriam-webster.com/dictionary/identify)) that person, where 'identity' would be 'the distinguishing character(istics) or personality of an individual' ([Merriam-Webster, identity, 1a](https://www.merriam-webster.com/dictionary/identity)).
 
-In practice, however, this is more about recognizing the person, i.e. tapping into your own %%knowledge|knowledge%% to see what you already know about this person, which - in terms of our %%identity pattern|identity%% would be: determining which of the %%partial identities|partial-identity%% you %%own|owner%% have the person at the door as its %%subject|subject%%. The purpose of all this is that as you remember what you know about the person, that helps you to decide whether or not, and if so, how to further engage with him/her.
+You could also phrase this as recognizing the person, i.e. tapping into your own %%knowledge|knowledge%% to see what you already know about this person, which - in terms of our %%identity pattern|identity%% would be: determining which of the %%partial identities|partial-identity%% you %%own|owner%% have the person at the door as its %%subject|subject%%. The purpose of all this is that as you remember what you know about the person, that helps you to decide whether or not, and if so, how to further engage with him/her. This would mean that you gather characteristics of that person (the fact that it actually is a person being the first of such characteristics), and continue to do so until there is only one %%partial identity|partial-identity%% that has all these characteristics.
 
-Continuing the example, it could be that you have no recollection of that person, in which case you would already have started to create a new %%partial identity|partial-identity%% for which that person is the %%subject|subject%%, and you would have started to attribute characteristics (with some level of certainty) to this person, which all are part of this new %%partial identity|partial-identity%%. Doing this enables you to identify/recognize this person the next time (s)he comes to your house.
+Continuing the example, it could be that you have no recollection of that person, i.e. there is no %%partial identity|partial-identity%% in your %%knowledge|knowledge%% that has all these characteristics. In this case you would already have started to create a new %%partial identity|partial-identity%% for which that person is the %%subject|subject%%, and you would have started to attribute characteristics (with some level of certainty) to this person, which all are part of this new %%partial identity|partial-identity%%. Doing this enables you to identify/recognize this person the next time (s)he comes to your house.
 
 The identification process is said to fail if a user record or %%partial identity|partial-identity%% has been selected, but its actual %%subject|subject%% is not the %%entity|entity%% that supposedly is identified. This is the case when someone/something (succesfully) masquerades as, or impersonates that %%entity|entity%%. The process of obtaining assurances that the %%entity|entity%% that is identified is "who (s)he says that (s)he is" is commonly called 'authentication'. We would say that authentication is the process of providing a set of assurances such that the risk of having selected a %%partial identity|partial-identity%% or user record whose %%subject|subject%% is not the %%entity|entity%% that was identified, is acceptable to the %%owner|owner%% of that %%partial identity|partial-identity%% or user record.
 
@@ -55,35 +57,40 @@ In many contexts, this assumption does not hold. Examples include IT-contexts, o
 
 In any such cases, an %%agent|agent%% that performs identification, must have access to the relevant subset of its %%principal's|principal%% %%knowledge|knowledge%%, that is: to a representation thereof that it is able to interpret as intended by its %%principal|principal%%.
 
-Such representations can come in many forms. In a human administrative context, such representations can be stored in e.g. customer and/or supplier relation management systems, employee registrations, etc., which may be paper-based (in a file cabinet), or electronic (in a database). Typically for IT-contexts, this would also include user registrations, that hold accounts for the users. The subset of %%attributes|attribute%% that one can find a such a registration should have been chosen such that the various records therein are fit for purpose, which means that any %action% that an %agent% of the %owner% of that %data% must execute, can find the %data% it needs for that task in one of its registrations.
+Such representations can come in many forms. In a human administrative context, such representations can be stored in e.g. customer and/or supplier relation management systems, employee registrations, etc., which may be paper-based (in a file cabinet), or electronic (in a database). Typically for IT-contexts, this would also include user registrations, that hold accounts for the users. The subset of %%attributes|attribute%% that one can find a such a registration should have been chosen such that the various records therein are fit for purpose, which means that any %%action|action%% that an %%agent|agent%% of the %%owner|owner%% of that %%data|data%% must execute, can find the %%data|data%% it needs for that task in one of its registrations.
 
-This is particularly true for the %action% that is commonly referred to as 'logging in'. The %actor% that is 'logging in' some user onto a system (or provide the user access to some other physical or electronic location), will identity (and subsequently authenticate) the user, i.e. search for the account to associate the user with, from where it can find all other data that is needed about the user in that particular context.
+This is particularly true for the %%action|action%% that is commonly referred to as 'logging in'. The %%actor|actor%% that is 'logging in' some user onto a system (or provide the user access to some other physical or electronic location), will identity (and subsequently authenticate) the user, i.e. search for the account to associate the user with, from where it can find all other data that is needed about the user in that particular context.
 
-### Formalized model
+### Formalized model - information realm
 Here is a visual representation of this pattern, using the following [notations and conventions](../notations-and-conventions#pattern-diagram-notations):
 
 <img
-  alt="Conceptual model of the 'Identification' pattern"
+  alt="Conceptual model of the 'Identification' pattern - information realm"
   src={useBaseUrl('images/patterns/pattern-identification.png')}
 />
 
-The figure shows that a %party% can know (about the existence of) any number of %entities%, one of which is that %party% itself. As explained in the %party-actor-action pattern%, the this %party% has (and %owns% and %governs%) its %knowledge, and as explained in the %identity pattern%, %partial identities% are a part of that %knowledge%.
+The figure shows that a %%party|party%% can know (about the existence of) any number of %%entities|entity%%, one of which is that %%party|party%% itself. As explained in the %%party-actor-action pattern|pattern-party-actor-action%%, this %%party|party%% has (%%owns|owner%%, %%governs|governance%%) its own %%knowledge|knowledge%%. Also, as explained in the %%identity pattern|pattern-identity%%, %%partial identities|partial-identity%% are a part of that %%knowledge|knowledge%%.
 
-When a %party% knows (about the existence of) an %entity%, it is likely to have classified this %entity% as one or several types. For example, people may classify other people as their friends, enterprises may classify people as employees, customers or suppliers. Note that a person known to an enterprise may well be both an employee and a customer, illustrating that %entities% may be a member of multiple classes.
+As mentioned above, %%identification|identify%% is an %%act|action%%, by (an %%agent|agent%% of) a %%party|party%% that results in the establishment of a 1-1 relation between an %%entity|entity%% (that exists in the real world) and a %%partial identity|partial-identity%% (that exists in the %%knowledge|knowledge%% of that %%party|party%%). This %%act|action%% takes place in a specific context/situation, in which a set of %%entities|entity%% is present.
 
-In the %knowledge% of a %party%, %entities% are typically represented by one or more %identifiers%. In various systems of an enterprise, this can be an employee-number, or a customer-number. Also, %parties% may know 
+Then, this act accummulates a set of characteristics (the 'uses' relation in the figure) that it either
+- observes from the %%entity|entity%% to be identified, then finds all %%partial identities|partial-identity%% that have all of these characteristics, or
+- takes from the %%partial identity|partial-identity%% whose %%subject|subject%% needs to be identified, then finds all %%entities|entity%% that have all of these characteristics
 
+There are quite a few commonly used characteristics. One example are entity-types, i.e. classifications of %%entities|entity%% that %%parties|party%% use to make sense of the world. Examples of which include 'person', 'organization', 'animal', 'friend', etc. The %%partial identity|partial-identity%% that a %%party|party%% %%owns|owner%% about some %%entity|entity%% would include the entity-types that this %%party|party%% has attributed to that %%entity|entity%%. Another example are %%identifiers|identifier%%, i.e. texts or words that are used to refer to an %%entity|entity%% in specific contexts.
 
-### References
+This process of accumulation of characteristics (and selecting the %%entities|entity%% or %%partial identities|partial-identity%% that keep fitting all of these characteristics) continues until
+- there is no %%entity|entity%% or no %%partial identity|partial-identity%% that matches all accumlated characteristics, in which identification failed.
+- there is a single %%partial identity|partial-identity%% and a single %%entity|entity%% that both match all such characteristics, in which case identification is successful and the %%subject|subject%%-relation between the %%entity|entity%% and %%partial identity|partial-identity%% has been established.
 
-Earlier ideas for this can be found in "[Putting Identifiers in the Context of eHealth](https://link.springer.com/content/pdf/10.1007/978-0-387-79026-8_27.pdf)"
+### Formalized model - data realm
+Here is a visual representation of a similar pattern, using the following [notations and conventions](../notations-and-conventions#pattern-diagram-notations):
 
+<img
+  alt="Conceptual model of the 'Identification' pattern - data realm"
+  src={useBaseUrl('images/patterns/pattern-identification.png')}
+/>
 
-### Discussion - Scope of Identification
-[RFC 3986, Section 1.1.](https://tools.ietf.org/html/rfc3986#section-1.1) states _"an identifier embodies the information required to distinguish what is being identified from all other things within <u>its</u> **scope of identification"**_. This statement suggests that identifiers (URIs) have a single scope, supposedly specified by "_the URI schemes and naming authority (if any)_". However, there is no such requirement, and there is nothing in place to guarantee this (apart from IANA, many other (sometimes even very commonly used) URI schemes exist). [Pfitzmann and Hansen (2010)](https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf) (section 13.2) use the term 'identifiability sets' rather than 'scope of identification', and describe how 'attackers' - but that could equally well have been regular users - each have, or construct their own scope, and use contextual information to do so.
-
-The criterion that makes a text string qualify as an identifier doesn't seem to cut it, as only _using_ a text for identification purposes doesn't make it have (what we will call) the 'identification property', i.e. the property that it _actually_ identifies something. It may only have that property in combination with an associated (single) scope of identification, which may depend on the context in which it is being used. [RFC 2986, page 6](https://tools.ietf.org/html/rfc3986#page-6) illustrates this using the identifier "http://lcoalhost/".
-
-The lack of (identifying) scopes of identification becomes an issue when a %%party|party%% (say Alice) sends the identifier (e.g. `my car`) to another %%party|party%% (say Bob), expecting that Bob will then be able to identify the same %%entity|entity%% that she identifies with it (presumably some specific car).
-
-If Bob had just met Alice for the first time, and hadn't seen her coming in a car, then Alice must acquaint Bob with the existence of the %%entity|entity%% that she refers to with `my car`, e.g. by pointing her finger to it, or describing the make, brand and license plate or some other characteristic that allows Bob to single out her car (in the context of their meeting one another). Then, Bob can 'register' the existence of that car in his %%knowledge|knowledge%% (optionally tagging it with an identifier of his own, e.g. `Alice's car`), and associate it with the attribute (party='Alice', identifier='`my car`'). It is important to have the "party='Alice'" part in there, because other parties, (e.g. Carol) may also use an identifier `my car`, which would and should then refer to another car. This shows that the scope of interpretation for an identifier has to do with the (%%knowledge|knowledge%% of) %%parties|party%% that use it, and that understanding the intended meaning requires a proper identification of that scope.
+:::info Editor's note
+This section needs a figure and an explanation of how identification works in the data realm, i.e. the realm where identification is performed by an %%actor|actor%% that is not the %%party|party%% on whose behalf the %%identification|identify%% is being made. This requires that the %%actor|actor%% can access %%data|data%%-records (%%owned|owned%% by its %%principal|principal%%) that represent (exerpts of) %%partial identities|partial-identity%% of the %%entities|entity%% to be %%identified|identify%%. Such %%data|data%%-records would contain %%attributes|attribute%% that represent the characteristics.
+:::

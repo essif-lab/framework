@@ -38,8 +38,11 @@ These are placeholders for models that we think we could document, but haven't c
 ### [Terminology](./terms/pattern-terminology)
 The envisaged [eSSIF-Lab Terminology Pattern](./terms/pattern-terminology) will describe the relations between %%terminology|terminology%% artifacts such as '%%concept|concept%%', '%%term|term%%', '%%pattern|pattern%%', '%%mental model|pattern%%', '%%glossary|glossary%%' etc.
 
-### [Identifiers](./terms/pattern-identification)
-The envisaged [eSSIF-Lab Identity Pattern](./terms/pattern-identification) will describe the conceptual nature of %%identifiers|identifier%%. Note that %%identifiers|identifier%% are very different from %%identities|identity%%.
+### [Identification](./terms/pattern-identification)
+The envisaged [eSSIF-Lab Identity Pattern](./terms/pattern-identification) will describe the concepts and relations that help to explain the mechanisms that a %%party|party%% uses to %%identify|identify%% %%entities|entity%%, and mechanisms for communicating with another party such that both parties can identify an entity and know whether or not they identify the same entity.
+
+### [Identifiers](./terms/pattern-identifier)
+The envisaged [eSSIF-Lab Identity Pattern](./terms/pattern-identifier) will describe the conceptual nature of %%identifiers|identifier%%. Note that %%identifiers|identifier%% are very different from %%identities|identity%%.
 
 ### [Decentralized Governance, Risk Management and Compliance (GRC)](./terms/pattern-decentralized-GRC)
 The envisaged [Decentralized GRC pattern](./terms/pattern-decentralized-GRC) will describe how %%parties|party%% can set objectives, and pursue them to be succesful. The latter means that the party must be capable of assessing and managing the risks associated with not realizing them. In a decentralized world, this means that it needs to depend on other parties, that may or may not be too reliable. Also, it means that the party must be able to set and realize objectives to satisfy requirements of other parties (compliance).
