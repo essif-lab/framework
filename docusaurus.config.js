@@ -28,8 +28,8 @@ module.exports = {
         {to: 'docs/essifLab-pattern-list', label: 'Mental Models', position: 'left'},
         {to: 'docs/ssi-standards', label: 'SSI Standardization', position: 'right'},
         {
-          href: 'https://gitlab.grnet.gr/essif-lab/framework',
-          label: 'Gitlab',
+          href: 'https://github.com/essif-lab/framework',
+          label: 'Github',
           position: 'right',
         },
       ],
