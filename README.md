@@ -66,7 +66,7 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-Just push your changes to the `master` branch and they will be automatically deployed at https://essif-lab.pages.grnet.gr/framework/
+Just push your changes to the `master` branch and they will be automatically deployed at https://essif-lab.pages.grnet.gr/framework/ and https://essif-lab.github.io/framework/.
 
 ## Terminology/Glossary plugin usage
 
