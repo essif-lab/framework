@@ -12,7 +12,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 *This section is work in progress.*
 :::
 
-The main purpose of [eSSIF-Lab](essifLab) is to realize its [vision](essifLab-vision). This is quite a challenge, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. There is '%%ecosystem|ecosystem%%' complexity, i.e. different groups of %%organizations|organization%% and/or people (%%parties|party%%) need artifacts that work for them as a group, both 'horizontally' and 'vertically', but no further than the context of that group.
+The main purpose of [eSSIF-Lab](essifLab) is to realize its [vision](essifLab-vision). This is quite a challenge, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. Another kind of complexity is related to the (im)possibilities of doing things as %%parties|party%% interact, e.g. in an '%%ecosystem|ecosystem%%' or a %%community|community%%.
 
 The eSSIF-Lab Framework aims to establish a varied set of articles/documents, %%terminology|terminology%%, and %%mental models|pattern%% that individual %%parties|party%% from different backgrounds can use e.g. as they
 - seek to use SSI, and want to learn about:
@@ -35,7 +35,7 @@ A party usually cannot realize its objectives on its own. To do this, the party 
 
 ### 2.3 Business Transactions
 
-In the eSSIF-Lab world view, %%actors|actor%% interact with each other (as %%agents|agent%% for their %%principals|principal%%) to negotiate and execute %%transactions|transaction%%. An agent uses the %%knowledge|knowledge%% of its principal as its main guidance for such negotiations and execution. An agent may also use knowledge of other %%parties|party%% to fill in any gaps, or to provide additional details, as necessary.
+In the eSSIF-Lab world view, %%actors|actor%% interact with each other (as %%agents|agent%% for their %%principals|principal%%) to negotiate and execute %%transactions|transaction%%. An agent uses the %%knowledge|knowledge%% of its principal as its main guidance for such negotiations and execution. An agent may also use knowledge of other %%parties|party%% to fill in any gaps, or to provide additional details, as necessary. The %%parties-actor-action pattern|pattern-parties-actor-action%% explains the concepts behind this.
 
 The participants of a transaction are %%parties|party%%, that employ %%actors|actor%% that do the associated work on their behalf. A party may employ different actors for executing different actions within a single transaction, each of which will use the knowledge of this party (its principal) to guide the execution of these actions, so that the entire transaction is performed according to how the party wants it to be done.
 
@@ -44,15 +44,25 @@ The [*DEMO*](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_fo
 - an execution phase, in which (perhaps other) agents of the same principals work (execute actions) to fulfill the obligations of the agreement. This phase results in them stating that they have completed that work (or that they gave up).
 - the acceptance phase, in which one or more agents of each participant exchange data that leads to a decision to accept the results, or to escalate (e.g. start a law suit against the other participant)
 
-### 2.4 Issuers, Verifiers, Validators and Holders
+### 2.4 SSI Roles
 
-In the various phases of a %%transaction|transaction%%, each of its %%participants|participant%% may need (one or more of its agents) to do the following:
-- request the data that it needs for making the commitment or acceptance decision
--
+In the various phases of a %%transaction|transaction%%, each of its participants may need (one or more of its %%agents|agent%%) to do the following:
 
+1. request the %%data|data%% that it needs for making its commitment or acceptance decision, or for executing its part of the transaction;
+2. provide the %%data|data%% that the other participant(s) need for making their commitment/acceptance decision, or for executing its part of the transaction;
+3. %%verify|verify%% the response obtained from the other participant(s) to the data-request;
+4. %%validate|validate%% the data obtained from the (%%verified|verify%%) response, preferably at the moment right before actually using it;
+5. state any intermediate and/or final results of the transaction to the other participant(s).
 
+[The basic structure of SSI contexts](https://en.wikipedia.org/wiki/Self-sovereign_identity) consists of participants referred to as 'Issuer', 'Holder', and 'Verifier', in a configuration referred to as a trust triangle (e.g. in [W3C Verifiable Credentials Data Model](https://www.w3.org/TR/vc-data-model/#ecosystem-overview), the [book "Self-Sovereign Identity" (Reed, Preukschat, 2020)](https://freecontent.manning.com/the-basic-building-blocks-of-ssi/), and many, many more). In short, an [issuer](https://www.w3.org/TR/vc-data-model/#dfn-issuers) typically issues [verifiable credentials](https://www.w3.org/TR/vc-data-model/#dfn-credential) to a [holder](https://www.w3.org/TR/vc-data-model/#dfn-holders), which stores them securely under its own control. This accommodates point 5 (stating results).
 
+[Verifiers](https://www.w3.org/TR/vc-data-model/#dfn-verifier) typically request such credentials, perhaps better: a composition of data (called a [presentation](https://www.w3.org/TR/vc-data-model/#dfn-presentations)) that a holder constructs from different such credentials and subsequently sends back in response to such a request, which accommodates points 1 and 2. Then, the verifier will [verify](https://www.w3.org/TR/vc-data-model/#dfn-verify) this response (accommodating point 3).
 
+The fact that the [W3C Verifiable Credentials Data Model](https://www.w3.org/TR/vc-data-model) does not provide for a validator role, and explicitly places [validation](https://www.w3.org/TR/vc-data-model/#dfn-credential-validation) of credentials out of its scope, illustrates that we need more than just [verifiable credentials](https://www.w3.org/TR/vc-data-model/#dfn-verifiable-credentials) (VCs). Indeed, protocols are needed e.g. for issuing credentials, [exchanging presentations](https://identity.foundation/presentation-exchange/), revoking credentials etc. Such protocols may provoke the need for additional %%roles|role%%, e.g. a `revoker` (that would revoke credentials), a `policy provider`, etc.
+
+In our framework, we postulate the existince of %%issuers|issuer%%, %%holders|holder%%, %%verifiers|verifier%% and %%validators|validator%%, which for our purposes we define as functional components (i.e. components that fit a functional architecture) and that can be readily realized as concrete technical components that can be deployed in run-time contexts to act as %%digiatl agents|digiatl-agents%% for arbitrary %%parties|party%%. It is not exactly the same, but nevertheless in line with the [W3C VC Terminology](https://www.w3.org/TR/vc-data-model/#terminology), which states (with the obvious exception of the validator) that they are roles that [entities](https://www.w3.org/TR/vc-data-model/#dfn-entities) can or might perform as they execute some function(s).
+
+As mentioned before, we expect that more functionalities and/or %%roles|role%% are necessary to make it all work, e.g. that of %%agent|agent%%, %%principal|principal%%, %%owner|owner%%, %%governor|governor%%, %%guardian|guardian%%, %%dependent|dependent%%, etc. The bulk of these roles will likely not be of technical nature, but more fitted to the higher architectural levels, e.g. of information architecture, process architecture, governance etc.
 
 ## 2. Functional Architecture Overview
 
