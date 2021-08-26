@@ -36,7 +36,7 @@ jobs:
       - name: Release to GitHub Pages
         env:
           USE_SSH: true
-          GIT_USER: git
+          GIT_USER: "MarIliadi"
         run: |
           git config --global user.email "miliadi@admin.grnet.gr"
           git config --global user.name "MarIliadi"

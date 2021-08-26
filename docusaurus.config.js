@@ -2,11 +2,11 @@ const path = require('path');
 module.exports = {
   title: 'eSSIF-Lab',
   tagline: 'eSSIF-Lab Framework',
-  url: 'https://essif-lab.pages.grnet.gr/framework',
+  url: 'https://essif-lab.github.io/framework',
   baseUrl: process.env.STAGING && process.env.STAGING === 'true' ? '/framework/' : '/',
   favicon: 'images/favicon.ico',
-  organizationName: 'grnet',
-  projectName: 'essif-lab',
+  organizationName: 'essif-lab',
+  projectName: 'framework',
   onBrokenLinks: 'log',
   scripts: [
     {
