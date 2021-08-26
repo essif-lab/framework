@@ -2,8 +2,8 @@ const path = require('path');
 module.exports = {
   title: 'eSSIF-Lab',
   tagline: 'eSSIF-Lab Framework',
-  url: 'https://essif-lab.github.io/framework',
-  baseUrl: process.env.STAGING && process.env.STAGING === 'true' ? '/framework/' : '/',
+  url: 'https://essif-lab.github.io',
+  baseUrl: '/framework/',
   favicon: 'images/favicon.ico',
   organizationName: 'essif-lab',
   projectName: 'framework',
