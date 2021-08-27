@@ -1,12 +1,12 @@
 # eSSIF-Lab Framework
 
-This repo contains files that are used to generate the the [eSSIF-Lab framework](https://essif-lab.pages.grnet.gr/framework/) website, which includes the eSSIF-Lab vision, functional architecture, terminology and other relevant topics.
+This repo contains files that are used to generate the the [eSSIF-Lab framework](https://essif-lab.github.io/framework) website, which includes the eSSIF-Lab vision, functional architecture, terminology and other relevant topics.
 
 This website is generated using [Docusaurus 2](https://v2.docusaurus.io/) (and a custom plugin developed by [GRNET](https://grnet.gr/en/) for handling terminology).
 
 ## Writing Docusaurus Documents
 
-Docusaurs requires documentation content to appear in `.md` files inside the `docs` folder.
+Docusaurus requires documentation content to appear in `.md` files inside the `docs` folder.
 Each file defines the following attributes at its very beginning:
 
 - `id`, by which the file is referred to across the project
@@ -17,7 +17,7 @@ Documentation on these and other header fields can be found [here](https://v2.do
 
 The Terminology Engine plugin of GRNET uses additional header fields. These are (or will be) defined [here](./docs/terminology-contributions).
 
-The `sidebars.js` file contains the basic mechanism for [distributing content among sections](https://v2.docusaurus.io/docs/docs-introduction#sidebar) and is self-explanatory (compare with the sidebar appearing [here](https://essif-lab.pages.grnet.gr/essif-lab/docs/essifLab-project)). Subsections within the `.md` file (that is, tagged with `##`) will appear at the right part of the page (see for example [here](https://essif-lab.pages.grnet.gr/essif-lab/docs/infrastructure)).
+The `sidebars.js` file contains the basic mechanism for [distributing content among sections](https://v2.docusaurus.io/docs/docs-introduction#sidebar) and is self-explanatory (compare with the sidebar appearing [here](https://essif-lab.github.io/framework/docs/essifLab-project)). Subsections within the `.md` file (that is, tagged with `##`) will appear at the right part of the page (see for example [here](https://essif-lab.pages.grnet.gr/essif-lab/docs/infrastructure)).
 
 ## Inserting Images in docs
 <!-- **DEPRECATED** Images must be put inside the directory `static/images` and developers must refer to them using _relative_ urls.
@@ -66,7 +66,7 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-Just push your changes to the `master` branch and they will be automatically deployed at https://essif-lab.pages.grnet.gr/framework/ and https://essif-lab.github.io/framework/.
+Just push your changes to the `master` branch and they will be automatically deployed at https://essif-lab.github.io/framework/ and https://essif-lab.github.io/framework/.
 
 ## Terminology/Glossary plugin usage
 
