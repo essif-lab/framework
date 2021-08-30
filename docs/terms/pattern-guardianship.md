@@ -58,7 +58,7 @@ In the figure, concepts are placed in one of three areas that are elaborated in 
 Different objectives lead to different kinds of guardianships. For example, the objective that children should be taken care of, get a good education etc. may lead to a guardianship type called 'Parenthood'. Others may lead to guardianship types such as 'Curatorship', 'Financial Administration', 'Legal Custody', etc.
 
 Note that dependents need not always be
-- people that are somehow very needy. The manager of a department in a company may be tasked to care for the wellbeing of the workers in his department, which doesn't require such workers to be incapable of doing that for themselves.
+- people that are somehow very needy. The %%manager|management%% of a department in a company may be tasked to care for the wellbeing of the workers in his department, which doesn't require such workers to be incapable of doing that for themselves.
 - people. Enterprises can have curators that care for an enterprise that has trouble to continue its existence. A historical heritage site might also become a dependent in a specific kind of guardianship type. Even some kinds of %%ownership|ownership%% may qualify as a guardianship, which is the case when the rights and duties that the %%owner|owner%% has to enjoy, dispose of, and control the (%%owned|owned%%) entity also serve to care for, or defend that entity.
 
 Guardianship %%governance|governance%% is the acts/processes of governing/overseeing the control and direction of whatever relates to guardianships. It oversees and directs the establishment of %%guardianship types|guardianship-type%%, defining the various stakeholder roles and associating their rights and duties towards one another.

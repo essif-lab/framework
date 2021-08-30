@@ -31,6 +31,9 @@ The [eSSIF-Lab Identity Pattern](./terms/pattern-identity)
 - shows that it is comprised of %%partial identities|partial-identity%% that are the actual artifacts we need to focus on in %%SSI contexts|self-sovereign-identity%%, and
 - shows how this relates to (attributes in) %%credentials|credential%%.
 
+### [Managing and Governing](./terms/pattern-governance-and-management)
+The envisaged [Managing and Governing Pattern](./terms/pattern-governance-and-management) will explain how %%parties|party%% organize that %%their|owner%% %%objectives|objective%% are realized, either by doing the associated work themselves, or by arranging for other %%parties|party%% to do that. The contribution of this pattern is to show how this is done, based on the idea that every %%objective|objective%% has a single %%party|party%% that %%owns|owner%% the %%objective|objective%%.
+
 ## Envisaged Models
 
 These are placeholders for models that we think we could document, but haven't come around to doing.
@@ -43,7 +46,6 @@ The envisaged [eSSIF-Lab Identity Pattern](./terms/pattern-identification) will 
 
 ### [Identifiers](./terms/pattern-identifier)
 The envisaged [eSSIF-Lab Identity Pattern](./terms/pattern-identifier) will describe the conceptual nature of %%identifiers|identifier%%. Note that %%identifiers|identifier%% are very different from %%identities|identity%%.
-
 ### [Decentralized Governance, Risk Management and Compliance (GRC)](./terms/pattern-decentralized-GRC)
 The envisaged [Decentralized GRC pattern](./terms/pattern-decentralized-GRC) will describe how %%parties|party%% can set objectives, and pursue them to be succesful. The latter means that the party must be capable of assessing and managing the risks associated with not realizing them. In a decentralized world, this means that it needs to depend on other parties, that may or may not be too reliable. Also, it means that the party must be able to set and realize objectives to satisfy requirements of other parties (compliance).
 

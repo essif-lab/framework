@@ -5,36 +5,18 @@ scopeid: essifLab
 type: concept
 typeid: governance
 stage: draft
-hoverText: "Governance: the act or process of governing or overseeing the control and direction of something (Merriam-Webster)."
-glossaryText: "the act or process of governing or overseeing the control and direction of something (Merriam-Webster)."
-date: 20210601
+hoverText: "Governance: the act or process of governing or overseeing the realization of (the results associated with) a set of Objectives by the Owner of these Objectives."
+glossaryText: "the %%act^action%% or process of governing or overseeing the realization of (the results associated with) a set of %%objectives^objective%% by the %%owner^owner%% of these %%objectives^objective%%."
+date: 20210830
 ---
 
 ### Short Description
-**Governance** is the act (executed by, or behalf of some %%party|party%%) or process (of some %%party|party%%) of governing or overseeing the control and direction of something ([Merriam-Webster](https://www.merriam-webster.com/dictionary/governance)). The governance of a %%party|party%% is embodied by the set of processes by which it decides how to make (other) decisions, how %%actors|actor%% that it %%employs|employee%% are to behave and operate, and ensure this guidance ends up in documents (which we will call %%policies|policy%%).
+**Governance** is the %%act|action%% or process of governing or overseeing the realization of (the results associated with) a set of %%objectives|objective%% that are %%owned|owned%% by a single %%party|party%%. This act or process is conducted by (%%agents|agent%% that do so on behalf of) this %%party|party%%.
 
-As %%parties|party%% interact with one another, i.e. conduct %%business transactions|transaction%%, they need to decide whether or not to commit to a transaction proposal. Deciding about how to make such a decision is one of the subjects of the governance process of that %%party|party%%: it is establishing the kind of argument that may be used to make this decision.
+Governance is about planning the budgets and other resources necsessary  _to (obtain and to) actually use the results_. This includes the specification of timelines (deadlines) for the results to become available, as well as the properties and other characteristics (security, quality, sustainability, etc.) that results must have in order to make them effective ('fit for purpose' - fit to be used as intended by the consuming %%party|party%%). In order to keep tabs on the fitness of the results for the intended purposes, effectiveness indicators may be developed, i.e. gauges that measure how 'fit' the results are to be used/consumed for the intended purposes, are also part of this %%governance|governance%%.
 
-Within eSSIF-Lab, governance is pretty much limited to the governance of various %%policies|policy%%.
+The governance of a set of %%objectives|objective%% can be implemented as a %%control process|control-process% where each of these objectives serves as a control objective in that process.
 
-The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.
-
+We make a clear distinction between governance and management, which is explained in the %%governance and management pattern|pattern-governance-and-management%%.
 ### Purpose
-The purpose for a %%party|party%% of having a **governance** process is that it enables him to reflect on the ways that it makes decisions. A typical topic for governance is the maintenance of the set of rules, working-instructions, preferences and other guidance that %%actors|actor%% are supposed, or required to use when executing specific %%actions|action%% on behalf of that %%party|party%%.
-
-For %%digital-actors|digital-actor%% such guidance consists of %%digital policies|digital-policy%%. A %%party|party%% whose governance process maintains a %%policy|policy%% will be called the %%governor|policy-governor%% of that policy.
-
-### Related Concepts
-- %%Governance|governance%%
-- %%Governor|policy-governor%%
-- %%Policy|policy%%
-- %%Digital Policy|digital-policy%%
-- %%Transaction Data Discloser Policy|transaction-data-collector-policy%%
-- %%Transaction Data Collector Policy|transaction-data-collector-policy%%
-- %%Verifier Policy|verifier-policy%%
-- %%Issuer Policy|issuer-policy%%
-- %%Holder Policy|holder-policy%%
-- %%Wallet Policy|wallet-policy%%
-:::info Editor's note
-TNO (or others) to provide additional content of this file.
-:::
+The purpose for a %%party|party%% of having a **governance** process is that it enables him to oversee the realization of (the results associated with) various subset of its %%objectives|objective%%, and to change the specification of the associated results, to select the appropriate %%party|party%% for actually realizing these results, etc.

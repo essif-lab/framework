@@ -36,7 +36,8 @@ module.exports = {
             label: 'Reviewable models',
             items:
             [ { type: 'doc', id: 'terms/pattern-identity' },
-            ]
+              { type: 'doc', id: 'terms/pattern-governance-and-management' },
+          ]
           },
           { type: 'category',
             label: 'Envisaged models',
@@ -76,7 +77,8 @@ module.exports = {
             label: 'Reviewable models',
             items:
             [ { type: 'doc', id: 'terms/pattern-identity' },
-            ]
+              { type: 'doc', id: 'terms/pattern-governance-and-management' },
+          ]
           },
           { type: 'category',
             label: 'Envisaged models',
