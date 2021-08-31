@@ -75,9 +75,11 @@ The `master` branch has the latest changes to the content of the website.
 
 The workflow in the framework repository, has the following jobs:
 - `checks` [job](https://github.com/essif-lab/framework/blob/master/.github/workflows/framework.yml#L10): runs some checks, to make sure that the merged changes will not break the deployment
-> These checks run on all the branches but `master`
+
+  These checks run on all the branches but `master`
 - `gh-release` [job](https://github.com/essif-lab/framework/blob/master/.github/workflows/framework.yml#L25): takes care of the deployment
-> The release job runs **only** when another branch gets merged to `master` and the changes affect the artifact of the deployment
+  
+  The release job runs **only** when another branch gets merged to `master` and the changes affect the artifact of the deployment
 
 > :exclamation: The branch that the website will be deployed to, defaults to `gh-pages`. The result of the release job (`build` directory)
 > is stored in the `gh-pages` branch, so the developer should **not** apply changes directly to `gh-pages` branch. All changes must be merge
@@ -89,21 +91,37 @@ In order to deploy a new version of the website, follow the procedure below:
 </summary>
 
 1. Create locally a new branch from `master` (ex. `feature-gh-branch` branch)
+  
 2. Add and commit your changes locally
+  
 3. Push your changes to the remote `feature-gh-branch` branch
+  
 4. To create a Pull Request to `master`, go to the repository's page on Github, in the [Pull requests tab](https://github.com/essif-lab/framework/pulls), and click `New pull request`
+  
 5. In the `compare:` dropdown list, choose the branch you want to merge with `master` (in this case with `feature-gh-branch`), and review the changes
+  
 ![Github compare branches](static/images/github/github-compare-branches.png)
+  
 Then, click `Create Pull Request` button to proceed
-6. You will get prompted to the pull request page, where the *checks* of the PR are launched automatically, as part of the workflow.
+  
+6. You will get prompted to the pull request page, where the *checks* of the PR are launched automatically, as part of the workflow
+  
 ![Github PR checks](static/images/github/github-pr-checks.png)
+  
 When the PR passes all the checks and it has no conflicts with the `master` branch, you can click the `Merge pull request` button, to merge the changes
+  
 ![Github PR page](static/images/github/github-pr-page.png)
+  
 Once the merging is over, the PR will change status from *Open* to *Merged*
+  
 ![Github PR merged](static/images/github/github-merged-branch.png)
+  
 7. In the [Actions page](https://github.com/essif-lab/framework/actions) you can review all the running workflows.
+  
 ![Github PR merged](static/images/github/github-workflows.png)
+  
 Now that the `feature-gh-branch` got merged to `master`, the release job started running, to update the website.
+  
 ![Github PR merged](static/images/github/github-release-workflow.png)
 
 </details>
