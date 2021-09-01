@@ -12,7 +12,7 @@ date: 20210601
 
 ### Governance
 <!--This section identifies the organizational body (Jurisdiction) that governs the scope. Optionally, a reference to the governance framework/procedures may be made.-->
-The [eSSIF-Lab project](https://essif-lab.eu/) governs the terminology within this scope, according to the procedures mentioned in the [eSSIF-Lab Framework](https://essif-lab.pages.grnet.gr/framework/docs/terminology/).
+The [eSSIF-Lab project](https://essif-lab.eu/) governs the terminology within this scope, according to the procedures mentioned in the [eSSIF-Lab Framework](https://essif-lab.github.io/framework/docs/terminology/).
 
 ### Objectives/Issues
 <!--State the purpose for having the scope in terms of objectives that are aimed for and/or issues that are to be addressed.-->

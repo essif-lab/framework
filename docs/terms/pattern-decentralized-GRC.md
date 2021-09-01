@@ -66,7 +66,7 @@ The purpose of this paper is to help the reader understand what this is all abou
 
 ## Mental Model
 
-This chapter describes the mental model for decentralized risk management. The model uses [eSSIF-Lab terminology](https://essif-lab.pages.grnet.gr/framework/docs/essifLab-glossary), in particular that which is related to [Parties, Actors and Actions](https://essif-lab.pages.grnet.gr/framework/docs/terms/pattern-party-actor-action).
+This chapter describes the mental model for decentralized risk management. The model uses [eSSIF-Lab terminology](https://essif-lab.github.io/framework/docs/essifLab-glossary), in particular that which is related to [Parties, Actors and Actions](https://essif-lab.github.io/framework/docs/terms/pattern-party-actor-action).
 
 ### Summary
 This mental model captures the foundational concepts and relations that we need for thinking about decentralized risk management. It answers questions such as "What is a risk?", "Who is to address what risks?", "What's in it for me?", "How do the terms 'Governance', 'Risk management' and 'Compliance' relate to one another?", and more.
