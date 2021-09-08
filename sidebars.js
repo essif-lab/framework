@@ -45,6 +45,7 @@ module.exports = {
             [ { type: 'doc', id: 'terms/pattern-terminology' },
               { type: 'doc', id: 'terms/pattern-identification' },
               { type: 'doc', id: 'terms/pattern-identifier' },
+              { type: 'doc', id: 'terms/pattern-trust' },
               { type: 'doc', id: 'terms/pattern-decision-making' },
               { type: 'doc', id: 'terms/pattern-decentralized-GRC' },
               { type: 'doc', id: 'terms/pattern-mandates-delegation-hiring' },
@@ -85,6 +86,8 @@ module.exports = {
             items:
             [ { type: 'doc', id: 'terms/pattern-terminology' },
               { type: 'doc', id: 'terms/pattern-identification' },
+              { type: 'doc', id: 'terms/pattern-identifier' },
+              { type: 'doc', id: 'terms/pattern-trust' },
               { type: 'doc', id: 'terms/pattern-decision-making' },
               { type: 'doc', id: 'terms/pattern-decentralized-GRC' },
               { type: 'doc', id: 'terms/pattern-mandates-delegation-hiring' },

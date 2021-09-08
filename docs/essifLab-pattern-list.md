@@ -46,6 +46,9 @@ The envisaged [eSSIF-Lab Identity Pattern](./terms/pattern-identification) will 
 
 ### [Identifiers](./terms/pattern-identifier)
 The envisaged [eSSIF-Lab Identity Pattern](./terms/pattern-identifier) will describe the conceptual nature of %%identifiers|identifier%%. Note that %%identifiers|identifier%% are very different from %%identities|identity%%.
+
+### [Trust](./terms/pattern-trust)
+The envisaged [eSSIF-Lab Trust Pattern](./terms/pattern-trust) will describe the conceptual nature of %%trust|trust%% - limited to SSI contexts
 ### [Decentralized Governance, Risk Management and Compliance (GRC)](./terms/pattern-decentralized-GRC)
 The envisaged [Decentralized GRC pattern](./terms/pattern-decentralized-GRC) will describe how %%parties|party%% can set objectives, and pursue them to be succesful. The latter means that the party must be capable of assessing and managing the risks associated with not realizing them. In a decentralized world, this means that it needs to depend on other parties, that may or may not be too reliable. Also, it means that the party must be able to set and realize objectives to satisfy requirements of other parties (compliance).
 
