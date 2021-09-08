@@ -16,7 +16,7 @@ This is work in progress and needs discussion.
 :::
 
 ### Purpose
-The **Trust pattern** captures the concepts and relations that help to explain how %%trust|trust%% relates to %parties% that do the trusting, and other concepts that express what it is that these %parties% trust.
+The **Trust pattern** captures the concepts and relations that help to explain how %%trust|trust%% relates to %%parties|party%% that do the trusting, and other concepts that express what it is that these %%parties|party%% trust.
 
 ### Introduction
 
