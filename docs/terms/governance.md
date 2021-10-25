@@ -15,7 +15,7 @@ date: 20210830
 
 Governance is about planning the budgets and other resources necsessary  _to (obtain and to) actually use the results_. This includes the specification of timelines (deadlines) for the results to become available, as well as the properties and other characteristics (security, quality, sustainability, etc.) that results must have in order to make them effective ('fit for purpose' - fit to be used as intended by the consuming %%party|party%%). In order to keep tabs on the fitness of the results for the intended purposes, effectiveness indicators may be developed, i.e. gauges that measure how 'fit' the results are to be used/consumed for the intended purposes, are also part of this %%governance|governance%%.
 
-The governance of a set of %%objectives|objective%% can be implemented as a %%control process|control-process% where each of these objectives serves as a control objective in that process.
+The governance of a set of %%objectives|objective%% can be implemented as a %%control process|control-process%% where each of these objectives serves as a control objective in that process.
 
 We make a clear distinction between governance and management, which is explained in the %%governance and management pattern|pattern-governance-and-management%%.
 ### Purpose

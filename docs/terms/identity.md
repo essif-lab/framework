@@ -19,4 +19,4 @@ We realize that this is a term that is heavily debated. However for our purposes
 
 The [Self-Identity](https://en.wikipedia.org/wiki/Self-concept) or [Self-concept](https://en.wikipedia.org/wiki/Self-concept) of a %%party|party%% is the %%partial identity|partial-identity%% of which it is both the %%subject|subject%% and the %%owner|owner%%.
 
-For further details, see the %%identity pattern|pattern-identity%%. Related topics can be found in the %%identification pattern|pattern-identification%% and the %identifier pattern%.
+For further details, see the %%identity pattern|pattern-identity%%. Related topics can be found in the %%identification pattern|pattern-identification%% and the %%identifier pattern|pattern-identifier%%.
