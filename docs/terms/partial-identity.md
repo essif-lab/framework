@@ -11,7 +11,7 @@ date: 20210803
 ---
 
 ### Short Description
-A **Partial identity (of an %%entity|entity%%)** is all %%knowledge|knowledge%% that a specific %%party|party%% has about that %%entity|entity%%. This %%entity|entity%% is referred to as the *%subject%* of the partial identity. The %%party|party%% fulfills the role of %%owner|owner%% of the partial entity, as the partial identity is part of the %%knowledge|knowledge%% that this party owns (see the %%party-actor pattern|pattern-party-actor-action%% for details).
+A **Partial identity (of an %%entity|entity%%)** is all %%knowledge|knowledge%% that a specific %%party|party%% has about that %%entity|entity%%. This %%entity|entity%% is referred to as the *%%subject|subject%%* of the partial identity. The %%party|party%% fulfills the role of %%owner|owner%% of the partial entity, as the partial identity is part of the %%knowledge|knowledge%% that this party owns (see the %%party-actor pattern|pattern-party-actor-action%% for details).
 
 A %%party|party%% that has %%knowledge|knowledge%% about itself will thus have a %%partial identity|partial-identity%% that it is both the %%subject|subject%% and the %%owner|owner%% of. This is called the [Self-Identity](https://en.wikipedia.org/wiki/Self-concept) or [Self-concept](https://en.wikipedia.org/wiki/Self-concept) of that party.
 
