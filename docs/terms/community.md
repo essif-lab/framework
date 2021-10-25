@@ -11,7 +11,9 @@ date: 20210601
 ---
 
 ### Short Description
-A Community is an %%organization|organization%% that seeks to facilitate the cooperation between at least two %%parties|party%% (referred to as its 'members') based on interests that these %%parties|party%% share as each of them seeks to realize its own, individual %%objectives|objective%%.
+A Community is an %%organization|organization%% that seeks to facilitate the cooperation between at least two %%parties|party%% (referred to as its 'members') based on interests that these %%parties|party%% share as each of them seeks to realize its own, individual %%objectives|objective%%. Facilitating such a cooperation can be expressed in terms of %%objectives|objective%% that each of its members contributes to realizing.
+
+Note that a single set of %%parties|party%% can seek different cooperations with one another, with different associated sets of %%objectives|objective%%. They are then different %%communities|community%% (even though they have the same members), because it is conceivable that another %%party|party%% will join one, but not both of them, or one member will leave one, but not both %%communities|community%%.
 
 A community is a specialization of the more generic %%ecosystem|ecosystem%% in the sense that it is an %%organization|organization%% (which an ecosystem need not be) that (actively) facilitates the cooperation between its members, whereas in non-community ecosystems, this cooperation is not actively organized.
 
