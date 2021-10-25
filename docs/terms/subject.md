@@ -18,4 +18,4 @@ Note that without this data set, the use of this term is meaningless. Therefore,
 Sometimes, the term 'subject' is also used in the meaning of 'reference to the (single) %%entity|entity%% [etc.]' or '%%identifier|identifier%% for the (single) %%entity|entity%% [etc.]' rather than the (single) %%entity|entity%% itself. We discourage such practices, and suggest to use the term 'subject identifier' in such cases.
 
 ### Purpose
-The term **subject** provides a generic way to link %%entities|entity%% that exist in the real (physical) world with %%knowledge|knowledge%% about them (e.g. characteristics, %%partial identities|partial-identity%% and such) that exists in the minds of various %parties%.
+The term **subject** provides a generic way to link %%entities|entity%% that exist in the real (physical) world with %%knowledge|knowledge%% about them (e.g. characteristics, %%partial identities|partial-identity%% and such) that exists in the minds of various %%parties|party%%.

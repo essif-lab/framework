@@ -26,7 +26,7 @@ The ability to distinguish between (non)objectives is relevant as objectives are
 
 ### Criterion
 An **objective** is something
-- that is %%owned|owned%% by a single %party;
+- that is %%owned|owned%% by a single %%party|party%%;
 - toward which its %%owner|owner%% directs its efforts: an aim, goal, or end of action - this action is related to the the owner producing the associated results (%%management|management%%) and/or consuming the results (%%governance|governance%%);
 - that can be realized, and this realization can be seen in terms as the coming into existence of results (e.g. products, services, a situation or state (e.g. happiness));
 - that may have a description (text, that represents and identifies the objective within the %%knowledge|knowledge%% of its %%owner|owner%%)

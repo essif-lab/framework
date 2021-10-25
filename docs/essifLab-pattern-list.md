@@ -38,8 +38,8 @@ The [eSSIF-Lab Identity Pattern](./terms/pattern-identity)
 - shows that it is comprised of %%partial identities|partial-identity%% that are the actual artifacts we need to focus on in %%SSI contexts|self-sovereign-identity%%, and
 - shows how this relates to (attributes in) %%credentials|credential%%.
 
-### [Managing and Governing](./terms/pattern-governance-and-management)
-The envisaged [Managing and Governing Pattern](./terms/pattern-governance-and-management) will explain how %%parties|party%% organize that %%their|owner%% %%objectives|objective%% are realized, either by doing the associated work themselves, or by arranging for other %%parties|party%% to do that. The contribution of this pattern is to show how this is done, based on the idea that every %%objective|objective%% has a single %%party|party%% that %%owns|owner%% the %%objective|objective%%.
+### [Governance and Management](./terms/pattern-governance-and-management)
+The envisaged [Governance and Management Pattern](./terms/pattern-governance-and-management) will explain how %%parties|party%% organize that %%their|owner%% %%objectives|objective%% are realized, either by doing the associated work themselves, or by arranging for other %%parties|party%% to do that. The contribution of this pattern is to show how this is done, based on the idea that every %%objective|objective%% has a single %%party|party%% that %%owns|owner%% the %%objective|objective%%.
 
 ## Envisaged Models
 
