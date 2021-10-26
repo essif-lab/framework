@@ -2,11 +2,13 @@ const path = require('path');
 module.exports = {
   title: 'eSSIF-Lab',
   tagline: 'eSSIF-Lab Framework',
-  url: 'https://essif-lab.github.io',
+  // url: 'https://essif-lab.github.io',
+  url: 'https://essif-lab.pages.grnet.gr/framework',
   baseUrl: process.env.STAGING && process.env.STAGING === 'true' ? '/framework/' : '/',
   favicon: 'images/favicon.ico',
-  organizationName: 'essif-lab',
-  projectName: 'framework',
+  // organizationName: 'essif-lab',
+  organizationName: 'grnet',
+  projectName: 'essif-lab',
   onBrokenLinks: 'log',
   scripts: [
     {
@@ -28,8 +30,10 @@ module.exports = {
         {to: 'docs/essifLab-pattern-list', label: 'Mental Models', position: 'left'},
         {to: 'docs/ssi-standards', label: 'SSI Standardization', position: 'right'},
         {
-          href: 'https://github.com/essif-lab/framework',
-          label: 'Github',
+          // href: 'https://github.com/essif-lab/framework',
+          // label: 'Github',
+          href: 'https://gitlab.grnet.gr/essif-lab/framework',
+          label: 'Gitlab',
           position: 'right',
         },
       ],
@@ -59,7 +63,7 @@ module.exports = {
           ],
         },
         {
-          title: 'Project',
+          title: 'EU Project',
           items: [
             {
               label: 'Project',
