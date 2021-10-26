@@ -5,18 +5,19 @@ scopeid: essifLab
 type: concept
 typeid: policy
 stage: draft
-hoverText: "Policy: a (set of) rules, working-instructions, preferences and other guidance for the execution of one or more kinds of Actions, that Agents (a) have access to, (b) can interpret as intended by their Principal (i.e. policy Owner) and (c) must use when executing such Actions."
-glossaryText: "a (set of) rules, working-instructions, preferences and other guidance for the execution of one or more kinds of %%actions^action%%, that %%agents^agent%% (a) have access to, (b) can interpret as intended by their %%principal^principal%% (i.e. policy %%owner^owner%%) and (c) must use when executing such %%actions^action%%."
-date: 20210601
+hoverText: "Policy: a (set of) rules, working-instructions, preferences and other guidance for the execution of one or more kinds of Actions, that Agents of the Party that Governs the policy have access to and can interpret such that this results in these Actions being executed as intended by that Party."
+glossaryText: "a (set of) rules, working-instructions, preferences and other guidance for the execution of one or more kinds of %%actions^action%%, that %%agents^agent%% of the %%party^party%% that %%governs^governance%% the policy have access to and can interpret such that this results in these %%actions^action%% being executed as intended by that %%party^party%%."
+date: 20210901
 ---
 
 ### Short Description
-A **policy** is a (set of) rules, working instructions and/or other guidance for the execution of one or more kinds of %%actions|action%%.  that agents (a) have access to, (b) can interpret as intended by their principal (i.e. policy owner) and (c) must use when executing such actions.
+A **policy** is a (set of) rules, working instructions and/or other guidance for the execution of one or more kinds of %%actions|action%% that %%agents|agent%% of the %%party|party%% that %%governs|governance%% the policy have access to and can interpret such that this results in these %%actions|action%% being executed as intended by that %%party|party%%.
 
-An %%agent|agent%% must have access to the policy that its %%principal|principal%% has established for the kind of action(s) that the agent is executing for its principal. This requires that the policy be readable by the agent, and that the agent is capable of interpreting it as intended by its principal.
+A bit more elaborate: as per the %%party-actor-action pattern|pattern-party-actor-action%%, an %%agent|agent%% executes %%actions|action%% on behalf of its %%principal|principal%%. Policies are sets of rules that express, amongst other things, how this %%party|party%% wants %%actions|action%% of specific kinds to be executed. That is why %%agents|agent%% need to be able to not only access such guidance, but also interpret its contents such that it leads to the execution of such actions as intended by said %%party|party%%. This requires that the policy be readable by the agent, and that the agent is capable of interpreting it as intended by its principal.
 
-It should be part of the %%principal's|principal%% governance processes
+Note that the policy is %%governed|governance%% by the %%party|party%%, which does not preclude it from also %%managing|management%% (writing, maintaining) the policy, but it does allow this to be outsourced.
 
+It should be part of the %%principal's|principal%% %%governance|governance%% processes
 - to establish, maintain and evaluate policies for every kind of action that its agents may execute,
 - to derive artifacts from such policies that are useable by the various %%agents|agent%% (digital, human, or otherwise) that have a right or duty to execute actions for the %%principal|principal%% to which such policies apply. So, machine-readable policies should be derived for %%digital agents|digital-agent%%, and human-readable policies (in different languages if that is appropriate) for non-digital agents.
 - to publish such artifacts such that at least every of its %%agents|agent%% that may need to access them, can find and access them as needed.
@@ -29,14 +30,13 @@ The purpose of **policies** is to enable %%parties|party%% to provide its %%agen
 
 ### Criterion
 A **policy** is
-- a (set of) rules, working-instructions, preferences and other guidance for the execution of one or more kinds of %%actions|action%%;
-- governed by a single %%party|party%% (the %%Governor|policy-governor%% of the policy) that decides what goes in the policy and what does not;
-- may have multiple representations of the rules, working-instructions, preferences and other guidance, which are derived from the policy itself, in such a way that that any %%actor|actor%% that has a right or duty to execute an %%action|action%% on behalf of the  %%policy's governor|policy-governor%% can do so according to its intentions;
-- is accessable to, and must be complied with by an %%agent|agent%% of that %%policy's governor|policy-governor%% when it executes an action of the kind to which the policy applies.
+- a (set of) rules, working-instructions, preferences and other guidance for the execution of one or more kinds of %%actions|action%%, possibly using different representations so as to be readable/interpretable by different kinds of %%actors|actor%%;
+- %%managed|management%% by a single %%party|party%% that decides what goes in the policy and what does not;
+- %%governed|governance%% (and %%owned|owned%%) by a single %%party|party%%;
+- is accessable to, and must be complied with by any %%agent|agent%% of the %%party|party%% that %%governs|governance%% the policy when it executes an action of the kind to which the policy applies.
 
 ### Related Concepts
 - %%Governance|governance%%
-- %%Governor|policy-governor%%
 - %%Policy|policy%%
 - %%Digital Policy|digital-policy%%
 - %%Transaction Data Discloser Policy|transaction-data-collector-policy%%

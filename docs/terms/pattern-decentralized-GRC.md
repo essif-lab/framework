@@ -44,7 +44,7 @@ Another illustration comes from the [OWASP Top 10](https://owasp.org/www-project
 
 One reason for this may be that risks must be owned. That is to say: there must be a person (not: an organization) that actually feels 'pain' (discomfort, anxiety, ...) when that risk is not acceptable. This is a different kind of ownership than what we have seen a lot, which is writing the name of a person next to a risk. The latter is ineffective if that person doesn't feel the associated pain.
 
-Another reason is that the number of risks a person needs to deal with must be manageable. [CRAMM](https://www.enisa.europa.eu/topics/threat-risk-management/risk-management/current-risk/risk-management-inventory/rm-ra-methods/m_cramm.html) (1985-2003) is a RM method + tool that helped organizations do their risk assessments by providing threats to, and vulnerabilities of, various kinds of assets. As the number of technological products exploded, so did their database, resulting in a CRAMM risk assessment becoming unacceptably costly and long. Also, it produced ever more mitigation measures. For managers, it was obvious that many of them were irrelevant and the required budgets would not be available.
+Another reason is that the number of risks a person needs to deal with must be manageable. [CRAMM](https://www.enisa.europa.eu/topics/threat-risk-management/risk-management/current-risk/risk-management-inventory/rm-ra-methods/m_cramm.html) (1985-2003) is a RM method + tool that helped organizations do their risk assessments by providing threats to, and vulnerabilities of, various kinds of assets. As the number of technological products exploded, so did their database, resulting in a CRAMM risk assessment becoming unacceptably costly and long. Also, it produced ever more mitigation measures. For %%managers|management%%, it was obvious that many of them were irrelevant and the required budgets would not be available.
 
 A third reason is that risks should be relevant in order to be treated. For example, the risk of leaking a cryptographic key from a crypto chip that is vulnerable to power/timing-attacks is irrelevant e.g. when the chip and its battery are sealed in a physical casing. Also, the risk of crashing your car as a result of an autopilot failure is irrelevant if you never use the autopilot.
 
@@ -66,7 +66,7 @@ The purpose of this paper is to help the reader understand what this is all abou
 
 ## Mental Model
 
-This chapter describes the mental model for decentralized risk management. The model uses [eSSIF-Lab terminology](https://essif-lab.pages.grnet.gr/framework/docs/essifLab-glossary), in particular that which is related to [Parties, Actors and Actions](https://essif-lab.pages.grnet.gr/framework/docs/terms/pattern-party-actor-action).
+This chapter describes the mental model for decentralized risk management. The model uses [eSSIF-Lab terminology](https://essif-lab.github.io/framework/docs/essifLab-glossary), in particular that which is related to [Parties, Actors and Actions](https://essif-lab.github.io/framework/docs/terms/pattern-party-actor-action).
 
 ### Summary
 This mental model captures the foundational concepts and relations that we need for thinking about decentralized risk management. It answers questions such as "What is a risk?", "Who is to address what risks?", "What's in it for me?", "How do the terms 'Governance', 'Risk management' and 'Compliance' relate to one another?", and more.

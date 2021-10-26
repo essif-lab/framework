@@ -27,7 +27,7 @@ Here, we discuss %%identification|identify%% in a way that we expect to be usefu
 
 First, identification of an %%entity|entity%% is similar to recognizing that %%entity|entity%%. A bit more formal: given an %%entity|entity%% (or digital or non-digital %%data|data%% about that %%entity|entity%% that comes from outside the %%knowledge|knowledge%% of a %%party|party%%), identification is determining whether or not the %%party|party%% %%owns|owner%% a %%partial identity|partial-identity%% of which that %%entity|entity%% is the %%subject|subject%%. When the entity isn't recognized (identified), then a %%partial identity|partial-identity%% may be created that has this %%entity|entity%% as its %%subject|subject%%.
 
-Second, identification of an %%entity|entity%% is similar to pointing/singling out the %%entity|entity%%. More formal: given a %%partial identity|partial-identity%% that is %%owned|owned%% by a %%party|party%% and a specific context where a set of %%entities|entity%% are present, identification is determining whether or not the %%subject|subject%% of that partial identity% is in that set, and if so, which of them it is.
+Second, identification of an %%entity|entity%% is similar to pointing/singling out the %%entity|entity%%. More formal: given a %%partial identity|partial-identity%% that is %%owned|owned%% by a %%party|party%% and a specific context where a set of %%entities|entity%% are present, identification is determining whether or not the %%subject|subject%% of that partial identity%% is in that set, and if so, which of them it is.
 
 We will elaborate on both.
 

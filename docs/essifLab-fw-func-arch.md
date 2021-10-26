@@ -143,7 +143,7 @@ In order to acquire data through SSI mechanisms for filling in a form for a spec
 In order to make the %%data collector|data-collector%% work, a %%validation policy|validation-policy%% (or %%data collector policy|data-collector-policy%%) is created by, or on behalf of the %%principal|principal%%, which specifies at least:
 
 -   the kinds of %%transactions|transaction%% the %%principal|principal%% is willing to (electronically) engage in, from both the requester and the provider perspectives;
--   for each such %%transaction type|transaction-type%%:
+-   for each such transaction type:
 
     -   the criteria (business rules) that should be used to determine that the form is 'clean', i.e. that the necessary and sufficient data have been obtained and that they are consistent, coherent, and suitable for making a %%transaction|transaction%% commitment decision.
 
@@ -224,7 +224,7 @@ In order to make the %%holder|holder%% component work, a %%holder policy|holder-
 
 The purpose of the %%data discloser|data-discloser%% component is to state the (various, sometimes intermediary) results of %%transactions|transaction%%, by collecting data from the Business Data Stores, and creating a set of (related) %%statements/claims|assertion%% that can subsequently be issued to other %%parties|party%%. A special kind of result is the (provisioning of) a %%credential|credential%% that its %%principal|principal%% already has created.
 
-Typically, and at any point in time, %%parties|party%% are capable of expressing %%statements|assertion%% about %%entities|entity%% that they know to exist. They could express %%statements|assertion%% about individuals, about themselves, the state of %%transactions|transaction%%, and so on. We will use the term '**%subject% (of a %%statement|assertion%% of a %%party|party%%)**' to refer to the %%entity|entity%% that this %%party|party%% knows to exist, and about whom/which the %%statement|assertion%% has been made.
+Typically, and at any point in time, %%parties|party%% are capable of expressing %%statements|assertion%% about %%entities|entity%% that they know to exist. They could express %%statements|assertion%% about individuals, about themselves, the state of %%transactions|transaction%%, and so on. We will use the term '**%%subject|subject%% (of a %%statement|assertion%% of a %%party|party%%)**' to refer to the %%entity|entity%% that this %%party|party%% knows to exist, and about whom/which the %%statement|assertion%% has been made.
 
 We will use the term '**subject-id (of a %%statement|assertion%% of a %%party|party%%)**' to refer to the representation that this %%party|party%% has chosen to use for referring to the %%subject|subject%% in said %%statement|assertion%%. A subject-id must have the property of being an %%identifier|identifier%% within every administrative context that this %%party|party%% uses. It need not be humanly interpretable (and preferably is not).
 
@@ -366,7 +366,7 @@ Conversely, the citizen might request the (alleged) municipality to provide %%cr
 
 ### 5.3.  Stating Transactions - Issuing Credentials
 
-In the eSSIF-Lab context, we take '%%credential|credential%%' to mean any (set of coherent) %%statement(s)|assertion%% about any (one or more) %subject%(s) that a single %%party|party%% has issued with proof of provenance (i.e. anyone else can determine the identity of that %%issuer|issuer%%) and a proof of integrity (i.e. anyone can determine whether or not the content of the %%credential|credential%% has been changed/tampered with since it was issued). From this, it follows that any %%party|party%% can issue any kind of %%credential|credential%% for any %%entity|entity%% that it knows to exist. A %%credential|credential%% does not need to be about a person or an %%organization|organization%%, but it can also refer to an order, a delivery, a seat-reservation, a prescription, etc.
+In the eSSIF-Lab context, we take '%%credential|credential%%' to mean any (set of coherent) %%statement(s)|assertion%% about any (one or more) %%subject|subject%%(s) that a single %%party|party%% has issued with proof of provenance (i.e. anyone else can determine the identity of that %%issuer|issuer%%) and a proof of integrity (i.e. anyone can determine whether or not the content of the %%credential|credential%% has been changed/tampered with since it was issued). From this, it follows that any %%party|party%% can issue any kind of %%credential|credential%% for any %%entity|entity%% that it knows to exist. A %%credential|credential%% does not need to be about a person or an %%organization|organization%%, but it can also refer to an order, a delivery, a seat-reservation, a prescription, etc.
 
 We foresee two ways in which %%credentials|credential%% can be issued:
 

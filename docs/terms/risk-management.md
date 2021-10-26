@@ -21,7 +21,7 @@ The purpose of a **Centralized Risk Management Process** is to manage the %%risk
 The purpose of a **Decentralized Risk Management Process** is to manage %%risks|risk%% within its scope as well as to contribute to the management of the risks of other %%parties|party%%.
 
 ### Criterion
-An Risk Management (process) is a set of related %%Activities|action-type%% that %%parties|party%% can run for the purpose of ensuring that the set of %%objectives|objective%% they %%own|owner%% come with %%risks|risk%% that it finds acceptable. In other ords: the %%party|party%% ensures that the work that must be done in order to realize its %%objectives|objective%% is such that the uncertainty that these objectives are not realized, is acceptable.
+An Risk Management (process) is a set of related %%Activities|action%% that %%parties|party%% can run for the purpose of ensuring that the set of %%objectives|objective%% they %%own|owner%% come with %%risks|risk%% that it finds acceptable. In other ords: the %%party|party%% ensures that the work that must be done in order to realize its %%objectives|objective%% is such that the uncertainty that these objectives are not realized, is acceptable.
 
 A Centralized Risk management (process) is a Risk Management process that only takes the interests parties other than the one that runs the process into account if that is a (net) benefit to that party.
 

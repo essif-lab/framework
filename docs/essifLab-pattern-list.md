@@ -3,10 +3,17 @@ id: essifLab-pattern-list
 title: "Overview of eSSIF-Lab Mental Models"
 sidebar_label: Overview
 scopeid: essifLab
-date: 20210816
+date: 20210908
 ---
 
-Within eSSIF-Lab, we maintain a set of %%mental models|pattern%% or %%patterns|pattern%%, which are descriptions, both casual and formal, of sets of %%concepts|concept%% (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic. They have been crafted so that they may serve as a basis for architecting, desiging, and implementing IT components and their governance processes.
+Within eSSIF-Lab, we maintain a set of [mental models](https://en.wikipedia.org/wiki/Mental_model), which we also call %%patterns|pattern%%, which are descriptions, both casual and formal, of sets of %%concepts|concept%% (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic. They have been crafted so that they may serve as a basis for architecting, desiging, and implementing IT components and their governance processes.
+
+One might think that everyone has their own mental models, and uses them to make decisions, make sense of the world, etc. Any mental model that helps a person cope in the world is ok. For example, the ancient Greeks had a mental model that said [the earth is at the center of the universe](https://oxfordre.com/planetaryscience/view/10.1093/acrefore/9780190647926.001.0001/acrefore-9780190647926-e-46#acrefore-9780190647926-e-46-div2-2), and the sun and planets somehow revolve around it. Further development of the model allowed them to compute planetary positions, which played a role in fortune telling and therefore was considered important. Doing this is [very complex](https://www.nature.com/articles/s41598-021-84310-w). In the 16th century, [Copernic revolutionized science](https://www.britannica.com/topic/Copernican-Revolution) by stating that the sun, rather than the earth, was at the centre of the universe. It wasn't like he changed the universe itself - he only changed the frame of reference, the perspective, i.e. the mental model that he used to look at, reason with, and explain the universe. Copernic showed in a dramatic way that changing one's perspective can have very profound consequences.
+
+Most changes of perspective do not have such large effects. If he had proposed to put Jupiter at the centre of the universe, or the moon, he would have ended up with different mental models, but the complexity of computing planetary positions would have remained equally complex. Changing ones point of reference to the sun, however, made things much easier: planetary trajectories could now be seen as simple ellipses, with the sun positioned at one of the folcal points.
+
+'Mental modeling' is the art (yes, as far as we know it's not a science) of creating models that make things easy. It's like 'searching for the sun'. We have been mental modeling artisans for several years now, and we have come up with models that are stable, in the sense that we have been using them and have found them to be quite helpful. Also, we have slightly less mature models, that need to be used in practice to see how well they work. And we have some models that we are in the process of describing, which we present here as ongoing work.
+
 
 ## Stable Models
 
@@ -31,6 +38,9 @@ The [eSSIF-Lab Identity Pattern](./terms/pattern-identity)
 - shows that it is comprised of %%partial identities|partial-identity%% that are the actual artifacts we need to focus on in %%SSI contexts|self-sovereign-identity%%, and
 - shows how this relates to (attributes in) %%credentials|credential%%.
 
+### [Governance and Management](./terms/pattern-governance-and-management)
+The envisaged [Governance and Management Pattern](./terms/pattern-governance-and-management) will explain how %%parties|party%% organize that %%their|owner%% %%objectives|objective%% are realized, either by doing the associated work themselves, or by arranging for other %%parties|party%% to do that. The contribution of this pattern is to show how this is done, based on the idea that every %%objective|objective%% has a single %%party|party%% that %%owns|owner%% the %%objective|objective%%.
+
 ## Envisaged Models
 
 These are placeholders for models that we think we could document, but haven't come around to doing.
@@ -43,6 +53,9 @@ The envisaged [eSSIF-Lab Identity Pattern](./terms/pattern-identification) will 
 
 ### [Identifiers](./terms/pattern-identifier)
 The envisaged [eSSIF-Lab Identity Pattern](./terms/pattern-identifier) will describe the conceptual nature of %%identifiers|identifier%%. Note that %%identifiers|identifier%% are very different from %%identities|identity%%.
+
+### [Trust](./terms/pattern-trust)
+The envisaged [eSSIF-Lab Trust Pattern](./terms/pattern-trust) will describe the conceptual nature of %%trust|trust%% - limited to SSI contexts
 
 ### [Decentralized Governance, Risk Management and Compliance (GRC)](./terms/pattern-decentralized-GRC)
 The envisaged [Decentralized GRC pattern](./terms/pattern-decentralized-GRC) will describe how %%parties|party%% can set objectives, and pursue them to be succesful. The latter means that the party must be capable of assessing and managing the risks associated with not realizing them. In a decentralized world, this means that it needs to depend on other parties, that may or may not be too reliable. Also, it means that the party must be able to set and realize objectives to satisfy requirements of other parties (compliance).

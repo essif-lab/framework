@@ -32,8 +32,8 @@ The eSSIF-Lab terminology effort is an attempt to improve on this, by
 ### eSSIF-Lab Terminology Engine
 
 As the corpus is being used, we expect ideas for improvement
-- of the tools (both for authors and readers alike). Please create an [issue in the eSSIF-Lab framework repo](https://gitlab.grnet.gr/essif-lab/framework/-/issues);
-- of the terminology, patterns, etc. Please create a pull-request for the changes on the [eSSIF-Lab framework repo](https://gitlab.grnet.gr/essif-lab/framework/-/merge_requests).
+- of the tools (both for authors and readers alike). Please create an [issue in the eSSIF-Lab framework repo](https://github.com/essif-lab/framework/issues);
+- of the terminology, patterns, etc. Please create a pull-request for the changes on the [eSSIF-Lab framework repo](https://github.com/essif-lab/framework/pulls).
 
 [Here](terminology-contributions) is how you may contribute to this terminology effort.
 

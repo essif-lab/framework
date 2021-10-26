@@ -12,7 +12,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 *This section is work in progress.*
 :::
 
-The main purpose of [eSSIF-Lab](essifLab) is to realize its [vision](essifLab-vision). This is quite a challenge, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. There is '%%ecosystem|ecosystem%%' complexity, i.e. different groups of %%organizations|organization%% and/or people (%%parties|party%%) need artifacts that work for them as a group, both 'horizontally' and 'vertically', but no further than the context of that group.
+The main purpose of [eSSIF-Lab](essifLab) is to realize its [vision](essifLab-vision). This is quite a challenge, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. Another kind of complexity is related to the (im)possibilities of doing things as %%parties|party%% interact, e.g. in an '%%ecosystem|ecosystem%%' or a %%community|community%%.
 
 The eSSIF-Lab Framework aims to establish a varied set of articles/documents, %%terminology|terminology%%, and %%mental models|pattern%% that individual %%parties|party%% from different backgrounds can use e.g. as they
 - seek to use SSI, and want to learn about:
@@ -35,7 +35,7 @@ A party usually cannot realize its objectives on its own. To do this, the party 
 
 ### 2.3 Business Transactions
 
-In the eSSIF-Lab world view, %%actors|actor%% interact with each other (as %%agents|agent%% for their %%principals|principal%%) to negotiate and execute %%transactions|transaction%%. An agent uses the %%knowledge|knowledge%% of its principal as its main guidance for such negotiations and execution. An agent may also use knowledge of other %%parties|party%% to fill in any gaps, or to provide additional details, as necessary.
+In the eSSIF-Lab world view, %%actors|actor%% interact with each other (as %%agents|agent%% for their %%principals|principal%%) to negotiate and execute %%transactions|transaction%%. An agent uses the %%knowledge|knowledge%% of its principal as its main guidance for such negotiations and execution. An agent may also use knowledge of other %%parties|party%% to fill in any gaps, or to provide additional details, as necessary. The %%party-actor-action pattern|pattern-party-actor-action%% explains the concepts behind this.
 
 The participants of a transaction are %%parties|party%%, that employ %%actors|actor%% that do the associated work on their behalf. A party may employ different actors for executing different actions within a single transaction, each of which will use the knowledge of this party (its principal) to guide the execution of these actions, so that the entire transaction is performed according to how the party wants it to be done.
 
@@ -44,15 +44,25 @@ The [*DEMO*](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_fo
 - an execution phase, in which (perhaps other) agents of the same principals work (execute actions) to fulfill the obligations of the agreement. This phase results in them stating that they have completed that work (or that they gave up).
 - the acceptance phase, in which one or more agents of each participant exchange data that leads to a decision to accept the results, or to escalate (e.g. start a law suit against the other participant)
 
-### 2.4 Issuers, Verifiers, Validators and Holders
+### 2.4 SSI Roles
 
-In the various phases of a %%transaction|transaction%%, each of its %%participants|participant%% may need (one or more of its agents) to do the following:
-- request the data that it needs for making the commitment or acceptance decision
--
+In the various phases of a %%transaction|transaction%%, each of its participants may need (one or more of its %%agents|agent%%) to do the following:
 
+1. request the %%data|data%% that it needs for making its commitment or acceptance decision, or for executing its part of the transaction;
+2. provide the %%data|data%% that the other participant(s) need for making their commitment/acceptance decision, or for executing its part of the transaction;
+3. %%verify|verify%% the response obtained from the other participant(s) to the data-request;
+4. %%validate|validate%% the data obtained from the (%%verified|verify%%) response, preferably at the moment right before actually using it;
+5. state any intermediate and/or final results of the transaction to the other participant(s).
 
+[The basic structure of SSI contexts](https://en.wikipedia.org/wiki/Self-sovereign_identity) consists of participants referred to as 'Issuer', 'Holder', and 'Verifier', in a configuration referred to as a trust triangle (e.g. in [W3C Verifiable Credentials Data Model](https://www.w3.org/TR/vc-data-model/#ecosystem-overview), the [book "Self-Sovereign Identity" (Reed, Preukschat, 2020)](https://freecontent.manning.com/the-basic-building-blocks-of-ssi/), and many, many more). In short, an [issuer](https://www.w3.org/TR/vc-data-model/#dfn-issuers) typically issues [verifiable credentials](https://www.w3.org/TR/vc-data-model/#dfn-credential) to a [holder](https://www.w3.org/TR/vc-data-model/#dfn-holders), which stores them securely under its own control. This accommodates point 5 (stating results).
 
+[Verifiers](https://www.w3.org/TR/vc-data-model/#dfn-verifier) typically request such credentials, perhaps better: a composition of data (called a [presentation](https://www.w3.org/TR/vc-data-model/#dfn-presentations)) that a holder constructs from different such credentials and subsequently sends back in response to such a request, which accommodates points 1 and 2. Then, the verifier will [verify](https://www.w3.org/TR/vc-data-model/#dfn-verify) this response (accommodating point 3).
 
+The fact that the [W3C Verifiable Credentials Data Model](https://www.w3.org/TR/vc-data-model) does not provide for a validator role, and explicitly places [validation](https://www.w3.org/TR/vc-data-model/#dfn-credential-validation) of credentials out of its scope, illustrates that we need more than just [verifiable credentials](https://www.w3.org/TR/vc-data-model/#dfn-verifiable-credentials) (VCs). Indeed, protocols are needed e.g. for issuing credentials, [exchanging presentations](https://identity.foundation/presentation-exchange/), revoking credentials etc. Such protocols may provoke the need for additional %%roles|role%%, e.g. a `revoker` (that would revoke credentials), a `policy provider`, etc.
+
+In our framework, we postulate the existince of %%issuers|issuer%%, %%holders|holder%%, %%verifiers|verifier%% and %%validators|validator%%, which for our purposes we define as functional components (i.e. components that fit a functional architecture) and that can be readily realized as concrete technical components that can be deployed in run-time contexts to act as %%digital agents|digital-agent%% for arbitrary %%parties|party%%. It is not exactly the same, but nevertheless in line with the [W3C VC Terminology](https://www.w3.org/TR/vc-data-model/#terminology), which states (with the obvious exception of the validator) that they are roles that [entities](https://www.w3.org/TR/vc-data-model/#dfn-entities) can or might perform as they execute some function(s).
+
+As mentioned before, we expect that more functionalities and/or %%roles|role%% are necessary to make it all work, e.g. that of %%agent|agent%%, %%principal|principal%%, %%owner|owner%%, %%manager|management%%, %%governor|governance%%, %%guardian|guardian%%, %%dependent|dependent%%, etc. The bulk of these roles will likely not be of technical nature, but more fitted to the higher architectural levels, e.g. of information architecture, process architecture, governance etc.
 
 ## 2. Functional Architecture Overview
 
@@ -170,7 +180,7 @@ In order to acquire data through SSI mechanisms for filling in a form for a spec
 In order to make the %%data collector|data-collector%% work, a %%validation policy|validation-policy%% (or %%data collector policy|data-collector-policy%%) is created by, or on behalf of the %%principal|principal%%, which specifies at least:
 
 -   the kinds of %%transactions|transaction%% the %%principal|principal%% is willing to (electronically) engage in, from both the requester and the provider perspectives;
--   for each such %%transaction type|transaction-type%%:
+-   for each such transaction type:
 
     -   the criteria (business rules) that should be used to determine that the form is 'clean', i.e. that the necessary and sufficient data have been obtained and that they are consistent, coherent, and suitable for making a %%transaction|transaction%% commitment decision.
 
@@ -251,7 +261,7 @@ In order to make the %%holder|holder%% component work, a %%holder policy|holder-
 
 The purpose of the %%data discloser|data-discloser%% component is to state the (various, sometimes intermediary) results of %%transactions|transaction%%, by collecting data from the Business Data Stores, and creating a set of (related) %%statements/claims|assertion%% that can subsequently be issued to other %%parties|party%%. A special kind of result is the (provisioning of) a %%credential|credential%% that its %%principal|principal%% already has created.
 
-Typically, and at any point in time, %%parties|party%% are capable of expressing %%statements|assertion%% about %%entities|entity%% that they know to exist. They could express %%statements|assertion%% about individuals, about themselves, the state of %%transactions|transaction%%, and so on. We will use the term '**%subject% (of a %%statement|assertion%% of a %%party|party%%)**' to refer to the %%entity|entity%% that this %%party|party%% knows to exist, and about whom/which the %%statement|assertion%% has been made.
+Typically, and at any point in time, %%parties|party%% are capable of expressing %%statements|assertion%% about %%entities|entity%% that they know to exist. They could express %%statements|assertion%% about individuals, about themselves, the state of %%transactions|transaction%%, and so on. We will use the term '**%%subject|subject%% (of a %%statement|assertion%% of a %%party|party%%)**' to refer to the %%entity|entity%% that this %%party|party%% knows to exist, and about whom/which the %%statement|assertion%% has been made.
 
 We will use the term '**subject-id (of a %%statement|assertion%% of a %%party|party%%)**' to refer to the representation that this %%party|party%% has chosen to use for referring to the %%subject|subject%% in said %%statement|assertion%%. A subject-id must have the property of being an %%identifier|identifier%% within every administrative context that this %%party|party%% uses. It need not be humanly interpretable (and preferably is not).
 
@@ -393,7 +403,7 @@ Conversely, the citizen might request the (alleged) municipality to provide %%cr
 
 ### 5.3.  Stating Transactions - Issuing Credentials
 
-In the eSSIF-Lab context, we take '%%credential|credential%%' to mean any (set of coherent) %%statement(s)|assertion%% about any (one or more) %subject%(s) that a single %%party|party%% has issued with proof of provenance (i.e. anyone else can determine the identity of that %%issuer|issuer%%) and a proof of integrity (i.e. anyone can determine whether or not the content of the %%credential|credential%% has been changed/tampered with since it was issued). From this, it follows that any %%party|party%% can issue any kind of %%credential|credential%% for any %%entity|entity%% that it knows to exist. A %%credential|credential%% does not need to be about a person or an %%organization|organization%%, but it can also refer to an order, a delivery, a seat-reservation, a prescription, etc.
+In the eSSIF-Lab context, we take '%%credential|credential%%' to mean any (set of coherent) %%statement(s)|assertion%% about any (one or more) %%subject|subject%%(s) that a single %%party|party%% has issued with proof of provenance (i.e. anyone else can determine the identity of that %%issuer|issuer%%) and a proof of integrity (i.e. anyone can determine whether or not the content of the %%credential|credential%% has been changed/tampered with since it was issued). From this, it follows that any %%party|party%% can issue any kind of %%credential|credential%% for any %%entity|entity%% that it knows to exist. A %%credential|credential%% does not need to be about a person or an %%organization|organization%%, but it can also refer to an order, a delivery, a seat-reservation, a prescription, etc.
 
 We foresee two ways in which %%credentials|credential%% can be issued:
 

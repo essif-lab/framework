@@ -24,5 +24,5 @@ A role does not exist outside the context for which it is defined. However, whil
 
 ### Examples
 - in a technical context, a role may refer to a set of permissions and a set of users ([NIST RBAC standard](https://csrc.nist.gov/projects/role-based-access-control))
-- in an enterprise context, a role may refer to an organizational function that employees can have, and that come with benefits, salary and responsibilities, e.g. 'manager', 'controller', 'salesperson'
+- in an enterprise context, a role may refer to an organizational function that employees can have, and that come with benefits, salary and responsibilities, e.g. '%%manager|management%%', 'controller', 'salesperson'
 - in a UML class diagram, a role name that is specified for a UML class in a relation (association) that it has with another class, refers to a specific (set of) behaviors that elements from this class are expected to exhibit in a particular context. See [Role Class Model](https://en.wikipedia.org/wiki/Role_Class_Model) for more information.
