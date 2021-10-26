@@ -9,7 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 This document provides an overview of the notations and conventions being used within eSSIF-Lab.
 
 ### RFC 2119
-We shall use keywords such as “shall”, “should”, “may” etc. as defined by [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+We use keywords such as “shall”, “should”, “may” etc. as defined by [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
 ### Capitalization of words in mid-sentence
 A word in mid-sentence that is capitalized is a %%term|term%% that has a %%definition|definition%% in the %%Corpus of Terminology|corpus%%. This allows readers to distinguish between the more colloquial meanings of words (by not capitalizing them) and those that are actually defined. We appreciate any feedback regarding our (im)proper use of this kind of capitalization of words.
@@ -20,7 +20,7 @@ We are working towards deprecating this convention, as we now have better ways o
 
 ### Pattern diagram notations
 
-%%Pattern|pattern%% diagrams will be visualized in this document using a UML-like notation. The following diagram shows the various notations we use:
+%%Pattern|pattern%% diagrams will be visualized in this document using a UML-like notation. The following diagram represents the %%jurisdiction pattern|pattern-jurisdiction%%, which shows most of the notations we use:
 
 <img
   alt="Notations and conventions"
