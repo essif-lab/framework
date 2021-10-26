@@ -33,9 +33,12 @@ The benefit of creating and maintaining such %%terminologies|terminology%% and %
 
 This pattern has two basic parts:
 
-1. the %%management|management%%-related part. This part consists of a %%community|community%% that %%owns|owner%% its particular set of %%objectives|objective%% which exist for establishing cooperation between its members, and for which it needs to establish and maintain a %%terminology|terminology%%. 
+1. the %%management|management%%-related part. This part consists of a %%community|community%% that %%owns|owner%% its particular set of %%objectives|objective%% which exist for establishing cooperation between its members, and for which it needs to establish and maintain, a %%terminology|terminology%%. %%Managing, or curating|management%% a %%terminology|terminology%% consists of realizing the %%objectives|objective%% that the terminology is intended to serve, i.e. to establish a set of %%concepts|concept%%, %%definitions|definition%%, %%terms|term%% and %%mental models|pattern%%, the quality of which is such that
+  - members of the %%community|community%% use them ***in the same, single meaning***, thereby preventing difficulties in their cooperation, caused by differences in the individual understandings of words or phrases, and
+  - non non-members of the %%community|community%% can obtain a precise understanding of the communications within that community.
+Also, this %%management|management%% may cause reference documents to be created and maintained, e.g. a %%glossary|glossary%% that lists the terminology of the %%community|community%%, a %%dictionary|dictionary%% that includes its terminology as well as terminologies from other, related %%communities|community%%.
 
-2. the terminology-related part. This is where %%concepts|concept%%, %%definitions|definition%%, %%terms|term%%, %%glossaries|glossary%% etc. live. This part is what one needs to create tools/support for managing and maintaining a %%terminology|terminology%%.
+2. the terminology-related part. This is where %%concepts|concept%%, %%definitions|definition%%, %%terms|term%%, %%glossaries|glossary%% etc. live. This part is what one needs to create tools/support for managing and maintaining a %%terminology|terminology%%. Here, we have %%concepts|concept%% with their %%definitions|definition%% and %%terms|term%% as a means to refer to either. A %%concept|concept%%, its %%definition|definition%% live in the same %%scope|scope%%, and within that %%scope|scope%% there must be a %%term|term%% to refer to that %%concept|concept%% and its %%definition|definition%%. Within a specific %%scope|scope%%, every %%term|term%% is associated with precisely one such %%concept|concept%% and %%definition|definition%%. However, within a %%scope|scope%%, a %%concept|concept%%/%%definition|definition%% pair may be referred to by multiple %%terms|term%%, which are then synonyms or aliases of each other.
 
 
 ### Formalized model
