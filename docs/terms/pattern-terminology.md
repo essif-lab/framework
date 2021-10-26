@@ -45,8 +45,8 @@ Also, this %%management|management%% may cause reference documents to be created
 Here is a visual representation of this pattern, using the following [notations and conventions](../notations-and-conventions#pattern-diagram-notations):
 
 <img
-  alt="Conceptual model of the 'Duties-and-rights' pattern"
-  src={useBaseUrl('images/patterns/pattern-duties-and-rights.png')}
+  alt="Conceptual model of the 'terminology' pattern"
+  src={useBaseUrl('images/patterns/pattern-terminology.png')}
 />
 
 :::info Editor's note
