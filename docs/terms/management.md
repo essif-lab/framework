@@ -16,7 +16,7 @@ date: 20210830
 Management is about planning and organizing the budgets and other resources so that they become (and/or remain) available _to produce the results_ of the associated %%objectives|objective%%. It includes the specification of timelines (deadlines) for the production, as well as the properties and other characteristics (security, quality, sustainability, etc.) of what is actually being produced/maintained. It also deals with making the tools and %%policies|policy%% (e.g. working instructions) available for doing all this.
 In order to keep tabs on the efficiency of the management process, performance indicators may be developed, i.e. gauges that measure how well the resources are spent in this production/maintenancd work are also part of this.
 
-The management of a set of %%objectives|objective%% can be implemented as a %%control process|control-process%. The control objectives that are needed by this control process would typically come from a %%policy|policy%% of the owner of the %%objectives|objective%% that are managed.
+The management of a set of %%objectives|objective%% can be implemented as a %%control process|control-process%%. The control objectives that are needed by this control process would typically come from a %%policy|policy%% of the owner of the %%objectives|objective%% that are managed.
 
 We make a clear distinction between governance and management, which is explained in the %%governance and management pattern|pattern-governance-and-management%%.
 

@@ -19,4 +19,6 @@ We realize that this is a term that is heavily debated. However for our purposes
 
 The [Self-Identity](https://en.wikipedia.org/wiki/Self-concept) or [Self-concept](https://en.wikipedia.org/wiki/Self-concept) of a %%party|party%% is the %%partial identity|partial-identity%% of which it is both the %%subject|subject%% and the %%owner|owner%%.
 
-For further details, see the %%identity pattern|pattern-identity%%. Related topics can be found in the %%identification pattern|pattern-identification%% and the %identifier pattern%.
+The way we define 'identity' seems to be very much in line with the paradigm of [identity as a network](https://aeon.co/essays/the-self-is-not-singular-but-a-fluid-network-of-identities), as worked out by Kathleen Wallace: "[The Network Self](https://www.routledge.com/The-Network-Self-Relation-Process-and-Personal-Identity-1st-Edition/Wallace/p/book/9780367077488)".
+
+For further details, see the %%identity pattern|pattern-identity%%. Related topics can be found in the %%identification pattern|pattern-identification%% and the %%identifier pattern|pattern-identifier%%.
