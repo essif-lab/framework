@@ -1,12 +1,12 @@
 # eSSIF-Lab Framework
 
-This repo contains files that are used to generate the the [eSSIF-Lab framework](https://essif-lab.pages.grnet.gr/framework/) website, which includes the eSSIF-Lab vision, functional architecture, terminology and other relevant topics.
+This repo contains files that are used to generate the the [eSSIF-Lab framework](https://essif-lab.github.io/framework) website, which includes the eSSIF-Lab vision, functional architecture, terminology and other relevant topics.
 
 This website is generated using [Docusaurus 2](https://v2.docusaurus.io/) (and a custom plugin developed by [GRNET](https://grnet.gr/en/) for handling terminology).
 
 ## Writing Docusaurus Documents
 
-Docusaurs requires documentation content to appear in `.md` files inside the `docs` folder.
+Docusaurus requires documentation content to appear in `.md` files inside the `docs` folder.
 Each file defines the following attributes at its very beginning:
 
 - `id`, by which the file is referred to across the project
@@ -17,7 +17,7 @@ Documentation on these and other header fields can be found [here](https://v2.do
 
 The Terminology Engine plugin of GRNET uses additional header fields. These are (or will be) defined [here](./docs/terminology-contributions).
 
-The `sidebars.js` file contains the basic mechanism for [distributing content among sections](https://v2.docusaurus.io/docs/docs-introduction#sidebar) and is self-explanatory (compare with the sidebar appearing [here](https://essif-lab.pages.grnet.gr/essif-lab/docs/essifLab-project)). Subsections within the `.md` file (that is, tagged with `##`) will appear at the right part of the page (see for example [here](https://essif-lab.pages.grnet.gr/essif-lab/docs/infrastructure)).
+The `sidebars.js` file contains the basic mechanism for [distributing content among sections](https://v2.docusaurus.io/docs/docs-introduction#sidebar) and is self-explanatory (compare with the sidebar appearing [here](https://essif-lab.github.io/framework/docs/essifLab-project)). Subsections within the `.md` file (that is, tagged with `##`) will appear at the right part of the page (see for example [here](https://essif-lab.github.io/essif-lab/docs/infrastructure)).
 
 ## Inserting Images in docs
 <!-- **DEPRECATED** Images must be put inside the directory `static/images` and developers must refer to them using _relative_ urls.
@@ -64,9 +64,71 @@ $ yarn build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-### Deployment
+### Deployment via Github Pages
 
-Just push your changes to the `master` branch and they will be automatically deployed at https://essif-lab.pages.grnet.gr/framework/
+*GitHub Pages* provides hosting that comes for free with every GitHub repository.
+
+The `master` branch has the latest changes to the content of the website.
+> :exclamation: Avoid pushing changes directly to `master`. The best practice is to create a new branch, apply your changes and then merge the new branch to `master` once you make sure that it won't break the deployment of the website.
+
+#### Workflow
+
+The workflow in the framework repository, has the following jobs:
+- `checks` [job](https://github.com/essif-lab/framework/blob/master/.github/workflows/framework.yml#L10): runs some checks, to make sure that the merged changes will not break the deployment
+
+  These checks run on all the branches but `master`
+- `gh-release` [job](https://github.com/essif-lab/framework/blob/master/.github/workflows/framework.yml#L25): takes care of the deployment
+  
+  The release job runs **only** when another branch gets merged to `master` and the changes affect the artifact of the deployment
+
+> :exclamation: The branch that the website will be deployed to, defaults to `gh-pages`. The result of the release job (`build` directory)
+> is stored in the `gh-pages` branch, so the developer should **not** apply changes directly to `gh-pages` branch. All changes must be merge
+> to the `master` branch, and then the release job will start running automatically.
+
+<details>
+<summary>
+In order to deploy a new version of the website, follow the procedure below:
+</summary>
+
+1. Create locally a new branch from `master` (ex. `feature-gh-branch` branch)
+  
+2. Add and commit your changes locally
+  
+3. Push your changes to the remote `feature-gh-branch` branch
+  
+4. To create a Pull Request to `master`, go to the repository's page on Github, in the [Pull requests tab](https://github.com/essif-lab/framework/pulls), and click `New pull request`
+  
+5. In the `compare:` dropdown list, choose the branch you want to merge with `master` (in this case with `feature-gh-branch`), and review the changes
+  
+![Github compare branches](static/images/github/github-compare-branches.png)
+  
+Then, click `Create Pull Request` button to proceed
+  
+6. You will get prompted to the pull request page, where the *checks* of the PR are launched automatically, as part of the workflow
+  
+![Github PR checks](static/images/github/github-pr-checks.png)
+  
+When the PR passes all the checks and it has no conflicts with the `master` branch, you can click the `Merge pull request` button, to merge the changes
+  
+![Github PR page](static/images/github/github-pr-page.png)
+  
+Once the merging is over, the PR will change status from *Open* to *Merged*
+  
+![Github PR merged](static/images/github/github-merged-branch.png)
+  
+7. In the [Actions page](https://github.com/essif-lab/framework/actions) you can review all the running workflows.
+  
+![Github PR merged](static/images/github/github-workflows.png)
+  
+Now that the `feature-gh-branch` got merged to `master`, the release job started running, to update the website.
+  
+![Github PR merged](static/images/github/github-release-workflow.png)
+
+</details>
+
+Once the job is completed, the new version of the website will be available here: https://essif-lab.github.io/framework/
+
+The *Activity log* of the deployments is available here: https://github.com/essif-lab/framework/deployments/activity_log
 
 ## Terminology/Glossary plugin usage
 

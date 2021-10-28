@@ -4,15 +4,13 @@ stages:
   - build
   - deploy
 
-before_script:
-  - node -v
-
 cache:
   untracked: true
   paths:
     - node_modules/
 
 before_script:
+  - node -v
   - yarn
 
 build:
@@ -34,4 +32,4 @@ pages:
     paths:
       - public
   only:
-    - master
+    - main

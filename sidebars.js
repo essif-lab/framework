@@ -36,7 +36,8 @@ module.exports = {
             label: 'Reviewable models',
             items:
             [ { type: 'doc', id: 'terms/pattern-identity' },
-            ]
+              { type: 'doc', id: 'terms/pattern-governance-and-management' },
+          ]
           },
           { type: 'category',
             label: 'Envisaged models',
@@ -44,6 +45,7 @@ module.exports = {
             [ { type: 'doc', id: 'terms/pattern-terminology' },
               { type: 'doc', id: 'terms/pattern-identification' },
               { type: 'doc', id: 'terms/pattern-identifier' },
+              { type: 'doc', id: 'terms/pattern-trust' },
               { type: 'doc', id: 'terms/pattern-decision-making' },
               { type: 'doc', id: 'terms/pattern-decentralized-GRC' },
               { type: 'doc', id: 'terms/pattern-mandates-delegation-hiring' },
@@ -76,13 +78,16 @@ module.exports = {
             label: 'Reviewable models',
             items:
             [ { type: 'doc', id: 'terms/pattern-identity' },
-            ]
+              { type: 'doc', id: 'terms/pattern-governance-and-management' },
+          ]
           },
           { type: 'category',
             label: 'Envisaged models',
             items:
             [ { type: 'doc', id: 'terms/pattern-terminology' },
               { type: 'doc', id: 'terms/pattern-identification' },
+              { type: 'doc', id: 'terms/pattern-identifier' },
+              { type: 'doc', id: 'terms/pattern-trust' },
               { type: 'doc', id: 'terms/pattern-decision-making' },
               { type: 'doc', id: 'terms/pattern-decentralized-GRC' },
               { type: 'doc', id: 'terms/pattern-mandates-delegation-hiring' },
