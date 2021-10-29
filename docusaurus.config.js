@@ -6,8 +6,7 @@ module.exports = {
   baseUrl: '/framework/',
   favicon: 'images/favicon.ico',
   organizationName: 'essif-lab',
-  organizationName: 'grnet',
-  projectName: 'essif-lab',
+  projectName: 'framework',
   onBrokenLinks: 'log',
   scripts: [
     {
