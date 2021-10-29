@@ -55,14 +55,15 @@ The figure shows three areas:
 - the rest are the %%concepts|concept%% that deal with the organization of this.
 
 #### Green: Terminological Concepts
-Every %%terminology|terminology%% is scoped, i.e. part of a %%scope|scope%%. This %%scope|scope%% consists of other artifacts, e.g. %%definitions|definition%%, %%terms|term%%, and %%glossaries|glossary%%. When we say that a %%terms-community|terms-community%% curates a %%scope|scope%%, this means that the %%terms-community|terms-community%%
+Every %%terminology|terminology%% is scoped, i.e. part of a %%scope|scope%%. This %%scope|scope%% consists of other artifacts, e.g. %%definitions|definition%%, and %%terms|term%%. When we say that a %%terms-community|terms-community%% curates a %%scope|scope%%, this means that the %%terms-community|terms-community%%
 - %%manages|management%% (creates/maintains) a set of %%definitions|definition%% for %%concepts|concept%% that are relevant for realizing its %%objectives|objective%%, as it sees fit;
 - %%manages|management%% (creates/maintains) the (single) %%terminology|terminology%% of the %%scope|scope%%, i.e. the set of %%terms|term%% that members of the %%terms-community|terms-community%% are expected to use in their communications. This set consists of:
   - at least one term for every %%definition|definition%% that is part of the %%scope|scope%%, and
   - at least one term for any other %%definition|definition%% (which is part of *another* %%scope|scope%%, i.e. curated by another %%terms-community|terms-community%%) that defines a concept that is relevant for realizing one or more %%objectives|objective%% of the %%terms-community|terms-community%%.
 
-For reference purposes, a %%terminology|terminology%% may be published as a %%glossary|glossary%%, which can come in a variety of formats (PDF, HTML, plain text, etc.). Every %%glossary|glossary%% that publishes the %%terminology|terminology%% of a %%scope|scope%% is part of that %%scope|scope%%.
-
+:::info Editor's note
+Text hereunder needs to be revised and completed
+:::
 #### Yellow: Intangible Concepts
 The intangible %%concepts|concept%% are important because this is where misunderstandings live. The %%knowledge|knowledge%% of a %%party|party%% uses a subjective %%conceptualization|concept%% of the world (that the %%party|party%% has perceived to be living in for as long as it exists) for its individual reasoning, arguing, communicating, decision making etc. Because of this, two %%parties|party%% that collaborate (i.e.: form a %%community|community%%) cannot be expected to have the same conceptualizations. However, it is a common belief that if one uses a term to refer to a %%concept|concept%% in its %%knowledge|knowledge%%, the other will then relate it to 'the same' %%concept|concept%% within its own knowledge, that we should not assume actually exists. For example, when one of them uses the %%term|term%% 'identity', it knows which %%concept|concept%% that relates to within its own %%knowledge|knowledge%%. However, others need to hallucinate as to what that %%concept|concept%% might be, and typically respond by thinking that the %%concept|concept%% that the %%term|term%% refers to in their own %%knowledge|knowledge%% would be its intended meaning. In many cases that doesn't pose a problem, because the %%concepts|concept%% of both %%knowledges|knowledge%% are 'sufficiently the same'. In other cases, the differences in meaning may be such that it disrupts the collaboration between the %%parties|party%%. And that is when it helps to have 'good %%definitions|definition%%', because they have the property that collaborators can assess whether or not the %%concepts|concept%% in their %%knowledge|knowledge%% (that a well-defined %%term|term%% refers to) are 'sufficiently the same'.
 
@@ -70,6 +71,8 @@ In order to keep the work of devising %%definitions|definition%% to a minimum, i
 
 #### White: Parties, Communities and Tags
 Members of a %%community|community%% that want or need to collaborate with each other may feel the need for a shared %%terminology|terminology%%, for the purpose of preventing misunderstandings that hamper the collaboration.
+
+For reference purposes, a %%terminology|terminology%% may be published as a %%glossary|glossary%%, which can come in a variety of formats (PDF, HTML, plain text, etc.). Every %%glossary|glossary%% that publishes the %%terminology|terminology%% of a %%scope|scope%% is part of that %%scope|scope%%.
 
 
 Every %%scope|scope%% must be %%identifiable|identify%% by at least one %%tag|tag%%, which can thus also be used to %%identify|identify%% the %%terms-community|terms-community%% that curates the %%scope|scope%%. Maintaining a registry of such identifying tags enables anyone to unambiguously use %%terms|term%% from that scope, by combining it with such a tag. If, for example, if the %%terminology|terminology%% of a %%scope|scope%% that is %%identifiable|identify%% using the %%tag|tag%% `#ctwg` would contain the %%term|term%% `foo` that refers to some %%definition|definition%%, then texts such as `#ctwg:foo`, or `foo@ctwg` could be used outside of that %%scope|scope%% to refer to that same %%definition|definition%%.
