@@ -3,7 +3,7 @@ module.exports = {
   title: 'eSSIF-Lab',
   tagline: 'eSSIF-Lab Framework',
   url: 'https://essif-lab.github.io',
-  baseUrl: process.env.STAGING && process.env.STAGING === 'true' ? '/framework/' : '/',
+  baseUrl: '/framework/',
   favicon: 'images/favicon.ico',
   organizationName: 'essif-lab',
   projectName: 'framework',
@@ -28,8 +28,10 @@ module.exports = {
         {to: 'docs/essifLab-pattern-list', label: 'Mental Models', position: 'left'},
         {to: 'docs/ssi-standards', label: 'SSI Standardization', position: 'right'},
         {
-          href: 'https://github.com/essif-lab/framework',
-          label: 'Github',
+          // href: 'https://github.com/essif-lab/framework',
+          // label: 'Github',
+          href: 'https://gitlab.grnet.gr/essif-lab/framework',
+          label: 'Gitlab',
           position: 'right',
         },
       ],
@@ -59,7 +61,7 @@ module.exports = {
           ],
         },
         {
-          title: 'Project',
+          title: 'EU Project',
           items: [
             {
               label: 'Project',
