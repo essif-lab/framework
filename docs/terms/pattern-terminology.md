@@ -50,5 +50,5 @@ Here is a visual representation of this pattern, using the following [notations 
 />
 
 :::info Editor's note
-TNO to provide further introductorty texts
+TNO to provide further introductory texts
 :::
