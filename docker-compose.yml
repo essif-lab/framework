@@ -1,11 +1,10 @@
 version: '3.7'
 services:
-  essif-lab-terminology:
-    container_name: essif-lab-terminology
+  essif-lab-framework:
+    container_name: essif-lab-framework
     build:
       context: .
       dockerfile: Dockerfile.dev
-    image: essif-lab-terminology:latest
+    image: essif-lab-framework:latest
     ports:
       - "5000:5000"
-

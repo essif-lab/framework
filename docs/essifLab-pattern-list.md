@@ -6,7 +6,15 @@ scopeid: essifLab
 date: 20210908
 ---
 
-Within eSSIF-Lab, we maintain a set of [mental models](https://en.wikipedia.org/wiki/Mental_model), which we also call %%patterns|pattern%%, which are descriptions, both casual and formal, of sets of %%concepts|concept%% (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic. They have been crafted so that they may serve as a basis for architecting, desiging, and implementing IT components and their governance processes.
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
+Within eSSIF-Lab, we maintain a set of [mental models](https://en.wikipedia.org/wiki/Mental_model), which we also call %%patterns|pattern%%, which are descriptions, both casual and formal, of sets of %%concepts|concept%% (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic.They have been crafted so that they may serve as a basis for architecting, desiging, and implementing IT components and their governance processes.
+We stress that while they represent a specific way of looking at things, there are many more, and in the end, all that matters is the extend in which they are succesfully used.
+
+<img
+  alt="George E.P. Box: All models are wrong, but some are useful"
+  src={useBaseUrl('images/essif-lab-all-models-are-wrong.png')}
+/>
 
 One might think that everyone has their own mental models, and uses them to make decisions, make sense of the world, etc. Any mental model that helps a person cope in the world is ok. For example, the ancient Greeks had a mental model that said [the earth is at the center of the universe](https://oxfordre.com/planetaryscience/view/10.1093/acrefore/9780190647926.001.0001/acrefore-9780190647926-e-46#acrefore-9780190647926-e-46-div2-2), and the sun and planets somehow revolve around it. Further development of the model allowed them to compute planetary positions, which played a role in fortune telling and therefore was considered important. Doing this is [very complex](https://www.nature.com/articles/s41598-021-84310-w). In the 16th century, [Copernic revolutionized science](https://www.britannica.com/topic/Copernican-Revolution) by stating that the sun, rather than the earth, was at the centre of the universe. It wasn't like he changed the universe itself - he only changed the frame of reference, the perspective, i.e. the mental model that he used to look at, reason with, and explain the universe. Copernic showed in a dramatic way that changing one's perspective can have very profound consequences.
 
