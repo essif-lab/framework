@@ -25,8 +25,8 @@ We are working towards deprecating this convention, as we now have better ways o
 <img
   alt="Notations and conventions"
   src={useBaseUrl('images/essif-lab-notations-and-conventions.png')}
-/>
-<br/><br/>
+/><br/><br/>
+
 A **rectangle**, e.g. 'Person', represents a (named) %%concept|concept%%, or [entity-class](https://www.uml-diagrams.org/class.html). The (operational) extension of a %%concept|concept%% is the sets of its instances (for 'Person', the extension consists of the set of actual people of flesh and blood tha are in the scope of the model). The extensions of different concepts are disjunct (do not overlap), unless there is an 'ISA' relation between them (see below).
 
 A **solid line with a closed arrowhead**, e.g. 'owns', represents a (named) relation/[association](https://www.uml-diagrams.org/association.html) between the two %%concepts|concept%% it connects. The concept at the arrowhead ('House') is called the 'target %%concept|concept%%' (TGT) for that relation; the other ('Person') is called the 'source %%concept|concept%%' (SRC). The relation is labeled such that `<SRC> <relation label> <TGT>` (Person owns House) suggests the phrase that descibes the intension(al definition) of that relation. The (operational) extension of a relation embraces all pairs (SRC,TGT) for which the relation holds. In the example, it consists of all pairs (P,H), where P is a Person and H is a House, such that the phrase 'P owns H' is true.
