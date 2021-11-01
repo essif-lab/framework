@@ -16,7 +16,7 @@ The **Governance and Management pattern** captures the concepts and relations th
 
 ### Introduction
 
-Whether or not an %%objective|objective%% is realized can be seen by the status of the associated results, as is explained %%there|objective%%. The following figure is a recap of the %%objective|objective%%-concept (using the usual [notations and conventions](../notations-and-conventions#pattern-diagram-notations)):
+Whether or not an %%objective|objective%% is realized can be seen by the status of the associated results, as is explained %%there|objective%%. The following figure is a recap of the %%objective|objective%%-concept (using the usual **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**):
 
 <img
   alt="A Party's Objectives"

@@ -56,7 +56,7 @@ Every %%party|party%% has its own mission (calling, vocation), and realizing tha
 Setting objectives, managing the associated %%risks|risk%% (i.e. 'effect of uncertainty on objectives'), deciding about laws/regulations to comply with, etc., is the topic of Governance, Risk Management and Compliance (GRC), which is outside the scope of this model.
 
 ### Formalized model
-Here is a visual representation of this pattern, using the following [notations and conventions](../notations-and-conventions#pattern-diagram-notations):
+Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img
   alt="Conceptual model of the 'Party-Actor-Action' pattern"

@@ -38,7 +38,7 @@ An **objective** is something
 
 ### Formalization
 
-Here is a visual representation of the formalization of this concept, using the following [notations and conventions](../notations-and-conventions#pattern-diagram-notations):
+Here is a visual representation of the formalization of this concept, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img
   alt="A Party's Objectives"

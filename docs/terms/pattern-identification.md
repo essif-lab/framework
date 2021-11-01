@@ -62,7 +62,7 @@ Such representations can come in many forms. In a human administrative context, 
 This is particularly true for the %%action|action%% that is commonly referred to as 'logging in'. The %%actor|actor%% that is 'logging in' some user onto a system (or provide the user access to some other physical or electronic location), will identity (and subsequently authenticate) the user, i.e. search for the account to associate the user with, from where it can find all other data that is needed about the user in that particular context.
 
 ### Formalized model - information realm
-Here is a visual representation of this pattern, using the following [notations and conventions](../notations-and-conventions#pattern-diagram-notations):
+Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img
   alt="Conceptual model of the 'Identification' pattern - information realm"
@@ -84,7 +84,7 @@ This process of accumulation of characteristics (and selecting the %%entities|en
 - there is a single %%partial identity|partial-identity%% and a single %%entity|entity%% that both match all such characteristics, in which case identification is successful and the %%subject|subject%%-relation between the %%entity|entity%% and %%partial identity|partial-identity%% has been established.
 
 ### Formalized model - data realm
-Here is a visual representation of a similar pattern, using the following [notations and conventions](../notations-and-conventions#pattern-diagram-notations):
+Here is a visual representation of a similar pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img
   alt="Conceptual model of the 'Identification' pattern - data realm"

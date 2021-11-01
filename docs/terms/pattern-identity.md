@@ -44,7 +44,7 @@ More importantly, in interactions between the protagonist and an arbitrary %%par
 This use of attributions is particularly relevant for %%SSI contexts|self-sovereign-identity%% in which the focus is on supporting (electronic) %%transactions|transaction%%. That support consists, amongst other things, of enabling a participating %%party|party%% to request for, and obtain data that are statements about %%entities|entity%% (in particular about other participating parties) that this party determines to be %%valid|validate%% for making the decision of whether or not to commit. Knowing the %%party|party%% that authored (issued) such data helps to determine not only the meaning of that data, but also to determine its (un)trustworthiness. Knowing that a set of data orginates from a single partial identity is a prerequisite for doing this.
 
 ### Formalized model
-Here is a visual representation of this pattern, using the following [notations and conventions](../notations-and-conventions#pattern-diagram-notations):
+Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img
   alt="Conceptual model of the 'Identity' pattern"

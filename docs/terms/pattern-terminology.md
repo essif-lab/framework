@@ -42,7 +42,7 @@ Also, this %%management|management%% may cause reference documents to be created
 
 
 ### Formalized model
-Here is a visual representation of this pattern, using the following [notations and conventions](../notations-and-conventions#pattern-diagram-notations):
+Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img
   alt="Conceptual model of the 'terms-community' pattern"

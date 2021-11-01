@@ -35,7 +35,7 @@ And indeed, when we apply this criterion we can see that jurisdictions are abund
 Note that while a %%jurisdiction|jurisdiction%% is a %%party|party%%, a jurisdiction may also be owned by a (different) party, and it makes sense to distinguish between them. For example, a multinational organization may own subsidiaries in different countries, each of which could be a jurisdiction in their own right, for the purpose of aligning their rules of operation with the local legal jurisdiction. e.g. for organizations.
 
 ### Formalized model
-Here is a visual representation of this pattern, using the following [notations and conventions](../notations-and-conventions#pattern-diagram-notations):
+Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img
   alt="Conceptual model of the 'Jurisdiction' pattern"
