@@ -35,15 +35,15 @@ module.exports = {
           { type: 'category',
             label: 'Reviewable models',
             items:
-            [ { type: 'doc', id: 'terms/pattern-identity' },
+            [ { type: 'doc', id: 'terms/pattern-terminology' },
+              { type: 'doc', id: 'terms/pattern-identity' },
               { type: 'doc', id: 'terms/pattern-governance-and-management' },
           ]
           },
           { type: 'category',
             label: 'Envisaged models',
             items:
-            [ { type: 'doc', id: 'terms/pattern-terminology' },
-              { type: 'doc', id: 'terms/pattern-identification' },
+            [ { type: 'doc', id: 'terms/pattern-identification' },
               { type: 'doc', id: 'terms/pattern-identifier' },
               { type: 'doc', id: 'terms/pattern-trust' },
               { type: 'doc', id: 'terms/pattern-decision-making' },
@@ -77,15 +77,15 @@ module.exports = {
           { type: 'category',
             label: 'Reviewable models',
             items:
-            [ { type: 'doc', id: 'terms/pattern-identity' },
+            [ { type: 'doc', id: 'terms/pattern-terminology' },
+              { type: 'doc', id: 'terms/pattern-identity' },
               { type: 'doc', id: 'terms/pattern-governance-and-management' },
           ]
           },
           { type: 'category',
             label: 'Envisaged models',
             items:
-            [ { type: 'doc', id: 'terms/pattern-terminology' },
-              { type: 'doc', id: 'terms/pattern-identification' },
+            [ { type: 'doc', id: 'terms/pattern-identification' },
               { type: 'doc', id: 'terms/pattern-identifier' },
               { type: 'doc', id: 'terms/pattern-trust' },
               { type: 'doc', id: 'terms/pattern-decision-making' },

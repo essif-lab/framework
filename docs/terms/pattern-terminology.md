@@ -6,7 +6,7 @@ type: pattern
 typeid: terminology
 stage: draft
 hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
-date: 20210601
+date: 20211101
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
@@ -42,7 +42,7 @@ Also, this %%management|management%% may cause reference documents to be created
 
 
 ### Formalized model
-Here is a visual representation of this pattern, using the following [notations and conventions](../notations-and-conventions#pattern-diagram-notations):
+Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img
   alt="Conceptual model of the 'terms-community' pattern"

@@ -5,12 +5,12 @@ scopeid: essifLab
 type: concept
 typeid: organization
 stage: draft
-hoverText: "Organization: a Party that is associated with a group of Actors that work to realize its Objectives."
-glossaryText: "a %%party^party%% that is associated with a group of %%actors^actor%% that work to realize its %%objectives^objective%%."
+hoverText: "Organization: a Party, part of which is a group of Actors that work to realize its Objectives."
+glossaryText: "a %%party^party%%, part of which is a group of %%actors^actor%% that work to realize its %%objectives^objective%%."
 date: 20210601
 ---
 ### Short Description
-An **Organization** is a %%party|party%% that is associated with a group of %%actors|actor%% that work to realize its %%objectives|objective%%. Enterprises and governments are the prototypical examples. However, parts of enterprises (e.g. divisions, departments, business units) should also be considered organizations. This also holds for governments and governmental bodies.
+An **Organization** is a %%party|party%%, part of which is a group of %%actors|actor%% that work to realize its %%objectives|objective%%. Enterprises and governments are the prototypical examples. However, parts of enterprises (e.g. divisions, departments, business units) should also be considered organizations. This also holds for governments and governmental bodies.
 
 ### Purpose
 The purpose of documenting this term is to provide additional clarity w.r.t. definitions given in english dictionaries. Also, we need this notion as it is used in the eSSIF-Lab %%Parties, Actors and Actions pattern|pattern-party-actor-action%%.
