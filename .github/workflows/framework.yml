@@ -18,9 +18,9 @@ jobs:
       - name: Test Build
         run: |
           yarn install --frozen-lockfile
-          yarn docusaurus parse
-          yarn docusaurus glossary
-          yarn build
+          STAGING=true yarn docusaurus parse
+          STAGING=true yarn docusaurus glossary
+          STAGING=true yarn build
           mv build public
   gh-release:
     if: github.event_name != 'pull_request'
@@ -41,8 +41,8 @@ jobs:
           git config --global user.email "miliadi@admin.grnet.gr"
           git config --global user.name "MarIliadi"
           yarn install --frozen-lockfile
-          yarn docusaurus parse
-          yarn docusaurus glossary
-          yarn build
+          STAGING=true yarn docusaurus parse
+          STAGING=true yarn docusaurus glossary
+          STAGING=true yarn build
           mv build public
-          yarn deploy
+          STAGING=true yarn deploy
