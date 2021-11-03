@@ -28,10 +28,8 @@ module.exports = {
         {to: 'docs/essifLab-pattern-list', label: 'Mental Models', position: 'left'},
         {to: 'docs/ssi-standards', label: 'SSI Standardization', position: 'right'},
         {
-          // href: 'https://github.com/essif-lab/framework',
-          // label: 'Github',
-          href: 'https://gitlab.grnet.gr/essif-lab/framework',
-          label: 'Gitlab',
+          href: 'https://github.com/essif-lab/framework',
+          label: 'Github',
           position: 'right',
         },
       ],
@@ -137,8 +135,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-     editUrl:
-     'https://gitlab.grnet.gr/essif-lab/framework/-/tree/master/',
+          editUrl: 'https://github.com/essif-lab/framework/-/tree/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

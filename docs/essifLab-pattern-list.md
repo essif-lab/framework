@@ -9,7 +9,7 @@ date: 20210908
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 Within eSSIF-Lab, we maintain a set of [mental models](https://en.wikipedia.org/wiki/Mental_model), which we also call %%patterns|pattern%%, which are descriptions, both casual and formal, of sets of %%concepts|concept%% (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic.They have been crafted so that they may serve as a basis for architecting, desiging, and implementing IT components and their governance processes.
-We stress that while they represent a specific way of looking at things, there are many more, and in the end, all that matters is the extend in which they are succesfully used.
+We stress that while they represent a specific way of looking at things, there are many more, and in the end, all that matters is the extent in which they are succesfully used.
 
 <img
   alt="George E.P. Box: All models are wrong, but some are useful"
@@ -39,6 +39,9 @@ The [Guardianship pattern](./terms/pattern-guardianship) captures the %%concepts
 ## Models under review
 
 These are models that we think go a long way to being mature, but may contain flaws we haven't detected yet.
+### [Terminology](./terms/pattern-terminology)
+The envisaged [eSSIF-Lab Terminology Pattern](./terms/pattern-terminology) will describe the relations between %%terminology|terminology%% artifacts such as '%%concept|concept%%', '%%term|term%%', '%%pattern|pattern%%', '%%mental model|pattern%%', '%%glossary|glossary%%' etc.
+
 ### [Identity](./terms/pattern-identity)
 The [eSSIF-Lab Identity Pattern](./terms/pattern-identity)
 - discusses difficulties that exist with the various/numerous meanings of the term 'identity',
@@ -53,8 +56,8 @@ The envisaged [Governance and Management Pattern](./terms/pattern-governance-and
 
 These are placeholders for models that we think we could document, but haven't come around to doing.
 
-### [Terminology](./terms/pattern-terminology)
-The envisaged [eSSIF-Lab Terminology Pattern](./terms/pattern-terminology) will describe the relations between %%terminology|terminology%% artifacts such as '%%concept|concept%%', '%%term|term%%', '%%pattern|pattern%%', '%%mental model|pattern%%', '%%glossary|glossary%%' etc.
+### [eSSIF-Lab World Model](./terms/pattern-world-model)
+The envisaged [eSSIF-Lab World Model](./terms/pattern-world-model) will describe the basic %%concepts|concept%%, relations between them (%%patterns|pattern%%), and principles (that are the starting point for eSSIF-Lab's thinking) that eSSIF-Lab proposes as a basis for designing, implementing and deploying architectures, processes and technologies that aim to support (autonomous, %%self-sovereign|self-sovereignty%%) %%parties|party%% as they negotiate and execute electronic %%transactions|transaction%% with one another.
 
 ### [Identification](./terms/pattern-identification)
 The envisaged [eSSIF-Lab Identity Pattern](./terms/pattern-identification) will describe the concepts and relations that help to explain the mechanisms that a %%party|party%% uses to %%identify|identify%% %%entities|entity%%, and mechanisms for communicating with another party such that both parties can identify an entity and know whether or not they identify the same entity.
