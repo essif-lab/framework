@@ -1,6 +1,6 @@
 ---
 id: pattern-world-model
-title: "World Model"
+title: "eSSIF-Lab World Model"
 scopeid: essifLab
 type: pattern
 typeid: world-model
