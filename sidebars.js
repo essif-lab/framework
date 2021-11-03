@@ -43,7 +43,8 @@ module.exports = {
           { type: 'category',
             label: 'Envisaged models',
             items:
-            [ { type: 'doc', id: 'terms/pattern-identification' },
+            [ { type: 'doc', id: 'terms/pattern-world-model' },
+              { type: 'doc', id: 'terms/pattern-identification' },
               { type: 'doc', id: 'terms/pattern-identifier' },
               { type: 'doc', id: 'terms/pattern-trust' },
               { type: 'doc', id: 'terms/pattern-decision-making' },
@@ -85,7 +86,8 @@ module.exports = {
           { type: 'category',
             label: 'Envisaged models',
             items:
-            [ { type: 'doc', id: 'terms/pattern-identification' },
+            [ { type: 'doc', id: 'terms/pattern-world-model' },
+              { type: 'doc', id: 'terms/pattern-identification' },
               { type: 'doc', id: 'terms/pattern-identifier' },
               { type: 'doc', id: 'terms/pattern-trust' },
               { type: 'doc', id: 'terms/pattern-decision-making' },
