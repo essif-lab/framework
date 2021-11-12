@@ -14,7 +14,7 @@ date: 20210802
 A **validator** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that supports the %%Transaction Data Collector|transaction-data-collector%% as it tries to determine whether or not data obtained by the %%verifier|verifier%% comes with the assurances that are needed to be used for specific purpose(s).
 
 :::info Editor's note
-TNO (or others) to provide additional content of this file.
+Additional content is needed here.
 :::
 
 ### Purpose

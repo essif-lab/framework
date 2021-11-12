@@ -21,7 +21,7 @@ It does so by:
 - returning the data that the %%Transaction Data Collector|transaction-data-collector%% requested, optionally with a report about which verification checks succeeded and/or which failed.
 
 :::info Editor's note
-TNO (or others) to provide additional content of this file.
+Additional content is needed here.
 :::
 
 ### Purpose

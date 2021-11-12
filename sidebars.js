@@ -48,7 +48,8 @@ module.exports = {
               { type: 'doc', id: 'terms/pattern-identifier' },
               { type: 'doc', id: 'terms/pattern-trust' },
               { type: 'doc', id: 'terms/pattern-decision-making' },
-              { type: 'doc', id: 'terms/pattern-decentralized-GRC' },
+              { type: 'doc', id: 'terms/pattern-decentralized-grc' },
+              { type: 'doc', id: 'terms/pattern-party-representation' },
               { type: 'doc', id: 'terms/pattern-mandates-delegation-hiring' },
               { type: 'doc', id: 'terms/pattern-duties-and-rights' },
             ]
@@ -91,7 +92,8 @@ module.exports = {
               { type: 'doc', id: 'terms/pattern-identifier' },
               { type: 'doc', id: 'terms/pattern-trust' },
               { type: 'doc', id: 'terms/pattern-decision-making' },
-              { type: 'doc', id: 'terms/pattern-decentralized-GRC' },
+              { type: 'doc', id: 'terms/pattern-decentralized-grc' },
+              { type: 'doc', id: 'terms/pattern-party-representation' },
               { type: 'doc', id: 'terms/pattern-mandates-delegation-hiring' },
               { type: 'doc', id: 'terms/pattern-duties-and-rights' },
             ]

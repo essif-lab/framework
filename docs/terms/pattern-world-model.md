@@ -40,7 +40,7 @@ One of the most fundamental of such categories is called %%party|party%%. A part
 
 We postulate that every party has %%objectives|objective%% that it pursues. A large part of its %%knowledge|knowledge%% revolves about %%governing|governance%% and/or %%managing|management%% these %%objectives|objective%% (which includes risk management) and making sure they get realized.
 
-While %%parties|party%% are their own (self)sovereigns and in principle can do as they please, they live in a universe with many other parties, that are also 'self sovereigns'. This means that they need to come to terms with one another as they have interactions with one another that may influence the %%knowledge|knowledge%% of the participating parties, and have other consequences as well. Such %%transactions|transaction%% between parties is not only one of the focal points of this framework: it is the reason we created it.
+While %%parties|party%% are their own (self-)sovereigns and in principle can do as they please, they live in a universe with many other parties, that are also 'self-sovereigns'. This means that they need to come to terms with one another as they have interactions with one another that may influence the %%knowledge|knowledge%% of the participating parties, and have other consequences as well. Such %%transactions|transaction%% between parties is not only one of the focal points of this framework: it is the reason we created it.
 
 You can learn more about parties from the %%parties, actors and action pattern|pattern-party-actor-action%%.
 
@@ -53,7 +53,7 @@ You can learn more about actors from the %%parties, actors and action pattern|pa
 
 ### Jurisdiction: Authority with mechanisms for defining rules, enforcing them, and resolving disputes
 
-A third fundamental category is called %%jurisdiction|jurisdiction%%, which is a foundational concept for organizing collaborations between %%parties|party%%, e.g. in %%communities|community%% or %%ecosystems|ecosystem%%. Basically, a jurisdiction is an %%authority|authority%% that has mechanisms for for defining and maintaining rules, enforcement thereof, and a mechanism for resolving conflicts within its %%scope of control|scope-of-control%%.
+A third fundamental category is called %%jurisdiction|jurisdiction%%, which is a foundational concept for organizing collaborations between %%parties|party%%, e.g. in %%communities|community%% or %%ecosystems|ecosystem%%. Basically, a jurisdiction is an %%authority|authority%% that has mechanisms for defining and maintaining rules, enforcement thereof, and a mechanism for resolving conflicts within its %%scope of control|scope-of-control%%.
 
 You can learn more about jurisdictions from the %%jurisdictions pattern|pattern-jurisdiction%%.
 

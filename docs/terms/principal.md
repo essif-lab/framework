@@ -10,8 +10,8 @@ glossaryText: "the %%party^party%% for whom, or on behalf of whom, the %%actor^a
 date: 20210601
 ---
 
-:::info Editor's noet
-TNO to revise this text
+:::info Editor's note
+Additional content is needed here.
 :::
 
 ### Short Description
