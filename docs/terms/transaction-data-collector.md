@@ -44,7 +44,7 @@ A **Transaction Data Collector** is a functional component in the [eSSIF-Lab fun
 ### Deprecated - TVE Functionality
 
 :::info Editor's note
-TNO to revise the text below.
+Additional content is needed here.
 This section is the old text of what was called the Transaction Validation Engine.
 It will be deleted in the (near?) future.
 :::

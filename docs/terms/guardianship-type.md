@@ -10,8 +10,8 @@ glossaryText: "a class of %%guardianship arrangements^guardianship-arrangement%%
 date: 20210601
 ---
 
-:::info Editor's Note
-TNO to revise all below texts.
+:::info Editor's note
+Additional content is needed here.
 :::
 ### Short Description
 A **Guardianship-type** is a class of %%guardianship arrangements|guardianship-arrangement%% within the %%jurisdiction|jurisdiction%% that governs and manages them. It comprises %%duty and right types|pattern-duties-and-rights%% that can be used as a template for instantiating %%duties and rights|pattern-duties-and-rights%% of %%guardianship arrangements|guardianship-arrangement%% that instantiate the %%guardianship-type|guardianship-type%%.

@@ -14,12 +14,12 @@ From the [perspective of eSSIF-Lab](essifLab-vision) this "what's truly importan
 
 We are aware that others have different ideas about what SSI is. That's ok - it is consistent with our ideas that others are also autonomous, self-sovereign parties. However, it does suggest that it may be worthwhile to postulate the principles that eSSIF-Lab uses to underpin its vision, framework, etc.
 
-The purpose of this section is to provide the eSSIF-Lab principles on which our [eSSIF-Lab Framework](essifLab-fw) is based. We have written them down to allow readers for some of whom they may seem a bit controversial, to better understand the framework, enabling them to follow the lines of reasoning that we use, the choices (e.g. for terminology) that we have made, and enable them to decide whether or not to adopt (parts of) the framework.
+The purpose of this section is to provide the eSSIF-Lab principles on which our [eSSIF-Lab Framework](essifLab-fw) is based. The are the 'axioms' we use for our reasoning, making choices (e.g. for terminology), etc. We think that making them explicit helps readers to decide whether or not they want to adopt (parts of) the framework.
 
 ## Freedom of Information (Knowledge)
 
 According to (articles 8-10 of) the [*European Convention on Human Rights (ECHR)*](https://www.echr.coe.int/Pages/home.aspx?p=basictexts/convention), people are free to collect, process, store, and express information (about any %%entity|entity%%) in any way the like (making a few exceptions for cases when e.g. security of society is put at risk). This made us realize that
-  - these rights refer to fundamental, biological capabilities that people ar born with, and the ECHR is limiting these capabilities for exceptional cases.
+  - these rights refer to fundamental, biological capabilities that people are born with, and the ECHR is limiting these capabilities for exceptional cases.
   - %%organizations|organization%% (governments, enterprises), too, have these capabilities.
 We generalize this by defining the term %%party|party%% such that it encompasses every %%entity|entity%% that has these capabilities. Consequently, this term is a very basic one in our world model.
 
@@ -43,7 +43,7 @@ From this, it follows that:
 
 ## Identifiers are properties - not things
 
-[RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986#section-1.1) (p5) says "An identifier embodies the information required to distinguish what is being identified from all other things within its scope of identification". One can easily see that this implies that an identifier is not something that that embodies information, but a property of something that embodies information. This 'something' will or won't have the identification property depending on the context. Still, we use the term %%identifier|identifier%% to refer to a character string that is being used for identification purposes. For details, see the %%identification pattern|pattern-identification%% and the %%identifier pattern|pattern-identifier%%.
+[RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986#section-1.1) (p5) says "An identifier embodies the information required to distinguish what is being identified from all other things within its scope of identification". One can easily see that this implies that an identifier is not something that embodies information, but a property of something that embodies information. This 'something' will or won't have the identification property depending on the context. Still, we use the term %%identifier|identifier%% to refer to a character string that is being used for identification purposes. For details, see the %%identification pattern|pattern-identification%% and the %%identifier pattern|pattern-identifier%%.
 
 ## You do not know what others mean
 

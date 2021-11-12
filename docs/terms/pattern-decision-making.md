@@ -31,5 +31,5 @@ Here is a visual representation of this pattern, using the following **[notation
 />
 
 :::info Editor's note
-TNO to provide further introductorty texts
+Additional content is needed here.
 :::

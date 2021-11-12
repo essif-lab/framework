@@ -10,8 +10,8 @@ glossaryText: "a %%party^party%% that has been assigned rights and duties in a %
 date: 20210601
 ---
 
-:::info Editor's Note
-TNO to revise all below texts.
+:::info Editor's note
+Additional content is needed here.
 :::
 
 ### Short Description

@@ -10,8 +10,8 @@ glossaryText: "an %%entity^entity%% for the caring for and/or protecting/guardin
 date: 20210601
 ---
 
-:::info Editor's Note
-TNO to revise all below texts.
+:::info Editor's note
+Additional content is needed here.
 :::
 
 ### Short Description

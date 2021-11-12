@@ -15,8 +15,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 ### Short Description
 A **transaction** is an exchange of goods, services, funds, or data between some %%parties|party%%. These %%parties|party%% are called the %%participants of the transaction|participant%%. A typical %%business transaction|transaction%% consists of three phases. In the first phase, a %%transaction agreement|transaction-agreement%% is negotiated between the participants. That phase ends when either participant quits the negotiation, or all participants commit to the transaction, which basically is a promise to the other participants that it will keep up its end of the %%transaction agreement|transaction-agreement%%. In the second phase, the participants work to fulfill their promise. That phase ends when they deliver the results, and inform their peers of that they're done. In the final phase, participants check whether or not they have received what was promised, and that it conforms the criteria in the transaction agreement. This may lead to some discussion and possible rectifications. The final phase ends either when one of the participants escalates (e.g. goes to court), or all results are accepted. This way of looking at %%business transactions|transaction%% has been described extensively in the [DEMO](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations) transaction model.
 
+
+It is common for transactions to be governed by (the %%legal system(s)|legal-system%% of) at least one %%jurisdiction|jurisdiction%%, because they can contain relevant rules of various kinds, e.g. in the areas of
+- escalation - i.e. what can be done if a %%transaction|transaction%% goes sour;
+- privacy - e.g. whether or not the [GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679&from=EN) or related legislation applies;
+- representation - e.g. rules about how old one must be in order to be entitled to do something, rules on how one may represent an %%organization|organization%% or a %%person|human-being%%, %%guardianships|guardianship-arrangement%%, etc.
+and others.
+
 :::info Editor's note
-TNO (or others) to provide further content/revisions.
+Additional content is needed here.
 :::
 
 :::info Editor's note

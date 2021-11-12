@@ -1,9 +1,9 @@
 ---
-id: pattern-decentralized-GRC
+id: pattern-decentralized-grc
 title: "Decentralized Risk Management, Governance and Compliance"
 scopeid: essifLab
 type: pattern
-typeid: decentralized-GRC
+typeid: decentralized-grc
 stage: draft
 hoverText: "The Decentralized Risk Management, Governance and Compliance pattern describes how Parties can set Objectives, and apply decentralized Risk Management to become and remain succesful."
 date: 20210601

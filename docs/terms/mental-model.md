@@ -12,7 +12,7 @@ date: 20210804
 ---
 
 :::info Editor's note
-TNO (or others) to provide the content of this file.
+Additional content is needed here.
 :::
 
 See also: %%pattern|pattern%%.

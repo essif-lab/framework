@@ -11,8 +11,8 @@ glossaryText: "the %%actor^actor%% with whom/which this other %%actor^actor%% is
 date: 20210601
 ---
 
-:::info Editors' note
-TNO (or others) to revise the contents of this file.
+:::info Editor's note
+Additional content is needed here.
 :::
 
 ### Short Description

@@ -39,7 +39,7 @@ Here is a visual representation of this pattern, using the following **[notation
 
 <img
   alt="Conceptual model of the 'Jurisdiction' pattern"
-  src={useBaseUrl('images/patterns/pattern-jurisdiction-v2.png')}
+  src={useBaseUrl('images/patterns/pattern-jurisdiction.png')}
 />
 
 The figure shows that a %%jurisdiction|jurisdiction%% is %%party|party%%, and is also owned by a %%party|party%% (that may be the jurisdiction itself, or another party). This implies that a jurisdiction has %%objectives|objective%% to pursue, and %%knowledge|knowledge%% to govern.
