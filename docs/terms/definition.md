@@ -33,17 +33,15 @@ Working together is easier when you and your peers share the same ideas. We need
 
 ### Criteria
 A **definition** is a text that comprises at a minimum:
-- a non-empty set of %%scopes|scope%% in each of which specific %%objectives|objective%% are being pursued;
-- a [criterion](https://www.lexico.com/definition/criterion) that specifies the necessary and sufficient conditions for being an instance of a named class;
-- a %%name or phrase|term%% that is used within the %%scopes|scope%% to refer to (unidentified, or arbitrary, or specific) %%entities|entity%% that satisfy the criterion.
+- a %%scope|scope%% that is curated (controlled) by a %%party|party%%, and that is related to (the pursuit of) a non-empty set of %%objectives|objective%%;
+- a [criterion](https://www.lexico.com/definition/criterion) that specifies the necessary and sufficient conditions for determining what does and what does not constitute some %%concept|concept%% (idea, class of %%entities|entity%%);
+- a %%name or phrase|term%% that is used within the %%scope|scope%% to refer to (unidentified, or arbitrary, or specific) %%entities|entity%% that satisfy the criterion.
 
 ### Examples
-<!--Provide a few sentences in which you give examples that obviously qualify as instances of `Concept`, and that do NOT obviously qualify. Also, provide examples that are not (so) obvious, but help users to better understand its intension.-->
 - The definition of the term %%definition|definition%% (a) is defined in, and hence valid in the scope `eSSIFLab`, (b) specifies a criterion (see the `Criteria` section above), and (d) has a name (i.e. `definition`) associated with it. Since it satisfies the criteria of `definition`, it can be referred to as 'the definition of `definition`'.
 - The %%concepts|concept%% defined within the scope eSSIFLab have definitions associated with them, where the criteria, relevance and terms are defined in the %%concept-file|concept-file%% of that concept.
 
 ### Related Concepts
-<!--Link to any %%concepts|concept%% that are similar but distinct, with a note about the relationship.-->
 * %%Term|term%% is a label that is used in some context to refer to a %%Concept|concept%%, the set of entities that satisfy the concept's criteria, or an arbitrary element of that set. Different contexts may use different terms to refer to a single concept. In a single context, a single term should be used to refer to an individual concept.
 
 * %%Scope|scope%% is related in several ways. First, there is (precisely, or at most one) Scope that governs the definition/specification of the Concept. Second, there may be (any number of) Scopes that use the Concept, i.e. within which Terms are defined that refer to the Concept

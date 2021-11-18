@@ -5,7 +5,7 @@ scopeid: essifLab
 type: concept
 typeid: pattern
 stage: draft
-hoverText: "Pattern (Mental Model): A description, both casual and formal, of a set of Concepts (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
+hoverText: "Pattern (also: Mental Model): A description, both casual and formal, of a set of Concepts (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
 glossaryText: "A description, both casual and formal, of a set of %%concepts^concept%% (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
 date: 20210804
 ---

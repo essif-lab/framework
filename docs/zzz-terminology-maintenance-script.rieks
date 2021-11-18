@@ -183,6 +183,8 @@ with "management"
 // [O]
 replace-regex "%{mid}own(er)?%{ss}%{end}"
 with "owner"
+replace-regex "%{mid}owning%{end}"
+with "ownership"
 replace-regex "%{mid}(?:natural-)?(objective|organization|owned|ownership)%{ss}%{end}"
 with "$1"
 
