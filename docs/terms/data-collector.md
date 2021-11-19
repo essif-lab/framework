@@ -44,7 +44,7 @@ A **Data Collector** is a functional component in the [eSSIF-Lab functional arch
 ### Deprecated - TVE Functionality
 
 :::info Editor's note
-TNO to revise the text below.
+The text below needs to be revised.
 This section is the old text of what was called the Transaction Validation Engine.
 It will be deleted in the (near?) future.
 :::
@@ -87,7 +87,7 @@ As long as data is needed, the Data Collector can intermittently request the ver
 ### Notes:
 
 :::info Editor's note
-TNO to revise the footnote markers
+Footnote markers need to be revised
 :::
 
 [^1x]: In the same way that the data collector needs to collect data in order to be able to decide whether or not to commit, %%agents|agent%% of the %%peer party|peer-party%% need to collect data for making a similar commitment decision. Requests for such data are to be processed by the %%data discloser component|data-discloser%% under guidance of its %%data-discloser-policy|data-discloser-policy%%.
