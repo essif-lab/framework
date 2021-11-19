@@ -6,6 +6,6 @@ date: 20210601
 ---
 
 :::info Editor's note
-TNO to write the introduction paragraph
-Remainder of file to be generated (by some appropriate tool)
+An introduction paragraph is needed.
+The remainder of file will need to be generated (by some appropriate tool).
 :::

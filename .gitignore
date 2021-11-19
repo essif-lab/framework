@@ -12,8 +12,5 @@ yarn-error.log*
 
 start_server.bat
 *.ffs_batch
+*.ffs_gui
 *.lnk
-docs/vscode-%%-batch-replacer.txt
-**/zzz-*
-docs/test.md
-docs/terminology-test-script.rieks

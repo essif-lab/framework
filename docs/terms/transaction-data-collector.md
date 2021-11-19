@@ -87,7 +87,7 @@ As long as data is needed, the Transaction Data Collector can intermittently req
 ### Notes:
 
 :::info Editor's note
-TNO to revise the footnote markers
+Footnote markers need to be revised
 :::
 
 [^1x]: In the same way that the Transaction Data Collector needs to collect data in order to be able to decide whether or not to commit, %%agents|agent%% of the %%peer %%party|party%%|peer-party%% need to collect data for making a similar %%commitment decision|commitment-decision%%. Requests for such data are to be processed by the %%Transaction Data Discloser component|transaction-data-discloser%% under guidance of its %%Transaction Data Discloser Policy|transaction-data-discloser-policy%%.

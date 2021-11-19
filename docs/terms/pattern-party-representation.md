@@ -20,13 +20,13 @@ This pattern is still under development
 This pattern captures the essence of how %%parties|party%% can be represented in various circumstances, thereby extending the %%parties, actors, actions pattern|pattern-party-actor-action%%.
 
 ### Purpose
-Within the context of %%SSI|self-sovereign-identity%%, we are interested in coming to grips with (answering) the questions such as 'in what ways can %%parties|party%% be represented?', 'what kind(s) of %%entities|entity%% can represent %%parties|party%%', 'how can we deal with representation constraints, i.e. provide guarantees that the represented %%party|party%% isn't completely at the mercy of the one representing it?'.
+Within the context of %%SSI|self-sovereign-identity%%, we are interested in coming to grips with (answering) questions such as 'in what ways can %%parties|party%% be represented?', 'what kind(s) of %%entities|entity%% can represent %%parties|party%%', 'how can we deal with representation constraints, i.e. provide guarantees that the represented %%party|party%% isn't completely at the mercy of the one representing it?'.
 
 This model attempts to provide answers to such questions.
 ### Introduction
 There are very many different forms of representation. %%Claims|assertion%%, for example, represent characteristics attributed to %%entities|entity%%, %%Terms|term%% represent (intangible) %%concepts|concept%%, %%legal entities|legal-entity%% are represented in the %%knowledge|knowledge%% of a %%jurisdiction|jurisdiction%%, %%agents|agent%% represent %%parties|party%% as they execute %%actions|action%%, and so on. We specifically focus on
 
- [Merriam-Webster](https://www.merriam-webster.com/dictionary/representation) considers both 'the action of representing', i.e. the action or fact of one %%party|party%% standing for another so as to have the rights and duties of the %%party|party%% represented, or the substitution of one %%party|party%% in place of another, e.g. a child taking the place of a deceased parent), and 'the fact of being represented', which is its passive counterpart.
+[Merriam-Webster](https://www.merriam-webster.com/dictionary/representation) considers both 'the action of representing', i.e. the action or fact of one %%party|party%% standing for another so as to have the rights and duties of the %%party|party%% represented, or the substitution of one %%party|party%% in place of another, e.g. a child taking the place of a deceased parent), and 'the fact of being represented', which is its passive counterpart.
 
 
 
