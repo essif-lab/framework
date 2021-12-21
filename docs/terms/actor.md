@@ -5,12 +5,12 @@ scopeid: essifLab
 type: concept
 typeid: actor
 stage: draft
-hoverText: "Actor: Entity that can act (do things), e.g. people, machines, but not Organizations."
-glossaryText: "Entity that can act (do things), e.g. people, machines, but not %%organizations^organization%%."
+hoverText: "Actor: Entity that can act (do things/execute Actions), e.g. people, machines, but not Organizations."
+glossaryText: "Entity that can act (do things/execute %%actions^action%%), e.g. people, machines, but not %%organizations^organization%%."
 date: 20210601
 ---
 ### Short Description
-An **Actor** is someone or something that can actually do things, such as people or machines. Actors will generally do things, i.e. execute %%actions|action%% in different ways, depending on the context, or the %%party|party%% for whom they do this.
+An **Actor** is someone or something that can act, i.e. actually do things, execute %%actions|action%%, such as people or machines. Actors will generally execute %%actions|action%% in different ways, depending on the context, or the %%party|party%% on whose behalf they act.
 
 The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.
 

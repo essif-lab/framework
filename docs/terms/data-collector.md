@@ -94,7 +94,7 @@ Footnote markers need to be revised
 
 [^1a]: If the %%data collector policy|data-collector-policy%% specifies that data is to be collected for other purposes, the %%data collector|data-collector%% should then be provided a means to inform its %%peer party|peer-party%% of such purposes, and the policy should not specify that such data is required to make the commitment decision.
 
-[^1 (peer-agents)]: Note that such agents have then become so-called %%peer-agents|peer-agent%% (of the Data Collector) for that specific transaction. Also, the (single!) %%principal|principal%% of these %%peer-agents|peer-agent%% is the %%peer-party|peer-party%% of the %%principal|principal%% of the Data Collector (again, for that specific transaction).
+[^peer-agents]: Note that such agents have then become so-called %%peer-agents|peer-agent%% (of the Data Collector) for that specific transaction. Also, the (single!) %%principal|principal%% of these %%peer-agents|peer-agent%% is the %%peer-party|peer-party%% of the %%principal|principal%% of the Data Collector (again, for that specific transaction).
 
 [^1]: This feature ensures that the transaction is really two-way, and both Parties can request credentials from the other. For example, a web-shop can then ask for a (delivery) address credential, and the customer can ask for a credential issued e.g. by the chamber of commerce that the web-shop is a legitimate company (and not some maffia website).
 
