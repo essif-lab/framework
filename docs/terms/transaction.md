@@ -18,7 +18,7 @@ A **transaction** is an exchange of goods, services, funds, or data between some
 
 It is common for transactions to be governed by (the %%legal system(s)|legal-system%% of) at least one %%jurisdiction|jurisdiction%%, because they can contain relevant rules of various kinds, e.g. in the areas of
 - escalation - i.e. what can be done if a %%transaction|transaction%% goes sour;
-- privacy - e.g. whether or not the [GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679&from=EN) or related legislation applies;
+- privacy - e.g. whether or not the [GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN) or related legislation applies;
 - representation - e.g. rules about how old one must be in order to be entitled to do something, rules on how one may represent an %%organization|organization%% or a %%person|human-being%%, %%guardianships|guardianship-arrangement%%, etc.
 and others.
 

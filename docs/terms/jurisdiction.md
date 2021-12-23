@@ -17,7 +17,7 @@ The %%Jurisdictions pattern|pattern-jurisdiction%% provides an overview of how t
 
 Within the context of %%Self-Sovereign Identity (SSI)|self-sovereign-identity%%, jurisdictions are relevant because it is typical for (business) %%transactions|transaction%% to be governed by (at least) one jurisdiction, whose %%legal system|legal-system%% may contain rules of various kinds, e.g. in the areas of
 - escalation - i.e. what can be done if a %%transaction|transaction%% goes sour;
-- privacy - e.g. whether or not the [GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679&from=EN) or related legislation applies;
+- privacy - e.g. whether or not the [GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN) or related legislation applies;
 - representation - e.g. rules about how old one must be in order to be entitled to do something, rules on how one may represent an %%organization|organization%% or a %%person|human-being%%, %%guardianships|guardianship-arrangement%%, etc.
 ### Purpose
 The ability to distinguish between (non)jurisdictions is a very generic enabler for us to tell which rules (laws, policies, guidelines, etc.) will apply in which situations, which %%party|party%% governs and enforces these rules, and where we should look to resolve any conflicts.
