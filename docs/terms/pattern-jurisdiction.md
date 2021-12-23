@@ -21,7 +21,7 @@ While differences exist, a legal jurisdiction typically has a %%legal system|leg
 
 If we leave out the adjective 'legal', we can still say that anything that
 - has a %%legal system|legal-system%%, i.e. set of rules, an enforcement mechanism and a conflict resolving mechanism,
-- operates that legal system in a scope that it controls, and
+- operates that legal system in a scope that it %%controls|controller%%, and
 - applies these rules to %%entities|entity%% that it knows to exist (i.e. that are 'registered' in its %%knowledge|knowledge%%)
 would also qualify as a %%jurisdiction|jurisdiction%%, albeit not a legal jurisdiction.
 

@@ -117,6 +117,8 @@ with "authority"
 // for 'claim', see 'statement'
 replace-regex "%{mid}(communit)%{yies}%{end}"
 with "$1y"
+replace-regex "%{mid}(control)(le[rd]|ling)?%{ss}%{end}"
+with "$1ler"
 replace-regex "%{mid}(colleague|concept(-file)?|credential(-type)?(-catalogue)?|commitment-decision)%{ss}?%{end}"
 with "$1"
 replace-regex "%{mid}(colleague)(?:-agent)?%{ss}?%{end}"

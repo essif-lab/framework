@@ -28,7 +28,7 @@ Most changes of perspective do not have such large effects. If he had proposed t
 These are models that are mature (stable). They have been applied during several years in various circumstances, and have shown to be valid (when consistently and consequently applied). Therefore, they are proposed for widespread use (and further evaluation/validation).
 
 ### [Parties, Actors and Actions](./terms/pattern-party-actor-action)
-The [Parties, Actors and Actions pattern](./terms/pattern-party-actor-action) captures the foundational %%concepts|concept%% and relations that we need for thinking about how things get done. It answers questions such as: 'Who/what does things?', 'How are their actions being guided/controlled?', 'Who controls whom/what?', 'Who/what may be held accountable?'.
+The [Parties, Actors and Actions pattern](./terms/pattern-party-actor-action) captures the foundational %%concepts|concept%% and relations that we need for thinking about how things get done. It answers questions such as: 'Who/what does things?', 'How are their actions being guided/controlled?', 'Who %%controls|controller%% whom/what?', 'Who/what may be held accountable?'.
 
 ### [Jurisdictions](./terms/pattern-jurisdiction)
 The [Jurisdictions pattern](./terms/pattern-jurisdiction) captures the %%concepts|concept%% and relations that explain what a generic %%jurisdiction|jurisdiction%% consists of, and relates it to %%parties|party%% and %%legal entities|legal-entity%%.
