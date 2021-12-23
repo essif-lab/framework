@@ -5,13 +5,13 @@ scopeid: essifLab
 type: concept
 typeid: identity
 stage: draft
-hoverText: "Identity (of an Entity): the combined Knowledge about that Entity of all Parties, i.e. the union of all Partial Identities of which that Entity is the subject."
-glossaryText: "the combined %%knowledge^knowledge%% about that %%entity^entity%% of all %%parties^party%%, i.e. the union of all %%partial identities^partial-identity%% of which a specific %%entity^entity%% is the %%subject^subject%%."
+hoverText: "Identity (of an Entity): the combined Knowledge about that Entity of all Parties, i.e. the union of all Partial Identities of which that Entity is the Subject."
+glossaryText: "the combined %%knowledge^knowledge%% about that %%entity^entity%% of all %%parties^party%%, i.e. the union of all %%partial identities^partial-identity%% of which that %%entity^entity%% is the %%subject^subject%%."
 date: 20210803
 ---
 
 ### Short Description
-The **Identity** (of an %%entity|entity%%) is the union of all %%partial identities|partial-identity%% of which that Entity is the %%subject|subject%%.
+The **Identity** (of an %%entity|entity%%) is the combined %%knowledge|knowledge%% about that %%entity|entity%% of all %%parties|party%%, i.e. the union of all %%partial identities|partial-identity%% of which that %%entity|entity%% is the %%subject|subject%%.
 
 We realize that this is a term that is heavily debated. However for our purposes, it is useful to see the identity of a person (or other %%entity|entity%%) as the union of all characteristics, judgements and other %%knowledge|knowledge%% that %%parties|party%% have about that person.
 
