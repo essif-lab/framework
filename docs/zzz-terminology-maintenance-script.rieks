@@ -25,9 +25,10 @@
 // Complex regular expressions can be created using variables. Variables are applied to the entire script, and should be defined at the beginning of the script. Variables are defined as ... = "..." and are used as %{...}. Variables can only be used in the replace and replace-regex instructions.
 // variables can reference themselves and be overwritten - see documentation of 'batch replacer' extension
 
+eof = "(?:$(?![\r\n]))"
 beg = "(?<=\W%%)"
 mid = "(?<=\|)"
-end = "(?=%%\W)"
+end = "(?=%%(?:\W|%{eof}))"
 ss = "(?:['’]?s|\(s\))?"
 yies = "(y|y['’]s|ies)"
 
@@ -65,7 +66,7 @@ with "'"
 // Test set: all must match: my/%verifier%, %my verifier%/. %verifier%." %verifier%-.
 // Test set: all must match: %risks%/%objectives%
 // Test set: all must also match:  %(our) (vfyr)%, %verifier's%. %verifier’s%... %verifying%-%party%), '**subject (of a %party%)**'
-replace-regex "(?<=(?:/|[-\s]\(?'?)%)([^%"]+)(?=%(([*_)-/:;,.'"!?]|\[[^\]]*\]){0,5}(\n|\s|/)|-%?\w))"
+replace-regex "(?<=(?:/|[-\s]\(?'?)%)([^%"]+)(?=%(([*_)-/:;,.'"!?]|\[[^\]]*\]){0,5}(\n|\s|/|%{eof})|-%?\w))"
 with "%$1%"
 
 // We do not use this replacement any more because authors make too many mistakes when trying to use it.
