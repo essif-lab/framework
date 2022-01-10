@@ -56,7 +56,7 @@ module.exports = {
           },
         ]
       },
-      { type: 'doc', id: 'essifLab-backlog' },
+      { type: 'doc', id: 'essifLab-fw-backlog' },
     ],
   },
   sidebar_for_terminology: {
@@ -102,7 +102,7 @@ module.exports = {
         ]
       },
       { type: 'doc', id: 'notations-and-conventions' },
-      { type: 'doc', id: 'essifLab-backlog' },
+      { type: 'doc', id: 'essifLab-fw-backlog' },
     ],
   },
 };
