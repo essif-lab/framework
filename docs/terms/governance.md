@@ -17,6 +17,6 @@ Governance is about planning the budgets and other resources necsessary  _to (ob
 
 The governance of a set of %%objectives|objective%% can be implemented as a %%control process|control-process%% where each of these objectives serves as a control objective in that process.
 
-We make a clear distinction between governance and management, which is explained in the %%governance and management pattern|pattern-governance-and-management%%.
+We make a clear distinction between governance and %%management|management%%, which is explained in the %%governance and management pattern|pattern-governance-and-management%%.
 ### Purpose
 The purpose for a %%party|party%% of having a **governance** process is that it enables him to oversee the realization of (the results associated with) various subset of its %%objectives|objective%%, and to change the specification of the associated results, to select the appropriate %%party|party%% for actually realizing these results, etc.

@@ -118,6 +118,8 @@ with "authority"
 // for 'claim', see 'statement'
 replace-regex "%{mid}(communit)%{yies}%{end}"
 with "$1y"
+replace-regex "%{mid}compl(y|iant|iance|iancy)%{end}"
+with "compliance"
 replace-regex "%{mid}(control)(le[rd]|ling)?%{ss}%{end}"
 with "$1ler"
 replace-regex "%{mid}(colleague|concept(-file)?|credential(-type)?(-catalogue)?|commitment-decision)%{ss}?%{end}"
@@ -143,11 +145,13 @@ with "digital-$1y"
 replace-regex "%{mid}(%{dutyrighttype}|%{dutyright})%{end}"
 with "pattern-duties-and-rights"
 
-// [E]
+// [E-F]
 replace-regex "%{mid}(ecosystem|employee|employer)%{ss}%{end}"
 with "$1"
 replace-regex "%{mid}(legal-)?entit%{yies}%{end}"
 with "$1entity"
+replace-regex "%{mid}(assessment|normative)(\s|-)framework%{ss}%{end}"
+with "$1-framework"
 
 // [G]
 replace-regex "%{mid}glossar%{yies}%{end}"
@@ -180,6 +184,8 @@ with "$1y"
 replace-regex "%{mid}(legal-jurisdiction|legal-system)%{ss}%{end}"
 with "$1"
 // for 'legal entities', see 'entities'
+replace-regex "%{mid}((risk|control|compliance|assurance)-?level)%{ss}%{end}"
+with "$1"
 replace-regex "%{mid}(manager?s?|managed(?:-by)?|management|managing(?:-part%{yies})?)%{end}"
 with "management"
 
@@ -188,6 +194,8 @@ replace-regex "%{mid}own(er)?%{ss}%{end}"
 with "owner"
 replace-regex "%{mid}owning%{end}"
 with "ownership"
+replace-regex "%{mid}(compliance|risk)(\s|-)objective%{ss}%{end}"
+with "$1-objective"
 replace-regex "%{mid}(?:natural-)?(objective|organization|owned|ownership)%{ss}%{end}"
 with "$1"
 

@@ -14,7 +14,7 @@ date: 20210601
 A **party** is an %%entity|entity%% that sets its %%objectives|objective%%, maintains its %%knowledge|knowledge%%, and uses that %%knowledge|knowledge%% to pursue its %%objectives|objective%% in an autonomous (sovereign) manner. One might say that they have a mind of their own. Typical examples are individual people and %%organizations|organization%%. Their minds (subjective knowledge) are what distinguishes one %%party|party%% from another, so every %%party|party%% is 1-1 related to its knowledge (mind).
 
 Specifically, every party autonomously manages its
-- %%knowledge (information)|knowledge%%. It means that every %%party|party%% gets to decide for itself what it believes to be true, what to trust (and what not), what objectives it wants to pursue, how much risks it wants to run, what are valid ways of reasoning (not necessarily logical), how to reach conclusions and make decisions. The knowledge of a party changes continuously as information is added, modified, or deleted - no reasons needed.
+- %%knowledge (information)|knowledge%%. It means that every %%party|party%% gets to decide for itself what it believes to be true, what to trust (and what not), what objectives it wants to pursue, how much %%risks|risk%% it wants to run, what are valid ways of reasoning (not necessarily logical), how to reach conclusions and make decisions. The knowledge of a party changes continuously as information is added, modified, or deleted - no reasons needed.
 - %%semantics|semantics%%, i.e. the mapping between parts of its knowledge and the %%data|data%% he uses to represent such parts, as well as the mapping between %%data|data%% that it receives and the meaning he interprets such data to be associated with.
 - %%data|data%%, i.e. the tangible representation of a subset of its intangible %%knowledge|knowledge%% that it uses to communicate with others, to remember (store), or process.
 
@@ -34,7 +34,7 @@ etcetera. For all of this, it is beneficial to introduce a concept that captures
 - the %%body of knowledge|knowledge%% itself, and the (continuous) changes in it, e.g. concerning
   - the interpretation of %%data|data%% that it has received
   - judgements it makes about such data, e.g. about what to (not) trust, what is (not) true, what is (not) valuable,
-  - (other) decisions that it makes based on its knowledge, e.g. regarding (in)valid ways of reasoning[^1], what objectives (not) to pursue, what risks it runs and opportunities it has, what rules to (not) comply with etc.
+  - (other) decisions that it makes based on its knowledge, e.g. regarding (in)valid ways of reasoning[^1], what objectives (not) to pursue, what %%risks|risk%% it runs and opportunities it has, what rules to (not) comply with etc.
 - its %%semantics|semantics%%, i.e.
   - the mappings that it uses to convert %%data|data%% to knowledge and
   - the mappings it uses to convert its knowledge into data,

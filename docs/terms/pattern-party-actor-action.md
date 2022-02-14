@@ -86,4 +86,4 @@ It also works well for %%organizations|organization%%, which are typically compa
 
 [^2]: I.e. “logic is the analysis and appraisal of arguments (Gensler, Harry J. (2017) [2002]. "Chapter 1: Introduction". Introduction to logic (3rd ed.). New York: Routledge. p. 1. [doi:10.4324/9781315693361](https://doi.org/10.4324%2F9781315693361). [ISBN 9781138910591](https://en.wikipedia.org/wiki/Special:BookSources/9781138910591). OCLC [957680480](https://www.worldcat.org/oclc/957680480).)
 
-[^3]: The %%Networked Risk Management (NRM) pattern|pattern-decentralized-grc%% deals with the setting and realizing of %%objectives|objective%%, the associated risk management etc., and explains the reasoning for not having shared %%objectives|objective%%.
+[^3]: The %%Networked Risk Management (NRM) pattern|pattern-decentralized-grc%% deals with the setting and realizing of %%objectives|objective%%, the associated %%risk management|risk-management%% etc., and explains the reasoning for not having shared %%objectives|objective%%.

@@ -38,7 +38,7 @@ A **Transaction Data Collector** is a functional component in the [eSSIF-Lab fun
 - can use any appropriate %%communication channel|communication-channel%% with a %%peer agent|peer-agent%% to:
   - request for data that, according to the %%Transaction Data Collector Policy|transaction-data-collector-policy%% is needed to decide whether or not to commit to the transaction;
   - process the responses to such requests, in an orchestrated way, thereby complying with the rules of its  %%principal's|principal%% %%Transaction Data Collector Policy|transaction-data-collector-policy%%, the result of which (in the end) is a set of %%validated|validate%% data that can serve the purpose of deciding whether or not to commit to the transaction;
-  - receive similar requests from its %%peer %%party|party%%|peer-party%%, and respond to such requests in compliance with the rules of its  %%principal's|principal%% %%Transaction Data Collector Policy|transaction-data-collector-policy%%;
+  - receive similar requests from its %%peer %%party|party%%|peer-party%%, and respond to such requests in %%compliance|compliance%% with the rules of its  %%principal's|principal%% %%Transaction Data Collector Policy|transaction-data-collector-policy%%;
 - has a mechanism to ensure that within a %%transaction|transaction%%, it uses the latest (most receent) %%Transaction Data Collector Policy|transaction-data-collector-policy%% of its %%principal|principal%%.
 
 ### Deprecated - TVE Functionality
