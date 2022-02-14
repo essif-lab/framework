@@ -20,11 +20,11 @@ The eSSIF-Lab Business Architecture aims to establish a %%terminology|terminolog
 - thinking and reasoning about SSI-related topics and how that contributes to realizing the [eSSIF-Lab vision](essifLab-vision);
 - creating business artifacts that help organizations to adopt SSI and transform their policies, information management, administrative processes and supporting business applications (systems) so that they can reap the benefits.
 - creating technology that provide the necessary IT functionalities that allow the supporting business applications to efficiently and effectively communicate with corresponding applications of other parties;
-- discussing and resolving issues related to the design and specifications of interfaces, protocols and policies, not only at the technological level, but also at the business process and compliance/policy levels;
+- discussing and resolving issues related to the design and specifications of information processes, interfaces, protocols and policies, not only at the technological level, but also at the business process and compliance/policy levels;
 - designing and developing technical applications or platforms that support the management of such design and specification processes, both for individual parties as for business ecosystems.
 
-To this end, this document provides an overview of
-- the world model that is being used to think/reason about the purposes of eSSIF-Lab, how to realize them, and how to communicate about all that;
+This document provides an overview of
+- the (decentralized) realization of %%objectives|objective%%, including their %%Governance|governance%% (and %%management|management%%), %%risk management|risk-management%%, and %%compliance|compliance%%.
 - the functions (capabilities) that individual %%parties|party%% need in order to electronically support %%business transactions|transaction%%;
 - the interactions between these functions that make such %%business transactions|transaction%% happen;
 - the various %%policies|policy%% that %%parties|party%% have to govern, and put in place in order for the technical components that provide these capabilities to function in accordance with their (subjective) rules, working-instructions and other guidance.

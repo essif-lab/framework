@@ -42,7 +42,7 @@ In order to reap the benefits expected by the business model, issuers should pro
 
 From the issuer perspective, it isn't all that important what the 'envelope' is in which the data is conveyed, as long as the assurances for provenance and integrity (and perhaps some others) for the data are in place. Verificable credentials are good, but so are X.509 attribute certificates, Attribute-Based Credentials ([ABCs](https://www.springer.com/gp/book/9783319144382)), etc. Parties may want the ability to specify which of these (not) to use, but that's a secondary concern.
 
-In short, as an issuer, a party is interested in creating value from sharing knowledge about other entities. A party's “issuer” governance process is concerned with making (and continually reviewing and updating) decisions about e.g.:
+In short, as an issuer, a party is interested in creating value from sharing knowledge about other entities. A party's “issuer” %%governance|governance%% process|%governance% process is concerned with making (and continually reviewing and updating) decisions about e.g.:
 - the kinds of qualified data it is willing to provide (what they consist of, what characteristics are to be ensured, liability to take, etc.;
 - the kinds of credentials ('envelopes') it is willing to use for providing that data;
 - under which conditions such credentials may be issued (e.g. only to a party that is mentioned in the qualified data);
@@ -58,10 +58,10 @@ Obtaining data through the SSI infrastructure requires that the party first need
 
 Machine-readable validation policies enable generic IT to collect data for populating a formula using the SSI infrastructure, with the guarantee that such data is valid for the purpose in which the formula is used. Human-readable validation policies enable the designated employees of the organization to do the same, using other kinds of infrastructure (e.g. Internet, phone, mail, …).
 
-In short, as a %%validator|validator%%, a %%party|party%% creates value by obtaining data that is valid for processing in specific cases. A party's “validator” governance process is concerned with making (and continually reviewing and updating) qualified decisions about e.g.:
+In short, as a %%validator|validator%%, a %%party|party%% creates value by obtaining data that is valid for processing in specific cases. A party's “validator” %%governance|governance%% process|%governance% process is concerned with making (and continually reviewing and updating) qualified decisions about e.g.:
 - the mapping between variables in formulae, and fields from credentials of specific issuers;
 - validation criteria for each of these mappings;
-- what risks it runs in case the claims made within the credential are not true, and what assurances may be called for in order to reduce such risks to an acceptable level
+- what %%risks|risk%% it runs in case the claims made within the credential are not true, and what assurances may be called for in order to reduce such %%risks|risk%% to an acceptable level
 
 #### Holder perspective
 

@@ -15,7 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 This is work that is being envisaged.
 :::
 
-Traditional risk management (RM) frameworks, such as [ISO 31000](https://www.iso.org/obp/ui/#iso:std:iso:31000:ed-2:v1:en), [COSO](https://www.coso.org/Pages/default.aspx), or [NIST 800-30](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf) have emerged in a time where %%centralized organizational leadership|authority%% and auditing, and cyclic ([PDCA](https://en.wikipedia.org/wiki/PDCA)) processes for risk management, were prevalent. Most (large) enterprises have adopted (a mix of) them, and many have been certified (e.g. against [ISO 9001](https://www.iso.org/iso-9001-quality-management.html) or [ISO 27001](https://www.iso.org/isoiec-27001-information-security.html)) thereby demonstrating they govern and run the associated (risk)management processes as intended, and are compliant with such standards and often also with applicable regulations.
+Traditional %%risk management|risk-management%% (RM) frameworks, such as [ISO 31000](https://www.iso.org/obp/ui/#iso:std:iso:31000:ed-2:v1:en), [COSO](https://www.coso.org/Pages/default.aspx), or [NIST 800-30](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf) have emerged in a time where %%centralized organizational leadership|authority%% and auditing, and cyclic ([PDCA](https://en.wikipedia.org/wiki/PDCA)) processes for %%risk management|risk-management%%, were prevalent. Most (large) enterprises have adopted (a mix of) them, and many have been certified (e.g. against [ISO 9001](https://www.iso.org/iso-9001-quality-management.html) or [ISO 27001](https://www.iso.org/isoiec-27001-information-security.html)) thereby demonstrating they govern and run the associated (risk)management processes as intended, and are compliant with such standards and often also with applicable regulations.
 
 However, these frameworks don't provide practical guidance for all situations. For example, it is well-known that SMEs or other parties that do not have the required (expert) knowledge, time and other resources to setup and run such processes, are pretty much left to their own devices. Also, %%SSI|self-sovereign-identity%% provides contexts for which the traditional RM frameworks do not provide the necessary guidance.
 
@@ -23,7 +23,7 @@ This pattern provides a way of thinking about %%risks|risk%% that is suitable fo
 
 ## The Generic Risk Management Process (according to ISO)
 
-The following figure, that also appeared in ISO standards 31000 and 27005, shows a generic risk management process:
+The following figure, that also appeared in ISO standards 31000 and 27005, shows a generic %%risk management|risk-management%% process:
 
 <img
   alt="High-level transaction negotiation"
@@ -50,7 +50,7 @@ The 'risk treatment' activity aims to do whatever is necessary to manage the una
 - risk financing (internally e.g. retention, or transfer e.g. buying insurance);
 - retaining the risk by informed decision.
 
-Your choices will have consequences, large or small, in the way you continue to operate. You might start doing some things differently, make changes in your IT or other tools, etc. These activities are outside the scope of risk management.
+Your choices will have consequences, large or small, in the way you continue to operate. You might start doing some things differently, make changes in your IT or other tools, etc. These activities are outside the scope of %%risk management|risk-management%%.
 
 The other two activities, 'Risk Communication and Consulation', and 'Monitoring and review' are not activities like the others in the sense that you continually have to communicate and consult with your stakeholders and advisors so that they can help you reach your objectives (and vice versa) and make good judgements and choices. You also need to continually monitor and review (the changes you have made in) the ways you work, the tools you use, and the context that you are in so that you will notice when risks arise that may not/no longer be acceptable, which will lead to a review of your context (context estanblishment) and a subsequent risk assessment.
 
@@ -76,7 +76,7 @@ But if we succeed here, this can be a real contribution,  not only for ToIP, but
 Secondly, governance and trust assurance should not be limited to IT security (ISO 27001, ISO 27005). It should also cover business risks, e.g. of a business transaction going sour. After all, I think that a large part of data in credentials that are being exchanged serve to provide information to parties that are negotiating/conducting a business transaction, so that they can (subjectively/autonomously) assess their individual transaction risk(level)s, and mitigate such risks such that the residual risk becomes acceptable. This, and other topics, aren't covered by ISO 27001 nor ISO 27005. So we should take a broader look than these.
 
 
-Traditional risk management (RM) frameworks are currently not fit for use in decentralized contexts. Frameworks such as ISO 31000, or COSO, (tacitly) assume centralized organizational leadership and auditing, and cyclic (PDCA) processes for risk management. While predominantly large enterprises have adopted (a mix of) them, it is way too cumbersome for SME's and individuals to work with. Also, their being adopted by enterprises suggests they are inappropriate in decentralized, networked contexts. This paper proposes a way for identifying and managing risks and doing the associated governance and compliance in a way that *is* appropriate in such contexts.
+Traditional %%risk management|risk-management%% (RM) frameworks are currently not fit for use in decentralized contexts. Frameworks such as ISO 31000, or COSO, (tacitly) assume centralized organizational leadership and auditing, and cyclic (PDCA) processes for %%risk management|risk-management%%. While predominantly large enterprises have adopted (a mix of) them, it is way too cumbersome for SME's and individuals to work with. Also, their being adopted by enterprises suggests they are inappropriate in decentralized, networked contexts. This paper proposes a way for identifying and managing risks and doing the associated governance and %%compliance|compliance%% in a way that *is* appropriate in such contexts.
 
 ## Introduction
 
@@ -96,7 +96,7 @@ Another reason is that the number of risks a person needs to deal with must be m
 
 A third reason is that risks should be relevant in order to be treated. For example, the risk of leaking a cryptographic key from a crypto chip that is vulnerable to power/timing-attacks is irrelevant e.g. when the chip and its battery are sealed in a physical casing. Also, the risk of crashing your car as a result of an autopilot failure is irrelevant if you never use the autopilot.
 
-The last reason we mention is that people generally prefer activities that help them realize their objectives rather than activities that do not (visibly) contribute. Many governance, RM and compliance (GRC) related activities fall in that second category, except perhaps for people whose job is 'doing GRC'. Having to do such activities is a typical trait of centrally organized GRC.
+The last reason we mention is that people generally prefer activities that help them realize their objectives rather than activities that do not (visibly) contribute. Many governance, RM and %%compliance|compliance%% (GRC) related activities fall in that second category, except perhaps for people whose job is 'doing GRC'. Having to do such activities is a typical trait of centrally organized GRC.
 
 The alternative for putting effort in preventing failures is focusing on the flip-side of that coin, which is: putting effort in realizing successes. It stimulates people to own the associated risks and manage them (it makes the pain go away). When the risks become unmanageable, the associated pain may indicate you have an objective of staying healthy, which you might mitigate by outsourcing the realization of one or more of your objectives.
 
@@ -108,17 +108,17 @@ Different methods have been around for some time now that may be part of decentr
 
 Another, complementary method is [Networked Risk Management (NRM)](https://repository.tno.nl/islandora/object/uuid:95b1a97a-2d5c-41b1-b5d9-43bcd04d981b). Next to the role of 'objective Owner', NRM adds two others: the Producer is the party that is responsible for realizing the results by which it can be established (e.g. by an auditor, or customers) whether or not an objective is met/realized/fulfilled. A Consumer is a party that uses these results for the purpose of realizing one or more objectives that it owns. An objective Owner states the objective, specifies the (auditable) results, and must be the Producer and/or Consumer thereof. Risks are associated with an objective, and map the objective to a risk level, i.e. a measure that is meaningful to the owner and that indicates the extent to which the objective is not (going to be) met. Pragmatically: the amount of 'pain' (discomfort, anxiety, ...) the objective's Owner experiences as it contemplates the chances of it (not) being realized.
 
-In analogy to 'Self-Sovereign Identity' - a term used to refer to the sovereignty/autonomy of individuals (and organizations) when it comes to identity-related matters, we introduce the phrase 'Self-Sovereign GRC' to refer to the sovereignty/autonomy of individuals (and organizations) when it comes to setting their objectives (governance), managing the associated risks of (not) realizing them (risk management), and doing what is necessary to become and/or remain part of a community of other self-sovereign entitites (compliance).
+In analogy to 'Self-Sovereign Identity' - a term used to refer to the sovereignty/autonomy of individuals (and organizations) when it comes to identity-related matters, we introduce the phrase 'Self-Sovereign GRC' to refer to the sovereignty/autonomy of individuals (and organizations) when it comes to setting their objectives (governance), managing the associated risks of (not) realizing them (%%risk management|risk-management%%), and doing what is necessary to become and/or remain part of a community of other self-sovereign entitites (%%compliance|compliance%%).
 
-The purpose of this paper is to help the reader understand what this is all about, so that we can apply the ideas that are deemed useful in the [ToIP Governance Stack Working Group](https://wiki.trustoverip.org/display/HOME/Governance+Stack+Working+Group). ideas in the better explain NRM-based risk management, NRMBecause of its focus on NRM is ideally suited for decentralized contexts.
+The purpose of this paper is to help the reader understand what this is all about, so that we can apply the ideas that are deemed useful in the [ToIP Governance Stack Working Group](https://wiki.trustoverip.org/display/HOME/Governance+Stack+Working+Group). ideas in the better explain NRM-based %%risk management|risk-management%%, NRMBecause of its focus on NRM is ideally suited for decentralized contexts.
 
 ## Mental Model
 
-This chapter describes the mental model for decentralized risk management. The model uses [eSSIF-Lab terminology](https://essif-lab.github.io/framework/docs/essifLab-glossary), in particular that which is related to [Parties, Actors and Actions](https://essif-lab.github.io/framework/docs/terms/pattern-party-actor-action).
+This chapter describes the mental model for decentralized %%risk management|risk-management%%. The model uses [eSSIF-Lab terminology](https://essif-lab.github.io/framework/docs/essifLab-glossary), in particular that which is related to [Parties, Actors and Actions](https://essif-lab.github.io/framework/docs/terms/pattern-party-actor-action).
 
 ### Summary
-This mental model captures the foundational concepts and relations that we need for thinking about decentralized risk management. It answers questions such as "What is a risk?", "Who is to address what risks?", "What's in it for me?", "How do the terms 'Governance', 'Risk management' and 'Compliance' relate to one another?", and more.
+This mental model captures the foundational concepts and relations that we need for thinking about decentralized %%risk management|risk-management%%. It answers questions such as "What is a risk?", "Who is to address what risks?", "What's in it for me?", "How do the terms 'Governance', '%%Risk management|risk-management%%' and '%%Compliance|compliance%%' relate to one another?", and more.
 
 The model acknowledges the sovereignty (autonomy) that parties have in their
 - governance, i.e. as they decide which objectives to pursue, how to organize their realization, how and when to change or update their objectives, etc.
-- risk management (RM), i.e. identify the assess the
+- %%risk management|risk-management%% (RM), i.e. identify the assess the

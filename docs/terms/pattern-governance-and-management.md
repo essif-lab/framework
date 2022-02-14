@@ -12,11 +12,11 @@ date: 20210830
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Purpose
-The **Governance and Management pattern** captures the concepts and relations that explain how %%parties|party%% organize that %%their|owner%% %%objectives|objective%% are realized, either by doing the associated work themselves (%%management|management%%), or by arranging for other %%parties|party%% to do that. The contribution of this pattern is to show how this is done, based on the idea that every %%objective|objective%% has a single %%party|party%% that %%owns|owner%% the %%objective|objective%%.
+The **Governance and Management pattern** captures the concepts and relations that explain how %%parties|party%% organize that %%their|owner%% %%objectives|objective%% are realized, either by doing the associated work themselves (%%management|management%%), or by arranging for other %%parties|party%% to do that (%%governance|governance%%). The contribution of this pattern is to show how this is done, based on the idea that every %%objective|objective%% is %%owned|owned%% by a single %%party|party%%.
 
 ### Introduction
 
-Whether or not an %%objective|objective%% is realized can be seen by the status of the associated results, as is explained %%there|objective%%. The following figure is a recap of the %%objective|objective%%-concept (using the usual **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**):
+Whether or not an %%objective|objective%% is realized can be seen by the status of the associated results, as is explained [there](../terms/objective). The following figure is a recap of the %%objective|objective%%-concept (using the usual **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**):
 
 <img
   alt="A Party's Objectives"

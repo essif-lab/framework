@@ -16,7 +16,7 @@ A **Legal System** is a system in which rules are defined ([legislature](https:/
 The %%Jurisdictions pattern|pattern-jurisdiction%% provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
-The ability to distinguish between (non)legal-systems is a very generic enabler to tell which rules (laws, policies, guidelines, etc.) will apply within its %%scope|scope%%, as well as to evaluate the risks that we run when not complying with the rules. Conversely, the %%party|party%% that operates a legal system may provide additional rules to help mitigate such risks.
+The ability to distinguish between (non)legal-systems is a very generic enabler to tell which rules (laws, policies, guidelines, etc.) will apply within its %%scope|scope%%, as well as to evaluate the %%risks|risk%% that we run when not complying with the rules. Conversely, the %%party|party%% that operates a legal system may provide additional rules to help mitigate such %%risks|risk%%.
 
 ### Criteria
 A system in which rules are defined ([legislature](https://en.wikipedia.org/wiki/Legislature)), can be enforced ([executive](https://en.wikipedia.org/wiki/Executive_(government))), and a mechanism is defined to resolve conflicts ([judiciary](https://en.wikipedia.org/wiki/Judiciary)).

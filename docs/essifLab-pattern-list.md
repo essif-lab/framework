@@ -8,7 +8,7 @@ date: 20210908
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-Within eSSIF-Lab, we maintain a set of [mental models](https://en.wikipedia.org/wiki/Mental_model), which we also call %%patterns|pattern%%, which are descriptions, both casual and formal, of sets of %%concepts|concept%% (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic.They have been crafted so that they may serve as a basis for architecting, desiging, and implementing IT components and their governance processes.
+Within eSSIF-Lab, we maintain a set of [mental models](https://en.wikipedia.org/wiki/Mental_model), which we also call %%patterns|pattern%%, which are descriptions, both casual and formal, of sets of %%concepts|concept%% (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic.They have been crafted so that they may serve as a basis for architecting, desiging, and implementing IT components and their %%governance|governance%% processes|%governance% processes.
 We stress that while they represent a specific way of looking at things, there are many more, and in the end, all that matters is the extent in which they are succesfully used.
 
 <img
@@ -69,7 +69,7 @@ The envisaged [eSSIF-Lab Identity Pattern](./terms/pattern-identifier) will desc
 The envisaged [eSSIF-Lab Trust Pattern](./terms/pattern-trust) will describe the conceptual nature of %%trust|trust%% - limited to SSI contexts
 
 ### [Decentralized Governance, Risk Management and Compliance (GRC)](./terms/pattern-decentralized-grc)
-The envisaged [Decentralized GRC pattern](./terms/pattern-decentralized-grc) will describe how %%parties|party%% can set objectives, and pursue them to be succesful. The latter means that the party must be capable of assessing and managing the risks associated with not realizing them. In a decentralized world, this means that it needs to depend on other parties, that may or may not be too reliable. Also, it means that the party must be able to set and realize objectives to satisfy requirements of other parties (compliance).
+The envisaged [Decentralized GRC pattern](./terms/pattern-decentralized-grc) will describe how %%parties|party%% can set objectives, and pursue them to be succesful. The latter means that the party must be capable of assessing and managing the risks associated with not realizing them. In a decentralized world, this means that it needs to depend on other parties, that may or may not be too reliable. Also, it means that the party must be able to set and realize objectives to satisfy requirements of other parties (%%compliance|compliance%%).
 
 ### [Party Representation](./terms/pattern-party-representation)
 The envisaged [Party Representation pattern](./terms/pattern-party-representation) will capture the foundational concepts and relations that we need for thinking about how %%parties|party%% can represent one another in various circumstances, and answering questions such as 'in what ways can %%parties|party%% be represented?', 'what kind(s) of %%entities|entity%% can represent %%parties|party%%', 'how can we deal with representation constraints, i.e. provide guarantees that the represented %%party|party%% isn't completely at the mercy of the one representing it?'.
