@@ -1,5 +1,5 @@
 // This script helps to create the TOIP version of the eSSIF-Lab glossary. Here is how it works:
-// 1. Edit (create if needed) the file `docs/essifLab-glossary-markdown-source.html`, and remove any contents.
+// 1. Edit (create if needed) the file `docs/zzz-terminology-create-toip-glossary.html`, and remove any contents.
 // 2. Scrape the htmltext and paste it in this file, as follows:
 //    a. browse to the glossary webpage https://essif-lab.github.io/framework/docs/essifLab-glossary.
 //    b. right-click in the frame with the glossary-html, select 'inspect'.
@@ -8,7 +8,7 @@
 // 2. Execute this script (ctrl-shift-P > Batch Replace). That converts the contents to a complete TOIP style glossary.
 // 3. Overwrite https://github.com/trustoverip/essiflab/blob/main/docs/glossary.html with the created contents.
 
-filter "docs/essifLab-glossary-markdown-source.html"
+filter "docs/zzz-terminology-create-toip-glossary.html"
 
 replace-regex "(</p>)?<h3>"
 with "</dd>\n\n"
