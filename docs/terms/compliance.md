@@ -18,7 +18,7 @@ date: 20220203
 - the processes that it runs must comply with applicable standards, e.g. ISO 9001 or ISO 27001
 - the laws and regulations of the country in which the %%party|party%% is established must be complied with.
 
-%%Parties|party%% that have formulated compliance-%%objectives|objective%% will need to %%manage|management%% them. The term %%compliance-management|compliance-management%% is used to refer to the %%management|management%% processes that a %%party|party%% runs to realize these %objectives.
+%%Parties|party%% that have formulated compliance-%%objectives|objective%% will need to %%manage|management%% them. The term %%compliance-management|compliance-management%% is used to refer to the %%management|management%% processes that a %%party|party%% runs to realize these %%objectives|objective%%.
 
 Compliance with a normative framework (i.e. a set of requirements to be complied with) is typically established by an (independent) auditor, that uses an %%assessment framework|assessment-framework%% to evaluate the extent to which the %%party|party%% complies with the requirements of the normative framework. Realizing all compliance-objectives, however, would typically mean that %%compliance|compliance%% with various such frameworks will need to be established.
 

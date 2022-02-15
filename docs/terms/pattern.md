@@ -11,7 +11,7 @@ date: 20210804
 ---
 
 ### Short Description
-A **pattern** (also called **[mental model](https://en.wikipedia.org/wiki/Mental_model)** or **[conceptual model](https://en.wikipedia.org/wiki/Conceptual_model)**) captures a limited set of %%concepts|concept%% (ideas), relations between them, and constraints, such that together they form a coherent and consistent whole. They have been crafted so that they may serve as a basis for architecting, desiging, and implementing IT components and their %%governance|governance%% processes|%governance% processes.
+A **pattern** (also called **[mental model](https://en.wikipedia.org/wiki/Mental_model)** or **[conceptual model](https://en.wikipedia.org/wiki/Conceptual_model)**) captures a limited set of %%concepts|concept%% (ideas), relations between them, and constraints, such that together they form a coherent and consistent whole. They have been crafted so that they may serve as a basis for architecting, desiging, and implementing IT components and their %%governance|governance%% processes.
 
 Patterns use (tangible) %%terms|term%% to refer to these (intangible) concepts and relations, so in order to be consistent, a pattern must reside in the scope that defines these concepts and relations. A pattern may also 'connect' concepts of different scopes (preferably no more than two), which you might call an 'interconnection pattern' between these scopes.
 

@@ -15,7 +15,7 @@ date: 20220206
 
 For the %%risk management|risk-management%% of a %%party|party%% to be *complete*, it must define %%risk objectives|risk-objective%% in such a way that when every of these %%objectives|objective%% has been realized, the remaining (residual) %%risks|risk%% (associated with the set of all %%objectives|objective%% %%owned|owned%% by this %%party|party%%) is an acceptable whole.
 
-For the %%risk management|risk-management%% of a %party to be *coherent*, any %%risk management|risk-management%% process that it runs (or has outsourced) will only take %%risks|risk%% into account for %%objectives|objective%% that are %%owned|owned%% by that %%party|party%%. This can easily be explained by observing that both the %%objectives|objective%% and (associated) %%risks|risk%% should be managed within the context of a single %%knowledge|knowledge%%, being that of their %%owner|owner%%.
+For the %%risk management|risk-management%% of a %%party|party%% to be *coherent*, any %%risk management|risk-management%% process that it runs (or has outsourced) will only take %%risks|risk%% into account for %%objectives|objective%% that are %%owned|owned%% by that %%party|party%%. This can easily be explained by observing that both the %%objectives|objective%% and (associated) %%risks|risk%% should be managed within the context of a single %%knowledge|knowledge%%, being that of their %%owner|owner%%.
 
 For the %%risk management|risk-management%% of a %%party|party%% to be *consistent*, it must ensure that the %%risk management|risk-management%% detects signals that indicate a change in the risks, e.g. signals that detect:
 - a change in %%risk level|risk-level%% of an existing %%objective|objective%%;

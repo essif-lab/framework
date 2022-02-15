@@ -6,12 +6,12 @@ type: concept
 typeid: control-objective
 stage: draft
 hoverText: "Control objective (of a Party): an Objective, owned by that Party, that aims to contribute to the realization of another (set of) Objective(s) of that Party, by producing results that this Party needs to realize these other Objective(s)."
-glossaryText: "an %%objective^objective%%, owned by a %%party^party%%, that aims to contribute to the realization of another (set of) %%objective(s)^objective%% of that %%party^party%%, by producing results that this %%party^party%% needs to realize these other %objective(s)."
+glossaryText: "an %%objective^objective%%, owned by a %%party^party%%, that aims to contribute to the realization of another (set of) %%objective(s)^objective%% of that %%party^party%%, by producing results that this %%party^party%% needs to realize these other %%objective(s)^objective%%."
 date: 20220203
 ---
 
 ### Short Description
-A **control objective** is an %%objective|objective%%, owned by a %%party|party%%, that aims to contribute to the realization of another (set of) %%objective(s)|objective%% of that %%party|party%%, by producing results that this %%party|party%% needs to realize these other %objective(s). A control objective has the property that it is both %%managed|management%% (as it produces specific results) and also %%governed|governance%% (as it uses these results - as a contribution to the realization of other objectives of that %%party|party%%) by (or on behalf of) its %%owner|owner%%.
+A **control objective** is an %%objective|objective%%, owned by a %%party|party%%, that aims to contribute to the realization of another (set of) %%objective(s)|objective%% of that %%party|party%%, by producing results that this %%party|party%% needs to realize these other %%objective(s)|objective%%. A control objective has the property that it is both %%managed|management%% (as it produces specific results) and also %%governed|governance%% (as it uses these results - as a contribution to the realization of other objectives of that %%party|party%%) by (or on behalf of) its %%owner|owner%%.
 
 The %%governance|governance%% aspect entails the specification of the results that are needed, and the characteristics that they should have in order to be a useful and relevant contribution for the %%objective|objective%% for which it is a control.  as a realization
 
