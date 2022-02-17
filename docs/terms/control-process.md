@@ -69,9 +69,9 @@ The results of this activity are that all of the the following criteria are met:
 #### 4. Reflection/Learning.
 _The purpose of this %%activity|action%% is to provide clarity about the next steps that should be taken._
 
-Quite some time may elapse between setting control objectives, the associated effect indicators/norms, and judging the results/effects. Meanwhile, all sorts of things can change (e.g. laws, the market, political situation, competitors, technology, the organization's obligations, etc.). Such changes may cause control objectives, effect indicators or norms to become outdated. The experience of having judged the results/effects in the previous step is invaluable, because the person that has done this will have 'felt' any contradiction or discrepancy between the effect indicator values and norms, and his own sense of whether the results/effects have been achieved. This information and feeling allows the governor (and others) to ponder, e.g. about:
+Quite some time may elapse between setting control objectives, the associated effect indicators/norms, and judging the results/effects. Meanwhile, all sorts of things can change (e.g. laws, the market, political situation, competitors, technology, the organization's %%obligations|obligation%%, etc.). Such changes may cause control objectives, effect indicators or norms to become outdated. The experience of having judged the results/effects in the previous step is invaluable, because the person that has done this will have 'felt' any contradiction or discrepancy between the effect indicator values and norms, and his own sense of whether the results/effects have been achieved. This information and feeling allows the governor (and others) to ponder, e.g. about:
 –  fine-tuning or modifying control objectives, indicators, norms;
-–  modifying objectives that the organization has committed itself to realize (obligations);
+–  modifying objectives that the organization has committed itself to realize (%%obligations|obligation%%);
 –  possibilities for influencing circumstances/stakeholders;
 –  celebrating (unexpectedly) well achieved objectives.
 

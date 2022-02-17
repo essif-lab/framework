@@ -5,27 +5,38 @@ scopeid: essifLab
 type: concept
 typeid: ownership
 stage: draft
-hoverText: "Ownership (of an Entity over another in a Jurisdiction): the rights and duties, as defined and enforced in that Jurisdiction, of that Entity to enjoy, dispose of, and control the other Entity."
-glossaryText: "the rights and duties, as defined and enforced in that %%jurisdiction^jurisdiction%%, of that %%entity^entity%% to enjoy, dispose of, and control the other %%entity^entity%%."
-date: 20210601
+hoverText: "Ownership (of an Entity over another in a Jurisdiction): a relationship between two Entities in which one of them (called the Owner) has legal, rightful or natural rights and/or duties to enjoy, dispose of, and control the other (called the Owned)."
+glossaryText: "a relationship between two %%entities^entity%% that exists within the %%scope of control^scope-of-control%% of a %%jurisdiction^jurisdiction%%, in which one of them (called the %%owner^owner%%) has legal, rightful or natural rights and/or duties to enjoy, dispose of, and control the other (called the %%owned^owned%%)."
+date: 20220218
 ---
 
 ### Short Description
-<!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
-**Ownership** is a relationship between two %%entities|entity%% in which one of these %%entities|entity%% (called the %%owner|owner%%) is entitled to enjoy, dispose of, and control the other %%entity|entity%% in an pretty much absolute (sovereign) fashion. Any ownership relationship is grounded in ((the rules of) the %%legal system|legal-system%% of) a specific %%jurisdiction|jurisdiction%%, that maintains and enforces these rules, and that has means to resolve any disputes arising from that. To do this, both %%entities|entity%% must be %%legal entities|legal-entity%% in that %%jurisdiction|jurisdiction%%.
+**Ownership** is a relationship between two %%entities|entity%% that exists within the %%scope of control|scope-of-control%% of a %%jurisdiction|jurisdiction%%, in which one of them (called the %%owner|owner%%) has legal, rightful or natural rights and/or duties to enjoy, dispose of, and control the other (called the %%owned|owned%%).
 
-We may use the phrase %%natural ownership|ownership%% to refer to an ownership relation that exists in the %%jurisdiction|jurisdiction%% 'Nature' (see the notes of %%jurisdiction|jurisdiction%%). This enables us to talk about things as 'the (natural) ownership of an %%assertion|assertion%%'.
+The titles are specified by (the rules of) the %%legal system|legal-system%% of the %%jurisdiction|jurisdiction%%, and the meaning of an ownership instance (i.e.: what you can(not) do with it) depend on the ways in which such rules are enforced, and disputes resolved. Obviously both the %%owner|owner%% and the %%owned|owned%% must be known (i.e.: be %%legal entities|legal-entity%%) in that %%jurisdiction|jurisdiction%%).
+
+We may use adjectives in combination with 'ownership' to signify the kind of %%jurisdiction|jurisdiction%% within which that relationship exists. For example, 'legal ownership' signifies that the relationship exists in a %%legal jurisdiction|legal-jurisdiction%%, and 'natural ownership' that it is in the %%jurisdiction|jurisdiction%% called 'nature'. An example of natural ownership is any statement uttered or authored by (or on behalf of) a %%party|party%% (the %%owner|owner%% of the statement), because %%parties|party%% have a natural right to express themselves.
 
 ### Purpose
-**Ownership** is a means by which %%jurisdictions|jurisdiction%% provide assurances to %%parties|party%% (within its scope) that they can enjoy, dispose of and control in pretty much any way they like. The %%legal system|legal-system%% of the %%jurisdiction|jurisdiction%% specifies these rights, and provides ways in which the %%owner|owner%% can exercize them (that provides the assurance).
+**Ownership** is a means by which %%jurisdictions|jurisdiction%% ensure that %%owners|owner%% can autonomously enjoy, dispose of and control the %%entities|entity%% that they %%own|owner%% to the extent of the entitlements (rights and duties) as defined in the %%jurisdiction's|jurisdiction%% %%legal system|legal-system%%, and within its %%scope of control|scope-of-control%%.
 
 ### Criteria
-An **ownership** is a relationship between two %%legal entities|legal-entity%% (called the %%owner|owner%% and the %%owned|owned%%) within a single %%jurisdiction|jurisdiction%%, whose %%legal system|legal-system%% defines and enforces (a) rules that recognize the power of the %%owner|owner%% to enjoy, dispose of and control the %%owned|owned%% in an absolute (sovereign) fashion, and (b) rules that limit the absoluteness of that power.
-
-### Related Concepts
-- %%Owner|owner%%
-- %%Owned|owned%%
+**Ownership** is a relationship between two %%legal entities|legal-entity%% (called the %%owner|owner%% and the %%owned|owned%%) within a single %%jurisdiction|jurisdiction%%, whose %%legal system|legal-system%% (a) defines the rights and duties of the %%owner|owner%% to enjoy, dispose of and control the %%owned|owned%%, (b) enforces them, and (c) provides a means to sette disputes.
 
 ### Notes
-- Owning something does not imply posessing it (and vice versa). For example, if you find a coin that doesn't belong to you, you possess it but do not own it. Also, its rightful owner obviously owns it, but doesn't possess it at that point in time.
-- Ownership has no meaning outside of a %%jurisdiction|jurisdiction%% that defines *and* enforces the rights and duties of the owner to enjoy, dispose of, and control the owned.
+
+1. %%Ownership|ownership%% *only* has meaning within a %%jurisdiction|jurisdiction%% that defines *and* enforces a set of rights and duties of the %%owner|owner%% and/or the %%owned|owned%%. The value of %%ownership|ownership%% is typically proportional to the extent in which the %%jurisdiction|jurisdiction%% enforces such rights and duties.
+
+2. %%Owning|ownership%% something does not imply posessing it (and vice versa). For example, if you find a coin that doesn't belong to you, you possess it but do not %%own|owner%% it. Also, its rightful %%owner|owner%% obviously %%owns|owner%% it, but doesn't possess it at that point in time. Still, a %%jurisdiction|jurisdiction%% may have rules that create or dissolve %%ownership|ownership%% relationships depending on who possesses the %%entity|entity%%.
+
+3. While %%owners|owner%% are typically %%parties|party%%, the model does not require this to be the case. Thus, if a %%jurisdiction|jurisdiction%% decides that riviers own their respective banks, the model does not disapprove. But such rivers and their banks do need to qualify as %%legal-entities|legal-entity%% within said %%jurisdiction|jurisdiction%%.
+
+4. The model does not set limitations on the kinds of %%entities|entity%% that can be %%owned|owned%%, other than that they need to be known in the %%jurisdiction(s)|jurisdiction%% that specify the rights and duties associated with %%ownership|ownership%% relationships.
+
+### Examples
+
+1. Many %%legal jurisdictions|legal-jurisdiction%% have legislation  (e.g. [property law](https://en.wikipedia.org/wiki/Property_law)) that states who owns what - houses, cars, etc.
+
+2. In this framework, we say that
+  a. an %%objective|objective%% that a particular %%party|party%% pursues (i.e. towards which a %%party|party%% directs effort), is %%owned|owned%% by that %%party|party%%, and the rights and duties associated with this %%ownership|ownership%% are defined by the %%jurisdiction|jurisdiction%% that the %%party|party%% is itself.
+  b. a %%risk|risk%% that is associated with an %%objective|objective%% is %%owned|owned%% by the %%owner|owner%% of that %%objective|objective%%, and the rights and duties 

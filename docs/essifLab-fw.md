@@ -41,7 +41,7 @@ The participants of a transaction are %%parties|party%%, that employ %%actors|ac
 
 The [*DEMO*](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations) transactions pattern (which is what we use) divides transactions in three phases:
 - a negotiation phase, in which one or more agents of each %%participant|participant%% exchange data for the purpose of establishing a %%contract|transaction-agreement%% that specifies what the %%transaction|transaction%% entails. This phase results either in a commitment decision of all participants, or the termination of the transaction because one of them quits.
-- an execution phase, in which (perhaps other) agents of the same principals work (execute actions) to fulfill the obligations of the agreement. This phase results in them stating that they have completed that work (or that they gave up).
+- an execution phase, in which (perhaps other) agents of the same principals work (execute actions) to fulfill the %%obligations|obligation%% of the agreement. This phase results in them stating that they have completed that work (or that they gave up).
 - the acceptance phase, in which one or more agents of each participant exchange data that leads to a decision to accept the results, or to escalate (e.g. start a lawsuit against the other participant)
 
 ### 2.4 SSI Roles

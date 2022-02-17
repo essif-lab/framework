@@ -14,9 +14,9 @@ date: 20210601
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
 An **Owner** is a role that a %%party|party%% performs when it is exercizing its legal, rightful or natural title to control some %%entity|entity%%.
 
-We interpret 'legal' and 'rightful' as terms that apply to _any_ %%jurisdiction|jurisdiction%% (that is: not just %%legal/national jurisdictions|legal-jurisdiction%%, but also those of other %%organizations|organization%% (%%parties|party%%).
+We interpret 'legal' and 'rightful' as terms that apply to _any_ %%jurisdiction|jurisdiction%% (that is: not just %%legal/national jurisdictions|legal-jurisdiction%%, but also those of other %%parties|party%%, specifically %%organizations|organization%% and %%individuals|human-being%%.
 
-We take 'natural' as a title that is provided by nature, as in 'the owner of an %%assertion|assertion%%'.
+We take 'natural' as a title that is provided by nature, as in 'the owner of an %%assertion|assertion%%', or 'the owner of a %%risk|risk%%'.
 
 For futher details, see %%ownership|ownership%%.
 

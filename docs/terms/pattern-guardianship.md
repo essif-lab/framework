@@ -79,7 +79,7 @@ Every guardianship type has one stakeholder role that is (also) referred to as i
 
 In our example of a 'Financial Guardianship', we could have stakeholder roles such as "Financial Administrator", "Judge" and "Party placed under administration" (which is the dependent role), and associate rights and duties e.g. as follows:
 1. "[Financial Administrator] must ensure that [Party placed under administration] has sufficient funds to pay for housing and food";
-2. "[Party placed under administration] may not enter into financial obligations";
+2. "[Party placed under administration] may not enter into financial %%obligations|obligation%%";
 3. "[Financial Administrator] has a right to look into, and transfer money out of any bank account of [Party placed under administration]";
 4. "[Judge] must establish the a compenstation arrangement for [Financial Administrator]";
 5. "Every year, [Financial Administrator] must submit a written report to [Judge] in which (s)he accounts for all actions taken under the guardianship arrangement";
@@ -101,7 +101,7 @@ Typically, the %%jurisdiction|jurisdiction%% that enforces (and governs) a %%gua
 
 Next, every duty/right type can now be converted into a duty/right instance, by replacing the role names by the names of the legal entities that fulfill the role. For example, assume that a guardianship arrangement is established in which Dick is assigned the role of 'person placed under administration', Alice the 'financial administrator' and Joe is the 'judge', whose role is to manage and supervise the guardianship arrangement. Then, the rights and duties would become:
 1. "Alice must ensure that Dick has sufficient funds to pay for housing and food";
-2. "Dick may not enter into financial obligations";
+2. "Dick may not enter into financial %%obligations|obligation%%";
 3. "Alice has a right to look into, and transfer money out of any bank account of Dick";
 4. "Joe must establish the a compenstation arrangement for Alice";
 5. "Every year, Alice must submit a written report to Joe in which (s)he accounts for all actions taken under the guardianship arrangement;
