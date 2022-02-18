@@ -8,6 +8,9 @@
 // 2. Errors in hoverTexts: `^hoverText[^%]*%` (you cannot use %-stuff in hoverTexts)
 // 3. Errors in glossaryTexts: `^glossaryText.*?%%[^%]*?\|` (%-stuff in glossaryTexts have a ^, not a |)
 
+// Combining 1a and 1b: `((?<!_%)(?<!%)(?<!\d)%(?!(%|\d))|(?<!%)(%?)%[A-Za-z](\1)[^%]*?$)`
+// Combining 2 and 3: `(^hoverText[^%]*%|^glossaryText.*?%%[^%]*?\|)`
+
 // This is a script that can be run by the Batch Replacer extension of VSCode.
 // You DO need to install the 'case conversion hack' files,
 // which you can find at https://github.com/angelo-mollame/batch-replacer/issues/11.

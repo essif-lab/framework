@@ -23,7 +23,7 @@ Whether or not an %%objective|objective%% is realized can be seen by the status 
   src={useBaseUrl('images/essif-lab-objective.png')}
 />
 
-*Figure 1. Parties and their %%objectives|objective%%.*
+*Figure 1. Parties and their objectives.*
 
 The core property of this model is that every %%objective|objective%% has precisely one %%owner|owner%%, which is the %%party|party%% that pursues the realization of the assocated results, from one (or both) of the two following perspectives:
 

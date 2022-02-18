@@ -15,7 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 ### Short Description
 An **Objective** is something toward which a %%party|party%% (its %%owner|owner%%) directs effort (an aim, goal, or end of action). Typically, the realization of an objective can be observed in terms of results, e.g. products that have been produced, services that are being provided, a situation or state (e.g. happiness) that has been continued etc. A %%party|party%% that has an objective does not necessarily produce these results itself; it may also seek to realize them in order to use (consume) them - thus, production and consumption of results are the two different perspectives from which an objective can be perceived.
 
-The %%ownership|ownership%% of the objective is implied, as it is part of that party's %%knowledge|knowledge%% (which is %%owned|owned%% by that %%party|party%%). This %%party|party%% must also be a %%jurisdiction|jurisdiction%%, as it creates, maintains and enforces the rules (rights and duties) that determine how the %%objective|objective%% is pursued (%%managed|management%% and/or %%governed|governance%%) and the associated %%risk|risk%% (that it %%owns|risk-owner%%) will be %%managed|management%%.
+The %%ownership|ownership%% of the objective is implied: it is the %%party|party%% that %%owns|owner%% the %%knowledge|knowledge%% of which it is a part. This %%party|party%% also (consciously or unconsciously) creates, maintains and enforces the rules (rights and duties) that determine how the %%objective|objective%% is pursued (%%managed|management%% and/or %%governed|governance%%). And it will (consciously or unconsciously) have a means in place to resolve any (internal) disputes that may arise. Thus, the  %%party|party%% qualifies as a %%jurisdiction|jurisdiction%%, the %%legal system|legal-system%% of which has the rules and mechanisms to %%manage|management%% and %%govern|governance%% the %%objectives|objective%% it %%owns|owner%%. The %%risk|risk%% associated with an %%objective|objective%% is %%owned|owned%% by the %%objective's|objective%% %%owner|owner%%. Typically, %%parties|party%% will also have %%objectives|risk-objective%%, the %%pursuit|risk-management%% of which ensures that the overall (residual) risk they bear becomes and remains acceptable.
 
 %%Objectives|objective%% cannot be shared, i.e.: have more than one %%owner|owner%%. If that were possible, then all %%owners|owner%% would necessarily, at any point in time, agree e.g. to whether or not the %%objective|objective%% was realized, what %%risks|risk%% are associated with it, etc., In other words: when one changes its mind (i.e. changes some attribute of the %%objective|objective%% in its %%knowledge|knowledge%%), the same change would *necessarily* take place in the %%knowledge|knowledge%% of all other %%owners|owner%%, which contradicts with the posulate that every %%party|party%% has full autonomy over its %%knowledge|knowledge%%.
 
@@ -39,8 +39,22 @@ The ability to distinguish between (non)objectives is relevant as objectives are
 An **objective** is something
 - that is %%owned|owned%% by a single %%party|party%%;
 - toward which its %%owner|owner%% directs its efforts: an aim, goal, or end of action - this action is related to the the owner producing the associated results (%%management|management%%) and/or consuming the results (%%governance|governance%%);
-- that can be realized, and this realization can be seen in terms as the coming into existence of results (e.g. products, services, a situation or state (e.g. happiness));
-- that may have a description (text, that represents and identifies the objective within the %%knowledge|knowledge%% of its %%owner|owner%%).
+- that can be realized, and this realization can be seen in terms as the coming into existence/continuation of results e.g. products, services, a situation or state (e.g. happiness);
+- that comes with a %%risk|risk%% (the severity of which can be expressed in a %%risk level|risk-level%%)
+
+An **objective** may have additional attributes. Here are some examples (including the multiplicity with which they can occur):
+- 'description' [0..1]: a descriptive text, typically the size of a sentence or short paragraph, that represents and identifies the objective within the %%knowledge|knowledge%% of its %%owner|owner%%.
+- 'consumer' [0..n]: the set of %%parties|party%% that will be using the results associated with the objective.
+- 'producer' [0..1]: a %%party|party%% that is committed to produce its associated results.
+- 'grouptags' [0..n]]: short texts that enable objectives to be grouped, and specific such groups to be treated in a specific way.
+- 'ground' [0..n]: justification(s) for %%owning|ownership%% the objective (ground, warrant).
+- 'riskLevel' [0..1]: the extent of discomfort that the %%owner|owner%% of the objective perceives as a result of uncertainties related to the realization of the objective.
+- 'resultCrit' [0..n]: criteria, used to determine the extent in which the intended delivered/produced/realized results exist.
+- 'ffpCrit' [0..n]: criteria, used to determine the extent in whcih results are fit for the purpose(s) for which the consumers will (be expected to) use them.
+- 'effCrit' [0..n]: criteria, used to determine the efficiency by which the results are produced (performance indicators)
+- 'implSpec' [0..1]: design specification that describes how the production mechanism of the results will be implemented.
+- 'operSpec' [0..1]: specification for operating the implemented production mechanism.
+- 'maintSpec' [0..1]: specification for maintaining the implemented production mechanism.
 
 ### Examples
 - generically: anything that, according to a %%party|party%% c.q. its way of thinking, is important to be realized or maintained, qualifies as an objective (and identifies its %%owner|owner%% as that %%party|party%%).
@@ -49,7 +63,7 @@ An **objective** is something
 
 ### Formalization
 
-Here is a visual representation of the formalization of this concept, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
+Here is a visual representation of the formalization of this concept, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)** (the figure does not show all of the optional attributes):
 
 <img
   alt="A Party's Objectives"
