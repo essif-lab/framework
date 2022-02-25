@@ -22,7 +22,7 @@ Since %%parties|party%% are autonomous in deciding what normative frameworks and
 - the processes that it runs must comply with standards such as ISO 9001 or ISO 27001
 - the laws and regulations of the country in which the %%party|party%% is established must be complied with.
 
-We use the term %%compliance management|compliance-management%% to refer to the %%management|management%% process that a%parties|party%% run for the purpose of realizing their %%compliance objectives|compliance-objective%% - in other words: to become and remain %%compliant|compliance%% (with the conformance criteria and/or normative frameworks they selected).
+We use the term %%compliance management|compliance-management%% to refer to the %%management|management%% process that a %%party|party%% runs for the purpose of realizing its %%compliance objectives|compliance-objective%% - in other words: to become and remain %%compliant|compliance%% (with the conformance criteria and/or normative frameworks they selected).
 
 Compliance with a set of conformance criteria or a normative framework is typically asserted by a %%party|party%%, and may be attested to by an (independent) auditor.
 

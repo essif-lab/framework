@@ -30,7 +30,7 @@
 
 eof = "(?:$(?![\r\n]))"
 beg = "(?<=\W%%)"
-mid = "(?<=\|)"
+mid = "(?<=(?:\^|\|))"
 end = "(?=%%(?:\W|%{eof}))"
 ss = "(?:['’]?s|\(s\))?"
 yies = "(y|y['’]s|ies)"
@@ -137,7 +137,8 @@ replace-regex "%{mid}data-(collector|discloser)-polic%{yies}%{end}"
 with "data-$1-policy"
 replace-regex "%{mid}data-(collector|discloser)%{ss}?%{end}"
 with "data-$1"
-
+replace-regex "%{mid}delegat(?:ed?|ing|or|ee)%{ss}?%{end}"
+with "delegate"
 replace-regex "%{mid}(definition|dependent|dictionary(-file)?)%{ss}?%{end}"
 with "$1"
 replace-regex "%{mid}\(?(?:electronic|digital)\)?-(actor|agent|colleague|communication-channel)%{ss}%{end}"
@@ -191,6 +192,8 @@ replace-regex "%{mid}((risk|control|compliance|assurance)-?level)%{ss}%{end}"
 with "$1"
 replace-regex "%{mid}(manager?s?|managed(?:-by)?|management|managing(?:-part%{yies})?)%{end}"
 with "management"
+replace-regex "%{mid}mandat(?:ed?|ing|or|ee)%{ss}?%{end}"
+with "mandate"
 
 // [O]
 replace-regex "%{mid}own(er)?%{ss}%{end}"
@@ -225,7 +228,7 @@ with "$1policy"
 
 // [Q-R]
 // For 'rights', see [D]uties
-replace-regex "%{mid}(risk|role|role-name)%{ss}%{end}"
+replace-regex "%{mid}(risk(-owner)?|role|role-name)%{ss}%{end}"
 with "$1"
 replace-regex "%{mid}(\(?networked-\)?|\(?(\(?de\)?)centralized-\)?)?risk-management%{end}"
 with "risk-management"
