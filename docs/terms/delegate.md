@@ -10,10 +10,6 @@ glossaryText: "the transferral of %%ownership^ownership%% of one or more %%oblig
 date: 20220222
 ---
 
-:::info Editor's note
-This is still work in progress
-:::
-
 ### Short Description
 A **delegate** is the transferral of %%ownership|ownership%% of one or more %%obligations|obligation%% of a %%party|party%% (the %%delegator|delegate%%), including the associated accountability, to another %%party|party%% (the %%delegatee|delegate%%), including the associated accountability, to another %%party|party%% (the %%delegatee|delegate%%). Doing so has several consequences:
 
@@ -29,14 +25,13 @@ While a %%party|party%% is free to %%delegate|delegate%% its %%obligations|oblig
 
 ### Purpose
 The purpose of (formal and/or explicit) %%delegates|delegate%% is that it enables %%parties|party%% to establish whether or not %%parties|party%% that have a specific %%action(s)|action%% executed, are entitled to do so.
+
 ### Criterion
 A **delegate** is the transferral of %%ownership|ownership%% of one or more %%obligations|obligation%% of a %%party|party%% (the %%delegator|delegate%%), including the associated accountability, to another %%party|party%% (the %%delegatee|delegate%%), including the associated accountability, to another %%party|party%% (the %%delegatee|delegate%%), which implies that the %%delegatee|delegate%% can realize such %%obligations|obligation%% as it sees fit.
 
 ### Examples
 
 Here's a translation of a [Dutch text](https://www.vijverbergadvocaten.nl/bestuursrecht/algemeen-bestuursrecht/mandaat-delegatie-en-volmacht) that explains %%delegation|delegate%%: *"If an administrative body transfers its power to take certain decisions to another administrative body, this is referred to as delegation. An administrative body can only delegate a power if the law allows it. The administrative body that transfers a power through delegation can no longer exercise this power itself. The administrative body that has been transferred the authority exercises this authority in its own name and under its own responsibility. He is therefore legally responsible for that exercise, and thus also the defendant in objection or appeal against a decision taken on the basis of the delegated power."*
-
-
 
 ### Notes
 
