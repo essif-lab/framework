@@ -10,11 +10,15 @@ glossaryText: "the capability to request %%peer agents^peer-agent%% to present (
 date: 20210601
 ---
 
+:::info Editor's note
+In other SSI contexts, this term has a different meaning. We intend to rework the famework in such a way that we can use this term in various ways (e.g. as a %%party|party%%, a %%role name|role-name%%, or an %%actor|actor%% that performs the %%role|role%% associated with the %%role name|role-name%%
+:::
+
 ### Short Description
 A **Verifier** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that supports the %%Transaction Data Collector|transaction-data-collector%% as it tries to acquire %%(verifiable) credentials|credential%% from (an %%agent|agent%% of) some other %%party|party%%, for the purpose of negotiating a %%business transaction|transaction%%.
 
 It does so by:
-- creating %%Presentation Requests|presentation-request%% (or Presentation Definition as it is called in the [draft DIF specfication for Presentation Exchange](https://identity.foundation/presentation-exchange)) that ask for such credentials,
+- creating %%presentation r|presentation-request%% (or Presentation Definition as it is called in the [draft DIF specfication for Presentation Exchange](https://identity.foundation/presentation-exchange)) that ask for such credentials,
 - sending them to an %%agent|agent%% of that other %%party|party%% that provides %%holder|holder%% functionality,
 - receiving a response from that %%agent|agent%% to the %%presentation request|presentation-request%% (i.e. a '%%Presentation|presentation%%'),
 - verifying that %%presentation|presentation%%, i.e. checking the signature and other proofs of the veracity of both the construction of the presentation and its contents
@@ -38,7 +42,7 @@ Typically, the Transaction Data Collector would ask the Verifier to provide a cr
 
 Then, the Verifier needs to know the address and protocol that it can use to reach a Holder component owned by the %%party|party%% that its Principal is trying to negotiate the transaction with. The Transaction Data Collector specifies this as part of the request - and it can do so because it has received the original request, and does all %%communication channel|communication-channel%% handling.
 
-Verifiers are not expected to handle every kind of credential (e.g. VC's, ABC's, etc.) that exists, but rather a specific subset. For (at least one of) the credential types, the Verifier can construct a so-called presentation request, i.e. a message that is specific for the credential type and/or associated protocol, which it can then send to the Holder's address.
+Verifiers are not expected to handle every kind of credential (e.g. VC's, ABC's, etc.) that exists, but rather a specific subset. For (at least one of) the credential types, the Verifier can construct a so-called %%presentation request|presentation-request%%, i.e. a message that is specific for the credential type and/or associated protocol, which it can then send to the Holder's address.
 
 This request message should contain at least
 
