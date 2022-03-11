@@ -1,108 +1,86 @@
-module.exports = {
-  sidebar_for_essifLab: {
-    'eSSIF-Lab':
-    [
-      { type: 'doc', id: 'essifLab' },
-      { type: 'doc', id: 'essifLab-vision' },
-      { type: 'doc', id: 'essifLab-objectives' },
-      { type: 'doc', id: 'essifLab-principles' },
-      { type: 'doc', id: 'essifLab-project' },
-      { type: 'category',
-        label: 'Framework',
-        items:
-        [
-          { type: 'doc', id: 'essifLab-fw' },
-          { type: 'doc', id: 'essifLab-terminology' },
-          { type: 'doc', id: 'essifLab-governance' },
-          { type: 'doc', id: 'essifLab-fw-bus-arch' },
-          { type: 'doc', id: 'essifLab-fw-func-arch' },
-        ]
-      },
-      { type: 'doc', id: 'essifLab-glossary' },
-      { type: 'category',
-        label: 'Mental Models',
-        items:
-        [
-          { type: 'doc', id: 'essifLab-pattern-list' },
-          { type: 'category',
-            label: 'Stable models',
-            items:
-            [ { type: 'doc', id: 'terms/pattern-party-actor-action' },
-              { type: 'doc', id: 'terms/pattern-jurisdiction' },
-              { type: 'doc', id: 'terms/pattern-guardianship' },
-            ]
-          },
-          { type: 'category',
-            label: 'Reviewable models',
-            items:
-            [ { type: 'doc', id: 'terms/pattern-terminology' },
-              { type: 'doc', id: 'terms/pattern-identity' },
-              { type: 'doc', id: 'terms/pattern-governance-and-management' },
+const sidebars = {
+  essifLabSideBar: [
+    { type: 'category',
+      label: 'eSSIF-Lab',
+      link: {type: 'doc', id: 'essifLab'},
+      collapsed: false,
+      items: [
+        'essifLab-vision',
+        'essifLab-objectives',
+        'essifLab-principles',
+        'essifLab-project',
+      ],
+    },
+    { type: 'category',
+      label: 'Framework',
+      link: {type: 'doc', id: 'essifLab-fw'},
+      collapsed: true,
+      items: [
+        'essifLab-terminology',
+        'essifLab-governance',
+        'essifLab-fw-bus-arch',
+        'essifLab-fw-func-arch',
+      ],
+    },
+    { type: 'category',
+      label: 'Mental Models',
+      link: {type: 'doc', id: 'essifLab-pattern-list'},
+      collapsed: true,
+      items: [
+        { type: 'category',
+          label: 'Stable models',
+          collapsed: true,
+          items:
+          [ 'terms/pattern-party-actor-action',
+            'terms/pattern-jurisdiction',
+            'terms/pattern-guardianship',
           ]
-          },
-          { type: 'category',
-            label: 'Envisaged models',
-            items:
-            [ { type: 'doc', id: 'terms/pattern-world-model' },
-              { type: 'doc', id: 'terms/pattern-identification' },
-              { type: 'doc', id: 'terms/pattern-identifier' },
-              { type: 'doc', id: 'terms/pattern-trust' },
-              { type: 'doc', id: 'terms/pattern-decision-making' },
-              { type: 'doc', id: 'terms/pattern-decentralized-grc' },
-              { type: 'doc', id: 'terms/pattern-party-representation' },
-              { type: 'doc', id: 'terms/pattern-mandates-delegation-hiring' },
-              { type: 'doc', id: 'terms/pattern-duties-and-rights' },
-            ]
-          },
+        },
+        { type: 'category',
+          label: 'Reviewable models',
+          collapsed: true,
+          items:
+          [ 'terms/pattern-terminology',
+            'terms/pattern-identity',
+            'terms/pattern-governance-and-management',
         ]
-      },
-      { type: 'doc', id: 'essifLab-fw-backlog' },
-    ],
-  },
-  sidebar_for_terminology: {
-    'Terminology':
-    [
-      { type: 'doc', id: 'essifLab-terminology' },
-      { type: 'doc', id: 'essifLab-glossary' },
-      { type: 'category',
-        label: 'Mental Models',
-        items:
-        [
-          { type: 'doc', id: 'essifLab-pattern-list' },
-          { type: 'category',
-            label: 'Stable models',
-            items:
-            [ { type: 'doc', id: 'terms/pattern-party-actor-action' },
-              { type: 'doc', id: 'terms/pattern-jurisdiction' },
-              { type: 'doc', id: 'terms/pattern-guardianship' },
-            ]
-          },
-          { type: 'category',
-            label: 'Reviewable models',
-            items:
-            [ { type: 'doc', id: 'terms/pattern-terminology' },
-              { type: 'doc', id: 'terms/pattern-identity' },
-              { type: 'doc', id: 'terms/pattern-governance-and-management' },
+        },
+        { type: 'category',
+          label: 'Envisaged models',
+          collapsed: true,
+          items:
+          [ 'terms/pattern-world-model',
+            'terms/pattern-identification',
+            'terms/pattern-identifier',
+            'terms/pattern-trust',
+            'terms/pattern-decision-making',
+            'terms/pattern-decentralized-grc',
+            'terms/pattern-party-representation',
+            'terms/pattern-mandates-delegation-hiring',
+            'terms/pattern-duties-and-rights',
           ]
-          },
-          { type: 'category',
-            label: 'Envisaged models',
-            items:
-            [ { type: 'doc', id: 'terms/pattern-world-model' },
-              { type: 'doc', id: 'terms/pattern-identification' },
-              { type: 'doc', id: 'terms/pattern-identifier' },
-              { type: 'doc', id: 'terms/pattern-trust' },
-              { type: 'doc', id: 'terms/pattern-decision-making' },
-              { type: 'doc', id: 'terms/pattern-decentralized-grc' },
-              { type: 'doc', id: 'terms/pattern-party-representation' },
-              { type: 'doc', id: 'terms/pattern-mandates-delegation-hiring' },
-              { type: 'doc', id: 'terms/pattern-duties-and-rights' },
-            ]
-          },
-        ]
-      },
-      { type: 'doc', id: 'notations-and-conventions' },
-      { type: 'doc', id: 'essifLab-fw-backlog' },
-    ],
-  },
+        },
+        'essifLab-glossary',
+      ],
+    },
+    'essifLab-fw-backlog',
+  ],
+  tev2SideBar: [
+    'tev2-specs/tev2-overview' ,
+    'tev2-specs/tev2-installation',
+    'tev2-specs/tev2-administration',
+    'tev2-specs/tev2-struct-directory',
+    { type: 'category',
+      label: 'Curated Text Structure',
+      items:
+      [ 'tev2-specs/tev2-struct-ctext',
+        'tev2-specs/tev2-struct-ctext-header',
+        'tev2-specs/tev2-struct-ctext-body',
+      ],
+    },
+    'tev2-specs/tev2-artifact-generation',
+    'tev2-specs/tev2-backlog',
+  ],
 };
+
+module.exports = sidebars;

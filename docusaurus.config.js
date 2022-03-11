@@ -16,6 +16,8 @@ module.exports = {
     },
   ],
   themeConfig: {
+    autoCollapseSidebarCategories: true,
+    hideableSidebar: true,
     navbar: {
       // title: 'ESSIF-Lab',
       logo: {
@@ -26,7 +28,8 @@ module.exports = {
         {to: 'docs/essifLab-project', label: 'EU Project', position: 'left'},
         {to: 'docs/essifLab-glossary', label: 'Glossary', position: 'left'},
         {to: 'docs/essifLab-pattern-list', label: 'Mental Models', position: 'left'},
-        {to: 'docs/ssi-standards', label: 'SSI Standardization', position: 'right'},
+        {to: 'docs/tev2-specs/tev2-overview', label: 'TEv2', position: 'right'},
+        {to: 'docs/ssi-standards', label: 'Standards', position: 'right'},
         {
           href: 'https://github.com/essif-lab/framework',
           label: 'Github',
@@ -70,7 +73,7 @@ module.exports = {
               href: 'https://essif-lab.eu/'
             },
             {
-              label: 'Project gitlab',
+              label: '*Project* gitlab',
               href: 'https://gitlab.grnet.gr/essif-lab/essif-lab',
             },
           ],
@@ -111,6 +114,10 @@ module.exports = {
               label: 'Mental Models',
               to: 'docs/essifLab-pattern-list'
             },
+            {
+              label: 'Github',
+              href: 'https://github.com/essif-lab/framework/tree/master/docs/terms'
+            },
           ],
         },
       ],
@@ -136,6 +143,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/essif-lab/framework/-/tree/master/',
+          breadcrumbs: false,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

@@ -2,6 +2,7 @@
 id: essifLab
 title: The eSSIF-Lab
 sidebar_label: eSSIF-Lab
+displayed_sidebar: essifLabSideBar
 scopeid: essifLab
 date: 20210601
 ---
