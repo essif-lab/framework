@@ -29,7 +29,7 @@ We generalize this by defining the term %%party|party%% such that it encompasses
 
 ## Identities are not owned - Individuals do not control their identity
 
-'Identity' is a word that is difficult to define. Looking into the world we live in, it seems reasonable to say - and so do we - that 'who I am' is not only defined by how I think about myself (my self image), but also how others think about me, judge me, attribute me characteristics, etc. We take this position not because it has more truth than any other position, but because it is a greater help to us as we try to realize the eSSIF-Lab vision than any other position that we have contemplatede.
+'Identity' is a word that is difficult to define. Looking into the world we live in, it seems reasonable to say - and so do we - that 'who I am' is not only defined by how I think about myself (my self image), but also how others think about me, judge me, attribute me characteristics, etc. We take this position not because it has more truth than any other position, but because it is a greater help to us as we try to realize the eSSIF-Lab vision than any other position that we have contemplated.
 
 We use the term %%partial identity|partial-identity%% (of an %%entity|entity%%), as coined by [Pfitzmann and Hansen (2010)](https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf), to refer to all %%knowledge|knowledge%% that a single %%party|party%% has about that entity (which we also call the '%%subject|subject%%' of that partial identity). Thus, the %%identity|identity%% (of some %%entity|entity%%, called the %%subject|subject%% of the identity) is the union (composition) of all partial identities of that %%subject|subject%%.
 
