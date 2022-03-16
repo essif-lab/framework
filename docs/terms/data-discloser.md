@@ -13,7 +13,7 @@ date: 20210601
 ### Short Description
 A **Data Discloser** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that applications (that work for some %%Party|party%%) can call to communicate things such as:
 - the results of a business transaction (e.g. statements to confirm that a transaction happened, thereby supplying appropriate details)
-- the status of a business transaction (e.g. that an order has been received in good order, that delivery of an order is dealyed or otherwise changed)
+- the status of a business transaction (e.g. that an order has been received in good order, that delivery of an order is delayed or otherwise changed)
 - knowledge (including judgements) that this Party has about %%Entities|entity%% (people, organizations, things, orders, deliveries, etc.)
 
 The Data Discloser uses a %%data-collector-policy|data-collector-policy%% to learn about the applicable (business) rules of its %%principal|principal%%. Such a policy may specify e.g. which types of credentials its principal is willing to (have) issue(d), to whom such credentials may be issued and the kinds of assurances that must be obtained before doing so, etcetera.
