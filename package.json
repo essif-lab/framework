@@ -1,6 +1,6 @@
 {
   "name": "essif-lab",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "docusaurus start",
@@ -34,8 +34,5 @@
   },
   "devDependencies": {
     "parse-md": "^2.0.4"
-  },
-  "engines": {
-    "node": "15.14.0"
   }
 }
