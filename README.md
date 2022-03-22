@@ -1,8 +1,47 @@
 # eSSIF-Lab Framework
 
-This repo contains files that are used to generate the the [eSSIF-Lab framework](https://essif-lab.github.io/framework) website, which includes the eSSIF-Lab vision, functional architecture, terminology and other relevant topics.
+[This repo](https://github.com/essif-lab/framework) contains files that are used to generate the [eSSIF-Lab framework](https://essif-lab.github.io/framework) website.
 
-This website is generated using [Docusaurus 2](https://v2.docusaurus.io/) (and a custom plugin developed by [GRNET](https://grnet.gr/en/) for handling terminology).
+This README file describes
+- how contributions can be made.
+- how to test such contributions for the correct structure/syntax.
+- how the repo is setup so that it automatically updates the [website](https://essif-lab.github.io/framework).
+
+It helps to know that your contributions will consist of texts that have a simple structure that is a bit peculiar and you'll need to get acquainted with that. When your contribution is complete, these texts are then further processed by some tools that will turn it into a nice (static) website. For this repo, the tools we use are [Docusaurus 2](https://v2.docusaurus.io/), and a custom plugin (developed by [GRNET](https://grnet.gr/en/)) that we call [Terminolovy Engine v1 (or TEv1)](tev1/terminology-engine-v1) that allows you to enhance the terms in your text that have been properly defined (this is what makes the terms stand out on the website, and produces the popups when readers hover over them).
+
+## How To Contribute
+
+In order to contribute, you need to
+- [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) [this repo](https://github.com/essif-lab/framework),
+- [create a branch](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches) for your contributions,
+- create and/or modify files as described below, and
+- [create](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) a [pull request](https://docs.github.com/en/pull-requests).
+
+Contributions can be made by creating new, or modifying existing files in the repo
+- to the body of the framework. That's where contributions to the [vision](essifLab-vision), [objectives](essifLab-objectives), [principles](essifLab-principles) etc. can be made. The corresponding files live in the `/docs` directory of the framework repo;
+- to the terminology (and mental models) of the framework. That's where contributions can be made to (definitions and descriptions of) [terms](/terms/term) that we use, as well as the [mental models](/terms/mental-model). The corresponding files live in the `/docs/terms` directory of the repo.
+
+The easiest way to start is to look at existing files so that you get an idea of how things are done. You'll quickly find out that they are [markdown files](https://www.markdownguide.org/getting-started/) that consist of two parts:
+- a '**[header](#the-header-or-front-matter)**', i.e. a block of text at the top of the file that starts with three dashes (`---`), then has multiple lines that consists of fields (keywords and associated values (texts)), and concludes with another three dashes (`---`). Headers like this are not usual in markdown files, but they are in this repo.
+- a '**[body](#body)**', i.e. all the text that follows the header, which uses the typical [basic markdown syntax](https://www.markdownguide.org/basic-syntax/). However, you can also use [additional markdown features](https://docusaurus.io/docs/markdown-features).
+
+### The Header (or Front Matter)
+
+The header serves two purposes:
+1. it contains fields that are necessary to turn the files into a nice website. This is done by [Docusaurus 2](https://v2.docusaurus.io/). Docusaurus calls this header data '**markdown [front matter](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter)**'.
+2. it also contains fields that are used by the [TEv1](tev1/terminology-engine-v1).  that allows you to enhance the terms in your text that have been properly defined (this is what makes the terms stand out on the website, and produces the popups when readers hover over them).
+
+The easiest way to go about header fields is to look at existing files as examples that work.
+
+Header fields that are used by Docusaurus are documented [here](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter).
+
+Header fields that are specific for the Terminology Engine
+
+
+
+### The Body
+
+
 
 ## Writing Docusaurus Documents
 
