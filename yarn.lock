@@ -1201,7 +1201,7 @@
   dependencies:
     "@material-ui/core" "^4.11.0"
 
-"@docusaurus/core@2.0.0-beta.17", "@docusaurus/core@^2.0.0-alpha.75":
+"@docusaurus/core@2.0.0-beta.17", "@docusaurus/core@^2.0.0-alpha.65":
   version "2.0.0-beta.17"
   resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-2.0.0-beta.17.tgz#f631aae04405de42a428a31928998242cd1d7b77"
   integrity sha512-iNdW7CsmHNOgc4PxD9BFxa+MD8+i7ln7erOBkF3FSMMPnsKUeVqsR3rr31aLmLZRlTXMITSPLxlXwtBZa3KPCw==
