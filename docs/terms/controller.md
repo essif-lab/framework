@@ -11,7 +11,7 @@ date: 20211222
 ---
 
 ### Short Description
-An **Controller** of an %%entity|entity%% is the role that an %%actor|actor%% performs as it is executing actions on that %%entity|entity%% for the purpose of ensuring that the %%entity|entity%% will act/behave, or be used, in a particular way. Thus, a controller controls the behaviour and/or use of the %%entity|entity%% it controls.
+A **Controller** of an %%entity|entity%% is the role that an %%actor|actor%% performs as it is executing actions on that %%entity|entity%% for the purpose of ensuring that the %%entity|entity%% will act/behave, or be used, in a particular way. Thus, a controller controls the behaviour and/or use of the %%entity|entity%% it controls.
 
 Being a controller of an %%entity|entity%% does *not* imply
 - %%ownership|ownership%% of that %%entity|entity%%,
