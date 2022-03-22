@@ -1,0 +1,130 @@
+---
+id: terminology-engine-v1
+title: "TEv1: Terminology & Glossary plugin"
+date: 20220317
+---
+import useBaseUrl from '@docusaurus/useBaseUrl'; // All other .md files may get this statement automatically added.
+
+This document describes the workings of the custom [Docusaurus 2](https://v2.docusaurus.io/) plugin, that has been developed by [GRNET](https://grnet.gr/en/) and that we call [Terminolovy Engine v1 (or TEv1)](terminology-engine-v1). TEv1 has been developed for the purpose of enhancing this website contents, by enabling terms to be (a) highlighted, (b) featuring a popup (tooltip) that shows their definitions when the user hovers over the term, and (c) navigating to the page that defines the term when the user clicks on the term.
+
+The reader of this document is assumed to have a basic understanding/experience with Git and [Docusaurus 2](https://v2.docusaurus.io/).
+
+## How it works
+
+TEv1 parses docs in two ways:
+
+  1. TEv1 parses all `*.md` and `*.mdx` files under `docs/` and `docs/terms`, and replaces each pattern
+  with a dynamical element, i.e. a React component supporting a tooltip functionality (see below).
+  2. TEv1 generates a [glossary](/docs/essifLab-glossary) with all terms corresponding to the `*.md` files under `docs/terms/`.
+
+Parses all markdown files and generates a glossary page with all the pattern terms found in the .md files
+
+### Replacing patterns with dynamical elements
+
+When writing docs, in order to refer to a term (except in the header/front matter - see further down), you may use the following syntax:
+
+```
+%%term_text|term_name%%
+```
+
+where:
+- `term_text`: The terminology text you want it to be visible in the documentation
+page
+- `term_name`: The filename of the term file, which resides under `./docs/terms` directory.
+
+inside `docs/*.mdx` files. After successfully running the script, the above occurrence
+will be replaced by a React component, which will render `term_text` as a link to the
+corresponding term page, which is in turn generated from the `term_name` attribute;
+furthermore, *hovering* over `term_text` displays a term summary, as extracted from the
+corresponding term page.
+
+:::note
+This syntax ONLY works in the body of a file. It doesn't work in the header/front matter.
+You can use a modified syntax in the `glossaryText` field of the header/front matter,
+which consists of replacint the `|`-character-with-the-`^`-character.-an-example-would-then-look-like-`%%term_text^term_name%%`.
+:::
+
+### Example usage
+
+Say you want to reference a term that exists under the `./docs/terms/` directory,
+e.g. `./docs/terms/party.md`. You can use the following syntax to reference
+this term in your documentation page:
+
+```
+Some content that wants to make a statement about %%parties|party%% or other terms.
+```
+
+When the script runs, this will be replaced as follows:
+
+```
+Some content that wants to make a statement about <Term reference="party" popup="Popup text">parties</Term> or other terms.
+```
+
+which supports the functionality explained above.
+
+### How to correctly write a term file
+
+This plugin assumes that you follow the structure, as explained below:
+
+Each term should have its own `.md` file, inside the `./docs/terms` directory,
+and it needs to consist of the following structure:
+
+```title="./docs/terms/term.md"
+---
+id: term
+title: Title of the term page
+type: concept
+typeid: term
+stage: draft
+hoverText: "This hover text will appear in the documentation page that you reference this term."
+glossaryText: "This text appears as the %%glossary^glossary%% entry of the term."
+date: 20210601
+---
+
+### Short Description
+
+content here
+```
+
+Notes:
+- `id` (required) specifies the term that is used to refer to this document. It MUST NOT contain spaces. If you would need whitespace, use a single `-` instead. It MUST be identical to the filename (without the extension).
+- `title` (required) typically is the same as `id`, but it would typically start with an UPPERCASE character, and it may contain spaces.
+- `typeid` (required) is an element of the set {`concept`,`pattern`,`term`}, depending on the class of which the `id` is an instance. This field is used to determine what goes in the glossary, and may be used for other things in future. For every `typeid` there is a [template file](https://github.com/essif-lab/framework/tree/master/docs/tev1).
+- `stage` (optional) is reserved for future use, when terms will be managed with a lifecycle. Then, this field will state the phase in the lifecycle that the document is in.
+- `hoverText` (required) is a string that will show as a popup when the term is highlighted and a user hoves over it with the mouse. The `hoverText` attribute **MUST NOT contain `%%`-syntax**.
+- `glossaryText` (optional) is a string that is put in the glossary as the description of the term. If `|`-syntax**.---`glossarytext`-(optional)-is-a-string-that-is-put-in-the-glossary-as-the-description-of-the-term.-if-`%%`-syntax is used in a `glossaryText` string, **the `|`-character-MUST-be-replaced-with-the-`^`-character**.---additional-fields-that-you-MAY-use-are-specified-as-[Docusaurus-markdown-front-matter](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter).-###-Running-the-script-When-you-are-finished-referencing-terms-and-have-written corresponding term pages,
+you can test this locally by running the following command:
+
+```.shell script
+$ yarn parse
+yarn run v1.22.5
+ docusaurus parse
+Replacing patterns with <Term />
+Done in 1.41s.
+```
+
+This will replace all `%%term_text|term_name%%` occurrences with the React component
+supporting the required functionality.
+
+Here's an example where the terms have been replaced. When the project is up
+and running, you can visit the test example on the `/docs/replacement-test` page:
+
+<img alt="replacement-test" src={useBaseUrl('images/replacement-test.png')}/>
+
+## Generate the glossary page
+
+If everything works well with the above procedure, you can then generate a
+glossary page, by running the following command:
+
+```.shell script
+$ yarn glossary
+yarn run v1.22.5
+ docusaurus glossary
+Alphabetical list of terms
+Done in 1.53s.
+```
+
+This will generate a file in `./docs/glossary.md` where every term that has been
+mentioned above, will be populated in the `glossary.md` page.
+
+When the project is up and running, you can visit the [glossary](/docs/essifLab-glossary) on the `/docs/essifLab-glossary` page.

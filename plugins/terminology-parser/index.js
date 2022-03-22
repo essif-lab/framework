@@ -57,7 +57,7 @@ async function parser(err, files) {
     console.log('Error', err);
   } else {
     // Iterate through the .md(x) files
-    for(let filepath of files.filter(filepath => filepath != './docs/terminology-plugin-instructions.md')) {
+    for(let filepath of files.filter(filepath => filepath != './docs/tev1/terminology-engine-v1.md')) {
       console.log('Filepath =', filepath);
       let content = '';
       try {
@@ -142,7 +142,7 @@ async function getGlossaryTerms(files) {
             // Get the popup text for the term
             // Get the popup text for the term
             let hoverText = await getHoverText(referencePath);
-            
+
             const glossary_file_path = path.resolve(process.cwd(), glossaryPath);
             const term_path = path.resolve(process.cwd(), TERMS_DIR, reference);
             const new_final_url = getRelativePath(glossary_file_path, term_path);

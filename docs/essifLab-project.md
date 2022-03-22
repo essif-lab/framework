@@ -1,14 +1,14 @@
 ---
 id: essifLab-project
-title: The eSSIF-Lab Project
-sidebar_label: eSSIF-Lab Project
+title: The EU Project 'eSSIF-Lab'
+sidebar_label: EU Project 'eSSIF-Lab'
 scopeid: essifLab
 date: 20210601
 ---
 
 The European Self-Sovereign Identity Framework Lab ([eSSIF-Lab](https://essif-lab.eu/)) views itself as an ecosystem of %%parties|party%% that work together to make existing (and new) %%Self-Sovereign Identity (SSI)|self-sovereign-identity%% technology into a scalable and interoperable %%infrastructure|ssi-infrastructure%% that businesses can use very easily for negotiation and execution of %%(business) transactions|transaction%% with other organizations and individuals alike, as further described in the [eSSIF-Lab Vision](essifLab-vision).
 
-The [eSSIF-Lab project](https://essif-lab.eu/) is a European H2020 project that funds projects of SME's and startups that contribute to further develop SSI infrastructure itself (with a focus on interoperability and standardization ([infrastructure call](https://essif-lab-infrastructure-oriented.fundingbox.com/))), and its use (by making a business out of it [business open call #1](https://essif-lab-first-business-oriented.fundingbox.com/), and by solving real-world problems with it [business open call #2](https://essif-lab-second-business-oriented.fundingbox.com/)). This project is one of the [NGI](https://www.ngi.eu/) [projects](https://www.ngi.eu/ngi-projects/) of the European commission. It has received funding from the [European Union's Horizon 2020 Research and Innovation Programme] under grant agreement Nº 871932.
+The [eSSIF-Lab project](https://essif-lab.eu/) is a European H2020 project that is part of the [European Union's Horizon 2020 Research and Innovation Programme (grant agreement Nº 871932) that funds projects of SME's and startups that contribute to further develop SSI infrastructure itself (with a focus on interoperability and standardization ([infrastructure call](https://essif-lab-infrastructure-oriented.fundingbox.com/))), and its use (by making a business out of it [business open call #1](https://essif-lab-first-business-oriented.fundingbox.com/), and by solving real-world problems with it [business open call #2](https://essif-lab-second-business-oriented.fundingbox.com/)). This project is one of the [NGI](https://www.ngi.eu/) [projects](https://www.ngi.eu/ngi-projects/) of the European commission. It has received funding from the [European Union's Horizon 2020 Research and Innovation Programme] under grant agreement Nº 871932.
 
 The objectives of the eSSIF-Lab project itself include:
 - *empower European and other citizens* by providing them with new means that help them to electronically negotiate and conduct transactions. These new means will make electronic transactions fast and safe both in the Internet and in physical life, and eliminate logins.
