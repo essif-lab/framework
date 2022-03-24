@@ -22,9 +22,9 @@ The ability to distinguish between assertions and non-assertions, and particular
 An **Assertion** is any declaration/statement that is made by one specific %%party|party%%.
 
 ### Notes
-- Assertions may be ambiguous (multi-interpretable), which may result in misundertandings. The authoritative meaning of an %%assertion|assertion%% is determined by (the %%semantics|semantics%% that was applied by) the %%party|party%% that has uttered/authored it.
+- Assertions may be ambiguous (multi-interpretable), which may result in misunderstandings. The authoritative meaning of an %%assertion|assertion%% is determined by (the %%semantics|semantics%% that was applied by) the %%party|party%% that has uttered/authored it.
 - Assertions may or may not be true. That is not only because 'truth' is subjective (every %%party|party%% may decide whether or not something is true), but also because the %%party|party%% that uttered/authored the %%assertion|assertion%% cannot substantiate the assertion, or lie outright.
-- Assertions may contain %%identifiers|identifier%%; the assertion's %%owner|owner%% is the authoritative %%party|party%% for dereferencing such identitiers.
+- Assertions may contain %%identifiers|identifier%%; the assertion's %%owner|owner%% is the authoritative %%party|party%% for dereferencing such identifiers.
 - The %%entity|entity%% about which the assertion/claim is made, is often referred to as the '%%subject|subject%%' of the assertion. However, the word '%%subject|subject%%' is also used in conjunction with the term %%credential|credential%%, in which case it is ambiguous because a credential may contain multiple assertions about different entities (subjects).
 
 -----

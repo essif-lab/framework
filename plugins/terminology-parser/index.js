@@ -57,7 +57,7 @@ async function parser(err, files) {
     console.log('Error', err);
   } else {
     // Iterate through the .md(x) files
-    for(let filepath of files.filter(filepath => filepath != './docs/tev1/terminology-engine-v1.md')) {
+    for(let filepath of files.filter(filepath => filepath != './docs/tev1/terminology-engine-v1.mdx')) {
       console.log('Filepath =', filepath);
       let content = '';
       try {

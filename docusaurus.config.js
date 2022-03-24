@@ -105,7 +105,7 @@ module.exports = {
       '@docusaurus-terminology/parser',
       { termsDir: './docs/terms',
         glossaryFilepath: './docs/glossary.md',
-        noParseFiles: ['./docs/tev1/terminology-engine-v1.md'],
+        noParseFiles: ['./docs/tev1/terminology-engine-v1.mdx'],
         glossaryPatternSeparator: '^',
         glossaryTermPatterns: ['term', 'concept']
       }

@@ -11,7 +11,7 @@ date: 20220222
 ---
 
 ### Short Description
-A **delegate** is the transferral of %%ownership|ownership%% of one or more %%obligations|obligation%% of a %%party|party%% (the %%delegator|delegate%%), including the associated accountability, to another %%party|party%% (the %%delegatee|delegate%%), including the associated accountability, to another %%party|party%% (the %%delegatee|delegate%%). Doing so has several consequences:
+A **delegate** is the transferral of %%ownership|ownership%% of one or more %%obligations|obligation%% (duties) of a %%party|party%% (the %%delegator|delegate%%), including the associated accountability, to another %%party|party%% (the %%delegatee|delegate%%), including the associated accountability, to another %%party|party%% (the %%delegatee|delegate%%). Doing so has several consequences:
 
 - the %%delegatee|delegate%%, as the new %%owner|owner%%, is autonomous and must therefore be expected (or: is free) to realize such %%obligations|obligation%% as it sees fit.
 - since the results associated with these %%obligation|obligation%% continue to be consumed by others (third %%parties|party%%), the %%delegatee|delegate%% should - in its own way - ensure that they are/remain fit for the purpose(s) that these other %%parties|party%% need them to serve.
@@ -20,7 +20,7 @@ The transferral of %%ownership|ownership%% of an %%obligation|obligation%% diffe
 
 %%Delegates|delegate%% are subject to the %%legal system|legal-system%% of a %%jurisdiction|jurisdiction%%, which has the rules and constraints that specify what can(not) be done with them. Thus, %%delegated|delegate%% %%obligations|obligation%% are duties that are enforced using the means that its %%jurisdiction|jurisdiction%% applies for that. The same goes in case of conflicts that concern %%delegates|delegate%%. Also, %%jurisdictions|jurisdiction%% may themselves specify %%delegates|delegate%%, or templates for %%delegates|delegate%% that e.g. only require the %%delegator|delegate%% and %%delegatee(s)|delegate%% to be filled in.
 
-While a %%party|party%% is free to %%delegate|delegate%% its %%obligations|obligation%%, it may result in 'mismatches' of corresponding %%expectations|expectation%% of other %%parties|party%% - see the section **[Matching](pattern-governance-and-management#matching)** of the %%Governance and Management pattern|pattern-governance-and-management%%.
+While a %%party|party%% is usually free to %%delegate|delegate%% its %%obligations|obligation%%, it may result in 'mismatches' of corresponding %%expectations|expectation%% of other %%parties|party%% - see the section **[Matching](pattern-governance-and-management#matching)** of the %%Governance and Management pattern|pattern-governance-and-management%%.
 
 
 ### Purpose

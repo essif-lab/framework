@@ -29,6 +29,10 @@
 // variables can reference themselves and be overwritten - see documentation of 'batch replacer' extension
 
 eof = "(?:$(?![\r\n]))"
+// The following set does not implement the feature that markers surrounded by `-chars should be ignored.
+// beg = "(?<=[^`\w]%%)(?=\w)"
+// mid = "((?<=[^`][\^\|])(?=[\(\w]))"
+// end = "((?=%%[^`])(?=%%(?:\W|%{eof})))"
 beg = "(?<=\W%%)"
 mid = "(?<=(?:\^|\|))"
 end = "(?=%%(?:\W|%{eof}))"
@@ -91,6 +95,7 @@ replace-regex "(?<=\|)([^A-Z%]*?[A-Z].*?)(?=%%)"
 with-case "lowercase"
 
 // Next, we replace whitespace in `lowercase show text` instances with `-` characters
+// It may consist of any character except `|` (and perhaps some other that the author of this documentation wasn't aware of).
 replace-regex "(?<=\|)([^%\|\n\r\s]+)\s+([^%]+)(?=%%)"
 with "$1-$2"
 replace-regex "(?<=\|)([^%\|\n\r\s]+)\s+([^%]+)(?=%%)"
@@ -203,6 +208,8 @@ replace-regex "%{mid}mandat(?:ed?|ing|or|ee)%{ss}?%{end}"
 with "mandate"
 
 // [O]
+replace-regex "%{mid}onboard(ing|ed)?%{end}"
+with "onboarding"
 replace-regex "%{mid}own(er)?%{ss}%{end}"
 with "owner"
 replace-regex "%{mid}owning%{end}"
@@ -216,7 +223,7 @@ with "$1"
 
 // [P]
 // for 'people' see 'human'
-replace-regex "%{mid}((?:part%{yies}|actor%{ss}|action%{ss}),?-){2,3}(pattern|(mental-|conceptual-)?model)%{ss}%{end}"
+replace-regex "%{mid}((?:part%{yies}|actor%{ss}|and|action%{ss}),?-){2,4}(pattern|(mental-|conceptual-)?model)%{ss}%{end}"
 with "pattern-party-actor-action"
 replace-regex "%{mid}(?!pattern)((?:[a-z]+-)*?[a-z]+)-(pattern|(mental-|conceptual-)?model)%{ss}%{end}"
 with "pattern-$1"
@@ -305,19 +312,19 @@ replace-regex "(?<=glossaryText:)(\s*")([^\|"]+?)\|((?:-|\w)+%%)"
 with "$1$2^$3"
 
 // Remove all `%%showtext|reftext%%` occurrences in markdown headers
-replace-regex "(^#+\s+.*?)%%([^\|]*)\|([^%]*)%%(.*$)"
+replace-regex "(^#+\s+.*?)%%([^\|]*?)\|([^%]*?)%%(.*$)"
 with "$1$2$4"
-replace-regex "(^#+\s+.*?)%%([^\|]*)\|([^%]*)%%(.*$)"
+replace-regex "(^#+\s+.*?)%%([^\|]*?)\|([^%]*?)%%(.*$)"
 with "$1$2$4"
 
 // Remove all `%%showtext|reftext%%` occurrences in `<img />`-constructs
-replace-regex "(<img(?:(?:.|[\n])(?!/>))*?)%%([^\|]*)\|(?:[^%]*)%%"
+replace-regex "(<img(?:(?:.|[\n])(?!/>))*?)%%([^\|]*?)\|(?:[^%]*?)%%"
 with "$1$2"
-replace-regex "(<img(?:(?:.|[\n])(?!/>))*?)%%([^\|]*)\|(?:[^%]*)%%"
+replace-regex "(<img(?:(?:.|[\n])(?!/>))*?)%%([^\|]*?)\|(?:[^%]*?)%%"
 with "$1$2"
 
 // Remove all `%%showtext|reftext%%` occurrences in http(s)-references
-replace-regex "(\]\(http[^\)]*?)%%([^\^\|]*).*?%%"
+replace-regex "(\]\(http[^\)]*?)%%([^\^\|]*?).*?%%"
 with "$1$2"
-replace-regex "(\]\(http[^\)]*?)%%([^\^\|]*).*?%%"
+replace-regex "(\]\(http[^\)]*?)%%([^\^\|]*?).*?%%"
 with "$1$2"
