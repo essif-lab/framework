@@ -29,9 +29,13 @@
 // variables can reference themselves and be overwritten - see documentation of 'batch replacer' extension
 
 eof = "(?:$(?![\r\n]))"
-beg = "(?<=[^`\w]%%)(?=\w)"
-mid = "(?<=[^`\w](?:\^|\|)(?=\w))"
-end = "(?=%%(?:[^`\w]|%{eof}))"
+// The following set does not implement the feature that markers surrounded by `-chars should be ignored.
+// beg = "(?<=[^`\w]%%)(?=\w)"
+// mid = "((?<=[^`][\^\|])(?=[\(\w]))"
+// end = "((?=%%[^`])(?=%%(?:\W|%{eof})))"
+beg = "(?<=\W%%)"
+mid = "(?<=(?:\^|\|))"
+end = "(?=%%(?:\W|%{eof}))"
 ss = "(?:['’]?s|\(s\))?"
 yies = "(y|y['’]s|ies)"
 

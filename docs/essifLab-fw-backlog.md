@@ -15,5 +15,6 @@ The backlog of the eSSIF-Lab Framework is a list of issues (concerns, topics) th
    - as a %%role-name|role-name%%, which one can see as a functional component that is capable of executing the functionality associated with issuing, holding, verification and validation;
    - as an %%actor|actor%%, performing the %%role|role%% associated with the names 'issuer', 'holder', 'verifier' and 'validator'
 
-   It is our intention to rework the framework in such a way that we can use these terms in any of these ways.
+- The relations between %%mandates|mandate%%, %%delegates|delegate%% and %%employment contracts|employment-contract%% need to be worked out.
 
+   It is our intention to rework the framework in such a way that we can use these terms in any of these ways.
