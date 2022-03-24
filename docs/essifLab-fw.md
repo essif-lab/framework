@@ -343,7 +343,7 @@ The SSI-Agent Network Architecture has two viewpoints:
 
 An individual %%party|party%% may use the single-%%party|party%% SSI viewpoint to come to grips with concerns related to the creation and maintenance of its network of its %%electronic agent|digital-agent%%. The set of concerns would include:
 
--   How can electronic components be onboarded as an %%agents|agent%% of this %%party|party%%?
+-   How can electronic components be %%onboarded|onboarding%% as an %%agents|agent%% of this %%party|party%%?
 -   How can the integrity of such %%electronic agent|digital-agent%% be stated in a trustworthy manner (do such components need some kind of accreditation certificate, do we need to come up with a service that can remotely test the integrity of a component and have it issue ephemeral integrity-certificates/%%credentials|credential%%, …)?
 -   How can the %%party|party%% specify which of its %%agents|agent%% may talk with which other %%agents|agent%%, and for what purposes?
 -   How should a %%party|party%% specify the %%policies|policy%% for the various SSI functionalities - what kind of support would be useful here?

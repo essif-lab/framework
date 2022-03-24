@@ -5,6 +5,10 @@ date: 20220317
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl'; // All other .md files may get this statement automatically added.
 
+<!-- This file has an .MDX-extension (rather than a .MD extension
+     to prevent it from being processed by `zzz-terminology-maintenance-script.rieks`)
+-->
+
 This document describes the workings of the custom [Docusaurus 2](https://v2.docusaurus.io/) plugin, that has been developed by [GRNET](https://grnet.gr/en/) and that we call [Terminolovy Engine v1 (or TEv1)](terminology-engine-v1). TEv1 has been developed for the purpose of enhancing this website contents, by enabling terms to be (a) highlighted, (b) featuring a popup (tooltip) that shows their definitions when the user hovers over the term, and (c) navigating to the page that defines the term when the user clicks on the term.
 
 The reader of this document is assumed to have a basic understanding/experience with Git and [Docusaurus 2](https://v2.docusaurus.io/).
@@ -13,41 +17,41 @@ The reader of this document is assumed to have a basic understanding/experience 
 
 TEv1 parses docs in two ways:
 
-  1. TEv1 parses all `*.md` and `*.mdx` files under `docs/` and `docs/terms`, and replaces each pattern
+  1. TEv1 parses all `*.md` and `*.mdx` files under `/docs/` and `/docs/terms/`. It replaces specific syntax-patterns
   with a dynamical element, i.e. a React component supporting a tooltip functionality (see below).
-  2. TEv1 generates a [glossary](/docs/essifLab-glossary) with all terms corresponding to the `*.md` files under `docs/terms/`.
+  2. TEv1 also generates a [glossary](/docs/essifLab-glossary) with all terms corresponding to the `*.md` files under `/docs/terms/`.
 
-Parses all markdown files and generates a glossary page with all the pattern terms found in the .md files
+### Replacing syntax-patterns with dynamical elements
 
-### Replacing patterns with dynamical elements
-
-When writing docs, in order to refer to a term (except in the header/front matter - see further down), you may use the following syntax:
+When writing a doc, you may want to use a term or phrase that refers to a concept as described in `/docs/terms/`.
+Here's the syntax:
 
 ```
-%%term_text|term_name%%
+%%term text|term-name%%
 ```
 
 where:
-- `term_text`: The terminology text you want it to be visible in the documentation
-page
-- `term_name`: The filename of the term file, which resides under `./docs/terms` directory.
+- `term text`: The term or phrase you want to be visible in the documentation page.
+  It may consist of any character except `|` (AND perhaps some other that the author of this documentation wasn't aware of).
+- `term-name`: The filename of the term file, which resides under `/docs/terms/` directory.
+  Example: `%%actions|action%%` will highlight `actions` for the reader, and refer it to the page `/docs/terms/action.md`
 
-inside `docs/*.mdx` files. After successfully running the script, the above occurrence
-will be replaced by a React component, which will render `term_text` as a link to the
-corresponding term page, which is in turn generated from the `term_name` attribute;
-furthermore, *hovering* over `term_text` displays a term summary, as extracted from the
-corresponding term page.
+This syntax can be used in `*.mdx` and `*.md` files that reside in the `/docs/` or the `/docs/terms/` directory.
+
+To replace these syntax patterns with dynamical React components, you must run a script (as explained below).
+This will render `term text` as a link to the corresponding term page, which is in turn generated from the `term-name` attribute;
+furthermore, *hovering* over `term text` displays a term summary, as extracted from the corresponding term page.
 
 :::note
 This syntax ONLY works in the body of a file. It doesn't work in the header/front matter.
 You can use a modified syntax in the `glossaryText` field of the header/front matter,
-which consists of replacint the `|`-character-with-the-`^`-character.-an-example-would-then-look-like-`%%term_text^term_name%%`.
+which consists of replacing the `|`-character with the `^`-character.
+the example would then look like `%%term text^term-name%%`.
 :::
-
 ### Example usage
 
-Say you want to reference a term that exists under the `./docs/terms/` directory,
-e.g. `./docs/terms/party.md`. You can use the following syntax to reference
+Say you want to reference a term that exists under the `/docs/terms/` directory,
+e.g. `/docs/terms/party.md`. You can use the following syntax to reference
 this term in your documentation page:
 
 ```
@@ -92,10 +96,14 @@ Notes:
 - `typeid` (required) is an element of the set {`concept`,`pattern`,`term`}, depending on the class of which the `id` is an instance. This field is used to determine what goes in the glossary, and may be used for other things in future. For every `typeid` there is a [template file](https://github.com/essif-lab/framework/tree/master/docs/tev1).
 - `stage` (optional) is reserved for future use, when terms will be managed with a lifecycle. Then, this field will state the phase in the lifecycle that the document is in.
 - `hoverText` (required) is a string that will show as a popup when the term is highlighted and a user hoves over it with the mouse. The `hoverText` attribute **MUST NOT contain `%%`-syntax**.
-- `glossaryText` (optional) is a string that is put in the glossary as the description of the term. If `|`-syntax**.---`glossarytext`-(optional)-is-a-string-that-is-put-in-the-glossary-as-the-description-of-the-term.-if-`%%`-syntax is used in a `glossaryText` string, **the `|`-character-MUST-be-replaced-with-the-`^`-character**.---additional-fields-that-you-MAY-use-are-specified-as-[Docusaurus-markdown-front-matter](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter).-###-Running-the-script-When-you-are-finished-referencing-terms-and-have-written corresponding term pages,
-you can test this locally by running the following command:
+- `glossaryText` (optional) is a string that is put in the glossary as the description of the term. If `%%`-syntax is used in a `glossaryText` string, **the `|` character must be replaced with the `^`-character**. Example: `%%actors|actor%%` is NOT allowed in the `glossaryText`. It should be `%%actors^actor%%`.
+- additional fields that you MAY use are specified as [Docusaurus markdown front matter](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter).
 
-```.shell script
+### Running the script
+
+When you are finished referencing terms and have written corresponding term-pages,you can test this locally by running the following command:
+
+```.shell-script
 $ yarn parse
 yarn run v1.22.5
  docusaurus parse
@@ -103,7 +111,7 @@ Replacing patterns with <Term />
 Done in 1.41s.
 ```
 
-This will replace all `%%term_text|term_name%%` occurrences with the React component
+This will replace all `%%term text|term-name%%` occurrences with the React component
 supporting the required functionality.
 
 Here's an example where the terms have been replaced. When the project is up
