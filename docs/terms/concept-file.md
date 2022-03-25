@@ -4,6 +4,7 @@ title: "Concept-file"
 scopeid: essifLab
 type: concept
 typeid: concept-file
+symphrase: concept-file%{ss}
 stage: draft
 hoverText: "Concept-file: a file whose contents defines/specifies a Concept."
 glossaryText: "a file whose contents defines/specifies a %%concept^concept%%."

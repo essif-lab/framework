@@ -4,6 +4,7 @@ title: "Scope of Control"
 scopeid: eSSIFLab
 type: concept
 typeid: scope-of-control
+symphrase: scope-of-control, scopes-of-control
 stage: draft
 hoverText: "Scope of Control (of a Party): the extent of the area or subject matter that the Party controls."
 glossaryText: "the extent of the area or subject matter that a %%party^party%% %%controls^controller%%."

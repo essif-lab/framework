@@ -4,6 +4,7 @@ title: "Legal Jurisdiction"
 scopeid: essifLab
 type: term
 typeid: legal-jurisdiction
+symphrase: legal-jurisdiction%{ss}
 conceptref: essifLab:jurisdiction
 stage: draft
 hoverText: "Legal Jurisdiction: a Jurisdiction that is governed/operated by a governmental body."

@@ -4,6 +4,7 @@ title: "Pattern-file"
 scopeid: essifLab
 type: concept
 typeid: pattern-file
+symphrase: pattern-file
 stage: draft
 hoverText: "Pattern-file: a file whose contents describes/documents a Pattern."
 glossaryText: "a file whose contents describes/documents a %%pattern^pattern%%."

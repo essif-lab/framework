@@ -4,6 +4,7 @@ title: "Credential Type"
 scopeid: essifLab
 type: concept
 typeid: credential-type
+symphrase: credential-type%{ss}
 stage: draft
 hoverText: "Credential Type: the specification of the contents, properties, constraints etc. that Credentials of this type must have/comply with."
 glossaryText: "the specification of the contents, properties, constraints etc. that %%credentials^credential%% of this type must have/comply with."

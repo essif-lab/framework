@@ -4,6 +4,7 @@ title: "Entity"
 scopeid: essifLab
 type: concept
 typeid: entity
+symphrase: entit%{yies}
 stage: draft
 hoverText: "Entity: someone or something that is known to exist."
 glossaryText: "someone or something that is known to exist."

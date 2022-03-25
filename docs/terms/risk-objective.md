@@ -4,6 +4,7 @@ title: "Risk Objective"
 scopeid: essifLab
 type: concept
 typeid: risk-objective
+symphrase: risk-objective%{ss}
 stage: draft
 hoverText: "Risk objective (of a Party): an Objective, owned by that Party, that aims to reach and maintain a state of affairs in which the Risks associated with a specific set of its Objectives become, and/or remain, acceptable."
 glossaryText: "an %%objective^objective%%, owned by a %%party^party%%, that aims to reach and maintain a state of affairs in which the %%risks^risk%% associated with a specific set of its %%objectives^objective%% become, and/or remain, acceptable."

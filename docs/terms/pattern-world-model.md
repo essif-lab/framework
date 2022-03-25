@@ -4,6 +4,7 @@ title: "eSSIF-Lab World Model"
 scopeid: essifLab
 type: pattern
 typeid: world-model
+symphrase: world-model
 stage: draft
 hoverText: "The eSSF-Lab World Model is the set of Concepts, relations between them (Patterns), and principles (that are the starting point for eSSIF-Lab's thinking)."
 glossaryText: "The set of %%concepts^concept%%, relations between them (%%patterns^pattern%%), and [Principles](essifLab-principles) (that are the starting point for eSSIF-Lab's thinking)."

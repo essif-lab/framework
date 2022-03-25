@@ -4,6 +4,7 @@ title: "Scope"
 scopeid: eSSIFLab
 type: concept
 typeid: scope
+symphrase: scope%{ss}
 stage: draft
 hoverText: "Scope: the extent of the area or subject matter (which we use to define Patterns, Concepts, Terms and Glossaries in)."
 glossaryText: "the extent of the area or subject matter (which we use to define %%patterns^pattern%%, %%concepts^concept%%, %%terms^term%% and %%glossaries^glossary%% in)."

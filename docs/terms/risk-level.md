@@ -4,6 +4,7 @@ title: "Risk level"
 scopeid: essifLab
 type: concept
 typeid: risk-level
+symphrase: risk-level%{ss}
 stage: draft
 hoverText: "Risk level (of an Objective): a measure for the deviation of the intended realization (results) of a specific Objective, that its Owner uses to represent the priority with which the Risk of that Objective should be reckoned with."
 glossaryText: "a measure for the deviation of the intended realization (results) of a specific %%objective^objective%% that its %%owner^owner%% uses to represent the priority with which the %%risk^risk%% of that %%objective^objective%% should be reckoned with."

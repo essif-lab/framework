@@ -4,6 +4,7 @@ title: "Community"
 scopeid: essifLab
 type: concept
 typeid: community
+symphrase: communit%{yies}
 stage: draft
 hoverText: "Community: a Party, consisting of at least two different Parties (the members of the Community) that seek to collaborate with each other so that each of them can achieve its individual Objectives more efficiently and/or effectively."
 glossaryText: "a %%party^party%%, consisting of at least two different %%parties^party%% (the members of the %%community^community%%) that seek to collaborate with each other so that each of them can achieve its individual %%objectives^objective%% more efficiently and/or effectively."

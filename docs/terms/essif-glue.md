@@ -4,6 +4,7 @@ title: "eSSIF-Glue"
 scopeid: essifLab
 type: concept
 typeid: essif-glue
+symphrase: essif-glue
 stage: draft
 hoverText: "eSSIF-Glue: interface layer that allows components with Transaction Data Collector and/or Transaction Data Discloser functionality to use the Wallet, Holder, Issuer and Verifier functionalities."
 glossaryText: "interface layer that allows components with %%transaction data collector^transaction-data-collector%% and/or %%transaction data discloser^transaction-data-discloser%% functionality to use the %%wallet^wallet%%, %%holder^holder%%, %%issuer^issuer%% and %%verifier^verifier%% functionalities."

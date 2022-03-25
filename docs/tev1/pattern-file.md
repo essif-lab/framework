@@ -4,6 +4,7 @@ title: "Pattern: PatternName"
 scopeid: scopeID
 type: pattern
 typeid: patternID
+symphrase: patternID%{ss}
 stage: draft
 hoverText: "PatternID: popuptext for 'patternID' (tbd)."
 glossaryText: "popuptext for 'patternID' (tbd)."

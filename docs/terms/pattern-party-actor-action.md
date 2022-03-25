@@ -3,11 +3,12 @@ id: pattern-party-actor-action
 title: "Parties, Actors and Actions"
 scopeid: essifLab
 type: pattern
-typeid: Party-actor-action
+typeid: party-actor-action
+symphrase: party-actor-action
 stage: draft
 hoverText: "The Parties, Actors and Actions pattern captures the foundational concepts and relations that we need for thinking about how things get done. It answers questions such as: 'Who/what does things?', 'How are their actions being guided/controlled?', 'Who controls whom/what?', 'Who/what may be held accountable?'."
 glossaryText: "'Who/what does things?', 'How are their %%actions^action%% being guided/%%controlled^controller%%?', 'Who %%controls^controller%% whom/what?', 'Who/what may be held accountable?'."
-date: 20210601
+date: 20210602
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

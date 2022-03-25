@@ -4,6 +4,7 @@ title: "Ecosystem"
 scopeid: essifLab
 type: concept
 typeid: ecosystem
+symphrase: ecosystem%{ss}
 stage: draft
 hoverText: "Ecosystem: a set of at least two (autonomous) Parties (its 'members') whose individual work complements that of other members, and is of benefit to the set as a whole."
 glossaryText: "a set of at least two (autonomous) %%parties^party%% (its 'members') whose individual work complements that of other members, and is of benefit to the set as a whole."

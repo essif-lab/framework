@@ -4,6 +4,7 @@ title: "Terminology Process"
 scopeid: essifLabTerminology
 type: concept
 typeid: terminology-process
+symphrase: terminology-process, terminology-processes
 stage: draft
 hoverText: "Terminology Process: a method for recognizing misunderstandings as such, and creating or maintaining Definitions that resolve them."
 glossaryText: "a method for recognizing misunderstandings as such, and creating or maintaining %%definitions^definition%% that resolve them."

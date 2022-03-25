@@ -4,6 +4,7 @@ title: "Dependent"
 scopeid: essifLab
 type: concept
 typeid: dependent
+symphrase: dependent%{ss}
 stage: draft
 hoverText: "Dependent (in a Guardianship Arrangement): an Entity for the caring for and/or protecting/guarding/defending of which a Guardianship Arrangement has been established."
 glossaryText: "an %%entity^entity%% for the caring for and/or protecting/guarding/defending of which a %%guardianship arrangement^guardianship-arrangement%% has been established."

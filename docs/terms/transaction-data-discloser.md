@@ -4,6 +4,7 @@ title: "Transaction Data Discloser"
 scopeid: essifLab
 type: concept
 typeid: transaction-data-discloser
+symphrase: transaction-data-discloser%{ss}
 stage: draft
 hoverText: "Transaction Data Discloser: a functional component that is capable of disclosing data."
 glossaryText: "a functional component that is capable of disclosing data."

@@ -4,6 +4,7 @@ title: "NameOfNewConcept"
 scopeid: scopeID
 type: term
 typeid: termID
+symphrase: termID%{ss}
 conceptref: <ExistingConceptScopeID>:<ExistingtermID>
 stage: draft
 hoverText: "popuptext for 'termID' (tbd)."

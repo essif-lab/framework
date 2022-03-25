@@ -3,7 +3,8 @@ id: tag
 title: "Tag"
 scopeid: essifLabTerminology
 type: concept
-typeid: term
+typeid: tag
+symphrase: tag%{ss}
 stage: draft
 hoverText: "Tag: an alphanumeric string that is used to identify Scopes and/or group Terms, and that satisfies the regex `#[a-z-0-9]+`."
 glossaryText: "an alphanumeric string that is used to identify %%scopes^scope%% and/or group %%terms^term%%, and that satisfies the regex `#[a-z-0-9]+`."

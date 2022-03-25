@@ -4,6 +4,7 @@ title: "Peer Agent"
 scopeid: essifLab
 type: term
 typeid: peer-agent
+symphrase: peer-agent%{ss}
 conceptref: essifLab:Agent
 stage: draft
 hoverText: "Peer Agent (of some other Agent in a Communication Session): the Agent with whom/which this other Agent is communicating in that Communication Session."

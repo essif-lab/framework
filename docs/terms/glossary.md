@@ -4,6 +4,7 @@ title: "Glossary"
 scopeid: essifLabTerminology
 type: concept
 typeid: glossary
+symphrase: glossar%{yies}
 stage: draft
 hoverText: "Glossary: an alphabetically sorted list of Terms with the (single) meaning it has in (at least) one context."
 glossaryText: "an alphabetically sorted list of %%terms^term%% with the (single) meaning it has in (at least) one context."

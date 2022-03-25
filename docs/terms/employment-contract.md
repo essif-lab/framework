@@ -4,6 +4,7 @@ title: "Employment Contract"
 scopeid: essifLab
 type: concept
 typeid: employment-contract
+symphrase: employment-contract%{ss}
 stage: draft
 hoverText: "Employment Contract (between two Parties, concerning a set of Actors): an agreement/contract between these Parties that states (or refers to) all (sets of) rights and duties under which the Actors (the Subjects of the contract), that are controlled by one Party, can and/or must work for the other Party."
 glossaryText: "an agreement/contract between two %%parties^party%%, one of which controls a set of %%actors^actor%% (the %%subjects^subject%% of the contract), that states (or refers to) all (sets of) rights and duties under which these %%actors^actor%% can and/or must work for the other %%party^party%%."

@@ -4,6 +4,7 @@ title: "Organization"
 scopeid: essifLab
 type: concept
 typeid: organization
+symphrase: organization%{ss}
 stage: draft
 hoverText: "Organization: a Party, part of which is a group of Actors that work to realize its Objectives."
 glossaryText: "a %%party^party%%, part of which is a group of %%actors^actor%% that work to realize its %%objectives^objective%%."

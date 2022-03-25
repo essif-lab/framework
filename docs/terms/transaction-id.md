@@ -4,6 +4,7 @@ title: "Transaction Id"
 scopeid: essifLab
 type: concept
 typeid: transaction-id
+symphrase: transaction-id%{ss}
 stage: draft
 hoverText: "Transaction Id (for a specific Business Transaction and a Participant): character string that this Participant uses to identify, and refer to, that Business Transaction."
 glossaryText: "character string that this %%participant^participant%% uses to identify, and refer to, that %%business transaction^transaction%%."

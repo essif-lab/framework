@@ -4,6 +4,7 @@ title: "Identifier Pattern"
 scopeid: essifLab
 type: pattern
 typeid: identifier
+symphrase: identifier
 stage: draft
 hoverText: "The eSSIF-Lab Identifier Pattern describes how Identifiers are defined and used for Identification purposes."
 date: 20210830
