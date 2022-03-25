@@ -4,6 +4,7 @@ title: "Qualified Data"
 scopeid: essifLab
 type: concept
 typeid: qualified-data
+symphrase: qualified-data
 stage: draft
 hoverText: "Qualified Data: data that comes with assurances, at least regarding its provenance and integrity (immutability), that make this data valid to be used for specific purposes of individual Parties."
 glossaryText: "%%data^data%% that comes with assurances, at least regarding its provenance and integrity (immutability), that make this data valid to be used for specific purposes of individual %%parties^party%%."

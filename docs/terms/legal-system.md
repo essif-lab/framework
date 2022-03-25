@@ -4,6 +4,7 @@ title: "Legal System"
 scopeid: essifLab
 type: concept
 typeid: legal-system
+symphrase: legal-system%{ss}
 stage: draft
 hoverText: "Legal-system: a system in which rules are defined, and mechanisms for their enforcement and conflict resolution are (implicitly or explicitly) specified."
 glossaryText: "a system in which rules are defined, and mechanisms for their enforcement and conflict resolution are (implicitly or explicitly) specified."

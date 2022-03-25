@@ -4,6 +4,7 @@ title: "Transaction Data Collector Policy"
 scopeid: essifLab
 type: concept
 typeid: transaction-data-collector-policy
+symphrase: transaction-data-collector-polic%{yies}
 stage: draft
 hoverText: "Transaction Data Collector Policy: a Digital Policy that enables an operational Transaction Data Collector component to function in accordance with the Objectives of its Principal."
 glossaryText: "a %%digital policy^digital-policy%% that enables an operational %%transaction data collector^transaction-data-collector%% component to function in accordance with the %%objectives^objective%% of its %%principal^principal%%."

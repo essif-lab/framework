@@ -4,6 +4,7 @@ title: "Compliance"
 scopeid: essifLab
 type: concept
 typeid: compliance
+symphrase: compliance
 stage: draft
 hoverText: "Compliance (of a Party): the state of realization of a set of conformance criteria or normative framework of that Party."
 glossaryText: "the state of realization of a set of conformance criteria or normative framework of a %%party^party%%."

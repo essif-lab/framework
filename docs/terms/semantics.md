@@ -4,6 +4,7 @@ title: "Semantics"
 scopeid: essifLabTerminology
 type: concept
 typeid: semantics
+symphrase: semantics
 stage: draft
 hoverText: "Semantics: a mapping between the (tangible/textual) Terms and (intangible) ideas/Concepts - their meaning."
 glossaryText: "a mapping between the (tangible/textual) %%terms^term%% and (intangible) ideas/%%concepts^concept%% - their meaning."

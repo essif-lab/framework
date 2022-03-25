@@ -4,6 +4,7 @@ title: "Transaction Data Collector"
 scopeid: essifLab
 type: concept
 typeid: transaction-data-collector
+symphrase: transaction-data-collector%{ss}
 stage: draft
 hoverText: "Transaction Data Collector: a functional component that collects sufficient and Validated Data for deciding whether or not a request (typically for a product or a service) is to be serviced."
 glossaryText: "a functional component that collects sufficient and %%validated^validate%% data for deciding whether or not a request (typically for a product or a service) is to be serviced."

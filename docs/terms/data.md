@@ -4,6 +4,7 @@ title: "Data"
 scopeid: essifLab
 type: concept
 typeid: data
+symphrase: data
 stage: draft
 hoverText: "Data: something (tangible) that can be used to communicate a meaning (which is intangible/information)."
 glossaryText: "something (tangible) that can be used to communicate a meaning (which is intangible/information)."

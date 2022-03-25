@@ -4,6 +4,7 @@ title: "Self-Sovereignty"
 scopeid: eSSIFLab
 type: concept
 typeid: self-sovereignty
+symphrase: self-sovereignty, autonomy
 stage: draft
 hoverText: "Self-Sovereign(ty): the characteristic of every Party that it is autonomous in managing and operating its own Knowledge, particularly in making decisions and deciding how to decide."
 glossaryText: "the characteristic of every %%party^party%% that it is autonomous in managing and operating its %%own^owner%% %%knowledge^knowledge%%, particularly in making decisions and deciding how to decide."

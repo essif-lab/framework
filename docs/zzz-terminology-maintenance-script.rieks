@@ -36,8 +36,8 @@ eof = "(?:$(?![\r\n]))"
 beg = "(?<=\W%%)"
 mid = "(?<=(?:\^|\|))"
 end = "(?=%%(?:\W|%{eof}))"
-ss = "(?:['’]?s|\(s\))?"
-yies = "(y|y['’]s|ies)"
+ss = "(?:['’]?s|\(s\))?"    // ~, ~s, ~'s, ~’s, ~(s)
+yies = "(y|y['’]s|ies)"     // ~y, ~y's, ~y’s, ~ies
 
 dutyright = "(?:dut(?:y|ies)|rights?)"
 dutyright = "%{dutyright}(?:-*(?:/|and|or|and/or)-*%{dutyright})?"
@@ -135,8 +135,6 @@ replace-regex "%{mid}(control)(le[rd]|ling)?%{ss}%{end}"
 with "$1ler"
 replace-regex "%{mid}(colleague|concept(-file)?|credential(-type)?(-catalogue)?|commitment-decision)%{ss}?%{end}"
 with "$1"
-replace-regex "%{mid}(colleague)(?:-agent)?%{ss}?%{end}"
-with "$1"
 replace-regex "%{mid}communications?-(channel|session)%{ss}?%{end}"
 with "communication-$1"
 
@@ -170,7 +168,7 @@ with "$1-framework"
 // [G]
 replace-regex "%{mid}glossar%{yies}%{end}"
 with "glossary"
-replace-regex "%{mid}(glossary-file|guardian|governor)%{ss}%{end}"
+replace-regex "%{mid}(glossary-file|guardian)%{ss}%{end}"
 with "$1"
 replace-regex "%{mid}guardianship(-arrangement)?%{ss}%{end}"
 with "guardianship-arrangement"

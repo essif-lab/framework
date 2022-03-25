@@ -4,6 +4,7 @@ title: "Digital Actor"
 scopeid: essifLab
 type: term
 typeid: digital-actor
+symphrase: digital-actor%{ss}
 conceptref: ":Actor"
 stage: draft
 hoverText: "Digital Actor: an Actor in the digital world (e.g. a running app, or a web-server)."

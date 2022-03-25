@@ -4,6 +4,7 @@ title: "Jurisdictions"
 scopeid: essifLab
 type: pattern
 typeid: jurisdiction
+symphrase: jurisdiction
 stage: draft
 hoverText: "The Jurisdictions pattern captures the Concepts and relations that explain what a generic Jurisdiction consists of, and relates it to Parties and Legal Entities."
 date: 20210601

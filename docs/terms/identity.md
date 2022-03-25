@@ -4,6 +4,7 @@ title: "Identity"
 scopeid: essifLab
 type: concept
 typeid: identity
+symphrase: identit%{yies}
 stage: draft
 hoverText: "Identity (of an Entity): the combined Knowledge about that Entity of all Parties, i.e. the union of all Partial Identities of which that Entity is the Subject."
 glossaryText: "the combined %%knowledge^knowledge%% about that %%entity^entity%% of all %%parties^party%%, i.e. the union of all %%partial identities^partial-identity%% of which that %%entity^entity%% is the %%subject^subject%%."

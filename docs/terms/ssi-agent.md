@@ -4,6 +4,7 @@ title: "SSI Agent"
 scopeid: essifLab
 type: term
 typeid: ssi-agent
+symphrase: ssi-agent%{ss}
 conceptref: essifLab:Agent
 stage: draft
 hoverText: "SSI-Agent: a Digital Agent that provides one or more of the SSI functionalities (Issuer, Holder, Verifier, Wallet) to its Principal."

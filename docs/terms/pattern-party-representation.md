@@ -4,6 +4,7 @@ title: "Party Representation"
 scopeid: essifLab
 type: pattern
 typeid: party-representation
+symphrase: party-representation
 stage: draft
 hoverText: "The Party Representation pattern captures the foundational concepts and relations that we need for thinking about how Parties can be represented in various circumstances."
 glossaryText: "The Party Representation pattern captures the foundational concepts and relations that we need for thinking about how %%parties^party%% can be represented in various circumstances."

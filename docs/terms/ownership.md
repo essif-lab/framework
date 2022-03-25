@@ -4,6 +4,7 @@ title: "Ownership"
 scopeid: essifLab
 type: concept
 typeid: ownership
+symphrase: ownership%{ss}, owning, legal-ownership%{ss}, rightful-ownership%{ss}, natural-ownership%{ss}
 stage: draft
 hoverText: "Ownership (of an Entity over another in a Jurisdiction): a relationship between two Entities in which one of them (called the Owner) has legal, rightful or natural rights and/or duties to enjoy, dispose of, and control the other (called the Owned)."
 glossaryText: "a relationship between two %%entities^entity%% that exists within the %%scope of control^scope-of-control%% of a %%jurisdiction^jurisdiction%%, in which one of them (called the %%owner^owner%%) has legal, rightful or natural rights and/or duties to enjoy, dispose of, and control the other (called the %%owned^owned%%)."
@@ -39,4 +40,4 @@ We may use adjectives in combination with 'ownership' to signify the kind of %%j
 
 2. In this framework, we say that
   a. an %%objective|objective%% that a particular %%party|party%% pursues (i.e. towards which a %%party|party%% directs effort), is %%owned|owned%% by that %%party|party%%, and the rights and duties associated with this %%ownership|ownership%% are defined by the %%jurisdiction|jurisdiction%% that the %%party|party%% is itself.
-  b. a %%risk|risk%% that is associated with an %%objective|objective%% is %%owned|owned%% by the %%owner|owner%% of that %%objective|objective%%, and the rights and duties 
+  b. a %%risk|risk%% that is associated with an %%objective|objective%% is %%owned|owned%% by the %%owner|owner%% of that %%objective|objective%%, and the rights and duties

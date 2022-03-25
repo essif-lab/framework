@@ -4,6 +4,7 @@ title: "Control level"
 scopeid: essifLab
 type: concept
 typeid: control-level
+symphrase: control-level%{ss}
 stage: draft
 hoverText: "Control level (of a Control): a measure for the efficiency and effectiveness in which a Control produces the results of its Control Objective."
 glossaryText: "a measure for the efficiency and effectiveness in which a %%control^controller%% produces the results specified by its %%control objective^control-objective%%"

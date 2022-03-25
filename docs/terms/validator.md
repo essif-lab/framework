@@ -4,6 +4,7 @@ title: "Validator"
 scopeid: essifLab
 type: concept
 typeid: validator
+symphrase: validator%{ss}
 stage: draft
 hoverText: "Validator (functional component): the capability to determine whether or not (verified) data is valid to be used for some specific purpose(s)."
 glossaryText: "the capability to determine whether or not (%%verified^verify%%) data is valid to be used for some specific purpose(s)."

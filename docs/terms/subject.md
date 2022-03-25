@@ -4,6 +4,7 @@ title: "Subject"
 scopeid: eSSIFLab
 type: term
 typeid: subject
+symphrase: subject%{ss}
 stage: draft
 hoverText: "Subject (of some coherent data set): the (single) Entity to which a coherent data set relates/pertains, such as attributes, Claims/Assertions, files/dossiers, (verifiable) credentials, Partial Identities, Employment Contracts, etc."
 glossaryText: "the (single) %%entity^entity%% to which a given set of coherent data relates/pertains. Examples of such sets include attributes, %%Claims/Assertions^assertion%%, files/dossiers, %%(verifiable) credentials^credential%%, %%(partial) identities^partial-identity%%, %%employment contracts^employment-contract%%, etc."
