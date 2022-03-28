@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: jurisdiction-governor
-symphrase: jurisdiction-governor%{ss}
+symphrase: jurisdiction-governor{ss}
 stage: draft
 hoverText: "Governor (of a Jurisdiction): the Party that operates the Legal System of that Jurisdiction."
 glossaryText: "the %%party^party%% that operates the %%legal system^legal-system%% of that %%jurisdiction^jurisdiction%%."

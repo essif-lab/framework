@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: credential
-symphrase: credential%{ss}, verifiable-credential%{ss}, attribute-based-credential%{ss}
+symphrase: credential{ss}, verifiable-credential{ss}, attribute-based-credential{ss}
 stage: draft
 hoverText: "Credential: data, representing a set of Assertions (claims, statements), authored and signed by, or on behalf of, a specific Party."
 glossaryText: "data, representing a set of %%assertions^assertion%% (claims, statements), authored and signed by, or on behalf of, a specific %%party^party%%."

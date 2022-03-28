@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: decision
-symphrase: decision%{ss}
+symphrase: decision{ss}
 stage: draft
 hoverText: "Decision (of a Party): the conclusion that this Party inferences from a set of Data that it considers to be facts."
 glossaryText: "the conclusion that a %%party^party%% inferences from a set of %%data^data%% that it considers to be facts."

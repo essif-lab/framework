@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: normative-framework
-symphrase: normative-framework%{ss}
+symphrase: normative-framework{ss}
 stage: draft
 hoverText: "Normative framework (for a specific class of Entities)): a set of rules that are followed and/or criteria that remain fulfilled by (a specific kind of) Entities whose behaviour and/or properties are characterized as 'normal'."
 glossaryText: "a set of rules that are followed and/or criteria that remain fulfilled by (a specific kind of) %%entities^entity%% whose behaviour and/or properties are characterized as 'normal'."

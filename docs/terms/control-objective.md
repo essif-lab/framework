@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: control-objective
-symphrase: control-objective%{ss}
+symphrase: control-objective{ss}
 stage: draft
 hoverText: "Control objective (of a Party): an Objective, owned by that Party, that aims to contribute to the realization of another (set of) Objective(s) of that Party, by producing results that this Party needs to realize these other Objective(s)."
 glossaryText: "an %%objective^objective%%, owned by a %%party^party%%, that aims to contribute to the realization of another (set of) %%objective(s)^objective%% of that %%party^party%%, by producing results that this %%party^party%% needs to realize these other %%objective(s)^objective%%."

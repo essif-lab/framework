@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: trust-level
-symphrase: trust-level%{ss}
+symphrase: trust-level{ss}
 stage: draft
 hoverText: "Trust level (of a Party in X): the (subjective) degree of belief or confidence that this Party has in X"
 glossaryText: "the (subjective) degree of belief or confidence that a %%party^party%% has in X (someone, something, ...)."

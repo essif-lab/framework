@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: compliance-level
-symphrase: compliance-level%{ss}
+symphrase: compliance-level{ss}
 stage: draft
 hoverText: "Compliance level (of an Entity, regarding a stated (set of) requirement(s)): a measure for stating how well the Entity conforms with the stated (set of) requirement(s)."
 glossaryText: "a measure for stating how well an %%entity^entity%% conforms with a stated (set of) requirement(s)."

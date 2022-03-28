@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: employer
-symphrase: employer%{ss}
+symphrase: employer{ss}
 stage: draft
 hoverText: "Employer (of an Actor): a Party on whose behalf this Actor (called an Employee of that Party) might execute Actions."
 glossaryText: "a %%party^party%% on whose behalf an %%actor^actor%% (called an %%employee^employee%% of that %%party^party%%) might execute %%actions^action%%."

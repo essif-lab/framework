@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: human-being
-symphrase: human-being%{ss}, human%{ss}, person%{ss}, individual%{ss}, people
+symphrase: human-being{ss}, human{ss}, person{ss}, individual{ss}, people
 stage: draft
 hoverText: "Human Being: a person of flesh and blood (homo sapiens), that we classify both as a Party, an Actor, and a Jurisdiction."
 glossaryText: "a person of flesh and blood (homo sapiens), that we classify both as a %%party^party%%,an %%actor^actor%%, and a %%jurisdiction^jurisdiction%%."

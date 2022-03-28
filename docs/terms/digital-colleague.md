@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: term
 typeid: digital-colleague
-symphrase: digital-colleague%{ss}
+symphrase: digital-colleague{ss}
 conceptref: ":Colleague"
 stage: draft
 hoverText: "Digital Colleagues: two or more Digital Agents that all have the same Principal (i.e. Party on whose behalf they exeucte Actions)."

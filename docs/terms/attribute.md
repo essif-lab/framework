@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: attribute
-symphrase: attribute%{ss}
+symphrase: attribute{ss}
 stage: draft
 hoverText: "Attribute (of an Entity): Data, that represents a characteristic that a Party (the Owner of the attribute) has attributed to an Entity."
 glossaryText: "%%Data^data%%, that represents a characteristic that a %%party^party%% (the %%owner^owner%% of the %%attribute^attribute%%) has attributed to an %%entity^entity%%."

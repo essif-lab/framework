@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: wallet-policy
-symphrase: wallet-polic%{yies}
+symphrase: wallet-polic{yies}
 stage: draft
 hoverText: "Wallet Policy: a Digital Policy that enables an operational Wallet component to function in accordance with the Objectives of its Principal."
 glossaryText: "a %%digital policy^digital-policy%% that enables an operational %%wallet^wallet%% component to function in accordance with the %%objectives^objective%% of its %%principal^principal%%."

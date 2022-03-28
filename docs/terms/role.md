@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: role
-symphrase: role%{ss}
+symphrase: role{ss}
 stage: draft
 hoverText: "Role (of an Entity in some context): a set of characteristics that the Entity has, Actions (behaviours) that it may execute, or pieces of Knowledge that it is expected to have in that context, that can be referenced to by a specific (Role-)name."
 glossaryText: "a set of characteristics that the entity has, %%actions^action%% (behaviours) that it may execute, or pieces of %%knowledge^knowledge%% that it is expected to have in that context, that are referenced to by a specific %%role name^role-name%%."

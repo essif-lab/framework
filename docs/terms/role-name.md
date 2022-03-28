@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: term
 typeid: role-name
-symphrase: role-name%{ss}
+symphrase: role-name{ss}
 stage: draft
 hoverText: "Role name: name (text) that refers to (and identifies) a Role in a a specific context."
 glossaryText: "name (text) that refers to (and identifies) a %%role^role%% in a specific context."

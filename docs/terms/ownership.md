@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: ownership
-symphrase: ownership%{ss}, owning, legal-ownership%{ss}, rightful-ownership%{ss}, natural-ownership%{ss}
+symphrase: ownership{ss}, owning, legal-ownership{ss}, rightful-ownership{ss}, natural-ownership{ss}
 stage: draft
 hoverText: "Ownership (of an Entity over another in a Jurisdiction): a relationship between two Entities in which one of them (called the Owner) has legal, rightful or natural rights and/or duties to enjoy, dispose of, and control the other (called the Owned)."
 glossaryText: "a relationship between two %%entities^entity%% that exists within the %%scope of control^scope-of-control%% of a %%jurisdiction^jurisdiction%%, in which one of them (called the %%owner^owner%%) has legal, rightful or natural rights and/or duties to enjoy, dispose of, and control the other (called the %%owned^owned%%)."

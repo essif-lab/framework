@@ -5,7 +5,7 @@ scopeid: eSSIFLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: ssi-infrastructure
-symphrase: ssi-infrastructure%{ss}
+symphrase: ssi-infrastructure{ss}
 stage: draft
 hoverText: "SSI Infrastructure: the technological components that are (envisaged to be) deployed all over the world for the purpose of providing, requesting and obtaining Qualified Data, for the purpose of negotiating and/or executing electronic Transactions."
 glossaryText: "the technological components that are (envisaged to be) all over the world for the purpose of providing, requesting and obtaining %%qualified data^qualified-data%%, for the purpose of negotiating and/or executing electronic %%transactions^transaction%%."

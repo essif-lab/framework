@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: legal-entity
-symphrase: legal-entit%{yies}
+symphrase: legal-entit{yies}
 stage: draft
 hoverText: "Legal Entity (of a Jurisdiction): an Entity that is known by, recognized to exist, and registered in that Jurisdiction."
 glossaryText: "an %%entity^entity%% that is known by, recognized to exist, and registered in that %%jurisdiction^jurisdiction%%."

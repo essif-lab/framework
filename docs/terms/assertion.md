@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: assertion
-symphrase: assertion%{ss}
+symphrase: assertion{ss}
 stage: draft
 hoverText: "Assertion: a declaration/statement, made by a specific Party, that something is the case."
 glossaryText: "a declaration/statement, made by a specific %%party^party%%, that something is the case."

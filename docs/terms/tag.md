@@ -5,7 +5,7 @@ scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: tag
-symphrase: tag%{ss}
+symphrase: tag{ss}
 stage: draft
 hoverText: "Tag: an alphanumeric string that is used to identify Scopes and/or group Terms, and that satisfies the regex `#[a-z-0-9]+`."
 glossaryText: "an alphanumeric string that is used to identify %%scopes^scope%% and/or group %%terms^term%%, and that satisfies the regex `#[a-z-0-9]+`."

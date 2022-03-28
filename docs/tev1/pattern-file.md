@@ -5,7 +5,7 @@ scopeid: scopeID
 displayed_sidebar: essifLabSideBar
 type: pattern
 typeid: patternID
-symphrase: patternID%{ss}
+symphrase: patternID{ss}
 stage: draft
 hoverText: "PatternID: popuptext for 'patternID' (tbd)."
 glossaryText: "popuptext for 'patternID' (tbd)."

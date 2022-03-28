@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: holder-policy
-symphrase: holder-polic%{yies}
+symphrase: holder-polic{yies}
 stage: draft
 hoverText: "Holder Policy: a Digital Policy that enables an operational Holder component to function in accordance with the Objectives of its Principal"
 glossaryText: "a %%digital policy^digital-policy%% that enables an operational %%holder^holder%% component to function in accordance with the %%objectives^objective%% of its %%principal^principal%%."

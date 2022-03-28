@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: objective
-symphrase: objective%{ss}
+symphrase: objective{ss}
 stage: draft
 hoverText: "Objective: Something toward which a Party (its Owner) directs effort (an aim, goal, or end of action)."
 glossaryText: "Something toward which a %%party^party%% (its %%owner^owner%%) directs effort (an aim, goal, or end of action)."

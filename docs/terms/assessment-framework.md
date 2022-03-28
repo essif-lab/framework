@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: assessment-framework
-symphrase: assessment-framework%{ss}
+symphrase: assessment-framework{ss}
 stage: draft
 hoverText: "Assessment framework (for a set of requirements on a specified kind of Entity)): the combination of a set of criteria that an auditor can assess by applying them to an Entity (of the specified kind), and the procedures that this Auditor will follow for doing so, for the purpose of establishing the extent in which that Entity conforms to the stated set of requirements."
 glossaryText: "the combination of a set of criteria that an auditor can assess by applying them to an %%entity^entity%% (of a specific kind), and the procedures that this auditor will follow for doing so, for the purpose of establishing the extent in which that %%entity^entity%% conforms to a stated set of requirements."

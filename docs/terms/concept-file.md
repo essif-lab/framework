@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: concept-file
-symphrase: concept-file%{ss}
+symphrase: concept-file{ss}
 stage: draft
 hoverText: "Concept-file: a file whose contents defines/specifies a Concept."
 glossaryText: "a file whose contents defines/specifies a %%concept^concept%%."

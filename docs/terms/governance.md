@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: governance
-symphrase: governance, govern, governs, governed, governed-by, governing, governing-part%{ies}, governor%{ss}, government%{ss}
+symphrase: governance, govern, governs, governed, governed-by, governing, governing-part{yies}, governor{ss}, government{ss}
 stage: draft
 hoverText: "Governance: the act or process of governing or overseeing the realization of (the results associated with) a set of Objectives by the Owner of these Objectives."
 glossaryText: "the %%act^action%% or process of governing or overseeing the realization of (the results associated with) a set of %%objectives^objective%% by the %%owner^owner%% of these %%objectives^objective%%."

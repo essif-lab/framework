@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: risk-management
-symphrase: risk-management, risk-manager%{ss}
+symphrase: risk-management, risk-manager{ss}
 stage: draft
 hoverText: "Risk management: a process that is run by (or on behalf of) a specific Party for the purpose of Managing the Risks that it Owns (thereby realizing specific Risk Objectives)."
 glossaryText: "a process that is run by (or on behalf of) a specific %%party^party%% for the purpose of %%managing^management%% the %%risks^risk%% that it %%owns^owner%% (thereby realizing specific %%risk objectives^risk-objective%%)."

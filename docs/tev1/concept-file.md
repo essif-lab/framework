@@ -5,7 +5,7 @@ scopeid: scopeID
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: conceptID
-symphrase: conceptID%{ss}
+symphrase: conceptID{ss}
 stage: draft
 hoverText: "ConceptID: popuptext for 'conceptID' (tbd)."
 glossaryText: "popuptext for 'conceptID' (tbd)."

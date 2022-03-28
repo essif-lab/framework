@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: expectation
-symphrase: expectation%{ss}
+symphrase: expectation{ss}
 stage: draft
 hoverText: "Expectation (of a Party): an Objective that is Owned by that Party, and that does not itself produce the associated results."
 glossaryText: "an %%objective^objective%% that is %%owned^owned%% by a %%party^party%%, and that does not itself produce the associated results."

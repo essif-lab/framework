@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: authority
-symphrase: authorit%{yies}
+symphrase: authorit{yies}
 stage: draft
 hoverText: "Authority: a Party of which certain decisions, ideas, rules etc. are followed by other Parties."
 glossaryText: "a %%party^party%% of which certain decisions, ideas, rules etc. are followed by other %%parties^party%%."

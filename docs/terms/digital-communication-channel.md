@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: digital-communication-channel
-symphrase: digital-communication-channel%{ss}
+symphrase: digital-communication-channel{ss}
 stage: draft
 hoverText: "Digital Communication Channel: a digital means by which two Digital Actors can exchange messages with one another."
 glossaryText: "a digital means by which two %%digital actors^digital-actor%% can exchange messages with one another."

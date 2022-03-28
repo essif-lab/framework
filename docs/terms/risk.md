@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: risk
-symphrase: risk%{ss}
+symphrase: risk{ss}
 stage: draft
 hoverText: "Risk (of a Party's Objective): the effects that uncertainty (i.e. a lack of information, understanding or knowledge of events, their consequences or likelihoods) can have on the intended realization of that Party's Objective."
 glossaryText: "the effects that uncertainty (i.e. a lack of information, understanding or %%knowledge^knowledge%% of events, their consequences or likelihoods) can have on the intended realization of an %%objective^objective%% of a %%party^party%%."

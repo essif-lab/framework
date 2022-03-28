@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: term
 typeid: peer-actor
-symphrase: peer-actor%{ss}
+symphrase: peer-actor{ss}
 conceptref: essifLab:Actor
 stage: draft
 hoverText: "Peer Actor (of some other Actor in a Communication Session): the Actor with whom/which this other Actor is communicating in that Communication Session."

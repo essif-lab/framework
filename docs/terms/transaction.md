@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: transaction
-symphrase: transaction%{ss}
+symphrase: transaction{ss}
 stage: draft
 hoverText: "Transaction: the exchange of goods, services, funds, or data between some Parties (called Participants of the Transaction)."
 glossaryText: "the exchange of goods, services, funds, or data between some %%parties^party%% (called %%participants^participant%% of the %%transaction^transaction%%)."

@@ -5,7 +5,7 @@ scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: term
-symphrase: term%{ss}, word%{ss}, phrase%{ss}
+symphrase: term{ss}, word{ss}, phrase{ss}
 stage: draft
 hoverText: "Term: a word or phrase that is used in at least one Scope/context to represent a specific Concept (and referring to its Definition)."
 glossaryText: "a word or phrase that is used in at least one %%scope^scope%%/context to represent a specific %%concept^concept%% (and referring to its %%definition^definition%%)."

@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: terms-community
-symphrase: terms-communit%{yies}
+symphrase: terms-communit{yies}
 stage: draft
 hoverText: "Terms Community: a Community that maintains a Terminology for the purpose of avoiding misunderstandings between its members as they collaborate."
 glossaryText: "a %%community^community%% that maintains a %%terminology^terminology%% for the purpose of avoiding misunderstandings between its members as they collaborate."
