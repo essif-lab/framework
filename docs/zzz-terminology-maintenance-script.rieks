@@ -36,8 +36,10 @@ eof = "(?:$(?![\r\n]))"
 beg = "(?<=\W%%)"
 mid = "(?<=(?:\^|\|))"
 end = "(?=%%(?:\W|%{eof}))"
-ss = "(?:['’]?s|\(s\))?"    // ~, ~s, ~'s, ~’s, ~(s)
-yies = "(y|y['’]s|ies)"     // ~y, ~y's, ~y’s, ~ies
+// `~%{ss}` stands for ~, ~s, ~'s, ~’s, ~(s)
+ss = "(?:['’]?s|\(s\))?"
+// ~%{yies} stands for ~y, ~y's, ~y’s, ~ies
+yies = "(y|y['’]s|ies)"
 
 dutyright = "(?:dut(?:y|ies)|rights?)"
 dutyright = "%{dutyright}(?:-*(?:/|and|or|and/or)-*%{dutyright})?"
@@ -64,11 +66,6 @@ with "'"
 replace-regex "toin"
 with "tion"
 
-// We might want to 'undo' %%...|...%% markers in case some 'show text' needs to be associated wiht another 'reftext'
-// However, that wouldn't work e.g. for %%jurisdiction|party%% kind of constructs, so we don't do it
-// replace-regex "(?<=\W)%%([^\|\n\r]+)\|[^%\n\r]+%%(?=\W)"
-// with "%$1%"
-
 // First, convert %show text% into %%show text%% in most of the cases... (it isn't fool proof!)
 // Use test sets: use the replace-regex to find texts in this file. Matches should match, non-matches should not.
 // Test set: NONE MAY MATCH: %verif%er, %verif"ier%, "%verifier%", `%verifier%`
@@ -87,7 +84,7 @@ with "%$1%"
 // with "%$1%%"
 
 // Then, we can expand %%show text%% into %%show text|show text%%
-replace-regex "(?<=\W)%%([^\|\^]*?)%%(?=\W)"
+replace-regex "(?<=[^A-Za-z])%%([^\|\^]*?)%%(?=[^A-Za-z])"
 with "%%$1|$1%%"
 
 // Next, we convert the latter part into lowercase
