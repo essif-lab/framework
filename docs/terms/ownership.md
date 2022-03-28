@@ -2,6 +2,7 @@
 id: ownership
 title: "Ownership"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: ownership
 symphrase: ownership%{ss}, owning, legal-ownership%{ss}, rightful-ownership%{ss}, natural-ownership%{ss}

@@ -2,6 +2,7 @@
 id: verify
 title: "Verify"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: verify
 symphrase: verify, verifies, verified, verifying

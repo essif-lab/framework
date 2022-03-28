@@ -2,6 +2,7 @@
 id: control-process
 title: "Control Process"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: control-process
 symphrase: control-process, control-processes

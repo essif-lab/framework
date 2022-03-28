@@ -2,6 +2,7 @@
 id: digital-data
 title: "Digital Data"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: digital-data
 symphrase: digital-data

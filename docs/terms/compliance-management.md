@@ -2,6 +2,7 @@
 id: compliance-management
 title: "Compliance management"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: compliance-management
 symphrase: compliance-management

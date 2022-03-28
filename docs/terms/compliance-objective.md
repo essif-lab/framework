@@ -2,6 +2,7 @@
 id: compliance-objective
 title: "Compliance Objective"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: compliance-objective
 symphrase: compliance-objective%{ss}

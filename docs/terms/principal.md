@@ -2,6 +2,7 @@
 id: principal
 title: "Principal"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: principal
 symphrase: principal%{ss}

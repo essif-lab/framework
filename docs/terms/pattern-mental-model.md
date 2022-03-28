@@ -2,6 +2,7 @@
 id: pattern-mental-model
 title: "Mental Models"
 scopeid: essifLabTerminology
+displayed_sidebar: essifLabSideBar
 type: pattern
 typeid: mental-model
 symphrase: mental-model

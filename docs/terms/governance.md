@@ -2,6 +2,7 @@
 id: governance
 title: "Governance"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: governance
 symphrase: governance, govern, governs, governed, governed-by, governing, governing-part%{ies}, governor%{ss}, government%{ss}

@@ -2,6 +2,7 @@
 id: scope
 title: "Scope"
 scopeid: eSSIFLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: scope
 symphrase: scope%{ss}

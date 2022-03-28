@@ -2,6 +2,7 @@
 id: trust-level
 title: "Trust level"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: trust-level
 symphrase: trust-level%{ss}

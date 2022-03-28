@@ -2,6 +2,7 @@
 id: transaction-data-collector-policy
 title: "Transaction Data Collector Policy"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: transaction-data-collector-policy
 symphrase: transaction-data-collector-polic%{yies}

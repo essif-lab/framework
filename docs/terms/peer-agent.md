@@ -2,6 +2,7 @@
 id: peer-agent
 title: "Peer Agent"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: term
 typeid: peer-agent
 symphrase: peer-agent%{ss}

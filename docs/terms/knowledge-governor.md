@@ -2,6 +2,7 @@
 id: knowledge-governor
 title: "Governor (of a Knowledge)"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: knowledge-governor
 symphrase: knowledge-governor%{ss}

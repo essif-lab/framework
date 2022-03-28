@@ -2,6 +2,7 @@
 id: identity
 title: "Identity"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: identity
 symphrase: identit%{yies}

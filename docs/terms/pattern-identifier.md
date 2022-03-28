@@ -2,6 +2,7 @@
 id: pattern-identifier
 title: "Identifier Pattern"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: pattern
 typeid: identifier
 symphrase: identifier

@@ -2,6 +2,7 @@
 id: pattern-terminology
 title: "Terminology Pattern"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: pattern
 typeid: terminology
 symphrase: terminology

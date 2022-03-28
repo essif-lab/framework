@@ -2,6 +2,7 @@
 id: data-collector
 title: "Data Collector"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: data-collector
 symphrase: data-collector%{ss}

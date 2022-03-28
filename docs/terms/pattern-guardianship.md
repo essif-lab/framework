@@ -2,6 +2,7 @@
 id: pattern-guardianship
 title: "Guardianship"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: pattern
 typeid: guardianship
 symphrase: guardianship

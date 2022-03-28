@@ -2,6 +2,7 @@
 id: party
 title: "Party"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: party
 symphrase: part%{yies}

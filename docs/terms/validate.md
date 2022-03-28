@@ -2,6 +2,7 @@
 id: validate
 title: "Validate"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: validate
 symphrase: validate, validates, validated, validating

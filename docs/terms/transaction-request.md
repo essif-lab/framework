@@ -2,6 +2,7 @@
 id: transaction-request
 title: "Transaction Request"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: transaction-request
 symphrase: transaction-request%{ss}

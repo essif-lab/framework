@@ -2,6 +2,7 @@
 id: pattern-file
 title: "Pattern-file"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: pattern-file
 symphrase: pattern-file

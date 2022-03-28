@@ -2,6 +2,7 @@
 id: documentation-interop
 title: "Documentation Interoperability"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: documentation-interop
 symphrase: documentation-interop

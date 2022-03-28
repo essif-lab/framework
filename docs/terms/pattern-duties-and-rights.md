@@ -2,6 +2,7 @@
 id: pattern-duties-and-rights
 title: "Duties and Rights"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: pattern
 typeid: duties-and-rights
 symphrase: duties-and-rights

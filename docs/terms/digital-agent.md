@@ -2,6 +2,7 @@
 id: digital-agent
 title: "Digital Agent"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: term
 typeid: digital-agent
 symphrase: digital-agent%{ss}

@@ -2,6 +2,7 @@
 id: corpus
 title: "Corpus of Terminology"
 scopeid: essifLabTerminology
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: corpus
 symphrase: corpus

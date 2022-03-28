@@ -2,6 +2,7 @@
 id: communication-channel
 title: "Communication Channel"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: communication-channel
 symphrase: communication-channel%{ss}

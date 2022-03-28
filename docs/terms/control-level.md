@@ -2,6 +2,7 @@
 id: control-level
 title: "Control level"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: control-level
 symphrase: control-level%{ss}

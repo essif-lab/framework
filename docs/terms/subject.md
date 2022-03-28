@@ -2,6 +2,7 @@
 id: subject
 title: "Subject"
 scopeid: eSSIFLab
+displayed_sidebar: essifLabSideBar
 type: term
 typeid: subject
 symphrase: subject%{ss}

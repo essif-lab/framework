@@ -2,6 +2,7 @@
 id: pattern-jurisdiction
 title: "Jurisdictions"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: pattern
 typeid: jurisdiction
 symphrase: jurisdiction

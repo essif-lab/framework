@@ -2,6 +2,7 @@
 id: objective
 title: "Objective"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: objective
 symphrase: objective%{ss}

@@ -2,6 +2,7 @@
 id: compliance-level
 title: "Compliance level"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: compliance-level
 symphrase: compliance-level%{ss}

@@ -2,6 +2,7 @@
 id: agent
 title: "Agent"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: agent
 symphrase: agent%{ss}

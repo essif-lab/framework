@@ -2,6 +2,7 @@
 id: ssi-agent
 title: "SSI Agent"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: term
 typeid: ssi-agent
 symphrase: ssi-agent%{ss}

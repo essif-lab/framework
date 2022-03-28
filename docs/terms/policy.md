@@ -2,6 +2,7 @@
 id: policy
 title: "Policy"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: policy
 symphrase: polic%{yies}

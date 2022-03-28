@@ -2,6 +2,7 @@
 id: presentation
 title: "Presentation"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: presentation
 symphrase: presentation%{ss}, verifiable-presentation%{ss}

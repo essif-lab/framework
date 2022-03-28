@@ -2,6 +2,7 @@
 id: scope-of-control
 title: "Scope of Control"
 scopeid: eSSIFLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: scope-of-control
 symphrase: scope-of-control, scopes-of-control

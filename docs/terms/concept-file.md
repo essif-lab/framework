@@ -2,6 +2,7 @@
 id: concept-file
 title: "Concept-file"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: concept-file
 symphrase: concept-file%{ss}

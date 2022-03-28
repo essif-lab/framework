@@ -2,6 +2,7 @@
 id: verifier-policy
 title: "Verifier Policy"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: verifier-policy
 symphrase: verifier-polic%{yies}

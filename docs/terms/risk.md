@@ -2,6 +2,7 @@
 id: risk
 title: "Risk"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: risk
 symphrase: risk%{ss}

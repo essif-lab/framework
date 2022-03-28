@@ -2,6 +2,7 @@
 id: issuer-policy
 title: "Isuer Policy"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: issuer-policy
 symphrase: issuer-polic%{yies}

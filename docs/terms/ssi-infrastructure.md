@@ -2,6 +2,7 @@
 id: ssi-infrastructure
 title: "SSI Infrastructure"
 scopeid: eSSIFLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: ssi-infrastructure
 symphrase: ssi-infrastructure%{ss}

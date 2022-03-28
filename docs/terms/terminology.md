@@ -2,6 +2,7 @@
 id: terminology
 title: "Terminology"
 scopeid: essifLabTerminology
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: terminology
 symphrase: terminolog%{yies}

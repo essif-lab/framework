@@ -2,6 +2,7 @@
 id: employee
 title: "Employee"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: employee
 symphrase: employee%{ss}

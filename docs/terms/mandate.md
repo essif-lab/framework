@@ -2,6 +2,7 @@
 id: mandate
 title: "Mandate"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: mandate
 symphrase: mandate%{ss}, mandated, mandating, mandator%{ss}, mandatee%{ss}

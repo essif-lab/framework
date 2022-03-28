@@ -2,6 +2,7 @@
 id: data-discloser-policy
 title: "Data Discloser Policy"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: data-discloser-policy
 symphrase: data-discloser-polic%{yies}

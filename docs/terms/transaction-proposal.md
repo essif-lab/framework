@@ -2,6 +2,7 @@
 id: transaction-proposal
 title: "Transaction Proposal"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: transaction-proposal
 symphrase: transaction-proposal%{ss}

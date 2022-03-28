@@ -2,6 +2,7 @@
 id: self-sovereignty
 title: "Self-Sovereignty"
 scopeid: eSSIFLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: self-sovereignty
 symphrase: self-sovereignty, autonomy

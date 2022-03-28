@@ -2,6 +2,7 @@
 id: data
 title: "Data"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: data
 symphrase: data

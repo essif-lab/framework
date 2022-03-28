@@ -2,6 +2,7 @@
 id: pattern-identification
 title: "Identification Pattern"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: pattern
 typeid: identification
 symphrase: identification

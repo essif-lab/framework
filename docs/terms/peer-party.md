@@ -2,6 +2,7 @@
 id: peer-party
 title: "Peer Party"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: term
 typeid: peer-party
 symphrase: peer-part%{yies}

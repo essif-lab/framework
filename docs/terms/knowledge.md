@@ -2,6 +2,7 @@
 id: knowledge
 title: "Knowledge"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: knowledge
 symphrase: knowledge%{ss}

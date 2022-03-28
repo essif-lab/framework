@@ -2,6 +2,7 @@
 id: transaction-data-collector
 title: "Transaction Data Collector"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: transaction-data-collector
 symphrase: transaction-data-collector%{ss}

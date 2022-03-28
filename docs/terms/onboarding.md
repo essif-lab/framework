@@ -2,6 +2,7 @@
 id: onboarding
 title: "Onboarding"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: onboarding
 symphrase: onboarding, onboard, onboards, onboarded

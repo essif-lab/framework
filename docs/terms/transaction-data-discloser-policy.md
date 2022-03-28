@@ -2,6 +2,7 @@
 id: transaction-data-discloser-policy
 title: "Transaction Data Discloser Policy"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: transaction-data-discloser-policy
 symphrase: transaction-data-discloser-polic%{yies}

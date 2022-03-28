@@ -2,6 +2,7 @@
 id: transaction-id
 title: "Transaction Id"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: transaction-id
 symphrase: transaction-id%{ss}

@@ -2,6 +2,7 @@
 id: digital-actor
 title: "Digital Actor"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: term
 typeid: digital-actor
 symphrase: digital-actor%{ss}

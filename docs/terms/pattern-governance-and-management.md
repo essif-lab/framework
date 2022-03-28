@@ -2,6 +2,7 @@
 id: pattern-governance-and-management
 title: "Governance and Management"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: pattern
 typeid: governance-and-management
 symphrase: governance-and-management

@@ -2,6 +2,7 @@
 id: legal-jurisdiction
 title: "Legal Jurisdiction"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: term
 typeid: legal-jurisdiction
 symphrase: legal-jurisdiction%{ss}

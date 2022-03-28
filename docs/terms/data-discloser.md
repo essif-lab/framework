@@ -2,6 +2,7 @@
 id: data-discloser
 title: "Data Discloser"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: data-discloser
 symphrase: data-discloser%{ss}

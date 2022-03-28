@@ -2,6 +2,7 @@
 id: validator
 title: "Validator"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: validator
 symphrase: validator%{ss}

@@ -2,6 +2,7 @@
 id: verifier
 title: "Verifier"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: verifier
 symphrase: verifier%{ss}

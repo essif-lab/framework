@@ -2,6 +2,7 @@
 id: digital-communication-channel
 title: "Digital Communication Channel"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: digital-communication-channel
 symphrase: digital-communication-channel%{ss}

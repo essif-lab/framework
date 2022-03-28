@@ -2,6 +2,7 @@
 id: entity
 title: "Entity"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: entity
 symphrase: entit%{yies}

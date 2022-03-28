@@ -2,6 +2,7 @@
 id: action
 title: "Action"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: action
 symphrase: action%{ss}, acting, activit%{yies}

@@ -2,6 +2,7 @@
 id: controllership
 title: "Controllership"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: controllership
 symphrase: controllership

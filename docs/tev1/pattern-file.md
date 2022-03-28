@@ -2,6 +2,7 @@
 id: patternID
 title: "Pattern: PatternName"
 scopeid: scopeID
+displayed_sidebar: essifLabSideBar
 type: pattern
 typeid: patternID
 symphrase: patternID%{ss}

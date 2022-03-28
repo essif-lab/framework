@@ -2,6 +2,7 @@
 id: role-name
 title: "Role name"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: term
 typeid: role-name
 symphrase: role-name%{ss}

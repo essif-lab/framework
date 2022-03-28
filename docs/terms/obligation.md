@@ -2,6 +2,7 @@
 id: obligation
 title: "Obligation"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: obligation
 symphrase: obligation%{ss}

@@ -2,6 +2,7 @@
 id: pattern-trust
 title: "Trust Pattern"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: pattern
 typeid: trust
 symphrase: trust

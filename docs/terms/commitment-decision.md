@@ -2,6 +2,7 @@
 id: commitment-decision
 title: "Commitment Decision"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: commitment-decision
 symphrase: commitment-decision%{ss}

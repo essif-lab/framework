@@ -2,6 +2,7 @@
 id: pattern-party-actor-action
 title: "Parties, Actors and Actions"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: pattern
 typeid: party-actor-action
 symphrase: party-actor-action

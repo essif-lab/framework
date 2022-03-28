@@ -2,6 +2,7 @@
 id: pattern
 title: "Pattern"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: pattern
 symphrase: pattern%{ss}

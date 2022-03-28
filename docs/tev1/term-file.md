@@ -2,6 +2,7 @@
 id: termID
 title: "NameOfNewConcept"
 scopeid: scopeID
+displayed_sidebar: essifLabSideBar
 type: term
 typeid: termID
 symphrase: termID%{ss}

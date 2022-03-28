@@ -2,6 +2,7 @@
 id: transaction-agreement
 title: "Transaction Agreement"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: transaction-agreement
 symphrase: transaction-agreement%{ss}

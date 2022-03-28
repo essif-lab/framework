@@ -2,6 +2,7 @@
 id: delegate
 title: "Delegate"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: delegate
 symphrase: delegate%{ss}, delegated, delegating, delegator%{ss}, delegatee%{ss}

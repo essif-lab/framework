@@ -2,6 +2,7 @@
 id: issuer
 title: "Issuer"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: issuer
 symphrase: issuer%{ss}

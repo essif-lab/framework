@@ -2,6 +2,7 @@
 id: presentation-request
 title: "Presentation Request"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: presentation-request
 symphrase: presentation-request%{ss}, verifiable-presentation-request%{ss}

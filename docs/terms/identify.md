@@ -2,6 +2,7 @@
 id: identify
 title: "Identify"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: identify
 symphrase: identify, identifies, identifying, identifiable, identified, identification

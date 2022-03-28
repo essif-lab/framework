@@ -2,6 +2,7 @@
 id: risk-owner
 title: "Risk Owner"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: risk-owner
 symphrase: risk-owner%{ss}

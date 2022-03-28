@@ -2,6 +2,7 @@
 id: actor
 title: "Actor"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: actor
 symphrase: actor%{ss}

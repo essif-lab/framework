@@ -2,6 +2,7 @@
 id: authority
 title: "Authority (Centralized or Decentralized)"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: authority
 symphrase: authorit%{yies}

@@ -2,6 +2,7 @@
 id: ecosystem
 title: "Ecosystem"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: ecosystem
 symphrase: ecosystem%{ss}

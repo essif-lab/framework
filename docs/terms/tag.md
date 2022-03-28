@@ -2,6 +2,7 @@
 id: tag
 title: "Tag"
 scopeid: essifLabTerminology
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: tag
 symphrase: tag%{ss}

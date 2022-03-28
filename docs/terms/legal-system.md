@@ -2,6 +2,7 @@
 id: legal-system
 title: "Legal System"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: legal-system
 symphrase: legal-system%{ss}

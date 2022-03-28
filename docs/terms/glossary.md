@@ -2,6 +2,7 @@
 id: glossary
 title: "Glossary"
 scopeid: essifLabTerminology
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: glossary
 symphrase: glossar%{yies}

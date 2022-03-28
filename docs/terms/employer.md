@@ -2,6 +2,7 @@
 id: employer
 title: "Employer"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: employer
 symphrase: employer%{ss}

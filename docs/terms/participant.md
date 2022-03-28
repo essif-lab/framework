@@ -2,6 +2,7 @@
 id: participant
 title: "Participant"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: term
 typeid: participant
 symphrase: participant%{ss}

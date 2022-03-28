@@ -2,6 +2,7 @@
 id: expectation
 title: "Expectation"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: expectation
 symphrase: expectation%{ss}

@@ -2,6 +2,7 @@
 id: trust
 title: "Trust"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: trust
 symphrase: trust, trusts, trusting, trusted

@@ -2,6 +2,7 @@
 id: management
 title: "Management"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: management
 symphrase: management, manager, manages, managed, managed-by, management, managing, managing-part%{yies}

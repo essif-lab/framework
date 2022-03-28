@@ -2,6 +2,7 @@
 id: validation-policy
 title: "Validation Policy"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: validation-policy
 symphrase: validation-polic%{yies}

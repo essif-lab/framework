@@ -2,6 +2,7 @@
 id: scoped-term
 title: "Term (Scoped)"
 scopeid: essifLabTerminology
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: term
 stage: draft

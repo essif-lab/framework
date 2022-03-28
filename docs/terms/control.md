@@ -2,6 +2,7 @@
 id: control
 title: "Control"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: control
 symphrase: control%{ss}

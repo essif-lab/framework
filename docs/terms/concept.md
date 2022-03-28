@@ -2,6 +2,7 @@
 id: concept
 title: "Concept"
 scopeid: essifLabTerminology
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: concept
 symphrase: concept%{ss}

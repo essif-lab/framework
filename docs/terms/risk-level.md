@@ -2,6 +2,7 @@
 id: risk-level
 title: "Risk level"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: risk-level
 symphrase: risk-level%{ss}

@@ -2,6 +2,7 @@
 id: definition
 title: "Definition"
 scopeid: essifLabTerminology
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: definition
 symphrase: definition%{ss}

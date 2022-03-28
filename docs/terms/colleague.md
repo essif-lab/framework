@@ -2,6 +2,7 @@
 id: colleague
 title: "Colleague"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: colleague
 symphrase: colleague%{ss}

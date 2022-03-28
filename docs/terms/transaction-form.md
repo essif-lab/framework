@@ -2,6 +2,7 @@
 id: transaction-form
 title: "Transaction Form"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: transaction-form
 symphrase: transaction-form%{ss}

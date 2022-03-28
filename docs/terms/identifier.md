@@ -2,6 +2,7 @@
 id: identifier
 title: "Identifier"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: identifier
 symphrase: identifier%{ss}

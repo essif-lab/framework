@@ -2,6 +2,7 @@
 id: organization
 title: "Organization"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: organization
 symphrase: organization%{ss}

@@ -2,6 +2,7 @@
 id: dependent
 title: "Dependent"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: dependent
 symphrase: dependent%{ss}

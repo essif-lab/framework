@@ -2,6 +2,7 @@
 id: pattern-mandates-delegation-hiring
 title: "Mandates, Delegation and Hiring"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: pattern
 typeid: mandates-delegation-hiring
 symphrase: mandates-delegation-hiring

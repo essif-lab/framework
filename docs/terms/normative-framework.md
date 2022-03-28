@@ -2,6 +2,7 @@
 id: normative-framework
 title: "Normative framework"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: normative-framework
 symphrase: normative-framework%{ss}

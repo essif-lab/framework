@@ -2,6 +2,7 @@
 id: communication-session
 title: "Communication Session"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: communication-session
 symphrase: communication-session%{ss}

@@ -2,6 +2,7 @@
 id: owned
 title: "Owned"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: owned
 symphrase: owned

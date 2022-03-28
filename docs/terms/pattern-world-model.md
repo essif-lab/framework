@@ -2,6 +2,7 @@
 id: pattern-world-model
 title: "eSSIF-Lab World Model"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: pattern
 typeid: world-model
 symphrase: world-model

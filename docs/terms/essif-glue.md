@@ -2,6 +2,7 @@
 id: essif-glue
 title: "eSSIF-Glue"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: essif-glue
 symphrase: essif-glue

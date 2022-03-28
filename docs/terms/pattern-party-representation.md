@@ -2,6 +2,7 @@
 id: pattern-party-representation
 title: "Party Representation"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: pattern
 typeid: party-representation
 symphrase: party-representation

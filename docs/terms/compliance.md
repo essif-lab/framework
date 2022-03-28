@@ -2,6 +2,7 @@
 id: compliance
 title: "Compliance"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: compliance
 symphrase: compliance

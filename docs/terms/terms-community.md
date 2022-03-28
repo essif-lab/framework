@@ -2,6 +2,7 @@
 id: terms-community
 title: "Terms Community"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: terms-community
 symphrase: terms-communit%{yies}

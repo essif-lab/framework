@@ -2,6 +2,7 @@
 id: decision
 title: "Decision"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: decision
 symphrase: decision%{ss}

@@ -2,6 +2,7 @@
 id: ssi
 title: "SSI (Self-Sovereign Identity)"
 scopeid: eSSIFLab
+displayed_sidebar: essifLabSideBar
 type: term
 typeid: ssi
 symphrase: ssi

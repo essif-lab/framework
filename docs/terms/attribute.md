@@ -2,6 +2,7 @@
 id: attribute
 title: "Attribute"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: attribute
 symphrase: attribute%{ss}

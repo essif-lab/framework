@@ -2,6 +2,7 @@
 id: digital-policy
 title: "Digital Policy"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: digital-policy
 symphrase: digital-polic%{yies}

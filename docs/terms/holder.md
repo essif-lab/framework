@@ -2,6 +2,7 @@
 id: holder
 title: "Holder"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: holder
 symphrase: holder%{ss}

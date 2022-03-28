@@ -2,6 +2,7 @@
 id: qualified-data
 title: "Qualified Data"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: qualified-data
 symphrase: qualified-data

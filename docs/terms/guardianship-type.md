@@ -2,6 +2,7 @@
 id: guardianship-type
 title: "Guardianship-type"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: guardianship-type
 symphrase: guardianship-type%{ss}, guardianship-arrangement-type%{ss}

@@ -2,6 +2,7 @@
 id: control-objective
 title: "Control Objective"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: control-objective
 symphrase: control-objective%{ss}

@@ -2,6 +2,7 @@
 id: pattern-decentralized-grc
 title: "Decentralized Risk Management, Governance and Compliance"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: pattern
 typeid: decentralized-grc
 symphrase: decentralized-grc

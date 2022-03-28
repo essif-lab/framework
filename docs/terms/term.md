@@ -2,6 +2,7 @@
 id: term
 title: "Term"
 scopeid: essifLabTerminology
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: term
 symphrase: term%{ss}, word%{ss}, phrase%{ss}

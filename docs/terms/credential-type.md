@@ -2,6 +2,7 @@
 id: credential-type
 title: "Credential Type"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: credential-type
 symphrase: credential-type%{ss}

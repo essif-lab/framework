@@ -2,6 +2,7 @@
 id: digital-colleague
 title: "Digital Colleague"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: term
 typeid: digital-colleague
 symphrase: digital-colleague%{ss}

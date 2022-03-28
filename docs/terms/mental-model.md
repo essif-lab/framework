@@ -2,6 +2,7 @@
 id: mental-model
 title: "Mental Model"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: term
 typeid: mental-model
 symphrase: mental-model%{ss}

@@ -2,6 +2,7 @@
 id: peer-actor
 title: "Peer Actor"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: term
 typeid: peer-actor
 symphrase: peer-actor%{ss}

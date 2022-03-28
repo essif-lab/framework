@@ -2,6 +2,7 @@
 id: wallet
 title: "Wallet"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: wallet
 symphrase: wallet%{ss}

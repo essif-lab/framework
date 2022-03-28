@@ -2,6 +2,7 @@
 id: assertion
 title: "Assertion"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: assertion
 symphrase: assertion%{ss}

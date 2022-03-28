@@ -2,6 +2,7 @@
 id: data-collector-policy
 title: "Data Collector Policy"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: data-collector-policy
 symphrase: data-collector-polic%{yies}

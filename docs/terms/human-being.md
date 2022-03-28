@@ -2,6 +2,7 @@
 id: human-being
 title: "Human Being"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: human-being
 symphrase: human-being%{ss}, human%{ss}, person%{ss}, individual%{ss}, people

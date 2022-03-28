@@ -2,6 +2,7 @@
 id: jurisdiction-governor
 title: "Governor (of a Jurisdiction)"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: jurisdiction-governor
 symphrase: jurisdiction-governor%{ss}

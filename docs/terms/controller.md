@@ -2,6 +2,7 @@
 id: controller
 title: "Controller"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: controller
 symphrase: controller%{ss}

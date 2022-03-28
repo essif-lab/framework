@@ -2,6 +2,7 @@
 id: employment-contract
 title: "Employment Contract"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: employment-contract
 symphrase: employment-contract%{ss}

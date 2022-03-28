@@ -2,6 +2,7 @@
 id: guardian
 title: "Guardian"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: guardian
 symphrase: guardian

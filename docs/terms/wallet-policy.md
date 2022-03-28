@@ -2,6 +2,7 @@
 id: wallet-policy
 title: "Wallet Policy"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: wallet-policy
 symphrase: wallet-polic%{yies}

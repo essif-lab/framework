@@ -2,6 +2,7 @@
 id: credential-catalogue
 title: "Credential Catalogue"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: credential-catalogue
 symphrase: credential-catalogue%{ss}

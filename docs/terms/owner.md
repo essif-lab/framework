@@ -2,6 +2,7 @@
 id: owner
 title: "Owner"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: owner
 symphrase: owner%{ss}, own%{ss}

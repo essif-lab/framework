@@ -2,6 +2,7 @@
 id: jurisdiction
 title: "Jurisdiction"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: jurisdiction
 symphrase: jurisdiction%{ss}

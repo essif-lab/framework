@@ -2,6 +2,7 @@
 id: partial-identity
 title: "Partial identity"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: term
 typeid: partial-identity
 symphrase: partial-identit%{yies}

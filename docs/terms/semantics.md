@@ -2,6 +2,7 @@
 id: semantics
 title: "Semantics"
 scopeid: essifLabTerminology
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: semantics
 symphrase: semantics

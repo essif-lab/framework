@@ -2,6 +2,7 @@
 id: credential
 title: "Credential"
 scopeid: essifLab
+displayed_sidebar: essifLabSideBar
 type: concept
 typeid: credential
 symphrase: credential%{ss}, verifiable-credential%{ss}, attribute-based-credential%{ss}
