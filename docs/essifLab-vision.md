@@ -45,4 +45,4 @@ The background of the eSSIF-Lab vision can be found in articles 8-10 of the [*Eu
 
 In the context of these rights and freedoms, we seek to electronically support %%business transactions|transaction%%, i.e. the exchange of goods, services, funds, or data between %%parties|party%%, which we call 'participants' to the transaction.
 
-Supporting such transactions requires each participant to have one or more %%electronic (digital) agents|digital-agent%%, i.e. equipment (e.g. an app on a mobile phone, a webserver, a browser, …) that provides such support and that (provably) acts on behalf of that participant.
+Supporting such transactions requires each participant to have one or more %%electronic (digital) agents|agent%%, i.e. equipment (e.g. an app on a mobile phone, a webserver, a browser, …) that provides such support and that (provably) acts on behalf of that participant.

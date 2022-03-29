@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: data
-symphrase: data
+symphrase: data, digital-data
 stage: draft
 hoverText: "Data: something (tangible) that can be used to communicate a meaning (which is intangible/information)."
 glossaryText: "something (tangible) that can be used to communicate a meaning (which is intangible/information)."
@@ -13,7 +13,7 @@ date: 20210601
 ---
 
 ### Short Description
-**Data** something (tangible) that can be used to communicate a meaning (which is intangible/information). Examples include words, bit(string)s, pictures, sounds, smells, tastes, etc. We use the term %%digital data|digital-data%% to refer to data that consists of bits.
+**Data** something (tangible) that can be used to communicate a meaning (which is intangible/information). Examples include words, bit(string)s, pictures, sounds, smells, tastes, etc. We use the term %%digital data|data%% to refer to data that consists of bits.
 
 ### Purpose
 The purpose of **Data** is that it provides a means to communicate meaning. Also, it allows for (tangible) ways of processing, e.g. reasoning in more or less formal ways (as opposed to associating).
