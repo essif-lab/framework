@@ -15,8 +15,11 @@ date: 20220330
 ### Short Description
 A **colleague** is one of two or more (digital or non-digital) %%agents|agent%% that have the same %%principal|principal%% (on whose behalf they are executing an %action%).
 
-The ability to determine whether or not two %actors% are %colleagues% is the most relevant at run-time, when they are actually doing things and hence qualify as %agents%. For example, a web-server that is conducting a %transaction% (of which its %principal% is one of two %participants%) would need to know that the (different) %agents% that it is communicating with (e.g., a wallet app (on a phone) and a secure storage service (in the cloud)) both have the same %principal%.
+### Examples
 
-The case can be made
+Consider a traveller that uses her digital wallet to communicate her %identity% to an immigration officer. In order to decide whether or not to permit the traveller entrance to the country, it must establish that the traveller (as an %actor% that pushes the buttons of the digital wallet) and the digital wallet (i.e. the %actor% that communicates some %identity% data), work on behalf of one and the same %party%, i.e. the traveller (as a %party%).
+
+Another example is a customer that uses a chat application (her %agent%) to contact the support department of her life insurance to sort something out. As the chat progresses, the life insurance %agent% must obtain some sensitive health-data, for which the chat channel isn't appropriate. He requests the customer to use another means (%actor%) that is capable of setting up a %communications channel% that is more secure so that she can use this other means as an %agent% to transmit her sensitive health data. In order to prevent health fraud, the life insurance %agent% must be capable of determining that both the other means are %agents% that share the same %principal%, i.e. the customer.
+
 ### Purpose
 The ability to distinguish between (non) %colleagues% allows us to reason and communicate about the set of (digital and non-digital) %%actors|actor%% that are %%agents|agent%% for a **principal|principal%%. This is relevant in situations where different %%agents|agent%% excute %%actions|action%% in a single %%business transaction|transaction%% on behalf of the same %%principal|principal%%
