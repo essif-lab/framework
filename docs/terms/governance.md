@@ -7,13 +7,13 @@ type: concept
 typeid: governance
 symphrase: governance, govern, governs, governed, governed-by, governing, governing-part{yies}, governor{ss}, government{ss}
 stage: draft
-hoverText: "Governance: the act or process of governing or overseeing the realization of (the results associated with) a set of Objectives by the Owner of these Objectives."
-glossaryText: "the %%act^action%% or process of governing or overseeing the realization of (the results associated with) a set of %%objectives^objective%% by the %%owner^owner%% of these %%objectives^objective%%."
+hoverText: "Governance: the act or process of governing or overseeing the realization of (the results associated with) a set of Objectives by the Owner of these Objectives, in order to ensure they will be fit for the purposes that this Owner intends to use them for."
+glossaryText: "the %%act^action%% or process of governing or overseeing the realization of (the results associated with) a set of %%objectives^objective%% by the %%owner^owner%% of these %%objectives^objective%%, in order to ensure they will be fit for the purposes that this %%owner^owner%% intends to use them for."
 date: 20210830
 ---
 
 ### Short Description
-**Governance** is the %%act|action%% or process of governing or overseeing the realization of (the results associated with) a set of %%objectives|objective%% that are %%owned|owned%% by a single %%party|party%%. This act or process is conducted by (%%agents|agent%% that do so on behalf of) this %%party|party%%.
+**Governance** is the %%act|action%% or process of governing or overseeing the realization of (the results associated with) a set of %%objectives|objective%% that are %%owned|owned%% by a single %%party|party%%, in order to ensure these results will be fit for the purposes that this %%party|party%% intends to use them for. This act or process is conducted by (%%agents|agent%% that do so on behalf of) this %%party|party%%.
 
 Governance is about planning the budgets and other resources necsessary  _to (obtain and to) actually use the results_. This includes the specification of timelines (deadlines) for the results to become available, as well as the properties and other characteristics (security, quality, sustainability, etc.) that results must have in order to make them effective ('fit for purpose' - fit to be used as intended by the consuming %%party|party%%). In order to keep tabs on the fitness of the results for the intended purposes, effectiveness indicators may be developed, i.e. gauges that measure how 'fit' the results are to be used/consumed for the intended purposes, are also part of this %%governance|governance%%.
 
