@@ -7,13 +7,13 @@ type: concept
 typeid: scope
 symphrase: scope{ss}
 stage: draft
-hoverText: "Scope: the extent of the area or subject matter (which we use to define Patterns, Concepts, Terms and Glossaries in)."
-glossaryText: "the extent of the area or subject matter (which we use to define %%patterns^pattern%%, %%concepts^concept%%, %%terms^term%% and %%glossaries^glossary%% in)."
+hoverText: "Scope: the extent of the area or subject matter (which we use, e.g., to define Patterns, Concepts, Terms and Glossaries in, but it serves other purposes as well)."
+glossaryText: "the extent of the area or subject matter (which we use, e.g., to define %%patterns^pattern%%, %%concepts^concept%%, %%terms^term%% and %%glossaries^glossary%% in, but it serves other purposes as well)."
 date: 20210601
 ---
 
 ### Short Description
-A **scope** (in the eSSIFLab context) is the extent of the area or subject matter (as in [OED](https://www.lexico.com/definition/scope). We use it to define patterns, concepts, terms and glossaries in, but a scope may serve other (additional) purposes. Scopes may overlap, or be nested. It is comparable to [Namespeces](https://en.wikipedia.org/wiki/Namespace), were it not that entities other than names (signs that are used to identify/refer to objects of various kinds) can reside in a scope as it is defined here.
+A **scope** (in the eSSIFLab context) is the extent of the area or subject matter (as in [OED](https://www.lexico.com/definition/scope). We use it, e.g., to define patterns, concepts, terms and glossaries in, but a scope may serve other (additional) purposes. Scopes may overlap, or be nested. It is comparable to [Namespeces](https://en.wikipedia.org/wiki/Namespace), were it not that entities other than names (signs that are used to identify/refer to objects of various kinds) can reside in a scope as it is defined here.
 
 The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
 

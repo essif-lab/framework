@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: communication-channel
-symphrase: communication-channel{ss}
+symphrase: communication-channel{ss}, digital-communication-channel{ss}
 stage: draft
 hoverText: "Communication Channel: a (digital or non-digital) means by which two Actors can exchange messages with one another."
 glossaryText: "a (digital or non-digital) means by which two %%actors^actor%% can exchange messages with one another."
@@ -18,7 +18,7 @@ Additional content is needed here.
 
 ### Notes
 
-A %%Communication Channel|communication-channel%% is said to be **digital** if it uses a digital means to exchange (digital) messages between two %%digital actors|digital-actor%%.
+A %%Communication Channel|communication-channel%% is said to be **digital** if it uses a digital means to exchange (digital) messages between two %%digital actors|actor%%.
 
 A %%Communication Channel|communication-channel%% is said to be **secure** if it provides the following guarantees:
 - every of its endpoint is being used by precisely one %%actor|actor%%;

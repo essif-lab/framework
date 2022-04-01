@@ -5,7 +5,7 @@ scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
 typeid: actor
-symphrase: actor{ss}
+symphrase: actor{ss}, digital-actor{ss}
 stage: draft
 hoverText: "Actor: Entity that can act (do things/execute Actions), e.g. people, machines, but not Organizations."
 glossaryText: "Entity that can act (do things/execute %%actions^action%%), e.g. people, machines, but not %%organizations^organization%%."
@@ -30,7 +30,7 @@ Entity that is capable of actually executing %%actions|action%% (acting, doing t
 - Enterprises, governments, and other %%organizations|organization%% do not qualify.
 
 ### Related concepts
-- %%digital actor|digital-actor%%
+- %%digital actor|actor%%
 - %%peer actor|peer-actor%%
 - %%agent|agent%%
 - %%principal|principal%%

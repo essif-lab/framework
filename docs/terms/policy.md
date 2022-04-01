@@ -21,7 +21,7 @@ Note that the policy is %%governed|governance%% by the %%party|party%%, which do
 
 It should be part of the %%principal's|principal%% %%governance|governance%% processes
 - to establish, maintain and evaluate policies for every kind of action that its agents may execute,
-- to derive artifacts from such policies that are useable by the various %%agents|agent%% (digital, human, or otherwise) that have a right or duty to execute actions for the %%principal|principal%% to which such policies apply. So, machine-readable policies should be derived for %%digital agents|digital-agent%%, and human-readable policies (in different languages if that is appropriate) for non-digital agents.
+- to derive artifacts from such policies that are useable by the various %%agents|agent%% (digital, human, or otherwise) that have a right or duty to execute actions for the %%principal|principal%% to which such policies apply. So, machine-readable policies should be derived for %%digital agents|agent%%, and human-readable policies (in different languages if that is appropriate) for non-digital agents.
 - to publish such artifacts such that at least every of its %%agents|agent%% that may need to access them, can find and access them as needed.
 - to inform its %%agents|agent%% whenever updates have been made that they need to be aware of (specifically if agents are allowed to keep local copies of such artifacts).
 
@@ -40,7 +40,7 @@ A **policy** is
 ### Related Concepts
 - %%Governance|governance%%
 - %%Policy|policy%%
-- %%Digital Policy|digital-policy%%
+- %%Digital Policy|policy%%
 - %%Transaction Data Discloser Policy|transaction-data-collector-policy%%
 - %%Transaction Data Collector Policy|transaction-data-collector-policy%%
 - %%Verifier Policy|verifier-policy%%

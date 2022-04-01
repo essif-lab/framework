@@ -8,7 +8,7 @@ typeid: verifier-policy
 symphrase: verifier-polic{yies}
 stage: draft
 hoverText: "Verifier Policy: a Digital Policy that enables an operational Verifier component to function in accordance with the Objectives of its Principal."
-glossaryText: "a %%digital policy^digital-policy%% that enables an operational %%verifier^verifier%% component to function in accordance with the %%objectives^objective%% of its %%principal^principal%%."
+glossaryText: "a %%digital policy^policy%% that enables an operational %%verifier^verifier%% component to function in accordance with the %%objectives^objective%% of its %%principal^principal%%."
 date: 20210601
 ---
 
@@ -17,5 +17,5 @@ Additional content is needed here.
 :::
 
 ### Related Concepts
-- %%Digital Policy|digital-policy%%
+- %%Digital Policy|policy%%
 - %%Verifier|verifier%%
