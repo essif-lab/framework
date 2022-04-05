@@ -12,9 +12,9 @@ The dialogue about what Self-Sovereign Identity (SSI) really is, that was starte
 
 From the [perspective of eSSIF-Lab](essifLab-vision) this "what's truly important" relates to electronically supporting %%parties|party%% as they negotiate and execute %%(business) transactions|transaction%%. From this perspective, it seems reasonable to have the term %%SSI|self-sovereign-identity%% refer to all concepts/ideas, architectures, processes and technologies that aim to support (autonomous) %%parties|party%% as they negotiate and execute electronic %%(business) transactions|transaction%% with one another.
 
-We are aware that others have different ideas about what SSI is. That's ok - it is consistent with our ideas that others are also autonomous, self-sovereign parties. However, it does suggest that it may be worthwhile to postulate the principles that eSSIF-Lab uses to underpin its vision, framework, etc.
+We are aware that others have different ideas about what SSI is. That's ok - it is consistent with our ideas that others are also autonomous, self-sovereign parties. However, it does suggest that it may be worthwhile to postulate the principles that eSSIF-Lab uses to underpin its vision, %%framework|framework%%, etc.
 
-The purpose of this section is to provide the eSSIF-Lab principles on which our [eSSIF-Lab Framework](essifLab-fw) is based. The are the 'axioms' we use for our reasoning, making choices (e.g. for terminology), etc. We think that making them explicit helps readers to decide whether or not they want to adopt (parts of) the framework.
+The purpose of this section is to provide the eSSIF-Lab principles on which our [eSSIF-Lab Framework](essifLab-fw) is based. The are the 'axioms' we use for our reasoning, making choices (e.g. for terminology), etc. We think that making them explicit helps readers to decide whether or not they want to adopt (parts of) the %%framework|framework%%.
 
 ## Freedom of Information (Knowledge)
 

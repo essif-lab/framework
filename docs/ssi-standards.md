@@ -8,7 +8,7 @@ The purpose of this document is to provide an overview of standards activities f
 
 ## 1.  Introduction
 
-Self-sovereign identity (SSI) is work in progress, which includes the work on standards for SSI. Such standards include frameworks, schemas, data models, protocols, APIs, open-source code and more. The present document provides an overview on those standards and work-in-progress. Most pieces of text have been directly copied from the referenced websites.
+Self-sovereign identity (SSI) is work in progress, which includes the work on standards for SSI. Such standards include %%frameworks|framework%%, schemas, data models, protocols, APIs, open-source code and more. The present document provides an overview on those standards and work-in-progress. Most pieces of text have been directly copied from the referenced websites.
 
 ## 2.  W3C CCG: Credentials Community Group
 

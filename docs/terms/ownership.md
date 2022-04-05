@@ -39,6 +39,6 @@ We may use adjectives in combination with 'ownership' to signify the kind of %%j
 
 1. Many %%legal jurisdictions|legal-jurisdiction%% have legislation  (e.g. [property law](https://en.wikipedia.org/wiki/Property_law)) that states who owns what - houses, cars, etc.
 
-2. In this framework, we say that
+2. In this %%framework|framework%%, we say that
   a. an %%objective|objective%% that a particular %%party|party%% pursues (i.e. towards which a %%party|party%% directs effort), is %%owned|owned%% by that %%party|party%%, and the rights and duties associated with this %%ownership|ownership%% are defined by the %%jurisdiction|jurisdiction%% that the %%party|party%% is itself.
   b. a %%risk|risk%% that is associated with an %%objective|objective%% is %%owned|owned%% by the %%owner|owner%% of that %%objective|objective%%, and the rights and duties
