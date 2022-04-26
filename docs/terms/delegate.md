@@ -4,9 +4,9 @@ title: "Delegate"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: delegate
+termid: delegate
 symphrase: delegate{ss}, delegated, delegating, delegator{ss}, delegatee{ss}
-stage: draft
+status: draft
 hoverText: "Delegate: the transferral of Ownership of one or more Obligations of a Party (the Delegator), including the associated accountability, to another Party (the Delegatee), which implies that the Delegatee can realize such Obligations as it sees fit."
 glossaryText: "the transferral of %%ownership^ownership%% of one or more %%obligations^obligation%% of a %%party^party%% (the %%delegator^delegate%%), including the associated accountability, to another %%party^party%% (the %%delegatee^delegate%%)), which implies that the %%delegatee^delegate%% can realize such %%obligations^obligation%% as it sees fit."
 date: 20220222

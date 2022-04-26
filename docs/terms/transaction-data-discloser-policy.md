@@ -4,9 +4,9 @@ title: "Transaction Data Discloser Policy"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: transaction-data-discloser-policy
+termid: transaction-data-discloser-policy
 symphrase: transaction-data-discloser-polic{yies}
-stage: draft
+status: draft
 hoverText: "Transaction Data Discloser Policy: a Digital Policy that enables an operational Transaction Data Discloser component to function in accordance with the Objectives of its Principal."
 glossaryText: "a %%digital policy^policy%% that enables an operational %%transaction data discloser^transaction-data-discloser%% component to function in accordance with the %%objectives^objective%% of its %%principal^principal%%."
 date: 20210601

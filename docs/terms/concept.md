@@ -4,9 +4,9 @@ title: "Concept"
 scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: concept
+termid: concept
 symphrase: concept{ss}
-stage: draft
+status: draft
 hoverText: "Concept: the ideas/thoughts behind a classification of Entities (what makes Entities in that class 'the same')."
 glossaryText: "the ideas/thoughts behind a classification of %%entities^entity%% (what makes %%entities^entity%% in that class 'the same')."
 date: 20210601

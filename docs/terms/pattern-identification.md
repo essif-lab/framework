@@ -4,9 +4,9 @@ title: "Identification Pattern"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: pattern
-typeid: identification
+termid: identification
 symphrase: identification
-stage: draft
+status: draft
 hoverText: "The eSSIF-Lab Identification Pattern describes mechanisms that a Party uses to Identify Entities, and mechanisms for communicating with another Party such that both Parties can identify an entity and know whether or not they identify the same entity."
 date: 20210803
 ---

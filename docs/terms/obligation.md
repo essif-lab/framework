@@ -4,9 +4,9 @@ title: "Obligation"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: obligation
+termid: obligation
 symphrase: obligation{ss}
-stage: draft
+status: draft
 hoverText: "Obligation (of a Party): an Objective that is Owned by that Party for which it produces the associated results, and has a commitment to another Party that consumes these results."
 glossaryText: "an %%objective^objective%% that is %%owned^owned%% by the %%party^party%% that produces the associated results, and that has a commitment to another %%party^party%% that consumes these results."
 date: 20210601

@@ -3,8 +3,8 @@ id: essifLab-fcomp-<fcompid>
 title: "<Name of the Functional Component> (Acronym)>"
 scopeid: essifLab
 type: fcomp
-typeid: <fcompid>
-stage: draft
+termid: <fcompid>
+status: draft
 hoverText: "<short description that pops up when user hovers over a reference to this component."
 indexText: "<short description that is used in the FComp-Index; you can use double-percent constructs here"
 date: 20210601

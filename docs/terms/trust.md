@@ -4,9 +4,9 @@ title: "Trust"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: trust
+termid: trust
 symphrase: trust, trusts, trusting, trusted
-stage: draft
+status: draft
 hoverText: "Trust (of a Party in X): the (un)conscious decision by this Party to believe that X is in fact the case"
 glossaryText: "the (un)conscious decision by a %%party^party%% to believe that X is in fact the case."
 date: 20220222

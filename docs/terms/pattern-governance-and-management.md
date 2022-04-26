@@ -4,9 +4,9 @@ title: "Governance and Management"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: pattern
-typeid: governance-and-management
+termid: governance-and-management
 symphrase: governance-and-management
-stage: draft
+status: draft
 hoverText: "The Governance and Management pattern explains how Parties organize that their Objectives are realized, either by doing the associated work themselves, or by arranging for other Parties to do that."
 date: 20210830
 ---

@@ -4,9 +4,9 @@ title: "Mandates, Delegation and Hiring"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: pattern
-typeid: mandates-delegation-hiring
+termid: mandates-delegation-hiring
 symphrase: mandates-delegation-hiring
-stage: draft
+status: draft
 hoverText: "The Mandates, Delegation and Hiring pattern (which remains to be documented) captures the ideas behind Mandating, Delegating, Hiring and their relations. This is a work-in-progress."
 date: 20210601
 ---

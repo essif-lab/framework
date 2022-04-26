@@ -4,9 +4,9 @@ title: "eSSIF-Lab World Model"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: pattern
-typeid: world-model
+termid: world-model
 symphrase: world-model
-stage: draft
+status: draft
 hoverText: "The eSSF-Lab World Model is the set of Concepts, relations between them (Patterns), and principles (that are the starting point for eSSIF-Lab's thinking)."
 glossaryText: "The set of %%concepts^concept%%, relations between them (%%patterns^pattern%%), and [Principles](essifLab-principles) (that are the starting point for eSSIF-Lab's thinking)."
 date: 20211101

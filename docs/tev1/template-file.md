@@ -3,8 +3,8 @@ id: typeID
 title: "NameOfNewTypeInstance"
 scopeid: scopeID
 type: type
-typeid: typeID
-stage: draft
+termid: typeID
+status: draft
 hoverText: "TypeID: popuptext for 'typeID' (tbd)."
 glossaryText: "popuptext for 'typeID' (tbd)."
 date: 20210601

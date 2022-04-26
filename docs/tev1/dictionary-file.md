@@ -3,8 +3,8 @@ id: dictionaryID
 title: "NameOfNewDictionary"
 scopeid: scopeID
 type: dictionary
-typeid: dictionaryID
-stage: draft
+termid: dictionaryID
+status: draft
 hoverText: "DictionaryID: popuptext for 'dictionaryID' (tbd)."
 glossaryText: "popuptext for 'dictionaryID' (tbd)."
 date: 20210601

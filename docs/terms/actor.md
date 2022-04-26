@@ -4,9 +4,9 @@ title: "Actor"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: actor
+termid: actor
 symphrase: actor{ss}, digital-actor{ss}
-stage: draft
+status: draft
 hoverText: "Actor: Entity that can act (do things/execute Actions), e.g. people, machines, but not Organizations."
 glossaryText: "Entity that can act (do things/execute %%actions^action%%), e.g. people, machines, but not %%organizations^organization%%."
 date: 20210601

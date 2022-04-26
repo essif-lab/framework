@@ -3,8 +3,8 @@ id: glossary-file
 title: "Glossary-file"
 scopeid: essifLab
 type: glossary
-typeid: glossary-file
-stage: draft
+termid: glossary-file
+status: draft
 hoverText: "Glossary-file: a file whose contents defines/specifies a Glossary."
 glossaryText: "a file whose contents defines/specifies a %%glossary^glossary%%."
 date: 20210601

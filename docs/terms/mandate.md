@@ -4,9 +4,9 @@ title: "Mandate"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: mandate
+termid: mandate
 symphrase: mandate{ss}, mandated, mandating, mandator{ss}, mandatee{ss}
-stage: draft
+status: draft
 hoverText: "Mandate: a right or duty that one Party (the Mandator) has granted to another Party or Actor (the Mandatee) for executing a specific (set of) Actions in the name of, and under responsibility/accountability of, this (first) Party."
 glossaryText: "a right or duty that one %%party^party%% (the %%mandator^mandate%%) has granted to another %%party^party%% or %%actor^actor%% (the %%mandatee^mandate%%) for executing a specific (set of) %%actions^action%% in the name of, and under responsibility/accountability of, this (first) %%party^party%%."
 date: 20220220

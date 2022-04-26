@@ -4,9 +4,9 @@ title: "Communication Channel"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: communication-channel
+termid: communication-channel
 symphrase: communication-channel{ss}, digital-communication-channel{ss}
-stage: draft
+status: draft
 hoverText: "Communication Channel: a (digital or non-digital) means by which two Actors can exchange messages with one another."
 glossaryText: "a (digital or non-digital) means by which two %%actors^actor%% can exchange messages with one another."
 date: 20210601

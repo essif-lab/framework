@@ -4,9 +4,9 @@ title: "Guardianship-type"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: guardianship-type
+termid: guardianship-type
 symphrase: guardianship-type{ss}, guardianship-arrangement-type{ss}
-stage: draft
+status: draft
 hoverText: "Guardianship-type (in a Jurisdiction): a class of Guardianship Arrangements within the Jurisdiction that governs and manages them."
 glossaryText: "a class of %%guardianship arrangements^guardianship-arrangement%% within the %%jurisdiction^jurisdiction%% that governs and manages them."
 date: 20210601

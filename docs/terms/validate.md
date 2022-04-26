@@ -4,9 +4,9 @@ title: "Validate"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: validate
+termid: validate
 symphrase: validate, validates, validated, validating
-stage: draft
+status: draft
 hoverText: "Validate/validation of data: the act, by or on behalf of a Party, of determining whether or not that data is valid to be used for some specific purpose(s) of that Party."
 glossaryText: "the act, by or on behalf of a %%party^party%%, of determining whether or not that data is valid to be used for some specific purpose(s) of that %%party^party%%."
 date: 20210802

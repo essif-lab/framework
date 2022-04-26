@@ -4,9 +4,9 @@ title: "Dictionary"
 scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: dictionary
+termid: dictionary
 symphrase: dictionar{yies}
-stage: draft
+status: draft
 hoverText: "Dictionary: an alphabetically sorted list of Terms with various meanings they may have in different contexts."
 glossaryText: "an alphabetically sorted list of %%terms^term%% with various meanings they may have in different contexts."
 date: 20210601

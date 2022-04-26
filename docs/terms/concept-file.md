@@ -4,9 +4,9 @@ title: "Concept-file"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: concept-file
+termid: concept-file
 symphrase: concept-file{ss}
-stage: draft
+status: draft
 hoverText: "Concept-file: a file whose contents defines/specifies a Concept."
 glossaryText: "a file whose contents defines/specifies a %%concept^concept%%."
 date: 20210601

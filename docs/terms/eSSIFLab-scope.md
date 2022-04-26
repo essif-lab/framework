@@ -3,8 +3,8 @@ id: eSSIFLab-scope
 title: "Scope: essifLabTerminology"
 scopeid: essifLabTerminology
 type: scope
-typeid: eSSIFLab
-stage: draft
+termid: eSSIFLab
+status: draft
 hoverText: "ESSIFLab: specification of the eSSIF-Lab scope."
 glossaryText: "specification of the eSSIF-Lab scope."
 date: 20210601

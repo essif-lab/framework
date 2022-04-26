@@ -4,9 +4,9 @@ title: "Transaction Proposal"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: transaction-proposal
+termid: transaction-proposal
 symphrase: transaction-proposal{ss}
-stage: draft
+status: draft
 hoverText: "Transaction (Agreement) Proposal: a Transaction Agreement that is 'in-the-making' (ranging from an empty document to a document that would be a Transaction Agreement if it were signed by all Participants)."
 glossaryText: "a %%transaction agreement^transaction-agreement%% that is 'in-the-making' (ranging from an empty document to a document that would be a %%transaction agreement^transaction-agreement%% if it were signed by all %%participants^participant%%)."
 date: 20210601

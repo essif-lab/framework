@@ -30,8 +30,8 @@ id: <idtext>
 title: <Title Text>
 scopeid: <scopeid>
 type: <type>
-typeid: <typeid>
-stage: <stage>
+termid: <typeid>
+status: <stage>
 hoverText: "<hovertext>"
 glossaryText: "<glossarytext>"
 date: yyyymmdd

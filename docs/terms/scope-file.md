@@ -4,9 +4,9 @@ title: "Scope-file"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: scope-file
+termid: scope-file
 symphrase: scope-file{ss}
-stage: draft
+status: draft
 hoverText: "Scope-file: a file whose contents defines/specifies a Scope."
 glossaryText: "a file whose contents defines/specifies a %%scope^scope%%."
 date: 20210601

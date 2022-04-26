@@ -4,9 +4,9 @@ title: "Organization"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: organization
+termid: organization
 symphrase: organization{ss}
-stage: draft
+status: draft
 hoverText: "Organization: a Party, part of which is a group of Actors that work to realize its Objectives."
 glossaryText: "a %%party^party%%, part of which is a group of %%actors^actor%% that work to realize its %%objectives^objective%%."
 date: 20210601

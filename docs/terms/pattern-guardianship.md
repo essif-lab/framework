@@ -4,9 +4,9 @@ title: "Guardianship"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: pattern
-typeid: guardianship
+termid: guardianship
 symphrase: guardianship
-stage: draft
+status: draft
 hoverText: "The Guardianships pattern captures the Concepts and relations that explain what a generic Guardianshipconsists of, and how it relates to Guardians, Dependents, Jurisdictions, etc."
 date: 20210601
 ---

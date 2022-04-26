@@ -3,8 +3,8 @@ id: scopeID
 title: "NameOfNewScope"
 scopeid: scopeID
 type: scope
-typeid: scopeID
-stage: draft
+termid: scopeID
+status: draft
 hoverText: "ScopeID: popuptext for 'scopeID' (tbd)."
 glossaryText: "popuptext for 'scopeID' (tbd)."
 date: 20210601

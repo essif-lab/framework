@@ -4,9 +4,9 @@ title: "Corpus of Terminology"
 scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: corpus
+termid: corpus
 symphrase: corpus, corpus-of-terminology
-stage: draft
+status: draft
 hoverText: "Corpus (of Terminology): the documentation that describes the Knowledge around a set of Terms and Concepts."
 glossaryText: "the documentation that describes the %%knowledge^knowledge%% around a set of %%terms^term%% and %%concepts^concept%%."
 date: 20210601

@@ -4,9 +4,9 @@ title: "Principal"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: principal
+termid: principal
 symphrase: principal{ss}
-stage: draft
+status: draft
 hoverText: "Principal (of an Actor): the Party for whom, or on behalf of whom, the Actor is executing an Action (this Actor is then called an Agent of that Party)."
 glossaryText: "the %%party^party%% for whom, or on behalf of whom, the %%actor^actor%% is executing an %%action^action%% (this %%actor^actor%% is then called an %%agent^agent%% of that %%party^party%%)."
 date: 20210601

@@ -4,9 +4,9 @@ title: "Risk Owner"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: risk-owner
+termid: risk-owner
 symphrase: risk-owner{ss}
-stage: draft
+status: draft
 hoverText: "Risk-owner (of a Risk): the Party that is the Owner of the Objective to which the Risk is associated."
 glossaryText: "the %%party^party%% that is the %%owner^owner%% of the %%objective^objective%% to which a %%risk^risk%% is associated."
 date: 20210601

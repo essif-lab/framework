@@ -4,9 +4,9 @@ title: "Transaction Form"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: transaction-form
+termid: transaction-form
 symphrase: transaction-form{ss}
-stage: draft
+status: draft
 hoverText: "Transaction Form (for some kind of Business Transaction and some Party): the specification of the set of data that this Party needs to (a) commit to a (proposed) Business Transaction of that kind, (b) fulfill its duties/Obligations and (c) escalate if necessary."
 glossaryText: "the specification of the set of data that this %%party^party%% needs to (a) commit to a (proposed) %%business transaction^transaction%% of that kind, (b) fulfill its duties/%%obligations^obligation%% and (c) escalate if necessary."
 date: 20210601

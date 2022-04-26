@@ -4,9 +4,9 @@ title: "Term-file"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: term-file
+termid: term-file
 symphrase: term-file{ss}
-stage: draft
+status: draft
 hoverText: "Term-file: a file whose contents defines/specifies a Term."
 glossaryText: "a file whose contents defines/specifies a %%term^term%%."
 date: 20210601

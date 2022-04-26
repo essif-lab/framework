@@ -4,9 +4,9 @@ title: "Data Collector"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: data-collector
+termid: data-collector
 symphrase: data-collector{ss}
-stage: draft
+status: draft
 hoverText: "Data Collector: a functional component that is capable of collecting data from various Parties in the context of some Business Transaction, and Validating this data for the purpose of making one (or more) decision(s)."
 glossaryText: "a functional component that is capable of collecting data from various %%parties^party%% in the context of some %%business transaction^transaction%%, and %%validating^validate%% this data for the purpose of making one (or more) decision(s)."
 date: 20210601

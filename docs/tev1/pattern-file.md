@@ -4,9 +4,9 @@ title: "Pattern: PatternName"
 scopeid: scopeID
 displayed_sidebar: essifLabSideBar
 type: pattern
-typeid: patternID
+termid: patternID
 symphrase: patternID{ss}
-stage: draft
+status: draft
 hoverText: "PatternID: popuptext for 'patternID' (tbd)."
 glossaryText: "popuptext for 'patternID' (tbd)."
 date: 20210601

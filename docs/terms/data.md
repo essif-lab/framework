@@ -4,9 +4,9 @@ title: "Data"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: data
+termid: data
 symphrase: data, digital-data
-stage: draft
+status: draft
 hoverText: "Data: something (tangible) that can be used to communicate a meaning (which is intangible/information)."
 glossaryText: "something (tangible) that can be used to communicate a meaning (which is intangible/information)."
 date: 20210601

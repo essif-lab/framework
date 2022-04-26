@@ -4,9 +4,9 @@ title: "Knowledge"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: knowledge
+termid: knowledge
 symphrase: knowledge{ss}
-stage: draft
+status: draft
 hoverText: "Knowledge: The (intangible) sum of what is known by a specific Party, as well as the familiarity, awareness or understanding of someone or something by that Party."
 glossaryText: "The (intangible) sum of what is known by a specific %%party^party%%, as well as the familiarity, awareness or understanding of someone or something by that %%party^party%%."
 date: 20210601

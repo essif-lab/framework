@@ -4,9 +4,9 @@ title: "Agent"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: agent
+termid: agent
 symphrase: agent{ss}, digital-agent{ss}
-stage: draft
+status: draft
 hoverText: "Agent (of a Party): an Actor that is executing an Action on behalf of a Party (called the Principal of that Actor)."
 glossaryText: "an %%actor^actor%% that is executing an %%action^action%% on behalf of a %%party^party%% (called the %%principal^principal%% of that %%actor^actor%%)."
 date: 20210601

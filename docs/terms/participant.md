@@ -4,10 +4,10 @@ title: "Participant"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: term
-typeid: participant
+termid: participant
 symphrase: participant{ss}
 conceptref: essifLab:party
-stage: draft
+status: draft
 hoverText: "Participant (in/of a Transaction): a Party is negotiating (or has negotiated) a Transaction Agreement."
 glossaryText: "a %%party^party%% is negotiating (or has negotiated) a %%transaction agreement^transaction-agreement%%."
 date: 20210601

@@ -4,10 +4,10 @@ title: "Peer Party"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: term
-typeid: peer-party
+termid: peer-party
 symphrase: peer-part{yies}
 conceptref: essifLab:party
-stage: draft
+status: draft
 hoverText: "Peer Party (of another Party that is a participant in a Business Transaction): a Party that also participates in that Business Transaction."
 glossaryText: "a %%party^party%% that also participates in that %%business transaction^transaction%%."
 date: 20210601

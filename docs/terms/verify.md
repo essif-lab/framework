@@ -4,9 +4,9 @@ title: "Verify"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: verify
+termid: verify
 symphrase: verify, verifies, verified, verifying
-stage: draft
+status: draft
 hoverText: "Verify/verification of data: the act, by or on behalf of a Party, of determining whether that data is authentic (i.e. originates from the Party that authored it), timely (i.e. has not expired), and conforms to other specifications that apply to its structure."
 glossaryText: "The act, by or on behalf of a %%party^party%%, of determining whether that data is authentic (i.e. originates from the %%party^party%% that authored it), timely (i.e. has not expired), and conforms to other specifications that apply to its structure."
 date: 20210802

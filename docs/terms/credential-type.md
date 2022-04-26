@@ -4,9 +4,9 @@ title: "Credential Type"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: credential-type
+termid: credential-type
 symphrase: credential-type{ss}
-stage: draft
+status: draft
 hoverText: "Credential Type: the specification of the contents, properties, constraints etc. that Credentials of this type must have/comply with."
 glossaryText: "the specification of the contents, properties, constraints etc. that %%credentials^credential%% of this type must have/comply with."
 date: 20210601

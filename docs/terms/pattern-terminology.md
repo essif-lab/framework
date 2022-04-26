@@ -4,9 +4,9 @@ title: "Terminology Pattern"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: pattern
-typeid: terminology
+termid: terminology
 symphrase: terminology
-stage: draft
+status: draft
 hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
 date: 20211101
 ---

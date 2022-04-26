@@ -4,9 +4,9 @@ title: "Pattern-file"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: pattern-file
+termid: pattern-file
 symphrase: pattern-file
-stage: draft
+status: draft
 hoverText: "Pattern-file: a file whose contents describes/documents a Pattern."
 glossaryText: "a file whose contents describes/documents a %%pattern^pattern%%."
 date: 20210601

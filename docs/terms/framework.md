@@ -4,9 +4,9 @@ title: "Framework (Conceptual)"
 scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: framework
+termid: framework
 symphrase: framework{ss}, conceptual-framework{ss}
-stage: draft
+status: draft
 hoverText: "Framework (Conceptual): A set of assumptions, concepts, values, and practices that constitutes a way of viewing reality."
 glossaryText: "A set of assumptions, concepts, values, and practices that constitutes a way of viewing reality."
 date: 20220405

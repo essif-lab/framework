@@ -4,9 +4,9 @@ title: "Transaction Id"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: transaction-id
+termid: transaction-id
 symphrase: transaction-id{ss}
-stage: draft
+status: draft
 hoverText: "Transaction Id (for a specific Business Transaction and a Participant): character string that this Participant uses to identify, and refer to, that Business Transaction."
 glossaryText: "character string that this %%participant^participant%% uses to identify, and refer to, that %%business transaction^transaction%%."
 date: 20210601

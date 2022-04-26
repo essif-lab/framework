@@ -4,9 +4,9 @@ title: "Identifier Pattern"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: pattern
-typeid: identifier
+termid: identifier
 symphrase: identifier
-stage: draft
+status: draft
 hoverText: "The eSSIF-Lab Identifier Pattern describes how Identifiers are defined and used for Identification purposes."
 date: 20210830
 ---

@@ -4,9 +4,9 @@ title: "Control"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: control
+termid: control
 symphrase: control{ss}
-stage: draft
+status: draft
 hoverText: "Control (of a Party): the combination of resources (e.g. people, tools, budgets, time) and processes that are tasked to realize a specific Control Objective of that Party."
 glossaryText: "the combination of resources (e.g. people, tools, budgets, time) and processes that are tasked to realize a specific %%control objective^control-objective%% of a particular %%party^party%%."
 date: 20220212

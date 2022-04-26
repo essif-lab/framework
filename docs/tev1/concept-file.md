@@ -4,9 +4,9 @@ title: "NameOfNewConcept"
 scopeid: scopeID
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: conceptID
+termid: conceptID
 symphrase: conceptID{ss}
-stage: draft
+status: draft
 hoverText: "ConceptID: popuptext for 'conceptID' (tbd)."
 glossaryText: "popuptext for 'conceptID' (tbd)."
 date: 20210601

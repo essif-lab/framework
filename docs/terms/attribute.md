@@ -4,9 +4,9 @@ title: "Attribute"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: attribute
+termid: attribute
 symphrase: attribute{ss}
-stage: draft
+status: draft
 hoverText: "Attribute (of an Entity): Data, that represents a characteristic that a Party (the Owner of the attribute) has attributed to an Entity (which is the Subject of that attribute)."
 glossaryText: "%%Data^data%%, that represents a characteristic that a %%party^party%% (the %%owner^owner%% of the %%attribute^attribute%%) has attributed to an %%entity^entity%% (which is the %%subject^subject%% of that attribute)."
 date: 20210821

@@ -4,9 +4,9 @@ title: "Control Process"
 scopeid: essifLab
 displayed_sidebar: essifLabSideBar
 type: concept
-typeid: control-process
+termid: control-process
 symphrase: control-process, control-processes
-stage: draft
+status: draft
 hoverText: "Control Process (of a Party): a process that is run by a Party to ensure that a specific set of its control Objectives are realized."
 glossaryText: "a process, %%owned^owned%% and run by a %%party^party%%, to ensure that a specific subset of its control %%objectives^objective%% are realized."
 date: 20210830
