@@ -1,12 +1,13 @@
 ---
 id: scope-file
 title: "Scope-file"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: scope-file
+scopetag: essifLab
+termtype: concept
+termid: scope-file
 symphrase: scope-file{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Scope-file: a file whose contents defines/specifies a Scope."
 glossaryText: "a file whose contents defines/specifies a %%scope^scope%%."
 date: 20210601

@@ -1,12 +1,13 @@
 ---
 id: glossary
 title: "Glossary"
-scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: glossary
+scopetag: essifLabTerminology
+termtype: concept
+termid: glossary
 symphrase: glossar{yies}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Glossary: an alphabetically sorted list of Terms with the (single) meaning it has in (at least) one context."
 glossaryText: "an alphabetically sorted list of %%terms^term%% with the (single) meaning it has in (at least) one context."
 date: 20210601

@@ -2,7 +2,7 @@
 id: essifLab-governance
 title: eSSIF-Lab Governance
 sidebar_label: Governance
-scopeid: essifLab
+scopetag: essifLab
 date: 20210601
 ---
 

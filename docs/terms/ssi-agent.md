@@ -1,13 +1,14 @@
 ---
 id: ssi-agent
 title: "SSI Agent"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: term
-typeid: ssi-agent
+scopetag: essifLab
+termtype: term
+termid: ssi-agent
 symphrase: ssi-agent{ss}
 conceptref: essifLab:Agent
-stage: draft
+status: draft
+grouptags:
 hoverText: "SSI-Agent: a Digital Agent that provides one or more of the SSI functionalities (Issuer, Holder, Verifier, Wallet) to its Principal."
 glossaryText: "a %%digital agent^agent%% that provides one or more of the %%ssi functionalities^ssi-agent%% (%%issuer^issuer%%, %%holder^holder%%, %%verifier^verifier%%, %%wallet^wallet%%) to its %%principal^principal%%."
 date: 20210601

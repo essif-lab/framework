@@ -1,12 +1,13 @@
 ---
 id: data-discloser-policy
 title: "Data Discloser Policy"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: data-discloser-policy
+scopetag: essifLab
+termtype: concept
+termid: data-discloser-policy
 symphrase: data-discloser-polic{yies}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Data Discloser Policy: a Digital Policy that enables an operational Data Discloser component to function in accordance with the Objectives of its Principal."
 glossaryText: "a %%digital policy^policy%% that enables an operational %%data discloser^data-discloser%% component to function in accordance with the %%objectives^objective%% of its %%principal^principal%%."
 date: 20210601

@@ -1,13 +1,14 @@
 ---
 id: mental-model
 title: "Mental Model"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: term
-typeid: mental-model
+scopetag: essifLab
+termtype: term
+termid: mental-model
 symphrase: mental-model{ss}
 conceptref: essifLab:pattern
-stage: draft
+status: draft
+grouptags:
 hoverText: "Mental Model (Pattern): A description, both casual and formal, of a set of Concepts (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
 glossaryText: "A description, both casual and formal, of a set of %%concepts^concept%% (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
 date: 20210804

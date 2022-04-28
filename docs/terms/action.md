@@ -1,12 +1,13 @@
 ---
 id: action
 title: "Action"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: action
+scopetag: essifLab
+termtype: concept
+termid: action
 symphrase: action{ss}, acting, activit(yies)
-stage: draft
+status: draft
+grouptags:
 hoverText: "Action: something that is actually done (a 'unit of work' that is executed) by a single Actor (on behalf of a given Party), as a single operation, in a specific context."
 glossaryText: "something that is actually done (a 'unit of work' that is executed) by a single %%actor^actor%% (on behalf of a given %%party^party%%), as a single operation, in a specific context."
 date: 20220324

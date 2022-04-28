@@ -1,12 +1,13 @@
 ---
 id: risk
 title: "Risk"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: risk
+scopetag: essifLab
+termtype: concept
+termid: risk
 symphrase: risk{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Risk (of a Party's Objective): the effects that uncertainty (i.e. a lack of information, understanding or knowledge of events, their consequences or likelihoods) can have on the intended realization of that Party's Objective."
 glossaryText: "the effects that uncertainty (i.e. a lack of information, understanding or %%knowledge^knowledge%% of events, their consequences or likelihoods) can have on the intended realization of an %%objective^objective%% of a %%party^party%%."
 date: 20210601

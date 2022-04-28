@@ -1,12 +1,13 @@
 ---
 id: policy
 title: "Policy"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: policy
+scopetag: essifLab
+termtype: concept
+termid: policy
 symphrase: polic{yies}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Policy: a (set of) rules, working-instructions, preferences and other guidance for the execution of one or more kinds of Actions, that Agents of the Party that Governs the policy have access to and can interpret such that this results in these Actions being executed as intended by that Party."
 glossaryText: "a (set of) rules, working-instructions, preferences and other guidance for the execution of one or more kinds of %%actions^action%%, that %%agents^agent%% of the %%party^party%% that %%governs^governance%% the policy have access to and can interpret such that this results in these %%actions^action%% being executed as intended by that %%party^party%%."
 date: 20210901

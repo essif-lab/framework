@@ -1,12 +1,13 @@
 ---
 id: term-file
 title: "Term-file"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: term-file
+scopetag: essifLab
+termtype: concept
+termid: term-file
 symphrase: term-file{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Term-file: a file whose contents defines/specifies a Term."
 glossaryText: "a file whose contents defines/specifies a %%term^term%%."
 date: 20210601

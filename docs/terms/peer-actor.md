@@ -1,13 +1,14 @@
 ---
 id: peer-actor
 title: "Peer Actor"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: term
-typeid: peer-actor
+scopetag: essifLab
+termtype: term
+termid: peer-actor
 symphrase: peer-actor{ss}
 conceptref: essifLab:Actor
-stage: draft
+status: draft
+grouptags:
 hoverText: "Peer Actor (of some other Actor in a Communication Session): the Actor with whom/which this other Actor is communicating in that Communication Session."
 glossaryText: "the %%actor^actor%% with whom/which this other %%actor^actor%% is communicating in that %%communication session^communication-session%%."
 date: 20210601

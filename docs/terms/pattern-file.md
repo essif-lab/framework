@@ -1,12 +1,13 @@
 ---
 id: pattern-file
 title: "Pattern-file"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: pattern-file
+scopetag: essifLab
+termtype: concept
+termid: pattern-file
 symphrase: pattern-file
-stage: draft
+status: draft
+grouptags:
 hoverText: "Pattern-file: a file whose contents describes/documents a Pattern."
 glossaryText: "a file whose contents describes/documents a %%pattern^pattern%%."
 date: 20210601

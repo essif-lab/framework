@@ -1,12 +1,13 @@
 ---
 id: role-name
 title: "Role name"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: term
-typeid: role-name
+scopetag: essifLab
+termtype: term
+termid: role-name
 symphrase: role-name{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Role name: name (text) that refers to (and identifies) a Role in a a specific context."
 glossaryText: "name (text) that refers to (and identifies) a %%role^role%% in a specific context."
 date: 20210601

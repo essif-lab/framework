@@ -1,12 +1,13 @@
 ---
 id: controller
 title: "Controller"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: controller
+scopetag: essifLab
+termtype: concept
+termid: controller
 symphrase: controller{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Controller (of an Entity): the role that an Actor performs as it is executing actions on that Entity for the purpose of ensuring that the Entity will act/behave, or be used, in a particular way."
 glossaryText: "the role that an %%actor^actor%% performs as it is executing actions on that %%entity^entity%% for the purpose of ensuring that the %%entity^entity%% will act/behave, or be used, in a particular way."
 date: 20211222

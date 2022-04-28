@@ -1,10 +1,11 @@
 ---
 id: typeID
 title: "NameOfNewTypeInstance"
-scopeid: scopeID
-type: type
-typeid: typeID
-stage: draft
+scopetag: scopeID
+termtype: type
+termid: typeID
+status: draft
+grouptags:
 hoverText: "TypeID: popuptext for 'typeID' (tbd)."
 glossaryText: "popuptext for 'typeID' (tbd)."
 date: 20210601

@@ -1,12 +1,13 @@
 ---
 id: terminology-process
 title: "Terminology Process"
-scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: terminology-process
+scopetag: essifLabTerminology
+termtype: concept
+termid: terminology-process
 symphrase: terminology-process, terminology-processes
-stage: draft
+status: draft
+grouptags:
 hoverText: "Terminology Process: a method for recognizing misunderstandings as such, and creating or maintaining Definitions that resolve them."
 glossaryText: "a method for recognizing misunderstandings as such, and creating or maintaining %%definitions^definition%% that resolve them."
 date: 20210601

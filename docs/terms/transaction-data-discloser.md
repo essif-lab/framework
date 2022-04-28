@@ -1,12 +1,13 @@
 ---
 id: transaction-data-discloser
 title: "Transaction Data Discloser"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: transaction-data-discloser
+scopetag: essifLab
+termtype: concept
+termid: transaction-data-discloser
 symphrase: transaction-data-discloser{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Transaction Data Discloser: a functional component that is capable of disclosing data."
 glossaryText: "a functional component that is capable of disclosing data."
 date: 20210601

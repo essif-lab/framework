@@ -1,12 +1,13 @@
 ---
 id: pattern-decision-making
 title: "Decision Making"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: pattern
-typeid: decision-making
+scopetag: essifLab
+termtype: pattern
+termid: decision-making
 symphrase: decision-making
-stage: draft
+status: draft
+grouptags:
 hoverText: "The Decision Making pattern captures the Concepts and relations that explain how Parties would, could, or should reason in order to reach good conclusions and make good decisions. This can be used as a basis for understanding the information needs of Parties as they need to decide e.g. whether or not to commit to a Transaction proposal, or whether or not data is Valid for some purpose. This pattern is based on Toulmin's use of arguments."
 date: 20210804
 ---

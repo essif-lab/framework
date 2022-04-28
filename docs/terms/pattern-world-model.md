@@ -1,12 +1,13 @@
 ---
 id: pattern-world-model
 title: "eSSIF-Lab World Model"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: pattern
-typeid: world-model
+scopetag: essifLab
+termtype: pattern
+termid: world-model
 symphrase: world-model
-stage: draft
+status: draft
+grouptags:
 hoverText: "The eSSF-Lab World Model is the set of Concepts, relations between them (Patterns), and principles (that are the starting point for eSSIF-Lab's thinking)."
 glossaryText: "The set of %%concepts^concept%%, relations between them (%%patterns^pattern%%), and [Principles](essifLab-principles) (that are the starting point for eSSIF-Lab's thinking)."
 date: 20211101
@@ -49,7 +50,7 @@ You can learn more about parties from the %%parties, actors and action pattern|p
 
 ### Actors: Entities that can act (do things)
 
-Another fundamental category is called %%actor|actor%%, which is defined as an %%entity|entity%% that can act (do things). It is important to note that while some entity classes (e.g. human beings) qualify as both %%actors|actor%% and %%parties|party%%, other entity classes do not (e.g. %%organizations|organization%%, or robots). As an actor does something (executing an %%action|action%%), it uses the %%knowledge|knowledge%% of one specific %%party|party%% as the main/dominant guidance for executing that action, yet it may also use %%knowledge|knowledge%% of other %%parties|party%% when such is necessary to properly execute the action. We say that the %%actor|actor%% is executing that %%action|action%% on behalf of that %%party|party%%. %%Actors|actor%% may execute different %%actions|action%% on behalf of different %%parties|party%%. It is a particular contribution of this framework that using it allows one to determine which %%actor|actor%% executes what %%action|action%% on behalf of what %%party|party%%. This is particularly relevant in the context of two interacting/transacting parties.
+Another fundamental category is called %%actor|actor%%, which is defined as an %%entity|entity%% that can act (do things). It is important to note that while some entity classes (e.g. human beings) qualify as both %%actors|actor%% and %%parties|party%%, other entity classes do not (e.g. %%organizations|organization%%, or robots). As an actor does something (executing an %%action|action%%), it uses the %%knowledge|knowledge%% of one specific %%party|party%% as the main/dominant guidance for executing that action, yet it may also use %%knowledge|knowledge%% of other %%parties|party%% when such is necessary to properly execute the action. We say that the %%actor|actor%% is executing that %%action|action%% on behalf of that %%party|party%%. %%Actors|actor%% may execute different %%actions|action%% on behalf of different %%parties|party%%. It is a particular contribution of this %%framework|framework%% that using it allows one to determine which %%actor|actor%% executes what %%action|action%% on behalf of what %%party|party%%. This is particularly relevant in the context of two interacting/transacting parties.
 
 You can learn more about actors from the %%parties, actors and action pattern|pattern-party-actor-action%%.
 

@@ -1,10 +1,11 @@
 ---
 id: dictionaryID
 title: "NameOfNewDictionary"
-scopeid: scopeID
-type: dictionary
-typeid: dictionaryID
-stage: draft
+scopetag: scopeID
+termtype: dictionary
+termid: dictionaryID
+status: draft
+grouptags:
 hoverText: "DictionaryID: popuptext for 'dictionaryID' (tbd)."
 glossaryText: "popuptext for 'dictionaryID' (tbd)."
 date: 20210601

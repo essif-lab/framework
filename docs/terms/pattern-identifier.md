@@ -1,12 +1,13 @@
 ---
 id: pattern-identifier
 title: "Identifier Pattern"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: pattern
-typeid: identifier
+scopetag: essifLab
+termtype: pattern
+termid: identifier
 symphrase: identifier
-stage: draft
+status: draft
+grouptags:
 hoverText: "The eSSIF-Lab Identifier Pattern describes how Identifiers are defined and used for Identification purposes."
 date: 20210830
 ---

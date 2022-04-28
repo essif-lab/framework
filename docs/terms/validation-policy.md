@@ -1,12 +1,13 @@
 ---
 id: validation-policy
 title: "Validation Policy"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: validation-policy
+scopetag: essifLab
+termtype: concept
+termid: validation-policy
 symphrase: validation-polic{yies}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Validation Policy: a Digital Policy that contains the rules, working-instructions, preferences and other guidance for determining whether or not data is valid for a specific purpose/objective of its Governor."
 glossaryText: "a %%digital policy^policy%% that contains the rules, working-instructions, preferences and other guidance for determining whether or not data is valid for a specific purpose/objective of its %%governor^governance%%."
 date: 20210601

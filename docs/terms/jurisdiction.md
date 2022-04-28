@@ -1,12 +1,13 @@
 ---
 id: jurisdiction
 title: "Jurisdiction"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: jurisdiction
+scopetag: essifLab
+termtype: concept
+termid: jurisdiction
 symphrase: jurisdiction{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Jurisdiction: the composition of a Legal System (legislation, enforcement thereof, and conflict resolution), a Party that governs that Legal System, a scope within which that Legal System is operational, and one or more Objectives for the purpose of which the Legal System is operated."
 glossaryText: "the composition of a %%legal system^legal-system%% (legislation, enforcement thereof, and conflict resolution), a %%party^party%% that governs that %%legal system^legal-system%%, a scope within which that %%legal system^legal-system%% is operational, and one or more %%objectives^objective%% for the purpose of which the %%legal system^legal-system%% is operated. See also the %%Jurisdictions pattern^pattern-jurisdiction%%."
 date: 20210601

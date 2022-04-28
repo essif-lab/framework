@@ -1,12 +1,13 @@
 ---
 id: validator
 title: "Validator"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: validator
+scopetag: essifLab
+termtype: concept
+termid: validator
 symphrase: validator{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Validator (functional component): the capability to determine whether or not (verified) data is valid to be used for some specific purpose(s)."
 glossaryText: "the capability to determine whether or not (%%verified^verify%%) data is valid to be used for some specific purpose(s)."
 date: 20210802

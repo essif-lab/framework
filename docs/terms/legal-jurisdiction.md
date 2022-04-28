@@ -1,13 +1,14 @@
 ---
 id: legal-jurisdiction
 title: "Legal Jurisdiction"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: term
-typeid: legal-jurisdiction
+scopetag: essifLab
+termtype: term
+termid: legal-jurisdiction
 symphrase: legal-jurisdiction{ss}
 conceptref: essifLab:jurisdiction
-stage: draft
+status: draft
+grouptags:
 hoverText: "Legal Jurisdiction: a Jurisdiction that is governed/operated by a governmental body."
 glossaryText: "a %%jurisdiction^jurisdiction%% that is governed/operated by a governmental body."
 date: 20210601

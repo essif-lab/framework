@@ -2,7 +2,7 @@
 id: tev2-struct-ctext-term-refs
 title: TEv2 - Using terms, and referencing their definitions in a Curated Text
 sidebar_label: Term references
-scopeid: tev2
+scopetag: tev2
 date: 20220303
 ---
 

@@ -1,12 +1,13 @@
 ---
 id: scope
 title: "Scope"
-scopeid: eSSIFLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: scope
+scopetag: eSSIFLab
+termtype: concept
+termid: scope
 symphrase: scope{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Scope: the extent of the area or subject matter (which we use, e.g., to define Patterns, Concepts, Terms and Glossaries in, but it serves other purposes as well)."
 glossaryText: "the extent of the area or subject matter (which we use, e.g., to define %%patterns^pattern%%, %%concepts^concept%%, %%terms^term%% and %%glossaries^glossary%% in, but it serves other purposes as well)."
 date: 20210601

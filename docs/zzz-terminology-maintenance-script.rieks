@@ -41,6 +41,15 @@ ss = "(?:['’]?s|\(s\))?"
 // ~%{yies} stands for ~y, ~y's, ~y’s, ~ies
 yies = "(y|y['’]s|ies)"
 
+// Generic reftext syntax (for TOIP tt-tools)
+beg1 = "(?<=[^`\\])\[(?=[^@\]]+\]\([^\)]*@[^@\)]*\))"
+ref1 = "%{beg1}(?P<showtext>.+?)\]\((?P<id>[a-z0-9_-]+?)(?:#(?P<headingid>[a-z0-9_-]+?))?@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsn>[a-z0-9_-]+?))?\)"
+// Alternative reftext syntax
+beg2 = "(?<=[^\\@()=`])\[(?=[^@\]]+@[^@\]]*\](?:\([^@\)]+\))?)"
+ref2 = "%{beg2}(?P<showtext>.+?)@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsn>[a-z0-9_-]+?))?\](?P<ref>\((?P<id>[a-z0-9_-]*)(?::(?P<headingid>[a-z0-9_-]+?))?\))?"
+//
+reftext = "(ref1|ref2)(?=[^`]|%{eof})"
+
 dutyright = "(?:dut(?:y|ies)|rights?)"
 dutyright = "%{dutyright}(?:-*(?:/|and|or|and/or)-*%{dutyright})?"
 dutyrighttype = "%{dutyright}-types?"
@@ -261,8 +270,10 @@ with "ssi-assurance-community"
 
 // [T]
 // for transaction data collector/discloers policies, see [P]
-replace-regex "%{mid}(scoped-term|tag|term)%{ss}%{end}"
+replace-regex "%{mid}(scoped-term|term)%{ss}%{end}"
 with "$1"
+replace-regex "%{mid}((scope|group|version|vsn)-?)?tag%{ss}%{end}"
+with "tag"
 replace-regex "%{mid}(terminolog|terms?-communit)%{yies}%{end}"
 with "$1y"
 replace-regex "%{mid}(?:\(?business\)?-)?(term(-file)?|transaction(-agreement|-id|-data-(collector|discloser)|-form|-proposal|-request|-type)?)%{ss}%{end}"

@@ -2,7 +2,7 @@
 id: tev2-spec-scope-admin
 title: TEv2 - Scope Administration file Specification
 sidebar_label: Scope Administration
-scopeid: tev2
+scopetag: tev2
 date: 20220303
 ---
 

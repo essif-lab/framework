@@ -1,12 +1,13 @@
 ---
 id: data
 title: "Data"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: data
+scopetag: essifLab
+termtype: concept
+termid: data
 symphrase: data, digital-data
-stage: draft
+status: draft
+grouptags:
 hoverText: "Data: something (tangible) that can be used to communicate a meaning (which is intangible/information)."
 glossaryText: "something (tangible) that can be used to communicate a meaning (which is intangible/information)."
 date: 20210601

@@ -2,7 +2,7 @@
 id: tev2-struct-ctext-header
 title: TEv2 - The Header of a Curated Text
 sidebar_label: Header
-scopeid: tev2
+scopetag: tev2
 date: 20220303
 ---
 
@@ -30,10 +30,11 @@ The ([yaml](https://yaml.org/spec/1.2.2/)) header starts at the top of the [cura
 ---
 id: <idtext>
 title: <Title Text>
-scopeid: <scopeid>
-type: <type>
-typeid: <typeid>
-stage: <stage>
+scopetag: <scopeid>
+termtype: <type>
+termid: <typeid>
+status: <stage>
+grouptags:
 hoverText: "<hovertext>"
 glossaryText: "<glossarytext>"
 date: yyyymmdd

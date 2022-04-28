@@ -2,7 +2,7 @@
 id: essifLab-fw
 title: eSSIF-Lab Framework
 sidebar_label: Framework
-scopeid: essifLab
+scopetag: essifLab
 date: 20210601
 ---
 
@@ -14,7 +14,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 The main purpose of [eSSIF-Lab](essifLab) is to realize its [vision](essifLab-vision). This is quite a challenge, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. Another kind of complexity is related to the (im)possibilities of doing things as %%parties|party%% interact, e.g. in an '%%ecosystem|ecosystem%%' or a %%community|community%%.
 
-The eSSIF-Lab Framework aims to establish a varied set of articles/documents, %%terminology|terminology%%, and %%mental models|pattern%% that individual %%parties|party%% from different backgrounds can use e.g. as they
+The eSSIF-Lab %%Framework|framework%% aims to establish a varied set of articles/documents, %%terminology|terminology%%, and %%mental models|pattern%% that individual %%parties|party%% from different backgrounds can use e.g. as they
 - seek to use SSI, and want to learn about:
   - benefits they may reap when they start to adopt SSI technologies;
   - topics to consider for increasing levels of maturity;
@@ -60,7 +60,7 @@ In the various phases of a %%transaction|transaction%%, each of its participants
 
 The fact that the [W3C Verifiable Credentials Data Model](https://www.w3.org/TR/vc-data-model) does not provide for a validator role, and explicitly places [validation](https://www.w3.org/TR/vc-data-model/#dfn-credential-validation) of credentials out of its scope, illustrates that we need more than just [verifiable credentials](https://www.w3.org/TR/vc-data-model/#dfn-verifiable-credentials) (VCs). Indeed, protocols are needed e.g. for issuing credentials, [exchanging presentations](https://identity.foundation/presentation-exchange/), revoking credentials etc. Such protocols may provoke the need for additional %%roles|role%%, e.g. a `revoker` (that would revoke credentials), a `policy provider`, etc.
 
-In our framework, we postulate the existince of %%issuers|issuer%%, %%holders|holder%%, %%verifiers|verifier%% and %%validators|validator%%, which for our purposes we define as functional components (i.e. components that fit a functional architecture) and that can be readily realized as concrete technical components that can be deployed in run-time contexts to act as %%digital agents|agent%% for arbitrary %%parties|party%%. It is not exactly the same, but nevertheless in line with the [W3C VC Terminology](https://www.w3.org/TR/vc-data-model/#terminology), which states (with the obvious exception of the validator) that they are roles that [entities](https://www.w3.org/TR/vc-data-model/#dfn-entities) can or might perform as they execute some function(s).
+In our %%framework|framework%%, we postulate the existince of %%issuers|issuer%%, %%holders|holder%%, %%verifiers|verifier%% and %%validators|validator%%, which for our purposes we define as functional components (i.e. components that fit a functional architecture) and that can be readily realized as concrete technical components that can be deployed in run-time contexts to act as %%digital agents|agent%% for arbitrary %%parties|party%%. It is not exactly the same, but nevertheless in line with the [W3C VC Terminology](https://www.w3.org/TR/vc-data-model/#terminology), which states (with the obvious exception of the validator) that they are roles that [entities](https://www.w3.org/TR/vc-data-model/#dfn-entities) can or might perform as they execute some function(s).
 
 As mentioned before, we expect that more functionalities and/or %%roles|role%% are necessary to make it all work, e.g. that of %%agent|agent%%, %%principal|principal%%, %%owner|owner%%, %%manager|management%%, %%governor|governance%%, %%guardian|guardian%%, %%dependent|dependent%%, etc. The bulk of these roles will likely not be of technical nature, but more fitted to the higher architectural levels, e.g. of information architecture, process architecture, governance etc.
 
@@ -180,7 +180,7 @@ In order to acquire data through SSI mechanisms for filling in a form for a spec
 In order to make the %%data collector|data-collector%% work, a %%validation policy|validation-policy%% (or %%data collector policy|data-collector-policy%%) is created by, or on behalf of the %%principal|principal%%, which specifies at least:
 
 -   the kinds of %%transactions|transaction%% the %%principal|principal%% is willing to (electronically) engage in, from both the requester and the provider perspectives;
--   for each such transaction type:
+-   for each such transaction termtype:
 
     -   the criteria (business rules) that should be used to determine that the form is 'clean', i.e. that the necessary and sufficient data have been obtained and that they are consistent, coherent, and suitable for making a %%transaction|transaction%% commitment decision.
 

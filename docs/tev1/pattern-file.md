@@ -1,12 +1,13 @@
 ---
 id: patternID
 title: "Pattern: PatternName"
-scopeid: scopeID
 displayed_sidebar: essifLabSideBar
-type: pattern
-typeid: patternID
+scopetag: scopeID
+termtype: pattern
+termid: patternID
 symphrase: patternID{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "PatternID: popuptext for 'patternID' (tbd)."
 glossaryText: "popuptext for 'patternID' (tbd)."
 date: 20210601

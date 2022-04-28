@@ -1,12 +1,13 @@
 ---
 id: dependent
 title: "Dependent"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: dependent
+scopetag: essifLab
+termtype: concept
+termid: dependent
 symphrase: dependent{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Dependent (in a Guardianship Arrangement): an Entity for the caring for and/or protecting/guarding/defending of which a Guardianship Arrangement has been established."
 glossaryText: "an %%entity^entity%% for the caring for and/or protecting/guarding/defending of which a %%guardianship arrangement^guardianship-arrangement%% has been established."
 date: 20210601

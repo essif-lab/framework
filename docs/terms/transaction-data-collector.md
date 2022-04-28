@@ -1,12 +1,13 @@
 ---
 id: transaction-data-collector
 title: "Transaction Data Collector"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: transaction-data-collector
+scopetag: essifLab
+termtype: concept
+termid: transaction-data-collector
 symphrase: transaction-data-collector{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Transaction Data Collector: a functional component that collects sufficient and Validated Data for deciding whether or not a request (typically for a product or a service) is to be serviced."
 glossaryText: "a functional component that collects sufficient and %%validated^validate%% data for deciding whether or not a request (typically for a product or a service) is to be serviced."
 date: 20210601
@@ -67,7 +68,7 @@ In order to acquire data through SSI mechanisms for filling in a form for a spec
 In order to make the Transaction Data Collector work, a Validation Policy (or Transaction Data Collector Policy) is created by, or on behalf of the Principal, which specifies at least:
 
 -   the kinds of transactions its Principal is willing to (electronically) engage in, from both the requester and the provider perspectives;
--   for each such transaction type:
+-   for each such transaction termtype:
 
     -   the criteria (business rules) that should be used to determine that the form is 'clean', i.e. that the necessary and sufficient data have been obtained and that they are consistent, coherent, and suitable for making a transaction %%commitment decision|commitment-decision%%.
 

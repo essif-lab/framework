@@ -1,12 +1,13 @@
 ---
 id: jurisdiction-governor
 title: "Governor (of a Jurisdiction)"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: jurisdiction-governor
+scopetag: essifLab
+termtype: concept
+termid: jurisdiction-governor
 symphrase: jurisdiction-governor{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Governor (of a Jurisdiction): the Party that operates the Legal System of that Jurisdiction."
 glossaryText: "the %%party^party%% that operates the %%legal system^legal-system%% of that %%jurisdiction^jurisdiction%%."
 date: 20210601

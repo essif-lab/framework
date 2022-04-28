@@ -1,12 +1,13 @@
 ---
 id: data-discloser
 title: "Data Discloser"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: data-discloser
+scopetag: essifLab
+termtype: concept
+termid: data-discloser
 symphrase: data-discloser{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Data Discloser: a functional component that is capable of disclosing data to (Agents of) other Parties, e.g. in the form of Credentials."
 glossaryText: "a functional component that is capable of disclosing data to (Agents of) other %%parties^party%%, e.g. in the form of %%credentials^credential%%."
 date: 20210601

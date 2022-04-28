@@ -1,12 +1,13 @@
 ---
 id: risk-owner
 title: "Risk Owner"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: risk-owner
+scopetag: essifLab
+termtype: concept
+termid: risk-owner
 symphrase: risk-owner{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Risk-owner (of a Risk): the Party that is the Owner of the Objective to which the Risk is associated."
 glossaryText: "the %%party^party%% that is the %%owner^owner%% of the %%objective^objective%% to which a %%risk^risk%% is associated."
 date: 20210601
@@ -24,7 +25,7 @@ Knowing who %%owns|owner%% a %%risk|risk%% is knowing who is accountable when so
 
 ### Formalization
 
-In the context of the eSSIF-Lab framework (way of thinking), the definition can be explained by observing that there is an %%ownership|ownership%% relation between the %%party|party%% and the %%risk|risk%% that is associated with any %%objective|objective%% that it %%owns|owner%%. Determining that such a relation exists can be verified by applying its %%definition|definition%%, and observing that:
+In the context of the eSSIF-Lab %%framework|framework%% (way of thinking), the definition can be explained by observing that there is an %%ownership|ownership%% relation between the %%party|party%% and the %%risk|risk%% that is associated with any %%objective|objective%% that it %%owns|owner%%. Determining that such a relation exists can be verified by applying its %%definition|definition%%, and observing that:
   - the %%party|party%% is a %%jurisdiction|jurisdiction%% (as explained %%here|objective%%),
   - both the %%party|party%% itself and the %%risk|risk%% are known to that %%party|party%% and hence qualify as %%legal entities|legal-entity%% for that %%jurisdiction|jurisdiction%%;
   - %%parties|party%% (un)consciously create, maintain and enforce rules (%%policies|policy%%) for identifying, assessing and treating uncertainties in (the effects of) their %%objectives|objective%% - which are the %%risks|risk%% associated with such %%objectives|objective%%, which is equivalent with saing that within their %%jurisdiction|jurisdiction%%, the %%legal system|legal-system%% (a) defines their rights and duties "to enjoy, dispose of and control" these %%risks|risk%%, (b) enforces them - i.e. %%manage|management%% them, and (c) provides a means to sette disputes - i.e. determine which of the various ways to control or treat risks must be followed.

@@ -1,12 +1,13 @@
 ---
 id: legal-system
 title: "Legal System"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: legal-system
+scopetag: essifLab
+termtype: concept
+termid: legal-system
 symphrase: legal-system{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Legal-system: a system in which rules are defined, and mechanisms for their enforcement and conflict resolution are (implicitly or explicitly) specified."
 glossaryText: "a system in which rules are defined, and mechanisms for their enforcement and conflict resolution are (implicitly or explicitly) specified."
 date: 20210601

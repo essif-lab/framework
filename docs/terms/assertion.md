@@ -1,12 +1,13 @@
 ---
 id: assertion
 title: "Assertion"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: assertion
+scopetag: essifLab
+termtype: concept
+termid: assertion
 symphrase: assertion{ss}, claim{ss}, statement{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Assertion: a declaration/statement, made by a specific Party, that something is the case."
 glossaryText: "a declaration/statement, made by a specific %%party^party%%, that something is the case."
 date: 20210601

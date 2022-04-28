@@ -1,12 +1,13 @@
 ---
 id: data-collector
 title: "Data Collector"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: data-collector
+scopetag: essifLab
+termtype: concept
+termid: data-collector
 symphrase: data-collector{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Data Collector: a functional component that is capable of collecting data from various Parties in the context of some Business Transaction, and Validating this data for the purpose of making one (or more) decision(s)."
 glossaryText: "a functional component that is capable of collecting data from various %%parties^party%% in the context of some %%business transaction^transaction%%, and %%validating^validate%% this data for the purpose of making one (or more) decision(s)."
 date: 20210601
@@ -67,7 +68,7 @@ In order to acquire data through SSI mechanisms for filling in a form for a spec
 In order to make the Data Collector work, a Validation Policy (or Data Collector Policy) is created by, or on behalf of its Principal, which specifies at least:
 
 -   the kinds of transactions the Principal is willing to (electronically) engage in, from both the requester and the provider perspectives;
--   for each such transaction type:
+-   for each such transaction termtype:
 
     -   the criteria (business rules) that should be used to determine that the form is 'clean', i.e. that the necessary and sufficient data have been obtained and that they are consistent, coherent, and suitable for making a transaction commitment decision.
 

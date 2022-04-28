@@ -1,12 +1,13 @@
 ---
 id: entity
 title: "Entity"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: entity
+scopetag: essifLab
+termtype: concept
+termid: entity
 symphrase: entit{yies}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Entity: someone or something that is known to exist."
 glossaryText: "someone or something that is known to exist."
 date: 20210601

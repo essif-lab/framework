@@ -1,12 +1,13 @@
 ---
 id: conceptID
 title: "NameOfNewConcept"
-scopeid: scopeID
 displayed_sidebar: essifLabSideBar
-type: concept
-typeid: conceptID
+scopetag: scopeID
+termtype: concept
+termid: conceptID
 symphrase: conceptID{ss}
-stage: draft
+status: draft
+grouptags:
 hoverText: "ConceptID: popuptext for 'conceptID' (tbd)."
 glossaryText: "popuptext for 'conceptID' (tbd)."
 date: 20210601

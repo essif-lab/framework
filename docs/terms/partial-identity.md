@@ -1,12 +1,13 @@
 ---
 id: partial-identity
 title: "Partial identity"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: term
-typeid: partial-identity
+scopetag: essifLab
+termtype: term
+termid: partial-identity
 symphrase: partial-identit{yies}
-stage: draft
+status: draft
+grouptags:
 hoverText: "Partial identity (of an Entity): all Knowledge that a specific Party (= the Owner of the partial identity) has about that Entity (= the 'Subject' of the partial identity)."
 glossaryText: "all %%knowledge^knowledge%% that a specific %%party^party%% (= the %%owner^owner%% of the partial identity) has about that %%entity^entity%% (= the '%%subject^subject%%' of the partial identity)."
 date: 20210803

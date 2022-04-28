@@ -80,6 +80,7 @@ const sidebars = {
     },
     'tev2/tev2-artifact-generation',
     'tev2/tev2-backlog',
+    'tev2/toip-terminology-toolbox',
   ],
   tev2SideBar: [
     'tev2/tev2-overview' ,
@@ -96,6 +97,7 @@ const sidebars = {
     },
     'tev2/tev2-artifact-generation',
     'tev2/tev2-backlog',
+    'tev2/toip-terminology-toolbox',
   ],
 };
 
