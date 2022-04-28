@@ -1,9 +1,9 @@
 ---
 id: pattern-governance-and-management
 title: "Governance and Management"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: pattern
+scopetag: essifLab
+termtype: pattern
 termid: governance-and-management
 symphrase: governance-and-management
 status: draft

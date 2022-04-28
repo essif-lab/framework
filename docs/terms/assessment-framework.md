@@ -1,9 +1,9 @@
 ---
 id: assessment-framework
 title: "Assessment framework"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: assessment-framework
 symphrase: assessment-framework{ss}
 status: draft

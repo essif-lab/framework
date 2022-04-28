@@ -1,9 +1,9 @@
 ---
 id: owned
 title: "Owned"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: owned
 symphrase: owned
 status: draft

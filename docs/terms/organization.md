@@ -1,9 +1,9 @@
 ---
 id: organization
 title: "Organization"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: organization
 symphrase: organization{ss}
 status: draft

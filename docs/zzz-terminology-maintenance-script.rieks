@@ -41,6 +41,15 @@ ss = "(?:['’]?s|\(s\))?"
 // ~%{yies} stands for ~y, ~y's, ~y’s, ~ies
 yies = "(y|y['’]s|ies)"
 
+// Generic reftext syntax (for TOIP tt-tools)
+beg1 = "(?<=[^`\\])\[(?=[^@\]]+\]\([^\)]*@[^@\)]*\))"
+ref1 = "%{beg1}(?P<showtext>.+?)\]\((?P<id>[a-z0-9_-]+?)(?:#(?P<headingid>[a-z0-9_-]+?))?@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsn>[a-z0-9_-]+?))?\)"
+// Alternative reftext syntax
+beg2 = "(?<=[^\\@()=`])\[(?=[^@\]]+@[^@\]]*\](?:\([^@\)]+\))?)"
+ref2 = "%{beg2}(?P<showtext>.+?)@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsn>[a-z0-9_-]+?))?\](?P<ref>\((?P<id>[a-z0-9_-]*)(?::(?P<headingid>[a-z0-9_-]+?))?\))?"
+//
+reftext = "(ref1|ref2)(?=[^`]|%{eof})"
+
 dutyright = "(?:dut(?:y|ies)|rights?)"
 dutyright = "%{dutyright}(?:-*(?:/|and|or|and/or)-*%{dutyright})?"
 dutyrighttype = "%{dutyright}-types?"

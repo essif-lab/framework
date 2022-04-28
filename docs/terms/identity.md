@@ -1,9 +1,9 @@
 ---
 id: identity
 title: "Identity"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: identity
 symphrase: identit{yies}
 status: draft

@@ -1,9 +1,9 @@
 ---
 id: transaction-form
 title: "Transaction Form"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: transaction-form
 symphrase: transaction-form{ss}
 status: draft

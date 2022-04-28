@@ -1,9 +1,9 @@
 ---
 id: entity
 title: "Entity"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: entity
 symphrase: entit{yies}
 status: draft

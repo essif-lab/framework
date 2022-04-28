@@ -1,9 +1,9 @@
 ---
 id: control
 title: "Control"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: control
 symphrase: control{ss}
 status: draft

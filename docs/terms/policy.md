@@ -1,9 +1,9 @@
 ---
 id: policy
 title: "Policy"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: policy
 symphrase: polic{yies}
 status: draft

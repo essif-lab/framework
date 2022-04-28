@@ -1,9 +1,9 @@
 ---
 id: compliance-management
 title: "Compliance management"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: compliance-management
 symphrase: compliance-management
 status: draft

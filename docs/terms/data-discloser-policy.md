@@ -1,9 +1,9 @@
 ---
 id: data-discloser-policy
 title: "Data Discloser Policy"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: data-discloser-policy
 symphrase: data-discloser-polic{yies}
 status: draft

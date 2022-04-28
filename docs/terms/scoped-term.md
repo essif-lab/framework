@@ -1,9 +1,9 @@
 ---
 id: scoped-term
 title: "Term (Scoped)"
-scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLabTerminology
+termtype: concept
 termid: term
 status: draft
 hoverText: "Scoped Term: a Term, the meaning of which is determined by the Definition to which it refers in a specific Scope/context."

@@ -1,9 +1,9 @@
 ---
 id: verify
 title: "Verify"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: verify
 symphrase: verify, verifies, verified, verifying
 status: draft

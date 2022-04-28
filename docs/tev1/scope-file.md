@@ -1,8 +1,8 @@
 ---
 id: scopeID
 title: "NameOfNewScope"
-scopeid: scopeID
-type: scope
+scopetag: scopeID
+termtype: scope
 termid: scopeID
 status: draft
 hoverText: "ScopeID: popuptext for 'scopeID' (tbd)."

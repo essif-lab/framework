@@ -1,9 +1,9 @@
 ---
 id: holder
 title: "Holder"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: holder
 symphrase: holder{ss}
 status: draft

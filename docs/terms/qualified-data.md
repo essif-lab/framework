@@ -1,9 +1,9 @@
 ---
 id: qualified-data
 title: "Qualified Data"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: qualified-data
 symphrase: qualified-data
 status: draft

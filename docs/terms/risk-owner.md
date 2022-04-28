@@ -1,9 +1,9 @@
 ---
 id: risk-owner
 title: "Risk Owner"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: risk-owner
 symphrase: risk-owner{ss}
 status: draft

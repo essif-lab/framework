@@ -1,9 +1,9 @@
 ---
 id: peer-actor
 title: "Peer Actor"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: term
+scopetag: essifLab
+termtype: term
 termid: peer-actor
 symphrase: peer-actor{ss}
 conceptref: essifLab:Actor

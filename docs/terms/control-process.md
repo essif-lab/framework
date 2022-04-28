@@ -1,9 +1,9 @@
 ---
 id: control-process
 title: "Control Process"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: control-process
 symphrase: control-process, control-processes
 status: draft

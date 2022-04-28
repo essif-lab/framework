@@ -1,9 +1,9 @@
 ---
 id: compliance-objective
 title: "Compliance Objective"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: compliance-objective
 symphrase: compliance-objective{ss}
 status: draft

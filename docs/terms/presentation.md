@@ -1,9 +1,9 @@
 ---
 id: presentation
 title: "Presentation"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: presentation
 symphrase: presentation{ss}, verifiable-presentation{ss}
 status: draft

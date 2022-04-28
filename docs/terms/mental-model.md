@@ -1,9 +1,9 @@
 ---
 id: mental-model
 title: "Mental Model"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: term
+scopetag: essifLab
+termtype: term
 termid: mental-model
 symphrase: mental-model{ss}
 conceptref: essifLab:pattern

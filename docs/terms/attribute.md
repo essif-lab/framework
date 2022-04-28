@@ -1,9 +1,9 @@
 ---
 id: attribute
 title: "Attribute"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: attribute
 symphrase: attribute{ss}
 status: draft

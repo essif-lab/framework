@@ -2,7 +2,7 @@
 id: essifLab-fw
 title: eSSIF-Lab Framework
 sidebar_label: Framework
-scopeid: essifLab
+scopetag: essifLab
 date: 20210601
 ---
 
@@ -180,7 +180,7 @@ In order to acquire data through SSI mechanisms for filling in a form for a spec
 In order to make the %%data collector|data-collector%% work, a %%validation policy|validation-policy%% (or %%data collector policy|data-collector-policy%%) is created by, or on behalf of the %%principal|principal%%, which specifies at least:
 
 -   the kinds of %%transactions|transaction%% the %%principal|principal%% is willing to (electronically) engage in, from both the requester and the provider perspectives;
--   for each such transaction type:
+-   for each such transaction termtype:
 
     -   the criteria (business rules) that should be used to determine that the form is 'clean', i.e. that the necessary and sufficient data have been obtained and that they are consistent, coherent, and suitable for making a %%transaction|transaction%% commitment decision.
 

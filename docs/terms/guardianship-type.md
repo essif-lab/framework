@@ -1,9 +1,9 @@
 ---
 id: guardianship-type
 title: "Guardianship-type"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: guardianship-type
 symphrase: guardianship-type{ss}, guardianship-arrangement-type{ss}
 status: draft

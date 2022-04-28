@@ -1,9 +1,9 @@
 ---
 id: pattern-world-model
 title: "eSSIF-Lab World Model"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: pattern
+scopetag: essifLab
+termtype: pattern
 termid: world-model
 symphrase: world-model
 status: draft

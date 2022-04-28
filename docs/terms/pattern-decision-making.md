@@ -1,9 +1,9 @@
 ---
 id: pattern-decision-making
 title: "Decision Making"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: pattern
+scopetag: essifLab
+termtype: pattern
 termid: decision-making
 symphrase: decision-making
 status: draft

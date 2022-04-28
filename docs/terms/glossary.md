@@ -1,9 +1,9 @@
 ---
 id: glossary
 title: "Glossary"
-scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLabTerminology
+termtype: concept
 termid: glossary
 symphrase: glossar{yies}
 status: draft

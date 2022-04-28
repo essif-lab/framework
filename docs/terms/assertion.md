@@ -1,9 +1,9 @@
 ---
 id: assertion
 title: "Assertion"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: assertion
 symphrase: assertion{ss}, claim{ss}, statement{ss}
 status: draft

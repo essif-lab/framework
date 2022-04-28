@@ -1,9 +1,9 @@
 ---
 id: delegate
 title: "Delegate"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: delegate
 symphrase: delegate{ss}, delegated, delegating, delegator{ss}, delegatee{ss}
 status: draft

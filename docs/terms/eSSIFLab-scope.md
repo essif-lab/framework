@@ -1,8 +1,8 @@
 ---
 id: eSSIFLab-scope
 title: "Scope: essifLabTerminology"
-scopeid: essifLabTerminology
-type: scope
+scopetag: essifLabTerminology
+termtype: scope
 termid: eSSIFLab
 status: draft
 hoverText: "ESSIFLab: specification of the eSSIF-Lab scope."

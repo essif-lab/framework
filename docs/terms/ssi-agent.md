@@ -1,9 +1,9 @@
 ---
 id: ssi-agent
 title: "SSI Agent"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: term
+scopetag: essifLab
+termtype: term
 termid: ssi-agent
 symphrase: ssi-agent{ss}
 conceptref: essifLab:Agent

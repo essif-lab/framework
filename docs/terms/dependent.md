@@ -1,9 +1,9 @@
 ---
 id: dependent
 title: "Dependent"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: dependent
 symphrase: dependent{ss}
 status: draft

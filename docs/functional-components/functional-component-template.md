@@ -1,8 +1,8 @@
 ---
 id: essifLab-fcomp-<fcompid>
 title: "<Name of the Functional Component> (Acronym)>"
-scopeid: essifLab
-type: fcomp
+scopetag: essifLab
+termtype: fcomp
 termid: <fcompid>
 status: draft
 hoverText: "<short description that pops up when user hovers over a reference to this component."

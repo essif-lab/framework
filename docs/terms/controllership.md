@@ -1,9 +1,9 @@
 ---
 id: controllership
 title: "Controllership"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: controllership
 symphrase: controllership
 status: draft

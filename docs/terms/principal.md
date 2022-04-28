@@ -1,9 +1,9 @@
 ---
 id: principal
 title: "Principal"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: principal
 symphrase: principal{ss}
 status: draft

@@ -1,9 +1,9 @@
 ---
 id: identifier
 title: "Identifier"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: identifier
 symphrase: identifier{ss}
 status: draft

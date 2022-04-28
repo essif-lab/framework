@@ -1,9 +1,9 @@
 ---
 id: verifier-policy
 title: "Verifier Policy"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: verifier-policy
 symphrase: verifier-polic{yies}
 status: draft

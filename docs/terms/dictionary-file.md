@@ -1,8 +1,8 @@
 ---
 id: dictionary-file
 title: "Dictionary-file"
-scopeid: essifLab
-type: dictionary
+scopetag: essifLab
+termtype: dictionary
 termid: dictionary-file
 status: draft
 hoverText: "Dictionary-file: a file whose contents specifies the contents of a Dictionary."

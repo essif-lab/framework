@@ -1,9 +1,9 @@
 ---
 id: validator
 title: "Validator"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: validator
 symphrase: validator{ss}
 status: draft

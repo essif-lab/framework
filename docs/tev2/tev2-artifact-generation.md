@@ -2,7 +2,7 @@
 id: tev2-artifact-generation
 title: TEv2 - Artifact Generation
 sidebar_label: Artifact Generation
-scopeid: tev2
+scopetag: tev2
 date: 20220303
 ---
 

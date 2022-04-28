@@ -1,9 +1,9 @@
 ---
 id: definition
 title: "Definition"
-scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLabTerminology
+termtype: concept
 termid: definition
 symphrase: definition{ss}
 status: draft

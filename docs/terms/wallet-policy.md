@@ -1,9 +1,9 @@
 ---
 id: wallet-policy
 title: "Wallet Policy"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: wallet-policy
 symphrase: wallet-polic{yies}
 status: draft

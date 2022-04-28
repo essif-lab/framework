@@ -1,9 +1,9 @@
 ---
 id: objective
 title: "Objective"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: objective
 symphrase: objective{ss}
 status: draft

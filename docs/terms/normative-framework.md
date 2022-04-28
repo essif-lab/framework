@@ -1,9 +1,9 @@
 ---
 id: normative-framework
 title: "Normative framework"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: normative-framework
 symphrase: normative-framework{ss}
 status: draft

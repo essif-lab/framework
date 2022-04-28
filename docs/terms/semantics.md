@@ -1,9 +1,9 @@
 ---
 id: semantics
 title: "Semantics"
-scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLabTerminology
+termtype: concept
 termid: semantics
 symphrase: semantics
 status: draft

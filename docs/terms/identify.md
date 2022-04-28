@@ -1,9 +1,9 @@
 ---
 id: identify
 title: "Identify"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: identify
 symphrase: identify, identifies, identifying, identifiable, identified, identification
 status: draft

@@ -1,9 +1,9 @@
 ---
 id: patternID
 title: "Pattern: PatternName"
-scopeid: scopeID
 displayed_sidebar: essifLabSideBar
-type: pattern
+scopetag: scopeID
+termtype: pattern
 termid: patternID
 symphrase: patternID{ss}
 status: draft

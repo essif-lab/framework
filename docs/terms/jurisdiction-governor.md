@@ -1,9 +1,9 @@
 ---
 id: jurisdiction-governor
 title: "Governor (of a Jurisdiction)"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: jurisdiction-governor
 symphrase: jurisdiction-governor{ss}
 status: draft

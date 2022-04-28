@@ -1,9 +1,9 @@
 ---
 id: data-discloser
 title: "Data Discloser"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: data-discloser
 symphrase: data-discloser{ss}
 status: draft

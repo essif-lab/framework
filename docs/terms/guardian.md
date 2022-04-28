@@ -1,9 +1,9 @@
 ---
 id: guardian
 title: "Guardian"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: guardian
 symphrase: guardian
 status: draft

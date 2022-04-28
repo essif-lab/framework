@@ -1,9 +1,9 @@
 ---
 id: scope-of-control
 title: "Scope of Control"
-scopeid: eSSIFLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: eSSIFLab
+termtype: concept
 termid: scope-of-control
 symphrase: scope-of-control, scopes-of-control
 status: draft

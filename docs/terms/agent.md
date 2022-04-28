@@ -1,9 +1,9 @@
 ---
 id: agent
 title: "Agent"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: agent
 symphrase: agent{ss}, digital-agent{ss}
 status: draft

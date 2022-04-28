@@ -1,9 +1,9 @@
 ---
 id: transaction-request
 title: "Transaction Request"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: transaction-request
 symphrase: transaction-request{ss}
 status: draft

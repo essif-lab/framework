@@ -1,9 +1,9 @@
 ---
 id: knowledge
 title: "Knowledge"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: knowledge
 symphrase: knowledge{ss}
 status: draft

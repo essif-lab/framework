@@ -1,9 +1,9 @@
 ---
 id: credential
 title: "Credential"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: credential
 symphrase: credential{ss}, verifiable-credential{ss}, attribute-based-credential{ss}
 status: draft

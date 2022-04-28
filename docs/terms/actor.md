@@ -1,9 +1,9 @@
 ---
 id: actor
 title: "Actor"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: actor
 symphrase: actor{ss}, digital-actor{ss}
 status: draft

@@ -1,9 +1,9 @@
 ---
 id: owner
 title: "Owner"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: owner
 symphrase: owner{ss}, own{ss}
 status: draft

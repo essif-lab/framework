@@ -1,8 +1,8 @@
 ---
 id: dictionaryID
 title: "NameOfNewDictionary"
-scopeid: scopeID
-type: dictionary
+scopetag: scopeID
+termtype: dictionary
 termid: dictionaryID
 status: draft
 hoverText: "DictionaryID: popuptext for 'dictionaryID' (tbd)."

@@ -1,9 +1,9 @@
 ---
 id: knowledge-governor
 title: "Governor (of a Knowledge)"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: knowledge-governor
 symphrase: knowledge-governor{ss}
 status: draft

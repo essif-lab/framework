@@ -2,7 +2,7 @@
 id: tev2-struct-directory
 title: TEv2 - Directory Structure for Curated Files
 sidebar_label: Directory structure
-scopeid: tev2
+scopetag: tev2
 date: 20220303
 ---
 

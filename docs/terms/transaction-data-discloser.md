@@ -1,9 +1,9 @@
 ---
 id: transaction-data-discloser
 title: "Transaction Data Discloser"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: transaction-data-discloser
 symphrase: transaction-data-discloser{ss}
 status: draft

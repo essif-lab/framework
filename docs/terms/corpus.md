@@ -1,9 +1,9 @@
 ---
 id: corpus
 title: "Corpus of Terminology"
-scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLabTerminology
+termtype: concept
 termid: corpus
 symphrase: corpus, corpus-of-terminology
 status: draft

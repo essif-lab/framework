@@ -1,9 +1,9 @@
 ---
 id: pattern-mandates-delegation-hiring
 title: "Mandates, Delegation and Hiring"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: pattern
+scopetag: essifLab
+termtype: pattern
 termid: mandates-delegation-hiring
 symphrase: mandates-delegation-hiring
 status: draft

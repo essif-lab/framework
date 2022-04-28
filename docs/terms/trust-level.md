@@ -1,9 +1,9 @@
 ---
 id: trust-level
 title: "Trust level"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: trust-level
 symphrase: trust-level{ss}, level{ss}-of-trust
 status: draft

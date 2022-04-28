@@ -1,9 +1,9 @@
 ---
 id: ecosystem
 title: "Ecosystem"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: ecosystem
 symphrase: ecosystem{ss}
 status: draft

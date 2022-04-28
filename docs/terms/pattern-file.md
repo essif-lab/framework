@@ -1,9 +1,9 @@
 ---
 id: pattern-file
 title: "Pattern-file"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: pattern-file
 symphrase: pattern-file
 status: draft

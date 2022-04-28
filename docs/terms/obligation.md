@@ -1,9 +1,9 @@
 ---
 id: obligation
 title: "Obligation"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: obligation
 symphrase: obligation{ss}
 status: draft

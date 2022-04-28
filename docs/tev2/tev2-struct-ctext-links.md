@@ -2,7 +2,7 @@
 id: tev2-struct-ctext-links
 title: TEv2 - (Hyper)linking in a Curated Text
 sidebar_label: (Hyper)links
-scopeid: tev2
+scopetag: tev2
 date: 20220303
 ---
 

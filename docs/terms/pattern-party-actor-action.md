@@ -1,9 +1,9 @@
 ---
 id: pattern-party-actor-action
 title: "Parties, Actors and Actions"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: pattern
+scopetag: essifLab
+termtype: pattern
 termid: party-actor-action
 symphrase: party-actor-action
 status: draft

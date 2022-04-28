@@ -1,9 +1,9 @@
 ---
 id: pattern-identifier
 title: "Identifier Pattern"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: pattern
+scopetag: essifLab
+termtype: pattern
 termid: identifier
 symphrase: identifier
 status: draft

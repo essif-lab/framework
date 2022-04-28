@@ -1,9 +1,9 @@
 ---
 id: employment-contract
 title: "Employment Contract"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: employment-contract
 symphrase: employment-contract{ss}
 status: draft

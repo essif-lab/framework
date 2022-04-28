@@ -1,9 +1,9 @@
 ---
 id: partial-identity
 title: "Partial identity"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: term
+scopetag: essifLab
+termtype: term
 termid: partial-identity
 symphrase: partial-identit{yies}
 status: draft

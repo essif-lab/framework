@@ -1,9 +1,9 @@
 ---
 id: authority
 title: "Authority (Centralized or Decentralized)"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: authority
 symphrase: authorit{yies}
 status: draft

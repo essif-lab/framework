@@ -1,9 +1,9 @@
 ---
 id: transaction-agreement
 title: "Transaction Agreement"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: transaction-agreement
 symphrase: transaction-agreement{ss}
 status: draft

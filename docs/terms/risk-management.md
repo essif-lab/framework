@@ -1,9 +1,9 @@
 ---
 id: risk-management
 title: "Risk management"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: risk-management
 symphrase: risk-management, risk-manager{ss}
 status: draft

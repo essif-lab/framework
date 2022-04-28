@@ -1,9 +1,9 @@
 ---
 id: legal-entity
 title: "Legal Entity"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: legal-entity
 symphrase: legal-entit{yies}
 status: draft

@@ -1,9 +1,9 @@
 ---
 id: risk-level
 title: "Risk level"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: risk-level
 symphrase: risk-level{ss}
 status: draft

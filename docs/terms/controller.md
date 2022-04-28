@@ -1,9 +1,9 @@
 ---
 id: controller
 title: "Controller"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: controller
 symphrase: controller{ss}
 status: draft

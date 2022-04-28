@@ -1,9 +1,9 @@
 ---
 id: peer-party
 title: "Peer Party"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: term
+scopetag: essifLab
+termtype: term
 termid: peer-party
 symphrase: peer-part{yies}
 conceptref: essifLab:party

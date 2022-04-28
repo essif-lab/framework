@@ -1,9 +1,9 @@
 ---
 id: party
 title: "Party"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: party
 symphrase: part{yies}
 status: draft

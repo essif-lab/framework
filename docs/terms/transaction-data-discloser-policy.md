@@ -1,9 +1,9 @@
 ---
 id: transaction-data-discloser-policy
 title: "Transaction Data Discloser Policy"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: transaction-data-discloser-policy
 symphrase: transaction-data-discloser-polic{yies}
 status: draft

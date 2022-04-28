@@ -1,9 +1,9 @@
 ---
 id: legal-system
 title: "Legal System"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: legal-system
 symphrase: legal-system{ss}
 status: draft

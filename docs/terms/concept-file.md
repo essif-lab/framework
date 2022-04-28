@@ -1,9 +1,9 @@
 ---
 id: concept-file
 title: "Concept-file"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: concept-file
 symphrase: concept-file{ss}
 status: draft

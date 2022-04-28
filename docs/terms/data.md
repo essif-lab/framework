@@ -1,9 +1,9 @@
 ---
 id: data
 title: "Data"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: data
 symphrase: data, digital-data
 status: draft

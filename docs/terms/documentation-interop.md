@@ -1,9 +1,9 @@
 ---
 id: documentation-interop
 title: "Documentation Interoperability"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: documentation-interop
 symphrase: documentation-interop
 status: draft

@@ -1,9 +1,9 @@
 ---
 id: concept
 title: "Concept"
-scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLabTerminology
+termtype: concept
 termid: concept
 symphrase: concept{ss}
 status: draft

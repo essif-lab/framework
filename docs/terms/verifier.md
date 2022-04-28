@@ -1,9 +1,9 @@
 ---
 id: verifier
 title: "Verifier"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: verifier
 symphrase: verifier{ss}
 status: draft

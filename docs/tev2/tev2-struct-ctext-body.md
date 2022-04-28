@@ -2,7 +2,7 @@
 id: tev2-struct-ctext-body
 title: TEv2 - The Body of a Curated Text
 sidebar_label: Body
-scopeid: tev2
+scopetag: tev2
 date: 20220303
 ---
 

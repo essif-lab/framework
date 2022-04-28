@@ -1,9 +1,9 @@
 ---
 id: colleague
 title: "Colleague"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: colleague
 symphrase: colleague{ss}, digital-colleague{ss}
 status: draft

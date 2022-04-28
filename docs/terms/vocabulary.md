@@ -1,9 +1,9 @@
 ---
 id: vocabulary
 title: "Vocabulary"
-scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLabTerminology
+termtype: concept
 termid: vocabulary
 symphrase: vocabular{yies}
 status: draft

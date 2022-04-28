@@ -1,9 +1,9 @@
 ---
 id: termID
 title: "NameOfNewConcept"
-scopeid: scopeID
 displayed_sidebar: essifLabSideBar
-type: term
+scopetag: scopeID
+termtype: term
 termid: termID
 symphrase: termID{ss}
 conceptref: <ExistingConceptScopeID>:<ExistingtermID>

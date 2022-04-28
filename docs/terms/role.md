@@ -1,9 +1,9 @@
 ---
 id: role
 title: "Role"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: role
 symphrase: role{ss}
 status: draft

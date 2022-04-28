@@ -1,9 +1,9 @@
 ---
 id: commitment-decision
 title: "Commitment Decision"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: commitment-decision
 symphrase: commitment-decision{ss}
 status: draft

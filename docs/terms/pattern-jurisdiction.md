@@ -1,9 +1,9 @@
 ---
 id: pattern-jurisdiction
 title: "Jurisdictions"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: pattern
+scopetag: essifLab
+termtype: pattern
 termid: jurisdiction
 symphrase: jurisdiction
 status: draft

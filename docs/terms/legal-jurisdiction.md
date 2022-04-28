@@ -1,9 +1,9 @@
 ---
 id: legal-jurisdiction
 title: "Legal Jurisdiction"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: term
+scopetag: essifLab
+termtype: term
 termid: legal-jurisdiction
 symphrase: legal-jurisdiction{ss}
 conceptref: essifLab:jurisdiction

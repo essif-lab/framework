@@ -1,9 +1,9 @@
 ---
 id: control-level
 title: "Control level"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: control-level
 symphrase: control-level{ss}
 status: draft

@@ -1,8 +1,8 @@
 ---
 id: typeID
 title: "NameOfNewTypeInstance"
-scopeid: scopeID
-type: type
+scopetag: scopeID
+termtype: type
 termid: typeID
 status: draft
 hoverText: "TypeID: popuptext for 'typeID' (tbd)."

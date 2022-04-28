@@ -1,9 +1,9 @@
 ---
 id: ssi-infrastructure
 title: "SSI Infrastructure"
-scopeid: eSSIFLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: eSSIFLab
+termtype: concept
 termid: ssi-infrastructure
 symphrase: ssi-infrastructure{ss}
 status: draft

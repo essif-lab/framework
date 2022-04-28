@@ -1,9 +1,9 @@
 ---
 id: pattern-party-representation
 title: "Party Representation"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: pattern
+scopetag: essifLab
+termtype: pattern
 termid: party-representation
 symphrase: party-representation
 status: draft

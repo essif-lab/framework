@@ -1,8 +1,8 @@
 ---
 id: glossaryID
 title: "NameOfNewGlossary"
-scopeid: scopeID
-type: glossary
+scopetag: scopeID
+termtype: glossary
 termid: glossaryID
 status: draft
 hoverText: "GlossaryID: popuptext for 'glossaryID' (tbd)."

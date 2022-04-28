@@ -1,9 +1,9 @@
 ---
 id: conceptID
 title: "NameOfNewConcept"
-scopeid: scopeID
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: scopeID
+termtype: concept
 termid: conceptID
 symphrase: conceptID{ss}
 status: draft

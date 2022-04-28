@@ -2,7 +2,7 @@
 id: essifLab-objectives
 title: eSSIF-Lab Objectives
 sidebar_label: Objectives
-scopeid: essifLab
+scopetag: essifLab
 hoverText: "The purpose of the eSSIF-Lab is to specify, develop and validate technological and non-technological (e.g. governance) means that support people, businesses and governments to think about, design, adapt, and operate their (information) processes such that they can negotiate and conduct (online) business transactions with one another using the electronic support provided by the various SSI technologies."
 date: 20210601
 ---

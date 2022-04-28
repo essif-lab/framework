@@ -1,9 +1,9 @@
 ---
 id: expectation
 title: "Expectation"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: expectation
 symphrase: expectation{ss}
 status: draft

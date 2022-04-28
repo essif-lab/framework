@@ -1,9 +1,9 @@
 ---
 id: issuer-policy
 title: "Isuer Policy"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: issuer-policy
 symphrase: issuer-polic{yies}
 status: draft

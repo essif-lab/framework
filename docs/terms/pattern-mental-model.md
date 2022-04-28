@@ -1,9 +1,9 @@
 ---
 id: pattern-mental-model
 title: "Mental Models"
-scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
-type: pattern
+scopetag: essifLabTerminology
+termtype: pattern
 termid: mental-model
 symphrase: mental-model
 status: draft

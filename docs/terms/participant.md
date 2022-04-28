@@ -1,9 +1,9 @@
 ---
 id: participant
 title: "Participant"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: term
+scopetag: essifLab
+termtype: term
 termid: participant
 symphrase: participant{ss}
 conceptref: essifLab:party

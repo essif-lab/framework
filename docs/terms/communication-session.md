@@ -1,9 +1,9 @@
 ---
 id: communication-session
 title: "Communication Session"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: communication-session
 symphrase: communication-session{ss}, digital-communication-session{ss}
 status: draft

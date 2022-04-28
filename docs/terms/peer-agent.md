@@ -1,9 +1,9 @@
 ---
 id: peer-agent
 title: "Peer Agent"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: term
+scopetag: essifLab
+termtype: term
 termid: peer-agent
 symphrase: peer-agent{ss}
 conceptref: essifLab:Agent

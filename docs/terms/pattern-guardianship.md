@@ -1,9 +1,9 @@
 ---
 id: pattern-guardianship
 title: "Guardianship"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: pattern
+scopetag: essifLab
+termtype: pattern
 termid: guardianship
 symphrase: guardianship
 status: draft

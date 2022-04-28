@@ -1,9 +1,9 @@
 ---
 id: subject
 title: "Subject"
-scopeid: eSSIFLab
 displayed_sidebar: essifLabSideBar
-type: term
+scopetag: eSSIFLab
+termtype: term
 termid: subject
 symphrase: subject{ss}
 status: draft

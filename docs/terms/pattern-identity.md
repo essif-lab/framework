@@ -1,9 +1,9 @@
 ---
 id: pattern-identity
 title: "Identity Pattern"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: pattern
+scopetag: essifLab
+termtype: pattern
 termid: identity
 symphrase: identity
 status: draft

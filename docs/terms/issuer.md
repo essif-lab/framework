@@ -1,9 +1,9 @@
 ---
 id: issuer
 title: "Issuer"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: issuer
 symphrase: issuer{ss}
 status: draft

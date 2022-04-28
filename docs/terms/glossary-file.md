@@ -1,8 +1,8 @@
 ---
 id: glossary-file
 title: "Glossary-file"
-scopeid: essifLab
-type: glossary
+scopetag: essifLab
+termtype: glossary
 termid: glossary-file
 status: draft
 hoverText: "Glossary-file: a file whose contents defines/specifies a Glossary."

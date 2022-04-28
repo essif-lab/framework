@@ -1,9 +1,9 @@
 ---
 id: compliance-level
 title: "Compliance level"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: compliance-level
 symphrase: compliance-level{ss}
 status: draft

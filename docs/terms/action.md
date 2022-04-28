@@ -1,9 +1,9 @@
 ---
 id: action
 title: "Action"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: action
 symphrase: action{ss}, acting, activit(yies)
 status: draft

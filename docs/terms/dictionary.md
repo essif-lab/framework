@@ -1,9 +1,9 @@
 ---
 id: dictionary
 title: "Dictionary"
-scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLabTerminology
+termtype: concept
 termid: dictionary
 symphrase: dictionar{yies}
 status: draft

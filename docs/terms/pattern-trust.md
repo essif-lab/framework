@@ -1,9 +1,9 @@
 ---
 id: pattern-trust
 title: "Trust Pattern"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: pattern
+scopetag: essifLab
+termtype: pattern
 termid: trust
 symphrase: trust
 status: draft

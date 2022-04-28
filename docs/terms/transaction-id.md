@@ -1,9 +1,9 @@
 ---
 id: transaction-id
 title: "Transaction Id"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: transaction-id
 symphrase: transaction-id{ss}
 status: draft

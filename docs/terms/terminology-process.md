@@ -1,9 +1,9 @@
 ---
 id: terminology-process
 title: "Terminology Process"
-scopeid: essifLabTerminology
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLabTerminology
+termtype: concept
 termid: terminology-process
 symphrase: terminology-process, terminology-processes
 status: draft

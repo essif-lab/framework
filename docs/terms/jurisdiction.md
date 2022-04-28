@@ -1,9 +1,9 @@
 ---
 id: jurisdiction
 title: "Jurisdiction"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: jurisdiction
 symphrase: jurisdiction{ss}
 status: draft

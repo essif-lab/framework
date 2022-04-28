@@ -1,9 +1,9 @@
 ---
 id: holder-policy
 title: "Holder Policy"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: holder-policy
 symphrase: holder-polic{yies}
 status: draft

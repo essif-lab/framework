@@ -1,9 +1,9 @@
 ---
 id: community
 title: "Community"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: community
 symphrase: communit{yies}
 status: draft

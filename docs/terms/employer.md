@@ -1,9 +1,9 @@
 ---
 id: employer
 title: "Employer"
-scopeid: essifLab
 displayed_sidebar: essifLabSideBar
-type: concept
+scopetag: essifLab
+termtype: concept
 termid: employer
 symphrase: employer{ss}
 status: draft
