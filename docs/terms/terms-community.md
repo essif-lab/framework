@@ -7,6 +7,7 @@ termtype: concept
 termid: terms-community
 symphrase: terms-communit{yies}
 status: draft
+grouptags:
 hoverText: "Terms Community: a Community that maintains a Terminology for the purpose of avoiding misunderstandings between its members as they collaborate."
 glossaryText: "a %%community^community%% that maintains a %%terminology^terminology%% for the purpose of avoiding misunderstandings between its members as they collaborate."
 date: 20211101

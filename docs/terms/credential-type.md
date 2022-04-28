@@ -7,6 +7,7 @@ termtype: concept
 termid: credential-type
 symphrase: credential-type{ss}
 status: draft
+grouptags:
 hoverText: "Credential Type: the specification of the contents, properties, constraints etc. that Credentials of this type must have/comply with."
 glossaryText: "the specification of the contents, properties, constraints etc. that %%credentials^credential%% of this type must have/comply with."
 date: 20210601

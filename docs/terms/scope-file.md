@@ -7,6 +7,7 @@ termtype: concept
 termid: scope-file
 symphrase: scope-file{ss}
 status: draft
+grouptags:
 hoverText: "Scope-file: a file whose contents defines/specifies a Scope."
 glossaryText: "a file whose contents defines/specifies a %%scope^scope%%."
 date: 20210601

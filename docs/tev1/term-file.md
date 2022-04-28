@@ -8,6 +8,7 @@ termid: termID
 symphrase: termID{ss}
 conceptref: <ExistingConceptScopeID>:<ExistingtermID>
 status: draft
+grouptags:
 hoverText: "popuptext for 'termID' (tbd)."
 date: 20210601
 ---

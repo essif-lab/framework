@@ -7,6 +7,7 @@ termtype: concept
 termid: term
 symphrase: term{ss}, word{ss}, phrase{ss}
 status: draft
+grouptags:
 hoverText: "Term: a word or phrase (i.e.: text) that is used in at least one Scope/context to represent a specific Concept."
 glossaryText: "a word or phrase (i.e.: text) that is used in at least one %%scope^scope%%/context to represent a specific %%concept^concept%%."
 date: 20220421

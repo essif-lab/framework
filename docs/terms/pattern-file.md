@@ -7,6 +7,7 @@ termtype: concept
 termid: pattern-file
 symphrase: pattern-file
 status: draft
+grouptags:
 hoverText: "Pattern-file: a file whose contents describes/documents a Pattern."
 glossaryText: "a file whose contents describes/documents a %%pattern^pattern%%."
 date: 20210601

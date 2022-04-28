@@ -7,6 +7,7 @@ termtype: concept
 termid: scope-of-control
 symphrase: scope-of-control, scopes-of-control
 status: draft
+grouptags:
 hoverText: "Scope of Control (of a Party): the extent of the area or subject matter that the Party controls."
 glossaryText: "the extent of the area or subject matter that a %%party^party%% %%controls^controller%%."
 date: 20210601

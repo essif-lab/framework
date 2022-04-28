@@ -7,6 +7,7 @@ termtype: concept
 termid: legal-entity
 symphrase: legal-entit{yies}
 status: draft
+grouptags:
 hoverText: "Legal Entity (of a Jurisdiction): an Entity that is known by, recognized to exist, and registered in that Jurisdiction."
 glossaryText: "an %%entity^entity%% that is known by, recognized to exist, and registered in that %%jurisdiction^jurisdiction%%."
 date: 20210601

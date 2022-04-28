@@ -7,6 +7,7 @@ termtype: concept
 termid: jurisdiction-governor
 symphrase: jurisdiction-governor{ss}
 status: draft
+grouptags:
 hoverText: "Governor (of a Jurisdiction): the Party that operates the Legal System of that Jurisdiction."
 glossaryText: "the %%party^party%% that operates the %%legal system^legal-system%% of that %%jurisdiction^jurisdiction%%."
 date: 20210601

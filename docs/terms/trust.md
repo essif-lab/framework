@@ -7,6 +7,7 @@ termtype: concept
 termid: trust
 symphrase: trust, trusts, trusting, trusted
 status: draft
+grouptags:
 hoverText: "Trust (of a Party in X): the (un)conscious decision by this Party to believe that X is in fact the case"
 glossaryText: "the (un)conscious decision by a %%party^party%% to believe that X is in fact the case."
 date: 20220222

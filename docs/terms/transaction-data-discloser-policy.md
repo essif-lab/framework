@@ -7,6 +7,7 @@ termtype: concept
 termid: transaction-data-discloser-policy
 symphrase: transaction-data-discloser-polic{yies}
 status: draft
+grouptags:
 hoverText: "Transaction Data Discloser Policy: a Digital Policy that enables an operational Transaction Data Discloser component to function in accordance with the Objectives of its Principal."
 glossaryText: "a %%digital policy^policy%% that enables an operational %%transaction data discloser^transaction-data-discloser%% component to function in accordance with the %%objectives^objective%% of its %%principal^principal%%."
 date: 20210601

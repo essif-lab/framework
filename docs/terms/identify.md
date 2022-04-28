@@ -7,6 +7,7 @@ termtype: concept
 termid: identify
 symphrase: identify, identifies, identifying, identifiable, identified, identification
 status: draft
+grouptags:
 hoverText: "Identify: an Act, by or on behalf of a Party, that results in the selection of either (a) a single Partial identity that the party Owns, given some (observed or received) data, or (b) a single Entity from a given set of entities that is the Subject of a specified Partial identity that the party Owns."
 glossaryText: "an %%act^action%%, by or on behalf of a %%party^party%%, that results in the selection of either\n- a single %%partial identity^partial-identity%% that the party %%owns^owner%%, given some (observed or received) data, or\n- a single %%entity^entity%% from a given set of entities that is the %%subject^subject%% of a specified %%partial identity^partial-identity%% that the party %%owns^owner%%."
 date: 20210812

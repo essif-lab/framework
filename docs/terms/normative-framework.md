@@ -7,6 +7,7 @@ termtype: concept
 termid: normative-framework
 symphrase: normative-framework{ss}
 status: draft
+grouptags:
 hoverText: "Normative framework (for a specific class of Entities)): a set of rules that are followed and/or criteria that remain fulfilled by (a specific kind of) Entities whose behaviour and/or properties are characterized as 'normal'."
 glossaryText: "a set of rules that are followed and/or criteria that remain fulfilled by (a specific kind of) %%entities^entity%% whose behaviour and/or properties are characterized as 'normal'."
 date: 20220203

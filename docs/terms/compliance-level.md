@@ -7,6 +7,7 @@ termtype: concept
 termid: compliance-level
 symphrase: compliance-level{ss}
 status: draft
+grouptags:
 hoverText: "Compliance level (of an Entity, regarding a stated (set of) requirement(s)): a measure for stating how well the Entity conforms with the stated (set of) requirement(s)."
 glossaryText: "a measure for stating how well an %%entity^entity%% conforms with a stated (set of) requirement(s)."
 date: 20220203

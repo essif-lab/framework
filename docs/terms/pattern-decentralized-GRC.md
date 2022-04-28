@@ -7,6 +7,7 @@ termtype: pattern
 termid: decentralized-grc
 symphrase: decentralized-grc
 status: draft
+grouptags:
 hoverText: "The Decentralized Risk Management, Governance and Compliance pattern describes how Parties can set Objectives, and apply decentralized Risk Management to become and remain succesful."
 date: 20210601
 ---

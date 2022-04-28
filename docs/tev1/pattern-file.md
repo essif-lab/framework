@@ -7,6 +7,7 @@ termtype: pattern
 termid: patternID
 symphrase: patternID{ss}
 status: draft
+grouptags:
 hoverText: "PatternID: popuptext for 'patternID' (tbd)."
 glossaryText: "popuptext for 'patternID' (tbd)."
 date: 20210601

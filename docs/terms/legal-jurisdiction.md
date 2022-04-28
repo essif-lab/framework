@@ -8,6 +8,7 @@ termid: legal-jurisdiction
 symphrase: legal-jurisdiction{ss}
 conceptref: essifLab:jurisdiction
 status: draft
+grouptags:
 hoverText: "Legal Jurisdiction: a Jurisdiction that is governed/operated by a governmental body."
 glossaryText: "a %%jurisdiction^jurisdiction%% that is governed/operated by a governmental body."
 date: 20210601

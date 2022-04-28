@@ -7,6 +7,7 @@ termtype: concept
 termid: compliance-objective
 symphrase: compliance-objective{ss}
 status: draft
+grouptags:
 hoverText: "Compliance objective (of a Party): an Objective, owned by that Party, that aims to reach and maintain a state of affairs in which a specific set of Entities that this Party controls are in accordance with a specific set of requirements (e.g., laws, regulations, standards, etc.)."
 glossaryText: "an %%objective^objective%%, owned by a %%party^party%%, that aims to reach and maintain a state of affairs in which a specific set of %%entities^entity%% that this %%party^party%% controls are in accordance with a specific set of requirements (e.g., laws, regulations, standards, etc.)."
 date: 20220203

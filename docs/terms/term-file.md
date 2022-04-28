@@ -7,6 +7,7 @@ termtype: concept
 termid: term-file
 symphrase: term-file{ss}
 status: draft
+grouptags:
 hoverText: "Term-file: a file whose contents defines/specifies a Term."
 glossaryText: "a file whose contents defines/specifies a %%term^term%%."
 date: 20210601

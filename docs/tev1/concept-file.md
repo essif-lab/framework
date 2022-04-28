@@ -7,6 +7,7 @@ termtype: concept
 termid: conceptID
 symphrase: conceptID{ss}
 status: draft
+grouptags:
 hoverText: "ConceptID: popuptext for 'conceptID' (tbd)."
 glossaryText: "popuptext for 'conceptID' (tbd)."
 date: 20210601

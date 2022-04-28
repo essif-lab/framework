@@ -7,6 +7,7 @@ termtype: concept
 termid: onboarding
 symphrase: onboarding, onboard, onboards, onboarded
 status: draft
+grouptags:
 hoverText: "Onboarding (of an Actor, by a Party): a process that is run for this Actor on behalf of the Party, that terminates successfully if and  only if the Party has (a) established the suitability of the Actor for executing certain kinds of Actions on its behalf, (b) obtained assurances that the Actor will in fact do so and (c) provided the circumstances/contexts within which the Actor is enabled to do so."
 glossaryText: "A process that is run for a specific (set of) %%actor(s)^actor%% on behalf of a specific %%party^party%%, that terminates successfully if and  only if the %%party^party%% has (a) established the suitability of the %%actor^actor%% for executing certain kinds of %%actions^action%% on its behalf, (b) obtained assurances that the %%actor^actor%% will in fact do so and (c) provided the circumstances/contexts within which the %%actor^actor%% is enabled to do so."
 date: 20220323

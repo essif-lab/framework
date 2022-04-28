@@ -270,8 +270,10 @@ with "ssi-assurance-community"
 
 // [T]
 // for transaction data collector/discloers policies, see [P]
-replace-regex "%{mid}(scoped-term|tag|term)%{ss}%{end}"
+replace-regex "%{mid}(scoped-term|term)%{ss}%{end}"
 with "$1"
+replace-regex "%{mid}((scope|group|version|vsn)-?)?tag%{ss}%{end}"
+with "tag"
 replace-regex "%{mid}(terminolog|terms?-communit)%{yies}%{end}"
 with "$1y"
 replace-regex "%{mid}(?:\(?business\)?-)?(term(-file)?|transaction(-agreement|-id|-data-(collector|discloser)|-form|-proposal|-request|-type)?)%{ss}%{end}"

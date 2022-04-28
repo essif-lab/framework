@@ -7,6 +7,7 @@ termtype: concept
 termid: expectation
 symphrase: expectation{ss}
 status: draft
+grouptags:
 hoverText: "Expectation (of a Party): an Objective that is Owned by that Party, and that does not itself produce the associated results."
 glossaryText: "an %%objective^objective%% that is %%owned^owned%% by a %%party^party%%, and that does not itself produce the associated results."
 date: 20210601

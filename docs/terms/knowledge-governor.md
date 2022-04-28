@@ -7,6 +7,7 @@ termtype: concept
 termid: knowledge-governor
 symphrase: knowledge-governor{ss}
 status: draft
+grouptags:
 hoverText: "Governor (of a Knowledge): the Party that is 1-1 associated with that knowledge."
 glossaryText: "the %%party^party%% that is 1-1 associated with that knowledge."
 date: 20210601

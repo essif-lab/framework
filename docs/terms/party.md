@@ -7,6 +7,7 @@ termtype: concept
 termid: party
 symphrase: part{yies}
 status: draft
+grouptags:
 hoverText: "Party: an Entity that sets its Objectives, maintains its Knowledge, and uses that Knowledge to pursue its Objectives in an autonomous (sovereign) manner. Humans and Organizations are the typical examples."
 glossaryText: "an %%entity^entity%% that sets its %%objectives^objective%%, maintains its %%knowledge^knowledge%%, and uses that %%knowledge^knowledge%% to pursue its %%objectives^objective%% in an autonomous (sovereign) manner. Humans and %%organizations^organization%% are the typical examples."
 date: 20210601

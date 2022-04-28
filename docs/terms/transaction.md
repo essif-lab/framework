@@ -7,6 +7,7 @@ termtype: concept
 termid: transaction
 symphrase: transaction{ss}
 status: draft
+grouptags:
 hoverText: "Transaction: the exchange of goods, services, funds, or data between some Parties (called Participants of the Transaction)."
 glossaryText: "the exchange of goods, services, funds, or data between some %%parties^party%% (called %%participants^participant%% of the %%transaction^transaction%%)."
 date: 20210601

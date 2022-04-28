@@ -5,6 +5,7 @@ scopetag: essifLabTerminology
 termtype: scope
 termid: eSSIFLab
 status: draft
+grouptags:
 hoverText: "ESSIFLab: specification of the eSSIF-Lab scope."
 glossaryText: "specification of the eSSIF-Lab scope."
 date: 20210601

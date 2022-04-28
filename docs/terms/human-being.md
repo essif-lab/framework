@@ -7,6 +7,7 @@ termtype: concept
 termid: human-being
 symphrase: human-being{ss}, human{ss}, person{ss}, individual{ss}, people
 status: draft
+grouptags:
 hoverText: "Human Being: a person of flesh and blood (homo sapiens), that we classify both as a Party, an Actor, and a Jurisdiction."
 glossaryText: "a person of flesh and blood (homo sapiens), that we classify both as a %%party^party%%,an %%actor^actor%%, and a %%jurisdiction^jurisdiction%%."
 date: 20210601

@@ -32,6 +32,7 @@ scopetag: <scopeid>
 termtype: <type>
 termid: <typeid>
 status: <stage>
+grouptags:
 hoverText: "<hovertext>"
 glossaryText: "<glossarytext>"
 date: yyyymmdd

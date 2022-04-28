@@ -5,6 +5,7 @@ scopetag: essifLab
 termtype: glossary
 termid: glossary-file
 status: draft
+grouptags:
 hoverText: "Glossary-file: a file whose contents defines/specifies a Glossary."
 glossaryText: "a file whose contents defines/specifies a %%glossary^glossary%%."
 date: 20210601

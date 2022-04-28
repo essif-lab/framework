@@ -7,6 +7,7 @@ termtype: pattern
 termid: trust
 symphrase: trust
 status: draft
+grouptags:
 hoverText: "The eSSIF-Lab Trust Pattern describes how the concept of Trust relates to Parties that do the trusting, and other concepts that express what it is that these Parties trust."
 date: 20210830
 ---

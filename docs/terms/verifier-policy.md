@@ -7,6 +7,7 @@ termtype: concept
 termid: verifier-policy
 symphrase: verifier-polic{yies}
 status: draft
+grouptags:
 hoverText: "Verifier Policy: a Digital Policy that enables an operational Verifier component to function in accordance with the Objectives of its Principal."
 glossaryText: "a %%digital policy^policy%% that enables an operational %%verifier^verifier%% component to function in accordance with the %%objectives^objective%% of its %%principal^principal%%."
 date: 20210601

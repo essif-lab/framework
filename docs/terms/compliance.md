@@ -7,6 +7,7 @@ termtype: concept
 termid: compliance
 symphrase: compliance
 status: draft
+grouptags:
 hoverText: "Compliance (of a Party): the state of realization of a set of conformance criteria or normative framework of that Party."
 glossaryText: "the state of realization of a set of conformance criteria or normative framework of a %%party^party%%."
 date: 20220220

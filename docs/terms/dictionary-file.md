@@ -5,6 +5,7 @@ scopetag: essifLab
 termtype: dictionary
 termid: dictionary-file
 status: draft
+grouptags:
 hoverText: "Dictionary-file: a file whose contents specifies the contents of a Dictionary."
 glossaryText: "a file whose contents specifies the contents of a %%dictionary^dictionary%%."
 date: 20210601

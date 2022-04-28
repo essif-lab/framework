@@ -7,6 +7,7 @@ termtype: pattern
 termid: jurisdiction
 symphrase: jurisdiction
 status: draft
+grouptags:
 hoverText: "The Jurisdictions pattern captures the Concepts and relations that explain what a generic Jurisdiction consists of, and relates it to Parties and Legal Entities."
 date: 20210601
 ---

@@ -7,6 +7,7 @@ termtype: concept
 termid: risk-owner
 symphrase: risk-owner{ss}
 status: draft
+grouptags:
 hoverText: "Risk-owner (of a Risk): the Party that is the Owner of the Objective to which the Risk is associated."
 glossaryText: "the %%party^party%% that is the %%owner^owner%% of the %%objective^objective%% to which a %%risk^risk%% is associated."
 date: 20210601

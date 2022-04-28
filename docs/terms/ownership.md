@@ -7,6 +7,7 @@ termtype: concept
 termid: ownership
 symphrase: ownership{ss}, owning, legal-ownership{ss}, rightful-ownership{ss}, natural-ownership{ss}
 status: draft
+grouptags:
 hoverText: "Ownership (of an Entity over another in a Jurisdiction): a relationship between two Entities in which one of them (called the Owner) has legal, rightful or natural rights and/or duties to enjoy, dispose of, and control the other (called the Owned)."
 glossaryText: "a relationship between two %%entities^entity%% that exists within the %%scope of control^scope-of-control%% of a %%jurisdiction^jurisdiction%%, in which one of them (called the %%owner^owner%%) has legal, rightful or natural rights and/or duties to enjoy, dispose of, and control the other (called the %%owned^owned%%)."
 date: 20220218

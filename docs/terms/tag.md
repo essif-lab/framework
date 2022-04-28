@@ -7,6 +7,7 @@ termtype: concept
 termid: tag
 symphrase: tag{ss}
 status: draft
+grouptags:
 hoverText: "Tag: an alphanumeric string that is used to identify Scopes (so called 'scopetags'), group Terms (so called 'grouptags'), or identify a specific version of a Terminology (so called 'versiontags') from within a specific Scope."
 glossaryText: "an alphanumeric string that is used to identify %%scopes^scope%% (so called 'scopetags'), group %%terms^term%% (so called 'grouptags'), or identify a specific version of a %%terminology^terminology%% (so called 'versiontags') from within a specific %%scope^scope%%."
 date: 20210601

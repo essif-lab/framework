@@ -7,6 +7,7 @@ termtype: concept
 termid: validator
 symphrase: validator{ss}
 status: draft
+grouptags:
 hoverText: "Validator (functional component): the capability to determine whether or not (verified) data is valid to be used for some specific purpose(s)."
 glossaryText: "the capability to determine whether or not (%%verified^verify%%) data is valid to be used for some specific purpose(s)."
 date: 20210802

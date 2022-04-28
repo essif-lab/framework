@@ -52,7 +52,7 @@ It is convenient for authors to be able to use the '@`scopetag`' part of a [term
 - \[`show text`@`scopetag`\] is equivalent with \[`show text`\](`show-text`@`scopetag`), and
 - \[`show text`@`scopetag`:`vsn`\](`id`#`heading-id`) is equivalent with \[`show text`\](`id`#`heading-id`@`scopetag`:`vsn`) (where `id`, `#heading-id` and `:vsn` are optional),
 
-So, [definition@ctwg]() is equivalent with [definition](definition@ctwg)
+So, `[definition@ctwg]()` is equivalent with [definition](definition@ctwg)
 
 ## Scope Directories and their contents
 
@@ -83,8 +83,8 @@ A glossary entry for an MRG SHOULD accommodate for (at least) the following fiel
 - `scopetag` (required): the [tag](@ctwg) of the [scope](@ctwg) in which the [term](term@ctwg) is defined (as a [glossary](@ctwg) not only contains [terms](term@ctwg) that are defined in the [scope](@ctwg) itself, but also [terms](term@ctwg) that are defined in other [scopes](@ctwg).
 - `id` (required): the text that [identifies](identify@essiflab) the [term](@ctwg) within the context of the MRG, and can also be used as an `id` in a [term ref](term-ref@ctwg). The `id` shall only contain characters in regex `[a-z0-9_-]`. For [terms](term@ctwg) of other types than 'concept', the `id` would typically be of the form `<type>-<termid>`, e.g. as in `pattern-identify`.
 - `termtype` (optional): a text that identifies the kind of entity that the [term](@ctwg) refers to. The `termtype` shall only contain characters in regex `[a-z0-9_-]`. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`). When omitted, it defaults to `concept`.
-- `termid`: a text that identifies the specific entity of the `termtype` (as specified above). The `termid` shall only contain characters in regex `[a-z0-9_-]`. When omitted, its value is derived from the field `id` by matching that with the (CPRE) regex `(?P=<type>)-(?P<termid>.+?)`; if there is a match, the value is the named group <termid>. If there is no match, the value is `id` itself.
-- `tags`: a list of [tags](tag@ctwg), each of which identifies a group of [terms](term@ctwg) to which this [term](@ctwg) belongs. Tags must satisfy the (PCRE) regex `#[a-z0-9_-]+`.
+- `termid`: a text that identifies the specific entity of the `termtype` (as specified above). The `termid` shall only contain characters in regex `[a-z0-9_-]`. When omitted, its value is derived from the field `id` by matching that with the (CPRE) regex `(?P=<type>)-(?P<termid>.+?)`; if there is a match, the value is the named group `<termid>`. If there is no match, the value is `id` itself.
+- `grouptags`: a list of [tags](tag@ctwg), each of which identifies a group of [terms](term@ctwg) to which this [term](@ctwg) belongs. Tags must satisfy the (PCRE) regex `#[a-z0-9_-]+`.
 - `date`: date of the last update of the [term](@ctwg)-related data, in the form yyyymmdd.
 - `termvsn` (optional): a text that identifies the version of the [term](@ctwg) itself. It is not to be confused with the version of a [terminology](@ctwg) that may contain that [term](@ctwg). The `termvsn` shall only contain characters in regex `[a-z0-9_-]`.
 - `commit` (optional): the latest (git) commit hash of the [term's](term@ctwg) [definition](definition@ctwg).
@@ -115,7 +115,7 @@ The syntax that is used for selecting [terms](term@ctwg) of another [scope](@ctw
 - by means of the so-called 'tagslist-syntax', which is `tagslist`@`scopetag`:`vsn` (e.g. `paa,terminology@essiflab:latest`) where:
   - @`scopetag` (required) identifies a [scope](@ctwg) in the administration-object-file, thus allowing tools to obtain (the specified version, or if ommitted, the latest version of) the MRG of that [scope](@ctwg) from which to extract the selected entries. In the example, this is `essiflab`.
   - `vsn` (optional) is the specific version of the MRG from which the [terms](@ctwg) are selected. If omitted (in which case the preceeding `:` may also be omitted), the latest version is specified. The example specifies the `latest` version of the essiflab [glossary](@ctwg)
-  - `tagslist` (optional) is a comma-separated list of [tags](tag@ctwg) (e.g. `paa,terminology`) where each grouptag (`paa` and `terminology`) specifies that every [term](@ctwg) in the MRG of the specified [scope](@ctwg) that has any of these [tags](tag@ctwg) in its `tags` field, must be selected.
+  - `tagslist` (optional) is a comma-separated list of [(group)tags](tag@ctwg) (e.g. `paa,terminology`) where each grouptag (`paa` and `terminology`) specifies that every [term](@ctwg) in the MRG of the specified [scope](@ctwg) that has any of these [(group)tags](tag@ctwg) in its `grouptags` field, must be selected.
 
 A GDF contains a sequence of such selection syntaxes that will be processed in the order they are specified (see the [Glossary Generation Tool](#ggt) for details on how processing takes place). Thus, in order to 'rename' a [term](@ctwg) that was imported using the taglist-syntax, it suffices to use the [term ref](@ctwg) that import that [term](@ctwg) again.
 
@@ -144,11 +144,11 @@ The creation of a glossary entry for a [term](@ctwg) that is defined in the [sco
 
 For example, consider the [term](@ctwg) `curate` as defined in the [CTWG terms wiki](https://github.com/trustoverip/ctwg/wiki/curate). The wiki-page would be interpreted, which would lead to the following (machine readable) glossary entry:
 ~~~
-  scopetag: ctwg
   id: concept-curate
+  scopetag: ctwg
   termtype: concept
   termid: curate
-  tags:
+  grouptags:
   date: 20211123
   termvsn: 9
   commit:
@@ -234,8 +234,8 @@ the **Meta Data Update Tool (MDUT)** (re)creates/updates/maintains meta-data for
 -
 - The actual generation (running the code) is currently a manual process. However, there's a recipe for making it a github action. This enables [curators](curator@ctwg) that maintain their [terms](term@ctwg) in github to automatically generate their [glossary](@ctwg).
   The resulting [glossary](@ctwg) will be put by default at `http://trustoverip.github.io/<terms-community>/glossary`, where `<terms-community>` is the name of the [terms-community](@ctwg). A [glossary](@ctwg) can also be stored elsewhere, but that breaks the basic workings of the postprocessing tool (see below) that converts 'smart links' to actual links. This can be solved, but that's for later.
-  - Entries, e.g. 'foo' can be referenced as `http://trustoverip.github.io/<community>/[glossary](@ctwg)#foo` (in case of a standalone glossary), and http://trustoverip.github.io/<community>/document-that-includes-glossary-fragment#foo (in case of a fragmented glossary).
-- There will be a new convention for content authors who want to reference [terms](term@ctwg) (let's call it the 'short form'). Linking to a [term](@ctwg) <[term](@ctwg)> in [scope](@ctwg) <[scope](@ctwg)> is done as follows `[term](term)` in case the document is also in [scope](@ctwg) <[scope](@ctwg)>, and otherwise `[term](@scope)`. Authors can choose wehther or not to postprocess their documents, where postprocessing means that this short form (and other referencing conventions we have adopted) are converted into actuals URLs. Authors that
+  - Entries, e.g. 'foo' can be referenced as `http://trustoverip.github.io/<community>/[glossary](@ctwg)#foo` (in case of a standalone glossary), and `http://trustoverip.github.io/<community>/document-that-includes-glossary-fragment#foo` (in case of a fragmented glossary).
+- There will be a new convention for content authors who want to reference [terms](term@ctwg) (let's call it the 'short form'). Linking to a [term](@ctwg) `<[term](@ctwg)>` in [scope](@ctwg) <[scope](@ctwg)> is done as follows `[term](term)` in case the document is also in [scope](@ctwg) <[scope](@ctwg)>, and otherwise `[term](@scope)`. Authors can choose wehther or not to postprocess their documents, where postprocessing means that this short form (and other referencing conventions we have adopted) are converted into actuals URLs. Authors that
   - do not postprocess, are on their own, but they *can* refer to any [term](@ctwg)
   - do postprocess, will need to author their markdown document in the community repo http://github.com/<community>/document.md , and postprocessing will then create a new document at  http://trustoverip.github.io/<community>/ convert referencing conventions
 - do we expect [glossaries](glossary@ctwg) that are generated by a [terms-community](@ctwg) to live at a fixed place (how do people find it, refer to its contents)?

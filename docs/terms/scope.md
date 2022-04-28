@@ -7,6 +7,7 @@ termtype: concept
 termid: scope
 symphrase: scope{ss}
 status: draft
+grouptags:
 hoverText: "Scope: the extent of the area or subject matter (which we use, e.g., to define Patterns, Concepts, Terms and Glossaries in, but it serves other purposes as well)."
 glossaryText: "the extent of the area or subject matter (which we use, e.g., to define %%patterns^pattern%%, %%concepts^concept%%, %%terms^term%% and %%glossaries^glossary%% in, but it serves other purposes as well)."
 date: 20210601

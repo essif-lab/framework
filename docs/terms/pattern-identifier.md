@@ -7,6 +7,7 @@ termtype: pattern
 termid: identifier
 symphrase: identifier
 status: draft
+grouptags:
 hoverText: "The eSSIF-Lab Identifier Pattern describes how Identifiers are defined and used for Identification purposes."
 date: 20210830
 ---

@@ -7,6 +7,7 @@ termtype: concept
 termid: management
 symphrase: management, manager, manages, managed, managed-by, management, managing, managing-part{yies}
 status: draft
+grouptags:
 hoverText: "Management: the act or process of managing or actually realizing of (the results associated with) a set of Objectives by the Owner of these Objectives."
 glossaryText: "the %%act^action%% or process of managing or actually realizing of (the results associated with) a set of %%objectives^objective%% by the %%owner^owner%% of these %%objectives^objective%%."
 date: 20210830

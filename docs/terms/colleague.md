@@ -7,6 +7,7 @@ termtype: concept
 termid: colleague
 symphrase: colleague{ss}, digital-colleague{ss}
 status: draft
+grouptags:
 hoverText: "Colleagues: two or more (digital or non-digital) Agents that have the same Principal (i.e. Party on whose behalf they are executing an Action)."
 glossaryText: "two or more (digital or non-digital) %%agents^agent%% that have the same %%principal^principal%% (i.e. %%party^party%% on whose behalf they are executing an %%action^action%%)."
 date: 20220330

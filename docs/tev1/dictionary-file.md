@@ -5,6 +5,7 @@ scopetag: scopeID
 termtype: dictionary
 termid: dictionaryID
 status: draft
+grouptags:
 hoverText: "DictionaryID: popuptext for 'dictionaryID' (tbd)."
 glossaryText: "popuptext for 'dictionaryID' (tbd)."
 date: 20210601

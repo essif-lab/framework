@@ -7,6 +7,7 @@ termtype: pattern
 termid: identity
 symphrase: identity
 status: draft
+grouptags:
 hoverText: "The eSSIF-Lab Identity Pattern shows how digital identities work, how this relates to (attributes in) credentials, and how all this can be made to work in SSI contexts."
 date: 20210803
 ---

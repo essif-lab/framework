@@ -7,6 +7,7 @@ termtype: concept
 termid: entity
 symphrase: entit{yies}
 status: draft
+grouptags:
 hoverText: "Entity: someone or something that is known to exist."
 glossaryText: "someone or something that is known to exist."
 date: 20210601

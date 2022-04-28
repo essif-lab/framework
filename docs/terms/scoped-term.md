@@ -6,6 +6,7 @@ scopetag: essifLabTerminology
 termtype: concept
 termid: term
 status: draft
+grouptags:
 hoverText: "Scoped Term: a Term, the meaning of which is determined by the Definition to which it refers in a specific Scope/context."
 glossaryText: "a %%term^term%%, the meaning of which is determined by the %%definition^definition%% to which it refers in a specific %%scope^scope%%/context."
 date: 20211101
