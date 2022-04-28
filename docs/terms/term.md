@@ -15,9 +15,9 @@ date: 20220421
 ### Short Description
 A Term is a word or phrase (i.e.: text) that is used in at least one %%scope|scope%%/context to represent a specific %%concept|concept%%. As a concequence:
 - a single term may (and typically does) have different meanings (%%semantics|semantics%%) in different %%scopes|scope%%/contexts. For example, in the context of a beauty-salon, the term 'nail' has a different meaning than in the context of constructing buildings.
-- different terms (in the same, or different %%scopes|scope%%/contexts) may have the same meaning (i.e. represent the same %concept% ([synonymity](https://en.wikipedia.org/wiki/Synonym), [alias](https://www.merriam-webster.com/dictionary/alias)).
+- different terms (in the same, or different %%scopes|scope%%/contexts) may have the same meaning (i.e. represent the same %%concept|concept%% ([synonymity](https://en.wikipedia.org/wiki/Synonym), [alias](https://www.merriam-webster.com/dictionary/alias)).
 
-The precise meaning of a term thus depends on the %%scope|scope%%/context in which it is used. We use the phrase %%scoped term|scoped-term%% to refer to a term in a particular %%scope|scope%%/context, and hence is part of the %%terminology|terminology%% of that %%scope|scope%%, and means whatever %concept% it represents in that %%scope|scope%%
+The precise meaning of a term thus depends on the %%scope|scope%%/context in which it is used. We use the phrase %%scoped term|scoped-term%% to refer to a term in a particular %%scope|scope%%/context, and hence is part of the %%terminology|terminology%% of that %%scope|scope%%, and means whatever %%concept|concept%% it represents in that %%scope|scope%%
 
 The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
 

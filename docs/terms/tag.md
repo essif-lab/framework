@@ -8,12 +8,12 @@ termid: tag
 symphrase: tag{ss}
 status: draft
 hoverText: "Tag: an alphanumeric string that is used to identify Scopes (so called 'scopetags'), group Terms (so called 'grouptags'), or identify a specific version of a Terminology (so called 'versiontags') from within a specific Scope."
-glossaryText: "an alphanumeric string that is used to identify %%scopes^scope%% (so called 'scopetags'), group %%terms^term%% (so called 'grouptags'), or identify a specific version of a %%erminology^erminology%% (so called 'versiontags') from within a specific %%scope^scope%%."
+glossaryText: "an alphanumeric string that is used to identify %%scopes^scope%% (so called 'scopetags'), group %%terms^term%% (so called 'grouptags'), or identify a specific version of a %%terminology^terminology%% (so called 'versiontags') from within a specific %%scope^scope%%."
 date: 20210601
 ---
 
 ### Short Description
-A **Tag** is an alphanumeric string that is used to identify %%scopes^scope%% (so called 'scopetags'), group %%terms|term%% (so called 'grouptags'), or identify a specific version of a %%erminology|erminology%% (so called 'versiontags') from within a specific %%scope|scope%%.
+A **Tag** is an alphanumeric string that is used to identify %%scopes^scope%% (so called 'scopetags'), group %%terms|term%% (so called 'grouptags'), or identify a specific version of a %%terminology|terminology%% (so called 'versiontags') from within a specific %%scope|scope%%.
 
 Scopetags %%identify|identify%% a %%scope|scope%% (from within a given %%scope|scope%%), and hence can be used (within that given %%scope|scope%%) to disambiguate %%terms|term%%. For example, `#essif-lab:term` is an %%identifier|identifier%% for the %%concept|concept%% that within the %%scope|scope%% %%identified|identify%% by the scopetag `essif-lab` is referred to by the %%term|term%% 'term'. Scopetags typically satisfy the regex `#[a-z0-9_-]+` and is often preceeded by the `#` character to designate that it is a tag.
 
