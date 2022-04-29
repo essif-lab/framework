@@ -122,7 +122,7 @@ async function getGlossaryTerms(files) {
     //gather all metadata
     let { metadata } = parseMD(content)
     //keep only the required keys
-    if (metadata.title && (metadata.type == "concept" || metadata.type == "term")) {
+    if (metadata.title && (metadata.termtype == "concept" || metadata.termtype == "term")) {
       let glossaryContent = metadata.glossaryText;
 
       if (glossaryContent) {
