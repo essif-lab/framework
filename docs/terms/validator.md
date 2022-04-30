@@ -14,7 +14,7 @@ date: 20210802
 ---
 
 :::info Editor's note
-In other SSI contexts, this term has a different meaning. We intend to rework the famework in such a way that we can use this term in various ways (e.g. as a %%party|party%%, a %%role name|role-name%%, or an %%actor|actor%% that performs the %%role|role%% associated with the %%role name|role-name%%
+In other SSI contexts, this term has a different meaning. We intend to rework the framework in such a way that we can use this term in various ways (e.g. as a %%party|party%%, a %%role name|role-name%%, or an %%actor|actor%% that performs the %%role|role%% associated with the %%role name|role-name%%
 :::
 
 ### Short Description

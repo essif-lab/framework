@@ -43,7 +43,7 @@ Typically, %%identifications|identify%% for which %%identifiers|identifier%% are
 The figure introduces the concept `ID`, the idea of which is that it is a composition of whatever it takes in terms of %%identifiers|identifier%% to be able to identify an %%entity|entity%% of a specific type in a specific context. In the simplest case (in a small context, without many %%entities|entity%% to choose from), a single %%identifier|identifier%% may suffice - specifying the entity type may not even be necessary. In other cases, a single identifier m ay not suffice, and multiple identifiers are necessary
 
 :::info Editor's note
-Text to be added from here on. Thoughts revolve around changing 'entity type' to 'attribute type' or such. That might result in a mapping (Entity, Attribute Type, Identifier) in the current figure to (subject, predicate, object) or pehaps better: (subject, key, value), i.e. (key, value) pairs for an implied subject. That could form the basis of doing identification in the data realm (which is currently still lacking)
+Text to be added from here on. Thoughts revolve around changing 'entity type' to 'attribute type' or such. That might result in a mapping (Entity, Attribute Type, Identifier) in the current figure to (subject, predicate, object) or perhaps better: (subject, key, value), i.e. (key, value) pairs for an implied subject. That could form the basis of doing identification in the data realm (which is currently still lacking)
 :::
 
 

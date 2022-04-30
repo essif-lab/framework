@@ -30,7 +30,7 @@ It is in one's mind - with one's knowledge - that objectives are being set, stra
 - which data is required,
 - what conditions such data should satisfy in order to be %%valid|validate%% for performing in the evaluation,
 - what sources may be trusted to provide data that is (sufficiently) true,
-etcetera. For all of this, it is beneficial to introduce a concept that captures this idea of %%knowledge|knowledge%% or mind in terms of _the_ entity that has it at its disposition, governs it, and has it used to realize its %%objectoves|objective%%.
+etcetera. For all of this, it is beneficial to introduce a concept that captures this idea of %%knowledge|knowledge%% or mind in terms of _the_ entity that has it at its disposition, governs it, and has it used to realize its %%objectives|objective%%.
 
 ### Criterion
 %%Entity|entity%% that is the 'sovereign' over a %%body of knowledge (information)|knowledge%%, which means that it decides about, and can be asked to account for:

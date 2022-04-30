@@ -36,15 +36,4 @@ A **policy** is
 - a (set of) rules, working-instructions, preferences and other guidance for the execution of one or more kinds of %%actions|action%%, possibly using different representations so as to be readable/interpretable by different kinds of %%actors|actor%%;
 - %%managed|management%% by a single %%party|party%% that decides what goes in the policy and what does not;
 - %%governed|governance%% (and %%owned|owned%%) by a single %%party|party%%;
-- is accessable to, and must be complied with by any %%agent|agent%% of the %%party|party%% that %%governs|governance%% the policy when it executes an action of the kind to which the policy applies.
-
-### Related Concepts
-- %%Governance|governance%%
-- %%Policy|policy%%
-- %%Digital Policy|policy%%
-- %%Transaction Data Discloser Policy|transaction-data-collector-policy%%
-- %%Transaction Data Collector Policy|transaction-data-collector-policy%%
-- %%Verifier Policy|verifier-policy%%
-- %%Issuer Policy|issuer-policy%%
-- %%Holder Policy|holder-policy%%
-- %%Wallet Policy|wallet-policy%%
+- is accessible to, and must be complied with by any %%agent|agent%% of the %%party|party%% that %%governs|governance%% the policy when it executes an action of the kind to which the policy applies.

@@ -20,7 +20,7 @@ Criteria to determine that the %%objective|objective%% is fulfilled include:
   - logins (username, password) are eliminated.
   - people can fill in forms (e.g. for applying for products or services) fast, and easily.
   - people are protected from transacting with malicious %%parties|party%%.
-  - people find the provided means helpful as they seek to exercize their rights under privacy acts such as the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/data-protection-eu_en).
+  - people find the provided means helpful as they seek to exercise their rights under privacy acts such as the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/data-protection-eu_en).
 
 ### Empower European and other organizations and governments
 The results of the work done in eSSIF-Lab should contribute to provide %%organizations|organization%% (e.g. enterprises, governments) with means that help them to electronically negotiate and conduct %%transactions|transaction%% in the widest sense of the word. Such means make it easier for them to participate in transactions, both in the Internet and in physical life.

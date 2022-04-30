@@ -18,4 +18,4 @@ A **scoped term** is a %%term|term%%, the meaning of which is determined by the 
 The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
-A %%term|term%% can have many different meanings, depending on the %%scope|scope%%/context within which it is being used. It is useful to be able to distinguish between words/phrases without taking %%scope|scope%%/context into account (for which we use the word %%term|term%%), and words/phrases that are part of a specific %%scope|scope%%/context (for which we use the pharse %%scoped term|scoped-term%%)
+A %%term|term%% can have many different meanings, depending on the %%scope|scope%%/context within which it is being used. It is useful to be able to distinguish between words/phrases without taking %%scope|scope%%/context into account (for which we use the word %%term|term%%), and words/phrases that are part of a specific %%scope|scope%%/context (for which we use the phrase %%scoped term|scoped-term%%)

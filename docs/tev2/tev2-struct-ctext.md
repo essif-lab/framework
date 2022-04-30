@@ -16,7 +16,7 @@ This document specifies the requirements that a file has to satisfy for it to be
 - **[curated file]** to refer to these files, and
 - **[curated text]** to refer to the contents of such files.
 
-[curated file] are expected to live in a github repository, in directories as specified in the [directory structure spec](tev2-struct-directory). This specification is written such that (compliant) [curated files|curated file] will be processeable by [Docusaurus v2](https://docusaurus.io/docs), which basically means that the repo can be set up as a website that has facilities for hosting its own [curated] [terminology].
+[curated file] are expected to live in a github repository, in directories as specified in the [directory structure spec](tev2-struct-directory). This specification is written such that (compliant) [curated files|curated file] will be processable by [Docusaurus v2](https://docusaurus.io/docs), which basically means that the repo can be set up as a website that has facilities for hosting its own [curated] [terminology].
 
 A [curated text] consists of two parts: a **[header]**, and a **[body]**. The [header] is a set of key-value pairs that contain meta data about the [curated text] and/or data that could also have been part of the [body], but is so small that it doesn't warrant to have a dedicated section for it.
 

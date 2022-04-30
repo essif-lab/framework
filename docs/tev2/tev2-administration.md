@@ -21,5 +21,5 @@ Administration is about the establishing and maintaining of links with other rep
 - is signaled when changes in such repos have occur that may/should trigger the [generation of updates of terminological artifacts](tev2-artifact-generation).
 
 :::info Editor's note:
-This section needs texts that define the contents of the required administrative artifaces, as well as where both curators and TEv2 can find them.
+This section needs texts that define the contents of the required administrative artifacts, as well as where both curators and TEv2 can find them.
 :::

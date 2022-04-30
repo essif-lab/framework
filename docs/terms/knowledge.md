@@ -16,7 +16,7 @@ date: 20210601
 ### Short Description
 **Knowledge** is the (intangible) sum of what is known, the familiarity, awareness or understanding of someone or something ([WikiPedia](https://en.wikipedia.org/wiki/Knowledge)). It includes facts ([propositional knowledge](https://en.wikipedia.org/wiki/Propositional_knowledge)), skills ([procedural knowledge](https://en.wikipedia.org/wiki/Procedural_knowledge)), or objects ([acquaintance knowledge](https://en.wikipedia.org/wiki/Knowledge_by_acquaintance)). Knowledge can be acquired in many different ways and from many different sources, including but not limited to experience, reason, memory, testimony, scientific inquiry, education, and practice.
 
-We limit the scope of a Knowledge to a %%party|party%% so as to allow for the existence of multiple such Knowledges, where each of them is internally consistent, yet may be inconsistent with other Knowledges.
+We limit the scope of a %%knowledge|knowledge%% to a %%party|party%% so as to allow for the existence of multiple such %%knowledges|knowledge%%, where each of them is internally consistent, yet may be inconsistent with other %%knowledges|knowledge%%.
 
 ### Purpose
 We need a term to refer to the (intangible) sum of what is known, the familiarity, awareness or understanding of someone or something of a %%party|party%%, because this is what allows the %%party|party%% to reason, and make decisions. When a %%party|party%% can successfully share (parts of) its knowledge, i.e. communicate it such that when another %%party|party%% interpret it, the intension is preserved, mutual understanding is achieved, which is prerequisite for doing %%business transactions|transaction%% and/or collaborating.
