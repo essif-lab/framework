@@ -12,4 +12,4 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 The entire section on Terminology Engine v 2 (TEv2) is still under construction
 :::
 
-This document specifies what the [body] of a [curated text] should look like.
+This document specifies what the [body@] of a [curated text@] should look like.

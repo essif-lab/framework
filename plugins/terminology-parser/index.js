@@ -206,7 +206,7 @@ async function parseGlossary(err, files) {
   }
   //get all terms in an array of objects
   const data = await getGlossaryTerms(files);
-  //sort them alphabeteically
+  //sort them alphabetically
   data.sort((a,b) => (a.title.toLowerCase() > b.title.toLowerCase()) ? 1 : ((b.title.toLowerCase() > a.title.toLowerCase()) ? -1 : 0));
   //write the glossary.md file
   generateGlossary(data);
