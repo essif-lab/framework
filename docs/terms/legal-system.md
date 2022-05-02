@@ -27,7 +27,7 @@ A system in which rules are defined ([legislature](https://en.wikipedia.org/wiki
 ### Examples
 - many nations have their own legal system (see e.g. [WikiPedia](https://en.wikipedia.org/wiki/List_of_national_legal_systems))
 - enterprises typically have at least one legal system, with policies or working instructions as their rules.
-- multi-nationals, NGO's etc. typically have multiple legal systems that are to be operated in different %%scopes|jurisdiction%% where such operations are subject to other, often %%legal jurisdictions|jurisdiction%%.
+- multi-nationals, NGOs etc. typically have multiple legal systems that are to be operated in different %%scopes|jurisdiction%% where such operations are subject to other, often %%legal jurisdictions|jurisdiction%%.
 - all sorts of associations, societies, clubs, unions would qualify as a jurisdiction.
 - families have a legal system, where the rules may or may not change regularly, enforcement may not always be consistent, and conflict resolution may be ad-hoc.
 - individual people can be said to have a legal system of their own, containing e.g. rules for ethics and morals.

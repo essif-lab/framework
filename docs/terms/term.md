@@ -14,7 +14,7 @@ date: 20220421
 ---
 
 ### Short Description
-A Term is a word or phrase (i.e.: text) that is used in at least one %%scope|scope%%/context to represent a specific %%concept|concept%%. As a concequence:
+A Term is a word or phrase (i.e.: text) that is used in at least one %%scope|scope%%/context to represent a specific %%concept|concept%%. As a consequence:
 - a single term may (and typically does) have different meanings (%%semantics|semantics%%) in different %%scopes|scope%%/contexts. For example, in the context of a beauty-salon, the term 'nail' has a different meaning than in the context of constructing buildings.
 - different terms (in the same, or different %%scopes|scope%%/contexts) may have the same meaning (i.e. represent the same %%concept|concept%% ([synonymity](https://en.wikipedia.org/wiki/Synonym), [alias](https://www.merriam-webster.com/dictionary/alias)).
 

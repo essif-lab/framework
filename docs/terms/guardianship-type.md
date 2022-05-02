@@ -19,7 +19,7 @@ Additional content is needed here.
 ### Short Description
 A **Guardianship-type** is a class of %%guardianship arrangements|guardianship-arrangement%% within the %%jurisdiction|jurisdiction%% that governs and manages them. It comprises %%duty and right types|pattern-duties-and-rights%% that can be used as a template for instantiating %%duties and rights|pattern-duties-and-rights%% of %%guardianship arrangements|guardianship-arrangement%% that instantiate the %%guardianship-type|guardianship-type%%.
 
-A good way to think abouat a %%guardianship-type|guardianship-type%% is to see it as a template from which instances - i.e. actual %%guardianship arrangements|guardianship-arrangement%% can be derived.
+A good way to think about a %%guardianship-type|guardianship-type%% is to see it as a template from which instances - i.e. actual %%guardianship arrangements|guardianship-arrangement%% can be derived.
 
 The %%Guardianship pattern|pattern-guardianship%% provides an overview of how this concept fits in with related concepts.
 The %%Jurisdiction pattern|pattern-jurisdiction%% provides backgrounds on jurisdictions and how they function.

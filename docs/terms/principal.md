@@ -18,10 +18,10 @@ A **principal** (of an %%actor|actor%%) is a %%party|party%% on whose behalf the
 
 Being a %%principal|principal%% (or %%agent|agent%% for that matter) is a %%role|role%% (characteristic/property) that a %%party|party%% (or an %%actor|actor%%, respectively) only has at a point in time where the %%actor|actor%% is _actually executing an %%action|action%%_ on behalf of that %%party|party%%. At any point in time, a %%party|party%% can fulfill the %%role|role%% of %%principal|principal%% for many %%actors|actor%%, depending on the amount of %%actions|action%% that are being executed on its behalf.
 
-%%Principals|principal%% are expected to provide its %%agents|agent%% with the %%policies|policy%% that provide the %%agents|agent%% with the rules, working-instructions, preferences and other guidance that they need to comply with when exeucting the action. This, and relations with other concepts are described in the %%Parties, Actors and Actions pattern|pattern-party-actor-action%%.
+%%Principals|principal%% are expected to provide its %%agents|agent%% with the %%policies|policy%% that provide the %%agents|agent%% with the rules, working-instructions, preferences and other guidance that they need to comply with when executing the action. This, and relations with other concepts are described in the %%Parties, Actors and Actions pattern|pattern-party-actor-action%%.
 
 ### Purpose
-The purpose of being able to distinguish between %%parties|party%% that are, and that are not fulfilling the %%role|role%% of %%principal|principal%% (of the %%actor|actor%% that is exeucting some %%action|action%%), is that it is instrumental in discussions about who is (not) responsible/accountable for that %%action|action%% - including the way in which the %%action|action%% is executed, as well as the results produced by that %%action|action%%.
+The purpose of being able to distinguish between %%parties|party%% that are, and that are not fulfilling the %%role|role%% of %%principal|principal%% (of the %%actor|actor%% that is executing some %%action|action%%), is that it is instrumental in discussions about who is (not) responsible/accountable for that %%action|action%% - including the way in which the %%action|action%% is executed, as well as the results produced by that %%action|action%%.
 
 ### Criterion
 The **principal** (of an %%actor|actor%%) is the %%party|party%% for whom the %%actor|actor%% is an %%agent|agent%%, i.e. on whose behalf the %%actor|actor%% is (in the process of) executing some %%action|action%%.

@@ -40,7 +40,7 @@ As the corpus is being used, we expect ideas for improvement
 [Here](terminology-contributions) is how you may contribute to this terminology effort.
 
 Here are some characteristics of the tools being supplied:
-- When a reader sees a highlighted term (meaning that it is documented), (s)he will see a short description when hovering over the term, and the complete description by clicking onit.
+- When a reader sees a highlighted term (meaning that it is documented), (s)he will see a short description when hovering over the term, and the complete description by clicking on it.
 - When an author writes a text in which he wants to tag a term with its definition, (s)he simply writes `\%\%text-to-be-tagged|referenceid\%\%`, where `referenceid` is usually the term name. For details, please refer to the [instruction for authors](TBD)
 - Author wants to contribute to the Corpus of Terminology, i.e. modify existing documents or creating new ones, are supported by [templates](TBD) and [guidance for authoring terminology documents](TBD).
-- The glossary will be automatically updated as contributions to the terminology orpus are being made merged into the master branch.
+- The glossary will be automatically updated as contributions to the terminology corpus are being made merged into the master branch.

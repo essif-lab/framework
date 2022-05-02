@@ -17,7 +17,7 @@ date: 20210601
 A **Data Collector** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that a %%party|party%% may use to collect sufficient and %%validated|validate%% data for deciding whether or not a request (typically for a product or a service) is to be serviced.
 
 ### Purpose
-The purpose of a Data Collector is to collect sufficient and %%validated|validate%% data that eneables (an %%agent|agent%% of) its %%principal|principal%% to decide whether or not some request (typically for a product or a service) is to be serviced.
+The purpose of a Data Collector is to collect sufficient and %%validated|validate%% data that enables (an %%agent|agent%% of) its %%principal|principal%% to decide whether or not some request (typically for a product or a service) is to be serviced.
 
 ### Functionality
 A data collector typically starts to collect data when it receives a request (e.g. to provide a product or service). The reception of such a request triggers the creation of a new %%business transaction|transaction%%. The task of the data collector is to collect %%validated|validate%% data that is sufficient for making a commitment decision (or, as [DEMO](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations) calls it: a 'promise' or 'quit' decision.)
@@ -42,7 +42,7 @@ A **Data Collector** is a functional component in the [eSSIF-Lab functional arch
   - request for data that, according to the %%Data Collector Policy|data-collector-policy%% is needed to decide whether or not to commit to the transaction;
   - process the responses to such requests, in an orchestrated way, thereby complying with the rules of its  %%principal's|principal%% %%Data Collector Policy|data-collector-policy%%, the result of which (in the end) is a set of %%validated|validate%% data that can serve the purpose of deciding whether or not to commit to the transaction;
   - receive similar requests from its %%peer-party|peer-party%%, and respond to such requests in compliance with the rules of its  %%principal's|principal%% %%Data Collector Policy|data-collector-policy%%;
-- has a mechanism to ensure that within a %%transaction|transaction%%, it uses the latest (most receent) %%Data Collector Policy|data-collector-policy%% of its %%principal|principal%%.
+- has a mechanism to ensure that within a %%transaction|transaction%%, it uses the latest (most recent) %%Data Collector Policy|data-collector-policy%% of its %%principal|principal%%.
 
 ### Deprecated - TVE Functionality
 

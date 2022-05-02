@@ -20,7 +20,7 @@ Compliance-levels can be expressed in many forms, such as
 - one of the first letters of 'Low', 'Medium', or 'High';
 - a digit in the interval [1-_n_], where _n_ is usually 4, 5 or 9;
 - a combination of digits (indicating the expected impact) and letters (indicating the assessed likelihood);
-- a color, e.g. one of 'green', 'yellow' and/or 'organge, 'red';
+- a color, e.g. one of 'green', 'yellow' and/or 'orange, 'red';
 - a combination of character representation (appealing to the conscious mind of the reader) and a color (appealing to its unconscious mind)
 
 Compliance levels can be used in the %%compliance management|compliance-management%% process of a %%party|party%% to indicate where work is required in order to realize that party's %%compliance objectives|compliance-objective%%.

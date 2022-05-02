@@ -22,7 +22,7 @@ As with all %%objectives|objective%%, control objectives are associated with res
 
 ### Control Process
 
-The control process we describe here is 'effect-driven', which means that it does not require any knowledge about the way in which the control objectives are realized. This means that %%parties|party%% are not forced to use particular methods, procedures, etc. It specicially also allows the process to be used in a %%governance|governance%% setting.
+The control process we describe here is 'effect-driven', which means that it does not require any knowledge about the way in which the control objectives are realized. This means that %%parties|party%% are not forced to use particular methods, procedures, etc. It specifically also allows the process to be used in a %%governance|governance%% setting.
 
 While some may see this process simply as a means to turn the PDCA-cycle (which in a way, it is), its value lies in the explicit specification of the concrete results that have to be achieved in the various steps. Such explicit specifications provide the concrete basis for both the %%managers|management%% of an %%objective|objective%% and its %%governors|governance%% to do their jobs.
 

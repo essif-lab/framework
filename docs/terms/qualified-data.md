@@ -17,7 +17,7 @@ date: 20210601
 **Qualified data** is %%data|data%% that comes with assurances, at least regarding its provenance and integrity (immutability), that make this data valid to be used for specific purposes of individual %%parties|party%%.
 
 Qualified data has two perspectives:
-1. The usage (or %%validation|validate%%) perspective. Whether or not data qualifies for use depends on the %%party|party%% using it, and also the purpose (context) for which it is used. From this perspective, qualfied data *is* data that if it were validated, would qualify as actually being %%valid|validate%%.
+1. The usage (or %%validation|validate%%) perspective. Whether or not data qualifies for use depends on the %%party|party%% using it, and also the purpose (context) for which it is used. From this perspective, qualified data *is* data that if it were validated, would qualify as actually being %%valid|validate%%.
 2. The provisioning perspective. Strictly speaking, %%parties|party%% cannot provision qualified data as they have no clue what it takes for that data to be %%valid|validate%%. A party that creates qualified data would not not all specific purposes for which the data is actually going to be used.
 
 For verifiers
@@ -26,7 +26,7 @@ Qualified data comes in two flavors:
 - as data that satisfies the requirements of the %%party|party%% that will be using it, e.g. for decision making. Since parties are autonomous (self-sovereign), such requirements must be expected to be subjective: every party will have its
 
 ### Purpose
-The ability to distinguish between (non)qualified-datas is relevant in many situations, including:
+The ability to distinguish between (non)qualified-data is relevant in many situations, including:
 - electronic communication: the qualified-data
 
 ### Criterion
@@ -43,7 +43,7 @@ In its %%issuer|issuer%% role, a %%party|party%% is interested in creating value
 
 In order to reap the benefits expected by the business model, issuers should provide data that others will actually use, and do so with proofs of provenance, integrity and perhaps other assurances. This means that the issuer must communicate (advertise) the existence of such data in such a way that others can not only find it, but also decide whether or not that data is beneficial (for them) to use. An 'advertisement' not only needs to say 'what' the data is about, but also what its characteristics are (e.g. that this issued data is guaranteed to be 1-1 equal to the registrations of the issuer, unless the credential in which it is contained has expired or has been revoked), the liability (if any) that the issuer is prepared to take, conditions of use, etc.
 
-From the issuer perspective, it isn't all that important what the 'envelope' is in which the data is conveyed, as long as the assurances for provenance and integrity (and perhaps some others) for the data are in place. Verificable credentials are good, but so are X.509 attribute certificates, Attribute-Based Credentials ([ABCs](https://www.springer.com/gp/book/9783319144382)), etc. Parties may want the ability to specify which of these (not) to use, but that's a secondary concern.
+From the issuer perspective, it isn't all that important what the 'envelope' is in which the data is conveyed, as long as the assurances for provenance and integrity (and perhaps some others) for the data are in place. Verifiable credentials are good, but so are X.509 attribute certificates, Attribute-Based Credentials ([ABCs](https://www.springer.com/gp/book/9783319144382)), etc. Parties may want the ability to specify which of these (not) to use, but that's a secondary concern.
 
 In short, as an issuer, a party is interested in creating value from sharing knowledge about other entities. A party's “issuer” %%governance|governance%% process is concerned with making (and continually reviewing and updating) decisions about e.g.:
 - the kinds of qualified data it is willing to provide (what they consist of, what characteristics are to be ensured, liability to take, etc.;

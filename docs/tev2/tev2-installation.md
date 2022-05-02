@@ -12,7 +12,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 The entire section on Terminology Engine v 2 (TEv2) is still under construction
 :::
 
-TEv2 assumes that the [curated|curate] data resides in an existing github repository (repo), and that [curated file] should be processeable by [Docusaurus v2](https://docusaurus.io/docs/docs-introduction), which is a static site generator for web sites that document all sorts of guidance, specifications, etc.
+TEv2 assumes that the [curated|curate] data resides in an existing github repository (repo), and that [curated file] should be processable by [Docusaurus v2](https://docusaurus.io/docs/docs-introduction), which is a static site generator for web sites that document all sorts of guidance, specifications, etc.
 
 :::info Editor's note
 This page needs texts that describe how curators can

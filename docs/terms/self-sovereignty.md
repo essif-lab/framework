@@ -26,7 +26,7 @@ The characteristic of %%self-sovereignty|self-sovereignty%%, that we attribute t
 
 Every %%party|party%% decides autonomously on the *meaning/definition of %%terms|terminology%% that it uses in an attempt to convey such meaning to other parties. The fact that such other parties also do this is a major cause of misunderstandings, as the same words may have different meanings for different parties. The eSSIF-Lab %%Terminology pattern|pattern-terminology%% provides a mental model and a mechanism that is aimed to detect such misunderstandings and resolve them.
 
-Since every %%party|party%% is autonomous in its decision making, any argument that it uses for reaching a conlusion (decision) is subjective (=specific for that party). This implies that the kinds of data which a party needs in order to decide whether or not to commit to a %%transaction|transaction%% are subjective, as well as the data it needs in order to decide whether or not such data is %%valid|validate%% to be used in such an argument.
+Since every %%party|party%% is autonomous in its decision making, any argument that it uses for reaching a conclusion (decision) is subjective (=specific for that party). This implies that the kinds of data which a party needs in order to decide whether or not to commit to a %%transaction|transaction%% are subjective, as well as the data it needs in order to decide whether or not such data is %%valid|validate%% to be used in such an argument.
 
 ### Purpose
 The purpose of having the term %%Self-Sovereignty|self-sovereignty%% is to emphasize that every %%party|party%% is autonomous/self-sovereign and make people aware of the implications that this has.

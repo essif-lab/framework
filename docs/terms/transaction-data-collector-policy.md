@@ -19,7 +19,7 @@ A **Transaction Data Collector Policy** is a %%digital policy|policy%% that enab
 Such a policy includes e.g. the kinds of data (and meta-data) required to make these kinds of decisions, criteria to distinguish between data that is %%valid|validate%% and data that is not, any data conversions that may be needed, etc.
 
 ### Purpose
-The purpose of a **Transaction Data Collector Policy** is to enable the creation of (technical) components that implement the generic %%Transaction Data Collector|transaction-data-collector%% functionality that will subsequently use such policies to guide their behaviour.
+The purpose of a **Transaction Data Collector Policy** is to enable the creation of (technical) components that implement the generic %%Transaction Data Collector|transaction-data-collector%% functionality that will subsequently use such policies to guide their behavior.
 
 ### Criteria
 A **Transaction Data Collector Policy** is a %%digital policy|policy%% that enables an operational %%Transaction Data Collector component|transaction-data-collector%% to function as an %%agent|agent%% according to the rules, working-instructions, preferences and other guidance of its %%principal|principal%%.

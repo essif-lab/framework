@@ -24,7 +24,7 @@ A common mechanism for reducing the likelihood of misunderstandings to occur, is
 
 Therefore, we insist that such texts
 - are associated with a %%scope|scope%% within which they are considered to be valid/useful (for the %%objectives|objective%% that %%parties|party%% pursue in that %%scope|scope%%);
-- are phrased as a [criterion](https://www.lexico.com/definition/criterion) that every such %%party|party%% can evaluate so as to determine whether or not something qualifies to be refered to by that term.
+- are phrased as a [criterion](https://www.lexico.com/definition/criterion) that every such %%party|party%% can evaluate so as to determine whether or not something qualifies to be referred to by that term.
 The quality of such texts is the extent in which parties reach the same conclusion as they evaluate the criterion in an arbitrary use-case that is relevant for the scope.
 
 The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
@@ -51,14 +51,7 @@ A **definition** is a text that comprises at a minimum:
 
 * %%Mental(or Conceptual) Model|pattern%% is a collection of concepts, relations between such concepts, and constraint rules that (elements of) such concepts and relations must satisfy. Such [models](https://en.wikipedia.org/wiki/Conceptual_model) are used to help people know, understand, or simulate a topic that the model represents.
 
-### Use-cases
-<!--This (optional) section specifies an (optional) introductory paragraph, and a level-3 (i.e. `###`) subsection for every use case it describes. Every such use-case SHOULD
-- describe the situation/context of the use-case;
-- show how to apply ``Concept`` to/in that situation;
-- shows the relevance of having ``Concept`` for the use-case as opposed to not having it.-->
-
 ### Notes
-<!--This (optional) section is the place to put anything for which there is no other good place to put it.-->
 
 Note that this definition satisfies itself. Also note that a definition may be used in multiple scopes, where a scope that wants to use the definition that has been defined in another scope, may replace that name with one of its own choosing. This way the meaning expressed by the definition remains preserved.
 
@@ -69,4 +62,4 @@ You may want to create definitions that are both acceptable for business people 
 
 Note that the actual word or phrase you choose as the %%term|term%% name for a concept is much less important than the criteria you define. If in a particular %%context|scope%% another name would be more suitable, you can define another %%term|term%% for that other context (scope) that still refers to the concept you created the definition for.
 
-The %%Terminology Corpus|corpus%% provides templates that help you do that, e.g. for %%defining concepts|concept-file%% and for %%defining terms|term-file%%. The report [On Terminology, and the Resolution of Related Issues](http://resolver.tudelft.nl/uuid:964a90da-da81-4d38-9f45-84f3f5fa96b3) provides further practical guidance for establishing and maintaining umnambiguous and relevant terminology.
+The %%Terminology Corpus|corpus%% provides templates that help you do that, e.g. for %%defining concepts|concept-file%% and for %%defining terms|term-file%%. The report [On Terminology, and the Resolution of Related Issues](http://resolver.tudelft.nl/uuid:964a90da-da81-4d38-9f45-84f3f5fa96b3) provides further practical guidance for establishing and maintaining unambiguous and relevant terminology.

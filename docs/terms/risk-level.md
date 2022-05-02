@@ -20,7 +20,7 @@ Risk-levels can be expressed in many forms, such as
 - one of the first letters of 'Low', 'Medium', or 'High';
 - a digit in the interval [1-_n_], where _n_ is usually 4, 5 or 9;
 - a combination of digits (indicating the expected impact) and letters (indicating the assessed likelihood);
-- a color, e.g. one of 'green', 'yellow' and/or 'organge, 'red';
+- a color, e.g. one of 'green', 'yellow' and/or 'orange, 'red';
 - a combination of character representation (appealing to the conscious mind of the reader) and a color (appealing to its unconscious mind)
 
 Every %%party|party%% that has a %%risk management|risk-management%% process in place should establish its (personal) set of possible risk-levels and decide which criteria to use for assigning such levels to its (managed) %%objectives|objective%% in a way that is both meaningful and practical for that party.

@@ -16,7 +16,3 @@ date: 20210601
 :::info Editor's note
 Additional content is needed here.
 :::
-
-### Related Concepts
-- %%Transaction Proposal|transaction-proposal%%
-- %%Transaction Form|transaction-form%%

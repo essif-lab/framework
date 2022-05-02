@@ -24,15 +24,15 @@ We may use adjectives in combination with 'ownership' to signify the kind of %%j
 **Ownership** is a means by which %%jurisdictions|jurisdiction%% ensure that %%owners|owner%% can autonomously enjoy, dispose of and control the %%entities|entity%% that they %%own|owner%% to the extent of the entitlements (rights and duties) as defined in the %%jurisdiction's|jurisdiction%% %%legal system|legal-system%%, and within its %%scope of control|scope-of-control%%.
 
 ### Criteria
-**Ownership** is a relationship between two %%legal entities|legal-entity%% (called the %%owner|owner%% and the %%owned|owned%%) within a single %%jurisdiction|jurisdiction%%, whose %%legal system|legal-system%% (a) defines the rights and duties of the %%owner|owner%% to enjoy, dispose of and control the %%owned|owned%%, (b) enforces them, and (c) provides a means to sette disputes.
+**Ownership** is a relationship between two %%legal entities|legal-entity%% (called the %%owner|owner%% and the %%owned|owned%%) within a single %%jurisdiction|jurisdiction%%, whose %%legal system|legal-system%% (a) defines the rights and duties of the %%owner|owner%% to enjoy, dispose of and control the %%owned|owned%%, (b) enforces them, and (c) provides a means to settle disputes.
 
 ### Notes
 
 1. %%Ownership|ownership%% *only* has meaning within a %%jurisdiction|jurisdiction%% that defines *and* enforces a set of rights and duties of the %%owner|owner%% and/or the %%owned|owned%%. The value of %%ownership|ownership%% is typically proportional to the extent in which the %%jurisdiction|jurisdiction%% enforces such rights and duties.
 
-2. %%Owning|ownership%% something does not imply posessing it (and vice versa). For example, if you find a coin that doesn't belong to you, you possess it but do not %%own|owner%% it. Also, its rightful %%owner|owner%% obviously %%owns|owner%% it, but doesn't possess it at that point in time. Still, a %%jurisdiction|jurisdiction%% may have rules that create or dissolve %%ownership|ownership%% relationships depending on who possesses the %%entity|entity%%.
+2. %%Owning|ownership%% something does not imply possessing it (and vice versa). For example, if you find a coin that doesn't belong to you, you possess it but do not %%own|owner%% it. Also, its rightful %%owner|owner%% obviously %%owns|owner%% it, but doesn't possess it at that point in time. Still, a %%jurisdiction|jurisdiction%% may have rules that create or dissolve %%ownership|ownership%% relationships depending on who possesses the %%entity|entity%%.
 
-3. While %%owners|owner%% are typically %%parties|party%%, the model does not require this to be the case. Thus, if a %%jurisdiction|jurisdiction%% decides that riviers own their respective banks, the model does not disapprove. But such rivers and their banks do need to qualify as %%legal-entities|legal-entity%% within said %%jurisdiction|jurisdiction%%.
+3. While %%owners|owner%% are typically %%parties|party%%, the model does not require this to be the case. Thus, if a %%jurisdiction|jurisdiction%% decides that rivers own their respective banks, the model does not disapprove. But such rivers and their banks do need to qualify as %%legal-entities|legal-entity%% within said %%jurisdiction|jurisdiction%%.
 
 4. The model does not set limitations on the kinds of %%entities|entity%% that can be %%owned|owned%%, other than that they need to be known in the %%jurisdiction(s)|jurisdiction%% that specify the rights and duties associated with %%ownership|ownership%% relationships.
 

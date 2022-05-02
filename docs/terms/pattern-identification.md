@@ -42,7 +42,7 @@ You could also phrase this as recognizing the person, i.e. tapping into your own
 
 Continuing the example, it could be that you have no recollection of that person, i.e. there is no %%partial identity|partial-identity%% in your %%knowledge|knowledge%% that has all these characteristics. In this case you would already have started to create a new %%partial identity|partial-identity%% for which that person is the %%subject|subject%%, and you would have started to attribute characteristics (with some level of certainty) to this person, which all are part of this new %%partial identity|partial-identity%%. Doing this enables you to identify/recognize this person the next time (s)he comes to your house.
 
-The identification process is said to fail if a user record or %%partial identity|partial-identity%% has been selected, but its actual %%subject|subject%% is not the %%entity|entity%% that supposedly is identified. This is the case when someone/something (succesfully) masquerades as, or impersonates that %%entity|entity%%. The process of obtaining assurances that the %%entity|entity%% that is identified is "who (s)he says that (s)he is" is commonly called 'authentication'. We would say that authentication is the process of providing a set of assurances such that the %%risk|risk%% of having selected a %%partial identity|partial-identity%% or user record whose %%subject|subject%% is not the %%entity|entity%% that was identified, is acceptable to the %%owner|owner%% of that %%partial identity|partial-identity%% or user record.
+The identification process is said to fail if a user record or %%partial identity|partial-identity%% has been selected, but its actual %%subject|subject%% is not the %%entity|entity%% that supposedly is identified. This is the case when someone/something (successfully) masquerades as, or impersonates that %%entity|entity%%. The process of obtaining assurances that the %%entity|entity%% that is identified is "who (s)he says that (s)he is" is commonly called 'authentication'. We would say that authentication is the process of providing a set of assurances such that the %%risk|risk%% of having selected a %%partial identity|partial-identity%% or user record whose %%subject|subject%% is not the %%entity|entity%% that was identified, is acceptable to the %%owner|owner%% of that %%partial identity|partial-identity%% or user record.
 
 #### 2. Identification: selecting an %%entity|entity%% from a set
 
@@ -76,14 +76,14 @@ The figure shows that a %%party|party%% can know (about the existence of) any nu
 
 As mentioned above, %%identification|identify%% is an %%act|action%%, by (an %%agent|agent%% of) a %%party|party%% that results in the establishment of a 1-1 relation between an %%entity|entity%% (that exists in the real world) and a %%partial identity|partial-identity%% (that exists in the %%knowledge|knowledge%% of that %%party|party%%). This %%act|action%% takes place in a specific context/situation, in which a set of %%entities|entity%% is present.
 
-Then, this act accummulates a set of characteristics (the 'uses' relation in the figure) that it either
+Then, this act accumulates a set of characteristics (the 'uses' relation in the figure) that it either
 - observes from the %%entity|entity%% to be identified, then finds all %%partial identities|partial-identity%% that have all of these characteristics, or
 - takes from the %%partial identity|partial-identity%% whose %%subject|subject%% needs to be identified, then finds all %%entities|entity%% that have all of these characteristics
 
 There are quite a few commonly used characteristics. One example are entity-types, i.e. classifications of %%entities|entity%% that %%parties|party%% use to make sense of the world. Examples of which include 'person', 'organization', 'animal', 'friend', etc. The %%partial identity|partial-identity%% that a %%party|party%% %%owns|owner%% about some %%entity|entity%% would include the entity-types that this %%party|party%% has attributed to that %%entity|entity%%. Another example are %%identifiers|identifier%%, i.e. texts or words that are used to refer to an %%entity|entity%% in specific contexts.
 
 This process of accumulation of characteristics (and selecting the %%entities|entity%% or %%partial identities|partial-identity%% that keep fitting all of these characteristics) continues until
-- there is no %%entity|entity%% or no %%partial identity|partial-identity%% that matches all accumlated characteristics, in which identification failed.
+- there is no %%entity|entity%% or no %%partial identity|partial-identity%% that matches all accumulated characteristics, in which identification failed.
 - there is a single %%partial identity|partial-identity%% and a single %%entity|entity%% that both match all such characteristics, in which case identification is successful and the %%subject|subject%%-relation between the %%entity|entity%% and %%partial identity|partial-identity%% has been established.
 
 ### Formalized model - data realm
@@ -95,5 +95,5 @@ Here is a visual representation of a similar pattern, using the following **[not
 />
 
 :::info Editor's note
-This section needs a figure and an explanation of how identification works in the data realm, i.e. the realm where identification is performed by an %%actor|actor%% that is not the %%party|party%% on whose behalf the %%identification|identify%% is being made. This requires that the %%actor|actor%% can access %%data|data%%-records (%%owned|owned%% by its %%principal|principal%%) that represent (exerpts of) %%partial identities|partial-identity%% of the %%entities|entity%% to be %%identified|identify%%. Such %%data|data%%-records would contain %%attributes|attribute%% that represent the characteristics.
+This section needs a figure and an explanation of how identification works in the data realm, i.e. the realm where identification is performed by an %%actor|actor%% that is not the %%party|party%% on whose behalf the %%identification|identify%% is being made. This requires that the %%actor|actor%% can access %%data|data%%-records (%%owned|owned%% by its %%principal|principal%%) that represent (excerpts of) %%partial identities|partial-identity%% of the %%entities|entity%% to be %%identified|identify%%. Such %%data|data%%-records would contain %%attributes|attribute%% that represent the characteristics.
 :::

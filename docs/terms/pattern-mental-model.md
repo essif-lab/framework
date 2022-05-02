@@ -29,19 +29,3 @@ TL;DR: .
 A concept is an idea that is applied to all objects in a group. It is the way people see and understand something. The name used to identify a concept (the concept's label) is a "term". For example, the word "Dog" is the term to identify the concept of what a dog is. Everything that a person knows about a dog is the concept of the term dog.
 
 Different terms can be used to identify the same concept. Car and Automobile are synonyms for the same concept. Different languages have different terms for the same concept. This is what makes translation possible. The terms may be different in each language, but the concept is the same. The concept of jumping is the same to a person from England and a person from Italy, but one person uses the term "Jump" to mean the concept and the other person uses "Salto".
-
-### Notations
-<!--This (optional) section specifies the notations that are used, or refers to such a specification.-->
-
-### <!-- any number of other sections, as is fit for describing the pattern -->
-<!--text as appropriate for such a section -->
-
-<!--
----
-### Footnotes
-
-[//]: # This (optional) section contains any footnotes that may have been specified in the text above.
-
-[^1]: the text for footnote [^1] goes here.
-
--->

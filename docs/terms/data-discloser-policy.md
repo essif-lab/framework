@@ -19,7 +19,7 @@ A **Data Discloser Policy** is a %%digital policy|policy%% that enables an opera
 Such a policy includes e.g. the kinds of data (and meta-data) that may be disclosed, the conditions that need to be satisfied for actually disclosing such kinds of data, any meta-data (assurances) that maybe added to data being disclosed, etc.
 
 ### Purpose
-The purpose of a **Data Discloser Policy** is to enable the creation of (technical) components that implement the generic %%data discloser|data-discloser%% functionality that will subsequently use such policies to guide their behaviour.
+The purpose of a **Data Discloser Policy** is to enable the creation of (technical) components that implement the generic %%data discloser|data-discloser%% functionality that will subsequently use such policies to guide their behavior.
 
 ### Criteria
 A **Data Discloser Policy** is a %%digital policy|policy%% that enables an operational %%Data Discloser component|data-discloser%% to function in accordance with the %%objectives|objective%% of its %%principal|principal%%.

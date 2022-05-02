@@ -8,14 +8,14 @@ termid: owner
 symphrase: owner{ss}, own{ss}
 status: draft
 grouptags:
-hoverText: "Owner (of an Entity): the role that a Party performs when it is exercizing its legal, rightful or natural title to control that Entity."
-glossaryText: "the role that a %%party^party%% performs when it is exercizing its legal, rightful or natural title to control that %%entity^entity%%."
+hoverText: "Owner (of an Entity): the role that a Party performs when it is exercising its legal, rightful or natural title to control that Entity."
+glossaryText: "the role that a %%party^party%% performs when it is exercising its legal, rightful or natural title to control that %%entity^entity%%."
 date: 20210601
 ---
 
 ### Short Description
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
-An **Owner** is a role that a %%party|party%% performs when it is exercizing its legal, rightful or natural title to control some %%entity|entity%%.
+An **Owner** is a role that a %%party|party%% performs when it is exercising its legal, rightful or natural title to control some %%entity|entity%%.
 
 We interpret 'legal' and 'rightful' as terms that apply to _any_ %%jurisdiction|jurisdiction%% (that is: not just %%legal/national jurisdictions|legal-jurisdiction%%, but also those of other %%parties|party%%, specifically %%organizations|organization%% and %%individuals|human-being%%.
 

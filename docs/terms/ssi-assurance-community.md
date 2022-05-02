@@ -4,7 +4,7 @@ title: "SSI Assurance Community (SSI-AC)"
 displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
 termtype: concept
-termid: ssi-assurance-communit{yies}
+termid: ssi-assurance-community
 symphrase: ssi-assurance-communit{yies}, ac{ss}, assurance-communit{yies}, ssi-ac{ss}, ssi-assurance-communit{yies}
 status: draft
 grouptags:
@@ -14,7 +14,7 @@ date: 20210601
 ---
 
 ### Short Description
-An **Assurance Community** is a %%community|community%% that supports its members as they seek to increase their confidence in the %%SSI infrastructure|ssi-infrastructure%% and/or (specific) %%qualifications|qualified-data%% of the data exchanged through that infrastructure." The nature of a community being that its members share some common ground ensures that this objective may be realized by exploing that existing common ground.
+An **Assurance Community** is a %%community|community%% that supports its members as they seek to increase their confidence in the %%SSI infrastructure|ssi-infrastructure%% and/or (specific) %%qualifications|qualified-data%% of the data exchanged through that infrastructure." The nature of a community being that its members share some common ground ensures that this objective may be realized by exploring that existing common ground.
 
 Here are some functions that an assurance community may contemplate of performing:
 - act as a %%governing party|governance%% for a set of %%credential types|credential-type%%.

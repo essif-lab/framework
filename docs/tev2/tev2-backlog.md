@@ -18,4 +18,4 @@ This backlog of the Terminology Engine v2 (TEv2) is a list of issues (concerns, 
 
 2. a a [curated file] that contains the specification of a [term] must allow for a [header] entry that specifies
   - word forms, such as plurals, that, when encountered while processing a [curated text], will be treated as if the defined term itself were encountered. For example, a term `actor` could have word-forms added such as `actors`, `actor's`, `actor(s)`, etc., that would allow authors to write [actors], [actor's] or [actor(s)] without the need of having to add a `|` (as in [actors|actor]).
-  - regexes that serve the same purpose, e.g. `actor(['']?s|\(s\))?`, or in the case of `party`, a regex such as `part(y|y['']s|ies)`
+  - regexps that serve the same purpose, e.g. `actor(['']?s|\(s\))?`, or in the case of `party`, a regex such as `part(y|y['']s|ies)`
