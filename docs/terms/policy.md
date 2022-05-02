@@ -3,7 +3,7 @@ id: policy
 title: "Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: policy
 symphrase: polic{yies}
 status: draft

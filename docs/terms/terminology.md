@@ -3,7 +3,7 @@ id: terminology
 title: "Terminology"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
-termtype: concept
+type: concept
 termid: terminology
 symphrase: terminolog{yies}
 status: draft

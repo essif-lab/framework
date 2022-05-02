@@ -3,7 +3,7 @@ id: pattern-world-model
 title: "eSSIF-Lab World Model"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: pattern
+type: pattern
 termid: world-model
 symphrase: world-model
 status: draft

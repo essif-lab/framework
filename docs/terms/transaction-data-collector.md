@@ -3,7 +3,7 @@ id: transaction-data-collector
 title: "Transaction Data Collector"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: transaction-data-collector
 symphrase: transaction-data-collector{ss}
 status: draft

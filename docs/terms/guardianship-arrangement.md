@@ -3,7 +3,7 @@ id: guardianship-arrangement
 title: "Guardianship Arrangement"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: guardianship-arrangement
 symphrase: guardianship-arrangement{ss}, guardianship{ss}
 status: draft

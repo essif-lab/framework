@@ -3,7 +3,7 @@ id: concept-file
 title: "Concept-file"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: concept-file
 symphrase: concept-file{ss}
 status: draft

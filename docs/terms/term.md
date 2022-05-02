@@ -3,7 +3,7 @@ id: term
 title: "Term"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
-termtype: concept
+type: concept
 termid: term
 symphrase: term{ss}, word{ss}, phrase{ss}
 status: draft

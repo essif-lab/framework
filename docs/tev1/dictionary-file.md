@@ -2,7 +2,7 @@
 id: dictionaryID
 title: "NameOfNewDictionary"
 scopetag: scopeID
-termtype: dictionary
+type: dictionary
 termid: dictionaryID
 status: draft
 grouptags:

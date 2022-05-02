@@ -3,7 +3,7 @@ id: management
 title: "Management"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: management
 symphrase: management, manager, manages, managed, managed-by, management, managing, managing-part{yies}
 status: draft

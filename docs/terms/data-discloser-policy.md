@@ -3,7 +3,7 @@ id: data-discloser-policy
 title: "Data Discloser Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: data-discloser-policy
 symphrase: data-discloser-polic{yies}
 status: draft

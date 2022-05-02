@@ -3,7 +3,7 @@ id: termID
 title: "NameOfNewConcept"
 displayed_sidebar: essifLabSideBar
 scopetag: scopeID
-termtype: term
+type: term
 termid: termID
 symphrase: termID{ss}
 conceptref: <ExistingConceptScopeID>:<ExistingtermID>

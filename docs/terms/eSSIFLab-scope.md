@@ -2,7 +2,7 @@
 id: eSSIFLab-scope
 title: "Scope: essifLabTerminology"
 scopetag: essifLabTerminology
-termtype: scope
+type: scope
 termid: eSSIFLab
 status: draft
 grouptags:

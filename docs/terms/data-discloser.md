@@ -3,7 +3,7 @@ id: data-discloser
 title: "Data Discloser"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: data-discloser
 symphrase: data-discloser{ss}
 status: draft

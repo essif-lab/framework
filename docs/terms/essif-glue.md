@@ -3,7 +3,7 @@ id: essif-glue
 title: "eSSIF-Glue"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: essif-glue
 symphrase: essif-glue
 status: draft

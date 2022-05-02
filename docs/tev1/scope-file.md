@@ -2,7 +2,7 @@
 id: scopeID
 title: "NameOfNewScope"
 scopetag: scopeID
-termtype: scope
+type: scope
 termid: scopeID
 status: draft
 grouptags:

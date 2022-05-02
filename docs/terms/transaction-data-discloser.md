@@ -3,7 +3,7 @@ id: transaction-data-discloser
 title: "Transaction Data Discloser"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: transaction-data-discloser
 symphrase: transaction-data-discloser{ss}
 status: draft

@@ -2,7 +2,7 @@
 id: dictionary-file
 title: "Dictionary-file"
 scopetag: essifLab
-termtype: dictionary
+type: dictionary
 termid: dictionary-file
 status: draft
 grouptags:

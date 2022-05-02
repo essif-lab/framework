@@ -3,7 +3,7 @@ id: risk-objective
 title: "Risk Objective"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: risk-objective
 symphrase: risk-objective{ss}
 status: draft

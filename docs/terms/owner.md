@@ -3,7 +3,7 @@ id: owner
 title: "Owner"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: owner
 symphrase: owner{ss}, own{ss}
 status: draft

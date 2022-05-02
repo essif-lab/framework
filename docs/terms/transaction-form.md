@@ -3,7 +3,7 @@ id: transaction-form
 title: "Transaction Form"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: transaction-form
 symphrase: transaction-form{ss}
 status: draft

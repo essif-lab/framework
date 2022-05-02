@@ -3,7 +3,7 @@ id: trust
 title: "Trust"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: trust
 symphrase: trust, trusts, trusting, trusted
 status: draft

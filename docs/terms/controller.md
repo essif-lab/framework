@@ -3,7 +3,7 @@ id: controller
 title: "Controller"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: controller
 symphrase: controller{ss}
 status: draft

@@ -3,7 +3,7 @@ id: control-level
 title: "Control level"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: control-level
 symphrase: control-level{ss}
 status: draft

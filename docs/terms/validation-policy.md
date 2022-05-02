@@ -3,7 +3,7 @@ id: validation-policy
 title: "Validation Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: validation-policy
 symphrase: validation-polic{yies}
 status: draft

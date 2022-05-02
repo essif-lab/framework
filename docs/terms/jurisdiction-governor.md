@@ -3,7 +3,7 @@ id: jurisdiction-governor
 title: "Governor (of a Jurisdiction)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: jurisdiction-governor
 symphrase: jurisdiction-governor{ss}
 status: draft

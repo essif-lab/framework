@@ -3,7 +3,7 @@ id: participant
 title: "Participant"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: term
+type: term
 termid: participant
 symphrase: participant{ss}
 conceptref: essifLab:party

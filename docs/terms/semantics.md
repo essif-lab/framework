@@ -3,7 +3,7 @@ id: semantics
 title: "Semantics"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
-termtype: concept
+type: concept
 termid: semantics
 symphrase: semantics
 status: draft

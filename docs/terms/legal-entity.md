@@ -3,7 +3,7 @@ id: legal-entity
 title: "Legal Entity"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: legal-entity
 symphrase: legal-entit{yies}
 status: draft

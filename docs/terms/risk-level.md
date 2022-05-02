@@ -3,7 +3,7 @@ id: risk-level
 title: "Risk level"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: risk-level
 symphrase: risk-level{ss}
 status: draft

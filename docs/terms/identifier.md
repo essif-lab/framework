@@ -3,7 +3,7 @@ id: identifier
 title: "Identifier"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: identifier
 symphrase: identifier{ss}
 status: draft

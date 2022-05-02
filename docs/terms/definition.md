@@ -3,7 +3,7 @@ id: definition
 title: "Definition"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
-termtype: concept
+type: concept
 termid: definition
 symphrase: definition{ss}
 status: draft

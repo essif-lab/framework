@@ -3,7 +3,7 @@ id: compliance
 title: "Compliance"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: compliance
 symphrase: compliance
 status: draft

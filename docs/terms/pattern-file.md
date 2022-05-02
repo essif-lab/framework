@@ -3,7 +3,7 @@ id: pattern-file
 title: "Pattern-file"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: pattern-file
 symphrase: pattern-file
 status: draft

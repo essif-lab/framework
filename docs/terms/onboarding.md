@@ -3,7 +3,7 @@ id: onboarding
 title: "Onboarding"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: onboarding
 symphrase: onboarding, onboard, onboards, onboarded
 status: draft

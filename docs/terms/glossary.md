@@ -3,7 +3,7 @@ id: glossary
 title: "Glossary"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
-termtype: concept
+type: concept
 termid: glossary
 symphrase: glossar{yies}
 status: draft

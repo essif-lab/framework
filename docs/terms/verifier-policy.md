@@ -3,7 +3,7 @@ id: verifier-policy
 title: "Verifier Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: verifier-policy
 symphrase: verifier-polic{yies}
 status: draft

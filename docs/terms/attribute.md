@@ -3,7 +3,7 @@ id: attribute
 title: "Attribute"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: attribute
 symphrase: attribute{ss}
 status: draft

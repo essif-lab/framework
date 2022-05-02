@@ -3,7 +3,7 @@ id: verifier
 title: "Verifier"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: verifier
 symphrase: verifier{ss}
 status: draft

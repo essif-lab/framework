@@ -3,7 +3,7 @@ id: data-collector
 title: "Data Collector"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: data-collector
 symphrase: data-collector{ss}
 status: draft

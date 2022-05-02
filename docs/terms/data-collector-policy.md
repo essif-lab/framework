@@ -3,7 +3,7 @@ id: data-collector-policy
 title: "Data Collector Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: data-collector-policy
 symphrase: data-collector-polic{yies}
 status: draft
