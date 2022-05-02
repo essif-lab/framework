@@ -3,7 +3,7 @@ id: transaction-data-collector-policy
 title: "Transaction Data Collector Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: transaction-data-collector-policy
 symphrase: transaction-data-collector-polic{yies}
 status: draft

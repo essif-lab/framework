@@ -3,7 +3,7 @@ id: scope-of-control
 title: "Scope of Control"
 displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
-termtype: concept
+type: concept
 termid: scope-of-control
 symphrase: scope-of-control, scopes-of-control
 status: draft

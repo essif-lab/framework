@@ -3,7 +3,7 @@ id: pattern-duties-and-rights
 title: "Duties and Rights"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: pattern
+type: pattern
 termid: duties-and-rights
 symphrase: duties-and-rights
 status: draft

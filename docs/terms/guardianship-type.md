@@ -3,7 +3,7 @@ id: guardianship-type
 title: "Guardianship-type"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: guardianship-type
 symphrase: guardianship-type{ss}, guardianship-arrangement-type{ss}
 status: draft

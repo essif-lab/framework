@@ -2,7 +2,7 @@
 id: typeID
 title: "NameOfNewTypeInstance"
 scopetag: scopeID
-termtype: type
+type: type
 termid: typeID
 status: draft
 grouptags:

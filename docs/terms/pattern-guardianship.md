@@ -3,7 +3,7 @@ id: pattern-guardianship
 title: "Guardianship"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: pattern
+type: pattern
 termid: guardianship
 symphrase: guardianship
 status: draft

@@ -2,7 +2,7 @@
 id: essifLab-fcomp-<fcompid>
 title: "<Name of the Functional Component> (Acronym)>"
 scopetag: essifLab
-termtype: fcomp
+type: fcomp
 termid: <fcompid>
 status: draft
 grouptags:

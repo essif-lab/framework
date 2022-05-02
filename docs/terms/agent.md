@@ -3,7 +3,7 @@ id: agent
 title: "Agent"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: agent
 symphrase: agent{ss}, digital-agent{ss}
 status: draft

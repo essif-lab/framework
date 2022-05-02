@@ -3,7 +3,7 @@ id: pattern-identification
 title: "Identification Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: pattern
+type: pattern
 termid: identification
 symphrase: identification
 status: draft

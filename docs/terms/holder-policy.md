@@ -3,7 +3,7 @@ id: holder-policy
 title: "Holder Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: holder-policy
 symphrase: holder-polic{yies}
 status: draft

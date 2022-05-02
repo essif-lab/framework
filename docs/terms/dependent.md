@@ -3,7 +3,7 @@ id: dependent
 title: "Dependent"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: dependent
 symphrase: dependent{ss}
 status: draft

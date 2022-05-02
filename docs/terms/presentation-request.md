@@ -3,7 +3,7 @@ id: presentation-request
 title: "Presentation Request"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: presentation-request
 symphrase: presentation-request{ss}, verifiable-presentation-request{ss}
 status: draft

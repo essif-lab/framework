@@ -3,7 +3,7 @@ id: jurisdiction
 title: "Jurisdiction"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: jurisdiction
 symphrase: jurisdiction{ss}
 status: draft

@@ -3,7 +3,7 @@ id: normative-framework
 title: "Normative framework"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: normative-framework
 symphrase: normative-framework{ss}
 status: draft

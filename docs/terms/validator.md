@@ -3,7 +3,7 @@ id: validator
 title: "Validator"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: validator
 symphrase: validator{ss}
 status: draft

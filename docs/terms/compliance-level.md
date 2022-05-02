@@ -3,7 +3,7 @@ id: compliance-level
 title: "Compliance level"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: compliance-level
 symphrase: compliance-level{ss}
 status: draft

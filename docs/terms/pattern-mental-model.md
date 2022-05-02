@@ -3,7 +3,7 @@ id: pattern-mental-model
 title: "Mental Models"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
-termtype: pattern
+type: pattern
 termid: mental-model
 symphrase: mental-model
 status: draft

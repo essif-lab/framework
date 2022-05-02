@@ -29,7 +29,7 @@ The ([yaml](https://yaml.org/spec/1.2.2/)) header starts at the top of the [cura
 id: <idtext>
 title: <Title Text>
 scopetag: <scopeid>
-termtype: <type>
+type: <type>
 termid: <typeid>
 status: <stage>
 grouptags:

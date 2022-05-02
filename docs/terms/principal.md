@@ -3,7 +3,7 @@ id: principal
 title: "Principal"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: principal
 symphrase: principal{ss}
 status: draft

@@ -3,7 +3,7 @@ id: decision
 title: "Decision"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: decision
 symphrase: decision{ss}
 status: draft

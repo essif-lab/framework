@@ -3,7 +3,7 @@ id: corpus
 title: "Corpus of Terminology"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
-termtype: concept
+type: concept
 termid: corpus
 symphrase: corpus, corpus-of-terminology
 status: draft

@@ -3,7 +3,7 @@ id: identify
 title: "Identify"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: identify
 symphrase: identify, identifies, identifying, identifiable, identified, identification
 status: draft

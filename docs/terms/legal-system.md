@@ -3,7 +3,7 @@ id: legal-system
 title: "Legal System"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: legal-system
 symphrase: legal-system{ss}
 status: draft

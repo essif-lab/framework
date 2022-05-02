@@ -3,7 +3,7 @@ id: peer-party
 title: "Peer Party"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: term
+type: term
 termid: peer-party
 symphrase: peer-part{yies}
 conceptref: essifLab:party

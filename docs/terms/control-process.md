@@ -3,7 +3,7 @@ id: control-process
 title: "Control Process"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: control-process
 symphrase: control-process, control-processes
 status: draft

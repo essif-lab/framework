@@ -3,7 +3,7 @@ id: mandate
 title: "Mandate"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: mandate
 symphrase: mandate{ss}, mandated, mandating, mandator{ss}, mandatee{ss}
 status: draft

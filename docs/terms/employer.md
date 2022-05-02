@@ -3,7 +3,7 @@ id: employer
 title: "Employer"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: employer
 symphrase: employer{ss}
 status: draft

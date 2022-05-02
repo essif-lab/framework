@@ -3,7 +3,7 @@ id: framework
 title: "Framework (Conceptual)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
-termtype: concept
+type: concept
 termid: framework
 symphrase: framework{ss}, conceptual-framework{ss}
 status: draft

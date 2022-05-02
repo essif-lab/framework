@@ -3,7 +3,7 @@ id: authority
 title: "Authority (Centralized or Decentralized)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: authority
 symphrase: authorit{yies}
 status: draft

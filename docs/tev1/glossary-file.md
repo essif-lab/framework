@@ -2,7 +2,7 @@
 id: glossaryID
 title: "NameOfNewGlossary"
 scopetag: scopeID
-termtype: glossary
+type: glossary
 termid: glossaryID
 status: draft
 grouptags:

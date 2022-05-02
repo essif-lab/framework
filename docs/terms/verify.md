@@ -3,7 +3,7 @@ id: verify
 title: "Verify"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: verify
 symphrase: verify, verifies, verified, verifying
 status: draft

@@ -3,7 +3,7 @@ id: terminology-process
 title: "Terminology Process"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
-termtype: concept
+type: concept
 termid: terminology-process
 symphrase: terminology-process, terminology-processes
 status: draft

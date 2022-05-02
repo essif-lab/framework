@@ -3,7 +3,7 @@ id: documentation-interop
 title: "Documentation Interoperability"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: documentation-interop
 symphrase: documentation-interop
 status: draft

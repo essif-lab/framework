@@ -3,7 +3,7 @@ id: employment-contract
 title: "Employment Contract"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: employment-contract
 symphrase: employment-contract{ss}
 status: draft

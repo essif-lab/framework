@@ -3,7 +3,7 @@ id: entity
 title: "Entity"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: entity
 symphrase: entit{yies}
 status: draft

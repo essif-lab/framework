@@ -3,7 +3,7 @@ id: expectation
 title: "Expectation"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: expectation
 symphrase: expectation{ss}
 status: draft

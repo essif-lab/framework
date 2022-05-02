@@ -3,7 +3,7 @@ id: qualified-data
 title: "Qualified Data"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: qualified-data
 symphrase: qualified-data
 status: draft

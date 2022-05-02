@@ -3,7 +3,7 @@ id: pattern-jurisdiction
 title: "Jurisdictions"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: pattern
+type: pattern
 termid: jurisdiction
 symphrase: jurisdiction
 status: draft

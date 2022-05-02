@@ -3,7 +3,7 @@ id: conceptID
 title: "NameOfNewConcept"
 displayed_sidebar: essifLabSideBar
 scopetag: scopeID
-termtype: concept
+type: concept
 termid: conceptID
 symphrase: conceptID{ss}
 status: draft

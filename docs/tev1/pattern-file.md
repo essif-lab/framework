@@ -3,7 +3,7 @@ id: patternID
 title: "Pattern: PatternName"
 displayed_sidebar: essifLabSideBar
 scopetag: scopeID
-termtype: pattern
+type: pattern
 termid: patternID
 symphrase: patternID{ss}
 status: draft

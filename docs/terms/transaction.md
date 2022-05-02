@@ -3,7 +3,7 @@ id: transaction
 title: "Transaction"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: transaction
 symphrase: transaction{ss}
 status: draft

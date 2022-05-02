@@ -3,7 +3,7 @@ id: communication-session
 title: "Communication Session"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: communication-session
 symphrase: communication-session{ss}, digital-communication-session{ss}
 status: draft

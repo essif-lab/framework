@@ -3,7 +3,7 @@ id: pattern-trust
 title: "Trust Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: pattern
+type: pattern
 termid: trust
 symphrase: trust
 status: draft

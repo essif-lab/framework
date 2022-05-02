@@ -3,7 +3,7 @@ id: owned
 title: "Owned"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: concept
+type: concept
 termid: owned
 symphrase: owned
 status: draft

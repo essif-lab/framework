@@ -3,7 +3,7 @@ id: peer-agent
 title: "Peer Agent"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termtype: term
+type: term
 termid: peer-agent
 symphrase: peer-agent{ss}
 conceptref: essifLab:Agent
