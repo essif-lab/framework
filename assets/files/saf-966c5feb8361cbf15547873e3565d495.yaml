@@ -1,0 +1,43 @@
+---
+# meta data for the terminology that this file holds the administration for
+terminology:
+  scopetag: tev2 # identifier that curators have determined for this terminology
+  website: https://essif-lab.github.io/framework/docs/tev2/tev2-overview # home page of the terminology
+  slack: https://trustoverip.slack.com/archives/C01BBNGRPUH # slack channel for discussions
+  issues: https://github.com/essif-lab/framework/issues # issues reporting and handling
+  curator: # contacting individual curators
+  - name: RieksJ
+    email: # we split up the email address to reduce the likelihood of the address being harvested for spamming
+      id: rieks.joosten
+      at: tno.nl
+# third party scopes that terminology may be inherited/copied from
+scopes: # The first scopetag should be about the terminology administrated by this file
+- scopetags: # definition of tag(s) that are used within this scope to refer to a specific terminology
+  - tev2
+  scopedir: https://github.com/essif-lab/framework/tree/master/docs/tev2
+- scopetags: # definition of tag(s) that are used within this scope to refer to a specific terminology
+  - essiflab
+  - essif-lab
+  scopedir: https://github.com/essif-lab/framework/tree/master/docs
+- scopetags: # definition of tag(s) that are used within this scope to refer to a specific terminology
+  - ctwg
+  - toip-ctwg
+  scopedir: https://github.com/trustoverip/ctwg
+# glossaries, and their default generation
+glossaries:
+  url: https://github.com/essif-lab/framework/tree/master/docs/tev2/glossaries
+# Default glossary definitions - they should be (re)created whenever something changes
+  definitions:
+  - version: v0.9.4
+    terms: # for syntax, see [reference needed]
+    - terminology@essif-lab
+    - "[party@essif-lab]"
+    - "[community@essif-lab]"
+    - tev2@tev2
+    glossary: # Glossaries can be of any type supported by the Glossary Generation Tool
+    - glossary-type: toip
+      header: toip-hrg-header.html
+      footer: toip-hrg-footer.html
+# Rendering a terminology allows glossaries to link to individual terms
+  rendering:
+    tool: Docusaurus
