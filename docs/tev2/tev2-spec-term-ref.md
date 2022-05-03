@@ -1,7 +1,8 @@
 ---
-id: tev2-struct-ctext-term-refs
-title: TEv2 - Using terms, and referencing their definitions in a Curated Text
-sidebar_label: Term references
+id: tev2-spec-term-ref
+title: Term References
+sidebar_label: Referencing Terms
+hide_table_of_contents: true
 scopetag: tev2
 date: 20220303
 ---

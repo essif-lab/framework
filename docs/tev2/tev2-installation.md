@@ -1,7 +1,7 @@
 ---
 id: tev2-installation
-title: TEv2 - Installation
-sidebar_label: Installation
+title: Installation
+hide_table_of_contents: true
 scopetag: tev2
 date: 20220303
 ---
@@ -12,10 +12,27 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 The entire section on Terminology Engine v 2 (TEv2) is still under construction
 :::
 
-TEv2 assumes that the [curated@] data resides in an existing github repository (repo), and that [curated file@] should be processable by [Docusaurus v2](https://docusaurus.io/docs/docs-introduction), which is a static site generator for web sites that document all sorts of guidance, specifications, etc.
+TEv2 is a tool for [curating@] terminology-related data from the perspective of a single [scope@]. Installation comprises
+- setting up, or appointing an (online) directory that will serve as a [scope directory@];
+- installing the [toip-terminology-toolbox](toip-terminology-toolbox);
+- integrating the [toip-terminology-toolbox](toip-terminology-toolbox) with other tools, such as a CI/CD pipeline on github or gitlab, static site generators such as [github pages](https://pages.github.com/) or [Docusaurus](https://docusaurus.io/docs/docs-introduction), etc.
 
-:::info Editor's note
-This page needs texts that describe how curators can
-- create a new github repo with a docusaurus intallation that works in combination with TEv2;
-- convert their existing github repo so that it will work with TEv2 (which should include the necessary guidance regarding the installation of Docusaurus as well)
+### Structure of Scope Directories
+
+Depending on the other tooling that is going to be used, a [scope directory@] has to be specified that is part of the (online) directory in which the [terminology@] has to be used. The [scope's@] [scope administration file (SAF)](saf@) specifies whatever needs to be administered for that [scope@]; this file is maintained by the [curators@] of the scope (using a regular text editor). 
+
+[Curators@] must also specify a location (directory) within the [scope directory@] where [glossaries@] are being maintained. This location holds the [Glossary Definition Files (GDFs)](gdf@) that are used to generate [glossaries@] for different purposes, as needed. Also, this directory will (by default) contain the [glossaries@] that are generated.
+
+### Integrating Scope Directories and the ToIP Terminology Toolbox
+
+:::info Editor's Note
+Content to be produced
+:::
+
+### Integrating Scope Directories and Third Party Rendering Tools
+
+Terminological artifacts are intended to also be used by/within third party rendering tools, such as [github pages](https://pages.github.com/), [Docusaurus](https://docusaurus.io/docs/docs-introduction), or LaTex
+
+:::info Editor's Note
+Content to be produced
 :::

@@ -1,7 +1,6 @@
 ---
 id: toip-terminology-toolbox
-title: ToIP Terminology Toolbox
-sidebar_label: ToIP TT-Tools
+title: ToIP TT-Tools Proposal
 displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220421
@@ -25,7 +24,7 @@ The initial/prototype versions of tools may not have implemented everything (e.g
 
     - the **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes markdown files that contain so-called [term refs](term-ref@ctwg) (e.g. \[`terms community`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](term-ref@ctwg) are converted to regular [Markdown links](https://www.markdownguide.org/basic-syntax/#links), allowing such files to be further processed, e.g. by Github pages, Docusaurus or similar tools.
 
-    - the **Glossary Generation Tool ([GGT](#ggt))** takes a [Glossary Definition File (GDF)](#gdf) as input, and generates both a **Machine Readable [Glossary](glossary@ctwg) ([MRG](#mrg))** and a **Human Readable [Glossary](glossary@ctwg)**, both of which render the [terminology](@ctwg) of the [scope](@ctwg) from which the [GGT](#ggt) is called. The[(GDF)](#gdf) specifies the set of [terms](term@ctwg) to be included, and for the HRG also how they are to be rendered.
+    - the **Glossary Generation Tool ([GGT](#ggt))** takes a [Glossary Definition File (GDF)](#gdf) as input, and generates both a **Machine Readable [Glossary](@ctwg) ([MRG](#mrg))** and a **Human Readable [Glossary](@ctwg)**, both of which render the [terminology](@ctwg) of the [scope](@ctwg) from which the [GGT](#ggt) is called. The[(GDF)](#gdf) specifies the set of [terms](term@ctwg) to be included, and for the HRG also how they are to be rendered.
 
 2. setup a CI pipe for generating [glossaries](glossary@ctwg) for the `#toip` and `@ctwg` [scopes](scope@ctwg), that will (initially) generate a [glossary](@ctwg) upon any successful commit to the master-branch of the associated repo/wiki, so we can see how that works and what (else) we need.
 
@@ -35,31 +34,28 @@ The initial/prototype versions of tools may not have implemented everything (e.g
 
 ## Term References {#termref}
 
-A [term ref](@ctwg) is similar to a [Markdown link](https://www.markdownguide.org/basic-syntax/#links), but rather than linking to some complicated URL or fragment, it refers/links to a specific descriptive text (e.g. a [definition](definition@ctwg), purpose, or example) that is associated with (a specific version of) a [(scoped) term](scoped-term@ctwg), which is [identified](identify@essiflab) by its [scope](@ctwg) and the [term](@ctwg) (label, text).
+A [term ref](@ctwg) is similar to a [Markdown link](https://www.markdownguide.org/basic-syntax/#links), but rather than linking to some complicated URL or fragment, it refers/links to a specific descriptive text (e.g. a [definition](@ctwg), purpose, or example) that is associated with (a specific version of) a [(scoped) term](scoped-term@ctwg), which is [identified](identify@essiflab) by its [scope](@ctwg) and the [term](@ctwg) (label, text).
 
 The complete, generic structure[^1] of a [term ref](@ctwg) is: \[`show text`\](`id`#`heading-id`@`scopetag`:`vsn`), where:
 - `show-text` (required) is the text that will be highlighted/emphasized to indicate it is linked. It must not contain the characters `@` or `]`.
 - `id` (optional) is a text that [identifies](identify@essiflab) the [(scoped) term](scoped-term@ctwg) in the part of the [corpus](@ctwg) that contains the [terminology](@ctwg) of a specified [scope](@ctwg). If omitted, its value will be assigned the default, which is typically `show-text` in which every character in the range [A-Z] is converted to lower-case, and every sequence of characters, all of which are not in [A-Z], [a-z], `_` or `-`, are converted to `-`. `id` shall only contain characters in regex `[a-z0-9_-]`.
-- `heading-id` (optional) is a text that [identifies](identify@essiflab) a particular kind of descriptive text that is associated with the [term](term@ctwg). If omitted (in which case the preceding `#`-character may also be omitted), the [term ref](@ctwg) will by default dereference to the text of its [glossary](@ctwg) entry. While it is envisaged that `heading-id` must be a text from a predefined set of allowed/supported texts (e.g. `purpose`, `criteria`, `example-3`), the precise semantics remain to be specified. For now, `heading-id` shall be constrained to only contain characters in regex `[a-z0-9_-]`.
+- `heading-id` (optional) is a text that [identifies](identify@essiflab) a particular kind of descriptive text that is associated with the [term](@ctwg). If omitted (in which case the preceding `#`-character may also be omitted), the [term ref](@ctwg) will by default dereference to the text of its [glossary](@ctwg) entry. While it is envisaged that `heading-id` must be a text from a predefined set of allowed/supported texts (e.g. `purpose`, `criteria`, `example-3`), the precise semantics remain to be specified. For now, `heading-id` shall be constrained to only contain characters in regex `[a-z0-9_-]`.
 - `scopetag` (optional) is a [tag](@ctwg) that [identifies](identify@essiflab) the [scope](@ctwg) in the [terminology](@ctwg) of which the [(scoped) term](scoped-term@ctwg) is contained. If omitted, a default [scope](@ctwg) will be used, which is typically the [scope](@ctwg) within which the document containing the [term ref](@ctwg) is being maintained. Note that the preceding `@` sign may never be omitted because as it serves the purpose to distinguish [term refs](@ctwg) from other [Markdown links](https://www.markdownguide.org/basic-syntax/#links). `scopetag` shall only contain characters in regex `[a-z0-9_-]`.
 - `vsn` (optional) is a text that [identifies](identify@essiflab) the version of the [terminology](@ctwg) in the [scope](@ctwg). If omitted (in which case the preceding `:`-character may also be omitted), its value will be the default, which is `latest`, which means the [term ref](@ctwg) points to the most recently established/published version of the [term](term). With the exception of `latest`, the precise semantics remain to be specified. `vsn` shall only contain characters in regex `[a-z0-9_-]`. We may need to discuss whether or not this should be changed to the version of the [glossary](@ctwg) rather than the version of the [term](@ctwg).
+
+Regexes for this syntax are specified in the [TRRT](#trrt) section.
 
 Here is an example: `[definitions](definition@ctwg)` is a reference to the default descriptive text associated with the latest version of the [term](@ctwg) that is identified in the [scope](@ctwg) by the label `definition`.
 
 Tools MUST implement the typical default behaviors as specified above. However, they MAY have means, e.g. by configuration, to deviate from such behaviors. For example, a tool may have more sophisticated ways to derive a `id` from a `show text`, e.g. to accommodate for plural forms (of nouns), or conjugate forms (for verbs).[^2]
 
--------
-NOTE: THE EXACT CONSTRAINTS (I.E.: REGEXES) FOR `show-text`, `id`, `vsn` AND `scopetag` MAY NEED TO BE FURTHER DISCUSSED AND CHOICES DOCUMENTED.
-
--------
-
 ### Alternative notation {#termref-alt}
 
 It is convenient for authors to be able to use the '@`scopetag`' part of a [term ref](@ctwg) immediately behind the `show text` within the square brackets (`[` and `]`), and leave out the parentheses and the text in between if all the other items are omitted.
 
-This is particularly useful in the vast majority of cases, where the default processing of `show-text` results in `id` and `heading-id` is absent. Examples of this are `[definition](definition@ctwg)`, or `[term ref](term-ref@ctwg)`.
+This is particularly useful in the vast majority of cases, where the default processing of `show-text` results in `id` and `heading-id` is absent. Examples of this are `[definition](@ctwg)`, or `[term ref](term-ref@ctwg)`.
 
-The usefulness becomes even greater as the [TRRT](#trrt)
+The usefulness becomes even greater as the [TRRT](#trrt) also implements more sophisticated ways to derive a `id` from a `show text`, e.g. to accommodate for plural forms (of nouns), or conjugate forms (for verbs).[^2]
 
 This leads to an alternative notation that can be used in addition to the previously specified notation. Here is the alternative syntax and its equivalent counterpart:
 
@@ -69,19 +65,19 @@ This leads to an alternative notation that can be used in addition to the previo
 | \[`show text`@`scopetag`\] | \[`show text`\](`show-text`@`scopetag`) |
 | \[`show text`@`scopetag`:`vsn`\](`id`#`heading-id`) | \[`show text`\](`id`#`heading-id`@`scopetag`:`vsn`) |
 
-In the last row of the above table, `id` and `#heading-id` are optional. Thus, `[definition@ctwg]()` is equivalent with `[definition@ctwg]` and with `[definition](definition@ctwg)`.
+In the last row of the above table, `id` and `#heading-id` are optional. Thus, `[definition@ctwg]()` is equivalent with `[definition@ctwg]` and with `[definition](@ctwg)`. Regexes for this alternative syntax are specified in the [TRRT](#trrt) section.
 
 ## Scope Directories and their contents
 
-This document assumes that anyone that has some dealing with [terminology](@ctwg), is doing so within the context of a single [scope](@ctwg), and that all related documents (specifications, white papers, terminological artifacts, etc.) are organized in a single directory that can be (read) accessed by tools that are called from within other [scopes](scope@ctwg). We use the [term](term@ctwg) **[scope](definition@ctwg) directory** to refer to this directory of a specific [scope](@ctwg). Thus, documents that belong to a [scope](@ctwg) are expected to reside (or have a reference/link file) in its scope directory.
+This document assumes that anyone that has some dealing with [terminology](@ctwg), is doing so within the context of a single [scope](@ctwg), and that all related documents (specifications, white papers, terminological artifacts, etc.) are organized in a single directory that can be (read) accessed by tools that are called from within other [scopes](scope@ctwg). We use the [term](@ctwg) **[scope](@ctwg) directory** to refer to this directory of a specific [scope](@ctwg). Thus, documents that belong to a [scope](@ctwg) are expected to reside (or have a reference/link file) in its [scope directory@].
 
-Every [scope](@ctwg) has an **administration-object-file (AOF)** that is located in the root of the scope directory. This file is manually maintained by the [curator(s)](curator@ctwg) of the [scope](@ctwg)). It contains at least:
-- the set of [scope tags](tag@ctwg) that [identify](@essiflab) the [scopes](scope@ctwg) from which [terms](term@ctwg) may be used (imported), and for each of them the URL of its associated scope directory; this set SHOULD include the [scope tag](tag@ctwg) (and associated URL) that the [curator(s)](curator@ctwg) of the [scope](@ctwg) have chosen for the [scope](@ctwg) itself.
+Every [scope](@ctwg) has an **scope administration file (SAF)** that is located in the root of the [scope directory@]. This file is manually maintained by the [curator(s)](curator@ctwg) of the [scope](@ctwg)). It contains at least:
+- the set of [scope tags](tag@ctwg) that [identify](@essiflab) the [scopes](scope@ctwg) from which [terms](term@ctwg) may be used (imported), and for each of them the URL of its associated [scope directory@]; this set SHOULD include the [scope tag](tag@ctwg) (and associated URL) that the [curator(s)](curator@ctwg) of the [scope](@ctwg) have chosen for the [scope](@ctwg) itself.
 - the URL of the directory in which the [glossaries](glossary@ctwg) of the [scope](@ctwg), and the associated [GDFs](#gdf), are located.
 - the name of the [GDFs](#gdf) that specifies the particulars for generating both the [MRG](#mrg) and [HRG](#hrg) that are to be generated whenever an update of the [scope's](scope@ctwg) part of the [corpus](@ctwg) is done.
 - a mail address, github account or other text that enables people to contact (one of) the [curators](curator@ctwg).
 
-Every [scope](@ctwg) has a set of (generated) [MRGs](#mrg) and [HRGs](#hrg) that are located in (a subdirectory of) the [scope's](scope@ctwg) scope directory, the URL of which is found in the [scope's](scope@ctwg) AOF. MRGs have the following file names:
+Every [scope](@ctwg) has a set of (generated) [MRGs](#mrg) and [HRGs](#hrg) that are located in (a subdirectory of) the [scope's](scope@ctwg) [scope directory@], the URL of which is found in the [scope's](scope@ctwg) SAF. MRGs have the following file names:
 - `glossary` is the latest/most recently generated HRG of the [scope](@ctwg).
 - `glossary.latest` is the latest/most recently generated MRG of the [scope](@ctwg).
 - `hrg.<vsn>` and `mrg.<vsn>`, are specific versions of a HRG and MRG respectively, where `<vsn>` is the [versiontag](tag@ctwg) that [identifies](identify@essiflab) the version of the [terminology](@ctwg) that they render.
@@ -97,14 +93,14 @@ Every MRG:
 - contains a (sorted) list of (glossary) entries, where each entry contains all data related to a single [term](@ctwg), and can be identified by its `id` (that typically, but not necessarily, is the same as the [term](@ctwg) - for example, a [term](@ctwg) that contains whitespace would have a `id` where the whitespace is replaced by a `-` character).
 
 A glossary entry for an MRG SHOULD accommodate for (at least) the following fields:
-- `scopetag` (required): the [tag](@ctwg) of the [scope](@ctwg) in which the [term](term@ctwg) is defined (as a [glossary](@ctwg) not only contains [terms](term@ctwg) that are defined in the [scope](@ctwg) itself, but also [terms](term@ctwg) that are defined in other [scopes](@ctwg).
+- `scopetag` (required): the [tag](@ctwg) of the [scope](@ctwg) in which the [term](@ctwg) is defined (as a [glossary](@ctwg) not only contains [terms](term@ctwg) that are defined in the [scope](@ctwg) itself, but also [terms](term@ctwg) that are defined in other [scopes](@ctwg).
 - `id` (required): the text that [identifies](identify@essiflab) the [term](@ctwg) within the context of the MRG, and can also be used as an `id` in a [term ref](term-ref@ctwg). The `id` shall only contain characters in regex `[a-z0-9_-]`. For [terms](term@ctwg) of other types than 'concept', the `id` would typically be of the form `<type>-<termid>`, e.g. as in `pattern-identify`.
 - `termtype` (optional): a text that identifies the kind of entity that the [term](@ctwg) refers to. The `termtype` shall only contain characters in regex `[a-z0-9_-]`. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`). When omitted, it defaults to `concept`.
 - `termid`: a text that identifies the specific entity of the `termtype` (as specified above). The `termid` shall only contain characters in regex `[a-z0-9_-]`. When omitted, its value is derived from the field `id` by matching that with the (CPRE) regex `(?P=<type>)-(?P<termid>.+?)`; if there is a match, the value is the named group `<termid>`. If there is no match, the value is `id` itself.
 - `grouptags`: a list of [tags](tag@ctwg), each of which identifies a group of [terms](term@ctwg) to which this [term](@ctwg) belongs. Tags must satisfy the (PCRE) regex `#[a-z0-9_-]+`.
 - `date`: date of the last update of the [term](@ctwg)-related data, in the form yyyymmdd.
 - `termvsn` (optional): a text that identifies the version of the [term](@ctwg) itself. It is not to be confused with the version of a [terminology](@ctwg) that may contain that [term](@ctwg). The `termvsn` shall only contain characters in regex `[a-z0-9_-]`.
-- `commit` (optional): the latest (git) commit hash of the [term's](term@ctwg) [definition](definition@ctwg).
+- `commit` (optional): the latest (git) commit hash of the [term's](term@ctwg) [definition](@ctwg).
 - `symphrase` (optional): a list of texts that the [TRRT](#trrt) can use to convert `show texts` into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs). The `symphrase` elements (texts) shall only contain characters in regex `[a-z0-9_-{}]`.
 - `status` (optional): a text that identifies the [status of the term](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). Allowed values are: 'proposed', 'approved' or 'deprecated'.
 - `termname` (required): the text that is used for rendering the [term](@ctwg) in a human readable document. It typically contains human readable characters. It may include uppercase and lowercase characters, spaces, etc. (which are not allowed in the `termid` field).
@@ -127,7 +123,7 @@ The particulars of creating HRGs are currently outside the scope of this documen
 
 ## Glossary Definition Files (GDFs) {#gdf}
 
-specifies the contents (i.e. the set of [terms](term@ctwg) to be included) of a particular [MRG](#mrg) and [HRG](#hrg), and for the [HRG](#hrg) also how it is to be rendered, e.g. the HTML code for the header and footer, or the location of a template to be used, etc. As we expect [HRGs](#hrg) to be produced in combination with other tooling, such as github pages, docusaurus, etc., the final URL of where it resides may differ from the directory in which a [HRG](#hrg) is created.
+A **Glossary Definition File [(GDF)](gdf@)** specifies the contents (i.e. the set of [terms](term@ctwg) to be included) of a particular [MRG](#mrg) and [HRG](#hrg), and for the [HRG](#hrg) also how it is to be rendered, e.g. the HTML code for the header and footer, or the location of a template to be used, etc. As we expect [HRGs](#hrg) to be produced in combination with other tooling, such as github pages, docusaurus, etc., the final URL of where it resides may differ from the directory in which a [HRG](#hrg) is created.
 
 Every [glossary](@ctwg) is said to 'render' the [terminology](@ctwg) of a particular [scope](@ctwg), i.e. the (alphabetically) sorted list of [terms](term@ctwg) that are [defined](definition@ctwg) within that scope. Note that the [definition](@ctwg) associated with a [term](@ctwg) may, but need not be, part of the same [scope](@ctwg) as that of the [terminology](@ctwg) that includes the [term](@ctwg).
 
@@ -140,18 +136,22 @@ The contents of a [glossary](@ctwg) consists of one entry (which we call **gloss
 The syntax that is used for selecting [terms](term@ctwg) of another [scope](@ctwg) is:
 - by means of a [term ref](@ctwg), where the `show text` specifies the name of the [term](@ctwg) as it will be used in the [scope](@ctwg), and the [definition](@ctwg) (and other terminological artifacts of that [term](@ctwg), such as purpose, examples, etc.) are 'inherited' from the [term](@ctwg) that is being referenced.
 - by means of the so-called 'tagslist-syntax', which is `tagslist`@`scopetag`:`vsn` (e.g. `paa,terminology@essiflab:latest`) where:
-  - @`scopetag` (required) identifies a [scope](@ctwg) in the AOF, thus allowing tools to obtain (the specified version, or if omitted, the latest version of) the MRG of that [scope](@ctwg) from which to extract the selected entries. In the example, this is `essiflab`.
-  - `vsn` (optional) is the specific version of the MRG from which the [terms](@ctwg) are selected. If omitted (in which case the preceding `:` may also be omitted), the latest version is specified. The example specifies the `latest` version of the essiflab [glossary](@ctwg)
-  - `tagslist` (optional) is a comma-separated list of [(group)tags](tag@ctwg) (e.g. `paa,terminology`) where each grouptag (`paa` and `terminology`) specifies that every [term](@ctwg) in the MRG of the specified [scope](@ctwg) that has any of these [(group)tags](tag@ctwg) in its `grouptags` field, must be selected.
+  - @`scopetag` (required) identifies a [scope](@ctwg) in the SAF, thus allowing tools to obtain (the specified version, or if omitted, the latest version of) the MRG of that [scope](@ctwg) from which to extract the selected entries. In the example, this is `essiflab`.
+  - `vsn` (optional) is the specific version of the MRG from which the [terms](@ctwg) are selected. If omitted (in which case the preceding `:` may also be omitted), the latest version is specified. The example specifies the `latest` version of the essiflab [glossary](@ctwg).
+  - `tagslist` (optional) is a comma-separated list of[tags](tag@ctwg) (e.g. `paa,terminology,ctwg`). If the tag is a [scopetag](tag@ctwg), every [term](@ctwg) in the MRG of the specified [scope](@ctwg) are selected. If the tag is a [grouptag](tag@ctwg), then every [term](@ctwg) in the MRG of the specified [scope](@ctwg) that is associated with that [grouptag](tag@ctwg) is selected.
 
 A GDF contains a sequence of such selection syntaxes that will be processed in the order they are specified (see the [GGT](#ggt) for details on how processing takes place). Thus, in order to 'rename' a [term](@ctwg) that was imported using the tagslist-syntax, it suffices to use the [term ref](@ctwg) that import that [term](@ctwg) again.
 
 Optionally, syntax can be added to remove previously selected [terms](@ctwg) , e.g. by allowing the `-` character to precede one of the selection syntaxes. The idea is then that a list of such (de)selection syntaxes is incrementally processed, and when a `-`-syntax is encountered, the [terms](@ctwg) that would have otherwise been selected will then be removed from the selection.
 
 We leave the specification of additional syntax for GDFs, e.g. for the inclusion of headers, footers and other stuff that is specific for the generation of [HRGs](#hrg), as work to be done.
+
+:::info Editor's Note
+Currently, every [MRG](#mrg)/[HRG](#hrg) is to be accompanied by a specific [GDF]{#gdf} that specifies their contents. Is seems more practical to say that one such specification - i.e. for the default [MRG](#mrg)/[HRG](#hrg), would be part of the [SAF@], and any other such specifications (which we might then perhaps limit to just HRG-specifications) might then require their specific [GDF]{#gdf}.
+:::
 ## Glossary Generation Tool (GGT) {#ggt}
 
-The **Glossary Generation tool** takes a glossary definition file (GDF) as input (that specifies e.g. [terms](term@ctwg) to be included from other [terminologies](terminology@ctwg), ways in which [terms](term@ctwg) are to be rendered, etc.), and generates a (machine readable, and optionally also a human readable) [glossary](@ctwg) that renders the [terminology](@ctwg) of the [scope](@ctwg) from which the [GGT](#ggt) is called.
+The **Glossary Generation tool ([GGT](#ggt))** takes a glossary definition file (GDF) as input (that specifies e.g. [terms](term@ctwg) to be included from other [terminologies](terminology@ctwg), ways in which [terms](term@ctwg) are to be rendered, etc.), and generates a (machine readable, and optionally also a human readable) [glossary](@ctwg) that renders the [terminology](@ctwg) of the [scope](@ctwg) from which the [GGT](#ggt) is called.
 
 The [GGT](#ggt) first creates an [MRG](#mrg) (which does the 'heavy lifting'), and from that, a [HRG](#hrg) will be created. Different [HRGs](#hrg), i.e. different human-readable renderings of the [terminology](@ctwg) may be created from the same [MRG](#mrg).
 ### Creating an MRG
@@ -215,13 +215,14 @@ the **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes markdown files th
 
 Finding a [term ref](@ctwg) in the file can be done by using a regular expression (regex).
 - For the original syntax, you can use the PCRE regex
-  - ``(?<=[^`\\])\[(?=[^@\]]+\]\([^\)]*@[^@\)]*\))`` to find the `[` that starts a [term ref](@ctwg).- ``(?P<showtext>.+?)\]\((?P<id>[a-z0-9_-]+?)(?:#(?P<headingid>[a-z0-9_-]+?))?@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsn>[a-z0-9_-]+?))?\)`` to find the various parts of the [term ref](@ctwg) as (named) capturing groups.
+  - ``(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))`` to find the `[` that starts a [term ref](@ctwg), and
+  - ``(?P<showtext>.+?)\]\((?P<id>[a-z0-9_-]+?)(?:#(?P<headingid>[a-z0-9_-]+?))?@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsn>[a-z0-9_-]+?))?\)`` to find the various parts of the [term ref](@ctwg) as (named) capturing groups.
 - For the alternative syntax, you can use the PCRE regex
-  - ``(?<=[^`])\[(?=[^@\]]+@[^@\]]*\](?:\([^@\)]+\))?)`` to find the `[` that starts a [term ref](@ctwg).
-  - ``(?P<showtext>.+?)@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsn>[a-z0-9_-]+?))?\](?P<ref>\((?P<id>[a-z0-9_-]*)(?::(?P<headingid>[a-z0-9_-]+?))?\))?`` to subsequently obtain the various fields as (named) capturing groups from the PCRE regex.
+  - ``(?<=[^`\\])\[(?=[^@\]]+@[:a-z0-9_-]*\](?:\([#a-z0-9_-]+\))?)`` to find the `[` that starts a [term ref](@ctwg), and
+  - ``(?P<showtext>.+?)@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsn>[a-z0-9_-]+?))?\](?P<ref>\((?P<id>[a-z0-9_-]*)(?:#(?P<headingid>[a-z0-9_-]+?))?\))?`` to subsequently obtain the various fields as (named) capturing groups from the PCRE regex.
 
 Notes:
-- You can use [debuggex](https://www.debuggex.com/) to see what these regexps do (don't forget to choose PCRE as the regex flavor to work with).
+- You can use [debuggex](https://www.debuggex.com/) to see what these regexps do (make sure you choose PCRE as the regex flavor to work with).
 - These regexps should be improved to cater for exceptional situations, so that they do not match e.g. pieces of code (such as the regex specifications we presented above). Alternatively, [TRRT](#trrt) might specify specific syntax for pieces of text from within which a match with these regexps is ignored.
 
 When a [term ref](term-ref@ctwg) is located, and its parts are known, any parts that are omitted (empty capturing groups) should be provided with their default value, as follows:
@@ -235,9 +236,9 @@ To resolve a link, TRRT uses a (PCRE) regex that uses the names of the capturing
 The [TRRT](#trrt) may provide an option to specify other defaults in a configuration file or as  command-line arguments.
 
 The conversion of a [term ref](term-ref@ctwg) into a regular [Markdown link](https://www.markdownguide.org/basic-syntax/#links) can be done as follows, where any errors that occur are logged with a specific message, the file that is being processed, and the line number and character position of the [term ref](@ctwg) that caused the error:
-- Get the AOF of the [scope](@ctwg) from which the [TRRT](#trrt) is called;
-- Using its contents, dereference `scopetag` to its associated scope directory;
-- Get the AOF of that scope directory;
+- Get the SAF of the [scope](@ctwg) from which the [TRRT](#trrt) is called;
+- Using its contents, dereference `scopetag` to its associated [scope directory@];
+- Get the SAF of that [scope directory@];
 - Using its contents, locate the directory that contains its MRGs;
 - Using `vsn`, get the associated MRG;
 - If `id` is a list element of a `symphrase` field of some glossary entry, replace it with the `id`-field of that glossary entry;
@@ -256,7 +257,7 @@ The behavior of the [TRRT](#trrt) can be configured per call e.g. by a configura
 The [TRRT](#trrt) should log conditions that prevent it from properly
 
 - parsing a source document (e.g. because it is not markdown, or the file has incomprehensible front matter);
-- resolving references (e.g. if an unsupported referencing convention is encountered, the `scopetag` cannot be understood, the `id` does not map to a defined [term](term@ctwg), etc.);
+- resolving references (e.g. if an unsupported referencing convention is encountered, the `scopetag` cannot be understood, the `id` does not map to a defined [term](@ctwg), etc.);
 - writing the output (e.g. because it has no write-permission for the designated location);
 
 and provide suggestions that help tool-operators and/or document authors to identify and fix any problems.
