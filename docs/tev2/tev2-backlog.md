@@ -2,6 +2,7 @@
 id: tev2-backlog
 title: TEv2 - Backlog
 sidebar_label: Work-In-Progress
+hide_table_of_contents: true
 scopetag: tev2
 date: 20220303
 ---
@@ -14,8 +15,9 @@ The entire section on Terminology Engine v 2 (TEv2) is still under construction
 
 This backlog of the Terminology Engine v2 (TEv2) is a list of issues (concerns, topics) that still need to be addressed in the specifications of TEv2. Typically such issues are listed as editor's notes in the TEv2 specification files. This file will list any issues for which that would not be an appropriate solution.
 
-1. a [curated file@] that contains the specification of a [term@] must allow for a [header@] entry that allows the specification of aliases for that [term@], i.e. [terms@] that share the same [definition@]. Aliases must be processed as if they were defined in their own [curated file@] (that would have the same definition text). That means they must show up in glossaries, can be referenced from other [scopes@], etc.
+1. a [curated file@] that contains the specification of a [term@] must allow for a [header@] entry that specifies
+  - word forms, such as plurals, that, when encountered while processing a [curated text@], will be treated as if the defined term itself were encountered. For example, a term `actor` could have word-forms added such as `actors`, `actor's`, `actor(s)`, etc., that would allow authors to write [actors@], [actor's@], [actors'] or [actor(s)@] without the need of having to add the link part (as in [actors@](actor)).
+  - regexps, e.g. `actor(['']?s|\(s\))?`, or in the case of `party`, a regex such as `part(y|y['']s|ies)`
+  - combinations thereof, where the regex-part can be specified is `\{\w+\}`in a configuration file is substituted by a macro-form, e.g. `actor{ss}` or `part{yies}` (where `{ss}` is interpreted as a regex, e.g. `(['']?s|\(s\))?`, and {yies} as `(y|y['']s|ies)`)
 
-2. a a [curated file@] that contains the specification of a [term@] must allow for a [header@] entry that specifies
-  - word forms, such as plurals, that, when encountered while processing a [curated text@], will be treated as if the defined term itself were encountered. For example, a term `actor` could have word-forms added such as `actors`, `actor's`, `actor(s)`, etc., that would allow authors to write [actors@], [actor's@] or [actor(s)@] without the need of having to add a `|` (as in [actors@]).
-  - regexps that serve the same purpose, e.g. `actor(['']?s|\(s\))?`, or in the case of `party`, a regex such as `part(y|y['']s|ies)`
+2. Currently, every MRG/HRG is to be accompanied by a specific GDF that specifies their contents. Is seems more practical to say that one such specification - i.e. for the default MRG/HRG, would be part of the SAF, and any other such specifications (which we might then perhaps limit to just HRG-specifications) might then require their specific GDF.

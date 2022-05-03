@@ -1,0 +1,231 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>eSSIF-Lab Glossary</title>
+  <style>
+    body {
+      background-color: white;
+      padding: 0px;
+      margin: 0px;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #AC3C7A;
+      color: #719CAB;
+      padding: 28px;
+      font-family: Verdana, sans-serif;
+      font-size: 32px;
+      background-repeat: none;
+      text-align: center;
+      background-image: url(https://essif-lab.github.io/framework/images/essif-lab-logo.png);
+      background-repeat: no-repeat;
+    }
+
+    main {
+      padding: 16px 24px;
+      color: #444;
+    }
+
+    @media screen and (min-width: 640px) {
+      main {
+        padding: 24px 64px;
+      }
+    }
+
+    dt {
+      margin-top: 1.4em;
+      color: #AC3C7A;
+      font-size: 125%;
+      font-family: Verdana, sans-serif;
+    }
+
+    dt.letter {
+      text-align: center;
+      font-weight: bold;
+      color: #999;
+      border-bottom: solid 1px #ddd;
+      margin-left: 25%;
+      margin-right: 25%;
+      margin-top: 2.2em;
+    }
+
+    nav {
+      padding: 4px 16px;
+      text-align: center;
+      background-color: #ddd;
+      color: #888;
+    }
+
+    dd {
+      margin-left: 2em;
+    }
+
+    dt>span.tag {
+      float: right;
+      background-color: #eee;
+      border: 1px solid #ccc;
+      padding: 2px 4px;
+      margin-right: 4px;
+      font-size: 60%;
+      font-family: Verdana;
+      color: #666;
+    }
+
+    dd>p:first-child {
+      margin-top: 0.2em;
+    }
+
+    a {
+      color: #AC3C7A;
+      text-decoration: none;
+    }
+
+    dt>a {
+      color: #02005f;
+    }
+
+    a:hover {
+      border-bottom: solid 1px #3061a8;
+    }
+
+    a:active {
+      background-color: #eee;
+    }
+
+    a:visited {
+      color: #ac3cc0;
+    }
+
+    dt>a:visited {
+      color: #0200c0;
+    }
+
+    nav>a,
+    nav>a:visited {
+      color: black;
+    }
+
+    p.meta {
+      font-size: 80%;
+      color: #bbb;
+      text-align: right;
+      margin-top: -0.9em;
+    }
+
+    p.box {
+      display: inline-block;
+      background-color: rgb(255, 196, 0);
+      border: 1px solid rgb(255, 196, 0);
+      padding: 4px 8px;
+      margin-right: 4px;
+      text-align: center;
+      font-size: 125%;
+      font-family: Verdana;
+      color: #666;
+    }
+
+    ._slf {
+      float: left;
+      padding-right: 4px;
+      padding-top: 4px;
+      margin-left: -20px;
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+      display: none;
+    }
+
+    dt:not(.letter):hover>._slf {
+      display: inline;
+    }
+
+    ._xl {
+      padding-right: 4px;
+      display: none;
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+    }
+
+    dt:not(.letter):hover>._xl {
+      display: inline;
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(172, 60, 122);
+      color: white;
+      text-align: center;
+      padding: 4px 8px;
+      margin-right: 4px;
+      text-align: center;
+    }
+  </style>
+
+  <script>
+    var getAbsoluteUrl = (function () {
+      var a;
+      return function (url) {
+        if (!a)
+          a = document.createElement('a');
+        a.href = url;
+        return a.href;
+      };
+    })();
+
+    function copyUrl(url) {
+      x = getAbsoluteUrl(url);
+      navigator.clipboard.writeText(x);
+    }
+
+    function goto(url) {
+      window.location = url;
+    }
+  </script>
+</head>
+
+<body>
+
+  <svg style="display:none">
+    <symbol id="_slf" viewBox="0 0 16 16">
+      <path style="fill:#aaa" fill-rule="evenodd"
+        d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" />
+    </symbol>
+    <symbol id="_xl" viewBox="0 -256 1850 1850">
+      <g transform="matrix(1,0,0,-1,30.372881,1426.9492)">
+        <path style="fill:#aaa"
+          d="M 1408,608 V 288 Q 1408,169 1323.5,84.5 1239,0 1120,0 H 288 Q 169,0 84.5,84.5 0,169 0,288 v 832 Q 0,1239 84.5,1323.5 169,1408 288,1408 h 704 q 14,0 23,-9 9,-9 9,-23 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -66,0 -113,-47 -47,-47 -47,-113 V 288 q 0,-66 47,-113 47,-47 113,-47 h 832 q 66,0 113,47 47,47 47,113 v 320 q 0,14 9,23 9,9 23,9 h 64 q 14,0 23,-9 9,-9 9,-23 z m 384,864 V 960 q 0,-26 -19,-45 -19,-19 -45,-19 -26,0 -45,19 L 1507,1091 855,439 q -10,-10 -23,-10 -13,0 -23,10 L 695,553 q -10,10 -10,23 0,13 10,23 l 652,652 -176,176 q -19,19 -19,45 0,26 19,45 19,19 45,19 h 512 q 26,0 45,-19 19,-19 19,-45 z" />
+      </g>
+    </symbol>
+  </svg>
+
+  <header>G L O S S A R Y&nbsp;&nbsp;&nbsp;&nbsp;<ggt-vsn>(vsn placeholder)</ggt-vsn></header>
+  <main>
+    <p class="box">This glossary has been manually created to enable ToIP WGs and TFs to use eSSIF-Lab terminology in their texts.</br></p>
+    <p>Every entry in the glossary is structured as follows:
+    <ul>
+      <li>Header line that shows a term (which you can click to get more in-depth information), and (at the right) a tag
+        representing the scope(s) in which the term is defined/used.</li>
+      <li>The subsequent line(s) state its definition as defined for eSSIF-Lab. This definition typically uses other
+        terms defined in this terminology.</li>
+    </ul>
+    Hovering over the term in the header line shows two icons:
+    <ul>
+      <li>Clicking on the left icon (two shackles) copies a hyperlink to the glossary entry to the clipboard. You may
+        use this in your own texts to refer to the definition of this term.</li>
+      <li>Clicking on the right icon (rounded square with exiting arrow) navigates to the location where the sources of
+        the definition lives on github. This is intended for people that want to contribute to the eSSIF-Lab terminology
+      </li>
+    </ul>
+    </p>
+
+    <!-- end of headers, start of actual glossary stuff -->
+
+    <dl>
+
+<dt id="A" class="letter">A</dt>

@@ -1,7 +1,8 @@
 ---
-id: tev2-struct-ctext-body
-title: TEv2 - The Body of a Curated Text
-sidebar_label: Body
+id: tev2-spec-ctext-body
+title: Curated Texts - Body
+sidebar_label: Body Contents
+hide_table_of_contents: true
 scopetag: tev2
 date: 20220303
 ---
