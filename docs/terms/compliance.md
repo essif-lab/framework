@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: compliance
-symphrase: compliance
+formphrases: compliance
 status: draft
 grouptags:
 hoverText: "Compliance (of a Party): the state of realization of a set of conformance criteria or normative framework of that Party."

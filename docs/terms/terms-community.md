@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: terms-community
-symphrase: terms-communit{yies}
+formphrases: terms-communit{yies}
 status: draft
 grouptags:
 hoverText: "Terms Community: a Community that maintains a Terminology for the purpose of avoiding misunderstandings between its members as they collaborate."

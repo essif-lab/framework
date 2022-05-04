@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: data-discloser-policy
-symphrase: data-discloser-polic{yies}
+formphrases: data-discloser-polic{yies}
 status: draft
 grouptags:
 hoverText: "Data Discloser Policy: a Digital Policy that enables an operational Data Discloser component to function in accordance with the Objectives of its Principal."

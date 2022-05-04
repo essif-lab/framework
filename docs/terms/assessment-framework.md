@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: assessment-framework
-symphrase: assessment-framework{ss}
+formphrases: assessment-framework{ss}
 status: draft
 grouptags:
 hoverText: "Assessment framework (for a set of requirements on a specified kind of Entity)): the combination of a set of criteria that an auditor can assess by applying them to an Entity (of the specified kind), and the procedures that this Auditor will follow for doing so, for the purpose of establishing the extent in which that Entity conforms to the stated set of requirements."

@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: identify
-symphrase: identify, identifies, identifying, identifiable, identified, identification
+formphrases: identify, identifies, identifying, identifiable, identified, identification
 status: draft
 grouptags:
 hoverText: "Identify: an Act, by or on behalf of a Party, that results in the selection of either (a) a single Partial identity that the party Owns, given some (observed or received) data, or (b) a single Entity from a given set of entities that is the Subject of a specified Partial identity that the party Owns."

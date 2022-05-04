@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: term
 termid: role-name
-symphrase: role-name{ss}
+formphrases: role-name{ss}
 status: draft
 grouptags:
 hoverText: "Role name: name (text) that refers to (and identifies) a Role in a a specific context."

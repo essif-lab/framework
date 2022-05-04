@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: data-discloser
-symphrase: data-discloser{ss}
+formphrases: data-discloser{ss}
 status: draft
 grouptags:
 hoverText: "Data Discloser: a functional component that is capable of disclosing data to (Agents of) other Parties, e.g. in the form of Credentials."

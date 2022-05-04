@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: data-collector-policy
-symphrase: data-collector-polic{yies}
+formphrases: data-collector-polic{yies}
 status: draft
 grouptags:
 hoverText: "Data Collector Policy: a Digital Policy that enables an operational Data Collector component to function in accordance with the Objectives of its Principal"

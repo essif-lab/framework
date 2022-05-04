@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
 termid: definition
-symphrase: definition{ss}
+formphrases: definition{ss}
 status: draft
 grouptags:
 hoverText: "Definition: a text that helps Parties to have the same understanding about the meaning of (and Concepts behind) a Term, ideally in such a way that these Parties can determine whether or not they make the same distinction."

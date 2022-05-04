@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: agent
-symphrase: agent{ss}, digital-agent{ss}
+formphrases: agent{ss}, digital-agent{ss}
 status: draft
 grouptags:
 hoverText: "Agent (of a Party): an Actor that is executing an Action on behalf of a Party (called the Principal of that Actor)."

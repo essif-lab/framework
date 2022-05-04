@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
 type: concept
 termid: ssi-assurance-community
-symphrase: ssi-assurance-communit{yies}, ac{ss}, assurance-communit{yies}, ssi-ac{ss}, ssi-assurance-communit{yies}
+formphrases: ssi-assurance-communit{yies}, ac{ss}, assurance-communit{yies}, ssi-ac{ss}, ssi-assurance-communit{yies}
 status: draft
 grouptags:
 hoverText: "SSI Assurance Community (SSI-AC): a Community that supports its members as they seek to increase their confidence in the SSI infrastructure and/or (specific) qualifications of the data exchanged through that infrastructure."

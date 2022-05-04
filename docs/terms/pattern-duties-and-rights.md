@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
 termid: duties-and-rights
-symphrase: duties-and-rights
+formphrases: duties-and-rights
 status: draft
 grouptags:
 hoverText: "The Duties and Rights pattern captures the Concepts and relations that explain what a generic duties and rights consists of (based on Hofeld's theories), and relates it to Jurisdictions, Parties and Legal Entities."

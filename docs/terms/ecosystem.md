@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: ecosystem
-symphrase: ecosystem{ss}
+formphrases: ecosystem{ss}
 status: draft
 grouptags:
 hoverText: "Ecosystem: a set of at least two (autonomous) Parties (its 'members') whose individual work complements that of other members, and is of benefit to the set as a whole."

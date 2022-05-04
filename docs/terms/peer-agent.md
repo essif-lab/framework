@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: term
 termid: peer-agent
-symphrase: peer-agent{ss}
+formphrases: peer-agent{ss}
 conceptref: essifLab:Agent
 status: draft
 grouptags:

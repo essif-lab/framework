@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: credential
-symphrase: credential{ss}, verifiable-credential{ss}, attribute-based-credential{ss}
+formphrases: credential{ss}, verifiable-credential{ss}, attribute-based-credential{ss}
 status: draft
 grouptags:
 hoverText: "Credential: data, representing a set of Assertions (claims, statements), authored and signed by, or on behalf of, a specific Party."

@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: employee
-symphrase: employee{ss}
+formphrases: employee{ss}
 status: draft
 grouptags:
 hoverText: "Employee (of a Party): an Actor for whom/which it is realistic that it might execute Actions on behalf of that Party (called the Employer of that Actor)."

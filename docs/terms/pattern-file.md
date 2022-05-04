@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: pattern-file
-symphrase: pattern-file
+formphrases: pattern-file
 status: draft
 grouptags:
 hoverText: "Pattern-file: a file whose contents describes/documents a Pattern."

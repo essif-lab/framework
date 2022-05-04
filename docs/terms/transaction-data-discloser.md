@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: transaction-data-discloser
-symphrase: transaction-data-discloser{ss}
+formphrases: transaction-data-discloser{ss}
 status: draft
 grouptags:
 hoverText: "Transaction Data Discloser: a functional component that is capable of disclosing data."

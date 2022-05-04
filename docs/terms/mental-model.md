@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: term
 termid: mental-model
-symphrase: mental-model{ss}
+formphrases: mental-model{ss}
 conceptref: essifLab:pattern
 status: draft
 grouptags:

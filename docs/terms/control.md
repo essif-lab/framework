@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: control
-symphrase: control{ss}
+formphrases: control{ss}
 status: draft
 grouptags:
 hoverText: "Control (of a Party): the combination of resources (e.g. people, tools, budgets, time) and processes that are tasked to realize a specific Control Objective of that Party."

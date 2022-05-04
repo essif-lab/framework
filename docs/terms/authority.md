@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: authority
-symphrase: authorit{yies}
+formphrases: authorit{yies}
 status: draft
 grouptags:
 hoverText: "Authority: a Party of which certain decisions, ideas, rules etc. are followed by other Parties."

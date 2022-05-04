@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: term
 termid: participant
-symphrase: participant{ss}
+formphrases: participant{ss}
 conceptref: essifLab:party
 status: draft
 grouptags:

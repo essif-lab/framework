@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: validate
-symphrase: validate, validates, validated, validating
+formphrases: validate, validates, validated, validating
 status: draft
 grouptags:
 hoverText: "Validate/validation of data: the act, by or on behalf of a Party, of determining whether or not that data is valid to be used for some specific purpose(s) of that Party."

@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: jurisdiction
-symphrase: jurisdiction{ss}
+formphrases: jurisdiction{ss}
 status: draft
 grouptags:
 hoverText: "Jurisdiction: the composition of a Legal System (legislation, enforcement thereof, and conflict resolution), a Party that governs that Legal System, a scope within which that Legal System is operational, and one or more Objectives for the purpose of which the Legal System is operated."
