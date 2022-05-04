@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: wallet-policy
-symphrase: wallet-polic{yies}
+formphrases: wallet-polic{yies}
 status: draft
 grouptags:
 hoverText: "Wallet Policy: a Digital Policy that enables an operational Wallet component to function in accordance with the Objectives of its Principal."

@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: issuer-policy
-symphrase: issuer-polic{yies}
+formphrases: issuer-polic{yies}
 status: draft
 grouptags:
 hoverText: "Issuer Policy: a Digital Policy that enables an operational Issuer component to function in accordance with the Objectives of its Principal."

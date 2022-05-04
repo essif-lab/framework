@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: legal-system
-symphrase: legal-system{ss}
+formphrases: legal-system{ss}
 status: draft
 grouptags:
 hoverText: "Legal-system: a system in which rules are defined, and mechanisms for their enforcement and conflict resolution are (implicitly or explicitly) specified."

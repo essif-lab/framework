@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: jurisdiction-governor
-symphrase: jurisdiction-governor{ss}
+formphrases: jurisdiction-governor{ss}
 status: draft
 grouptags:
 hoverText: "Governor (of a Jurisdiction): the Party that operates the Legal System of that Jurisdiction."

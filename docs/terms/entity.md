@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: entity
-symphrase: entit{yies}
+formphrases: entit{yies}
 status: draft
 grouptags:
 hoverText: "Entity: someone or something that is known to exist."

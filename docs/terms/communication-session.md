@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: communication-session
-symphrase: communication-session{ss}, digital-communication-session{ss}
+formphrases: communication-session{ss}, digital-communication-session{ss}
 status: draft
 grouptags:
 hoverText: "Communication Session: a time interval during which two Actors have an established Communication Channel that does not exist outside of that time interval."

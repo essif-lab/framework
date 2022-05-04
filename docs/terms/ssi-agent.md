@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: term
 termid: ssi-agent
-symphrase: ssi-agent{ss}
+formphrases: ssi-agent{ss}
 conceptref: essifLab:Agent
 status: draft
 grouptags:

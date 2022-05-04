@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: expectation
-symphrase: expectation{ss}
+formphrases: expectation{ss}
 status: draft
 grouptags:
 hoverText: "Expectation (of a Party): an Objective that is Owned by that Party, and that does not itself produce the associated results."

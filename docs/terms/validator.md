@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: validator
-symphrase: validator{ss}
+formphrases: validator{ss}
 status: draft
 grouptags:
 hoverText: "Validator (functional component): the capability to determine whether or not (verified) data is valid to be used for some specific purpose(s)."

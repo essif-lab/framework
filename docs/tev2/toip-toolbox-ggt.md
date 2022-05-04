@@ -21,7 +21,7 @@ Creating an [MRG](#mrg) works as follows:
 - Add a glossary entry for every [term](@ctwg) that is defined in the [scope](@ctwg) from which the [GGT](#ggt) is called, again removing any existing glossary-entry that has an `id`-field that is the same as a newly added one.
 - Perform completeness and consistency checks on the set of glossary entries, to ensure that
   - every glossary entry is [identifiable](identify@essiflab) by its `id`-field;
-  - every element in the `symphrase`-list of a glossary entry does not occur as an element in the `symphrase`-list of another glossary entry;
+  - every element in the `formphrases`-list of a glossary entry does not occur as an element in the `formphrases`-list of another glossary entry;
 - Sort the glossary entries according to their `id` field;
 - Add header/meta data as needed as specified for [MRGs](#mrg).
 
@@ -35,7 +35,7 @@ For example, consider the [term](@ctwg) `curate` as defined in the [CTWG terms w
   date: 20211123
   termvsn: 9
   commit:
-  symphrase: curate, curates, curated, curation
+  formphrases: curate, curates, curated, curation
   status: proposed
   termname: curate
   synonyms: curation

@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: employment-contract
-symphrase: employment-contract{ss}
+formphrases: employment-contract{ss}
 status: draft
 grouptags:
 hoverText: "Employment Contract (between two Parties, concerning a set of Actors): an agreement/contract between these Parties that states (or refers to) all (sets of) rights and duties under which the Actors (the Subjects of the contract), that are controlled by one Party, can and/or must work for the other Party."

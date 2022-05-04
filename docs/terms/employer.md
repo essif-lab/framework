@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: employer
-symphrase: employer{ss}
+formphrases: employer{ss}
 status: draft
 grouptags:
 hoverText: "Employer (of an Actor): a Party on whose behalf this Actor (called an Employee of that Party) might execute Actions."

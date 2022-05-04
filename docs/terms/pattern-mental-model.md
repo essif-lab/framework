@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: pattern
 termid: mental-model
-symphrase: mental-model
+formphrases: mental-model
 status: draft
 grouptags:
 hoverText: "The Mental Models pattern captures the foundational Concepts and relations that we need for creating, maintaining and using  (decentralized) Vocabularies (Terminologies) that groups of people can use for the specific purposes they pursue."

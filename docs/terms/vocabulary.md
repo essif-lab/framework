@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
 termid: vocabulary
-symphrase: vocabular{yies}
+formphrases: vocabular{yies}
 status: draft
 grouptags:
 hoverText: "Vocabulary: the sum or stock of words employed by a language, group, individual, or work or in a field of knowledge."

@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: transaction-data-discloser-policy
-symphrase: transaction-data-discloser-polic{yies}
+formphrases: transaction-data-discloser-polic{yies}
 status: draft
 grouptags:
 hoverText: "Transaction Data Discloser Policy: a Digital Policy that enables an operational Transaction Data Discloser component to function in accordance with the Objectives of its Principal."

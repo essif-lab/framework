@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: human-being
-symphrase: human-being{ss}, human{ss}, person{ss}, individual{ss}, people
+formphrases: human-being{ss}, human{ss}, person{ss}, individual{ss}, people
 status: draft
 grouptags:
 hoverText: "Human Being: a person of flesh and blood (homo sapiens), that we classify both as a Party, an Actor, and a Jurisdiction."

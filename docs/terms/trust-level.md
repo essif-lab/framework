@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: trust-level
-symphrase: trust-level{ss}, level{ss}-of-trust
+formphrases: trust-level{ss}, level{ss}-of-trust
 status: draft
 grouptags:
 hoverText: "Trust level (of a Party in X): the (subjective) degree of belief or confidence that this Party has in X"

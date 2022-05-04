@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: knowledge-governor
-symphrase: knowledge-governor{ss}
+formphrases: knowledge-governor{ss}
 status: draft
 grouptags:
 hoverText: "Governor (of a Knowledge): the Party that is 1-1 associated with that knowledge."

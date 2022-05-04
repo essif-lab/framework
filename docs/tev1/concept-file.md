@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: scopeID
 type: concept
 termid: conceptID
-symphrase: conceptID{ss}
+formphrases: conceptID{ss}
 status: draft
 grouptags:
 hoverText: "ConceptID: popuptext for 'conceptID' (tbd)."

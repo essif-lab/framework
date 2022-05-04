@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: holder-policy
-symphrase: holder-polic{yies}
+formphrases: holder-polic{yies}
 status: draft
 grouptags:
 hoverText: "Holder Policy: a Digital Policy that enables an operational Holder component to function in accordance with the Objectives of its Principal"

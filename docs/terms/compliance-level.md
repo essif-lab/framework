@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: compliance-level
-symphrase: compliance-level{ss}
+formphrases: compliance-level{ss}
 status: draft
 grouptags:
 hoverText: "Compliance level (of an Entity, regarding a stated (set of) requirement(s)): a measure for stating how well the Entity conforms with the stated (set of) requirement(s)."

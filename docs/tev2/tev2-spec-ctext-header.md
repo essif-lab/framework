@@ -29,7 +29,7 @@ termtype: concept
 termid: curate
 grouptags: "terminology, management"
 date: 20220222
-symphrase: curate, curates, curated, curation, curating
+formphrases: curate, curates, curated, curation, curating
 status: proposed
 termname: curate
 glossaryText: To evolve [concept](@ctwg) and [term](@ctwg) data in the direction of greater quality and richer content within a specific [scope](@ctwg).
@@ -53,7 +53,7 @@ For TEv2 purposes, the following fields are defined. The `Req'd` column specifie
 | `date`| n | (No default) | Date of the last update of the file that contains this header, in the format `<YYYY><MM><DD>`. Must satisfy PCRE regex `\d{8}`. |
 | `termvsn` | n | (No default) | Text that identifies the version of the [term](@ctwg) itself (not to be confused with the version of a [terminology](@ctwg) that may contain that [term](@ctwg)).<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
 | `commit` | n | (No default) | The latest (git) commit hash of the [term's](term@ctwg) [definition](@ctwg). |
-| `symphrase` | n | (No default) | Comma-separated list of texts that the [TRRT](toip-toolbox-trrt) can use to convert the `show text` parts of [term refs@] into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).<br/>Must satisfy PCRE regex `([a-z0-9_-{}]+)(?:,\s*([a-z0-9_-{}]+))*`. |
+| `formphrases` | n | (No default) | Comma-separated list of texts that the [TRRT](toip-toolbox-trrt) can use to convert the `show text` parts of [term refs@] into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).<br/>Must satisfy PCRE regex `([a-z0-9_-{}]+)(?:,\s*([a-z0-9_-{}]+))*`. |
 | `status` | n | `proposed` | Text that identifies the [status of the term](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). Allowed values are: `proposed`, `approved` or `deprecated`. |
 | `termname` | Y | (No default) | Text that is used for rendering the [term](@ctwg) in a human readable document. It typically contains human readable characters. It may include uppercase and lowercase characters, spaces, etc. (which are not allowed in the `termid` field). |
 | `synonyms` | n | (No default) | List of texts that that may alternatively be used for rendering the [term](@ctwg) in a human readable document. It typically contains human readable characters. It may include uppercase and lowercase characters, spaces, etc. (which are not allowed in the `termid` field). |

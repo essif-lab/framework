@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
 termid: glossary
-symphrase: glossar{yies}
+formphrases: glossar{yies}
 status: draft
 grouptags:
 hoverText: "Glossary: an alphabetically sorted list of Terms with the (single) meaning it has in (at least) one context."

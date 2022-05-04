@@ -101,7 +101,7 @@ A glossary entry for an MRG SHOULD accommodate for (at least) the following fiel
 - `date`: date of the last update of the [term](@ctwg)-related data, in the form yyyymmdd.
 - `termvsn` (optional): a text that identifies the version of the [term](@ctwg) itself. It is not to be confused with the version of a [terminology](@ctwg) that may contain that [term](@ctwg). The `termvsn` shall only contain characters in regex `[a-z0-9_-]`.
 - `commit` (optional): the latest (git) commit hash of the [term's](term@ctwg) [definition](@ctwg).
-- `symphrase` (optional): a list of texts that the [TRRT](#trrt) can use to convert `show texts` into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs). The `symphrase` elements (texts) shall only contain characters in regex `[a-z0-9_-{}]`.
+- `formphrases` (optional): a list of texts that the [TRRT](#trrt) can use to convert `show texts` into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs). The `formphrases` elements (texts) shall only contain characters in regex `[a-z0-9_-{}]`.
 - `status` (optional): a text that identifies the [status of the term](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). Allowed values are: 'proposed', 'approved' or 'deprecated'.
 - `termname` (required): the text that is used for rendering the [term](@ctwg) in a human readable document. It typically contains human readable characters. It may include uppercase and lowercase characters, spaces, etc. (which are not allowed in the `termid` field).
 - `synonyms` (optional): a list of texts that that may alternatively be used for rendering the [term](@ctwg) in a human readable document. It typically contains human readable characters. It may include uppercase and lowercase characters, spaces, etc. (which are not allowed in the `termid` field).
@@ -161,7 +161,7 @@ Creating an [MRG](#mrg) works as follows:
 - Add a glossary entry for every [term](@ctwg) that is defined in the [scope](@ctwg) from which the [GGT](#ggt) is called, again removing any existing glossary-entry that has an `id`-field that is the same as a newly added one.
 - Perform completeness and consistency checks on the set of glossary entries, to ensure that
   - every glossary entry is [identifiable](identify@essiflab) by its `id`-field;
-  - every element in the `symphrase`-list of a glossary entry does not occur as an element in the `symphrase`-list of another glossary entry;
+  - every element in the `formphrases`-list of a glossary entry does not occur as an element in the `formphrases`-list of another glossary entry;
 - Sort the glossary entries according to their `id` field;
 - Add header/meta data as needed as specified for [MRGs](#mrg).
 
@@ -175,7 +175,7 @@ For example, consider the [term](@ctwg) `curate` as defined in the [CTWG terms w
   date: 20211123
   termvsn: 9
   commit:
-  symphrase: curate, curates, curated, curation
+  formphrases: curate, curates, curated, curation
   status: proposed
   termname: curate
   synonyms: curation
@@ -241,7 +241,7 @@ The conversion of a [term ref](term-ref@ctwg) into a regular [Markdown link](htt
 - Get the SAF of that [scope directory@];
 - Using its contents, locate the directory that contains its MRGs;
 - Using `vsn`, get the associated MRG;
-- If `id` is a list element of a `symphrase` field of some glossary entry, replace it with the `id`-field of that glossary entry;
+- If `id` is a list element of a `formphrases` field of some glossary entry, replace it with the `id`-field of that glossary entry;
 - Find the glossary entry that has an `id`-field that is the same as `id`;
 - Set `link` to the contents of the `url` field of that glossary entry;
 - Test that `link` points to an existing resource;
