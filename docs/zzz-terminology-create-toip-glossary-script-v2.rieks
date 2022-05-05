@@ -37,7 +37,7 @@ with "tt-id="$1" tt-id-href="$2" tt-title="$3" tt-hashlink="$4"\n<p>"
 
 // Convert header line to the target html
 replace-regex "tt-id="(.*?)" tt-id-href="(.*?)" tt-title="(.*?)" tt-hashlink="(.*?)""
-with "<dt id="$1"><svg class="_slf" onclick="copyUrl('$4')"><use href="#_slf"/></svg><a href="https://essif-lab.github.io/framework$2">$3</a> <svg class="_xl" onclick="goto('https://github.com/essif-lab/framework/tree/master/docs/terms/$1.md')"><use href="#_xl"/></svg><span class="tag">#essiflab</span></dt>"
+with "<dt id="$1"><svg class="_slf" onclick="copyUrl('$4')"><use href="#_slf"/></svg><a href="https://essif-lab.github.io$2">$3</a> <svg class="_xl" onclick="goto('https://github.com/essif-lab/framework/tree/master/docs/terms/$1.md')"><use href="#_xl"/></svg><span class="tag">#essiflab</span></dt>"
 
 // Replace links in descriptions with links internal to the glossary
 replace-regex "href="/framework/docs/terms/(?!pattern)"
