@@ -9,8 +9,20 @@ date: 20220421
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+export const Mark = ({children}) => (
+  <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
+    {children}
+  </span> );
 
-The **Glossary Generation tool ([GGT](toip-toolbox-ggt))** takes a glossary definition file (GDF) as input (that specifies e.g. [terms](term@) to be included from other [terminologies](terminology@), ways in which [terms](term@) are to be rendered, etc.), and generates a (machine readable, and optionally also a human readable) [glossary@] that renders the [terminology@] of the [scope@] from which the [GGT](#ggt) is called.
+The **Glossary Generation tool ([GGT](toip-toolbox-ggt))** generates a (machine readable, and optionally also a human readable) [glossary@], that contains/renders the [terminology@] of a specific [scope@].
+
+In order to do so, [GGT](toip-toolbox-ggt) expects the [SAF@] of the [scope@] from within which it is being called, to be available. This [SAF@]
+- specifies the [terminology@] of that [scope@], i.e. the set of [terms@] that it comprises;
+- the location of the . A
+
+a [Glossary Definition File (GDF)@](tev2-spec-gdf) to be (implicitly or explicitly) specified, that contains a specification of the [terminology@] of a specific [scope@], and further instructions regarding the rendering of its [terms@] (<Mark>this part needs to be worked out some more</Mark>).
+
+In order to do so, [GGT](toip-toolbox-ggt) expects the [SAF@] and the [MRG@] of the [scope@] from within which it is being called, to be available. The [MRG@] is used to resolve all links to [terms@] that are part of the [terminology@] of this [scope@]. The [SAF@] is used to locate the [MRG's@] of any (other) [scope@] whose [scopetag@] is used as part of a [reference@](term-ref) that needs to be resolved.
 
 The [GGT](#ggt) first creates an [MRG](#mrg) (which does the 'heavy lifting'), and from that, a [HRG](#hrg) will be created. Different [HRGs](#hrg), i.e. different human-readable renderings of the [terminology@] may be created from the same [MRG](#mrg).
 

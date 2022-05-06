@@ -31,7 +31,8 @@ The structure of the actual glossary definition is always the same:
 ~~~ json
 "glossary": [
   { "glossary-type": "<glossary type>"
-  , "dateformat": "(?P<year>\d{4})-?(?P<month>\d{2})-?(?P<day>\d{2})(?:T?(?P<hour>\d{2}):?(?P<minute>\d{2}):?(?P<second>\d{2})(?:\.(?P<fraction>\d+))?(?P<tzone>[+-]\d{2}:\d{2})?)?"
+  , "dateformat": "(?P<year>\\d{4})-?(?P<month>\\d{2})-?(?P<day>\\d{2})(?:T?(?P<hour>\\d{2}):?(?P<minute>\\d{2}):?(?P<second>\\d{2})(?:\\.(?P<fraction>\\d+))?(?P<tzone>[+-]\\d{2}:\\d{2})?)?"
+"
 
     ... argument list ...
   }

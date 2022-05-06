@@ -1,46 +1,68 @@
-{  "terminology": {
-     "scopetag": "tev2",
-     "website": "https://essif-lab.github.io/framework/docs/tev2/tev2-overview",
-     "slack": "https://trustoverip.slack.com/archives/C01BBNGRPUH",
-     "issues": "https://github.com/essif-lab/framework/issues",
-     "curator": [
-       {
-         "name": "RieksJ",
-         "email": { "id": "rieks.joosten", "at": "tno.nl" }
-       }
-     ]
-   },
-   "scopes": [
-     { "scopetags": [ "tev2" ],
-       "scopedir": "https://github.com/essif-lab/framework/tree/master/docs/tev2"
-     },
-     { "scopetags": [ "essiflab", "essif-lab" ],
-       "scopedir": "https://github.com/essif-lab/framework/tree/master/docs"
-     },
-     { "scopetags": [ "ctwg", "toip-ctwg" ],
-       "scopedir": "https://github.com/trustoverip/ctwg"
-     }
-   ],
-   "glossaries": {
-     "url": "https://github.com/essif-lab/framework/tree/master/docs/tev2/glossaries",
-     "definitions": [
-       { "version": "v0.9.4",
-         "terms": [
-           "terminology@essif-lab",
-           "[party@essif-lab]",
-           "[community@essif-lab]",
-           "tev2@tev2"
-         ],
-         "glossary": [
-           { "glossary-type": "toip",
-             "header": "toip-hrg-header.html",
-             "footer": "toip-hrg-footer.html"
-           }
-         ]
-       }
-     ]
-   },
-   "rendering": {
-     "tool": "Docusaurus"
-   }
-  }
+{
+  "terminology": {
+    "scopetag": "tev2",
+    "website": "https://essif-lab.github.io/framework/docs/tev2/tev2-overview",
+    "slack": "https://trustoverip.slack.com/archives/C01BBNGRPUH",
+    "issues": "https://github.com/essif-lab/framework/issues",
+    "curator": [
+      {
+        "name": "RieksJ",
+        "email": {
+          "id": "rieks.joosten",
+          "at": "tno.nl"
+        }
+      }
+    ],
+    "dateformat": "(?P<year>\\d{4})-?(?P<month>\\d{2})-?(?P<day>\\d{2})(?:T?(?P<hour>\\d{2}):?(?P<minute>\\d{2}):?(?P<second>\\d{2})(?:\\.(?P<fraction>\\d+))?(?P<tzone>[+-]\\d{2}:\\d{2})?)?"
+  },
+  "scopes": [
+    {
+      "scopetags": [
+        "tev2"
+      ],
+      "scopedir": "https://github.com/essif-lab/framework/tree/master/docs/tev2",
+      "curatedir": "docs",
+      "glossarydir": "docs/glossary",
+      "mrgfile": "mrg.json",
+      "hrgfile": "glossary"
+    },
+    {
+      "scopetags": [
+        "essiflab",
+        "essif-lab"
+      ],
+      "scopedir": "https://github.com/essif-lab/framework/tree/master/docs"
+    },
+    {
+      "scopetags": [
+        "ctwg",
+        "toip-ctwg"
+      ],
+      "scopedir": "https://github.com/trustoverip/ctwg"
+    }
+  ],
+  "versions": [
+    {
+      "versiontags": [
+        "latest",
+        "v0.9.4"
+      ],
+      "terms": [
+        "terminology@essif-lab",
+        "[party@essif-lab:0.9.4]",
+        "[community@essif-lab:0.9.4]",
+        "tev2@tev2"
+      ]
+    },
+    {
+      "versiontags": [
+        "v0.9.0"
+      ],
+      "terms": [
+        "terminology@essif-lab",
+        "[party@essif-lab]",
+        "[community@essif-lab]"
+      ]
+    }
+  ]
+}
