@@ -21,3 +21,5 @@ This backlog of the Terminology Engine v2 (TEv2) is a list of issues (concerns, 
   - combinations thereof, where the regex-part can be specified is `\{\w+\}`in a configuration file is substituted by a macro-form, e.g. `actor{ss}` or `part{yies}` (where `{ss}` is interpreted as a regex, e.g. `(['']?s|\(s\))?`, and {yies} as `(y|y['']s|ies)`)
 
 2. Currently, every MRG/HRG is to be accompanied by a specific GDF that specifies their contents. Is seems more practical to say that one such specification - i.e. for the default MRG/HRG, would be part of the SAF, and any other such specifications (which we might then perhaps limit to just HRG-specifications) might then require their specific GDF.
+
+3. We use the [header@]-field `synonym` (see: [synonym@]) to specify human readable texts that have the same meaning as another term. They differ from [formphrases@] in the sense that we would like to have them become part of the [glossary@] - specifically: a [hrg@]. Similarly, we may want to have a `see-phrase` header-item, that we can use to refer readers to some other resource for further reading.

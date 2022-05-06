@@ -24,7 +24,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 
 The Terminology Engine v2 (TEv2) ensures that the [community@] of [terms communities@] that use it will be able to use each others [definitions@], [terms@] and other terminological artifacts without loosing their autonomy (control over the [terminologies@] they [own@] themselves).
 
-TEv2 is a set of tools whose purpose is to facilitate the work of [curators@] of a [terms-community@] that seeks to create and maintain one or more [terminologies@] of their own, and use [terminologies@] that are maintained by other [members@] of the Trust over IP [community@].
+TEv2 is a set of tools whose purpose is to facilitate the work of [curators@] of a [terms-community@] that seeks to create and maintain one or more [terminologies@] of their own, and use [terminologies@] that are maintained by other [parties@] that are members of the Trust over IP [community@].
 
 TEv2 assumes that the [curated@] data resides in an existing [scope directory@], and that [curated files@] are expected to be processable by other tools, including, but not limited to [github pages](https://pages.github.com/) or [Docusaurus](https://docusaurus.io/docs/docs-introduction), which are static site generators for web sites that document all sorts of guidance, specifications, etc. Such a [scope directory@] must be [set up](tev2-installation) in advance.
 
