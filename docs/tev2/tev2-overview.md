@@ -11,18 +11,42 @@ date: 20220303
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::caution
-The entire section on Terminology Engine v 2 (TEv2) is still under construction
+The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
+As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>Readers will need to see through some (currently unprocessed) notational conventions.
 :::
 
-:::info
-The Terminology Engine section is about the design of a generically usable tool that caters for the maintenance of [terminology@] as well as the creation of publications (in different formats, e.g. websites, whitepapers, etc.), with the property that readers of such publications are assisted in understanding (the terms etc. used in) such publications. The current eSSIF-Lab website already shows the first ideas of what that might look like (popups on terms showing their definition).
+The Terminology Engine (v2) is a set of specifications and tools that caters for the creation and maintenance (i.e. [curation@]) of [terminologies@], as well as for its subsequent use in publications of different types (e.g. websites, whitepapers) and formats (e.g. html, LaTex), as appropriate for different, individual [scopes@].
+
+The purposes that TEv2 aims to serve include:
+- to assist readers of such publications to understand the [terms@] that are used in the way that the authors have intended (rather than interpreting it in their own way)
+- to facilitate authors to write and publish texts where terms can be referenced to their intended meaning, within, and across [scopes@].
+- to enable authors and readers of such publications to create and further develop their own [terminologies@] (and with that: their insights in their subject matters);
+
+The current eSSIF-Lab (i.e.: this) website already shows the first ideas of what that might look like (popups on terms showing their definition).
+
+## Introduction
+
+TEv2 not only facilitates individual authors or groups in dealing with their own [terminology@], it specifically also caters for authors/groups using [terms@] that others have [defined@], without each author/group loosing their autonomy (control) over their own [terminologies@]. The following figure illustrates how that works:
+
+<img
+  alt="ToIP - Curation of Terminology and its Tooling"
+  src={useBaseUrl('images/toip-ctwg-curation.png')}
+/><br/><br/>
+
+Authors or groups (the green and yellow parts of the figure) typically have their own ways of dealing with their [terminologies@], and use their own set of tools. These tools typically operate on text files (in a variety of formats, e.g. HTML, markdown, LaTeX, or wordprocessor formats such as DOCX or ODT).
+
+TEv2 expects the texts that concern a particular topic, that (from a terminological perspective) belong together, to be organized in a single directory, which we call the [scope directory@] or [scopedir@].
+
+:::caution Caution! &nbsp&nbspxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+From this point onward the text needs to be revised.<br/>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 :::
 
-:::info
-As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed. Readers will need to see through some (currently unprocessed) notational conventions.
-:::
+However, in order to use each other's terminological artifacts, some common ground needs to be established and maintained. This means that xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+This figure shows a green and yellow group of people that author documents and use their own (preferred) tools for that. They may make documentation that is rendered by a (static) website, or create LaTeX manuscripts and turn them into PDF files. They may use Github to collaborate of control versions, etc.
 
-The Terminology Engine v2 (TEv2) ensures that the [community@] of [terms communities@] that use it will be able to use each others [definitions@], [terms@] and other terminological artifacts without loosing their autonomy (control over the [terminologies@] they [own@] themselves).
+
+TEv2 ensures that the [community@] of [terms communities@] that use it will be able to use each others [definitions@], [terms@] and other terminological artifacts without loosing their autonomy (control over the [terminologies@] they [own@] themselves).
 
 TEv2 is a set of tools whose purpose is to facilitate the work of [curators@] of a [terms-community@] that seeks to create and maintain one or more [terminologies@] of their own, and use [terminologies@] that are maintained by other [parties@] that are members of the Trust over IP [community@].
 
@@ -41,4 +65,4 @@ This document provides an overview of the knowledge that [curators@] may need to
 
 2. [Curation@] of terminological contributions. This requires knowledge about the [file structure](tev2-spec-ctext) of [curated file@].
 
-3. [generation](tev2-artifact-generation) of terminological artifacts. It is typical for a [terms community@] to want to have a [glossary@] of the terms they either have defined themselves, or are defined elsewhere but are to be used within that [community@]. However, other artifacts may be generated as well (a [dictionary@], white papers, etc.) - this is all up to the [community@].
+3. [generation](tev2-toolbox-use) of terminological artifacts. It is typical for a [terms community@] to want to have a [glossary@] of the terms they either have defined themselves, or are defined elsewhere but are to be used within that [community@]. However, other artifacts may be generated as well (a [dictionary@], white papers, etc.) - this is all up to the [community@].

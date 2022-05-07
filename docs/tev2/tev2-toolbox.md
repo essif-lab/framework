@@ -1,6 +1,6 @@
 ---
-id: toip-terminology-toolbox
-title: ToIP TT-Tools Proposal
+id: tev2-toolbox
+title: TEv2 Terminology Toolbox
 displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220421
@@ -8,13 +8,29 @@ date: 20220421
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-:::info
-This document is a first specification of results that the [ToIP Concepts & Terminology Working Group (CTWG)](https://wiki.trustoverip.org/pages/viewpage.action?pageId=65700) aims to realize. The ideas in this memo are being elaborated on as specifications for the [eSSIF-Lab Terminology Engine v2](tev2-overview), as documented on this site. As elaboration progresses, deviations from this memo may arise. At some point, we will add `info` blocks such as these to document such differences.
-:::
+This document is meant as a specification of results that the ToIP CTWG aims to realize, that can serve as the basis for the specification of terminology tooling.
 
 The intended audience is expected to be familiar with the [mental model on terminology](https://essif-lab.github.io/framework/docs/terms/pattern-terminology#formalized-model) and the current way(s) of working of the CTWG.
 
 The document assumes that within ToIP multiple [scopes](scope@) are created and maintained, each of which having (at least) one [tag@] that [identifies](identify@essiflab) the [scope@] within the context of ToIP. Also, the document assumes that anyone that has some dealing with terminology, is doing so within the context of a single such [scope@].
+
+This is envisaged in the following figure:
+
+<img
+  alt="ToIP - Curation of Terminology and its Tooling"
+  src={useBaseUrl('images/toip-ctwg-curation.png')}
+/><br/><br/>
+
+This figure shows a green and yellow group of people that author documents and use their own (preferred) tools for that. They may make documentation that is rendered by a (static) website, or create LaTeX manuscripts and turn them into PDF files. They may use Github to collaborate of control versions, etc.
+
+:::info Editor's note
+From here, text needs to be revised
+:::
+
+We assume that each group wants to develop and/or maintain ([curate@]) its own [terminology@] (in some [scope@]), to serve their own purposes. They do so by creating their own [curated texts@]
+
+
+
 
 This document specifies the (initial) tt-toolbox, i.e. a set of 'tools' that can be called from within a specific [scope@], to help maintain its [terminology@], create [glossaries](glossary@) and provide other support for its [curation](curate@).
 

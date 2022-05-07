@@ -1,6 +1,6 @@
 ---
-id: tev2-artifact-generation
-title: Artifact Generation
+id: tev2-toolbox-use
+title: Using the Tools
 hide_table_of_contents: true
 scopetag: tev2
 date: 20220303

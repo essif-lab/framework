@@ -1,5 +1,5 @@
 ---
-id: toip-toolbox-trrt
+id: tev2-toolbox-trrt
 title: Term Reference Resolution Tool (TRRT)
 sidebar_label: TRRT - Term Ref Resolution Tool
 displayed_sidebar: tev2SideBar
@@ -10,9 +10,9 @@ date: 20220421
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-The **Term Ref(erence) Resolution Tool ([TRRT](toip-toolbox-trrt#trrt))** takes markdown files that contain so-called [term refs](term-ref@) (e.g. \[`terms community`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](term-ref@) are converted to regular [Markdown links](https://www.markdownguide.org/basic-syntax/#links), allowing such files to be further processed, e.g. by Github pages, Docusaurus or similar tools. Future versions of the [TRRT](#trrt) may support conversion of [term refs](term-ref@) in other file types (e.g. HTML, LaTeX, docx, odt).
+The **Term Ref(erence) Resolution Tool ([TRRT](tev2-toolbox-trrt#trrt))** takes markdown files that contain so-called [term refs](term-ref@) (e.g. \[`terms community`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](term-ref@) are converted to regular [Markdown links](https://www.markdownguide.org/basic-syntax/#links), allowing such files to be further processed, e.g. by Github pages, Docusaurus or similar tools. Future versions of the [TRRT](#trrt) may support conversion of [term refs](term-ref@) in other file types (e.g. HTML, LaTeX, docx, odt).
 
-In order to do so, [TRRT](toip-toolbox-trrt#trrt) expects the [SAF@] and the [MRG@] of the [scope@] from within which it is being called, to be available. The [MRG@] is used to resolve all links to [terms@] that are part of the [terminology@] of this [scope@]. The [SAF@] is used to locate the [MRG's@] of any (other) [scope@] whose [scopetag@] is used as part of a [reference@](term-ref) that needs to be resolved.
+In order to do so, [TRRT](tev2-toolbox-trrt#trrt) expects the [SAF@] and the [MRG@] of the [scope@] from within which it is being called, to be available. The [MRG@] is used to resolve all links to [terms@] that are part of the [terminology@] of this [scope@]. The [SAF@] is used to locate the [MRG's@] of any (other) [scope@] whose [scopetag@] is used as part of a [reference@](term-ref) that needs to be resolved.
 
 <!-- here, we would have liked to INCLUDE the text of [term references](term-ref@) rather than copy it.  Later, we may want to check out "https://github.com/sethen/markdown-include", or "https://asciidoc.org/" [!INCLUDE [<title>](<filepath>)] -->
 
