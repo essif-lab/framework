@@ -15,8 +15,12 @@ module.exports = {
     },
   ],
   themeConfig: {
-    autoCollapseSidebarCategories: true,
-    hideableSidebar: true,
+    docs: {
+      sidebar: {
+        autoCollapseCategories: true,
+        hideable: true,
+      },
+    },
     navbar: {
       // title: 'ESSIF-Lab',
       logo: { src: 'images/essif-lab-logo.png', },
