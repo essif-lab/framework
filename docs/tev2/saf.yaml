@@ -22,7 +22,7 @@ terminology:
   # as they are used within this scope, the result of which shows up as named capturing groups.
   # As an example, we specify the regex for ISO 8601 date(time)s, which is explained at
   # https://www.debuggex.com/r/7AhSyBzuBvuzYn52.
-  dateformat: (?P<YYYY>\d{4})-?(?P<MM>\d{2})-?(?P<DD>\d{2})(?:T?(?P<hh>\d{2}):?(?P<mm>\d{2}):?(?P<ss>\d{2})(?:\.(?P<fraction>\d+))?)?(?P<tzone>Z|[+-]\d{2}:\d{2})?
+  dateformat: "(?P<YYYY>\\d{4})-?(?P<MM>\\d{2})-?(?P<DD>\\d{2})(?:T?(?P<hh>\\d{2}):?(?P<mm>\\d{2}):?(?P<ss>\\d{2})(?:\\.(?P<fraction>\\d+))?)?(?P<tzone>Z|[+-]\\d{2}:\\d{2})?"
 #
 # The second section is for technical/tool use, so they can find data:
 # - of the scope itself, and

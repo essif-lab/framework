@@ -23,28 +23,32 @@ A Machine Readable Glossary (MRG) is a JSON (or YAML) file that is structured as
 terminology:
   scopetag: tev2
   scopedir: https://github.com/essif-lab/framework/tree/master/docs/tev2
-  license:
+  license: LICENCE.md
 scopes:
   - scopetag: essiflab
     scopedir: https://github.com/essif-lab/framework/tree/master/docs
   - scopetag: ctwg
     scopedir: https://github.com/trustoverip/ctwg
-entries: []
+entries: # this is followed by a list of entries
 ~~~
 
 WHERE:
 
-- the `terminology` section specifies a [scopetag](@) and the [scope directory](@) for the [terminology](@) that the MRG renders.
-- the `scopes` section specifies similar [scopetag](@) - [scope directory](@) mappings, but for other [terminologies](@). This allows machines to trace any [term](@) that is 'imported' from another [scope](@) to its [curated](@) source.
+- the `terminology` section specifies
+  - the [scopetag](@) that the [curators](@) of the [scope](@) have determined to serve as the [scopetag](@) for that [scope](@);
+  - the [scope directory](@) associated with that [scope](@);
+  - the location of the file that specifies the license under which the contents of the [MRG](@) may be used.
+
+- the `scopes` section specifies similar [scopetag](@) - [scope directory](@) mappings, but for other [terminologies](@). This allows machines to trace any [term](@) that is 'imported' from another [scope](@) to its [curated](@) source. These mappings are copies of the mappings found in the [SAF](@) at the time that the [MRG](@) was generated.
 
 ## Machine Readable Glossary Entries
 
-MRG Entries consist of the following fields
+[MRG Entries] consist of the following fields
 
 | Name | Req'd | Default | Description |
 | ---- | :---: | ------- | ----------- |
-| `scopetag` | Y | [Scopetag](@) of the [scope](@) in which the [glossary](@) is defined | [Tag](@) of the [scope](@) in which the [term](@) is defined. We need this because a [glossary](@) not only contains [terms](term@) that are defined in the [scope](@) itself, but also [terms](term@) that are defined in other [scopes](@). The `scopes` section in the MRG SHOULD contain a mapping between the `scopetag` and its associated [scope directory](@).<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
-| `id` | n | `termtype`-`termid` | Text that [identifies](identify@essiflab) the [term](@) within the context of the [MRG](@), and can also be used as an `id` in a [term ref](@). For [terms](term@) of other types than 'concept', the `id` would typically be of the form `<type>-<termid>`, e.g. as in `pattern-identify`.<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
+| `scopetag` | Y | [Scopetag](@) of the [scope](@) in which the [glossary](@) is defined | [Tag](@) of the [scope](@) from which the [term](@) and its description are obtained. We need this because a [glossary](@) not only contains [terms](term@) that are defined in the [scope](@) itself, but also [terms](term@) that are defined in other [scopes](@). The `scopes` section in the MRG SHOULD contain a mapping between the `scopetag` and its associated [scope directory](@).<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
+| `id` | n | `termtype`-`termid` | Text that [identifies](identify@essiflab) the [glossary entry](@) within the context of the [MRG](@). Thus, the `id`-field in a [term ref](@) maps to a single [glossary entry](@). For [terms](term@) of other types than 'concept', the `id` would typically be of the form `<type>-<termid>`, e.g. as in `pattern-identification`.<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
 | `termtype` | n | `concept` | Text that identifies the kind of entity that the [term](@) refers to. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`).<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
 | `termid` | Y | There is no default. Not specifying `termid` is an error. | Text that identifies the specific entity of the `termtype` field.<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
 | `grouptags` | n | (No default) | Comma-separated list of [grouptags](tag@), each of which identifies a group of [terms](term@) to which this [term](@) belongs.<br/>Must satisfy PCRE regex `([a-z0-9_-]+)(?:,\s*([a-z0-9_-]+))*`. |
