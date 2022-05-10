@@ -20,8 +20,8 @@ The scope administration file contains whatever needs to be administered in the 
 :::
 
 We have an experimental SAF:
-- in [JSON format](saf.json)
-- in [YAML format](saf.yaml)
+- in [YAML format](saf.yaml) (which has comments that explaining the structure), and
+- in [JSON format](saf.json) (which has no explanations because JSON doesn't support comments)
 
 :::info Editor's note
 The SAF contains a `dateformat` field, which is a regex that has named groups such as `year`, `month`, etc. This field specifies the *default* format for dates. The presented regex is for ISO dates and date/times. The regex can be used by tools to convert dates by applying it (or a regex that overrides this default), and using the contents of the named groups to reformat to any desired other format.

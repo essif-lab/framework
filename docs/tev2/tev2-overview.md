@@ -26,18 +26,19 @@ The current eSSIF-Lab (i.e.: this) website already shows the first ideas of what
 
 ## Introduction
 
-TEv2 not only facilitates individual authors or groups in dealing with their own [terminology@], it specifically also caters for authors/groups using [terms@] that others have [defined@], without each author/group loosing their autonomy (control) over their own [terminologies@]. The following figure illustrates how that works:
+TEv2 not only facilitates individual authors or groups in dealing with their own [terminology](@), it specifically also caters for authors/groups using [terms@] that others have [defined@], without each author/group loosing their autonomy (control) over their own [terminologies@]. The following figure illustrates how that works:
 
 <img
-  alt="ToIP - Curation of Terminology and its Tooling"
-  src={useBaseUrl('images/toip-ctwg-curation.png')}
+  alt="Curation of Terminology and its Tooling"
+  src={useBaseUrl('images/tev2-overview.png')}
 /><br/><br/>
 
-Authors or groups (the green and yellow parts of the figure) typically have their own ways of dealing with their [terminologies@], and use their own set of tools. These tools typically operate on text files (in a variety of formats, e.g. HTML, markdown, LaTeX, or wordprocessor formats such as DOCX or ODT).
+We assume that any author/group will create and maintain texts that concern a particular topic and that, from a terminological perspective, belong together. These texts - specifically those that relate to terminology itself, are expected to reside in a single directory, which we call the [scope-directory@] or [scopedir@].
 
-TEv2 expects the texts that concern a particular topic, that (from a terminological perspective) belong together, to be organized in a single directory, which we call the [scope directory@] or [scopedir@].
+A [scopedir@] typically contains:
+- [curated texts@], i.e. texts that the author/gropu
 
-:::caution Caution! &nbsp&nbspxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+:::caution Caution! &nbsp&nbspxxxxxxxxxxxxxxxxxxxxxxxxxxx
 From this point onward the text needs to be revised.<br/>
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 :::

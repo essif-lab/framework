@@ -19,22 +19,17 @@ This document specifies the structure of a Machine Readable Glossary (MRG), and 
 
 A Machine Readable Glossary (MRG) is a JSON (or YAML) file that is structured as follows:
 
-~~~ json
-{ "terminology": {
-    "scopetag": "tev2",
-    "scopedir": "https://github.com/essif-lab/framework/tree/master/docs/tev2"
-  },
-  "scopes": [
-   { "scopetag": "essiflab",
-     "scopedir": "https://github.com/essif-lab/framework/tree/master/docs"
-   },
-   { "scopetag": "ctwg",
-     "scopedir": "https://github.com/trustoverip/ctwg"
-   }
-  ],
-  "entries": [
-  ]
-}
+~~~ yaml
+terminology:
+  scopetag: tev2
+  scopedir: https://github.com/essif-lab/framework/tree/master/docs/tev2
+  license: 
+scopes:
+  - scopetag: essiflab
+    scopedir: https://github.com/essif-lab/framework/tree/master/docs
+  - scopetag: ctwg
+    scopedir: https://github.com/trustoverip/ctwg
+entries: []
 ~~~
 
 WHERE:
@@ -55,7 +50,7 @@ MRG Entries consist of the following fields
 | `grouptags` | n | (No default) | Comma-separated list of [grouptags](tag@), each of which identifies a group of [terms](term@) to which this [term@] belongs.<br/>Must satisfy PCRE regex `([a-z0-9_-]+)(?:,\s*([a-z0-9_-]+))*`. |
 | `date`| n | Date at which the glossary was generated | Date of the last update of the [term@]-related data, in the format `<YYYY><MM><DD>`. Must satisfy PCRE regex `\d{8}`. |
 | `versiontag` | n | (No default) | Text that identifies the version of the [term@] itself (not to be confused with the version of a [terminology@] that may contain that [term@]).<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
-| `commit` | n | (No default) | The latest (git) commit hash of the [term's](term@) [definition@]. |
+| `commit` | n | (No default) | The latest (git) commit hash of the [term's]dd(term@) [definition@]. |
 | `formphrases` | n | (No default) | Comma-separated list of texts that the [TRRT](#trrt) can use to convert the `show text` parts of [term refs@] into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).<br/>Must satisfy PCRE regex `([a-z0-9_-{}]+)(?:,\s*([a-z0-9_-{}]+))*`. |
 | `status` | n | `proposed` | Text that identifies the [status of the term](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). Allowed values are: `proposed`, `approved` or `deprecated`. |
 | `termname` | Y | (No default) | Text that is used for rendering the [term@] in a human readable document. It typically contains human readable characters. It may include uppercase and lowercase characters, spaces, etc. (which are not allowed in the `termid` field). |

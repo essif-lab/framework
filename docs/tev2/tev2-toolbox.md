@@ -12,7 +12,7 @@ This document is meant as a specification of results that the ToIP CTWG aims to 
 
 The intended audience is expected to be familiar with the [mental model on terminology](https://essif-lab.github.io/framework/docs/terms/pattern-terminology#formalized-model) and the current way(s) of working of the CTWG.
 
-The document assumes that within ToIP multiple [scopes](scope@) are created and maintained, each of which having (at least) one [tag@] that [identifies](identify@essiflab) the [scope@] within the context of ToIP. Also, the document assumes that anyone that has some dealing with terminology, is doing so within the context of a single such [scope@].
+The document assumes that within ToIP multiple [scopes](scope@) are created and maintained, each of which having (at least) one [tag@] that [identifies](identify@essiflab) the [scope@] within the context of ToIP. Also, the document assumes that anyone that has some dealing with terminology, is doing so within the context of a single such [scope@]. All [terminology@]-related texts of a [scope@] are expected to reside in a single directory, called the [scope directory@].
 
 This is envisaged in the following figure:
 
@@ -21,7 +21,17 @@ This is envisaged in the following figure:
   src={useBaseUrl('images/toip-ctwg-curation.png')}
 /><br/><br/>
 
-This figure shows a green and yellow group of people that author documents and use their own (preferred) tools for that. They may make documentation that is rendered by a (static) website, or create LaTeX manuscripts and turn them into PDF files. They may use Github to collaborate of control versions, etc.
+The figure shows 4 [scope directories@] as coloured, rounded rectangles (yellow, green, purple and reddish). Every scope has a [SAF@] (i.e. a Scope Administration File), and an [MRG@] (i.e. a Machine Readable Glossary)
+
+A [SAF@] specifies
+- where its documentation (e.g. website) is, how to contribute, raise issues, and find a contact point for the [curators@]. This is data that enables humans to contribute, raise issues, etc.
+- the subdirectories where glossaries, curated texts etc. can be found. This data helps tools to find their way around.
+- the [scope's@] from which [terms@] are being used, and a mapping to their respective [scopedirs@].
+- the [terms@] that the [scope's@] [terminology@] consists of - for all versions that are being maintained. The [terms@] may have [definitions@] that are [curated@] within the [scope@] itself, but may also use [definitions@] that are [curated@] in other [scopes@].
+
+An [MRG@] specifies
+-
+, of which only the yellow one has been elaborated. Each scopea green and yellow group of people that author documents and use their own (preferred) tools for that. They may make documentation that is rendered by a (static) website, or create LaTeX manuscripts and turn them into PDF files. They may use Github to collaborate of control versions, etc.
 
 :::info Editor's note
 From here, text needs to be revised
