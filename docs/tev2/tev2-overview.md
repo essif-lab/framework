@@ -53,12 +53,12 @@ TEv2 is a set of tools whose purpose is to facilitate the work of [curators](@) 
 
 TEv2 assumes that the [curated](@) data resides in an existing [scope directory](@), and that [curated files](@) are expected to be processable by other tools, including, but not limited to [github pages](https://pages.github.com/) or [Docusaurus](https://docusaurus.io/docs/docs-introduction), which are static site generators for web sites that document all sorts of guidance, specifications, etc. Such a [scope directory](@) must be [set up](tev2-installation) in advance.
 
-Thus, whenever a [terms-community](@) decided that some contribution is to be included in the part of the [corpus](@) that is maintained by that [community@](terms-community), the [curators](@) of that [community@](terms-community) are tasked to
+Thus, whenever a [terms-community](@) decided that some contribution is to be included in the part of the [corpus](@) that is maintained by that [community](terms-community@), the [curators](@) of that [community](terms-community@) are tasked to
 
 1. create/maintain/update any [scope](@)-related administration in the [scope directory](@) that is needed for curation, as specified by a [Scope Administration File (SAF)](tev2-spec-saf);
 2. convert that contribution to (a set of) [curated files](@), that comply with the [specifications](tev2-spec-ctext) for such files;
 3. store them at the location as designated in the [SAF](tev2-spec-saf);
-4. generate/update any artifact that the [community@](terms-community) wants to automatically maintain, such as a [glossary](@) for its [terminology](@).
+4. generate/update any artifact that the [community](terms-community@) wants to automatically maintain, such as a [glossary](@) for its [terminology](@).
 
 This document provides an overview of the knowledge that [curators](@) may need to perform this task, which can be broken up in the following parts:
 

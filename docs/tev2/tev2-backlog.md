@@ -16,7 +16,7 @@ The entire section on Terminology Engine v 2 (TEv2) is still under construction
 This backlog of the Terminology Engine v2 (TEv2) is a list of issues (concerns, topics) that still need to be addressed in the specifications of TEv2. Typically such issues are listed as editor's notes in the TEv2 specification files. This file will list any issues for which that would not be an appropriate solution.
 
 1. a [curated file](@) that contains the specification of a [term](@) must allow for a [header](@) entry that specifies
-  - word forms, such as plurals, that, when encountered while processing a [curated text](@), will be treated as if the defined term itself were encountered. For example, a term `actor` could have word-forms added such as `actors`, `actor's`, `actor(s)`, etc., that would allow authors to write [actors](@), [actor's](@), [actors'] or [actor(s)](@) without the need of having to add the link part (as in [actors@](actor)).
+  - word forms, such as plurals, that, when encountered while processing a [curated text](@), will be treated as if the defined term itself were encountered. For example, a term `actor` could have word-forms added such as `actors`, `actor's`, `actor(s)`, etc., that would allow authors to write [actors](@), [actor's](@), [actors'](@) or [actor(s)](@) without the need of having to add the link part (as in [actors](actor@)).
   - regexps, e.g. `actor(['']?s|\(s\))?`, or in the case of `party`, a regex such as `part(y|y['']s|ies)`
   - combinations thereof, where the regex-part can be specified is `\{\w+\}`in a configuration file is substituted by a macro-form, e.g. `actor{ss}` or `part{yies}` (where `{ss}` is interpreted as a regex, e.g. `(['']?s|\(s\))?`, and {yies} as `(y|y['']s|ies)`)
 

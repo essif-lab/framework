@@ -23,11 +23,11 @@ In order to do so, [GGT](tev2-toolbox-mrgt) expects the [SAF](@) of the [scope](
 
 The [@GGT] can also be passed a [Glossary Definition File (GDF)](gdf@), that specifies how an [MRG](@) can be converted into some other format. Such a format could either be an intermediate format that other tools (such as Docusaurus, or a LaTeX renderer) would further process, or it could produce a file that is automatically published on some human browsable website.
 
-a [Glossary Definition File (GDF)@](tev2-spec-gdf) to be (implicitly or explicitly) specified, that contains a specification of the [terminology](@) of a specific [scope](@), and further instructions regarding the rendering of its [terms](@) (<Mark>this part needs to be worked out some more - perhaps we should just generate MRG's, and do the other glossaries with a separate, extensible toolset</Mark>).
+a [Glossary Definition File (GDF)](tev2-spec-gdf) to be (implicitly or explicitly) specified, that contains a specification of the [terminology](@) of a specific [scope](@), and further instructions regarding the rendering of its [terms](@) (<Mark>this part needs to be worked out some more - perhaps we should just generate MRG's, and do the other glossaries with a separate, extensible toolset</Mark>).
 
-In order to do so, [GGT](tev2-toolbox-mrgt) expects the [SAF](@) and the [MRG](@) of the [scope](@) from within which it is being called, to be available. The [MRG](@) is used to resolve all links to [terms](@) that are part of the [terminology](@) of this [scope](@). The [SAF](@) is used to locate the [MRG's](@) of any (other) [scope](@) whose [scopetag](@) is used as part of a [reference@](term-ref) that needs to be resolved.
+In order to do so, [GGT](tev2-toolbox-mrgt) expects the [SAF](@) and the [MRG](@) of the [scope](@) from within which it is being called, to be available. The [MRG](@) is used to resolve all links to [terms](@) that are part of the [terminology](@) of this [scope](@). The [SAF](@) is used to locate the [MRG's](@) of any (other) [scope](@) whose [scopetag](@) is used as part of a [reference](term-ref@) that needs to be resolved.
 
-The [GGT](#ggt) first creates an [MRG](#mrg) (which does the 'heavy lifting'), and from that, a [HRG](#hrg) will be created. Different [HRGs](#hrg), i.e. different human-readable renderings of the [terminology](@) may be created from the same [MRG](#mrg).
+The [GGT](#ggt) first creates an [MRG](#mrg) (which does the 'heavy lifting'), and from that, a [HRG](#hrg) will be created. Different [HRGs](#hrg), i.e. different human-readable renderings of the [terminology](@) may be created from the same [MRG](#mrg).+
 
 ### Creating an MRG
 
