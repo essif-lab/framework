@@ -26,30 +26,55 @@ The current eSSIF-Lab (i.e.: this) website already shows the first ideas of what
 
 ## Introduction
 
-TEv2 not only facilitates individual authors or groups in dealing with their own [terminology](@), it specifically also caters for authors/groups using [terms](@) that others have [defined](@), without each author/group loosing their autonomy (control) over their own [terminologies](@). The following figure illustrates how that works:
+TEv2 not only facilitates individual authors or groups in dealing with their own [terminology](@), it specifically also caters for authors/groups using [terms](@) that others have [defined](@), without each author/group loosing their autonomy (control) over their own [terminologies](@).
+
+We assume that any author/group will create and maintain texts that concern a particular topic and that, from a terminological perspective, belong together. We also assume that such texts are 'raw', i.e. in a very simple format such as plain ASCII text, markdown, LaTex, etc., and somehow require a rendering step that turns them into 'formatted' texts, such as PDF, ODT, DOCX, or Google doc format. The reason for that is that the more complex a text format is, the more difficult it is to process them.
+
+This is illustrated in the figure below. The figure also shows the TEv2 'toolbox', which contains tools that can process raw texts prior to them being processed by the regular rendering tools that an author/group uses.
+
+<img
+  alt="Converting raw texts into formatted texts"
+  src={useBaseUrl('images/tev2-overview-without-toolbox.png')}
+/><br/><br/>
+
+One of the most useful tools in the toolbox is the Terminology Reference Resolver Tool ([TRRT](@)). This tool can process a raw text that contains so-called [Term Refs](term-ref@), and resolve them to a syntax that one or more specific 3rd party rendering tools can pick up and use to create enhanced formatted texts. The figure below shows a raw (markdown) text (in markdown), and the corresponding  formatted (web page, HTML) text that is the result of processing by the [TRRT](@) and subsequently by the Docusaurus rendering tools.
+
+<img
+  alt="The effect of the Terminology Reference Resolver Tool"
+  src={useBaseUrl('images/tev2-overview-enhanced-term.png')}
+/><br/><br/>
+
+If you are familiar with [markdown](https://www.markdownguide.org/basic-syntax/), you will notice that the raw text contains syntax that resembles [markdown links](https://www.markdownguide.org/basic-syntax/#links), but it's not quite conformant: it contains the `@` character, which signals (within TEv2) that this is not an ordinary link, but a link that will be resolved by the [TRRT](@). The [TRRT](@) will convert these links (which we call [term refs](term-ref@)) such that they are rendered as shown in the right of the figure: that is: in purple boldface, and when you hover your mouse over the term, it will show the definition of that term.
+
+## TEv2 Architecture
+
+TEv2 is designed to support an ever increasing variety of raw text formats, and its toolbox will - over time - be filled with an increasing number of tools that will support an increasing number of 3rd party rendering tools. This section shows the architecture that allows this to become reality.
+
+The architecture is based on the ToIP/eSSIF-Lab [Terminology Model](/docs/terms/pattern-terminology), which assumes that every author/group constitutes a so-called [terms-community](@) that [curates](@) one (or more) [scope(s)](@), that contains e.g. [definitions](@), [terms](@), [tags](@) etc. that constitute the author/group's [terminology](@). An overview is given in the figure below:
 
 <img
   alt="Curation of Terminology and its Tooling"
   src={useBaseUrl('images/tev2-overview.png')}
 /><br/><br/>
 
-We assume that any author/group will create and maintain texts that concern a particular topic and that, from a terminological perspective, belong together. These texts - specifically those that relate to terminology itself, are expected to reside in a single directory, which we call the [scope-directory](@) or [scopedir](@).
+The figure not only shows the raw texts, the their processing by the [TRRT](@) tool and the subsequent rendering to produce formatted texts, but also other files that exist within the [scope](@), and that are being [curated](@) by its [terms-community](@) (the author/group). TEv2 expects all files that are under [curation](@), and/or are generated to serve a purpose within a [scope](@), to live in a specific directory, which we call the [scope directory](@). The rounded rectangles in the figure represent such directories and (parts of) their contents.
 
-A [scopedir](@) typically contains:
-- [curated texts](@), i.e. texts that the author/gropu
+To the left of the figure, you can see that some raw texts are 'ingressed' into the [scope directory](@), and thereby have become so-called [curated texts](@). These texts typically contain descriptions of [terms](@), [definitions](@), examples, etc., that help interested [parties](@) to formulate and understand the [concepts](@) that they need. Such [curated texts](@) are then fed to the [MRGT](@) tool, that generates a Machine Readable [Glossary](@) ([MRG](@)) of the [scope's](@) [terminology](@).
 
-:::caution Caution! &nbsp&nbspxxxxxxxxxxxxxxxxxxxxxxxxxxx
-From this point onward the text needs to be revised.<br/>
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+The [MRG](@) is also considered a 'raw text', and hence it can also be subjected to the [TRRT](@) to resolve any [term refs](@) that it may hold, and subsequently be rendered to result in a formatted text that we call a Human Readable Glossary or [HRG](@); we will use the term [HRGT](@) to refer to the rendering tool that produces the [HRG](@).
+
+Since the [terminology](@) of a [scope](@) may also include [terms](@) that are [defined](@) in other [scopes](@), the [MRGT](@) will need to know where to get the associated data. It can do so because every [scope directory](@) has a so-called Scope Administration File or [SAF](@), which contains:
+- meta-data concerning the [scope](@) itself, ways in which people can contribute, raise issues, see what's going on, discuss,  what license is being used, and how to contact [curators](@);
+- meta-data about the [scopes](@) that contain data that needs to be used/imported, which includes the URL of their respective [scope directories](@);
+- the specification (of various versions that are being maintained) of the [scope's](@) [terminology](@), which includes the set of [terms](@) the [definitions](@) of which come either from the [scope](@) itelf, or from one of the [scopes](@) that is listed in the [SAF](@).
+
+Thus, by inspecting the contents of the [SAF](@), the [MRGT](@) learns which [MRGs](@) of other [scopes](@) it needs to obtain, and where they are located. Also, the [MRGT](@) learns which [terms](@) and [definitions](@) of the [scope](@) itself are to be included in the [terminology](@) that is will be creating an [MRG](@) for.
+
+## Curation
+
+:::info Editor's note
+This section may need to be revised
 :::
-
-However, in order to use each other's terminological artifacts, some common ground needs to be established and maintained. This means that xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-This figure shows a green and yellow group of people that author documents and use their own (preferred) tools for that. They may make documentation that is rendered by a (static) website, or create LaTeX manuscripts and turn them into PDF files. They may use Github to collaborate of control versions, etc.
-
-
-TEv2 ensures that the [community](@) of [terms communities](@) that use it will be able to use each others [definitions](@), [terms](@) and other terminological artifacts without loosing their autonomy (control over the [terminologies](@) they [own](@) themselves).
-
-TEv2 is a set of tools whose purpose is to facilitate the work of [curators](@) of a [terms-community](@) that seeks to create and maintain one or more [terminologies](@) of their own, and use [terminologies](@) that are maintained by other [parties](@) that are members of the Trust over IP [community](@).
 
 TEv2 assumes that the [curated](@) data resides in an existing [scope directory](@), and that [curated files](@) are expected to be processable by other tools, including, but not limited to [github pages](https://pages.github.com/) or [Docusaurus](https://docusaurus.io/docs/docs-introduction), which are static site generators for web sites that document all sorts of guidance, specifications, etc. Such a [scope directory](@) must be [set up](tev2-installation) in advance.
 
@@ -58,7 +83,7 @@ Thus, whenever a [terms-community](@) decided that some contribution is to be in
 1. create/maintain/update any [scope](@)-related administration in the [scope directory](@) that is needed for curation, as specified by a [Scope Administration File (SAF)](tev2-spec-saf);
 2. convert that contribution to (a set of) [curated files](@), that comply with the [specifications](tev2-spec-ctext) for such files;
 3. store them at the location as designated in the [SAF](tev2-spec-saf);
-4. generate/update any artifact that the [community](terms-community@) wants to automatically maintain, such as a [glossary](@) for its [terminology](@).
+4. generate/update any artifact that the [community](terms-community@) wants to automatically maintain, which in particular includes the [MRG](@) and associated [HRG](@).
 
 This document provides an overview of the knowledge that [curators](@) may need to perform this task, which can be broken up in the following parts:
 
