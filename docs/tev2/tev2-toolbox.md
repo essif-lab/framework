@@ -1,6 +1,6 @@
 ---
-id: toip-terminology-toolbox
-title: ToIP TT-Tools Proposal
+id: tev2-toolbox
+title: TEv2 Terminology Toolbox
 displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220421
@@ -8,13 +8,39 @@ date: 20220421
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-:::info
-This document is a first specification of results that the [ToIP Concepts & Terminology Working Group (CTWG)](https://wiki.trustoverip.org/pages/viewpage.action?pageId=65700) aims to realize. The ideas in this memo are being elaborated on as specifications for the [eSSIF-Lab Terminology Engine v2](tev2-overview), as documented on this site. As elaboration progresses, deviations from this memo may arise. At some point, we will add `info` blocks such as these to document such differences.
-:::
+This document is meant as a specification of results that the ToIP CTWG aims to realize, that can serve as the basis for the specification of terminology tooling.
 
 The intended audience is expected to be familiar with the [mental model on terminology](https://essif-lab.github.io/framework/docs/terms/pattern-terminology#formalized-model) and the current way(s) of working of the CTWG.
 
-The document assumes that within ToIP multiple [scopes](scope@) are created and maintained, each of which having (at least) one [tag](@) that [identifies](identify@essiflab) the [scope](@) within the context of ToIP. Also, the document assumes that anyone that has some dealing with terminology, is doing so within the context of a single such [scope](@).
+The document assumes that within ToIP multiple [scopes](scope@) are created and maintained, each of which having (at least) one [tag](@) that [identifies](identify@essiflab) the [scope](@) within the context of ToIP. Also, the document assumes that anyone that has some dealing with terminology, is doing so within the context of a single such [scope](@). All [terminology](@)-related texts of a [scope](@) are expected to reside in a single directory, called the [scope directory](@).
+
+This is envisaged in the following figure:
+
+<img
+  alt="ToIP - Curation of Terminology and its Tooling"
+  src={useBaseUrl('images/toip-ctwg-curation.png')}
+/><br/><br/>
+
+The figure shows 4 [scope directories](@) as coloured, rounded rectangles (yellow, green, purple and reddish). Every scope has a [SAF](@) (i.e. a Scope Administration File), and an [MRG](@) (i.e. a Machine Readable Glossary)
+
+A [SAF](@) specifies
+- where its documentation (e.g. website) is, how to contribute, raise issues, and find a contact point for the [curators](@). This is data that enables humans to contribute, raise issues, etc.
+- the subdirectories where glossaries, curated texts etc. can be found. This data helps tools to find their way around.
+- the [scope's](@) from which [terms](@) are being used, and a mapping to their respective [scopedirs](@).
+- the [terms](@) that the [scope's](@) [terminology](@) consists of - for all versions that are being maintained. The [terms](@) may have [definitions](@) that are [curated](@) within the [scope](@) itself, but may also use [definitions](@) that are [curated](@) in other [scopes](@).
+
+An [MRG](@) specifies
+-
+, of which only the yellow one has been elaborated. Each scopea green and yellow group of people that author documents and use their own (preferred) tools for that. They may make documentation that is rendered by a (static) website, or create LaTeX manuscripts and turn them into PDF files. They may use Github to collaborate of control versions, etc.
+
+:::info Editor's note
+From here, text needs to be revised
+:::
+
+We assume that each group wants to develop and/or maintain ([curate](@)) its own [terminology](@) (in some [scope](@)), to serve their own purposes. They do so by creating their own [curated texts](@)
+
+
+
 
 This document specifies the (initial) tt-toolbox, i.e. a set of 'tools' that can be called from within a specific [scope](@), to help maintain its [terminology](@), create [glossaries](glossary@) and provide other support for its [curation](curate@).
 
@@ -140,12 +166,21 @@ The contents of a [glossary](@) consists of one entry (which we call **glossary 
 - [defined](definition@) in the [scope](@) iself;
 - (explicitly or implicitly) selected by the [curators](curator@) of the [scope](*@) and that is part of the contents of a [glossary](@) of another [scope](@).
 
-Selecting [terms](term@) of another [scope](@) is done by [specifying](tev2-spec-selection-criteria) the required [term selection criteria](@).
+The syntax that is used for selecting [terms](term@) of another [scope](@) is:
+- by means of a [term ref](@), where the `show text` specifies the name of the [term](@) as it will be used in the [scope](@), and the [definition](@) (and other terminological artifacts of that [term](@), such as purpose, examples, etc.) are 'inherited' from the [term](@) that is being referenced.
+- by means of the so-called 'tagslist-syntax', which is `tagslist`@`scopetag`:`vsn` (e.g. `paa,terminology@essiflab:latest`) where:
+  - @`scopetag` (required) identifies a [scope](@) in the SAF, thus allowing tools to obtain (the specified version, or if omitted, the latest version of) the MRG of that [scope](@) from which to extract the selected entries. In the example, this is `essiflab`.
+  - `vsn` (optional) is the specific version of the MRG from which the [terms](@) are selected. If omitted (in which case the preceding `:` may also be omitted), the latest version is specified. The example specifies the `latest` version of the essiflab [glossary](@).
+  - `tagslist` (optional) is a comma-separated list of[tags](tag@) (e.g. `paa,terminology,ctwg`). If the tag is a [scopetag](tag@), every [term](@) in the MRG of the specified [scope](@) are selected. If the tag is a [grouptag](tag@), then every [term](@) in the MRG of the specified [scope](@) that is associated with that [grouptag](tag@) is selected.
+
+A GDF contains a sequence of such selection syntaxes that will be processed in the order they are specified (see the [GGT](#ggt) for details on how processing takes place). Thus, in order to 'rename' a [term](@) that was imported using the tagslist-syntax, it suffices to use the [term ref](@) that import that [term](@) again.
+
+Optionally, syntax can be added to remove previously selected [terms](@) , e.g. by allowing the `-` character to precede one of the selection syntaxes. The idea is then that a list of such (de)selection syntaxes is incrementally processed, and when a `-`-syntax is encountered, the [terms](@) that would have otherwise been selected will then be removed from the selection.
 
 We leave the specification of additional syntax for GDFs, e.g. for the inclusion of headers, footers and other stuff that is specific for the generation of [HRGs](#hrg), as work to be done.
 
 :::info Editor's Note
-Currently, every [MRG](#mrg)/[HRG](#hrg) is to be accompanied by a specific [GDF]{#gdf} that specifies their contents. Texts need to be revised to accommodate for the more practical way of specifying a [scope's](@) [terminology](@), which is to specify the [term-selection-criterai](@) in the [SAF](@). [HRGs](@), or other flavors of [MRGs](@) will then require a (type-sepecif) [GDF]{#gdf}.
+Currently, every [MRG](#mrg)/[HRG](#hrg) is to be accompanied by a specific [GDF]{#gdf} that specifies their contents. Is seems more practical to say that one such specification - i.e. for the default [MRG](#mrg)/[HRG](#hrg), would be part of the [SAF](@), and any other such specifications (which we might then perhaps limit to just HRG-specifications) might then require their specific [GDF]{#gdf}.
 :::
 ## Glossary Generation Tool (GGT) {#ggt}
 
