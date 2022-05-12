@@ -8,27 +8,39 @@ date: 20220303
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction
 :::
 
-This document specifies the contents of the Scope Administration file.
+Every [scope](@) MUST have exactly one Scope Administration File or [SAF](@), i.e. a file contains whatever needs to be administered in the [scope](@), and that various tools need to find e.g. the [scope's](@) [MRG](@), [curated texts](@), [scopetags](@), etc.
 
-:::info Editor's note
-The scope administration file contains whatever needs to be administered in the scope. Before documenting this, we do some experiments with SAFs to gain experience about the ways we should go about this stuff.
-:::
+This document specifies the structure of such [SAFs](@).
 
-We have an experimental SAF:
-- in [YAML format](saf.yaml) (which has comments that explaining the structure), and
-- in [JSON format](saf.json) (which has no explanations because JSON doesn't support comments)
+The [SAF](@) is to be created and maintained by the [curators](@) of the [scope](@).
 
-:::info Editor's note
-The SAF contains a `dateformat` field, which is a regex that has named groups such as `year`, `month`, etc. This field specifies the *default* format for dates. The presented regex is for ISO dates and date/times. The regex can be used by tools to convert dates by applying it (or a regex that overrides this default), and using the contents of the named groups to reformat to any desired other format.
-:::
+## Scope Administration File Field Descriptions
+
+A [SAF](@) has three main parts:
+1. **`terminology`** defines meta-data concerning the [scope](@) itself, ways in which people can contribute, raise issues, see what's going on, discuss, and what license is being used.
+2. **`scopes`** is for technical use, meaning that tools can use this section to find where [curated files](@) of the [scope](@) are located, and where the [scope directories](@) of other [scopes](@) are located, and wh data of the [scope](@) itself, and of [scopes](@) that contain data that needs to be used/imported.
+3. **`versions`** specifies the versions that are actively maintained by the [curators](@). For each version, the set of [terms](@) is selected that constitute the [terminology](@).
+
+The following sections specify the fields for each of these parts.
+
+### SAF Terminology - Defining the Scope itself
+
+<Tabs
+    defaultValue="yaml"
+    values={[
+        {label: 'Yaml', value: 'yaml'},
+        {label: 'JSON', value: 'json'},
+    ]}>
+<TabItem value="yaml">
 
 ~~~ yaml
----
 #
 # This is a Scope Administration File that can be used in conjunction with TEv2.
 #
@@ -48,11 +60,47 @@ terminology:
     email: # we split up the email address to reduce the likelihood of the address being harvested for spamming
       id: rieks.joosten
       at: tno.nl
-  # `dateformat` is a (PCRE) regex that can be used to interpret (parse) dates and date-times
-  # as they are used within this scope, the result of which shows up as named capturing groups.
-  # As an example, we specify the regex for ISO 8601 date(time)s, which is explained at
-  # https://www.debuggex.com/r/7AhSyBzuBvuzYn52.
-  dateformat: "(?P<YYYY>\\d{4})-?(?P<MM>\\d{2})-?(?P<DD>\\d{2})(?:T?(?P<hh>\\d{2}):?(?P<mm>\\d{2}):?(?P<ss>\\d{2})(?:\\.(?P<fraction>\\d+))?)?(?P<tzone>Z|[+-]\\d{2}:\\d{2})?"
+  dateformat: "(?P<YYYY>\\d{4})-?(?P<MM>\\d{2})-?(?P<DD>\\d{2})(?P<tzone>Z|[+-]\\d{2}:\\d{2})?"
+~~~
+
+</TabItem>
+<TabItem value="json">
+
+:::info Editor's note
+As we're still developing the structure of the SAF, and we do not want to continually update the JSON equivalent of the YAML, we leave this section as `TO BE DONE` when things get finalized.
+:::
+~~~ json
+TBD
+~~~
+
+</TabItem>
+</Tabs>
+
+The following fields are defined for the `terminology` section of a [SAF](@):
+
+| Name | Req'd | Default | Description |
+| ---- | :---: | ------- | ----------- |
+| `scopetag` | Y | | [Scopetag](@) that [curators](@) of this scope have determined for this [terminology](@). The associated [scopedir](@) is specified in the section `scopes`. |
+| `license` | n | | File in the root of the [scopedir](@) that contains licensing data. |
+| `issues` | n | | URL where issues can be reported and handled.|
+| `website` | n | | URL for the home page of the [terminology](@). |
+| `slack` | n | | URL for the slack channel for discussions. |
+| `curator` | n | | Data that can be used to contact individual [curators](@). |
+| `dateformat` | n |  | Regex (PCRE) that has named capturing groups for YYYY, MM and DD, and that can be used to parse the date fields used in this [scope](@) ) (provided another regex doesn't override it). When not provided, tools should use the regex "**(?P<YYYY\>\d{4})-?(?P<MM\>\d{2})-?(?P<DD\>\d{2})(?P<tzone\>Z&#124[+-]\d{2}:\d{2})?**" for this (noting that in certain contexts, `\` characters may need to be escaped). |
+
+### SAF Scopes - Mapping Scopetags and Scopedirs
+
+The `scopetags` section is a list that specifies a mapping between [scopetags](@) as they are used in this [scope](@), the associated [scopedir]((@)) and if necessary, other paths and filenames for terminological artifacts within the [scope](@). The latter is only required when specifying the [scope](@) for which the [SAF](@) is created/maintained, as for other [scopes](@), such other paths and filenames can readily be found by inspecting the [SAF](@) that is located in the root of the [scopedir](@) of such [scopes](@).
+
+<Tabs
+    defaultValue="yaml"
+    values={[
+        {label: 'Yaml', value: 'yaml'},
+        {label: 'JSON', value: 'json'},
+    ]}>
+<TabItem value="yaml">
+
+~~~ yaml
 #
 # The second section is for technical/tool use, so they can find data:
 # - of the scope itself, and
@@ -65,7 +113,7 @@ scopes:  # The first scopetag should be about the terminology administrated by t
       - tev2
     scopedir: https://github.com/essif-lab/framework/tree/master/docs/tev2  # URL of the scope-directory
     curatedir: docs # directory where all curated files are located. Full URL is `scopedir`/`curatedir`
-    glossarydir: docs/glossary # directory where all glossary files and GDFs are located. Full URL is `scopedir`/`glossarydir``
+    glossarydir: docs/glossary # directory where all glossary files and GDFs are located. Full URL is `scopedir`/`glossarydir`
     mrgfile: mrg.json # file that contains the machine readable glossary. Full URL is `scopedir`/`mrgfile``
     hrgfile: glossary # file that contains the human readable glossary. Full URL is `scopedir`/`hrgfile`
   - scopetags: # definition of (scope) tag(s) that are used within this scope to refer to a specific terminology
@@ -76,12 +124,52 @@ scopes:  # The first scopetag should be about the terminology administrated by t
       - ctwg
       - toip-ctwg
     scopedir: https://github.com/trustoverip/ctwg # URL of the scope-directory
+~~~
+
+</TabItem>
+<TabItem value="json">
+
+:::info Editor's note
+As we're still developing the structure of the SAF, and we do not want to continually update the JSON equivalent of the YAML, we leave this section as `TO BE DONE` when things get finalized.
+:::
+~~~ json
+TBD
+~~~
+
+</TabItem>
+</Tabs>
+
+The following fields are defined for the `scopes` section of a [SAF](@):
+
+| Name | Req'd | Default | Description |
+| ---- | :---: | ------- | ----------- |
+| `scopetags` | Y | | List of at least one [scopetag](@), that the [curator(s)](@) of this [scope](@) have determined for the [terminology](@) of a specific [scope](@). The associated [scopedir](@) is specified in the section `scopes`.|
+| `scopedir` | Y | | URL of the location of the [scopedir](@) associated with the [scopetags](@) listed in the `scopetags` field. |
+| `curatedir` | n | | Path to the directory where all [curated files](@) are located. Full URL is `scopedir`/`curatedir`.|
+| `glossarydir` | n | | Path to the directory where all [glossary](@) files and [GDFs](@) are located. Full URL is `scopedir`/`glossarydir`. |
+| `mrgfile` | n | | Name of the file that contains the latest version of the [MRG](@). Full URL is `scopedir`/`mrgfile`. |
+| `hrgfile` | n | | Name of the file that contains the latest version of the [HRG](@). Full URL is `scopedir`/`hrgfile` |
+
+### SAF Versions - Enabling changes and updates in a scope's Terminology
+
+The third section in the [SAF](@) specifies the [terminology](@) of the [scope](@), in multiple versions that are actively maintained by the [curators](@). For each version, the set of [terms](@) is selected that constitute that version's [terminology](@). Also, additional data is provided regarding the state/validity of the [terminology](@) over time, which may of interest for the [curators](@) of other scopes as they need to decide whether or not to import [terms](@) from such a [terminology](@).
+
+<Tabs
+    defaultValue="yaml"
+    values={[
+        {label: 'Yaml', value: 'yaml'},
+        {label: 'JSON', value: 'json'},
+    ]}>
+<TabItem value="yaml">
+
+~~~ yaml
 #
 # The third section specifies the versions that are actively maintained by the curators.
 # For each version, the set of terms is selected that constitute the terminology.
 # See the Glossary Generation Tool (GGT) for details about the syntax and semantics.
 #
 versions:
+  - id: 0x921456 # an arbitrary text that identifies this version from all other versions in the SAF
   - versiontags: # definition of (version)tag(s) that are used within this scope to refer to a specific terminology.
       - latest
       - v0.9.4
@@ -91,7 +179,8 @@ versions:
       - "[community@essif-lab:0.9.4]" # import the term `community` from the mrg of `essif-lab:0.9.4`.
       - tev2@tev2 # import all terms defined in the scope `tev2`
     status: proposed
-    from: 202200312
+    from: 20220312
+    to:
   - versiontags: # definition of (version)tag(s) that are used within this scope to refer to a specific terminology.
       - v0.9.0
     terms:
@@ -99,3 +188,27 @@ versions:
       - "[party@essif-lab]" # import the term `party` from the mrg of `essif-lab:latest`.
       - "[community@essif-lab]" # import the term `community` from the mrg of `essif-lab:latest`.
 ~~~
+
+</TabItem>
+<TabItem value="json">
+
+:::info Editor's note
+As we're still developing the structure of the SAF, and we do not want to continually update the JSON equivalent of the YAML, we leave this section as `TO BE DONE` when things get finalized.
+:::
+~~~ json
+TBD
+~~~
+
+</TabItem>
+</Tabs>
+
+The following fields are defined for the `versions` section of a [SAF](@):
+
+| Name | Req'd | Default | Description |
+| ---- | :---: | ------- | ----------- |
+| `id` | Y | | Text that [identifies](@) this version from all other versions in this [SAF](@).<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
+| `versiontags` | Y | | Specification of at least one [versiontag](@) that are used within this [scope](@) to refer to a specific [terminology](@). |
+| `terms` | Y | | List of [term selection criteria](@) that are used to generate the [scope's](@) [terminology](@). See [Term Selection](tev2-spec-selection-criteria) for details. |
+| `status` | n | proposed  | a text that identifies the [status of the terminology](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). Allowed values are: 'proposed', 'approved' or 'deprecated'. |
+| `from` | n | | Date at which of the version related data was decided on. |
+| `to` | n | | Date at which the version was overridden with another one. |

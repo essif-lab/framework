@@ -140,21 +140,12 @@ The contents of a [glossary](@) consists of one entry (which we call **glossary 
 - [defined](definition@) in the [scope](@) iself;
 - (explicitly or implicitly) selected by the [curators](curator@) of the [scope](*@) and that is part of the contents of a [glossary](@) of another [scope](@).
 
-The syntax that is used for selecting [terms](term@) of another [scope](@) is:
-- by means of a [term ref](@), where the `show text` specifies the name of the [term](@) as it will be used in the [scope](@), and the [definition](@) (and other terminological artifacts of that [term](@), such as purpose, examples, etc.) are 'inherited' from the [term](@) that is being referenced.
-- by means of the so-called 'tagslist-syntax', which is `tagslist`@`scopetag`:`vsn` (e.g. `paa,terminology@essiflab:latest`) where:
-  - @`scopetag` (required) identifies a [scope](@) in the SAF, thus allowing tools to obtain (the specified version, or if omitted, the latest version of) the MRG of that [scope](@) from which to extract the selected entries. In the example, this is `essiflab`.
-  - `vsn` (optional) is the specific version of the MRG from which the [terms](@) are selected. If omitted (in which case the preceding `:` may also be omitted), the latest version is specified. The example specifies the `latest` version of the essiflab [glossary](@).
-  - `tagslist` (optional) is a comma-separated list of[tags](tag@) (e.g. `paa,terminology,ctwg`). If the tag is a [scopetag](tag@), every [term](@) in the MRG of the specified [scope](@) are selected. If the tag is a [grouptag](tag@), then every [term](@) in the MRG of the specified [scope](@) that is associated with that [grouptag](tag@) is selected.
-
-A GDF contains a sequence of such selection syntaxes that will be processed in the order they are specified (see the [GGT](#ggt) for details on how processing takes place). Thus, in order to 'rename' a [term](@) that was imported using the tagslist-syntax, it suffices to use the [term ref](@) that import that [term](@) again.
-
-Optionally, syntax can be added to remove previously selected [terms](@) , e.g. by allowing the `-` character to precede one of the selection syntaxes. The idea is then that a list of such (de)selection syntaxes is incrementally processed, and when a `-`-syntax is encountered, the [terms](@) that would have otherwise been selected will then be removed from the selection.
+Selecting [terms](term@) of another [scope](@) is done by [specifying](tev2-spec-selection-criteria) the required [term selection criteria](@).
 
 We leave the specification of additional syntax for GDFs, e.g. for the inclusion of headers, footers and other stuff that is specific for the generation of [HRGs](#hrg), as work to be done.
 
 :::info Editor's Note
-Currently, every [MRG](#mrg)/[HRG](#hrg) is to be accompanied by a specific [GDF]{#gdf} that specifies their contents. Is seems more practical to say that one such specification - i.e. for the default [MRG](#mrg)/[HRG](#hrg), would be part of the [SAF](@), and any other such specifications (which we might then perhaps limit to just HRG-specifications) might then require their specific [GDF]{#gdf}.
+Currently, every [MRG](#mrg)/[HRG](#hrg) is to be accompanied by a specific [GDF]{#gdf} that specifies their contents. Texts need to be revised to accommodate for the more practical way of specifying a [scope's](@) [terminology](@), which is to specify the [term-selection-criterai](@) in the [SAF](@). [HRGs](@), or other flavors of [MRGs](@) will then require a (type-sepecif) [GDF]{#gdf}.
 :::
 ## Glossary Generation Tool (GGT) {#ggt}
 

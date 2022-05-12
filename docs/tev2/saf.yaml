@@ -1,11 +1,5 @@
----
-#
-# This is a Scope Administration File that can be used in conjunction with TEv2.
-#
-# The first section is for human use. It defines meta-data concerning the scope itself,
-# ways in which people can contribute, raise issues, see what's going on, discuss,
-# and what license is being used.
-#
+
+
 terminology:
   scopetag: tev2 # identifier that curators have determined for this terminology
   # `scopedir` is specified in the section `scopes`.
@@ -22,20 +16,15 @@ terminology:
   # as they are used within this scope, the result of which shows up as named capturing groups.
   # As an example, we specify the regex for ISO 8601 date(time)s, which is explained at
   # https://www.debuggex.com/r/7AhSyBzuBvuzYn52.
-  dateformat: "(?P<YYYY>\\d{4})-?(?P<MM>\\d{2})-?(?P<DD>\\d{2})(?:T?(?P<hh>\\d{2}):?(?P<mm>\\d{2}):?(?P<ss>\\d{2})(?:\\.(?P<fraction>\\d+))?)?(?P<tzone>Z|[+-]\\d{2}:\\d{2})?"
+  dateformat: "(?P<YYYY>\\d{4})-?(?P<MM>\\d{2})-?(?P<DD>\\d{2})(?P<tzone>Z|[+-]\\d{2}:\\d{2})?"
 #
-# The second section is for technical/tool use, so they can find data:
-# - of the scope itself, and
-# - of scopes that contain data that needs to be used/imported.
-#   For such 'third party scopes', only the URL of their scope-directories is needed
-#   as any other data can be found from the SOF that is located there.
 #
 scopes:  # The first scopetag should be about the terminology administrated by this file
   - scopetags: # definition of (scope) tag(s) that are used within this scope to refer to a specific terminology
       - tev2
     scopedir: https://github.com/essif-lab/framework/tree/master/docs/tev2  # URL of the scope-directory
     curatedir: docs # directory where all curated files are located. Full URL is `scopedir`/`curatedir`
-    glossarydir: docs/glossary # directory where all glossary files and GDFs are located. Full URL is `scopedir`/`glossarydir``
+    glossarydir: docs/glossary # directory where all glossary files and GDFs are located. Full URL is `scopedir`/`glossarydir`
     mrgfile: mrg.json # file that contains the machine readable glossary. Full URL is `scopedir`/`mrgfile``
     hrgfile: glossary # file that contains the human readable glossary. Full URL is `scopedir`/`hrgfile`
   - scopetags: # definition of (scope) tag(s) that are used within this scope to refer to a specific terminology
