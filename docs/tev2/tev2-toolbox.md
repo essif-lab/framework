@@ -134,7 +134,7 @@ A MRG entry for an MRG SHOULD accommodate for (at least) the following fields:
 - `commit` (optional): the latest (git) commit hash of the [term's](term@) [definition](@).
 - `formphrases` (optional): a list of texts that the [TRRT](#trrt) can use to convert `show texts` into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs). The `formphrases` elements (texts) shall only contain characters in regex `[a-z0-9_-{}]`.
 - `status` (optional): a text that identifies the [status of the term](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). Allowed values are: 'proposed', 'approved' or 'deprecated'.
-- `termname` (required): the text that is used for rendering the [term](@) in a human readable document. It typically contains human readable characters. It may include uppercase and lowercase characters, spaces, etc. (which are not allowed in the `termid` field).
+- `term` (required): the text that is used for rendering the [term](@) in a human readable document. It typically contains human readable characters. It may include uppercase and lowercase characters, spaces, etc. (which are not allowed in the `termid` field).
 - `synonyms` (optional): a list of texts that that may alternatively be used for rendering the [term](@) in a human readable document. It typically contains human readable characters. It may include uppercase and lowercase characters, spaces, etc. (which are not allowed in the `termid` field).
 - `glossaryText` (required): a text that can be used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](term-ref@).
 - `hoverText` (optional): a text that can be used as the contents of a popup that shows as the [term](@) is rendered in a web browser and the user hovers over the [term](@) with its mouse.
@@ -162,7 +162,7 @@ Every [glossary](@) is said to 'render' the [terminology](@) of a particular [sc
 
 Because [terminologies](terminology@) tend to change over time, they (and a [glossary](@) that renders it) may be versioned.
 
-The contents of a [glossary](@) consists of one entry (which we call **glossary entries**) for every [term](@) that is
+The contents of a [glossary](@) consists of one entry (which we call **MRG entries**) for every [term](@) that is
 - [defined](definition@) in the [scope](@) iself;
 - (explicitly or implicitly) selected by the [curators](curator@) of the [scope](*@) and that is part of the contents of a [glossary](@) of another [scope](@).
 
@@ -190,12 +190,12 @@ The [MRGT](#mrgt) first creates an [MRG](#mrg) (which does the 'heavy lifting'),
 ### Creating an MRG
 
 Creating an [MRG](#mrg) works as follows:
-- Create an initial set of glossary entries, i.e. one for every [term](@) (from [scopes](scope@) other than the one we create the MRG for) that is selected per the specifications in the [GDF](#gdf). A MRG entry is constructed by interpreting the [term file](@essiflab) that defines the [term](@), and producing the MRG entry structure as defined for [MRGs](#mrg). Note that this can only be done for [term files](term-file@essiflab) that have a syntax that is supported by the [MRGT](#mrgt). If the created MRG entry has an `id` that is the same as the `id`-field of an existing glossary-entry, that MRG entry will be discarded (meaning that the newly created MRG entry  'overrides' the existing one).
+- Create an initial set of MRG entries, i.e. one for every [term](@) (from [scopes](scope@) other than the one we create the MRG for) that is selected per the specifications in the [GDF](#gdf). A MRG entry is constructed by interpreting the [term file](@essiflab) that defines the [term](@), and producing the MRG entry structure as defined for [MRGs](#mrg). Note that this can only be done for [term files](term-file@essiflab) that have a syntax that is supported by the [MRGT](#mrgt). If the created MRG entry has an `id` that is the same as the `id`-field of an existing glossary-entry, that MRG entry will be discarded (meaning that the newly created MRG entry  'overrides' the existing one).
 - Add a MRG entry for every [term](@) that is defined in the [scope](@) from which the [MRGT](#mrgt) is called, again removing any existing glossary-entry that has an `id`-field that is the same as a newly added one.
-- Perform completeness and consistency checks on the set of glossary entries, to ensure that
+- Perform completeness and consistency checks on the set of MRG entries, to ensure that
   - every MRG entry is [identifiable](identify@essiflab) by its `id`-field;
   - every element in the `formphrases`-list of a MRG entry does not occur as an element in the `formphrases`-list of another MRG entry;
-- Sort the glossary entries according to their `id` field;
+- Sort the MRG entries according to their `id` field;
 - Add header/meta data as needed as specified for [MRGs](#mrg).
 
 For example, consider the [term](@) `curate` as defined in the [CTWG terms wiki](https://github.com/trustoverip/ctwg/wiki/curate). The wiki-page would be interpreted, which would lead to the following (machine readable) MRG entry:
@@ -210,7 +210,7 @@ For example, consider the [term](@) `curate` as defined in the [CTWG terms wiki]
   commit:
   formphrases: curate, curates, curated, curation
   status: proposed
-  termname: curate
+  term: curate
   synonyms: curation
   glossaryText: To evolve [concept](@) and [term](@) data in the direction of greater quality and richer content within a specific [scope](@).
   hoverText: Curate: to evolve concept and term data in the direction of greater quality and richer content within a specific scope.
