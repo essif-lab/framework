@@ -97,6 +97,7 @@ const sidebars = {
       items:
       [ 'tev2/tev2-spec-selection-criteria',
         'tev2/tev2-spec-term-ref',
+        'tev2/tev2-spec-mrg',
       ],
     },
     { type: 'category',
