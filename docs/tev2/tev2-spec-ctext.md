@@ -13,7 +13,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 The entire section on Terminology Engine v 2 (TEv2) is still under construction
 :::
 
-**[Curated texts](@)** are texts that document terminological artifacts within a specific [scope](@), and hence are [curated](@) by a particular [terms community](@). A [curated text](@) typically documents characteristics of [terms](@), such as its [definition](@), the purpose(s) that it serves, etc. Also, it may provide examples, describe situations for which it is particularly relevant, etc.
+**[Curated texts](@)** are texts that document [terminological artifacts](@) within a specific [scope](@), and hence are [curated](@) by a particular [terms community](@). A [curated text](@) typically documents characteristics of [terms](@), such as its [definition](@), the purpose(s) that it serves, etc. Also, it may provide examples, describe situations for which it is particularly relevant, etc.
 
 A [curated text](@) can be of various types: it can document a [concept](@), a [mental model](@) etc. The kinds of contents documented in the text may differ, depending on such types.
 

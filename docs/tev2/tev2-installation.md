@@ -16,6 +16,10 @@ The entire section on Terminology Engine v 2 (TEv2) is still under construction
 This section on 'Installation' can really be written only after the rest is complete. The contents of this page is just a set of ideas that may well have been deprecated already.
 :::
 
+:::info Editor's note
+This page should only document the generic stuff. Any installation details that are specific to a tool SHOULD be documented in the page(s) that document the particular tool. Obviously, this page could mention the tools for which that is the case, and link to the associated sections.
+:::
+
 TEv2 is a tool for [curating](@) [terminology](@)-related data from the perspective of a single [scope](@). Installation comprises
 - setting up, or appointing an (online) directory that will serve as a [scope directory](@);
 - creating a [Scope Administration File (SAF)](tev2-spec-saf), and providing the configuration of the [scope](@) and its [terminology](@);
@@ -36,7 +40,7 @@ Content to be produced
 
 ### Integrating Scope Directories and Third Party Rendering Tools
 
-Terminological artifacts are intended to also be used by/within third party rendering tools, such as [github pages](https://pages.github.com/), [Docusaurus](https://docusaurus.io/docs/docs-introduction), or LaTex
+[Terminological artifacts](@) are intended to also be used by/within third party rendering tools, such as [github pages](https://pages.github.com/), [Docusaurus](https://docusaurus.io/docs/docs-introduction), or LaTex
 
 :::info Editor's Note
 Content to be produced

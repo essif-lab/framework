@@ -84,9 +84,9 @@ The conversion of a [term ref](@) into a regular [Markdown link](https://www.mar
 - Get the SAF of that [scope directory](@);
 - Using its contents, locate the directory that contains its MRGs;
 - Using `vsn`, get the associated MRG;
-- If `id` is a list element of a `formphrases` field of some glossary entry, replace it with the `id`-field of that glossary entry;
-- Find the glossary entry that has an `id`-field that is the same as `id`;
-- Set `link` to the contents of the `url` field of that glossary entry;
+- If `id` is a list element of a `formphrases` field of some MRG entry, replace it with the `id`-field of that MRG entry;
+- Find the MRG entry that has an `id`-field that is the same as `id`;
+- Set `link` to the contents of the `url` field of that MRG entry;
 - Test that `link` points to an existing resource;
 - If `heading-id` is not empty, append `#<heading-id>` to the contents of `link`;
 - Output `\[`, `showtext`, `\](`, the contents of `link`, and `)`.
