@@ -52,7 +52,7 @@ The initial/prototype versions of tools may not have implemented everything (e.g
 
     - the **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes markdown files that contain so-called [term refs](term-ref@) (e.g. \[`terms community`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](term-ref@) are converted to regular [Markdown links](https://www.markdownguide.org/basic-syntax/#links), allowing such files to be further processed, e.g. by Github pages, Docusaurus or similar tools.
 
-    - the **Glossary Generation Tool ([GGT](#ggt))** takes a [Glossary Definition File (GDF)](#gdf) as input, and generates both a **Machine Readable [Glossary](@) ([MRG](#mrg))** and a **Human Readable [Glossary](@)**, both of which render the [terminology](@) of the [scope](@) from which the [GGT](#ggt) is called. The[(GDF)](#gdf) specifies the set of [terms](term@) to be included, and for the HRG also how they are to be rendered.
+    - the **Glossary Generation Tool ([MRGT](#mrgt))** takes a [Glossary Definition File (GDF)](#gdf) as input, and generates both a **Machine Readable [Glossary](@) ([MRG](#mrg))** and a **Human Readable [Glossary](@)**, both of which render the [terminology](@) of the [scope](@) from which the [MRGT](#mrgt) is called. The[(GDF)](#gdf) specifies the set of [terms](term@) to be included, and for the HRG also how they are to be rendered.
 
 2. setup a CI pipe for generating [glossaries](glossary@) for the `#toip` and `@` [scopes](scope@), that will (initially) generate a [glossary](@) upon any successful commit to the master-branch of the associated repo/wiki, so we can see how that works and what (else) we need.
 
@@ -97,7 +97,7 @@ In the last row of the above table, `id` and `#heading-id` are optional. Thus, `
 
 ## Scope Directories and their contents
 
-This document assumes that anyone that has some dealing with [terminology](@), is doing so within the context of a single [scope](@), and that all related documents (specifications, white papers, terminological artifacts, etc.) are organized in a single directory that can be (read) accessed by tools that are called from within other [scopes](scope@). We use the [term](@) **[scope](@) directory** to refer to this directory of a specific [scope](@). Thus, documents that belong to a [scope](@) are expected to reside (or have a reference/link file) in its [scope directory](@).
+This document assumes that anyone that has some dealing with [terminology](@), is doing so within the context of a single [scope](@), and that all related documents (specifications, white papers, [terminological artifacts](@), etc.) are organized in a single directory that can be (read) accessed by tools that are called from within other [scopes](scope@). We use the [term](@) **[scope](@) directory** to refer to this directory of a specific [scope](@). Thus, documents that belong to a [scope](@) are expected to reside (or have a reference/link file) in its [scope directory](@).
 
 Every [scope](@) has an **scope administration file (SAF)** that is located in the root of the [scope directory](@). This file is manually maintained by the [curator(s)](curator@) of the [scope](@)). It contains at least:
 - the set of [scope tags](tag@) that [identify](@essiflab) the [scopes](scope@) from which [terms](term@) may be used (imported), and for each of them the URL of its associated [scope directory](@); this set SHOULD include the [scope tag](tag@) (and associated URL) that the [curator(s)](curator@) of the [scope](@) have chosen for the [scope](@) itself.
@@ -122,10 +122,10 @@ Every MRG:
 - specifies the default dateformat used;
 - contains a (sorted) list of (glossary) entries, where each entry contains all data related to a single [term](@), and can be identified by its `id` (that typically, but not necessarily, is the same as the [term](@) - for example, a [term](@) that contains whitespace would have a `id` where the whitespace is replaced by a `-` character).
 
-A glossary entry for an MRG SHOULD accommodate for (at least) the following fields:
+A MRG entry for an MRG SHOULD accommodate for (at least) the following fields:
 - `scopetag` (required): the [tag](@) of the [scope](@) in which the [term](@) is defined (as a [glossary](@) not only contains [terms](term@) that are defined in the [scope](@) itself, but also [terms](term@) that are defined in other [scopes](@).
 - `id` (required): the text that [identifies](identify@essiflab) the [term](@) within the context of the MRG, and can also be used as an `id` in a [term ref](@). The `id` shall only contain characters in regex `[a-z0-9_-]`. For [terms](term@) of other types than 'concept', the `id` would typically be of the form `<type>-<termid>`, e.g. as in `pattern-identify`.
-- `termtype` (optional): a text that identifies the kind of entity that the [term](@) refers to. The `termtype` shall only contain characters in regex `[a-z0-9_-]`. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`). When omitted, it defaults to `concept`.
+- `termtype` (optional): a text that identifies the kind of entity that the [term](@) refers to. The `termtype` shall only contain characters in regex `[a-z0-9_-]`. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`. When omitted, it defaults to `concept`.
 - `termid`: a text that identifies the specific entity of the `termtype` (as specified above). The `termid` shall only contain characters in regex `[a-z0-9_-]`. When omitted, its value is derived from the field `id` by matching that with the (CPRE) regex `(?P=<type>)-(?P<termid>.+?)`; if there is a match, the value is the named group `<termid>`. If there is no match, the value is `id` itself.
 - `grouptags`: a list of [tags](tag@), each of which identifies a group of [terms](term@) to which this [term](@) belongs. Tags must satisfy the (PCRE) regex `#[a-z0-9_-]+`.
 - `date`: date of the last update of the [term](@)-related data, in a format that is to be decided by the [curators](@), and for whcih a (PCRE) regex is to be specified in the `dateformat` field.
@@ -140,7 +140,7 @@ A glossary entry for an MRG SHOULD accommodate for (at least) the following fiel
 - `hoverText` (optional): a text that can be used as the contents of a popup that shows as the [term](@) is rendered in a web browser and the user hovers over the [term](@) with its mouse.
 - `url` (optional): the URL of a web-page that contains human readable text that typically has further explanations of the [term](@), and has sections that can be addressed by `url#heading-id` where `heading-id` is as specified for [term refs](term-ref@).
 
-Other fields may be added to a glossary entry as needed. Note how this resembles/differs from the CTWG [Eported Data Model](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/exported-data-model.md).
+Other fields may be added to a MRG entry as needed. Note how this resembles/differs from the CTWG [Eported Data Model](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/exported-data-model.md).
 
 ## Human Readable Glossaries (HRGs) {#hrg}
 
@@ -167,13 +167,13 @@ The contents of a [glossary](@) consists of one entry (which we call **glossary 
 - (explicitly or implicitly) selected by the [curators](curator@) of the [scope](*@) and that is part of the contents of a [glossary](@) of another [scope](@).
 
 The syntax that is used for selecting [terms](term@) of another [scope](@) is:
-- by means of a [term ref](@), where the `show text` specifies the name of the [term](@) as it will be used in the [scope](@), and the [definition](@) (and other terminological artifacts of that [term](@), such as purpose, examples, etc.) are 'inherited' from the [term](@) that is being referenced.
+- by means of a [term ref](@), where the `show text` specifies the name of the [term](@) as it will be used in the [scope](@), and the [definition](@) (and other [terminological artifacts](@) of that [term](@), such as purpose, examples, etc.) are 'inherited' from the [term](@) that is being referenced.
 - by means of the so-called 'tagslist-syntax', which is `tagslist`@`scopetag`:`vsn` (e.g. `paa,terminology@essiflab:latest`) where:
   - @`scopetag` (required) identifies a [scope](@) in the SAF, thus allowing tools to obtain (the specified version, or if omitted, the latest version of) the MRG of that [scope](@) from which to extract the selected entries. In the example, this is `essiflab`.
   - `vsn` (optional) is the specific version of the MRG from which the [terms](@) are selected. If omitted (in which case the preceding `:` may also be omitted), the latest version is specified. The example specifies the `latest` version of the essiflab [glossary](@).
   - `tagslist` (optional) is a comma-separated list of[tags](tag@) (e.g. `paa,terminology,ctwg`). If the tag is a [scopetag](tag@), every [term](@) in the MRG of the specified [scope](@) are selected. If the tag is a [grouptag](tag@), then every [term](@) in the MRG of the specified [scope](@) that is associated with that [grouptag](tag@) is selected.
 
-A GDF contains a sequence of such selection syntaxes that will be processed in the order they are specified (see the [GGT](#ggt) for details on how processing takes place). Thus, in order to 'rename' a [term](@) that was imported using the tagslist-syntax, it suffices to use the [term ref](@) that import that [term](@) again.
+A GDF contains a sequence of such selection syntaxes that will be processed in the order they are specified (see the [MRGT](#mrgt) for details on how processing takes place). Thus, in order to 'rename' a [term](@) that was imported using the tagslist-syntax, it suffices to use the [term ref](@) that import that [term](@) again.
 
 Optionally, syntax can be added to remove previously selected [terms](@) , e.g. by allowing the `-` character to precede one of the selection syntaxes. The idea is then that a list of such (de)selection syntaxes is incrementally processed, and when a `-`-syntax is encountered, the [terms](@) that would have otherwise been selected will then be removed from the selection.
 
@@ -182,23 +182,23 @@ We leave the specification of additional syntax for GDFs, e.g. for the inclusion
 :::info Editor's Note
 Currently, every [MRG](#mrg)/[HRG](#hrg) is to be accompanied by a specific [GDF]{#gdf} that specifies their contents. Is seems more practical to say that one such specification - i.e. for the default [MRG](#mrg)/[HRG](#hrg), would be part of the [SAF](@), and any other such specifications (which we might then perhaps limit to just HRG-specifications) might then require their specific [GDF]{#gdf}.
 :::
-## Glossary Generation Tool (GGT) {#ggt}
+## Glossary Generation Tool (GGT) {#mrgt}
 
-The **Glossary Generation tool ([GGT](#ggt))** takes a glossary definition file (GDF) as input (that specifies e.g. [terms](term@) to be included from other [terminologies](terminology@), ways in which [terms](term@) are to be rendered, etc.), and generates a (machine readable, and optionally also a human readable) [glossary](@) that renders the [terminology](@) of the [scope](@) from which the [GGT](#ggt) is called.
+The **Glossary Generation tool ([MRGT](#mrgt))** takes a glossary definition file (GDF) as input (that specifies e.g. [terms](term@) to be included from other [terminologies](terminology@), ways in which [terms](term@) are to be rendered, etc.), and generates a (machine readable, and optionally also a human readable) [glossary](@) that renders the [terminology](@) of the [scope](@) from which the [MRGT](#mrgt) is called.
 
-The [GGT](#ggt) first creates an [MRG](#mrg) (which does the 'heavy lifting'), and from that, a [HRG](#hrg) will be created. Different [HRGs](#hrg), i.e. different human-readable renderings of the [terminology](@) may be created from the same [MRG](#mrg).
+The [MRGT](#mrgt) first creates an [MRG](#mrg) (which does the 'heavy lifting'), and from that, a [HRG](#hrg) will be created. Different [HRGs](#hrg), i.e. different human-readable renderings of the [terminology](@) may be created from the same [MRG](#mrg).
 ### Creating an MRG
 
 Creating an [MRG](#mrg) works as follows:
-- Create an initial set of glossary entries, i.e. one for every [term](@) (from [scopes](scope@) other than the one we create the MRG for) that is selected per the specifications in the [GDF](#gdf). A glossary entry is constructed by interpreting the [term file](@essiflab) that defines the [term](@), and producing the glossary entry structure as defined for [MRGs](#mrg). Note that this can only be done for [term files](term-file@essiflab) that have a syntax that is supported by the [GGT](#ggt). If the created glossary entry has an `id` that is the same as the `id`-field of an existing glossary-entry, that glossary entry will be discarded (meaning that the newly created glossary entry  'overrides' the existing one).
-- Add a glossary entry for every [term](@) that is defined in the [scope](@) from which the [GGT](#ggt) is called, again removing any existing glossary-entry that has an `id`-field that is the same as a newly added one.
+- Create an initial set of glossary entries, i.e. one for every [term](@) (from [scopes](scope@) other than the one we create the MRG for) that is selected per the specifications in the [GDF](#gdf). A MRG entry is constructed by interpreting the [term file](@essiflab) that defines the [term](@), and producing the MRG entry structure as defined for [MRGs](#mrg). Note that this can only be done for [term files](term-file@essiflab) that have a syntax that is supported by the [MRGT](#mrgt). If the created MRG entry has an `id` that is the same as the `id`-field of an existing glossary-entry, that MRG entry will be discarded (meaning that the newly created MRG entry  'overrides' the existing one).
+- Add a MRG entry for every [term](@) that is defined in the [scope](@) from which the [MRGT](#mrgt) is called, again removing any existing glossary-entry that has an `id`-field that is the same as a newly added one.
 - Perform completeness and consistency checks on the set of glossary entries, to ensure that
-  - every glossary entry is [identifiable](identify@essiflab) by its `id`-field;
-  - every element in the `formphrases`-list of a glossary entry does not occur as an element in the `formphrases`-list of another glossary entry;
+  - every MRG entry is [identifiable](identify@essiflab) by its `id`-field;
+  - every element in the `formphrases`-list of a MRG entry does not occur as an element in the `formphrases`-list of another MRG entry;
 - Sort the glossary entries according to their `id` field;
 - Add header/meta data as needed as specified for [MRGs](#mrg).
 
-For example, consider the [term](@) `curate` as defined in the [CTWG terms wiki](https://github.com/trustoverip/ctwg/wiki/curate). The wiki-page would be interpreted, which would lead to the following (machine readable) glossary entry:
+For example, consider the [term](@) `curate` as defined in the [CTWG terms wiki](https://github.com/trustoverip/ctwg/wiki/curate). The wiki-page would be interpreted, which would lead to the following (machine readable) MRG entry:
 ~~~
   id: concept-curate
   scopetag: ctwg
@@ -219,7 +219,7 @@ For example, consider the [term](@) `curate` as defined in the [CTWG terms wiki]
 
 Glossaries are generated at a default location, which for ToIP is `http://trustoverip.github.io/<terms-community>/glossary`, where `<terms-community>` is the name of the [terms-community](@) that [curates](curate) the [terms](term@) in the [glossary](@).
 
-The [GGT](#ggt) should log conditions that prevent it from properly
+The [MRGT](#mrgt) should log conditions that prevent it from properly
 
 - parsing a source document (e.g. because it is not in the expected format);
 - resolving `id`s, [scope tags](tag@), [group tags](tag@), or [version tags](tag@);
@@ -228,7 +228,7 @@ The [GGT](#ggt) should log conditions that prevent it from properly
 
 and provide suggestions that help tool-operators to identify and fix any problems.
 
-The [GGT](#ggt) should come with documentation that enables developers to ascertain its correct functioning (e.g. by using a test set of files, test scripts that exercise its parameters, etc.), and also enables them to deploy the tool in a git repo and author/modify CI-pipes to use that deployment.
+The [MRGT](#mrgt) should come with documentation that enables developers to ascertain its correct functioning (e.g. by using a test set of files, test scripts that exercise its parameters, etc.), and also enables them to deploy the tool in a git repo and author/modify CI-pipes to use that deployment.
 
 ### Creating a HRG
 
@@ -274,9 +274,9 @@ The conversion of a [term ref](@) into a regular [Markdown link](https://www.mar
 - Get the SAF of that [scope directory](@);
 - Using its contents, locate the directory that contains its MRGs;
 - Using `vsn`, get the associated MRG;
-- If `id` is a list element of a `formphrases` field of some glossary entry, replace it with the `id`-field of that glossary entry;
-- Find the glossary entry that has an `id`-field that is the same as `id`;
-- Set `link` to the contents of the `url` field of that glossary entry;
+- If `id` is a list element of a `formphrases` field of some MRG entry, replace it with the `id`-field of that MRG entry;
+- Find the MRG entry that has an `id`-field that is the same as `id`;
+- Set `link` to the contents of the `url` field of that MRG entry;
 - Test that `link` points to an existing resource;
 - If `heading-id` is not empty, append `#<heading-id>` to the contents of `link`;
 - Output `\[`, `showtext`, `\](`, the contents of `link`, and `)`.

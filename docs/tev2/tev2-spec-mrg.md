@@ -15,24 +15,16 @@ import TabItem from '@theme/TabItem';
 The entire section on Terminology Engine v 2 (TEv2) is still under construction
 :::
 
-Every [scope](@) has (at least) one [MRG](@), i.e. a machine readable/processable [glossary](@) that contains entries for all [terms](@) and other terminological artifacts that are used by any [community](@) that has decided to adopt that [terminology](@). An [MRG](@) is meant to be used by tools, e.g. for creating a [HRG](@), or to help resolve [term refs](@).
+Every [scope](@) has (at least) one **Machine Readable Inventory**[^1] (that we call a **Machine Readable Glossary** or [MRG](@)), that renders the [terminology](@) of a specific [scope](@) into a specific, well-defined format that is described in this document. An [MRG](@) is meant to be used by the tools from the [toolbox](tev2-toolbox), e.g. for creating a [HRG](@), or to help resolve [term refs](@). A [scope](@) may have multiple [MRGs](@), enabling the support of multiple versions of its [terminology](@).
 
-:::danger Editor's note
-Actually, an [MRG](@) does not only contain entries for the [terms](@) - i.e. phrases that have a [definition](@). It is more like a compendium of all terminological artifacts that exist within a particular [scope](@); this not only includes [terms](@), but also artifacts such as [patterns](@), and other things that are currently specified as `termtype`s.
-
-This documentation should be revised in its entirety to accommodate for this; and the (YAML) fields `termtype` and `termid` should be given a more appropriate name to reflect this.
-:::
-
-This document specifies the structure of such [MRGs](@).
-
-A [scope](@) may have multiple [MRGs](@), enabling the support of multiple versions of its [terminology](@).
+[^1]: The [MRG](@) is an Inventory rather than a [glossary](@), because it contains _all_ [terminological artifacts](@) that are [curated](@) within the [scope](@): apart from [terms](@), it also include e.g., [mental models](pattern@) and [use cases](@). We choose to maintain the [term](@) "Machine Readable Glossary" ([MRG](@)), because most of us would view it - initially, at least - as a list of [terms](@) and their [definitions](@).
 
 ## MRG structure
 
 A Machine Readable Glossary (MRG) is a YAML (or JSON) file that has three sections:
 - **`terminology`** specifies the [scopetag](@) and [scopedir](@) of the [scope](@), the [terminology](@) of which is listed in the [MRG](@), as well as the license under which it can be used.
 - **`scopes`** specifies the [scopetag](@) and [scopedir](@) of any other [scope](@) of which the [terminology](@) is somehow relevant to this [scope](@).
-- **`entries`** contains the (alphabetically) sorted list of [scope entries](@). Sorting was done on the `termid` field of the [scope entries](@) - not on the `id` field.
+- **`entries`** contains an (unsorted) list of [glossary entries](@).
 
 Here is an example showing the first two sections:
 
@@ -70,17 +62,21 @@ TBD
 
 The following fields are defined for the sections `terminology`:
 
+:::info Editor's note
+The section below deviates from the design choices made for [SAFs](@), where the `scopedir` of the [scope](@) in which the [MRG](@) is defined is made part of the `scopes` section. We need to determine whether or not change either the [SAF](@) spec or the [MRG](@) spec or leave it as it is.
+:::
+
 | Name | Req'd | Default | Description |
 | ---- | :---: | ------- | ----------- |
-| `scopetag` | Y | | [Scopetag](@) of the [scope](@) in which the [glossary](@) is defined | [Tag](@) of the [scope](@) from which the [term](@) and its description are obtained. We need this because a [glossary](@) not only contains [terms](term@) that are defined in the [scope](@) itself, but also [terms](term@) that are defined in other [scopes](@). The `scopes` section in the MRG SHOULD contain a mapping between the `scopetag` and its associated [scope directory](@).<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
+| `scopetag` | Y | | [Scopetag](@) of the [scope](@) in which the [MRG](@) is defined.<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
 | `scopedir` | Y | | the [scope directory](@) associated with that [scope](@). |
-| `license` | n | | File, located in the directory as specified in `scopedir`, that contains licensing data. |
+| `license`  | n | | File, located in the directory as specified in `scopedir`, that contains licensing data. |
 
 The following fields are defined for the section `scopes`:
 
 | Name | Req'd | Default | Description |
 | ---- | :---: | ------- | ----------- |
-| `scopetag` | Y | | [Scopetag](@) of a third-party [scope](@), the [MRG](@) of which contains [glossary entries](@) that have been imported into the [MRG](@). |
+| `scopetag` | Y | | [Scopetag](@) of a third-party [scope](@), the [MRG](@) of which contains [glossary entries](@) that have been imported into the [MRG](@).<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
 | `scopedir` | Y | | the [scope directory](@) associated with that third-party [scope](@). |
 
 ## Machine Readable Glossary Entries

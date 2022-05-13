@@ -1,9 +1,8 @@
 ---
 id: tev2-overview
 title: Terminology Engine v2 - Overview
-sidebar_label: Terminology Engine v2
+sidebar_label: TEv2 Overview
 displayed_sidebar: tev2SideBar
-hide_table_of_contents: true
 scopetag: tev2
 date: 20220303
 ---
@@ -17,10 +16,12 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 
 The Terminology Engine (v2) is a set of specifications and tools that caters for the creation and maintenance (i.e. [curation](@)) of [terminologies](@), as well as for its subsequent use in publications of different types (e.g. websites, whitepapers) and formats (e.g. html, LaTex), as appropriate for different, individual [scopes](@).
 
-The purposes that TEv2 aims to serve include:
+The objectives that TEv2 aims to realize include:
 - to assist readers of such publications to understand the [terms](@) that are used in the way that the authors have intended (rather than interpreting it in their own way)
 - to facilitate authors to write and publish texts where terms can be referenced to their intended meaning, within, and across [scopes](@).
 - to enable authors and readers of such publications to create and further develop their own [terminologies](@) (and with that: their insights in their subject matters);
+
+These objectives are realized by [curators](@); they are the ones that make sure that there is a [location](scopedir@) where people can contribute to the development of the [terminology](@) of a [scope](@), and tools are installed and operational that enable authors to use them as they publish their documents. [Curators](@) have their own [manual](tev2-curators-manual).
 
 The current eSSIF-Lab (i.e.: this) website already shows the first ideas of what that might look like (popups on terms showing their definition).
 
@@ -46,7 +47,7 @@ One of the most useful tools in the toolbox is the Terminology Reference Resolve
 
 If you are familiar with [markdown](https://www.markdownguide.org/basic-syntax/), you will notice that the raw text contains syntax that resembles [markdown links](https://www.markdownguide.org/basic-syntax/#links), but it's not quite conformant: it contains the `@` character, which signals (within TEv2) that this is not an ordinary link, but a link that will be resolved by the [TRRT](@). The [TRRT](@) will convert these links (which we call [term refs](term-ref@)) such that they are rendered as shown in the right of the figure: that is: in purple boldface, and when you hover your mouse over the term, it will show the definition of that term.
 
-## TEv2 Architecture
+## Architecture
 
 TEv2 is designed to support an ever increasing variety of raw text formats, and its toolbox will - over time - be filled with an increasing number of tools that will support an increasing number of 3rd party rendering tools. This section shows the architecture that allows this to become reality.
 
@@ -70,7 +71,7 @@ Since the [terminology](@) of a [scope](@) may also include [terms](@) that are 
 
 Thus, by inspecting the contents of the [SAF](@), the [MRGT](@) learns which [MRGs](@) of other [scopes](@) it needs to obtain, and where they are located. Also, the [MRGT](@) learns which [terms](@) and [definitions](@) of the [scope](@) itself are to be included in the [terminology](@) that is will be creating an [MRG](@) for.
 
-## Curation
+## Terminology Curation
 
 :::info Editor's note
 This section may need to be revised
@@ -91,4 +92,4 @@ This document provides an overview of the knowledge that [curators](@) may need 
 
 2. [Curation](@) of terminological contributions. This requires knowledge about the [file structure](tev2-spec-ctext) of [curated file](@).
 
-3. [generation](tev2-toolbox-use) of terminological artifacts. It is typical for a [terms community](@) to want to have a [glossary](@) of the terms they either have defined themselves, or are defined elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).
+3. [generation](tev2-toolbox-use) of [terminological artifacts](@). It is typical for a [terms community](@) to want to have a [glossary](@) of the terms they either have defined themselves, or are defined elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).
