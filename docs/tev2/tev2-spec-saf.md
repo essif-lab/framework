@@ -88,7 +88,7 @@ The following fields are defined for the `terminology` section of a [SAF](@):
 | `curator` | n | | Data that can be used to contact individual [curators](@). |
 | `dateformat` | n |  | Regex (PCRE) that has named capturing groups for YYYY, MM and DD, and that can be used to parse the date fields used in this [scope](@) ) (provided another regex doesn't override it). When not provided, tools should use the regex "**(?P<YYYY\>\d{4})-?(?P<MM\>\d{2})-?(?P<DD\>\d{2})(?P<tzone\>Z&#124[+-]\d{2}:\d{2})?**" for this (noting that in certain contexts, `\` characters may need to be escaped). |
 
-### SAF Scopes - Mapping Scopetags and Scopedirs
+### SAF Scopes - Mapping Scopetags and Scopedirs {#saf-scope-maps}
 
 The `scopetags` section is a list that specifies a mapping between [scopetags](@) as they are used in this [scope](@), the associated [scopedir]((@)) and if necessary, other paths and filenames for [terminological artifacts](@) within the [scope](@). The latter is only required when specifying the [scope](@) for which the [SAF](@) is created/maintained, as for other [scopes](@), such other paths and filenames can readily be found by inspecting the [SAF](@) that is located in the root of the [scopedir](@) of such [scopes](@).
 
@@ -150,7 +150,7 @@ The following fields are defined for the `scopes` section of a [SAF](@):
 | `mrgfile` | n | | Name of the file that contains the latest version of the [MRG](@). Full URL is `scopedir`/`mrgfile`. |
 | `hrgfile` | n | | Name of the file that contains the latest version of the [HRG](@). Full URL is `scopedir`/`hrgfile` |
 
-### SAF Versions - Enabling changes and updates in a scope's Terminology
+### SAF Versions - Enabling changes and updates in a scope's Terminology {#saf-terminology-specs}
 
 The third section in the [SAF](@) specifies the [terminology](@) of the [scope](@), in multiple versions that are actively maintained by the [curators](@). For each version, the set of [terms](@) is selected that constitute that version's [terminology](@). Also, additional data is provided regarding the state/validity of the [terminology](@) over time, which may of interest for the [curators](@) of other scopes as they need to decide whether or not to import [terms](@) from such a [terminology](@).
 
@@ -174,17 +174,17 @@ versions:
       - latest
       - v0.9.4
     terms:
-      - terminology@essif-lab # import all terms from the mrg of `essif-lab:latest` that have grouptag `terminology`.
-      - "[party@essif-lab:0.9.4]" # import the term `party` from the mrg of `essif-lab:0.9.4`.
-      - "[community@essif-lab:0.9.4]" # import the term `community` from the mrg of `essif-lab:0.9.4`.
-      - tev2@tev2 # import all terms defined in the scope `tev2`
+      - [terminology]@essif-lab # import all terms from the mrg of `essif-lab:latest` that have grouptag `terminology`.
+      - "[party](@essif-lab:0.9.4)" # import the term `party` from the mrg of `essif-lab:0.9.4`.
+      - "[community](@essif-lab:0.9.4)" # import the term `community` from the mrg of `essif-lab:0.9.4`.
+      - [tev2]@tev2 # import all terms defined in the scope `tev2`
     status: proposed
     from: 20220312
     to:
   - versiontags: # definition of (version)tag(s) that are used within this scope to refer to a specific terminology.
       - v0.9.0
     terms:
-      - terminology@essif-lab # import all essif-lab terms with grouptag `terminology`.
+      - [terminology]@essif-lab # import all essif-lab terms with grouptag `terminology`.
       - "[party@essif-lab]" # import the term `party` from the mrg of `essif-lab:latest`.
       - "[community@essif-lab]" # import the term `community` from the mrg of `essif-lab:latest`.
 ~~~
@@ -206,9 +206,9 @@ The following fields are defined for the `versions` section of a [SAF](@):
 
 | Name | Req'd | Default | Description |
 | ---- | :---: | ------- | ----------- |
-| `id` | Y | | Text that [identifies](@) this version from all other versions in this [SAF](@).<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
+| `id` | Y | | Text that [identifies](@) this version from all other versions in this [SAF](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `versiontags` | Y | | Specification of at least one [versiontag](@) that are used within this [scope](@) to refer to a specific [terminology](@). |
-| `terms` | Y | | List of [term selection criteria](@) that are used to generate the [scope's](@) [terminology](@). See [Term Selection](tev2-spec-selection-criteria) for details. |
-| `status` | n | proposed  | a text that identifies the [status of the terminology](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). Allowed values are: 'proposed', 'approved' or 'deprecated'. |
+| `terms` | Y | | List of [term selection criteria](@) that are used to generate the [scope's](@) [terminology](@). See [Term Selection](term-selection-criteria) for details. |
+| `status` | n | proposed  | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
 | `from` | n | | Date at which of the version related data was decided on. |
 | `to` | n | | Date at which the version was overridden with another one. |

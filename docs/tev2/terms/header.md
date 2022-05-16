@@ -1,8 +1,6 @@
 ---
-id: tev2-spec-ctext-header
-title: Curated Text - Header
-sidebar_label: Header Contents
-hide_table_of_contents: true
+id: header
+title: Header (of Curated Text)
 scopetag: tev2
 date: 20220303
 ---
@@ -13,6 +11,11 @@ import TabItem from '@theme/TabItem';
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction
+:::
+
+:::info Editor's note
+This text should describe the general ideas behind a header, e.g. as 'front-matter'.
+It should also describe how different tools (Docusaurus, Jekyll, etc.) have different fields, and talk a bit how the choice of curators for third-party tooling may affect the headers. Note that such choices are free, because other scopes will typically not access rendered stuff (give or take a `header-id`), but restrict themselves to stuff that is in the MRG.
 :::
 
 A [curated text](@) is a text that consists of a text called a [header](@), which is then followed by another text called the [body](@). The [header](@), also called 'front matter', is a set of so-called 'header fields', i.e. key-value pairs that contain meta data about the [curated text](@).[^1] Headers are typically used for specifying data that various tools can pick up for their further processing.
@@ -69,16 +72,16 @@ For TEv2 purposes, we specify fields in tables that have four columns, as follow
 
 | Name | Req'd | Default | Description |
 | ---- | :---: | ------- | ----------- |
-| `id`           | Y* | `<termtype>`-`<termid>` | Text that [identifies](@) this [curated text](@) within the context of the [scope](@). The value of this field can be used as the `id`-field of a [term ref](@) that refers to the [terminological artifact](@) described by this [curated text](@).<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
-| `termtype`     | Y  | `concept` | Text that [identifies](@) the kind of [terminological artifact](@) that this [curated text](@) describes. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
-| `termid`       | Y  | | Text that, together with the value of the `termtype` field, [identifies](@) this [curated text](@) within the context of this [scope](@).<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
-| `grouptags`    | n  | | Comma-separated list of [grouptags](tag@), each of which [identifies](@) a group of [terminological artifacts](@) of which the [terminological artifact](@) that this [curated text](@) describes, is a member.<br/>Must satisfy PCRE regex `([a-z0-9_-]+)(?:,\s*([a-z0-9_-]+))*`. |
+| `id`           | Y* | `<termtype>`-`<termid>` | Text that [identifies](@) this [curated text](@) within the context of the [scope](@). The value of this field can be used as the `id`-field of a [term ref](@) that refers to the [terminological artifact](@) described by this [curated text](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `termtype`     | Y  | `concept` | Text that [identifies](@) the kind of [terminological artifact](@) that this [curated text](@) describes. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `termid`       | Y  | | Text that, together with the value of the `termtype` field, [identifies](@) this [curated text](@) within the context of this [scope](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `grouptags`    | n  | | List of [grouptags](tag@), each of which [identifies](@) a group of [terminological artifacts](@) of which the [terminological artifact](@) that this [curated text](@) describes, is a member.<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-]+)\s*(?:,\s*([a-z0-9_-]+))*\s*\])?`](https://www.debuggex.com/r/a51CXl1NzR3kwihT). |
 | `created`      | n  | | Date at which of the [curated text](@) was created, in the date format as used within this [scope](@). |
 | `updated`      | n  | | Date at which of the [curated text](@) was last modified, in the date format as used within this [scope](@). |
-| `versiontag`   | n  | | Text that identifies the version of the [terminological artifact](@) that this [curated text](@) describes.<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
+| `versiontag`   | n  | | Text that identifies the version of the [terminological artifact](@) that this [curated text](@) describes.<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `contributors` | n  | | Text that shows (or refers to) the people that have contributed to this [curated text](@). |
-| `formphrases`  | n  | | Comma-separated list of [texts](formphrase@) that the [TRRT](#trrt) can use to convert the `show text` parts of [term refs](@) into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).<br/>Must satisfy PCRE regex `([a-z0-9_-{}]+)(?:,\s*([a-z0-9_-{}]+))*`. |
-| `status`       | n  | `proposed` | Text that identifies the [status of the term](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). Allowed values are: `proposed`, `approved` or `deprecated`. |
+| `formphrases`  | n  | | List of [texts](formphrase@) that the [TRRT](#trrt) can use to convert the `show text` parts of [term refs](@) into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-{}]+)\s*(?:,\s*([a-z0-9_-{}]+))*\s*\])?`](https://www.debuggex.com/r/TZe27fzbJskMcjl8). |
+| `status`       | n  | `proposed` | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
 
 ## Header fields for different `termtype`s:
 
@@ -130,7 +133,7 @@ hide_table_of_contents: "true"
 #
 termtype: concept
 termid: curate
-grouptags: terminology, management
+grouptags: [ terminology, management ]
 date: 20220222
 status: proposed
 #

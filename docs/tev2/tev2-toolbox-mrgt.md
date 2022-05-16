@@ -9,6 +9,10 @@ date: 20220421
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<!-- Use 'Mark' as an HTML tag, e.g. <Mark>text to mark</Mark?-->
 export const Mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
@@ -60,7 +64,7 @@ For example, consider the [term](@) `curate` as defined in the [CTWG terms wiki]
   date: 20211123
   versiontag: 9
   commit:
-  formphrases: curate, curates, curated, curation
+  formphrases: [ curate, curates, curated, curation ]
   status: proposed
   term: curate
   synonyms: curation

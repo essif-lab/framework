@@ -26,7 +26,9 @@ A Machine Readable Glossary (MRG) is a YAML (or JSON) file that has three sectio
 - **`scopes`** specifies which (other) [scopes](@) are relevant to this [terminology](@). This includes the [scopetag](@) and [scopedir](@) of any such [scope](@).
 - **`entries`** contains an (unsorted) list of [MRG entries](@).
 
-Here is an example showing the first two sections:
+<details>
+  <summary>Here is an example showing the first two sections</summary>
+  <div>
 
 <Tabs
     defaultValue="yaml"
@@ -46,6 +48,7 @@ scopes: # mappings of scopetags that are used, and their scopedirs
     scopedir: https://github.com/essif-lab/framework/tree/master/docs
   - scopetag: ctwg
     scopedir: https://github.com/trustoverip/ctwg
+entries: # here follows an (unsorted) list of MRG-entries
 ~~~
 </TabItem>
 <TabItem value="json">
@@ -59,6 +62,8 @@ TBD
 
 </TabItem>
 </Tabs>
+  </div>
+</details>
 
 The following fields are defined for the sections `terminology`:
 
@@ -68,7 +73,7 @@ The section below deviates from the design choices made for [SAFs](@), where the
 
 | Name | Req'd | Default | Description |
 | ---- | :---: | ------- | ----------- |
-| `scopetag` | Y | | [Scopetag](@) of the [scope](@) in which the [MRG](@) is defined.<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
+| `scopetag` | Y | | [Scopetag](@) of the [scope](@) in which the [MRG](@) is defined.<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `scopedir` | Y | | the [scope directory](@) associated with that [scope](@). |
 | `license`  | n | | File, located in the directory as specified in `scopedir`, that contains licensing data. |
 
@@ -76,7 +81,7 @@ The following fields are defined for the section `scopes`:
 
 | Name | Req'd | Default | Description |
 | ---- | :---: | ------- | ----------- |
-| `scopetag` | Y | | [Scopetag](@) of a third-party [scope](@), the [MRG](@) of which contains [MRG entries](@) that have been imported into the [MRG](@).<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
+| `scopetag` | Y | | [Scopetag](@) of a third-party [scope](@), the [MRG](@) of which contains [MRG entries](@) that have been imported into the [MRG](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `scopedir` | Y | | the [scope directory](@) associated with that third-party [scope](@). |
 
 ## MRG Entries - Common Fields
@@ -87,37 +92,26 @@ An [MRG](@) consists of a list of [MRG entries](@), the purpose of which is that
 
 | Name | Req'd | Description |
 | ---- | :---: | ----------- |
-| `scopetag`     | Y | [Tag](@) of the [scope](@) from which the [MRG entry](@) and its description are obtained. We need this because an [MRG](@) not only contains [terminological artifacts](@) that are defined in the [scope](@) itself, but also [terminological artifacts](@) that are defined in other [scopes](@). The `scopes` section in the [MRG](@) SHOULD contain a mapping between the `scopetag` and its associated [scope directory](@).<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
-| `id`           | Y | Text that [identifies](@) the [MRG entry](@) within the context of the [MRG](@). Resolution of a [term ref](@) is done by matching the `id`-field of that [term ref](@) with the `id` fields of [MRG entries](@), and selecting the (single) [MRG entry](@) if a match is found. It is typical (but not required) that [terminological artifacts](@) of the type `concept`, `term` and `relation` have this `id` field identical to the `termid` field of the [MRG entry](@) if that does not result in ambiguities. For other `termtype`s, or in case of ambiguities, this field would typically be of the form `<termtype>-<termid>`, which would be `pattern-terminology` for the terminology-pattern.<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
-| `termtype`     | Y | Text that [identifies](@) the kind of [terminological artifact](@) that this [MRG entry](@) refers to. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
-| `termid`       | Y | Text that [identifies](@) an instance of the [terminological artifacts](@) of the type specified in the `termtype` field of this [MRG entry](@).<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
-| `grouptags`    | n | Comma-separated list of [grouptags](tag@), each of which [identifies](@) a group of [terminological artifacts](@) of which this [MRG entry](@) describes a member.<br/>Must satisfy PCRE regex `([a-z0-9_-]+)(?:,\s*([a-z0-9_-]+))*`. |
+| `scopetag`     | Y | [Tag](@) of the [scope](@) from which the [MRG entry](@) and its description are obtained. We need this because an [MRG](@) not only contains [terminological artifacts](@) that are defined in the [scope](@) itself, but also [terminological artifacts](@) that are defined in other [scopes](@). The `scopes` section in the [MRG](@) SHOULD contain a mapping between the `scopetag` and its associated [scope directory](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `id`           | Y | Text that [identifies](@) the [MRG entry](@) within the context of the [MRG](@). Resolution of a [term ref](@) is done by matching the `id`-field of that [term ref](@) with the `id` fields of [MRG entries](@), and selecting the (single) [MRG entry](@) if a match is found. It is typical (but not required) that [terminological artifacts](@) of the type `concept`, `term` and `relation` have this `id` field identical to the `termid` field of the [MRG entry](@) if that does not result in ambiguities. For other `termtype`s, or in case of ambiguities, this field would typically be of the form `<termtype>-<termid>`, which would be `pattern-terminology` for the terminology-pattern.<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `termtype`     | Y | Text that [identifies](@) the kind of [terminological artifact](@) that this [MRG entry](@) refers to. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `termid`       | Y | Text that [identifies](@) an instance of the [terminological artifacts](@) of the type specified in the `termtype` field of this [MRG entry](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `grouptags`    | n | List of [grouptags](tag@), each of which [identifies](@) a group of [terminological artifacts](@) of which the [terminological artifact](@) that this [curated text](@) describes, is a member.<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-]+)\s*(?:,\s*([a-z0-9_-]+))*\s*\])?`](https://www.debuggex.com/r/a51CXl1NzR3kwihT). |
 | `created`      | n | Date at which of the [term](@)-related data was created, in the date format as used within this [scope](@). |
 | `updated`      | n | Date at which of the [term](@)-related data was last modified, in the date format as used within this [scope](@). |
-| `versiontag`   | n | Text that identifies the version of the [terminological artifact](@) that this [MRG entry](@) documents (not to be confused with the version of a [terminology](@) of which this [terminological artifact](@) is a part).<br/>Must satisfy PCRE regex `[a-z0-9_-]+`. |
+| `versiontag`   | n | Text that identifies the version of the [terminological artifact](@) that this [MRG entry](@) documents (not to be confused with the version of a [terminology](@) of which this [terminological artifact](@) is a part).<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `commit`       | n | The (git/gitlab) commit hash of the latest update of the [terminological artifact's](@). |
 | `contributors` | n | Text that shows (or refers to) the people that have contributed to the texts related to this term. |
-| `formphrases`  | n | Comma-separated list of [texts](formphrase@) that the [TRRT](#trrt) can use to convert the `show text` parts of [term refs](@) into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).<br/>Must satisfy PCRE regex `([a-z0-9_-{}]+)(?:,\s*([a-z0-9_-{}]+))*`. |
-| `status`       | n | Text that identifies the [status of the term](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). Allowed values are: `proposed`, `approved` or `deprecated`. |
+| `formphrases`  | n | List of [texts](formphrase@) that the [TRRT](#trrt) can use to convert the `show text` parts of [term refs](@) into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-{}]+)\s*(?:,\s*([a-z0-9_-{}]+))*\s*\])?`](https://www.debuggex.com/r/TZe27fzbJskMcjl8). |
+| `status`       | n | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
 | `locator`      | n | Text that identifies the file that holds the [curated text](@) of the [terminological artifact](@) that this [MRG entry](@) describes, relative to the [scopedir](@) that holds the [curated text](@). The full URL of the [curated text](@) is `scopedir`/`curatedir`/`locator`, where `scopedir` and `curatedir` can be found in the [SAF](@) (which is in the root of `scopedir`). |
+| `headerids`    | n | Comma-separated list of texts that can be used as a [markdown 'heading-ids' field](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids) |
 
 ## MRG Entries - Type-specific fields
 
 The [MRG](@) can hold [MRG entries](@) of different types, each of which has its particular set of fields to describe the [MRG entry](@), as follows:
 
-<Tabs
-    defaultValue="concept"
-    values={[
-        {label: 'Term', value: 'term'},
-        {label: 'Concept', value: 'concept'},
-        {label: 'Relation', value: 'relation'},
-        {label: 'Mental Model', value: 'pattern'},
-        {label: 'Use Case', value: 'usecase'},
-        {label: 'Example', value: 'example'},
-    ]}>
-<TabItem value="concept">
-
-## Header fields for `termtype: concept`
+### Header fields for `termtype: concept`
 
 [Concepts](@) are the ideas/thoughts behind a classification of [entities](@) (what makes [entities](@) in that class 'the same').
 A good description - which would include a good [definition](@) - allows us to reason about everything in the class as if it were one thing. [Curated texts](@) of type `concept` intend to provide such descriptions. Also, they specify a default name ([term](@)) by which the class, as well as unidentified instances thereof, can be refered to.
@@ -133,40 +127,7 @@ The header fields that are specific for `concept`-type descriptions are as follo
 | `glossaryText` | Y | Text that can be used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](term-ref@). |
 | `hoverText`    | n | Text that can be used as the contents of a popup that shows as the [term](@) is rendered in a web browser and the user hovers over the [term](@) with its mouse. |
 
-### Example of a complete Concept header
-
-~~~ yaml
----
-#
-# Heading entries that serve multiple purposes (i.e. both TEv2 and e.g. Docusaurus):
-#
-id: concept-curate
-#
-# Header entries that are specific to third-party tools, e.g. Docusaurus - as specified in:
-# https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter
-#
-title: "Curators (of a Scope)"
-sidebar_label: "Scope Curators"
-#
-# Generic TEv2 heading entries (i.e. valid for all `termtype`s):
-#
-termtype: concept
-termid: curate
-grouptags: terminology, management
-date: 20220222
-status: proposed
-#
-# Termtype-specific TEv2 heading entries
-term: curate
-glossaryText: "To evolve [concept](@) and [term](@) data in the direction of greater quality and richer content within a specific [scope](@)."
-hoverText: "Curate: to evolve concept and term data in the direction of greater quality and richer content within a specific scope."
----
-~~~
-
-</TabItem>
-<TabItem value="term">
-
-## Header fields for `termtype: term`
+### Header fields for `termtype: term`
 
 A [term](@) is a word or phrase that is used in a [scope](@) in a specific meaning, typically referring to a specific [concept](@), or a [relation](@) between [concepts](@). This meaning may deviate from the meanings that this word or phrase has in other [scopes](@), and in everyday language.
 
@@ -179,11 +140,7 @@ header fields for `term` termtypes need to be discussed.
 | Name | Req'd | Default | Description |
 | ---- | :---: | ------- | ----------- |
 
-
-</TabItem>
-<TabItem value="relation">
-
-## Header fields for `termtype: relation`
+### Header fields for `termtype: relation`
 
 :::info Editor's note
 This section needs to be discussed as `relation` is introduced as a new termtype.
@@ -209,10 +166,7 @@ A good description - which would include a good [definition](@) of the [relation
 
 [^5]: For a [relation](@) (_[terms community](@)_, _[curates](@)_,  _[scope](@)_), a pragma could be "Terms community `subject` curates the scope '`object`'.", allowing the construction of phrases such as "Terms community CTWG curates scope 'ctwg'."
 
-</TabItem>
-<TabItem value="pattern">
-
-## Header fields for `termtype: pattern`
+### Header fields for `termtype: pattern`
 
 A [pattern](@) (also called [mental model](https://en.wikipedia.org/wiki/Mental_model) or [conceptual model](https://en.wikipedia.org/wiki/Conceptual_model)) captures a limited set of [concepts](@) (ideas), [relations](@) between them, and constraints, such that together they form a coherent and consistent whole. They have been crafted so that they may serve as a basis for architecting, designing, and implementing IT processes, It components and their [governance](@)- and [management](@) processes.
 
@@ -225,32 +179,6 @@ header fields for `pattern` termtypes need to be discussed.
 | Name | Req'd | Default | Description |
 | ---- | :---: | ------- | ----------- |
 
-</TabItem>
-<TabItem value="usecase">
-
-## Header fields for `termtype: usecase`
-
-:::info Editor's note
-header fields for `usecase` termtypes need to be discussed.
-:::
-
-| Name | Req'd | Default | Description |
-| ---- | :---: | ------- | ----------- |
-
-</TabItem>
-<TabItem value="example">
-
-## Header fields for `termtype: example`
-
-:::info Editor's note
-header fields for `example` termtypes need to be discussed.
-:::
-
-| Name | Req'd | Default | Description |
-| ---- | :---: | ------- | ----------- |
-
-</TabItem>
-</Tabs>
 
 <!--
 ## Alternative - Header fields for different `termtype`s:

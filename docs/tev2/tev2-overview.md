@@ -82,7 +82,7 @@ TEv2 assumes that the [curated](@) data resides in an existing [scope directory]
 Thus, whenever a [terms-community](@) decided that some contribution is to be included in the part of the [corpus](@) that is maintained by that [community](terms-community@), the [curators](@) of that [community](terms-community@) are tasked to
 
 1. create/maintain/update any [scope](@)-related administration in the [scope directory](@) that is needed for curation, as specified by a [Scope Administration File (SAF)](tev2-spec-saf);
-2. convert that contribution to (a set of) [curated files](@), that comply with the [specifications](tev2-spec-ctext) for such files;
+2. convert that contribution to (a set of) [curated files](@), that comply with the [specifications](ctext) for such files;
 3. store them at the location as designated in the [SAF](tev2-spec-saf);
 4. generate/update any artifact that the [community](terms-community@) wants to automatically maintain, which in particular includes the [MRG](@) and associated [HRG](@).
 
@@ -90,6 +90,6 @@ This document provides an overview of the knowledge that [curators](@) may need 
 
 1. [Setup/installation](tev2-installation) of a [scope directory](@) that is suitable for working with TEv2, and the creation of a [SAF](tev2-spec-saf).
 
-2. [Curation](@) of terminological contributions. This requires knowledge about the [file structure](tev2-spec-ctext) of [curated file](@).
+2. [Curation](@) of terminological contributions. This requires knowledge about the [file structure](ctext) of [curated file](@).
 
 3. [generation](tev2-toolbox-use) of [terminological artifacts](@). It is typical for a [terms community](@) to want to have a [glossary](@) of the terms they either have defined themselves, or are defined elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).

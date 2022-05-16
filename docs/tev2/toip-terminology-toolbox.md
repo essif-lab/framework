@@ -107,7 +107,7 @@ A MRG entry for an MRG SHOULD accommodate for (at least) the following fields:
 - `versiontag` (optional): a text that identifies the version of the [term](@) itself. It is not to be confused with the version of a [terminology](@) that may contain that [term](@). The `versiontag` shall only contain characters in regex `[a-z0-9_-]`.
 - `commit` (optional): the latest (git) commit hash of the [term's](term@) [definition](@).
 - `formphrases` (optional): a list of texts that the [TRRT](#trrt) can use to convert `show texts` into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs). The `formphrases` elements (texts) shall only contain characters in regex `[a-z0-9_-{}]`.
-- `status` (optional): a text that identifies the [status of the term](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). Allowed values are: 'proposed', 'approved' or 'deprecated'.
+- `status` (optional): Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md).
 - `term` (required): the text that is used for rendering the [term](@) in a human readable document. It typically contains human readable characters. It may include uppercase and lowercase characters, spaces, etc. (which are not allowed in the `termid` field).
 - `synonyms` (optional): a list of texts that that may alternatively be used for rendering the [term](@) in a human readable document. It typically contains human readable characters. It may include uppercase and lowercase characters, spaces, etc. (which are not allowed in the `termid` field).
 - `glossaryText` (required): a text that can be used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](term-ref@).
@@ -140,7 +140,7 @@ The contents of a [glossary](@) consists of one entry (which we call **MRG entri
 - [defined](definition@) in the [scope](@) iself;
 - (explicitly or implicitly) selected by the [curators](curator@) of the [scope](*@) and that is part of the contents of a [glossary](@) of another [scope](@).
 
-Selecting [terms](term@) of another [scope](@) is done by [specifying](tev2-spec-selection-criteria) the required [term selection criteria](@).
+Selecting [terms](term@) of another [scope](@) is done by [specifying](term-selection-criteria) the required [term selection criteria](@).
 
 We leave the specification of additional syntax for GDFs, e.g. for the inclusion of headers, footers and other stuff that is specific for the generation of [HRGs](#hrg), as work to be done.
 
@@ -173,7 +173,7 @@ For example, consider the [term](@) `curate` as defined in the [CTWG terms wiki]
   date: 20211123
   versiontag: 9
   commit:
-  formphrases: curate, curates, curated, curation
+  formphrases: [ curate, curates, curated, curation ]
   status: proposed
   term: curate
   synonyms: curation
