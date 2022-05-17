@@ -1,7 +1,7 @@
 ---
-id: ctext-pattern
-title: Curated Texts of type `Pattern`
-sidebar_label: Patterns
+id: ctext-use-case
+title: Curated Texts of type `use-case`
+sidebar_label: Use Cases
 scopetag: tev2
 date: 20220303
 ---
@@ -20,19 +20,17 @@ export const Mark = ({children}) => (
 The entire section on Terminology Engine v 2 (TEv2) is still under construction
 :::
 
-This document specifies what specifics of [curated texts](@) that describe [terminological artifacts](@) of type `pattern`. The reader is assumed to be familiar with the [generic structure of a curated text](ctext).
+This document specifies what specifics of [curated texts](@) that describe [terminological artifacts](@) of type `use-case`. The reader is assumed to be familiar with the [generic structure of a curated text](ctext).
 
 ## Introduction
 
-A [Pattern](@) is a description, both casual and formal, of a set of [concepts](@) (ideas), [relations](@) between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic.
+A [Use-case](@) is a description of a situation that illustrates the needs (or specifies requirements) for having something, e.g. capabilities, or things that enable one to do something. A use-case describes a situation in which the use of something (e.g. a [concept](@), [pattern](@), software system, etc.) is beneficial.
 
-Typically, people may find such a 'way of thinking' not very easy to understand; it is very likely to require (some of) them to -literally- 'change their minds'.
-
-A good description helps readers to 'change their minds', at least within the [scope](@) within the [pattern](@) is defined. It is particularly helpful when such a description is supported with good descriptions and [definitions](@) of the [concepts](@) and [relations](@) that it uses.
+A good description helps readers to illustrate the benefits of [concepts](@) and [patterns](@), test [definitions](@), and identify [risks](@essif-lab). In short, it augments one understanding.
 
 ## Header {#header}
 
- In this section, we describe the header fields that are specific for [terminological artifacts](@) of type `pattern`:
+ In this section, we describe the header fields that are specific for [terminological artifacts](@) of type `use-case`:
 
 <details>
   <summary>Legend</summary>
@@ -45,11 +43,10 @@ A good description helps readers to 'change their minds', at least within the [s
 
 | Name | Req'd | Description |
 | ---- | :---: | ----------- |
-| `term`         | Y | Text that is the name of the [pattern](@) in (human readable) texts. It is typically used to represent the [pattern](@) itself, but also to represent arbitrary/unspecified instances thereof. This text will show as an entry in the [HRG](@).<br/>Examples: "Party, Actor, Action pattern" |
-| `tag`          | n | [Tag](@) by which this pattern can be [identified](@) within the [scope](@) in which it is specified |
+| `term`         | Y | Text that is the name of the [use-case](@) in (human readable) texts. It is typically used to represent the [use-case](@) itself, but also to represent arbitrary/unspecified instances thereof. This text will show as an entry in the [HRG](@).<br/>Examples: ["Handling a contribution", "Glossary generation"] |
 
 <details>
-  <summary>Example of a complete Pattern Header</summary>
+  <summary>Example of a complete Use-case Header</summary>
 
 <Mark>Revise the YAML code below</Mark>
 
@@ -88,9 +85,9 @@ The table that contains the suggestions has the following columns:
 
 | Heading    | heading-id | Description |
 | ---------- | ---------- | ----------- |
-| Purpose    | purpose    | Text that describes why the [pattern](@) is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What [objectives](@essif-lab) does it help realize? Why is this [pattern](@) relevant within its scope of definition? |
-| Introduction | introduction | Text that gently introduces the [pattern](@) and its context to the reader - preferably in casual terms. You can state whatever you think your audience needs to keep on reading and, ultimately, change their minds. |
-| Informal Description | informal-description | Text that describes the [pattern](@) in a colloquial way, meant to ensure the reader will not face any surprises if she continues to read to the more formal parts. |
-| Formal Description | formal-description | Text that describes the [pattern](@) in a formal way, possibly with a figure and formal notations. This text would enable people to create formal models, e.g. in RDFS, OWL or other semantic languages. |
+| Purpose    | purpose    | Text that describes why the [use-case](@) is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What [objectives](@essif-lab) does it help realize? Why is this [use-case](@) relevant within its scope of definition? |
+| Introduction | introduction | Text that gently introduces the [use-case](@) and its context to the reader - preferably in casual terms. You can state whatever you think your audience needs to keep on reading and, ultimately, change their minds. |
+| Informal Description | informal-description | Text that describes the [use-case](@) in a colloquial way, meant to ensure the reader will not face any surprises if she continues to read to the more formal parts. |
+| Formal Description | formal-description | Text that describes the [use-case](@) in a formal way, possibly with a figure and formal notations. This text would enable people to create formal models, e.g. in RDFS, OWL or other semantic languages. |
 | Notes      | notes      | Text that may be of importance to readers, but that doesn't fit anywhere else. |
 | References | references | List references to other texts, standards, (scientific) articles, applicable legislation, git repo's, etc., as appropriate. |
