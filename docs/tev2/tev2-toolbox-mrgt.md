@@ -27,7 +27,7 @@ Typically, the [MRGT](@) uses the [Scope Administration File](SAF@) to learn wha
 The [MRGT](@) logs conditions that prevent it from properly
 
 - parsing a source document (e.g. because it is not in the expected format);
-- resolving `id`s, [scope tags](tag@), [group tags](tag@), or [version tags](tag@);
+- resolving `id`s, [scope tags](@), [group tags](@), or [version tags](@);
 - writing the output (e.g. because it has no write-permission for the designated location);
 - etc.;
 
@@ -78,7 +78,7 @@ Glossaries are generated at a default location, which for ToIP is `http://trusto
 The [MRGT](#mrgt) should log conditions that prevent it from properly
 
 - parsing a source document (e.g. because it is not in the expected format);
-- resolving `id`s, [scope tags](tag@), [group tags](tag@), or [version tags](tag@);
+- resolving `id`s, [scope tags](@), [group tags](@), or [version tags](@);
 - writing the output (e.g. because it has no write-permission for the designated location);
 - etc.;
 

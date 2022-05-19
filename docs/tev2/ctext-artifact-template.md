@@ -26,7 +26,7 @@ This document specifies what specifics of [curated texts](@) that describe [term
 
 A [Artifact](@) is a <Mark>[describe what the specific Artifact is]</Mark>.
 
-A good description allows readers to <Mark>[describe what a good description does]</Mark>.
+A good description allows [readers](@) to <Mark>[describe what a good description does]</Mark>.
 
 ## Header {#header}
 
@@ -66,7 +66,7 @@ id: <Mark>Artifact</Mark>-example
 
 ## Body {#body}
 
-A [markdown](https://www.markdownguide.org/basic-syntax/) body consists of one or more sections that each have a [heading](https://www.markdownguide.org/basic-syntax/#headings), optionally followed by a [heading id](https://www.markdownguide.org/extended-syntax/#heading-ids). We provide suggestions for a variety of sections, that we think help readers get a good understanding of the [<Mark>Artifact</Mark>](@) that is described.
+A [markdown](https://www.markdownguide.org/basic-syntax/) body consists of one or more sections that each have a [heading](https://www.markdownguide.org/basic-syntax/#headings), optionally followed by a [heading id](https://www.markdownguide.org/extended-syntax/#heading-ids). We provide suggestions for a variety of sections, that we think help [readers](@) get a good understanding of the [<Mark>Artifact</Mark>](@) that is described.
 
 We have placed the suggestions in an order that we think makes for good reading. However, if you think otherwise, you are free to change this order, leave out sections, and/or add your own.
 
@@ -87,17 +87,17 @@ The table that contains the suggestions has the following columns:
 
 1. **Heading** shows a name we suggest for a particular section. If you use this suggestion, you do not need to also provide the `Heading ID` (because it is automatically arranged for).
 2. **heading-id** specifies the text to be used as a [heading id](https://www.markdownguide.org/extended-syntax/#heading-id) in the case that the author of the section decides to use a different heading as the one that is suggested.
-3. **Description** describes the kinds of content you may want to put in the section, and what readers expect that they would know, or could do after having read the text.
+3. **Description** describes the kinds of content you may want to put in the section, and what [readers](@) expect that they would know, or could do after having read the text.
 
 </details>
 
 | Heading    | heading-id | Description |
 | ---------- | ---------- | ----------- |
-| Summary    | summary    | A short description of the [<Mark>Artifact</Mark>](@) that explains it to a layperson with reasonable accuracy, so that readers stand a good chance of determining what qualifies, and what does not qualify as in instance (example) of that [<Mark>Artifact</Mark>](@). The first complete sentence in the description SHOULD be able to serve as an informal [definition](@). The first complete paragraph SHOULD be a text that is usable to describe the [<Mark>Artifact</Mark>](@) as an entry in a [HRG](@). Additional sentences and paragraphs might expand or clarify. |
+| Summary    | summary    | A short description of the [<Mark>Artifact</Mark>](@) that explains it to a layperson with reasonable accuracy, so that [readers](@) stand a good chance of determining what qualifies, and what does not qualify as in instance (example) of that [<Mark>Artifact</Mark>](@). The first complete sentence in the description SHOULD be able to serve as an informal [definition](@). The first complete paragraph SHOULD be a text that is usable to describe the [<Mark>Artifact</Mark>](@) as an entry in a [HRG](@). Additional sentences and paragraphs might expand or clarify. |
 | Purpose    | purpose    | Text that describes why the <Mark>Artifact</Mark> is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What [objectives](@essif-lab) does it help realize? Why is this <Mark>Artifact</Mark> relevant within its scope of definition? |
-| Patterns   | patterns   | Text that uses [term refs](@) to refer the interested reader to [mental models](@) for this this [<Mark>Artifact</Mark>](@) is relevant, or that provide more context for the proper use of this [<Mark>Artifact</Mark>](@). |
-| Criteria   | criteria   | Text that enables a reader to make the precise same distinction as you (the author of this text) do, as to what is, and what is not an instance (example) of this <Mark>Artifact</Mark>. This text SHOULD serve as the [intensional definition](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions) of the [<Mark>Artifact</Mark>](@), i.e. the necessary and sufficient conditions for when the [term](@) associated with this [<Mark>Artifact</Mark>](@) should be used. Writing such a text is not easy when it is done meticulously. However, if done properly, it makes that the [<Mark>Artifact</Mark>](@) becomes crystal clear, not only for the readers, but for you (the author) as well.<br/> In the case a [<Mark>Artifact</Mark>](@) is referred to with a noun, writing this section becomes equivalent to specifying the properties that an object needs to have in order to be counted as a referent of the [term](@). |
-| Examples   | examples   | Text in which in which you give examples that obviously qualify as instances of the [<Mark>Artifact</Mark>](@), as well as examples that do NOT obviously qualify. Also, provide examples that are not (so) obvious, but help users to better understand its [intension](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions). You may also provide texts in which you use [term refs](@) to refer to [use-cases](@) that are provided in this (or any other) [scope](@) |
+| Patterns   | patterns   | Text that uses [term refs](@) to refer the interested [reader](@) to [mental models](@) for this this [<Mark>Artifact</Mark>](@) is relevant, or that provide more context for the proper use of this [<Mark>Artifact</Mark>](@). |
+| Criteria   | criteria   | Text that enables a [reader](@) to make the precise same distinction as you (the author of this text) do, as to what is, and what is not an instance (example) of this <Mark>Artifact</Mark>. This text SHOULD serve as the [intensional definition](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions) of the [<Mark>Artifact</Mark>](@), i.e. the necessary and sufficient conditions for when the [term](@) associated with this [<Mark>Artifact</Mark>](@) should be used. Writing such a text is not easy when it is done meticulously. However, if done properly, it makes that the [<Mark>Artifact</Mark>](@) becomes crystal clear, not only for the [readers](@), but for you (the author) as well.<br/> In the case a [<Mark>Artifact</Mark>](@) is referred to with a noun, writing this section becomes equivalent to specifying the properties that an object needs to have in order to be counted as a referent of the [term](@). |
+| Examples   | examples   | Text in which in which you give examples that obviously qualify as instances of the [<Mark>Artifact</Mark>](@), as well as examples that do NOT obviously qualify. Also, provide examples that are not (so) obvious, but help [readers](@) to better understand its [intension](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions). You may also provide texts in which you use [term refs](@) to refer to [use-cases](@) that are provided in this (or any other) [scope](@) |
 | Background | background | Text that (refers to text that) contains background information about the term, insofar that is relevant for the purposes that are to be served by the [scope](@) in which the [<Mark>Artifact</Mark>](@) has been defined. |
-| Notes      | notes      | Text that may be of importance to readers, but that doesn't fit anywhere else. |
+| Notes      | notes      | Text that may be of importance to [readers](@), but that doesn't fit anywhere else. |
 | References | references | List references to other texts, standards, (scientific) articles, applicable legislation, git repo's, etc., as appropriate. |

@@ -32,13 +32,8 @@ The following sections specify the fields for each of these parts.
 
 ### SAF Terminology - Defining the Scope itself
 
-<Tabs
-    defaultValue="yaml"
-    values={[
-        {label: 'Yaml', value: 'yaml'},
-        {label: 'JSON', value: 'json'},
-    ]}>
-<TabItem value="yaml">
+<details>
+  <summary>Example of a `terminology` section</summary>
 
 ~~~ yaml
 #
@@ -63,18 +58,7 @@ terminology:
   dateformat: "(?P<YYYY>\\d{4})-?(?P<MM>\\d{2})-?(?P<DD>\\d{2})(?P<tzone>Z|[+-]\\d{2}:\\d{2})?"
 ~~~
 
-</TabItem>
-<TabItem value="json">
-
-:::info Editor's note
-As we're still developing the structure of the SAF, and we do not want to continually update the JSON equivalent of the YAML, we leave this section as `TO BE DONE` when things get finalized.
-:::
-~~~ json
-TBD
-~~~
-
-</TabItem>
-</Tabs>
+</details>
 
 The following fields are defined for the `terminology` section of a [SAF](@):
 
@@ -92,13 +76,8 @@ The following fields are defined for the `terminology` section of a [SAF](@):
 
 The `scopetags` section is a list that specifies a mapping between [scopetags](@) as they are used in this [scope](@), the associated [scopedir]((@)) and if necessary, other paths and filenames for [terminological artifacts](@) within the [scope](@). The latter is only required when specifying the [scope](@) for which the [SAF](@) is created/maintained, as for other [scopes](@), such other paths and filenames can readily be found by inspecting the [SAF](@) that is located in the root of the [scopedir](@) of such [scopes](@).
 
-<Tabs
-    defaultValue="yaml"
-    values={[
-        {label: 'Yaml', value: 'yaml'},
-        {label: 'JSON', value: 'json'},
-    ]}>
-<TabItem value="yaml">
+<details>
+  <summary>Example of a `scopes` section</summary>
 
 ~~~ yaml
 #
@@ -126,18 +105,7 @@ scopes:  # The first scopetag should be about the terminology administrated by t
     scopedir: https://github.com/trustoverip/ctwg # URL of the scope-directory
 ~~~
 
-</TabItem>
-<TabItem value="json">
-
-:::info Editor's note
-As we're still developing the structure of the SAF, and we do not want to continually update the JSON equivalent of the YAML, we leave this section as `TO BE DONE` when things get finalized.
-:::
-~~~ json
-TBD
-~~~
-
-</TabItem>
-</Tabs>
+</details>
 
 The following fields are defined for the `scopes` section of a [SAF](@):
 
@@ -154,13 +122,8 @@ The following fields are defined for the `scopes` section of a [SAF](@):
 
 The third section in the [SAF](@) specifies the [terminology](@) of the [scope](@), in multiple versions that are actively maintained by the [curators](@). For each version, the set of [terms](@) is selected that constitute that version's [terminology](@). Also, additional data is provided regarding the state/validity of the [terminology](@) over time, which may of interest for the [curators](@) of other scopes as they need to decide whether or not to import [terms](@) from such a [terminology](@).
 
-<Tabs
-    defaultValue="yaml"
-    values={[
-        {label: 'Yaml', value: 'yaml'},
-        {label: 'JSON', value: 'json'},
-    ]}>
-<TabItem value="yaml">
+<details>
+  <summary>Example of a `versions` section</summary>
 
 ~~~ yaml
 #
@@ -189,18 +152,7 @@ versions:
       - "[community@essif-lab]" # import the term `community` from the mrg of `essif-lab:latest`.
 ~~~
 
-</TabItem>
-<TabItem value="json">
-
-:::info Editor's note
-As we're still developing the structure of the SAF, and we do not want to continually update the JSON equivalent of the YAML, we leave this section as `TO BE DONE` when things get finalized.
-:::
-~~~ json
-TBD
-~~~
-
-</TabItem>
-</Tabs>
+</details>
 
 The following fields are defined for the `versions` section of a [SAF](@):
 

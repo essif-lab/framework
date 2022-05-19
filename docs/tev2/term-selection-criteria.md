@@ -32,7 +32,7 @@ the below syntax may not be optimal for YAML and needs to be discussed/revised
 Syntax: `tagslist`@`scopetag`:`vsn` where:
 - @`scopetag` (required) identifies a [scope](@) in the SAF, thus allowing tools to obtain (the specified version, or if omitted, the latest version of) the MRG of that [scope](@) from which to extract the selected entries. In the example, this is `essiflab`.
 - `vsn` (optional) is the specific version of the MRG from which the [terms](@) are selected. If omitted (in which case the preceding `:` may also be omitted), the latest version is specified. The example specifies the `latest` version of the essiflab [glossary](@).
-- `tagslist` (optional) is a comma-separated list of[tags](tag@). If the tag is a [scopetag](tag@), every [term](@) in the MRG of the specified [scope](@) are selected. If the tag is a [grouptag](tag@), then every [term](@) in the MRG of the specified [scope](@) that is associated with that [grouptag](tag@) is selected.
+- `tagslist` (optional) is a list of [tags](@). If the tag is a [scopetag](@), every [term](@) in the MRG of the specified [scope](@) are selected. If the tag is a [grouptag](@), then every [term](@) in the MRG of the specified [scope](@) that is associated with that [grouptag](@) is selected.
 
 Prefixing the `tagslist`@`scopetag`:`vsn` syntax with a `-` sign will remove the identified [terms](@) from the [terminology](@) under construction.
 

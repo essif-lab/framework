@@ -68,8 +68,17 @@ const sidebars = {
   tev2SideBar: [
     'tev2/tev2-overview' ,
     { type: 'category',
+      label: 'Users Manual',
+      link: {type: 'doc', id: 'tev2/man-users'},
+      items:
+      [ 'tev2/man-usr-wiki',
+      , 'tev2/man-usr-repo',
+      , 'tev2/man-usr-latex',
+      ],
+    },
+    { type: 'category',
       label: 'Curators Manual',
-      link: {type: 'doc', id: 'tev2/tev2-curators-manual'},
+      link: {type: 'doc', id: 'tev2/man-curators'},
       items:
       [ 'tev2/tev2-installation',
       ],

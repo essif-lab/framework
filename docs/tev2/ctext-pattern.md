@@ -28,7 +28,7 @@ A [Pattern](@) is a description, both casual and formal, of a set of [concepts](
 
 Typically, people may find such a 'way of thinking' not very easy to understand; it is very likely to require (some of) them to -literally- 'change their minds'.
 
-A good description helps readers to 'change their minds', at least within the [scope](@) within the [pattern](@) is defined. It is particularly helpful when such a description is supported with good descriptions and [definitions](@) of the [concepts](@) and [relations](@) that it uses.
+A good description helps [readers](@) to 'change their minds', at least within the [scope](@) within the [pattern](@) is defined. It is particularly helpful when such a description is supported with good descriptions and [definitions](@) of the [concepts](@) and [relations](@) that it uses.
 
 ## Header {#header}
 
@@ -61,7 +61,7 @@ A good description helps readers to 'change their minds', at least within the [s
 
 ## Body {#body}
 
-A [markdown](https://www.markdownguide.org/basic-syntax/) body consists of one or more sections that each have a [heading](https://www.markdownguide.org/basic-syntax/#headings), optionally followed by a [heading id](https://www.markdownguide.org/extended-syntax/#heading-ids). We provide suggestions for a variety of sections, that we think help readers get a good understanding of the [concept](@) that is described.
+A [markdown](https://www.markdownguide.org/basic-syntax/) body consists of one or more sections that each have a [heading](https://www.markdownguide.org/basic-syntax/#headings), optionally followed by a [heading id](https://www.markdownguide.org/extended-syntax/#heading-ids). We provide suggestions for a variety of sections, that we think help [readers](@) get a good understanding of the [concept](@) that is described.
 
 We have placed the suggestions in an order that we think makes for good reading. However, if you think otherwise, you are free to change this order, leave out sections, and/or add your own.
 
@@ -82,15 +82,15 @@ The table that contains the suggestions has the following columns:
 
 1. **Heading** shows a name we suggest for a particular section. If you use this suggestion, you do not need to also provide the `Heading ID` (because it is automatically arranged for).
 2. **heading-id** specifies the text to be used as a [heading id](https://www.markdownguide.org/extended-syntax/#heading-id) in the case that the author of the section decides to use a different heading as the one that is suggested.
-3. **Description** describes the kinds of content you may want to put in the section, and what readers expect that they would know, or could do after having read the text.
+3. **Description** describes the kinds of content you may want to put in the section, and what [readers](@) expect that they would know, or could do after having read the text.
 
 </details>
 
 | Heading    | heading-id | Description |
 | ---------- | ---------- | ----------- |
 | Purpose    | purpose    | Text that describes why the [pattern](@) is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What [objectives](@essif-lab) does it help realize? Why is this [pattern](@) relevant within its scope of definition? |
-| Introduction | introduction | Text that gently introduces the [pattern](@) and its context to the reader - preferably in casual terms. You can state whatever you think your audience needs to keep on reading and, ultimately, change their minds. |
-| Informal Description | informal-description | Text that describes the [pattern](@) in a colloquial way, meant to ensure the reader will not face any surprises if she continues to read to the more formal parts. |
+| Introduction | introduction | Text that gently introduces the [pattern](@) and its context to the [reader](@) - preferably in casual terms. You can state whatever you think your audience needs to keep on reading and, ultimately, change their minds. |
+| Informal Description | informal-description | Text that describes the [pattern](@) in a colloquial way, meant to ensure the [reader](@) will not face any surprises if she continues to read to the more formal parts. |
 | Formal Description | formal-description | Text that describes the [pattern](@) in a formal way, possibly with a figure and formal notations. This text would enable people to create formal models, e.g. in RDFS, OWL or other semantic languages. |
-| Notes      | notes      | Text that may be of importance to readers, but that doesn't fit anywhere else. |
+| Notes      | notes      | Text that may be of importance to [readers](@), but that doesn't fit anywhere else. |
 | References | references | List references to other texts, standards, (scientific) articles, applicable legislation, git repo's, etc., as appropriate. |

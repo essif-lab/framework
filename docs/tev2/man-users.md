@@ -1,7 +1,7 @@
 ---
-id: tev2-curators-manual
-title: Curators Manual - Overview
-sidebar_label: Curators Manual
+id: man-users
+title: User Manual - Overview
+sidebar_label: User Manual
 displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220513
@@ -11,12 +11,19 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
-As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>Readers will need to see through some (currently unprocessed) notational conventions.
+As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
-The Terminology Engine (v2) is a set of specifications and tools that caters for the creation and maintenance (i.e. [curation](@)) of [terminologies](@), as well as for its subsequent use in publications of different types (e.g. websites, whitepapers) and formats (e.g. html, LaTex), as appropriate for different, individual [scopes](@).
+The Terminology Engine (v2) is a set of specifications and tools that caters for the creation and maintenance (i.e. [curation](@)) of [terminologies](@), as well as for its subsequent use in publications of different types (e.g. websites, whitepapers) and formats (e.g. html, LaTex), as appropriate for different, individual [scopes](@).[^1]
 
-The task of [curators](@) is to create/maintain the [scope directory](@) that they are tasked to [curate](@). This Curators Manual is intended to help them do this.
+[^1]: This document/website practices what it preaches in that it uses a [terminology](@) that is specific for dealing with [terminologies](@) in general. Details on how this is done can be found in the [terminology pattern](pattern-terminology@) (and the references it contains).
+
+[Users](@) participate in the following tasks:
+1. They contribute to the creation and maintenance of [terminological artifacts](@), specifically in the [definitions](@) of [concepts](@), [use-cases](@), etc.
+2. They author documents that use (and/or refer to) [terms](@) from their [terminology](@) (or (or other [terminological artifacts](@))), thereby using the mechanisms and conventions that the [curators](@) of (the [scope](@) of) the [terminology](@) have specified and made available.
+3. They check/proofread the authored documents to ensure that references to [terms](@) and/or other [terminological artifacts](@) are correct, i.e.: as intended by the author, and understandable by [readers](@).
+4. They identify any specific needs or mechanisms that help them do the aforementioned tasks, and communicate these needs to their [curators](@), or otherwise contribute to the further development of TEv2 so that such needs and mechanisms may be supported.
+
 
 :::info Editor's note
 This section needs to be revised from here onward

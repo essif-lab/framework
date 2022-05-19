@@ -26,7 +26,7 @@ This document specifies what specifics of [curated texts](@) that describe [term
 
 A [Use-case](@) is a description of a situation that illustrates the needs (or specifies requirements) for having something, e.g. capabilities, or things that enable one to do something. A use-case describes a situation in which the use of something (e.g. a [concept](@), [pattern](@), software system, etc.) is beneficial.
 
-A good description helps readers to illustrate the benefits of [concepts](@) and [patterns](@), test [definitions](@), and identify [risks](@essif-lab). In short, it augments one understanding.
+A good description helps [readers](@) to illustrate the benefits of [concepts](@) and [patterns](@), test [definitions](@), and identify [risks](@essif-lab). In short, it augments one understanding.
 
 ## Header {#header}
 
@@ -58,7 +58,7 @@ A good description helps readers to illustrate the benefits of [concepts](@) and
 
 ## Body {#body}
 
-A [markdown](https://www.markdownguide.org/basic-syntax/) body consists of one or more sections that each have a [heading](https://www.markdownguide.org/basic-syntax/#headings), optionally followed by a [heading id](https://www.markdownguide.org/extended-syntax/#heading-ids). We provide suggestions for a variety of sections, that we think help readers get a good understanding of the [concept](@) that is described.
+A [markdown](https://www.markdownguide.org/basic-syntax/) body consists of one or more sections that each have a [heading](https://www.markdownguide.org/basic-syntax/#headings), optionally followed by a [heading id](https://www.markdownguide.org/extended-syntax/#heading-ids). We provide suggestions for a variety of sections, that we think help [readers](@) get a good understanding of the [concept](@) that is described.
 
 We have placed the suggestions in an order that we think makes for good reading. However, if you think otherwise, you are free to change this order, leave out sections, and/or add your own.
 
@@ -79,15 +79,15 @@ The table that contains the suggestions has the following columns:
 
 1. **Heading** shows a name we suggest for a particular section. If you use this suggestion, you do not need to also provide the `Heading ID` (because it is automatically arranged for).
 2. **heading-id** specifies the text to be used as a [heading id](https://www.markdownguide.org/extended-syntax/#heading-id) in the case that the author of the section decides to use a different heading as the one that is suggested.
-3. **Description** describes the kinds of content you may want to put in the section, and what readers expect that they would know, or could do after having read the text.
+3. **Description** describes the kinds of content you may want to put in the section, and what [readers](@) expect that they would know, or could do after having read the text.
 
 </details>
 
 | Heading    | heading-id | Description |
 | ---------- | ---------- | ----------- |
 | Purpose    | purpose    | Text that describes why the [use-case](@) is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What [objectives](@essif-lab) does it help realize? Why is this [use-case](@) relevant within its scope of definition? |
-| Introduction | introduction | Text that gently introduces the [use-case](@) and its context to the reader - preferably in casual terms. You can state whatever you think your audience needs to keep on reading and, ultimately, change their minds. |
-| Informal Description | informal-description | Text that describes the [use-case](@) in a colloquial way, meant to ensure the reader will not face any surprises if she continues to read to the more formal parts. |
+| Introduction | introduction | Text that gently introduces the [use-case](@) and its context to the [reader](@) - preferably in casual terms. You can state whatever you think your audience needs to keep on reading and, ultimately, change their minds. |
+| Informal Description | informal-description | Text that describes the [use-case](@) in a colloquial way, meant to ensure the [reader](@) will not face any surprises if she continues to read to the more formal parts. |
 | Formal Description | formal-description | Text that describes the [use-case](@) in a formal way, possibly with a figure and formal notations. This text would enable people to create formal models, e.g. in RDFS, OWL or other semantic languages. |
-| Notes      | notes      | Text that may be of importance to readers, but that doesn't fit anywhere else. |
+| Notes      | notes      | Text that may be of importance to [readers](@), but that doesn't fit anywhere else. |
 | References | references | List references to other texts, standards, (scientific) articles, applicable legislation, git repo's, etc., as appropriate. |
