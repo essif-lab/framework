@@ -100,7 +100,7 @@ In the last row of the above table, `id` and `#heading-id` are optional. Thus, `
 This document assumes that anyone that has some dealing with [terminology](@), is doing so within the context of a single [scope](@), and that all related documents (specifications, white papers, [terminological artifacts](@), etc.) are organized in a single directory that can be (read) accessed by tools that are called from within other [scopes](scope@). We use the [term](@) **[scope](@) directory** to refer to this directory of a specific [scope](@). Thus, documents that belong to a [scope](@) are expected to reside (or have a reference/link file) in its [scope directory](@).
 
 Every [scope](@) has an **scope administration file (SAF)** that is located in the root of the [scope directory](@). This file is manually maintained by the [curator(s)](curator@) of the [scope](@)). It contains at least:
-- the set of [scope tags](tag@) that [identify](@essiflab) the [scopes](scope@) from which [terms](term@) may be used (imported), and for each of them the URL of its associated [scope directory](@); this set SHOULD include the [scope tag](tag@) (and associated URL) that the [curator(s)](curator@) of the [scope](@) have chosen for the [scope](@) itself.
+- the set of [scope tags](@) that [identify](@essiflab) the [scopes](scope@) from which [terms](term@) may be used (imported), and for each of them the URL of its associated [scope directory](@); this set SHOULD include the [scope tag](@) (and associated URL) that the [curator(s)](curator@) of the [scope](@) have chosen for the [scope](@) itself.
 - the URL of the directory in which the [glossaries](glossary@) of the [scope](@), and the associated [GDFs](#gdf), are located.
 - the name of the [GDFs](#gdf) that specifies the particulars for generating both the [MRG](#mrg) and [HRG](#hrg) that are to be generated whenever an update of the [scope's](scope@) part of the [corpus](@) is done.
 - a mail address, github account or other text that enables people to contact (one of) the [curators](curator@).
@@ -109,7 +109,7 @@ Every [scope](@) has an **scope administration file (SAF)** that is located in t
 Every [scope](@) has a set of (generated) [MRGs](#mrg) and [HRGs](#hrg) that are located in (a subdirectory of) the [scope's](scope@) [scope directory](@), the URL of which is found in the [scope's](scope@) SAF. MRGs have the following file names:
 - `glossary` is the latest/most recently generated HRG of the [scope](@).
 - `glossary.latest` is the latest/most recently generated MRG of the [scope](@).
-- `hrg.<vsn>` and `mrg.<vsn>`, are specific versions of a HRG and MRG respectively, where `<vsn>` is the [versiontag](tag@) that [identifies](identify@essiflab) the version of the [terminology](@) that they render.
+- `hrg.<vsn>` and `mrg.<vsn>`, are specific versions of a HRG and MRG respectively, where `<vsn>` is the [versiontag](@) that [identifies](identify@essiflab) the version of the [terminology](@) that they render.
 
 Every [scope](@) has a set of [GDFs](#gdf), that are located in the same directory as the [MRGs](#mrg). A [GDF](#gdf) specifies the contents (i.e. the set of [terms](term@) to be included) of a particular [MRG](#mrg) and [HRG](#hrg), and for the [HRG](#hrg) also how it is to be rendered. As we expect [HRGs](#hrg) to be produced in combination with other tooling, such as github pages, docusaurus, etc., the final URL of where it resides may differ from the directory in which a [HRG](#hrg) is created.
 
@@ -127,17 +127,17 @@ A MRG entry for an MRG SHOULD accommodate for (at least) the following fields:
 - `id` (required): the text that [identifies](identify@essiflab) the [term](@) within the context of the MRG, and can also be used as an `id` in a [term ref](@). The `id` shall only contain characters in regex `[a-z0-9_-]`. For [terms](term@) of other types than 'concept', the `id` would typically be of the form `<type>-<termid>`, e.g. as in `pattern-identify`.
 - `termtype` (optional): a text that identifies the kind of entity that the [term](@) refers to. The `termtype` shall only contain characters in regex `[a-z0-9_-]`. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`. When omitted, it defaults to `concept`.
 - `termid`: a text that identifies the specific entity of the `termtype` (as specified above). The `termid` shall only contain characters in regex `[a-z0-9_-]`. When omitted, its value is derived from the field `id` by matching that with the (CPRE) regex `(?P=<type>)-(?P<termid>.+?)`; if there is a match, the value is the named group `<termid>`. If there is no match, the value is `id` itself.
-- `grouptags`: a list of [tags](tag@), each of which identifies a group of [terms](term@) to which this [term](@) belongs. Tags must satisfy the (PCRE) regex `#[a-z0-9_-]+`.
+- `grouptags`: a list of [tags](@), each of which identifies a group of [terms](term@) to which this [term](@) belongs. Tags must satisfy the (PCRE) regex `#[a-z0-9_-]+`.
 - `date`: date of the last update of the [term](@)-related data, in a format that is to be decided by the [curators](@), and for whcih a (PCRE) regex is to be specified in the `dateformat` field.
 - `dateformat` (optional): a (PCRE) regex, that can be applied to the contents of the `date` field, and if so, produces at least the named groups `yyyy`, `mm`, `dd`, and optionally the groups `hh`, `mm`, `ss`, `ampm`, `timezone`. If present, this regex overrides the default date format as specified in the glossary header.
 - `versiontag` (optional): a text that identifies the version of the [term](@) itself. It is not to be confused with the version of a [terminology](@) that may contain that [term](@). The `versiontag` shall only contain characters in regex `[a-z0-9_-]`.
 - `commit` (optional): the latest (git) commit hash of the [term's](term@) [definition](@).
 - `formphrases` (optional): a list of texts that the [TRRT](#trrt) can use to convert `show texts` into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs). The `formphrases` elements (texts) shall only contain characters in regex `[a-z0-9_-{}]`.
-- `status` (optional): a text that identifies the [status of the term](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). Allowed values are: 'proposed', 'approved' or 'deprecated'.
+- `status` (optional): Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md).
 - `term` (required): the text that is used for rendering the [term](@) in a human readable document. It typically contains human readable characters. It may include uppercase and lowercase characters, spaces, etc. (which are not allowed in the `termid` field).
 - `synonyms` (optional): a list of texts that that may alternatively be used for rendering the [term](@) in a human readable document. It typically contains human readable characters. It may include uppercase and lowercase characters, spaces, etc. (which are not allowed in the `termid` field).
 - `glossaryText` (required): a text that can be used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](term-ref@).
-- `hoverText` (optional): a text that can be used as the contents of a popup that shows as the [term](@) is rendered in a web browser and the user hovers over the [term](@) with its mouse.
+- `hoverText` (optional): a text that can be used as the contents of a popup that shows as the [term](@) is rendered in a web browser and the [reader](@) hovers over the [term](@) with its mouse.
 - `url` (optional): the URL of a web-page that contains human readable text that typically has further explanations of the [term](@), and has sections that can be addressed by `url#heading-id` where `heading-id` is as specified for [term refs](term-ref@).
 
 Other fields may be added to a MRG entry as needed. Note how this resembles/differs from the CTWG [Eported Data Model](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/exported-data-model.md).
@@ -171,7 +171,7 @@ The syntax that is used for selecting [terms](term@) of another [scope](@) is:
 - by means of the so-called 'tagslist-syntax', which is `tagslist`@`scopetag`:`vsn` (e.g. `paa,terminology@essiflab:latest`) where:
   - @`scopetag` (required) identifies a [scope](@) in the SAF, thus allowing tools to obtain (the specified version, or if omitted, the latest version of) the MRG of that [scope](@) from which to extract the selected entries. In the example, this is `essiflab`.
   - `vsn` (optional) is the specific version of the MRG from which the [terms](@) are selected. If omitted (in which case the preceding `:` may also be omitted), the latest version is specified. The example specifies the `latest` version of the essiflab [glossary](@).
-  - `tagslist` (optional) is a comma-separated list of[tags](tag@) (e.g. `paa,terminology,ctwg`). If the tag is a [scopetag](tag@), every [term](@) in the MRG of the specified [scope](@) are selected. If the tag is a [grouptag](tag@), then every [term](@) in the MRG of the specified [scope](@) that is associated with that [grouptag](tag@) is selected.
+  - `tagslist` (optional) is a list of [tags](@) (e.g. `paa,terminology,ctwg`). If the tag is a [scopetag](@), every [term](@) in the MRG of the specified [scope](@) are selected. If the tag is a [grouptag](@), then every [term](@) in the MRG of the specified [scope](@) that is associated with that [grouptag](@) is selected.
 
 A GDF contains a sequence of such selection syntaxes that will be processed in the order they are specified (see the [MRGT](#mrgt) for details on how processing takes place). Thus, in order to 'rename' a [term](@) that was imported using the tagslist-syntax, it suffices to use the [term ref](@) that import that [term](@) again.
 
@@ -208,7 +208,7 @@ For example, consider the [term](@) `curate` as defined in the [CTWG terms wiki]
   date: 20211123
   versiontag: 9
   commit:
-  formphrases: curate, curates, curated, curation
+  formphrases: [ curate, curates, curated, curation ]
   status: proposed
   term: curate
   synonyms: curation
@@ -222,7 +222,7 @@ Glossaries are generated at a default location, which for ToIP is `http://trusto
 The [MRGT](#mrgt) should log conditions that prevent it from properly
 
 - parsing a source document (e.g. because it is not in the expected format);
-- resolving `id`s, [scope tags](tag@), [group tags](tag@), or [version tags](tag@);
+- resolving `id`s, [scope tags](@), [group tags](@), or [version tags](@);
 - writing the output (e.g. because it has no write-permission for the designated location);
 - etc.;
 
@@ -317,7 +317,7 @@ This section contains some notes of a discussion between Daniel and Rieks on the
 -----
 ## Notes
 
-[^1]: We want to enable authors to use [term refs](id@) pervasively, which means it must be easy to use, and mistakes should be (relatively) hard to make, yet easy to detect, identify, and correct. [Markdown links](https://www.markdownguide.org/basic-syntax/#links) are of the form \[`show text`\](`ref-text`), where `show text` is the text that is rendered and emphasized so that a user knows it can be clicked, and `ref-text` is a (relative or absolute) URL, or a [heading ID](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids), that identifies the resource (e.g. web page, or place therein) that is being referenced.
+[^1]: We want to enable authors to use [term refs](id@) pervasively, which means it must be easy to use, and mistakes should be (relatively) hard to make, yet easy to detect, identify, and correct. [Markdown links](https://www.markdownguide.org/basic-syntax/#links) are of the form \[`show text`\](`ref-text`), where `show text` is the text that is rendered and emphasized so that a [reader](@) knows it can be clicked, and `ref-text` is a (relative or absolute) URL, or a [heading ID](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids), that identifies the resource (e.g. web page, or place therein) that is being referenced.
 
 So, we need a syntax for [term refs](id@) that is
 - sufficiently similar to a [Markdown link](https://www.markdownguide.org/basic-syntax/#links),

@@ -16,12 +16,12 @@ export const Mark = ({children}) => (
 
 The **Human Readable Glossary generation Tool ([HRGT](@))** generates a Human Readable [Glossary](@) ([HRG](@)), that renders the [terminology](@) of a specific [scope](@) into one of several formats, e.g. HTML, or PDF. This rendering may be subject to further processing by third-party rendering tools, such as [github pages](https://pages.github.com/) or [Docusaurus](https://docusaurus.io/docs/docs-introduction), etc. (see also: [Using the Tools](tev2-toolbox-use)).
 
-Typically, the [HRGT](@) operates on the [MRG](@) of a [scope](@), as follows. First, it selects (and alphabetically sorts) the [mrg entries](@) that it needs to produce the [HRG](@) out of. Then it converts each entry into its rendered version. Next it adds header and footer material and optionally inserts other artifacts that will help readers navigate through the [HRG](@) when it is published. Finally, the result is put at a location that is suitable for further processing or final publication.
+Typically, the [HRGT](@) operates on the [MRG](@) of a [scope](@), as follows. First, it selects (and alphabetically sorts) the [mrg entries](@) that it needs to produce the [HRG](@) out of. Then it converts each entry into its rendered version. Next it adds header and footer material and optionally inserts other artifacts that will help [readers](@) navigate through the [HRG](@) when it is published. Finally, the result is put at a location that is suitable for further processing or final publication.
 
 The [HRGT](@) logs conditions that prevent it from properly
 
 - parsing a source document (e.g. because it is not in the expected format);
-- resolving `id`s, [scope tags](tag@), [group tags](tag@), or [version tags](tag@);
+- resolving `id`s, [scope tags](@), [group tags](@), or [version tags](@);
 - writing the output (e.g. because it has no write-permission for the designated location);
 - etc.;
 

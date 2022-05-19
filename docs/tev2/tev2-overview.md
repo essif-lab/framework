@@ -11,25 +11,25 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
-As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>Readers will need to see through some (currently unprocessed) notational conventions.
+As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
 The Terminology Engine (v2) is a set of specifications and tools that caters for the creation and maintenance (i.e. [curation](@)) of [terminologies](@), as well as for its subsequent use in publications of different types (e.g. websites, whitepapers) and formats (e.g. html, LaTex), as appropriate for different, individual [scopes](@).
 
-The objectives that TEv2 aims to realize include:
-- to assist readers of such publications to understand the [terms](@) that are used in the way that the authors have intended (rather than interpreting it in their own way)
-- to facilitate authors to write and publish texts where terms can be referenced to their intended meaning, within, and across [scopes](@).
-- to enable authors and readers of such publications to create and further develop their own [terminologies](@) (and with that: their insights in their subject matters);
+The objectives that TEv2 contributes to include:
+1. assisting [readers](@) of such publications to understand the [terms](@) that are used in the way that the authors have intended (rather than interpreting it in their own way);
+2. facilitating authors to write and publish texts where terms can be referenced to their intended meaning, within, and across [scopes](@);
+3. supporting authors, [readers](@) and other stakeholders to such publications as they seek to create and further develop a [terminology](@) that they can commit to (within a specific [scope](@)), which we expect to also help develop insights in their subject matter of that [scope](@)).
 
-These objectives are realized by [curators](@); they are the ones that make sure that there is a [location](scopedir@) where people can contribute to the development of the [terminology](@) of a [scope](@), and tools are installed and operational that enable authors to use them as they publish their documents. [Curators](@) have their own [manual](tev2-curators-manual).
+These contributions are what so-called [curators](@) of the [scope](@) seek to deliver. They are the ones that make sure that there is a [location](scopedir@) where people can contribute to the development of the [terminology](@) of a [scope](@), and tools are installed and operational that enable authors to use them as they publish their documents. [Curators](@) have their own [manual](man-curators).
 
-The current eSSIF-Lab (i.e.: this) website already shows the first ideas of what that might look like (popups on terms showing their definition).
+The [eSSIF-Lab website](/docs/essifLab) already shows the first ideas of what that might look like (popups on [terms](@) showing their [definition](@)).
 
 ## Introduction
 
-TEv2 not only facilitates individual authors or groups in dealing with their own [terminology](@), it specifically also caters for authors/groups using [terms](@) that others have [defined](@), without each author/group loosing their autonomy (control) over their own [terminologies](@).
+TEv2 not only contributes to dealing with (authors/groups that have their) individual [scoped](@) [terminologies](@), it specifically also contributes to the re-use of [terms](@) (or other [terminological artifacts](@)). This means that [terms](@) (or other [terminological artifacts](@)) that are [curated](@) in one [scope](@) can also be used (re-used) within other [scopes](@), while ensuring the autonomy of each such [scope](@).
 
-We assume that any author/group will create and maintain texts that concern a particular topic and that, from a terminological perspective, belong together. We also assume that such texts are 'raw', i.e. in a very simple format such as plain ASCII text, markdown, LaTex, etc., and somehow require a rendering step that turns them into 'formatted' texts, such as PDF, ODT, DOCX, or Google doc format. The reason for that is that the more complex a text format is, the more difficult it is to process them.
+From the TEv2 perspective, we assume that any author/group will create and maintain texts that concern a particular topic and that, from a terminological perspective, belong together. We also assume that such texts are 'raw', i.e. in a very simple format such as plain ASCII text, markdown, LaTex, etc., and somehow require a rendering step that turns them into 'formatted' texts, such as PDF, ODT, DOCX, or Google doc format. The reason for that is that the more complex a text format is, the more difficult it is to process them.
 
 This is illustrated in the figure below. The figure also shows the TEv2 'toolbox', which contains tools that can process raw texts prior to them being processed by the regular rendering tools that an author/group uses.
 
@@ -38,7 +38,7 @@ This is illustrated in the figure below. The figure also shows the TEv2 'toolbox
   src={useBaseUrl('images/tev2-overview-without-toolbox.png')}
 /><br/><br/>
 
-One of the most useful tools in the toolbox is the Terminology Reference Resolver Tool ([TRRT](@)). This tool can process a raw text that contains so-called [Term Refs](term-ref@), and resolve them to a syntax that one or more specific 3rd party rendering tools can pick up and use to create enhanced formatted texts. The figure below shows a raw (markdown) text (in markdown), and the corresponding  formatted (web page, HTML) text that is the result of processing by the [TRRT](@) and subsequently by the Docusaurus rendering tools.
+One of the most useful tools in the toolbox is perhaps the Terminology Reference Resolver Tool ([TRRT](@)). This tool can process a raw text that contains so-called [Term Refs](term-ref@), and resolve them to a syntax that one or more specific 3rd party rendering tools can pick up and use to create enhanced formatted texts. The left side of the figure below shows a raw (markdown) text (in markdown), and (at the right side) the corresponding formatted (web page, HTML) text that is the result of processing by the [TRRT](@) and subsequently by the Docusaurus rendering tools.
 
 <img
   alt="The effect of the Terminology Reference Resolver Tool"
@@ -82,7 +82,7 @@ TEv2 assumes that the [curated](@) data resides in an existing [scope directory]
 Thus, whenever a [terms-community](@) decided that some contribution is to be included in the part of the [corpus](@) that is maintained by that [community](terms-community@), the [curators](@) of that [community](terms-community@) are tasked to
 
 1. create/maintain/update any [scope](@)-related administration in the [scope directory](@) that is needed for curation, as specified by a [Scope Administration File (SAF)](tev2-spec-saf);
-2. convert that contribution to (a set of) [curated files](@), that comply with the [specifications](tev2-spec-ctext) for such files;
+2. convert that contribution to (a set of) [curated files](@), that comply with the [specifications](ctext) for such files;
 3. store them at the location as designated in the [SAF](tev2-spec-saf);
 4. generate/update any artifact that the [community](terms-community@) wants to automatically maintain, which in particular includes the [MRG](@) and associated [HRG](@).
 
@@ -90,6 +90,6 @@ This document provides an overview of the knowledge that [curators](@) may need 
 
 1. [Setup/installation](tev2-installation) of a [scope directory](@) that is suitable for working with TEv2, and the creation of a [SAF](tev2-spec-saf).
 
-2. [Curation](@) of terminological contributions. This requires knowledge about the [file structure](tev2-spec-ctext) of [curated file](@).
+2. [Curation](@) of terminological contributions. This requires knowledge about the [file structure](ctext) of [curated file](@).
 
 3. [generation](tev2-toolbox-use) of [terminological artifacts](@). It is typical for a [terms community](@) to want to have a [glossary](@) of the terms they either have defined themselves, or are defined elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).
