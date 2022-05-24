@@ -90,7 +90,7 @@ The [MRGT](#mrgt) should come with documentation that enables developers to asce
 
 :::info Editor's note
 A specification is needed for the creation of a (simple) MRG (from an existing MRG).
-Any [term refs](term-ref@) need to be properly resolved.
+Any [term refs](@) need to be properly resolved.
 Titles of term entries may want to link to the original resource from which it was derived.
 Choice bars (e.g. `[ A B C D .... Z ]` may need to be inserted here and there).
 Meta-data (group tags, the scopetag of the scope where it was defined, contributors, versions, dates, etc.) may need to be included.

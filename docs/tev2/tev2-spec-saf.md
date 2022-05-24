@@ -25,7 +25,7 @@ The [SAF](@) is to be created and maintained by the [curators](@) of the [scope]
 
 A [SAF](@) has three main parts:
 1. **`terminology`** defines meta-data concerning the [scope](@) itself, ways in which people can contribute, raise issues, see what's going on, discuss, and what license is being used.
-2. **`scopes`** is for technical use, meaning that tools can use this section to find where [curated files](@) of the [scope](@) are located, and where the [scope directories](@) of other [scopes](@) are located, and wh data of the [scope](@) itself, and of [scopes](@) that contain data that needs to be used/imported.
+2. **`scopes`** is for technical use, meaning that tools can use this section to find the various locations (URLs) of directories (e.g. for storing [curated files](@)) and filenames (e.g. of [glossaries](@)), that belong to the [scope](@). Also, the locations (URLs) of the [scope directories](@) of other [scopes](@) can be found in this section enabling tools to e.g. use/import their data.
 3. **`versions`** specifies the versions that are actively maintained by the [curators](@). For each version, the set of [terms](@) is selected that constitute the [terminology](@).
 
 The following sections specify the fields for each of these parts.

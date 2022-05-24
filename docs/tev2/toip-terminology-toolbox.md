@@ -24,7 +24,7 @@ The initial/prototype versions of tools may not have implemented everything (e.g
 
 1. We will have the following 'tools' in the tt-toolbox, each of which can be run 'manually' (i.e. from the commandline), and also made part of a github CI street. Each tool is always called from the context of exactly one [scope](@):
 
-    - the **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes markdown files that contain so-called [term refs](term-ref@) (e.g. \[`terms community`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](term-ref@) are converted to regular [Markdown links](https://www.markdownguide.org/basic-syntax/#links), allowing such files to be further processed, e.g. by Github pages, Docusaurus or similar tools.
+    - the **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes markdown files that contain so-called [term refs](@) (e.g. \[`terms community`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](@) are converted to regular [Markdown links](https://www.markdownguide.org/basic-syntax/#links), allowing such files to be further processed, e.g. by Github pages, Docusaurus or similar tools.
 
     - the **Glossary Generation Tool ([GGT](#mrgt))** takes a [Glossary Definition File (GDF)](#gdf) as input, and generates both a **Machine Readable [Glossary](@) ([MRG](#mrg))** and a **Human Readable [Glossary](@)**, both of which render the [terminology](@) of the [scope](@) from which the [GGT](#mrgt) is called. The[(GDF)](#gdf) specifies the set of [terms](term@) to be included, and for the HRG also how they are to be rendered.
 
@@ -110,9 +110,9 @@ A MRG entry for an MRG SHOULD accommodate for (at least) the following fields:
 - `status` (optional): Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md).
 - `term` (required): the text that is used for rendering the [term](@) in a human readable document. It typically contains human readable characters. It may include uppercase and lowercase characters, spaces, etc. (which are not allowed in the `termid` field).
 - `synonyms` (optional): a list of texts that that may alternatively be used for rendering the [term](@) in a human readable document. It typically contains human readable characters. It may include uppercase and lowercase characters, spaces, etc. (which are not allowed in the `termid` field).
-- `glossaryText` (required): a text that can be used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](term-ref@).
+- `glossaryText` (required): a text that can be used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](@).
 - `hoverText` (optional): a text that can be used as the contents of a popup that shows as the [term](@) is rendered in a web browser and the [reader](@) hovers over the [term](@) with its mouse.
-- `url` (optional): the URL of a web-page that contains human readable text that typically has further explanations of the [term](@), and has sections that can be addressed by `url#heading-id` where `heading-id` is as specified for [term refs](term-ref@).
+- `url` (optional): the URL of a web-page that contains human readable text that typically has further explanations of the [term](@), and has sections that can be addressed by `url#heading-id` where `heading-id` is as specified for [term refs](@).
 
 Other fields may be added to a MRG entry as needed. Note how this resembles/differs from the CTWG [Eported Data Model](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/exported-data-model.md).
 
@@ -122,7 +122,7 @@ A Human Readable Glossary (HRG) is a rendering of an [MRG](#mrg) in a format tha
 
 The typical rendering would be suitable for being browsed, similar to the [ToIP CTWG Glossary](https://trustoverip.github.io/ctwg/glossary) or the [ToIP eSSIF-Lab Glossary](https://trustoverip.github.io/essiflab/glossary).
 
-However, a HRG may also be created for the purpose of being included in e.g. a LaTeX document, which not only requires a different layout, but also requires [term refs](term-ref@) to be rendered in other than the default ways.
+However, a HRG may also be created for the purpose of being included in e.g. a LaTeX document, which not only requires a different layout, but also requires [term refs](@) to be rendered in other than the default ways.
 
 The particulars of creating HRGs are currently outside the scope of this document.
 
@@ -199,7 +199,7 @@ The [GGT](#mrgt) should come with documentation that enables developers to ascer
 
 :::info Editor's note
 A specification is needed for the creation of a (simple) HRG (from an existing MRG).
-Any [term refs](term-ref@) need to be properly resolved.
+Any [term refs](@) need to be properly resolved.
 Titles of term entries may want to link to the original resource from which it was derived.
 Choice bars (e.g. `[ A B C D .... Z ]` may need to be inserted here and there).
 Meta-data (group tags, the scopetag of the scope where it was defined, contributors, versions, dates, etc.) may need to be included.
@@ -207,7 +207,7 @@ There must be some license notification.
 :::
 ## Reference Resolution Tool (TRRT) {#trrt}
 
-the **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes markdown files that contain so-called [term refs](term-ref@) (e.g. \[`terms community`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](term-ref@) are converted to regular [Markdown links](https://www.markdownguide.org/basic-syntax/#links), allowing such files to be further processed, e.g. by Github pages, Docusaurus or similar tools. Future versions of the [TRRT](#trrt) may support conversion of [term refs](term-ref@) in other file types (e.g. HTML, LaTeX, docx, odt).
+the **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes markdown files that contain so-called [term refs](@) (e.g. \[`terms community`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](@) are converted to regular [Markdown links](https://www.markdownguide.org/basic-syntax/#links), allowing such files to be further processed, e.g. by Github pages, Docusaurus or similar tools. Future versions of the [TRRT](#trrt) may support conversion of [term refs](@) in other file types (e.g. HTML, LaTeX, docx, odt).
 
 ### Basic TRRT functions
 

@@ -38,14 +38,14 @@ This is illustrated in the figure below. The figure also shows the TEv2 'toolbox
   src={useBaseUrl('images/tev2-overview-without-toolbox.png')}
 /><br/><br/>
 
-One of the most useful tools in the toolbox is perhaps the Terminology Reference Resolver Tool ([TRRT](@)). This tool can process a raw text that contains so-called [Term Refs](term-ref@), and resolve them to a syntax that one or more specific 3rd party rendering tools can pick up and use to create enhanced formatted texts. The left side of the figure below shows a raw (markdown) text (in markdown), and (at the right side) the corresponding formatted (web page, HTML) text that is the result of processing by the [TRRT](@) and subsequently by the Docusaurus rendering tools.
+One of the most useful tools in the toolbox is perhaps the Terminology Reference Resolver Tool ([TRRT](@)). This tool can process a raw text that contains so-called [Term Refs](@), and resolve them to a syntax that one or more specific 3rd party rendering tools can pick up and use to create enhanced formatted texts. The left side of the figure below shows a raw (markdown) text (in markdown), and (at the right side) the corresponding formatted (web page, HTML) text that is the result of processing by the [TRRT](@) and subsequently by the Docusaurus rendering tools.
 
 <img
   alt="The effect of the Terminology Reference Resolver Tool"
   src={useBaseUrl('images/tev2-overview-enhanced-term.png')}
 /><br/><br/>
 
-If you are familiar with [markdown](https://www.markdownguide.org/basic-syntax/), you will notice that the raw text contains syntax that resembles [markdown links](https://www.markdownguide.org/basic-syntax/#links), but it's not quite conformant: it contains the `@` character, which signals (within TEv2) that this is not an ordinary link, but a link that will be resolved by the [TRRT](@). The [TRRT](@) will convert these links (which we call [term refs](term-ref@)) such that they are rendered as shown in the right of the figure: that is: in purple boldface, and when you hover your mouse over the term, it will show the definition of that term.
+If you are familiar with [markdown](https://www.markdownguide.org/basic-syntax/), you will notice that the raw text contains syntax that resembles [markdown links](https://www.markdownguide.org/basic-syntax/#links), but it's not quite conformant: it contains the `@` character, which signals (within TEv2) that this is not an ordinary link, but a link that will be resolved by the [TRRT](@). The [TRRT](@) will convert these links (which we call [term refs](@)) such that they are rendered as shown in the right of the figure: that is: in purple boldface, and when you hover your mouse over the term, it will show the definition of that term.
 
 ## Architecture
 
@@ -54,22 +54,30 @@ TEv2 is designed to support an ever increasing variety of raw text formats, and 
 The architecture is based on the ToIP/eSSIF-Lab [Terminology Model](/docs/terms/pattern-terminology), which assumes that every author/group constitutes a so-called [terms-community](@) that [curates](@) one (or more) [scope(s)](@), that contains e.g. [definitions](@), [terms](@), [tags](@) etc. that constitute the author/group's [terminology](@). An overview is given in the figure below:
 
 <img
-  alt="Curation of Terminology and its Tooling"
+  alt="TEv2 Overview"
   src={useBaseUrl('images/tev2-overview.png')}
 /><br/><br/>
 
+<!-- TRRT -->
 The figure not only shows the raw texts, the their processing by the [TRRT](@) tool and the subsequent rendering to produce formatted texts, but also other files that exist within the [scope](@), and that are being [curated](@) by its [terms-community](@) (the author/group). TEv2 expects all files that are under [curation](@), and/or are generated to serve a purpose within a [scope](@), to live in a specific directory, which we call the [scope directory](@). The rounded rectangles in the figure represent such directories and (parts of) their contents.
 
-To the left of the figure, you can see that some raw texts are 'ingressed' into the [scope directory](@), and thereby have become so-called [curated texts](@). These texts typically contain descriptions of [terms](@), [definitions](@), examples, etc., that help interested [parties](@) to formulate and understand the [concepts](@) that they need. Such [curated texts](@) are then fed to the [MRGT](@) tool, that generates a Machine Readable [Glossary](@) ([MRG](@)) of the [scope's](@) [terminology](@).
+<!-- curated texts -->
+To the left of the figure, you can see that some raw texts are 'ingressed' into the [scope directory](@), and thereby have become so-called [curated texts](@). These texts typically contain descriptions of [terms](@), [definitions](@), examples, etc., that help interested [parties](@) to formulate and understand the [concepts](@) that they need. The [curators](@) of the [scope](@) are tasked to run the ingression process, and specify the details of what this means for that [scope](@).
 
-The [MRG](@) is also considered a 'raw text', and hence it can also be subjected to the [TRRT](@) to resolve any [term refs](@) that it may hold, and subsequently be rendered to result in a formatted text that we call a Human Readable Glossary or [HRG](@); we will use the term [HRGT](@) to refer to the rendering tool that produces the [HRG](@).
+<!-- SAF -->
+These [curators](@) also create and maintain the [scope's](@) administration file ([SAF](@)), which contains meta-data concerning the [scope](@) itself, the locations (URLs) of its directories (and glossary files), the locations (URLs) of the [scope directories](@) of (selected) other [scopes](@), and a specification of the [terminological artifacts](@) that are part of the various versions of its [terminology](@) that are actively maintained.
 
-Since the [terminology](@) of a [scope](@) may also include [terms](@) that are [defined](@) in other [scopes](@), the [MRGT](@) will need to know where to get the associated data. It can do so because every [scope directory](@) has a so-called Scope Administration File or [SAF](@), which contains:
-- meta-data concerning the [scope](@) itself, ways in which people can contribute, raise issues, see what's going on, discuss,  what license is being used, and how to contact [curators](@);
-- meta-data about the [scopes](@) that contain data that needs to be used/imported, which includes the URL of their respective [scope directories](@);
-- the specification (of various versions that are being maintained) of the [scope's](@) [terminology](@), which includes the set of [terms](@) the [definitions](@) of which come either from the [scope](@) itelf, or from one of the [scopes](@) that is listed in the [SAF](@).
+<!-- MRG -->
+The [curators](@) also organize when and how the [scope's](@) Machine Readable Glossary ([MRG](@)) is created. This file is not a [glossary](@), but rather a (machine readable) inventory of all [terminological artifacts](@) that are part of (a specific version of) the [scope's](@) [terminology](@). Ideally, tools would only need to inspect the [MRG](@) of a [scope](@) if they want to use data that is [curated](@) in that [scope](@).
 
-Thus, by inspecting the contents of the [SAF](@), the [MRGT](@) learns which [MRGs](@) of other [scopes](@) it needs to obtain, and where they are located. Also, the [MRGT](@) learns which [terms](@) and [definitions](@) of the [scope](@) itself are to be included in the [terminology](@) that is will be creating an [MRG](@) for.
+<!-- MRGT -->
+The [MRG](@) is created by the [MRGT](@) tool. This tool takes the [scope's](@) [curated texts](@) as input, as well as [MRGs](@) from other scopes, e.g. to 'import' [terms](@) or other [artifacts](terminological-artifact)(@) that are needed in, but not [curated](@) by, the [scope](@). The [SAF](@) of the [scope](@) tells the [MRGT](@) where to find these (third party) [MRGs](@).
+
+<!-- HRG -->
+The Human Readable Glossary or [HRG](@) is a (real) [glossary](@) that humans are expected to read/use. It is a formatted text, which means that it might appear in one of a plethora of formats. Within a [scope](@), we assume a specific format is chosen that is appropriate for its users. The [HRG](@) is not a formatted/rendered version of the entire [MRG](@): it typically only lists the [terms](@) that are assocated with specific kinds of [terminological artifacts](@), specifically the type [`concept`](concept@).
+
+<!-- HRGT -->
+We will use the term [HRGT](@) to refer to the rendering tool that produces the [HRG](@) from a text that is extracted from the [MRG](@) and where all [term refs](@) are resolved. We expect to see various flavours of this tool, or a single tool that can create [HRGs](@) in different formats, allowing [curators](@) to get the kind of [HRG](@) that is the most appropriate for their purposes.
 
 ## Terminology Curation
 
