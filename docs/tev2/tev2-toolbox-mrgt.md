@@ -18,6 +18,11 @@ export const Mark = ({children}) => (
     {children}
   </span> );
 
+:::caution
+The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
+As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
+:::
+
 The **Machine Readable Glossary generation Tool ([MRGT](@))** generates a Machine Readable Inventory (that we call a Machine Readable Glossary or [MRG](@)), that renders the [terminology](@) of a specific [scope](@) into a specific, well-defined [format](tev2-spec-mrg). This Inventory is not a [glossary](@) because it contains all [terminological artifacts](@) that are [curated](@) within the [scope](@): apart from [terms](@), it would also include e.g., [mental models](pattern@) and [use cases](@). We choose to maintain the [term](@) "Machine Readable Glossary" ([MRG](@)), because most of us would view it - initially, at least - as a list of [terms](@) and their [definitions](@).
 
 The [MRG](@) is meant to be processed by the other tools in the toolbox, regardless of whether such tools are called from within the context of another [scope](@). Therefore, the [MRG](@) contains meta-data for all of the [terminological artifacts](@) that exist in the [scope](@), so it can serve as the single, authoritative source of that [scope's](@) [terminology](@).

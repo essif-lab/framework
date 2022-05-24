@@ -17,7 +17,8 @@ export const Mark = ({children}) => (
   </span> );
 
 :::caution
-The entire section on Terminology Engine v 2 (TEv2) is still under construction
+The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
+As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
 This document specifies what specifics of [curated texts](@) that describe [terminological artifacts](@) of type <Mark>`concept`</Mark>. The reader is assumed to be familiar with the [generic structure of a curated text](ctext).

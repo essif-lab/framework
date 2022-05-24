@@ -10,7 +10,8 @@ date: 20220512
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::caution
-The entire section on Terminology Engine v 2 (TEv2) is still under construction
+The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
+As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
 This document specifies the [term selection criteria](@) that [curators](@) need to construct a [terminology](@) for a particular [scope](@). These [criteria](term-selection-criteria@) are [used](tev2-spec-saf#saf-terminology-specs) in that [scope's](@) [SAFs](@) to define (the different versions of) the [terminology](@) of that [scope](@).
