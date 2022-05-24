@@ -14,6 +14,11 @@ export const Mark = ({children}) => (
     {children}
   </span> );
 
+:::caution
+The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
+As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
+:::
+
 The **Human Readable Glossary generation Tool ([HRGT](@))** generates a Human Readable [Glossary](@) ([HRG](@)), that renders the [terminology](@) of a specific [scope](@) into one of several formats, e.g. HTML, or PDF. This rendering may be subject to further processing by third-party rendering tools, such as [github pages](https://pages.github.com/) or [Docusaurus](https://docusaurus.io/docs/docs-introduction), etc. (see also: [Using the Tools](tev2-toolbox-use)).
 
 Typically, the [HRGT](@) operates on the [MRG](@) of a [scope](@), as follows. First, it selects (and alphabetically sorts) the [mrg entries](@) that it needs to produce the [HRG](@) out of. Then it converts each entry into its rendered version. Next it adds header and footer material and optionally inserts other artifacts that will help [readers](@) navigate through the [HRG](@) when it is published. Finally, the result is put at a location that is suitable for further processing or final publication.

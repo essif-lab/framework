@@ -107,7 +107,6 @@ const sidebars = {
           items:
           [ 'tev2/term-selection-criteria',
             'tev2/tev2-spec-term-ref',
-            'tev2/tev2-spec-mrg',
           ],
         },
       ],
@@ -116,8 +115,7 @@ const sidebars = {
       label: 'Toolbox',
       link: {type: 'doc', id: 'tev2/tev2-toolbox'},
       items:
-      [ 'tev2/tev2-toolbox-use',
-        'tev2/tev2-toolbox-trrt',
+      [ 'tev2/tev2-toolbox-trrt',
         'tev2/tev2-toolbox-mrgt',
         'tev2/tev2-toolbox-hrgt',
       ],
