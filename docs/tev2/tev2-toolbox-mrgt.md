@@ -25,11 +25,11 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 
 The **Machine Readable Glossary generation Tool ([MRGT](@))** generates a Machine Readable Inventory (that we call a Machine Readable Glossary or [MRG](@)), that renders the [terminology](@) of a specific [scope](@) into a specific, well-defined [format](tev2-spec-mrg). This Inventory is not a [glossary](@) because it contains all [terminological artifacts](@) that are [curated](@) within the [scope](@): apart from [terms](@), it would also include e.g., [mental models](pattern@) and [use cases](@). We choose to maintain the [term](@) "Machine Readable Glossary" ([MRG](@)), because most of us would view it - initially, at least - as a list of [terms](@) and their [definitions](@).
 
-The [MRG](@) is meant to be processed by the other tools in the toolbox, regardless of whether such tools are called from within the context of another [scope](@). Therefore, the [MRG](@) contains meta-data for all of the [terminological artifacts](@) that exist in the [scope](@), so it can serve as the single, authoritative source of that [scope's](@) [terminology](@).
+The (newly generated) [MRG](@) is meant to be processed by the other tools in the toolbox, regardless of whether such tools are called from within the context of another [scope](@). Therefore, the [MRG](@) contains meta-data for all of the [terminological artifacts](@) that exist in the [scope](@), so it can serve as the single, authoritative source of that [scope's](@) [terminology](@).
 
-Typically, the [MRGT](@) uses the [Scope Administration File](SAF@) to learn what it is to generate, as follows. First, it selects the [terminological artifacts](@) that it needs to produce the [MRG](@) out of. Then, depending on the `termtype` of the artefact, a [MRG entry](@) is constructed, as detailed below. Next it adds the remaining meta-data. Finally, the result is put at the location as specified by the [SAF](@).
+Typically, the [MRGT](@) uses the [Scope Administration File](SAF@) to learn what it is to generate, as follows. First, it selects the [terminological artifacts](@) that it needs to produce the [MRG](@) out of. Then, depending on the `termtype` of the artefact, a [MRG entry](@) is constructed, as detailed below. Next it adds the remaining meta-data. Finally, the result is put at the location as specified by the [SAF](@) and the [SAF](@) itself is updated as necessary.
 
-The [MRGT](@) logs conditions that prevent it from properly
+The [MRGT](@) logs conditions that prevent it from properly:
 
 - parsing a source document (e.g. because it is not in the expected format);
 - resolving `id`s, [scope tags](@), [group tags](@), or [version tags](@);

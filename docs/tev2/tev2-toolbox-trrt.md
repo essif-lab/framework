@@ -3,7 +3,6 @@ id: tev2-toolbox-trrt
 title: Term Reference Resolution Tool (TRRT)
 sidebar_label: TRRT - Term Ref Resolution Tool
 displayed_sidebar: tev2SideBar
-hide_table_of_contents: true
 scopetag: tev2
 date: 20220421
 ---
@@ -15,13 +14,20 @@ The entire section on Terminology Engine v 2 (TEv2) is still under construction.
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
-The **Term Ref(erence) Resolution Tool ([TRRT](tev2-toolbox-trrt#trrt))** takes markdown files that contain so-called [term refs](@) (e.g. \[`terms community`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](@) are converted to regular [Markdown links](https://www.markdownguide.org/basic-syntax/#links), allowing such files to be further processed, e.g. by Github pages, Docusaurus or similar tools. Future versions of the [TRRT](#trrt) may support conversion of [term refs](@) in other file types (e.g. HTML, LaTeX, docx, odt).
+The **Term Ref(erence) Resolution Tool ([TRRT](tev2-toolbox-trrt#trrt))** takes markdown files that contain so-called [term refs](@) (e.g. \[`terms community`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](@) are converted to regular [Markdown links](https://www.markdownguide.org/basic-syntax/#links), allowing such files to be further processed, e.g. by Github pages, Docusaurus or similar tools. Future versions of the [TRRT](#trrt) may support conversion of [term refs](@) in other kinds of 'raw texts' (e.g. HTML, LaTeX, docx, odt).
 
-In order to do so, [TRRT](tev2-toolbox-trrt#trrt) expects the [SAF](@) and the [MRG](@) of the [scope](@) from within which it is being called, to be available. The [MRG](@) is used to resolve all links to [terms](@) that are part of the [terminology](@) of this [scope](@). The [SAF](@) is used to locate the [MRG's](@) of any (other) [scope](@) whose [scopetag](@) is used as part of a [reference](term-ref@) that needs to be resolved.
+In order to do so, [TRRT](tev2-toolbox-trrt#trrt) expects the [SAF](@) and the [MRG](@) of the [scope](@) from within which it is being called, to be available. The [MRG](@) is used to resolve all links to [terms](@) that are part of the [terminology](@) of this [scope](@). The [SAF](@) is used to locate the [MRGs](@) of any (other) [scope](@) whose [scopetag](@) is used as part of a [reference](term-ref@) that needs to be resolved.
 
-<!-- here, we would have liked to INCLUDE the text of [term references](term-ref@) rather than copy it.  Later, we may want to check out "https://github.com/sethen/markdown-include", or "https://asciidoc.org/" [!INCLUDE [<title>](<filepath>)] -->
+## Term Reference Specifications {#termref}
 
-## Term References {#termref}
+:::info Editors Note
+Here, we would have liked to INCLUDE the text of [term references](tev2-spec-term-ref) rather than copy it.<br/>
+We may want to explore introducing a syntax such as e.g. `[!INCLUDE [<title>](<filepath>)]`<br/>
+(See also: "https://github.com/sethen/markdown-include", or "https://asciidoc.org/")
+:::
+
+<details>
+  <summary>Term Ref Basic Syntax</summary>
 
 A [term ref](@) is similar to a [Markdown link](https://www.markdownguide.org/basic-syntax/#links), but rather than linking to some complicated URL or fragment, it refers/links to a specific descriptive text (e.g. a [definition](@), purpose, or example) that is associated with (a specific version of) a [(scoped) term](scoped-term@), which is [identified](identify@essiflab) by its [scope](@) and the [term](@) (label, text).
 
@@ -42,7 +48,10 @@ Tools MUST implement the typical default behaviors as specified above. However, 
 
 [^2]: Future versions of [TRRT](#trrt) are expected to be able to recognize specific `show text`s, e.g. as plural forms (for nouns), or conjugate forms (for verbs) for a specific `id`, and use that `id` instead. This could e.g. be implemented as front matter of the resource document associated with `id`.
 
-### Alternative notation {#termref-alt}
+</details>
+
+<details>
+  <summary>Alternative Syntax for Term Refs</summary>
 
 It is convenient for authors to be able to use the '@`scopetag`' part of a [term ref](@) immediately behind the `show text` within the square brackets (`[` and `]`), and leave out the parentheses and the text in between if all the other items are omitted.
 
@@ -60,7 +69,10 @@ This leads to an alternative notation that can be used in addition to the previo
 
 In the last row of the above table, `id` and `#heading-id` are optional. Thus, `[definition@]()` is equivalent with `[definition](@)` and with `[definition](@)`. Regexes for this alternative syntax are specified in the [TRRT](#trrt) section.
 
-## Basic TRRT functions {#trrt}
+</details>
+
+<details>
+  <summary>Regular Expressions for Resolving Term Refs </summary>
 
 Finding a [term ref](@) in the file can be done by using a regular expression (regex).
 - For the original syntax, you can use the PCRE regex
@@ -83,34 +95,82 @@ To resolve a link, TRRT uses a (PCRE) regex that uses the names of the capturing
 
 The [TRRT](#trrt) may provide an option to specify other defaults in a configuration file or as  command-line arguments.
 
-The conversion of a [term ref](@) into a regular [Markdown link](https://www.markdownguide.org/basic-syntax/#links) can be done as follows, where any errors that occur are logged with a specific message, the file that is being processed, and the line number and character position of the [term ref](@) that caused the error:
-- Get the SAF of the [scope](@) from which the [TRRT](#trrt) is called;
+</details>
+
+<details>
+  <summary>Resolving a Term Ref</summary>
+
+The conversion of a [term ref](@) into a regular [markdown link](https://www.markdownguide.org/basic-syntax/#links) can be done as follows, where any errors that occur are logged with a specific message, the file that is being processed, and the line number and character position of the [term ref](@) that caused the error:
+- Get the [SAF](@) of the [scope](@) from which the [TRRT](#trrt) is called;
 - Using its contents, dereference `scopetag` to its associated [scope directory](@);
-- Get the SAF of that [scope directory](@);
-- Using its contents, locate the directory that contains its MRGs;
-- Using `vsn`, get the associated MRG;
-- If `id` is a list element of a `formphrases` field of some MRG entry, replace it with the `id`-field of that MRG entry;
-- Find the MRG entry that has an `id`-field that is the same as `id`;
-- Set `link` to the contents of the `url` field of that MRG entry;
+- Get the [SAF](@) of that [scope directory](@);
+- Using its contents, locate the directory that contains its [MRGs](@);
+- Using `vsn`, get the associated [MRG](@);
+- If `id` is a list element of a `formphrases` field of some [MRG entry](@), replace it with the `id`-field of that [MRG entry](@);
+- Find the [MRG entry](@) that has an `id`-field that is the same as `id`;
+- Set `link` to the contents of the `url` field of that [MRG entry](@);
 - Test that `link` points to an existing resource;
 - If `heading-id` is not empty, append `#<heading-id>` to the contents of `link`;
 - Output `\[`, `showtext`, `\](`, the contents of `link`, and `)`.
 
+</details>
+
+## Calling the Tool
+
 The behavior of the [TRRT](#trrt) can be configured per call e.g. by a configuration file and/or command-line parameters. Examples include specifications for:
-- the default `scopetag`;
+- the default `scopedir`;
 - the set of source file(s) to process;
 - the location(s) of destination file(s);
 - options, e.g. to change what a resolved reference looks like (allowing processing of LaTeX or other kinds of files, or to mark such references in ways that can be picked up by other processing tools that are subsequently called in CI-pipes).
 
-The [TRRT](#trrt) should log conditions that prevent it from properly
+The command-line syntax is as follows:
 
-- parsing a source document (e.g. because it is not markdown, or the file has incomprehensible front matter);
-- resolving references (e.g. if an unsupported referencing convention is encountered, the `scopetag` cannot be understood, the `id` does not map to a defined [term](@), etc.);
-- writing the output (e.g. because it has no write-permission for the designated location);
+~~~
+trrt [ <paramlist> ] [ <globpattern> ]
+~~~
 
-and provide suggestions that help tool-operators and/or document authors to identify and fix any problems.
+The (optional) [globpattern](https://en.wikipedia.org/wiki/Glob_(programming)#Syntax) specifies the set of (input) files that are to be processed.
 
-The [TRRT](#trrt) should come with documentation that enables developers to ascertain its correct functioning (e.g. by using a test set of files, test scripts that exercise its parameters, etc.), and also enables them to deploy the tool in a git repo and author/modify CI-pipes to use that deployment.
+<details>
+  <summary>Legend</summary>
+
+The columns in the following table are defined as follows:
+1. **`Key`** is the text to be used as a key.
+2. **`Value`** represents the kind of value to be used.
+3. **`Req'd`** specifies whether (`Y`) or not (`n`) the field is required to be present when the tool is being called. If required, it MUST either be present in the configuration file, or as a command-line parameter.
+4. **`Description`** specifies the meaning of the `Value` field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+
+</details>
+
+| Key      | Value         | Req'd | Description |
+| :--      | :----         | :---: | :---------- |
+| `config` | `<path>`        | n | Path (including the filename) of the tool's (YAML) configuration file. This file contains the default key-value pairs to be used. Allowed keys (and the associated values) are documented in this table. Command-line arguments override key-value pairs specified in the configuration file. This parameter SHOULD NOT appear in the configuration file itself. |
+| `input`  | `<globpattern>` | n | [Globpattern](https://en.wikipedia.org/wiki/Glob_(programming)#Syntax) that specifies the set of (input) files that are to be processed. |
+| `output` | `<dir>`         | Y | Directory where output files are to be written. This directory is specified as an absolute or relative path. |
+| `saf`    | `<path>:<vsn>`  | Y | `<path>` is the path (including the filename) of the [SAF](@) of the [scope](@) from which the tool is called. Note that the path without the filename is the [scopedir](@) of the [scope](@) from which the tool is said to be called.<br/>`<vsn>` is a [versiontag](@) that specifies the version of the [terminology](@) (i.e.: [MRG](@)) that is to be used to resolve references to a [term](@) within the default [scope](@). It MUST match either the `id` field, or an element of the `versiontags` field of a [terminology](@)-version as specified in the `versions` section of the [SAF]@. When not specified, the latest version of the [MRG](@) is taken (as specified by the [SAF's](@) `scopes.mrgfile` field). |
+
+The following parameters deal with the way in which a [term ref](@) is being resolved (by default into a [markdown link](https://www.markdownguide.org/basic-syntax/#links)). They MAY ONLY be specified in a configuration file:
+
+| Key       | Value         | Req'd | Description |
+| :--       | :----         | :---: | :---------- |
+| `replace` | `<regex>`       | n | [(PCRE) regex](https://www.debuggex.com/cheatsheet/regex/pcre) text that serves as a replacement text. This text can use groups as defined in ... (see editor's note below) |
+
+:::info Editor's Note:
+The replace regex text needs to be extended so as to include and specify the named groups that are used to find the links, as specified earliers/elsewhere, so that we can create stuff such as<br/>
+`<a class="" href="/framework/docs/terms/action"><span style="font-weight: bold;">actions</span></a>`
+:::
+
+## Processing, Errors and Warnings
+
+The [TRRT](@) starts by reading its command-line and configuration file. If the command-line has a key that is also found in the configuration file, the command-line key-value pair takes precedence. The resulting set of key-value pairs is tested for proper syntax and validity. Every improper syntax and every invalidity found will be logged. Improper syntax may be e.g. an invalid [globpattern](https://en.wikipedia.org/wiki/Glob_(programming)#Syntax). Invalidities include non-existing directories or files, lack of write-permissions where needed, etc.
+
+Then, the [TRRT](@) reads the specified input files (in arbitrary order), and for each of them, produces an output file that is the same as the input file except for the fact that all [term refs](@) have been replaced by regular [markdown links](https://www.markdownguide.org/basic-syntax/#links), and (optionally) with additional texts that are to be used by third-party rendering tools for enhanced rendering of such links. An example of this would be text that can be used to enhance a link with a popup that contains the definition, or a description of the [term](@) that is being referenced.
+
+The [TRRT](@) logs every error- and/or warning condition that it comes across while processing its configuration file, commandline parameters, and input files, in a way that helps tool-operators and document authors to identify and fix such conditions.
+
+## Deploying the Tool
+
+The [TRRT](#trrt) comes with documentation that enables developers to ascertain its correct functioning (e.g. by using a test set of files, test scripts that exercise its parameters, etc.), and also enables them to deploy the tool in a git repo and author/modify CI-pipes to use that deployment.
 
 ## Discussion Notes
 

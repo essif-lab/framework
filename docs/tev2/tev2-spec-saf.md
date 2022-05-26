@@ -22,6 +22,10 @@ This document specifies the structure of such [SAFs](@).
 
 The [SAF](@) is to be created and maintained by the [curators](@) of the [scope](@).
 
+:::info Editor's note:
+We need a paragraph that specifies the [SAF](@)-file naming conventions.
+:::
+
 ## Scope Administration File Field Descriptions
 
 A [SAF](@) has three main parts:
@@ -159,9 +163,9 @@ The following fields are defined for the `versions` section of a [SAF](@):
 
 | Name | Req'd | Default | Description |
 | ---- | :---: | ------- | ----------- |
-| `id` | Y | | Text that [identifies](@) this version from all other versions in this [SAF](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
-| `versiontags` | Y | | Specification of at least one [versiontag](@) that are used within this [scope](@) to refer to a specific [terminology](@). |
-| `terms` | Y | | List of [term selection criteria](@) that are used to generate the [scope's](@) [terminology](@). See [Term Selection](term-selection-criteria) for details. |
-| `status` | n | proposed  | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
+| `id` | Y | | [Versiontag](@) that that is used to [identify](@) this version within the set of all other versions that are maintained within this [scope](@). in this [SAF](@). It MUST NOT be changed during the lifetime of this version.<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `versiontags` | n | | List of alternative [versiontags](@) that may be used to refer to this version of the [scope's](@) [terminology](@). A typical use of this field would be to tag a version as the 'latest' version. |
+| `terms` | Y | | List of [term selection criteria](@) that are used to generate (this version of) the [scope's](@) [terminology](@). See [Term Selection](term-selection-criteria) for details. |
+| `status` | n | proposed  | Text that [identifies](@) the status of the [term](@). ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
 | `from` | n | | Date at which of the version related data was decided on. |
 | `to` | n | | Date at which the version was overridden with another one. |

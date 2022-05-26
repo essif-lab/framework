@@ -20,6 +20,10 @@ Every [scope](@) has (at least) one **Machine Readable Inventory**[^1] (that we 
 
 [^1]: The [MRG](@) is an Inventory rather than a [glossary](@), because it contains _all_ [terminological artifacts](@) that are [curated](@) within the [scope](@): apart from [terms](@), it also include e.g., [mental models](pattern@) and [use cases](@). We choose to maintain the [term](@) "Machine Readable Glossary" ([MRG](@)), because most of us would view it - initially, at least - as a list of [terms](@) and their [definitions](@).
 
+:::info Editor's note:
+We need a paragraph that specifies the [MRG](@)-file naming conventions.
+:::
+
 ## MRG structure
 
 A Machine Readable Glossary (MRG) is a YAML (or JSON) file that has three sections:
@@ -35,6 +39,7 @@ A Machine Readable Glossary (MRG) is a YAML (or JSON) file that has three sectio
 terminology:
   scopetag: tev2 # scope, the terminology of which is contained in this MRG
   scopedir: https://github.com/essif-lab/framework/tree/master/docs/tev2
+  versiontags: [ latest, v0.9.4 ]
   license: LICENCE.md
 scopes: # mappings of scopetags that are used, and their scopedirs
   - scopetag: essiflab
@@ -56,6 +61,7 @@ The section below deviates from the design choices made for [SAFs](@), where the
 | -------- | :---: | :---------- |
 | `scopetag` | Y | [Scopetag](@) of the [scope](@) in which the [MRG](@) is defined. This is the [scopetag](@) that the [curators](@) of the [scope](@) have chosen for this [scope](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `scopedir` | Y | URL that locates the [scope directory](@) associated with that [scope](@). |
+| `versiontags` | Y | Non-empty list of [versiontags](@) by which the [terminology](@) of this [MRG](@) can be distinguished from the other versions of the [terminology](@) (in other [MRGs](@)). |
 | `license`  | n | Filename of the file that is located in `scopedir`, and that contains licensing data. |
 
 The following fields are defined for the section `scopes`:
