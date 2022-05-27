@@ -14,7 +14,7 @@ The entire section on Terminology Engine v 2 (TEv2) is still under construction.
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
-This document specifies the [term selection criteria](@) that [curators](@) need to construct a [terminology](@) for a particular [scope](@). These [criteria](term-selection-criteria@) are [used](tev2-spec-saf#saf-terminology-specs) in that [scope's](@) [SAFs](@) to define (the different versions of) the [terminology](@) of that [scope](@).
+This document specifies the [term selection criteria](@) that [curators](@) need to construct a [terminology](@) for a particular [scope](@). These [criteria](term-selection-criteria@) are [used](tev2-spec-saf#versions) in that [scope's](@) [SAFs](@) to define (the different versions of) the [terminology](@) of that [scope](@).
 
 ## Specifying and Creating a Terminology
 
@@ -30,15 +30,19 @@ Typically, a sequence of [term selection criteria](@) will start with an element
 the below syntax may not be optimal for YAML and needs to be discussed/revised
 :::
 
-Syntax: `tagslist`@`scopetag`:`vsn` where:
+:::info Editor's note
+It has been suggested to provide [term ref](@) syntax that allows one to refer to a [terminological artifact](@) from a [terminology] that was 'current'/'latest'/... at a particular date. When such is worked out, we should also decide whether or not to use that syntax for selecting groups of terms.
+:::
+
+Syntax: `tagslist`@`scopetag`:`vsntag` where:
 - @`scopetag` (required) identifies a [scope](@) in the SAF, thus allowing tools to obtain (the specified version, or if omitted, the latest version of) the MRG of that [scope](@) from which to extract the selected entries. In the example, this is `essiflab`.
-- `vsn` (optional) is the specific version of the MRG from which the [terms](@) are selected. If omitted (in which case the preceding `:` may also be omitted), the latest version is specified. The example specifies the `latest` version of the essiflab [glossary](@).
+- `vsntag` (optional) is the specific version of the MRG from which the [terms](@) are selected. If omitted (in which case the preceding `:` may also be omitted), the latest version is specified. The example specifies the `latest` version of the essiflab [glossary](@).
 - `tagslist` (optional) is a list of [tags](@). If the tag is a [scopetag](@), every [term](@) in the MRG of the specified [scope](@) are selected. If the tag is a [grouptag](@), then every [term](@) in the MRG of the specified [scope](@) that is associated with that [grouptag](@) is selected.
 
-Prefixing the `tagslist`@`scopetag`:`vsn` syntax with a `-` sign will remove the identified [terms](@) from the [terminology](@) under construction.
+Prefixing the `tagslist`@`scopetag`:`vsntag` syntax with a `-` sign will remove the identified [terms](@) from the [terminology](@) under construction.
 
 Examples:
-- `[paa, terminology]@essiflab:v0.9.4` will import all [terms](@) from version `v0.9.4` of the [terminology](@) of the [scope](@) `essiflab`, that have been tagged with the [grouptag](@) `paa` and/or `terminology`.
+- `[paa, ctwg, management]@essiflab:v0.9.4` will import all [terms](@) from version `v0.9.4` of the [terminology](@) of the [scope](@) `essiflab`, that have been tagged with the [grouptag](@) `paa` and/or `ctwg` and/or `management`.
 - `-[curate]@essiflab:latest` will remove all [terms](@) from the [terminology](@) that is under construction, that come from the (latest) `essiflab` [terminology](@), and have been tagged with the [grouptag](@) `curate`.
 
 ### Adding/Removing Single Terms

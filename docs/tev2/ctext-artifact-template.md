@@ -77,22 +77,22 @@ We have placed the suggestions in an order that we think makes for good reading.
 The body is expected to consist of sections of text, for which we provide suggestions for the [section headings](https://www.markdownguide.org/basic-syntax/#headings). A section consists of a header and further text, as follows:
 
 ~~~ markdown
-## <Heading> {#<heading-id>}
+## <Heading> {#<trait>}
 
 further text goes here.
 ~~~
 
-The `heading-id` is important, as authors can use it in a [term ref](@) to refer to this particular section. Therefore, you SHOULD stick to the suggestions for the `heading-id` if you write such a section.
+The `trait` is important, as authors can use it in a [term ref](@) to refer to this particular section. Therefore, you SHOULD stick to the suggestions for the `trait` if you write such a section.
 
 The table that contains the suggestions has the following columns:
 
 1. **Heading** shows a name we suggest for a particular section. If you use this suggestion, you do not need to also provide the `Heading ID` (because it is automatically arranged for).
-2. **heading-id** specifies the text to be used as a [heading id](https://www.markdownguide.org/extended-syntax/#heading-id) in the case that the author of the section decides to use a different heading as the one that is suggested.
+2. **trait** specifies the text to be used as a [heading id](https://www.markdownguide.org/extended-syntax/#heading-id) in the case that the author of the section decides to use a different heading as the one that is suggested.
 3. **Description** describes the kinds of content you may want to put in the section, and what [readers](@) expect that they would know, or could do after having read the text.
 
 </details>
 
-| Heading    | heading-id | Description |
+| Heading    | trait | Description |
 | ---------- | ---------- | ----------- |
 | Summary    | summary    | A short description of the [<Mark>Artifact</Mark>](@) that explains it to a layperson with reasonable accuracy, so that [readers](@) stand a good chance of determining what qualifies, and what does not qualify as in instance (example) of that [<Mark>Artifact</Mark>](@). The first complete sentence in the description SHOULD be able to serve as an informal [definition](@). The first complete paragraph SHOULD be a text that is usable to describe the [<Mark>Artifact</Mark>](@) as an entry in a [HRG](@). Additional sentences and paragraphs might expand or clarify. |
 | Purpose    | purpose    | Text that describes why the <Mark>Artifact</Mark> is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What [objectives](@essif-lab) does it help realize? Why is this <Mark>Artifact</Mark> relevant within its scope of definition? |
