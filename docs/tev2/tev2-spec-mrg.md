@@ -154,17 +154,17 @@ This section needs to be discussed as `relation` is introduced as a new termtype
 
 A good description - which would include a good [definition](@) of the [relation](@) - allows us to reason about everything related to the [relation](@). [Curated texts](@) of type `relation` intend to provide such descriptions. Also, they specify a default name ([term](@)) by which the [relation](@), as well as unidentified instances thereof, can be refered to.
 
-| Name       | Req'd | Description |
-| ---------- | :---: | :---------- |
-| subject      | y | [concept](@) that the relation relates with the [concept](@) specified by `object`. If the relation is a so-called triple (i.e. a (`subject`, `predicate`, `object`)-relation, it is the `subject`. |
-| object       | n | A [concept](@), or a data-variable, that the `subject` of the relation relates to.[^3] |
-| pragma       | n | text, with placeholders for `subject` (and `object` if appropriate), that can be used to construct example sentences.[^4] |
-| smult        | n | multiplicity associated with the `subject` [concept](@). If not specified, its value is `[0..n]`. |
-| omult        | n | multiplicity associated with the `object`. If not specified, its value is `[0..n]`. |
-| endo         | n | For [homogeneous relations](https://en.wikipedia.org/wiki/Homogeneous_relation), i.e. relations where `subject` and `object` are the same, e.g. as in (_Person_, _is a parent of_, _Person_), [constraints](https://en.wikipedia.org/wiki/Homogeneous_relation#Properties) may hold that are typical for endo relations, such as `reflexive`, `irreflexive`, `symmetric`, `asymmetric`, `antisymmetric`, `transitive`. |
-| constraints  | n | Comma separated list of texts, each of which specifies a constraint that the relation must always satisfy. |
-| glossaryText | Y | Text that can be used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](@). |
-| hoverText    | n | Text that can be used as the contents of a popup that shows as the [term](@) is rendered in a web browser and the [reader](@) hovers over the [term](@) with its mouse. |
+| Name         | Req'd | Description |
+| ------------ | :---: | :---------- |
+| `subject`      | y | [concept](@) that the relation relates with the [concept](@) specified by `object`. If the relation is a so-called triple (i.e. a (`subject`, `predicate`, `object`)-relation, it is the `subject`. |
+| `object`       | n | A [concept](@), or a data-variable, that the `subject` of the relation relates to.[^3] |
+| `pragma`       | n | text, with placeholders for `subject` (and `object` if appropriate), that can be used to construct example sentences.[^4] |
+| `smult`        | n | multiplicity associated with the `subject` [concept](@). If not specified, its value is `[0..n]`. |
+| `omult`        | n | multiplicity associated with the `object`. If not specified, its value is `[0..n]`. |
+| `endo`         | n | For [homogeneous relations](https://en.wikipedia.org/wiki/Homogeneous_relation), i.e. relations where `subject` and `object` are the same, e.g. as in (_Person_, _is a parent of_, _Person_), [constraints](https://en.wikipedia.org/wiki/Homogeneous_relation#Properties) may hold that are typical for endo relations, such as `reflexive`, `irreflexive`, `symmetric`, `asymmetric`, `antisymmetric`, `transitive`. |
+| `constraints`  | n | Comma separated list of texts, each of which specifies a constraint that the relation must always satisfy. |
+| `glossaryText` | Y | Text that can be used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](@). |
+| `hoverText`    | n | Text that can be used as the contents of a popup that shows as the [term](@) is rendered in a web browser and the [reader](@) hovers over the [term](@) with its mouse. |
 
 [^3]: In a [relation](@) such as (_Person_, _loves_, _Person_), _Person_ is a ([concept](@)) class. However, in a [relation](@) such as (_Person_, _has lived_, _years_), _years_ is not a [concept](@) (idea), but a data-variable, that has a specific value, in this case a number (of years).
 

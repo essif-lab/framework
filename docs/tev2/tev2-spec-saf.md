@@ -52,9 +52,9 @@ scope:
   scopetag: tev2 # identifier that curators have determined for this terminology
   scopedir: https://github.com/essif-lab/framework/tree/master/docs/tev2  # URL of the scope-directory
   curatedir: docs # directory where all curated files are located. Full URL is `scopedir`/`curatedir`
-  glossarydir: docs/glossary # directory where all glossary files and GDFs are located. Full URL is `scopedir`/`glossarydir`
-  mrgfile: mrg.json # file that contains the (default) machine readable glossary. Full URL is `scopedir`/`mrgfile`
-  hrgfile: glossary # file that contains the (default) human readable glossary. Full URL is `scopedir`/`hrgfile`
+  glossarydir: glossaries # directory where all glossary files and GDFs are located. Full URL is `scopedir`/`glossarydir`
+  mrgfile: glossaries/mrg.json # file that contains the (default) machine readable glossary. Full URL is `scopedir`/`mrgfile`
+  hrgfile: glossaries/glossary # file that contains the (default) human readable glossary. Full URL is `scopedir`/`hrgfile`
   license: LICENSE.md # file that contains the (default) licensing conditions. Full URL is `scopedir`/`license`
   issues: https://github.com/essif-lab/framework/issues # URL where issues can be raised and handled
   website: https://essif-lab.github.io/framework/docs/tev2/tev2-overview # home page of the terminology

@@ -32,17 +32,17 @@ Here is an example of a [term ref](@): `[definitions](definition@)`. When this t
 
 The complete, generic structure of a [term ref](@) is: **\[`show text`\](`id`#`trait`@`scopetag`:`vsntag`)**. However, all of its elements (except for `show text`) are optional, so as to limit the 'extra work' that authors need to do to a minimum.
 
-### `show-text` {#show-text}
+### `showtext` {#showtext}
 
-**`show-text`** is the text that will be highlighted/emphasized to indicate it is linked.
+**`showtext`** is the text that will be highlighted/emphasized to indicate it is linked.
 It must not contain the characters `@` or `]` (this is needed to distinguish [term refs](@) from regular [markdown links](https://www.markdownguide.org/basic-syntax/#links)).
 
 ### `id` {#id}
 
 **`id`** is a text that [identifies](@) the [(scoped) term](scoped-term@) in the part of the [corpus](@) that contains the [terminology](@) of a specified [scope](@).<br/>It must satisfy the regex `[a-z0-9_-]+`.
 
-If omitted, its value is assumed to be [derivable from `show-text`](tev2-toolbox-trrt#id).
-At a minimum, this is the case if the `id` equals the result of processing `show-text` by first converting every character in the range `[A-Z]` to lower-case, and then replacing every sequence of characters specified by regex `[^A-Za-z_-]+` with (a single) `-` character.
+If omitted, its value is assumed to be [derivable from `showtext`](tev2-toolbox-trrt#id).
+At a minimum, this is the case if the `id` equals the result of processing `showtext` by first converting every character in the range `[A-Z]` to lower-case, and then replacing every sequence of characters specified by regex `[^A-Za-z_-]+` with (a single) `-` character.
 
 ### `trait` {#trait}
 
@@ -73,7 +73,7 @@ It has been suggested to provide [term ref](@) syntax that allows one to refer t
 
 It is convenient for authors to be able to use the '@`scopetag`' part of a [term ref](@) immediately behind the `show text` within the square brackets (`[` and `]`), and leave out the parentheses and the text in between if all the other items are omitted.
 
-This is particularly useful in the vast majority of cases, where the default processing of `show-text` results in `id` and `trait` is absent. Examples of this are `[definition](@)`, or `[term ref](@)`.
+This is particularly useful in the vast majority of cases, where the default processing of `showtext` results in `id` and `trait` is absent. Examples of this are `[definition](@)`, or `[term ref](@)`.
 
 The usefulness becomes even greater as the [TRRT](@) also implements more sophisticated ways to derive a `id` from a `show text`, e.g. to accommodate for plural forms (of nouns), or conjugate forms (for verbs).
 
@@ -82,7 +82,7 @@ This leads to an alternative notation that can be used in addition to the previo
 | Alternative syntax | Equivalent regular syntax |
 | :----------------: | :-----------------------: |
 | \[`show text`@\] | \[`show text`\](@) |
-| \[`show text`@`scopetag`\] | \[`show text`\](`show-text`@`scopetag`) |
+| \[`show text`@`scopetag`\] | \[`show text`\](`showtext`@`scopetag`) |
 | \[`show text`@`scopetag`:`vsntag`\](`id`#`trait`) | \[`show text`\](`id`#`trait`@`scopetag`:`vsntag`) |
 
 In the last row of the above table, `id` and `#trait` are optional. Thus, `[definition@]()` is equivalent with `[definition](@)` and with `[definition](@)`.

@@ -8,6 +8,8 @@ date: 20220421
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
@@ -32,8 +34,8 @@ We may want to explore introducing a syntax such as e.g. `[!INCLUDE [<title>](<f
 A [term ref](@) is similar to a [Markdown link](https://www.markdownguide.org/basic-syntax/#links), but rather than linking to some complicated URL or fragment, it refers/links to a specific descriptive text (e.g. a [definition](@), purpose, or example) that is associated with (a specific version of) a [(scoped) term](scoped-term@), which is [identified](@) by its [scope](@) and the [term](@) (label, text).
 
 The complete, generic structure[^1] of a [term ref](@) is: \[`show text`\](`id`#`trait`@`scopetag`:`vsntag`), where:
-- `show-text` (required) is the text that will be highlighted/emphasized to indicate it is linked. It must not contain the characters `@` or `]`.
-- `id` (optional) is a text that [identifies](@) the [(scoped) term](scoped-term@) in the part of the [corpus](@) that contains the [terminology](@) of a specified [scope](@). If omitted, its value will be assigned the default, which is typically `show-text` in which every character in the range [A-Z] is converted to lower-case, and every sequence of characters, all of which are not in [A-Z], [a-z], `_` or `-`, are converted to `-`. `id` shall only contain characters in regex `[a-z0-9_-]`.
+- `showtext` (required) is the text that will be highlighted/emphasized to indicate it is linked. It must not contain the characters `@` or `]`.
+- `id` (optional) is a text that [identifies](@) the [(scoped) term](scoped-term@) in the part of the [corpus](@) that contains the [terminology](@) of a specified [scope](@). If omitted, its value will be assigned the default, which is typically `showtext` in which every character in the range [A-Z] is converted to lower-case, and every sequence of characters, all of which are not in [A-Z], [a-z], `_` or `-`, are converted to `-`. `id` shall only contain characters in regex `[a-z0-9_-]`.
 - `trait` (optional) is a text that [identifies](@) a particular kind of descriptive text that is associated with the [term](@). If omitted (in which case the preceding `#`-character may also be omitted), the [term ref](@) will by default dereference to the text of its [glossary](@) entry. While it is envisaged that `trait` must be a text from a predefined set of allowed/supported texts (e.g. `purpose`, `criteria`, `example-3`), the precise semantics remain to be specified. For now, `trait` shall be constrained to only contain characters in regex `[a-z0-9_-]`.
 - `scopetag` (optional) is a [tag](@) that [identifies](@) the [scope](@) in the [terminology](@) of which the [(scoped) term](scoped-term@) is contained. If omitted, a default [scope](@) will be used, which is typically the [scope](@) within which the document containing the [term ref](@) is being maintained. Note that the preceding `@` sign may never be omitted because as it serves the purpose to distinguish [term refs](@) from other [Markdown links](https://www.markdownguide.org/basic-syntax/#links). `scopetag` shall only contain characters in regex `[a-z0-9_-]`.
 - `vsntag` (optional) is a text that [identifies](@) the version of the [terminology](@) in the [scope](@). If omitted (in which case the preceding `:`-character may also be omitted), its value will be the default, which is `latest`, which means the [term ref](@) points to the most recently established/published version of the [term](@). With the exception of `latest`, the precise semantics remain to be specified. `vsntag` shall only contain characters in regex `[a-z0-9_-]`. We may need to discuss whether or not this should be changed to the version of the [glossary](@) rather than the version of the [term](@).
@@ -55,7 +57,7 @@ Tools MUST implement the typical default behaviors as specified above. However, 
 
 It is convenient for authors to be able to use the '@`scopetag`' part of a [term ref](@) immediately behind the `show text` within the square brackets (`[` and `]`), and leave out the parentheses and the text in between if all the other items are omitted.
 
-This is particularly useful in the vast majority of cases, where the default processing of `show-text` results in `id` and `trait` is absent. Examples of this are `[definition](@)`, or `[term ref](@)`.
+This is particularly useful in the vast majority of cases, where the default processing of `showtext` results in `id` and `trait` is absent. Examples of this are `[definition](@)`, or `[term ref](@)`.
 
 The usefulness becomes even greater as the [TRRT](#trrt) also implements more sophisticated ways to derive a `id` from a `show text`, e.g. to accommodate for plural forms (of nouns), or conjugate forms (for verbs).[^2]
 
@@ -64,7 +66,7 @@ This leads to an alternative notation that can be used in addition to the previo
 | Alternative syntax | Equivalent regular syntax |
 | :----------------: | :-----------------------: |
 | \[`show text`@\] | \[`show text`\](@) |
-| \[`show text`@`scopetag`\] | \[`show text`\](`show-text`@`scopetag`) |
+| \[`show text`@`scopetag`\] | \[`show text`\](`showtext`@`scopetag`) |
 | \[`show text`@`scopetag`:`vsntag`\](`id`#`trait`) | \[`show text`\](`id`#`trait`@`scopetag`:`vsntag`) |
 
 In the last row of the above table, `id` and `#trait` are optional. Thus, `[definition@]()` is equivalent with `[definition](@)` and with `[definition](@)`. Regexes for this alternative syntax are specified in the [TRRT](#trrt) section.
@@ -89,7 +91,7 @@ When a [term ref](@) is located, and its parts are known, any parts that are omi
 - the `scopetag` default refers to the [scope](@) from which the [TRRT](#trrt) is called.
 - the `vsntag` defaults to `latest`.
 - the `trait` defaults to the empty string.
-- the `id` default is the `show-text` in which every character in the range [A-Z] is converted to lower-case, and every sequence of characters, all of which are not in [A-Z], [a-z], `_` or `-`, are converted to `-`.
+- the `id` default is the `showtext` in which every character in the range [A-Z] is converted to lower-case, and every sequence of characters, all of which are not in [A-Z], [a-z], `_` or `-`, are converted to `-`.
 
 To resolve a link, TRRT uses a (PCRE) regex that uses the names of the capturing groups, as well as `url`, which is the URL of the glossary that needs to be referenced. The default regex for this is `[$<showtext>]($<url>/glossary.$<vsntag>/#$<id>)`.
 
@@ -168,10 +170,9 @@ Any errors that occur during this process are logged using a message that helps 
 
 While the complete structure of a [term ref](@) is: \[`show text`\](`id`#`trait`@`scopetag`:`vsntag`), it is allowed to leave out one or more parts. This section specifies what the value of each of these parts is after the (possibly incomplete) [term ref](@) is processed, and any conditions they satisfy.
 
-#### `show-text` (required) {#show-text}
+#### `showtext` (required) {#showtext}
 
-`show-text` is a (non-empty) text that will be highlighed/enhanced, and will become clickable and/or receive other features when rendered. It MUST NOT be empty, and it MUST NOT contain the characters `@` or `]` (which we need to be able to distinguish between [term refs](@) and other links).
-
+`showtext` is a (non-empty) text that will be highlighed/enhanced, and will become clickable and/or receive other features when rendered. It MUST NOT be empty, and it MUST NOT contain the characters `@` or `]` (which we need to be able to distinguish between [term refs](@) and other links).
 
 #### `scopetag` (optional) {#scopetag}
 
@@ -181,7 +182,7 @@ If specified, it MUST appear in the [SAF](@) (of the [scope](@) from which the [
 
 If not specified, a default [scope](@) will be used, which is the [scope](@) from which the [TRRT](@) is being called, which SHOULD be the [scope](@) within which the document containing the [term ref](@) is being maintained. Note that the preceding `@` sign may never be omitted because as it serves the purpose to distinguish [term refs](@) from other [Markdown links](https://www.markdownguide.org/basic-syntax/#links). `scopetag` shall only contain characters in regex `[a-z0-9_-]`.
 
-#### `vsntag` (optional) {#vsn}
+#### `vsntag` (optional) {#vsntag}
 
 `vsntag` is a [versiontag](@) that [identifies](@) the version of the [terminology](@) in the [scope](@) (as [identified] by the `scopetag`). It MUST appear either in the `id` field, or as one of the elements in the `altvsntags` field of the [SAF](@) that contains the administration of that [scope](@).
 
@@ -195,39 +196,72 @@ If omitted (in which case the preceding `:`-character may also be omitted from t
 
 If omitted, it is generated as follows (assuming the [MRG](@) to be used has already been [identified](@)):
 
-- set `id`:=`show-text`
+- set `id`:=`showtext`
 - convert every character in the (regex) range `[A-Z]` to lower-case
 - convert every sequence of characters `[^A-Za-z_-]+` to (a single) `-` character.
 - if the resulting `id` matches an element in the list of texts in the `formphrases` field of an [MRG entry](@), then replace `id` with the contents ov the `id`-field of that same [MRG entry](@).[^3]
 
 [^3]: It is convenient to allow elements of the `formphrases` list to contain 'macro's, i.e. shorthand syntax that represent regexes that allow for extended matching. Consider a 'macro' `{ss}` as shorthand for regex `(?:['’]?s|\(s\))?` (or a macro `{yies}` as shorthand for regex `(y|y['’]s|ies)`). An `id` is said to match such an element if and only if the regex that consists of the list element (with the macro replaced with the regex that it is shorthand for) matches that `id`. Here are a few examples:<br/>- the following `id`s match `actor{ss}`: "actor", "actors", "actor's", "actor’s", and "actor(s)".<br/>- similarly, `part{yies}` matches: "party", "party's", "party’s", and "parties".
 
-It is an error if the resulting `id` does not [identify](@) an [MRG entry](@) in the selected [MRG](@). This may mean that the `show-text` has misspellings, the `id` field was not specified where it had to, or the list of `formphrases` in some [MRG entry](@) should have included more elements.
+It is an error if the resulting `id` does not [identify](@) an [MRG entry](@) in the selected [MRG](@). This may mean that the `showtext` has misspellings, the `id` field was not specified where it had to, or the list of `formphrases` in some [MRG entry](@) should have included more elements.
 
 #### `trait` (optional) {#trait}
 
 `trait` [identifies](@) a particular kind of descriptive text that is associated with the [term](@). If omitted (in which case the preceding `#`-character may also be omitted), the [term ref](@) will by default dereference to the text of its [glossary](@) entry. While it is envisaged that `trait` must be a text from a predefined set of allowed/supported texts (e.g. `purpose`, `criteria`, `example-3`), the precise semantics remain to be specified. For now, `trait` shall be constrained to only contain characters in regex `[a-z0-9_-]`.
 
+### Part 2 - Term Ref Resolution
 
+Once a [term ref](@) has been interpreted and the variables `showtext`, `scopetag`, `vsntag`, `id` and `trait` have been given values, the validiy of which we assume has been checked, the [term ref](@) has to be resolved, i.e. replaced with another text that will have the effect that when a [reader](@) encounters it in a rendered text (presented e.g. in a browser, pdf-reader, or something else), it enables the reader to find out its intended meaning.
 
+The text with which the [term ref](@) is to be replaced can have various formats. This enables the [TRRT](@) to be used in different contexts, and its results to be further processed by a variety of third-party rendering tools.
 
-- Get the [SAF](@) of the [scope](@) from which the [TRRT](#trrt) is called;
-- Using its contents, dereference `scopetag` to its associated [scope directory](@);
-- Get the [SAF](@) of that [scope directory](@);
-- Using its contents, locate the directory that contains its [MRGs](@);
-- Using `vsntag`, get the associated [MRG](@);
-- If `id` is a list element of a `formphrases` field of some [MRG entry](@), replace it with the `id`-field of that [MRG entry](@);
+<details>
+  <summary>Examples of term-ref replacements</summary>
+
+<Tabs
+  defaultValue="simple"
+  values={[
+    {label: 'ToIP Style', value: 'simple'},
+    {label: 'eSSIF-Lab Style', value: 'complex'},
+  ]}>
+
+<TabItem value="simple">
+
+The simplest example is where a [term ref](@) is replaced with a regular [markdown link](https://www.markdownguide.org/basic-syntax/#links)
+
+In this case, the [term ref](@) `[Actions](@)` is replaced with ``[Actions](/<hrgfile>#action)``
+where:
+
+- `hrgfile` is the contents of the field [SAF](@).`scope.hrgfile`.
+
+</TabItem>
+<TabItem value="complex">
+
+A more complex example is what is done within eSSIF-Lab, where the [curators](@) not only want [terms](@) to be linked to their (rendered) [curated texts](@), but also want them to be provided with a tooltip that states their [definitions](@).
+
+In this [scope](@), the [term ref](@) `[Actions](@)` is replaced with `<Term reference="action" popup="<popuptext>">Actions</Term>`
+where:
+
+- `<popuptext>` is the text provided in the `hoverText` field of the [MRG entry](@) whose `id` field is `action`, and
+- `<Term ...>` and `</Term>` represent a React component that supports linking and tooltip functionality, so that users hovering over the link will see a popup/tooltip with the text `<popuptext>`, and will navigate to the location of the (human readable, i.e. rendered) file that contains details and further explanations, as specified in the `navurl` field of the [MRG entry](@).
+
+</TabItem>
+</Tabs>
+
+</details>
+
+The essentials of the rewriting start with the [scopedir](@) of the [scope](@) from which the [TRRT](@) is called, and proceed as follows:
+- access the [SAF](@), and in case the `scopetag` is not of this [scope](@), look up the [scopedir](@) associated with that `scopetag` and obtain its [SAF](@);
+- using the `vsntag`, locate the [MRG](@) (or if `vsntag` isn't specified, use the [scope's](@) default [MRG](@)-file as specified in the [scope's](@) [SAF](@));
 - Find the [MRG entry](@) that has an `id`-field that is the same as `id`;
-- Set `link` to the contents of the `url` field of that [MRG entry](@);
-- Test that `link` points to an existing resource;
-- If `trait` is not empty, append `#<trait>` to the contents of `link`;
-- Output `\[`, `showtext`, `\](`, the contents of `link`, and `)`.
+
+At this point, all data is available for constructing the replacement text. As we have seen, it depends on the situation that need to be supported how the actual construction needs to be done.
 
 ## Processing, Errors and Warnings
 
 The [TRRT](@) starts by reading its command-line and configuration file. If the command-line has a key that is also found in the configuration file, the command-line key-value pair takes precedence. The resulting set of key-value pairs is tested for proper syntax and validity. Every improper syntax and every invalidity found will be logged. Improper syntax may be e.g. an invalid [globpattern](https://en.wikipedia.org/wiki/Glob_(programming)#Syntax). Invalidities include non-existing directories or files, lack of write-permissions where needed, etc.
 
-Then, the [TRRT](@) reads the specified input files (in arbitrary order), and for each of them, produces an output file that is the same as the input file except for the fact that all [term refs](@) have been replaced by regular [markdown links](https://www.markdownguide.org/basic-syntax/#links), and (optionally) with additional texts that are to be used by third-party rendering tools for enhanced rendering of such links. An example of this would be text that can be used to enhance a link with a popup that contains the definition, or a description of the [term](@) that is being referenced.
+Then, the [TRRT](@) reads the specified input files (in arbitrary order), and for each of them, produces an output file that is the same as the input file except for the fact that all [term refs](@) have been replaced with regular [markdown links](https://www.markdownguide.org/basic-syntax/#links), and (optionally) with additional texts that are to be used by third-party rendering tools for enhanced rendering of such links. An example of this would be text that can be used to enhance a link with a popup that contains the definition, or a description of the [term](@) that is being referenced.
 
 The [TRRT](@) logs every error- and/or warning condition that it comes across while processing its configuration file, commandline parameters, and input files, in a way that helps tool-operators and document authors to identify and fix such conditions.
 
