@@ -20,6 +20,10 @@ This document specifies the contents of the Glossary Definition File (GDF).
 The glossary definition file contains whatever the Glossary Generation Tool (GGT) needs to generate a (human readable) [glossary](@) from the [scope's](@) machine readable glossary. Before documenting this, we do some experiments with SAFs to gain experience about the ways we should go about this stuff. The idea is to have a GGT that is capable of generation glossaries of various types, each of which has its own requirements regarding the specifications according to which it would be generated. A simple HTML glossary would typically only need some HTML code as a 'header' and as a 'footer', which can be specified as files containing tha stuff. Other, more complicated ways can then be created as needed. This file would typically specify the various kinds of glossary types.
 :::
 
+:::info Editor's note:
+We need a paragraph that specifies the [GDF](@)-file naming conventions.
+:::
+
 ## Glossary Definitions
 
 There are two ways in which a glossary definition can be specified:

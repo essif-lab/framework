@@ -25,11 +25,11 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 
 The **Machine Readable Glossary generation Tool ([MRGT](@))** generates a Machine Readable Inventory (that we call a Machine Readable Glossary or [MRG](@)), that renders the [terminology](@) of a specific [scope](@) into a specific, well-defined [format](tev2-spec-mrg). This Inventory is not a [glossary](@) because it contains all [terminological artifacts](@) that are [curated](@) within the [scope](@): apart from [terms](@), it would also include e.g., [mental models](pattern@) and [use cases](@). We choose to maintain the [term](@) "Machine Readable Glossary" ([MRG](@)), because most of us would view it - initially, at least - as a list of [terms](@) and their [definitions](@).
 
-The [MRG](@) is meant to be processed by the other tools in the toolbox, regardless of whether such tools are called from within the context of another [scope](@). Therefore, the [MRG](@) contains meta-data for all of the [terminological artifacts](@) that exist in the [scope](@), so it can serve as the single, authoritative source of that [scope's](@) [terminology](@).
+The (newly generated) [MRG](@) is meant to be processed by the other tools in the toolbox, regardless of whether such tools are called from within the context of another [scope](@). Therefore, the [MRG](@) contains meta-data for all of the [terminological artifacts](@) that exist in the [scope](@), so it can serve as the single, authoritative source of that [scope's](@) [terminology](@).
 
-Typically, the [MRGT](@) uses the [Scope Administration File](SAF@) to learn what it is to generate, as follows. First, it selects the [terminological artifacts](@) that it needs to produce the [MRG](@) out of. Then, depending on the `termtype` of the artefact, a [MRG entry](@) is constructed, as detailed below. Next it adds the remaining meta-data. Finally, the result is put at the location as specified by the [SAF](@).
+Typically, the [MRGT](@) uses the [Scope Administration File](SAF@) to learn what it is to generate, as follows. First, it selects the [terminological artifacts](@) that it needs to produce the [MRG](@) out of. Then, depending on the `termtype` of the artefact, a [MRG entry](@) is constructed, as detailed below. Next it adds the remaining meta-data. Finally, the result is put at the location as specified by the [SAF](@) and the [SAF](@) itself is updated as necessary.
 
-The [MRGT](@) logs conditions that prevent it from properly
+The [MRGT](@) logs conditions that prevent it from properly:
 
 - parsing a source document (e.g. because it is not in the expected format);
 - resolving `id`s, [scope tags](@), [group tags](@), or [version tags](@);
@@ -54,7 +54,7 @@ Creating an [MRG](#mrg) works as follows:
 - Create an initial set of MRG entries, i.e. one for every [term](@) (from [scopes](scope@) other than the one we create the MRG for) that is selected per the specifications in the [GDF](#gdf). A MRG entry is constructed by interpreting the [term file](@essiflab) that defines the [term](@), and producing the MRG entry structure as defined for [MRGs](#mrg). Note that this can only be done for [term files](term-file@essiflab) that have a syntax that is supported by the [MRGT](#mrgt). If the created MRG entry has an `id` that is the same as the `id`-field of an existing glossary-entry, that MRG entry will be discarded (meaning that the newly created MRG entry  'overrides' the existing one).
 - Add a MRG entry for every [term](@) that is defined in the [scope](@) from which the [MRGT](#mrgt) is called, again removing any existing glossary-entry that has an `id`-field that is the same as a newly added one.
 - Perform completeness and consistency checks on the set of MRG entries, to ensure that
-  - every MRG entry is [identifiable](identify@essiflab) by its `id`-field;
+  - every MRG entry is [identifiable](@) by its `id`-field;
   - every element in the `formphrases`-list of a MRG entry does not occur as an element in the `formphrases`-list of another MRG entry;
 - Sort the MRG entries according to their `id` field;
 - Add header/meta data as needed as specified for [MRGs](#mrg).

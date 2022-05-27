@@ -23,6 +23,8 @@ The **Human Readable Glossary generation Tool ([HRGT](@))** generates a Human Re
 
 Typically, the [HRGT](@) operates on the [MRG](@) of a [scope](@), as follows. First, it selects (and alphabetically sorts) the [mrg entries](@) that it needs to produce the [HRG](@) out of. Then it converts each entry into its rendered version. Next it adds header and footer material and optionally inserts other artifacts that will help [readers](@) navigate through the [HRG](@) when it is published. Finally, the result is put at a location that is suitable for further processing or final publication.
 
+After having successfully created a [HRG](@), the [SAF](@) is updated as necessary.
+
 The [HRGT](@) logs conditions that prevent it from properly
 
 - parsing a source document (e.g. because it is not in the expected format);

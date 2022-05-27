@@ -67,14 +67,26 @@ To the left of the figure, you can see that some raw texts are 'ingressed' into 
 <!-- SAF -->
 These [curators](@) also create and maintain the [scope's](@) administration file ([SAF](@)), which contains meta-data concerning the [scope](@) itself, the locations (URLs) of its directories (and glossary files), the locations (URLs) of the [scope directories](@) of (selected) other [scopes](@), and a specification of the [terminological artifacts](@) that are part of the various versions of its [terminology](@) that are actively maintained.
 
+:::info Editor's note:
+We need a sentence that specifies the [SAF's](@) filename.
+:::
+
 <!-- MRG -->
 The [curators](@) also organize when and how the [scope's](@) Machine Readable Glossary ([MRG](@)) is created. This file is not a [glossary](@), but rather a (machine readable) inventory of all [terminological artifacts](@) that are part of (a specific version of) the [scope's](@) [terminology](@). Ideally, tools would only need to inspect the [MRG](@) of a [scope](@) if they want to use data that is [curated](@) in that [scope](@).
+
+:::info Editor's note:
+We need a sentence that specifies the [MRG](@) file naming conventions.
+:::
 
 <!-- MRGT -->
 The [MRG](@) is created by the [MRGT](@) tool. This tool takes the [scope's](@) [curated texts](@) as input, as well as [MRGs](@) from other scopes, e.g. to 'import' [terms](@) or other [artifacts](terminological-artifact)(@) that are needed in, but not [curated](@) by, the [scope](@). The [SAF](@) of the [scope](@) tells the [MRGT](@) where to find these (third party) [MRGs](@).
 
 <!-- HRG -->
 The Human Readable Glossary or [HRG](@) is a (real) [glossary](@) that humans are expected to read/use. It is a formatted text, which means that it might appear in one of a plethora of formats. Within a [scope](@), we assume a specific format is chosen that is appropriate for its users. The [HRG](@) is not a formatted/rendered version of the entire [MRG](@): it typically only lists the [terms](@) that are assocated with specific kinds of [terminological artifacts](@), specifically the type [`concept`](concept@).
+
+:::info Editor's note:
+We need a sentence that specifies the [HRG](@) file naming conventions.
+:::
 
 <!-- HRGT -->
 We will use the term [HRGT](@) to refer to the rendering tool that produces the [HRG](@) from a text that is extracted from the [MRG](@) and where all [term refs](@) are resolved. We expect to see various flavours of this tool, or a single tool that can create [HRGs](@) in different formats, allowing [curators](@) to get the kind of [HRG](@) that is the most appropriate for their purposes.

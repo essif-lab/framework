@@ -69,22 +69,22 @@ We have placed the suggestions in an order that we think makes for good reading.
 The body is expected to consist of sections of text, for which we provide suggestions for the [section headings](https://www.markdownguide.org/basic-syntax/#headings). A section consists of a header and further text, as follows:
 
 ~~~ markdown
-## <Heading> {#<heading-id>}
+## <Heading> {#<trait>}
 
 further text goes here.
 ~~~
 
-The `heading-id` is important, as authors can use it in a [term ref](@) to refer to this particular section. Therefore, you SHOULD stick to the suggestions for the `heading-id` if you write such a section.
+The `trait` is important, as authors can use it in a [term ref](@) to refer to this particular section. Therefore, you SHOULD stick to the suggestions for the `trait` if you write such a section.
 
 The table that contains the suggestions has the following columns:
 
 1. **Heading** shows a name we suggest for a particular section. If you use this suggestion, you do not need to also provide the `Heading ID` (because it is automatically arranged for).
-2. **heading-id** specifies the text to be used as a [heading id](https://www.markdownguide.org/extended-syntax/#heading-id) in the case that the author of the section decides to use a different heading as the one that is suggested.
+2. **trait** specifies the text to be used as a [heading id](https://www.markdownguide.org/extended-syntax/#heading-id) in the case that the author of the section decides to use a different heading as the one that is suggested.
 3. **Description** describes the kinds of content you may want to put in the section, and what [readers](@) expect that they would know, or could do after having read the text.
 
 </details>
 
-| Heading    | heading-id | Description |
+| Heading    | trait | Description |
 | ---------- | ---------- | ----------- |
 | Purpose    | purpose    | Text that describes why the [use-case](@) is needed. What purposes does it serve? What can you do with it that you cannot do (as well) without it? What [objectives](@essif-lab) does it help realize? Why is this [use-case](@) relevant within its scope of definition? |
 | Introduction | introduction | Text that gently introduces the [use-case](@) and its context to the [reader](@) - preferably in casual terms. You can state whatever you think your audience needs to keep on reading and, ultimately, change their minds. |

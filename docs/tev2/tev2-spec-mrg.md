@@ -20,6 +20,10 @@ Every [scope](@) has (at least) one **Machine Readable Inventory**[^1] (that we 
 
 [^1]: The [MRG](@) is an Inventory rather than a [glossary](@), because it contains _all_ [terminological artifacts](@) that are [curated](@) within the [scope](@): apart from [terms](@), it also include e.g., [mental models](pattern@) and [use cases](@). We choose to maintain the [term](@) "Machine Readable Glossary" ([MRG](@)), because most of us would view it - initially, at least - as a list of [terms](@) and their [definitions](@).
 
+:::info Editor's note:
+We need a paragraph that specifies the [MRG](@)-file naming conventions.
+:::
+
 ## MRG structure
 
 A Machine Readable Glossary (MRG) is a YAML (or JSON) file that has three sections:
@@ -30,12 +34,13 @@ A Machine Readable Glossary (MRG) is a YAML (or JSON) file that has three sectio
 <details>
   <summary>Example of sections `terminology` and `scopes`</summary>
 
-
 ~~~ yaml
-terminology:
+terminology: # the fields below must match the corresponding data in the SAF
   scopetag: tev2 # scope, the terminology of which is contained in this MRG
   scopedir: https://github.com/essif-lab/framework/tree/master/docs/tev2
-  license: LICENCE.md
+  vsntag: v0.9.4
+  altvsntags: [ latest ]
+  license: LICENSE.md
 scopes: # mappings of scopetags that are used, and their scopedirs
   - scopetag: essiflab
     scopedir: https://github.com/essif-lab/framework/tree/master/docs
@@ -48,22 +53,20 @@ entries: # here follows an (unsorted) list of MRG-entries
 
 The following fields are defined for the sections `terminology`:
 
-:::info Editor's note
-The section below deviates from the design choices made for [SAFs](@), where the `scopedir` of the [scope](@) in which the [MRG](@) is defined is made part of the `scopes` section. We need to determine whether or not change either the [SAF](@) spec or the [MRG](@) spec or leave it as it is.
-:::
-
-| Name     | Req'd | Description |
-| -------- | :---: | :---------- |
-| `scopetag` | Y | [Scopetag](@) of the [scope](@) in which the [MRG](@) is defined. This is the [scopetag](@) that the [curators](@) of the [scope](@) have chosen for this [scope](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
-| `scopedir` | Y | URL that locates the [scope directory](@) associated with that [scope](@). |
-| `license`  | n | Filename of the file that is located in `scopedir`, and that contains licensing data. |
+| Name       | Req'd | Description |
+| ---------- | :---: | :---------- |
+| `scopetag`   | Y | [Scopetag](@) of the [scope](@) in which the [MRG](@) is defined. This is the [scopetag](@) that the [curators](@) of the [scope](@) have chosen for this [scope](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `scopedir`   | Y | URL that locates the [scope directory](@) associated with that [scope](@). |
+| `vsntag`     | Y | [versiontag](@) by which the [terminology](@) of this [MRG](@) can be distinguished from the other versions of the [terminology](@) (in other [MRGs](@)). Its value MUST match the `vsntag` field of the corresponding `versions` section in the [SAF](@) |
+| `altvsntags` | n | List of alternative [versiontags](@) that can be used to [identify](@) this version. Each of the values MUST be in the list of [versiontags](@) in the `altvsntags` field of the the corresponding `versions` section in the [SAF](@). |
+| `license`    | n | File that contains the (default) licensing conditions. Full URL is `scopedir`/`license`. Its value MUST match the `license` field of the corresponding `versions` section in the [SAF](@), or if that isn't specified, the `license` field of the `scope` section in the [SAF](@). |
 
 The following fields are defined for the section `scopes`:
 
-| Name     | Req'd | Description |
-| -------- | :---: | :---------- |
-| `scopetag` | Y | [Scopetag](@) of a third-party [scope](@), the [MRG](@) of which contains [MRG entries](@) that have been imported into the [MRG](@). This [scopetag](@) has been chosen by the [curators](@) of the [scope](@) of which the [MRG](@) is part, to refer to that particular third-party [scope](@). This [scopetag](@) may differ from the [scopetag](@) that the [curators](@) of that third-party [scope](@) have chosen for this [scope](@) <br/>Must satisfy regex `[a-z0-9_-]+`. |
-| `scopedir` | Y | URL that locates the [scope directory](@) associated with that third-party [scope](@). |
+| Name       | Req'd | Description |
+| ---------- | :---: | :---------- |
+| `scopetag`   | Y | [Scopetag](@) of a third-party [scope](@), the [MRG](@) of which contains [MRG entries](@) that have been imported into the [MRG](@). This [scopetag](@) has been chosen by the [curators](@) of the [scope](@) of which the [MRG](@) is part, to refer to that particular third-party [scope](@). This [scopetag](@) may differ from the [scopetag](@) that the [curators](@) of that third-party [scope](@) have chosen for this [scope](@) <br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `scopedir`   | Y | URL that locates the [scope directory](@) associated with that third-party [scope](@). |
 
 ## MRG Entries - Common Fields
 
@@ -80,13 +83,14 @@ An [MRG](@) consists of a list of [MRG entries](@), the purpose of which is that
 | `grouptags`    | n | List of [grouptags](@), each of which [identifies](@) a group of [terminological artifacts](@) of which the [terminological artifact](@) that this [curated text](@) describes, is a member.<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-]+)\s*(?:,\s*([a-z0-9_-]+))*\s*\])?`](https://www.debuggex.com/r/a51CXl1NzR3kwihT). |
 | `created`      | n | Date at which of the [term](@)-related data was created, in the date format as used within this [scope](@). |
 | `updated`      | n | Date at which of the [term](@)-related data was last modified, in the date format as used within this [scope](@). |
-| `versiontag`   | n | Text that identifies the version of the [terminological artifact](@) that this [MRG entry](@) documents (not to be confused with the version of a [terminology](@) of which this [terminological artifact](@) is a part).<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `vsntag`       | n | Text that identifies the version of the [terminological artifact](@) that this [MRG entry](@) documents (not to be confused with the version of a [terminology](@) of which this [terminological artifact](@) is a part).<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `commit`       | n | The (git/gitlab) commit hash of the latest update of the [terminological artifact's](@). |
 | `contributors` | n | Text that shows (or refers to) the people that have contributed to the texts related to this term. |
-| `formphrases`  | n | List of [texts](formphrase@) that the [TRRT](#trrt) can use to convert the `show text` parts of [term refs](@) into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-{}]+)\s*(?:,\s*([a-z0-9_-{}]+))*\s*\])?`](https://www.debuggex.com/r/TZe27fzbJskMcjl8). |
+| `formphrases`  | n | List of [texts](formphrase@) that are [used to convert](tev2-toolbox-trrt#id) the `show text` parts of [term refs](@) into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-{}]+)\s*(?:,\s*([a-z0-9_-{}]+))*\s*\])?`](https://www.debuggex.com/r/TZe27fzbJskMcjl8). |
 | `status`       | n | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
 | `locator`      | n | Text that identifies the file that holds the [curated text](@) of the [terminological artifact](@) that this [MRG entry](@) describes, relative to the [scopedir](@) that holds the [curated text](@). The full URL of the [curated text](@) is `scopedir`/`curatedir`/`locator`, where `scopedir` and `curatedir` can be found in the [SAF](@) (which is in the root of `scopedir`). |
-| `headerids`    | n | List of texts that can be used as a [markdown 'heading-ids' field](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids) |
+| `navurl`       | n | URL that locates a human readable, rendered version of the [curated text](@) of the [terminological artifact](@) that this [MRG entry](@) describes. This URL is used to resolve [term refs](@) that refer to this [terminological artifact](@). |
+| `headerids`    | n | List of texts that can be used as a [markdown 'heading-ids' field](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids). |
 
 ## MRG Entries - Type-specific fields
 
@@ -150,15 +154,17 @@ This section needs to be discussed as `relation` is introduced as a new termtype
 
 A good description - which would include a good [definition](@) of the [relation](@) - allows us to reason about everything related to the [relation](@). [Curated texts](@) of type `relation` intend to provide such descriptions. Also, they specify a default name ([term](@)) by which the [relation](@), as well as unidentified instances thereof, can be refered to.
 
-| Name      | Req'd | Description |
-| --------- | :---: | :---------- |
-| subject     | y | [concept](@) that the relation relates with the [concept](@) specified by `object`. If the relation is a so-called triple (i.e. a (`subject`, `predicate`, `object`)-relation, it is the `subject`. |
-| object      | n | A [concept](@), or a data-variable, that the `subject` of the relation relates to.[^3] |
-| pragma      | n | text, with placeholders for `subject` (and `object` if appropriate), that can be used to construct example sentences.[^4] |
-| smult       | n | multiplicity associated with the `subject` [concept](@). If not specified, its value is `[0..n]`. |
-| omult       | n | multiplicity associated with the `object`. If not specified, its value is `[0..n]`. |
-| endo        | n | For [homogeneous relations](https://en.wikipedia.org/wiki/Homogeneous_relation), i.e. relations where `subject` and `object` are the same, e.g. as in (_Person_, _is a parent of_, _Person_), [constraints](https://en.wikipedia.org/wiki/Homogeneous_relation#Properties) may hold that are typical for endo relations, such as `reflexive`, `irreflexive`, `symmetric`, `asymmetric`, `antisymmetric`, `transitive`. |
-| constraints | n | Comma separated list of texts, each of which specifies a constraint that the relation must always satisfy. |
+| Name         | Req'd | Description |
+| ------------ | :---: | :---------- |
+| `subject`      | y | [concept](@) that the relation relates with the [concept](@) specified by `object`. If the relation is a so-called triple (i.e. a (`subject`, `predicate`, `object`)-relation, it is the `subject`. |
+| `object`       | n | A [concept](@), or a data-variable, that the `subject` of the relation relates to.[^3] |
+| `pragma`       | n | text, with placeholders for `subject` (and `object` if appropriate), that can be used to construct example sentences.[^4] |
+| `smult`        | n | multiplicity associated with the `subject` [concept](@). If not specified, its value is `[0..n]`. |
+| `omult`        | n | multiplicity associated with the `object`. If not specified, its value is `[0..n]`. |
+| `endo`         | n | For [homogeneous relations](https://en.wikipedia.org/wiki/Homogeneous_relation), i.e. relations where `subject` and `object` are the same, e.g. as in (_Person_, _is a parent of_, _Person_), [constraints](https://en.wikipedia.org/wiki/Homogeneous_relation#Properties) may hold that are typical for endo relations, such as `reflexive`, `irreflexive`, `symmetric`, `asymmetric`, `antisymmetric`, `transitive`. |
+| `constraints`  | n | Comma separated list of texts, each of which specifies a constraint that the relation must always satisfy. |
+| `glossaryText` | Y | Text that can be used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](@). |
+| `hoverText`    | n | Text that can be used as the contents of a popup that shows as the [term](@) is rendered in a web browser and the [reader](@) hovers over the [term](@) with its mouse. |
 
 [^3]: In a [relation](@) such as (_Person_, _loves_, _Person_), _Person_ is a ([concept](@)) class. However, in a [relation](@) such as (_Person_, _has lived_, _years_), _years_ is not a [concept](@) (idea), but a data-variable, that has a specific value, in this case a number (of years).
 
