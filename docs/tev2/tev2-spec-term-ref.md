@@ -61,7 +61,7 @@ If omitted, a default [scope](@) will be used, which is the [scope](@) from whic
 
 ### `vsntag` {#vsntag}
 
-**`vsntag`** is a [versiontag](@) that [identifies](@) the specific version of the [terminology](@) in the [scope](@) that contains the [(scoped) term](scoped-term@) that is being referenced.<br/>It must satisfy the regex `[a-z0-9_-]+`.
+**`vsntag`** is a [versiontag](@) that [identifies](@) the specific version of the [terminology](@) in the [scope](@) that contains the [(scoped) term](scoped-term@) that is being referenced.<br/>It must satisfy the regex `[a-z0-9_-\.]+`.
 
 If omitted (in which case the preceding `:`-character may also be omitted), its value will be the default, which is determined by the [curators](@) of that [scope](@) (the [MRG](@) that has the [terminology](@) that contains the (scoped) term](scoped-term@) that is being referenced, is specified in the [SAF](@) of that [scope](@), in the appropriate `scopes.mrgfile`-field). A `vsntag` is only valid if it appears as the value of the `vsntag` field or an element of the `altvsntags` field in one of the list-elements of the `versions` field in the [SAF](@) of the [scope](@).
 
