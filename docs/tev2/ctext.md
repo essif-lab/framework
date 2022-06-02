@@ -90,3 +90,10 @@ The following table specifies the **generic header fields**:
 | `updated`      | n  | | Date at which of the [curated text](@) was last modified, in the date format as used within this [scope](@). |
 | `vsntag`   | n  | | Text that identifies the version of the [terminological artifact](@) that this [curated text](@) describes.<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `contributors` | n  | | Text that shows (or refers to) the people that have contributed to this [curated text](@). |
+
+## Type-specific Header Fields {#type-specific-header-fields}
+
+Every [curated text](@) documents a [terminological artifact](@) of a specific type, as specified by the `termtype` field of the generic TEv2 front-matter. Depending on the value of that `termtype` field, additional front-matter may be specified. This is the case for the following `termtype`s:
+
+- [`termtype` = `concept`](ctext-concept)
+- [`termtype` = `pattern`](ctext-pattern)

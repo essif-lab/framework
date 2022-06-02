@@ -21,9 +21,27 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 
 The **Human Readable Glossary generation Tool ([HRGT](@))** generates a Human Readable [Glossary](@) ([HRG](@)), that renders the [terminology](@) of a specific [scope](@) into one of several formats, e.g. HTML, or PDF. This rendering may be subject to further processing by third-party rendering tools, such as [github pages](https://pages.github.com/) or [Docusaurus](https://docusaurus.io/docs/docs-introduction), etc. (see also: [Using the Tools](tev2-toolbox-use)).
 
-Typically, the [HRGT](@) operates on the [MRG](@) of a [scope](@), as follows. First, it selects (and alphabetically sorts) the [mrg entries](@) that it needs to produce the [HRG](@) out of. Then it converts each entry into its rendered version. Next it adds header and footer material and optionally inserts other artifacts that will help [readers](@) navigate through the [HRG](@) when it is published. Finally, the result is put at a location that is suitable for further processing or final publication.
+:::info Editor's note
+The envisaged versatility of the [HRGT](@) is likely to imply requirements regarding, e.g.:
+- the kinds of [terminological artifacts](@) that should be listed;
+- whether or not to include/exclude specific (groups of) [artifacts](terminological-artifact@);
+- the format (e.g. HTML, PDF, LaTeX) to generate towards, and the structure of each [HRG entry](@);
+- the beginning (header) and ending (footer) of the [HRG](@) file
+and possibly some other stuff.
 
-After having successfully created a [HRG](@), the [SAF](@) is updated as necessary.
+Before this can really be properly specified, we seek to do some experiments to see what is really needed in order to keep it as simple as possible. Therefore, the text that follows must be interpreted as Work in Progress.
+:::
+
+The [HRGT](@) operates on the [MRG](@) of a [scope](@), because it contains (data and/or pointers to) _all_ [terminological artifacts](@) of that [scope](@).
+
+The construction of a [HRG](@) can be envisaged as
+- selecting the [mrg entries](@) that must appear in the [HRG](@). Selection may depend on the specification of the kinds of [terminological artifacts](@) that should be included, and/or specifying [tags](@) for the (groups of) [artifacts](terminological-artifact@), or specific `id`s;
+- alphabetically sorting these entries;
+- converting each entry into its 'rendered' format, thereby resolving any [term refs](@);
+- concatenating these rendered entries, optionally including some navigation bars (e.g. before a new letter starts);
+- constructing the [HRG](@) by adding (rendered) header- and footer-material and (optionally) licensing information.
+
+When a [HRG](@) is generated that should become the default one for that scope, the [SAF](@) must be updated accordingly. Note though that this is not always necessary. For example, a user may want to create a [HRG](@) for a selected subset of the terminology, e.g. to include as an annex in a paper.
 
 The [HRGT](@) logs conditions that prevent it from properly
 

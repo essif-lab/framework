@@ -1,9 +1,21 @@
 ---
-id: ctext-artifact
-title: Curated Texts of type `Artifact`
-sidebar_label: Artifacts
-scopetag: tev2
-date: 20220303
+# `Multiple-use fields` (used by TEv2 and Docusaurus)
+id: artifact-id-placeholder #
+# TEv2: generic front-matter for curated texts
+scope: tev2 # must be the same as [SAF](@).scope.scopetag
+termtype:
+termid:
+formphrases:
+grouptags:
+status:
+created:
+updated:
+vsntag:
+contributors:
+# TEv2: type-specific front-matter
+### here you put the front-matter for the specific type of artifact
+# Docusaurus (see https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter):
+title: Title that shows on the Docusaurus page
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
