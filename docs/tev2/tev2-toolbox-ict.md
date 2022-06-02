@@ -109,7 +109,7 @@ The integrity of a [SAF](@) requires the following conditions to be satisfied fo
 The integrity of a [SAF](@) requires the following conditions to be satisfied for every element in the `versions` section:
 - `vsntag` SHOULD not appear as an element in the `altvsntags` field of this `version` element, and it MUST NOT appear in the `vsntag` or `altvsntags` fields of any other element in the `versions` section.
 - `altvsntags` must be a (possibly empty) list of [versiontags](@), each of which SHOULD not appear in the `vsntag` field of the element, and MUST NOT appear in the `vsntag` or `altvsntags` fields of any other element in the `versions` section.
-- `terms` must be a non-emptly list of [term selection criteria](@).
+- `termselcrit` must be a non-emptly list of [term selection criteria](@).
 - `status` SHOULD be a non-empty field.
 
 ### MRG integrity

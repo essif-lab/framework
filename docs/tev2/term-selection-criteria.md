@@ -31,13 +31,13 @@ the below syntax may not be optimal for YAML and needs to be discussed/revised
 :::
 
 :::info Editor's note
-It has been suggested to provide [term ref](@) syntax that allows one to refer to a [terminological artifact](@) from a [terminology] that was 'current'/'latest'/... at a particular date. When such is worked out, we should also decide whether or not to use that syntax for selecting groups of terms.
+It has been suggested to provide [term ref](@) syntax that allows one to refer to a [terminological artifact](@) from a [terminology](@) that was 'current'/'latest'/... at a particular date. When such is worked out, we should also decide whether or not to use that syntax for selecting groups of terms.
 :::
 
 Syntax: `tagslist`@`scopetag`:`vsntag` where:
-- @`scopetag` (required) identifies a [scope](@) in the SAF, thus allowing tools to obtain (the specified version, or if omitted, the latest version of) the MRG of that [scope](@) from which to extract the selected entries. In the example, this is `essiflab`.
-- `vsntag` (optional) is the specific version of the MRG from which the [terms](@) are selected. If omitted (in which case the preceding `:` may also be omitted), the latest version is specified. The example specifies the `latest` version of the essiflab [glossary](@).
-- `tagslist` (optional) is a list of [tags](@). If the tag is a [scopetag](@), every [term](@) in the MRG of the specified [scope](@) are selected. If the tag is a [grouptag](@), then every [term](@) in the MRG of the specified [scope](@) that is associated with that [grouptag](@) is selected.
+- @`scopetag` (required) identifies a [scope](@) (the associated [scopedir](@) can be found in the `scopes` section of the [SAF](@)). This enables tools to obtain the [MRG](@) of that [scope](@) from which to extract the selected entries.
+- `vsntag` (optional) is the specific version of the [MRG](@) from which the [terminological artifacts](@) are selected. If omitted (in which case the preceding `:` may also be omitted), the default version of the [MRG](@) is used (as specified in the `mrgfile` field in the `scope` section of the [SAF](@)).
+- `tagslist` (optional) is a list of [tags](@). If the tag is a [scopetag](@), every [term](@) in the [MRG](@) of the specified [scope](@) are selected. If the tag is a [grouptag](@), then every [term](@) in the [MRG](@) of the specified [scope](@) that is associated with that [grouptag](@) is selected.
 
 Prefixing the `tagslist`@`scopetag`:`vsntag` syntax with a `-` sign will remove the identified [terms](@) from the [terminology](@) under construction.
 

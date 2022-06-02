@@ -80,7 +80,7 @@ The following fields are defined for the `scope` section of a [SAF](@):
 | `mrgfile`     | Y | Name of the file that contains the latest version of the [MRG](@). Full URL is `scopedir`/`mrgfile`. |
 | `hrgfile`     | Y | Name of the file that contains the latest version of the [HRG](@). Full URL is `scopedir`/`hrgfile` |
 | `license`     | Y | File in the root of the [scopedir](@) that contains licensing data. |
-| `statuses`    | n | List of [tags](@) that are defined in this [scope](@) for specifying stages in the life-cycle of [terminological artifacts](@). |
+| `statuses`    | n | Ordered list of [tags](@) that are defined in this [scope](@) for specifying stages in the life-cycle of [terminological artifacts](@). The first element in the list represents the first stage, and the last element the last stage in the life-cycle. |
 | `issues`      | n | URL where issues can be reported and handled.|
 | `website`     | n | URL for the home page of the [terminology](@). |
 | `slack`       | n | URL for the slack channel for discussions. |
@@ -139,7 +139,7 @@ versions:
     altvsntags: # alternative verstiontags
       - latest
       - v0.9.4
-    terms:
+    termselcrit:
       - "[management]@essif-lab" # import all terms from the mrg of `essif-lab:latest` that have grouptag `management`.
       - "[party](@essif-lab:0.9.4)" # import the term `party` from the mrg of `essif-lab:0.9.4`.
       - "[community](@essif-lab:0.9.4)" # import the term `community` from the mrg of `essif-lab:0.9.4`.
@@ -150,7 +150,7 @@ versions:
   - vsntag: 0x654129 # a versiontag that identifies this version from all other versions in the SAF
     altvsntags: # alternative verstiontags
       - v0.9.0
-    terms:
+    termselcrit:
       - "[management]@essif-lab" # import all essif-lab terms with grouptag `management`.
       - "[party@essif-lab]" # import the term `party` from the mrg of `essif-lab:latest`.
       - "[community@essif-lab]" # import the term `community` from the mrg of `essif-lab:latest`.
@@ -165,7 +165,7 @@ The following fields are defined for the `versions` section of a [SAF](@):
 | `vsntag`     | Y | [Versiontag](@) that that is used to [identify](@) this version within the set of all other versions that are maintained within this [scope](@). in this [SAF](@). It MUST NOT be changed during the lifetime of this version.<br/>Must satisfy regex `[a-z0-9_-\.]+`. |
 | `altvsntags` | n | List of alternative [versiontags](@) that may be used to refer to this version of the [scope's](@) [terminology](@). A typical use of this field would be to tag a version as the 'latest' version.<br/>Must satisfy regex `[a-z0-9_-\.]+`. |
 | `license`    | n | File that contains the (default) licensing conditions. Full URL is `scopedir`/`license`. If not specified, its value defaults to the value of the `license` field in the `scope` section (of this [SAF](@)). The purpose of this field is to allow different versions of the [scope's](@) [terminology](@) to have different licenses. |
-| `terms`      | Y | List of [term selection criteria](@) that are used to generate (this version of) the [scope's](@) [terminology](@). See [Term Selection](term-selection-criteria) for details. |
+| `termselcrit` | Y | List of [term selection criteria](@) that are used to generate (this version of) the [scope's](@) [terminology](@). See [Term Selection](term-selection-criteria) for details. |
 | `status`     | n | Text that [identifies](@) the status of the [term](@). ([Communities](@) of) [scopes](@) may specify values for this field. If not specified, the status SHOULD be assumed to be 'concept', 'draft', 'proposed', or similar. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
 | `from`       | n | Date at which it was decided to establish this version. |
 | `to`         | n | Date at which this version will expire (or has expired). |
