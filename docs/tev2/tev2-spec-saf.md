@@ -80,7 +80,7 @@ The following fields are defined for the `scope` section of a [SAF](@):
 | `mrgfile`     | Y | Name of the file that contains the latest version of the [MRG](@). Full URL is `scopedir`/`mrgfile`. |
 | `hrgfile`     | Y | Name of the file that contains the latest version of the [HRG](@). Full URL is `scopedir`/`hrgfile` |
 | `license`     | Y | File in the root of the [scopedir](@) that contains licensing data. |
-| `statuses`    | n | List of [tags](@) that are defined in this [scope](@) for specifying stages in the life-cycle of [terminological artifacts](@). |
+| `statuses`    | n | Ordered list of [tags](@) that are defined in this [scope](@) for specifying stages in the life-cycle of [terminological artifacts](@). The first element in the list represents the first stage, and the last element the last stage in the life-cycle. |
 | `issues`      | n | URL where issues can be reported and handled.|
 | `website`     | n | URL for the home page of the [terminology](@). |
 | `slack`       | n | URL for the slack channel for discussions. |
