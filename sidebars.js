@@ -114,7 +114,7 @@ const sidebars = {
           ],
         },
         { type: 'category',
-          label: 'Testing spot',
+          label: 'Rieks\'s test',
           items:
           [ 'tev2/terms/curated-text',
             'tev2/terms/curated-text-header',
