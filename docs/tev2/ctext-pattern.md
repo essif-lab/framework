@@ -1,9 +1,10 @@
 ---
-id: ctext-pattern
+# `Multiple-use fields` (used by TEv2 and Docusaurus)
+id: ctext-pattern #
+# Docusaurus (see https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter):
 title: Curated Texts of type `Pattern`
 sidebar_label: Patterns
-scopetag: tev2
-date: 20220303
+# hide_table_of_contents: true
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
