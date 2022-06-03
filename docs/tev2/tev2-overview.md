@@ -59,37 +59,40 @@ The architecture is based on the ToIP/eSSIF-Lab [Terminology Model](/docs/terms/
 /><br/><br/>
 
 <!-- TRRT -->
-The figure not only shows the raw texts, the their processing by the [TRRT](@) tool and the subsequent rendering to produce formatted texts, but also other files that exist within the [scope](@), and that are being [curated](@) by its [terms-community](@) (the author/group). TEv2 expects all files that are under [curation](@), and/or are generated to serve a purpose within a [scope](@), to live in a specific directory, which we call the [scope directory](@). The rounded rectangles in the figure represent such directories and (parts of) their contents.
+The figure not only shows the raw texts, the their processing by the [TRRT](@) tool and the subsequent rendering to produce formatted texts, but also other files that exist within the [scope](@), and that are being [curated](@) by its [terms-community](@) (the author/group). TEv2 expects all files that are under [curation](@), and/or are generated to serve a purpose within a [scope](@), to live in a specific directory, which we call the [scope directory](@). The rounded rectangles in the figure represent such directories and (parts of) their contents. Further details are in the [TRRT specs](tev2-toolbox-trrt).
 
 <!-- curated texts -->
-To the left of the figure, you can see that some raw texts are 'ingressed' into the [scope directory](@), and thereby have become so-called [curated texts](@). These texts typically contain descriptions of [terms](@), [definitions](@), examples, etc., that help interested [parties](@) to formulate and understand the [concepts](@) that they need. The [curators](@) of the [scope](@) are tasked to run the ingression process, and specify the details of what this means for that [scope](@).
+To the left of the figure, you can see that some raw texts are 'ingressed' into the [scope directory](@), and thereby have become so-called [curated texts](@). These texts typically contain descriptions of [terms](@), [definitions](@), examples, etc., that help interested [parties](@) to formulate and understand the [concepts](@) that they need. The [curators](@) of the [scope](@) are tasked to run the ingression process, and specify the details of what this means for that [scope](@). Further details are in the [Curated Texts description](ctext).
 
 <!-- SAF -->
-These [curators](@) also create and maintain the [scope's](@) administration file ([SAF](@)), which contains meta-data concerning the [scope](@) itself, the locations (URLs) of its directories (and glossary files), the locations (URLs) of the [scope directories](@) of (selected) other [scopes](@), and a specification of the [terminological artifacts](@) that are part of the various versions of its [terminology](@) that are actively maintained.
+These [curators](@) also create and maintain the [scope's](@) administration file ([SAF](@)), which contains meta-data concerning the [scope](@) itself, the locations (URLs) of its directories (and glossary files), the locations (URLs) of the [scope directories](@) of (selected) other [scopes](@), and a specification of the [terminological artifacts](@) that are part of the various versions of its [terminology](@) that are actively maintained. Further details are in the [SAF specs](tev2-spec-saf).
 
 :::info Editor's note:
 We need a sentence that specifies the [SAF's](@) filename.
 :::
 
 <!-- MRG -->
-The [curators](@) also organize when and how the [scope's](@) Machine Readable Glossary ([MRG](@)) is created. This file is not a [glossary](@), but rather a (machine readable) inventory of all [terminological artifacts](@) that are part of (a specific version of) the [scope's](@) [terminology](@). Ideally, tools would only need to inspect the [MRG](@) of a [scope](@) if they want to use data that is [curated](@) in that [scope](@).
+The [curators](@) also organize when and how the [scope's](@) Machine Readable Glossary ([MRG](@)) is created. This file is not a [glossary](@), but rather a (machine readable) inventory of all [terminological artifacts](@) that are part of (a specific version of) the [scope's](@) [terminology](@). Ideally, tools would only need to inspect the [MRG](@) of a [scope](@) if they want to use data that is [curated](@) in that [scope](@). Further details are in the [MRG specs](tev2-spec-mrg).
 
 :::info Editor's note:
 We need a sentence that specifies the [MRG](@) file naming conventions.
 :::
 
 <!-- MRGT -->
-The [MRG](@) is created by the [MRGT](@) tool. This tool takes the [scope's](@) [curated texts](@) as input, as well as [MRGs](@) from other scopes, e.g. to 'import' [terms](@) or other [artifacts](terminological-artifact)(@) that are needed in, but not [curated](@) by, the [scope](@). The [SAF](@) of the [scope](@) tells the [MRGT](@) where to find these (third party) [MRGs](@).
+The [MRG](@) is created by the [MRGT](@) tool. This tool takes the [scope's](@) [curated texts](@) as input, as well as [MRGs](@) from other scopes, e.g. to 'import' [terms](@) or other [artifacts](terminological-artifact)(@) that are needed in, but not [curated](@) by, the [scope](@). The [SAF](@) of the [scope](@) tells the [MRGT](@) where to find these (third party) [MRGs](@). Further details are in the [MRGT specs](tev2-toolbox-mrgt).
 
 <!-- HRG -->
-The Human Readable Glossary or [HRG](@) is a (real) [glossary](@) that humans are expected to read/use. It is a formatted text, which means that it might appear in one of a plethora of formats. Within a [scope](@), we assume a specific format is chosen that is appropriate for its users. The [HRG](@) is not a formatted/rendered version of the entire [MRG](@): it typically only lists the [terms](@) that are assocated with specific kinds of [terminological artifacts](@), specifically the type [`concept`](concept@).
+The Human Readable Glossary or [HRG](@) is a (real) [glossary](@) that humans are expected to read/use. It is a formatted text, which means that it might appear in one of a plethora of formats. Within a [scope](@), we assume a specific format is chosen that is appropriate for its users. The [HRG](@) is not a formatted/rendered version of the entire [MRG](@): it typically only lists the [terms](@) that are assocated with specific kinds of [terminological artifacts](@), specifically the type [`concept`](concept@). Further details are in the [HRG specs](tev2-spec-hrg).
 
 :::info Editor's note:
 We need a sentence that specifies the [HRG](@) file naming conventions.
 :::
 
 <!-- HRGT -->
-We will use the term [HRGT](@) to refer to the rendering tool that produces the [HRG](@) from a text that is extracted from the [MRG](@) and where all [term refs](@) are resolved. We expect to see various flavours of this tool, or a single tool that can create [HRGs](@) in different formats, allowing [curators](@) to get the kind of [HRG](@) that is the most appropriate for their purposes.
+We will use the term [HRGT](@) to generically refer to any tool that either produces a [HRG](@) directly, or that produces inputs for other, third party rendering tools that will then generate the [HRG](@). Typically, a [HRGT](@) will extract a subset of the [terminological artifacts](@) from the [MRG](@), sort them, resolve [term refs](@) where appropriate, and do whatever else is necessary to generate (the files that third party tools pick up to) generate the [HRG](@). We expect to see various flavours of this tool, or a single tool that can create [HRGs](@) in different formats, allowing [curators](@) to get the kind of [HRG](@) that is the most appropriate for their purposes. Further details are in the [HRGT specs](tev2-toolbox-hrgt).
+
+<!-- ICT -->
+People that develop these tools, as well as people that contribute to the [curation](@) of [curated texts](@), the [SAF](@), etc., are only human, and sooner or later make a mistake that is hard to find and correct without any help. To facilitate the detection, identification and recovery from such mistakes, there is an [Integrity Checker Tool](tev2-toolbox-ict) (or [ICT](@)). This [ICT](@) tests the integrity of (a selection of) the files that are [curated](@) within a particular [scope](@), i.e. the [SAF](@), the [MRGs](@), and [curated files](@). The integrity checking of other files, e.g. [formatted files](@), such as [HRGs](@), is outside the scope of the [ICT](@). Further details are in the [ICT specs](tev2-toolbox-ict).
 
 ## Terminology Curation
 
