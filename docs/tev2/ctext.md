@@ -95,5 +95,5 @@ The following table specifies the **generic header fields**:
 
 Every [curated text](@) documents a [terminological artifact](@) of a specific type, as specified by the `termtype` field of the generic TEv2 front-matter. Depending on the value of that `termtype` field, additional front-matter may be specified. This is the case for the following `termtype`s:
 
-- [`termtype` = `concept`](ctext-concept)
-- [`termtype` = `pattern`](ctext-pattern)
+- [`termtype` = `concept`](ctext-concept#header)
+- [`termtype` = `pattern`](ctext-pattern#header)
