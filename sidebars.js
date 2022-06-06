@@ -42,7 +42,7 @@ const sidebars = {
               collapsed: true,
               items:
               [ 'terms/pattern-world-model',
-                'terms/pattern-parties-identities-semantics',
+                'terms/pattern-semantics',
                 'terms/pattern-trust',
                 'terms/pattern-decision-making',
                 'terms/pattern-mandates-delegation-hiring',
