@@ -31,7 +31,6 @@ Storyline that needs to be worked out:
 Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img
-  alt="Conceptual model of the 'Parties, Identities and Semantics' pattern"
-  src={useBaseUrl('images/patterns/pattern-parties-identities-semantics.png')}
+  alt="Conceptual model of the 'Semantics' pattern"
+  src={useBaseUrl('images/patterns/pattern-semantics.png')}
 />
-
