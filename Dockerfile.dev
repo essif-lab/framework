@@ -1,4 +1,5 @@
 FROM node:lts
+RUN node --version
 
 RUN mkdir /app
 WORKDIR /app

@@ -23,7 +23,7 @@ The entire section on Terminology Engine v 2 (TEv2) is still under construction.
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
-The **Integrity Checker Tool ([ICT](@))** tests the integrity (of a selection) of the files that are [curated](@) within a particular [scope](@), i.e. the [SAF](@), the [MRGs](@), and [curated files](@). The integrity checking of other files, e.g. [formatted files](@), such as [HRGs](@), is outside the scope of the [ICT](@).
+The **Integrity Checker Tool ([ICT](@))** tests the integrity of (a selection of) the files that are [curated](@) within a particular [scope](@), i.e. the [SAF](@), the [MRGs](@), and [curated files](@). The integrity checking of other files, e.g. [formatted files](@), such as [HRGs](@), is outside the scope of the [ICT](@).
 
 In order for the [ICT](@) to be used optimally, it will assume for specific kinds of files that the integrity of other files is guaranteed, as follows:
 

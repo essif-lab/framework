@@ -18,9 +18,9 @@ fullterm: body (of a [curated text](@))
 shorterm: body
 synonyms:
 glossaryText: the (raw) text that follows the [header](@) of a [curated text](@)
-hoverText: the (raw) text that follows the header of a curated text.
-# Docusaurus (see https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter):
+# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: Body (of a Curated Text)
+hoverText: the (raw) text that follows the header of a curated text.
 sidebar_label: CText Body
 hide_table_of_contents: true
 ---
@@ -28,7 +28,8 @@ hide_table_of_contents: true
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::caution
-The entire section on Terminology Engine v 2 (TEv2) is still under construction
+The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
+As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
 ## Summary
@@ -37,45 +38,16 @@ A [curated text](@) is a text that consists of a ([yaml](https://yaml.org/spec/1
 
 [Bodies](@) are processable by the particular tools that have been chosen by the [curators](@) for rendering their contents. For example, a [body](@) that contains [markdown](https://www.markdownguide.org/basic-syntax/) is not going to be processable by LaTeX tools, and [LaTeX](https://www.latex-project.org/help/documentation/usrguide.pdf) are not proceed by tools that expect Markdown.
 
-[Curators](@) should have defined an [ingestion process](@) for every [scope](@) they [curate](@).
+[Bodies](@) may have different structures, depending on the kind of [terminological artifact](@) that is being documented. For [markdown](https://www.markdownguide.org/basic-syntax/) [bodies](@), there is some guidance for [`concept`-type](ctext-concept#header) and[`pattern`-type](ctext-pattern#header) texts.
 
 ## Purpose
 
-Headers are typically used for specifying data that various tools can pick up for their further processing. The bodys of [curated texts](@) are typically used to generate [glossaries](@) out of, and for further processing by rendering tools such as [github pages](https://pages.github.com/) or [Docusaurus](https://docusaurus.io/docs/docs-introduction), so they can be rendered into useful documentation websites.
+[Bodies](@) contain a variety of texts that are intended to help people fulfill their particular needs in understanding what the [terminological artifact](@) that it describes.
 
 ## Criteria
 
-Every ([yaml](https://yaml.org/spec/1.2.2/)) body starts at the very top of the [curated text](@) with three dashes ("`---`") to signal it is followed by directives. This is followed by a collection of key-value mappings. The end of the body is again three dashes ("`---`") to signal the change back to document content (the [body](@)).
+A [body](@) contains various sections, each of which intends to explain one (or more related) facet(s) of the [terminological artifact](@) that is described by the [curated text](@) of which the [body](@) is a part. At a minimum, there should be a summary (that gives readers a rough idea what it is about, and what it isn't about), and a purpose (that describes the benefits of having it around). For specific kinds of [terminological artifacts](@), specific sections may be required.
 
 ## Example
 
-It is a best practice to use comments to dinstinguish between the various uses of front matter, and to document any multi-use. Here is an example of the [body](@) of a [curated text](@) for the [concept](@) '[curate](@)':
-
-~~~ yaml
----
-# `Multiple-use fields` (used by TEv2 and Docusaurus)
-id: ctext-body
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termtype: concept
-termid: ctext-body
-formphrases: ctext-body{ss}, body{ss}
-grouptags: ctext
-status: proposed
-created: 2022-06-02
-updated: 2022-06-02
-vsntag: v0.1
-contributors: RieksJ
-term: ctext-body
-# TEv2: type-specific front-matter for type `concept`
-fullterm: body (of a [curated text](@))
-shorterm: body
-synonyms:
-glossaryText: the (YAML) text at the beginning of a [curated text](@) (also called the 'front-matter').
-hoverText: the (YAML) text at the beginning of a curated text (also called the 'front-matter').
-# Docusaurus (see https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter):
-title: Header (of Curated Text)
-sidebar_label: CText Header
-hide_table_of_contents: true
----
-~~~
+Many examples (of varying quality) can be found in the [curated files](@) of the various [scopes](@) that are around.
