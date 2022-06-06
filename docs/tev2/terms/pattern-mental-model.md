@@ -25,7 +25,9 @@ hoverText: "The Mental Models pattern captures the foundational Concepts and rel
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
-:::import useBaseUrl from '@docusaurus/useBaseUrl'
+:::
+
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note
 This is work that is being envisaged.

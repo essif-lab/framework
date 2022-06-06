@@ -1,4 +1,5 @@
 FROM node:lts AS builder-ui
+RUN node --version
 
 RUN mkdir /srv/code
 

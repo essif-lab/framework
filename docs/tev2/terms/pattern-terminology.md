@@ -25,7 +25,9 @@ hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Te
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
-:::import useBaseUrl from '@docusaurus/useBaseUrl'
+:::
+
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
 This pattern describes how [terms](@) are [scoped](@) (which software engineers call 'namespaces'), how parties govern such scopes/namespaces, and that if you use criteria to define/specify terms, people can test if they have the same understanding of a term by making sure that everyone reaches the same conclusions as they evaluate such criteria in various relevant use-cases.
 
