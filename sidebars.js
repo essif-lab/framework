@@ -30,7 +30,11 @@ const sidebars = {
               items:
               [ 'terms/pattern-terminology',
                 'terms/pattern-identity',
+                'terms/pattern-identification',
+                'terms/pattern-identifier',
+                'terms/pattern-party-representation',
                 'terms/pattern-governance-and-management',
+                'terms/pattern-decentralized-grc',
             ]
             },
             { label: 'Envisaged models',
@@ -38,12 +42,8 @@ const sidebars = {
               collapsed: true,
               items:
               [ 'terms/pattern-world-model',
-                'terms/pattern-identification',
-                'terms/pattern-identifier',
                 'terms/pattern-trust',
                 'terms/pattern-decision-making',
-                'terms/pattern-decentralized-grc',
-                'terms/pattern-party-representation',
                 'terms/pattern-mandates-delegation-hiring',
                 'terms/pattern-duties-and-rights',
               ]
