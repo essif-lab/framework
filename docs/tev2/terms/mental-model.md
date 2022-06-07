@@ -6,15 +6,15 @@ scope: tev2
 termtype: concept
 termid: mental-model
 formphrases: mental-model{ss}, pattern{ss}, conceptual-model{ss}
-status: proposed
 grouptags:
+status: proposed
 created: 2022-06-06
 updated: 2022-06-07
 vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 term: Mental Model  # Text that is the name of the concept in (human readable) texts.
-fullterm:
+fullterm: "Mental Model (Conceptual Model, Pattern)"
 shorterm:
 synonyms: [ Pattern, "Conceptual Model" ]
 glossaryText: "A description, both casual and formal, of a set of [concepts](@) (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
@@ -36,7 +36,7 @@ A **Pattern**, **[mental model](https://en.wikipedia.org/wiki/Mental_model)** or
 
 Mental models use (tangible) [terms](@) to refer to these (intangible) concepts and relations, so in order to be consistent, a mental model must reside in the scope that defines these concepts and relations. A mental model may also 'connect' concepts of different scopes (preferably no more than two), which you might call an 'interconnection pattern' between these scopes.
 
-The [terminology pattern](@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 

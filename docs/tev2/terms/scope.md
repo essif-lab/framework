@@ -6,8 +6,8 @@ scope: tev2
 termtype: concept
 termid: scope
 formphrases: scope{ss}
-status: proposed
 grouptags:
+status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 vsntag: v0.1
@@ -33,7 +33,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 ### Summary
 A **scope** (in the eSSIFLab context) is the extent of the area or subject matter (as in [OED](https://www.lexico.com/definition/scope). We use it, e.g., to define patterns, concepts, terms and glossaries in, but a scope may serve other (additional) purposes. Scopes may overlap, or be nested. It is comparable to [Namespaces](https://en.wikipedia.org/wiki/Namespace), were it not that entities other than names (signs that are used to identify/refer to objects of various kinds) can reside in a scope as it is defined here.
 
-The [terminology pattern](@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 This allows each [term](@) (words, phrases) to be used in a limited scope, for specific purposes. The fact that terms are 'scoped' implies that a term may have _different_ meanings, depending on the scope within which it is used. Also, it allows us to author documentation in a 'scoped' fashion, allowing different groups of people to author, use and disseminate their documentation (including documentation about their ideas ([patterns](@)), [concepts](@), and [terms](@).)
