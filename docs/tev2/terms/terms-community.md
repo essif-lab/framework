@@ -42,7 +42,7 @@ A terms-community would typically create and (automatically) publish a [glossary
 Further details can be found in the [terminology pattern](@).
 
 ### Purpose
-The purpose of establishing and maintaining a [terminology](@), and hence for having a [terms-community](@), is to ensure that any communications between its members is understood in the same meaning as it was said/written, which is prerequisite for reasoning, arguing, and making collective decisions.
+The purpose of establishing and maintaining a [terminology](@), and hence for having a [terms-community](@), is to ensure that any communications between its members is understood in the same meaning as it was said/written, which is prerequisite for reasoning, arguing, and making collective decisions. After all, as Confucius said: "The whole end o f speech is to be understood."
 
 ### Criterion
 a [community](@) that maintains a [terminology](@) for the purpose of its members to avoid misunderstandings in their collaborations.

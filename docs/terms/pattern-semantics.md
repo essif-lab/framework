@@ -22,9 +22,12 @@ The **Semantics Pattern**  describes the relations between the (intangible) %%Co
 :::info Editor's note
 Storyline that needs to be worked out:
 - it is impossible to really understand one another because Knowledge is intangible.
-- next best is to create tangible artifacts that can be obtained, stored, processed, disseminated, and that can be assigned 'allusions', or 'hints' towards what individual %%parties|party%% take it to mean.
-- we use %%definitions|definition%% as such 'hints'; ideally, they are phrased as criteria that different %%parties|party%% can assess in use-cases (relevant for the %%objectives|objective%% they all seek to realize), and of which they can agree on whether or not they all interpret them in the same manner (i.e.: make the same distinctions using the criteria)
+- next best is to create tangible, so called (terminological) artifacts that a party can be create/obtain, store, process, disseminate, for the purpose of enabling other parties to 'understand' (parts of) what it knows.
+- %%definitions|definition%% are the prime examples of such artifacts; ideally, they are phrased as criteria so that different %%parties|party%% can all assess these criteria in different use-cases (relevant for the %%objectives|objective%% they all seek to realize), and subsequently agree on whether or not they have all interpreted some criteria in some use-case in the same manner, and _if_ they do, conclude that they have the same understanding about the disctincion that the criteria makes (at least to the extent to where the use-cases go).
+- other artifacts may also help in understanding each other's knowledge. Such artifacts include more casual explanations, a formal or informal description of how the various concepts that are being explained (or defined) relate to one another, etc. Thus, we expect to see terminological artifacts of different kinds to be created, maintained, evaluated and continually improved on.
 - establishing a set of such %%definitions|definition%%, associated %%terms|term%% (a 'common %%terminology|terminology%%') enables the %%parties|party%% to express characteristics of %%entities|entity%% as (scoped!) %%attributes|attribute%%, and hence a %%partial identity|partial-identity%% of an %%entity|entity%% in a (digital) representation.
+
+The %pattern% also hints at the relation between %semantics% and
 :::
 
 ### Formalized model
