@@ -1,14 +1,26 @@
 ---
+# `Multiple-use fields` (used by TEv2 and Docusaurus)
 id: eSSIFLab-scope
-title: "Scope: essifLabTerminology"
-scopetag: essifLabTerminology
-type: scope
-termid: eSSIFLab
-status: draft
+# TEv2: generic front-matter for curated texts
+scope: essiflab
+termtype: concept
+termid: eSSIFLab-scope
+formphrases: eSSIFLab-scope{ss}
 grouptags:
-hoverText: "ESSIFLab: specification of the eSSIF-Lab scope."
+status: proposed
+created: 2022-06-06
+updated: 2021-06-01
+vsntag: v0.1
+contributors: RieksJ
+# TEv2: type-specific front-matter for type `concept`
+term: Scope # Text that is the name of the concept in (human readable) texts.
+fullterm: "Scope: essifLabTerminology"
+shorterm:
+synonyms:
 glossaryText: "specification of the eSSIF-Lab scope."
-date: 20210601
+# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
+title: "Scope: essifLabTerminology"
+hoverText: "ESSIFLab: specification of the eSSIF-Lab scope."
 ---
 
 ### Governance
@@ -30,4 +42,4 @@ The Concepts and Terminology part of eSSIF-Lab aims helps eSSIF-Lab community pa
 <!--This scope may include other scopes, which means that everything in that other scope is also considered part of this scope. In case of collisions, this scope MUST provide a means to resolve such conflicts without modifying anything in included scopes. For eSSIF-Lab, we include `essifLabTerminology`-->
 
 ### Background
-The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.

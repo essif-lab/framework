@@ -1,15 +1,21 @@
 ---
+# `Multiple-use fields` (used by TEv2 and Docusaurus)
 id: pattern-mandates-delegation-hiring
+# TEv2: generic front-matter for curated texts
+scope: essiflab
+termtype: pattern
+termid: mandates-delegation-hiring
+formphrases:
+grouptags: pattern
+status: proposed
+created: 2022-06-06
+updated: 2021-06-01
+vsntag: v0.1
+contributors: RieksJ
+# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Mandates, Delegation and Hiring"
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
-type: pattern
-termid: mandates-delegation-hiring
-formphrases: mandates-delegation-hiring
-status: draft
-grouptags:
 hoverText: "The Mandates, Delegation and Hiring pattern (which remains to be documented) captures the ideas behind Mandating, Delegating, Hiring and their relations. This is a work-in-progress."
-date: 20210601
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
@@ -19,6 +25,6 @@ This is work that is being envisaged.
 :::
 
 The idea here is to observe that:
-- %%mandating|mandate%% and %%delegating|delegate%% are the same except for the transfer of accountability for the transferred actions;
+- [mandating](@) and [delegating](@) are the same except for the transfer of accountability for the transferred actions;
 - the differences with guardianship seems to be not all that big, so we may see a merge with that model;
-- ownership (as defined in the %%party-actor-action pattern|pattern-party-actor-action%%) can possibly be made part of this, too.
+- ownership (as defined in the [party-actor-action pattern](pattern-party-actor-action@)) can possibly be made part of this, too.

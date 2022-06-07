@@ -1,21 +1,33 @@
 ---
+# `Multiple-use fields` (used by TEv2 and Docusaurus)
 id: scoped-term
+# TEv2: generic front-matter for curated texts
+scope: essiflab
+termtype: concept
+termid: scoped-term
+formphrases: scoped-term{ss}
+grouptags:
+status: proposed
+created: 2022-06-06
+updated: 2021-11-01
+vsntag: v0.1
+contributors: RieksJ
+# TEv2: type-specific front-matter for type `concept`
+term: Term # Text that is the name of the concept in (human readable) texts.
+fullterm: "Term (Scoped)"
+shorterm:
+synonyms:
+glossaryText: "a [term](@), the meaning of which is determined by the [definition](@) to which it refers in a specific [scope](@)/context."
+# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Term (Scoped)"
 displayed_sidebar: essifLabSideBar
-scopetag: essifLabTerminology
-type: concept
-termid: term
-status: draft
-grouptags:
 hoverText: "Scoped Term: a Term, the meaning of which is determined by the Definition to which it refers in a specific Scope/context."
-glossaryText: "a %%term^term%%, the meaning of which is determined by the %%definition^definition%% to which it refers in a specific %%scope^scope%%/context."
-date: 20211101
 ---
 
 ### Short Description
-A **scoped term** is a %%term|term%%, the meaning of which is determined by the %%definition|definition%% to which it refers in a specific %%scope|scope%%/context. Thus, a scoped term has a precise, well defined meaning. One can say that a scoped term is a %%term|term%% that is disambiguated.
+A **scoped term** is a [term](@), the meaning of which is determined by the [definition](@) to which it refers in a specific [scope](@)/context. Thus, a scoped term has a precise, well defined meaning. One can say that a scoped term is a [term](@) that is disambiguated.
 
-The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
-A %%term|term%% can have many different meanings, depending on the %%scope|scope%%/context within which it is being used. It is useful to be able to distinguish between words/phrases without taking %%scope|scope%%/context into account (for which we use the word %%term|term%%), and words/phrases that are part of a specific %%scope|scope%%/context (for which we use the phrase %%scoped term|scoped-term%%)
+A [term](@) can have many different meanings, depending on the [scope](@)/context within which it is being used. It is useful to be able to distinguish between words/phrases without taking [scope](@)/context into account (for which we use the word [term](@)), and words/phrases that are part of a specific [scope](@)/context (for which we use the phrase [scoped term](@))

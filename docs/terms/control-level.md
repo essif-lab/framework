@@ -1,31 +1,42 @@
 ---
+# `Multiple-use fields` (used by TEv2 and Docusaurus)
 id: control-level
-title: "Control level"
-displayed_sidebar: essifLabSideBar
-scopetag: essifLab
-type: concept
+# TEv2: generic front-matter for curated texts
+scope: essiflab
+termtype: concept
 termid: control-level
 formphrases: control-level{ss}
-status: draft
 grouptags:
+status: proposed
+created: 2022-06-06
+updated: 2022-02-12
+vsntag: v0.1
+contributors: RieksJ
+# TEv2: type-specific front-matter for type `concept`
+term: Control # Text that is the name of the concept in (human readable) texts.
+fullterm: "Control level"
+shorterm:
+synonyms:
+glossaryText: "a measure for the efficiency and effectiveness in which a [control](@) produces the results specified by its [control objective](@)"
+# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
+title: "Control level"
+displayed_sidebar: essifLabSideBar
 hoverText: "Control level (of a Control): a measure for the efficiency and effectiveness in which a Control produces the results of its Control Objective."
-glossaryText: "a measure for the efficiency and effectiveness in which a %%control^controller%% produces the results specified by its %%control objective^control-objective%%"
-date: 20220212
 ---
 
 ### Short Description
-A **control-level** is a measure for the efficiency and effectiveness in which a %%control|controller%% produces the results specified by its %%control objective|control-objective%%.
+A **control-level** is a measure for the efficiency and effectiveness in which a [control](@) produces the results specified by its [control objective](@).
 
-Like %%risk levels|risk-level%% and %%compliance levels|compliance-level%%, %%control-levels|control-level%% can be expressed in many forms. The single criterion for expressing it is whether it helps the %%owner|owner%% of the %%control|controller%% to determine, in the %%governance|governance%% process of that %%control|controller%%, whether or not to make changes to the assessed %%controls|controller%%, and if so, what kinds of changes are called for.
+Like [risk levels](@) and [compliance levels](@), [control-levels](@) can be expressed in many forms. The single criterion for expressing it is whether it helps the [owner](@) of the [control](@) to determine, in the [governance](@) process of that [control](@), whether or not to make changes to the assessed [controls](@), and if so, what kinds of changes are called for.
 
-To ensure this, %%parties|party%% may specify the %%assessment framework(s)|assessment-framework%% that auditors should use for assessing the efficiency and effectiveness of controls, and thereby determine their respective %%control levels|control-level%%.
+To ensure this, [parties](@) may specify the [assessment framework(s)](@) that auditors should use for assessing the efficiency and effectiveness of controls, and thereby determine their respective [control levels](@).
 
 ### Purpose
-The purpose of control-levels is help %%parties|party%% determine and prioritize the work that needs to be done in order to maintain the efficiency and effectiveness of their %%controls|controller%%.
+The purpose of control-levels is help [parties](@) determine and prioritize the work that needs to be done in order to maintain the efficiency and effectiveness of their [controls](@).
 
 ### Criteria
-A %%control-level|control-level%%
+A [control-level](@)
 - is a measure of some kind (e.g. 'Low', 'Medium', 'High', or a digit in some integer interval, or similar);
-- signifies a statement about how efficient and effective a %%control|controller%% realizes its associated %%control objective|control-objective%%;
-- is associated with a %%party|party%% that uses it to determine and prioritize the work that needs to be done in order to maintain the efficiency and effectiveness of their %%controls|controller%%;
-- can be the result of assessing the efficiency and effectiveness of a %%control|controller%%.
+- signifies a statement about how efficient and effective a [control](@) realizes its associated [control objective](@);
+- is associated with a [party](@) that uses it to determine and prioritize the work that needs to be done in order to maintain the efficiency and effectiveness of their [controls](@);
+- can be the result of assessing the efficiency and effectiveness of a [control](@).

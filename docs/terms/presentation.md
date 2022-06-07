@@ -1,16 +1,27 @@
 ---
+# `Multiple-use fields` (used by TEv2 and Docusaurus)
 id: presentation
+# TEv2: generic front-matter for curated texts
+scope: essiflab
+termtype: concept
+termid: presentation
+formphrases: presentation{ss}
+grouptags:
+status: proposed
+created: 2022-06-06
+updated: 2021-06-01
+vsntag: v0.1
+contributors: RieksJ
+# TEv2: type-specific front-matter for type `concept`
+term: Presentation # Text that is the name of the concept in (human readable) texts.
+fullterm:
+shorterm:
+synonyms:
+glossaryText: "a (signed) digital message that a [holder](@) component may send to a [verifier](@) component that contains data derived from one or more [verifiable](@) [credentials](@) (that (a [colleague](@) component of) the [holder](@) component has received from [issuer](@) components of one or more [parties](@)), as a response to a specific [presentation request](@) of a [Verifier](@) component."
+# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Presentation"
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
-type: concept
-termid: presentation
-formphrases: presentation{ss}, verifiable-presentation{ss}
-status: draft
-grouptags:
 hoverText: "Presentation: a (signed) digital message that a Holder component may send to a Verifier component that contains data derived from one or more Verifiable Credentials (that (a Colleague component of) the Holder component has received from Issuer components of one or more Parties), as a response to a specific Presentation Request of a Verifier component."
-glossaryText: "a (signed) digital message that a %%holder^holder%% component may send to a %%verifier^verifier%% component that contains data derived from one or more %%verifiable^verify%% %%credentials^credential%% (that (a %%colleague^colleague%% component of) the %%holder^holder%% component has received from %%issuer^issuer%% components of one or more %%parties^party%%), as a response to a specific %%presentation request^presentation-request%% of a %%Verifier^verifier%% component."
-date: 20210601
 ---
 
 ### Short Description

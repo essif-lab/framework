@@ -1,38 +1,49 @@
 ---
+# `Multiple-use fields` (used by TEv2 and Docusaurus)
 id: principal
-title: "Principal"
-displayed_sidebar: essifLabSideBar
-scopetag: essifLab
-type: concept
+# TEv2: generic front-matter for curated texts
+scope: essiflab
+termtype: concept
 termid: principal
 formphrases: principal{ss}
-status: draft
 grouptags:
+status: proposed
+created: 2022-06-06
+updated: 2021-06-01
+vsntag: v0.1
+contributors: RieksJ
+# TEv2: type-specific front-matter for type `concept`
+term: Principal # Text that is the name of the concept in (human readable) texts.
+fullterm:
+shorterm:
+synonyms:
+glossaryText: "the [party](@) for whom, or on behalf of whom, the [actor](@) is executing an [action](@) (this [actor](@) is then called an [agent](@) of that [party](@))."
+# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
+title: "Principal"
+displayed_sidebar: essifLabSideBar
 hoverText: "Principal (of an Actor): the Party for whom, or on behalf of whom, the Actor is executing an Action (this Actor is then called an Agent of that Party)."
-glossaryText: "the %%party^party%% for whom, or on behalf of whom, the %%actor^actor%% is executing an %%action^action%% (this %%actor^actor%% is then called an %%agent^agent%% of that %%party^party%%)."
-date: 20210601
 ---
 
 ### Short Description
-A **principal** (of an %%actor|actor%%) is a %%party|party%% on whose behalf the %%actor|actor%% is executing an %%action|action%%. As, and in the context where the %%actor|actor%% is doing this, we say that the %%party|party%% fulfills the role of %%principal|principal%% for that %%actor|actor%%. We also say that the %%actor|actor%% fulfills the role of %%agent|agent%% for that %%party|party%%.
+A **principal** (of an [actor](@)) is a [party](@) on whose behalf the [actor](@) is executing an [action](@). As, and in the context where the [actor](@) is doing this, we say that the [party](@) fulfills the role of [principal](@) for that [actor](@). We also say that the [actor](@) fulfills the role of [agent](@) for that [party](@).
 
-Being a %%principal|principal%% (or %%agent|agent%% for that matter) is a %%role|role%% (characteristic/property) that a %%party|party%% (or an %%actor|actor%%, respectively) only has at a point in time where the %%actor|actor%% is _actually executing an %%action|action%%_ on behalf of that %%party|party%%. At any point in time, a %%party|party%% can fulfill the %%role|role%% of %%principal|principal%% for many %%actors|actor%%, depending on the amount of %%actions|action%% that are being executed on its behalf.
+Being a [principal](@) (or [agent](@) for that matter) is a [role](@) (characteristic/property) that a [party](@) (or an [actor](@), respectively) only has at a point in time where the [actor](@) is _actually executing an [action](@)_ on behalf of that [party](@). At any point in time, a [party](@) can fulfill the [role](@) of [principal](@) for many [actors](@), depending on the amount of [actions](@) that are being executed on its behalf.
 
-%%Principals|principal%% are expected to provide its %%agents|agent%% with the %%policies|policy%% that provide the %%agents|agent%% with the rules, working-instructions, preferences and other guidance that they need to comply with when executing the action. This, and relations with other concepts are described in the %%Parties, Actors and Actions pattern|pattern-party-actor-action%%.
+[Principals](@) are expected to provide its [agents](@) with the [policies](@) that provide the [agents](@) with the rules, working-instructions, preferences and other guidance that they need to comply with when executing the action. This, and relations with other concepts are described in the [Parties, Actors and Actions pattern](pattern-party-actor-action@).
 
 ### Purpose
-The purpose of being able to distinguish between %%parties|party%% that are, and that are not fulfilling the %%role|role%% of %%principal|principal%% (of the %%actor|actor%% that is executing some %%action|action%%), is that it is instrumental in discussions about who is (not) responsible/accountable for that %%action|action%% - including the way in which the %%action|action%% is executed, as well as the results produced by that %%action|action%%.
+The purpose of being able to distinguish between [parties](@) that are, and that are not fulfilling the [role](@) of [principal](@) (of the [actor](@) that is executing some [action](@)), is that it is instrumental in discussions about who is (not) responsible/accountable for that [action](@) - including the way in which the [action](@) is executed, as well as the results produced by that [action](@).
 
 ### Criterion
-The **principal** (of an %%actor|actor%%) is the %%party|party%% for whom the %%actor|actor%% is an %%agent|agent%%, i.e. on whose behalf the %%actor|actor%% is (in the process of) executing some %%action|action%%.
+The **principal** (of an [actor](@)) is the [party](@) for whom the [actor](@) is an [agent](@), i.e. on whose behalf the [actor](@) is (in the process of) executing some [action](@).
 
 ### Examples
 
-- When a %%person|human-being%% (as an %%actor|actor%%) is doing something on its own behalf (as a %%party|party%%), it is both its own %%agent|agent%% and its own %%principal|principal%%.
-- When a %%person|human-being%% does things for his %%employer|employer%% the %%employer|employer%% is that %%person's|human-being%% %%principal|principal%%.
-- when an ambassador acts in its capacity as ambassador, the country for which (s)he is ambassador is his/her %%principal|principal%%.
-- When the tax return form for a %%person|human-being%% or %%organization|organization%% is filled in by some other %%person|human-being%%, the latter acts as an %%agent|agent%% for that %%person|human-being%% or %%organization|organization%%, which is then the %%principal|principal%%.
-- A company that makes cars is the %%principal|principal%% of the robots that it uses to weld parts of a car together - but only when these robots are actually welding parts together.
-- A retailer (%%organization|organization%%) is the %%principal|principal%% of a (running) webserver that accepts product orders.
-- A wallet app that runs on a phone and that is exclusively used by a single %%person|human-being%% acts as a (digital) %%agent|agent%% for that %%person|human-being%%, and the latter is its %%principal|principal%%.
-- When an enterprise hires an accountancy-firm to produce an accountants-report, and the latter assigns an accountant the task to actually do this, and if the accountant does so as an %%employee|employee%% that `works for` the accountancy-firm (see the %%parties, actors and actions model|pattern-party-actor-action%%), then the accountant acts as an %%agent|agent%% and the accountancy-firm would be the %%principal|principal%%. However, the accountant could also be 'outsourced' to the enterprise (in which case the enterprise would have %%onboarded|onboarding%% the accountant) specifically for producing the accountants-report, then the accountant would be an %%agent|agent%% for the enterprise, and the latter would be its %%principal|principal%%.
+- When a [person](@) (as an [actor](@)) is doing something on its own behalf (as a [party](@)), it is both its own [agent](@) and its own [principal](@).
+- When a [person](@) does things for his [employer](@) the [employer](@) is that [person's](@) [principal](@).
+- when an ambassador acts in its capacity as ambassador, the country for which (s)he is ambassador is his/her [principal](@).
+- When the tax return form for a [person](@) or [organization](@) is filled in by some other [person](@), the latter acts as an [agent](@) for that [person](@) or [organization](@), which is then the [principal](@).
+- A company that makes cars is the [principal](@) of the robots that it uses to weld parts of a car together - but only when these robots are actually welding parts together.
+- A retailer ([organization](@)) is the [principal](@) of a (running) webserver that accepts product orders.
+- A wallet app that runs on a phone and that is exclusively used by a single [person](@) acts as a (digital) [agent](@) for that [person](@), and the latter is its [principal](@).
+- When an enterprise hires an accountancy-firm to produce an accountants-report, and the latter assigns an accountant the task to actually do this, and if the accountant does so as an [employee](@) that `works for` the accountancy-firm (see the [parties, actors and actions model](@)), then the accountant acts as an [agent](@) and the accountancy-firm would be the [principal](@). However, the accountant could also be 'outsourced' to the enterprise (in which case the enterprise would have [onboarded](@) the accountant) specifically for producing the accountants-report, then the accountant would be an [agent](@) for the enterprise, and the latter would be its [principal](@).

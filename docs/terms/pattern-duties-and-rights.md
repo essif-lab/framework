@@ -1,15 +1,21 @@
 ---
+# `Multiple-use fields` (used by TEv2 and Docusaurus)
 id: pattern-duties-and-rights
+# TEv2: generic front-matter for curated texts
+scope: essiflab
+termtype: pattern
+termid: duties-and-rights
+formphrases:
+grouptags: pattern
+status: proposed
+created: 2022-06-06
+updated: 2021-06-01
+vsntag: v0.1
+contributors: RieksJ
+# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Duties and Rights"
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
-type: pattern
-termid: duties-and-rights
-formphrases: duties-and-rights
-status: draft
-grouptags:
 hoverText: "The Duties and Rights pattern captures the Concepts and relations that explain what a generic duties and rights consists of (based on Hofeld's theories), and relates it to Jurisdictions, Parties and Legal Entities."
-date: 20210601
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
@@ -18,7 +24,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 This is work that is being envisaged.
 :::
 ### Purpose
-The **Duties-and-rights pattern** captures the concepts and relations that explain what (generic) duties and rights are, thereby following the [theory of Hohfeld](https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst), which is not only the basis of %%legal systems|legal-system%% (in %%jurisdictions|jurisdiction%%), but can be used to generically model duties and rights.
+The **Duties-and-rights pattern** captures the concepts and relations that explain what (generic) duties and rights are, thereby following the [theory of Hohfeld](https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst), which is not only the basis of [legal systems](@) (in [jurisdictions](@)), but can be used to generically model duties and rights.
 
 ### Introduction
 

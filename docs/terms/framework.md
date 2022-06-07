@@ -1,16 +1,27 @@
 ---
+# `Multiple-use fields` (used by TEv2 and Docusaurus)
 id: framework
+# TEv2: generic front-matter for curated texts
+scope: essiflab
+termtype: concept
+termid: framework
+formphrases: framework{ss}
+grouptags:
+status: proposed
+created: 2022-06-06
+updated: 2022-04-05
+vsntag: v0.1
+contributors: RieksJ
+# TEv2: type-specific front-matter for type `concept`
+term: Framework # Text that is the name of the concept in (human readable) texts.
+fullterm: "Framework (Conceptual)"
+shorterm:
+synonyms:
+glossaryText: "A set of assumptions, concepts, values, and practices that constitutes a way of viewing reality."
+# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Framework (Conceptual)"
 displayed_sidebar: essifLabSideBar
-scopetag: essifLabTerminology
-type: concept
-termid: framework
-formphrases: framework{ss}, conceptual-framework{ss}
-status: draft
-grouptags:
 hoverText: "Framework (Conceptual): A set of assumptions, concepts, values, and practices that constitutes a way of viewing reality."
-glossaryText: "A set of assumptions, concepts, values, and practices that constitutes a way of viewing reality."
-date: 20220405
 ---
 
 ### Short Description

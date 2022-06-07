@@ -1,48 +1,59 @@
 ---
+# `Multiple-use fields` (used by TEv2 and Docusaurus)
 id: data-collector
-title: "Data Collector"
-displayed_sidebar: essifLabSideBar
-scopetag: essifLab
-type: concept
+# TEv2: generic front-matter for curated texts
+scope: essiflab
+termtype: concept
 termid: data-collector
 formphrases: data-collector{ss}
-status: draft
 grouptags:
+status: proposed
+created: 2022-06-06
+updated: 2021-06-01
+vsntag: v0.1
+contributors: RieksJ
+# TEv2: type-specific front-matter for type `concept`
+term: Data # Text that is the name of the concept in (human readable) texts.
+fullterm: "Data Collector"
+shorterm:
+synonyms:
+glossaryText: "a functional component that is capable of collecting data from various [parties](@) in the context of some [business transaction](@), and [validating](@) this data for the purpose of making one (or more) decision(s)."
+# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
+title: "Data Collector"
+displayed_sidebar: essifLabSideBar
 hoverText: "Data Collector: a functional component that is capable of collecting data from various Parties in the context of some Business Transaction, and Validating this data for the purpose of making one (or more) decision(s)."
-glossaryText: "a functional component that is capable of collecting data from various %%parties^party%% in the context of some %%business transaction^transaction%%, and %%validating^validate%% this data for the purpose of making one (or more) decision(s)."
-date: 20210601
 ---
 
 ### Short Description
-A **Data Collector** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that a %%party|party%% may use to collect sufficient and %%validated|validate%% data for deciding whether or not a request (typically for a product or a service) is to be serviced.
+A **Data Collector** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that a [party](@) may use to collect sufficient and [validated](@) data for deciding whether or not a request (typically for a product or a service) is to be serviced.
 
 ### Purpose
-The purpose of a Data Collector is to collect sufficient and %%validated|validate%% data that enables (an %%agent|agent%% of) its %%principal|principal%% to decide whether or not some request (typically for a product or a service) is to be serviced.
+The purpose of a Data Collector is to collect sufficient and [validated](@) data that enables (an [agent](@) of) its [principal](@) to decide whether or not some request (typically for a product or a service) is to be serviced.
 
 ### Functionality
-A data collector typically starts to collect data when it receives a request (e.g. to provide a product or service). The reception of such a request triggers the creation of a new %%business transaction|transaction%%. The task of the data collector is to collect %%validated|validate%% data that is sufficient for making a commitment decision (or, as [DEMO](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations) calls it: a 'promise' or 'quit' decision.)
+A data collector typically starts to collect data when it receives a request (e.g. to provide a product or service). The reception of such a request triggers the creation of a new [business transaction](@). The task of the data collector is to collect [validated](@) data that is sufficient for making a commitment decision (or, as [DEMO](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations) calls it: a 'promise' or 'quit' decision.)
 
-Starting the data collection for a transaction does NOT imply that the identity of the %%actors|actor%% from whom/which the request originated, is established (or authenticated). It also does NOT imply that the identity of the %%peer party|peer-party%% is established (or authenticated). The data collector simply proceeds to collect a sufficient amount of data such that the associated decision can be made, according to the rules, working-instructions and other guidance provided by its %%principal's|principal%% %%data collector policy|data-collector-policy%%. Such data may include identity data, but it also may not.
+Starting the data collection for a transaction does NOT imply that the identity of the [actors](@) from whom/which the request originated, is established (or authenticated). It also does NOT imply that the identity of the [peer party](@) is established (or authenticated). The data collector simply proceeds to collect a sufficient amount of data such that the associated decision can be made, according to the rules, working-instructions and other guidance provided by its [principal's](@) [data collector policy](@). Such data may include identity data, but it also may not.
 
-Starting the data collection for a transaction implies that the data collector informs the %%data discloser component|data-discloser%% about the %%transaction|transaction%% that has just started, and the kind of that transaction. This allows the %%data discloser component|data-discloser%% to process requests for data from %%peer agents|peer-agent%%[^1x]
+Starting the data collection for a transaction implies that the data collector informs the [data discloser component](@) about the [transaction](@) that has just started, and the kind of that transaction. This allows the [data discloser component](@) to process requests for data from [peer agents](@)[^1x]
 
-All guidance that the data collector needs to collect the necessary and %%validated|validate%% data to make that decision is provided by the %%data collector policy|data-collector-policy%% that has been established by the data collector's %%principal|principal%%. Such a policy includes e.g. the kinds of data (and meta-data) required to make these kinds of decisions, criteria to distinguish between data that is %%valid|validate%% and data that is not, any data conversions that may be needed, etc.
+All guidance that the data collector needs to collect the necessary and [validated](@) data to make that decision is provided by the [data collector policy](@) that has been established by the data collector's [principal](@). Such a policy includes e.g. the kinds of data (and meta-data) required to make these kinds of decisions, criteria to distinguish between data that is [valid](@) and data that is not, any data conversions that may be needed, etc.
 
-A data collector may multi-task, i.e. simultaneously/asynchronously collect data for multiple %%transactions|transaction%%. To organize this, messages that are exchanged with %%peer agents|peer-agent%% must contain an identifier that allows the data collector and its peer agents to identify the transaction to which each message belongs.
+A data collector may multi-task, i.e. simultaneously/asynchronously collect data for multiple [transactions](@). To organize this, messages that are exchanged with [peer agents](@) must contain an identifier that allows the data collector and its peer agents to identify the transaction to which each message belongs.
 
-During the time in which a data collector is collecting data for a specific %%transaction|transaction%%, it may choose to setup, accept, and tear down %%communication sessions|communication-session%% with any %%actors|actor%%, if that is appropriate. This allows requests for data to be sent to different kinds of %%peer party|peer-party%%-%%agents|agent%%, e.g. human or %%digital|agent%% agents. However, the data collector then must ensure that every of these %%agents|agent%% are all %%colleagues|colleague%%, i.e. have the %%peer party|peer-party%% as their %%principal|principal%%.
+During the time in which a data collector is collecting data for a specific [transaction](@), it may choose to setup, accept, and tear down [communication sessions](@) with any [actors](@), if that is appropriate. This allows requests for data to be sent to different kinds of [peer party](@)-[agents](@), e.g. human or [digital](@) agents. However, the data collector then must ensure that every of these [agents](@) are all [colleagues](@), i.e. have the [peer party](@) as their [principal](@).
 
-A data collector benefits from generic APIs or (G)UIs that allow it to simply ask for the data that it requires. Specifically for SSI, the data collector uses the %%eSSIF-Glue|essif-glue%% interface to access the %%Verifier|verifier%% functionalities.
+A data collector benefits from generic APIs or (G)UIs that allow it to simply ask for the data that it requires. Specifically for SSI, the data collector uses the [eSSIF-Glue](@) interface to access the [Verifier](@) functionalities.
 
 ### Criteria
 A **Data Collector** is a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch) that
-- services requests by %%digital|agent%% and non-digital %%agents|agent%%, for providing a product or service, thereby starting a %%transaction|transaction%%;
-- can setup, accept and tear-down communication channels of various kinds, with %%digital|colleague%% and/or non-digital %%colleagues|colleague%% of that %%requesting agent|agent%%,[^peer-agents] as appropriate for the data exchanges that are needed to conduct the transactions;
-- can use any appropriate communication channel with a %%peer-agent|peer-agent%% to:
-  - request for data that, according to the %%Data Collector Policy|data-collector-policy%% is needed to decide whether or not to commit to the transaction;
-  - process the responses to such requests, in an orchestrated way, thereby complying with the rules of its  %%principal's|principal%% %%Data Collector Policy|data-collector-policy%%, the result of which (in the end) is a set of %%validated|validate%% data that can serve the purpose of deciding whether or not to commit to the transaction;
-  - receive similar requests from its %%peer-party|peer-party%%, and respond to such requests in compliance with the rules of its  %%principal's|principal%% %%Data Collector Policy|data-collector-policy%%;
-- has a mechanism to ensure that within a %%transaction|transaction%%, it uses the latest (most recent) %%Data Collector Policy|data-collector-policy%% of its %%principal|principal%%.
+- services requests by [digital](@) and non-digital [agents](@), for providing a product or service, thereby starting a [transaction](@);
+- can setup, accept and tear-down communication channels of various kinds, with [digital](@) and/or non-digital [colleagues](@) of that [requesting agent](@),[^peer-agents] as appropriate for the data exchanges that are needed to conduct the transactions;
+- can use any appropriate communication channel with a [peer-agent](@) to:
+  - request for data that, according to the [Data Collector Policy](@) is needed to decide whether or not to commit to the transaction;
+  - process the responses to such requests, in an orchestrated way, thereby complying with the rules of its  [principal's](@) [Data Collector Policy](@), the result of which (in the end) is a set of [validated](@) data that can serve the purpose of deciding whether or not to commit to the transaction;
+  - receive similar requests from its [peer-party](@), and respond to such requests in compliance with the rules of its  [principal's](@) [Data Collector Policy](@);
+- has a mechanism to ensure that within a [transaction](@), it uses the latest (most recent) [Data Collector Policy](@) of its [principal](@).
 
 ### Deprecated - TVE Functionality
 
@@ -93,11 +104,11 @@ As long as data is needed, the Data Collector can intermittently request the ver
 Footnote markers need to be revised
 :::
 
-[^1x]: In the same way that the data collector needs to collect data in order to be able to decide whether or not to commit, %%agents|agent%% of the %%peer party|peer-party%% need to collect data for making a similar commitment decision. Requests for such data are to be processed by the %%data discloser component|data-discloser%% under guidance of its %%data-discloser-policy|data-discloser-policy%%.
+[^1x]: In the same way that the data collector needs to collect data in order to be able to decide whether or not to commit, [agents](@) of the [peer party](@) need to collect data for making a similar commitment decision. Requests for such data are to be processed by the [data discloser component](@) under guidance of its [data-discloser-policy](@).
 
-[^1a]: If the %%data collector policy|data-collector-policy%% specifies that data is to be collected for other purposes, the %%data collector|data-collector%% should then be provided a means to inform its %%peer party|peer-party%% of such purposes, and the policy should not specify that such data is required to make the commitment decision.
+[^1a]: If the [data collector policy](@) specifies that data is to be collected for other purposes, the [data collector](@) should then be provided a means to inform its [peer party](@) of such purposes, and the policy should not specify that such data is required to make the commitment decision.
 
-[^peer-agents]: Note that such agents have then become so-called %%peer-agents|peer-agent%% (of the Data Collector) for that specific transaction. Also, the (single!) %%principal|principal%% of these %%peer-agents|peer-agent%% is the %%peer-party|peer-party%% of the %%principal|principal%% of the Data Collector (again, for that specific transaction).
+[^peer-agents]: Note that such agents have then become so-called [peer-agents](@) (of the Data Collector) for that specific transaction. Also, the (single!) [principal](@) of these [peer-agents](@) is the [peer-party](@) of the [principal](@) of the Data Collector (again, for that specific transaction).
 
 [^1]: This feature ensures that the transaction is really two-way, and both Parties can request credentials from the other. For example, a web-shop can then ask for a (delivery) address credential, and the customer can ask for a credential issued e.g. by the chamber of commerce that the web-shop is a legitimate company (and not some maffia website).
 

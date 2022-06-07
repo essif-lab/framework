@@ -1,34 +1,45 @@
 ---
+# `Multiple-use fields` (used by TEv2 and Docusaurus)
 id: pattern
-title: "Pattern"
-displayed_sidebar: essifLabSideBar
-scopetag: essifLab
-type: concept
+# TEv2: generic front-matter for curated texts
+scope: essiflab
+termtype: concept
 termid: pattern
 formphrases: pattern{ss}
-status: draft
 grouptags:
+status: proposed
+created: 2022-06-06
+updated: 2021-08-04
+vsntag: v0.1
+contributors: RieksJ
+# TEv2: type-specific front-matter for type `concept`
+term: Pattern # Text that is the name of the concept in (human readable) texts.
+fullterm:
+shorterm:
+synonyms:
+glossaryText: "A description, both casual and formal, of a set of [concepts](@) (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
+# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
+title: "Pattern"
+displayed_sidebar: essifLabSideBar
 hoverText: "Pattern (also: Mental Model): A description, both casual and formal, of a set of Concepts (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
-glossaryText: "A description, both casual and formal, of a set of %%concepts^concept%% (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
-date: 20210804
 ---
 
 ### Short Description
-A **pattern** (also called **[mental model](https://en.wikipedia.org/wiki/Mental_model)** or **[conceptual model](https://en.wikipedia.org/wiki/Conceptual_model)**) captures a limited set of %%concepts|concept%% (ideas), relations between them, and constraints, such that together they form a coherent and consistent whole. They have been crafted so that they may serve as a basis for architecting, designing, and implementing IT components and their %%governance|governance%% processes.
+A **pattern** (also called **[mental model](https://en.wikipedia.org/wiki/Mental_model)** or **[conceptual model](https://en.wikipedia.org/wiki/Conceptual_model)**) captures a limited set of [concepts](@) (ideas), relations between them, and constraints, such that together they form a coherent and consistent whole. They have been crafted so that they may serve as a basis for architecting, designing, and implementing IT components and their [governance](@) processes.
 
-Patterns use (tangible) %%terms|term%% to refer to these (intangible) concepts and relations, so in order to be consistent, a pattern must reside in the scope that defines these concepts and relations. A pattern may also 'connect' concepts of different scopes (preferably no more than two), which you might call an 'interconnection pattern' between these scopes.
+Patterns use (tangible) [terms](@) to refer to these (intangible) concepts and relations, so in order to be consistent, a pattern must reside in the scope that defines these concepts and relations. A pattern may also 'connect' concepts of different scopes (preferably no more than two), which you might call an 'interconnection pattern' between these scopes.
 
-The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 A (good) pattern can be used
 - to facilitate one's thinking and reasoning about a specific topic, and/or deepen one's understanding of it.
 - to effectively explain backgrounds of one's reasoning/understanding of the pattern's topic.
-- to efficiently discuss and improve %%definitions|definition%% of the %%concepts|concept%% and relations in the pattern.
+- to efficiently discuss and improve [definitions](@) of the [concepts](@) and relations in the pattern.
 - to write texts using precisely defined language.
 
 ### Criteria
-a limited set of %%concepts|concept%% (preferably not exceeding 7+/-2)[^1], relations between such concepts, and constraints, such that together they form a coherent and consistent whole that can be used to explain one's thinking about a specific topic within a specific %%scope|scope%%.
+a limited set of [concepts](@) (preferably not exceeding 7+/-2)[^1], relations between such concepts, and constraints, such that together they form a coherent and consistent whole that can be used to explain one's thinking about a specific topic within a specific [scope](@).
 
 ### Notes
 The first purpose of a pattern is to help us think and reason about a certain topic or issue.
