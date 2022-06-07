@@ -6,8 +6,8 @@ scope: tev2
 termtype: concept
 termid: glossary
 formphrases: glossar{yies}
-status: proposed
 grouptags:
+status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 vsntag: v0.1
@@ -33,7 +33,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 ### Summary
 A **glossary** is an alphabetically sorted list of [terms](@) with explanations, usually aimed to help people understand texts around a certain (set of) topic(s) in (at least) one context. A glossary may also be created for the purpose of being included in other glossaries (as a construction aid to such glossaries), or for still other purposes.
 
-The [terminology pattern](@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 A glossary may serve various purposes, the most important one of which would be to help people understand texts around a certain (set of) topic(s) in some context(s).

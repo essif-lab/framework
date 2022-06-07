@@ -6,8 +6,8 @@ scope: tev2
 termtype: pattern
 termid: terminology
 formphrases: terminology
-status: proposed
 grouptags:
+status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 vsntag: v0.1
@@ -95,7 +95,7 @@ A [terms-community](@) is a [community](@) that
     - can be associated with [definitions](@) as a means of grouping the [concepts](@) such [definitions](@) define - the so-called [group tags](@).
     - [identify](@) a specific version of the [terminology](@) - the so-called [version tags](@).
 
-We refer the reader to the [governance and management pattern](@) to learn more about transferring such results between a [terms-community](@) and the [communities](@) that it serves.
+We refer the reader to the [governance and management pattern](pattern-governance-and-management@) to learn more about transferring such results between a [terms-community](@) and the [communities](@) that it serves.
 
 Note that for a [terms-community](@) to serve itself, it may want to commit to a [terminology](@) such as the one we are developing here.
 

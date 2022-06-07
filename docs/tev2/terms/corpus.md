@@ -6,15 +6,15 @@ scope: tev2
 termtype: concept
 termid: corpus
 formphrases: corpus, corpus-of-terminology
-status: proposed
 grouptags:
+status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 term: corpus  # Text that is the name of the concept in (human readable) texts.
-fullterm:
+fullterm: "Corpus of Terminology"
 shorterm:
 synonyms:
 glossaryText: "the documentation that describes the [knowledge](@) around a set of [terms](@) and [concepts](@)."
@@ -33,7 +33,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 ## Short Description
 The **Corpus** or **Corpus of Terminology** is the documentation that describes the [knowledge](@) around a set of [terms](@) and [concepts](@). It is typically [governed](@) by conventions that are specified by a group of [terms communities](@), such as [TOIP's Concepts and Terminology Working Group](https://wiki.trustoverip.org/pages/viewpage.action?pageId=65700).
 
-The [Terminology Pattern](@) relates this concept with other terminological [concepts](@).
+The [terminology pattern](pattern-terminology@) relates this concept with other terminological [concepts](@).
 
 ## Purpose
 The purpose of having a [corpus](@) is that it allows for the development of tools that support authors and groups of people to better communicate, by enabling them to refer to the [definition](@) of a [term](@) whenever that [term](@) is used. This is particularly beneficial when a specific [term](@) can be interpreted in different ways (according to different [definitions](@)).

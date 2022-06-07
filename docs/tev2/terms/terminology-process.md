@@ -6,15 +6,15 @@ scope: tev2
 termtype: concept
 termid: terminology-process
 formphrases: terminology-process, terminology-processes
-status: proposed
 grouptags:
+status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 term: terminology process  # Text that is the name of the concept in (human readable) texts.
-fullterm:
+fullterm: "Terminology Process"
 shorterm:
 synonyms:
 glossaryText: "a method for recognizing misunderstandings as such, and creating or maintaining [definitions](@) that resolve them."

@@ -6,8 +6,8 @@ scope: tev2
 termtype: concept
 termid: terminology
 formphrases: terminolog{yies}
-status: proposed
 grouptags:
+status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 vsntag: v0.1
@@ -31,7 +31,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 ### Summary
-A **terminology** is the set of [terms](@) that are used within a single [scope](@) to refer to a single [definition](@), enabling [parties](@) to reason and communicate ideas they have about one or more specific topics. The [definition](@) that a [term](@) refers to may be defined in the same, or any other [scope](@). Further details can be obtained from the [terminology pattern](@).
+A **terminology** is the set of [terms](@) that are used within a single [scope](@) to refer to a single [definition](@), enabling [parties](@) to reason and communicate ideas they have about one or more specific topics. The [definition](@) that a [term](@) refers to may be defined in the same, or any other [scope](@). Further details can be obtained from the [terminology pattern](pattern-terminology@).
 
 A terminology may be viewed as a topic-specific subset of the scope's [vocabulary](@).
 
