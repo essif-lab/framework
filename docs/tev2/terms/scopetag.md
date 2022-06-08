@@ -18,7 +18,7 @@ term: scopetag  # Text that is the name of the concept in (human readable) texts
 fullterm: Scopetag (of/within a Scope)
 shorterm:
 synonyms:
-glossaryText: "a [tag](@) that is used to [identify](@) [scopes](@) from within a specific [scope](@).
+glossaryText: "a [tag](@) that is used to [identify](@) [scopes](@) from within a specific [scope](@)"
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Scopetag"
 hoverText: "Scopetag: a Tag (alphanumeric string) that is used to identify Scopes from within a specific Scope"
