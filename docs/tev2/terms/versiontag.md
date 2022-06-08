@@ -20,7 +20,7 @@ shorterm:
 synonyms:
 glossaryText: "a [tag](@) that is used to [identify](@) a specific version of a [terminology](@) from within a specific [scope](@)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Tag"
+title: "Versiontag"
 hoverText: "Versiontag: a Tag (alphanumeric string) that is used to identify a specific version of a Terminology from within a specific Scope."
 # sidebar_label:
 # hide_table_of_contents: true
