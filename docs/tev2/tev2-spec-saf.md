@@ -18,9 +18,9 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 
 Every [scope](@) MUST have exactly one Scope Administration File or [SAF](@), i.e. a file contains whatever needs to be administered in the [scope](@), and that various tools need to find e.g. the [scope's](@) [MRG](@), [curated texts](@), [scopetags](@), etc.
 
-This document specifies the name (which is `saf.yaml`) and the structure of such [SAFs](@).
+The [SAF](@) MUST be located in the (root of the) [scopedir](@), and is called `saf.yaml`. It is to be created and maintained by the [curators](@) of the [scope](@).
 
-The [SAF](@) is to be created and maintained by the [curators](@) of the [scope](@).
+This document specifies the structure of such [SAFs](@).
 
 ## Scope Administration File Field Descriptions
 
@@ -71,11 +71,11 @@ The following fields are defined for the `scope` section of a [SAF](@):
 | :---------- | :---: | :---------- |
 | `scopetag`    | Y | [Scopetag](@) that [curators](@) of this scope have determined for this [terminology](@). The associated [scopedir](@) is specified in the section `scopes`. |
 | `scopedir`    | Y | URL of the location of the [scopedir](@) associated with the [scopetags](@) listed in the `scopetags` field. |
-| `curatedir`   | Y | Path to the directory where all [curated files](@) are located. Full URL is `scopedir`/`curatedir`.|
-| `glossarydir` | Y | Path to the directory where all [glossary](@) files and [GDFs](@) are located. Full URL is `scopedir`/`glossarydir`. |
-| `mrgfile`     | Y | Name of the file that contains the latest version of the [MRG](@). Full URL is `scopedir`/`mrgfile`. |
-| `hrgfile`     | Y | Name of the file that contains the latest version of the [HRG](@). Full URL is `scopedir`/`hrgfile` |
-| `license`     | Y | File in the root of the [scopedir](@) that contains licensing data. |
+| `curatedir`   | Y | Path to the directory where all [curated files](@) are located. Full URL is `<scopedir>`/`<curatedir>`.|
+| `glossarydir` | Y | Path to the directory where all [glossary](@) files and [GDFs](@) are located. Full URL is `<scopedir>`/`<glossarydir>`. This directory SHOULD contain one [MRG](@) for every element in the version-section in the [SAF](@). |
+| `mrgfile`     | Y | Name of the [MRG](@) that contains the (default/current) version of the [MRG](@). Full URL is `<scopedir>`/`<mrgfile>`. |
+| `hrgfile`     | Y | Name of the file that contains the (default/current) version of the [HRG](@). Full URL is `<scopedir>`/`<hrgfile>` |
+| `license`     | Y | File in the root of the [scopedir](@) that contains the (default) licensing data. |
 | `statuses`    | n | Ordered list of [tags](@) that are defined in this [scope](@) for specifying stages in the life-cycle of [terminological artifacts](@). The first element in the list represents the first stage, and the last element the last stage in the life-cycle. |
 | `issues`      | n | URL where issues can be reported and handled.|
 | `website`     | n | URL for the home page of the [terminology](@). |
@@ -84,6 +84,7 @@ The following fields are defined for the `scope` section of a [SAF](@):
 <!--
 | `dateformat`  | n | Regex (PCRE) that has named capturing groups for YYYY, MM and DD, and that can be used to parse the date fields used in this [scope](@) ) (provided another regex doesn't override it). When not provided, tools should use the regex "**(?P<YYYY\>\d{4})-?(?P<MM\>\d{2})-?(?P<DD\>\d{2})(?P<tzone\>Z&#124[+-]\d{2}:\d{2})?**" for this (noting that in certain contexts, `\` characters may need to be escaped). |
 -->
+
 :::info Editor's note
 It might be more practical to move all of the stuff that is particular to this scope, but that is currently documented in the `scopes` section, to this section. We do then need to check throughout the documentation where that section is referenced, and correct such references.
 :::
@@ -136,7 +137,7 @@ versions:
       - latest
       - v0.9.4
     termselcrit:
-      - "[management]@essif-lab" # import all terms from the default/current mrg of `essif-lab` that have grouptag `management`.
+      - "[management]@essif-lab" # import all terms from the mrg of `essif-lab:latest` that have grouptag `management`.
       - "[party](@essif-lab:0.9.4)" # import the term `party` from the mrg of `essif-lab:0.9.4`.
       - "[community](@essif-lab:0.9.4)" # import the term `community` from the mrg of `essif-lab:0.9.4`.
       - "[tev2]@tev2" # import all terms defined in the scope `tev2`
@@ -147,9 +148,9 @@ versions:
     altvsntags: # alternative verstiontags
       - v0.9.0
     termselcrit:
-      - "[management]@essif-lab" # import all terms from the default/current mrg of `essif-lab` that have grouptag `management`.
-      - "[party@essif-lab]" # import the term `party` from the default/current mrg of `essif-lab`.
-      - "[community@essif-lab]" # import the term `community` from the default/current mrg of `essif-lab`.
+      - "[management]@essif-lab" # import all essif-lab terms with grouptag `management`.
+      - "[party@essif-lab]" # import the term `party` from the mrg of `essif-lab:latest`.
+      - "[community@essif-lab]" # import the term `community` from the mrg of `essif-lab:latest`.
 ~~~
 
 </details>
