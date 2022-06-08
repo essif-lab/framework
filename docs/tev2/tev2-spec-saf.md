@@ -72,7 +72,7 @@ The following fields are defined for the `scope` section of a [SAF](@):
 | `scopetag`    | Y | [Scopetag](@) that [curators](@) of this scope have determined for this [terminology](@). The associated [scopedir](@) is specified in the section `scopes`. |
 | `scopedir`    | Y | URL of the location of the [scopedir](@) associated with the [scopetags](@) listed in the `scopetags` field. |
 | `curatedir`   | Y | Path to the directory where all [curated files](@) are located. Full URL is `<scopedir>`/`<curatedir>`.|
-| `glossarydir` | Y | Path to the directory where all [glossary](@) files and [GDFs](@) are located. Full URL is `<scopedir>`/`<glossarydir>`. This directory SHOULD contain one [MRG](@) for every element in the version-section in the [SAF](@). |
+| `glossarydir` | Y | Path to the directory where all [glossary](@) files and [GDFs](@) are located. Full URL is `<scopedir>`/`<glossarydir>`. This directory SHOULD contain one [MRG](@) for every element in the version-section in the [SAF](@), and one or multiple [HRGs](@). |
 | `mrgfile`     | Y | Name of the [MRG](@) that contains the (default/current) version of the [MRG](@). Full URL is `<scopedir>`/`<mrgfile>`. |
 | `hrgfile`     | Y | Name of the file that contains the (default/current) version of the [HRG](@). Full URL is `<scopedir>`/`<hrgfile>` |
 | `license`     | Y | File in the root of the [scopedir](@) that contains the (default) licensing data. |
