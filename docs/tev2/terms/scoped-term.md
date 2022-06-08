@@ -12,7 +12,7 @@ updated: 2022-06-06
 vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
-isa:
+isa: term
 term: scoped term  # Text that is the name of the concept in (human readable) texts.
 fullterm: "Term (Scoped)"
 shorterm:
