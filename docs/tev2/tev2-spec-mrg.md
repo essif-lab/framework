@@ -20,8 +20,10 @@ Every [scope](@) has (at least) one **Machine Readable Inventory**[^1] (that we 
 
 [^1]: The [MRG](@) is an Inventory rather than a [glossary](@), because it contains _all_ [terminological artifacts](@) that are [curated](@) within the [scope](@): apart from [terms](@), it also include e.g., [mental models](pattern@) and [use cases](@). We choose to maintain the [term](@) "Machine Readable Glossary" ([MRG](@)), because most of us would view it - initially, at least - as a list of [terms](@) and their [definitions](@).
 
+We use `mrg.<vsntag>.yaml` as the default name for [MRGs](@), where `<vsntag>` is the value of the `vsntag`-field in the `versions` section of the [SAF](@) that specifies the [MRG's](@) contents.
+
 :::info Editor's note:
-We need a paragraph that specifies the [MRG](@)-file naming conventions.
+We may need to revise the [MRG](@)-file naming conventions.
 :::
 
 ## MRG structure

@@ -74,19 +74,11 @@ We need a sentence that specifies the [SAF's](@) filename.
 <!-- MRG -->
 The [curators](@) also organize when and how the [scope's](@) Machine Readable Glossary ([MRG](@)) is created. This file is not a [glossary](@), but rather a (machine readable) inventory of all [terminological artifacts](@) that are part of (a specific version of) the [scope's](@) [terminology](@). Ideally, tools would only need to inspect the [MRG](@) of a [scope](@) if they want to use data that is [curated](@) in that [scope](@). Further details are in the [MRG specs](tev2-spec-mrg).
 
-:::info Editor's note:
-We need a sentence that specifies the [MRG](@) file naming conventions.
-:::
-
 <!-- MRGT -->
 The [MRG](@) is created by the [MRGT](@) tool. This tool takes the [scope's](@) [curated texts](@) as input, as well as [MRGs](@) from other scopes, e.g. to 'import' [terms](@) or other [artifacts](terminological-artifact)(@) that are needed in, but not [curated](@) by, the [scope](@). The [SAF](@) of the [scope](@) tells the [MRGT](@) where to find these (third party) [MRGs](@). Further details are in the [MRGT specs](tev2-toolbox-mrgt).
 
 <!-- HRG -->
 The Human Readable Glossary or [HRG](@) is a (real) [glossary](@) that humans are expected to read/use. It is a formatted text, which means that it might appear in one of a plethora of formats. Within a [scope](@), we assume a specific format is chosen that is appropriate for its users. The [HRG](@) is not a formatted/rendered version of the entire [MRG](@): it typically only lists the [terms](@) that are assocated with specific kinds of [terminological artifacts](@), specifically the type [`concept`](concept@). Further details are in the [HRG specs](tev2-spec-hrg).
-
-:::info Editor's note:
-We need a sentence that specifies the [HRG](@) file naming conventions.
-:::
 
 <!-- HRGT -->
 We will use the term [HRGT](@) to generically refer to any tool that either produces a [HRG](@) directly, or that produces inputs for other, third party rendering tools that will then generate the [HRG](@). Typically, a [HRGT](@) will extract a subset of the [terminological artifacts](@) from the [MRG](@), sort them, resolve [term refs](@) where appropriate, and do whatever else is necessary to generate (the files that third party tools pick up to) generate the [HRG](@). We expect to see various flavours of this tool, or a single tool that can create [HRGs](@) in different formats, allowing [curators](@) to get the kind of [HRG](@) that is the most appropriate for their purposes. Further details are in the [HRGT specs](tev2-toolbox-hrgt).

@@ -18,13 +18,9 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 
 Every [scope](@) MUST have exactly one Scope Administration File or [SAF](@), i.e. a file contains whatever needs to be administered in the [scope](@), and that various tools need to find e.g. the [scope's](@) [MRG](@), [curated texts](@), [scopetags](@), etc.
 
-This document specifies the structure of such [SAFs](@).
+This document specifies the name (which is `saf.yaml`) and the structure of such [SAFs](@).
 
 The [SAF](@) is to be created and maintained by the [curators](@) of the [scope](@).
-
-:::info Editor's note:
-We need a paragraph that specifies the [SAF](@)-file naming conventions.
-:::
 
 ## Scope Administration File Field Descriptions
 
@@ -53,9 +49,9 @@ scope:
   scopedir: https://github.com/essif-lab/framework/tree/master/docs/tev2  # URL of the scope-directory
   curatedir: docs # directory where all curated files are located. Full URL is `scopedir`/`curatedir`
   glossarydir: glossaries # directory where all glossary files and GDFs are located. Full URL is `scopedir`/`glossarydir`
-  mrgfile: glossaries/mrg.json # file that contains the (default) machine readable glossary. Full URL is `scopedir`/`mrgfile`
-  hrgfile: glossaries/glossary # file that contains the (default) human readable glossary. Full URL is `scopedir`/`hrgfile`
-  license: LICENSE.md # file that contains the (default) licensing conditions. Full URL is `scopedir`/`license`
+  mrgfile: glossaries/mrg.json # file that contains the (default/current) machine readable glossary. Full URL is `scopedir`/`mrgfile`
+  hrgfile: glossaries/glossary # file that contains the (default/current) human readable glossary. Full URL is `scopedir`/`hrgfile`
+  license: LICENSE.md # file that contains the (default/current) licensing conditions. Full URL is `scopedir`/`license`
   statuses: [ proposed, approved, deprecated ] # list of status tags that are defined for terminological artifacts in this scope
   issues: https://github.com/essif-lab/framework/issues # URL where issues can be raised and handled
   website: https://essif-lab.github.io/framework/docs/tev2/tev2-overview # home page of the terminology
@@ -140,7 +136,7 @@ versions:
       - latest
       - v0.9.4
     termselcrit:
-      - "[management]@essif-lab" # import all terms from the mrg of `essif-lab:latest` that have grouptag `management`.
+      - "[management]@essif-lab" # import all terms from the default/current mrg of `essif-lab` that have grouptag `management`.
       - "[party](@essif-lab:0.9.4)" # import the term `party` from the mrg of `essif-lab:0.9.4`.
       - "[community](@essif-lab:0.9.4)" # import the term `community` from the mrg of `essif-lab:0.9.4`.
       - "[tev2]@tev2" # import all terms defined in the scope `tev2`
@@ -151,9 +147,9 @@ versions:
     altvsntags: # alternative verstiontags
       - v0.9.0
     termselcrit:
-      - "[management]@essif-lab" # import all essif-lab terms with grouptag `management`.
-      - "[party@essif-lab]" # import the term `party` from the mrg of `essif-lab:latest`.
-      - "[community@essif-lab]" # import the term `community` from the mrg of `essif-lab:latest`.
+      - "[management]@essif-lab" # import all terms from the default/current mrg of `essif-lab` that have grouptag `management`.
+      - "[party@essif-lab]" # import the term `party` from the default/current mrg of `essif-lab`.
+      - "[community@essif-lab]" # import the term `community` from the default/current mrg of `essif-lab`.
 ~~~
 
 </details>
