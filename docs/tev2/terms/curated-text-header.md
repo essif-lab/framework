@@ -13,6 +13,7 @@ updated: 2022-06-02
 vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
+isa:
 term: Curated Text Header
 fullterm: header (of a [curated text](@))
 shorterm: header
@@ -74,6 +75,7 @@ updated: 2022-06-02
 vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
+isa:
 term: Curated Text Header
 fullterm: header (of a [curated text](@))
 shorterm: header
