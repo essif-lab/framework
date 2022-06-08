@@ -13,6 +13,7 @@ updated: 2021-08-30
 vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
+isa:
 term: Governance # Text that is the name of the concept in (human readable) texts.
 fullterm:
 shorterm:
