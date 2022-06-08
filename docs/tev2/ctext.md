@@ -88,7 +88,7 @@ The following table specifies the **generic header fields**:
 | `status`       | n  | `proposed` | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
 | `created`      | n  | | Date at which of the [curated text](@) was created, in the date format as used within this [scope](@). |
 | `updated`      | n  | | Date at which of the [curated text](@) was last modified, in the date format as used within this [scope](@). |
-| `vsntag`   | n  | | Text that identifies the version of the [terminological artifact](@) that this [curated text](@) describes.<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `vsntag`       | n  | | Text that identifies the version of the [terminological artifact](@) that this [curated text](@) describes.<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `contributors` | n  | | Text that shows (or refers to) the people that have contributed to this [curated text](@). |
 
 ## Type-specific Header Fields {#type-specific-header-fields}

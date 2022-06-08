@@ -6,8 +6,8 @@ scope: tev2
 termtype: concept
 termid: dictionary
 formphrases: dictionar{yies}
-status: proposed
 grouptags:
+status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 vsntag: v0.1
@@ -34,7 +34,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 
 A Dictionary is an alphabetically sorted list of [terms](@) with explanations. Each term may have multiple such explanations, which come from different [scopes/contexts](scope@).
 
-The [terminology pattern](@) provides an overview of how this [concept](@) fits in with related [concepts](@).
+The [terminology pattern](pattern-terminology@) provides an overview of how this [concept](@) fits in with related [concepts](@).
 
 ### Purpose
 

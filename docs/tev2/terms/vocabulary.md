@@ -6,8 +6,8 @@ scope: tev2
 termtype: concept
 termid: vocabulary
 formphrases: vocabular{yies}
-status: proposed
 grouptags:
+status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 vsntag: v0.1
