@@ -64,12 +64,11 @@ The figure not only shows the raw texts, the their processing by the [TRRT](@) t
 <!-- curated texts -->
 To the left of the figure, you can see that some raw texts are 'ingressed' into the [scope directory](@), and thereby have become so-called [curated texts](@). These texts typically contain descriptions of [terms](@), [definitions](@), examples, etc., that help interested [parties](@) to formulate and understand the [concepts](@) that they need. The [curators](@) of the [scope](@) are tasked to run the ingression process, and specify the details of what this means for that [scope](@). Further details are in the [Curated Texts description](ctext).
 
-<!-- SAF -->
-These [curators](@) also create and maintain the [scope's](@) administration file ([SAF](@)), which contains meta-data concerning the [scope](@) itself, the locations (URLs) of its directories (and glossary files), the locations (URLs) of the [scope directories](@) of (selected) other [scopes](@), and a specification of the [terminological artifacts](@) that are part of the various versions of its [terminology](@) that are actively maintained. Further details are in the [SAF specs](tev2-spec-saf).
+<!-- ingress tools -->
+While the [curated texts](@) have specific requirements for their structure, the raw texts may not. For example, within the context of the Trust over IP foundation, so-called [Terms Wikis](https://wiki.trustoverip.org/display/HOME/Terms+Wikis) are used to facilitate people of various backgrounds as they contribute to the creation of a [terminology](@). The raw text is then in 'wiki format', and needs to be converted to the structure required for [curated texts](@). We expect to see tools being created that facilitate this transition.
 
-:::info Editor's note:
-We need a sentence that specifies the [SAF's](@) filename.
-:::
+<!-- SAF -->
+These [curators](@) also create and maintain the [scope's](@) administration file ([SAF](@)), which is called `saf.yaml` and is located in (the root of) the [scope directory](@). This file contains meta-data concerning the [scope](@) itself, the locations (URLs) of its directories (and glossary files), the locations (URLs) of the [scope directories](@) of (selected) other [scopes](@), and a specification of the [terminological artifacts](@) that are part of the various versions of its [terminology](@) that are actively maintained. Further details are in the [SAF specs](tev2-spec-saf).
 
 <!-- MRG -->
 The [curators](@) also organize when and how the [scope's](@) Machine Readable Glossary ([MRG](@)) is created. This file is not a [glossary](@), but rather a (machine readable) inventory of all [terminological artifacts](@) that are part of (a specific version of) the [scope's](@) [terminology](@). Ideally, tools would only need to inspect the [MRG](@) of a [scope](@) if they want to use data that is [curated](@) in that [scope](@). Further details are in the [MRG specs](tev2-spec-mrg).
@@ -83,13 +82,16 @@ The Human Readable Glossary or [HRG](@) is a (real) [glossary](@) that humans ar
 <!-- HRGT -->
 We will use the term [HRGT](@) to generically refer to any tool that either produces a [HRG](@) directly, or that produces inputs for other, third party rendering tools that will then generate the [HRG](@). Typically, a [HRGT](@) will extract a subset of the [terminological artifacts](@) from the [MRG](@), sort them, resolve [term refs](@) where appropriate, and do whatever else is necessary to generate (the files that third party tools pick up to) generate the [HRG](@). We expect to see various flavours of this tool, or a single tool that can create [HRGs](@) in different formats, allowing [curators](@) to get the kind of [HRG](@) that is the most appropriate for their purposes. Further details are in the [HRGT specs](tev2-toolbox-hrgt).
 
+<!-- Rendering tool plugins/addons -->
+We envisage that existing 3rd party rendering tools may benefit from extensions (plugins, add-ons) that provide features that help [readers](@) to better understand rendered texts. One example is the [Docusaurus Terminology plugin](https://gitlab.grnet.gr/terminology/docusaurus-terminology) of GRNET that was used in TEv1 (the predecessor of TEv2), which enables the 'sticking out' of terms in the rendered text, providing a popup with a short explanation of the term, and providing a link to the page that documents the concept. While the development of such plugins is outside the scope of TEv2, using them (e.g. by the [HRGT](@)) may be within scope.
+
 <!-- ICT -->
 People that develop these tools, as well as people that contribute to the [curation](@) of [curated texts](@), the [SAF](@), etc., are only human, and sooner or later make a mistake that is hard to find and correct without any help. To facilitate the detection, identification and recovery from such mistakes, there is an [Integrity Checker Tool](tev2-toolbox-ict) (or [ICT](@)). This [ICT](@) tests the integrity of (a selection of) the files that are [curated](@) within a particular [scope](@), i.e. the [SAF](@), the [MRGs](@), and [curated files](@). The integrity checking of other files, e.g. [formatted files](@), such as [HRGs](@), is outside the scope of the [ICT](@). Further details are in the [ICT specs](tev2-toolbox-ict).
 
 ## Terminology Curation
 
 :::info Editor's note
-This section may need to be revised
+This section may need to be revised, and/or moved to the [Curators Manual](man-curators).
 :::
 
 TEv2 assumes that the [curated](@) data resides in an existing [scope directory](@), and that [curated files](@) are expected to be processable by other tools, including, but not limited to [github pages](https://pages.github.com/) or [Docusaurus](https://docusaurus.io/docs/docs-introduction), which are static site generators for web sites that document all sorts of guidance, specifications, etc. Such a [scope directory](@) must be [set up](tev2-installation) in advance.
