@@ -32,13 +32,13 @@ and possibly some other stuff.
 Before this can really be properly specified, we seek to do some experiments to see what is really needed in order to keep it as simple as possible. Therefore, the text that follows must be interpreted as Work in Progress.
 :::
 
-The [HRGT](@) operates on the [MRG](@) of a [scope](@), because it contains (data and/or pointers to) _all_ [terminological artifacts](@) of that [scope](@).
+The [HRGT](@) operates on a single [MRG](@) of a [scope](@), which contains (data and/or pointers to) _all_ [terminological artifacts](@) of that [scope](@).
 
 The construction of a [HRG](@) can be envisaged as
 - selecting the [mrg entries](@) that must appear in the [HRG](@). Selection may depend on the specification of the kinds of [terminological artifacts](@) that should be included, and/or specifying [tags](@) for the (groups of) [artifacts](terminological-artifact@), or specific `id`s;
 - alphabetically sorting these entries;
-- converting each entry into its 'rendered' format, thereby resolving any [term refs](@);
-- concatenating these rendered entries, optionally including some navigation bars (e.g. before a new letter starts);
+- converting each entry into its 'rendered' format, thereby resolving any [term refs](@), adding hyperlinks to the [curated text](@) that the entry relates to, 'meta-data' (e.g. the associated [grouptags](@), contributors, etc.), and anything else, as required for the particular kind of [HRG](@) that is being generated;
+- concatenating these rendered entries, optionally including/inserting some navigation bars (e.g. before a new letter starts);
 - constructing the [HRG](@) by adding (rendered) header- and footer-material and (optionally) licensing information.
 
 When a [HRG](@) is generated that should become the default one for that scope, the [SAF](@) must be updated accordingly. Note though that this is not always necessary. For example, a user may want to create a [HRG](@) for a selected subset of the terminology, e.g. to include as an annex in a paper.
