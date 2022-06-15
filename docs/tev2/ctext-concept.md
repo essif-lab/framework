@@ -43,8 +43,9 @@ A good description allows [readers](@) to learn how the authors of the descripti
 
 </details>
 
-| Name | Req'd | Description |
-| ---- | :---: | ----------- |
+| Name         | Req'd | Description |
+| ------------ | :---: | ----------- |
+| `isa`          | n | `id` of the [terminological artifact](@) of type `concept` for which this is a specialization. |
 | `term`         | Y | Text that is the name of the [concept](@) in (human readable) texts. It is typically used to represent the [concept](@) itself, but also to represent arbitrary/unspecified instances thereof. This text will show as an entry in the [HRG](@).<br/>Examples: 'concept', or 'terminological artifact'. |
 | `fullterm`     | n | Text that can be used as the complete form of the text mentioned in the `term` field.<br/>Example: 'terminological artifact (of a scope)', or '(scoped) terminological artifact'. |
 | `shorterm`     | n | Text that can be used as an abbreviated form of the text mentioned in the `term` field.<br/>Example: 'artifact'. |

@@ -205,6 +205,12 @@ If omitted, it is generated as follows (assuming the [MRG](@) to be used has alr
 
 It is an error if the resulting `id` does not [identify](@) an [MRG entry](@) in the selected [MRG](@). This may mean that the `showtext` has misspellings, the `id` field was not specified where it had to, or the list of `formphrases` in some [MRG entry](@) should have included more elements.
 
+:::info Editor's note
+[The Porter Stemming Algorithm](https://tartarus.org/martin/PorterStemmer/) is a process for removing the commoner morphological and inflexional endings from words in English. Its main use is as part of a term normalisation process that is usually done when setting up Information Retrieval systems. The mentioned site links to lots of freely useable code that the TRRT might want to consider using.
+
+Perhaps the [TRRT](@) may use this tool as a means for generating the `id` field from the `showtext` if necessary. However, we would need to first experiment with that to see whether or not, c.q. to what extent this conversion does what it is expected to do.
+:::
+
 #### `trait` (optional) {#trait}
 
 `trait` [identifies](@) a particular kind of descriptive text that is associated with the [term](@). If omitted (in which case the preceding `#`-character may also be omitted), the [term ref](@) will by default dereference to the text of its [glossary](@) entry. While it is envisaged that `trait` must be a text from a predefined set of allowed/supported texts (e.g. `purpose`, `criteria`, `example-3`), the precise semantics remain to be specified. For now, `trait` shall be constrained to only contain characters in regex `[a-z0-9_-]`.

@@ -72,9 +72,9 @@ The following fields are defined for the `scope` section of a [SAF](@):
 | `scopetag`    | Y | [Scopetag](@) that [curators](@) of this scope have determined for this [terminology](@). The associated [scopedir](@) is specified in the section `scopes`. |
 | `scopedir`    | Y | URL of the location of the [scopedir](@) associated with the [scopetags](@) listed in the `scopetags` field. |
 | `curatedir`   | Y | Path to the directory where all [curated files](@) are located. Full URL is `<scopedir>`/`<curatedir>`.|
-| `glossarydir` | Y | Path to the directory where all [glossary](@) files and [GDFs](@) are located. Full URL is `<scopedir>`/`<glossarydir>`. This directory SHOULD contain one [MRG](@) for every element in the version-section in the [SAF](@). |
-| `mrgfile`     | Y | Name of the [MRG](@) that contains the (default/current) version of the [MRG](@). Full URL is `<scopedir>`/`<mrgfile>`. |
-| `hrgfile`     | Y | Name of the file that contains the (default/current) version of the [HRG](@). Full URL is `<scopedir>`/`<hrgfile>` |
+| `glossarydir` | Y | Path to the directory where all [glossary](@)-related files are located. Full URL is `<scopedir>`/`<glossarydir>`. This directory SHOULD contain one [MRG](@) for every element in the version-section in the [SAF](@), and one or multiple [HRGs](@). It MAY contain other files, e.g. containing instructions, headers, footers or other things that are necessary for generating specific [glossaries](@). |
+| `mrgfile`     | Y | Name of the file that contains the (default/current) [MRG](@) for this [scope](@). Full URL is `<scopedir>`/`<glossarydir>`/`<mrgfile>`. |
+| `hrgfile`     | Y | Name of the file that contains the (default/current) [HRG](@) for this [scope](@). Full URL is `<scopedir>`/`<glossarydir>`/`<hrgfile>`. |
 | `license`     | Y | File in the root of the [scopedir](@) that contains the (default) licensing data. |
 | `statuses`    | n | Ordered list of [tags](@) that are defined in this [scope](@) for specifying stages in the life-cycle of [terminological artifacts](@). The first element in the list represents the first stage, and the last element the last stage in the life-cycle. |
 | `issues`      | n | URL where issues can be reported and handled.|

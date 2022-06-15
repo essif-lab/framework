@@ -118,6 +118,7 @@ The header fields that are specific for `concept`-type descriptions are as follo
 
 | Name         | Req'd | Description |
 | ------------ | :---: | :---------- |
+| `isa`          | n | `id` of the [terminological artifact](@) of type `concept` for which this is a specialization. |
 | `term`         | Y | Text that is used to [identify](@) the [concept](@) (in the context of the [MRG](@), and also to represent arbitrary instances of that [concept](@) in human readable documents, such as a [HRG](@).<br/>Example: 'terminological artifact'. |
 | `fullterm`     | n | Text that can be used as the complete form of the text mentioned in the `term` field.<br/>Example: 'terminological artifact (of a scope)', or '(scoped) terminological artifact'. |
 | `shorterm`     | n | Text that can be used as an abbreviated form of the text mentioned in the `term` field.<br/>Example: 'artifact'. |

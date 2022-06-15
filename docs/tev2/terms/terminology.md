@@ -14,12 +14,12 @@ vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 term: terminology  # Text that is the name of the concept in (human readable) texts.
-fullterm:
+fullterm: terminology (in/of a scope)
 shorterm:
 synonyms:
 glossaryText: "the set of [terms](@) that are used within a single [scope](@) to refer to a single [definition](@), enabling [parties](@) to reason and communicate ideas they have about one or more specific topics."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Terminology"
+title: "Terminology (in/of a Scope)"
 hoverText: "Terminology (in/of a Scope): the set of terms that are used within a single Scope to refer to a single Definition, enabling Parties to reason and communicate ideas they have about one or more specific topics."
 # sidebar_label:
 # hide_table_of_contents: true
