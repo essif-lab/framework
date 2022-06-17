@@ -41,7 +41,7 @@ an alphabetical list of words or phrases with possibly multiple, short explanati
 ### Examples
 Examples include the [NIST Computer Security Resource Center](https://csrc.nist.gov/glossary), [Merriam-Webster](https://www.merriam-webster.com/dictionary/).
 
-### Related Concepts
+### Notes
 
-- [Glossary](@) - this is a list of words with a single meaning, that serves more specific purposes than a dictionary.
-- [Vocabulary](https://en.wikipedia.org/wiki/Vocabulary) - this is a set of familiar words witin a particular/persons's language or field of expertise. A Dictionary can provide the various meanings of each such words.
+- A [Glossary](@) is not a dictionary, but a list of words with a single meaning, that serves more specific purposes than a dictionary.
+- A [Vocabulary](https://en.wikipedia.org/wiki/Vocabulary) is a set of familiar words witin a particular/persons's language or field of expertise. A Dictionary can provide the various meanings of each such words.

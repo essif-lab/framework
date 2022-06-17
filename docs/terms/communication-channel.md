@@ -38,6 +38,3 @@ A [Communication Channel](@) is said to be **secure** if it provides the followi
 - during its entire lifetime, each endpoint will only be used by this [actor](@) (endpoint authentication; note that identification of the [actor](@) that uses an endpoint, or its [principal](@) is NOT required);
 - only the [actors](@) that use an endpoint are capable of transmitting and reading messages through that channel (message secrecy - typically obtained by encrypting the messages);
 - the receiver of a message can determine whether or not the message has been received as it was transmitted (message integrity).
-
-### Related Concepts
-- [Communication Session](@)

@@ -41,9 +41,3 @@ Entity that is capable of actually executing [actions](@) (acting, doing things)
 - Stones, pictures, ideas, etc. do not qualify.
 - Software applications qualify, provided they are actually running on hardware. An app that is just sitting e.g. on a mobile phone but isn't executed does not qualify.
 - Enterprises, governments, and other [organizations](@) do not qualify.
-
-### Related concepts
-- [digital actor](@)
-- [peer actor](@)
-- [agent](@)
-- [principal](@)

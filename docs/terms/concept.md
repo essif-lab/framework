@@ -36,13 +36,6 @@ Working together is easier when you and your peers share the same ideas. We need
 ### Criteria
 A (description/specification of a) Concept MUST be [intensionally defined](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions), i.e. associated with a criterion that can be used to determine whether or not someone or something qualifies as (an instance of) that Concept, and that has the property that it has been shown that the vast majority of contributors and other users apply it in the same manner in different situations (i.e. they arrive at the same conclusion as to whether or not someone or something qualifies under that criterion in any given situation).
 
-### Related Concepts
-* [Term](@) is a label that is used in some context to refer to a [Concept](@)[^2], the set of entities that satisfy the concept's criteria, or an arbitrary element of that set. Different contexts may use different terms to refer to a single concept. In a single context, a single term should be used to refer to an individual concept.
-
-* [Scope](@) is related in several ways. First, there is (precisely, or at most one) Scope that governs the definition/specification of the Concept. Second, there may be (any number of) Scopes that use the Concept, i.e. within which Terms are defined that refer to the Concept
-
-* [Mental(or Conceptual) Model](@) is a collection of concepts, relations between such concepts, and constraint rules that (elements of) such concepts and relations must satisfy. Such [models](https://en.wikipedia.org/wiki/Conceptual_model) are used to help people know, understand, or simulate a topic that the model represents.
-
 ### Notes
 There is an important [distinction between concepts and the (multitude of) terms](https://simple.wikipedia.org/wiki/Concept) (names, labels) that we need to be able to talk and reason (argue) about them. Please consider that
 

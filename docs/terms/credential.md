@@ -48,8 +48,6 @@ A **credential** is the composition of
 - The term '[subject](@)' is often used in conjunction with a credential, as in 'the [subject](@) of the credential'. This phrase is ambiguous. It may refer to the [party](@) (or [actor](@)) to which the credential was issued. It may also be used to indicate the [entity](@) that every claim is made about, which needs not be the same.
 - Anyone can create credentials containing arbitrary statements about anyone or anything. The mere fact that a statement comes in the form of a credential (i.e. with a signature) doesn't imply that it is true.
 - The signature on a credential may have other meanings as well. For example, a [party](@) may choose to only sign the credential data if it is convinced of the truth of the statements, in which case the credential 'payload' can be seen as an excerpt of the [knowledge](@) of that [party](@). [Parties](@) that sign credential data need to advertise what (other) meaning(s) their signature has, so that other [parties](@) may decide whether or not they want to use that data for specific purposes.
-### Related Concepts
-- [verifiable credentials](https://www.w3.org/TR/vc-data-model/#dfn-verifiable-credentials)
 
 ### References:
 - W3C VC [definition of 'credential'](https://www.w3.org/TR/vc-data-model/#dfn-credential)

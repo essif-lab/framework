@@ -3,7 +3,7 @@
 id: documentation-interop
 # TEv2: generic front-matter for curated texts
 scope: essiflab
-termtype: concept
+termtype: term
 termid: documentation-interop
 formphrases: documentation-interop{ss}
 grouptags:
@@ -12,11 +12,11 @@ created: 2022-06-06
 updated: 2021-06-01
 vsntag: v0.1
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
+# TEv2: type-specific front-matter for type `term`
 isa:
-term: Documentation # Text that is the name of the concept in (human readable) texts.
+term: Documentation interop # Text that is the name of the concept in (human readable) texts.
 fullterm: "Documentation Interoperability"
-shorterm:
+shorterm: Documentation interop
 synonyms:
 glossaryText: "the property that a documentation system of making its content comprehensible for a variety of people that come from different backgrounds."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):

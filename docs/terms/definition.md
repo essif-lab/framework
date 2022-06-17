@@ -56,13 +56,6 @@ A **definition** is a text that comprises at a minimum:
 - The definition of the term [definition](@) (a) is defined in, and hence valid in the scope `eSSIFLab`, (b) specifies a criterion (see the `Criteria` section above), and (d) has a name (i.e. `definition`) associated with it. Since it satisfies the criteria of `definition`, it can be referred to as 'the definition of `definition`'.
 - The [concepts](@) defined within the scope eSSIFLab have definitions associated with them, where the criteria, relevance and terms are defined in the [concept-file](@) of that concept.
 
-### Related Concepts
-* [Term](@) is a label that is used in some context to refer to a [Concept](@), the set of entities that satisfy the concept's criteria, or an arbitrary element of that set. Different contexts may use different terms to refer to a single concept. In a single context, a single term should be used to refer to an individual concept.
-
-* [Scope](@) is related in several ways. First, there is (precisely, or at most one) Scope that governs the definition/specification of the Concept. Second, there may be (any number of) Scopes that use the Concept, i.e. within which Terms are defined that refer to the Concept
-
-* [Mental(or Conceptual) Model](@) is a collection of concepts, relations between such concepts, and constraint rules that (elements of) such concepts and relations must satisfy. Such [models](https://en.wikipedia.org/wiki/Conceptual_model) are used to help people know, understand, or simulate a topic that the model represents.
-
 ### Notes
 
 Note that this definition satisfies itself. Also note that a definition may be used in multiple scopes, where a scope that wants to use the definition that has been defined in another scope, may replace that name with one of its own choosing. This way the meaning expressed by the definition remains preserved.
