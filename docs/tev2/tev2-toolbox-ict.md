@@ -137,7 +137,7 @@ Integrity checks for the `entries` section consist of one part that is generic f
 - `grouptags` MUST be a list of [grouptag](@) elements.
 - `license` MUST be an existing file in the directory pointed to by `scopedir`.
 - `status` SHOULD match an element in the list `scope.statuses` of the [SAF](@).
-- `locator`, if specified, MUST have a reable resource (file) at `scopedir`/`curatedir`/`locator`, where `scopedir` and `curatedir` are specified in the [SAF](@).
+- `locator`, if specified, MUST have a readable resource (file) at `scopedir`/`curatedir`/`locator`, where `scopedir` and `curatedir` are specified in the [SAF](@).
 - `navurl`, if specified, MUST return an HTML-resource when specified as the URL in a HTTP(S) request method `GET` or `HEAD`.
 
 For specific kinds of [MRG entries](@), the following additional constraints MUST be satisfied:

@@ -29,12 +29,12 @@ The (newly generated) [MRG](@) is meant to be processed by the other tools in th
 
 ## Generating an MRG
 
-Typically, the [MRGT](@) uses the [Scope Administration File](SAF@) to learn what it has to generate, as follows.
+Typically, the [MRGT](@) uses the [Scope Administration File](SAF@) to learn what it has to generate, by executing the following steps in the provided sequence:
 
-- First, it creates the [MRG](@) `terminology` section, which consists of copying relevant fields from the appropriate `versions` element in the [SAF](@).
-- Second, it processes the list of [term selection criteria](@) from the `termselcrit` field from the `versions` element of the [SAF](@), so as to create the set of  [terminological artifacts](@) for each of which an [MRG entry](@) needs to be created. Then, the [MRG](@) creates the set of [scopetags](@) that identify the [scopes](@) in which these [terminological artifacts](@) are [curated](@), and for each of them, obtains the corresponding [scopedir](@) (from the `scopes` section of the [SAF](@)). Using the set of [scopetags](@) and associated [scopedirs](@), it creates the `scopes` section (of the [MRG](@)).
-- Third, the `entries` section of the [MRG](@) is created, and one [MRG entry](@) is created for each of the elements from the set of [terminological artifacts](@). The structure of each such [entry](mrg-entry@) depends on the type of the [terminological artifact](@), as specified below.
-- Finally, the result is put at the location as specified by the [SAF](@), and the [SAF](@) itself is updated as necessary.
+1. it creates the [MRG](@) `terminology` section, which consists of copying relevant fields from the appropriate `versions` element in the [SAF](@).
+2. it processes the list of [term selection criteria](@) from the `termselcrit` field from the `versions` element of the [SAF](@), so as to create the set of [terminological artifacts](@) for each of which an [MRG entry](@) needs to be created. Then, the [MRG](@) creates the set of [scopetags](@) that identify the [scopes](@) in which these [terminological artifacts](@) are [curated](@), and for each of them, obtains the corresponding [scopedir](@) (from the `scopes` section of the [SAF](@)). Using the set of [scopetags](@) and associated [scopedirs](@), it creates the `scopes` section (of the [MRG](@)).
+3. the `entries` section of the [MRG](@) is created, and one [MRG entry](@) is created for each of the elements from the set of [terminological artifacts](@). The structure of each such [entry](mrg-entry@) depends on the type of the [terminological artifact](@), as specified below.
+4. the result is put at the location as specified by the [SAF](@), and the [SAF](@) itself is updated as necessary.
 
 The [MRGT](@) logs conditions that prevent it from properly:
 
@@ -50,7 +50,7 @@ The [MRGT](@) comes with documentation that enables developers to ascertain its 
 
 ### Creating an MRG Entry
 
-An [MRG entry](@) is either a literal copy of an (existing) [MRG entry](@) that is found in an [MRG](@) that lives in another [scope](@), or it is constructed from a [curated file](@).
+An [MRG entry](@) is either a literal copy of an (existing) [MRG entry](@) that is found in an [MRG](@) that lives in another [scope](@), or it is constructed from a [curated file](@). [Curated files](@) live in (one of the subdirectories of) the directory specified in the `curatedir` field of hte [SAF](@).
 
 Constructing an [MRG entry](@) from a [curated file](@) is done by first creating the fields that are common for all [MRG entries](@), and then adding fields that are specific for the type of [terminological artifact](@) that the [MRG entry](@) describes.
 
