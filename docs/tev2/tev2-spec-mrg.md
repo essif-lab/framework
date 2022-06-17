@@ -40,6 +40,7 @@ A Machine Readable Glossary (MRG) is a YAML (or JSON) file that has three sectio
 terminology: # the fields below must match the corresponding data in the SAF
   scopetag: tev2 # scope, the terminology of which is contained in this MRG
   scopedir: https://github.com/essif-lab/framework/tree/master/docs/tev2
+  curatedir: terms
   vsntag: v0.9.4
   altvsntags: [ latest ]
   license: LICENSE.md
@@ -59,6 +60,7 @@ The following fields are defined for the sections `terminology`:
 | ---------- | :---: | :---------- |
 | `scopetag`   | Y | [Scopetag](@) of the [scope](@) in which the [MRG](@) is defined. This is the [scopetag](@) that the [curators](@) of the [scope](@) have chosen for this [scope](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `scopedir`   | Y | URL that locates the [scope directory](@) associated with that [scope](@). |
+| `curatedir`  | Y | Path to the directory where all [curated files](@) are located. This directory may contain subdirectories to allow [curators](@) to organize the files in any way they see fit. Full URL is `<scopedir>`/`<curatedir>`.|
 | `vsntag`     | Y | [versiontag](@) by which the [terminology](@) of this [MRG](@) can be distinguished from the other versions of the [terminology](@) (in other [MRGs](@)). Its value MUST match the `vsntag` field of the corresponding `versions` section in the [SAF](@) |
 | `altvsntags` | n | List of alternative [versiontags](@) that can be used to [identify](@) this version. Each of the values MUST be in the list of [versiontags](@) in the `altvsntags` field of the the corresponding `versions` section in the [SAF](@). |
 | `license`    | n | File that contains the (default) licensing conditions. Full URL is `scopedir`/`license`. Its value MUST match the `license` field of the corresponding `versions` section in the [SAF](@), or if that isn't specified, the `license` field of the `scope` section in the [SAF](@). |
@@ -90,9 +92,9 @@ An [MRG](@) consists of a list of [MRG entries](@), the purpose of which is that
 | `vsntag`       | n | [Versiontag](@) that identifies the version of the [terminological artifact](@) that this [MRG entry](@) documents (not to be confused with the version of a [terminology](@) of which this [terminological artifact](@) is a part).<br/>Must satisfy regex `[a-z0-9_-\.]+`. |
 | `commit`       | n | [Versiontag](@) that is a (git/gitlab) commit hash of the latest update of the [terminological artifact](@). |
 | `contributors` | n | Text that shows (or refers to) the people that have contributed to the texts related to this term. |
-| `locator`      | n | Text that identifies the file that holds the [curated text](@) of the [terminological artifact](@) that this [MRG entry](@) describes, relative to the [scopedir](@) that holds the [curated text](@). The full URL of the [curated text](@) is `scopedir`/`curatedir`/`locator`, where `scopedir` and `curatedir` can be found in the [SAF](@) (which is in the root of `scopedir`). |
+| `locator`      | n | Text that identifies the file that holds the [curated text](@) of the [terminological artifact](@) that this [MRG entry](@) describes. The full URL of the [curated text](@) is `scopedir`/`curatedir`/`locator`, where `scopedir` and `curatedir` can be found in the [SAF](@) (which is in the root of `scopedir`). Note that `locator` may contain a path. |
 | `navurl`       | n | URL that locates a human readable, rendered version of the [curated text](@) of the [terminological artifact](@) that this [MRG entry](@) describes. This URL is used to resolve [term refs](@) that refer to this [terminological artifact](@). |
-| `headingids`    | n | List of texts that can be used as a [markdown 'heading-ids' field](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids). |
+| `headingids`   | n | List of texts that can be used as a [markdown 'heading-ids' field](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids). |
 
 ## MRG Entries - Type-specific fields
 
