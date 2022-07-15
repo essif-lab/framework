@@ -100,6 +100,7 @@ const sidebars = {
           link: {type: 'doc', id: 'tev2/ctext'},
           items:
           [ 'tev2/ctext-concept',
+            'tev2/ctext-term',
             'tev2/ctext-pattern',
           ],
         },
