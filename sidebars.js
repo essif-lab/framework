@@ -99,13 +99,14 @@ const sidebars = {
           label: 'Curated Texts',
           link: {type: 'doc', id: 'tev2/ctext'},
           items:
-          [ 'tev2/tev2-spec-term-ref',
-            'tev2/ctext-concept',
+          [ 'tev2/ctext-concept',
+            'tev2/ctext-term',
             'tev2/ctext-pattern',
           ],
         },
+        'tev2/tev2-spec-term-ref',
         { type: 'category',
-          label: 'Toolbox',
+          label: 'Curator\'s Toolbox',
           link: {type: 'doc', id: 'tev2/tev2-toolbox'},
           items:
           [ 'tev2/tev2-toolbox-ict',
