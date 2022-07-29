@@ -45,7 +45,7 @@ The tools contained in the [TEv2 toolbox](@) use [front-matter](curated-text-hea
 
 TEv2 has specified:
 - [generic TEv2 front-matter](../ctext#generic-header-fields) that every [curated text](@) must have (unless it is optional), and
-- [type-specific front-matter](../ctext#type-specific-header-fields) for [curated texts](@) that document a particular kind of [terminological artifact](@).
+- [type-specific front-matter](../ctext#type-specific-header-fields) for [curated texts](@) that document a particular kind of [knowledge artifact](@).
 
 ## Purpose
 
@@ -92,5 +92,5 @@ hide_table_of_contents: true
 ## Notes
 
 :::info Editor's note
-We may want to think a bit more about TEv2 front matter. While our experience has shown that it is a good practice to use comments to dinstinguish between the various uses of front matter (basically creating 'header sections'), it isn't always clear what should go in which section. Consider the field `glossaryText`. It was decided to put it in because practice showed that while automated generation may work in many (if not most) cases, it does not work in all cases as we'd like it to. So where does it belong? One might argue that it belongs in the generic TEv2 header, so that every [terminological artifact](@) might have one. But do we really want all such artifacts to be able to appear in a [HRG](@)? Or would we want to put it in a (not yet defined) TEv2-HRG header section, freeing the way for all sorts of 'added-value' [HRG](@) generation features?
+We may want to think a bit more about TEv2 front matter. While our experience has shown that it is a good practice to use comments to dinstinguish between the various uses of front matter (basically creating 'header sections'), it isn't always clear what should go in which section. Consider the field `glossaryText`. It was decided to put it in because practice showed that while automated generation may work in many (if not most) cases, it does not work in all cases as we'd like it to. So where does it belong? One might argue that it belongs in the generic TEv2 header, so that every [knowledge artifact](@) might have one. But do we really want all such artifacts to be able to appear in a [HRG](@)? Or would we want to put it in a (not yet defined) TEv2-HRG header section, freeing the way for all sorts of 'added-value' [HRG](@) generation features?
 :::

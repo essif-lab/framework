@@ -9,11 +9,11 @@ formphrases: scopetag{ss}, scope-tag{ss}
 grouptags:
 status: proposed
 created: 2022-06-06
-updated: 2022-06-06
+updated: 2022-07-28
 vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
-isa: grouptag
+isa: tag
 term: scopetag  # Text that is the name of the concept in (human readable) texts.
 fullterm: Scopetag (of/within a Scope)
 shorterm:
@@ -36,7 +36,7 @@ A **Scopetag** is a [tag](@) that is used to [identify](@) [scopes](@), e.g. in 
 
 Scopetags [identify](@) a [scope](@) (from within a given [scope](@)), and hence can be used (within that given [scope](@)) to disambiguate [terms](@).
 
-Within its [scope](@) a scopetag may also be used as a [grouptag], in which case it represents all [terminological artifacts](@) within that [scope](@).
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
 ### Criteria
 A **Scopetag** (of/within a [scope](@)) is a [tag](@) that is used within that [scope](@) to [identify](@) itself or other [scopes](@). It satisfies the regex `[a-z0-9_-]+`.

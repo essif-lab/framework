@@ -184,7 +184,7 @@ If omitted (in which case the preceding `:`-character may also be omitted from t
 
 #### `id` (optional) {#id}
 
-`id` is a text that satisfies regex `[a-z0-9_-]+`, and [identifies](@) a [terminological artifact](@) in a specific version of the  [terminology](@) of a specific [scope](@). It will be matched against the `id` fields of [MRG entries](@) in the [MRG](@) that documents said [terminology](@).
+`id` is a text that satisfies regex `[a-z0-9_-]+`, and [identifies](@) a [knowledge artifact](@) in a specific version of the  [terminology](@) of a specific [scope](@). It will be matched against the `id` fields of [MRG entries](@) in the [MRG](@) that documents said [terminology](@).
 
 If omitted, it is generated as follows (assuming the [MRG](@) to be used has already been [identified](@)):
 
@@ -193,7 +193,7 @@ If omitted, it is generated as follows (assuming the [MRG](@) to be used has alr
 - convert every sequence of characters `[^A-Za-z_-]+` to (a single) `-` character.
 - if the resulting `id` matches an element in the list of texts in the `formphrases` field of an [MRG entry](@), then replace `id` with the contents of the `id`-field of that same [MRG entry](@).[^3]
 
-[^3]: It is convenient to allow elements of the `formphrases` list to contain 'macro's, i.e. shorthand syntax that represent regexes that allow for extended matching. Consider a 'macro' `{ss}` as shorthand for regex `(?:['']?s|\(s\))?` (or a macro `{yies}` as shorthand for regex `(y|y['']s|ies)`). An `id` is said to match such an element if and only if the regex that consists of the list element (with the macro replaced with the regex that it is shorthand for) matches that `id`. Here are a few examples:<br/>- the following `id`s match `actor{ss}`: "actor", "actors", "actor's", "actor's", and "actor(s)".<br/>- similarly, `part{yies}` matches: "party", "party's", "party's", and "parties".
+[^3]: It is convenient to allow elements of the `formphrases` list to contain 'macro's, i.e. shorthand syntax that represent regexes that allow for extended matching. Consider a 'macro' `{ss}` as shorthand for regex `(?:['']?s|\(s\))?` (or a macro `{yies}` as shorthand for regex `(y|y['']s|ies)`, or a macro `{ying}` for regex `(yer|ying|ies|ied)`). An `id` is said to match such an element if and only if the regex that consists of the list element (with the macro replaced with the regex that it is shorthand for) matches that `id`. Here are a few examples:<br/>- the following `id`s match `actor{ss}`: "actor", "actors", "actor's", "actor's", and "actor(s)".<br/>- similarly, `part{yies}` matches: "party", "party's", "party's", and "parties".
 
 It is an error if the resulting `id` does not [identify](@) an [MRG entry](@) in the selected [MRG](@). This may mean that the `showtext` has misspellings, the `id` field was not specified where it had to, or the list of `formphrases` in some [MRG entry](@) should have included more elements.
 
@@ -246,8 +246,8 @@ where:
 :::info Editor's note
 The implementation of the `<Term ...>` ... `</Term>` construct will differ from that which is used by eSSIF-Lab, because a [term](@) that is defined in this, or another [scope](@), lives in the [curated file](@) at `scopedir`/`curatedir`/`locator`, where
 - `scopedir` is the URL that locates the [scope directory](@) of that [scope](@);
-- `curatedir` is the directory in that `scopedir` where [terminological artifacts](@) (c.q. [curated texts](@)) live; its value is found both in the [SAF](@) and in the [MRG](@) of the [scope](@);
-- `locator` is the path (including filename), relative to `scopedir`/`curatedir`/, of the [curated file](@) that describes the [terminological artifact](@) that is being referred to.
+- `curatedir` is the directory in that `scopedir` where [knowledge artifacts](@) (c.q. [curated texts](@)) live; its value is found both in the [SAF](@) and in the [MRG](@) of the [scope](@);
+- `locator` is the path (including filename), relative to `scopedir`/`curatedir`/, of the [curated file](@) that describes the [knowledge artifact](@) that is being referred to.
 :::
 
 </TabItem>

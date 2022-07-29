@@ -9,19 +9,19 @@ formphrases: term{ss}, word{ss}, phrase{ss}
 grouptags:
 status: proposed
 created: 2022-06-06
-updated: 2022-06-06
+updated: 2022-07-29
 vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 isa: identifier
-term: term  # Text that is the name of the concept in (human readable) texts.
+term: term # Text that is the name of the concept in (human readable) texts.
 fullterm:
 shorterm:
 synonyms:
-glossaryText: "a word or phrase (i.e.: text) that is used in at least one [scope](@)/context to represent a specific [concept](@) or other [terminological artifact](@)."
+glossaryText: "a word or phrase (i.e.: text) that is used in at least one [scope](@)/context to represent specific [knowledge artifacts](@)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Term"
-hoverText: "Term: a word or phrase (i.e.: text) that is used in at least one Scope/context to represent a specific Concept or other Terminological Artifact."
+hoverText: "Term: a word or phrase (i.e.: text) that is used in at least one Scope/context to represent specific Knowledge Artifacts, e.g. Concepts, Relations or Mental Models."
 # sidebar_label:
 # hide_table_of_contents: true
 ---
@@ -32,33 +32,30 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 ### Summary
-A Term is a word or phrase (i.e.: text) that is used in at least one [scope](@)/context to represent a specific [concept](@) or other [terminological artifact](@).
+A **Term** is a word or phrase (i.e.: text) that is used in at least one [scope](@)/context to represent specific [knowledge artifacts](@), e.g. [concepts](@), [relations](@) or [mental models](@). We use the phrase '[scoped term](@)' to refer to a term when it is used in one specific [scope](@).
 
-As a consequence:
+Thus:
 - a single term may (and typically does) have different meanings ([semantics](@)) in different [scopes](@)/contexts. For example, in the context of a beauty-salon, the term 'nail' has a different meaning than in the context of constructing buildings.
 - different terms (in the same, or different [scopes](@)/contexts) may have the same meaning (i.e. represent the same [concept](@) ([synonymity](https://en.wikipedia.org/wiki/Synonym), [alias](https://www.merriam-webster.com/dictionary/alias)).
 
-The precise meaning of a term thus depends on the [scope](@)/context in which it is used. We use the phrase [scoped term](@) to refer to a term in a particular [scope](@)/context, and hence is part of the [terminology](@) of that [scope](@), and means whatever [concept](@) it represents in that [scope](@)
+The precise meaning of a term thus depends on the [scope](@)/context in which it is used. We use the phrase [scoped term](@) to refer to a term that is part of one particular [scope](@)/context, which thus refers to a single [concept](@) (or other [knowledge artifact](@)), and hence is unambiguous.
 
 The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
-[TEv2](@) uses [curated texts](@) within a [scope](@) to describe [concepts](@) and other [terminological artifacts](@). See [TEv2 Overview](tev2-overview) for further details.
-
 ### Purpose
-Understanding words or phrases uttered by others requires that we are able to 'translate' them terms into terms that we habitually use. While this is mostly an automatism, and it often is not necessary to be all that precise, this may be different when they relate to stuff we find important. The ability to represent a specific [concept](@) with a specific text or phrase, where this 'representation' is limited to a specific (or several) context(s), helps us to better interpret these words, which is: to properly understand what others actually try to convey in spoken or written language.
+Understanding words or phrases uttered by others requires that we are able to 'translate' them into terms that we habitually use, i.e. with the meaning of which we are familiar. While this is mostly an (unconscious) automatism, and it is often also not necessary to be very precise, this may be different when they relate to stuff we find important. The ability to represent a specific [concept](@) (or other [knowledge artifact](@)) with a specific text or phrase, where this 'representation' is limited to a specific (or several) context(s), helps us to better interpret these words, which is: to properly understand what others actually try to convey in spoken or written language.
 
 ### Criteria
-A term MUST be a word or phrase (i.e.: text) that is part of at least one [scope](@)/context, and for all [scopes](@)/contexts of which it is a part, a [scoped term](@) must exist that
-- instantiates that term,
-- represents a specific [terminological artifacts](@), and
-- can be used to refer to the further documentation (e.g. descriptions, [definitions](@), etc.) about the [terminological artifact](@).
+A term MUST be a word or phrase (i.e.: text) that is part of at least one [scope](@)/context, and for all [scopes](@)/contexts of which it is a part, a [scoped term](@) must exist in some [scope](@), where the [scoped term](@):
+- is the same word or phrase,
+- represents a specific [knowledge artifact](@) tha tis part of the [knowledge](@) associated with that [scope](@).
 
 ### Notes
-There is an important [distinction](https://simple.wikipedia.org/wiki/Concept) between concepts and the (multitude of) terms (names, labels) that we need to be able to talk and reason (argue) about them. Please consider that
+There is an important [distinction](https://simple.wikipedia.org/wiki/Concept) between [concepts](@) and the (multitude of) terms (names, labels) that we need to be able to talk and reason (argue) about them. Please consider that
 
-* different terms are used in different contexts for representing a single concept;
-* in different contexts, a single term may represent different concepts
-* to resolve terminological disputes, which usually are about the 'correct' meaning of a term, try to establish the criteria that the different participants use for the concept behind the term. That helps participants understand each others (different) positions, and provides a better basis for resolving the conflict.
+* different [terms](@) are used in different contexts for representing a single [concept](@);
+* in different contexts, a single [term](@) may represent different [concepts](@);
+* [to resolve terminological disputes](http://resolver.tudelft.nl/uuid:964a90da-da81-4d38-9f45-84f3f5fa96b3), which usually are about the 'correct' meaning of a [term](@), try to establish the criteria that the different participants use for the concept behind the term. That helps participants understand each others (different) positions, and provides a better basis for resolving the conflict.
 
 ---
 ### Footnotes

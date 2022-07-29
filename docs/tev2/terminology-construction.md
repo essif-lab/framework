@@ -98,8 +98,9 @@ This syntax is processed as follows:
 
 ### Renaming a term in the tuple set {#syntax-rename}
 
-A [curator](@) can rename a [term](@) in the tuple set, using the following syntax (whitespace is disregarded):
-- `rename <termid> <term>`.
+In analogy with [namespaces](https://en.wikipedia.org/wiki/Namespace), we accommodate for the renaming of [terms](@) as they are 'imported' from [terminologies](@) other than the one that we are constructing. However, the analogy breaks down in the sense that it is not only a [term](@) that should be renameable (which is sufficient for [namespaces](https://en.wikipedia.org/wiki/Namespace)), but also certain attributes may need to be changed.
+
+- `rename <termid> [ <fieldmodifierlist> ]`.
 
 <details>
 <summary>Syntax examples</summary>
@@ -112,13 +113,16 @@ A [curator](@) can rename a [term](@) in the tuple set, using the following synt
 
 where:
 
-| symbol     | description |
-| ---------- | :---------- |
-| `<termid>` | the [termid](@) of the tuple that will be selected for renaming. |
-| `<term>`   | the new value for the `term` element in the tuple; it will effectively overwrite the existing value }
+| symbol                | description |
+| --------------------- | :---------- |
+| `<termid>`            | the [termid](@) of the tuple that will be selected for renaming. |
+| `<fieldmodifierlist>` | a (non-empty) comma-separated list of `<fieldmodifier>`s. |
+| `<fieldmodifier>`     | a `<key>: <value>` (or `{ <key>: <value> }` pair - to be decided. |
+| `<key>`               | a text that identifies a field in an [MRG entry], the value of which is to be changed, e.g. `formphrases`, `grouptags`, etc.   |
+| `<value>`             | a text that will replace the existing text of the field identified by `<key>`.  |
 
-This syntax is processed by first selecting the tuple (in the tuple set that is being constructed) that has the specified `<termid>` as its `termid`-field, and then replacing the value of the `term` field with the value of `<term>` as specified.
+This syntax is processed by first selecting the tuple (in the tuple set that is being constructed) that has the specified `<termid>` as its `termid`-field, and then sequentially processing the `<fieldmodifier>`s in the `<fieldmodifierlist>`, which means that the existing text of the field that is identified by the `<key>` element of the `<fieldmodifier>` is replaced by the text specified by the `<value>` element of that `<fieldmodifier>`.
 
 :::info Editor's note
-The ability to rename terms as they are imported may introduce some issues related to other field-names, such as `termid`, `formphrases`, and perhaps others. Perhaps this syntax should therefore be extended, enabling [curators](@) to simultaneously change these (and other) fields in the [MRG entry](@).
+The ability to rename terms as they are imported may introduce some issues related to other field-names, such as `termid`, `formphrases`, `term`, `fullterm`, `shorterm`, `synonyms`, `glossaryText`s and `hoverText`s. Perhaps this syntax should therefore be extended, enabling [curators](@) to simultaneously change these (and other) fields in the [MRG entry](@).
 :::

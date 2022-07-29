@@ -83,7 +83,7 @@ The columns in the following table are defined as follows:
 | `syntax` | | n | * | This argument has no value. If present, the syntax of all (YAML) fields in the file is checked against their specifications (see e.g. [SAF specs](tev2-spec-saf), [terminology construction](terminology-construction), [MRG specs](tev2-spec-mrg), [Curated Texts](ctext), [term refs](tev2-spec-term-ref)). |
 | `vsntag` | `<vsntag>` | | `-mrg` | [versiontag](@) that is used to select the version of the [MRG](@) to be checked. The [MRG](@) that is selected will either have `<vsntag>` as the contents of the field `terminology.vsntag`, or as an element in the list of `terminology.alvsntags`.  |
 | `id` | `<id>` | n | -txt | Text that [identifies](@) a particular [curated file](@). The [curated file](@), whose (front-matter) field `id` matches this parameter, will be integrity-checked. |
-| `termtypes` | `<termtypes>` | n | -txt | List of texts that serve to identify a specific kind of [terminological artifact](@), e.g. `concept`, or `pattern`. Every [curated file](@), whose (front-matter) field `termtype` appears as an element in the `<termtypes>` list, will be integrity-checked. |
+| `termtypes` | `<termtypes>` | n | -txt | List of texts that serve to identify a specific kind of [knowledge artifact](@), e.g. `concept`, or `pattern`. Every [curated file](@), whose (front-matter) field `termtype` appears as an element in the `<termtypes>` list, will be integrity-checked. |
 | `grouptags` | `<grouptags>` | n | -txt | List of [grouptags](@). Every [curated file](@), whose (front-matter) field `grouptags` has an element that also appears as an element in the `<grouptags>` list, will be integrity-checked. |
 
 ## Integrity Checks

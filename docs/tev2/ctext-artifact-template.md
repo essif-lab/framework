@@ -33,7 +33,7 @@ The entire section on Terminology Engine v 2 (TEv2) is still under construction.
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
-This document specifies what specifics of [curated texts](@) that describe [terminological artifacts](@) of type <Mark>`Artifact`</Mark>. The reader is assumed to be familiar with the [generic structure of a curated text](ctext).
+This document specifies what specifics of [curated texts](@) that describe [knowledge artifacts](@) of type <Mark>`Artifact`</Mark>. The reader is assumed to be familiar with the [generic structure of a curated text](ctext).
 
 ## Introduction
 
@@ -43,7 +43,7 @@ A good description allows [readers](@) to <Mark>[describe what a good descriptio
 
 ## Header {#header}
 
- In this section, we describe the header fields that are specific for [terminological artifacts](@) of type <Mark>`Artifact`</Mark>:
+ In this section, we describe the header fields that are specific for [knowledge artifacts](@) of type <Mark>`Artifact`</Mark>:
 
 <details>
   <summary>Legend</summary>

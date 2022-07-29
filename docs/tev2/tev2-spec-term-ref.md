@@ -66,7 +66,7 @@ If omitted, a default [scope](@) will be used, which is the [scope](@) from whic
 If omitted (in which case the preceding `:`-character may also be omitted), its value will be the default, which is determined by the [curators](@) of that [scope](@) (the [MRG](@) that has the [terminology](@) that contains the (scoped) term](scoped-term@) that is being referenced, is specified in the [SAF](@) of that [scope](@), in the appropriate `scopes.mrgfile`-field). A `vsntag` is only valid if it appears as the value of the `vsntag` field or an element of the `altvsntags` field in one of the list-elements of the `versions` field in the [SAF](@) of the [scope](@).
 
 :::info Editor's note
-It has been suggested to provide [term ref](@) syntax that allows one to refer to a [terminological artifact](@) from a [terminology] that was 'current'/'latest'/... at a particular date. The [SAF](@) [versioning specifications](tev2-spec-saf#versions) already cater for `from` and `to` dates, but everything else needs to be worked out.
+It has been suggested to provide [term ref](@) syntax that allows one to refer to a [knowledge artifact](@) from a [terminology] that was 'current'/'latest'/... at a particular date. The [SAF](@) [versioning specifications](tev2-spec-saf#versions) already cater for `from` and `to` dates, but everything else needs to be worked out.
 :::
 
 ### Alternative notation {#termref-alt}
