@@ -52,7 +52,7 @@ scope:
   mrgfile: glossaries/mrg.json # file that contains the (default/current) machine readable glossary. Full URL is `scopedir`/`mrgfile`
   hrgfile: glossaries/glossary # file that contains the (default/current) human readable glossary. Full URL is `scopedir`/`hrgfile`
   license: LICENSE.md # file that contains the (default/current) licensing conditions. Full URL is `scopedir`/`license`
-  statuses: [ proposed, approved, deprecated ] # list of status tags that are defined for terminological artifacts in this scope
+  statuses: [ proposed, approved, deprecated ] # list of status tags that are defined for knowledge artifacts in this scope
   issues: https://github.com/essif-lab/framework/issues # URL where issues can be raised and handled
   website: https://essif-lab.github.io/framework/docs/tev2/tev2-overview # home page of the terminology
   slack: https://trustoverip.slack.com/archives/C01BBNGRPUH # slack channel for discussions
@@ -76,7 +76,7 @@ The following fields are defined for the `scope` section of a [SAF](@):
 | `mrgfile`     | Y | Name of the file that contains the (default/current) [MRG](@) for this [scope](@). Full URL is `<scopedir>`/`<glossarydir>`/`<mrgfile>`. |
 | `hrgfile`     | Y | Name of the file that contains the (default/current) [HRG](@) for this [scope](@). Full URL is `<scopedir>`/`<glossarydir>`/`<hrgfile>`. |
 | `license`     | Y | File in the root of the [scopedir](@) that contains the (default) licensing data. |
-| `statuses`    | n | Ordered list of [tags](@) that are defined in this [scope](@) for specifying stages in the life-cycle of [terminological artifacts](@). The first element in the list represents the first stage, and the last element the last stage in the life-cycle. |
+| `statuses`    | n | Ordered list of [tags](@) that are defined in this [scope](@) for specifying stages in the life-cycle of [knowledge artifacts](@). The first element in the list represents the first stage, and the last element the last stage in the life-cycle. |
 | `issues`      | n | URL where issues can be reported and handled.|
 | `website`     | n | URL for the home page of the [terminology](@). |
 | `slack`       | n | URL for the slack channel for discussions. |
@@ -91,7 +91,7 @@ It might be more practical to move all of the stuff that is particular to this s
 
 ### SAF Scopes - Mapping Scopetags and Scopedirs {#scopes}
 
-The `scopetags` section is a list that specifies a mapping between [scopetags](@) as they are used in this [scope](@), the associated [scopedir]((@)) and if necessary, other paths and filenames for [terminological artifacts](@) within the [scope](@). The latter is only required when specifying the [scope](@) for which the [SAF](@) is created/maintained, as for other [scopes](@), such other paths and filenames can readily be found by inspecting the [SAF](@) that is located in the root of the [scopedir](@) of such [scopes](@).
+The `scopetags` section is a list that specifies a mapping between [scopetags](@) as they are used in this [scope](@), the associated [scopedir]((@)) and if necessary, other paths and filenames for [knowledge artifacts](@) within the [scope](@). The latter is only required when specifying the [scope](@) for which the [SAF](@) is created/maintained, as for other [scopes](@), such other paths and filenames can readily be found by inspecting the [SAF](@) that is located in the root of the [scopedir](@) of such [scopes](@).
 
 <details>
   <summary>Example of a `scopes` section</summary>

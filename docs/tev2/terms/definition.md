@@ -15,7 +15,7 @@ contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 isa:
 term: definition  # Text that is the name of the concept in (human readable) texts.
-fullterm: definition (of a [terminological artifact](@) in a [scope](@))
+fullterm: definition (of a [knowledge artifact](@) in a [scope](@))
 shorterm:
 synonyms:
 glossaryText: "a text that helps [parties](@) to have the same understanding about the meaning of (and [concepts](@) behind) a [term](@), ideally in such a way that these [parties](@) can determine whether or not they make the same distinction."
@@ -46,6 +46,7 @@ Therefore, we insist that such texts
 The quality of such texts is the extent in which parties reach the same conclusion as they evaluate the criterion in an arbitrary use-case that is relevant for the scope.
 
 The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
+
 The eSSIF-Lab [terminology process](@) provides guidance for making and maintaining quality definitions.
 Practical guidance is provided by the report "[On Terminology, and the Resolution of Related Issues](http://resolver.tudelft.nl/uuid:964a90da-da81-4d38-9f45-84f3f5fa96b3)".
 

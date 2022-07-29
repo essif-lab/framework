@@ -18,8 +18,8 @@ This document specifies the contents of the Glossary Definition File (GDF).
 
 :::info Editor's note
 The glossary definition file contains whatever the [HRGT](@) needs to generate a (human readable) [glossary](@) or [HRG](@) from the [scope's](@) [MRG](@). The idea is to have a [HRGT](@) that is capable of generation [glossaries](@) of various types, each of which has its own requirements regarding
-- the kinds of [terminological artifacts](@) that should be listed;
-- whether or not to include/exclude specific (groups of) [artifacts](terminological-artifact@);
+- the kinds of [knowledge artifacts](@) that should be listed;
+- whether or not to include/exclude specific (groups of) [artifacts](knowledge-artifact@);
 - the format (e.g. HTML, PDF, LaTeX) to generate towards, and the structure of each [HRG entry](@);
 - the beginning (header) and ending (footer) of the [HRG](@) file
 and possibly some other stuff.

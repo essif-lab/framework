@@ -23,8 +23,8 @@ The **Human Readable Glossary generation Tool ([HRGT](@))** generates a Human Re
 
 :::info Editor's note
 The envisaged versatility of the [HRGT](@) is likely to imply requirements regarding, e.g.:
-- the kinds of [terminological artifacts](@) that should be listed;
-- whether or not to include/exclude specific (groups of) [artifacts](terminological-artifact@);
+- the kinds of [knowledge artifacts](@) that should be listed;
+- whether or not to include/exclude specific (groups of) [artifacts](knowledge-artifact@);
 - the format (e.g. HTML, PDF, LaTeX) to generate towards, and the structure of each [HRG entry](@);
 - the beginning (header) and ending (footer) of the [HRG](@) file
 and possibly some other stuff.
@@ -32,10 +32,10 @@ and possibly some other stuff.
 Before this can really be properly specified, we seek to do some experiments to see what is really needed in order to keep it as simple as possible. Therefore, the text that follows must be interpreted as Work in Progress.
 :::
 
-The [HRGT](@) operates on a single [MRG](@) of a [scope](@), which contains (data and/or pointers to) _all_ [terminological artifacts](@) of that [scope](@).
+The [HRGT](@) operates on a single [MRG](@) of a [scope](@), which contains (data and/or pointers to) _all_ [knowledge artifacts](@) of that [scope](@).
 
 The construction of a [HRG](@) can be envisaged as
-- selecting the [mrg entries](@) that must appear in the [HRG](@). Selection may depend on the specification of the kinds of [terminological artifacts](@) that should be included, and/or specifying [tags](@) for the (groups of) [artifacts](terminological-artifact@), or specific `id`s;
+- selecting the [mrg entries](@) that must appear in the [HRG](@). Selection may depend on the specification of the kinds of [knowledge artifacts](@) that should be included, and/or specifying [tags](@) for the (groups of) [artifacts](knowledge-artifact@), or specific `id`s;
 - alphabetically sorting these entries;
 - converting each entry into its 'rendered' format, thereby resolving any [term refs](@), adding hyperlinks to the [curated text](@) that the entry relates to, 'meta-data' (e.g. the associated [grouptags](@), contributors, etc.), and anything else, as required for the particular kind of [HRG](@) that is being generated;
 - concatenating these rendered entries, optionally including/inserting some navigation bars (e.g. before a new letter starts);

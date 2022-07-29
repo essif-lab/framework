@@ -39,15 +39,15 @@ A [curated text](@) is a text that consists of a ([yaml](https://yaml.org/spec/1
 
 [Bodies](@) are processable by the particular tools that have been chosen by the [curators](@) for rendering their contents. For example, a [body](@) that contains [markdown](https://www.markdownguide.org/basic-syntax/) is not going to be processable by LaTeX tools, and [LaTeX](https://www.latex-project.org/help/documentation/usrguide.pdf) are not proceed by tools that expect Markdown.
 
-[Bodies](@) may have different structures, depending on the kind of [terminological artifact](@) that is being documented. For [markdown](https://www.markdownguide.org/basic-syntax/) [bodies](@), there is some guidance for [`concept`-type](ctext-concept#header) and[`pattern`-type](ctext-pattern#header) texts.
+[Bodies](@) may have different structures, depending on the kind of [knowledge artifact](@) that is being documented. For [markdown](https://www.markdownguide.org/basic-syntax/) [bodies](@), there is some guidance for [`concept`-type](ctext-concept#header) and[`pattern`-type](ctext-pattern#header) texts.
 
 ## Purpose
 
-[Bodies](@) contain a variety of texts that are intended to help people fulfill their particular needs in understanding what the [terminological artifact](@) that it describes.
+[Bodies](@) contain a variety of texts that are intended to help people fulfill their particular needs in understanding what the [knowledge artifact](@) that it describes.
 
 ## Criteria
 
-A [body](@) contains various sections, each of which intends to explain one (or more related) facet(s) of the [terminological artifact](@) that is described by the [curated text](@) of which the [body](@) is a part. At a minimum, there should be a summary (that gives readers a rough idea what it is about, and what it isn't about), and a purpose (that describes the benefits of having it around). For specific kinds of [terminological artifacts](@), specific sections may be required.
+A [body](@) contains various sections, each of which intends to explain one (or more related) facet(s) of the [knowledge artifact](@) that is described by the [curated text](@) of which the [body](@) is a part. At a minimum, there should be a summary (that gives readers a rough idea what it is about, and what it isn't about), and a purpose (that describes the benefits of having it around). For specific kinds of [knowledge artifacts](@), specific sections may be required.
 
 ## Example
 

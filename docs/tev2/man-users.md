@@ -19,9 +19,9 @@ The Terminology Engine (v2) is a set of specifications and tools that caters for
 [^1]: This document/website practices what it preaches in that it uses a [terminology](@) that is specific for dealing with [terminologies](@) in general. Details on how this is done can be found in the [terminology pattern](pattern-terminology@) (and the references it contains).
 
 [Users](@) participate in the following tasks:
-1. They contribute to the creation and maintenance of [terminological artifacts](@), specifically in the [definitions](@) of [concepts](@), [use-cases](@), etc.
-2. They author documents that use (and/or refer to) [terms](@) from their [terminology](@) (or (or other [terminological artifacts](@))), thereby using the mechanisms and conventions that the [curators](@) of (the [scope](@) of) the [terminology](@) have specified and made available.
-3. They check/proofread the authored documents to ensure that references to [terms](@) and/or other [terminological artifacts](@) are correct, i.e.: as intended by the author, and understandable by [readers](@).
+1. They contribute to the creation and maintenance of [knowledge artifacts](@), specifically in the [definitions](@) of [concepts](@), [use-cases](@), etc.
+2. They author documents that use (and/or refer to) [terms](@) from their [terminology](@) (or (or other [knowledge artifacts](@))), thereby using the mechanisms and conventions that the [curators](@) of (the [scope](@) of) the [terminology](@) have specified and made available.
+3. They check/proofread the authored documents to ensure that references to [terms](@) and/or other [knowledge artifacts](@) are correct, i.e.: as intended by the author, and understandable by [readers](@).
 4. They identify any specific needs or mechanisms that help them do the aforementioned tasks, and communicate these needs to their [curators](@), or otherwise contribute to the further development of TEv2 so that such needs and mechanisms may be supported.
 
 
@@ -44,4 +44,4 @@ This document provides an overview of the knowledge that [curators](@) may need 
 
 2. [Curation](@) of terminological contributions. This requires knowledge about the [file structure](ctext) of [curated file](@).
 
-3. [generation](tev2-toolbox-use) of [terminological artifacts](@). It is typical for a [terms community](@) to want to have a [glossary](@) of the terms they either have defined themselves, or are defined elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).
+3. [generation](tev2-toolbox-use) of [knowledge artifacts](@). It is typical for a [terms community](@) to want to have a [glossary](@) of the terms they either have defined themselves, or are defined elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).
