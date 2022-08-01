@@ -3,7 +3,7 @@ id: terminology-construction
 title: Terminology Construction
 hide_table_of_contents: true
 scopetag: tev2
-date: 20220722
+date: 20220801
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
@@ -17,7 +17,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 
 The process by which such a tuple-set is constructed is very simple: starting with an empty set, a list of so-called 'term selection criteria' instructions is sequentially processed, where the processing of each such instruction adds or removes tuples to/from the set, or changes the value of the `term` part of a specific tuple (renaming).
 
-[Curators](@) create and maintain the list of 'term selection criteria' instructions for a specific (version of a) [terminology](@) in the [`versions` section](tev2-spec-saf#terminology) of the [SAF](@) of the [scope](@).
+[Curators](@) create and maintain the list of 'term selection criteria' instructions for every specific (version of a) [terminology](@) they decide to manage. Each such [terminology](@) has an entry in the [`versions` section](tev2-spec-saf#versions) of the [SAF](@) (of the designated [scope](@)), and the term selection criteria reside in the `termselcrit` field of that section.
 
 ## Term Selection Instruction Syntax {#syntax}
 
