@@ -44,7 +44,7 @@ scopes:  #
 versions:
   - vsntag: mrgtest # this version MUST only be used for testing the MRG generator
     terms:
-    - "[tev2]@tev2" # import all tev2 terms.
+    - "*@tev2" # import all tev2 terms.
   - vsntag: 0x921456 # a versiontag that identifies this version from all other versions in the SAF
     altvsntags: # alternative verstiontags
     - latest
