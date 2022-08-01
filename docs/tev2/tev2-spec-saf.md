@@ -137,10 +137,9 @@ versions:
       - latest
       - v0.9.4
     termselcrit:
-      - "[management]@essif-lab" # import all terms from the mrg of `essif-lab:latest` that have grouptag `management`.
-      - "[party](@essif-lab:0.9.4)" # import the term `party` from the mrg of `essif-lab:0.9.4`.
-      - "[community](@essif-lab:0.9.4)" # import the term `community` from the mrg of `essif-lab:0.9.4`.
-      - "[tev2]@tev2" # import all terms defined in the scope `tev2`
+      - "tags[management]@essif-lab" # import all terms from the mrg of `essif-lab:latest` that have grouptag `management`.
+      - "termids[party,community](@essif-lab:0.9.4)" # import the terms `party` and `community` from the mrg of `essif-lab:0.9.4`.
+      - "*@tev2" # import all terms defined in the scope `tev2`
     status: proposed
     from: 20220312
     to:
@@ -148,9 +147,9 @@ versions:
     altvsntags: # alternative verstiontags
       - v0.9.0
     termselcrit:
-      - "[management]@essif-lab" # import all essif-lab terms with grouptag `management`.
-      - "[party@essif-lab]" # import the term `party` from the mrg of `essif-lab:latest`.
-      - "[community@essif-lab]" # import the term `community` from the mrg of `essif-lab:latest`.
+      - "*@essif-lab" # import all terms defined in the scope `essif-lab`
+      - "-tags[terminology]" # remove all terms tagged with the grouptag `terminology`
+      - "*@tev2" # import all terms defined in the scope `tev2`
 ~~~
 
 </details>
