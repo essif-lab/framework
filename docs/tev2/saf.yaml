@@ -55,7 +55,7 @@ versions:
     - v0.9.4
   termselcrit:
     - "tags[management]@essif-lab" # import all terms from the mrg of `essif-lab:latest` that have grouptag `management`.
-    - "termids[party,community](@essif-lab:0.9.4)" # import the terms `party` and `community` from the mrg of `essif-lab:0.9.4`.
+    - "termids[party,community]@essif-lab:0.9.4" # import the terms `party` and `community` from the mrg of `essif-lab:0.9.4`.
     - "*@tev2" # import all terms defined in the scope `tev2`
   status: proposed
   from: 20220312
