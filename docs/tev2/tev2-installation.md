@@ -8,6 +8,11 @@ date: 20220303
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
+<img
+  alt="This page is under construction"
+  src={useBaseUrl('images/wip/wip-under-construction.png')}
+/><br/><br/>
+
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
@@ -25,7 +30,7 @@ TEv2 is a tool for [curating](@) [terminology](@)-related data from the perspect
 - setting up, or appointing an (online) directory that will serve as a [scope directory](@);
 - creating a [Scope Administration File (SAF)](tev2-spec-saf), and providing the configuration of the [scope](@) and its [terminology](@);
 - installing the [tev2-toolbox](tev2-toolbox);
-- integrating the [tools](tev2-toolbox) with other tools, such as a CI/CD pipeline on github or gitlab, static site generators such as [github pages](https://pages.github.com/) or [Docusaurus](https://docusaurus.io/docs/docs-introduction), etc. See also: [Using the Tools](tev2-toolbox-use).
+- integrating the [tools](tev2-toolbox) with other tools, such as a CI/CD pipeline on github or gitlab, static site generators such as [github pages](https://pages.github.com/) or [Docusaurus](https://docusaurus.io/docs/docs-introduction), etc. See also: [Using the Tools](toolbox-specs/readme).
 
 ### Structure of Scope Directories
 
