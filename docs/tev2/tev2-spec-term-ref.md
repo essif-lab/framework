@@ -15,7 +15,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 
 This document specifies how you can use a [term](@) in a [curated text](@) while at the same time referring to the [definition](@) that defines its meaning. i.e. the syntax that you need to use in such texts. The way in which the [term](@) (and its [definition](@)) may be rendered depends on the artifact that is being generated. For example, when a [term](@) is rendered in a web-site, it may be enhanced, showing a popup that contains its [definition](@) when a [reader](@) hovers the mouse over it, and that hyperlinks to the page in the website that explains the term in more detail when the [reader](@) clicks on it. When a [term](@) is rendered in a PDF file, its definition may appear as an entry in a [glossary](@) that is added somewhere in the PDF. It all depends on the rendering tools that are being used, and this is out of scope for this specification.
 
-This file specifies the syntax of [Term refs](@). The [TRRT](@) describes [how they are processed (resolved)](tev2-toolbox-trrt#term-ref-resolution).
+This file specifies the syntax of [Term refs](@). The [TRRT](@) describes [how they are processed (resolved)](toolbox-specs/trrt#term-ref-resolution).
 
 ## Term References (Original/Default Syntax) {#termref}
 
@@ -41,7 +41,7 @@ It must not contain the characters `@` or `]` (this is needed to distinguish [te
 
 **`id`** is a text that [identifies](@) the [(scoped) term](scoped-term@) in the part of the [corpus](@) that contains the [terminology](@) of a specified [scope](@).<br/>It must satisfy the regex `[a-z0-9_-]+`.
 
-If omitted, its value is assumed to be [derivable from `showtext`](tev2-toolbox-trrt#id).
+If omitted, its value is assumed to be [derivable from `showtext`](toolbox-specs/trrt#id).
 At a minimum, this is the case if the `id` equals the result of processing `showtext` by first converting every character in the range `[A-Z]` to lower-case, and then replacing every sequence of characters specified by regex `[^A-Za-z_-]+` with (a single) `-` character.
 
 ### `trait` {#trait}

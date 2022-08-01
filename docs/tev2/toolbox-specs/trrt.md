@@ -1,7 +1,7 @@
 ---
-id: tev2-toolbox-trrt
-title: Term Reference Resolution Tool (TRRT)
-sidebar_label: TRRT - Term Ref Resolution Tool
+id: trrt
+title: Term Reference Resolution Tool
+sidebar_label: Term Ref Resolution
 displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220421

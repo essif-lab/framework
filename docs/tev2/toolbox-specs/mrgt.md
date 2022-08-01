@@ -1,7 +1,7 @@
 ---
-id: tev2-toolbox-mrgt
-title: MRG Generation Tool (MRGT)
-sidebar_label: MRGT - MRG Generation Tool
+id: mrgt
+title: Machine Readable Glossary Generation Tool
+sidebar_label: MR Glossary Generation
 displayed_sidebar: tev2SideBar
 hide_table_of_contents: true
 scopetag: tev2
