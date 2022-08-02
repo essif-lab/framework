@@ -95,7 +95,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/essif-lab/framework/-/tree/master/',
+          editUrl: 'https://github.com/essif-lab/framework/blob/master/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           breadcrumbs: false,
