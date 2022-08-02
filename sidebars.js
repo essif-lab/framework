@@ -8,6 +8,7 @@ const sidebars = {
         'essifLab-vision',
         'essifLab-objectives',
         'essifLab-principles',
+        'ssi-standards',
         'essifLab-project',
         'essifLab-understanding',
         { label: 'Mental Models',
