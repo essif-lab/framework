@@ -1,12 +1,24 @@
 ---
-id: essifLab-understanding
-title: "Understanding Each Other"
-sidebar_label: Understanding
+id: essifLab-collaborative-understanding
+title: "Fostering a Collaborative Understanding"
+sidebar_label: Collaborative Understanding
 scopetag: essifLab
-date: 20210601
+date: 20220802
 ---
 
-When %%parties|party%% from various backgrounds (and cultures) work together, it is inevitable that misunderstandings occur, i.e. texts (written or spoken) are easily interpreted in ways other than what the author intended. More often than not, such misunderstandings go undetected, and rightfully so, as in most cases it doesn't cause serious problems.
+When people from various backgrounds (and cultures) work together, it is inevitable that misunderstandings occur, i.e. texts (written or spoken) are easily interpreted in ways other than what the author intended. More often than not, such misunderstandings go undetected, and rightfully so, as in most cases it doesn't cause serious problems.
+
+:::info Editor's note
+The following summary needs to be worked into this page:
+
+([Agredo-Delgado, et. al., 2021](https://link.springer.com/article/10.1007/s10588-021-09326-z))[^1] have tested a process for constructing a shared understanding in computer-supported collaborative work, where the construction part consists of 4 steps:
+1. each group member acquires an individual understanding of the subject
+2. each group member exposes his/her ideas and the others actively listen to them
+3. the group refines, builds or modifies the original ideas
+4. the differences of interpretation between the group members are dealt with in a constructive fashion, through arguments and clarifications.
+:::
+
+[^1]: Agredo-Delgado, V., Ruiz, P.H., Mon, A. et al. Applying a process for the shared understanding construction in computer-supported collaborative work: an experiment. Comput Math Organ Theory (2021). https://doi.org/10.1007/s10588-021-09326-z
 
 In the context of [eSSIF-Lab](essifLab) we expect people from such various backgrounds (and cultures) to work together in order to realize its [objectives](essifLab-Objectives). Because of its nature, we must expect misunderstandings to become problematic. In order to prevent them, and also to efficiently and effectively resolve those that do occur, we provide mechanisms to detect such misunderstandings, develop %%terminologies|terminology%% that reduce the likelihood of them occurring, and resolve problems/disputes that may occur around %%terms|term%% and %%definitions|definition%%.
 
@@ -44,3 +56,5 @@ Here are some characteristics of the tools being supplied:
 - When an author writes a text in which he wants to tag a term with its definition, (s)he simply writes `\%\%text-to-be-tagged|referenceid\%\%`, where `referenceid` is usually the term name. For details, please refer to the [instruction for authors](TBD)
 - Author wants to contribute to the Corpus of Terminology, i.e. modify existing documents or creating new ones, are supported by [templates](TBD) and [guidance for authoring terminology documents](TBD).
 - The glossary will be automatically updated as contributions to the terminology corpus are being made merged into the master branch.
+
+## References

@@ -58,7 +58,7 @@ module.exports = {
           title: 'eSSIF-lab Framework',
           items: [
             { label: 'Framework', to: 'docs/essifLab-fw' },
-            { label: 'Governance', to: 'docs/essifLab-governance' },
+            { label: 'Governance', to: 'docs/essifLab-fw-governance' },
             { label: 'Business-architecture', to: 'docs/essifLab-fw-bus-arch' },
             { label: 'Functional-architecture', to: 'docs/essifLab-fw-func-arch' },
           ],
@@ -66,7 +66,7 @@ module.exports = {
         {
           title: 'eSSIF-lab Terminology',
           items: [
-            { label: 'Introduction',  to: 'docs/essifLab-understanding' },
+            { label: 'Introduction',  to: 'docs/essifLab-collaborative-understanding' },
             { label: 'Glossary',      to: 'docs/essifLab-glossary' },
             { label: 'Mental Models', to: 'docs/essifLab-pattern-list' },
             { label: 'Github', href: 'https://github.com/essif-lab/framework/tree/master/docs/terms' },

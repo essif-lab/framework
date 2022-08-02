@@ -9,7 +9,7 @@ date: 20210601
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note
-*This section is work in progress.*
+*This page requires thorough revisions. While the basis is still valid, the contents on architecture(s) needs to be updated.*
 :::
 
 The main purpose of [eSSIF-Lab](essifLab) is to realize its [vision](essifLab-vision). This is quite a challenge, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. Another kind of complexity is related to the (im)possibilities of doing things as %%parties|party%% interact, e.g. in an '%%ecosystem|ecosystem%%' or a %%community|community%%.
