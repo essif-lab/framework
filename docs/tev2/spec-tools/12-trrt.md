@@ -23,7 +23,7 @@ In order to do so, [TRRT](@) expects the [SAF](@) and the [MRG](@) of the [scope
 ## Term Reference Specifications {#termref}
 
 :::info Editors Note
-Here, we would have liked to INCLUDE the text of [term references](tev2-spec-term-ref) rather than copy it.<br/>
+Here, we would have liked to INCLUDE the text of [term references](/docs/tev2/spec-syntax/term-ref) rather than copy it.<br/>
 We may want to explore introducing a syntax such as e.g. `[!INCLUDE [<title>](<filepath>)]`<br/>
 (See also: "https://github.com/sethen/markdown-include", or "https://asciidoc.org/")
 :::
@@ -180,7 +180,7 @@ If not specified, a default [scope](@) will be used, which is the [scope](@) fro
 
 When specified,
 
-If omitted (in which case the preceding `:`-character may also be omitted from the syntax), its value will be the default, which is `latest`, which means the [term ref](@) points to the most recently established/published version of the [term](term). With the exception of `latest`, the precise semantics remain to be specified. `vsntag` shall only contain characters in regex `[a-z0-9_-]`. We may need to discuss whether or not this should be changed to the version of the [glossary](@) rather than the version of the [term](@).
+If omitted (in which case the preceding `:`-character may also be omitted from the syntax), its value will be the default, which is `latest`, which means the [term ref](@) points to the most recently established/published version of the [term](term@). With the exception of `latest`, the precise semantics remain to be specified. `vsntag` shall only contain characters in regex `[a-z0-9_-]`. We may need to discuss whether or not this should be changed to the version of the [glossary](@) rather than the version of the [term](@).
 
 #### `id` (optional) {#id}
 

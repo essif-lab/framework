@@ -1,5 +1,5 @@
 ---
-id: man-usr-wiki
+id: contributors-wiki
 title: Using Wikis
 sidebar_label: Using Wikis (Markdown)
 scopetag: tev2

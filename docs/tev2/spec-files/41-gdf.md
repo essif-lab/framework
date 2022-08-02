@@ -1,7 +1,8 @@
 ---
-id: tev2-spec-gdf
+id: gdf
 title: Glossary Definition File (GDF)
 sidebar_label: GDF (Glossary Definition File)
+draft: true
 hide_table_of_contents: true
 scopetag: tev2
 date: 20220503

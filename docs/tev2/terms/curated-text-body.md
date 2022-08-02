@@ -39,7 +39,7 @@ A [curated text](@) is a text that consists of a ([yaml](https://yaml.org/spec/1
 
 [Bodies](@) are processable by the particular tools that have been chosen by the [curators](@) for rendering their contents. For example, a [body](@) that contains [markdown](https://www.markdownguide.org/basic-syntax/) is not going to be processable by LaTeX tools, and [LaTeX](https://www.latex-project.org/help/documentation/usrguide.pdf) are not proceed by tools that expect Markdown.
 
-[Bodies](@) may have different structures, depending on the kind of [knowledge artifact](@) that is being documented. For [markdown](https://www.markdownguide.org/basic-syntax/) [bodies](@), there is some guidance for [`concept`-type](ctext-concept#header) and[`pattern`-type](ctext-pattern#header) texts.
+[Bodies](@) may have different structures, depending on the kind of [knowledge artifact](@) that is being documented. For [markdown](https://www.markdownguide.org/basic-syntax/) [bodies](@), there is some guidance for [`concept`-type](/docs/tev2/ctext-concept#header) and[`pattern`-type](/docs/tev2/ctext-pattern#header) texts.
 
 ## Purpose
 
