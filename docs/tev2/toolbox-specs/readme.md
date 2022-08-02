@@ -1,7 +1,8 @@
 ---
 id: readme
-title: How to Use the Tools in the TEv2 Toolbox
-sidebar_label: Using the tools
+title: Using Tools from the TEv2 Toolbox
+sidebar_label: Calling tools
+sidebar_position: 1
 displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220801
@@ -22,4 +23,3 @@ export const Mark = ({children}) => (
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
-

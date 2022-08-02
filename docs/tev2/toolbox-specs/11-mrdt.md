@@ -3,7 +3,6 @@ id: mrdt
 title: Machine Readable Dictionary Generation Tool
 sidebar_label: MR Dictionary Generation
 displayed_sidebar: tev2SideBar
-draft: true
 hide_table_of_contents: true
 scopetag: tev2
 date: 20220801
