@@ -43,7 +43,7 @@ The complete, generic structure[^1] of a [term ref](@) is: \[`show text`\](`id`#
 - `id` (optional) is a text that [identifies](identify@essiflab) the [(scoped) term](scoped-term@) in the part of the [corpus](@) that contains the [terminology](@) of a specified [scope](@). If omitted, its value will be assigned the default, which is typically `show-text` in which every character in the range [A-Z] is converted to lower-case, and every sequence of characters, all of which are not in [A-Z], [a-z], `_` or `-`, are converted to `-`. `id` shall only contain characters in regex `[a-z0-9_-]`.
 - `heading-id` (optional) is a text that [identifies](identify@essiflab) a particular kind of descriptive text that is associated with the [term](@). If omitted (in which case the preceding `#`-character may also be omitted), the [term ref](@) will by default dereference to the text of its [glossary](@) entry. While it is envisaged that `heading-id` must be a text from a predefined set of allowed/supported texts (e.g. `purpose`, `criteria`, `example-3`), the precise semantics remain to be specified. For now, `heading-id` shall be constrained to only contain characters in regex `[a-z0-9_-]`.
 - `scopetag` (optional) is a [tag](@) that [identifies](identify@essiflab) the [scope](@) in the [terminology](@) of which the [(scoped) term](scoped-term@) is contained. If omitted, a default [scope](@) will be used, which is typically the [scope](@) within which the document containing the [term ref](@) is being maintained. Note that the preceding `@` sign may never be omitted because as it serves the purpose to distinguish [term refs](@) from other [Markdown links](https://www.markdownguide.org/basic-syntax/#links). `scopetag` shall only contain characters in regex `[a-z0-9_-]`.
-- `vsn` (optional) is a text that [identifies](identify@essiflab) the version of the [terminology](@) in the [scope](@). If omitted (in which case the preceding `:`-character may also be omitted), its value will be the default, which is `latest`, which means the [term ref](@) points to the most recently established/published version of the [term](term). With the exception of `latest`, the precise semantics remain to be specified. `vsn` shall only contain characters in regex `[a-z0-9_-]`. We may need to discuss whether or not this should be changed to the version of the [glossary](@) rather than the version of the [term](@).
+- `vsn` (optional) is a text that [identifies](identify@essiflab) the version of the [terminology](@) in the [scope](@). If omitted (in which case the preceding `:`-character may also be omitted), its value will be the default, which is `latest`, which means the [term ref](@) points to the most recently established/published version of the [term](@). With the exception of `latest`, the precise semantics remain to be specified. `vsn` shall only contain characters in regex `[a-z0-9_-]`. We may need to discuss whether or not this should be changed to the version of the [glossary](@) rather than the version of the [term](@).
 
 Regexes for this syntax are specified in the [TRRT](#trrt) section.
 
@@ -140,12 +140,12 @@ The contents of a [glossary](@) consists of one entry (which we call **MRG entri
 - [defined](definition@) in the [scope](@) iself;
 - (explicitly or implicitly) selected by the [curators](curator@) of the [scope](*@) and that is part of the contents of a [glossary](@) of another [scope](@).
 
-Selecting [terms](term@) of another [scope](@) is done by [specifying](term-selection-criteria) the required [term selection criteria](@).
+Selecting [terms](term@) of another [scope](@) is done by [specifying](term-selection-criteria@) the required [term selection criteria](@).
 
 We leave the specification of additional syntax for GDFs, e.g. for the inclusion of headers, footers and other stuff that is specific for the generation of [HRGs](#hrg), as work to be done.
 
 :::info Editor's Note
-Currently, every [MRG](#mrg)/[HRG](#hrg) is to be accompanied by a specific [GDF]{#gdf} that specifies their contents. Texts need to be revised to accommodate for the more practical way of specifying a [scope's](@) [terminology](@), which is to specify the [term-selection-criterai](@) in the [SAF](@). [HRGs](@), or other flavors of [MRGs](@) will then require a (type-sepecif) [GDF]{#gdf}.
+Currently, every [MRG](#mrg)/[HRG](#hrg) is to be accompanied by a specific [GDF]{#gdf} that specifies their contents. Texts need to be revised to accommodate for the more practical way of specifying a [scope's](@) [terminology](@), which is to specify the [term selection criteria](@) in the [SAF](@). [HRGs](@), or other flavors of [MRGs](@) will then require a (type-sepecif) [GDF]{#gdf}.
 :::
 ## Glossary Generation Tool (GGT) {#mrgt}
 
@@ -182,7 +182,7 @@ For example, consider the [term](@) `curate` as defined in the [CTWG terms wiki]
   url: https://github.com/trustoverip/ctwg/wiki/curate
 ~~~
 
-Glossaries are generated at a default location, which for ToIP is `http://trustoverip.github.io/<terms-community>/glossary`, where `<terms-community>` is the name of the [terms-community](@) that [curates](curate) the [terms](term@) in the [glossary](@).
+Glossaries are generated at a default location, which for ToIP is `http://trustoverip.github.io/<terms-community>/glossary`, where `<terms-community>` is the name of the [terms-community](@) that [curates](curate@) the [terms](term@) in the [glossary](@).
 
 The [GGT](#mrgt) should log conditions that prevent it from properly
 

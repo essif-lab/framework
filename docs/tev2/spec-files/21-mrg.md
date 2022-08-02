@@ -1,5 +1,5 @@
 ---
-id: tev2-spec-mrg
+id: mrg
 title: Machine Readable Glossary (MRG)
 sidebar_label: MRG (Machine Readable Glossary)
 hide_table_of_contents: true
@@ -16,7 +16,7 @@ The entire section on Terminology Engine v 2 (TEv2) is still under construction.
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
-Every [scope](@) has (at least) one **Machine Readable Inventory**[^1] (that we call a **Machine Readable Glossary** or [MRG](@)), that renders the [terminology](@) of a specific [scope](@) into a specific, well-defined format that is described in this document. An [MRG](@) is meant to be used by the tools from the [toolbox](tev2-toolbox), e.g. for creating a [HRG](@), or to help resolve [term refs](@). A [scope](@) may have multiple [MRGs](@), each of which represents a specific version of its [terminology](@).
+Every [scope](@) has (at least) one **Machine Readable Inventory**[^1] (that we call a **Machine Readable Glossary** or [MRG](@)), that renders the [terminology](@) of a specific [scope](@) into a specific, well-defined format that is described in this document. An [MRG](@) is meant to be used by the tools from the [toolbox](/docs/tev2/tev2-toolbox), e.g. for creating a [HRG](@), or to help resolve [term refs](@). A [scope](@) may have multiple [MRGs](@), each of which represents a specific version of its [terminology](@).
 
 [^1]: The [MRG](@) is an Inventory rather than a [glossary](@), because it contains _all_ [knowledge artifacts](@) that are [curated](@) within the [scope](@): apart from [terms](@), it also include e.g., [mental models](pattern@) and [use cases](@). We choose to maintain the [term](@) "Machine Readable Glossary" ([MRG](@)), because most of us would view it - initially, at least - as a list of [terms](@) and their [definitions](@).
 
@@ -54,6 +54,8 @@ entries: # here follows an (unsorted) list of MRG-entries
 
 </details>
 
+### MRG `Terminology` section {#mrg-terminology}
+
 The following fields are defined for the sections `terminology`:
 
 | Name       | Req'd | Description |
@@ -65,6 +67,8 @@ The following fields are defined for the sections `terminology`:
 | `altvsntags` | n | List of alternative [versiontags](@) that can be used to [identify](@) this version. Each of the values MUST be in the list of [versiontags](@) in the `altvsntags` field of the the corresponding `versions` section in the [SAF](@). |
 | `license`    | n | File that contains the (default) licensing conditions. Full URL is `scopedir`/`license`. Its value MUST match the `license` field of the corresponding `versions` section in the [SAF](@), or if that isn't specified, the `license` field of the `scope` section in the [SAF](@). |
 
+### MRG `scopes` section {#mrg-scopes}
+
 The following fields are defined for the section `scopes`:
 
 | Name       | Req'd | Description |
@@ -72,7 +76,7 @@ The following fields are defined for the section `scopes`:
 | `scopetag`   | Y | [Scopetag](@) of a third-party [scope](@), the [MRG](@) of which contains [MRG entries](@) that have been imported into the [MRG](@). This [scopetag](@) has been chosen by the [curators](@) of the [scope](@) of which the [MRG](@) is part, to refer to that particular third-party [scope](@). This [scopetag](@) may differ from the [scopetag](@) that the [curators](@) of that third-party [scope](@) have chosen for this [scope](@) <br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `scopedir`   | Y | URL that locates the [scope directory](@) associated with that third-party [scope](@). |
 
-## MRG Entries - Common Fields
+## MRG Entries - Common Fields {#mrg-entries}
 
 An [MRG](@) consists of a list of [MRG entries](@), the purpose of which is that the various tools can find all data that is relevant for the purpose that such a tool serves.
 
@@ -80,12 +84,12 @@ An [MRG](@) consists of a list of [MRG entries](@), the purpose of which is that
 
 | Name         | Req'd | Description |
 | ------------ | :---: | :---------- |
-| `scopetag`     | Y | [Scopetag](@) that [identifies](@) the [scope](@) (within the scope in which the [MRG](@) is constructed) from which the contents of the [MRG entry](@) is obtained. We need this because an [MRG](@) not only contains [MRG entries](@) that are created in the [scope](@) itself, but also [MRG entries](@) that are created in other [scopes](@). The `scopes` section in the [MRG](@) SHOULD contain a mapping between the `scopetag` and its associated [scope directory](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `scopetag`     | Y | [Scopetag](@) that [identifies](@) the [scope](@) (within the scope in which the [MRG](@) is constructed) from within which the contents of the [MRG entry](@) is [curated](@), and obtained. The [`scopes` section](#mrg-scopes) in the [MRG](@) SHOULD contain a mapping between the `scopetag` and its associated [scope directory](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `vsntag`       | Y | [Versiontag](@) that [identifies](@) the version of the [terminology](@) from which the contents of the [MRG entry](@) is obtained. Thus, `scopetag`:`versiontag` [identifies](@) that [terminology](@).<br/>Must satisfy regex `[a-z0-9_-.]+`.  |
 | `id`           | Y | Text that [identifies](@) the [curated text](@) from which the content of this [MRG entry](@) is obtained; it has the same value as the `id`-field in the header of a [curated text](@). In case the contents of the [MRG entry](@) was obtained from another [MRG](@), this field has the same value as the `id` field of the [MRG entry](@) from which the contents was obtained.<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `termtype`     | Y | Text that [identifies](@) the kind of [knowledge artifact](@) that this [MRG entry](@) refers to. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `termid`       | Y | Text that [identifies](@) (represents) an instance of the [knowledge artifacts](@) of the type specified in the `termtype` field of this [MRG entry](@), and is dereferenceable as such in the [scope](@) as specified in the `scopetag` field.<br/>Must satisfy regex `[a-z0-9_-]+`. |
-| `formphrases`  | n | List of [texts](formphrase@) that are [used to convert](toolbox-specs/trrt#id) the `show text` parts of [term refs](@) into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-{}]+)\s*(?:,\s*([a-z0-9_-{}]+))*\s*\])?`](https://www.debuggex.com/r/TZe27fzbJskMcjl8). |
+| `formphrases`  | n | List of [texts](formphrase@) that are [used to convert](/docs/tev2/spec-tools/trrt#id) the `show text` parts of [term refs](@) into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-{}]+)\s*(?:,\s*([a-z0-9_-{}]+))*\s*\])?`](https://www.debuggex.com/r/TZe27fzbJskMcjl8). |
 | `grouptags`    | n | List of [grouptags](@), each of which [identifies](@) a group of [knowledge artifacts](@) of which the [knowledge artifact](@) that this [curated text](@) describes, is a member.<br/>Each grouptag must satisfy regex `[a-z0-9_-]+`. |
 | `status`       | n | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
 | `created`      | n | Date at which of the [term](@)-related data was created, in the date format as used within this [scope](@). |

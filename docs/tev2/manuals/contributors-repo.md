@@ -1,5 +1,5 @@
 ---
-id: man-usr-repo
+id: contributors-repo
 title: Using Markdown files in a Git Repo
 sidebar_label: Using Git Repo Markdown
 scopetag: tev2

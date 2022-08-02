@@ -46,17 +46,17 @@ Other [parties](@) must use tuples { `<scopeidentifier>`, `<versionidentifier>`,
 
 ### [Scopes](@)
 
-Every [scope](@) contains a [terminology](@), [(scoped) terms](@), [curated texts](@), various kinds of [tags](@), and more. Every [scope](@) has defined a [(scope)tag](@) by which it refers to itself (which is defined in the [`scope`-section](https://essif-lab.github.io/framework/docs/tev2/tev2-spec-saf#terminology) of the [SAF](@) of that [scope](@). The [`scopes`-section](https://essif-lab.github.io/framework/docs/tev2/tev2-spec-saf#scopes) of a [SAF](@) defines the [scopetags](@) that are used to refer to other [scopes](@) from within this [scope](@).
+Every [scope](@) contains a [terminology](@), [(scoped) terms](@), [curated texts](@), various kinds of [tags](@), and more. Every [scope](@) has defined a [(scope)tag](@) by which it refers to itself (which is defined in the [`scope`-section](/docs/tev2/spec-files/saf#terminology) of the [SAF](@) of that [scope](@). The [`scopes`-section](/docs/tev2/spec-files/saf#terminology) of a [SAF](@) defines the [scopetags](@) that are used to refer to other [scopes](@) from within this [scope](@).
 
 Since every [scopes](@) must have precisely one [scope directory](@) (that contains the tangible artifacts associated with that [scope](@)), one can also use the URI of that [scope directory](@) to refer to that [scope](@).
 
 ### [Curated Texts](@)
 
-Every [curated text](@) is stored as a file in the [scope directory](@) of a specific [scope](@). Thus, it can be identified through a [URI] that points to this file. The drawback here is that while all [curated texts](@) in a [scope](@) must reside in a specific directory (as [specified in the `curatedir` field](https://essif-lab.github.io/framework/docs/tev2/tev2-spec-saf#terminology) of the [SAF](@) of that [scope](@))), it might also reside in one of its (sub)subdirectories. They  way in which the files that contain [curated texts](@) may be organized (grouped) may differ from [scope](@) to [scope](@).
+Every [curated text](@) is stored as a file in the [scope directory](@) of a specific [scope](@). Thus, it can be identified through a [URI] that points to this file. The drawback here is that while all [curated texts](@) in a [scope](@) must reside in a specific directory (as [specified in the `curatedir` field](/docs/tev2/spec-files/saf#terminology) of the [SAF](@) of that [scope](@))), it might also reside in one of its (sub)subdirectories. They  way in which the files that contain [curated texts](@) may be organized (grouped) may differ from [scope](@) to [scope](@).
 
-Every [curated text](@) consists of a header (and a body); the header includes [generic 'header-fields'](ctext#generic-header-fields), one of which is the `id`-field. The contents of this field [identifies](@) the [curated text](@); there is no other [curated text](@) in (a file in) the [scope directory](@) that has the same value in its `id`-field.
+Every [curated text](@) consists of a header (and a body); the header includes [generic 'header-fields'](/docs/tev2/ctext#generic-header-fields), one of which is the `id`-field. The contents of this field [identifies](@) the [curated text](@); there is no other [curated text](@) in (a file in) the [scope directory](@) that has the same value in its `id`-field.
 
-Alternatively, and the way of choice for [TEv2 tools](tev2-toolbox), is to refer to curated texts by means of what we have come to call a [termid](@)
+Alternatively, and the way of choice for [TEv2 tools](/docs/tev2/tev2-toolbox), is to refer to curated texts by means of what we have come to call a [termid](@)
 
 
 ### [Definitions](@)

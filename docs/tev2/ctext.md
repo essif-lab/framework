@@ -22,7 +22,7 @@ People that actively contribute to the creation and maintenance of [curated text
 
 ## Context
 
-A [curated text](@) resides in a file which we call a **[curated file](@)**. All [curated files](@) of a [scope](@) are expected to live in (a subdirectory of) its [scope directory](@), as specified in the [scope's](@) administration file [SAF](@). [Curated files](@) are expected to be processable using the [terminology tools](tev2-toolbox). However, [curators](@) may decide that they are also to be processable by other, third party tools, e.g., for the purpose of making rendered versions of such files available to some public. Examples of such tools include [Docusaurus v2](https://docusaurus.io/docs), or [github pages](https://pages.github.com/).
+A [curated text](@) resides in a file which we call a **[curated file](@)**. All [curated files](@) of a [scope](@) are expected to live in (a subdirectory of) its [scope directory](@), as specified in the [scope's](@) administration file [SAF](@). [Curated files](@) are expected to be processable using the [terminology tools](/docs/tev2/tev2-toolbox). However, [curators](@) may decide that they are also to be processable by other, third party tools, e.g., for the purpose of making rendered versions of such files available to some public. Examples of such tools include [Docusaurus v2](https://docusaurus.io/docs), or [github pages](https://pages.github.com/).
 
 ## Structure
 
@@ -62,7 +62,7 @@ TEv2 assumes that the [header](@) of a [curated text](@) contains a **generic pa
 
 ## Generic Header Fields {#generic-header-fields}
 
-This section describes the **generic header fields** of a [curated text](@), i.e. the fields that must, or may appear in the [header](@) of every [curated text](@). The header fields that are specific for a particular kind of [knowledge artifact](@) are specified in the document of that particular artifact (e.g. for [concepts](ctext-concept#header)).
+This section describes the **generic header fields** of a [curated text](@), i.e. the fields that must, or may appear in the [header](@) of every [curated text](@). The header fields that are specific for a particular kind of [knowledge artifact](@) are specified in the document of that particular artifact (e.g. for [concepts](/docs/tev2/ctext-concept#header)).
 
 The following table specifies the **generic header fields**:
 
@@ -83,7 +83,7 @@ The following table specifies the **generic header fields**:
 | `termtype`     | n  | `concept` | Text that [identifies](@) the kind of [knowledge artifact](@) that this [curated text](@) describes. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `termid`       | Y  |      | Text that, together with the value of the `termtype` field, [identifies](@) this [curated text](@) within the context of this [scope](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `termreftext`  | n  | `id` | [reftext](@) that [identifies](@) the [curated text](@) that documents the [knowledge artifact](@) that this term represents. |
-| `formphrases`  | n  |      | List of [texts](formphrase@) that are [used to convert](toolbox-specs/trrt#id) the `show text` parts of [term refs](@) into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-{}]+)\s*(?:,\s*([a-z0-9_-{}]+))*\s*\])?`](https://www.debuggex.com/r/TZe27fzbJskMcjl8). |
+| `formphrases`  | n  |      | List of [texts](formphrase@) that are [used to convert](/docs/tev2/spec-tools/trrt#id) the `show text` parts of [term refs](@) into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-{}]+)\s*(?:,\s*([a-z0-9_-{}]+))*\s*\])?`](https://www.debuggex.com/r/TZe27fzbJskMcjl8). |
 | `grouptags`    | n  |      | List of [grouptags](@), each of which [identifies](@) a group of [knowledge artifacts](@) of which the [knowledge artifact](@) that this [curated text](@) describes, is a member.<br/>Example: `[tev2, management]`.<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-]+)\s*(?:,\s*([a-z0-9_-]+))*\s*\])?`](https://www.debuggex.com/r/a51CXl1NzR3kwihT). |
 | `status`       | n  | `proposed` | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
 | `created`      | n  |      | Date at which of the [curated text](@) was created, in the date format as used within this [scope](@). |
@@ -95,5 +95,5 @@ The following table specifies the **generic header fields**:
 
 Every [curated text](@) documents a [knowledge artifact](@) of a specific type, as specified by the `termtype` field of the generic TEv2 front-matter. Depending on the value of that `termtype` field, additional front-matter may be specified. This is the case for the following `termtype`s:
 
-- [`termtype` = `concept`](ctext-concept#header)
-- [`termtype` = `pattern`](ctext-pattern#header)
+- [`termtype` = `concept`](/docs/tev2/ctext-concept#header)
+- [`termtype` = `pattern`](/docs/tev2/ctext-pattern#header)

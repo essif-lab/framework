@@ -1,5 +1,5 @@
 ---
-id: man-usr-latex
+id: contributors-latex
 title: Using LaTeX source texts
 sidebar_label: Using LaTex
 scopetag: tev2
