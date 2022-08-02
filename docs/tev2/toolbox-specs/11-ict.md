@@ -1,7 +1,7 @@
 ---
 id: ict
 title: Integrity Checker Tool (ICT)
-sidebar_label: Integrity Checker
+sidebar_label: Integrity Checking
 displayed_sidebar: tev2SideBar
 # hide_table_of_contents: true
 scopetag: tev2
