@@ -9,7 +9,7 @@ date: 20210601
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note
-*This section is work in progress.*
+*This page needs to be revised/updated.*
 :::
 
 ## 1. Purpose
