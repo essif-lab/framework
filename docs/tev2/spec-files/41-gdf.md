@@ -2,13 +2,21 @@
 id: gdf
 title: Glossary Definition File (GDF)
 sidebar_label: GDF (Glossary Definition File)
-draft: true
 hide_table_of_contents: true
 scopetag: tev2
 date: 20220503
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+export const Mark = ({children}) => (
+  <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
+    {children}
+  </span> );
+
+<img
+  alt="This page is under construction"
+  src={useBaseUrl('images/wip/wip-under-construction.png')}
+/><br/><br/>
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

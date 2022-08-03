@@ -1,5 +1,5 @@
 ---
-id: readme
+id: using-toolbox-tools
 title: Using Tools from the TEv2 Toolbox
 sidebar_label: Calling tools
 sidebar_position: 1

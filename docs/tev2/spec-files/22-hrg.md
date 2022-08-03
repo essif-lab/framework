@@ -2,7 +2,6 @@
 id: hrg
 title: Human Readable Glossary (HRG)
 sidebar_label: HRG (Human Readable Glossary)
-draft: true
 hide_table_of_contents: true
 scopetag: tev2
 date: 20220503

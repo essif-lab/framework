@@ -31,6 +31,7 @@ The Terminology Engine (v2) is a set of specifications and tools that (technical
 
 This technical support must, however, be complemented with methods that a [community](@) will actually use to produce and maintain its [terminology](@). <Mark>We need to decide whether or not to provide guidance for that as well.</Mark>
 
+:::info Editor's note
 ([Agredo-Delgado, et. al., 2021](https://link.springer.com/article/10.1007/s10588-021-09326-z))[^1] have tested a process for constructing a shared understanding in computer-supported collaborative work, where the construction part consists of 4 steps:
 1. each group member acquires an individual understanding of the subject
 2. each group member exposes his/her ideas and the others actively listen to them
@@ -69,4 +70,4 @@ This document provides an overview of the knowledge that [curators](@) may need 
 
 2. [Curation](@) of terminological contributions. This requires knowledge about the [file structure](/docs/tev2/ctext) of [curated file](@).
 
-3. [generation](/docs/tev2/spec-tools/readme) of [knowledge artifacts](@). It is typical for a [terms community](@) to want to have a [glossary](@) of the terms they either have defined themselves, or are defined elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).
+3. [generation](/docs/tev2/spec-tools/using-toolbox-tools) of [knowledge artifacts](@). It is typical for a [terms community](@) to want to have a [glossary](@) of the terms they either have defined themselves, or are defined elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).

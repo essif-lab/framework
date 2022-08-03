@@ -2,7 +2,6 @@
 id: mrd
 title: Machine Readable Dictionary (MRD)
 sidebar_label: MRD (Machine Readable Dictionary)
-draft: true
 hide_table_of_contents: true
 scopetag: tev2
 date: 20220503
