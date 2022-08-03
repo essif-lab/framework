@@ -72,7 +72,7 @@ Also, this [management](@) may cause reference documents to be created and maint
 
 
 ### Formalized model
-Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
+Here is a visual representation of this pattern, using the following **[notations and conventions](/docs/tev2/notations-and-conventions#pattern-diagram-notations)**:
 
 <img
   alt="Conceptual model of the 'terms-community' pattern"

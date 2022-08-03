@@ -138,7 +138,7 @@ Because [terminologies](terminology@) tend to change over time, they (and a [glo
 
 The contents of a [glossary](@) consists of one entry (which we call **MRG entries**) for every [term](@) that is
 - [defined](definition@) in the [scope](@) iself;
-- (explicitly or implicitly) selected by the [curators](curator@) of the [scope](*@) and that is part of the contents of a [glossary](@) of another [scope](@).
+- (explicitly or implicitly) selected by the [curators](curator@) of the [scope](@) and that is part of the contents of a [glossary](@) of another [scope](@).
 
 Selecting [terms](term@) of another [scope](@) is done by [specifying](term-selection-criteria@) the required [term selection criteria](@).
 
