@@ -93,8 +93,6 @@ const sidebars = {
         },
       ],
     },
-// ^.*?@.*?\n
-// essif-lab-framework    \| - On source page path.*?\nessif-lab-framework    \|\n
     { type: 'category',
     label: 'Curator\'s Toolbox',
     link: {type: 'doc', id: 'tev2/spec-tools/using-toolbox-tools'},
