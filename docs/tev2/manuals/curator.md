@@ -1,7 +1,7 @@
 ---
 id: curator
 title: Curators Manual - Overview
-sidebar_label: Curators
+sidebar_label: Curators Manual
 displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220513

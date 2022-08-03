@@ -1,7 +1,6 @@
 ---
 id: contributor
 title: Contributors Manual
-sidebar_label: Contributor
 displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220513
