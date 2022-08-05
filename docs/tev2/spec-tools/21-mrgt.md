@@ -34,7 +34,7 @@ As input, the [MRGT](@) is provided a [SAF](@), is pointed to the particular ent
 The [MRG](@) is then created as follows (starting with an empty file):
 
 1. The [MRG](@) `terminology` section is created, by copying relevant fields from the appropriate `versions` element in the [SAF](@).
-2. Then the [terminology construction](/docs/tev2/manuals/terminology-construction) takes place, which can be thought of as constructing a set of tuples `{ [termid, term, grouptags] }`, where `termid` [identifies](@) the meaning of the [term](@), `term` is the (humanly recognizable) [word or phrase](term@) that represents this meaning, and `grouptags` is a set of [grouptags](@) that the tuple is associated with.
+2. Then the [terminology construction](/docs/tev2/manuals/terminology-construction) takes place, which can be thought of as constructing a set of tuples `{ [termname, term, grouptags] }`, where `termname` [identifies](@) the meaning of the [term](@), `term` is the (humanly recognizable) [word or phrase](term@) that represents this meaning, and `grouptags` is a set of [grouptags](@) that the tuple is associated with.
 3. For every tuple in this set, an [MRG entry](@) is created, and added to the [MRG](@) under construction. Note that the structure of each such [entry](mrg-entry@) depends on the type of the [knowledge artifact](@) that the [term](@) represents.
 4. the result is put at the location as specified by the [SAF](@), and the [SAF](@) itself is updated as necessary.
 
@@ -51,7 +51,7 @@ The common fields get their values according to the following table:
 | `scopetag`     | `scopetag` field in the `scope` section of the [SAF](@). |
 | `id`           | `id` field of the [curated text](@). |
 | `termtype`     | `termtype` field of the [curated text](@). |
-| `termid`       | `termid` field of the [curated text](@). |
+| `termname`       | `termname` field of the [curated text](@). |
 | `formphrases`  | `formphrases` field of the [curated text](@). |
 | `grouptags`    | `grouptags` field of the [curated text](@). |
 | `status`       | `status` field of the [curated text](@). If that value is not present, and the [SAF](@) has a non-empty `statuses` field in its `scope` section, then the value of the first element of that `statuses` field is used. |

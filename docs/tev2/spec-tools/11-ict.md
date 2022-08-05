@@ -132,7 +132,7 @@ Integrity checks for the `scopes` section include:
 
 Integrity checks for the `entries` section consist of one part that is generic for all entries, and another part that depends on the value of the `termtype` field (so that checking of e.g. entries of type `concept` and of type `pattern` can have different checks.) The checks that every entry must pass include the following:
 - `scopetag` MUST also appear as the value of `terminology.scopetag`, or as an element in one of the `scopes.scopetags` elements.
-- `id` SHOULD be "`termid`" or "concept-`termid`" if `termtype` is `concept` or unspecified; otherwise, `id` SHOULD be "`termtype`-`termid`".
+- `id` SHOULD be "`termname`" or "concept-`termname`" if `termtype` is `concept` or unspecified; otherwise, `id` SHOULD be "`termtype`-`termname`".
 - `termtype` SHOULD be a value for which a [ctext template](@) exists. <Mark>This needs further specification.</Mark>
 - `grouptags` MUST be a list of [grouptag](@) elements.
 - `license` MUST be an existing file in the directory pointed to by `scopedir`.
