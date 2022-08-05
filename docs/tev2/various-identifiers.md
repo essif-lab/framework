@@ -1,6 +1,6 @@
 ---
 # `Multiple-use fields` (used by TEv2 and Docusaurus)
-id: various-identifiers #
+id: various-identifiers
 # Docusaurus (see https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter):
 title: Various Identifiers
 # hide_table_of_contents: true
@@ -54,9 +54,9 @@ Since every [scopes](@) must have precisely one [scope directory](@) (that conta
 
 Every [curated text](@) is stored as a file in the [scope directory](@) of a specific [scope](@). Thus, it can be identified through a [URI] that points to this file. The drawback here is that while all [curated texts](@) in a [scope](@) must reside in a specific directory (as [specified in the `curatedir` field](/docs/tev2/spec-files/saf#terminology) of the [SAF](@) of that [scope](@))), it might also reside in one of its (sub)subdirectories. They  way in which the files that contain [curated texts](@) may be organized (grouped) may differ from [scope](@) to [scope](@).
 
-Every [curated text](@) consists of a header (and a body); the header includes [generic 'header-fields'](/docs/tev2/ctext#generic-header-fields), one of which is the `id`-field. The contents of this field [identifies](@) the [curated text](@); there is no other [curated text](@) in (a file in) the [scope directory](@) that has the same value in its `id`-field.
+Every [curated text](@) consists of a header (and a body); the header includes [generic 'header-fields'](/docs/tev2/spec-ctexts/ctext-spec#generic-header-fields), one of which is the `id`-field. The contents of this field [identifies](@) the [curated text](@); there is no other [curated text](@) in (a file in) the [scope directory](@) that has the same value in its `id`-field.
 
-Alternatively, and the way of choice for [TEv2 tools](/docs/tev2/tev2-toolbox), is to refer to curated texts by means of what we have come to call a [termid](@)
+A [term](@) may serve as an (indirect) way to [identify](@) a [curated text](@), but that only works if there is only one [knowledge artifact](@) that can be referred to by the [term](@); differt types of [knowledge artifacts](@) may use the same [term](@) - this is known as '[semantic overloading](https://en.wikipedia.org/wiki/Semantic_overload)'. For example, one might want to define `Curator` as a [concept](@) (e.g. as subclass of [role](@)), but also as a relation between a `scope` and `terms-community`, that says which `terms-community` is the curator of what `scope`.
 
 
 ### [Definitions](@)

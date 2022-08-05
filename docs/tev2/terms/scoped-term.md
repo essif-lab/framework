@@ -8,7 +8,7 @@ termid: scoped-term
 grouptags:
 status: proposed
 created: 2022-06-06
-updated: 2022-06-06
+updated: 2022-08-04
 vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
@@ -17,10 +17,10 @@ term: scoped term  # Text that is the name of the concept in (human readable) te
 fullterm: "Term (Scoped)"
 shorterm:
 synonyms:
-glossaryText: "a [term](@) that represents a specific [knowledge artifact](@) of a particular [scope](@)/context."
+glossaryText: "a [term](@) that represents (and [identifies](@)) a specific [knowledge artifact](@) of a particular [community](@) (or other [party](@))."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Term (Scoped)"
-hoverText: "Scoped Term: a Term that represents a specific Knowledge Artifact of a specific Scope/context."
+hoverText: "Scoped Term: a Term that represents (and Identifies) a specific Knowledge Artifact of a particular Community (or other Party)."
 # sidebar_label:
 # hide_table_of_contents: true
 ---
@@ -31,7 +31,20 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 ### Summary
-A **scoped term** is a [term](@) that represents a specific [knowledge artifact](@) of a particular [scope](@)/context. It may refer to a (single) [definition](@), which helps people to distinguish between [entities](@) that are, and that are not instances of the [knowledge artifact](@). Also, a [scoped term](@) may be associated with a (single) [curated text](@) that (authoritatively) documents the [knowledge artifact](@) that it represents, and hence provides a description of the meaning of that [term](scoped-term@).
+A **scoped term** is a [term](@) that represents (and [identifies](@)) a specific [knowledge artifact](@) of a particular [community](@) (or other [party](@)).
+
+A [scoped term](@) consists of
+- a [name](term-name@);
+- optionally, a [type identifier](term-type@), that is used when the [name](term-name@) is also used in [terms](@) that are part of the same [scope](@), but that represent ([identify](@)) different [knowledge artifacts](@). For example, the text 'terminology' can be the [name](term-name@) associated with a [concept](@) (as in 'a set of terms'), but it could also be the [name](term-name@) that is associated with a [knowledge artifact](@) of type [mental model](@) (or [pattern](@)).
+- optionally, and currently not used, additional [term attributes](@), that may also be used to disambiguate the [term-name](@) and/or the {[term-name](@), [term-type](@)} pair.
+
+:::info Editors note
+The examples that show the need for having [term attributes](@) can be found in [knowledge artifacts](@) of type [relation](@), where we foresee the need to distinguish between relations that are conceptually identical, but can differ depending on the [concepts](@) that they relate. For example the relation "*owns(party,knowledge)*" would need to be distinguished from "*owns(party,physical-object)*", for which we would need to be able to include the [concept](@)-classes as part of the term.
+:::
+
+A [scoped term](@) can refer to a (single) [definition](@), which SHOULD be designed such that it helps people to distinguish between [entities](@) that are, and that are not instances of the [knowledge artifact](@) that the [term](scoped-term@) represents.
+
+A [scoped term](@) can also be associated with a (single) [curated text](@) that (authoritatively) documents the [knowledge artifact](@) that it represents, and hence provides a description of the meaning of that [term](scoped-term@).
 
 Within its [scope](@), [scoped terms](@) may be grouped by associating each of them with a [grouptag](@). Also, they may be selected (by the [curators](@) of the [scope](@)) to become part of (specific versions of) the [terminology](@) of that [scope](@).
 

@@ -58,6 +58,16 @@ entries: # here follows an (unsorted) list of MRG-entries
 
 The following fields are defined for the sections `terminology`:
 
+<details>
+  <summary>Legend</summary>
+
+1. **`Name`** contains the field name;
+2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
+3. **`Default`** If the field is NOT required, this specifies what [TEv2 tools](@) SHOULD assume that the value is. If the field IS required, you must provide it according to the specified value.
+4. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+
+</details>
+
 | Name       | Req'd | Description |
 | ---------- | :---: | :---------- |
 | `scopetag`   | Y | [Scopetag](@) of the [scope](@) in which the [MRG](@) is defined. This is the [scopetag](@) that the [curators](@) of the [scope](@) have chosen for this [scope](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
@@ -71,6 +81,16 @@ The following fields are defined for the sections `terminology`:
 
 The following fields are defined for the section `scopes`:
 
+<details>
+  <summary>Legend</summary>
+
+1. **`Name`** contains the field name;
+2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
+3. **`Default`** If the field is NOT required, this specifies what [TEv2 tools](@) SHOULD assume that the value is. If the field IS required, you must provide it according to the specified value.
+4. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+
+</details>
+
 | Name       | Req'd | Description |
 | ---------- | :---: | :---------- |
 | `scopetag`   | Y | [Scopetag](@) of a third-party [scope](@), the [MRG](@) of which contains [MRG entries](@) that have been imported into the [MRG](@). This [scopetag](@) has been chosen by the [curators](@) of the [scope](@) of which the [MRG](@) is part, to refer to that particular third-party [scope](@). This [scopetag](@) may differ from the [scopetag](@) that the [curators](@) of that third-party [scope](@) have chosen for this [scope](@) <br/>Must satisfy regex `[a-z0-9_-]+`. |
@@ -82,15 +102,30 @@ An [MRG](@) consists of a list of [MRG entries](@), the purpose of which is that
 
 [MRG entries](@) are typed, and each type has its own [MRG entry](@) structure. However, all [MRG entries](@) have a common set of fields, as follows:
 
+<details>
+  <summary>Legend</summary>
+
+1. **`Name`** contains the field name;
+2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
+3. **`Default`** If the field is NOT required, this specifies what [TEv2 tools](@) SHOULD assume that the value is. If the field IS required, you must provide it according to the specified value.
+4. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+
+</details>
+
 | Name         | Req'd | Description |
 | ------------ | :---: | :---------- |
 | `scopetag`     | Y | [Scopetag](@) that [identifies](@) the [scope](@) (within the scope in which the [MRG](@) is constructed) from within which the contents of the [MRG entry](@) is [curated](@), and obtained. The [`scopes` section](#mrg-scopes) in the [MRG](@) SHOULD contain a mapping between the `scopetag` and its associated [scope directory](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `vsntag`       | Y | [Versiontag](@) that [identifies](@) the version of the [terminology](@) from which the contents of the [MRG entry](@) is obtained. Thus, `scopetag`:`versiontag` [identifies](@) that [terminology](@).<br/>Must satisfy regex `[a-z0-9_-.]+`.  |
 | `id`           | Y | Text that [identifies](@) the [curated text](@) from which the content of this [MRG entry](@) is obtained; it has the same value as the `id`-field in the header of a [curated text](@). In case the contents of the [MRG entry](@) was obtained from another [MRG](@), this field has the same value as the `id` field of the [MRG entry](@) from which the contents was obtained.<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `termid`     | Y | Name ([Identifier](@)) that is used to represent a [knowledge artifact](@). Actual, i.e. successful [identification](@) of the [knowledge artifact](@) may also depend on other characteristics, such as the `termtype`, as names are known to be [semantically overloaded](https://en.wikipedia.org/wiki/Semantic_overload). See [TEv2 identification](/docs/tev2/various-identifiers) for more details.<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `termtype`     | Y | Text that [identifies](@) the kind of [knowledge artifact](@) that this [MRG entry](@) refers to. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
-| `termid`       | Y | Text that [identifies](@) (represents) an instance of the [knowledge artifacts](@) of the type specified in the `termtype` field of this [MRG entry](@), and is dereferenceable as such in the [scope](@) as specified in the `scopetag` field.<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `termattrs`    | n | List of [attributes](term-attrs@) that enable one to distinguish between [knowledge artifacts](@) that have the same [term name](@) and are of the same [type](term-type@). |
+| `glossaryText` | n | Text that is used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](@). |
+| `hoverText`    | n | Text that can be used as the contents of a popup that shows as the [term](@) is rendered in a web browser and the [reader](@) hovers over the [term](@) with its mouse. |
+| `termreftext`  | n | `id` | [reftext](@) that [identifies](@) the [curated text](@) that documents the [knowledge artifact](@) that this term represents. |
+| `synonyms`     | n | | List of (optionally quoted) [terms](@), that are considered to also represent the [knowledge artifact](@) that is documented by the [curated text](@). |
 | `formphrases`  | n | List of [texts](formphrase@) that are [used to convert](/docs/tev2/spec-tools/trrt#id) the `show text` parts of [term refs](@) into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-{}]+)\s*(?:,\s*([a-z0-9_-{}]+))*\s*\])?`](https://www.debuggex.com/r/TZe27fzbJskMcjl8). |
-| `grouptags`    | n | List of [grouptags](@), each of which [identifies](@) a group of [knowledge artifacts](@) of which the [knowledge artifact](@) that this [curated text](@) describes, is a member.<br/>Each grouptag must satisfy regex `[a-z0-9_-]+`. |
+| `grouptags`    | n | List of [grouptags](@), each of which signifies that the [(scoped) term](@) that this [MRG entry](@) documents, is part of the group of [terms](@) that it represents.<br/>Each grouptag must satisfy regex `[a-z0-9_-]+`. |
 | `status`       | n | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
 | `created`      | n | Date at which of the [term](@)-related data was created, in the date format as used within this [scope](@). |
 | `updated`      | n | Date at which of the [term](@)-related data was last modified, in the date format as used within this [scope](@). |
@@ -123,31 +158,19 @@ A good description - which would include a good [definition](@) - allows us to r
 
 The header fields that are specific for `concept`-type descriptions are as follows:
 
-| Name         | Req'd | Description |
-| ------------ | :---: | :---------- |
-| `isa`          | n | `id` of the [knowledge artifact](@) of type `concept` for which this is a specialization. |
-| `term`         | Y | Text that is used to [identify](@) the [concept](@) (in the context of the [MRG](@), and also to represent arbitrary instances of that [concept](@) in human readable documents, such as a [HRG](@).<br/>Example: 'knowledge artifact'. |
-| `fullterm`     | n | Text that can be used as the complete form of the text mentioned in the `term` field.<br/>Example: 'knowledge artifact (of a scope)', or '(scoped) knowledge artifact'. |
-| `shorterm`     | n | Text that can be used as an abbreviated form of the text mentioned in the `term` field.<br/>Example: 'artifact'. |
-| `synonyms`     | n | List of (optionally quoted) words and/or (quoted) phrases, that are considered to have the same meaning as the text specified in the `term` field. |
-| `glossaryText` | Y | Text that can be used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](@). |
-| `hoverText`    | n | Text that can be used as the contents of a popup that shows as the [term](@) is rendered in a web browser and the [reader](@) hovers over the [term](@) with its mouse. |
+<details>
+  <summary>Legend</summary>
 
-</TabItem>
-<TabItem value="term"><br/>
+1. **`Name`** contains the field name;
+2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
+3. **`Default`** If the field is NOT required, this specifies what [TEv2 tools](@) SHOULD assume that the value is. If the field IS required, you must provide it according to the specified value.
+4. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
 
-### Header fields for `termtype: term`
+</details>
 
-A [term](@) is a word or phrase that is used in a [scope](@) in a specific meaning, typically referring to a specific [concept](@), or a [relation](@) between [concepts](@). This meaning may deviate from the meanings that this word or phrase has in other [scopes](@), and in everyday language.
-
-[Terms](@) do not generally need to be documented as a [curated text](@) when they are already specified as the default name in the [curated text](@) that describes the [concept](@), [relation](@), or other [knowledge artifact](@). In specific cases, however, words or phrases need to be assigned to existing [curated texts](@), for example, a [scopetag](@) is a specialization of a [grouptag](@), and can hence be documented as (a specialization of) a [grouptag](@) that has the (additional) property of grouping all [terms](@) defined in the [scope](@) that it [identifies](@).
-
-:::info Editor's note
-header fields for `term` termtypes need to be discussed.
-:::
-
-| Name | Req'd | Description |
-| ---- | :---: | :---------- |
+| Name       | Req'd | Description |
+| ---------- | :---: | :---------- |
+| `isa`        | n | `id` of the [curated text](@) that documents, or a [term](@) that represents the [knowledge artifact](@) (of type `concept`) for which this [curated text](@) describes a specialization. |
 
 </TabItem>
 <TabItem value="relation"><br/>
@@ -164,6 +187,16 @@ This section needs to be discussed as `relation` is introduced as a new termtype
 
 A good description - which would include a good [definition](@) of the [relation](@) - allows us to reason about everything related to the [relation](@). [Curated texts](@) of type `relation` intend to provide such descriptions. Also, they specify a default name ([term](@)) by which the [relation](@), as well as unidentified instances thereof, can be refered to.
 
+<details>
+  <summary>Legend</summary>
+
+1. **`Name`** contains the field name;
+2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
+3. **`Default`** If the field is NOT required, this specifies what [TEv2 tools](@) SHOULD assume that the value is. If the field IS required, you must provide it according to the specified value.
+4. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+
+</details>
+
 | Name         | Req'd | Description |
 | ------------ | :---: | :---------- |
 | `subject`      | y | [concept](@) that the relation relates with the [concept](@) specified by `object`. If the relation is a so-called triple (i.e. a (`subject`, `predicate`, `object`)-relation, it is the `subject`. |
@@ -173,8 +206,6 @@ A good description - which would include a good [definition](@) of the [relation
 | `omult`        | n | multiplicity associated with the `object`. If not specified, its value is `[0..n]`. |
 | `endo`         | n | For [homogeneous relations](https://en.wikipedia.org/wiki/Homogeneous_relation), i.e. relations where `subject` and `object` are the same, e.g. as in (_Person_, _is a parent of_, _Person_), [constraints](https://en.wikipedia.org/wiki/Homogeneous_relation#Properties) may hold that are typical for endo relations, such as `reflexive`, `irreflexive`, `symmetric`, `asymmetric`, `antisymmetric`, `transitive`. |
 | `constraints`  | n | Comma separated list of texts, each of which specifies a constraint that the relation must always satisfy. |
-| `glossaryText` | Y | Text that can be used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](@). |
-| `hoverText`    | n | Text that can be used as the contents of a popup that shows as the [term](@) is rendered in a web browser and the [reader](@) hovers over the [term](@) with its mouse. |
 
 [^3]: In a [relation](@) such as (_Person_, _loves_, _Person_), _Person_ is a ([concept](@)) class. However, in a [relation](@) such as (_Person_, _has lived_, _years_), _years_ is not a [concept](@) (idea), but a data-variable, that has a specific value, in this case a number (of years).
 
@@ -192,6 +223,16 @@ A good description - which would include a formalized model - allows us to expla
 :::info Editor's note
 header fields for `pattern` termtypes need to be discussed.
 :::
+
+<details>
+  <summary>Legend</summary>
+
+1. **`Name`** contains the field name;
+2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
+3. **`Default`** If the field is NOT required, this specifies what [TEv2 tools](@) SHOULD assume that the value is. If the field IS required, you must provide it according to the specified value.
+4. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+
+</details>
 
 | Name | Req'd | Description |
 | ---- | :---: | :---------- |

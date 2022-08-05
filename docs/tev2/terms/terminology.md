@@ -9,7 +9,7 @@ formphrases: terminolog{yies}
 grouptags:
 status: proposed
 created: 2022-06-06
-updated: 2022-06-06
+updated: 2022-08-03
 vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
@@ -17,10 +17,10 @@ term: terminology  # Text that is the name of the concept in (human readable) te
 fullterm: terminology (in/of a scope)
 shorterm:
 synonyms:
-glossaryText: "the set of [terms](@) that are used within a single [scope](@) to refer to [concepts](@) and other [knowledge artifacts](@) of a single [party](@), enabling [parties](@) to reason and communicate ideas they have about one or more specific topics."
+glossaryText: "a set of [terms](@) that are used within a single [scope](@) to refer to [concepts](@) and other [knowledge artifacts](@) of a single [party](@) (e.g. a [community](@)), enabling [parties](@) to reason and communicate ideas they have about one or more specific topics."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Terminology (in/of a Scope)"
-hoverText: "Terminology (in/of a Scope): the set of terms that are used within a single Scope to refer to Concepts and other Knowledge Artifacts of a single Party, enabling Parties to reason and communicate ideas they have about one or more specific topics."
+hoverText: "Terminology (in/of a Scope): a set of terms that are used within a single Scope to refer to Concepts and other Knowledge Artifacts of a single Party (e.g. a Community), enabling Parties to reason and communicate ideas they have about one or more specific topics."
 # sidebar_label:
 # hide_table_of_contents: true
 ---
@@ -31,7 +31,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 ### Summary
-A **terminology** is the set of [terms](@) that are used within a single [scope](@) to refer to [concepts](@) and other [knowledge artifacts](@) of a single [party](@), enabling [parties](@) to reason and communicate ideas they have about one or more specific topics. It may be viewed as a topic-specific subset of that [party's](@) [vocabulary](@).
+A **terminology** is a set of [terms](@) that are used within a single [scope](@) to refer to [concepts](@) and other [knowledge artifacts](@) of a single [party](@) (e.g. a [community](@)), enabling [parties](@) to reason and communicate ideas they have about one or more specific topics. It may be viewed as a topic-specific subset of that [party's](@) [vocabulary](@).
 
 A [terminology](@) may be versioned, i.e. associated with a [versiontag]. This allows multiple [terminologies](@) to exist within a single [scope](@), enabling the [scope](@) to have one for specific purposes (e.g. for the further development of its [terms](@), or for use within a whitepaper).
 
