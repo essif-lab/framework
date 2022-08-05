@@ -44,6 +44,10 @@ It must not contain the characters `@` or `]` (this is needed to distinguish [te
 If omitted, its value is assumed to be [derivable from `showtext`](/docs/tev2/spec-tools/trrt#id).
 At a minimum, this is the case if the `id` equals the result of processing `showtext` by first converting every character in the range `[A-Z]` to lower-case, and then replacing every sequence of characters specified by regex `[^A-Za-z_-]+` with (a single) `-` character.
 
+:::info Editor's note
+We may want to consider a syntax that allows the `id` field to be specified as a [term](@) (that is: using the [term name](@), an (optional) [term type](@) and (optional) [term attributes](@)), as that would perhaps make more sense for [authors](@) to write than using an `id` that identifies a [curated text](@). Such syntax could then also be used to specify synonyms in the header of [curated texts](@).
+:::
+
 ### `trait` {#trait}
 
 **`trait`** is a text that [identifies](@) a particular (kind of) characteristic (feature, attribute, particularity) that is associated with the [term](@), and to a description of which is to be referred.<br/>It must satisfy the regex `[a-z0-9_-]+`.

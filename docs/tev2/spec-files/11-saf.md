@@ -67,6 +67,16 @@ scope:
 
 The following fields are defined for the `scope` section of a [SAF](@):
 
+<details>
+  <summary>Legend</summary>
+
+1. **`Name`** contains the field name;
+2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
+3. **`Default`** If the field is NOT required, this specifies what [TEv2 tools](@) SHOULD assume that the value is. If the field IS required, you must provide it according to the specified value.
+4. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+
+</details>
+
 | Name        | Req'd | Description |
 | :---------- | :---: | :---------- |
 | `scopetag`    | Y | [Scopetag](@) that [curators](@) of this scope have determined for this [terminology](@). The associated [scopedir](@) is specified in the section `scopes`. |
@@ -113,6 +123,16 @@ scopes:  #
 
 The following fields are defined for the `scopes` section of a [SAF](@):
 
+<details>
+  <summary>Legend</summary>
+
+1. **`Name`** contains the field name;
+2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
+3. **`Default`** If the field is NOT required, this specifies what [TEv2 tools](@) SHOULD assume that the value is. If the field IS required, you must provide it according to the specified value.
+4. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+
+</details>
+
 | Name        | Req'd | Description |
 | ----------- | :---: | ----------- |
 | `scopetags`   | Y | List of at least one [scopetag](@), that the [curator(s)](@) of this [scope](@) have determined for the [terminology](@) of a specific [scope](@). The associated [scopedir](@) is specified in the section `scopes`.|
@@ -156,15 +176,25 @@ versions:
 
 The following fields are defined for the `versions` section of a [SAF](@):
 
-| Name       | Req'd | Description |
-| ---------- | :---: | ----------- |
-| `vsntag`     | Y | [Versiontag](@) that that is used to [identify](@) this version within the set of all other versions that are maintained within this [scope](@). in this [SAF](@). It MUST NOT be changed during the lifetime of this version.<br/>Must satisfy regex `[a-z0-9_-\.]+`. |
-| `altvsntags` | n | List of alternative [versiontags](@) that may be used to refer to this version of the [scope's](@) [terminology](@). A typical use of this field would be to tag a version as the 'latest' version.<br/>Must satisfy regex `[a-z0-9_-\.]+`. |
-| `license`    | n | File that contains the (default) licensing conditions. Full URL is `scopedir`/`license`. If not specified, its value defaults to the value of the `license` field in the `scope` section (of this [SAF](@)). The purpose of this field is to allow different versions of the [scope's](@) [terminology](@) to have different licenses. |
+<details>
+  <summary>Legend</summary>
+
+1. **`Name`** contains the field name;
+2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
+3. **`Default`** If the field is NOT required, this specifies what [TEv2 tools](@) SHOULD assume that the value is. If the field IS required, you must provide it according to the specified value.
+4. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+
+</details>
+
+| Name        | Req'd | Description |
+| ----------- | :---: | ----------- |
+| `vsntag`      | Y | [Versiontag](@) that that is used to [identify](@) this version within the set of all other versions that are maintained within this [scope](@). in this [SAF](@). It MUST NOT be changed during the lifetime of this version.<br/>Must satisfy regex `[a-z0-9_-\.]+`. |
+| `altvsntags`  | n | List of alternative [versiontags](@) that may be used to refer to this version of the [scope's](@) [terminology](@). A typical use of this field would be to tag a version as the 'latest' version.<br/>Must satisfy regex `[a-z0-9_-\.]+`. |
+| `license`     | n | File that contains the (default) licensing conditions. Full URL is `scopedir`/`license`. If not specified, its value defaults to the value of the `license` field in the `scope` section (of this [SAF](@)). The purpose of this field is to allow different versions of the [scope's](@) [terminology](@) to have different licenses. |
 | `termselcrit` | Y | List of [term selection instructions](@) that are used to generate (this version of) the [scope's](@) [terminology](@). See [Terminology Construction](/docs/tev2/manuals/terminology-construction) for details. |
-| `status`     | n | Text that [identifies](@) the status of the [term](@). ([Communities](@) of) [scopes](@) may specify values for this field. If not specified, the status SHOULD be assumed to be 'concept', 'draft', 'proposed', or similar. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
-| `from`       | n | Date at which it was decided to establish this version. |
-| `to`         | n | Date at which this version will expire (or has expired). |
+| `status`      | n | Text that [identifies](@) the status of the [term](@). ([Communities](@) of) [scopes](@) may specify values for this field. If not specified, the status SHOULD be assumed to be 'concept', 'draft', 'proposed', or similar. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
+| `from`        | F | Date at which it was decided to establish this version. |
+| `to`          | F | Date at which this version will expire (or has expired). |
 
 :::info Editor's note
 The `from` and `to` dates have been included to (in future) enable one to refer to a specific version of the terminology that was valid at a particular date. This feature needs to be worked out, and will impact [terminology construction](/docs/tev2/manuals/terminology-construction), [term ref specs](/docs/tev2/spec-syntax/term-ref), and various tools.

@@ -62,7 +62,7 @@ The architecture is based on the ToIP/eSSIF-Lab [Terminology Model](/docs/terms/
 The figure not only shows the raw texts, the their processing by the [TRRT](@) tool and the subsequent rendering to produce formatted texts, but also other files that exist within the [scope](@), and that are being [curated](@) by its [terms-community](@) (the author/group). TEv2 expects all files that are under [curation](@), and/or are generated to serve a purpose within a [scope](@), to live in a specific directory, which we call the [scope directory](@). The rounded rectangles in the figure represent such directories and (parts of) their contents. Further details are in the [TRRT specs](/docs/tev2/spec-tools/trrt).
 
 ### curated texts
-To the left of the figure, you can see that some raw texts are 'ingressed' into the [scope directory](@), and thereby have become so-called [curated texts](@). These texts typically contain descriptions of [terms](@), [definitions](@), examples, etc., that help interested [parties](@) to formulate and understand the [concepts](@) that they need. The [curators](@) of the [scope](@) are tasked to run the ingression process, and specify the details of what this means for that [scope](@). Further details are in the [Curated Texts description](/docs/tev2/ctext).
+To the left of the figure, you can see that some raw texts are 'ingressed' into the [scope directory](@), and thereby have become so-called [curated texts](@). These texts typically contain descriptions of [terms](@), [definitions](@), examples, etc., that help interested [parties](@) to formulate and understand the [concepts](@) that they need. The [curators](@) of the [scope](@) are tasked to run the ingression process, and specify the details of what this means for that [scope](@). Further details are in the [Curated Texts description](/docs/tev2/spec-ctexts/ctext-spec).
 
 ### ingress tools
 While the [curated texts](@) have specific requirements for their structure, the raw texts may not. For example, within the context of the Trust over IP foundation, so-called [Terms Wikis](https://wiki.trustoverip.org/display/HOME/Terms+Wikis) are used to facilitate people of various backgrounds as they contribute to the creation of a [terminology](@). The raw text is then in 'wiki format', and needs to be converted to the structure required for [curated texts](@). We expect to see tools being created that facilitate this transition.
@@ -99,7 +99,7 @@ TEv2 assumes that the [curated](@) data resides in an existing [scope directory]
 Thus, whenever a [terms-community](@) decided that some contribution is to be included in the part of the [corpus](@) that is maintained by that [community](terms-community@), the [curators](@) of that [community](terms-community@) are tasked to
 
 1. create/maintain/update any [scope](@)-related administration in the [scope directory](@) that is needed for curation, as specified by a [Scope Administration File (SAF)]/tev2/spec-files/saf;
-2. convert that contribution to (a set of) [curated files](@), that comply with the [specifications](/docs/tev2/ctext) for such files;
+2. convert that contribution to (a set of) [curated files](@), that comply with the [specifications](/docs/tev2/spec-ctexts/ctext-spec) for such files;
 3. store them at the location as designated in the [SAF]/tev2/spec-files/saf;
 4. generate/update any artifact that the [community](terms-community@) wants to automatically maintain, which in particular includes the [MRG](@) and associated [HRG](@).
 
@@ -107,6 +107,6 @@ This document provides an overview of the knowledge that [curators](@) may need 
 
 1. [Setup/installation](/docs/tev2/manuals/tev2-installation) of a [scope directory](@) that is suitable for working with TEv2, and the creation of a [SAF]/tev2/spec-files/saf.
 
-2. [Curation](@) of terminological contributions. This requires knowledge about the [file structure](/docs/tev2/ctext) of [curated file](@).
+2. [Curation](@) of terminological contributions. This requires knowledge about the [file structure](/docs/tev2/spec-ctexts/ctext-spec) of [curated file](@).
 
 3. [generation](/docs/tev2/spec-tools/using-toolbox-tools) of [knowledge artifacts](@). It is typical for a [terms community](@) to want to have a [glossary](@) of the terms they either have defined themselves, or are defined elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).

@@ -1,7 +1,5 @@
 ---
-# `Multiple-use fields` (used by TEv2 and Docusaurus)
 id: ctext-pattern #
-# Docusaurus (see https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter):
 title: Curated Texts of type `Pattern`
 sidebar_label: Patterns
 # hide_table_of_contents: true
@@ -22,7 +20,7 @@ The entire section on Terminology Engine v 2 (TEv2) is still under construction.
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
-This document specifies what specifics of [curated texts](@) that describe [knowledge artifacts](@) of type `pattern`. The reader is assumed to be familiar with the [generic structure of a curated text](/docs/tev2/ctext).
+This document specifies what specifics of [curated texts](@) that describe [knowledge artifacts](@) of type `pattern`. The reader is assumed to be familiar with the [generic structure of a curated text](/docs/tev2/spec-ctexts/ctext-spec).
 
 ## Introduction
 

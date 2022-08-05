@@ -1,7 +1,5 @@
 ---
-# `Multiple-use fields` (used by TEv2 and Docusaurus)
 id: ctext-concept #
-# Docusaurus (see https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter):
 title: Curated Texts of type `Concept`
 sidebar_label: Concepts
 # hide_table_of_contents: true
@@ -22,7 +20,7 @@ The entire section on Terminology Engine v 2 (TEv2) is still under construction.
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
-This document specifies what specifics of [curated texts](@) that describe [knowledge artifacts](@) of type <Mark>`concept`</Mark>. The reader is assumed to be familiar with the [generic structure of a curated text](/docs/tev2/ctext).
+This document specifies what specifics of [curated texts](@) that describe [knowledge artifacts](@) of type <Mark>`concept`</Mark>. The reader is assumed to be familiar with the [generic structure of a curated text](/docs/tev2/spec-ctexts/ctext-spec).
 
 ## Introduction
 
@@ -47,9 +45,6 @@ A good description allows [readers](@) to learn how the authors of the descripti
 | ------------ | :---: | ----------- |
 | `isa`          | n | `id` of the [knowledge artifact](@) of type `concept` for which this is a specialization. |
 | `term`         | Y | Text that is the name of the [concept](@) in (human readable) texts. It is typically used to represent the [concept](@) itself, but also to represent arbitrary/unspecified instances thereof. This text will show as an entry in the [HRG](@).<br/>Examples: 'concept', or 'knowledge artifact'. |
-| `fullterm`     | n | Text that can be used as the complete form of the text mentioned in the `term` field.<br/>Example: 'knowledge artifact (of a scope)', or '(scoped) knowledge artifact'. |
-| `shorterm`     | n | Text that can be used as an abbreviated form of the text mentioned in the `term` field.<br/>Example: 'artifact'. |
-| `synonyms`     | n | List of (optionally quoted) words and/or (quoted) phrases, that are considered to have the same meaning as the text specified in the `term` field. |
 | `glossaryText` | Y | Text that can be used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). This text MAY contain [term refs](@). |
 | `hoverText`    | n | Text that can be used as the contents of a popup that shows as the [term](@) is rendered in a web browser and the [reader](@) hovers over the [term](@) with its mouse. |
 
