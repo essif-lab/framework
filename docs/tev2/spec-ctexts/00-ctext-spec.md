@@ -81,29 +81,28 @@ The following table specifies the **generic header fields**:
 
 1. **`Name`** contains the field name;
 2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
-3. **`Default`** If the field is NOT required, this specifies what [TEv2 tools](@) SHOULD assume that the value is. If the field IS required, you must provide it according to the specified value.
-4. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+3. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
 
 </details>
 
-| Name         | Req'd | Default | Description |
-| ------------ | :---: | ------- | ----------- |
-| `id`           | Y*| | Text that [identifies](@) this [curated text](@) within the context of the [scope](@). The value of this field can be used as the `id`-field of a [term ref](@) that refers to the [knowledge artifact](@) described by this [curated text](@). It is RECOMMENDED that its value is constructed such that [authors](@) would use it in a natural way, e.g. by making it equal to `termname` or `<termtype>-<termname>`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
-| `scope`        | n | | [Scopetag](@) that [identifies](@) the [scope](@) within which this document is being [curated](@). The purpose of specifying this field is that it enables tools to check that resolving any [term refs](@) within this document will use this to [identify](@) the default [scope](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
-| `termname`     | Y | | Name ([Identifier](@)) that is used to represent a [knowledge artifact](@). Actual, i.e. successful [identification](@) of the [knowledge artifact](@) may also depend on other characteristics, such as the `termtype`, as names are known to be [semantically overloaded](https://en.wikipedia.org/wiki/Semantic_overload). See [TEv2 identification](/docs/tev2/various-identifiers) for more details.<br/>Must satisfy regex `[a-z0-9_-]+`. |
-| `termtype`     | n | | Text that [identifies](@) the kind of [knowledge artifact](@) that this [curated text](@) describes. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| Name         | Req'd | Description |
+| ------------ | :---: | ----------- |
+| `id`           | Y*| Text that [identifies](@) this [curated text](@) within the context of the [scope](@). The value of this field can be used as the `id`-field of a [term ref](@) that refers to the [knowledge artifact](@) described by this [curated text](@). It is RECOMMENDED that its value is constructed such that [authors](@) would use it in a natural way, e.g. by making it equal to `termname` or `<termtype>-<termname>`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `scope`        | n | [Scopetag](@) that [identifies](@) the [scope](@) within which this document is being [curated](@). The purpose of specifying this field is that it enables tools to check that resolving any [term refs](@) within this document will use this to [identify](@) the default [scope](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `termname`     | Y | Name ([Identifier](@)) that is used to represent a [knowledge artifact](@). Actual, i.e. successful [identification](@) of the [knowledge artifact](@) may also depend on other characteristics, such as the `termtype`, as names are known to be [semantically overloaded](https://en.wikipedia.org/wiki/Semantic_overload). See [TEv2 identification](/docs/tev2/various-identifiers) for more details.<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `termtype`     | n | Text that [identifies](@) the kind of [knowledge artifact](@) that this [curated text](@) describes. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `termattrs`    | n | List of [attributes](term-attrs@) that enable one to distinguish between [knowledge artifacts](@) that have the same [term name](@) and are of the same [type](term-type@). |
 | `glossaryText` | n | Text that is used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](@). |
 | `hoverText`    | n | Text that can be used as the contents of a popup that shows as the [term](@) is rendered in a web browser and the [reader](@) hovers over the [term](@) with its mouse. |
-| `termreftext`  | n | | [reftext](@) that [identifies](@) the [curated text](@) that documents the [knowledge artifact](@) that this term represents. |
-| `synonyms`     | n | | List of (optionally quoted) [terms](@), that are considered to also represent the [knowledge artifact](@) that is documented by the [curated text](@). |
-| `formphrases`  | n | | List of [texts](formphrase@) that are [used to convert](/docs/tev2/spec-tools/trrt#id) the `show text` parts of [term refs](@) into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-{}]+)\s*(?:,\s*([a-z0-9_-{}]+))*\s*\])?`](https://www.debuggex.com/r/TZe27fzbJskMcjl8). |
-| `grouptags`    | n | | List of [grouptags](@), each of which signifies that the [(scoped) term](@) that this [curated text](@) documents, is part of the group of [terms](@) that it represents.<br/>Example: `[tev2, management]`.<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-]+)\s*(?:,\s*([a-z0-9_-]+))*\s*\])?`](https://www.debuggex.com/r/a51CXl1NzR3kwihT). |
-| `status`       | n | | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
-| `created`      | n | | Date at which of the [curated text](@) was created, in the date format as used within this [scope](@). |
-| `updated`      | n | | Date at which of the [curated text](@) was last modified, in the date format as used within this [scope](@). |
-| `vsntag`       | n | | Text that identifies the version of the [knowledge artifact](@) that this [curated text](@) describes.<br/>Must satisfy regex `[a-z0-9_-]+`. |
-| `contributors` | n | | Text that shows (or refers to) the people that have contributed to this [curated text](@). |
+| `termreftext`  | n | [reftext](@) that [identifies](@) the [curated text](@) that documents the [knowledge artifact](@) that this term represents. |
+| `synonyms`     | n | List of (optionally quoted) [terms](@), that are considered to also represent the [knowledge artifact](@) that is documented by the [curated text](@). |
+| `formphrases`  | n | List of [texts](formphrase@) that are [used to convert](/docs/tev2/spec-tools/trrt#id) the `show text` parts of [term refs](@) into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-{}]+)\s*(?:,\s*([a-z0-9_-{}]+))*\s*\])?`](https://www.debuggex.com/r/TZe27fzbJskMcjl8). |
+| `grouptags`    | n | List of [grouptags](@), each of which signifies that the [(scoped) term](@) that this [curated text](@) documents, is part of the group of [terms](@) that it represents.<br/>Example: `[tev2, management]`.<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-]+)\s*(?:,\s*([a-z0-9_-]+))*\s*\])?`](https://www.debuggex.com/r/a51CXl1NzR3kwihT). |
+| `status`       | n | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
+| `created`      | n | Date at which of the [curated text](@) was created, in the date format as used within this [scope](@). |
+| `updated`      | n | Date at which of the [curated text](@) was last modified, in the date format as used within this [scope](@). |
+| `vsntag`       | n | Text that identifies the version of the [knowledge artifact](@) that this [curated text](@) describes.<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `contributors` | n | Text that shows (or refers to) the people that have contributed to this [curated text](@). |
 
 :::info Editor's notes
 1. The field `termreftext` isn't properly defined yet, and therefore every use should be documented and fed back to the developers of TEv2.

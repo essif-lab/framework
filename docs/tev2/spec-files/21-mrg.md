@@ -63,8 +63,7 @@ The following fields are defined for the sections `terminology`:
 
 1. **`Name`** contains the field name;
 2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
-3. **`Default`** If the field is NOT required, this specifies what [TEv2 tools](@) SHOULD assume that the value is. If the field IS required, you must provide it according to the specified value.
-4. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+3. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
 
 </details>
 
@@ -86,8 +85,7 @@ The following fields are defined for the section `scopes`:
 
 1. **`Name`** contains the field name;
 2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
-3. **`Default`** If the field is NOT required, this specifies what [TEv2 tools](@) SHOULD assume that the value is. If the field IS required, you must provide it according to the specified value.
-4. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+3. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
 
 </details>
 
@@ -107,8 +105,7 @@ An [MRG](@) consists of a list of [MRG entries](@), the purpose of which is that
 
 1. **`Name`** contains the field name;
 2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
-3. **`Default`** If the field is NOT required, this specifies what [TEv2 tools](@) SHOULD assume that the value is. If the field IS required, you must provide it according to the specified value.
-4. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+3. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
 
 </details>
 
@@ -163,8 +160,7 @@ The header fields that are specific for `concept`-type descriptions are as follo
 
 1. **`Name`** contains the field name;
 2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
-3. **`Default`** If the field is NOT required, this specifies what [TEv2 tools](@) SHOULD assume that the value is. If the field IS required, you must provide it according to the specified value.
-4. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+3. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
 
 </details>
 
@@ -192,8 +188,7 @@ A good description - which would include a good [definition](@) of the [relation
 
 1. **`Name`** contains the field name;
 2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
-3. **`Default`** If the field is NOT required, this specifies what [TEv2 tools](@) SHOULD assume that the value is. If the field IS required, you must provide it according to the specified value.
-4. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+3. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
 
 </details>
 
@@ -229,8 +224,7 @@ header fields for `pattern` termtypes need to be discussed.
 
 1. **`Name`** contains the field name;
 2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
-3. **`Default`** If the field is NOT required, this specifies what [TEv2 tools](@) SHOULD assume that the value is. If the field IS required, you must provide it according to the specified value.
-4. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+3. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
 
 </details>
 
