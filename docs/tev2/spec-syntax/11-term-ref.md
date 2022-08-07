@@ -17,7 +17,7 @@ This document specifies how you can use a [term](@) in a [curated text](@) while
 
 This file specifies the syntax of [Term refs](@). The [TRRT](@) describes [how they are processed (resolved)](/docs/tev2/spec-tools/trrt#term-ref-resolution).
 
-## Term References (Original/Default Syntax) {#termref}
+## Term References (Original/Default Syntax) {#basic-syntax}
 
 A [term ref](@) can be thought of as a [Markdown link](https://www.markdownguide.org/basic-syntax/#links), but rather than linking to some URL or fragment, it refers/links to a specific descriptive text (e.g. a [definition](@), purpose, or example) that is associated with (a specific version of) a [(scoped) term](scoped-term@), which is [identified](@) by its [scope](@) and the [term](@) (label, text).
 
@@ -73,7 +73,7 @@ If omitted (in which case the preceding `:`-character may also be omitted), its 
 It has been suggested to provide [term ref](@) syntax that allows one to refer to a [knowledge artifact](@) from a [terminology] that was 'current'/'latest'/... at a particular date. The [SAF](@) [versioning specifications](/docs/tev2/spec-files/saf#versions) already cater for `from` and `to` dates, but everything else needs to be worked out.
 :::
 
-### Alternative notation {#termref-alt}
+### Alternative notation {#alternative-syntax}
 
 It is convenient for authors to be able to use the '@`scopetag`' part of a [term ref](@) immediately behind the `show text` within the square brackets (`[` and `]`), and leave out the parentheses and the text in between if all the other items are omitted.
 
