@@ -131,7 +131,7 @@ An [MRG](@) consists of a list of [MRG entries](@), the purpose of which is that
 | `contributors` | n | Text that shows (or refers to) the people that have contributed to the texts related to this term. |
 | `locator`      | n | Text that identifies the file that holds the [curated text](@) of the [knowledge artifact](@) that this [MRG entry](@) describes. The full URL of the [curated text](@) is `scopedir`/`curatedir`/`locator`, where `scopedir` and `curatedir` can be found in the [SAF](@) (which is in the root of `scopedir`). Note that `locator` may contain a path. |
 | `navurl`       | n | URL that locates a human readable, rendered version of the [curated text](@) of the [knowledge artifact](@) that this [MRG entry](@) describes. This URL is used to resolve [term refs](@) that refer to this [knowledge artifact](@). |
-| `headingids`   | n | List of texts that can be used as a [markdown 'heading-ids' field](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids). |
+| `headingids`   | n | List of texts that can be used as a `trait` in a [term ref](@), which typically are [markdown 'heading-ids'](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids). |
 
 ## MRG Entries - Type-specific fields
 
