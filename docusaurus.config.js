@@ -29,7 +29,6 @@ module.exports = {
         { to: 'docs/essifLab-project',      label: 'EU Project',    position: 'left'},
         { to: 'docs/essifLab-pattern-list', label: 'Mental Models', position: 'left'},
         { to: 'docs/essifLab-glossary',     label: 'Glossary',      position: 'left'},
-        { to: 'docs/ssi-standards',         label: 'Standards',     position: 'right'},
         { to: 'docs/tev1/terminology-engine-v1',    label: 'TEv1',          position: 'right'},
         { to: 'docs/tev2/tev2-overview',    label: 'TEv2',          position: 'right'},
         { href: 'https://github.com/essif-lab/framework', label: 'Github', position: 'right',
@@ -59,7 +58,7 @@ module.exports = {
           title: 'eSSIF-lab Framework',
           items: [
             { label: 'Framework', to: 'docs/essifLab-fw' },
-            { label: 'Governance', to: 'docs/essifLab-governance' },
+            { label: 'Governance', to: 'docs/essifLab-fw-governance' },
             { label: 'Business-architecture', to: 'docs/essifLab-fw-bus-arch' },
             { label: 'Functional-architecture', to: 'docs/essifLab-fw-func-arch' },
           ],
@@ -67,7 +66,7 @@ module.exports = {
         {
           title: 'eSSIF-lab Terminology',
           items: [
-            { label: 'Introduction',  to: 'docs/essifLab-understanding' },
+            { label: 'Introduction',  to: 'docs/essifLab-collaborative-understanding' },
             { label: 'Glossary',      to: 'docs/essifLab-glossary' },
             { label: 'Mental Models', to: 'docs/essifLab-pattern-list' },
             { label: 'Github', href: 'https://github.com/essif-lab/framework/tree/master/docs/terms' },
@@ -95,7 +94,9 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/essif-lab/framework/-/tree/master/',
+          editUrl: 'https://github.com/essif-lab/framework/blob/master/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           breadcrumbs: false,
         },
         theme: {

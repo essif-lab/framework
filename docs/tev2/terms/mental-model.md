@@ -13,15 +13,15 @@ updated: 2022-06-07
 vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
-isa:
+isa: knowledge-artifact
 term: Mental Model  # Text that is the name of the concept in (human readable) texts.
 fullterm: "Mental Model (Conceptual Model, Pattern)"
 shorterm:
 synonyms: [ Pattern, "Conceptual Model" ]
-glossaryText: "A description, both casual and formal, of a set of [concepts](@) (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
+glossaryText: "A [knowledge artifact](@) that relates a set of [concepts](@) (ideas), relations between them, and constraints about a certain topic, into a coherent and consistent whole (sometimes called 'viewpoint', or 'way of thinking')."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Mental Model (Conceptual Model, Pattern)"
-hoverText: "A description, both casual and formal, of a set of Concepts (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
+hoverText: "A knowledge artifact that relates a set of Concepts (ideas), relations between them, and constraints about a certain topic, into a coherent and consistent whole (sometimes called 'viewpoint', or 'way of thinking')."
 # sidebar_label:
 # hide_table_of_contents: true
 ---
@@ -33,11 +33,11 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 
 ### Summary
 
-A **Pattern**, **[mental model](https://en.wikipedia.org/wiki/Mental_model)** or **[conceptual model](https://en.wikipedia.org/wiki/Conceptual_model)**) captures a limited set of [concepts](@) (ideas), relations between them, and constraints, such that together they form a coherent and consistent whole. They have been crafted so that they may serve as a basis for architecting, designing, and implementing IT components and their [governance](@) processes.
+A **Pattern**, **[mental model](https://en.wikipedia.org/wiki/Mental_model)** or **[conceptual model](https://en.wikipedia.org/wiki/Conceptual_model)**) is [knowledge artifact](@) that relates a set of [concepts](@) (ideas), relations between them, and constraints about a certain topic, into a coherent and consistent whole (sometimes called 'viewpoint', or 'way of thinking'). Typically, the number of [concepts](@) is limited, e.g. to [the magical number 7, plus or minus 2](http://psychclassics.yorku.ca/Miller/), so that individuals can grasp it without making too many mistakes. The quality of a [pattern](@) is directly proportional to its fitness for serving its intended purpose(s), e.g., as a basis for architecting, designing, and implementing IT components and their [governance](@) processes.
 
-Mental models use (tangible) [terms](@) to refer to these (intangible) concepts and relations, so in order to be consistent, a mental model must reside in the scope that defines these concepts and relations. A mental model may also 'connect' concepts of different scopes (preferably no more than two), which you might call an 'interconnection pattern' between these scopes.
+Since every [pattern](@) is a [knowledge artifact](@), it will need to be documented in such a way that the different people that work with it have a (provably) common understanding of what it entails. Typically, such documentation is a [curated text](@) that would consist of an introductory text that explains the ideas behind the [pattern](@) and the purposes for which it was designed, as well as a more formal specification of the [concepts](@), [relations](@) and [constraints](@) that it consists of. In order to be consistent, the description of a [mental model](@) must reside in the [scope](@) that also includes defines these [concepts](@) and [relations](@). A [mental model](@) may also 'connect' [concepts](@) of different [scopes](@) (preferably no more than two), which you might call an 'interconnection pattern' between these [scopes](@).
 
-The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts (as a specialization of a [knowledge artifact](@)).
 
 ### Purpose
 

@@ -9,8 +9,7 @@ formphrases: scope{ss}
 grouptags:
 status: proposed
 created: 2022-06-06
-updated: 2022-06-06
-vsntag: v0.1
+updated: 2022-08-04
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 isa:
@@ -18,10 +17,10 @@ term: scope  # Text that is the name of the concept in (human readable) texts.
 fullterm:
 shorterm:
 synonyms:
-glossaryText: "the extent of the area or subject matter (which we use, e.g., to define [patterns](@), [concepts](@), [terms](@) and [glossaries](@) in, but it serves other purposes as well)."
+glossaryText: "the extent of the [terms](@), [definitions](@) and other documentation that a [community](@) (which we call the [owner](@) of the [scope](@)) needs to express, communicate and validate its [knowledge](@) as relevant to achieving a specific subset of its [objectives](@)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Scope"
-hoverText: "Scope: the extent of the area or subject matter (which we use, e.g., to define Patterns, Concepts, Terms and Glossaries in, but it serves other purposes as well)."
+hoverText: "Scope: the extent of the Terms, Definitions and other documentation that a Community (i.e. the Owner of the Scope) needs to express, communicate and validate its Knowledge as relevant to achieving a specific subset of its Objectives."
 # sidebar_label:
 # hide_table_of_contents: true
 ---
@@ -32,15 +31,18 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 ### Summary
-A **scope** (in the eSSIFLab context) is the extent of the area or subject matter (as in [OED](https://www.lexico.com/definition/scope). We use it, e.g., to define patterns, concepts, terms and glossaries in, but a scope may serve other (additional) purposes. Scopes may overlap, or be nested. It is comparable to [Namespaces](https://en.wikipedia.org/wiki/Namespace), were it not that entities other than names (signs that are used to identify/refer to objects of various kinds) can reside in a scope as it is defined here.
+A **scope** is the extent of the [terms](@), [definitions](@) and other documentation that a [community](@) (which we call the [owner](@) of the [scope](@)) needs to express, communicate and validate its [knowledge](@) as relevant to achieving a specific subset of its [objectives](@).
+
+Other documentation includes [curated texts](@), and artifacts that are generated from that, such as [glossaries](@), [dictionaries](@) and the like. It also includes [tags](@) that can be used e.g. to refer to other [scopes](@) ([scopetags](@)), identify different versions for artifacts ([versiontags](@)), or create particular groups of [terms](@) ([grouptags](@)).
+
+[Scopes](@), that is: their contents, must be [curated](@). Since this requires particular capabilities that the [owning](@) [community](@) may lack, we say that this [curation](@) is done by a so-called [terms community](@), whose [members](@) are [individuals](@) that do have such capabilities; they serve the [owning](@) [community](@) as the [curators](@) of the [scope](@).
+
+A [scope](@) can contain multiple [terminologies](@); it is expected that at least one such [terminology](@) is committed to by the [owning](@) [community](@).
+
+[Scopes](@) may overlap, or be nested, in a similar way as [namespaces](https://en.wikipedia.org/wiki/Namespace).
 
 The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
-This allows each [term](@) (words, phrases) to be used in a limited scope, for specific purposes. The fact that terms are 'scoped' implies that a term may have _different_ meanings, depending on the scope within which it is used. Also, it allows us to author documentation in a 'scoped' fashion, allowing different groups of people to author, use and disseminate their documentation (including documentation about their ideas ([patterns](@)), [concepts](@), and [terms](@).)
 
-### Criteria
-a (virtual) demarcation that serves particular purposes.
-
-### Notes
-- Scopes within which a certain [concept](@) is known, may still use different terms to refer to the concept. That's the reason for having [definitions](@) that specify criteria for determining whether or not something qualifies as (an instance of) some concept: we cannot rely on different scopes necessarily using the same terms for that.
+The purpose of having [scopes](@) is that it enables [communities](@) (and other [parties](@)) to come to develop and maintain [terminologies](@) that are not only relevant for realizing specific [objectives](@), but also are fit for expressing and communicating the [knowledge](@) that is used for doing so. This is known as [curation](@) of a [scope](@). Specifically, [scopes](@) provide the members of the [owning](@) [community](@) (but also non-members) to establish a provable similar understanding of the [concepts](@) and other [knowledge artifacts](@), which is prerequisite for fruitful cooperation, and realizing [objectives](@).

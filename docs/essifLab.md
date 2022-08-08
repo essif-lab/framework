@@ -14,7 +14,7 @@ To learn more, we have a description on the following topics:
 - [Objectives](essifLab-objectives)
 - [Principles](essifLab-principles)
 - [EU Project 'eSSIF-Lab'](essifLab-project)
-- [Terminology](essifLab-understanding)
+- [Terminology](essifLab-collaborative-understanding)
 - [Mental Models](essifLab-pattern-list)
 - [Framework](essifLab-fw) (this is work in progress, and a placeholder for architectures)
 
