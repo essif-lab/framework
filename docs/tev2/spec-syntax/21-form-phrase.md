@@ -48,8 +48,8 @@ An `id` is said to match such an element if and only if the regex that consists 
 As the [trrt](@) has not yet been fully specified, nor implemented, the table below must currently be seen as a set of macro's that we intend to implement, but may not yet be there. The workaround is to replace a formphrase that is an element in the list of formphrases in a [curated text](@) with the set of words that it stands for. If you maintain [curated texts](@) with a good editor, e.g. VSCode, that should not be an issue as these macros are easily found and replaced by their expansions.
 :::
 
-| macro    |       regex              |     example     | texts that the example matches |
-| -------- | :----------------------: | :-------------: | :----------------------------- |
-| `{ss}`   | ('?s\|(s\))?             | `actor{ss}`     | matches: "actor", "actors", "actor's", and "actor(s)" |
-| `{yies}` | (y\|y's\|ies)            | `part{yies}`    | matches: "party", "party's", and "parties" |
-| `{ying}` | (y\|ier\|ying\|ies\|ied) | `identif{ying}` | matches: "identify", "identifier", "identifying", "identifies", and "identified" |
+| macro    |           regex                       |     example     | texts that the example matches |
+| -------- | :-----------------------------------: | :-------------: | :----------------------------- |
+| `{ss}`   | <code>('?s\|(s\))?</code>             | `actor{ss}`     | matches: "actor", "actors", "actor's", and "actor(s)" |
+| `{yies}` | <code>(y\|y's\|ies)</code>            | `part{yies}`    | matches: "party", "party's", and "parties" |
+| `{ying}` | <code>(y\|ier\|ying\|ies\|ied)</code> | `identif{ying}` | matches: "identify", "identifier", "identifying", "identifies", and "identified" |
