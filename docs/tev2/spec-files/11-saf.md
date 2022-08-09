@@ -194,5 +194,5 @@ The following fields are defined for the `versions` section of a [SAF](@):
 | `to`          | F | Date at which this version will expire (or has expired). |
 
 :::info Editor's note
-The `from` and `to` dates have been included to (in future) enable one to refer to a specific version of the terminology that was valid at a particular date. This feature needs to be worked out, and will impact [terminology construction](/docs/tev2/manuals/terminology-construction), [term ref specs](/docs/tev2/spec-syntax/term-ref-syntax), and various tools.
+The `from` and `to` dates have been included to (in future) enable one to refer to a specific version of the terminology that was valid at a particular date. This feature needs to be worked out, and will impact [terminology construction](/docs/tev2/manuals/terminology-construction), [term ref specs](/docs/tev2/spec-syntax/term-ref), and various tools.
 :::
