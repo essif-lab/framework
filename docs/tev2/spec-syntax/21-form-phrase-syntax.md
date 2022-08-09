@@ -1,6 +1,7 @@
 ---
-id: form-phrase
-title: Form Phrases
+id: form-phrase-syntax
+title: Form Phrases - Syntax
+sidebar_label: Form Phrases
 hide_table_of_contents: true
 scopetag: tev2
 date: 20220808
@@ -19,7 +20,7 @@ This document specifies the syntax of [form phrases](@), i.e. texts that are
 - present in [MRG entries](@);
 - [used to convert](/docs/tev2/spec-tools/trrt#id) the `show text` parts of [term refs](@) into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).
 
-Note that the [syntax of `formphrases`](/docs/tev2/spec-syntax/form-phrase) enables the use use of 'macro's, i.e. shorthand syntax that represent regexes that allow for extended matching.
+Note that the [syntax of `formphrases`](/docs/tev2/spec-syntax/form-phrase-syntax) enables the use use of 'macro's, i.e. shorthand syntax that represent regexes that allow for extended matching.
 
 A formphrase 'macro' is a set of characters between braces `{` and `}` that are shorthand for a matcher regex, and can be used by authors to conventiently specify a set of phrases that, when matched, would refer to the [curated text](@) in which they are specified.
 

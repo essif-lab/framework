@@ -1,6 +1,7 @@
 ---
-id: term-ref
-title: Term References
+id: term-ref-syntax
+title: Term References - Syntax
+sidebar_label: Term References
 hide_table_of_contents: true
 scopetag: tev2
 date: 20220303
@@ -13,7 +14,15 @@ The entire section on Terminology Engine v 2 (TEv2) is still under construction.
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
-This document specifies how you can use a [term](@) in a [curated text](@) while at the same time referring to the [definition](@) that defines its meaning. i.e. the syntax that you need to use in such texts. The way in which the [term](@) (and its [definition](@)) may be rendered depends on the artifact that is being generated. For example, when a [term](@) is rendered in a web-site, it may be enhanced, showing a popup that contains its [definition](@) when a [reader](@) hovers the mouse over it, and that hyperlinks to the page in the website that explains the term in more detail when the [reader](@) clicks on it. When a [term](@) is rendered in a PDF file, its definition may appear as an entry in a [glossary](@) that is added somewhere in the PDF. It all depends on the rendering tools that are being used, and this is out of scope for this specification.
+As an [author](@) or [curator](@), you want to be able to mark words or phrases, and have them refer to (the documentation of) a particular [concept](@) or other [knowledge artifact](@). Such marked-up words or phrases are called [term refs](@). This text specifies the syntax that you can use to author [term refs](@).
+
+:::info Editor's note
+Also, you will want to (and actually can) control the effect that your [term refs](@) must have when it is rendered. After all, the effect you seek it to have as part of a rendered static website (e.g. so that it produces a popup with its definition) would be quite different form when it would be part of a PDF (in which case you may want it to become part of an automatically generated [glossary](@) in one of the papers annexes). Selecting the effect is done by properly instructing the [term ref resolution tool](trrt@) when your text is processed for rendering.
+
+We need some text here that points to the documentation for doing so. This could be e.g. in the [authors manual](/docs/tev2/manuals/author) and [curators manual](/docs/tev2/manuals/curator), but also in the [TRRT specifications](/docs/tev2/spec-tools/trrt), or in some manual that deals with adding rendering plugins.
+:::
+
+while at the same time referring to the [definition](@) that defines its meaning. i.e. the syntax that you need to use in such texts. The way in which the [term](@) (and its [definition](@)) may be rendered depends on the artifact that is being generated. For example, when a [term](@) is rendered in a web-site, it may be enhanced, showing a popup that contains its [definition](@) when a [reader](@) hovers the mouse over it, and that hyperlinks to the page in the website that explains the term in more detail when the [reader](@) clicks on it. When a [term](@) is rendered in a PDF file, its definition may appear as an entry in a [glossary](@) that is added somewhere in the PDF. It all depends on the rendering tools that are being used, and this is out of scope for this specification.
 
 This file specifies the syntax of [Term refs](@). The [TRRT](@) describes [how they are processed (resolved)](/docs/tev2/spec-tools/trrt#term-ref-resolution).
 
