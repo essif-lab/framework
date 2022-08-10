@@ -130,7 +130,7 @@ The [term ref](@) resolution process has three steps:
 
 The following kinds of [term ref](@) syntaxes are (to be) supported:
 - the [basic syntax](/doc/tev2/spec-syntax/term-ref-syntax#basic-syntax), i.e. \[`show text`\](`id`#`trait`@`scopetag`:`vsntag`);
-- the [terms syntax](/doc/tev2/spec-syntax/term-ref-syntax#terms-syntax), i.e. \[`show text`\](`term`#`trait`@`scopetag`:`vsntag`), the difference being that `term` represents a [terminological artifact](@), whereas `id` (in the basic syntax) [identifies](@) the [curated text](@) that documents such [artifact](terminologica-artifact@);
+- the [terms syntax](/doc/tev2/spec-syntax/term-ref-syntax#terms-syntax), i.e. \[`show text`\](`term`#`trait`@`scopetag`:`vsntag`), the difference being that `term` represents a [[knowledge artifact](@), whereas `id` (in the basic syntax) [identifies](@) the [curated text](@) that documents such [artifact](knowledge-artifact@);
 - the [alternative syntax](/doc/tev2/spec-syntax/term-ref-syntax#alternative-syntax), e.g. \[`show text`@\], which basically moves the `@`-character from the basic syntax within the square brackets, which in many (if not most) cases is more convenient for [authors](@).
 
 :::info Editor's note
@@ -233,7 +233,7 @@ As soon as the variables have been provided with a value, the [MRG](@) can be fo
     - finally, if the `termattrs` variable (array) is present, an [entry](mrg-entry@) is dicarded from the set if its `termattrs` field does not contain all (array) elements of the `termattrs` variable in the same order as specified by the `termattrs` variable.[^2]
     - If the resulting set contains exactly one [MRG entry](@), this is the one that is selected; otherwise, a warning is raised.
 
-[^2]: This implies that the `termattrs` array in the [MRG entry](@) may contain more elements than are specified in the [term ref](@), while all elements specified inthe `termattrs` part of the [term ref](@) must match, in the same order. Keeping the order is done to ensure that in future, [terminological artifacts](@) of type `relation` can be created, which need such a precise ordering.
+[^2]: This implies that the `termattrs` array in the [MRG entry](@) may contain more elements than are specified in the [term ref](@), while all elements specified inthe `termattrs` part of the [term ref](@) must match, in the same order. Keeping the order is done to ensure that in future, [[knowledge artifacts](@) of type `relation` can be created, which need such a precise ordering.
 ### Rewriting the Term Ref with a Renderable Ref
 
 <img

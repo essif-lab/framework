@@ -26,7 +26,7 @@ From the TEv2 perspective, [users](@) may contribute by [creating or editing wik
 
 A [user](@) can take the template, and follow the associated instructions (e.g. provide content for the various sections). That's basically it.
 
-A [user](@) can use [term refs](@) to mark the terms that it wants to be linked to a specific meaning ([terminological aritfact](@)).
+A [user](@) can use [term refs](@) to mark the terms that it wants to be linked to a specific meaning ([[knowledge aritfact](@)).
 
 ## Curators tasks
 
