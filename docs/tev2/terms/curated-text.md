@@ -30,7 +30,7 @@ hide_table_of_contents: true
 
 A **[curated text](@)** is a text that documents a [concept](@) or other [knowledge artifact](@) of a specific [community](@) or other [party](@), and is located within a [scope](@) that is owned by that [community](@)/[party](@). A large variety of traits can be documented, such as the [(scoped) term](@) that is used within the [scope](@) to represent the [artifact](knowledge-artifact@), a [definition](@), explanatory texts, examples, etc., etc.; anything that helps others understand the intricacy of these [artifacts](@).
 
-The (technical) structure and syntax for [curated texts](@) is specified [here](/docs/tev2/spec-ctexts/00-ctext-spec).
+The (technical) structure and syntax for [curated texts](@) is specified [here](/docs/tev2/spec-ctexts/ctext-spec).
 
 The manuals for [contributors](/docs/tev2/manuals/contributor), [authors](/docs/tev2/manuals/author) and [curators](/docs/tev2/manuals/curator) will provide guidance for people that act in these respective roles as they work with [curated texts](@).
 

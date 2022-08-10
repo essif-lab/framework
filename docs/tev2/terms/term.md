@@ -9,7 +9,7 @@ formphrases: term{ss}, word{ss}, phrase{ss}
 grouptags:
 status: proposed
 created: 2022-06-06
-updated: 2022-08-04
+updated: 2022-08-09
 vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
@@ -34,6 +34,12 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 ### Summary
 A **Term** is a word or phrase (i.e.: text) that is used in at least one [scope](@)/context to represent specific [knowledge artifacts](@), e.g. [concepts](@), [relations](@) or [mental models](@). We use the phrase '[scoped term](@)' to refer to a term when it is used in one specific [scope](@).
 
+While a [term](@) is often thought of as a single word (or phrase), it is better conceived as a construct that consists of multiple parts, that enables us to use a word or phrase in different kinds for different kinds of [knowledge artifacts](@), as we often see that people do in practice. This construct is visualized in the [formalized terminology model](/docs/tev2/terms/patterns/pattern-terminology#formalized-model)), and consists of the following components:
+
+1. a [term name](@) (required), i.e. an [identifier](@) that is used to represent a [knowledge artifact](@). Note that different [knowledge artifacts](@) can have the same [term name](@) (which is known as [semantically overloading](https://en.wikipedia.org/wiki/Semantic_overload)).
+2. a [term type](@) (optional), i.e. an [identifier](@) that is used to [identify](@) the particular *kind* of [knowledge artifact](@) that the [term name](@) represents, such as `concept`, `relation`, `pattern` (or `mental-model`).
+3. a [term attrs](@) (optional), i.e. a list of [attributes](term-attrs@) that enable one to distinguish between [knowledge artifacts](@) that have the same [term name](@) and are of the same [type](term-type@).
+
 Thus:
 - a single term may (and typically does) have different meanings ([semantics](@)) in different [scopes](@)/contexts. For example, in the context of a beauty-salon, the term 'nail' has a different meaning than in the context of constructing buildings.
 - different terms (in the same, or different [scopes](@)/contexts) may have the same meaning (i.e. represent the same [concept](@) ([synonymity](https://en.wikipedia.org/wiki/Synonym), [alias](https://www.merriam-webster.com/dictionary/alias)).
@@ -41,6 +47,7 @@ Thus:
 The precise meaning of a term thus depends on the [scope](@)/context in which it is used. We use the phrase [scoped term](@) to refer to a term that is part of one particular [scope](@)/context, and refers to a single [concept](@) (or other [knowledge artifact](@)), and hence is unambiguous.
 
 The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
+The [term-ref](@) [syntax specification](/docs/tev2/spec-syntax/term-ref-syntax) specifies the syntax that [authors](@) should use as they want to use a specific [term](@) in their text.
 
 ### Purpose
 Understanding words or phrases uttered by others requires that we are able to 'translate' them into terms that we habitually use, i.e. with the meaning of which we are familiar. While this is mostly an (unconscious) automatism, and it is often also not necessary to be very precise, this may be different when they relate to stuff we find important. The ability to represent a specific [concept](@) (or other [knowledge artifact](@)) with a specific text or phrase, where this 'representation' is limited to a specific (or several) context(s), helps us to better interpret these words, which is: to properly understand what others actually try to convey in spoken or written language.

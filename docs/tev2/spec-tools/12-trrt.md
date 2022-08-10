@@ -11,6 +11,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+<!-- Use 'Mark' as an HTML tag, e.g. <Mark>text to mark</Mark?-->
+export const Mark = ({children}) => (
+  <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
+    {children}
+  </span> );
+
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
@@ -66,11 +72,11 @@ Note that this text is not readily renderable in a browser. `<Term ...>` and `</
 
 </details>
 
-Conceptually, [term ref](@) conversion is a very simple two-step process:
+Conceptually, [term ref](@) conversion is a simple two-step process:
 1. The [term ref](@) is interpreted, the result of which is a set of variables (or if regexes are used: [named capturing groups](https://riptutorial.com/regex/example/2479/named-capture-groups)) whose contents [identify](@) an [MRG entry](@) from a specific [MRG](@).
-2. Then, using the contents of the [identified](@) [MRG entry](@), the [term ref](@) is replaced with a [renderable ref](@), as specified by one of the TRRTs command line arguments (or configuration). Note that the [renderable ref](@) may include all sorts of code that is processed further by other, third party rendering tools.
+2. Then, using the contents of the [identified](@) [MRG entry](@), the [term ref](@) is replaced with a [renderable ref](@), of the kind as specified by the [TRRT's](@) command line arguments or configuration file. Depending on the specific kind, the [renderable ref](@) may include all sorts of code that is processed further by other, third party rendering tools.
 
-By separating [term ref](@) interpretation from its being overwritten with a [renderable ref](@), it becomes very easy to extend the capabilities of the [TRRT](@) to include ways for rendering [term refs](@), e.g. for LaTeX, PDF, docx, odt and other formats, as well as for formats that we currently even know we would like to have.
+By cleanly separating [term ref](@) interpretation from the part where it is overwritten with a [renderable ref](@), it becomes easy to extend the capabilities of the [TRRT](@) to include ways for rendering [term refs](@), e.g. for LaTeX, PDF, docx, odt and other formats, as well as for formats that we currently even know we would like to have.
 
 In order to convert [term refs](@) into [renderable refs](@), [TRRT](@) expects the [SAF](@) and the [MRG](@) of the [scope](@) from within which it is being called, to be available. The [MRG](@) is used to resolve all links to [terms](@) that are part of the [terminology](@) of this [scope](@). The [SAF](@) is used to locate the [MRGs](@) of any (other) [scope](@) whose [scopetag](@) is used as part of a [term ref](@) that needs to be resolved.
 
@@ -97,13 +103,14 @@ The columns in the following table are defined as follows:
 
 </details>
 
-| Key      | Value           | Req'd | Description |
-| :--      | :-------------- | :---: | :---------- |
-| `config` | `<path>`          | n | Path (including the filename) of the tool's (YAML) configuration file. This file contains the default key-value pairs to be used. Allowed keys (and the associated values) are documented in this table. Command-line arguments override key-value pairs specified in the configuration file. This parameter MUST NOT appear in the configuration file itself. |
-| `input`  | `<globpattern>`   | n | [Globpattern](https://en.wikipedia.org/wiki/Glob_(programming)#Syntax) that specifies the set of (input) files that are to be processed. |
-| `output` | `<dir>`           | Y | Directory where output files are to be written. This directory is specified as an absolute or relative path. |
-| `saf`    | `<path>:<vsntag>` | Y | `<path>` is the path (including the filename) of the [SAF](@) of the [scope](@) from which the tool is called. Note that the path without the filename is the [scopedir](@) of the [scope](@) from which the tool is said to be called.<br/>`<vsntag>` is a [versiontag](@) that specifies the version of the [terminology](@) that is to be used to resolve references to a [term](@) within the default [scope](@). It MUST match either the `vsntag` field, or an element of the `altvsntags` field of a [terminology](@)-version as specified in the [`versions` section](/docs/tev2/spec-files/saf#versions) of the [SAF](@). When not specified, the default version of the [MRG](@) is taken (as specified by the [SAF's](@) [`scopes.mrgfile` field](/docs/tev2/spec-files/saf#terminology)). |
-| `method` | `<path>`          | n | Path (including the filename) that contains additional instructions for the [TRRT](@) for resolving [term refs](@). When this parameter is omitted, [terms](@) are resolved as plain [markdown links](https://www.markdownguide.org/basic-syntax/#links). |
+| Key        | Value         | Req'd | Description |
+| :--------- | :------------ | :---: | :---------- |
+| `config`   | `<path>`        | n | Path (including the filename) of the tool's (YAML) configuration file. This file contains the default key-value pairs to be used. Allowed keys (and the associated values) are documented in this table. Command-line arguments override key-value pairs specified in the configuration file. This parameter MUST NOT appear in the configuration file itself. |
+| `input`    | `<globpattern>` | n | [Globpattern](https://en.wikipedia.org/wiki/Glob_(programming)#Syntax) that specifies the set of (input) files that are to be processed. |
+| `output`   | `<dir>`         | Y | Directory where output files are to be written. This directory is specified as an absolute or relative path. |
+| `scopedir` | `<path>`        | Y | Path of the [scope directory](@) from which the tool is called. It MUST contain the [SAF](@) for that [scope](@). |
+| `version`  | `<versiontag>`  | n | Version of the [terminology](@) that is to be used to resolve [term refs](@) for which neither a `scope` nor a `version` part has been specified (which is the most common case). It MUST match either the `vsntag` field, or an element of the `altvsntags` field of a [terminology](@)-version as specified in the [`versions` section](/docs/tev2/spec-files/saf#versions) of the [SAF](@). When not specified, its value is taken from the `vsntag` field in the [terminology section](/docs/tev2/spec-files/mrg#mrg-terminology) of the default [MRG](@) (which is [identified](@) by the contents of the `mrgfile` field (in the [`scope` section](/docs/tev2/spec-files/saf#terminology) of the [SAF](@)).
+| `method`   | `<methodarg>`   | n | <Mark>Text, the syntax and semantics of which remain to be specified (see also the Editor's note below).</Mark> When this parameter is omitted, [term refs](@) are replaced with some default [renderable ref](@). |
 
 :::info Editor's Note:
 Various `method`s are envisaged, yet remain to be properly specified. One example is where the [term ref](@) `[Actions](@)` would be replaced with a construct such as `<Term reference="action" popup="<popuptext>">actions</Term>`
@@ -122,12 +129,12 @@ The [term ref](@) resolution process has three steps:
 ### Interpretation of the Term Ref
 
 The following kinds of [term ref](@) syntaxes are (to be) supported:
-- the [basic syntax](/doc/tev2/spec-syntax/term-ref#basic-syntax), i.e. \[`show text`\](`id`#`trait`@`scopetag`:`vsntag`);
-- the [terms syntax](/doc/tev2/spec-syntax/term-ref#terms-syntax), i.e. \[`show text`\](`term`#`trait`@`scopetag`:`vsntag`), the difference being that `term` represents a [terminological artifact](@), whereas `id` (in the basic syntax) [identifies](@) the [curated text](@) that documents such [artifact](terminologica-artifact@);
-- the [alternative syntax](/doc/tev2/spec-syntax/term-ref#alternative-syntax), e.g. \[`show text`@\], which basically moves the `@`-character from the basic syntax within the square brackets, which in many (if not most) cases is more convenient for [authors](@).
+- the [basic syntax](/doc/tev2/spec-syntax/term-ref-syntax#basic-syntax), i.e. \[`show text`\](`id`#`trait`@`scopetag`:`vsntag`);
+- the [terms syntax](/doc/tev2/spec-syntax/term-ref-syntax#terms-syntax), i.e. \[`show text`\](`term`#`trait`@`scopetag`:`vsntag`), the difference being that `term` represents a [terminological artifact](@), whereas `id` (in the basic syntax) [identifies](@) the [curated text](@) that documents such [artifact](terminologica-artifact@);
+- the [alternative syntax](/doc/tev2/spec-syntax/term-ref-syntax#alternative-syntax), e.g. \[`show text`@\], which basically moves the `@`-character from the basic syntax within the square brackets, which in many (if not most) cases is more convenient for [authors](@).
 
 :::info Editor's note
-The [terms syntax](/doc/tev2/spec-syntax/term-ref#terms-syntax) has currently not been properly defined.
+The [terms syntax](/doc/tev2/spec-syntax/term-ref-syntax#terms-syntax) has currently not been properly defined.
 :::
 
 Interpretation of a Term Ref leads to the population of the following variables (or, in case regexes are used, named capturing groups):
@@ -139,15 +146,15 @@ Finding a [term ref](@) in the file can be done by using a regular expressions (
 
 [^1]: These regexps may need to be improved to cater for exceptional situations, so that they do not match e.g. pieces of code (such as the regex specifications we presented above). Alternatively, [TRRT](@) might specify specific syntax for pieces of text from within which a match with these regexps is ignored.
 
-- For the [basic syntax](/doc/tev2/spec-syntax/term-ref#basic-syntax), you can use the PCRE regex
+- For the [basic syntax](/doc/tev2/spec-syntax/term-ref-syntax#basic-syntax), you can use the PCRE regex
   - [``(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))``](https://www.debuggex.com/r/Resuq7vbjHUOUXSx) to find the `[` that starts a [term ref](@), and
   - [``(?P<showtext>.+?)\]\((?P<id>[a-z0-9_-]+?)(?:#(?P<trait>[a-z0-9_-]+?))?@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsntag>[a-z0-9_-]+?))?\)``](https://www.debuggex.com/r/OC3lxllHc9GleXES) to find the various parts of the [term ref](@) as (named) capturing groups.
 
 :::info Editor's note
-There is no regex for the [terms syntax](/doc/tev2/spec-syntax/term-ref#terms-syntax), because it has not yet been defined.
+There is no regex for the [terms syntax](/doc/tev2/spec-syntax/term-ref-syntax#terms-syntax), because it has not yet been defined.
 :::
 
-- For the [alternative syntax](/doc/tev2/spec-syntax/term-ref#alternative-syntax), you can use the PCRE regex
+- For the [alternative syntax](/doc/tev2/spec-syntax/term-ref-syntax#alternative-syntax), you can use the PCRE regex
   - [``(?<=[^`\\])\[(?=[^@\]]+@[:a-z0-9_-]*\](?:\([#a-z0-9_-]+\))?)``](https://www.debuggex.com/r/I_hsZPQ5DJRAjCNg) to find the `[` that starts a [term ref](@), and
   - [``(?P<showtext>.+?)@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsntag>[a-z0-9_-]+?))?\](?P<ref>\((?P<id>[a-z0-9_-]*)(?:#(?P<trait>[a-z0-9_-]+?))?\))?``](https://www.debuggex.com/r/kuFFBhpWnB42WbDC) to subsequently obtain the various fields as (named) capturing groups from the PCRE regex.
 
@@ -213,15 +220,26 @@ Perhaps the [TRRT](@) may use this tool as a means for generating the `id` field
 ### Locating the identified MRG Entry
 
 As soon as the variables have been provided with a value, the [MRG](@) can be found as follows:
-1. the `scopetag` enables selecting the proper [curatedir](@), and the related [SAF](@);
-2. the `vsntag` enables selecting the terminology from that [SAF](@), and from there the location of the [MRG](@) to be used;
-3. the `id` enables selecting of the [MRG entry](@), or if a `term` was specified, the values for `termname`, `termtype` and `termattrs` will [identify](@) that [MRG entry](@)
 
-:::info Editor's note
-do we need to elaborate a bit more on finding the [MRG](@) from the [SAF](@)? Do we want to add a `mrgurl` field to a `SAF/versions`-section to facilitate finding such [MRGs](@)?
-:::
+1. the `scopetag` enables selecting the [scopedir](@) and the related [SAF](@); if not specified, the [scopedir](@) from which the tool is called will be used (as specified when the [tool was called](#calling-the-tool)).
 
+2. the `vsntag` enables selecting the actual [MRG](@) to be used. This is done by checking the `vsntag` field in the [terminology section](docs/tev2/spec-files/mrg#mrg-terminology) of all  [MRGs](@) that are located in the [glossarydir](@) (as specified in the `glossarydir` field in the [scope section](docs/tev2/spec-files/saf#terminology) of the [SAF](@) that is found in the [scopedir](@): an [MRG](@) that matches this value is the one to be used. If there is no match, a warning must be raised;If `vsntag` is not specified, then the default [MRG](@) of the [scope](@) should be used: its location can be found in the `mrgfile` field in the [scope section](docs/tev2/spec-files/saf#terminology) of the [SAF](@).
+
+3. the [MRG entry](@) will be [identified](@) by a process that, starting with the set of all [entries](mrg-entry@) that exist in the selected [MRG](@), weeds out non-matching [entries](mrg-entry@) in one or more steps, as follows:
+  - if the [basic syntax](docs/tev2/spec-syntax/term-ref-syntax#basic-syntax) has been used, the variable `id` is present. The set of [MRG entries](@) is reduced by removing all [entries](mrg-entry@) whose `id`-field differs from the one specified in the [term ref](@).
+  - if a `term` was specified, the weeding goes as follows:
+    - first (since the variable `termname` is present), all [entries](mrg-entry@) are removed whose `termname` field differs from the `termname` variable;
+    - then, if the variable `termtype` is present, all [entries](mrg-entry@) whose `termtype` field has a different value from what that variable holds, are removed from the set;
+    - finally, if the `termattrs` variable (array) is present, an [entry](mrg-entry@) is dicarded from the set if its `termattrs` field does not contain all (array) elements of the `termattrs` variable in the same order as specified by the `termattrs` variable.[^2]
+    - If the resulting set contains exactly one [MRG entry](@), this is the one that is selected; otherwise, a warning is raised.
+
+[^2]: This implies that the `termattrs` array in the [MRG entry](@) may contain more elements than are specified in the [term ref](@), while all elements specified inthe `termattrs` part of the [term ref](@) must match, in the same order. Keeping the order is done to ensure that in future, [terminological artifacts](@) of type `relation` can be created, which need such a precise ordering.
 ### Rewriting the Term Ref with a Renderable Ref
+
+<img
+  alt="This section is under construction"
+  src={useBaseUrl('images/wip/wip-under-construction.png')}
+/><br/><br/>
 
 The [term ref](@) will by default dereference to a human readable, rendered version of the [curated text](@) associated with the [identified](@) [MRG entry](@), which can be obtained through the URL located in the `navurl` field of the [MRG entry](@), which the text `#<trait>` is appended if a `trait` was specified.
 
