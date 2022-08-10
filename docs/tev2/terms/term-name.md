@@ -20,7 +20,7 @@ shorterm:
 synonyms:
 glossaryText: "an [identifier](@) that is used to represent a [knowledge artifact](@). Note that different [knowledge artifacts](@) can have the same [term name](@) (which is known as [semantically overloading](https://en.wikipedia.org/wiki/Semantic_overload))."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Term"
+title: "Term Name"
 hoverText: "Term Name: an Identifier that is used to represent a Knowledge Artifact. Note that different Knowledge Artifacts can have the same Term Name (which is known as semantically overloading)."
 # sidebar_label:
 # hide_table_of_contents: true

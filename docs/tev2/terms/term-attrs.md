@@ -20,7 +20,7 @@ shorterm:
 synonyms:
 glossaryText: "a list of [attributes](term-attrs@) that enable one to distinguish between [knowledge artifacts](@) that have the same [term name](@) and are of the same [type](term-type@)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Term"
+title: "Term Attr(ibute)s"
 hoverText: "Term Attrs: a list of Attributes that enable one to distinguish between Knowledge Artifacts that have the same Term Name and are of the same Term Type."
 # sidebar_label:
 # hide_table_of_contents: true
