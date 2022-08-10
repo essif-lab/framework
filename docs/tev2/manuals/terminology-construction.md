@@ -23,6 +23,10 @@ The process by which such a tuple-set is constructed is very simple: starting wi
 
 We have distinct syntaxes to manipulate the set of tuples, each of which is specified in a subsequent section, that also describes how it will affect the tuple set under construction.
 
+:::info Editor's note
+The below text must remain in sync with the first post of [issue #3 of the mrgt-repo](https://github.com/trustoverip/ctwg-toolkit-mrg/issues/3).
+:::
+
 ### Adding terms to the tuple set {#syntax-add}
 
 A [curator](@) can add [terms](@) to the tuple set from different sources, i.e.
@@ -31,7 +35,8 @@ A [curator](@) can add [terms](@) to the tuple set from different sources, i.e.
 
 The following syntaxes can be used for adding terms (whitespace is disregarded):
 - `tags [ <grouptagslist> ] @<scopetag>:<vsntag>`
-- `termnames [ <termnamelist> ] @<scopetag>:<vsntag>`
+- `terms [ <termlist> ] @<scopetag>:<vsntag>`
+- `ids [ <idlist> ] @<scopetag>:<vsntag>`
 - `* @<scopetag>:<vsntag>`
 
 <details>
@@ -39,8 +44,9 @@ The following syntaxes can be used for adding terms (whitespace is disregarded):
 
 | Instruction | What it does when processed |
 | :---------- | :---------- |
-| `tags[management,governance]@essiflab` | adds all [terms](@) that are part of the currently used [terminology](@) of the [scope](@) `essiflab`, that have the [grouptag](@) `management` or `governance`, to the type set.  |
-| `termnames[party]@essiflab:v3.1` | adds the term `party` from version `v3.1` of the [terminology](@) of [scope](@) `essiflab`. |
+| `tags[management,governance]@essiflab` | adds all [terms](@) that are part of the currently used [terminology](@) of the [scope](@) `essiflab`, that have the [grouptag](@) `management` or `governance`, to the tuple set.  |
+| `terms[party]@essiflab:v3.1` | adds the [term](@) `party` from version `v3.1` of the [terminology](@) of [scope](@) `essiflab`. |
+| `ids[pattern-party-actor-action]@essiflab` | adds the [term](@) to the tuple set that is specified in the [mrg entry](@) whose `id`-field contains `pattern-party-actor-action`. |
 
 </details>
 
