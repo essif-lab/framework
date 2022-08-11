@@ -3,20 +3,20 @@
 id: pattern-terminology
 # TEv2: generic front-matter for curated texts
 scope: tev2
+termname: terminology
 termtype: pattern
-termid: terminology
-formphrases: terminology
+termattrs:
 grouptags:
+synonyms:
+formphrases:
+glossaryText:
+hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `pattern`
-term: terminology  # Text that is the name of the pattern in (human readable) texts.
-tag:  # Tag by which this pattern can be identified within the scope in which it is specified
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Terminology Pattern"
-hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
 # sidebar_label:
 # hide_table_of_contents: true
 ---
