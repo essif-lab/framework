@@ -13,30 +13,44 @@ The entire section on Terminology Engine v 2 (TEv2) is still under construction.
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
-[Curators](@) need the ability to construct (different versions of) the [terminology](@) for any [scope](@) they [curate](@). Conceptually, such a construction is equivalent with constructing a set of tuples `{ [termname, term, grouptags] }`, where `termname` [identifies](@) the meaning of the [term](@), `term` is the (humanly recognizable) [word or phrase](term@) that represents this meaning, and `grouptags` is a set of [grouptags](@) that the tuple is associated with; and all this is within the context of a specific version of the [terminology](@) of a specific [scope](@).
+[Curators](@) need the ability to construct (different versions of) the [terminology](@) for any [scope](@) they [curate](@).
 
-The process by which such a tuple-set is constructed is very simple: starting with an empty set, a list of so-called 'term selection criteria' instructions is sequentially processed, where the processing of each such instruction adds or removes tuples to/from the set, or changes the value of the `term` part of a specific tuple (renaming).
+Constructing a [terminology](@) consists of specifying the set of [terms](scoped-term@) that the [terminology](@) consists of, and making sure there is an [MRG entry](@) that holds all associated (meta) data that other (e.g. third party) tools may need. In other words, it consists of constructing the set of [MRG entries](@) for the [terms](scoped-term@) of the [terminology](@).
 
-[Curators](@) create and maintain the list of 'term selection criteria' instructions for every specific (version of a) [terminology](@) they decide to manage. Each such [terminology](@) has an entry in the [`versions` section](/docs/tev2/spec-files/saf#versions) of the [SAF](@) (of the designated [scope](@)), and the term selection criteria reside in the `termselcrit` field of that section.
+An [MRG entry](@) contains (meta) data about (the [(scoped) term](@) that represents/[identifies](@)) a specific [knowledge artifact](@) (an illustration can be found in the [terminology pattern](/docs/tev2/terms/patterns/pattern-terminology#formalized-model)). For constructing a [terminology](@), the following such data is relevant (as it enables one to [identify](@) (groups of) [terms](scoped-term@) that are to become part of that [terminology](@)):
+- the (preferred) [(scoped) term](@) for representing the [knowledge artifact](@), and its synonymous [terms](scoped-term@);
+- an [identifier](@) that enables one to find the [curated text](@) that documents this [artifact](knowledge-artifact@).
+- various [tags](@), amongst which are the [grouptags](@) that indicate the groups of [terms](scoped-term@) that the [term](scoped-term@) is a member of.
 
-## Term Selection Instruction Syntax {#syntax}
+The process for creating a [terminology](@) is as follows:
+1. start with an empty set of [MRG entries](@) - we use the term "terminology-under-construction" to refer to this set.
+2. sequentially process a list of so-called 'term selection criteria' instructions, where processing one of them adds, removes, or otherwise manipulates [MRG entries](@) in the terminology-under-construction (e.g. for renaming [terms](scoped-term@)). This is detailed [below](#crit-processing).
 
-We have distinct syntaxes to manipulate the set of tuples, each of which is specified in a subsequent section, that also describes how it will affect the tuple set under construction.
+[Curators](@) create and maintain the list of 'term selection criteria' instructions for every specific (version of a) [terminology](@) they decide to manage. Each such (versioned) [terminology](@) has an entry in the [`versions` section](/docs/tev2/spec-files/saf#versions) of the [SAF](@) (of the designated [scope](@)), and the term selection criteria reside in the `termselcrit` field of that section.
+
+## Processing a Term Selection Criterion {#crit-processing}
+
+We have defined a number of manipulations that can be done to contribute to construct a [terminology](@):
+1. Add [MRG entries](@) to the terminology-under-construction;
+2. Remove [MRG entries](@) from the terminology-under-construction;
+3. Rename/rewrite specific parts of [MRG entries](@), which enables [curators](@) e.g. to rename [terms](@).
 
 :::info Editor's note
 The below text must remain in sync with the first post of [issue #3 of the mrgt-repo](https://github.com/trustoverip/ctwg-toolkit-mrg/issues/3).
 :::
 
-### Adding terms to the tuple set {#syntax-add}
+### Adding MRG Entries to the terminology-under-construction {#syntax-add}
 
-A [curator](@) can add [terms](@) to the tuple set from different sources, i.e.
+A [curator](@) can add [MRG entries](@) to the terminology-under-construction from different sources, i.e.
 - [terms](@) that are defined in a [curated text](@) that exists in the current [scope](@), and
-- [terms](@) that are defined by an entry in some [MRG](@).
+- [terms](@) that are defined by an [MRG entry](@) in an existing [MRG](@) (from another [scope](@), or another version of the current [scope](@)).
+
+Note that any reference to (an [MRG entry](@) in) (the specific version of) the [terminology](@) that is being constructed, MUST be interpreted as a reference to the [curated text](@) from which the [MRG entry](@) would have been constructed.
 
 The following syntaxes can be used for adding terms (whitespace is disregarded):
+- `terms [ <termslist> ] @<scopetag>:<vsntag>`
+- `ids [ <idslist> ] @<scopetag>:<vsntag>`
 - `tags [ <grouptagslist> ] @<scopetag>:<vsntag>`
-- `terms [ <termlist> ] @<scopetag>:<vsntag>`
-- `ids [ <idlist> ] @<scopetag>:<vsntag>`
 - `* @<scopetag>:<vsntag>`
 
 <details>
@@ -44,9 +58,11 @@ The following syntaxes can be used for adding terms (whitespace is disregarded):
 
 | Instruction | What it does when processed |
 | :---------- | :---------- |
-| `tags[management,governance]@essiflab` | adds all [terms](@) that are part of the currently used [terminology](@) of the [scope](@) `essiflab`, that have the [grouptag](@) `management` or `governance`, to the tuple set.  |
-| `terms[party]@essiflab:v3.1` | adds the [term](@) `party` from version `v3.1` of the [terminology](@) of [scope](@) `essiflab`. |
-| `ids[pattern-party-actor-action]@essiflab` | adds the [term](@) to the tuple set that is specified in the [mrg entry](@) whose `id`-field contains `pattern-party-actor-action`. |
+| `terms[party]@essiflab:v3.1` | selects the [term](scoped-term@) `party@essiflab:v3.1`, and adds an [MRG entry](@) for the [knowledge artifact](@) that it represents. |
+| `ids[pattern-party-actor-action]@essiflab` | selects the [curated text](@) [identified](@) by `pattern-party-actor-action`, and adds an [MRG entry](@) for the [knowledge artifact](@) that it documents. |
+| `tags[management,governance]@essiflab` | selects all [terms](@) that are part of the default [terminology](@) of [scope](@) `essiflab`, that have the [grouptag](@) `management` or `governance`, and adds an [MRG entry](@) for each of them. |
+| `* @ctwg` | selects all [terms](@) that are part of the default [terminology](@) of the [scope(@) `ctwg`, and adds an [MRG entry](@) for each of them. |
+| `* @` | selects all [curated texts](@) from the current [scope](@), and for each of them, adds an [MRG entry](@) for the [knowledge artifact](@) that it documents.  |
 
 </details>
 
@@ -54,10 +70,10 @@ The following syntaxes can be used for adding terms (whitespace is disregarded):
 
 | symbol            | description |
 | ----------------- | :---------- |
-| `<vsntag>`        | the (optional) [versiontag](@) that [identifies](@) the version of the [terminology](@) from which [terms](@) are to be selected.|
-| `<scopetag>`      | the (optional) [scopetag](@) that [identifies](@) the [scope](@) from which [terms](@) are to be selected.|
+| `<vsntag>`        | (optional) [versiontag](@) that [identifies](@) the version of the [terminology](@) from which [terms](@) are to be selected. |
+| `<scopetag>`      | (optional) [scopetag](@) that [identifies](@) the [scope](@) from which [terms](@) are to be selected. |
 | `<grouptagslist>` | a (non-empty) comma-separated list of [grouptags](@). |
-| `<termnamelist>`    | a (non-empty) comma-separated list of [termnames](@). |
+| `<termslist>`     | a (non-empty) comma-separated list of [terms](@). |
 
 This syntax is processed as follows:
 1. **Select the source** from which to obtain the [terms](@), as follows:
@@ -75,7 +91,7 @@ This syntax is processed as follows:
 
 [^1]: In practice, tuples would typically also contain all other attributes that are associated with terms, similar, if not exactly the same as an [MRG entry](@).
 
-### Removing terms from the tuple set {#syntax-remove}
+### Removing MRG Entries from a terminology-under-construction {#syntax-remove}
 
 A [curator](@) can remove [terms](@) from the tuple set, using the following syntax (whitespace is disregarded):
 - `-tags [ <grouptagslist> ]`
@@ -102,7 +118,7 @@ This syntax is processed as follows:
 - In case the instruction starts with `-tags`, every tuple in the tuple set that is associated with at least one of the listed [grouptags](@) is removed from that set.
 - In case the instruction starts with `-termnames`, every tuple that is associated with any of the specified [termnames](@) is removed from the tuple set.
 
-### Renaming a term in the tuple set {#syntax-rename}
+### Rename/rewrite specific parts of an MRG entry {#syntax-rename}
 
 In analogy with [namespaces](https://en.wikipedia.org/wiki/Namespace), we accommodate for the renaming of [terms](@) as they are 'imported' from [terminologies](@) other than the one that we are constructing. However, the analogy breaks down in the sense that it is not only a [term](@) that should be renameable (which is sufficient for [namespaces](https://en.wikipedia.org/wiki/Namespace)), but also certain attributes may need to be changed.
 

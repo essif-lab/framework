@@ -67,6 +67,9 @@ There is an important [distinction](https://simple.wikipedia.org/wiki/Concept) b
 * in different contexts, a single [term](@) may represent different [concepts](@);
 * [to resolve terminological disputes](http://resolver.tudelft.nl/uuid:964a90da-da81-4d38-9f45-84f3f5fa96b3), which usually are about the 'correct' meaning of a [term](@), try to establish the criteria that the different participants use for the concept behind the term. That helps participants understand each others (different) positions, and provides a better basis for resolving the conflict.
 
+It is characteristic of a [term](scoped-term@) to represent ([identify](@)) a single [oncept](@) (or other [knowledge artifact](@), such as a mental model, use-case etc.). Most often, a [name](term-name@) (`TermName`) suffices for that purpose. However, there are also examples where the same [name](term-name@) is used to represent different kinds of [knowledge artifacts](@) (within a single [scope](@)), e.g. `guardianship` can represent a set of rights and duties that enables a guardian to care for a 'dependent', but `guardianship` can also refer to a [mental](@) model that deals with how to define such rights and duties, how to instantiate them, how they may be used, etc. Thus, there are cases where the [class/type](term-type@) (`TermType`) of the [knowledge artifact](@) must be taken into account as well.
+
+In theory, there is even more. For example a relation named 'Owns' can have different forms, e.g. 'Owns(Party,Idea)' would be quite different from 'Owns(Party,LegallyOwnedProperty)'. Distinguishing between such terms requires the ability to include [attributes](term-attrs@) (`TermAttrs`) in the [term](scoped-term@).
 ---
 ### Footnotes
 
