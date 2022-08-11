@@ -3,21 +3,18 @@
 id: identify
 # TEv2: generic front-matter for curated texts
 scope: tev2
+termname: identify
 termtype: concept
-termid: identify
-formphrases: identif{yies}, identif{ying}, identifiable, identification
-grouptags: identification
+termattrs:
+grouptags:
+synonyms:
+formphrases: identif{yies}, identif{ying}, identifiable, identification identification
 status: proposed
 created: 2021-06-01
 updated: 2021-06-01
-vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 isa:
-term: Identify # Text that is the name of the concept in (human readable) texts.
-fullterm: Identify (an Entity within a context)
-shorterm:
-synonyms:
 glossaryText: "an [act](@), by or on behalf of a [party](@), that results in the selection of either\n- a single [partial identity](@) that the party [owns](@), given some (observed or received) data, or\n- a single [entity](@) from a given set of entities that is the [subject](@) of a specified [partial identity](@) that the party [owns](@)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Identify"

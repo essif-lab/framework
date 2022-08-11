@@ -3,21 +3,18 @@
 id: terms-community
 # TEv2: generic front-matter for curated texts
 scope: tev2
+termname: terms-community
 termtype: concept
-termid: terms-community
-formphrases: terms-communit{yies}
+termattrs:
 grouptags:
+synonyms:
+formphrases: terms-communit{yies}
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
-vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 isa: community
-term: terms-community  # Text that is the name of the concept in (human readable) texts.
-fullterm: "Terms Community"
-shorterm:
-synonyms:
 glossaryText: "a [community](@) that maintains a [terminology](@) for the purpose of avoiding misunderstandings between its members as they collaborate."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Terms Community"

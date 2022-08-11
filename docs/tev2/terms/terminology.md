@@ -3,20 +3,17 @@
 id: terminology
 # TEv2: generic front-matter for curated texts
 scope: tev2
+termname: terminology
 termtype: concept
-termid: terminology
-formphrases: terminolog{yies}
+termattrs:
 grouptags:
+synonyms:
+formphrases: terminolog{yies}
 status: proposed
 created: 2022-06-06
 updated: 2022-08-11
-vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
-term: terminology  # Text that is the name of the concept in (human readable) texts.
-fullterm: terminology (in/of a scope)
-shorterm:
-synonyms:
 glossaryText: "a set of [terms](scoped-term@) that are used within a single [scope](@) to refer to [concepts](@) and other [knowledge artifacts](@) of a single [party](@) (e.g. a [community](@)), enabling [parties](@) to reason and communicate ideas they have about one or more specific topics."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Terminology (in/of a Scope)"

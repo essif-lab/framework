@@ -3,21 +3,18 @@
 id: grouptag
 # TEv2: generic front-matter for curated texts
 scope: tev2
+termname: grouptag
 termtype: concept
-termid: grouptag
-formphrases: grouptag{ss}, group-tag{ss}
+termattrs:
 grouptags:
+synonyms:
+formphrases: grouptag{ss}, group-tag{ss}
 status: proposed
 created: 2022-06-06
 updated: 2022-07-28
-vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 isa: tag
-term: grouptag  # Text that is the name of the concept in (human readable) texts.
-fullterm: Grouptag (of/within a Scope)
-shorterm:
-synonyms:
 glossaryText: "a [tag](@) that is used to group [terms](@) within a specific [scope](@)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Grouptag"

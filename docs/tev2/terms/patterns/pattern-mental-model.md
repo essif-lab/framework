@@ -10,7 +10,6 @@ grouptags:
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
-vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `pattern`
 term: mental model  # Text that is the name of the pattern in (human readable) texts.

@@ -3,21 +3,18 @@
 id: vocabulary
 # TEv2: generic front-matter for curated texts
 scope: tev2
+termname: vocabulary
 termtype: concept
-termid: vocabulary
-formphrases: vocabular{yies}
+termattrs:
 grouptags:
+synonyms:
+formphrases: vocabular{yies}
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
-vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 isa:
-term: vocabulary  # Text that is the name of the concept in (human readable) texts.
-fullterm:
-shorterm:
-synonyms:
 glossaryText: "the sum or stock of words employed by a language, group, individual, or work or in a field of knowledge."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Vocabulary"

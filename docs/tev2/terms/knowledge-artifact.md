@@ -3,21 +3,18 @@
 id: knowledge-artifact
 # TEv2: generic front-matter for curated texts
 scope: tev2
+termname: knowledge-artifact
 termtype: concept
-termid: knowledge-artifact
-formphrases: knowledge-artifact{ss}
+termattrs:
 grouptags:
+synonyms:
+formphrases: knowledge-artifact{ss}
 status: proposed
 created: 2022-07-27
 updated: 2022-07-27
-vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 isa:
-term: knowledge artifact # Text that is the name of the concept in (human readable) texts.
-fullterm: knowledge artifact (of a Party)
-shorterm:
-synonyms:
 glossaryText: "something that can be thought of as existing in a particular [knowledge](@), e.g. a [concept](@), or a [mental model](@)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Knowledge Artifact"

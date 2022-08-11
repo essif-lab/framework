@@ -3,21 +3,18 @@
 id: mental-model
 # TEv2: generic front-matter for curated texts
 scope: tev2
+termname: mental-model
 termtype: concept
-termid: mental-model
-formphrases: mental-model{ss}, pattern{ss}, conceptual-model{ss}
+termattrs:
 grouptags:
+synonyms:
+formphrases: mental-model{ss}, pattern{ss}, conceptual-model{ss}
 status: proposed
 created: 2022-06-06
 updated: 2022-06-07
-vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
-isa: knowledge-artifact
-term: Mental Model  # Text that is the name of the concept in (human readable) texts.
-fullterm: "Mental Model (Conceptual Model, Pattern)"
-shorterm:
-synonyms: [ Pattern, "Conceptual Model" ]
+isa: knowledge-artifact [ Pattern, "Conceptual Model" ]
 glossaryText: "A [knowledge artifact](@) that relates a set of [concepts](@) (ideas), relations between them, and constraints about a certain topic, into a coherent and consistent whole (sometimes called 'viewpoint', or 'way of thinking')."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Mental Model (Conceptual Model, Pattern)"

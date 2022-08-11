@@ -3,21 +3,18 @@
 id: term-name
 # TEv2: generic front-matter for curated texts
 scope: tev2
+termname: term-name
 termtype: concept
-termid: term-name
-formphrases: term-name{ss}
+termattrs:
 grouptags:
+synonyms:
+formphrases: term-name{ss}
 status: proposed
 created: 2022-06-06
 updated: 2022-08-10
-vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 isa: identifier
-term: term name # Text that is the name of the concept in (human readable) texts.
-fullterm:
-shorterm:
-synonyms:
 glossaryText: "an [identifier](@) that is used to represent a [knowledge artifact](@). Note that different [knowledge artifacts](@) can have the same [term name](@) (which is known as [semantically overloading](https://en.wikipedia.org/wiki/Semantic_overload))."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Term Name"
