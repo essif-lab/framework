@@ -3,21 +3,18 @@
 id: glossarydir
 # TEv2: generic front-matter for curated texts
 scope: tev2
+termname: glossarydir
 termtype: concept
-termid: glossarydir
-formphrases: glossary-director{yies}, glossarydir{ss}
+termattrs:
 grouptags:
+synonyms:
+formphrases: glossary-director{yies}, glossarydir{ss}
 status: proposed
 created: 2022-07-29
 updated: 2022-07-29
-vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
-isa:
-term: scope directory  # Text that is the name of the concept in (human readable) texts.
-fullterm:
-shorterm:
-synonyms: scopedir
+isa: scopedir
 glossaryText: "a directory within a [scopedir](@) within which the different versions of its ([machine readable](mrg@) and [human readable](hrg@)) [glossaries](@) are created and maintained."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Glossary Directory (Glossarydir)"

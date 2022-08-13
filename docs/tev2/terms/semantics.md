@@ -3,21 +3,18 @@
 id: semantics
 # TEv2: generic front-matter for curated texts
 scope: tev2
+termname: semantics
 termtype: concept
-termid: semantics
-formphrases: semantics
+termattrs:
 grouptags:
+synonyms:
+formphrases: semantics
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
-vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 isa:
-term: semantics  # Text that is the name of the concept in (human readable) texts.
-fullterm:
-shorterm:
-synonyms:
 glossaryText: "a mapping between the (tangible/textual) [terms](@) and (intangible) ideas/[concepts](@) - their meaning."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Semantics"

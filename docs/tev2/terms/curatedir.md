@@ -3,21 +3,18 @@
 id: curatedir
 # TEv2: generic front-matter for curated texts
 scope: tev2
+termname: curatedir
 termtype: concept
-termid: curatedir
-formphrases: glossary-director{yies}, curatedir{ss}
+termattrs:
 grouptags:
+synonyms:
+formphrases: glossary-director{yies}, curatedir{ss}
 status: proposed
 created: 2022-07-29
 updated: 2022-07-29
-vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 isa:
-term: curatedir  # Text that is the name of the concept in (human readable) texts.
-fullterm:
-shorterm:
-synonyms:
 glossaryText: "a directory within a [scopedir](@) within which every file contains a [curated texts](@) for that [scope](@)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Curatedir"

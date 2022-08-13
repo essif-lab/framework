@@ -3,21 +3,18 @@
 id: versiontag
 # TEv2: generic front-matter for curated texts
 scope: tev2
+termname: versiontag
 termtype: concept
-termid: versiontag
-formphrases: versiontag{ss}, version-tag{ss}
+termattrs:
 grouptags:
+synonyms:
+formphrases: versiontag{ss}, version-tag{ss}
 status: proposed
 created: 2022-06-06
 updated: 2022-07-28
-vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 isa: tag
-term: versiontag  # Text that is the name of the concept in (human readable) texts.
-fullterm: Versiontag (of/within a Scope)
-shorterm:
-synonyms:
 glossaryText: "a [tag](@) that is used to [identify](@) a specific version of a [terminology](@) from within a specific [scope](@)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Versiontag"

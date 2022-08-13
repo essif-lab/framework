@@ -3,21 +3,18 @@
 id: renderable-ref
 # TEv2: generic front-matter for curated texts
 scope: tev2
+termname: renderable-ref
 termtype: concept
-termid: renderable-ref
-formphrases: renderable-ref{ss}, renderable-reference{ss}
+termattrs:
 grouptags:
+synonyms:
+formphrases: renderable-ref{ss}, renderable-reference{ss}
 status: proposed
 created: 2022-06-06
 updated: 2022-08-04
-vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 isa:
-term: renderable ref # Text that is the name of the concept in (human readable) texts.
-fullterm:
-shorterm:
-synonyms:
 glossaryText: "a text with which the [TRRT](@) replaces a [term ref](@), that can be processed by specific third party rendering tools, the result of which is a rendering of the original [term ref](@) that has additional characteristics that help [readers](@) to (better) understand the intention of its [author](@)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Renderable Ref(erence)"

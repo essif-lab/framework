@@ -5,19 +5,15 @@ id: term-attrs
 scope: tev2
 termattrs: concept
 termid: term-attrs
-formphrases: term-attr{ss}
 grouptags:
+synonyms:
+formphrases: term-attr{ss}
 status: proposed
 created: 2022-06-06
 updated: 2022-08-10
-vsntag: v0.1
 contributors: RieksJ
 # TEv2: attrs-specific front-matter for attrs `concept`
 isa: identifier
-term: term attrs # Text that is the attrs of the concept in (human readable) texts.
-fullterm:
-shorterm:
-synonyms:
 glossaryText: "a list of [attributes](term-attrs@) that enable one to distinguish between [knowledge artifacts](@) that have the same [term name](@) and are of the same [type](term-type@)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Term Attr(ibute)s"

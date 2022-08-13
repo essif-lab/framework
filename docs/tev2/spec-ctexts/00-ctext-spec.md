@@ -92,21 +92,18 @@ The following table specifies the **generic header fields**:
 | `termname`     | Y | Name ([Identifier](@)) that is used to represent a [knowledge artifact](@). Actual, i.e. successful [identification](@) of the [knowledge artifact](@) may also depend on other characteristics, such as the `termtype`, as names are known to be [semantically overloaded](https://en.wikipedia.org/wiki/Semantic_overload). See [TEv2 identification](/docs/tev2/various-identifiers) for more details.<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `termtype`     | n | Text that [identifies](@) the kind of [knowledge artifact](@) that this [curated text](@) describes. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `termattrs`    | n | List of [attributes](term-attrs@) that enable one to distinguish between [knowledge artifacts](@) that have the same [term name](@) and are of the same [type](term-type@).<br/>Each list element must satisfy regex `[a-z0-9_-]+`. |
-| `glossaryText` | n | Text that is used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](@). |
-| `hoverText`    | n | Text that can be used as the contents of a popup that shows as the [term](@) is rendered in a web browser and the [reader](@) hovers over the [term](@) with its mouse. This text SHOULD NOT contain [term refs](@). |
-| `termreftext`  | n | [reftext](@) that [identifies](@) the [curated text](@) that documents the [knowledge artifact](@) that this term represents. |
+| `grouptags`    | n | List of [grouptags](@), each of which signifies that the [(scoped) term](@) that this [curated text](@) documents, is part of the group of [terms](@) that it represents.<br/>Example: `[tev2, management]`.<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-]+)\s*(?:,\s*([a-z0-9_-]+))*\s*\])?`](https://www.debuggex.com/r/a51CXl1NzR3kwihT). |
 | `synonyms`     | n | List of [terms](@), other than the tuple {`termname`, `termtype`, `termaddtrs`}, that (also) represent the [knowledge artifact](@) that is documented by the [curated text](@). |
 | `formphrases`  | n | List of [texts](formphrase@) that are [used to convert](/docs/tev2/spec-tools/trrt#id) the `show text` parts of [term refs](@) into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs). For details, see ['Syntax Specs - Form Phrases](/docs/tev2/spec-syntax/form-phrase-syntax). |
-| `grouptags`    | n | List of [grouptags](@), each of which signifies that the [(scoped) term](@) that this [curated text](@) documents, is part of the group of [terms](@) that it represents.<br/>Example: `[tev2, management]`.<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-]+)\s*(?:,\s*([a-z0-9_-]+))*\s*\])?`](https://www.debuggex.com/r/a51CXl1NzR3kwihT). |
+| `glossaryText` | n | Text that is used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](@). |
+| `hoverText`    | n | Text that can be used as the contents of a popup that shows as the [term](@) is rendered in a web browser and the [reader](@) hovers over the [term](@) with its mouse. This text SHOULD NOT contain [term refs](@). |
 | `status`       | n | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
 | `created`      | n | Date at which of the [curated text](@) was created, in the date format as used within this [scope](@). |
 | `updated`      | n | Date at which of the [curated text](@) was last modified, in the date format as used within this [scope](@). |
-| `vsntag`       | n | Text that identifies the version of this [curated text](@).<br/>Must satisfy regex `[a-z0-9_-.]+`. |
 | `contributors` | n | Text that shows (or refers to) the people that have contributed to this [curated text](@). |
 
 :::info Editor's notes
-1. The field `termreftext` isn't properly defined yet, and therefore every use should be documented and fed back to the developers of TEv2.
-2. There is currently no generic syntax for [terms](@) - see [this issue](https://github.com/trustoverip/ctwg-toolkit-mrg/issues/15). Any use of this field should be mentioned and discussed there, until the syntax is defined.
+1. There is currently no generic syntax for [terms](@) - see [this issue](https://github.com/trustoverip/ctwg-toolkit-mrg/issues/15). Any use of this field should be mentioned and discussed there, until the syntax is defined.
 :::
 
 ## Type-specific Header Fields {#type-specific-header-fields}

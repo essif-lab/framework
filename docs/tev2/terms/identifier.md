@@ -3,21 +3,18 @@
 id: identifier
 # TEv2: generic front-matter for curated texts
 scope: tev2
+termname: identifier
 termtype: concept
-termid: identifier
-formphrases: identifier{ss}
-grouptags: identification
+termattrs:
+grouptags:
+synonyms:
+formphrases: identifier{ss} identification
 status: proposed
 created: 2021-06-01
 updated: 2021-06-01
-vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 isa:
-term: Identifier # Text that is the name of the concept in (human readable) texts.
-fullterm: Identifier (within a Scope)
-shorterm: ID
-synonyms:
 glossaryText: "a character string that is being used for the identification of some [entity](@) (yet may refer to 0, 1, or more [entities](@), depending on the context within which it is being used)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Identifier"

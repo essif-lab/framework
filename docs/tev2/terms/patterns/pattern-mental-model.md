@@ -3,21 +3,20 @@
 id: pattern-mental-model
 # TEv2: generic front-matter for curated texts
 scope: tev2
+termname: mental-model
 termtype: pattern
-termid: mental-model
-formphrases: mental-model
+termattrs:
 grouptags:
+synonyms:
+formphrases: mental-model{ss}
+glossaryText:
+hoverText: "The Mental Models pattern captures the foundational Concepts and relations that we need for creating, maintaining and using  (decentralized) Vocabularies (Terminologies) that groups of people can use for the specific purposes they pursue."
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
-vsntag: v0.1
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `pattern`
-term: mental model  # Text that is the name of the pattern in (human readable) texts.
-tag:  # Tag by which this pattern can be identified within the scope in which it is specified
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Mental Models"
-hoverText: "The Mental Models pattern captures the foundational Concepts and relations that we need for creating, maintaining and using  (decentralized) Vocabularies (Terminologies) that groups of people can use for the specific purposes they pursue."
 # sidebar_label:
 # hide_table_of_contents: true
 ---
