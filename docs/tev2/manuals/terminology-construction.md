@@ -24,22 +24,14 @@ An [MRG entry](@) contains (meta) data about (the [(scoped) term](@) that repres
 
 The process for creating a [terminology](@) is as follows:
 1. start with an empty set of [MRG entries](@) - we use the term "terminology-under-construction" to refer to this set.
-2. sequentially process a list of so-called 'term selection criteria' instructions, where processing one of them adds, removes, or otherwise manipulates [MRG entries](@) in the terminology-under-construction (e.g. for renaming [terms](scoped-term@)). This is detailed [below](#crit-processing).
+2. sequentially process a list of so-called 'term selection criteria' instructions, which allow for
+  - [adding](#syntax-add) [MRG entries](@) to the terminology-under-construction; these can either be [entries](mrg-entry@) that have been created from [curated texts](@), or [entries](mrg-entry@) whose contents is obtained from an [MRG](@) other than the one that is being created.
+  - [removing](#syntax-remove) [MRG entries](@) from the terminology-under-construction;
+  - [modifying attributes](#syntax-rename) of a specific [MRG entry](@) in the terminology-under-construction, e.g. for renaming a term that originated from another [scope](@).
 
 [Curators](@) create and maintain the list of 'term selection criteria' instructions for every specific (version of a) [terminology](@) they decide to manage. Each such (versioned) [terminology](@) has an entry in the [`versions` section](/docs/tev2/spec-files/saf#versions) of the [SAF](@) (of the designated [scope](@)), and the term selection criteria reside in the `termselcrit` field of that section.
 
-## Processing a Term Selection Criterion {#crit-processing}
-
-We have defined a number of manipulations that can be done to contribute to construct a [terminology](@):
-1. Add [MRG entries](@) to the terminology-under-construction;
-2. Remove [MRG entries](@) from the terminology-under-construction;
-3. Rename/rewrite specific parts of [MRG entries](@), which enables [curators](@) e.g. to rename [terms](@).
-
-:::info Editor's note
-The below text must remain in sync with the first post of [issue #3 of the mrgt-repo](https://github.com/trustoverip/ctwg-toolkit-mrg/issues/3).
-:::
-
-### Adding MRG Entries to the terminology-under-construction {#syntax-add}
+## Adding MRG Entries to the terminology-under-construction {#syntax-add}
 
 A [curator](@) can add [MRG entries](@) to the terminology-under-construction from different sources, i.e.
 - [terms](@) that are defined in a [curated text](@) that exists in the current [scope](@), and
@@ -47,51 +39,33 @@ A [curator](@) can add [MRG entries](@) to the terminology-under-construction fr
 
 Note that any reference to (an [MRG entry](@) in) (the specific version of) the [terminology](@) that is being constructed, MUST be interpreted as a reference to the [curated text](@) from which the [MRG entry](@) would have been constructed.
 
-The following syntaxes can be used for adding terms (whitespace is disregarded):
-- `terms [ <termslist> ] @<scopetag>:<vsntag>`
-- `ids [ <idslist> ] @<scopetag>:<vsntag>`
-- `tags [ <grouptagslist> ] @<scopetag>:<vsntag>`
-- `* @<scopetag>:<vsntag>`
+The following instructions can be used for adding [MRG entries](@) (whitespace is disregarded):
+
+| Instruction<sup>*)</sup>   | The instruction creates, and subsequently adds an [MRG entry](@) for every [curated text](@) ... |
+| :------------------------- | :--------------------------------------------------------------------- |
+| `terms [ <termslist> ]`    | that documents the [knowledge artifact](@) that is represented by a [term](@) that appears in the `termslist>`. |
+| `ids   [ <idslist> ]`      | whose `id` field appears as an element of the `<idslist>`. |
+| `tags  [ <grouptagslist> ]`| that has an element in the list of [grouptags](@) that also appears in the `<groutagslist>`. |
+| `*`                        | that exists within the current [scope](@). |
+
+`<termslist>`, `<idslist>` and `<grouptagslist>` are comma-separated lists of [terms](@), [curated text](@)-`id`-fields, and [grouptags](@) respectively.
+
+*) It is allowed to add `@<scopetag>` or `@<scopetag>:<vsntag>` to the instruction syntax, the effect of which is that the [MRG entries](@) are not created from [curated texts](@), but rather selected from the [MRG](@) that holds (the specified version of) the [terminology] of the specified [scope](@). If `:<vsntag>` isn't used, the default [MRG](@) from the specified [scope](@) will be used.
 
 <details>
 <summary>Examples</summary>
 
 | Instruction | What it does when processed |
 | :---------- | :---------- |
-| `terms[party]@essiflab:v3.1` | selects the [term](scoped-term@) `party@essiflab:v3.1`, and adds an [MRG entry](@) for the [knowledge artifact](@) that it represents. |
-| `ids[pattern-party-actor-action]@essiflab` | selects the [curated text](@) [identified](@) by `pattern-party-actor-action`, and adds an [MRG entry](@) for the [knowledge artifact](@) that it documents. |
-| `tags[management,governance]@essiflab` | selects all [terms](@) that are part of the default [terminology](@) of [scope](@) `essiflab`, that have the [grouptag](@) `management` or `governance`, and adds an [MRG entry](@) for each of them. |
-| `* @ctwg` | selects all [terms](@) that are part of the default [terminology](@) of the [scope(@) `ctwg`, and adds an [MRG entry](@) for each of them. |
-| `* @` | selects all [curated texts](@) from the current [scope](@), and for each of them, adds an [MRG entry](@) for the [knowledge artifact](@) that it documents.  |
+| `terms[party]@essiflab:v3.1` | gets version `v3.1` of the [MRG](@) from the scope `essiflab`, finds the [MRG entry](@) associated with the [term](@) `party`, and adds a copy to the terminology-under-construction. |
+| `ids[pattern-terminology]@tev2` | gets the default version of the [MRG](@) from the scope `tev2`, finds the [MRG entry](@) associated with the [term](@) `pattern-terminology`, and adds a copy to the terminology-under-construction. |
+| `tags[management,governance]@toip` | gets the default version of the [MRG](@) from the scope `toip`, finds the [MRG entries](@) that have `management` and/or `governance` as one of their [grouptags](@), and adds a copy for each of them to the terminology-under-construction. |
+| `* @essif-lab` | gets the default version of the [MRG](@) from the scope `essif-lab`, and adds a copy of all of its [MRG entries](@) to the terminology-under-construction. |
+| `* @` | creates an [MRG entry](@) for every [curated text](@) in the current [scope](@), and adds them to the terminology-under construction. |
 
 </details>
 
-  where:
-
-| symbol            | description |
-| ----------------- | :---------- |
-| `<vsntag>`        | (optional) [versiontag](@) that [identifies](@) the version of the [terminology](@) from which [terms](@) are to be selected. |
-| `<scopetag>`      | (optional) [scopetag](@) that [identifies](@) the [scope](@) from which [terms](@) are to be selected. |
-| `<grouptagslist>` | a (non-empty) comma-separated list of [grouptags](@). |
-| `<termslist>`     | a (non-empty) comma-separated list of [terms](@). |
-
-This syntax is processed as follows:
-1. **Select the source** from which to obtain the [terms](@), as follows:
-  - If both `<scopetag>` and `<vsntag>` are omitted, the set of [curated texts](@) of the current [scope](@) is selected as the source.
-  - If `<scopetag>` is specified, then one of the [MRGs](@) that exist in that [scope](@) is selected as the source. If it is not specified, then the current [scope](@) will provide the source.
-  - If `<vsntag>` is specified, then the [MRG](@) of the selected [scope](@) that has the specified `<vsntag>` is selected as the source. If it is not specified, then the default version of that [scope's](@) [MRG](@) (as specified in that [scope's](@) [SAF](@)) is selected as the source.
-2. **Select the [terms](@)** from the selected source that are to be added, as follows:
-  - In case the instruction starts with the keyword `tags`, every [term](@) is selected of which its specification (i.e. either a [curated text](@), or an [MRG entry](@), depending on the selected source), mentions any of the [grouptags](@) in its `grouptags`-field.
-  - In case the instruction starts with the keyword `termnames`, every [term](@) is selected of which its specification (i.e. either a [curated text](@), or an [MRG entry](@)) mentions one of the specified [termnames](@) in its `id`-field.
-  - In case the instruction starts with the `*`-character, every [term](@) is selected that is contained within the selected source.
-3. **Add the [terms](@)** to the tuple set, as follows:
-  - A tuple is created, consisting of the [termname](@) and [term](@) as selected, and all [grouptags](@) that are associated with the selected [term](@) (from the `grouptags` field of the [curated text](@) or [MRG entry](@), depending on the kind of source)
-  - If the [termname](@) of a selected [term](@) already exists in a tuple in the tuple set, that tuple is removed from the tuple set.
-  - The tuple is added to the tuple set.[^1]
-
-[^1]: In practice, tuples would typically also contain all other attributes that are associated with terms, similar, if not exactly the same as an [MRG entry](@).
-
-### Removing MRG Entries from a terminology-under-construction {#syntax-remove}
+## Removing MRG Entries from a terminology-under-construction {#syntax-remove}
 
 A [curator](@) can remove [terms](@) from the tuple set, using the following syntax (whitespace is disregarded):
 - `-tags [ <grouptagslist> ]`
@@ -118,7 +92,7 @@ This syntax is processed as follows:
 - In case the instruction starts with `-tags`, every tuple in the tuple set that is associated with at least one of the listed [grouptags](@) is removed from that set.
 - In case the instruction starts with `-termnames`, every tuple that is associated with any of the specified [termnames](@) is removed from the tuple set.
 
-### Rename/rewrite specific parts of an MRG entry {#syntax-rename}
+## Rename/rewrite specific parts of an MRG entry {#syntax-rename}
 
 In analogy with [namespaces](https://en.wikipedia.org/wiki/Namespace), we accommodate for the renaming of [terms](@) as they are 'imported' from [terminologies](@) other than the one that we are constructing. However, the analogy breaks down in the sense that it is not only a [term](@) that should be renameable (which is sufficient for [namespaces](https://en.wikipedia.org/wiki/Namespace)), but also certain attributes may need to be changed.
 
