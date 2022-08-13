@@ -43,7 +43,7 @@ The following instructions can be used for adding [MRG entries](@) (whitespace i
 
 | Instruction<sup>*)</sup>   | The instruction creates, and subsequently adds an [MRG entry](@) for every [curated text](@) ... |
 | :------------------------- | :--------------------------------------------------------------------- |
-| `terms [ <termslist> ]`    | that documents the [knowledge artifact](@) that is represented by a [term](@) that appears in the `termslist>`. |
+| `terms [ <termslist> ]`    | that documents the [knowledge artifact](@) that is represented by a [term](@) that appears in the `<termslist>`. |
 | `ids   [ <idslist> ]`      | whose `id` field appears as an element of the `<idslist>`. |
 | `tags  [ <grouptagslist> ]`| that has an element in the list of [grouptags](@) that also appears in the `<groutagslist>`. |
 | `*`                        | that exists within the current [scope](@). |
@@ -67,32 +67,37 @@ The following instructions can be used for adding [MRG entries](@) (whitespace i
 
 ## Removing MRG Entries from a terminology-under-construction {#syntax-remove}
 
-A [curator](@) can remove [terms](@) from the tuple set, using the following syntax (whitespace is disregarded):
+A [curator](@) can remove [MRG entries](@) from the tuple set, using the following syntax (whitespace is disregarded):
 - `-tags [ <grouptagslist> ]`
 - `-termnames [ <termnamelist> ]`
+
+A [curator](@) can remove [MRG entries](@) from the terminology-under-construction in different ways, using the following instructions (whitespace is disregarded):
+
+| Instruction<sup>*)</sup>   | The instruction removes an [MRG entry](@) from the terminology-under-construction if ... |
+| :------------------------- | :--------------------------------------------------------------------- |
+| `-terms [ <termslist> ]`   | the [term](@) that it specifies is an element of `<termslist>`. |
+| `-ids   [ <idslist> ]`     | its `id`-field is an element of `<idslist>`. |
+| `tags  [ <grouptagslist> ]`| one of its [grouptags](@) appears in the `<groutagslist>`. |
+
+`<termslist>`, `<idslist>` and `<grouptagslist>` are comma-separated lists of [terms](@), [curated text](@)-`id`-fields, and [grouptags](@) respectively.
 
 <details>
 <summary>Examples</summary>
 
 | Instruction | What it does when processed |
 | :---------- | :---------- |
-| `-tags[management,governance]` | removes all tuples for [terms](@) that are associated with the [grouptag](@) `management` or `governance`.  |
-| `-termnames[party]` | removes the tuple for the [term](@) `party`. |
+| `-terms[party, actor]` | removes the [MRG entries](@) that specifies `party` or `actor` as its [term](@). |
+| `-ids[pattern-terminology]` | removes the [MRG entry](@) that has `pattern-terminology` in its `id`-field. |
+| `-tags[management]` | removes all [MRG entries](@) that have a [grouptag](@) `management`.  |
 
 </details>
 
-  where:
-
-| symbol            | description |
-| ----------------- | :---------- |
-| `<grouptagslist>` | a (non-empty) comma-separated list of [grouptags](@). |
-| `<termnamelist>`    | a (non-empty) comma-separated list of [termnames](@). |
-
-This syntax is processed as follows:
-- In case the instruction starts with `-tags`, every tuple in the tuple set that is associated with at least one of the listed [grouptags](@) is removed from that set.
-- In case the instruction starts with `-termnames`, every tuple that is associated with any of the specified [termnames](@) is removed from the tuple set.
-
 ## Rename/rewrite specific parts of an MRG entry {#syntax-rename}
+
+<img
+  alt="From this point onward, texts are under construction"
+  src={useBaseUrl('images/wip/wip-under-construction-from-here-onward.png')}
+/><br/><br/>
 
 In analogy with [namespaces](https://en.wikipedia.org/wiki/Namespace), we accommodate for the renaming of [terms](@) as they are 'imported' from [terminologies](@) other than the one that we are constructing. However, the analogy breaks down in the sense that it is not only a [term](@) that should be renameable (which is sufficient for [namespaces](https://en.wikipedia.org/wiki/Namespace)), but also certain attributes may need to be changed.
 

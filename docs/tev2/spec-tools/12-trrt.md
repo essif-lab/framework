@@ -237,8 +237,8 @@ As soon as the variables have been provided with a value, the [MRG](@) can be fo
 ### Rewriting the Term Ref with a Renderable Ref
 
 <img
-  alt="This section is under construction"
-  src={useBaseUrl('images/wip/wip-under-construction.png')}
+  alt="From this point onward, texts are under construction"
+  src={useBaseUrl('images/wip/wip-under-construction-from-here-onward.png')}
 /><br/><br/>
 
 The [term ref](@) will by default dereference to a human readable, rendered version of the [curated text](@) associated with the [identified](@) [MRG entry](@), which can be obtained through the URL located in the `navurl` field of the [MRG entry](@), which the text `#<trait>` is appended if a `trait` was specified.
