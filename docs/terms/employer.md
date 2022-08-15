@@ -19,6 +19,8 @@ Additional content is needed here.
 
 ### Short Description
 
+An **Employer (of an Actor)** is a %%party|party%% on whose behalf an %%actor|actor%% (called an %%employee|employee%% of that %%party|party%%) might execute %%actions|action%%. Typically, that would be the result of the the %%party|party%% having (successfully) %%onboarded|onboarding%% the %%actor|actor%%.
+
 The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
