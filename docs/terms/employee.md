@@ -19,6 +19,8 @@ Additional content is needed here.
 
 ### Short Description
 
+An **Employee (of a Party)** is an %%actor|actor%% for whom/which it is realistic that it might execute %%actions|action%% on behalf of a %%party|party%% (called the %%employer|employer%% of that %%actor|actor%%). Typically, that would be the result of its (successful) %%onboarding|onboarding%% by that %%party|party%%.
+
 The %%Parties, Actors and Actions pattern|pattern-party-actor-action%% provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
