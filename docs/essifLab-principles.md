@@ -51,4 +51,4 @@ What a piece of %%data|data%% means to a %%party|party%% is what it decides that
 
 ## Trust is subjective
 
-%%Trust|trust%% is not something that is given, but something that %%parties|party%% (un)consciously assess, and decide about, and changes over time. Since parties are autonomous, their trust is highly subjective. As a consequence, the idea of having 'trusted registries', 'trusted issuers' that do not take this subjectivity into account basically act as %%(centralized) authorities|authority%%, denying that parties are autonomous. While we acknowledge that such ideas (have a right to) exist, we do not follow them.
+%%Trust|trust%% is not something that is given, but something that %%parties|party%% (un)consciously assess, and decide about, and changes over time. Since parties are autonomous, their trust is highly subjective. As a consequence, the idea of having 'trusted registries', i.e. 'trusted issuers' that do not take this subjectivity into account basically acting as %%(centralized) authorities|authority%%, denies that parties are autonomous. While we acknowledge that such ideas (have a right to) exist, we do not follow them.
