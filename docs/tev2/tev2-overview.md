@@ -51,7 +51,7 @@ If you are familiar with [markdown](https://www.markdownguide.org/basic-syntax/)
 
 TEv2 is designed to support an ever increasing variety of raw text formats, and its toolbox will - over time - be filled with an increasing number of tools that will support an increasing number of 3rd party rendering tools. This section shows the architecture that allows this to become reality.
 
-The architecture is based on the ToIP/eSSIF-Lab [Terminology Model](/docs/tev2/terms/pattern-terminology-support), which assumes that every author/group constitutes a so-called [terms-community](@) that [curates](@) one (or more) [scope(s)](@), that contains e.g. [definitions](@), [terms](@), [tags](@) etc. that constitute the author/group's [terminology](@). An overview is given in the figure below:
+The architecture is based on the ToIP/eSSIF-Lab [Terminology Model](/docs/tev2/terms/patterns/pattern-terminology-support), which assumes that every author/group constitutes a so-called [terms-community](@) that [curates](@) one (or more) [scope(s)](@), that contains e.g. [definitions](@), [terms](@), [tags](@) etc. that constitute the author/group's [terminology](@). An overview is given in the figure below:
 
 <img
   alt="TEv2 Overview"
