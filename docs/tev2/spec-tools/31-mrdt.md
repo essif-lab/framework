@@ -1,6 +1,5 @@
 ---
 id: mrdt
-title: Machine Readable Dictionary Generation Tool
 sidebar_label: MR Dictionary Generation
 displayed_sidebar: tev2SideBar
 hide_table_of_contents: true
@@ -9,6 +8,7 @@ date: 20220801
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -17,6 +17,8 @@ export const Mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
+
+# Machine Readable Dictionary Generation Tool
 
 <img
   alt="This page is under construction"

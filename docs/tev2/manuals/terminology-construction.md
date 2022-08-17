@@ -1,12 +1,13 @@
 ---
 id: terminology-construction
-title: Terminology Construction
 hide_table_of_contents: true
 scopetag: tev2
 date: 20220801
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Terminology Construction
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

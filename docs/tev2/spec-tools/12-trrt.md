@@ -1,6 +1,5 @@
 ---
 id: trrt
-title: Term Reference Resolution Tool
 sidebar_label: Term Ref Resolution
 displayed_sidebar: tev2SideBar
 scopetag: tev2
@@ -8,6 +7,7 @@ date: 20220421
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -16,6 +16,8 @@ export const Mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
+
+# Term Reference Resolution Tool
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

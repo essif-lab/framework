@@ -1,12 +1,13 @@
 ---
 id: contributors-latex
-title: Using LaTeX source texts
 sidebar_label: Using LaTex
 scopetag: tev2
 date: 20220513
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Using LaTeX source texts
 
 <img
   alt="This page is under construction"

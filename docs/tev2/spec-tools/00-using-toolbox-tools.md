@@ -1,6 +1,5 @@
 ---
 id: using-toolbox-tools
-title: Using Tools from the TEv2 Toolbox
 sidebar_label: Calling tools
 sidebar_position: 1
 displayed_sidebar: tev2SideBar
@@ -9,10 +8,13 @@ date: 20220801
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
 export const Mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
+
+# Using Tools from the TEv2 Toolbox
 
 <img
   alt="This page is under construction"

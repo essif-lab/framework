@@ -1,11 +1,11 @@
 ---
 id: ctext-concept #
-title: Curated Texts of type `Concept`
 sidebar_label: Concepts
 # hide_table_of_contents: true
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -14,6 +14,8 @@ export const Mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
+
+# Curated Texts of type `Concept`
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
@@ -61,7 +63,6 @@ id: concept-curate
 # Header entries that are specific to third-party tools, e.g. Docusaurus - as specified in:
 # https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter
 #
-title: "Curators (of a Scope)"
 sidebar_label: "Scope Curators"
 #
 # Generic TEv2 heading entries (i.e. valid for all `termtype`s):
@@ -77,6 +78,8 @@ term: curate
 glossaryText: "To evolve [concept](@) and [term](@) data in the direction of greater quality and richer content within a specific [scope](@)."
 hoverText: "Curate: to evolve concept and term data in the direction of greater quality and richer content within a specific scope."
 ---
+
+# "Curators (of a Scope)"
 ~~~
 
 </details>

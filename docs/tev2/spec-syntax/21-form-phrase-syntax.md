@@ -1,6 +1,5 @@
 ---
 id: form-phrase-syntax
-title: Form Phrases - Syntax
 sidebar_label: Form Phrases
 hide_table_of_contents: true
 scopetag: tev2
@@ -8,6 +7,8 @@ date: 20220808
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Form Phrases - Syntax
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

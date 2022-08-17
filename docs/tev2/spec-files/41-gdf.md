@@ -1,6 +1,5 @@
 ---
 id: gdf
-title: Glossary Definition File (GDF)
 sidebar_label: GDF (Glossary Definition File)
 hide_table_of_contents: true
 scopetag: tev2
@@ -8,10 +7,13 @@ date: 20220503
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
 export const Mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
+
+# Glossary Definition File (GDF)
 
 <img
   alt="This page is under construction"

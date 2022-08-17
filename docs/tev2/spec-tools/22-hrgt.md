@@ -1,6 +1,5 @@
 ---
 id: hrgt
-title: Human Readable Glossary Generation Tool
 sidebar_label: HR Glossary Generation
 displayed_sidebar: tev2SideBar
 hide_table_of_contents: true
@@ -9,10 +8,13 @@ date: 20220421
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
 export const Mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
+
+# Human Readable Glossary Generation Tool
 
 <img
   alt="This page is under construction"

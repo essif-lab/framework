@@ -1,12 +1,12 @@
 ---
 id: ctext-use-case
-title: Curated Texts of type `use-case`
 sidebar_label: Use Cases
 scopetag: tev2
 date: 20220303
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -15,6 +15,8 @@ export const Mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
+
+# Curated Texts of type `use-case`
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

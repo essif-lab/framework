@@ -1,10 +1,11 @@
 ---
 id: notations-and-conventions
-title: Notations and Conventions
 date: 20220803
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Notations and Conventions
 
 This document provides an overview of the notations and conventions being used within this [scope](@).
 

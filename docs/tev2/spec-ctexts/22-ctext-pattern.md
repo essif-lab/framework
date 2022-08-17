@@ -1,11 +1,11 @@
 ---
 id: ctext-pattern #
-title: Curated Texts of type `Pattern`
 sidebar_label: Patterns
 # hide_table_of_contents: true
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -14,6 +14,8 @@ export const Mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
+
+# Curated Texts of type `Pattern`
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

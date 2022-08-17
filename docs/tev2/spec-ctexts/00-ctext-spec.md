@@ -1,6 +1,5 @@
 ---
 id: ctext-spec
-title: Curated Texts
 sidebar_label: Curated Texts
 hide_table_of_contents: true
 scopetag: tev2
@@ -8,6 +7,8 @@ date: 20220713
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Curated Texts
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
