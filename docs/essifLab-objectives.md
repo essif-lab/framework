@@ -14,7 +14,7 @@ The purpose of the eSSIF-Lab is to specify, develop and validate technological a
 For this purpose, eSSIF-Lab has set the following %%objectives|objective%% to realize:
 
 ### Empower European and other citizens
-The results of the work done in eSSIF-Lab should contribute to provide individuals with means that help them to electronically negotiate and conduct %%transactions|transaction%% in the widest sense of the word. Such means make it easier for them to participate in transactions, both in the Internet and in physical life.
+The results of the work done in eSSIF-Lab should contribute to provide individuals with means that help them to electronically negotiate and conduct %%transactions|transaction%% in the widest sense of the word. Such means make it easier for them to participate in transactions, both on the Internet and in physical life.
 
 Criteria to determine that the %%objective|objective%% is fulfilled include:
   - logins (username, password) are eliminated.
@@ -23,7 +23,7 @@ Criteria to determine that the %%objective|objective%% is fulfilled include:
   - people find the provided means helpful as they seek to exercise their rights under privacy acts such as the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/data-protection-eu_en).
 
 ### Empower European and other organizations and governments
-The results of the work done in eSSIF-Lab should contribute to provide %%organizations|organization%% (e.g. enterprises, governments) with means that help them to electronically negotiate and conduct %%transactions|transaction%% in the widest sense of the word. Such means make it easier for them to participate in transactions, both in the Internet and in physical life.
+The results of the work done in eSSIF-Lab should contribute to provide %%organizations|organization%% (e.g. enterprises, governments) with means that help them to electronically negotiate and conduct %%transactions|transaction%% in the widest sense of the word. Such means make it easier for them to participate in transactions, both on the Internet and in physical life.
 
 Criteria to determine that the %%objective|objective%% is fulfilled include:
    - the costs of %%validating|validate%% the data that organizations need to determine whether or not to commit to a transaction, is significantly reduced.
