@@ -31,7 +31,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 ### Summary
 A **Versiontag** is a [tag](@) that is used to [identify](@) a specific version of a [terminology](@) from within a specific [scope](@). It may have various forms, and would typically be chosen such that it comes in handy with the tools that the [terms community](@) has decided to use to curate that [scope](@).
 
-The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
 
 ### Criteria
 A **Versiontag** (of/within a [scope](@)) is a [tag](@) that is used within that [scope](@) to [identify](@) a specific version of that [scope's](@) [terminology](@). The alphanumeric string satisfies the regex `[a-z0-9_-]+`.

@@ -42,7 +42,7 @@ Text needs to be revised from here onward. Here are some ideas to mention:
   - people can subsequently access nicely rendered, human readable versions
 :::
 
-The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
 
 ## Purpose
 

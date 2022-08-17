@@ -39,7 +39,7 @@ A [scope](@) can contain multiple [terminologies](@); it is expected that at lea
 
 [Scopes](@) may overlap, or be nested, in a similar way as [namespaces](https://en.wikipedia.org/wiki/Namespace).
 
-The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 

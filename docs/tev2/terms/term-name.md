@@ -33,5 +33,5 @@ A **Term Name** is an [identifier](@) that is used to represent a [knowledge art
 
 While a [term](@) is often thought of as a single word (or phrase), which is what we refer to as a [term name](@). However [terms](@) are better conceived as a construct that consists of multiple parts, enabling us to use the same [term name](@) for different kinds of [knowledge artifacts](@), as we often see that people do in practice.
 
-The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
 The [term-ref](@) [syntax specification](/docs/tev2/spec-syntax/term-ref-syntax) specifies the syntax that [authors](@) should use as they want to use a specific [term](@) in their text.
