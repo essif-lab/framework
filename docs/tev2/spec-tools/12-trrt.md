@@ -129,12 +129,12 @@ The [term ref](@) resolution process has three steps:
 ### Interpretation of the Term Ref
 
 The following kinds of [term ref](@) syntaxes are (to be) supported:
-- the [basic syntax](/doc/tev2/spec-syntax/term-ref-syntax#basic-syntax), i.e. \[`show text`\](`id`#`trait`@`scopetag`:`vsntag`);
-- the [terms syntax](/doc/tev2/spec-syntax/term-ref-syntax#terms-syntax), i.e. \[`show text`\](`term`#`trait`@`scopetag`:`vsntag`), the difference being that `term` represents a [[knowledge artifact](@), whereas `id` (in the basic syntax) [identifies](@) the [curated text](@) that documents such [artifact](knowledge-artifact@);
-- the [alternative syntax](/doc/tev2/spec-syntax/term-ref-syntax#alternative-syntax), e.g. \[`show text`@\], which basically moves the `@`-character from the basic syntax within the square brackets, which in many (if not most) cases is more convenient for [authors](@).
+- the [basic syntax](/docs/tev2/spec-syntax/term-ref-syntax#basic-syntax), i.e. \[`show text`\](`id`#`trait`@`scopetag`:`vsntag`);
+- the [terms syntax](/docs/tev2/spec-syntax/term-ref-syntax#terms-syntax), i.e. \[`show text`\](`term`#`trait`@`scopetag`:`vsntag`), the difference being that `term` represents a [[knowledge artifact](@), whereas `id` (in the basic syntax) [identifies](@) the [curated text](@) that documents such [artifact](knowledge-artifact@);
+- the [alternative syntax](/docs/tev2/spec-syntax/term-ref-syntax#alternative-syntax), e.g. \[`show text`@\], which basically moves the `@`-character from the basic syntax within the square brackets, which in many (if not most) cases is more convenient for [authors](@).
 
 :::info Editor's note
-The [terms syntax](/doc/tev2/spec-syntax/term-ref-syntax#terms-syntax) has currently not been properly defined.
+The [terms syntax](/docs/tev2/spec-syntax/term-ref-syntax#terms-syntax) has currently not been properly defined.
 :::
 
 Interpretation of a Term Ref leads to the population of the following variables (or, in case regexes are used, named capturing groups):
@@ -146,15 +146,15 @@ Finding a [term ref](@) in the file can be done by using a regular expressions (
 
 [^1]: These regexps may need to be improved to cater for exceptional situations, so that they do not match e.g. pieces of code (such as the regex specifications we presented above). Alternatively, [TRRT](@) might specify specific syntax for pieces of text from within which a match with these regexps is ignored.
 
-- For the [basic syntax](/doc/tev2/spec-syntax/term-ref-syntax#basic-syntax), you can use the PCRE regex
+- For the [basic syntax](/docs/tev2/spec-syntax/term-ref-syntax#basic-syntax), you can use the PCRE regex
   - [``(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))``](https://www.debuggex.com/r/Resuq7vbjHUOUXSx) to find the `[` that starts a [term ref](@), and
   - [``(?P<showtext>.+?)\]\((?P<id>[a-z0-9_-]+?)(?:#(?P<trait>[a-z0-9_-]+?))?@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsntag>[a-z0-9_-]+?))?\)``](https://www.debuggex.com/r/OC3lxllHc9GleXES) to find the various parts of the [term ref](@) as (named) capturing groups.
 
 :::info Editor's note
-There is no regex for the [terms syntax](/doc/tev2/spec-syntax/term-ref-syntax#terms-syntax), because it has not yet been defined.
+There is no regex for the [terms syntax](/docs/tev2/spec-syntax/term-ref-syntax#terms-syntax), because it has not yet been defined.
 :::
 
-- For the [alternative syntax](/doc/tev2/spec-syntax/term-ref-syntax#alternative-syntax), you can use the PCRE regex
+- For the [alternative syntax](/docs/tev2/spec-syntax/term-ref-syntax#alternative-syntax), you can use the PCRE regex
   - [``(?<=[^`\\])\[(?=[^@\]]+@[:a-z0-9_-]*\](?:\([#a-z0-9_-]+\))?)``](https://www.debuggex.com/r/I_hsZPQ5DJRAjCNg) to find the `[` that starts a [term ref](@), and
   - [``(?P<showtext>.+?)@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsntag>[a-z0-9_-]+?))?\](?P<ref>\((?P<id>[a-z0-9_-]*)(?:#(?P<trait>[a-z0-9_-]+?))?\))?``](https://www.debuggex.com/r/kuFFBhpWnB42WbDC) to subsequently obtain the various fields as (named) capturing groups from the PCRE regex.
 
@@ -181,7 +181,7 @@ If not specified, the [scope](@) from which the [TRRT](@) is being called will b
 
 `vsntag` is a [versiontag](@) that [identifies](@) the version of the [terminology](@) in the [scope](@) (as [identified] by the `scopetag`). It MUST appear either in the `vsntag` field, or as one of the elements in the `altvsntags` field of the [SAF](@) that contains the administration of that [scope](@).
 
-If omitted (in which case the preceding `:`-character may also be omitted from the syntax), its value will [identify](@) the default [MRG](@) of the [scope](@) (as [specified](/docs/tev2/specs-file/saf#terminology) in the `mrgfile` field os the [SAF](@)).
+If omitted (in which case the preceding `:`-character may also be omitted from the syntax), its value will [identify](@) the default [MRG](@) of the [scope](@) (as [specified](/docs/tev2/spec-files/saf#terminology) in the `mrgfile` field os the [SAF](@)).
 
 #### `id` (optional) {#id}
 
