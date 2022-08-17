@@ -1,23 +1,25 @@
 ---
 # TEv2 Curated Text Header
-term: curated-text
+term: ingestion-profile
 termType: concept
 groupTags:
 synonyms:
-formPhrases: curated-text{ss}, ctext{ss} ctext
+formPhrases: ingestion-profile{ss}
 status: proposed
-created: 2022-06-02
-updated: 2022-08-04
+created: 2022-08-17
+updated: 2022-08-17
 contributors: RieksJ
 isa:
-glossaryText: a text that documents a [concept](@) or other [knowledge artifact](@) of a specific [community](@) or other [party](@), and is located within a [scope](@) that is owned by that [community](@)/[party](@).
+glossaryText: the specification of a method by which files that are in a particular place and format (e.g., wiki files) are turned into a [curated text](@).
 ---
 
-# Curated-text
+# Ingestion-profile
 
 ## Summary
 
-A **[curated text](@)** is a text that documents a [concept](@) or other [knowledge artifact](@) of a specific [community](@) or other [party](@), and is located within a [scope](@) that is owned by that [community](@)/[party](@). A large variety of traits can be documented, such as the [(scoped) term](@) that is used within the [scope](@) to represent the [artifact](knowledge-artifact@), a [definition](@), explanatory texts, examples, etc., etc.; anything that helps others understand the intricacy of these [artifacts](@).
+An **[ingestion profile](@)** is the specification of a method by which files that are in a particular place and format (e.g., wiki files) are turned into a [curated text](@).
+
+[Ingestion profiles](@)
 
 The (technical) structure and syntax for [curated texts](@) is specified [here](/docs/tev2/spec-ctexts/ctext-spec).
 

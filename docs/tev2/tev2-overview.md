@@ -1,6 +1,5 @@
 ---
 id: tev2-overview
-title: Terminology Engine v2 - Overview
 sidebar_label: TEv2 Overview
 displayed_sidebar: tev2SideBar
 scopetag: tev2
@@ -8,6 +7,8 @@ date: 20220303
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Terminology Engine v2 - Overview
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

@@ -1,12 +1,13 @@
 ---
 id: tev2-installation
-title: Installation
 hide_table_of_contents: true
 scopetag: tev2
 date: 20220303
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Installation
 
 <img
   alt="This page is under construction"

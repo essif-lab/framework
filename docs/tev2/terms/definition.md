@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: definition
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: definition
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: definition
+termType: concept
+groupTags:
 synonyms:
-formphrases: definition{ss}
+formPhrases: definition{ss}
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa:
 glossaryText: "a text that helps [parties](@) to have the same understanding about the meaning of (and [concepts](@) behind) a [term](@), ideally in such a way that these [parties](@) can determine whether or not they make the same distinction."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Definition"
-hoverText: "Definition: a text that helps Parties to have the same understanding about the meaning of (and Concepts behind) a Term, ideally in such a way that these Parties can determine whether or not they make the same distinction."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Definition
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

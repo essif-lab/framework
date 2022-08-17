@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: term-syntax
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: term-syntax
-termtype: concept
-termattrs:
-grouptags: syntax
+# TEv2 Curated Text Header
+term: term-syntax
+termType: concept
+groupTags: syntax
 synonyms:
-formphrases: term-syntaxes
+formPhrases: term-syntaxes
 status: proposed
 created: 2022-08-17
 updated: 2022-08-17
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa:
 glossaryText: "the criterion that specifies which texts can serve as a [term](@), which is that the text must match with (PCRE) regex [`[A-Za-z0-9\\s_]+`](https://www.debuggex.com/r/YQppbqxps5jI0t0P)."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Term Syntax"
-hoverText: "Every Term must satisfy the (PCRE) regex `[A-Za-z0-9\\s_]+`"
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Term-syntax
 
 <!--
             **IF THE PCRE REGEX FOR THE TERM SYNTAX MUST BE CHANGED

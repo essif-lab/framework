@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: renderable-ref
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: renderable-ref
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: renderable-ref
+termType: concept
+groupTags:
 synonyms:
-formphrases: renderable-ref{ss}, renderable-reference{ss}
+formPhrases: renderable-ref{ss}, renderable-reference{ss}
 status: proposed
 created: 2022-06-06
 updated: 2022-08-04
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa:
 glossaryText: "a text with which the [TRRT](@) replaces a [term ref](@), that can be processed by specific third party rendering tools, the result of which is a rendering of the original [term ref](@) that has additional characteristics that help [readers](@) to (better) understand the intention of its [author](@)."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Renderable Ref(erence)"
-hoverText: "Renderable Ref(erence): a text with which the TRRT replaces a Term Ref, that can be processed by specific third party rendering tools, the result of which is a rendering of the original Term Ref that has additional characteristics that help Readers to (better) understand the intention of its Author."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Renderable-ref
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

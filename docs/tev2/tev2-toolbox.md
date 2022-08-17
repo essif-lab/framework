@@ -1,12 +1,13 @@
 ---
 id: tev2-toolbox
-title: TEv2 Terminology Toolbox
 displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220421
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# TEv2 Terminology Toolbox
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

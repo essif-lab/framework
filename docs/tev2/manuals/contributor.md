@@ -1,16 +1,18 @@
 ---
 id: contributor
-title: Contributors Manual
 displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220513
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
 export const Mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
+
+# Contributors Manual
 
 <img
   alt="This page is under construction"

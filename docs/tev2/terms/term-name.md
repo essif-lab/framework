@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: term-name
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: term-name
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: term-name
+termType: concept
+groupTags:
 synonyms:
-formphrases: term-name{ss}
+formPhrases: term-name{ss}
 status: proposed
 created: 2022-06-06
 updated: 2022-08-10
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa: identifier
 glossaryText: "an [identifier](@) that is used to represent a [knowledge artifact](@). Note that different [knowledge artifacts](@) can have the same [term name](@) (which is known as [semantically overloading](https://en.wikipedia.org/wiki/Semantic_overload))."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Term Name"
-hoverText: "Term Name: an Identifier that is used to represent a Knowledge Artifact. Note that different Knowledge Artifacts can have the same Term Name (which is known as semantically overloading)."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Term-name
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: scopetag
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: scopetag
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: scopetag
+termType: concept
+groupTags:
 synonyms:
-formphrases: scopetag{ss}, scope-tag{ss}
+formPhrases: scopetag{ss}, scope-tag{ss}
 status: proposed
 created: 2022-06-06
 updated: 2022-07-28
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa: tag
 glossaryText: "a [tag](@) that is used to [identify](@) [scopes](@) from within a specific [scope](@)"
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Scopetag"
-hoverText: "Scopetag: a Tag (alphanumeric string) that is used to identify Scopes from within a specific Scope"
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Scopetag
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

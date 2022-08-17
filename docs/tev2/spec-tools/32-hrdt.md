@@ -1,6 +1,5 @@
 ---
 id: hrdt
-title: Human Readable Dictionary Generation Tool
 sidebar_label: HR Dictionary Generation
 displayed_sidebar: tev2SideBar
 hide_table_of_contents: true
@@ -9,10 +8,13 @@ date: 20220801
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
 export const Mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
+
+# Human Readable Dictionary Generation Tool
 
 <img
   alt="This page is under construction"

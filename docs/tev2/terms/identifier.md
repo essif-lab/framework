@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: identifier
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: identifier
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: identifier
+termType: concept
+groupTags:
 synonyms:
-formphrases: identifier{ss} identification
+formPhrases: identifier{ss} identification
 status: proposed
 created: 2021-06-01
 updated: 2021-06-01
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa:
 glossaryText: "a character string that is being used for the identification of some [entity](@) (yet may refer to 0, 1, or more [entities](@), depending on the context within which it is being used)."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Identifier"
-hoverText: "Identifier: a character string that is being used for the identification of some Entity (yet may refer to 0, 1, or more Entities, depending on the context within which it is being used)."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Identifier
 
 ### Short Description
 An **Identifier** is a character string that is being used for identification purposes (by a specific [party](@)).[^1] This includes names and labels, as they are (obviously) used for such purposes.

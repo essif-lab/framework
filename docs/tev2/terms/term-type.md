@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: term-type
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: term-type
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: term-type
+termType: concept
+groupTags:
 synonyms:
-formphrases: term-type{ss}
+formPhrases: term-type{ss}
 status: proposed
 created: 2022-06-06
 updated: 2022-08-10
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa: identifier
 glossaryText: "an [identifier](@) that is used to [identify](@) the particular *kind* of [knowledge artifact](@) that a [term name](@) represents. Examples include `concept`, `relation`, `pattern` (or `mental-model`)."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Term Type"
-hoverText: "Term Type: an Identifier that is used to Identify the particular *kind* of Knowledge Artifact that a Term Name represents. Examples include `concept`, `relation`, `pattern` (or `mental-model`)."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Term-type
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

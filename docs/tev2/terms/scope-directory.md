@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: scope-directory
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: scope-directory
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: scope-directory
+termType: concept
+groupTags:
 synonyms:
-formphrases: scope-director{yies}, scopedir{ss}
+formPhrases: scope-director{yies}, scopedir{ss}
 status: proposed
 created: 2022-07-29
 updated: 2022-07-29
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa: scopedir
 glossaryText: "a directory in a computer file system that contains all files that are either being [curated](@) within a particular [scope](@), or generated to serve some purpose within that [scope](@)."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Scope Directory"
-hoverText: "Scope Directory: a directory in a computer file system that contains all files that are either being Curated within a particular Scope, or generated to serve some purpose within that Scope."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Scope-directory
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

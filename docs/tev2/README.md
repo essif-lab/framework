@@ -1,10 +1,11 @@
 ---
 id: tev2-readme
-title: Contributing to TEv2 Tools
 sidebar_label: Contributing
 scopetag: tev2
 date: 20220402
 ---
+
+# Contributing to TEv2 Tools
 
 :::info Editor's note
 This documentation is based on the [ToIP TT-Tools Proposal](https://essif-lab.github.io/framework/docs/tev2/toip-terminology-toolbox) memo, which we currently keep as a reference.

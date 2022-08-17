@@ -1,6 +1,5 @@
 ---
 id: term-ref-syntax
-title: Term References - Syntax
 sidebar_label: Term References
 hide_table_of_contents: true
 scopetag: tev2
@@ -8,6 +7,8 @@ date: 20220303
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Term References - Syntax
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

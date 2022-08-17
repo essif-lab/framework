@@ -1,6 +1,5 @@
 ---
 id: hrg
-title: Human Readable Glossary (HRG)
 sidebar_label: HRG (Human Readable Glossary)
 hide_table_of_contents: true
 scopetag: tev2
@@ -8,10 +7,13 @@ date: 20220503
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
 export const Mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
+
+# Human Readable Glossary (HRG)
 
 <img
   alt="This page is under construction"

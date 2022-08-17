@@ -1,12 +1,13 @@
 ---
 id: contributors-wiki
-title: Using Wikis
 sidebar_label: Using Wikis (Markdown)
 scopetag: tev2
 date: 20220513
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Using Wikis
 
 <img
   alt="This page is under construction"

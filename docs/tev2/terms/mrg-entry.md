@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: mrg-entry
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: mrg-entry
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: mrg-entry
+termType: concept
+groupTags:
 synonyms:
-formphrases: mrg-entr{yies}
+formPhrases: mrg-entr{yies}
 status: proposed
 created: 2022-08-11
 updated: 2022-08-11
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa:
 glossaryText: "A machine-readable (and interpretable) artifact that contains (pointers to) data and meta-data about a particular  [knowledge artifact](@), such as the associated [term(s)](@), its [definition](@), etc., to make it easy for IT-tools to create, e.g. documentation, [glossaries](@), [dictionaries](@), whitepapers, etc. that uses such [terms](@) ([definitions](@), etc.)."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "MRG Entry"
-hoverText: "A machine-readable (and interpretable) artifact that contains (pointers to) data and meta-data about a particular  Knowledge Artifact, such as the associated term(s), its definition, etc., to make it easy for IT-tools to create, e.g. documentation, glossaries, dictionaries, whitepapers, etc. that uses such term(s) (definitions, etc.)."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Mrg-entry
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: glossary
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: glossary
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: glossary
+termType: concept
+groupTags:
 synonyms:
-formphrases: glossar{yies}
+formPhrases: glossar{yies}
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa:
 glossaryText: "an alphabetically sorted list of [terms](@) with the (single) meaning it has in (at least) one context."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: Glossary
-hoverText: "Glossary: an alphabetically sorted list of Terms with the (single) meaning it has in (at least) one context."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Glossary
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

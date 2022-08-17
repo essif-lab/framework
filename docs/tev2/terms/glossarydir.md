@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: glossarydir
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: glossarydir
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: glossarydir
+termType: concept
+groupTags:
 synonyms:
-formphrases: glossary-director{yies}, glossarydir{ss}
+formPhrases: glossary-director{yies}, glossarydir{ss}
 status: proposed
 created: 2022-07-29
 updated: 2022-07-29
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa: scopedir
 glossaryText: "a directory within a [scopedir](@) within which the different versions of its ([machine readable](mrg@) and [human readable](hrg@)) [glossaries](@) are created and maintained."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Glossary Directory (Glossarydir)"
-hoverText: "Glossarydir: a directory within a Scopedir within which the different versions of its (machine readable and human readable) Glossaries are created and maintained."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Glossarydir
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

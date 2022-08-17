@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: terms-community
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: terms-community
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: terms-community
+termType: concept
+groupTags:
 synonyms:
-formphrases: terms-communit{yies}
+formPhrases: terms-communit{yies}
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa: community
 glossaryText: "a [community](@) that maintains a [terminology](@) for the purpose of avoiding misunderstandings between its members as they collaborate."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Terms Community"
-hoverText: "Terms Community: a Community that maintains a Terminology for the purpose of avoiding misunderstandings between its members as they collaborate."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Terms-community
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

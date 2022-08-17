@@ -1,6 +1,5 @@
 ---
 id: tev2-backlog
-title: TEv2 - Backlog
 sidebar_label: Work-In-Progress
 hide_table_of_contents: true
 scopetag: tev2
@@ -8,6 +7,8 @@ date: 20220303
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# TEv2 - Backlog
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

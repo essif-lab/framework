@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: tag
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: tag
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: tag
+termType: concept
+groupTags:
 synonyms:
-formphrases: tag{ss}
+formPhrases: tag{ss}
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa: identifier
 glossaryText: "an alphanumeric string that is used to identify [scopes](@) (so called 'scopetags'), group [terms](@) (so called 'grouptags'), or identify a specific version of a [terminology](@) (so called 'versiontags') from within a specific [scope](@)."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Tag"
-hoverText: "Tag: an alphanumeric string that is used to identify Scopes (so called 'scopetags'), group Terms (so called 'grouptags'), or identify a specific version of a Terminology (so called 'versiontags') from within a specific Scope."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Tag
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

@@ -1,6 +1,5 @@
 ---
 id: saf
-title: Scope Administration File (SAF)
 sidebar_label: SAF (Scope Admin File)
 hide_table_of_contents: true
 scopetag: tev2
@@ -8,8 +7,11 @@ date: 20220303
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+
+# Scope Administration File (SAF)
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

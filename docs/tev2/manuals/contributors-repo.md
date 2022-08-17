@@ -1,12 +1,13 @@
 ---
 id: contributors-repo
-title: Using Markdown files in a Git Repo
 sidebar_label: Using Git Repo Markdown
 scopetag: tev2
 date: 20220513
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Using Markdown files in a Git Repo
 
 <img
   alt="This page is under construction"

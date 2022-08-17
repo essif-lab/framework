@@ -1,6 +1,5 @@
 ---
 id: ctext-spec
-title: Curated Texts
 sidebar_label: Curated Texts
 hide_table_of_contents: true
 scopetag: tev2
@@ -8,6 +7,8 @@ date: 20220713
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Curated Texts
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
@@ -41,10 +42,10 @@ Every [curated text](@) consists of two parts: a ([YAML](https://yaml.org/spec/1
 ---
 id: curated-text
 scope: tev2
-termtype: concept
+termType: concept
 termid: curated-text
-formphrases: curated-text{ss}, ctext{ss}
-grouptags: [ terminology, contributing, curation ]
+formPhrases: curated-text{ss}, ctext{ss}
+groupTags: [ terminology, contributing, curation ]
 status: proposed
 created: 2022-06-06
 glossaryText: a text that documents a [concept](@) or other [knowledge artifact](@).

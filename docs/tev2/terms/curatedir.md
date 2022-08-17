@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: curatedir
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: curatedir
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: curatedir
+termType: concept
+groupTags:
 synonyms:
-formphrases: glossary-director{yies}, curatedir{ss}
+formPhrases: glossary-director{yies}, curatedir{ss}
 status: proposed
 created: 2022-07-29
 updated: 2022-07-29
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa:
 glossaryText: "a directory within a [scopedir](@) within which every file contains a [curated texts](@) for that [scope](@)."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Curatedir"
-hoverText: "Curatedir: a directory within a Scopedir within which every file contains a Curated Text for that Scope."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Curatedir
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

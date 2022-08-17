@@ -1,25 +1,21 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: pattern-mental-model
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: mental-model
-termtype: pattern
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: mental-model
+termType: pattern
+groupTags:
 synonyms:
-formphrases: mental-model{ss}
+formPhrases: mental-model{ss}
 glossaryText:
 hoverText: "The Mental Models pattern captures the foundational Concepts and relations that we need for creating, maintaining and using  (decentralized) Vocabularies (Terminologies) that groups of people can use for the specific purposes they pursue."
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 contributors: RieksJ
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Mental Models"
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Mental-model
+
+# Mental Models
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

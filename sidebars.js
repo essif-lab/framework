@@ -69,6 +69,7 @@ const sidebars = {
   ],
   tev2SideBar: [
     'tev2/tev2-overview' ,
+    'tev2/tev2-profile-templates' ,
     { type: 'category',
       label: 'Purpose',
       link: {type: 'doc', id: 'tev2/tev2-purpose'},

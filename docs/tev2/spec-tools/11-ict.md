@@ -1,6 +1,5 @@
 ---
 id: ict
-title: Integrity Checker Tool (ICT)
 sidebar_label: Integrity Checking
 displayed_sidebar: tev2SideBar
 # hide_table_of_contents: true
@@ -9,6 +8,7 @@ date: 20220421
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -17,6 +17,8 @@ export const Mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
+
+# Integrity Checker Tool (ICT)
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
@@ -167,7 +169,7 @@ As header fields for `term` termtypes need to be discussed, we do not yet specif
 </TabItem>
 <TabItem value="relation"><br/>
 
-### Header fields for `termtype: relation`
+### Header fields for `termType: relation`
 
 :::info Editor's note
 As `relation`s need to be discussed, we do not yet specify any constraints.
@@ -190,12 +192,12 @@ The integrity of any [curated text](@) file requires the integrity conditions of
 
 #### Concepts
 
-The integrity of any [curated text](@) file that has `termtype: concept` requires the integrity conditions of a [curated text](@) file to be satisfied, as well as the following conditions:
+The integrity of any [curated text](@) file that has `termType: concept` requires the integrity conditions of a [curated text](@) file to be satisfied, as well as the following conditions:
 -  <Mark>TBD</Mark>
 
 #### Patterns
 
-The integrity of any [curated text](@) file that has `termtype: concept` requires the integrity conditions of a [curated text](@) file to be satisfied, as well as the following conditions:
+The integrity of any [curated text](@) file that has `termType: concept` requires the integrity conditions of a [curated text](@) file to be satisfied, as well as the following conditions:
 -  <Mark>TBD</Mark>
 
 

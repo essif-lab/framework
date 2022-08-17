@@ -1,6 +1,5 @@
 ---
 id: form-phrase-syntax
-title: Form Phrases - Syntax
 sidebar_label: Form Phrases
 hide_table_of_contents: true
 scopetag: tev2
@@ -8,6 +7,8 @@ date: 20220808
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Form Phrases - Syntax
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
@@ -30,7 +31,7 @@ A formphrase 'macro' is a set of characters between braces `{` and `}` that are 
 Suppose we have a [curated text](@) for the term `actor`, and in its front matter, we specify:
 
 ~~~ yaml
-formphrases: actor{ss}
+formPhrases: actor{ss}
 ~~~
 
 The part `{ss}` is a macro, that suppose it is associated with the regex `(?:'?s|\(s\))?`.

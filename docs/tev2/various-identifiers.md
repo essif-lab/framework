@@ -2,11 +2,11 @@
 # `Multiple-use fields` (used by TEv2 and Docusaurus)
 id: various-identifiers
 # Docusaurus (see https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter):
-title: Various Identifiers
 # hide_table_of_contents: true
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -15,6 +15,8 @@ export const Mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
+
+# Various Identifiers
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
