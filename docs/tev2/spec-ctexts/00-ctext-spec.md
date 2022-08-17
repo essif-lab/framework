@@ -41,10 +41,10 @@ Every [curated text](@) consists of two parts: a ([YAML](https://yaml.org/spec/1
 ---
 id: curated-text
 scope: tev2
-termtype: concept
+termType: concept
 termid: curated-text
-formphrases: curated-text{ss}, ctext{ss}
-grouptags: [ terminology, contributing, curation ]
+formPhrases: curated-text{ss}, ctext{ss}
+groupTags: [ terminology, contributing, curation ]
 status: proposed
 created: 2022-06-06
 glossaryText: a text that documents a [concept](@) or other [knowledge artifact](@).

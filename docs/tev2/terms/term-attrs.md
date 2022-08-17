@@ -1,13 +1,10 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: term-attrs
-# TEv2: generic front-matter for curated texts
+# TEv2 Curated Text Header
 scope: tev2
-termattrs: concept
 termid: term-attrs
-grouptags:
+groupTags:
 synonyms:
-formphrases: term-attr{ss}
+formPhrases: term-attr{ss}
 status: proposed
 created: 2022-06-06
 updated: 2022-08-10
@@ -15,11 +12,6 @@ contributors: RieksJ
 # TEv2: attrs-specific front-matter for attrs `concept`
 isa: identifier
 glossaryText: "a list of [attributes](term-attrs@) that enable one to distinguish between [knowledge artifacts](@) that have the same [term name](@) and are of the same [type](term-type@)."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Term Attr(ibute)s"
-hoverText: "Term Attrs: a list of Attributes that enable one to distinguish between Knowledge Artifacts that have the same Term Name and are of the same Term Type."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
 
 :::caution

@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: vocabulary
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: vocabulary
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: vocabulary
+termType: concept
+groupTags:
 synonyms:
-formphrases: vocabular{yies}
+formPhrases: vocabular{yies}
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa:
 glossaryText: "the sum or stock of words employed by a language, group, individual, or work or in a field of knowledge."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Vocabulary"
-hoverText: "Vocabulary: the sum or stock of words employed by a language, group, individual, or work or in a field of knowledge."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Vocabulary
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

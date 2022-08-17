@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: scope
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: scope
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: scope
+termType: concept
+groupTags:
 synonyms:
-formphrases: scope{ss}
+formPhrases: scope{ss}
 status: proposed
 created: 2022-06-06
 updated: 2022-08-04
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa:
 glossaryText: "the extent of the [terms](@), [definitions](@) and other documentation that a [community](@) (which we call the [owner](@) of the [scope](@)) needs to express, communicate and validate its [knowledge](@) as relevant to achieving a specific subset of its [objectives](@)."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Scope"
-hoverText: "Scope: the extent of the Terms, Definitions and other documentation that a Community (i.e. the Owner of the Scope) needs to express, communicate and validate its Knowledge as relevant to achieving a specific subset of its Objectives."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Scope
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

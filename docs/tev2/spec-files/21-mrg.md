@@ -145,7 +145,7 @@ The [MRG](@) can hold [MRG entries](@) of different types, each of which has its
 
 <TabItem value="concept"><br/>
 
-### Header fields for `termtype: concept`
+### Header fields for `termType: concept`
 
 [Concepts](@) are the ideas/thoughts behind a classification of [entities](@) (what makes [entities](@) in that class 'the same').
 A good description - which would include a good [definition](@) - allows us to reason about everything in the class as if it were one thing. [Curated texts](@) of type `concept` intend to provide such descriptions. Also, they specify a default name ([term](@)) by which the class, as well as unidentified instances thereof, can be refered to.
@@ -168,7 +168,7 @@ The header fields that are specific for `concept`-type descriptions are as follo
 </TabItem>
 <TabItem value="relation"><br/>
 
-### Header fields for `termtype: relation`
+### Header fields for `termType: relation`
 
 :::info Editor's note
 This section needs to be discussed as `relation` is introduced as a new termtype.
@@ -206,7 +206,7 @@ A good description - which would include a good [definition](@) of the [relation
 </TabItem>
 <TabItem value="pattern"><br/>
 
-### Header fields for `termtype: pattern`
+### Header fields for `termType: pattern`
 
 A [pattern](@) (also called [mental model](https://en.wikipedia.org/wiki/Mental_model) or [conceptual model](https://en.wikipedia.org/wiki/Conceptual_model)) captures a limited set of [concepts](@) (ideas), [relations](@) between them, and constraints, such that together they form a coherent and consistent whole. They have been crafted so that they may serve as a basis for architecting, designing, and implementing IT processes, It components and their [governance](@)- and [management](@) processes.
 

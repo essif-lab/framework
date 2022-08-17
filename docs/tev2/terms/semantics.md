@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: semantics
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: semantics
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: semantics
+termType: concept
+groupTags:
 synonyms:
-formphrases: semantics
+formPhrases: semantics
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa:
 glossaryText: "a mapping between the (tangible/textual) [terms](@) and (intangible) ideas/[concepts](@) - their meaning."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Semantics"
-hoverText: "Semantics: a mapping between the (tangible/textual) Terms and (intangible) ideas/Concepts - their meaning."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Semantics
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

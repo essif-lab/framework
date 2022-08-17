@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` (used by TEv2 and Docusaurus)
-id: knowledge-artifact
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: knowledge-artifact
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: knowledge-artifact
+termType: concept
+groupTags:
 synonyms:
-formphrases: knowledge-artifact{ss}
+formPhrases: knowledge-artifact{ss}
 status: proposed
 created: 2022-07-27
 updated: 2022-07-27
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa:
 glossaryText: "something that can be thought of as existing in a particular [knowledge](@), e.g. a [concept](@), or a [mental model](@)."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Knowledge Artifact"
-hoverText: "Knowledge Artifact: something that can be thought of as existing in a particular Knowledge, e.g. a Concept, or a Mental Model."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Knowledge-artifact
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

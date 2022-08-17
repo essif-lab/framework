@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: corpus
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: corpus
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: corpus
+termType: concept
+groupTags:
 synonyms:
-formphrases: corpus, corpus-of-terminology
+formPhrases: corpus, corpus-of-terminology
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa:
 glossaryText: "the documentation that describes the [knowledge](@) around a set of [terms](@) and [concepts](@)."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Corpus of Terminology"
-hoverText: "Corpus (of Terminology): the documentation that describes the Knowledge around a set of Terms and Concepts."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Corpus
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

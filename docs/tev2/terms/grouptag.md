@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: grouptag
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: grouptag
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: grouptag
+termType: concept
+groupTags:
 synonyms:
-formphrases: grouptag{ss}, group-tag{ss}
+formPhrases: grouptag{ss}, group-tag{ss}
 status: proposed
 created: 2022-06-06
 updated: 2022-07-28
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa: tag
 glossaryText: "a [tag](@) that is used to group [terms](@) within a specific [scope](@)."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Grouptag"
-hoverText: "Grouptag: a Tag (alphanumeric string) that is used to group Terms within a specific Scope."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Grouptag
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

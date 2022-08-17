@@ -1,35 +1,27 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: pattern-terminology-support
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: self-sovereign-terminology
-termtype: pattern
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: self-sovereign-terminology
+termType: pattern
+groupTags:
 synonyms:
-formphrases:
+formPhrases:
 glossaryText:
 hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
 status: proposed
 created: 2022-06-06
 updated: 2022-08-16
 contributors: RieksJ
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Terminology Support"
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Self-sovereign-terminology
+
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Terminology Support
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
-:::
-
-import useBaseUrl from '@docusaurus/useBaseUrl'
-
-:::note Editor's note
-The following text needs to be checked, and possibly revised.
 :::
 
 This [mental model](@) aims to serve the following purposes:
@@ -46,7 +38,6 @@ This pattern has two basic parts:
 Also, this [management](@) may cause reference documents to be created and maintained, e.g. a [glossary](@) that lists the [terminology](@) of the [community](@), a [dictionary](@) that includes its [terminology](@) as well as [terminologies](@) from other, related [communities](@).
 
 2. the terminology-related part. This is where [concepts](@), [definitions](@), [terms](@), [glossaries](@) etc. live. This part is what one needs to create tools/support for managing and maintaining a [terminology](@). Here, we have [concepts](@) with their [definitions](@) and [terms](@) as a means to refer to either. A [concept](@), its [definition](@) live in the same [scope](@), and within that [scope](@) there must be a [term](@) to refer to that [concept](@) and its [definition](@). Within a specific [scope](@), every [term](@) is associated with precisely one such [concept](@) and [definition](@). However, within a [scope](@), a [concept](@)/[definition](@) pair may be referred to by multiple [terms](@), which are then synonyms or aliases of each other.
-
 
 ### Formalized model
 Here is a visual representation of this pattern, using the following **[notations and conventions](/docs/tev2/notations-and-conventions#pattern-diagram-notations)**:

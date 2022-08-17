@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: identify
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: identify
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: identify
+termType: concept
+groupTags:
 synonyms:
-formphrases: identif{yies}, identif{ying}, identifiable, identification identification
+formPhrases: identif{yies}, identif{ying}, identifiable, identification identification
 status: proposed
 created: 2021-06-01
 updated: 2021-06-01
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa:
 glossaryText: "an [act](@), by or on behalf of a [party](@), that results in the selection of either\n- a single [partial identity](@) that the party [owns](@), given some (observed or received) data, or\n- a single [entity](@) from a given set of entities that is the [subject](@) of a specified [partial identity](@) that the party [owns](@)."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Identify"
-hoverText: "Identify: an Act, by or on behalf of a Party, that results in the selection of either (a) a single Partial identity that the party Owns, given some (observed or received) data, or (b) a single Entity from a given set of entities that is the Subject of a specified Partial identity that the party Owns."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Identify
 
 ### Short Description
 **Identification** is an [act](@), by or on behalf of a [party](@), that results in either the selection of

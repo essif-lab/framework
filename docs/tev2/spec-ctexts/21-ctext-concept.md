@@ -66,9 +66,9 @@ sidebar_label: "Scope Curators"
 #
 # Generic TEv2 heading entries (i.e. valid for all `termtype`s):
 #
-termtype: concept
+termType: concept
 termid: curate
-grouptags: [ terminology, management ]
+groupTags: [ terminology, management ]
 date: 20220222
 status: proposed
 #

@@ -1,27 +1,19 @@
 ---
-# `Multiple-use fields` \(used by TEv2 and Docusaurus\)
-id: mental-model
-# TEv2: generic front-matter for curated texts
-scope: tev2
-termname: mental-model
-termtype: concept
-termattrs:
-grouptags:
+# TEv2 Curated Text Header
+term: mental-model
+termType: concept
+groupTags:
 synonyms:
-formphrases: mental-model{ss}, pattern{ss}, conceptual-model{ss}
+formPhrases: mental-model{ss}, pattern{ss}, conceptual-model{ss}
 status: proposed
 created: 2022-06-06
 updated: 2022-06-07
 contributors: RieksJ
-# TEv2: type-specific front-matter for type `concept`
 isa: knowledge-artifact [ Pattern, "Conceptual Model" ]
 glossaryText: "A [knowledge artifact](@) that relates a set of [concepts](@) (ideas), relations between them, and constraints about a certain topic, into a coherent and consistent whole (sometimes called 'viewpoint', or 'way of thinking')."
-# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-title: "Mental Model (Conceptual Model, Pattern)"
-hoverText: "A knowledge artifact that relates a set of Concepts (ideas), relations between them, and constraints about a certain topic, into a coherent and consistent whole (sometimes called 'viewpoint', or 'way of thinking')."
-# sidebar_label:
-# hide_table_of_contents: true
 ---
+
+# Mental-model
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
