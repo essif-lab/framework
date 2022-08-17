@@ -1,13 +1,17 @@
 # TEv2 Curated Text Header
 # Documented at: https://essif-lab.github.io/framework/docs/tev2/tev2-profile-templates#ingestion-profile
-term: {{term}} # error if not present
-termType: {{termType}} # defaults to `concept`` if not present
-isa: {{isa}} # defaults to blank if not present
-glossaryText: {{glossaryText}} # error if not present
-groupTags: {{commaSeparatedKeywords}} # defaults to blank if not present
-synonyms: {{commaSeparatedSynonyms}} # defaults to blank if not present
-formPhrases: {{commaSeparatedFormPhrases}} # defaults to blank if not present
-status: {{status}} # defaults to `proposed` if not present
-created: {{created}} # defaults to today's date if not present
-updated: {{created}} # defaults to today's date if not present
-contributors: {{commaSeparatedContributors}} # defaults to blank if not present
+term: {{term}} # (required) word/phrase that represents a concept.
+termType: {{termType}} # (optional) kind of concept (e.g. `concept` (default), or `mental model`).
+isa: {{isa}} # (optional) concept of which this is a specialization.
+glossaryText: {{glossaryText}} # (required) text that summarizes the meaning of the term.
+groupTags: {{commaSeparatedKeywords}} # (optional) list of tags/keywords to which the term belongs.
+synonyms: {{commaSeparatedSynonyms}} # (optional) other words/phrases that mean the same.
+formPhrases: {{commaSeparatedFormPhrases}} # (optional) list of formPhrases (see https://essif-lab.github.io/framework/docs/tev2/spec-syntax/form-phrase-syntax)
+# Curation status
+status: {{status}} # (optional) status/phase in the lifecycle of the term. Defaults to `proposed`.
+created: {{created}} # (optional) date when the term was first conceived/documented. Defaults to today's date.
+updated: {{updated}} # (optional) date when the term was last updated. Defaults to today's date.
+# Origins/Acknowledgements
+contributors: {{commaSeparatedContributors}} # (optional) list of texts, each of which somehow represents a contributor.
+attribution: {{attribution}} # (optional) text that credits the original creation of the texts in the document.
+originalLicense: {{originalLicense}} # (optional) reference to the license of the work from which the texts were derived.
