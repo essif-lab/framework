@@ -1,7 +1,7 @@
 ---
-id: purpose
+id: tev2-purpose
 title: "Purpose: Enabling a Common Understanding in a Community"
-sidebar_label: Manual for Contributors
+sidebar_label: Purpose
 displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220513

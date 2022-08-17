@@ -32,5 +32,5 @@ A **Term Attrs** is a list of [attributes](term-attrs@) that enable one to disti
 
 The ability to specify [term attrs](@) as part of a [term](@) allows us to distinguish, e.g. between [knowledge artifacts](@) that link different [concepts](@) in a similar manner. For example, a [knowledge artifact](@) about people owning real estate could have [term attrs](@) `[Src:Person, Tgt:RealEstate]`, whereas a similar [knowledge artifact](@) about organizations owning other organizations could then be distinguished through the [term attrs](@) `Src:Organization, Tgt:Organization`.
 
-The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
 The [term-ref](@) [syntax specification](/docs/tev2/spec-syntax/term-ref-syntax) specifies the syntax that [authors](@) should use as they want to use a specific [term](@) in their text.

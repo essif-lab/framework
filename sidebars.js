@@ -71,7 +71,7 @@ const sidebars = {
     'tev2/tev2-overview' ,
     { type: 'category',
       label: 'Purpose',
-      link: {type: 'doc', id: 'tev2/manuals/purpose'},
+      link: {type: 'doc', id: 'tev2/tev2-purpose'},
       items:
       [ { type: 'category',
           label: 'Contributor Manuals',

@@ -36,7 +36,7 @@ A [terminology](@) can be seen as the collection of [MRG entries](@) that hold a
 
 The contents of an [MRG entry](@) may vary, depending on the type of [knowledge artifact](@) that it documents. The kinds of data that are common for all [knowledge artifacts](@) are documented [here](http://localhost:3000/docs/tev2/spec-files/mrg#mrg-entries).
 
-The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
 
 The [terminology construction section](/docs/tev2/manuals/terminology-construction) describes how [MRG entries](@) are selected (and manipulated) for the construction of a particular [terminology](@).
 
