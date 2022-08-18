@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: terminology-process
 termType: concept
-groupTags:
+isa:
+glossaryText: "a method for recognizing misunderstandings as such, and creating or maintaining [definitions](@) that resolve them."
 synonyms:
+groupTags:
 formPhrases: terminology-process, terminology-processes
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "a method for recognizing misunderstandings as such, and creating or maintaining [definitions](@) that resolve them."
+attribution:
+originalLicense:
 ---
 
 # Terminology-process

@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: curated-text
 termType: concept
-groupTags:
+isa:
+glossaryText: a text that documents a [concept](@) or other [knowledge artifact](@) of a specific [community](@) or other [party](@), and is located within a [scope](@) that is owned by that [community](@)/[party](@).
 synonyms:
+groupTags:
 formPhrases: curated-text{ss}, ctext{ss} ctext
+# Curation status
 status: proposed
 created: 2022-06-02
 updated: 2022-08-04
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: a text that documents a [concept](@) or other [knowledge artifact](@) of a specific [community](@) or other [party](@), and is located within a [scope](@) that is owned by that [community](@)/[party](@).
+attribution:
+originalLicense:
 ---
 
 # Curated-text

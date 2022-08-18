@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: concept
 termType: concept
-groupTags:
+isa: knowledge-artifact
+glossaryText: "a [knowledge artifact](@) that captures the ideas/thoughts behind a classification of [entities](@) (what makes [entities](@) in that class 'the same')."
 synonyms:
+groupTags:
 formPhrases: concept{ss}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
+# Origins/Acknowledgements
 contributors: RieksJ
-isa: knowledge-artifact
-glossaryText: "a [knowledge artifact](@) that captures the ideas/thoughts behind a classification of [entities](@) (what makes [entities](@) in that class 'the same')."
+attribution:
+originalLicense:
 ---
 
 # Concept

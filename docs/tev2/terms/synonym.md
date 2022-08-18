@@ -1,8 +1,8 @@
 ---
 # TEv2 Curated Text Header
-term: tag
+term: synonym
 termType: concept
-isa: identifier
+isa: term
 glossaryText: "an alphanumeric string that is used to identify [scopes](@) (so called 'scopetags'), group [terms](@) (so called 'grouptags'), or identify a specific version of a [terminology](@) (so called 'versiontags') from within a specific [scope](@)."
 synonyms:
 groupTags:

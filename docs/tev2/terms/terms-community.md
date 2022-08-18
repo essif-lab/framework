@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: terms-community
 termType: concept
-groupTags:
+isa: community
+glossaryText: "a [community](@) that maintains a [terminology](@) for the purpose of avoiding misunderstandings between its members as they collaborate."
 synonyms:
+groupTags:
 formPhrases: terms-communit{yies}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
+# Origins/Acknowledgements
 contributors: RieksJ
-isa: community
-glossaryText: "a [community](@) that maintains a [terminology](@) for the purpose of avoiding misunderstandings between its members as they collaborate."
+attribution:
+originalLicense:
 ---
 
 # Terms-community

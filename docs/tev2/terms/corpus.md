@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: corpus
 termType: concept
-groupTags:
+isa:
+glossaryText: "the documentation that describes the [knowledge](@) around a set of [terms](@) and [concepts](@)."
 synonyms:
+groupTags:
 formPhrases: corpus, corpus-of-terminology
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "the documentation that describes the [knowledge](@) around a set of [terms](@) and [concepts](@)."
+attribution:
+originalLicense:
 ---
 
 # Corpus

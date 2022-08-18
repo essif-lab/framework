@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: versiontag
 termType: concept
-groupTags:
+isa: tag
+glossaryText: "a [tag](@) that is used to [identify](@) a specific version of a [terminology](@) from within a specific [scope](@)."
 synonyms:
+groupTags:
 formPhrases: versiontag{ss}, version-tag{ss}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-07-28
+# Origins/Acknowledgements
 contributors: RieksJ
-isa: tag
-glossaryText: "a [tag](@) that is used to [identify](@) a specific version of a [terminology](@) from within a specific [scope](@)."
+attribution:
+originalLicense:
 ---
 
 # Versiontag

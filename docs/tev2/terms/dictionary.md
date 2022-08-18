@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: dictionary
 termType: concept
-groupTags:
+isa:
+glossaryText: "an alphabetically sorted list of [terms](@) with various meanings that they may have in different contexts."
 synonyms:
+groupTags:
 formPhrases: dictionar{yies}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "an alphabetically sorted list of [terms](@) with various meanings that they may have in different contexts."
+attribution:
+originalLicense:
 ---
 
 # Dictionary

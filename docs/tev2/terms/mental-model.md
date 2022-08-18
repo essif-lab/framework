@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: mental-model
 termType: concept
-groupTags:
+isa: knowledge-artifact [ Pattern, "Conceptual Model" ]
+glossaryText: "A [knowledge artifact](@) that relates a set of [concepts](@) (ideas), relations between them, and constraints about a certain topic, into a coherent and consistent whole (sometimes called 'viewpoint', or 'way of thinking')."
 synonyms:
+groupTags:
 formPhrases: mental-model{ss}, pattern{ss}, conceptual-model{ss}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-06-07
+# Origins/Acknowledgements
 contributors: RieksJ
-isa: knowledge-artifact [ Pattern, "Conceptual Model" ]
-glossaryText: "A [knowledge artifact](@) that relates a set of [concepts](@) (ideas), relations between them, and constraints about a certain topic, into a coherent and consistent whole (sometimes called 'viewpoint', or 'way of thinking')."
+attribution:
+originalLicense:
 ---
 
 # Mental-model

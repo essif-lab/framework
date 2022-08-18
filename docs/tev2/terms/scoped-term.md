@@ -2,13 +2,17 @@
 # TEv2 Curated Text Header
 term: scoped-term
 termType: concept
+isa: term
+glossaryText: "a [term](@) that represents (and [identifies](@)) a specific [knowledge artifact](@) of a particular [community](@) (or other [party](@))."
 groupTags:
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-08-04
+# Origins/Acknowledgements
 contributors: RieksJ
-isa: term
-glossaryText: "a [term](@) that represents (and [identifies](@)) a specific [knowledge artifact](@) of a particular [community](@) (or other [party](@))."
+attribution:
+originalLicense:
 ---
 
 # Scoped-term

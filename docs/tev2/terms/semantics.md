@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: semantics
 termType: concept
-groupTags:
+isa:
+glossaryText: "a mapping between the (tangible/textual) [terms](@) and (intangible) ideas/[concepts](@) - their meaning."
 synonyms:
+groupTags:
 formPhrases: semantics
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "a mapping between the (tangible/textual) [terms](@) and (intangible) ideas/[concepts](@) - their meaning."
+attribution:
+originalLicense:
 ---
 
 # Semantics

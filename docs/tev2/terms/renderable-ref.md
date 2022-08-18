@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: renderable-ref
 termType: concept
-groupTags:
+isa:
+glossaryText: "a text with which the [TRRT](@) replaces a [term ref](@), that can be processed by specific third party rendering tools, the result of which is a rendering of the original [term ref](@) that has additional characteristics that help [readers](@) to (better) understand the intention of its [author](@)."
 synonyms:
+groupTags:
 formPhrases: renderable-ref{ss}, renderable-reference{ss}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-08-04
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "a text with which the [TRRT](@) replaces a [term ref](@), that can be processed by specific third party rendering tools, the result of which is a rendering of the original [term ref](@) that has additional characteristics that help [readers](@) to (better) understand the intention of its [author](@)."
+attribution:
+originalLicense:
 ---
 
 # Renderable-ref

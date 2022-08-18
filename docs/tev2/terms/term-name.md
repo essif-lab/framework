@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: term-name
 termType: concept
-groupTags:
+isa: identifier
+glossaryText: "an [identifier](@) that is used to represent a [knowledge artifact](@). Note that different [knowledge artifacts](@) can have the same [term name](@) (which is known as [semantically overloading](https://en.wikipedia.org/wiki/Semantic_overload))."
 synonyms:
+groupTags:
 formPhrases: term-name{ss}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-08-10
+# Origins/Acknowledgements
 contributors: RieksJ
-isa: identifier
-glossaryText: "an [identifier](@) that is used to represent a [knowledge artifact](@). Note that different [knowledge artifacts](@) can have the same [term name](@) (which is known as [semantically overloading](https://en.wikipedia.org/wiki/Semantic_overload))."
+attribution:
+originalLicense:
 ---
 
 # Term-name

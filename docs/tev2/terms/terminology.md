@@ -5,10 +5,14 @@ termType: concept
 groupTags:
 synonyms:
 formPhrases: terminolog{yies}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-08-11
+# Origins/Acknowledgements
 contributors: RieksJ
+attribution:
+originalLicense:
 glossaryText: "a set of [terms](scoped-term@) that are used within a single [scope](@) to refer to [concepts](@) and other [knowledge artifacts](@) of a single [party](@) (e.g. a [community](@)), enabling [parties](@) to reason and communicate ideas they have about one or more specific topics."
 ---
 

@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: ingestion-profile
 termType: concept
-groupTags:
+isa:
+glossaryText: the specification of a method by which files that are in a particular place and format (e.g., wiki files) are turned into a [curated text](@).
 synonyms:
+groupTags:
 formPhrases: ingestion-profile{ss}
+# Curation status
 status: proposed
 created: 2022-08-17
 updated: 2022-08-17
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: the specification of a method by which files that are in a particular place and format (e.g., wiki files) are turned into a [curated text](@).
+attribution:
+originalLicense:
 ---
 
 # Ingestion-profile

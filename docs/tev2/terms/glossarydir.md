@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: glossarydir
 termType: concept
-groupTags:
+isa: scopedir
+glossaryText: "a directory within a [scopedir](@) within which the different versions of its ([machine readable](mrg@) and [human readable](hrg@)) [glossaries](@) are created and maintained."
 synonyms:
+groupTags:
 formPhrases: glossary-director{yies}, glossarydir{ss}
+# Curation status
 status: proposed
 created: 2022-07-29
 updated: 2022-07-29
+# Origins/Acknowledgements
 contributors: RieksJ
-isa: scopedir
-glossaryText: "a directory within a [scopedir](@) within which the different versions of its ([machine readable](mrg@) and [human readable](hrg@)) [glossaries](@) are created and maintained."
+attribution:
+originalLicense:
 ---
 
 # Glossarydir

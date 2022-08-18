@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: identifier
 termType: concept
-groupTags:
+isa:
+glossaryText: "a character string that is being used for the identification of some [entity](@) (yet may refer to 0, 1, or more [entities](@), depending on the context within which it is being used)."
 synonyms:
+groupTags:
 formPhrases: identifier{ss} identification
+# Curation status
 status: proposed
 created: 2021-06-01
 updated: 2021-06-01
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "a character string that is being used for the identification of some [entity](@) (yet may refer to 0, 1, or more [entities](@), depending on the context within which it is being used)."
+attribution:
+originalLicense:
 ---
 
 # Identifier

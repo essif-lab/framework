@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: knowledge-artifact
 termType: concept
-groupTags:
+isa:
+glossaryText: "something that can be thought of as existing in a particular [knowledge](@), e.g. a [concept](@), or a [mental model](@)."
 synonyms:
+groupTags:
 formPhrases: knowledge-artifact{ss}
+# Curation status
 status: proposed
 created: 2022-07-27
 updated: 2022-07-27
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "something that can be thought of as existing in a particular [knowledge](@), e.g. a [concept](@), or a [mental model](@)."
+attribution:
+originalLicense:
 ---
 
 # Knowledge-artifact

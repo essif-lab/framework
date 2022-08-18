@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: term
 termType: concept
-groupTags:
+isa: identifier
+glossaryText: "a word or phrase (i.e.: text) that is used in at least one [scope](@)/context to represent specific [knowledge artifacts](@)."
 synonyms:
+groupTags:
 formPhrases: term{ss}, word{ss}, phrase{ss}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-08-09
+# Origins/Acknowledgements
 contributors: RieksJ
-isa: identifier
-glossaryText: "a word or phrase (i.e.: text) that is used in at least one [scope](@)/context to represent specific [knowledge artifacts](@)."
+attribution:
+originalLicense:
 ---
 
 # Term

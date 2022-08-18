@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: scope-directory
 termType: concept
-groupTags:
+isa: scopedir
+glossaryText: "a directory in a computer file system that contains all files that are either being [curated](@) within a particular [scope](@), or generated to serve some purpose within that [scope](@)."
 synonyms:
+groupTags:
 formPhrases: scope-director{yies}, scopedir{ss}
+# Curation status
 status: proposed
 created: 2022-07-29
 updated: 2022-07-29
+# Origins/Acknowledgements
 contributors: RieksJ
-isa: scopedir
-glossaryText: "a directory in a computer file system that contains all files that are either being [curated](@) within a particular [scope](@), or generated to serve some purpose within that [scope](@)."
+attribution:
+originalLicense:
 ---
 
 # Scope-directory

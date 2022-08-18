@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: vocabulary
 termType: concept
-groupTags:
+isa:
+glossaryText: "the sum or stock of words employed by a language, group, individual, or work or in a field of knowledge."
 synonyms:
+groupTags:
 formPhrases: vocabular{yies}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "the sum or stock of words employed by a language, group, individual, or work or in a field of knowledge."
+attribution:
+originalLicense:
 ---
 
 # Vocabulary

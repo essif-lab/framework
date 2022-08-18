@@ -5,10 +5,14 @@ termid: term-attrs
 groupTags:
 synonyms:
 formPhrases: term-attr{ss}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-08-10
+# Origins/Acknowledgements
 contributors: RieksJ
+attribution:
+originalLicense:
 # TEv2: attrs-specific front-matter for attrs `concept`
 isa: identifier
 glossaryText: "a list of [attributes](term-attrs@) that enable one to distinguish between [knowledge artifacts](@) that have the same [term name](@) and are of the same [type](term-type@)."
