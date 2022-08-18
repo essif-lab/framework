@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: term
 termType: concept
-groupTags:
+isa: identifier
+glossaryText: "a word or phrase (i.e.: text) that is used to represent specific [knowledge artifacts](@)."
 synonyms:
+groupTags:
 formPhrases: term{ss}, word{ss}, phrase{ss}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-08-09
+# Origins/Acknowledgements
 contributors: RieksJ
-isa: identifier
-glossaryText: "a word or phrase (i.e.: text) that is used in at least one [scope](@)/context to represent specific [knowledge artifacts](@)."
+attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
 # Term
@@ -21,13 +25,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 ### Summary
-A **Term** is a word or phrase (i.e.: text) that is used in at least one [scope](@)/context to represent specific [knowledge artifacts](@), e.g. [concepts](@), [relations](@) or [mental models](@). We use the phrase '[scoped term](@)' to refer to a term when it is used in one specific [scope](@).
-
-While a [term](@) is often thought of as a single word (or phrase), it is better conceived as a construct that consists of multiple parts, that enables us to use a word or phrase in different kinds for different kinds of [knowledge artifacts](@), as we often see that people do in practice. This construct is visualized in the [formalized terminology model](/docs/tev2/terms/patterns/pattern-terminology-support#formalized-model)), and consists of the following components:
-
-1. a [term name](@) (required), i.e. an [identifier](@) that is used to represent a [knowledge artifact](@). Note that different [knowledge artifacts](@) can have the same [term name](@) (which is known as [semantically overloading](https://en.wikipedia.org/wiki/Semantic_overload)).
-2. a [term type](@) (optional), i.e. an [identifier](@) that is used to [identify](@) the particular *kind* of [knowledge artifact](@) that the [term name](@) represents, such as `concept`, `relation`, `pattern` (or `mental-model`).
-3. a [term attrs](@) (optional), i.e. a list of [attributes](term-attrs@) that enable one to distinguish between [knowledge artifacts](@) that have the same [term name](@) and are of the same [type](term-type@).
+A **Term** is a word or phrase (i.e.: text) that is used to represent specific [knowledge artifacts](@), e.g. [concepts](@), [relations](@) or [mental models](@).
 
 Thus:
 - a single term may (and typically does) have different meanings ([semantics](@)) in different [scopes](@)/contexts. For example, in the context of a beauty-salon, the term 'nail' has a different meaning than in the context of constructing buildings.
@@ -42,12 +40,7 @@ The [term-ref](@) [syntax specification](/docs/tev2/spec-syntax/term-ref-syntax)
 Understanding words or phrases uttered by others requires that we are able to 'translate' them into terms that we habitually use, i.e. with the meaning of which we are familiar. While this is mostly an (unconscious) automatism, and it is often also not necessary to be very precise, this may be different when they relate to stuff we find important. The ability to represent a specific [concept](@) (or other [knowledge artifact](@)) with a specific text or phrase, where this 'representation' is limited to a specific (or several) context(s), helps us to better interpret these words, which is: to properly understand what others actually try to convey in spoken or written language.
 
 ### Criteria
-A term MUST be a word or phrase (i.e.: text) that
-- is used in at least one [scope](@)/context, where it represents (and [identifies](@))) one specific [knowledge artifact](@) that is part of the [knowledge](@) of the [community](@) that [owns](@) that [scope](@);
-- can be mapped on a tuple consisting of:
-   - precisely one name (the [term name](@));
-   - at most one type (the [term type](@), i.e. a text that identifies the kind of [knowledge artifact](@));
-   - any number of attributes (the [term attrs](@)), as needed.
+A term is a word or phrase (i.e.: text) that is used in at least one [scope](@)/context, in each of which it represents (and [identifies](@))) one specific [knowledge artifact](@) that is part of the [knowledge](@) of the [community](@) that [owns](@) that [scope](@).
 
 ### Notes
 There is an important [distinction](https://simple.wikipedia.org/wiki/Concept) between [concepts](@) (and other [knowledge artifacts](@)) and the (multitude of) terms (names, labels) that we need to be able to talk and reason (argue) about them. Please consider that
@@ -56,9 +49,6 @@ There is an important [distinction](https://simple.wikipedia.org/wiki/Concept) b
 * in different contexts, a single [term](@) may represent different [concepts](@);
 * [to resolve terminological disputes](http://resolver.tudelft.nl/uuid:964a90da-da81-4d38-9f45-84f3f5fa96b3), which usually are about the 'correct' meaning of a [term](@), try to establish the criteria that the different participants use for the concept behind the term. That helps participants understand each others (different) positions, and provides a better basis for resolving the conflict.
 
-It is characteristic of a [term](scoped-term@) to represent ([identify](@)) a single [oncept](@) (or other [knowledge artifact](@), such as a mental model, use-case etc.). Most often, a [name](term-name@) (`TermName`) suffices for that purpose. However, there are also examples where the same [name](term-name@) is used to represent different kinds of [knowledge artifacts](@) (within a single [scope](@)), e.g. `guardianship` can represent a set of rights and duties that enables a guardian to care for a 'dependent', but `guardianship` can also refer to a [mental](@) model that deals with how to define such rights and duties, how to instantiate them, how they may be used, etc. Thus, there are cases where the [class/type](term-type@) (`TermType`) of the [knowledge artifact](@) must be taken into account as well.
-
-In theory, there is even more. For example a relation named 'Owns' can have different forms, e.g. 'Owns(Party,Idea)' would be quite different from 'Owns(Party,LegallyOwnedProperty)'. Distinguishing between such terms requires the ability to include [attributes](term-attrs@) (`TermAttrs`) in the [term](scoped-term@).
 ---
 ### Footnotes
 

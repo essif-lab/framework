@@ -2,18 +2,22 @@
 # TEv2 Curated Text Header
 term: term-ref
 termType: concept
-groupTags:
+isa:
+glossaryText: "a word or phrase that is [marked up (in a specific way)](/docs/tev2/spec-syntax/term-ref-syntax) so that it links to a particular [concept](@) (or other [knowledge artifact](@)), enabling it to be rendered in a variety of ways for the purpose of helping [readers](@) to (better) understand the intention of its [author](@)."
 synonyms:
+groupTags:
 formPhrases: term-ref{ss}, term-reference{ss}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-08-04
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "a word or phrase that is [marked up (in a specific way)](/docs/tev2/spec-syntax/term-ref-syntax) so that it links to a particular [concept](@) (or other [knowledge artifact](@)), enabling it to be rendered in a variety of ways for the purpose of helping [readers](@) to (better) understand the intention of its [author](@)."
+attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Term-ref
+# Term Ref
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

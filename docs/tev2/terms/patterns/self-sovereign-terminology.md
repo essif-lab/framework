@@ -2,18 +2,22 @@
 # TEv2 Curated Text Header
 term: self-sovereign-terminology
 termType: pattern
-groupTags:
+isa:
+glossaryText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
 synonyms:
-formPhrases:
-glossaryText:
-hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
+groupTags:
+formPhrases: mental-model{ss}
+# Curation status
 status: proposed
 created: 2022-06-06
-updated: 2022-08-16
+updated: 2022-06-06
+# Origins/Acknowledgements
 contributors: RieksJ
+attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Self-sovereign-terminology
+# Self-Sovereign Terminology
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
@@ -44,7 +48,7 @@ Here is a visual representation of this pattern, using the following **[notation
 
 <img
   alt="Conceptual model of the 'self-sovereign-terminology' pattern"
-  src={useBaseUrl('images/patterns/pattern-terminology-support.png')}
+  src={useBaseUrl('images/patterns/self-sovereign-terminology.png')}
 />
 
 The figure shows three areas:
@@ -78,7 +82,7 @@ Note that for a [terms-community](@) to serve itself, it may want to commit to a
 
 Every [terminology](@) is scoped, i.e. part of a [scope](@). This [scope](@) consists of various other things, including [definitions](@), ([typed](term-type@)) [scoped terms](@), [curated texts](@), [MRG entries](@), various kinds of [tags](@), and more (see the figure above). These components of the [scope](@) exist for as long as the [scope](@) exists.
 
-The central [concept](@) in this part is the [curated text](@), as it [documents](/docs/tev2/spec-ctexts/ctext-spec) a specific [knowledge artifact](@), provides its [definition](@) (when appropriate), and specifies the [scoped term](@) that represents such [artifacts](knowledge-artifact@) as well as its [synonyms](@). It also contains various other data, e.g. the [term type](@) (which is also the type of the [knowledge artifact](@)), an [identifier](@) `id` that is unique for every [curated text](@) within the [scope](@), and the list of [grouptags](@) that identify the groups of [knowledge artifacts](@) to which (the [artifact](knowledge-artifact@) that) it (documents,) belongs. Basically, *any* changes to documentation or attributes related to a particular [knowledge artifact](@) are done in its [curated text](@).
+The central [concept](@) in this part is the [curated text](@), as it [documents](/docs/tev2/spec-files/ctext) a specific [knowledge artifact](@), provides its [definition](@) (when appropriate), and specifies the [scoped term](@) that represents such [artifacts](knowledge-artifact@) as well as its [synonyms](@). It also contains various other data, e.g. the [term type](@) (which is also the type of the [knowledge artifact](@)),  the list of [grouptags](@) that identify the groups of [knowledge artifacts](@) to which (the [artifact](knowledge-artifact@) that) it (documents,) belongs, etc. Basically, *any* changes to documentation or attributes related to a particular [knowledge artifact](@) are done in its [curated text](@).
 
 Another important [concept](@) is the [MRG entry](@), i.e. a [(machine readable) representation](http://localhost:3000/docs/tev2/spec-files/mrg#mrg-entries) of the meta data of a [knowledge artifact](@) that it refers to. Note that this [knowledge artifact](@) need not reside in the [knowledge](@) of the [community](@) that owns the [scope](@) (in which case it would mainly consists of the header data of the [curated text](@) that documents the [knowledge artifact](@)), but can also reside in another [knowledge](@) (in which case it would be a copy of an [MRG entry](@) in an [MRG](@) of a [scope](@) that documents that [artifact](knowledge-artifact@)).
 

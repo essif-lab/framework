@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: definition
 termType: concept
-groupTags:
+isa:
+glossaryText: "a text that helps [parties](@) to have the same understanding about the meaning of (and [concepts](@) behind) a [term](@), ideally in such a way that these [parties](@) can determine whether or not they make the same distinction."
 synonyms:
+groupTags:
 formPhrases: definition{ss}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "a text that helps [parties](@) to have the same understanding about the meaning of (and [concepts](@) behind) a [term](@), ideally in such a way that these [parties](@) can determine whether or not they make the same distinction."
+attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
 # Definition

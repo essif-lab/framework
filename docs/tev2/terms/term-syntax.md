@@ -2,18 +2,22 @@
 # TEv2 Curated Text Header
 term: term-syntax
 termType: concept
-groupTags: syntax
+isa:
+glossaryText: "the criterion that specifies which texts can serve as a [term](@), which is that the text must match with (PCRE) regex [`[A-Za-z0-9\\s_]+`](https://www.debuggex.com/r/YQppbqxps5jI0t0P)."
 synonyms:
+groupTags: syntax
 formPhrases: term-syntaxes
+# Curation status
 status: proposed
 created: 2022-08-17
 updated: 2022-08-17
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "the criterion that specifies which texts can serve as a [term](@), which is that the text must match with (PCRE) regex [`[A-Za-z0-9\\s_]+`](https://www.debuggex.com/r/YQppbqxps5jI0t0P)."
+attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Term-syntax
+# Term Syntax
 
 <!--
             **IF THE PCRE REGEX FOR THE TERM SYNTAX MUST BE CHANGED

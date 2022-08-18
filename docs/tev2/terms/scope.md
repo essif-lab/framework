@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: scope
 termType: concept
-groupTags:
+isa:
+glossaryText: "the extent of the [terms](@), [definitions](@) and other documentation that a [community](@) (which we call the [owner](@) of the [scope](@)) needs to express, communicate and validate its [knowledge](@) as relevant to achieving a specific subset of its [objectives](@)."
 synonyms:
+groupTags:
 formPhrases: scope{ss}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-08-04
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "the extent of the [terms](@), [definitions](@) and other documentation that a [community](@) (which we call the [owner](@) of the [scope](@)) needs to express, communicate and validate its [knowledge](@) as relevant to achieving a specific subset of its [objectives](@)."
+attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
 # Scope

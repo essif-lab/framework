@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: curatedir
 termType: concept
-groupTags:
+isa:
+glossaryText: "a directory within a [scopedir](@) within which every file contains a [curated texts](@) for that [scope](@)."
 synonyms:
+groupTags:
 formPhrases: glossary-director{yies}, curatedir{ss}
+# Curation status
 status: proposed
 created: 2022-07-29
 updated: 2022-07-29
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "a directory within a [scopedir](@) within which every file contains a [curated texts](@) for that [scope](@)."
+attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
 # Curatedir

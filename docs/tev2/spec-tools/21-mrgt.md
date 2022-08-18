@@ -31,12 +31,12 @@ The (newly generated) [MRG](@) is meant to be processed by the other tools in th
 
 ## Generating an MRG
 
-As input, the [MRGT](@) is provided a [SAF](@), is pointed to the particular entry in its [`versions` section](/docs/tev2/spec-files/saf#terminology) that specifies (a specific version of) a [terminology](@). This section not only includes meta-data for that [terminology](@), but also a set of 'term selection criteria' instructions, that are used to [construct](/docs/tev2/manuals/terminology-construction) the [terminology](@).
+As input, the [MRGT](@) is provided a [SAF](@), is pointed to the particular entry in its [`versions` section](/docs/tev2/spec-files/saf#terminology) that specifies (a specific version of) a [terminology](@). This section not only includes meta-data for that [terminology](@), but also the set of '[term selection criteria](@)' that specify how the [terminology](@) needs to be [constructed](/docs/tev2/spec-tools/terminology-construction).
 
 The [MRG](@) is then created as follows (starting with an empty file):
 
 1. The [MRG](@) `terminology` section is created, by copying relevant fields from the appropriate `versions` element in the [SAF](@).
-2. Then, the [terminology construction](/docs/tev2/manuals/terminology-construction) takes place, which can be thought of as constructing a set of tuples `{ [id, term, grouptags] }`, where `id` [identifies](@) the [curated text](@) that documents the particular [knowledge artifact](@) that is represented by the [term](@), `term` [identifies](@) that [knowledge artifact](@), and `grouptags` is a set of [grouptags](@) that the tuple is associated with.
+2. Then, the [terminology construction](/docs/tev2/spec-tools/terminology-construction) takes place, which can be thought of as constructing a set of tuples `{ [term, grouptags] }`, where [term](@)[identifies](@) (the [curated text](@) that documents) the particular [knowledge artifact](@), and `grouptags` is a set of [grouptags](@) that the tuple is associated with.
 3. For every tuple in this set, an [MRG entry](@) is created, and added to the [MRG](@) under construction. The structure of each such [entry](mrg-entry@) depends on the type of the [knowledge artifact](@) that the [term](@) represents, as the [header](@) of a [curated text](@) depends on that type.
 4. the result is put at the location as specified by the [SAF](@), and the [SAF](@) itself is updated as/if necessary.
 
@@ -69,7 +69,7 @@ The [MRGT](@) logs conditions that prevent it from properly:
 
 - obtaining the [scopedir](@) from a [scopetag](@);
 - parsing a [curated text](@) (e.g. because it is not in the expected format);
-- resolving `id`s, [scope tags](@), [group tags](@), or [version tags](@);
+- resolving [terms](@), [scope tags](@), [group tags](@), or [version tags](@);
 - writing the output (e.g. because it has no write-permission for the designated location);
 - etc.;
 

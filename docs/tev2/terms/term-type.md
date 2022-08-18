@@ -2,18 +2,22 @@
 # TEv2 Curated Text Header
 term: term-type
 termType: concept
-groupTags:
+isa: identifier
+glossaryText: "an [identifier](@) that is used to [identify](@) the particular *kind* of [knowledge artifact](@) that a [term name](@) represents. Examples include `concept`, `relation`, `pattern` (or `mental-model`)."
 synonyms:
+groupTags:
 formPhrases: term-type{ss}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-08-10
+# Origins/Acknowledgements
 contributors: RieksJ
-isa: identifier
-glossaryText: "an [identifier](@) that is used to [identify](@) the particular *kind* of [knowledge artifact](@) that a [term name](@) represents. Examples include `concept`, `relation`, `pattern` (or `mental-model`)."
+attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Term-type
+# Term Type
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

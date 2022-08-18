@@ -2,18 +2,22 @@
 # TEv2 Curated Text Header
 term: terms-community
 termType: concept
-groupTags:
+isa: community
+glossaryText: "a [community](@) that maintains a [terminology](@) for the purpose of avoiding misunderstandings between its members as they collaborate."
 synonyms:
+groupTags:
 formPhrases: terms-communit{yies}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
+# Origins/Acknowledgements
 contributors: RieksJ
-isa: community
-glossaryText: "a [community](@) that maintains a [terminology](@) for the purpose of avoiding misunderstandings between its members as they collaborate."
+attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Terms-community
+# Terms Community
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

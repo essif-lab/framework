@@ -40,23 +40,19 @@ We want to enable authors to use [term refs](@) pervasively, which means it must
 
 Here is an example of a [term ref](@): `[definitions](definition@)`. When this text is rendered into a human readable form, it will show the text `definitions` (plural) enhanced, and it will link to the text that describes (or defines) the term `definition` (singular). If you would want to use this term as it is defined in the [scope](@) called `essif-lab`, you could do that by wrinting `[definitions](definition@essif-lab)` (provided that `essif-lab` is a defined [scopetag](@) within the [scope](@) that you operate in).
 
-The complete, generic structure of a [term ref](@) is: **\[`show text`\](`id`#`trait`@`scopetag`:`vsntag`)**. However, all of its elements (except for `show text`) are optional, so as to limit the 'extra work' that authors need to do to a minimum.
+The complete, generic structure of a [term ref](@) is: **\[`show text`\](`term`#`trait`@`scopetag`:`vsntag`)**. However, all of its elements (except for `show text`) are optional, so as to limit the 'extra work' that authors need to do to a minimum.
 
 ### `showtext` {#showtext}
 
 **`showtext`** is the text that will be highlighted/emphasized to indicate it is linked.
 It must not contain the characters `@` or `]` (this is needed to distinguish [term refs](@) from regular [markdown links](https://www.markdownguide.org/basic-syntax/#links)).
 
-### `id` {#id}
+### `term` {#term}
 
-**`id`** is a text that [identifies](@) the [(scoped) term](scoped-term@) in the part of the [corpus](@) that contains the [terminology](@) of a specified [scope](@).<br/>It must satisfy the regex `[a-z0-9_-]+`.
+**`term`** is the [(scoped) term](@) that [identifies](@) the [knowledge artifact](@) that is to be referred to.<br/>It must satisfy the regex `[a-z0-9_-]+`.
 
 If omitted, its value is assumed to be [derivable from `showtext`](/docs/tev2/spec-tools/trrt#id).
-At a minimum, this is the case if the `id` equals the result of processing `showtext` by first converting every character in the range `[A-Z]` to lower-case, and then replacing every sequence of characters specified by regex `[^A-Za-z_-]+` with (a single) `-` character.
-
-:::info Editor's note
-We may want to consider a syntax that allows the `id` field to be specified as a [term](@) (that is: using the [term name](@), an (optional) [term type](@) and (optional) [term attributes](@)), as that would perhaps make more sense for [authors](@) to write than using an `id` that identifies a [curated text](@). Such syntax could then also be used to specify synonyms in the header of [curated texts](@).
-:::
+At a minimum, this is the case if the `term` equals the result of processing `showtext` by first converting every character in the range `[A-Z]` to lower-case, and then replacing every sequence of characters specified by regex `[^A-Za-z_-]+` with (a single) `-` character.
 
 ### `trait` {#trait}
 
@@ -87,9 +83,9 @@ It has been suggested to provide [term ref](@) syntax that allows one to refer t
 
 It is convenient for authors to be able to use the '@`scopetag`' part of a [term ref](@) immediately behind the `show text` within the square brackets (`[` and `]`), and leave out the parentheses and the text in between if all the other items are omitted.
 
-This is particularly useful in the vast majority of cases, where the default processing of `showtext` results in `id` and `trait` is absent. Examples of this are `[definition](@)`, or `[term ref](@)`.
+This is particularly useful in the vast majority of cases, where the default processing of `showtext` results in `term` and `trait` is absent. Examples of this are `[definition](@)`, or `[term ref](@)`.
 
-The usefulness becomes even greater as the [TRRT](@) also implements more sophisticated ways to derive a `id` from a `show text`, e.g. to accommodate for plural forms (of nouns), or conjugate forms (for verbs).
+The usefulness becomes even greater as the [TRRT](@) also implements more sophisticated ways to derive a `term` from a `show text`, e.g. to accommodate for plural forms (of nouns), or conjugate forms (for verbs).
 
 :::info Editor's note
 This alternative notation will assume that the `showtext` part of a [term ref](@) won't contain the `@` character. However, it is likely that some authors will want to use an email address as the `showtext` part of a *regular* link, e.g. as in `[rieks.joosten@tno.nl](mailto:rieks.joosten@tno.nl)`. However, since [scopetags](@) should not contain `.`-characters, `[rieks.joosten@tno.nl]` does not qualify as a `showtext` in our syntax. Authors should [use angle brackets to link to email addresses](https://www.markdownguide.org/basic-syntax/#urls-and-email-addresses), as in `<rieks.joosten@tno.nl>`.
@@ -101,6 +97,6 @@ This leads to an alternative notation that can be used in addition to the previo
 | :----------------: | :-----------------------: |
 | \[`show text`@\] | \[`show text`\](@) |
 | \[`show text`@`scopetag`\] | \[`show text`\](`showtext`@`scopetag`) |
-| \[`show text`@`scopetag`:`vsntag`\](`id`#`trait`) | \[`show text`\](`id`#`trait`@`scopetag`:`vsntag`) |
+| \[`show text`@`scopetag`:`vsntag`\](`term`#`trait`) | \[`show text`\](`term`#`trait`@`scopetag`:`vsntag`) |
 
-In the last row of the above table, `id` and `#trait` are optional. Thus, `[definition@]()` is equivalent with `[definition](@)` and with `[definition](@)`.
+In the last row of the above table, `term` and `#trait` are optional. Thus, `[definition@]()` is equivalent with `[definition](@)` and with `[definition](@)`.

@@ -2,18 +2,22 @@
 # TEv2 Curated Text Header
 term: terminology-process
 termType: concept
-groupTags:
+isa:
+glossaryText: "a method for recognizing misunderstandings as such, and creating or maintaining [definitions](@) that resolve them."
 synonyms:
+groupTags:
 formPhrases: terminology-process, terminology-processes
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "a method for recognizing misunderstandings as such, and creating or maintaining [definitions](@) that resolve them."
+attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Terminology-process
+# Terminology Process
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

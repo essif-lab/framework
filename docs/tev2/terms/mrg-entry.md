@@ -2,18 +2,22 @@
 # TEv2 Curated Text Header
 term: mrg-entry
 termType: concept
-groupTags:
+isa:
+glossaryText: "A machine-readable (and interpretable) artifact that contains (pointers to) data and meta-data about a particular  [knowledge artifact](@), such as the associated [term(s)](@), its [definition](@), etc., to make it easy for IT-tools to create, e.g. documentation, [glossaries](@), [dictionaries](@), whitepapers, etc. that uses such [terms](@) ([definitions](@), etc.)."
 synonyms:
+groupTags:
 formPhrases: mrg-entr{yies}
+# Curation status
 status: proposed
 created: 2022-08-11
 updated: 2022-08-11
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "A machine-readable (and interpretable) artifact that contains (pointers to) data and meta-data about a particular  [knowledge artifact](@), such as the associated [term(s)](@), its [definition](@), etc., to make it easy for IT-tools to create, e.g. documentation, [glossaries](@), [dictionaries](@), whitepapers, etc. that uses such [terms](@) ([definitions](@), etc.)."
+attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Mrg-entry
+# Mrg Entry
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
@@ -30,7 +34,7 @@ The contents of an [MRG entry](@) may vary, depending on the type of [knowledge 
 
 The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
 
-The [terminology construction section](/docs/tev2/manuals/terminology-construction) describes how [MRG entries](@) are selected (and manipulated) for the construction of a particular [terminology](@).
+The [terminology construction section](/docs/tev2/spec-tools/terminology-construction) describes how [MRG entries](@) are selected (and manipulated) for the construction of a particular [terminology](@).
 
 ### Purpose
 

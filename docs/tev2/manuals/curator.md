@@ -38,7 +38,7 @@ TEv2 assumes that the [curated](@) data resides in an existing [scope directory]
 Thus, whenever a [terms-community](@) decided that some contribution is to be included in the part of the [corpus](@) that is maintained by that [community](terms-community@), the [curators](@) of that [community](terms-community@) are tasked to
 
 1. create/maintain/update any [scope](@)-related administration in the [scope directory](@) that is needed for curation, as specified by a [Scope Administration File (SAF)]/tev2/spec-files/saf;
-2. convert that contribution to (a set of) [curated files](@), that comply with the [specifications](/docs/tev2/spec-ctexts/ctext-spec) for such files;
+2. convert that contribution to (a set of) [curated files](@), that comply with the [specifications](/docs/tev2/spec-files/ctext) for such files;
 3. store them at the location as designated in the [SAF]/tev2/spec-files/saf;
 4. generate/update any artifact that the [community](terms-community@) wants to automatically maintain, which in particular includes the [MRG](@) and associated [HRG](@).
 
@@ -46,6 +46,6 @@ This document provides an overview of the knowledge that [curators](@) may need 
 
 1. [Setup/installation](/docs/tev2/manuals/tev2-installation) of a [scope directory](@) that is suitable for working with TEv2, and the creation of a [SAF]/tev2/spec-files/saf.
 
-2. [Curation](@) of terminological contributions. This requires knowledge about the [file structure](/docs/tev2/spec-ctexts/ctext-spec) of [curated file](@).
+2. [Curation](@) of terminological contributions. This requires knowledge about the [file structure](/docs/tev2/spec-files/ctext) of [curated file](@).
 
-3. [generation](/docs/tev2/spec-tools/using-toolbox-tools) of [knowledge artifacts](@). It is typical for a [terms community](@) to want to have a [glossary](@) of the terms they either have defined themselves, or are defined elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).
+3. [generation](/docs/tev2/tev2-toolbox) of [curated texts](@). It is typical for a [terms community](@) to want to have a [glossary](@) of the [terms](@) they either have [defined](@) themselves, or are [defined](@) elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).

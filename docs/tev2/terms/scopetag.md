@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: scopetag
 termType: concept
-groupTags:
+isa: tag
+glossaryText: "a [tag](@) that is used to [identify](@) [scopes](@) from within a specific [scope](@)"
 synonyms:
+groupTags:
 formPhrases: scopetag{ss}, scope-tag{ss}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-07-28
+# Origins/Acknowledgements
 contributors: RieksJ
-isa: tag
-glossaryText: "a [tag](@) that is used to [identify](@) [scopes](@) from within a specific [scope](@)"
+attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
 # Scopetag

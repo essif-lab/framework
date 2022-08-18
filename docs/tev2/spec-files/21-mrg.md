@@ -111,128 +111,27 @@ An [MRG](@) consists of a list of [MRG entries](@), the purpose of which is that
 
 </details>
 
-| Name         | Req'd | Description |
-| ------------ | :---: | :---------- |
-| `scopetag`     | Y | [Scopetag](@) that [identifies](@) the [scope](@) (within the scope in which the [MRG](@) is constructed) from within which the contents of the [MRG entry](@) is [curated](@), and obtained. The [`scopes` section](#mrg-scopes) in the [MRG](@) SHOULD contain a mapping between the `scopetag` and its associated [scope directory](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
-| `vsntag`       | Y | [Versiontag](@) that [identifies](@) the version of the [terminology](@) from which the contents of the [MRG entry](@) is obtained. If the contents of the [MRG entry](@) was constructed from a [curated text](@), its value equals the value of the `vsntag` field in the [`terminology`-section](#mrg-terminology) of the [MRG](@) that this [MRG entry](@) is a part of. As a result, `scopetag`:`versiontag` [identifies](@) the [terminology](@) from which this [MRG entry](@) has originated.<br/>Must satisfy regex `[a-z0-9_-.]+`.  |
-| `id`           | Y | Text that [identifies](@) the [curated text](@) from which the content of this [MRG entry](@) is obtained; it has the same value as the `id`-field in the header of a [curated text](@). In case the contents of the [MRG entry](@) was obtained from another [MRG](@), this field has the same value as the `id` field of the [MRG entry](@) from which the contents was obtained.<br/>Must satisfy regex `[a-z0-9_-]+`. |
-| `termname`     | Y | [Name](term-name@) ([Identifier](@)) that is used to represent a [knowledge artifact](@). Actual, i.e. successful [identification](@) of the [knowledge artifact](@) may also depend on other characteristics, such as the `termtype`, as names are known to be [semantically overloaded](https://en.wikipedia.org/wiki/Semantic_overload). See [TEv2 identification](/docs/tev2/various-identifiers) for more details.<br/>Must satisfy regex `[a-z0-9_-]+`. |
-| `termtype`     | Y | [Text](term-type@) that [identifies](@) the kind of [knowledge artifact](@) that this [MRG entry](@) refers to. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
-| `termattrs`    | n | List of [attributes](term-attrs@) that enable one to distinguish between [knowledge artifacts](@) that have the same [term name](@) and are of the same [type](term-type@). |
-| `grouptags`    | n | List of [grouptags](@), each of which signifies that the [(scoped) term](@) that this [MRG entry](@) documents, is part of the group of [terms](@) that it represents.<br/>Each grouptag must satisfy regex `[a-z0-9_-]+`. |
-| `synonyms`     | n | | List of (optionally quoted) [terms](@), that are considered to also represent the [knowledge artifact](@) that is documented by the [curated text](@). |
-| `formphrases`  | n | List of [texts](formphrase@) that are [used to convert](/docs/tev2/spec-tools/trrt#id) the `show text` parts of [term refs](@) into `id`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs). For details, see ['Syntax Specs - Form Phrases](/docs/tev2/spec-syntax/form-phrase-syntax).](https://www.debuggex.com/r/TZe27fzbJskMcjl8). |
-| `glossaryText` | n | Text that is used as the (raw) contents for the entry of this [term](scoped-term@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](@). |
-| `hoverText`    | n | Text that can be used as the contents of a popup that shows as the [term](scoped-term@) is rendered in a web browser and the [reader](@) hovers over the [term](@) with its mouse. |
-| `status`       | n | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
-| `created`      | n | Date at which of the [term](@)-related data was created, in the date format as used within this [scope](@). |
-| `updated`      | n | Date at which of the [term](@)-related data was last modified, in the date format as used within this [scope](@). |
-| `contributors` | n | Text that shows (or refers to) the people that have contributed to the texts related to this term. |
-| `locator`      | n | Text that identifies the file that holds the [curated text](@) of the [knowledge artifact](@) that this [MRG entry](@) describes. The full URL of the [curated text](@) is `scopedir`/`curatedir`/`locator`, where `scopedir` and `curatedir` can be found in the [SAF](@) (which is in the root of `scopedir`). Note that `locator` may contain a path. |
-| `navurl`       | n | URL that locates a human readable, rendered version of the [curated text](@) of the [knowledge artifact](@) that this [MRG entry](@) describes. This URL is used to resolve [term refs](@) that refer to this [knowledge artifact](@). |
-| `headingids`   | n | List of texts that can be used as a `trait` in a [term ref](@), which typically are [markdown 'heading-ids'](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids). |
+| Name            | Req'd | Description |
+| --------------- | :---: | :---------- |
+| `scopeTag`        | Y | [Scopetag](@) that [identifies](@) the [scope](@) (within the scope in which the [MRG](@) is constructed) from within which the contents of the [MRG entry](@) is [curated](@), and obtained. The [`scopes` section](#mrg-scopes) in the [MRG](@) SHOULD contain a mapping between the `scopetag` and its associated [scope directory](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `vsnTag`          | Y | [Versiontag](@) that [identifies](@) the version of the [terminology](@) from which the contents of the [MRG entry](@) is obtained. If the contents of the [MRG entry](@) was constructed from a [curated text](@), its value equals the value of the `vsntag` field in the [`terminology`-section](#mrg-terminology) of the [MRG](@) that this [MRG entry](@) is a part of. As a result, `scopetag`:`versiontag` [identifies](@) the [terminology](@) from which this [MRG entry](@) has originated.<br/>Must satisfy regex `[a-z0-9_-.]+`.  |
+| `term`            | Y | [Term](@) ([Identifier](@)) that is used to represent a [knowledge artifact](@). Actual, i.e. successful [identification](@) of the [knowledge artifact](@) may also depend on other characteristics, such as the `termtype`, as names are known to be [semantically overloaded](https://en.wikipedia.org/wiki/Semantic_overload). See [TEv2 identification](/docs/tev2/various-identifiers) for more details.<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `termType`        | Y | [Text](term-type@) that [identifies](@) the kind of [knowledge artifact](@) that this [MRG entry](@) refers to. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `isa`             | n | [concept](@) of which this is a specialization. |
+| `glossaryText`    | Y | Text that is used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](@). |
+| `synonyms`        | n | List of [synonyms](@) for this [term](@). |
+| `groupTags`       | n | List of [grouptags](@), each of which signifies that the [(scoped) term](@) that this [curated text](@) documents, is part of the group of [terms](@) that it represents.<br/>Example: `[tev2, management]`.<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-]+)\s*(?:,\s*([a-z0-9_-]+))*\s*\])?`](https://www.debuggex.com/r/a51CXl1NzR3kwihT). |
+| `formPhrases`     | n | List of [texts](formphrase@) that are [used to convert](/docs/tev2/spec-tools/trrt#id) the `show text` parts of [term refs](@) into `term`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs). For details, see ['Syntax Specs - Form Phrases](/docs/tev2/spec-syntax/form-phrase-syntax). |
+| `status`          | n | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
+| `created`         | n | Date at which of the [curated text](@) was created, in the date format as used within this [scope](@). |
+| `updated`         | n | Date at which of the [curated text](@) was last modified, in the date format as used within this [scope](@). |
+| `contributors`    | n | Text that shows (or refers to) the people that have contributed to this [curated text](@). |
+| `attribution`     | n | Text that credits the original creation of the texts in the document. |
+| `originalLicense` | n | Reference to the license of the work from which the texts were derived. |
+| `locator`         | n | Text that identifies the file that holds the [curated text](@) of the [knowledge artifact](@) that this [MRG entry](@) describes. The full URL of the [curated text](@) is `scopedir`/`curatedir`/`locator`, where `scopedir` and `curatedir` can be found in the [SAF](@) (which is in the root of `scopedir`). Note that `locator` may contain a path. |
+| `navurl`          | n | URL that locates a human readable, rendered version of the [curated text](@) of the [knowledge artifact](@) that this [MRG entry](@) describes. This URL is used to resolve [term refs](@) that refer to this [knowledge artifact](@). |
+| `headingIds`      | n | List of texts that can be used as a `trait` in a [term ref](@), which typically are [markdown 'heading-ids'](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids). |
 
-## MRG Entries - Type-specific fields
 
-The [MRG](@) can hold [MRG entries](@) of different types, each of which has its particular set of fields to describe the [MRG entry](@).
-
-<Tabs
-  defaultValue="concept"
-  values={[
-    {label: 'Terms', value: 'term'},
-    {label: 'Concepts', value: 'concept'},
-    {label: 'Relations', value: 'relation'},
-    {label: 'Mental Models', value: 'pattern'},
-  ]}>
-
-<TabItem value="concept"><br/>
-
-### Header fields for `termType: concept`
-
-[Concepts](@) are the ideas/thoughts behind a classification of [entities](@) (what makes [entities](@) in that class 'the same').
-A good description - which would include a good [definition](@) - allows us to reason about everything in the class as if it were one thing. [Curated texts](@) of type `concept` intend to provide such descriptions. Also, they specify a default name ([term](@)) by which the class, as well as unidentified instances thereof, can be refered to.
-
-The header fields that are specific for `concept`-type descriptions are as follows:
-
-<details>
-  <summary>Legend</summary>
-
-1. **`Name`** contains the field name;
-2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
-3. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
-
-</details>
-
-| Name       | Req'd | Description |
-| ---------- | :---: | :---------- |
-| `isa`        | n | `id` of the [curated text](@) that documents, or a [term](@) that represents the [knowledge artifact](@) (of type `concept`) for which this [curated text](@) describes a specialization. |
-
-</TabItem>
-<TabItem value="relation"><br/>
-
-### Header fields for `termType: relation`
-
-:::info Editor's note
-This section needs to be discussed as `relation` is introduced as a new termtype.
-:::
-
-[Relations](@) are what associates [concepts](@) with one another. For example, the [concept](@) [terms community](@) and the [concept](@) [scope](@) are linked by the [relation](@) [curate](@), that signifies that instances (i.e. [entities](@) in the class) of [curators](@) may [curate](@) (instances of the class) [scope](@). Relations are typically modelled as (`subject`, `predicate`, `object`) triples. A [relation](@) typically has constraints, such as [multiplicities](@),[^2] but other constraints exist as well.
-
-[^2]: The terms 'multiplicity' and 'cardinality' are often confused. In short: 'multiplicity' is at the (conceptual) class-level what 'cardinality' is at the instance level, and both use notations such as `0..1`, `1`, `0..*`, `*`, `1..*`, and `n..m`). Consider the relation [curates](@) (specified as "[terms community](@) - [0..1] --- [1..n] - [scope](@)"). The `[0..1]` and `[1..n]` are multiplicities. They signify that every [terms community](@) [curates](@) one or more [scopes](@), and every [scope](@) is curated by at most one [terms community](@) respectively. This sets constraints on the (operational) cardinalities, i.e. the number of elements that a particular [terms community](@) (e.g. `CTWG`) [curates](@) (that cardinality is `2`, becausse `CTWG` curates the [scopes](@) `ctwg` and `toip`).
-
-A good description - which would include a good [definition](@) of the [relation](@) - allows us to reason about everything related to the [relation](@). [Curated texts](@) of type `relation` intend to provide such descriptions. Also, they specify a default name ([term](@)) by which the [relation](@), as well as unidentified instances thereof, can be refered to.
-
-<details>
-  <summary>Legend</summary>
-
-1. **`Name`** contains the field name;
-2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
-3. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
-
-</details>
-
-| Name         | Req'd | Description |
-| ------------ | :---: | :---------- |
-| `subject`      | y | [concept](@) that the relation relates with the [concept](@) specified by `object`. If the relation is a so-called triple (i.e. a (`subject`, `predicate`, `object`)-relation, it is the `subject`. |
-| `object`       | n | A [concept](@), or a data-variable, that the `subject` of the relation relates to.[^3] |
-| `pragma`       | n | text, with placeholders for `subject` (and `object` if appropriate), that can be used to construct example sentences.[^4] |
-| `smult`        | n | multiplicity associated with the `subject` [concept](@). If not specified, its value is `[0..n]`. |
-| `omult`        | n | multiplicity associated with the `object`. If not specified, its value is `[0..n]`. |
-| `endo`         | n | For [homogeneous relations](https://en.wikipedia.org/wiki/Homogeneous_relation), i.e. relations where `subject` and `object` are the same, e.g. as in (_Person_, _is a parent of_, _Person_), [constraints](https://en.wikipedia.org/wiki/Homogeneous_relation#Properties) may hold that are typical for endo relations, such as `reflexive`, `irreflexive`, `symmetric`, `asymmetric`, `antisymmetric`, `transitive`. |
-| `constraints`  | n | Comma separated list of texts, each of which specifies a constraint that the relation must always satisfy. |
-
-[^3]: In a [relation](@) such as (_Person_, _loves_, _Person_), _Person_ is a ([concept](@)) class. However, in a [relation](@) such as (_Person_, _has lived_, _years_), _years_ is not a [concept](@) (idea), but a data-variable, that has a specific value, in this case a number (of years).
-
-[^4]: For a [relation](@) (_[terms community](@)_, _[curates](@)_,  _[scope](@)_), a pragma could be "Terms community `subject` curates the scope '`object`'.", allowing the construction of phrases such as "Terms community CTWG curates scope 'ctwg'."
-
-</TabItem>
-<TabItem value="pattern"><br/>
-
-### Header fields for `termType: pattern`
-
-A [pattern](@) (also called [mental model](https://en.wikipedia.org/wiki/Mental_model) or [conceptual model](https://en.wikipedia.org/wiki/Conceptual_model)) captures a limited set of [concepts](@) (ideas), [relations](@) between them, and constraints, such that together they form a coherent and consistent whole. They have been crafted so that they may serve as a basis for architecting, designing, and implementing IT processes, It components and their [governance](@)- and [management](@) processes.
-
-A good description - which would include a formalized model - allows us to explain to others how [concepts](@) and [relations](@) work together and can be used in practice, in such a way that such others can demonstrate that they understand all that. [Curated texts](@) of type `pattern` intend to provide such descriptions. Also, they specify a default name ([term](@)) by which the [pattern](@) can be refered to.
-
-:::info Editor's note
-header fields for `pattern` termtypes need to be discussed.
-:::
-
-<details>
-  <summary>Legend</summary>
-
-1. **`Name`** contains the field name;
-2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
-3. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
-
-</details>
-
-| Name | Req'd | Description |
-| ---- | :---: | :---------- |
-
-</TabItem>
-</Tabs>
-
-<hr/>
 
 # Footnotes

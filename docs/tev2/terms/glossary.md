@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: glossary
 termType: concept
-groupTags:
+isa:
+glossaryText: "an alphabetically sorted list of [terms](@) with the (single) meaning it has in (at least) one context."
 synonyms:
+groupTags:
 formPhrases: glossar{yies}
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "an alphabetically sorted list of [terms](@) with the (single) meaning it has in (at least) one context."
+attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
 # Glossary

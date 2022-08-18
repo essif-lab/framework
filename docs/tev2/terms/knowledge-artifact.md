@@ -2,18 +2,22 @@
 # TEv2 Curated Text Header
 term: knowledge-artifact
 termType: concept
-groupTags:
+isa:
+glossaryText: "something that can be thought of as existing in a particular [knowledge](@), e.g. a [concept](@), or a [mental model](@)."
 synonyms:
+groupTags:
 formPhrases: knowledge-artifact{ss}
+# Curation status
 status: proposed
 created: 2022-07-27
 updated: 2022-07-27
+# Origins/Acknowledgements
 contributors: RieksJ
-isa:
-glossaryText: "something that can be thought of as existing in a particular [knowledge](@), e.g. a [concept](@), or a [mental model](@)."
+attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Knowledge-artifact
+# Knowledge Artifact
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

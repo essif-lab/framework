@@ -32,10 +32,30 @@ This pattern allows us, e.g.
 
 ## Ingestion Profile {#ingestion-profile}
 
-This ingestion profile specifies a set of 'moustache'-variables the contents of the header for [curated texts](@). Any tool that wants to ingest some text, MUST provide a value for each of the required 'moustache'-variables, and SHOULD provide a value for each of the others, insofar that is appropriate or possible. Then, a generic ingestion tool can be called that takes the file, adds a header, and puts it in the [curatedir](@) of the scope.
+This ingestion profile specifies the set of 'moustache'-variables that [interpreters](@) for [ingestible content](@) is expected to  populate, and pass on to the [transformer](@) that will create a copy of that [ingestible content](@) and transform it into a (syntactically) correct [curated text](@). There is a [template](/docs/tev2/spec-files/ingestion.profile) file that can be used.
 
-| fieldname         | moustache            | Req'd? | Default  | Description |
-| ----------------- | -------------------- | :----: | :------: | :---------- |
+:::info Editor's note
+The [transformer](@) that outputs a [curated text](@) still needs to be specified. Specifically, the specification should document what needs to be done in case a [curated text](@) exists whose `term` field matches the `term` field of the newly ingested file. Answers should be given for questions like:
+- is the entire front matter going to be constructed from scratch, or is the front matter of the existing [curated text](@) going to be reused, and if so:
+- what if a field is specified with a value that differs from the field in the existing [curated text](@) - this has to be answered for each field individually.
+- etc.
+:::
+
+This template allows [interpreters](@) for [ingestible content](@) to be created, e.g., for ingesting wiki-pages, regular markdown files, etc.
+
+<details>
+  <summary>Legend</summary>
+
+1. **`Name`** contains the field name;
+2. **`Moustache`** specifies the name of the variable, in so-called [moustache](https://mustache.github.io/mustache.5.html) format
+3. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
+4/ **`Default`** specifies the value that the interpreter must use as a default value for the variable in case the interpreted text does not specify a value. If no default is specified, the default value is "empty" or "void".
+3. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
+
+</details>
+
+| Name              | Moustache            | Req'd? | Default  | Description |
+| :---------------- | :------------------- | :----: | :------: | :---------- |
 | `term`            | {{`term`}}             | Y  |            | word/phrase that represents a concept. |
 | `termType`        | {{`termType`}}         | n  | `concept`  | kind of concept (e.g. `concept` (default), or `mental model`). |
 | `isa`             | {{`isa`}}              | n  |            | concept of which this is a specialization. |
