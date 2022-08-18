@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: self-sovereign-terminology
 termType: pattern
-groupTags:
+isa:
+glossaryText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
 synonyms:
-formPhrases:
-glossaryText:
-hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
+groupTags:
+formPhrases: mental-model{ss}
+# Curation status
 status: proposed
 created: 2022-06-06
-updated: 2022-08-16
+updated: 2022-06-06
+# Origins/Acknowledgements
 contributors: RieksJ
+attribution: [eSSIF-Lab](https://essif-lab.github.io/framework)
+originalLicense: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
 ---
 
 # Self-sovereign-terminology

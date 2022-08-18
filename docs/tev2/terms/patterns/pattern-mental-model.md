@@ -2,15 +2,19 @@
 # TEv2 Curated Text Header
 term: mental-model
 termType: pattern
-groupTags:
+isa:
+glossaryText: "The Mental Models pattern captures the foundational Concepts and relations that we need for creating, maintaining and using  (decentralized) Vocabularies (Terminologies) that groups of people can use for the specific purposes they pursue."
 synonyms:
+groupTags:
 formPhrases: mental-model{ss}
-glossaryText:
-hoverText: "The Mental Models pattern captures the foundational Concepts and relations that we need for creating, maintaining and using  (decentralized) Vocabularies (Terminologies) that groups of people can use for the specific purposes they pursue."
+# Curation status
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
+# Origins/Acknowledgements
 contributors: RieksJ
+attribution: [eSSIF-Lab](https://essif-lab.github.io/framework)
+originalLicense: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
 ---
 
 # Mental-model

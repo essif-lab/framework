@@ -13,8 +13,8 @@ created: 2022-07-29
 updated: 2022-07-29
 # Origins/Acknowledgements
 contributors: RieksJ
-attribution:
-originalLicense:
+attribution: [eSSIF-Lab](https://essif-lab.github.io/framework)
+originalLicense: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
 ---
 
 # Scope-directory
