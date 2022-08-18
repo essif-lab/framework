@@ -48,4 +48,4 @@ This document provides an overview of the knowledge that [curators](@) may need 
 
 2. [Curation](@) of terminological contributions. This requires knowledge about the [file structure](/docs/tev2/spec-files/ctext) of [curated file](@).
 
-3. [generation](/docs/tev2/spec-tools/using-toolbox-tools) of [curated texts](@). It is typical for a [terms community](@) to want to have a [glossary](@) of the [terms](@) they either have [defined](@) themselves, or are [defined](@) elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).
+3. [generation](/docs/tev2/tev2-toolbox) of [curated texts](@). It is typical for a [terms community](@) to want to have a [glossary](@) of the [terms](@) they either have [defined](@) themselves, or are [defined](@) elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).

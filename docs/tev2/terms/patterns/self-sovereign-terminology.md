@@ -48,7 +48,7 @@ Here is a visual representation of this pattern, using the following **[notation
 
 <img
   alt="Conceptual model of the 'self-sovereign-terminology' pattern"
-  src={useBaseUrl('images/patterns/pattern-terminology-support.png')}
+  src={useBaseUrl('images/patterns/self-sovereign-terminology.png')}
 />
 
 The figure shows three areas:

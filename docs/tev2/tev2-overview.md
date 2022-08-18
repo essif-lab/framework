@@ -52,7 +52,7 @@ If you are familiar with [markdown](https://www.markdownguide.org/basic-syntax/)
 
 TEv2 is designed to support an ever increasing variety of raw text formats, and its toolbox will - over time - be filled with an increasing number of tools that will support an increasing number of 3rd party rendering tools. This section shows the architecture that allows this to become reality.
 
-The architecture is based on the ToIP/eSSIF-Lab [Terminology Model](/docs/tev2/terms/patterns/pattern-terminology-support), which assumes that every author/group constitutes a so-called [terms-community](@) that [curates](@) one (or more) [scope(s)](@), that contains e.g. [definitions](@), [terms](@), [tags](@) etc. that constitute the author/group's [terminology](@). An overview is given in the figure below:
+The architecture is based on the ToIP/eSSIF-Lab [Terminology Model](/docs/tev2/terms/patterns/self-sovereign-terminology), which assumes that every author/group constitutes a so-called [terms-community](@) that [curates](@) one (or more) [scope(s)](@), that contains e.g. [definitions](@), [terms](@), [tags](@) etc. that constitute the author/group's [terminology](@). An overview is given in the figure below:
 
 <img
   alt="TEv2 Overview"
@@ -110,4 +110,4 @@ This document provides an overview of the knowledge that [curators](@) may need 
 
 2. [Curation](@) of terminological contributions. This requires knowledge about the [file structure](/docs/tev2/spec-files/ctext) of [curated file](@).
 
-3. [generation](/docs/tev2/spec-tools/using-toolbox-tools) of [knowledge artifacts](@). It is typical for a [terms community](@) to want to have a [glossary](@) of the terms they either have defined themselves, or are defined elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).
+3. [generation](/docs/tev2/tev2-toolbox) of [knowledge artifacts](@). It is typical for a [terms community](@) to want to have a [glossary](@) of the terms they either have defined themselves, or are defined elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).
