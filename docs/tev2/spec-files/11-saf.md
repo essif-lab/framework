@@ -158,7 +158,7 @@ versions:
       - v0.9.4
     termselcrit:
       - "tags[management]@essif-lab" # import all terms from the mrg of `essif-lab:latest` that have grouptag `management`.
-      - "termnames[party,community](@essif-lab:0.9.4)" # import the terms `party` and `community` from the mrg of `essif-lab:0.9.4`.
+      - "terms[party,community](@essif-lab:0.9.4)" # import the terms `party` and `community` from the mrg of `essif-lab:0.9.4`.
       - "*@tev2" # import all terms defined in the scope `tev2`
     status: proposed
     from: 20220312
@@ -190,11 +190,11 @@ The following fields are defined for the `versions` section of a [SAF](@):
 | `vsntag`      | Y | [Versiontag](@) that that is used to [identify](@) this version within the set of all other versions that are maintained within this [scope](@). in this [SAF](@). It MUST NOT be changed during the lifetime of this version.<br/>Must satisfy regex `[a-z0-9_-\.]+`. |
 | `altvsntags`  | n | List of alternative [versiontags](@) that may be used to refer to this version of the [scope's](@) [terminology](@). A typical use of this field would be to tag a version as the 'latest' version.<br/>Must satisfy regex `[a-z0-9_-\.]+`. |
 | `license`     | n | File that contains the (default) licensing conditions. Full URL is `scopedir`/`license`. If not specified, its value defaults to the value of the `license` field in the `scope` section (of this [SAF](@)). The purpose of this field is to allow different versions of the [scope's](@) [terminology](@) to have different licenses. |
-| `termselcrit` | Y | List of [term selection instructions](@) that are used to generate (this version of) the [scope's](@) [terminology](@). See [Terminology Construction](/docs/tev2/manuals/terminology-construction) for details. |
+| `termselcrit` | Y | List of [term selection criteria](@) that are used to generate (this version of) the [scope's](@) [terminology](@). See [Terminology Construction](/docs/tev2/spec-tools/terminology-construction) for details. |
 | `status`      | n | Text that [identifies](@) the status of the [term](@). ([Communities](@) of) [scopes](@) may specify values for this field. If not specified, the status SHOULD be assumed to be 'concept', 'draft', 'proposed', or similar. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
 | `from`        | F | Date at which it was decided to establish this version. |
 | `to`          | F | Date at which this version will expire (or has expired). |
 
 :::info Editor's note
-The `from` and `to` dates have been included to (in future) enable one to refer to a specific version of the terminology that was valid at a particular date. This feature needs to be worked out, and will impact [terminology construction](/docs/tev2/manuals/terminology-construction), [term ref specs](/docs/tev2/spec-syntax/term-ref-syntax), and various tools.
+The `from` and `to` dates have been included to (in future) enable one to refer to a specific version of the terminology that was valid at a particular date. This feature needs to be worked out, and will impact [terminology construction](/docs/tev2/spec-tools/terminology-construction), [term ref specs](/docs/tev2/spec-syntax/term-ref-syntax), and various tools.
 :::

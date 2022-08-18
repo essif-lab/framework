@@ -6,14 +6,14 @@ scopetag: tev2
 date: 20220513
 ---
 
+# Purpose: Enabling a Common Understanding in a Community
+
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 export const Mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
-
-# Purpose: Enabling a Common Understanding in a Community
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

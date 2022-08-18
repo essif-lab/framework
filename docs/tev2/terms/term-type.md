@@ -17,7 +17,7 @@ attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Term-type
+# Term Type
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

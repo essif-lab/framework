@@ -2,7 +2,7 @@
 # TEv2 Curated Text Header
 term: mental-model
 termType: concept
-isa: knowledge-artifact [ Pattern, "Conceptual Model" ]
+isa: knowledge-artifact
 glossaryText: "A [knowledge artifact](@) that relates a set of [concepts](@) (ideas), relations between them, and constraints about a certain topic, into a coherent and consistent whole (sometimes called 'viewpoint', or 'way of thinking')."
 synonyms:
 groupTags:
@@ -17,7 +17,7 @@ attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Mental-model
+# Mental Model
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

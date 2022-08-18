@@ -18,6 +18,10 @@ export const Mark = ({children}) => (
     {children}
   </span> );
 
+:::info Editor's note
+The text below will need a thorough revision due to various changes that have not yet been taken into account
+:::
+
 # Integrity Checker Tool (ICT)
 
 :::caution
@@ -82,9 +86,9 @@ The columns in the following table are defined as follows:
 | :--      | :----      | :---: | :--: | :---------- |
 | `config` | `<path>`   | n | * | Path (including the filename) of the tool's (YAML) configuration file. This file contains the default key-value pairs to be used. Allowed keys (and the associated values) are documented in this table. Command-line arguments override key-value pairs specified in the configuration file. This parameter SHOULD NOT appear in the configuration file itself. |
 | `scopedir` | `<path>` | Y | * | Path to the [scopedir](@) within which the tool is to operate, i.e.: _this scopedir_. |
-| `syntax` | | n | * | This argument has no value. If present, the syntax of all (YAML) fields in the file is checked against their specifications (see e.g. [SAF specs]/tev2/spec-files/saf, [terminology construction](/docs/tev2/manuals/terminology-construction), [MRG specs]/tev2/spec-files/mrg, [Curated Texts](/docs/tev2/spec-ctexts/ctext-spec), [term refs](/docs/tev2/spec-syntax/term-ref-syntax)). |
+| `syntax` | | n | * | This argument has no value. If present, the syntax of all (YAML) fields in the file is checked against their specifications (see e.g. [SAF specs]/tev2/spec-files/saf, [terminology construction](/docs/tev2/spec-tools/terminology-construction), [MRG specs]/tev2/spec-files/mrg, [Curated Texts](/docs/tev2/spec-files/ctext), [term refs](/docs/tev2/spec-syntax/term-ref-syntax)). |
 | `vsntag` | `<vsntag>` | | `-mrg` | [versiontag](@) that is used to select the version of the [MRG](@) to be checked. The [MRG](@) that is selected will either have `<vsntag>` as the contents of the field `terminology.vsntag`, or as an element in the list of `terminology.alvsntags`.  |
-| `id` | `<id>` | n | -txt | Text that [identifies](@) a particular [curated file](@). The [curated file](@), whose (front-matter) field `id` matches this parameter, will be integrity-checked. |
+| `term` | `<term>` | n | -txt | [term](@) that [identifies](@) a particular [curated file](@). The [curated file](@), whose (front-matter) field `term` matches this parameter, will be integrity-checked. |
 | `termtypes` | `<termtypes>` | n | -txt | List of texts that serve to identify a specific kind of [knowledge artifact](@), e.g. `concept`, or `pattern`. Every [curated file](@), whose (front-matter) field `termtype` appears as an element in the `<termtypes>` list, will be integrity-checked. |
 | `grouptags` | `<grouptags>` | n | -txt | List of [grouptags](@). Every [curated file](@), whose (front-matter) field `grouptags` has an element that also appears as an element in the `<grouptags>` list, will be integrity-checked. |
 
@@ -111,7 +115,7 @@ The integrity of a [SAF](@) requires the following conditions to be satisfied fo
 The integrity of a [SAF](@) requires the following conditions to be satisfied for every element in the `versions` section:
 - `vsntag` SHOULD not appear as an element in the `altvsntags` field of this `version` element, and it MUST NOT appear in the `vsntag` or `altvsntags` fields of any other element in the `versions` section.
 - `altvsntags` must be a (possibly empty) list of [versiontags](@), each of which SHOULD not appear in the `vsntag` field of the element, and MUST NOT appear in the `vsntag` or `altvsntags` fields of any other element in the `versions` section.
-- `termselcrit` must be a non-emptly list of [term selection instructions](@).
+- `termselcrit` must be a non-emptly list of [term selection criteria](@).
 - `status` SHOULD be a non-empty field.
 
 ### MRG integrity
@@ -134,7 +138,6 @@ Integrity checks for the `scopes` section include:
 
 Integrity checks for the `entries` section consist of one part that is generic for all entries, and another part that depends on the value of the `termtype` field (so that checking of e.g. entries of type `concept` and of type `pattern` can have different checks.) The checks that every entry must pass include the following:
 - `scopetag` MUST also appear as the value of `terminology.scopetag`, or as an element in one of the `scopes.scopetags` elements.
-- `id` SHOULD be "`termname`" or "concept-`termname`" if `termtype` is `concept` or unspecified; otherwise, `id` SHOULD be "`termtype`-`termname`".
 - `termtype` SHOULD be a value for which a [ctext template](@) exists. <Mark>This needs further specification.</Mark>
 - `grouptags` MUST be a list of [grouptag](@) elements.
 - `license` MUST be an existing file in the directory pointed to by `scopedir`.

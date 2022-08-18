@@ -42,7 +42,7 @@ Before this can really be properly specified, we seek to do some experiments to 
 The [HRGT](@) operates on a single [MRG](@) of a [scope](@), which contains (data and/or pointers to) _all_ [knowledge artifacts](@) of that [scope](@).
 
 The construction of a [HRG](@) can be envisaged as
-- selecting the [mrg entries](@) that must appear in the [HRG](@). Selection may depend on the specification of the kinds of [knowledge artifacts](@) that should be included, and/or specifying [tags](@) for the (groups of) [artifacts](knowledge-artifact@), or specific `id`s;
+- selecting the [mrg entries](@) that must appear in the [HRG](@). Selection may depend on the specification of the kinds of [knowledge artifacts](@) that should be included, and/or specifying [tags](@) for the (groups of) [artifacts](knowledge-artifact@), or specific [terms](@);
 - alphabetically sorting these entries;
 - converting each entry into its 'rendered' format, thereby resolving any [term refs](@), adding hyperlinks to the [curated text](@) that the entry relates to, 'meta-data' (e.g. the associated [grouptags](@), contributors, etc.), and anything else, as required for the particular kind of [HRG](@) that is being generated;
 - concatenating these rendered entries, optionally including/inserting some navigation bars (e.g. before a new letter starts);
@@ -53,7 +53,7 @@ When a [HRG](@) is generated that should become the default one for that scope, 
 The [HRGT](@) logs conditions that prevent it from properly
 
 - parsing a source document (e.g. because it is not in the expected format);
-- resolving `id`s, [scope tags](@), [group tags](@), or [version tags](@);
+- resolving [terms](@), [scope tags](@), [group tags](@), or [version tags](@);
 - writing the output (e.g. because it has no write-permission for the designated location);
 - etc.;
 

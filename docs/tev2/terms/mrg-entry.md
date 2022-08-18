@@ -17,7 +17,7 @@ attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Mrg-entry
+# Mrg Entry
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
@@ -34,7 +34,7 @@ The contents of an [MRG entry](@) may vary, depending on the type of [knowledge 
 
 The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
 
-The [terminology construction section](/docs/tev2/manuals/terminology-construction) describes how [MRG entries](@) are selected (and manipulated) for the construction of a particular [terminology](@).
+The [terminology construction section](/docs/tev2/spec-tools/terminology-construction) describes how [MRG entries](@) are selected (and manipulated) for the construction of a particular [terminology](@).
 
 ### Purpose
 

@@ -17,7 +17,7 @@ attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Term-syntax
+# Term Syntax
 
 <!--
             **IF THE PCRE REGEX FOR THE TERM SYNTAX MUST BE CHANGED

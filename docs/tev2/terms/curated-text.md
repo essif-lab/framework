@@ -6,7 +6,7 @@ isa:
 glossaryText: a text that documents a [concept](@) or other [knowledge artifact](@) of a specific [community](@) or other [party](@), and is located within a [scope](@) that is owned by that [community](@)/[party](@).
 synonyms:
 groupTags:
-formPhrases: curated-text{ss}, ctext{ss} ctext
+formPhrases: curated-text{ss}, ctext{ss}
 # Curation status
 status: proposed
 created: 2022-06-02
@@ -17,13 +17,13 @@ attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Curated-text
+# Curated Text
 
 ## Summary
 
 A **[curated text](@)** is a text that documents a [concept](@) or other [knowledge artifact](@) of a specific [community](@) or other [party](@), and is located within a [scope](@) that is owned by that [community](@)/[party](@). A large variety of traits can be documented, such as the [(scoped) term](@) that is used within the [scope](@) to represent the [artifact](knowledge-artifact@), a [definition](@), explanatory texts, examples, etc., etc.; anything that helps others understand the intricacy of these [artifacts](@).
 
-The (technical) structure and syntax for [curated texts](@) is specified [here](/docs/tev2/spec-ctexts/ctext-spec).
+The (technical) structure and syntax for [curated texts](@) is specified [here](/docs/tev2/spec-files/ctext).
 
 The manuals for [contributors](/docs/tev2/manuals/contributor), [authors](/docs/tev2/manuals/author) and [curators](/docs/tev2/manuals/curator) will provide guidance for people that act in these respective roles as they work with [curated texts](@).
 

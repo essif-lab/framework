@@ -36,7 +36,7 @@ A [terminology](@) can be documented by (at most) one [machine-readable glossary
 
 The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
 
-The [terminology construction section](/docs/tev2/manuals/terminology-construction) describes how to construct a [terminology](@) by selecting (groups of) [terms](scoped-term@), and manipulating such selections.
+The [terminology construction section](/docs/tev2/spec-tools/terminology-construction) describes how to construct a [terminology](@) by selecting (groups of) [terms](scoped-term@), and manipulating such selections.
 
 ### Purpose
 In order for [parties](@) to properly reason and/or communicate ideas ([concepts](@) and other [knowledge artifacts](@)) about some topic - in particular when it is a specialist topic - they have to establish a set of [terms](@), the meaning of which should be [defined](@) (or otherwise documented) in such a way that the likelihood of misunderstandings between them is minimized. This set of terms is called a `**terminology**`

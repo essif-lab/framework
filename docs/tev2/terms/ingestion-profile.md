@@ -17,7 +17,7 @@ attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Ingestion-profile
+# Ingestion Profile
 
 ## Summary
 
@@ -25,7 +25,7 @@ An **[ingestion profile](@)** is the specification of a method by which files th
 
 [Ingestion profiles](@)
 
-The (technical) structure and syntax for [curated texts](@) is specified [here](/docs/tev2/spec-ctexts/ctext-spec).
+The (technical) structure and syntax for [curated texts](@) is specified [here](/docs/tev2/spec-files/ctext).
 
 The manuals for [contributors](/docs/tev2/manuals/contributor), [authors](/docs/tev2/manuals/author) and [curators](/docs/tev2/manuals/curator) will provide guidance for people that act in these respective roles as they work with [curated texts](@).
 

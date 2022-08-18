@@ -24,6 +24,10 @@ The entire section on Terminology Engine v 2 (TEv2) is still under construction.
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
+:::info Editor's note
+Term ref resolution is the same process as we use for ingestion, and other conversions, as (will be) explained in the [profiles template section](/docs/tev2/tev2-profile-templates). When that 'conversion pattern' is stable and properly documented, we need to revise this section to align with those descriptions.
+:::
+
 The **Term Ref(erence) Resolution Tool ([TRRT](@))** takes markdown files that contain so-called [term refs](@) (e.g. \[`terms communities`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](@) are converted to so-called [renderable refs](@), i.e. texts that can be further processed by tools such as Github pages, Docusaurus (plugins), etc., the result of which is that the rendered document contains markups that help [readers](@) to quickly find more explanations of the [concept](@) or other [knowledge artifact](@) that is being referenced.
 
 <details>
@@ -117,7 +121,7 @@ The columns in the following table are defined as follows:
 :::info Editor's Note:
 Various `method`s are envisaged, yet remain to be properly specified. One example is where the [term ref](@) `[Actions](@)` would be replaced with a construct such as `<Term reference="action" popup="<popuptext>">actions</Term>`
 where<br/>
-- `<popuptext>` is the text provided in the `hoverText` field of the [MRG entry](@) whose `id` field is 'action', and
+- `<popuptext>` is the text provided in the `hoverText` field of the [MRG entry](@) whose `term` field is 'action', and
 - `<Term ...>` and `</Term>` represent a React component that supports linking and tooltip functionality, so that users hovering over the link will see a popup/tooltip with the text `<popuptext>`, and will navigate to the location of the (human readable, i.e. rendered) file that contains details and further explanations, as specified in the `navurl` field of the [MRG entry](@).
 :::
 
@@ -131,15 +135,10 @@ The [term ref](@) resolution process has three steps:
 ### Interpretation of the Term Ref
 
 The following kinds of [term ref](@) syntaxes are (to be) supported:
-- the [basic syntax](/docs/tev2/spec-syntax/term-ref-syntax#basic-syntax), i.e. \[`show text`\](`id`#`trait`@`scopetag`:`vsntag`);
-- the [terms syntax](/docs/tev2/spec-syntax/term-ref-syntax#terms-syntax), i.e. \[`show text`\](`term`#`trait`@`scopetag`:`vsntag`), the difference being that `term` represents a [[knowledge artifact](@), whereas `id` (in the basic syntax) [identifies](@) the [curated text](@) that documents such [artifact](knowledge-artifact@);
-- the [alternative syntax](/docs/tev2/spec-syntax/term-ref-syntax#alternative-syntax), e.g. \[`show text`@\], which basically moves the `@`-character from the basic syntax within the square brackets, which in many (if not most) cases is more convenient for [authors](@).
+- the [basic syntax](/docs/tev2/spec-syntax/term-ref-syntax#basic-syntax), i.e. \[`showtext`\](`term`#`trait`@`scopetag`:`vsntag`);
+- the [alternative syntax](/docs/tev2/spec-syntax/term-ref-syntax#alternative-syntax), e.g. \[`show text`@\], which basically moves the `@`-character from the basic syntax within the square brackets, which in many (if not most) cases is more convenient for [authors](@), but has the drawback that the rendering of the plain markdown text would be rendered as [show text@], which may be inconvenient.
 
-:::info Editor's note
-The [terms syntax](/docs/tev2/spec-syntax/term-ref-syntax#terms-syntax) has currently not been properly defined.
-:::
-
-Interpretation of a Term Ref leads to the population of the following variables (or, in case regexes are used, named capturing groups):
+Interpretation of a [term ref](@) leads to the population of the following variables (or, in case regexes are used, named capturing groups):
 
 <details>
 <summary>Using regexes to find the values for the variables</summary>
@@ -151,10 +150,6 @@ Finding a [term ref](@) in the file can be done by using a regular expressions (
 - For the [basic syntax](/docs/tev2/spec-syntax/term-ref-syntax#basic-syntax), you can use the PCRE regex
   - [``(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))``](https://www.debuggex.com/r/Resuq7vbjHUOUXSx) to find the `[` that starts a [term ref](@), and
   - [``(?P<showtext>.+?)\]\((?P<id>[a-z0-9_-]+?)(?:#(?P<trait>[a-z0-9_-]+?))?@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsntag>[a-z0-9_-]+?))?\)``](https://www.debuggex.com/r/OC3lxllHc9GleXES) to find the various parts of the [term ref](@) as (named) capturing groups.
-
-:::info Editor's note
-There is no regex for the [terms syntax](/docs/tev2/spec-syntax/term-ref-syntax#terms-syntax), because it has not yet been defined.
-:::
 
 - For the [alternative syntax](/docs/tev2/spec-syntax/term-ref-syntax#alternative-syntax), you can use the PCRE regex
   - [``(?<=[^`\\])\[(?=[^@\]]+@[:a-z0-9_-]*\](?:\([#a-z0-9_-]+\))?)``](https://www.debuggex.com/r/I_hsZPQ5DJRAjCNg) to find the `[` that starts a [term ref](@), and
@@ -185,36 +180,29 @@ If not specified, the [scope](@) from which the [TRRT](@) is being called will b
 
 If omitted (in which case the preceding `:`-character may also be omitted from the syntax), its value will [identify](@) the default [MRG](@) of the [scope](@) (as [specified](/docs/tev2/spec-files/saf#terminology) in the `mrgfile` field os the [SAF](@)).
 
-#### `id` (optional) {#id}
+#### `term` (optional) {#id}
 
-`id` is a text that [identifies](@) a [curated text](@) (that documents a specific [knowledge artifact](@)) in a specific version of the  [terminology](@) of a specific [scope](@). It will be matched against the `id` fields of [MRG entries](@) in the [MRG](@) that documents said [terminology](@).
+`term` is a text that [identifies](@) a [knowledge artifact](@), and is specified in the [curated text](@) that documents that [artifact](knowledge-artifact@) (in a specific version of the  [terminology](@) of a specific [scope](@)). It will be matched against the `term` fields of [MRG entries](@) in the [MRG](@) that documents said [terminology](@).
 
 If omitted, <!-- and the `term` field is empty as well, --> it is generated as follows (assuming the [MRG](@) to be used has already been [identified](@)):
 
-- set `id`:=`showtext`;
+- set `term`:=`showtext`;
 - convert every character in the (regex) range `[A-Z]` to lower-case;
 - convert every sequence of characters `[^A-Za-z_-]+` to (a single) `-` character;
-- if the resulting `id` [matches an element in the list of texts](/docs/tev2/spec-syntax/form-phrase-syntax) in the `formphrases` field of an [MRG entry](@), then replace `id` with the contents of the `id`-field of that same [MRG entry](@).
+- if the resulting `term` [matches an element in the list of texts](/docs/tev2/spec-syntax/form-phrase-syntax) in the `formphrases` field of an [MRG entry](@), then replace `term` with the contents of the `term`-field of that same [MRG entry](@).
 
 :::info Editor's note
 We should clarify the extent to which this `matching` supports formphrase macro's, Currently, this is documented as part of the [form-phrase syntax](/docs/tev2/spec-syntax/form-phrase-syntax) which doesn't seem right.
 :::
 
-It is an error if the resulting `id` does not [identify](@) an [MRG entry](@) in the selected [MRG](@). This may mean that the `showtext` has misspellings, the `id` field was not specified where it had to, or the list of `formphrases` in some [MRG entry](@) should have included more elements.
+It is an error if the resulting `term` does not [identify](@) an [MRG entry](@) in the selected [MRG](@). This may mean that the `showtext` has misspellings, the `term` field was not specified where it had to, or the list of `formphrases` in some [MRG entry](@) should have included more elements.
 
 :::info Editor's note
 [The Porter Stemming Algorithm](https://tartarus.org/martin/PorterStemmer/) is a process for removing the commoner morphological and inflexional endings from words in English. Its main use is as part of a term normalisation process that is usually done when setting up Information Retrieval systems. The mentioned site links to lots of freely useable code that the TRRT might want to consider using.
 
-Perhaps the [TRRT](@) may use this tool as a means for generating the `id` field from the `showtext` if necessary. However, we would need to first experiment with that to see whether or not, c.q. to what extent this conversion does what it is expected to do.
+Perhaps the [TRRT](@) may use this tool as a means for generating the `term` field from the `showtext` if necessary. However, we would need to first experiment with that to see whether or not, c.q. to what extent this conversion does what it is expected to do.
 :::
 
-<!--
-#### `term` (optional) {#term}
-
-`term` [identifies](@) a [knowledge artifact](@)) in a specific version of the [terminology](@) of a specific [scope](@). It consists of a `termname`, `termtype`, and `termattrs` part, that can be matched against the corresponding fields of [MRG entries](@) in the [MRG](@) that documents said [terminology](@).
-
-`term` can only be omitted if the (generated) `id` field is not empty; doing so constitutes an error.
--->
 #### `trait` (optional) {#trait}
 
 `trait` [identifies](@) a particular kind of descriptive text that is associated with the [knowledge artifact](@). If specified, it must be one of the elements in the list of headingid's as specified in [the `headingids` field](/docs/tev2/spec-files/mrg#mrg-entries) of the [MRG entry](@). If omitted, the preceding `#`-character should also be omitted.
@@ -228,14 +216,10 @@ As soon as the variables have been provided with a value, the [MRG](@) can be fo
 2. the `vsntag` enables selecting the actual [MRG](@) to be used. This is done by checking the `vsntag` field in the [terminology section](docs/tev2/spec-files/mrg#mrg-terminology) of all  [MRGs](@) that are located in the [glossarydir](@) (as specified in the `glossarydir` field in the [scope section](docs/tev2/spec-files/saf#terminology) of the [SAF](@) that is found in the [scopedir](@): an [MRG](@) that matches this value is the one to be used. If there is no match, a warning must be raised;If `vsntag` is not specified, then the default [MRG](@) of the [scope](@) should be used: its location can be found in the `mrgfile` field in the [scope section](docs/tev2/spec-files/saf#terminology) of the [SAF](@).
 
 3. the [MRG entry](@) will be [identified](@) by a process that, starting with the set of all [entries](mrg-entry@) that exist in the selected [MRG](@), weeds out non-matching [entries](mrg-entry@) in one or more steps, as follows:
-  - if the [basic syntax](docs/tev2/spec-syntax/term-ref-syntax#basic-syntax) has been used, the variable `id` is present. The set of [MRG entries](@) is reduced by removing all [entries](mrg-entry@) whose `id`-field differs from the one specified in the [term ref](@).
-  - if a `term` was specified, the weeding goes as follows:
-    - first (since the variable `termname` is present), all [entries](mrg-entry@) are removed whose `termname` field differs from the `termname` variable;
-    - then, if the variable `termtype` is present, all [entries](mrg-entry@) whose `termtype` field has a different value from what that variable holds, are removed from the set;
-    - finally, if the `termattrs` variable (array) is present, an [entry](mrg-entry@) is dicarded from the set if its `termattrs` field does not contain all (array) elements of the `termattrs` variable in the same order as specified by the `termattrs` variable.[^2]
-    - If the resulting set contains exactly one [MRG entry](@), this is the one that is selected; otherwise, a warning is raised.
+  - since `term` must be present, all [entries](mrg-entry@) are removed whose `term` field differs from the `term` variable;
+  - then, if the variable `termtype` is present, all [entries](mrg-entry@) whose `termtype` field has a different value from what that variable holds, are removed from the set;
+  - If the resulting set contains exactly one [MRG entry](@), this is the one that is selected; otherwise, a warning is raised.
 
-[^2]: This implies that the `termattrs` array in the [MRG entry](@) may contain more elements than are specified in the [term ref](@), while all elements specified inthe `termattrs` part of the [term ref](@) must match, in the same order. Keeping the order is done to ensure that in future, [[knowledge artifacts](@) of type `relation` can be created, which need such a precise ordering.
 ### Rewriting the Term Ref with a Renderable Ref
 
 <img
@@ -278,7 +262,7 @@ A more complex example is what is done within eSSIF-Lab, where the [curators](@)
 In this [scope](@), the [term ref](@) `[Actions](@)` is replaced with `<Term reference="action" popup="<popuptext>">Actions</Term>`
 where:
 
-- `<popuptext>` is the text provided in the `hoverText` field of the [MRG entry](@) whose `id` field is `action`, and
+- `<popuptext>` is the text provided in the `hoverText` field of the [MRG entry](@) whose `term` field is `action`, and
 - `<Term ...>` and `</Term>` represent a React component that supports linking and tooltip functionality, so that users hovering over the link will see a popup/tooltip with the text `<popuptext>`, and will navigate to the location of the (human readable, i.e. rendered) file that contains details and further explanations, as specified in the `navurl` field of the [MRG entry](@).
 
 :::info Editor's note
@@ -296,7 +280,7 @@ The implementation of the `<Term ...>` ... `</Term>` construct will differ from 
 The essentials of the rewriting start with the [scopedir](@) of the [scope](@) from which the [TRRT](@) is called, and proceed as follows:
 - access the [SAF](@), and in case the `scopetag` is not of this [scope](@), look up the [scopedir](@) associated with that `scopetag` and obtain its [SAF](@);
 - using the `vsntag`, locate the [MRG](@) (or if `vsntag` isn't specified, use the [scope's](@) default [MRG](@)-file as specified in the [scope's](@) [SAF](@));
-- Find the [MRG entry](@) that has an `id`-field that is the same as `id`;
+- Find the [MRG entry](@) that has a `term`-field that is the same as `term`;
 
 At this point, all data is available for constructing the replacement text. As we have seen, it depends on the situation that need to be supported how the actual construction needs to be done.
 
