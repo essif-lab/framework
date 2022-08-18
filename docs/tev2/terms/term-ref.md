@@ -13,8 +13,8 @@ created: 2022-06-06
 updated: 2022-08-04
 # Origins/Acknowledgements
 contributors: RieksJ
-attribution: [eSSIF-Lab](https://essif-lab.github.io/framework)
-originalLicense: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
+attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
 # Term-ref

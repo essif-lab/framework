@@ -11,8 +11,8 @@ created: 2022-06-06
 updated: 2022-08-10
 # Origins/Acknowledgements
 contributors: RieksJ
-attribution: [eSSIF-Lab](https://essif-lab.github.io/framework)
-originalLicense: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
+attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 # TEv2: attrs-specific front-matter for attrs `concept`
 isa: identifier
 glossaryText: "a list of [attributes](term-attrs@) that enable one to distinguish between [knowledge artifacts](@) that have the same [term name](@) and are of the same [type](term-type@)."
