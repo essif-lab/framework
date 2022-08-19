@@ -29,7 +29,7 @@ The **Terminology Enginve v2 (TEv2)** is a set of specifications and tools that 
 
 <!-- This summary is/should be literally quoted in the tev2-overview document -->
 
-The main objective of [TEv2](@) is to provide support to [communities](@) that actively seek to [understand one another](/docs/tev2/tev2-purpose), first within the [community](@) itself, but also across [communities](@) that also use [TEv2](@).
+The main objective of [TEv2](@) is to provide support to [communities](@) that actively seek to [understand one another](/docs/tev2/overview/tev2-purpose), first within the [community](@) itself, but also across [communities](@) that also use [TEv2](@).
 
 In practice, this means that [TEv2](@) provides tools and mechanisms that:
 1. help [readers](@) of publications (that were generated with [TEv2](@) tools) to understand the [terms](@) that are used therein, in the way that the [authors](@) have intended (rather than interpreting such [terms](@) in their own way);

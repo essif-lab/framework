@@ -16,7 +16,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 
 This document is meant as a specification of results that the ToIP CTWG aims to realize, that can serve as the basis for the specification of terminology tooling.
 
-The intended audience is expected to be familiar with the [mental model on terminology](https://essif-lab.github.io/framework/docs/tev2/terms/pattern-terminology-support#formalized-model) and the current way(s) of working of the CTWG.
+The intended audience is expected to be familiar with the [mental model on terminology](https://essif-lab.github.io/framework/docs/tev2/terms/pattern/terminology-support#formalized-model) and the current way(s) of working of the CTWG.
 
 As mentioned in the [TEv2 overview](/docs/tev2/tev2-overview), the toolbox is envisaged to have a variety of tools, including:
 
