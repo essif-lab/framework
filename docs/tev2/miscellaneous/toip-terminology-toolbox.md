@@ -1,10 +1,12 @@
 ---
 id: toip-terminology-toolbox
-title: ToIP TT-Tools Proposal
+sidebar_label: Original ToIP TT-Tools Proposal
 displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220421
 ---
+
+# ToIP TT-Tools Proposal
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

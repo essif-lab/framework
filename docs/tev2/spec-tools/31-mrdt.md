@@ -7,18 +7,9 @@ scopetag: tev2
 date: 20220801
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-<!-- Use 'Mark' as an HTML tag, e.g. <Mark>text to mark</Mark?-->
-export const Mark = ({children}) => (
-  <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
-    {children}
-  </span> );
-
 # Machine Readable Dictionary Generation Tool
+
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
 <img
   alt="This page is under construction"

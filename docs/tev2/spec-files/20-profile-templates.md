@@ -1,5 +1,5 @@
 ---
-id: tev2-profile-templates
+id: profile-templates
 sidebar_label: Profile Templates
 hide_table_of_contents: true
 scopetag: tev2
@@ -8,7 +8,7 @@ date: 20220816
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-# TEv2 - Profile Templates
+# Profile Templates
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

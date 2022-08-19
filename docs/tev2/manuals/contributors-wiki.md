@@ -23,7 +23,7 @@ One way in which [curators](@) may decide that [users](@) can contribute, is by 
 
 ## Users contributions
 
-From the TEv2 perspective, [users](@) may contribute by [creating or editing wiki-pages](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages) for a specific [knowledge artifact](@). The [curators](@) would typically already have various wiki-pages, each of which serves as a template for e.g. the [definition](@) of a [concept](@) or [term](@), a [use-case](@), a [mental model](@), or any other kind of [knowledge artifact](@) that is relevant within the [scope](@).
+From the [TEv2](@) perspective, [users](@) may contribute by [creating or editing wiki-pages](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages) for a specific [knowledge artifact](@). The [curators](@) would typically already have various wiki-pages, each of which serves as a template for e.g. the [definition](@) of a [concept](@) or [term](@), a [use-case](@), a [mental model](@), or any other kind of [knowledge artifact](@) that is relevant within the [scope](@).
 
 A [user](@) can take the template, and follow the associated instructions (e.g. provide content for the various sections). That's basically it.
 

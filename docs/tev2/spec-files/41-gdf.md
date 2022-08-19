@@ -6,14 +6,9 @@ scopetag: tev2
 date: 20220503
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
-
-export const Mark = ({children}) => (
-  <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
-    {children}
-  </span> );
-
 # Glossary Definition File (GDF)
+
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
 <img
   alt="This page is under construction"

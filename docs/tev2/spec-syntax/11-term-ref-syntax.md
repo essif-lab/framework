@@ -15,12 +15,12 @@ The entire section on Terminology Engine v 2 (TEv2) is still under construction.
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
-As an [author](@) or [curator](@), you want to be able to mark words or phrases, and have them refer to (the documentation of) a particular [concept](@) or other [knowledge artifact](@). Such marked-up words or phrases are called [term refs](@). This text specifies the syntax that you can use to author [term refs](@).
+As an [author](@) or [curator](@), you want to be able to mark words or phrases, and have them refer to (the documentation of) a particular [concept](@) or other [knowledge artifact](@). Such marked-up words or phrases are called [term refs](@). This text specifies the syntax that you can use to [author](@) [term refs](@).
 
 :::info Editor's note
 Also, you will want to (and actually can) control the effect that your [term refs](@) must have when it is rendered. After all, the effect you seek it to have as part of a rendered static website (e.g. so that it produces a popup with its definition) would be quite different form when it would be part of a PDF (in which case you may want it to become part of an automatically generated [glossary](@) in one of the papers annexes). Selecting the effect is done by properly instructing the [term ref resolution tool](trrt@) when your text is processed for rendering.
 
-We need some text here that points to the documentation for doing so. This could be e.g. in the [authors manual](/docs/tev2/manuals/author) and [curators manual](/docs/tev2/manuals/curator), but also in the [TRRT specifications](/docs/tev2/spec-tools/trrt), or in some manual that deals with adding rendering plugins.
+We need some text here that points to the documentation for doing so. This could be e.g. in the [authors manual](/docs/tev2/manuals/[author](@)) and [curators manual](/docs/tev2/manuals/curator), but also in the [TRRT specifications](/docs/tev2/spec-tools/trrt), or in some manual that deals with adding rendering plugins.
 :::
 
 while at the same time referring to the [definition](@) that defines its meaning. i.e. the syntax that you need to use in such texts. The way in which the [term](@) (and its [definition](@)) may be rendered depends on the artifact that is being generated. For example, when a [term](@) is rendered in a web-site, it may be enhanced, showing a popup that contains its [definition](@) when a [reader](@) hovers the mouse over it, and that hyperlinks to the page in the website that explains the term in more detail when the [reader](@) clicks on it. When a [term](@) is rendered in a PDF file, its definition may appear as an entry in a [glossary](@) that is added somewhere in the PDF. It all depends on the rendering tools that are being used, and this is out of scope for this specification.
@@ -34,13 +34,13 @@ A [term ref](@) can be thought of as a [Markdown link](https://www.markdownguide
 <details>
   <summary>Motivation for the chosen syntax</summary>
 
-We want to enable authors to use [term refs](@) pervasively, which means it must be easy to use, and mistakes should be (relatively) hard to make, yet easy to detect, identify, and correct. [Markdown links](https://www.markdownguide.org/basic-syntax/#links) are of the form \[`show text`\](`ref-text`), where `show text` is the text that is rendered and emphasized so that a [reader](@) knows it can be clicked, and `ref-text` is a (relative or absolute) URL, or a [heading ID](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids), that identifies the resource (e.g. web page, or place therein) that is being referenced. So, we need a syntax for [term refs](@) that is<br/>- sufficiently similar to a [Markdown link](https://www.markdownguide.org/basic-syntax/#links),<br/>- 'humanly interpretable' when it isn't processed by the [TRRT](@),<br/>- easy to use for authors, and<br/>- sufficiently distinct from a Markdown link so that the [TRRT](@) will not process Markdown links yet will process the [term refs](@).
+We want to enable [authors](@) to use [term refs](@) pervasively, which means it must be easy to use, and mistakes should be (relatively) hard to make, yet easy to detect, identify, and correct. [Markdown links](https://www.markdownguide.org/basic-syntax/#links) are of the form \[`show text`\](`ref-text`), where `show text` is the text that is rendered and emphasized so that a [reader](@) knows it can be clicked, and `ref-text` is a (relative or absolute) URL, or a [heading ID](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids), that identifies the resource (e.g. web page, or place therein) that is being referenced. So, we need a syntax for [term refs](@) that is<br/>- sufficiently similar to a [Markdown link](https://www.markdownguide.org/basic-syntax/#links),<br/>- 'humanly interpretable' when it isn't processed by the [TRRT](@),<br/>- easy to use for [authors](@), and<br/>- sufficiently distinct from a Markdown link so that the [TRRT](@) will not process Markdown links yet will process the [term refs](@).
 
 </details>
 
 Here is an example of a [term ref](@): `[definitions](definition@)`. When this text is rendered into a human readable form, it will show the text `definitions` (plural) enhanced, and it will link to the text that describes (or defines) the term `definition` (singular). If you would want to use this term as it is defined in the [scope](@) called `essif-lab`, you could do that by wrinting `[definitions](definition@essif-lab)` (provided that `essif-lab` is a defined [scopetag](@) within the [scope](@) that you operate in).
 
-The complete, generic structure of a [term ref](@) is: **\[`show text`\](`term`#`trait`@`scopetag`:`vsntag`)**. However, all of its elements (except for `show text`) are optional, so as to limit the 'extra work' that authors need to do to a minimum.
+The complete, generic structure of a [term ref](@) is: **\[`show text`\](`term`#`trait`@`scopetag`:`vsntag`)**. However, all of its elements (except for `show text`) are optional, so as to limit the 'extra work' that [authors](@) need to do to a minimum.
 
 ### `showtext` {#showtext}
 
@@ -81,14 +81,14 @@ It has been suggested to provide [term ref](@) syntax that allows one to refer t
 
 ### Alternative notation {#alternative-syntax}
 
-It is convenient for authors to be able to use the '@`scopetag`' part of a [term ref](@) immediately behind the `show text` within the square brackets (`[` and `]`), and leave out the parentheses and the text in between if all the other items are omitted.
+It is convenient for [authors](@) to be able to use the '@`scopetag`' part of a [term ref](@) immediately behind the `show text` within the square brackets (`[` and `]`), and leave out the parentheses and the text in between if all the other items are omitted.
 
 This is particularly useful in the vast majority of cases, where the default processing of `showtext` results in `term` and `trait` is absent. Examples of this are `[definition](@)`, or `[term ref](@)`.
 
 The usefulness becomes even greater as the [TRRT](@) also implements more sophisticated ways to derive a `term` from a `show text`, e.g. to accommodate for plural forms (of nouns), or conjugate forms (for verbs).
 
 :::info Editor's note
-This alternative notation will assume that the `showtext` part of a [term ref](@) won't contain the `@` character. However, it is likely that some authors will want to use an email address as the `showtext` part of a *regular* link, e.g. as in `[rieks.joosten@tno.nl](mailto:rieks.joosten@tno.nl)`. However, since [scopetags](@) should not contain `.`-characters, `[rieks.joosten@tno.nl]` does not qualify as a `showtext` in our syntax. Authors should [use angle brackets to link to email addresses](https://www.markdownguide.org/basic-syntax/#urls-and-email-addresses), as in `<rieks.joosten@tno.nl>`.
+This alternative notation will assume that the `showtext` part of a [term ref](@) won't contain the `@` character. However, it is likely that some [authors](@) will want to use an email address as the `showtext` part of a *regular* link, e.g. as in `[rieks.joosten@tno.nl](mailto:rieks.joosten@tno.nl)`. However, since [scopetags](@) should not contain `.`-characters, `[rieks.joosten@tno.nl]` does not qualify as a `showtext` in our syntax. [Authors](@) should [use angle brackets to link to email addresses](https://www.markdownguide.org/basic-syntax/#urls-and-email-addresses), as in `<rieks.joosten@tno.nl>`.
 :::
 
 This leads to an alternative notation that can be used in addition to the previously specified notation. Here is the alternative syntax and its equivalent counterpart:

@@ -1,31 +1,22 @@
 ---
-id: curator
-sidebar_label: Curators
+id: tev2-terminology-curation
+sidebar_label: Terminology Curation
 displayed_sidebar: tev2SideBar
 scopetag: tev2
-date: 20220513
+date: 20220303
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-# Curators Manual - Overview
-
-<img
-  alt="This page is under construction"
-  src={useBaseUrl('images/wip/wip-under-construction.png')}
-/><br/><br/>
+# TEv2 - Terminology Curation
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
-The Terminology Engine (v2) is a set of specifications and tools that caters for the creation and maintenance (i.e. [curation](@)) of [terminologies](@), as well as for its subsequent use in publications of different types (e.g. websites, whitepapers) and formats (e.g. html, LaTeX), as appropriate for different, individual [scopes](@).
-
-The task of [curators](@) is to create/maintain the [scope directory](@) that they are tasked to [curate](@). This Curators Manual is intended to help them do this.
-
 :::info Editor's note
-This section needs to be revised from here onward
+This section may need to be revised, and/or moved to the [Curators Manual](/docs/tev2/manuals/curator).
 :::
 
 TEv2 assumes that the [curated](@) data resides in an existing [scope directory](@), and that [curated files](@) are expected to be processable by other tools, including, but not limited to [github pages](https://pages.github.com/) or [Docusaurus](https://docusaurus.io/docs/docs-introduction), which are static site generators for web sites that document all sorts of guidance, specifications, etc. Such a [scope directory](@) must be [set up](/docs/tev2/manuals/tev2-installation) in advance.
@@ -43,4 +34,4 @@ This document provides an overview of the knowledge that [curators](@) may need 
 
 2. [Curation](@) of terminological contributions. This requires knowledge about the [file structure](/docs/tev2/spec-files/ctext) of [curated file](@).
 
-3. [generation](/docs/tev2/tev2-toolbox) of [curated texts](@). It is typical for a [terms community](@) to want to have a [glossary](@) of the [terms](@) they either have [defined](@) themselves, or are [defined](@) elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).
+3. [generation](/docs/tev2/tev2-toolbox) of [knowledge artifacts](@). It is typical for a [terms community](@) to want to have a [glossary](@) of the terms they either have defined themselves, or are defined elsewhere but are to be used within that [community](@). However, other artifacts may be generated as well (a [dictionary](@), white papers, etc.) - this is all up to the [community](@).

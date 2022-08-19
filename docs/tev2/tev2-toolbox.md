@@ -20,7 +20,7 @@ The intended audience is expected to be familiar with the [mental model on termi
 
 As mentioned in the [TEv2 overview](/docs/tev2/tev2-overview), the toolbox is envisaged to have a variety of tools, including:
 
-- the **Term Ref(erence) Resolution Tool ([TRRT](@))**. This tool takes markdown files that contain so-called [term refs](@) (e.g. \[`terms community`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](@) are converted to regular [Markdown links](https://www.markdownguide.org/basic-syntax/#links), allowing such files to be further processed, e.g. by Github pages, Docusaurus or similar tools. In later versions, the [TRRT](@) may be extended to include options for other kinds of conversions, e.g. to produce LaTex instructions.
+- the **Term Ref(erence) Resolution Tool ([TRRT](@))**. This tool takes markdown files that contain so-called [term refs](@) (e.g. \[`terms community`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](@) are converted to regular [Markdown links](https://www.markdownguide.org/basic-syntax/#links), allowing such files to be further processed, e.g. by Github pages, Docusaurus or similar tools. In later versions, the [TRRT](@) may be extended to include options for other kinds of conversions, e.g. to produce LaTeX instructions.
 
 - the **Machine Readable Glossary generation Tool ([MRGT](@))**. This tool reads the [SAF](@) of a [scope](@) to find the instructions by which it creates an [MRG](@) for each of the versions of the [terminology](@) that are maintained within that [scope](@).
 

@@ -23,7 +23,7 @@ This document specifies the syntax of [form phrases](@), i.e. texts that are
 
 Note that the [syntax of `formphrases`](/docs/tev2/spec-syntax/form-phrase-syntax) enables the use use of 'macro's, i.e. shorthand syntax that represent regexes that allow for extended matching.
 
-A formphrase 'macro' is a set of characters between braces `{` and `}` that are shorthand for a matcher regex, and can be used by authors to conventiently specify a set of phrases that, when matched, would refer to the [curated text](@) in which they are specified.
+A formphrase 'macro' is a set of characters between braces `{` and `}` that are shorthand for a matcher regex, and can be used by [authors](@) to conventiently specify a set of phrases that, when matched, would refer to the [curated text](@) in which they are specified.
 
 <details>
    <summary>Example and explanation of how it works</summary>

@@ -32,7 +32,7 @@ The manuals for [contributors](/docs/tev2/manuals/contributor), [authors](/docs/
 :::info Editor's Note
 Text needs to be revised from here onward. Here are some ideas to mention:
 - contributors can suggest contents as per the curators instructions;
-- authors can write the body of ctexts;
+- [authors](@) can write the body of ctexts;
 - curators update the header of ctexts (conforming to the ctext specs);
 - curators specify the process by which ctexts progress/mature, and get statuses assigned;
 - curators generate artifacts from 'decided on' ctexts, so that
