@@ -68,7 +68,7 @@ Perhaps this is comparable with optical illusions, such as that of the [old and 
 
 Most people may be between these extremes. The bottom line is that you should be decisive: you either use the model, or you don't. There is no in-between. Also, you should be attentive, and watch for any thoughts that may come up that might interfere, and cause you to become incoherent/inconsistent.
 
-When assessing a model, start simple. Read the text, try to picture (or hear) what it says: try to follow (understand) the author. Try to figure out how the model would work in situations that the author did not describe (not: how the model is flawed because you cannot think of how it would work). Then find increasingly complex situations, and figure out how the model would work there. If you get stuck (anywhere during this process), then don't jump to conclusions, but rather find others that have used the model, and ask them how it might work.
+When assessing a model, start simple. Read the text, try to picture (or hear) what it says: try to follow (understand) the [author](@). Try to figure out how the model would work in situations that the [author](@) did not describe (not: how the model is flawed because you cannot think of how it would work). Then find increasingly complex situations, and figure out how the model would work there. If you get stuck (anywhere during this process), then don't jump to conclusions, but rather find others that have used the model, and ask them how it might work.
 
 ### On the Construction of Mental Models
 

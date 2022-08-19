@@ -1,6 +1,6 @@
 ---
-id: contributors-latex
-sidebar_label: Using LaTex
+id: contributors-LaTeX
+sidebar_label: Using LaTeX
 scopetag: tev2
 date: 20220513
 ---
@@ -20,7 +20,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 :::note Editor's note:
-Text needs to be drafted to work out the idea that LaTeX is a raw text that can be highly configured. For starters, it would be helpful if LaTeX authors could
+Text needs to be drafted to work out the idea that LaTeX is a raw text that can be highly configured. For starters, it would be helpful if LaTeX [authors](@) could
 - specify [term refs](@) in their documents, and
 - specify a location where a [glossary](@) could be inserted.
 

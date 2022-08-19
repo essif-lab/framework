@@ -30,7 +30,7 @@ The **Corpus** or **Corpus of Terminology** is the documentation that describes 
 The [terminology pattern](pattern-terminology-support@) relates this concept with other terminological [concepts](@).
 
 ## Purpose
-The purpose of having a [corpus](@) is that it allows for the development of tools that support authors and groups of people to better communicate, by enabling them to refer to the [definition](@) of a [term](@) whenever that [term](@) is used. This is particularly beneficial when a specific [term](@) can be interpreted in different ways (according to different [definitions](@)).
+The purpose of having a [corpus](@) is that it allows for the development of tools that support [authors](@) and groups of people to better communicate, by enabling them to refer to the [definition](@) of a [term](@) whenever that [term](@) is used. This is particularly beneficial when a specific [term](@) can be interpreted in different ways (according to different [definitions](@)).
 
 Tools that we envisage will query for [terms](@) from the [corpus](@), and use that e.g. to create a custom [glossary](@) document, a [terminology](@) appendix in a paper you write, or as a resource from which you generate pop-up balloons in a website you create.
 

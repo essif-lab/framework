@@ -1,15 +1,17 @@
 ---
 id: toip-terminology-toolbox
-title: ToIP TT-Tools Proposal
+sidebar_label: Original ToIP TT-Tools Proposal
 displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220421
 ---
 
+# ToIP TT-Tools Proposal
+
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info
-This document is a first specification of results that the [ToIP Concepts & Terminology Working Group (CTWG)](https://wiki.trustoverip.org/pages/viewpage.action?pageId=65700) aims to realize. The ideas in this memo are being elaborated on as specifications for the [eSSIF-Lab Terminology Engine v2](tev2-overview), as documented on this site. As elaboration progresses, deviations from this memo may arise. At some point, we will add `info` blocks such as these to document such differences.
+This document is a first specification of results that the [ToIP Concepts & Terminology Working Group (CTWG)](https://wiki.trustoverip.org/pages/viewpage.action?pageId=65700) aims to realize. The ideas in this memo are being elaborated on as specifications for the [eSSIF-Lab Terminology Engine v2](/docs/tev2/tev2-overview), as documented on this site. As elaboration progresses, deviations from this memo may arise. At some point, we will add `info` blocks such as these to document such differences.
 :::
 
 The intended audience is expected to be familiar with the [mental model on terminology](https://essif-lab.github.io/framework/docs/terms/pattern-terminology#formalized-model) and the current way(s) of working of the CTWG.

@@ -1,6 +1,6 @@
 ---
 # TEv2 Curated Text Header
-term: self-sovereign-terminology
+term: terminology-support
 termType: pattern
 isa:
 glossaryText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
@@ -17,11 +17,9 @@ attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Self-Sovereign Terminology
+# Terminology Support
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
-
-# Terminology Support
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
@@ -47,8 +45,8 @@ Also, this [management](@) may cause reference documents to be created and maint
 Here is a visual representation of this pattern, using the following **[notations and conventions](/docs/tev2/notations-and-conventions#pattern-diagram-notations)**:
 
 <img
-  alt="Conceptual model of the 'self-sovereign-terminology' pattern"
-  src={useBaseUrl('images/patterns/self-sovereign-terminology.png')}
+  alt="Conceptual model of the 'terminology-support' pattern"
+  src={useBaseUrl('images/patterns/pattern-terminology-support.png')}
 />
 
 The figure shows three areas:
@@ -64,7 +62,7 @@ Our [model](@) expresses this idea by saying that a [community](@) can commit to
 
 A [terms-community](@) is a [community](@) (whose members are called [curators](@)) that aims to serve/support specific [communities](@) (including perhaps itself) by enabling them to:
   - prevent misunderstandings amongst their members, and
-  - author communications in such a way that the likelihood of non-members misunderstanding such communications is minimized.
+  - [author](@) communications in such a way that the likelihood of non-members misunderstanding such communications is minimized.
 - [manages](@) these [objectives](@) itself, producing results that include:
   - one or more [HRGs](@) that each render the [terminology](@) of the [scope](@) that it curates;
   - the specification of (any number of) [tags](@) that either
@@ -72,7 +70,7 @@ A [terms-community](@) is a [community](@) (whose members are called [curators](
     - can be associated with [definitions](@) as a means of grouping the [concepts](@) such [definitions](@) define - the so-called [group tags](@).
     - [identify](@) a specific version of the [terminology](@) - the so-called [version tags](@).
 
-We refer tthe reader to
+We refer the reader to
 - the [Curators Manual](@), for further details about [curation](@).
 - the [governance and management pattern](pattern-governance-and-management@) to learn more about ways in which different [communities](@) can seek to serve each other.
 

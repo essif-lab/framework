@@ -1,5 +1,5 @@
 ---
-id: tev2-profile-templates
+id: profile-templates
 sidebar_label: Profile Templates
 hide_table_of_contents: true
 scopetag: tev2
@@ -8,7 +8,7 @@ date: 20220816
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-# TEv2 - Profile Templates
+# Profile Templates
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
@@ -32,7 +32,7 @@ This pattern allows us, e.g.
 
 ## Ingestion Profile {#ingestion-profile}
 
-This ingestion profile specifies the set of 'moustache'-variables that [interpreters](@) for [ingestible content](@) is expected to  populate, and pass on to the [transformer](@) that will create a copy of that [ingestible content](@) and transform it into a (syntactically) correct [curated text](@). There is a [template](/docs/tev2/spec-files/ingestion.profile) file that can be used.
+This ingestion profile specifies the set of 'moustache'-variables that [interpreters](@) for [ingestible content](@) is expected to  populate, and pass on to the [transformer](@) that will create a copy of that [ingestible content](@) and transform it into a (syntactically) correct [curated text](@). There is a [template](docs/tev2/spec-files/ingestion.profile) file that can be used.
 
 :::info Editor's note
 The [transformer](@) that outputs a [curated text](@) still needs to be specified. Specifically, the specification should document what needs to be done in case a [curated text](@) exists whose `term` field matches the `term` field of the newly ingested file. Answers should be given for questions like:

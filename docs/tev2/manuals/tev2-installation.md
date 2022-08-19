@@ -47,7 +47,7 @@ Content to be produced
 
 ### Integrating Scope Directories and Third Party Rendering Tools
 
-[Knowledge artifacts](@) are intended to also be used by/within third party rendering tools, such as [github pages](https://pages.github.com/), [Docusaurus](https://docusaurus.io/docs/docs-introduction), or LaTex
+[Knowledge artifacts](@) are intended to also be used by/within third party rendering tools, such as [github pages](https://pages.github.com/), [Docusaurus](https://docusaurus.io/docs/docs-introduction), or LaTeX
 
 :::info Editor's Note
 Content to be produced

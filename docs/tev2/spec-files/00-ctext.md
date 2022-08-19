@@ -95,7 +95,7 @@ The following table specifies the **generic header fields**:
 
 | Name            | Req'd | Description |
 | --------------- | :---: | ----------- |
-| `term`            | Y | Name ([Identifier](@)) that is used to represent a [knowledge artifact](@). Actual, i.e. successful [identification](@) of the [knowledge artifact](@) may also depend on other characteristics, such as the `termtype`, as names are known to be [semantically overloaded](https://en.wikipedia.org/wiki/Semantic_overload). See [TEv2 identification](/docs/tev2/various-identifiers) for more details.<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `term`            | Y | Name ([Identifier](@)) that is used to represent a [knowledge artifact](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `termType`        | n | [Text](term-type@) that [identifies](@) the kind of [knowledge artifact](@) that this [curated text](@) describes. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `isa`             | n | [concept](@) of which this is a specialization. |
 | `glossaryText`    | Y | Text that is used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](@). |
