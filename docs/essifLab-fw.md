@@ -12,9 +12,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 *This page requires thorough revisions. While the basis is still valid, the contents on architecture(s) needs to be updated.*
 :::
 
-The main purpose of [eSSIF-Lab](essifLab) is to realize its [vision](essifLab-vision). This is quite a challenge, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. Another kind of complexity is related to the (im)possibilities of doing things as %%parties|party%% interact, e.g. in an '%%ecosystem|ecosystem%%' or a %%community|community%%.
+Realizing the [eSSIF-Lab vision](essifLab-vision) is the main purpose of [eSSIF-Lab](essifLab). This is quite a challenge, because of the different kinds of complexity involved:
+- 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels.
+- 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work.
+- 'ecosystem' complexity, e.g. creating and maintaining agreements about technical and semantical interop, ways of working (e.g. to ensure the quality of data), etc., within an '%%ecosystem|ecosystem%%' or a %%community|community%% context.
 
-The eSSIF-Lab %%Framework|framework%% aims to establish a varied set of articles/documents, %%terminology|terminology%%, and %%mental models|pattern%% that individual %%parties|party%% from different backgrounds can use e.g. as they
+To come to grips with such complexity, the eSSIF-Lab %%Framework|framework%% aims to establish a varied set of articles/documents, %%terminology|terminology%%, and %%mental models|pattern%% that individual %%parties|party%% from different backgrounds can use e.g. as they
 - seek to use SSI, and want to learn about:
   - benefits they may reap when they start to adopt SSI technologies;
   - topics to consider for increasing levels of maturity;

@@ -60,8 +60,8 @@ const sidebars = {
       link: {type: 'doc', id: 'miscellaneous'},
       collapsed: true,
       items: [
-        'essifLab-fw-governance',
-        'essifLab-fw-bus-arch',
+        // 'essifLab-fw-governance',
+        // 'essifLab-fw-bus-arch',
         'essifLab-fw-func-arch',
         'essifLab-fw-backlog',
       ],
