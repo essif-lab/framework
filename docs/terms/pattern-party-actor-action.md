@@ -65,7 +65,7 @@ In this mental model, we specify three ways in which %%parties|party%% and %%act
 
 ### Actions, policies and objectives
 
-Every %%party|party%% has its own mission (calling, vocation), and realizing that is often perceived as the reason for its existence (its "raison d'etre"). This is what drives them. It causes the %%party|party%% to set its (other, derived) %%objectives|objective%%, and determine how to realize them, e.g. by specifying the (units of) work, (i.e. %%actions|action%%) that produce the associated results, and by %%employing|onboarding%% %%actors|actor%% that are capable and suitable to do that work.
+Every %%party|party%% has its own [mission](@) (calling, vocation), and realizing that is often perceived as the reason for its existence (its "raison d'etre"). This is what drives them. It causes the %%party|party%% to set its (other, derived) %%objectives|objective%%, and determine how to realize them, e.g. by specifying the (units of) work, (i.e. %%actions|action%%) that produce the associated results, and by %%employing|onboarding%% %%actors|actor%% that are capable and suitable to do that work.
 
 %%Actions|action%% are executed by a specific %%employee|employee%% in a specific context, i.e. a specific place and time, on behalf of a specific %%party|party%%. The fact that %%parties|party%% are autonomous suggests that each of them will have its own idea about how an %%action|action%% needs to be executed. Thus, we say that a %%party|party%% can devise %%policies|policy%% (as part of its %%knowledge|knowledge%%) that provide the rules, working-instructions, preferences and other guidance that enable its %%employees|employee%% to execute %%actions|action%% on its behalf in the ways it expects them to.
 
