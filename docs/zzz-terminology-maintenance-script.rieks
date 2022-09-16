@@ -64,7 +64,7 @@ dutyrighttype = "%{dutyright}-types?"
 
 // filter "docs/terms/identity.md"
 // filter "docs/**/*.md"
-filter "docs/*.md, docs/terms/*.md"
+filter "docs/**/*.md"
 
 // PREPROCESSING: convert single-%-notations into %%-notations.
 

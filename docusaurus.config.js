@@ -59,8 +59,8 @@ module.exports = {
           items: [
             { label: 'Framework', to: 'docs/essifLab-fw' },
             { label: 'Governance', to: 'docs/essifLab-fw-governance' },
-            { label: 'Business-architecture', to: 'docs/essifLab-fw-bus-arch' },
-            { label: 'Functional-architecture', to: 'docs/essifLab-fw-func-arch' },
+            // { label: 'Business-architecture', to: 'docs/essifLab-fw-bus-arch' },
+            { label: 'Conceptual architecture', to: 'docs/essifLab-fw-conceptual-architecture' },
           ],
         },
         {

@@ -22,7 +22,7 @@ The eSSIF-Lab project [seeks to fund (EU) SMEs](https://essif-lab.eu/open-calls/
 - making open-source technological components available that are not necessarily part of the infrastructure, but extend it to provide value for businesses that want to connect to such infrastructure (comparable with driveways, that connect parking lots or garages to a road). Examples include components that implement e.g. eIDAS signing, credential revocation mechanisms, or credential catalogues. In this call, funding must also be used to demonstrate the business value of the contribution. The [call for these kinds of contributions](https://essif-lab-first-business-oriented.fundingbox.com/) has passed.
 - making a technological project that actually uses the components that are produced in the aforementioned calls, and demonstrates that a business can be made with that. Such projects typically validate the infrastructural components and its extensions. The [call for such contributions](https://essif-lab.eu/open-calls/) is expected to launch in late spring 2021.
 
-The eSSIF-Lab project also contributes to the design, maintenance and validation of the [eSSIF-Lab framework](essifLab-fw), its [Business architecture](essifLab-fw-bus-arch) and its [Functional architecture](essifLab-fw-conceptual-architecture).
+The eSSIF-Lab project also contributes to the design, maintenance and validation of the [eSSIF-Lab framework](essifLab-fw).
 
 ## Background
 
