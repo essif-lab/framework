@@ -8,8 +8,8 @@ termid: issuer
 formphrases: issuer{ss}
 status: draft
 grouptags:
-hoverText: "Issuer (functional component): the capability to construct Credentials from data objects, according to the content of its Principal's Issuer-Policy (specifically regarding the way in which the Credential is to be digitally signed), and pass it to the Wallet-component of its Principal allowing it to be issued."
-glossaryText: "the capability to construct %%credentials^credential%% from data objects, according to the content of its %%principal^principal%%'s %%issuer^issuer%%-Policy (specifically regarding the way in which the %%credential^credential%% is to be digitally signed), and pass it to the %%wallet^wallet%%-component of its %%principal^principal%% allowing it to be issued."
+hoverText: "Issuer (functional component): a component that implements the capability to construct Credentials from data objects, according to the content of its Principal's Issuer-Policy (specifically regarding the way in which the Credential is to be digitally signed), and pass it to the Wallet-component of its Principal allowing it to be issued."
+glossaryText: "a component that implements the capability to construct %%credentials^credential%% from data objects, according to the content of its %%principal^principal%%'s %%issuer^issuer%%-Policy (specifically regarding the way in which the %%credential^credential%% is to be digitally signed), and pass it to the %%wallet^wallet%%-component of its %%principal^principal%% allowing it to be issued."
 date: 20210601
 ---
 
@@ -18,13 +18,13 @@ In other SSI contexts, this term has a different meaning. We intend to rework th
 :::
 
 ### Short Description
-An **issuer** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that structures sets of (related) statements/claims (e.g. as produced by the %%Transaction Data Discloser|transaction-data-discloser%%) in a package, adds metadata which includes e.g. a timestamp at which this was done, ensures that it is digitally signed on behalf of its %%owner|owner%% (so that third %%parties|party%% can prove its provenance and integrity). Another function of the issuer is to handle revocation (and (un)suspension) of credentials that it has issued. For such tasks, it relies on functions that are made available by the SSI Protocols and Crypto Layer.
+An **issuer** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture)) that structures sets of (related) statements/claims (e.g. as produced by the %%Transaction Data Discloser|transaction-data-discloser%%) in a package, adds metadata which includes e.g. a timestamp at which this was done, ensures that it is digitally signed on behalf of its %%owner|owner%% (so that third %%parties|party%% can prove its provenance and integrity). Another function of the issuer is to handle revocation (and (un)suspension) of credentials that it has issued. For such tasks, it relies on functions that are made available by the SSI Protocols and Crypto Layer.
 
 ### Purpose
 The purpose of the Issuer function is.
 
 ### Criteria
-A **Issuer** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch) whose function is to ... (tbd).
+A **Issuer** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture) whose function is to ... (tbd).
 
 ### Functionality
 

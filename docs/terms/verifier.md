@@ -8,8 +8,8 @@ termid: verifier
 formphrases: verifier{ss}
 status: draft
 grouptags:
-hoverText: "Verifier (functional component): the capability to request Peer Agents to present (provide) data from credentials (of a specified kind, issued by specified Parties), and to verify such responses (check structure, signatures, dates), according to its Principal's Verifier Policy."
-glossaryText: "the capability to request %%peer agents^peer-agent%% to present (provide) data from credentials (of a specified kind, issued by specified %%parties^party%%), and to verify such responses (check structure, signatures, dates), according to its %%principal^principal%%'s %%verifier policy^verifier-policy%%."
+hoverText: "Verifier (functional component): a component that implements the capability to request Peer Agents to present (provide) data from credentials (of a specified kind, issued by specified Parties), and to verify such responses (check structure, signatures, dates), according to its Principal's Verifier Policy."
+glossaryText: "a component that implements the capability to request %%peer agents^peer-agent%% to present (provide) data from credentials (of a specified kind, issued by specified %%parties^party%%), and to verify such responses (check structure, signatures, dates), according to its %%principal^principal%%'s %%verifier policy^verifier-policy%%."
 date: 20210601
 ---
 
@@ -18,7 +18,7 @@ In other SSI contexts, this term has a different meaning. We intend to rework th
 :::
 
 ### Short Description
-A **Verifier** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that supports the %%Transaction Data Collector|transaction-data-collector%% as it tries to acquire %%(verifiable) credentials|credential%% from (an %%agent|agent%% of) some other %%party|party%%, for the purpose of negotiating a %%business transaction|transaction%%.
+A **Verifier** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture)) that supports the %%Transaction Data Collector|transaction-data-collector%% as it tries to acquire %%(verifiable) credentials|credential%% from (an %%agent|agent%% of) some other %%party|party%%, for the purpose of negotiating a %%business transaction|transaction%%.
 
 It does so by:
 - creating %%presentation r|presentation-request%% (or Presentation Definition as it is called in the [draft DIF specfication for Presentation Exchange](https://identity.foundation/presentation-exchange)) that ask for such credentials,
@@ -35,7 +35,7 @@ Additional content is needed here.
 The purpose of the Verifier function is.
 
 ### Criteria
-A **Verifier** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch) whose function is to ... (tbd).
+A **Verifier** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture) whose function is to ... (tbd).
 
 ### Functionality
 

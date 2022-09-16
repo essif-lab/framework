@@ -26,7 +26,7 @@ hoverText: "Transaction Data Collector: a functional component that collects suf
 ---
 
 ### Short Description
-A **Transaction Data Collector** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that a [party](@) may use to collect sufficient and [validated](@) data for deciding whether or not a request (typically for a product or a service) is to be serviced.
+A **Transaction Data Collector** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture)) that a [party](@) may use to collect sufficient and [validated](@) data for deciding whether or not a request (typically for a product or a service) is to be serviced.
 
 ### Purpose
 The purpose of a Transaction Data Collector is to collect sufficient and [validated](@) data that eneables (an [agent](@) of) its [principal](@) to decide whether or not some request (typically for a product or a service) is to be serviced.
@@ -47,7 +47,7 @@ During the time in which a Transaction Data Collector is collecting data for a s
 A Transaction Data Collector benefits from generic APIs or (G)UIs that allow it to simply ask for the data that it requires. Specifically for SSI, the Transaction Data Collector uses the [eSSIF-Glue](@) interface to access the [Verifier](@) functionalities.
 
 ### Criteria
-A **Transaction Data Collector** is a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch) that
+A **Transaction Data Collector** is a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture) that
 - services requests by [digital](@) and non-digital [agents](@), for providing a product or service, thereby starting a [transaction](@);
 - can setup, accept and tear-down [communication channels](@) of various kinds, with [digital](@) and/or non-digital [colleagues](@) of that [requesting agent](@),[^peer-agents] as appropriate for the data exchanges that are needed to conduct the transactions;
 - can use any appropriate [communication channel](@) with a [peer agent](@) to:
@@ -77,7 +77,7 @@ Thus, the Transaction Data Collector is generally considered capable of obtainin
 
 In order to acquire data through SSI mechanisms for filling in a form for a specific kind of transaction, the Transaction Data Collector needs to know what kinds of credentials it should ask for, which [parties](@) its Principal trusts to issue such credentials, what kinds of verification proofs for such credentials must hold and which may be disregarded.[^3] Also, when the Transaction Data Collector gets a credential that satisfies the necessary verification proofs, it needs a way to map the contents of that credential to the structure of the transaction context that is used internally by (other systems of) its Principal.[^4] Also, as the Transaction Data Collector gets more and more data - which it may get through multiple, different channels - it needs to determine whether or not the resulting set is sufficiently consistent and coherent.[^5]
 
-In order to make the Transaction Data Collector work, a Validation Policy (or Transaction Data Collector Policy) is created by, or on behalf of the Principal, which specifies at least:
+In order to make the Transaction Data Collector work, a Validator Policy (or Transaction Data Collector Policy) is created by, or on behalf of the Principal, which specifies at least:
 
 -   the kinds of transactions its Principal is willing to (electronically) engage in, from both the requester and the provider perspectives;
 -   for each such transaction termtype:

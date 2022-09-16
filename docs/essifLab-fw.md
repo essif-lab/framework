@@ -79,12 +79,12 @@ When an %%agent|agent%% is involved in such a %%transaction|transaction%%, it wi
 
 The figure below is an overview of the most important *functional* components that any %%party|party%% needs to conduct electronic %%(business) transactions|transaction%%.
 
+<p align="center">
 <img
   alt="eSSIF-Lab Single Party Functional Architecture Overview"
   src={useBaseUrl('images/essif-lab-functional-architecture.png')}
-/>
-
-*Figure 1. eSSIF-Lab Single Party Functional Architecture Overview.*
+/><i>Figure 1. eSSIF-Lab Single Party Functional Architecture Overview.</i>
+</p>
 
 We use the following coloring conventions in this figure: red is business related, which means that we do not consider this to be part of the SSI Infrastructure. Brown is used for policies, which are defined by (or on behalf) of the principal of the component that uses them to configure themselves, and/or act according to the %%principal's|principal%% preferences and %%policies|policy%%. Green is used for generic SSI infrastructure related functions, and blue represents functions that may be implemented as 'plug-ins' for specific SSI-related technologies.
 
@@ -156,14 +156,14 @@ The **SSI Tech APIs** interface layer is the union of the interfaces of the comp
 
 This section details the functional specifications of the components that are in scope of the eSSIF-Lab infrastructure, i.e. in the green (rounded) rectangle as shown in the figure below:
 
+<p align="center">
 <img
   alt="eSSIF-Lab infrastructural (functional) components"
   src={useBaseUrl('images/essif-lab-functional-architecture-infra.png')}
-/>
+/><i>Figure 2: eSSIF-Lab infrastructural (functional) components.</i>
+</p>
 
-*Figure 2: eSSIF-Lab infrastructural (functional) components.*
-
-### 3.1.  Data Collector and Validation Policy
+### 3.1.  Data Collector and Validator Policy
 
 The purpose of the %%data collector|data-collector%% is to produce (transaction-type specific) data structures or forms, each of which contains the necessary and sufficient data that allows (an %%agent|agent%% of) its %%principal|principal%% to decide whether or not to engage in a (new) %%transaction|transaction%% of the specified type.
 
@@ -180,7 +180,7 @@ Thus, the %%data collector|data-collector%% is generally considered capable of o
 
 In order to acquire data through SSI mechanisms for filling in a form for a specific kind of %%transaction|transaction%%, the %%data collector|data-collector%% needs to know what kinds of %%credentials|credential%% it should ask for, which %%parties|party%% its %%principal|principal%% trusts to issue such %%credentials|credential%%, what kinds of verification proofs for such %%credentials|credential%% must hold and which may be disregarded.[^DC.3] Also, when the %%data collector|data-collector%% gets a %%credential|credential%% that satisfies the necessary verification proofs, it needs a way to map the contents of that %%credential|credential%% to the structure of the %%transaction|transaction%% context that is used internally by (other systems of) its %%principal|principal%%.[^DC.4] Also, as the %%data collector|data-collector%% gets more and more data - which it may get through multiple, different channels - it needs to determine whether or not the resulting set is sufficiently consistent and coherent.[^DC.5]
 
-In order to make the %%data collector|data-collector%% work, a %%validation policy|validation-policy%% (or %%data collector policy|data-collector-policy%%) is created by, or on behalf of the %%principal|principal%%, which specifies at least:
+In order to make the %%data collector|data-collector%% work, a %%validator policy|validator-policy%% (or %%data collector policy|data-collector-policy%%) is created by, or on behalf of the %%principal|principal%%, which specifies at least:
 
 -   the kinds of %%transactions|transaction%% the %%principal|principal%% is willing to (electronically) engage in, from both the requester and the provider perspectives;
 -   for each such transaction termtype:
@@ -366,12 +366,12 @@ This chapter explains at a high level how electronic %%business transactions|tra
 
 <br/>
 
+<p align="center">
 <img
   alt="High-level transaction overview"
   src={useBaseUrl('images/essif-lab-high-level-trx-overview.png')}
-/>
-
-*Figure 3: High-level transaction overview.*
+/><i>Figure 3: High-level transaction overview.</i>
+</p>
 
 The adjacent figure shows how a %%transaction|transaction%% is conducted at the highest abstraction level. One %%party|party%%, called the 'Requester', sends a request for a product or service to another %%party|party%% (that we will call the 'Provider'). Then, they start to negotiate a 'transaction agreement', which means that they exchange data through various channels for the purpose of establishing the details of the product/service to be provided and the compensation, data needed to mitigate %%transaction|transaction%% %%risks|risk%%, etc., all of which is necessary for the %%parties|party%% to (individually/subjectively) decide whether or not to commit to the %%transaction|transaction%%. Section 3.2 provides more detail about this phase.
 
@@ -387,12 +387,12 @@ Please note that while %%transactions|transaction%% are symmetrical in nature (i
 
 This phase starts by the requester sending a %%transaction request|transaction-request%% to the provider, and ends whenever either one of the %%parties|party%% quits, or both %%parties|party%% commit.
 
+<p align="center">
 <img
   alt="High-level transaction negotiation"
   src={useBaseUrl('images/essif-lab-high-level-trx-negotiation.png')}
-/>
-
-*Figure 4: High-level transaction negotiation.*
+/><i>Figure 4: High-level transaction negotiation.</i>
+</p>
 
 This figure shows the high-level interactions during this phase. It starts by the requester sending a request for a product or service to the provider. Typically, this would lead to the provider presenting a (web) form the requester must fill in. In the eSSIF-Lab context, the form will also provide a means for setting up a SSI %%communication channel|communication-channel%%, i.e. a secure %%communication channel|communication-channel%% through which provider and requester can both request and obtain (%%presentations|presentation%% of) %%credentials|credential%%, the contents of which they can use to fill in the form. Then, after the form is 'clean', i.e. contains sufficient information for deciding whether or not to commit to the %%transaction|transaction%%, this phase ends.
 
@@ -447,12 +447,12 @@ It is a task of the %%data collector|data-collector%% to orchestrate the inputs:
 
 Because of this orchestration, the interface to the %%verifier|verifier%% component can be quite simple; it is shown in the image below:
 
+<p align="center">
 <img
   alt="Generic Verification with SSI service"
   src={useBaseUrl('images/generic-verification-with-ssi-service.png')}
-/>
-
-*Figure 5: Generic Verification with SSI service.*
+/><i>Figure 5: Generic Verification with SSI service.</i>
+</p>
 
 The request %%identifier|identifier%% is included in messages between the %%data collector|data-collector%% and %%verifier|verifier%% so as to allow them to handle different %%transactions|transaction%% at the same time.
 
@@ -464,9 +464,9 @@ We assume that the provider has specified the form and the associated validation
 *The eSSIF-Lab functional architecture is not final. This section is an example of how work that is currently being done may already be documented for the purpose of furthering discussions and providing inspiration to readers.*
 :::
 
+<p align="center">
 <img
   alt="Generic Issuing with SSI service"
   src={useBaseUrl('images/generic-issuing-with-ssi-service.png')}
-/>
-
-*Figure 6: Generic Issuing with SSI service.*
+/><i>Figure 6: Generic Issuing with SSI service.</i>
+</p>

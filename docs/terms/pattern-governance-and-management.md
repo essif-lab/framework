@@ -21,12 +21,12 @@ The **Governance and Management pattern** captures the concepts and relations th
 
 Whether or not an %%objective|objective%% is realized can be seen by the status of the associated results, as is explained [there](../terms/objective). The following figure is a recap of the %%objective|objective%%-concept (using the usual **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**):
 
+<p align="center">
 <img
   alt="A Party's Objectives"
   src={useBaseUrl('images/essif-lab-objective.png')}
-/>
-
-*Figure 1. Parties and their objectives.*
+/><i>Figure 1. Parties and their objectives.</i>
+</p>
 
 The core property of this model is that every %%objective|objective%% has precisely one %%owner|owner%%, which is the %%party|party%% that pursues the realization of the associated results, from one (or both) of the two following perspectives:
 
@@ -38,12 +38,12 @@ The core property of this model is that every %%objective|objective%% has precis
 
 When a %%party|party%% both %%manages|management%% and %%governs|governance%% an %%objective|objective%%, it is in full control of the production and the usability of the associated results. This is easy to do when compared to the situation in which a %%party|party%% either %%manages|management%% or %%governs|governance%% its %%objective|objective%%, but not both. This governance and management pattern focuses on the latter situation. The following figure illustrates this situation:
 
+<p align="center">
 <img
   alt="governance and management"
   src={useBaseUrl('images/essif-lab-governance-and-management.png')}
-/>
-
-*Figure 1. Governing and Managing objectives.*
+/><i>Figure 1. Governing and Managing objectives.</i>
+</p>
 
 The figure shows four %%parties|party%%, distinguished by color - let's call them Red, Yellow, Blue and Green. We assume that each party %%owns|owner%% multiple %%objectives|objective%%, but in the figure we only show a single one, each of which with a description that %%identifies|identify%% that %%objective|objective%% from the set of %%objectives|objective%% of each %%party|party%%. The figure also shows one of the results associated with each of these %%objectives|objective%%, again phrased such that the %%objective|objective%% %%owner|owner%% knows what this really %%means|semantics%%. So, Red %%governs|governance%% an %%objective|objective%% that it describes as "Get a transportation means for work-travel". The associated result "transportation means" then doesn't come as a surprise.
 

@@ -8,13 +8,13 @@ termid: wallet
 formphrases: wallet{ss}
 status: draft
 grouptags:
-hoverText: "Wallet (functional component): the capability to securely store data as requested by Colleague Agents, and to provide stored data to Colleague Agents or Peer Agents, all in Compliance with the rules of its Principal's Wallet Policy."
-glossaryText: "the capability to securely store data as requested by %%colleague agents^colleague%%, and to provide stored data to %%colleague agents^colleague%% or %%peer agents^peer-agent%%, all in %%compliance^compliance%% with the rules of its %%principal^principal%%'s %%wallet policy^wallet-policy%%."
+hoverText: "Wallet (functional component): a component that implements the capability to securely store data as requested by Colleague Agents, and to provide stored data to Colleague Agents or Peer Agents, all in Compliance with the rules of its Principal's Wallet Policy."
+glossaryText: "a component that implements the capability to securely store data as requested by %%colleague agents^colleague%%, and to provide stored data to %%colleague agents^colleague%% or %%peer agents^peer-agent%%, all in %%compliance^compliance%% with the rules of its %%principal^principal%%'s %%wallet policy^wallet-policy%%."
 date: 20210601
 ---
 
 ### Short Description
-A **Wallet** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that provides (secure) storage of credentials - regardless of the %%party|party%% that has issued them (i.e. so-called self-signed credentials may be stored there, too). Another task of the wallet is to (securely) store (private) keys that can be used to sign or seal data on behalf of its Principal. Perhaps the most important task of the Wallet is to ensure that credentials and keys can only become available to another component if they have the same (single) Principal, and will become available if such other component implements a functionality that needs it.
+A **Wallet** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture)) that provides (secure) storage of credentials - regardless of the %%party|party%% that has issued them (i.e. so-called self-signed credentials may be stored there, too). Another task of the wallet is to (securely) store (private) keys that can be used to sign or seal data on behalf of its Principal. Perhaps the most important task of the Wallet is to ensure that credentials and keys can only become available to another component if they have the same (single) Principal, and will become available if such other component implements a functionality that needs it.
 
 :::info Editor's note
 Additional content is needed here.
@@ -24,7 +24,7 @@ Additional content is needed here.
 The purpose of the Wallet function is.
 
 ### Criteria
-A **Wallet** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch) whose function is to ... (tbd).
+A **Wallet** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture) whose function is to ... (tbd).
 
 ### Functionality
 

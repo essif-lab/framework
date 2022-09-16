@@ -18,9 +18,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 This is work that is being envisaged, and needs a good deal of work.
 :::
 
+:::info Editor's note
+This work needs to be compared with and integrated with (or separated from) the contents of the %%Decentralized Risk Management pattern|pattern-decentralized-risk-management%%
+:::
+
 # Decentralized, Governance, Risk Management and Compliance
 
-Traditional %%risk management|risk-management%% (RM) %%frameworks|normative-framework%%, such as ISO 31000, or COSO, have emerged in a time where centralized organizational leadership and auditing, and cyclic (PDCA) processes for %%risk management|risk-management%%, were prevalent. Most (large) enterprises have adopted (a mix of) them, and many have been certified (e.g. against ISO 9001 or ISO 27001) thereby demonstrating they govern and run the associated (risk)management processes as intended, and are compliant, not just by such standards, but also with applicable regulations.
+Traditional %%risk management|risk-management%% (RM) %%frameworks|normative-framework%%, such as [ISO 31000](https://www.iso.org/obp/ui/#iso:std:iso:31000:ed-2:v1:en), [COSO](https://www.coso.org/Pages/default.aspx), or [NIST 800-30](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf), have emerged in a time where centralized organizational leadership and auditing, and cyclic (PDCA) processes for %%risk management|risk-management%%, were prevalent. Most (large) enterprises have adopted (a mix of) them, and many have been certified (e.g. against ISO 9001 or ISO 27001) thereby demonstrating they govern and run the associated (risk)management processes as intended, and are compliant, not just by such standards, but also with applicable regulations.
 
 All %%frameworks|normative-framework%% start by requiring that you define the %%scope|scope%% (also called 'context') of your management processes. And for good reason: you will be in charge of whatever you will be managing in such processes. What the %%frameworks|normative-framework%% could better emphasize is that you quickly get into trouble if you define that scope larger than your own %%scope of control|scope-of-control%%, as it is hard to manage things that you cannot control.
 

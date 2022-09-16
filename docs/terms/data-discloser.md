@@ -14,7 +14,7 @@ date: 20210601
 ---
 
 ### Short Description
-A **Data Discloser** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that applications (that work for some %%Party|party%%) can call to communicate things such as:
+A **Data Discloser** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture)) that applications (that work for some %%Party|party%%) can call to communicate things such as:
 - the results of a business transaction (e.g. statements to confirm that a transaction happened, thereby supplying appropriate details)
 - the status of a business transaction (e.g. that an order has been received in good order, that delivery of an order is delayed or otherwise changed)
 - knowledge (including judgements) that this Party has about %%Entities|entity%% (people, organizations, things, orders, deliveries, etc.)
@@ -27,7 +27,7 @@ The Data Discloser uses the %%eSSIF-Glue|essif-glue%% interface to access the %%
 The purpose of the Data Discloser component is to state the (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other Parties. A special kind of result is the (provisioning of) a credential that its Principal already has created.
 
 ### Criteria
-A **Data Discloser** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch) that is capable of stating (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other %%Parties|party%%.
+A **Data Discloser** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture) that is capable of stating (various, sometimes intermediary) results of transactions, by collecting data from the Business Data Stores, and creating a set of (related) statements/claims that can subsequently be issued to other %%Parties|party%%.
 
 ### Functionality
 Typically, and at any point in time, Parties are capable of expressing statements about entities that they know to exist. They could express statements about individuals, about themselves, the state of transactions, and so on. We will use the term '**%%subject|subject%% (of a statement of a Party)**' to refer to the entity that this Party knows to exist, and about whom/which the statement has been made.

@@ -14,7 +14,7 @@ date: 20210601
 ---
 
 ### Short Description
-A **Data Collector** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that a %%party|party%% may use to collect sufficient and %%validated|validate%% data for deciding whether or not a request (typically for a product or a service) is to be serviced.
+A **Data Collector** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture)) that a %%party|party%% may use to collect sufficient and %%validated|validate%% data for deciding whether or not a request (typically for a product or a service) is to be serviced.
 
 ### Purpose
 The purpose of a Data Collector is to collect sufficient and %%validated|validate%% data that enables (an %%agent|agent%% of) its %%principal|principal%% to decide whether or not some request (typically for a product or a service) is to be serviced.
@@ -35,7 +35,7 @@ During the time in which a data collector is collecting data for a specific %%tr
 A data collector benefits from generic APIs or (G)UIs that allow it to simply ask for the data that it requires. Specifically for SSI, the data collector uses the %%eSSIF-Glue|essif-glue%% interface to access the %%Verifier|verifier%% functionalities.
 
 ### Criteria
-A **Data Collector** is a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch) that
+A **Data Collector** is a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture) that
 - services requests by %%digital|agent%% and non-digital %%agents|agent%%, for providing a product or service, thereby starting a %%transaction|transaction%%;
 - can setup, accept and tear-down communication channels of various kinds, with %%digital|colleague%% and/or non-digital %%colleagues|colleague%% of that %%requesting agent|agent%%,[^peer-agents] as appropriate for the data exchanges that are needed to conduct the transactions;
 - can use any appropriate communication channel with a %%peer-agent|peer-agent%% to:
@@ -65,7 +65,7 @@ Thus, the Data Collector is generally considered capable of obtaining data throu
 
 In order to acquire data through SSI mechanisms for filling in a form for a specific kind of transaction, the Data Collector needs to know what kinds of credentials it should ask for, which Parties its Principal trusts to issue such credentials, what kinds of verification proofs for such credentials must hold and which may be disregarded.[^3] Also, when the Data Collector gets a credential that satisfies the necessary verification proofs, it needs a way to map the contents of that credential to the structure of the transaction context that is used internally by (other systems of) its Principal.[^4] Also, as the Data Collector gets more and more data - which it may get through multiple, different channels - it needs to determine whether or not the resulting set is sufficiently consistent and coherent.[^5]
 
-In order to make the Data Collector work, a Validation Policy (or Data Collector Policy) is created by, or on behalf of its Principal, which specifies at least:
+In order to make the Data Collector work, a Validator Policy (or Data Collector Policy) is created by, or on behalf of its Principal, which specifies at least:
 
 -   the kinds of transactions the Principal is willing to (electronically) engage in, from both the requester and the provider perspectives;
 -   for each such transaction termtype:

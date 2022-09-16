@@ -43,12 +43,12 @@ Perhaps the most important contribution that the eSSIF-Lab project aims to make,
 
 The figure below is a high-level visualization of the filling in and validation parts:
 
+<p align="center">
 <img
   alt="High-level visualization of the filling in and validation of a form."
   src={useBaseUrl('images/essif-lab-vision-context.png')}
-/>
-
-*Figure 1. High-level visualization of the filling in and validation of a form.*
+/><i>Figure 1. High-level visualization of the filling in and validation of a form.</i>
+</p>
 
 The transaction that is envisaged here is the issuing of a parking permit. Participants are a person (requestor) that requests such a permit, and an organization (provider) that can issue such a permit. The requestor has one electronic agent, *the Requestor Agent (RA)*, i.e. an SSI-aware app on their mobile phone that can access a secure storage that contains 'credentials', i.e. data that is digitally signed by some third %%party|party%%, thus attesting to the truth of that data. The provider has two agents: one is an SSI-aware component *Provider Agent (PA_* that works with the web-server that presents the form, and the other is a person *P* whose task is to validate any data (on behalf of the provider) that is not validated electronically. The form itself contains a means, e.g. a QR-code or a deep-link, that allows *RA* and *PA* to set up a secure %%communication channel|communication-channel%% (e.g. SSL, [DIDComm](https://openssi.github.io/peer-did-method-spec/)) and agree on the specific form that needs to be filled in.
 
@@ -58,4 +58,4 @@ When the transaction has been completed, both participants can issue a credentia
 
 --------
 
-[^1]: Since transactions are symmetric, the requestor could also have a form that the provider needs to fill in so as to provide the requestor with the data it needs to commit to that transaction. We have left that out of this description for the sake of simplicity. However, the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch) does take this into account.
+[^1]: Since transactions are symmetric, the requestor could also have a form that the provider needs to fill in so as to provide the requestor with the data it needs to commit to that transaction. We have left that out of this description for the sake of simplicity. However, the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture) does take this into account.

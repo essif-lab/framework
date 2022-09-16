@@ -8,8 +8,10 @@ date: 20210908
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-Within eSSIF-Lab, we maintain a set of [mental models](https://en.wikipedia.org/wiki/Mental_model), which we also call %%patterns|pattern%%, which are descriptions, both casual and formal, of sets of %%concepts|concept%% (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic.They have been crafted so that they may serve as a basis for architecting, designing, and implementing IT components and their %%governance|governance%% processes.
+Within eSSIF-Lab, we maintain a set of [mental models](https://en.wikipedia.org/wiki/Mental_model), which we also call %%patterns|pattern%%, which are descriptions, both casual and formal, of sets of %%concepts|concept%% (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic.[^1]  They have been crafted so that they may serve as a basis for architecting, designing, and implementing IT components and their %%governance|governance%% processes.
 We stress that while they represent a specific way of looking at things, there are many more, and in the end, all that matters is the extent in which they are successfully used.
+
+[^1]: Others also call this 'ontologies'. Here are some [lecture notes](http://www.cs.ru.nl/~tvdw/DM/LectureNotesA.pdf) on the systematic constructions of an ontology by Th. P. van der Weide (2007).
 
 <img
   alt="George E.P. Box: All models are wrong, but some are useful"

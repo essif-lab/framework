@@ -64,7 +64,7 @@ dutyrighttype = "%{dutyright}-types?"
 
 // filter "docs/terms/identity.md"
 // filter "docs/**/*.md"
-filter "docs/**/*.md"
+filter "docs/*.md, docs/terms/*.md"
 
 // PREPROCESSING: convert single-%-notations into %%-notations.
 
@@ -74,6 +74,12 @@ with "'"
 // Convert the common typo `toin` to `tion`
 replace-regex "toin"
 with "tion"
+// Convert refsyntax `[showtext](@)` with `%%showtext|showtext%%`
+replace-regex "\[([^\]]+?)\]\(@\)"
+with "%%$1|$1%%"
+// Convert refsyntax `[showtext](reftext@)` with `%showtext|reftext%`
+replace-regex "\[([^\]]+?)\]\(([^\)@]+?)@\)"
+with "%%$1|$2%%"
 
 // First, convert %show text% into %%show text%% in most of the cases... (it isn't fool proof!)
 // Use test sets: use the replace-regex to find texts in this file. Matches should match, non-matches should not.
@@ -155,7 +161,7 @@ replace-regex "%{mid}(definition|dependent|dictionary(-file)?)%{ss}?%{end}"
 with "$1"
 replace-regex "%{mid}\(?(?:electronic|digital)\)?-(actor|agent|colleague|communication-channel)%{ss}%{end}"
 with "$1"
-replace-regex "%{mid}\(?(?:electronic|digital)\)?-(polic)%{yies}%{end}"
+replace-regex "%{mid}\(?(?:electronic|digital|business|operational)\)?-(polic)%{yies}%{end}"
 with "$1y"
 
 replace-regex "%{mid}(%{dutyrighttype}|%{dutyright})%{end}"
