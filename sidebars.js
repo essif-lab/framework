@@ -62,7 +62,7 @@ const sidebars = {
       items: [
         'generic-governance-process',
         // 'essifLab-fw-bus-arch',
-        'essifLab-fw-conceptual-architecture',
+        'essifLab-fw-conceptual-architecture-framework',
         'essifLab-fw-backlog',
       ],
     },

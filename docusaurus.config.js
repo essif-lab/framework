@@ -58,9 +58,9 @@ module.exports = {
           title: 'eSSIF-lab Framework',
           items: [
             { label: 'Framework', to: 'docs/essifLab-fw' },
-            { label: 'Governance', to: 'docs/essifLab-fw-governance' },
+            // { label: 'Governance', to: 'docs/essifLab-fw-governance' },
             // { label: 'Business-architecture', to: 'docs/essifLab-fw-bus-arch' },
-            { label: 'Conceptual architecture', to: 'docs/essifLab-fw-conceptual-architecture' },
+            { label: 'Conceptual architecture', to: 'docs/essifLab-fw-conceptual-architecture-framework' },
           ],
         },
         {

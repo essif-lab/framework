@@ -74,10 +74,13 @@ with "'"
 // Convert the common typo `toin` to `tion`
 replace-regex "toin"
 with "tion"
-// Convert refsyntax `[showtext](@)` with `%%showtext|showtext%%`
+// Convert refsyntax `[showtext@]` to `%%showtext|showtext%%`
+replace-regex "\[([^\@]]+?)@\]"
+with "%%$1|$1%%"
+// Convert refsyntax `[showtext](@)` to `%%showtext|showtext%%`
 replace-regex "\[([^\]]+?)\]\(@\)"
 with "%%$1|$1%%"
-// Convert refsyntax `[showtext](reftext@)` with `%showtext|reftext%`
+// Convert refsyntax `[showtext](reftext@)` to `%showtext|reftext%`
 replace-regex "\[([^\]]+?)\]\(([^\)@]+?)@\)"
 with "%%$1|$2%%"
 
@@ -139,6 +142,7 @@ with "authority"
 
 // [C]
 // for 'claim', see 'statement'
+// wrt 'capability': authors should explicitly refer to either `capability-of-a-party` or `capability-of-an-actor`
 replace-regex "%{mid}(communit)%{yies}%{end}"
 with "$1y"
 replace-regex "%{mid}compl(y|iant|iance|iancy)%{end}"
@@ -246,9 +250,8 @@ with "$1party"
 // The %%party|party%% is also an %%actor|actor%% (see that %%party-actor-action pattern|party-actor-action-pattern%% for details)
 replace-regex "%{mid}([a-z][^%]*?)-pattern%{end}"
 with "pattern-$1"
-// For holder, issuer, verifier and wallet policies, see [H-I-J-K]
-replace-regex "%{mid}(|transaction-data-(collector|discloser)-)polic%{yies}%{end}"
-with "$1policy"
+replace-regex "%{mid}information-process(es)?%{end}"
+with "information-process"
 
 // [Q-R]
 // For 'rights', see [D]uties
@@ -291,9 +294,9 @@ with "trust-level"
 // for verifier and validator stuff - see holder
 replace-regex "%{mid}(?:\(?verifiable\)?-)?(credential)%{ss}%{end}"
 with "$1"
-replace-regex "%{mid}(?:data-)?(?:valid|validat(ing|ion)|validate(d|s))%{end}"
+replace-regex "%{mid}(?:data-)?(?:valid|validat(able|ing|ion)|validate(d|s))%{end}"
 with "validate"
-replace-regex "%{mid}(?:data-)?(?:verif(y|ied|ies|ying|ication))%{end}"
+replace-regex "%{mid}(?:data-)?(?:verif(y|iable|ied|ies|ying|ication))%{end}"
 with "verify"
 replace-regex "%{mid}vocabular%{yies}%{end}"
 with "vocabulary"
