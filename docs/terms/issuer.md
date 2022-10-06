@@ -8,8 +8,8 @@ termid: issuer
 formphrases: issuer{ss}
 status: draft
 grouptags:
-hoverText: "Issuer (functional component): a component that implements the [capability](capability@) to construct Credentials from data objects, according to the content of its Principal's Issuer-Policy (specifically regarding the way in which the Credential is to be digitally signed), and pass it to the Wallet-component of its Principal allowing it to be issued."
-glossaryText: "a component that implements the [capability](capability@) to construct %%credentials^credential%% from data objects, according to the content of its %%principal^principal%%'s %%issuer^issuer%%-Policy (specifically regarding the way in which the %%credential^credential%% is to be digitally signed), and pass it to the %%wallet^wallet%%-component of its %%principal^principal%% allowing it to be issued."
+hoverText: "Issuer (functional component): a component that implements the Capability to construct Credentials from data objects, according to the content of its Principal's Issuer-Policy (specifically regarding the way in which the Credential is to be digitally signed), and pass it to the Wallet-component of its Principal allowing it to be issued."
+glossaryText: "a component that implements the %%capability^capability%% to construct %%credentials^credential%% from data objects, according to the content of its %%principal^principal%%'s %%issuer^issuer%%-Policy (specifically regarding the way in which the %%credential^credential%% is to be digitally signed), and pass it to the %%wallet^wallet%%-component of its %%principal^principal%% allowing it to be issued."
 date: 20210601
 ---
 
@@ -19,7 +19,7 @@ In other SSI contexts, this term has a different meaning. We intend to rework th
 :::
 
 ### Short Description
-An **issuer** is a (functional) component that implements the [capability](capability@) to construct %%credentials|credential%% from data objects, according to the content of its %%principal's|principal%% %%issuer-policy|issuer-policy%% (specifically regarding the way in which the %%credential|credential%% is to be digitally signed), and pass it to the %%wallet|wallet%%-component of its %%principal|principal%% allowing it to be issued.
+An **issuer** is a (functional) component that implements the %%capability|capability%% to construct %%credentials|credential%% from data objects, according to the content of its %%principal's|principal%% %%issuer-policy|issuer-policy%% (specifically regarding the way in which the %%credential|credential%% is to be digitally signed), and pass it to the %%wallet|wallet%%-component of its %%principal|principal%% allowing it to be issued.
 
 ### Purpose
 The purpose of the Issuer function is.

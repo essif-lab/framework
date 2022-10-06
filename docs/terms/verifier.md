@@ -8,8 +8,8 @@ termid: verifier
 formphrases: verifier{ss}
 status: draft
 grouptags:
-hoverText: "Verifier (functional component): a component that implements the [capability](capability@) to request Peer Agents to present (provide) data from credentials (of a specified kind, issued by specified Parties), and to verify such responses (check structure, signatures, dates), according to its Principal's Verifier Policy."
-glossaryText: "a component that implements the [capability](capability@) to request %%peer agents^peer-agent%% to present (provide) data from credentials (of a specified kind, issued by specified %%parties^party%%), and to verify such responses (check structure, signatures, dates), according to its %%principal^principal%%'s %%verifier policy^verifier-policy%%."
+hoverText: "Verifier (functional component): a component that implements the Capability to request Peer Agents to present (provide) data from credentials (of a specified kind, issued by specified Parties), and to verify such responses (check structure, signatures, dates), according to its Principal's Verifier Policy."
+glossaryText: "a component that implements the %%capability^capability%% to request %%peer agents^peer-agent%% to present (provide) data from credentials (of a specified kind, issued by specified %%parties^party%%), and to verify such responses (check structure, signatures, dates), according to its %%principal^principal%%'s %%verifier policy^verifier-policy%%."
 date: 20210601
 ---
 
@@ -19,7 +19,7 @@ In other SSI contexts, this term has a different meaning. We intend to rework th
 :::
 
 ### Short Description
-A **Verifier** is is a (functional) component that implements the [capability](capability@) to request %%peer agents|peer-agent%% to present (provide) data from %%credentials|credential%% (of a specified kind, issued by specified %%parties|party%%), and to %%verify|verify%% such responses (check structure, signatures, dates), according to its %%principal's|principal%% %%verifier policy|verifier-policy%%.
+A **Verifier** is is a (functional) component that implements the %%capability|capability%% to request %%peer agents|peer-agent%% to present (provide) data from %%credentials|credential%% (of a specified kind, issued by specified %%parties|party%%), and to %%verify|verify%% such responses (check structure, signatures, dates), according to its %%principal's|principal%% %%verifier policy|verifier-policy%%.
 
 :::info Editor's note
 Additional content is needed here.

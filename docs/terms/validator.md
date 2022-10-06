@@ -8,8 +8,8 @@ termid: validator
 formphrases: validator{ss}
 status: draft
 grouptags:
-hoverText: "Validator (functional component): a component that implements the [capability](capability@) to determine whether or not (verified) data is valid to be used for some specific purpose(s)."
-glossaryText: "a component that implements the [capability](capability@) to determine whether or not (%%verified^verify%%) data is valid to be used for some specific purpose(s)."
+hoverText: "Validator (functional component): a component that implements the Capability to determine whether or not (verified) data is valid to be used for some specific purpose(s)."
+glossaryText: "a component that implements the %%capability^capability%% to determine whether or not (%%verified^verify%%) data is valid to be used for some specific purpose(s)."
 date: 20210802
 ---
 
@@ -19,7 +19,7 @@ In other SSI contexts, this term has a different meaning. We intend to rework th
 :::
 
 ### Short Description
-A **validator** is a (functional) component that implements the [capability](capability@) to determine whether or not (verified) data is %%valid|validate%% to be used for some specific purpose(s).
+A **validator** is a (functional) component that implements the %%capability|capability%% to determine whether or not (verified) data is %%valid|validate%% to be used for some specific purpose(s).
 
 :::info Editor's note
 Additional content is needed here.

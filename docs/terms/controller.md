@@ -28,7 +28,7 @@ An %%actor|actor%% is said to be a **controller** of some %%entity|entity%% if a
 
 ### Notes
 - The [*GDPR*](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN) (Article 4(7)) defines 'controller' as the party that determines the purposes and means of the processing of personal data, which is different from how we defined it. The GDPR 'processor' (Article 4(8)), i.e. that processes personal data on behalf of a (GDPR-)controller, would (in our terms) control that personal data and hence qualify as controller.
-- In the [DID spec](https://www.w3.org/TR/did-core/) (of December 2021), the word 'controller' is used for the entity that controls (i.e., has the [capability](capability@) to change) the contents of a DID Document. However, as it is also used in the contest of [Verification Relationships](https://www.w3.org/TR/did-core/#verification-relationships), it is better understood as the %%party|party%% or %%actor|actor%% that is capable of wielding the private key material associated with a specific [verification method](https://www.w3.org/TR/did-core/#dfn-verification-method).
+- In the [DID spec](https://www.w3.org/TR/did-core/) (of December 2021), the word 'controller' is used for the entity that controls (i.e., has the %%capability|capability%% to change) the contents of a DID Document. However, as it is also used in the contest of [Verification Relationships](https://www.w3.org/TR/did-core/#verification-relationships), it is better understood as the %%party|party%% or %%actor|actor%% that is capable of wielding the private key material associated with a specific [verification method](https://www.w3.org/TR/did-core/#dfn-verification-method).
 
 ### Related Concepts
 - %%Controllership|controllership%%

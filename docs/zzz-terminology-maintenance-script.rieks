@@ -126,7 +126,7 @@ with "$1-$2"
 
 // [A]
 // For 'autonomous|autonomy', see 'self-sovereignty'
-replace-regex "%{mid}(actor|agent|assertion|attribute|author)%{ss}%{end}"
+replace-regex "%{mid}(actor|advertisement|agent|assertion|attribute|author)%{ss}%{end}"
 with "$1"
 replace-regex "%{mid}(action(-type)?|act(ing)?)%{ss}%{end}"
 with "action"
@@ -142,7 +142,9 @@ with "authority"
 
 // [C]
 // for 'claim', see 'statement'
-// wrt 'capability': authors should explicitly refer to either `capability-of-a-party` or `capability-of-an-actor`
+// wrt 'capability': authors should be aware of the distinction between `capability` (of a party) and `capability-of-an-actor`
+replace-regex "%{mid}capabilit%{yies}(?:-of-a-party)?%{end}"
+with "capability"
 replace-regex "%{mid}(communit)%{yies}%{end}"
 with "$1y"
 replace-regex "%{mid}compl(y|iant|iance|iancy)%{end}"
@@ -155,18 +157,14 @@ replace-regex "%{mid}communications?-(channel|session)%{ss}?%{end}"
 with "communication-$1"
 
 // [D]
-replace-regex "%{mid}data-(collector|discloser)-polic%{yies}%{end}"
-with "data-$1-policy"
-replace-regex "%{mid}data-(collector|discloser)%{ss}?%{end}"
-with "data-$1"
 replace-regex "%{mid}delegat(?:ed?|ing|or|ee)%{ss}?%{end}"
 with "delegate"
 replace-regex "%{mid}(definition|dependent|dictionary(-file)?)%{ss}?%{end}"
 with "$1"
 replace-regex "%{mid}\(?(?:electronic|digital)\)?-(actor|agent|colleague|communication-channel)%{ss}%{end}"
 with "$1"
-replace-regex "%{mid}\(?(?:electronic|digital|business|operational)\)?-(polic)%{yies}%{end}"
-with "$1y"
+replace-regex "%{mid}\(?(?:|business|digital|electronic|operational)\)?-?polic%{yies}%{end}"
+with "policy"
 
 replace-regex "%{mid}(%{dutyrighttype}|%{dutyright})%{end}"
 with "pattern-duties-and-rights"
@@ -193,11 +191,11 @@ with "guardianship-type"
 replace-regex "%{mid}(govern(or)?s?|governed(?:-by)?|government|governing(?:-part%{yies})?)%{end}"
 with "governance"
 
-// [H-I-J-K] (all holder, issuer, verifier and wallet stuff, too)
+// [H-I-J-K] (all holder, issuer, revocator, verifier and wallet stuff, too)
 // for associated policies, see [P]
-replace-regex "%{mid}(holder|issuer|verifier|validator|wallet|jurisdiction(-governor)?|knowledge(-governor)?)%{ss}%{end}"
+replace-regex "%{mid}(holder|issuer|revocator|verifier|validator|wallet|jurisdiction(-governor)?|knowledge(-governor)?)%{ss}%{end}"
 with "$1"
-replace-regex "%{mid}((holder|issuer|verifier|validation|wallet)-polic)%{yies}%{end}"
+replace-regex "%{mid}((holder|issuer|revocat(?:or|ion)|verifier|validat(?:or|ion)|wallet)-polic)%{yies}%{end}"
 with "$1y"
 replace-regex "%{mid}(individual|people|person|human(-being)?)%{ss}%{end}"
 with "human-being"
@@ -224,6 +222,8 @@ with "mandate"
 // [O]
 replace-regex "%{mid}onboard(ing|ed)?%{end}"
 with "onboarding"
+replace-regex "%{mid}outsourc(e|ing|ed)?%{end}"
+with "outsourcing"
 replace-regex "%{mid}own(er)?%{ss}%{end}"
 with "owner"
 replace-regex "%{mid}owning%{end}"

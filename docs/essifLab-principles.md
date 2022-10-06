@@ -19,13 +19,13 @@ The purpose of this section is to provide the eSSIF-Lab principles on which our 
 ## Freedom of Information (Knowledge)
 
 According to (articles 8-10 of) the [*European Convention on Human Rights (ECHR)*](https://www.echr.coe.int/Pages/home.aspx?p=basictexts/convention), people are free to collect, process, store, and express information (about any %%entity|entity%%) in any way they like (making a few exceptions for cases when e.g. security of society is put at risk). This made us realize that
-  - these rights refer to fundamental, biological [capabilities](capability@) that people are born with, and the ECHR is limiting these [capabilities](capability@) for exceptional cases.
-  - %%organizations|organization%% (governments, enterprises), too, have these [capabilities](capability@).
-We generalize this by defining the term %%party|party%% such that it encompasses every %%entity|entity%% that has these [capabilities](capability@). Consequently, this term is a very basic one in our world model.
+  - these rights refer to fundamental, biological %%capabilities|capability%% that people are born with, and the ECHR is limiting these %%capabilities|capability%% for exceptional cases.
+  - %%organizations|organization%% (governments, enterprises), too, have these %%capabilities|capability%%.
+We generalize this by defining the term %%party|party%% such that it encompasses every %%entity|entity%% that has these %%capabilities|capability%%. Consequently, this term is a very basic one in our world model.
 
 ## Parties are autonomous (Self-Sovereign)
 
-%%Parties|party%% will use their [capabilities](capability@) as they see fit, as they are autonomous (or: self-sovereign, i.e. sovereign over their own %%knowledge|knowledge%%). While they are free to choose whether or not to comply with laws, rules and regulations, they cannot choose the consequences that other parties will attach to their behavior, as these other parties are autonomous as well. We see that in practice: a person that drives a car on a highway with a speed limit of 55 mph in the desert of Arizona may well decide to go faster than that, depending on his assessment of the consequences it may have (of being caught and fined). In particular, every %%party|party%% is autonomous in the data it collects about other %%entities|entity%%, the judgements it makes, the characteristics it attributes to, etc.
+%%Parties|party%% will use their %%capabilities|capability%% as they see fit, as they are autonomous (or: self-sovereign, i.e. sovereign over their own %%knowledge|knowledge%%). While they are free to choose whether or not to comply with laws, rules and regulations, they cannot choose the consequences that other parties will attach to their behavior, as these other parties are autonomous as well. We see that in practice: a person that drives a car on a highway with a speed limit of 55 mph in the desert of Arizona may well decide to go faster than that, depending on his assessment of the consequences it may have (of being caught and fined). In particular, every %%party|party%% is autonomous in the data it collects about other %%entities|entity%%, the judgements it makes, the characteristics it attributes to, etc.
 
 ## Identities are not owned - Individuals do not control their identity
 
