@@ -8,8 +8,8 @@ termid: holder
 formphrases: holder{ss}
 status: draft
 grouptags:
-hoverText: "Holder (functional component): the capability to handle presentation requests from a Peer Agent, produce the requested data (a presentation) according to its Principal's holder-policy, and send that in response to the request."
-glossaryText: "the capability to handle %%presentation requests^presentation-request%% from a %%peer agent^peer-agent%%, produce the requested data (a presentation) according to its %%principal^principal%%'s %%holder-policy^holder-policy%%, and send that in response to the request."
+hoverText: "Holder (functional component): a component that implements the Capability to handle presentation requests from a Peer Agent, produce the requested data (a presentation) according to its Principal's holder-policy, and send that in response to the request."
+glossaryText: "a component that implements the %%capability^capability%% to handle %%presentation requests^presentation-request%% from a %%peer agent^peer-agent%%, produce the requested data (a presentation) according to its %%principal^principal%%'s %%holder-policy^holder-policy%%, and send that in response to the request."
 date: 20210601
 ---
 
@@ -18,13 +18,13 @@ In other SSI contexts, this term has a different meaning. We intend to rework th
 :::
 
 ### Short Description
-A **Holder** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch)) that handles %%presentation requests|presentation-request%% that it receives from %%verifier|verifier%% components (of other %%parties|party%%, but also of its own %%owner|owner%%). Typically, this means looking for the requested data in the %%principal's|principal%% %%wallet|wallet%%, and using it to construct a %%presentation|presentation%% (=response). However, if the %%wallet|wallet%% doesn't have it, the %%holder|holder%% may negotiate a %%transaction|transaction%% with a component of the designated %%issuer|issuer%% for the purpose of obtaining the needed credential, which - when obtained - it can subsequently store in the %%wallet|wallet%% and use in the %%presentation|presentation%%.
+A **Holder** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture-framework)) that handles %%presentation requests|presentation-request%% that it receives from %%verifier|verifier%% components (of other %%parties|party%%, but also of its own %%owner|owner%%). Typically, this means looking for the requested data in the %%principal's|principal%% %%wallet|wallet%%, and using it to construct a %%presentation|presentation%% (=response). However, if the %%wallet|wallet%% doesn't have it, the %%holder|holder%% may negotiate a %%transaction|transaction%% with a component of the designated %%issuer|issuer%% for the purpose of obtaining the needed credential, which - when obtained - it can subsequently store in the %%wallet|wallet%% and use in the %%presentation|presentation%%.
 
 ### Purpose
 The purpose of the Holder component is to handle %%presentation requests|presentation-request%% that it receives from %%verifier|verifier%% components (both of its own %%owner|owner%%, and of other %%parties|party%%), and responding to such requests.
 
 ### Criteria
-A **Holder** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-func-arch) whose function is to handle %%presentation requests|presentation-request%% that it receives from %%verifier|verifier%% components (both of its %%owner|owner%%, and of other %%Parties|party%%).
+A **Holder** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture-framework) whose function is to handle %%presentation requests|presentation-request%% that it receives from %%verifier|verifier%% components (both of its %%owner|owner%%, and of other %%Parties|party%%).
 
 ### Functionality
 

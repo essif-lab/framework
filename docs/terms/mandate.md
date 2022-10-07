@@ -8,17 +8,23 @@ termid: mandate
 formphrases: mandate{ss}, mandated, mandating, mandator{ss}, mandatee{ss}
 status: draft
 grouptags:
-hoverText: "Mandate: a right or duty that one Party (the Mandator) has granted to another Party or Actor (the Mandatee) for executing a specific (set of) Actions in the name of, and under responsibility/accountability of, this (first) Party."
-glossaryText: "a right or duty that one %%party^party%% (the %%mandator^mandate%%) has granted to another %%party^party%% or %%actor^actor%% (the %%mandatee^mandate%%) for executing a specific (set of) %%actions^action%% in the name of, and under responsibility/accountability of, this (first) %%party^party%%."
+hoverText: "Mandate: a right or duty that one Party (the Mandator) has granted to another Party or Employee (the Mandatee) for executing a specific (set of) Actions in the name of, and under responsibility/accountability of, this (first) Party."
+glossaryText: "a right or duty that one %%party^party%% (the %%mandator^mandate%%) has granted to another %%party^party%% or %%employee^employee%% (the %%mandatee^mandate%%) for executing a specific (set of) %%actions^action%% in the name of, and under responsibility/accountability of, this (first) %%party^party%%."
 date: 20220220
 ---
 
 ### Short Description
-A **mandate** a right or duty that one %%party|party%% (the %%mandator|mandate%%) has granted to another %%party|party%% or %%actor|actor%% (the %%mandatee|mandate%%) for executing a specific (set of) %%actions|action%% in the name of, and under responsibility/accountability of, this (first) %%party|party%%. Because of that, such %%actions|action%% must be executed according to the %%policies|policy%% of the %%mandator|mandate%%, and this is what distinguishes it from a %%delegate|delegate%%.
+A **mandate** a right or duty that one %%party|party%% (the %%mandator|mandate%%) has granted to another %%party|party%% or %%employee|employee%% (the %%mandatee|mandate%%) for executing a specific (set of) %%actions|action%% in the name of, and under responsibility/accountability of, this (first) %%party|party%%. Because of that, such %%actions|action%% must be executed according to the %%policies|policy%% of the %%mandator|mandate%%, and this is what distinguishes it from a %%delegate|delegate%%.
+
+Note that %%actors|actor%% are never %%mandatees|mandate%%; they can only be that in their capacity of being %%employed|employee%% by a specific %%party|party%%, which may be the %%mandator|mandate%% itself, but also some other %%party|party%%. The reason for that is that this ensures the %%actor|actor%% is %%onboarded|onboarding%% by that %%party|party%%, which makes that %%party|party%% accountable in cases where the %%actor|actor%% misbehaves by misusing, or exceeding the rights and duties that are granted by the %%mandate|mandate%%.
 
 %%Mandates|mandate%% can be very informal, implicit even, all the way to very formal and explicit. Particularly in governmental, policing and judicial settings, %%mandates|mandate%% will be formal because their existence is necessary as part of chains of evidence.
 
-Rights and duties are assigned to %%parties|party%% - not %%actors|actor%%. However, executing %%actions|action%% that exercise such rights can only be done by %%actors|actor%% - not %%parties|party%% (see the %%party, actor, and actions pattern|pattern-party-actor-action%%). In its simplest form, a %%mandate|mandate%% can be seen as a (set of) task(s) that a %%party|party%% assigns to one or more %%employees|employee%%.
+%%Mandates|mandate%% can also be very specific and explicit. For example OAuth access tokens, or other kinds of permissions are %%mandates|mandate%% for designated IT components (that act on behalf of some %%party|party%%) to access particular resources that are %%owned|owned%% by the %%mandator|mandate%%, and/or have such resources processed.
+
+A particular kind of %%mandate|mandate%% is called 'consent'. Basically, this means that an %%employee|employee%% (of an arbitrary %%party|party%%) can request that a %%party|party%% grants a pecific set of rights/duties to that %%employee|employee%%; if the %%party|party%% consents, then that is equivalent as if it had granted the %%employee|employee%% these rights/duties as a %%mandate|mandate%%.
+
+Rights and duties are assigned to %%parties|party%% - not %%actors|actor%%. However, executing %%actions|action%% that exercise such rights can only be done by %%actors|actor%% - not %%parties|party%% (see the %%party, actor, and actions pattern|pattern-party-actor-action%%). In its simplest form, a %%mandate|mandate%% can be seen as a (set of) task(s) that a %%party|party%% assigns to one or more of its %%employees|employee%%. In a more complex form a %%mandate|mandate%% can be seen as the permission (right) or tasking (duty) that is assigned to (and agreed upon with the %%employer(s)|employer%% of) %%employee(s)|employee%% of other %%parties|party%%.
 
 A %%mandate|mandate%% is only valid if the %%mandated|mandate%% right or duty is one that the %%mandator|mandate%% actually has. If, for example, a %%party|party%% is the holder of a bank account, it has the right to transfer funds out of that account. If the bank supports %%mandates|mandate%%, the holder can %%mandate|mandate%% this right to other people, or even services in the bank (e.g. for making automatic payments). A %%party|party%% that has no right to transfer funds out of a bank account should not be enabled to create valid %%mandates|mandate%% so that other %%actors|actor%% could start depleting it.
 
@@ -33,7 +39,7 @@ The purpose of (formal and/or explicit) %%mandates|mandate%% is that it enables 
 ### Criterion
 A mandate is (%%data|data%%, that expresses) a [volition](https://www.merriam-webster.com/dictionary/volition) of a %%party|party%% (in the role of %%mandator|mandate%%) that pertains to:
 - a set of rights and/or duties that the %%mandator|mandate%% disposes of, and that are the subject of the %%mandate|mandate%%;
-- at least one other %%party|party%% and/or %%actor|actor%% (in the role of %%mandatee|mandate%%);
+- at least one other %%party|party%% and/or %%agent|agent%% (in the role of %%mandatee|mandate%%);
 - at least one (kind of) %%action|action%% (activity, task), the execution of %%actions|action%% (of such kinds) exercise one or more of the specific rights and/or duties;
 - a (possibly empty) %%policy|policy%% that specifies the rules, working-instructions, preferences and other guidance for %%mandatees|mandate%% as they execute such %%actions|action%%;
 - a commitment of the %%mandator|mandate%% that expresses its intention to have the %%mandatee(s)|mandate%% execute such (kinds of) %%action(s)|action%% in its name and under its responsibility/accountability;

@@ -68,12 +68,12 @@ An **objective** may have additional attributes. Here are some examples (includi
 
 Here is a visual representation of the formalization of this concept, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)** (the figure does not show all of the optional attributes):
 
+<p align="center">
 <img
   alt="A Party's Objectives"
   src={useBaseUrl('images/essif-lab-objective.png')}
-/>
-
-*Figure 1. Parties and their objectives.*
+/><i>Figure 1. Parties and their objectives.</i>
+</p>
 
 The figure shows that every objective has a single %%owner|owner%%, which is the %%party|party%% that aims to realize the associated result(s).
 
@@ -91,12 +91,12 @@ In the %%management|management%% perspective, a %%party|party%% ensures that the
 
 %%Objectives|objective%% can be 'chained', which is equivalent with saying that the result that is produced to realize one %%objective|objective%% is subsequently consumed by another one. This is shown in the figure below:
 
+<p align="center">
 <img
   alt="Chaining Objectives"
   src={useBaseUrl('images/essif-lab-objective-symbolnotation.png')}
-/>
-
-*Figure 2: Chaining Objectives - results produced in one objective are consumed in another*
+/><i>Figure 2: Chaining Objectives - results produced in one objective are consumed in another</i>
+</p>
 
 The figure shows four %%parties|party%% (Red, Yellow, Blue and Green) and their associated %%scopes of control|scope-of-control%%. Within these, they %%own|owner%% the %%objectives|objective%% (the figure shows 6 %%objectives|objective%% owned by red and one for each of the other %%parties|party%%). The figure in the top right hand corner of the rectangle that represents an %%objective|objective%%, is the %%party|party%% that the %%owner|owner%% of the %%objective|objective%% expects to produce the %%objective's|objective%% results. It is not necessary that such a %%party|party%% is known all the time (e.g. %%objective|objective%% Obj-1a).
 

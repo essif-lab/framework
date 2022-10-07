@@ -18,7 +18,7 @@ term: Peer # Text that is the name of the concept in (human readable) texts.
 fullterm: "Peer Agent"
 shorterm:
 synonyms:
-glossaryText: "the [agent](@) with whom/which this other [agent](@) is communicating in that [communication session](@)."
+glossaryText: "the %%agent^agent%% with whom/which this other %%agent^agent%% is communicating in that %%communication session^communication-session%%."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Peer Agent"
 displayed_sidebar: essifLabSideBar
@@ -30,7 +30,7 @@ Additional content is needed here.
 :::
 
 ### Purpose
-[Parties](@) that participate in a (business) transaction may use [agents](@), e.g. for conducting communications, exchanging information, etc. We need a term that can be used in the context of an [agent](@)of such a [party](@) to refer to an [actor](@) with which that [agent](@) communicates, and of which it has been established that it is actually an [agent](@) of a [peer](peer-party@) of the [party](@) for which it is communicating.
+%%Parties|party%% that participate in a (business) transaction may use %%agents|agent%%, e.g. for conducting communications, exchanging information, etc. We need a term that can be used in the context of an %%agent|agent%%of such a %%party|party%% to refer to an %%actor|actor%% with which that %%agent|agent%% communicates, and of which it has been established that it is actually an %%agent|agent%% of a %%peer|peer-party%% of the %%party|party%% for which it is communicating.
 
 ### Notes
-The term '[peer agent](@)' is specifically used in the context of a (digital) [actor](@) that communicates with another (digital) [actor](@) on behalf of a [party](@) that is conducting a (business) transaction with some other [party](@).
+The term '%%peer agent|peer-agent%%' is specifically used in the context of a (digital) %%actor|actor%% that communicates with another (digital) %%actor|actor%% on behalf of a %%party|party%% that is conducting a (business) transaction with some other %%party|party%%.

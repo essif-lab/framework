@@ -49,12 +49,12 @@ A %%control-objective|control-objective%% is an %%objective|objective%% that
 
 In the figure below, %%objectives|objective%% Obj-1a, Obj-1b and Obj-1b.2 are %%control objectives|control-objective%% of Red. Obj-1b.2 is a %%control objective|control-objective%% for Obj-1b, which in turn is a %%control objective|control-objective%% for Obj-1. Note that %%objectives|objective%% such as Obj-1a, which haven't been explicitly assigned a producer %%party|party%%, will default to the %%objective's|objective%% %%owner|owner%% being the producer. And therefor, Obj-1a is also a %%control objective|control-objective%%.
 
+<p align="center">
 <img
   alt="Chaining Objectives"
   src={useBaseUrl('images/essif-lab-objective-symbolnotation.png')}
-/>
-
-*Figure 1: Chained Objectives - results produced in one objective are consumed in another*
+/><i>Figure 1: Chained Objectives - results produced in one objective are consumed in another</i>
+</p>
 
 The figure shows four %%parties|party%% (Red, Yellow, Blue and Green) and their associated %%scopes of control|scope-of-control%%. Within these, they %%own|owner%% the %%objectives|objective%% (the figure shows 6 %%objectives|objective%% owned by red and one for each of the other %%parties|party%%). The figure in the top right hand corner of the rectangle that represents an %%objective|objective%%, is the %%party|party%% that the %%owner|owner%% of the %%objective|objective%% expects to produce the %%objective's|objective%% results. It is not necessary that such a %%party|party%% is known all the time (e.g. %%objective|objective%% Obj-1a).
 

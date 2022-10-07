@@ -44,7 +44,7 @@ In the active form, a %%party|party%% is represented by an %%actor|actor%% that 
 
 In the more passive form, a %%party|party%% can be represented by an %%actor|actor%% in an employment, or 'works for' relation, which is also described in the %%parties, actors, action pattern|pattern-party-actor-action%%. In that pattern, the %%actor|actor%% is said to be an %%employee|employee%% of that %%party|party%%, which (in our context) only means that it is realistic to expect that the %%actor|actor%% will be executing %%actions|action%% on behalf of that %%party|party%%.
 
-%%Actors|actor%% typically do not represent a %%party|party%% for everything. %%Employees|employee%% for example are typically assigned a *function* that requires them to do certain kinds of %%actions|action%%, yet at the same time limits them thereto. An (%%actor|actor%% in its role of) %%employee|employee%% can, or should therefore limit its %%agency|agent%% to %%actions|action%% of the type that its %%employer|employer%% has assigned as the tasks for the functions is employed to fulfill.
+%%Actors|actor%% typically do not represent a %%party|party%% for everything. %%Employees|employee%% for example are typically assigned a *function* that requires them to do certain kinds of %%actions|action%%, yet at the same time limits them thereto. An (%%actor|actor%% in its role of) %%employee|employee%% can, or should therefore limit its %%agency|agent%% to %%actions|action%% of the type that its %%employer|employer%% has assigned as the tasks for the functions it is %%employed|employee%% to fulfill.
 
 
 

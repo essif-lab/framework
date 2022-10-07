@@ -23,7 +23,7 @@ During the time interval in which the action is executed, the actor may execute 
 %%Agents|agent%% are expected to access (and hence have access to) the %%policies|policy%% that their respective %%principals|principal%% provide in order for these %%agents|agent%% to execute %%actions|action%% in compliance therewith. This, and relations with other concepts are described in the %%Parties, Actors and Actions pattern|pattern-party-actor-action%%.
 
 ### Purpose
-The purpose of the concept %%agent|agent%% is that it is an enabler for the capability of determining its %%principal|principal%%, because it is an %%actor|actor%% with the property that it is executing some %%action|action%% on behalf of a %%party|party%%) - its %%principal|principal%%. The relevance of this capability finds its origin in the fact that it is not the %%actor|actor%% that is held accountable for the %%actions|action%% it executes, but the %%party|party%% on whose behalf they are are executed.
+The purpose of the concept %%agent|agent%% is that it is an enabler for the %%capability|capability%% of determining its %%principal|principal%%, because it is an %%actor|actor%% with the property that it is executing some %%action|action%% on behalf of a %%party|party%%) - its %%principal|principal%%. The relevance of this %%capability|capability%% finds its origin in the fact that it is not the %%actor|actor%% that is held accountable for the %%actions|action%% it executes, but the %%party|party%% on whose behalf they are are executed.
 ### Criterion
 **Agent** is a %%role name|role-name%% that generically refers to an %%actor|actor%% that is executing some %%action|action%% on behalf of a %%party|party%%.
 

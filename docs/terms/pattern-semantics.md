@@ -8,6 +8,8 @@ termid: semantics
 formphrases:
 status: draft
 grouptags:
+hoverText: "The Semantics pattern describes the relations between the (intangible) Concepts that are part of a Party's Knowledge, and how they are (tangibly) represented by Terms, Attributes, etc."
+glossaryText: "The Semantics pattern describes the relations between the (intangible) %%Concepts^concept%% that are part of a %%party's^party%% %%knowledge^knowledge%%, and how they are (tangibly) represented by %%terms^term%%, %%attributes^attribute%%, etc."
 date: 202120607
 ---
 
@@ -15,7 +17,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Purpose
 
-The **Semantics Pattern**  describes the relations between the (intangible) %%Concepts|concept%% that are part of a %%party's|party%% %%knowledge|knowledge%%, and how they are (tangibly) represented by %%terms|term%%, %%attributes|attribute%% etc. The ability to create and maintain such a mapping (which is known as a %%semantics|semantics%%) is critical for forstering a common understanding between %%parties|party%% that work together to realize specific %%objectives|objective%%. The quality of the mapping depends on the extent to which the %%definitions|definition%% that are being used have the property of demonstrably leading to %%parties|party%% making the same distinctions, i.e. having a sufficiently similar understanding of such %%terms|term%%.
+The **Semantics Pattern** describes the relations between the (intangible) %%Concepts|concept%% that are part of a %%party's|party%% %%knowledge|knowledge%%, and how they are (tangibly) represented by %%terms|term%%, %%attributes|attribute%%, etc. The ability to create and maintain such a mapping (which is known as a %%semantics|semantics%%) is critical for forstering a common understanding between %%parties|party%% that work together to realize specific %%objectives|objective%%. The quality of the mapping depends on the extent to which the %%definitions|definition%% that are being used have the property of demonstrably leading to %%parties|party%% making the same distinctions, i.e. having a sufficiently similar understanding of such %%terms|term%%.
 
 ### Introduction
 
@@ -27,7 +29,7 @@ Storyline that needs to be worked out:
 - other artifacts may also help in understanding each other's knowledge. Such artifacts include more casual explanations, a formal or informal description of how the various concepts that are being explained (or defined) relate to one another, etc. Thus, we expect to see [knowledge artifacts of different kinds to be created, maintained, evaluated and continually improved on.
 - establishing a set of such %%definitions|definition%%, associated %%terms|term%% (a 'common %%terminology|terminology%%') enables the %%parties|party%% to express characteristics of %%entities|entity%% as (scoped!) %%attributes|attribute%%, and hence a %%partial identity|partial-identity%% of an %%entity|entity%% in a (digital) representation.
 
-The %pattern% also hints at the relation between %semantics% and
+The %%pattern|pattern%% also hints at the relation between %%semantics|semantics%% and
 :::
 
 ### Formalized model

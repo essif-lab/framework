@@ -12,9 +12,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 *This page requires thorough revisions. While the basis is still valid, the contents on architecture(s) needs to be updated.*
 :::
 
-The main purpose of [eSSIF-Lab](essifLab) is to realize its [vision](essifLab-vision). This is quite a challenge, because of the different kinds of complexity involved. There is 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels. There is also a 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work. Another kind of complexity is related to the (im)possibilities of doing things as %%parties|party%% interact, e.g. in an '%%ecosystem|ecosystem%%' or a %%community|community%%.
+Realizing the [eSSIF-Lab vision](essifLab-vision) is the main purpose of [eSSIF-Lab](essifLab). This is quite a challenge, because of the different kinds of complexity involved:
+- 'horizontal' complexity, e.g. interop issues at the technical, semantical, process and business levels.
+- 'vertical' complexity, e.g. coherence and consistency between business policies, its processes, the data/information used therein, and the technology that makes it work.
+- 'ecosystem' complexity, e.g. creating and maintaining agreements about technical and semantical interop, ways of working (e.g. to ensure the quality of data), etc., within an '%%ecosystem|ecosystem%%' or a %%community|community%% context.
 
-The eSSIF-Lab %%Framework|framework%% aims to establish a varied set of articles/documents, %%terminology|terminology%%, and %%mental models|pattern%% that individual %%parties|party%% from different backgrounds can use e.g. as they
+To come to grips with such complexity, the eSSIF-Lab %%Framework|framework%% aims to establish a varied set of articles/documents, %%terminology|terminology%%, and %%mental models|pattern%% that individual %%parties|party%% from different backgrounds can use e.g. as they
 - seek to use SSI, and want to learn about:
   - benefits they may reap when they start to adopt SSI technologies;
   - topics to consider for increasing levels of maturity;
@@ -68,7 +71,7 @@ As mentioned before, we expect that more functionalities and/or %%roles|role%% a
 
 Figure 1 shows the initial *functional* eSSIF-Lab architecture, and its scope, context and *functional* components each of which is a (*functional*) %%agent|agent%% for the same party (meaning that they are all part of the same organization as defined above, and they are all (digital) 'Colleagues' of one another).
 
-Please be aware that *functional* capabilities, components, %%agents|agent%%, etc. do not necessarily coincide with *technical* capabilities, components, %%agents|agent%%, etc. The technical components can be deployed (downloaded, installed, run), whereas a functional component is a provider of a specified set of capabilities/functionalities an implementation of which can be made part of a technical component. So it is conceivable that a technical component contains an implementation of %%issuer|issuer%%, %%wallet|wallet%%, %%holder|holder%% and %%verifier|verifier%% functional components as well as other functionalities that are not described here, e.g. related to UX, setting %%preferences|policy%%, and more. In this functional architecture, the default type of components, %%agents|agent%% etc. are *functional*.
+Please be aware that *functional* %%capabilities|capability%%, components, %%agents|agent%%, etc. do not necessarily coincide with *technical* %%capabilities|capability%%, components, %%agents|agent%%, etc. The technical components can be deployed (downloaded, installed, run), whereas a functional component is a provider of a specified set of %%capabilities|capability%%/functionalities an implementation of which can be made part of a technical component. So it is conceivable that a technical component contains an implementation of %%issuer|issuer%%, %%wallet|wallet%%, %%holder|holder%% and %%verifier|verifier%% functional components as well as other functionalities that are not described here, e.g. related to UX, setting %%preferences|policy%%, and more. In this functional architecture, the default type of components, %%agents|agent%% etc. are *functional*.
 
 Since the %%participants|participant%% of a %%(business) transaction|transaction%% are different %%parties|party%%, the negotiation, commitment and execution of that %%transaction|transaction%% will be done by %%agents|agent%% of these %%parties|party%%. Assuming that a single %%transaction|transaction%% has two such %%parties|party%%, we will use the term '%%Peer Party|peer-party%% (of a specific %%party|party%%, in the context of a single %%transaction|transaction%%)' to refer to the participating %%party|party%% in that %%transaction|transaction%% that is not the specific %%party|party%% itself.
 
@@ -76,12 +79,12 @@ When an %%agent|agent%% is involved in such a %%transaction|transaction%%, it wi
 
 The figure below is an overview of the most important *functional* components that any %%party|party%% needs to conduct electronic %%(business) transactions|transaction%%.
 
+<p align="center">
 <img
   alt="eSSIF-Lab Single Party Functional Architecture Overview"
   src={useBaseUrl('images/essif-lab-functional-architecture.png')}
-/>
-
-*Figure 1. eSSIF-Lab Single Party Functional Architecture Overview.*
+/><i>Figure 1. eSSIF-Lab Single Party Functional Architecture Overview.</i>
+</p>
 
 We use the following coloring conventions in this figure: red is business related, which means that we do not consider this to be part of the SSI Infrastructure. Brown is used for policies, which are defined by (or on behalf) of the principal of the component that uses them to configure themselves, and/or act according to the %%principal's|principal%% preferences and %%policies|policy%%. Green is used for generic SSI infrastructure related functions, and blue represents functions that may be implemented as 'plug-ins' for specific SSI-related technologies.
 
@@ -143,7 +146,7 @@ It is expected that there are already some interfaces out there that may turn ou
 
 There are two interface layers in this architecture
 
-The '**ESSIF Glue**' interface layer consists of a [documented set of APIs](https://gitlab.grnet.gr/essif-lab/tno-ssi-service/developer-docs) between the %%data collector|data-collector%% and %%data discloser|data-discloser%% on the one hand, and the WHIV components on the other hand. The purpose of these APIs is to make calling the WHIV functions as simple as possible, given the functions of the %%data discloser|data-discloser%% and %%data collector|data-collector%%. Ultimately, we would like to see these APIs standardized. Having such APIs allows different %%parties|party%% to create their own version of the WHIV components, supporting the SSI technologies as they see fit, and shrinking or expanding functionalities as they feel appropriate. %%Parties|party%% can then select such WHIV components as they see fit.
+The '**ESSIF Glue**' interface layer consists of a [documented set of APIs](https://gitlab.grnet.gr/essif-lab/tno-ssi-service/developer-docs) between the data collector and data discloser on the one hand, and the WHIV components on the other hand. The purpose of these APIs is to make calling the WHIV functions as simple as possible, given the functions of the data discloser and data collector. Ultimately, we would like to see these APIs standardized. Having such APIs allows different %%parties|party%% to create their own version of the WHIV components, supporting the SSI technologies as they see fit, and shrinking or expanding functionalities as they feel appropriate. %%Parties|party%% can then select such WHIV components as they see fit.
 
 The **SSI Tech APIs** interface layer is the union of the interfaces of the components within it. Any standardization in there is outside the scope of eSSIF-Lab.
 
@@ -153,18 +156,18 @@ The **SSI Tech APIs** interface layer is the union of the interfaces of the comp
 
 This section details the functional specifications of the components that are in scope of the eSSIF-Lab infrastructure, i.e. in the green (rounded) rectangle as shown in the figure below:
 
+<p align="center">
 <img
   alt="eSSIF-Lab infrastructural (functional) components"
   src={useBaseUrl('images/essif-lab-functional-architecture-infra.png')}
-/>
+/><i>Figure 2: eSSIF-Lab infrastructural (functional) components.</i>
+</p>
 
-*Figure 2: eSSIF-Lab infrastructural (functional) components.*
+### 3.1.  Data Collector and Validator Policy
 
-### 3.1.  Data Collector and Validation Policy
+The purpose of the data collector is to produce (transaction-type specific) data structures or forms, each of which contains the necessary and sufficient data that allows (an %%agent|agent%% of) its %%principal|principal%% to decide whether or not to engage in a (new) %%transaction|transaction%% of the specified type.
 
-The purpose of the %%data collector|data-collector%% is to produce (transaction-type specific) data structures or forms, each of which contains the necessary and sufficient data that allows (an %%agent|agent%% of) its %%principal|principal%% to decide whether or not to engage in a (new) %%transaction|transaction%% of the specified type.
-
-Typically, the %%data collector|data-collector%% would start a %%transaction|transaction%% either
+Typically, the data collector would start a %%transaction|transaction%% either
 
 -   when it receives a request from some %%agent|agent%% of another %%party|party%% for engaging in a %%transaction|transaction%% of a specific kind.
 -   when it is instructed by, or on behalf of its %%principal|principal%%, to request a specific kind of %%transaction|transaction%% to some %%agent|agent%% of another %%party|party%%.[^DC.1]
@@ -173,11 +176,11 @@ In either case, a %%transaction|transaction%% form (object, context) has to be c
 
 Handling/managing the various %%communication channels|communication-channel%% through which data can be exchanged is also a task of the Data Collector[^DC.2]. One reason for this is that negotiating a %%transaction|transaction%% not only requires data to be acquired, but also to be provided to the %%peer party|peer-party%%. Another reason is that the %%peer party|peer-party%% may use multiple %%agents|agent%% to provide such data, e.g. human %%agents|agent%% (that might use web-browsers, social-media apps, phones, or physical visits), %%SSI-agents|ssi-agent%% (that use the SSI infrastructure), or other %%electronic agents|agent%% (e.g. services that can provide data when appropriate permissions are submitted - e.g. user consent tokens).
 
-Thus, the %%data collector|data-collector%% is generally considered capable of obtaining data through different %%communication channels|communication-channel%%. However, the technical tracks of eSSIF-Lab will exclusively focus on the %%communication channel|communication-channel%% through which %%credentials|credential%% can be requested and obtained. Any extensions or business productization of %%data collector|data-collector%% designs may be considered in the business tracks of eSSIF-Lab. The latter is not considered any further in this section.
+Thus, the data collector is generally considered capable of obtaining data through different %%communication channels|communication-channel%%. However, the technical tracks of eSSIF-Lab will exclusively focus on the %%communication channel|communication-channel%% through which %%credentials|credential%% can be requested and obtained. Any extensions or business productization of data collector designs may be considered in the business tracks of eSSIF-Lab. The latter is not considered any further in this section.
 
-In order to acquire data through SSI mechanisms for filling in a form for a specific kind of %%transaction|transaction%%, the %%data collector|data-collector%% needs to know what kinds of %%credentials|credential%% it should ask for, which %%parties|party%% its %%principal|principal%% trusts to issue such %%credentials|credential%%, what kinds of verification proofs for such %%credentials|credential%% must hold and which may be disregarded.[^DC.3] Also, when the %%data collector|data-collector%% gets a %%credential|credential%% that satisfies the necessary verification proofs, it needs a way to map the contents of that %%credential|credential%% to the structure of the %%transaction|transaction%% context that is used internally by (other systems of) its %%principal|principal%%.[^DC.4] Also, as the %%data collector|data-collector%% gets more and more data - which it may get through multiple, different channels - it needs to determine whether or not the resulting set is sufficiently consistent and coherent.[^DC.5]
+In order to acquire data through SSI mechanisms for filling in a form for a specific kind of %%transaction|transaction%%, the data collector needs to know what kinds of %%credentials|credential%% it should ask for, which %%parties|party%% its %%principal|principal%% trusts to issue such %%credentials|credential%%, what kinds of verification proofs for such %%credentials|credential%% must hold and which may be disregarded.[^DC.3] Also, when the data collector gets a %%credential|credential%% that satisfies the necessary verification proofs, it needs a way to map the contents of that %%credential|credential%% to the structure of the %%transaction|transaction%% context that is used internally by (other systems of) its %%principal|principal%%.[^DC.4] Also, as the data collector gets more and more data - which it may get through multiple, different channels - it needs to determine whether or not the resulting set is sufficiently consistent and coherent.[^DC.5]
 
-In order to make the %%data collector|data-collector%% work, a %%validation policy|validation-policy%% (or %%data collector policy|data-collector-policy%%) is created by, or on behalf of the %%principal|principal%%, which specifies at least:
+In order to make the data collector work, a %%validator policy|validator-policy%% (or data collector policy) is created by, or on behalf of the %%principal|principal%%, which specifies at least:
 
 -   the kinds of %%transactions|transaction%% the %%principal|principal%% is willing to (electronically) engage in, from both the requester and the provider perspectives;
 -   for each such transaction termtype:
@@ -192,11 +195,11 @@ In order to make the %%data collector|data-collector%% work, a %%validation poli
 
 The %%policy|policy%% must be designed in such a way that it is extendable as new features will be called for in the future.
 
-The ability to create new %%transaction|transaction%% contexts and the availability of the %%data collector policy|data-collector-policy%% enable the %%data collector|data-collector%% to request the %%verifier|verifier%% component of its %%principal|principal%% to obtain %%credentials|credential%% of the types that it can use to fill in the %%transaction form|transaction-form%% when they satisfy the verification and validation requirements of its %%principal|principal%%.[^DC.7]
+The ability to create new %%transaction|transaction%% contexts and the availability of the data collector policy enable the data collector to request the %%verifier|verifier%% component of its %%principal|principal%% to obtain %%credentials|credential%% of the types that it can use to fill in the %%transaction form|transaction-form%% when they satisfy the verification and validation requirements of its %%principal|principal%%.[^DC.7]
 
-When the %%verifier|verifier%% returns such data (which comes with a list of proofs that the %%verifier|verifier%% has checked), the %%data collector|data-collector%% must then validate that data, i.e. determine whether or not it is valid for the specific %%transaction|transaction%% it is assembling the data for. The validation rules are %%party|party%%-specific and hence come from the %%data collector policy|data-collector-policy%%. For simple cases, validation can simply consist of checking whether or not all verification proofs succeeded. At the other end of the validation spectrum, the %%data collector|data-collector%% itself must make validation decisions, either electronically (according to the %%data collector policy|data-collector-policy%%) or by 'outsourcing' such decisions to human %%agents|agent%% of its %%principal|principal%% by providing an appropriate validation user interface.
+When the %%verifier|verifier%% returns such data (which comes with a list of proofs that the %%verifier|verifier%% has checked), the data collector must then validate that data, i.e. determine whether or not it is valid for the specific %%transaction|transaction%% it is assembling the data for. The validation rules are %%party|party%%-specific and hence come from the data collector policy. For simple cases, validation can simply consist of checking whether or not all verification proofs succeeded. At the other end of the validation spectrum, the data collector itself must make validation decisions, either electronically (according to the data collector policy) or by 'outsourcing' such decisions to human %%agents|agent%% of its %%principal|principal%% by providing an appropriate validation user interface.
 
-As long as data is needed, the %%data collector|data-collector%% can intermittently request the %%verifier|verifier%% to produce it (or it can use other %%communication channels|communication-channel%%, which is outside scope for now). It does so until it times out, or the form has become 'clean'.
+As long as data is needed, the data collector can intermittently request the %%verifier|verifier%% to produce it (or it can use other %%communication channels|communication-channel%%, which is outside scope for now). It does so until it times out, or the form has become 'clean'.
 
 -----
 
@@ -204,13 +207,13 @@ As long as data is needed, the %%data collector|data-collector%% can intermitten
 
 [^DC.2]: It may well be that this functionality can somehow be split off in the (near) future.
 
-[^DC.3]: For high-value %%transactions|transaction%%, verification proofs are more important than for low-value %%transactions|transaction%%. This is to be decided by the %%principal|principal%% of the %%data collector|data-collector%%. An example from the physical world: in order to obtain a visa for China, it is required that your passport (%%credential|credential%%) remains valid for 3 months after the end of your visit. But in order to identify yourself at the reception desk of a hotel, your passport may have expired several years.
+[^DC.3]: For high-value %%transactions|transaction%%, verification proofs are more important than for low-value %%transactions|transaction%%. This is to be decided by the %%principal|principal%% of the data collector. An example from the physical world: in order to obtain a visa for China, it is required that your passport (%%credential|credential%%) remains valid for 3 months after the end of your visit. But in order to identify yourself at the reception desk of a hotel, your passport may have expired several years.
 
 [^DC.4]: For example, a %%credential|credential%% that contains an address uses a specific schema to specify addresses, e.g. the 'PostalAddress' as defined by schema.org. This schema differs quite a bit from that of Dutch addresses as [*defined*](https://bag.basisregistraties.overheid.nl/def/bag) by the official (authentic) Dutch Registration of Addresses and Buildings (BAG). It may also well differ from the structure of addresses that databases of the %%principal|principal%% have implemented. Mapping allows such cases to be accommodated for.
 
 [^DC.5]: Inconsistent or incoherent data is necessary for various purposes. First, it allows for correct further processing of the %%transaction|transaction%%. A non-existent postal code, or one that doesn't match the delivery address, may hinder a fluent %%transaction|transaction%% processing, resulting in additional costs and processing times. Another purpose is the early warning or detection of possible fraud/abuse. Remember that part of the data is being asked for reducing %%transaction|transaction%% %%risk|risk%%, and checking consistency/coherence of such data is part of the risk mitigation process.
 
-[^DC.6]: This enables the %%data collector|data-collector%% to pass the endpoint URI on to the %%verifier|verifier%% when it requests for such a %%credential|credential%%, which in turn can send it to the %%holder|holder%% of other %%parties|party%% enabling them to obtain the %%credential|credential%% from that %%issuer|issuer%% endpoint if that other %%party|party%% does not have that %%credential|credential%% in its %%wallet|wallet%%. The endpoint URI can in fact be put in the %%policy|policy%%, because the (human) %%agent|agent%% that creates/maintains the %%policy|policy%% would need to know that the issuing %%party|party%% is actually issuing such %%credentials|credential%%, what their contents means, etc., and hence is capable of tracking down the URI where that %%party|party%% issues the %%credentials|credential%%.
+[^DC.6]: This enables the data collector to pass the endpoint URI on to the %%verifier|verifier%% when it requests for such a %%credential|credential%%, which in turn can send it to the %%holder|holder%% of other %%parties|party%% enabling them to obtain the %%credential|credential%% from that %%issuer|issuer%% endpoint if that other %%party|party%% does not have that %%credential|credential%% in its %%wallet|wallet%%. The endpoint URI can in fact be put in the %%policy|policy%%, because the (human) %%agent|agent%% that creates/maintains the %%policy|policy%% would need to know that the issuing %%party|party%% is actually issuing such %%credentials|credential%%, what their contents means, etc., and hence is capable of tracking down the URI where that %%party|party%% issues the %%credentials|credential%%.
 
 [^DC.7]: A reference to this specification will be added when it becomes available (draft or otherwise).
 
@@ -218,11 +221,11 @@ As long as data is needed, the %%data collector|data-collector%% can intermitten
 
 ### 3.2.   Verifier Component, and its Policy/Preferences
 
-The purpose of the %%verifier|verifier%% component is to support the %%data collector|data-collector%% by providing it with a single, simple API that it can use to request and obtain data that it needs to produce a clean %%transaction form|transaction-form%%, as well as the results of checking verification proofs (this is also why it is called the '%%verifier|verifier%%' component).
+The purpose of the %%verifier|verifier%% component is to support the data collector by providing it with a single, simple API that it can use to request and obtain data that it needs to produce a clean %%transaction form|transaction-form%%, as well as the results of checking verification proofs (this is also why it is called the '%%verifier|verifier%%' component).
 
-Typically, the %%data collector|data-collector%% would ask the %%verifier|verifier%% to provide a %%credential|credential%% that it can use to fill in a (coherent set of) field(s) in the %%transaction form|transaction-form%%. It is realistic to think that %%credentials|credential%% from different %%issuers|issuer%% - trusted by the %%verifier's|verifier%% %%principal|principal%% - can be used for this purpose. However, it is also realistic that such %%credentials|credential%% will not use the same %%credential type|credential-type%% - they might well use different schemes to provide such data. Therefore, the %%data collector|data-collector%% should specify a list of pairs (%%credential-type|credential-type%%, %%issuer|issuer%%) instances of which could all be used to provide the data it needs - which it can obtain from the %%data collector policy|data-collector-policy%%.
+Typically, the data collector would ask the %%verifier|verifier%% to provide a %%credential|credential%% that it can use to fill in a (coherent set of) field(s) in the %%transaction form|transaction-form%%. It is realistic to think that %%credentials|credential%% from different %%issuers|issuer%% - trusted by the %%verifier's|verifier%% %%principal|principal%% - can be used for this purpose. However, it is also realistic that such %%credentials|credential%% will not use the same %%credential type|credential-type%% - they might well use different schemes to provide such data. Therefore, the data collector should specify a list of pairs (%%credential-type|credential-type%%, %%issuer|issuer%%) instances of which could all be used to provide the data it needs - which it can obtain from the data collector policy.
 
-Then, the %%verifier|verifier%% needs to know the address and protocol that it can use to reach a %%holder|holder%% component owned by the %%party|party%% that its %%principal|principal%% is trying to negotiate the %%transaction|transaction%% with. The %%data collector|data-collector%% specifies this as part of the request - and it can do so because it has received the original request, and does all %%communication channel|communication-channel%% handling.
+Then, the %%verifier|verifier%% needs to know the address and protocol that it can use to reach a %%holder|holder%% component owned by the %%party|party%% that its %%principal|principal%% is trying to negotiate the %%transaction|transaction%% with. The data collector specifies this as part of the request - and it can do so because it has received the original request, and does all %%communication channel|communication-channel%% handling.
 
 %%verifiers|verifier%% are not expected to handle every kind of %%credential|credential%% (e.g. VC's, ABC's, etc.) that exists, but rather a specific subset. For (at least one of) the %%credential types|credential-type%%, the %%verifier|verifier%% can construct a so-called %%presentation request|presentation-request%%, i.e. a message that is specific for the %%credential type|credential-type%% and/or associated protocol, which it can then send to the %%holder's|holder%% address.
 
@@ -239,7 +242,7 @@ In order to make the %%verifier|verifier%% component work, a %%verifier policy|v
 
 A response to this request (called a %%presentation|presentation%%) will be obtained from a %%holder|holder%% component of the %%peer party|peer-party%%. This response will contain a reference to the request, allowing the %%verifier|verifier%% to combine them. The %%verifier|verifier%% will then check that the data in the response is a %%credential|credential%% that it has asked for (correct type/%%issuer|issuer%%), verify the proofs that are provided (predominantly the digital signature), and do some additional checks (e.g. whether or not the %%credential|credential%% has expired, is revoked, and such).
 
-Then, the %%verifier|verifier%% will send a message to the %%data collector|data-collector%%, containing the %%transaction-id|transaction-id%%, the data it has received, and the results of the various checks.
+Then, the %%verifier|verifier%% will send a message to the data collector, containing the %%transaction-id|transaction-id%%, the data it has received, and the results of the various checks.
 
 ### 3.3.   Holder Component, and its Policy/Preferences
 
@@ -247,7 +250,7 @@ The purpose of the %%holder|holder%% component is to handle %%presentation reque
 
 Typically, a %%holder|holder%% component would access its %%principal's|principal%% %%wallet|wallet%% to check if it has a %%credential|credential%% that it can use to construct a %%presentation|presentation%% (i.e. response) that satisfies the received request.
 
-It may happen that the %%wallet|wallet%% does not have such a %%credential|credential%%. However, for every (%%credential|credential%%, %%issuer|issuer%%) pair, the request should specify the URI that is capable of issuing such a %%credential|credential%%. If or when the %%holder policy|holder-policy%% permit this, the %%holder|holder%% then requests its %%principal's|principal%% %%data collector|data-collector%% to initiate a new %%transaction|transaction%% that will get the %%credential|credential%% from that %%issuer|issuer%%, for which a clean %%transaction form|transaction-form%% would then consist of one that contains said %%credential|credential%%. The %%holder|holder%% would then store it in its %%principal's|principal%% %%wallet|wallet%%, and then proceed to service the %%presentation|presentation%% request as if it had obtained that %%credential|credential%% from its %%principal's|principal%% %%wallet|wallet%%.
+It may happen that the %%wallet|wallet%% does not have such a %%credential|credential%%. However, for every (%%credential|credential%%, %%issuer|issuer%%) pair, the request should specify the URI that is capable of issuing such a %%credential|credential%%. If or when the %%holder policy|holder-policy%% permit this, the %%holder|holder%% then requests its %%principal's|principal%% data collector to initiate a new %%transaction|transaction%% that will get the %%credential|credential%% from that %%issuer|issuer%%, for which a clean %%transaction form|transaction-form%% would then consist of one that contains said %%credential|credential%%. The %%holder|holder%% would then store it in its %%principal's|principal%% %%wallet|wallet%%, and then proceed to service the %%presentation|presentation%% request as if it had obtained that %%credential|credential%% from its %%principal's|principal%% %%wallet|wallet%%.
 
 It may also happen that the %%wallet|wallet%% has multiple %%credentials|credential%% that satisfy the request, in which case the %%holder|holder%% must choose the one to use for constructing the %%presentation|presentation%%. Again, the %%holder policy|holder-policy%% will specify how this choice needs to be made, and whether or not this can be done automatically by the %%holder|holder%%. If not, the %%holder|holder%% will need to provide for an interaction with a human Colleague that will make such decisions.
 
@@ -259,19 +262,19 @@ In order to make the %%holder|holder%% component work, a %%holder policy|holder-
 
 ### 3.4.  Data Discloser and Issuing Policy
 
-The purpose of the %%data discloser|data-discloser%% component is to state the (various, sometimes intermediary) results of %%transactions|transaction%%, by collecting data from the Business Data Stores, and creating a set of (related) %%statements/claims|assertion%% that can subsequently be issued to other %%parties|party%%. A special kind of result is the (provisioning of) a %%credential|credential%% that its %%principal|principal%% already has created.
+The purpose of the data discloser component is to state the (various, sometimes intermediary) results of %%transactions|transaction%%, by collecting data from the Business Data Stores, and creating a set of (related) %%statements/claims|assertion%% that can subsequently be issued to other %%parties|party%%. A special kind of result is the (provisioning of) a %%credential|credential%% that its %%principal|principal%% already has created.
 
 Typically, and at any point in time, %%parties|party%% are capable of expressing %%statements|assertion%% about %%entities|entity%% that they know to exist. They could express %%statements|assertion%% about individuals, about themselves, the state of %%transactions|transaction%%, and so on. We will use the term '**%%subject|subject%% (of a %%statement|assertion%% of a %%party|party%%)**' to refer to the %%entity|entity%% that this %%party|party%% knows to exist, and about whom/which the %%statement|assertion%% has been made.
 
 We will use the term '**subject-id (of a %%statement|assertion%% of a %%party|party%%)**' to refer to the representation that this %%party|party%% has chosen to use for referring to the %%subject|subject%% in said %%statement|assertion%%. A subject-id must have the property of being an %%identifier|identifier%% within every administrative context that this %%party|party%% uses. It need not be humanly interpretable (and preferably is not).
 
-%%parties|party%% need to specify the kinds of %%credentials|credential%% they are willing to issue, the class of %%entities|entity%% (e.g. people, cars, %%organizations|organization%%) for which it will issue them, and the information schema (structure) that it will use in %%credentials|credential%% of such kinds.<sup>[Data Discloser.1]</sup> This allows the %%data discloser|data-discloser%% to construct data objects that conform to this information schema, and present it to the %%issuer|issuer%% component for actual issuing.
+%%parties|party%% need to specify the kinds of %%credentials|credential%% they are willing to issue, the class of %%entities|entity%% (e.g. people, cars, %%organizations|organization%%) for which it will issue them, and the information schema (structure) that it will use in %%credentials|credential%% of such kinds.<sup>[Data Discloser.1]</sup> This allows the data discloser to construct data objects that conform to this information schema, and present it to the %%issuer|issuer%% component for actual issuing.
 
-The %%data discloser policy|data-discloser-policy%% specifies the kinds of (linked-)data-objects that %%credentials|credential%% may be created for. This allows the %%data discloser|data-discloser%% to construct such a (linked-)data-objects for every subject-id that identifies a %%subject|subject%% of the class for which a %%credential|credential%% can be issued, which can subsequently be sent to the %%issuer|issuer%% component that can turn it into a %%credential|credential%% of a specific sort.
+The data discloser policy specifies the kinds of (linked-)data-objects that %%credentials|credential%% may be created for. This allows the data discloser to construct such a (linked-)data-objects for every subject-id that identifies a %%subject|subject%% of the class for which a %%credential|credential%% can be issued, which can subsequently be sent to the %%issuer|issuer%% component that can turn it into a %%credential|credential%% of a specific sort.
 
-You can think of the %%data discloser|data-discloser%% as the component that pulls all data together that can be put in a %%credential|credential%% (e.g. in a passport), and the %%issuer|issuer%% as the component that puts the data in an (empty) passport, and signing it so as to create the actual %%credential|credential%%.
+You can think of the data discloser as the component that pulls all data together that can be put in a %%credential|credential%% (e.g. in a passport), and the %%issuer|issuer%% as the component that puts the data in an (empty) passport, and signing it so as to create the actual %%credential|credential%%.
 
-The %%data discloser|data-discloser%% may either push %%credential|credential%% data to the %%issuer|issuer%% component, so that the %%issuer|issuer%% always has up-to-date %%credentials|credential%%, or it can wait until the %%issuer|issuer%% requests %%credential|credential%% data for the creation of a %%credential|credential%% of a specific type for a specific %%subject|subject%%.
+The data discloser may either push %%credential|credential%% data to the %%issuer|issuer%% component, so that the %%issuer|issuer%% always has up-to-date %%credentials|credential%%, or it can wait until the %%issuer|issuer%% requests %%credential|credential%% data for the creation of a %%credential|credential%% of a specific type for a specific %%subject|subject%%.
 
 -----
 
@@ -284,7 +287,7 @@ The %%data discloser|data-discloser%% may either push %%credential|credential%% 
 
 The purpose of the %%issuer|issuer%% component is to issue '%%credentials|credential%%', i.e. digital constructs that contain
 
--   sets of (related) %%statements/claims|assertion%% (e.g. as produced by the %%data discloser|data-discloser%%)
+-   sets of (related) %%statements/claims|assertion%% (e.g. as produced by the data discloser)
 -   metadata (e.g. type of %%credential|credential%%, date of issuing and expiration, endpoints, e.g. for revocation checking, %%credential type|credential-type%%, credential advertisements, credential enforcement %%policy|policy%%, etc.)
 -   proofs (e.g. a digital signature by which third %%parties|party%% can prove its provenance and integrity.
 
@@ -363,12 +366,12 @@ This chapter explains at a high level how electronic %%business transactions|tra
 
 <br/>
 
+<p align="center">
 <img
   alt="High-level transaction overview"
   src={useBaseUrl('images/essif-lab-high-level-trx-overview.png')}
-/>
-
-*Figure 3: High-level transaction overview.*
+/><i>Figure 3: High-level transaction overview.</i>
+</p>
 
 The adjacent figure shows how a %%transaction|transaction%% is conducted at the highest abstraction level. One %%party|party%%, called the 'Requester', sends a request for a product or service to another %%party|party%% (that we will call the 'Provider'). Then, they start to negotiate a 'transaction agreement', which means that they exchange data through various channels for the purpose of establishing the details of the product/service to be provided and the compensation, data needed to mitigate %%transaction|transaction%% %%risks|risk%%, etc., all of which is necessary for the %%parties|party%% to (individually/subjectively) decide whether or not to commit to the %%transaction|transaction%%. Section 3.2 provides more detail about this phase.
 
@@ -384,12 +387,12 @@ Please note that while %%transactions|transaction%% are symmetrical in nature (i
 
 This phase starts by the requester sending a %%transaction request|transaction-request%% to the provider, and ends whenever either one of the %%parties|party%% quits, or both %%parties|party%% commit.
 
+<p align="center">
 <img
   alt="High-level transaction negotiation"
   src={useBaseUrl('images/essif-lab-high-level-trx-negotiation.png')}
-/>
-
-*Figure 4: High-level transaction negotiation.*
+/><i>Figure 4: High-level transaction negotiation.</i>
+</p>
 
 This figure shows the high-level interactions during this phase. It starts by the requester sending a request for a product or service to the provider. Typically, this would lead to the provider presenting a (web) form the requester must fill in. In the eSSIF-Lab context, the form will also provide a means for setting up a SSI %%communication channel|communication-channel%%, i.e. a secure %%communication channel|communication-channel%% through which provider and requester can both request and obtain (%%presentations|presentation%% of) %%credentials|credential%%, the contents of which they can use to fill in the form. Then, after the form is 'clean', i.e. contains sufficient information for deciding whether or not to commit to the %%transaction|transaction%%, this phase ends.
 
@@ -420,7 +423,7 @@ We foresee two ways in which %%credentials|credential%% can be issued:
 
 This chapter explains the details of how electronic %%business transactions|transaction%% are being conducted using the eSSIF-Lab architectural components as described in chapter 2. We keep on using the parking permit example that we introduced in section 1.1. for illustrative purposes.
 
-Note that both %%parties|party%%, requester and provider, each have components as described in chapter 2. Also note that whenever we introduce another %%party|party%%, it too has such components. Thus, every %%party|party%% can play any of the traditional SSI roles '%%verifier|verifier%%', '%%holder|holder%%' and '%%issuer|issuer%%', and each has its own '%%wallet|wallet%%' functionality. Also, they all have %%data collector|data-collector%% and %%data discloser|data-discloser%% functionality that connect these aforementioned infrastructural components with the business applications.
+Note that both %%parties|party%%, requester and provider, each have components as described in chapter 2. Also note that whenever we introduce another %%party|party%%, it too has such components. Thus, every %%party|party%% can play any of the traditional SSI roles '%%verifier|verifier%%', '%%holder|holder%%' and '%%issuer|issuer%%', and each has its own '%%wallet|wallet%%' functionality. Also, they all have data collector and data discloser functionality that connect these aforementioned infrastructural components with the business applications.
 
 When reading the next sections, please be aware that when a component of one of these %%parties|party%% communicates with another component, this other component may be of the same %%party|party%%, as well as of the other %%party|party%%. Figure 2 only shows components that belong to a single %%party|party%%.
 
@@ -430,11 +433,11 @@ When reading the next sections, please be aware that when a component of one of 
 *The eSSIF-Lab functional architecture is not final. This section is an example of how work that is currently being done may already be documented for the purpose of furthering discussions and providing inspiration to readers.*
 :::
 
-The requester starts the %%transaction|transaction%% by pointing his web-browser to a web-page of the provider that (a) explains how to get a parking permit, and (b) provides a parking-permit application form that needs to be filled in. Technically, this means that the browser does a GET request to an endpoint that is serviced by the providers %%data collector|data-collector%% component.
+The requester starts the %%transaction|transaction%% by pointing his web-browser to a web-page of the provider that (a) explains how to get a parking permit, and (b) provides a parking-permit application form that needs to be filled in. Technically, this means that the browser does a GET request to an endpoint that is serviced by the providers data collector component.
 
-The %%data collector|data-collector%% services this request by creating an empty form of a type appropriate for the request. Then, it continues with requesting data to fill in the form (and providing data as requested by the other Party). It starts this by providing a web page that includes the form to be filled in, as well as a deep-link, QR-code or something similar that allows the requester's browser (plug-in) or SSI-app to contact the provider-endpoint and set up a secure %%communication channel|communication-channel%% through which both can communicate electronically. From then on there are two channels between the requester and the provider: one is a traditional (manual) web-browser - web-server channel, the other is one within which the %%SSI-Agents|ssi-agent%% of various %%parties|party%% will be communicating.
+The data collector services this request by creating an empty form of a type appropriate for the request. Then, it continues with requesting data to fill in the form (and providing data as requested by the other Party). It starts this by providing a web page that includes the form to be filled in, as well as a deep-link, QR-code or something similar that allows the requester's browser (plug-in) or SSI-app to contact the provider-endpoint and set up a secure %%communication channel|communication-channel%% through which both can communicate electronically. From then on there are two channels between the requester and the provider: one is a traditional (manual) web-browser - web-server channel, the other is one within which the %%SSI-Agents|ssi-agent%% of various %%parties|party%% will be communicating.
 
-It is a task of the %%data collector|data-collector%% to orchestrate the inputs: different parts of the form may be filled in and subsequently changed in different ways. Some parts
+It is a task of the data collector to orchestrate the inputs: different parts of the form may be filled in and subsequently changed in different ways. Some parts
 
 -   are required only after a certain condition is met (which is to be evaluated whenever the data that is entered into the form is changed)
 -   must or may initially be filled in manually (i.e.: through the browser);
@@ -444,14 +447,14 @@ It is a task of the %%data collector|data-collector%% to orchestrate the inputs:
 
 Because of this orchestration, the interface to the %%verifier|verifier%% component can be quite simple; it is shown in the image below:
 
+<p align="center">
 <img
   alt="Generic Verification with SSI service"
   src={useBaseUrl('images/generic-verification-with-ssi-service.png')}
-/>
+/><i>Figure 5: Generic Verification with SSI service.</i>
+</p>
 
-*Figure 5: Generic Verification with SSI service.*
-
-The request %%identifier|identifier%% is included in messages between the %%data collector|data-collector%% and %%verifier|verifier%% so as to allow them to handle different %%transactions|transaction%% at the same time.
+The request %%identifier|identifier%% is included in messages between the data collector and %%verifier|verifier%% so as to allow them to handle different %%transactions|transaction%% at the same time.
 
 We assume that the provider has specified the form and the associated validation- and issuing %%policies|policy%% that make the following description work. We refer the reader to section \[tbd\] for an explanation of how the provider can do this.
 
@@ -461,9 +464,9 @@ We assume that the provider has specified the form and the associated validation
 *The eSSIF-Lab functional architecture is not final. This section is an example of how work that is currently being done may already be documented for the purpose of furthering discussions and providing inspiration to readers.*
 :::
 
+<p align="center">
 <img
   alt="Generic Issuing with SSI service"
   src={useBaseUrl('images/generic-issuing-with-ssi-service.png')}
-/>
-
-*Figure 6: Generic Issuing with SSI service.*
+/><i>Figure 6: Generic Issuing with SSI service.</i>
+</p>

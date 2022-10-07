@@ -21,12 +21,12 @@ The **Governance and Management pattern** captures the concepts and relations th
 
 Whether or not an %%objective|objective%% is realized can be seen by the status of the associated results, as is explained [there](../terms/objective). The following figure is a recap of the %%objective|objective%%-concept (using the usual **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**):
 
+<p align="center">
 <img
   alt="A Party's Objectives"
   src={useBaseUrl('images/essif-lab-objective.png')}
-/>
-
-*Figure 1. Parties and their objectives.*
+/><i>Figure 1. Parties and their objectives.</i>
+</p>
 
 The core property of this model is that every %%objective|objective%% has precisely one %%owner|owner%%, which is the %%party|party%% that pursues the realization of the associated results, from one (or both) of the two following perspectives:
 
@@ -38,12 +38,12 @@ The core property of this model is that every %%objective|objective%% has precis
 
 When a %%party|party%% both %%manages|management%% and %%governs|governance%% an %%objective|objective%%, it is in full control of the production and the usability of the associated results. This is easy to do when compared to the situation in which a %%party|party%% either %%manages|management%% or %%governs|governance%% its %%objective|objective%%, but not both. This governance and management pattern focuses on the latter situation. The following figure illustrates this situation:
 
+<p align="center">
 <img
   alt="governance and management"
   src={useBaseUrl('images/essif-lab-governance-and-management.png')}
-/>
-
-*Figure 1. Governing and Managing objectives.*
+/><i>Figure 1. Governing and Managing objectives.</i>
+</p>
 
 The figure shows four %%parties|party%%, distinguished by color - let's call them Red, Yellow, Blue and Green. We assume that each party %%owns|owner%% multiple %%objectives|objective%%, but in the figure we only show a single one, each of which with a description that %%identifies|identify%% that %%objective|objective%% from the set of %%objectives|objective%% of each %%party|party%%. The figure also shows one of the results associated with each of these %%objectives|objective%%, again phrased such that the %%objective|objective%% %%owner|owner%% knows what this really %%means|semantics%%. So, Red %%governs|governance%% an %%objective|objective%% that it describes as "Get a transportation means for work-travel". The associated result "transportation means" then doesn't come as a surprise.
 
@@ -79,6 +79,6 @@ A %%party|party%% may decide to set %%objectives|objective%% for the purpose of 
 
 ### Resilience
 
-Resilience is the capability of adapting one's %%objectives|objective%% (and associated behavior) as one's context changes, in such a way that its mission, i.e. its most important and valued %%objective(s)|objective%% (which typically include one's "raison d'être" - the reason for one's existence), can continue to be realized. The %%objectives|objective%% a %%party|party%% will adapt are the %%expectations|expectation%%, %%obligations|obligation%% and %%control objectives|control-objective%% that serve to realize its mission.
+Resilience is the %%capability|capability%% of adapting one's %%objectives|objective%% (and associated behavior) as one's context changes, in such a way that its %%mission|mission%%, i.e. its most important and valued %%objective(s)|objective%% (which typically include one's "raison d'être" - the reason for one's existence), can continue to be realized. The %%objectives|objective%% a %%party|party%% will adapt are the %%expectations|expectation%%, %%obligations|obligation%% and %%control objectives|control-objective%% that serve to realize its %%mission|mission%%.
 
-While small changes in one's %%objectives|objective%% (%%control objectives|control-objective%%, %%expectations|expectation%% and %%obligations|obligation%%) are typically considered part of %%risk management|risk-management%%, resilience is about making major changes. For example, consider a baker whose mission is to have fun and to ensure he has no more money (and worries) than strictly necessary to have that fun. At first, he decided that this meant the creation and maintenance of a bakery with a shop (a %%control objective|control-objective%% for its mission), which in turn has other %%control objectives|control-objective%%, and %%expectations|expectation%% (e.g. towards suppliers of flour, yeast, etc.), and %%obligations|obligation%% (e.g. towards its customers to provide them with bread, cake, etc.). If for some reason his customers no longer show up, he may decide to start baking pottery, or become a fisherman, which constitutes a significant overhaul of a (very) large part of its %%objectives|objective%%.
+While small changes in one's %%objectives|objective%% (%%control objectives|control-objective%%, %%expectations|expectation%% and %%obligations|obligation%%) are typically considered part of %%risk management|risk-management%%, resilience is about making major changes. For example, consider a baker whose %%mission|mission%% is to have fun and to ensure he has no more money (and worries) than strictly necessary to have that fun. At first, he decided that this meant the creation and maintenance of a bakery with a shop (a %%control objective|control-objective%% for its %%mission|mission%%), which in turn has other %%control objectives|control-objective%%, and %%expectations|expectation%% (e.g. towards suppliers of flour, yeast, etc.), and %%obligations|obligation%% (e.g. towards its customers to provide them with bread, cake, etc.). If for some reason his customers no longer show up, he may decide to start baking pottery, or become a fisherman, which constitutes a significant overhaul of a (very) large part of its %%objectives|objective%%.

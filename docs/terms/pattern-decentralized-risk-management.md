@@ -18,6 +18,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 This is work in progress.
 :::
 
+:::info Editor's note
+This work needs to be compared with and integrated with (or separated from) the contents of the %%Decentralized GRC pattern|pattern-decentralized-grc%%
+:::
+
 Traditional %%risk management|risk-management%% (RM) frameworks, such as [ISO 31000](https://www.iso.org/obp/ui/#iso:std:iso:31000:ed-2:v1:en), [COSO](https://www.coso.org/Pages/default.aspx), or [NIST 800-30](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf) have emerged in a time where %%centralized organizational leadership|authority%% and auditing, and cyclic ([PDCA](https://en.wikipedia.org/wiki/PDCA)) processes for %%risk management|risk-management%%, were prevalent. Most (large) enterprises have adopted (a mix of) them, and many have been certified (e.g. against [ISO 9001](https://www.iso.org/iso-9001-quality-management.html) or [ISO 27001](https://www.iso.org/isoiec-27001-information-security.html)) thereby demonstrating they %%govern|governance%% and run the associated %%risk management|risk-management%% processes as intended, and are %%compliant|compliance%% with such standards and often also with applicable regulations.
 
 While useful, these %%frameworks|normative-framework%% don't provide actual/practical guidance for all situations. For example, it is well-known that SMEs or other parties that do not have the required (expert) knowledge, time and other resources to setup and run elaborate  processes for %%managing|management%% %%their risks|risk-owner%%, are pretty much left to their own devices. Also, larger organizations that use these %%frameworks|normative-framework%% need additional mechanisms to ensure that the %%risk objectives|risk-objective%% set out by the board are actually realized in the 'operational cellars' of the organization.[^1]
@@ -34,12 +38,12 @@ Processes exist to realize (the results associated with) %%objectives|objective%
 
 The following figure from [ISO 31000:2018](https://www.iso.org/obp/ui#iso:std:iso:31000:ed-2:v1:en) shows a generic  %%risk management|risk-management%% process that is very similar in nature as the ones presented in other standards:
 
+<p align="center">
 <img
   alt="High-level transaction negotiation"
   src={useBaseUrl('images/essif-lab-iso-risk-management-process.png')}
-/>
-
-*Figure 1: Activities in a generic risk management process (source: [ISO 31000:2018](https://www.iso.org/obp/ui#iso:std:iso:31000:ed-2:v1:en)).*
+/><i>Figure 1: Activities in a generic risk management process (source: [ISO 31000:2018](https://www.iso.org/obp/ui#iso:std:iso:31000:ed-2:v1:en)).</i>
+</p>
 
 Note that the process does not show how %%activities|action%% are sequenced (as often encountered in figures of other standards). That is because in practice it is iterative: an %%activity|action%% is executed because there is a need for its result to be used rather than because it's its turn to be executed (as in sequential specifications).
 
@@ -148,7 +152,7 @@ Another well known method, predominantly for industry, is [bowtie](https://www.s
 
 RM approaches such as the ones mentioned above have severe practical limitations. Individuals and many SMEs do RM intuitively, they 'know' where the risks are that need to be mitigated. They consider such approaches as an inefficient way of finding out what they already know. In large organizations, we've seen lots of activities being conducted in order to comply with the RM-process requirements, but did not contribute all that much to managing actual risk.
 
-An illustration of this is an incident that took place in January 2012 at the Dutch telecom operator KPN. IT security has long been an IT priority for KPN: its CEOs are member of the '[Cyber Security Raad](https://www.cybersecurityraad.nl/)', a national and independent advisory college of the Dutch government whose mission is to increase cybersecurity throughout the country. Also, its critical services have been certified against ISO 9001 and ISO 27001. Notwithstanding all this, a 17 year old boy [broke into hundreds of servers](https://tweakers.net/nieuws/87454/kpn-hacker-zag-acties-als-een-kwajongensstreek.html), where he could have manipulated KPNs fixed telecom network putting the reachability of the national emergency number 112 (911 in the US) at risk. The question here is why the traditional methods were unable to prevent this from happening.
+An illustration of this is an incident that took place in January 2012 at the Dutch telecom operator KPN. IT security has long been an IT priority for KPN: its CEOs are member of the '[Cyber Security Raad](https://www.cybersecurityraad.nl/)', a national and independent advisory college of the Dutch government whose %%mission|mission%% is to increase cybersecurity throughout the country. Also, its critical services have been certified against ISO 9001 and ISO 27001. Notwithstanding all this, a 17 year old boy [broke into hundreds of servers](https://tweakers.net/nieuws/87454/kpn-hacker-zag-acties-als-een-kwajongensstreek.html), where he could have manipulated KPNs fixed telecom network putting the reachability of the national emergency number 112 (911 in the US) at risk. The question here is why the traditional methods were unable to prevent this from happening.
 
 Another illustration comes from the [OWASP Top 10](https://owasp.org/www-project-top-ten/) list of web application security risks. This list, which exists since 2003 and is regularly updated, shows that the variety of vulnerabilities in applications does not change all that much: injection, broken authentication, cross-site scripting, using components with known vulnerabilities are here to stay. The question here is what is missing in the RM processes of small and large organizations alike that makes many of them deploy systems with such vulnerabilities, in spite of the vast amount of guidance that OWASP provides for preventing them.
 
