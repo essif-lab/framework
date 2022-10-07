@@ -15,7 +15,7 @@ export const Mark = ({children}) => (
   </span> );
 
 :::info Editor's note
-footnote numbering has to be checked once this page is sufficiently matured
+This text is a first draft. Further work is defered until it is clear for what (actual) purposes it will be used, so that we can make sure it is fit for such purposes.
 :::
 
 ## 1. Purpose
