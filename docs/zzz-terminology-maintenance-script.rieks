@@ -193,10 +193,12 @@ with "governance"
 
 // [H-I-J-K] (all holder, issuer, revocator, verifier and wallet stuff, too)
 // for associated policies, see [P]
-replace-regex "%{mid}(holder|issuer|revocator|verifier|validator|wallet|jurisdiction(-governor)?|knowledge(-governor)?)%{ss}%{end}"
+replace-regex "%{mid}(holder|issuer|verifier|validator|wallet|jurisdiction(-governor)?|knowledge(-governor)?)%{ss}%{end}"
 with "$1"
-replace-regex "%{mid}((holder|issuer|revocat(?:or|ion)|verifier|validat(?:or|ion)|wallet)-polic)%{yies}%{end}"
+replace-regex "%{mid}((holder|issuer|verifier|validat(?:or|ion)|wallet)-polic)%{yies}%{end}"
 with "$1y"
+replace-regex "%{mid}revo(cat(or|ion)|ke[sd]?|king)%{end}"
+with "revoke"
 replace-regex "%{mid}(individual|people|person|human(-being)?)%{ss}%{end}"
 with "human-being"
 replace-regex "%{mid}identifier%{ss}%{end}"

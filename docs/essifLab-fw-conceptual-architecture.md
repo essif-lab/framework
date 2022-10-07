@@ -74,7 +74,7 @@ This %%capability|capability%% consists of
 - a design-time part, in which the %%party|party%% determines for every information process when data is needed, what kinds of data that would be, what the %%verification criteria|verify%% are, what the %%validation criteria|validate%% are, and how this data is to be subsequently processed.
 - a mapping part, in which such criteria are converted into %%policies|policy%% for %%employees|employee%% (that are tasked to do the operational work) can read and understand, and use to perform the %%verification|verify%%, %%validation|validate%% and other, related kinds of %%actions|action%% in the way as intended by the %%party|party%% on whose behalf they will be %%acting|action%%.
 
-### 2.3. Storage Capability
+### 3.2. Storage Capability
 
 The purpose of the storage %%capability|capability%% is to ensure that a %%party|party%% can cache data (typically: %%credentials|credential%%) in such a way that the confidentiality (privacy) and integrity of the stored data is guaranteed, and that only designated %%employees|employee%% (either of that %%party|party%% itself, but also of other %%parties|party%%) are provided with rights and/or duties to access (read, write) that cache.
 
@@ -83,12 +83,12 @@ This %%capability|capability%% consists of
   - a %%wallet|wallet%% (the actual store/cache), that is capable of servicing requests for storing, retrieving, modifying and/or deleting %%credentials|credential%% (perhaps also other data) from the store/cache, according to the access control %%policy|policy%% of its %%owner|owner%%;
   - (at least) one %%holder|holder%% (i.e. an %%employee|employee%% that is capable of communicating with other %%employees|employee%% for the purpose of
     - requesting and obtaining %%credentials|credential%% that it subsequently stores), and
-    - receiving %%presentation requests|presentation-request%%, processing such requests, and responding with either a %%presentation|presentation%% or an error.[^permissions]
+    - receiving %%presentation requests|presentation-request%%, processing such requests, and responding with either a %%presentation|presentation%% or an error.[^2]
 - a design-time part, in which the %%party|party%% %%manages|management%% the %%mandates|mandate%% (including consents) for its own %%employees|employee%%, as well as for %%employees|employee%% of other %%parties|party%%.
 
-[^permissions]: <sup>permissions</sup> every such %%holder|holder%% needs to be appropriately %%mandated|mandate%%; this would typically be part of the %%onboarding|onboarding%% process of that %%holder|holder%%.
+[^2]: every such %%holder|holder%% needs to be appropriately %%mandated|mandate%%; this would typically be part of the %%onboarding|onboarding%% process of that %%holder|holder%%.
 
-### 2.4. Provisioning Capability
+### 3.3. Provisioning Capability
 
 The purpose of the provisioning %%capability|capability%% is to ensure that a %%party|party%% can
 - create and subsequently issue %%credential|credential%% of specific kinds upon request, and
@@ -104,18 +104,30 @@ A %%party|party%% that has this %%capability|capability%% will have '%%employees
 - deploy and run (design-time) processes, in which it
   - constructs the %%advertisements|advertisement%% for the kinds of %%credentials|credential%% it will be issuing;
   - establishes the criteria that the components that it has running (and %%act|action%% on its behalf), must use to determine whether or not to service requests that they receive;
-  - decides what related services to use (such as services for revocation[^additional-provisioning-services]), and
+  - decides what related services to use (such as services for revocation[^3]), and
 - a mapping part, in which
   - the service request criteria are converted into %%policies|policy%% that %%employees|employee%% (that are tasked to do the operational work on the %%party's|party%% behalf) can read and understand, and use to decide whether or not to service issuing requests in the way as intended by the %%party|party%% on whose behalf they %%act|action%%.
   - additional (provisioning-related) services are
   - it is determined at what endpoint(s) requests for supplying such %%credentials|credential%% will be serviced;
 
-[^additional-provisioning-services]: The %%party|party%% may want to also implement additional servicesthat are related to the provisioning of %%credentials|credential%%, such as services for
+[^3]: The %%party|party%% may want to also implement additional services that are related to the provisioning of %%credentials|credential%%, such as services for
 
-Provisioning also includes the issuing of %%credentials|credential%% that contain claims that %%mandate|mandate%%[^mandate] specific %%agents|agent%% (the claim's %%subjects|subject%%) for specific kinds of access (read, update, write, ...) to functions that are provided by designated %%agents|agent%% of the %%party|party%% with that provisioning %%capability|capability%%.
+Provisioning also includes the issuing of %%credentials|credential%% that contain claims that %%mandate|mandate%%[^4] specific %%agents|agent%% (the claim's %%subjects|subject%%) for specific kinds of access (read, update, write, ...) to functions that are provided by designated %%agents|agent%% of the %%party|party%% with that provisioning %%capability|capability%%.
 
-[^mandate]: <sup>mandate</sup> A mandate for acces to the %%party's|party%% Credential Store can also be seen as a consent of that %%party|party%% to the mandatee (%%agent|agent%%)
+[^4]: A mandate for acces to the %%party's|party%% Credential Store can also be seen as a consent of that %%party|party%% to the mandatee (%%agent|agent%%)
 
+### 4.4. Revocation Capability
+
+The purpose of the %%revocation|revoke%% %%capability|capability%% is
+- to ensure that that %%credentials|credential%% that have been issued on behalf of the %%party|party%% that runs this component, are revoked whenever a situation is detected (in some %%information process|information-process%%) that shows that one or more of the claims in the %%credential|credential%% are no longer true (in the %%knowledge|knowledge%% of that %%party|party%%)
+- %%parties|party%% that intend to use (data from) a %%credential|credential%% that has been issued by the %%party|party%% that has the %%revocation|revoke%% %%capability|capability%%, are enabled to learn whether or not that (data from) that %%credential|credential%% has been %%revoked|revoke%%.
+
+This %%capability|capability%% consists of
+- runtime/operational parts,
+  - for signalling %%credentials|credential%% that need to be %%revoked|revoke%%;
+  - that implement one or more %%revocation|revoke%% mechanisms, that can be used to revoke such %%credentials|credential%%.
+- a design-time part, in which the %%party|party%% maintains criteria for signalling %%credentials|credential%% to be %%revoked|revoke%%, and determines which kind(s) of %%revocation|revoke%% mechanisms should be used for which kind(s) of %%credentials|credential%%.
+- a mapping part, in which the %%party|party%% maintains the set of %%policies|policy%% that %%employees|employee%% (that are tasked to do the operational work on the %%party's|party%% behalf) can read and understand, and use to decide whether or not to %%revoke|revoke%% %%credentials|credential%%, and do the actual %%revocation|revoke%% thereof.
 ## 4. Functional Components
 
 While %%parties|party%% typically have all these %%capabilities|capability%%, they each will have their own, subjective %%expectations|expectation%% regarding the particular ways in which such %%capabilities|capability%% should operate. Such %%expectations|expectation%% must be made explicit, e.g. by means of %%policies|policy%% that %%employees|employee%% that are %%mandated|mandate%% to perform associated %%actions|action%% can read and interpret such that they execute these %%actions|action%% according to the intentions of the %%party|party%% on whose behalf they do so.
@@ -131,143 +143,10 @@ The following figure shows how parties can furnish the aforementioned %%capabili
 
 You can see e.g. that a %%capability|capability%% may be constructed by one or more functional components. The 'storage %%capability|capability%%', for example, has
 - a %%wallet|wallet%% component, that holds %%credentials|credential%% (and perhaps other data), has a simple interface for doing [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations (the basic operations on data stores), and a mechanism to ensure that requests will only be serviced if the requesting component presents a proper %%mandate|mandate%% (permission, consent, …) for the requested operation.
-- a %%holder|holder%% component, that can interact with %%issuer|issuer%%and %%validator|validator%% components for exchanging %%credentials|credential%%)
+- a %%holder|holder%% component, that can interact with %%issuer|issuer%% and %%validator|validator%% components for exchanging %%credentials|credential%%)
 
 Note that every component in the figure has two parts:
 - the IT that is running on some computer. Note that this IT may be controlled by a %%party|party%% (typically called 'service provider') that is not the %%party|party%% on whose behalf the IT will be functioning.
 - a %%policy|policy%%, authored by the %%party|party%% on whose behalf the component functions, where the %%policy|policy%% specifies the %%party|party%%-specific ways of its functioning. In the Wallet example, it would contain e.g., the access control criteria for deciding whether or not to service the various requests.
 
 What the figure does not show is that a mapping or translation %%activity|action%% may be called for to translate the 'business speak' that states the contents of the %%policies|policy%% into '%%employee|employee%%-specific speak', i.e. data/texts that %%employees|employee%% (that are tasked to execute the associated operational %%actions|action%%), can read and interpret such that when they use them to execute such %%actions|action%% on behalf of the %%party|party%% that authored the (business) %%policies|policy%%, they will do so in accordance with the intensions of that %%party|party%%. Since %%employees|employee%% can be human, non-human, and typically have different %%capabilities|capability-of-an-actor%% for understanding %%policy|policy%%-data, a single business-%%policy|policy%% might need to be translated into multiple operational %%policies|policy%%.
-
-### 4.1. Validator Component {#validator-component}
-
-The purpose of the "%%validator|validator%% component" is to request and obtain data (typically: %%presentations|presentation%%) that an information process can subsequently use for further processing. This implies that such data must be %%valid|validate%% for the kind of processing that it is requested and obtained.
-
-It also implies that such components need a %%policy|validator-policy%% that states the kinds of processing for which data is to be gathered, and for each kind of processing:
-- a specification (syntax, semantics) of the data set that can be used in that further processing (which can be visualized as a form that can be filled in);
-- a list of criteria that can be used to determine whether the data set is %%valid|validate%% or not. The data that the %%validator|validator%% component itself needs to evaluate such criteria may be obtained from different sources, e.g.
-
-Such %%policies|policy%% may also provided further guidance, so that %%agents|agent%% can learn e.g.
-- what protocols/technologies to use,
-- where requests should be sent to (endpoints, addresses, etc.),
-- other data that is particular to a %%communication channel|communication-channel%% that the %%agent|agent%% uses;
-- how to %%verify|verify%% (parts of) the data that is being obtained;
-- etc.
-
-A validator component must be associated with
-- a %%governance|governance%% process that provides the %%business policy|policy%%, and
-- a mechanism that translates the %%business policy|policy%% in appropriate %%operational policies|policy%%.
-
-### 4.2. Issuer Component {#issuer-component}
-
-The purpose of the %%Issuer|issuer%% Component is to ensure that requests for data (typically in the form of %%(verifiable) credentials|credential%%) can be received and treated. Treatment consists of either accepting the request, and subsequently supplying the data/%%credentials|credential%% to the requesting component, or rejecting the request, and (optionally) informing the requesting component thereof.
-
-The Issuer Component typically requires an %%Issuer Policy|issuer-policy%% that provide guidance to %%agents|agent%% that execute %%actions|action%% on behalf of the %%party|party%% that runs the component. This %%policy|policy%% would state, e.g.:
-- the kinds of data/%%credentials|credential%% that may be provided;
-- %%communication channels|communication-channel%% through which such data may be provided, and for every such %%channel|communication-channel%%:
-  - the criteria that must hold to accept or reject a request;
-  - guidance for requesting data (e.g.: %%presentations|presentation%%), for the purpose of evaluating such criteria;
-  - guidance for (%%verifying|verify%% and) %%validating|validate%% data that comes from responses to such requests;
-  - guidance for the construction of %%credentials|credential%% (e.g. with respect to the kinds of proofs/signatures to use, expiry, status, terms of use, the use of a refresh service, revocation service, etc.)
-
-An Issuer Component must be associated with:
-- a %%governance|governance%% process that provides the %%business policy|policy%% for issuer components, and
-- a mechanism that translates the %%business policy|policy%% in appropriate %%operational policies|policy%%.
-
-### 4.3. Revocation Component {#revocation-component}
-
-The purpose of the %%Revocation component|revocation-component%% is:
-- to determine the kind(s) of revocation mechanisms that the %%party|party%% that runs the
-- to ensure that %%credentials|credential%% that have been issued on behalf of the %%party|party%% that runs this component, are revoked whenever a situation is detected (in some %%information process|information-process%%) that shows that one or more of the claims in the %%credential|credential%% are no longer true (in the %%knowledge|knowledge%% of that %%party|party%%);
--
-
-The Revocation Component typically requires an %%Revocation Policy|revocation-policy%% that provide guidance to %%agents|agent%% that execute %%actions|action%% on behalf of the %%party|party%% that runs the component. This %%policy|policy%% would state, e.g.:
--
-
-A Revocation Component must be associated with:
-- a %%governance|governance%% process that provides the %%business policy|policy%% for revocation components, and
-- a mechanism that translates the %%business policy|policy%% in appropriate %%operational policies|policy%%.
-
-### 4.4. Wallet  Component {#wallet-component}
-
-The purpose of the %%Wallet|wallet%%  Component is to
-
-The Wallet  Component typically requires an %%Wallet Policy|wallet-policy%% that provide guidance to %%agents|agent%% that execute %%actions|action%% on behalf of the %%party|party%% that runs the component. This %%policy|policy%% would state, e.g.:
--
-
-A Wallet  Component must be associated with:
-- a %%governance|governance%% process that provides the %%business policy|policy%% for wallet components, and
-- a mechanism that translates the %%business policy|policy%% in appropriate %%operational policies|policy%%.
-
-### 4.5. Holder Component {#holder-component}
-
-The purpose of the %%Holder|holder%% Component is to
-
-The Holder Component typically requires an %%Holder Policy|holder-policy%% that provide guidance to %%agents|agent%% that execute %%actions|action%% on behalf of the %%party|party%% that runs the component. This %%policy|policy%% would state, e.g.:
--
-
-A Holder Component must be associated with:
-- a %%governance|governance%% process that provides the %%business policy|policy%% for holder components, and
-- a mechanism that translates the %%business policy|policy%% in appropriate %%operational policies|policy%%.
-
-### 3.3.   Holder Component, and its Policy/Preferences
-
-The purpose of the %%holder|holder%% component is to handle %%presentation requests|presentation-request%% that it receives from %%verifier|verifier%% components (both of its own %%principal|principal%%, and of other %%parties|party%%), and responding to such requests.
-
-Typically, a %%holder|holder%% component would access its %%principal's|principal%% %%wallet|wallet%% to check if it has a %%credential|credential%% that it can use to construct a %%presentation|presentation%% (i.e. response) that satisfies the received request.
-
-It may happen that the %%wallet|wallet%% does not have such a %%credential|credential%%. However, for every (%%credential|credential%%, %%issuer|issuer%%) pair, the request should specify the URI that is capable of issuing such a %%credential|credential%%. If or when the %%holder policy|holder-policy%% permit this, the %%holder|holder%% then requests its %%principal's|principal%% data collector to initiate a new %%transaction|transaction%% that will get the %%credential|credential%% from that %%issuer|issuer%%, for which a clean %%transaction form|transaction-form%% would then consist of one that contains said %%credential|credential%%. The %%holder|holder%% would then store it in its %%principal's|principal%% %%wallet|wallet%%, and then proceed to service the %%presentation|presentation%% request as if it had obtained that %%credential|credential%% from its %%principal's|principal%% %%wallet|wallet%%.
-
-It may also happen that the %%wallet|wallet%% has multiple %%credentials|credential%% that satisfy the request, in which case the %%holder|holder%% must choose the one to use for constructing the %%presentation|presentation%%. Again, the %%holder policy|holder-policy%% will specify how this choice needs to be made, and whether or not this can be done automatically by the %%holder|holder%%. If not, the %%holder|holder%% will need to provide for an interaction with a human Colleague that will make such decisions.
-
-In order to make the %%holder|holder%% component work, a %%holder policy|holder-policy%% object is created by, or on behalf of the %%principal|principal%%, which specifies e.g.:
-
--   whether or not %%credentials|credential%% may be collected 'on the fly';
--   how to choose between %%credentials|credential%% that all satisfy a %%presentation request|presentation-request%% (and whether the %%holder|holder%% can make such choices by itself, or whether or not human interaction is required);
--   the kinds of events and data to write to a %%holder|holder%%-audit-log.
-
-### 3.5.  Issuer Component, and its Policy/Preferences
-
-The purpose of the %%issuer|issuer%% component is to issue '%%credentials|credential%%', i.e. digital constructs that contain
-
--   sets of (related) %%statements/claims|assertion%% (e.g. as produced by the data discloser)
--   metadata (e.g. type of %%credential|credential%%, date of issuing and expiration, endpoints, e.g. for revocation checking, %%credential type|credential-type%%, credential advertisements, credential enforcement %%policy|policy%%, etc.)
--   proofs (e.g. a digital signature by which third %%parties|party%% can prove its provenance and integrity.
-
-Another purpose that an %%issuer|issuer%% might serve is to provide a means that allows any other %%agent|agent%% that somehow has obtained a copy or %%presentation|presentation%% of a %%credential|credential%%, to verify whether or not the data therein is conformant to the business administration of its %%principal|principal%%. We will use the term 'revocation service' to refer to such means. Whether or not an %%issuer|issuer%% provides such a service, and what kind of revocation service is provided (e.g. a revocation list, an online revocation status protocol, etc.), is a decision that its %%principal|principal%% should make, and specify in the %%issuer  policy|issuer-policy%%.
-
-An %%issuer|issuer%% component may issue %%credentials|credential%% in various formats, e.g. as a Verifiable Credential (VC), an Attribute-Based Credential (ABC), an OpenID Connect/JWT token, etc. The issuing %%party|party%% must specify %%credential types|credential-type%% in such a way that if the same %%credential|credential%% is issued in different formats, it is possible for an arbitrary %%verifier|verifier%% to determine whether or not two %%credentials|credential%% that have different formats, are in fact the same. One way of doing this is that the %%issuer|issuer%% generates an %%identifier|identifier%% for every %%credential|credential%% that it constructs (before expressing it in a specific format).
-
-After the %%issuer|issuer%% has created a %%credential|credential%% (in one or more formats), it checks the %%wallet|wallet%% to see if it contains a %%credential|credential%% of the same type for the same %%subject|subject%%. If (one or more formats) are there, and their contents are the same as the newly created %%credential|credential%%, the existing ones are revoked, deleted and/or archived/tombstoned.<sup>[Issuer.1]</sup> Then, the newly created %%credential|credential%% is added to the %%wallet|wallet%% (in one or more formats). Thus, at any point in time, the %%wallet|wallet%% will contain an actual set of all %%credentials|credential%% that have been issued.<sup>[Issuer.2]</sup>
-
------
-
-[Issuer.1] Tombstoning is a mechanism that is used e.g. in (distributed) ledgers that do not allow for actual deletion, such as blockchains, by marking entries in the ledger as 'being deleted' (i.e. adding a 'tombstone' to such entries).
-
-[Issuer.2] This allows e.g. individuals, that have an %%issuer|issuer%% component in their SSI app, to issue self-signed %%credentials|credential%% and provide them to %%verifiers|verifier%% that request them as usual for non-self-signed %%credentials|credential%%.
-
------
-
-
-### 3.6.  Wallet Component, and its Policy/Preferences
-
-The primary purpose of the %%wallet|wallet%% Component is to (securely) store data, and in particular:
-
--   %%credentials|credential%% - both those that have been issued by the %%issuer|issuer%% (i.e. self-signed %%credentials|credential%%) and those that have been obtained from %%issuers|issuer%% of other %%parties|party%%, and
--   (private) keys e.g. for signing/sealing data on behalf of its %%principal|principal%%.
-
-Other kinds of data may be stored by a %%wallet|wallet%% as well - we will have to see what is practical and makes sense.
-
-By 'securely storing data' we mean that such data
-
--   remains available until a request is received from an %%digital colleague|colleague%% that is entitled to request deletion of such data;
--   remains unchanged during the time in which it is stored;
-
--   can only become available to %%digital colleagues|colleague%% that implement a functionality that requires such access (e.g. a %%colleague|colleague%% %%holder|holder%% component);
--   can only be stored by %%digital colleagues|colleague%% that implement a functionality that require such data to be stored (e.g. a %%colleague|colleague%% %%holder|holder%% or %%issuer|issuer%% component).
-
-It is expected that components other than the %%holder|holder%% and %%issuer|issuer%% will (arise and) need access. One example could be a component that is capable of securely signing data on behalf of the %%principal|principal%%. Another example could be a component that implements some kind of credential revocation functionality.
-
-Human beings cannot directly access any %%wallet|wallet%% component, not even the ones they own. They need an %%electronic agent|agent%% that is capable of authenticating them as (an %%agent|agent%% of) the %%party|party%% that owns the %%wallet|wallet%% component, and upon successful authentication provides a User Interface through which the Human Being can instruct this %%electronic agent|agent%% to manage the %%wallet's|wallet%% contents.
-
-In order to make the %%wallet|wallet%% component work, a %%wallet policy|wallet-policy%% object is created by, or on behalf of the %%principal|principal%%, the contents of which remains to be specified.
