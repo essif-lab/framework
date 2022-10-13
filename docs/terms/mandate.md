@@ -18,9 +18,13 @@ A **mandate** a right or duty that one %%party|party%% (the %%mandator|mandate%%
 
 Note that %%actors|actor%% are never %%mandatees|mandate%%; they can only be that in their capacity of being %%employed|employee%% by a specific %%party|party%%, which may be the %%mandator|mandate%% itself, but also some other %%party|party%%. The reason for that is that this ensures the %%actor|actor%% is %%onboarded|onboarding%% by that %%party|party%%, which makes that %%party|party%% accountable in cases where the %%actor|actor%% misbehaves by misusing, or exceeding the rights and duties that are granted by the %%mandate|mandate%%.
 
-%%Mandates|mandate%% can be very informal, implicit even, all the way to very formal and explicit. Particularly in governmental, policing and judicial settings, %%mandates|mandate%% will be formal because their existence is necessary as part of chains of evidence.
+%%Mandates|mandate%% come in various flavors, ranging from very informal to very formal, with little or much details, implict or explicit, and in a human and/or machine readable form.
 
-%%Mandates|mandate%% can also be very specific and explicit. For example OAuth access tokens, or other kinds of permissions are %%mandates|mandate%% for designated IT components (that act on behalf of some %%party|party%%) to access particular resources that are %%owned|owned%% by the %%mandator|mandate%%, and/or have such resources processed.
+Informal %%mandates|mandate%% typically do not come with assurances and are usually not registered. An example of this is a car owner granting permission to someone else to use the car for some period of time. When
+
+Particularly in governmental, policing and judicial settings, %%mandates|mandate%% will be formal because the ability to establish their existence is necessary as part of chains of evidence. Such %%mandates|mandate%% may also (need to) be registered so that third parties can check their  existence, the extent of rights and/or duties that the %%mandatee|mandate%% has been granted (i.e. what it can and cannot do under the %%mandate|mandate%%), and obtain assurances to its rightful issuance (the issuer of the %%mandate|mandate%% must have the same right or duty as is %%mandated|mandate%%, as well as the right to %%mandate|mandate%% that right or duty.
+
+%%Mandates|mandate%% can also be very specific and explicit. For example [OAuth access tokens](https://www.oauth.com/oauth2-servers/access-tokens/), or other kinds of permissions are %%mandates|mandate%% for designated IT components (that act on behalf of some %%party|party%%) to access particular resources that are %%owned|owned%% by the %%mandator|mandate%%, and/or have such resources processed.
 
 A particular kind of %%mandate|mandate%% is called 'consent'. Basically, this means that an %%employee|employee%% (of an arbitrary %%party|party%%) can request that a %%party|party%% grants a pecific set of rights/duties to that %%employee|employee%%; if the %%party|party%% consents, then that is equivalent as if it had granted the %%employee|employee%% these rights/duties as a %%mandate|mandate%%.
 
