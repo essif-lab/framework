@@ -1,6 +1,6 @@
 ---
 # TEv2 Curated Text Header
-term: terminology-support
+term: pattern-terminology
 termType: pattern
 isa:
 glossaryText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
@@ -17,7 +17,7 @@ attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Terminology Support
+# Create and Maintain Terminologies
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
@@ -27,7 +27,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 This [mental model](@) aims to serve the following purposes:
-- enabling members of a [community](@), as well as other [parties](@), to document their understanding of the [concepts](@) and other [knowledge artifacts](@) (e.g., [mental models](@)) that are relevant for their purposes (realizing their [objectives](@)).
+- enabling members of a [community](@), as well as other [parties](@), to document their understanding of the [concepts](@) and other [knowledge artifacts](@) (e.g., [mental models](@)) that are relevant for their purposes (i.e., realizing their [objectives](@)).
 - provide a solid basis for the design and development of a [set of IT tools](/docs/tev2/tev2-overview) that support [communities](@) as they document their [knowledge](@).
 
 ### Introduction
@@ -45,8 +45,8 @@ Also, this [management](@) may cause reference documents to be created and maint
 Here is a visual representation of this pattern, using the following **[notations and conventions](/docs/tev2/notations-and-conventions#pattern-diagram-notations)**:
 
 <img
-  alt="Conceptual model of the 'terminology-support' pattern"
-  src={useBaseUrl('images/patterns/pattern-terminology-support.png')}
+  alt="Conceptual model of the 'pattern-terminology' pattern"
+  src={useBaseUrl('images/patterns/pattern-pattern-terminology.png')}
 />
 
 The figure shows three areas:

@@ -29,5 +29,5 @@ A **Term Type** is an [identifier](@) that is used to [identify](@) the particul
 
 The ability to specify a [term type](@) as part of a [term](@) mimicks the common practice of disambiguating semantically overloaded [term(name)s](term-name@).
 
-The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 The [term-ref](@) [syntax specification](/docs/tev2/spec-syntax/term-ref-syntax) specifies the syntax that [authors](@) should use as they want to use a specific [term](@) in their text.

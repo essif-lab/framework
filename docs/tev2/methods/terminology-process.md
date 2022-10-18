@@ -1,7 +1,7 @@
 ---
 # TEv2 Curated Text Header
 term: terminology-process
-termType: concept
+termType: process
 isa:
 glossaryText: "a method for recognizing misunderstandings as such, and creating or maintaining [definitions](@) that resolve them."
 synonyms:
@@ -25,10 +25,10 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 ### Summary
-The eSSIF-Lab **terminology process** is a method for recognizing misunderstandings as such, and creating or maintaining [definitions](@) that resolve them. It helps [parties](@) that work together to realize certain [objectives](@) (in some [scope](@)) by enabling them to establish a [terminology](@) that has the property that every party has the same understanding of each of its [terms](@), and that each of these [terms](@) is relevant for the realizations of these [objectives](@).
+The **terminology process** is a method for recognizing misunderstandings as such, and creating or maintaining [definitions](@) that resolve them. It helps [parties](@) that work together to realize certain [objectives](@) (in some [scope](@)) by enabling them to establish a [terminology](@) that has the property that every party has the same understanding of each of its [terms](@), and that each of these [terms](@) is relevant for the realizations of these [objectives](@).
 
 ### Prerequisites
-This process focuses on the creation and maintenance of qualitatively good definitions, i.e. [definitions](@) that satisfy the following quality criteria:
+This process focuses on the creation and maintenance of qualitatively good [definitions](@), i.e. [definitions](@) that satisfy the following quality criteria:
 - the [definition](@) is associated with a [scope](@) that is explicitly defined, i.e. any [party](@) can unambiguously determine whether or not the definition applies;
 - the [criteria](https://www.lexico.com/definition/criterion) of the definition are well-formed, meaning that all stakeholders make the same judgements c.q. reach the same conclusions when using these criteria in a given situation that is relevant within the scope.
 - the definition is relevant, which means that stakeholders have identified cases that demonstrate how the use of this definition helps them realize their objectives and/or address issues that prevent them from doing so, or they have agreed that relevance is obvious.
