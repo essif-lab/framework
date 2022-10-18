@@ -52,7 +52,10 @@ In case the [MRG entry](@) is a copy, the `vsntag` [field](/docs/tev2/spec-files
 
 #### Constructing an MRG Entry from a Curated Text
 
-Constructing an [MRG entry](@) from a [curated text](@) is done by copying the entire front matter of a [curated text](@), and then creating/adding the following fields (or overwriting them if they exist), as follows:
+Constructing an [MRG entry](@) from a [curated text](@) is done by
+1. copying the entire front matter of a [curated text](@) as the new [MRG entry](@),
+2. discarding every field that has a fieldname that, when converted into lowercase, matches any of the fieldnames in the table below,
+3. adding the fields in the below table with the specified contents, as follows:
 
 | Field          | Value(s) that are assigned to the fields |
 | -------------- | :---------- |
