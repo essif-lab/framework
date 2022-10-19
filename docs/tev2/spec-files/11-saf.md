@@ -3,7 +3,7 @@ id: saf
 sidebar_label: SAF (Scope Admin File)
 hide_table_of_contents: true
 scopetag: tev2
-date: 20220303
+date: 20221019
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
@@ -89,7 +89,7 @@ The following fields are defined for the `scope` section of a [SAF](@):
 | `license`     | Y | File in the root of the [scopedir](@) that contains the (default) licensing data. |
 | `statuses`    | n | Ordered list of [tags](@) that are defined in this [scope](@) for specifying stages in the life-cycle of [knowledge artifacts](@). The first element in the list represents the first stage, and the last element the last stage in the life-cycle. |
 | `issues`      | n | URL where issues can be reported and handled.|
-| `website`     | n | URL for the home page of the [terminology](@). |
+| `website`     | n | URL that locates the directory from which rendered versions of [curated texts](@) can be referenced. |
 | `slack`       | n | URL for the slack channel for discussions. |
 | `curators`    | n | Data that can be used to contact individual [curators](@). |
 <!--
