@@ -9,12 +9,12 @@ import path = require('path');
 const directory_path: string = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\terms\\";
 const output_path: string =
       "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\terms_updated\\";
+const term_regex = /(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))(?<showtext>.+?)\]\((?<id>[a-z0-9_-]+?)(?:#(?<trait>[a-z0-9_-]+?))?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+?))?\)/g;
 
-const term_regex: RegExp = new RegExp("(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))");
 
 function resolve_terms(directory: string, output: string) {
       show_status("Reading " + directory + ".....");
-      
+
       fs.mkdir(output, (err) => {
             if (err) throw err;
       });
@@ -54,7 +54,22 @@ function write_file(output: string, file: string, data: string) {
 }
 
 function replace_terms(data: string): string {
-      return data.replace(term_regex, "placeholder");
+      // good example term.md
+      const matches: IterableIterator<RegExpMatchArray> = data.matchAll(term_regex);
+      // basic syntax, i.e. [showtext](term#trait@scopetag:vsntag);
+      // alternative syntax, e.g. [show text@]
+      // markdown output: [showtext](current-path/term#trait)
+      for (const match of Array.from(matches)) {
+            console.log("Match")
+            console.log(match.groups.showtext);
+            console.log(match.groups.id);
+            console.log(match.groups.trait);
+            console.log(match.groups.scopetag);
+            console.log(match.groups.vsntag);
+            // data = data.replace(match.groups.showtext, "placeholder");
+      }
+
+      return data;
 }
 
 function show_status(status: string): void {
@@ -67,7 +82,8 @@ function show_status(status: string): void {
 }
 
 function main(): void {
-      resolve_terms(directory_path, output_path);
+      // resolve_terms(directory_path, output_path);
+      console.log(replace_terms("these are the acts [the purpose of actors](actor#purpose@essif-lab) and so on [the purpose of actors] and so on @essif-lab [the purpose of actors](actor#purpose@essif-lab)"));
 }
 
 main();
