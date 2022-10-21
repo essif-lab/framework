@@ -1,33 +1,22 @@
 ---
-# TEv2 Curated Text Header
-term: terminology-process
-termType: process
-isa:
-glossaryText: "a method for recognizing misunderstandings as such, and creating or maintaining [definitions](@) that resolve them."
-synonyms:
-groupTags:
-formPhrases: terminology-process, terminology-processes
-# Curation status
-status: proposed
-created: 2022-06-06
-updated: 2022-06-06
-# Origins/Acknowledgements
-contributors: RieksJ
-attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
-originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
+id: terminology-process
+// displayed_sidebar: terminologyDesignSideBar
+date: 20221020
 ---
+
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Terminology Process
 
-:::caution
-The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
-As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
-:::
+<img
+  alt="This page is under construction"
+  src={useBaseUrl('images/wip/wip-under-construction.png')}
+/><br/><br/>
 
-### Summary
+## Summary
 The **terminology process** is a method for recognizing misunderstandings as such, and creating or maintaining [definitions](@) that resolve them. It helps [parties](@) that work together to realize certain [objectives](@) (in some [scope](@)) by enabling them to establish a [terminology](@) that has the property that every party has the same understanding of each of its [terms](@), and that each of these [terms](@) is relevant for the realizations of these [objectives](@).
 
-### Prerequisites
+## Prerequisites
 This process focuses on the creation and maintenance of qualitatively good [definitions](@), i.e. [definitions](@) that satisfy the following quality criteria:
 - the [definition](@) is associated with a [scope](@) that is explicitly defined, i.e. any [party](@) can unambiguously determine whether or not the definition applies;
 - the [criteria](https://www.lexico.com/definition/criterion) of the definition are well-formed, meaning that all stakeholders make the same judgements c.q. reach the same conclusions when using these criteria in a given situation that is relevant within the scope.
@@ -36,7 +25,7 @@ This process focuses on the creation and maintenance of qualitatively good [defi
 
 This process does not prohibit that definitions may satisfy other criteria, or be associated with other attributes so that they may become better suited to serve other purposes as well. For example, a definition that is to be used in an educational context may be required to come with examples, and/or explanations about why the distinction is made as it is.
 
-### Creating or Changing a Definition
+## Creating or Changing a Definition
 
 The process (step) for creating and/or changing a definition starts with a request to this end.
 
@@ -48,7 +37,7 @@ We do not prescribe any specific way for stakeholders to process the request. We
 
 If the set of stakeholders is too large to be practical for satisfying these criteria, they may appoint one (or a small committee) of them as a 'terminology officer' or 'curator', i.e. the one that is tasked with processing such requests and bringing that processing to a satisfactory end.
 
-### Conflict Mediation and Resolution
+## Conflict Mediation and Resolution
 
 We have experienced many situations in which terms were not used 'in the right way'. This is not problematic per se. Going back to the example of the coffee cup, one of the students may observe that coffee is being served in something that he does not consider to be a cup. If he reacts by saying how surprised he is to find out that cups are more varied than he thought so far, this is an expression of having obtained a new insight, and having learned in an enjoyable fashion. From our perspective, he values the importance of the criterion higher than the importance of being right in the definition that he has (unconsciously) used himself.
 
@@ -64,7 +53,7 @@ Another intervention that you can do when the scope is clear, yet the discussion
 - it dawns on you that it is not one, but other distinctions need be made as well. In the example of the wine students, they may find out that they do not only need a definition for 'glass', but that they need other terms in order to distinguish between the various kinds of glasses they need for drinking different wines.[^IAU] You split up the discussion in as many discussions as you want to make distinctions.
 - no convergence takes place at all. You are probably trying to make distinctions that in the end do not make any sense. Take a break, try to get some fresh/foolish ideas, and try again from there.
 
-### Background
+## Background
 
 A common way to foster mutual understanding is to define terms. The idea is that if we agree to define a term in some way, and use that term accordingly, we avoid misunderstandings. Indeed, many terminologies (lists of definitions) have been established, in many varieties (e.g. glossaries, dictionaries, etc.) in an attempt to achieve this objective. The fact that debates about well-known terms keep popping up over and over again both underlines the importance of this work and suggests that improvements are called for.
 
@@ -86,7 +75,7 @@ We say that a criterion is 'relevant' if it has the property that all stakeholde
 
 Obviously, criteria that are relevant in one context may not not be relevant in another context. For example, in the context of a chic restaurant in which some students want to have a good time, conversing with one another and drinking glasses of wine, the criterion for a glass: 'anything that can contain wine and that a person can drink out of' would be relevant. In the context of that same restaurants in which the same students want to taste wine as part of their training to become a sommelier, this criterion is no longer relevant.
 
-### Notes
+## Notes
 
 [^note]: We have often seen (changes in) definitions of terms being contributed by well-intentioned people, the result of which didn't qualify as a 'good definition', amongst others because they were not stakeholders as we see them.
 

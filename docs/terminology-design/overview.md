@@ -16,46 +16,40 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 In order for a [community](@) (e.g. a workgroup, taskforce, project/product team, department, etc.) to realize its [objectives](@), it is beneficial that its members have a common set of the ideas, [concepts](@) and other [knowledge artifacts](@) that are relevant for realizing these [objectives](@). The ability to realize such a common understanding, and to demonstrate that this is actually the case, is a critical capability for success.
 
-This is not trivial. [Many cultures](https://en.wikipedia.org/wiki/Tower_of_Babel#Comparable_myths) have stories, similar to that of the [Tower of Babel](https://en.wikipedia.org/wiki/Tower_of_Babel), that observe that the big feats, such as building a "tower, whose top may reach unto heaven", cannot be achieved unless there is linguistic unity. This is nicely illustrated in the architecture of the building of the EU parliament in Strasboug, which resembles the Tower of Babel as painted by Brueghel (see Figure 1).
+## The importance of establishing 'linguistic unity'
+
+[Many cultures](https://en.wikipedia.org/wiki/Tower_of_Babel#Comparable_myths) have stories, similar to that of the [Tower of Babel](https://en.wikipedia.org/wiki/Tower_of_Babel), that observe that the big feats, such as building a "tower, whose top may reach unto heaven", cannot be achieved unless there is a sufficient 'linguistic unity' between people that work together to produce a result that contributes to the construction of the tower. That is: the [terms](@) they use have (sufficiently) the same meaning. Or in still other words: to have a [terminology](@), i.e. a set of [terms](@), that all participants have the same understanding of, and find relevant for the context in which they work together.
+
+All of these stories suggest that this is far from trivial. And the fact that the architecture of the building of the EU parliament in Strasboug very much resembles the Tower of Babel as painted by Brueghel (see Figure 1), is a constant reminder of this.
 
 <p align="center">
 <img
   alt="EU Parliament building resembles Tower of Babel by Brueghel"
   src={useBaseUrl('images/terminology-design/brueghel-and-eu-parliament.png')}
-/><i>Figure 1.EU Parliament building resembles Tower of Babel by Brueghel</i>
+/><i>Figure 1. The EU Parliament building resembles the Tower of Babel by Brueghel</i>
 </p>
 
-While the importance of understanding one another is generally and widely recognized, one can also observe that achieving a workable 'linguistic unity' lacks easy-to-use means and tools.
+## The difficulty of establishing a terminology
 
-The traditional tool for fostering common understanding is using [glossaries](@) or [dictionaries](@), such as the [Oxford English Dictionary (OED)](https://www.lexico.com/definition/glossary), the [Sovrin Glossary](https://sovrin.org/library/glossary/) and the [NIST Glossary](https://csrc.nist.gov/glossary). Other initiatives produce documents with explanations, e.g. the [terminology for talking about privacy by data minimization](https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf) by Pfitzmann and Hansen (2010), or the [EBSI Terminology](https://ec.europa.eu/cefdigital/wiki/display/EBP/EBSI+Terminology) (login required).
+Many people that have been part of project teams that engage in large projects have experienced this in person, and can tell many stories about how gaining a workable 'linguistic unity' wasn't really achieved in some project, even though project memebers all agreed on how important this is, and real attempts were made to realize it.
 
-Traditional tools usually come with drawbacks that reduce their practical usefulness in this electronic era. [Dictionaries](@) leave their user to decide which of the various meanings that a term may have was intended. [Glossaries](@) typically provide a single meaning for a term, but lack a specification of the scope/context in which it is applied or where it is authoritative. And documents rarely explain the ideas (concepts) behind terms they use.
+The most common approach for this is to create a glossary, i.e. an alphabetically sorted list of terms and their descriptions (sometimes also called definitions), that the participants in a project all agree on. Usually, this means that people start to collect terms and descriptions that they either make up, or copy from other existing glossaries. Then, discussions follow that typically result in the modification of descriptions, as well as in more discussions. At some point, the effort needs to stop, and the glossary is established (published, finalized).
 
-The eSSIF-Lab terminology effort is an attempt to improve on this, by
-- creating and using tools that help authors and readers to understand the texts the create/read;
-- creating and maintaining a [Terminology Corpus](corpus@) that documents such understanding;
-- automatically regenerate [knowledge artifacts (e.g. [glossaries](@) or [dictionaries](@)) as the [corpus](@) is being updated.
-
+A glossary that has been created this way typically does not establish the 'linguistic unity' that was attempted to be realized. If it had, you would not find documents (articles, blogs, mailing list messages, github issues, etc.) that used a term in a meaning that differs from the meaning as defined in the glossary they supposedly use. Also, you would not see discussions between people that each use a specific term in their own way, i.e. in a meaning that differs from that of the other persons.
 
 :::info Editor's note
-([Agredo-Delgado, et. al., 2021](https://link.springer.com/article/10.1007/s10588-021-09326-z))[^1] have tested a process for constructing a shared understanding in computer-supported collaborative work, where the construction part consists of 4 steps:
-1. each group member acquires an individual understanding of the subject;
-2. each group member exposes his/her ideas and the others actively listen to them;
-3. the group refines, builds or modifies the original ideas;
-4. the differences of interpretation between the group members are dealt with in a constructive fashion, through arguments and clarifications.
+We need some additional text here that on the one hand acknowledges the genuine efforts of people to achieve 'linguistic unity', and explains why these efforts so seldomly result in the intended effects.
 
-The authors state that:
-- groups that obtained poor results (in terms of final product grades) were those that did not generate internal discussions to resolve doubts, did not do the assigned role, and did not have the disposition to work in groups.
-- following the complete process from the beginning was exhausting by the participants and that this generated a lack of commitment for the rest of the activity, due to its high cognitive load.
-- having a clear description helps the execution of the activity;
-- to obtain better results, there must be an interest by each participant to interact with his/her classmates, and give the necessary contributions to achieve the objectives.
-- use of the process improved the understading of participants as well as the group.
-- use of the process generated end products of the activity with better quality levels.
-- the process allowed to obtain better satisfaction with the achievement of the proposed objectives by the activity.
-- the process took a long time to go through and therefore generated a high cognitive load.
-- the process can foster better group interactions and thus better results.
-- there is a need for further research of mechanisms leading to shared understanding, at better understanding the phenomena, its antecedents, and effects, thus generating more opportunities for developing techniques that allow to leverage its benefits for effective group work.
-- the process should become lighter so that the cognitive load might be avoided.
+Also, perhaps, some texts that comment on the quality (i.e.: usefulness) of definitions, e.g.:
+- terms that are defined in terms of themselves;
+- terms that are followed by a description of which it is unclear how that defines a term;
+- terms that are specified as a criterion so that people can determine what is (not) an instance (example) of the term;
+- terms that are specified such that, when a sentence mentions a term, and the term is replaced with its definition, the sentence is still grammatically correct and meaningful.
+- ...
 :::
 
-[^1]: Agredo-Delgado, V., Ruiz, P.H., Mon, A. et al. Applying a process for the shared understanding construction in computer-supported collaborative work: an experiment. Comput Math Organ Theory (2021). https://doi.org/10.1007/s10588-021-09326-z
+## The approach called Terminology Design
+
+:::info Editor's note
+text needs to be written here
+:::
