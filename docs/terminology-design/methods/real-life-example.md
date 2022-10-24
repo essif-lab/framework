@@ -12,7 +12,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 <img
   alt="This page is under construction"
   src={useBaseUrl('images/wip/wip-under-construction.png')}
-/><br/><br/>
+/>
 
 :::info Editor's note
 Tell the story of the EU project and how problems with the term 'identity' were addressed and resolved.

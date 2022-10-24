@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 <img
   alt="This page is under construction"
   src={useBaseUrl('images/wip/wip-under-construction.png')}
-/><br/><br/>
+/>
 
 ## Summary
 The **terminology process** is a method for recognizing misunderstandings as such, and creating or maintaining [definitions](@) that resolve them. It helps [parties](@) that work together to realize certain [objectives](@) (in some [scope](@)) by enabling them to establish a [terminology](@) that has the property that every party has the same understanding of each of its [terms](@), and that each of these [terms](@) is relevant for the realizations of these [objectives](@).

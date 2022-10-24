@@ -6,6 +6,10 @@ date: 20221020
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+export const mark = ({children}) => (
+  <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
+    {children}
+  </span> );
 
 # Terminology Design - Backlog/Work-in-Progress
 
@@ -14,6 +18,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
   src={useBaseUrl('images/wip/wip-under-construction.png')}
 /><br/><br/>
 
-This backlog of Terminology Design is a list of issues (concerns, topics) that still need to be addressed in the Terminology Design Documentation.
+This <mark>backlog</mark> of Terminology Design is a list of issues (concerns, topics) that still need to be addressed in the Terminology Design Documentation.
 
-Currently, the first version is being constructed, and the backlog is empty.
+
+1. We may want to look into the relation of this method and 'design thinking' (see e.g. Liedtka, '[Why Design Thinking Works](https://hbr.org/2018/09/why-design-thinking-works)', Harvard Business Review, September-October 2018).

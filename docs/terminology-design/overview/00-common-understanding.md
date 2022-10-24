@@ -8,12 +8,18 @@ date: 20221020
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-# Enabling a Common Understanding in a Community
-
-export const Mark = ({children}) => (
+<!-- Use 'mark' as an HTML tag, e.g. <mark>text to mark</mark?-->
+export const mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
+
+# Enabling a Common Understanding in a Community
+
+<img
+  alt="This page is under construction"
+  src={useBaseUrl('images/wip/wip-under-construction.png')}
+/>
 
 In order for a [community](@) (e.g. a workgroup, taskforce, project/product team, department, etc.) to realize its [objectives](@), it is beneficial that its members have a common set of the ideas, [concepts](@) and other [knowledge artifacts](@) that are relevant for realizing these [objectives](@). The ability to realize such a common understanding, and to demonstrate that this is actually the case, is a critical capability for success.
 
