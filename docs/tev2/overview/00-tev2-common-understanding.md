@@ -10,7 +10,7 @@ date: 20220513
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-export const Mark = ({children}) => (
+export const mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
@@ -29,7 +29,7 @@ The Terminology Engine (v2) is a set of specifications and tools that (technical
 - to make its own [terminologies](@) available for other [communities](@) to 'import';
 - to generate tangible artifacts such as [glossaries](@), [dictionaries](@) and other documentation (specifications, white papers, etc.) that actually use the [terminology](@) as committed to by (each member of) the [community](@).
 
-This technical support must, however, be complemented with methods that a [community](@) will actually use to produce and maintain its [terminology](@). <Mark>We need to decide whether or not to provide guidance for that as well.</Mark>
+This technical support must, however, be complemented with methods that a [community](@) will actually use to produce and maintain its [terminology](@). <mark>We need to decide whether or not to provide guidance for that as well.</mark>
 
 :::info Editor's note
 ([Agredo-Delgado, et. al., 2021](https://link.springer.com/article/10.1007/s10588-021-09326-z))[^1] have tested a process for constructing a shared understanding in computer-supported collaborative work, where the construction part consists of 4 steps:

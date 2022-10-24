@@ -3,7 +3,7 @@ id: saf
 sidebar_label: SAF (Scope Admin File)
 hide_table_of_contents: true
 scopetag: tev2
-date: 20221019
+date: 20221024
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
@@ -49,11 +49,11 @@ The following sections specify the fields for each of these parts.
 scope:
   scopetag: tev2 # identifier that curators have determined for this terminology
   scopedir: https://github.com/essif-lab/framework/tree/master/docs/tev2  # URL of the scope-directory
-  curatedir: docs # directory where all curated files are located. Full URL is `scopedir`/`curatedir`
+  curatedir: terms # directory where all curated files are located. Full URL is `scopedir`/`curatedir`
   glossarydir: glossaries # directory where all glossary files and GDFs are located. Full URL is `scopedir`/`glossarydir`
-  mrgfile: glossaries/mrg.json # file that contains the (default/current) machine readable glossary. Full URL is `scopedir`/`mrgfile`
-  hrgfile: glossaries/glossary # file that contains the (default/current) human readable glossary. Full URL is `scopedir`/`hrgfile`
-  license: LICENSE.md # file that contains the (default/current) licensing conditions. Full URL is `scopedir`/`license`
+  mrgfile: mrg-tev2-test.yaml # file that contains the (default) machine readable glossary. Full URL is `scopedir`/`mrgfile`
+  hrgfile: glossary-tev2 # file that contains the (default) human readable glossary. Full URL is `scopedir`/`hrgfile`
+  license: LICENSE.md # file that contains the (default) licensing conditions. Full URL is `scopedir`/`license`
   statuses: [ proposed, approved, deprecated ] # list of status tags that are defined for knowledge artifacts in this scope
   issues: https://github.com/essif-lab/framework/issues # URL where issues can be raised and handled
   website: https://essif-lab.github.io/framework/docs/tev2/tev2-overview # home page of the terminology
@@ -84,12 +84,12 @@ The following fields are defined for the `scope` section of a [SAF](@):
 | `scopedir`    | Y | URL of the location of the [scopedir](@) associated with the [scopetags](@) listed in the `scopetags` field. |
 | `curatedir`   | Y | Path to the directory where all [curated files](@) are located. This directory may contain subdirectories to allow [curators](@) to organize the files in any way they see fit. Full URL is `<scopedir>`/`<curatedir>`.|
 | `glossarydir` | Y | Path to the directory where all [glossary](@)-related files are located. Full URL is `<scopedir>`/`<glossarydir>`. This directory SHOULD contain one [MRG](@) for every element in the version-section in the [SAF](@), and one or multiple [HRGs](@). It MAY contain other files, e.g. containing instructions, headers, footers or other things that are necessary for generating specific [glossaries](@). |
-| `mrgfile`     | Y | Name of the file that contains the (default/current) [MRG](@) for this [scope](@). Full URL is `<scopedir>`/`<glossarydir>`/`<mrgfile>`. |
-| `hrgfile`     | Y | Name of the file that contains the (default/current) [HRG](@) for this [scope](@). Full URL is `<scopedir>`/`<glossarydir>`/`<hrgfile>`. |
+| `mrgfile`     | Y | Name of the file that contains the default [MRG](@) for this [scope](@). Full URL is `<scopedir>`/`<glossarydir>`/`<mrgfile>`. The filename MUST appear in one of the elements of the `versions` section of the [SAF](@). |
+| `hrgfile`     | Y | Name of the file that contains the default [HRG](@) for this [scope](@). Full URL is `<scopedir>`/`<glossarydir>`/`<hrgfile>`. |
 | `license`     | Y | File in the root of the [scopedir](@) that contains the (default) licensing data. |
 | `statuses`    | n | Ordered list of [tags](@) that are defined in this [scope](@) for specifying stages in the life-cycle of [knowledge artifacts](@). The first element in the list represents the first stage, and the last element the last stage in the life-cycle. |
 | `issues`      | n | URL where issues can be reported and handled.|
-| `website`     | n | URL that locates the directory from which rendered versions of [curated texts](@) can be referenced. |
+| `website`     | n | URL for the home page of the [terminology](@). |
 | `slack`       | n | URL for the slack channel for discussions. |
 | `curators`    | n | Data that can be used to contact individual [curators](@). |
 <!--
@@ -152,10 +152,11 @@ The third section in the [SAF](@) specifies the [terminology](@) of the [scope](
 # See the Glossary Generation Tool (GGT) for details about the syntax and semantics.
 #
 versions:
-  - vsntag: 0x921456 # a versiontag that identifies this version from all other versions in the SAF
+  - vsntag: v0.9.4 # a versiontag that identifies this version from all other versions in the SAF
+    mrgfile: mrg-tev2-v0.9.4.yaml # URL: <scopedir>/<glossarydir>/<mrgfile>
     altvsntags: # alternative verstiontags
       - latest
-      - v0.9.4
+      - 0x921456
     termselcrit:
       - "tags[management]@essif-lab" # import all terms from the mrg of `essif-lab:latest` that have grouptag `management`.
       - "terms[party,community](@essif-lab:0.9.4)" # import the terms `party` and `community` from the mrg of `essif-lab:0.9.4`.
@@ -163,9 +164,10 @@ versions:
     status: proposed
     from: 20220312
     to:
-  - vsntag: 0x654129 # a versiontag that identifies this version from all other versions in the SAF
+  - vsntag: v0.9.4 # a versiontag that identifies this version from all other versions in the SAF
+    mrgfile: mrg-tev2-v0.9.4.yaml # URL: <scopedir>/<glossarydir>/<mrgfile>
     altvsntags: # alternative verstiontags
-      - v0.9.0
+      - 0x654129
     termselcrit:
       - "*@essif-lab" # import all terms defined in the scope `essif-lab`
       - "-tags[terminology]" # remove all terms tagged with the grouptag `terminology`
@@ -188,6 +190,7 @@ The following fields are defined for the `versions` section of a [SAF](@):
 | Name        | Req'd | Description |
 | ----------- | :---: | ----------- |
 | `vsntag`      | Y | [Versiontag](@) that that is used to [identify](@) this version within the set of all other versions that are maintained within this [scope](@). in this [SAF](@). It MUST NOT be changed during the lifetime of this version.<br/>Must satisfy regex `[a-z0-9_-\.]+`. |
+| `mrgfile`     | Y | URL of the [MRG](@)-file that contains the [MRG-entries](@) of this version. Full URL is `<scopedir>`/`<glossarydir>`/`<mrgfile>`. |
 | `altvsntags`  | n | List of alternative [versiontags](@) that may be used to refer to this version of the [scope's](@) [terminology](@). A typical use of this field would be to tag a version as the 'latest' version.<br/>Must satisfy regex `[a-z0-9_-\.]+`. |
 | `license`     | n | File that contains the (default) licensing conditions. Full URL is `scopedir`/`license`. If not specified, its value defaults to the value of the `license` field in the `scope` section (of this [SAF](@)). The purpose of this field is to allow different versions of the [scope's](@) [terminology](@) to have different licenses. |
 | `termselcrit` | Y | List of [term selection criteria](@) that are used to generate (this version of) the [scope's](@) [terminology](@). See [Terminology Construction](/docs/tev2/spec-tools/terminology-construction) for details. |

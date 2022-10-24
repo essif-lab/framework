@@ -13,8 +13,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<!-- Use 'Mark' as an HTML tag, e.g. <Mark>text to mark</Mark?-->
-export const Mark = ({children}) => (
+<!-- Use 'Mark' as an HTML tag, e.g. <mark>text to mark</Mark?-->
+export const mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
@@ -114,9 +114,9 @@ The columns in the following table are defined as follows:
 | `config`   | `<path>`        | n | Path (including the filename) of the tool's (YAML) configuration file. This file contains the default key-value pairs to be used. Allowed keys (and the associated values) are documented in this table. Command-line arguments override key-value pairs specified in the configuration file. This parameter MUST NOT appear in the configuration file itself. |
 | `input`    | `<globpattern>` | n | [Globpattern](https://en.wikipedia.org/wiki/Glob_(programming)#Syntax) that specifies the set of (input) files that are to be processed. |
 | `output`   | `<dir>`         | Y | Directory where output files are to be written. This directory is specified as an absolute or relative path. |
-| `scopedir` | `<path>`        | Y | Path of the [scope directory](@) from which the tool is called. It MUST contain the [SAF](@) for that [scope](@). |
+| `scopedir` | `<path>`        | Y | Path of the [scope directory](@) from which the tool is called. It MUST contain the [SAF](@) for that [scope](@), which we will refer to as the 'current scope' for the [TRRT](@). |
 | `version`  | `<versiontag>`  | n | Version of the [terminology](@) that is to be used to resolve [term refs](@) for which neither a `scope` nor a `version` part has been specified (which is the most common case). It MUST match either the `vsntag` field, or an element of the `altvsntags` field of a [terminology](@)-version as specified in the [`versions` section](/docs/tev2/spec-files/saf#versions) of the [SAF](@). When not specified, its value is taken from the `vsntag` field in the [terminology section](/docs/tev2/spec-files/mrg#mrg-terminology) of the default [MRG](@) (which is [identified](@) by the contents of the `mrgfile` field (in the [`scope` section](/docs/tev2/spec-files/saf#terminology) of the [SAF](@)).
-| `method`   | `<methodarg>`   | n | <Mark>Text, the syntax and semantics of which remain to be specified (see also the Editor's note below).</Mark> When this parameter is omitted, [term refs](@) are replaced with some default [renderable ref](@). |
+| `method`   | `<methodarg>`   | n | <mark>Text, the syntax and semantics of which remain to be specified (see also the Editor's note below).</mark> When this parameter is omitted, [term refs](@) are replaced with some default [renderable ref](@). |
 
 :::info Editor's Note:
 Various `method`s are envisaged, yet remain to be properly specified. One example is where the [term ref](@) `[Actions](@)` would be replaced with a construct such as `<Term reference="action" popup="<popuptext>">actions</Term>`
@@ -172,7 +172,7 @@ The alternative notation assumes that the `showtext` part of a [term ref](@) won
 
 If specified, it MUST appear in the [SAF](@) (of the [scope](@) from which the [TRRT](@) is called), as an element of the `scopetags` field of one of elements in the list of `scopes`. That element also contains a `scopedir` field, that can subsequently be used to obtain the [SAF](@) of that [scope](@).
 
-If not specified, the [scope](@) from which the [TRRT](@) is being called will be used. This SHOULD be the [scope](@) within which the document containing the [term ref](@) is being maintained. Note that the preceding `@` sign may never be omitted because as it serves the purpose to distinguish [term refs](@) from other [Markdown links](https://www.markdownguide.org/basic-syntax/#links). A `scopetag` shall only contain characters in regex `[a-z0-9_-]`.
+If not specified, the current [scope](@) (from which the [TRRT](@) is being called) will be used. This SHOULD be the [scope](@) within which the document containing the [term ref](@) is being maintained. Note that the preceding `@` sign may never be omitted because as it serves the purpose to distinguish [term refs](@) from other [Markdown links](https://www.markdownguide.org/basic-syntax/#links). A `scopetag` shall only contain characters in regex `[a-z0-9_-]`.
 
 #### `vsntag` (optional) {#vsntag}
 
@@ -209,16 +209,16 @@ Perhaps the [TRRT](@) may use this tool as a means for generating the `term` fie
 
 ### Locating the identified MRG Entry
 
-As soon as the variables have been provided with a value, the [MRG](@) can be found as follows:
+As soon as the variables have been provided with a value, the [MRG](@) can be found by following a sequence of steps:
 
-1. the `scopetag` enables selecting the [scopedir](@) and the related [SAF](@); if not specified, the [scopedir](@) from which the tool is called will be used (as specified when the [tool was called](#calling-the-tool)).
+1. **get the [scopedir](@) and [SAF](@) associated with the `scope` variable of the [term ref](@)**. If the value of the `scopetag` variable is the [scopetag](@) of the current [scope](@) (as specified when the [tool was called](#calling-the-tool)), then use the current [scopedir](@). Otherwise, look up the [scopedir](@) from the [`scopes` section](/docs/tev2/spec-files/saf#scopes) of the current [SAF](@). From the resulting [scopedir](@), read the [SAF](@) (i.e. the `saf.yaml` file in the root of the [scopedir](@)).
 
-2. the `vsntag` enables selecting the actual [MRG](@) to be used. This is done by checking the `vsntag` field in the [terminology section](docs/tev2/spec-files/mrg#mrg-terminology) of all  [MRGs](@) that are located in the [glossarydir](@) (as specified in the `glossarydir` field in the [scope section](docs/tev2/spec-files/saf#terminology) of the [SAF](@) that is found in the [scopedir](@): an [MRG](@) that matches this value is the one to be used. If there is no match, a warning must be raised;If `vsntag` is not specified, then the default [MRG](@) of the [scope](@) should be used: its location can be found in the `mrgfile` field in the [scope section](docs/tev2/spec-files/saf#terminology) of the [SAF](@).
+2. **get the [MRG](@) associated with the `vsntag` of the [term ref](@)**. Search the element in the [versions section](docs/tev2/spec-files/mrg#versions) of the [SAF](@) where the `vsntag` variable is either the value of the `vsntag` field, or appears as one of the elements in the `altvsntags` field. Then, obtain the filename of the [MRG](@) from the `mrgfile` field of that element.
 
-3. the [MRG entry](@) will be [identified](@) by a process that, starting with the set of all [entries](mrg-entry@) that exist in the selected [MRG](@), weeds out non-matching [entries](mrg-entry@) in one or more steps, as follows:
-  - since `term` must be present, all [entries](mrg-entry@) are removed whose `term` field differs from the `term` variable;
-  - then, if the variable `termtype` is present, all [entries](mrg-entry@) whose `termtype` field has a different value from what that variable holds, are removed from the set;
-  - If the resulting set contains exactly one [MRG entry](@), this is the one that is selected; otherwise, a warning is raised.
+3. **identify the [MRG entry](@) associated with the `id` field of the [term ref](@)**. Get the [MRG](@) from the location specified by the URL `<scopedir>`/`<glossarydir>`/`<mrgfile>` (which are all in the context of [scope](@) as identified by the `scopetag` variable). The [MRG entry](@) will be [identified](@) by a process that starts with the set of all [entries](mrg-entry@) that exist in the selected [MRG](@), and then weeding out any non-matching [entries](mrg-entry@) by applying the following steps:
+    - since `term` must be present, all [entries](mrg-entry@) are removed whose `term` field differs from the `term` variable;
+    - then, if the variable `termtype` is present, all [entries](mrg-entry@) whose `termtype` field has a different value from what that variable holds, are removed from the set;
+    - If the resulting set contains exactly one [MRG entry](@), this is the one that is selected; otherwise, a warning is raised.
 
 ### Rewriting the Term Ref with a Renderable Ref
 
@@ -253,6 +253,8 @@ In this case, the [term ref](@) `[Actions](@)` is replaced with ``[Actions](/<hr
 where:
 
 - `hrgfile` is the contents of the field [SAF](@).`scope.hrgfile`.
+
+Note that if the [term ref](@) refers to a [scope](@) that differs from the current [scope](@), then the URL should be preceeded by the text specified in the `website` field of the [SAF](@) of that [scope](@), because it would not be a relative (local) hyperlink.
 
 </TabItem>
 <TabItem value="complex">
