@@ -1,8 +1,6 @@
 // Purpose: filter out the non-termref-related broken links as logged when building a docker image of the static website.
 // the log is expected to live in `docs/**/*.log`.
 
-// As a sidenote, commits should contain the text "Signed-off-by: RieksJ <rieks.joosten@gmail.com>"
-
 // This is a script that can be run by the Batch Replacer extension of VSCode.
 // Press Ctrl-Shift-P as you are editing this script, then search for `Batch Replacer`, and execute it.
 // Please note that if there are many files, execution may take some time...

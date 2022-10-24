@@ -4,7 +4,7 @@ sidebar_label: MR Glossary Generation
 displayed_sidebar: tev2SideBar
 hide_table_of_contents: true
 scopetag: tev2
-date: 20220808
+date: 20221024
 ---
 
 # Machine Readable Glossary Generation Tool
@@ -14,8 +14,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<!-- Use 'Mark' as an HTML tag, e.g. <Mark>text to mark</Mark?-->
-export const Mark = ({children}) => (
+<!-- Use 'Mark' as an HTML tag, e.g. <mark>text to mark</Mark?-->
+export const mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
@@ -31,14 +31,14 @@ The (newly generated) [MRG](@) is meant to be processed by the other tools in th
 
 ## Generating an MRG
 
-As input, the [MRGT](@) is provided a [SAF](@), is pointed to the particular entry in its [`versions` section](/docs/tev2/spec-files/saf#terminology) that specifies (a specific version of) a [terminology](@). This section not only includes meta-data for that [terminology](@), but also the set of '[term selection criteria](@)' that specify how the [terminology](@) needs to be [constructed](/docs/tev2/spec-tools/terminology-construction).
+As input, the [MRGT](@) is provided a [SAF](@), is pointed to the particular entry in its [`versions` section](/docs/tev2/spec-files/saf#versions) that specifies (a specific version of) a [terminology](@). This section not only includes meta-data for that [terminology](@), but also the set of '[term selection criteria](@)' that specify how the [terminology](@) needs to be [constructed](/docs/tev2/spec-tools/terminology-construction), and the file to which the result needs to be written.
 
 The [MRG](@) is then created as follows (starting with an empty file):
 
 1. The [MRG](@) `terminology` section is created, by copying relevant fields from the appropriate `versions` element in the [SAF](@).
-2. Then, the [terminology construction](/docs/tev2/spec-tools/terminology-construction) takes place, which can be thought of as constructing a set of tuples `{ [term, grouptags] }`, where [term](@)[identifies](@) (the [curated text](@) that documents) the particular [knowledge artifact](@), and `grouptags` is a set of [grouptags](@) that the tuple is associated with.
+2. Then, the [terminology construction](/docs/tev2/spec-tools/terminology-construction) takes place, which can be thought of as constructing a set of tuples `{ [term, grouptags] }`, where [term](@) [identifies](@) (the [curated text](@) that documents) the particular [knowledge artifact](@), and `grouptags` is a set of [grouptags](@) that the tuple is associated with.
 3. For every tuple in this set, an [MRG entry](@) is created, and added to the [MRG](@) under construction. The structure of each such [entry](mrg-entry@) depends on the type of the [knowledge artifact](@) that the [term](@) represents, as the [header](@) of a [curated text](@) depends on that type.
-4. the result is put at the location as specified by the [SAF](@), and the [SAF](@) itself is updated as/if necessary.
+4. By default, the result is put at the location as specified by the [SAF](@), i.e. in the directory as specified by the `glossarydir` field (in the [`scope` section](/docs/tev2/spec-files/saf#terminology)), and using the filename as specified by the `mrgfile` field of the specific version (in the [`versions` section](/docs/tev2/spec-files/saf#versions) of the [SAF](@)). However, the tool may specify ways to override this default.
 
 ### Creating an MRG Entry
 
