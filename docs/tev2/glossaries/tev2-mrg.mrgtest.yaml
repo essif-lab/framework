@@ -1,0 +1,989 @@
+---
+terminology:
+  scopetag: "tev2"
+  scopedir: "https://github.com/essif-lab/framework/tree/master/docs/tev2"
+  curatedir: "terms"
+  vsntag: "mrgtest"
+  license: "LICENSE.md"
+  altvsntags: null
+scopes:
+ -
+  scopetags:
+   - "essiflab"
+   - "essif-lab"
+  scopedir: "https://github.com/essif-lab/framework/tree/master/docs"
+ -
+  scopetags:
+   - "ctwg"
+   - "toip-ctwg"
+  scopedir: "https://github.com/trustoverip/ctwg"
+entries:
+ -
+  term: "concept"
+  scopetag: "tev2"
+  locator: "concept.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "concept{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a [knowledge artifact](@) that captures the ideas/thoughts behind\
+    \ a classification of [entities](@) (what makes [entities](@) in that class 'the\
+    \ same')."
+  created: "2022-06-06"
+  updated: "2022-06-06"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/concept.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "concept"
+   - "summary"
+   - "purpose"
+   - "criteria"
+   - "notes"
+   - "footnotes"
+ -
+  term: "corpus"
+  scopetag: "tev2"
+  locator: "corpus.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "corpus, corpus-of-terminology"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "the documentation that describes the [knowledge](@) around a set\
+    \ of [terms](@) and [concepts](@)."
+  created: "2022-06-06"
+  updated: "2022-06-06"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/corpus.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "corpus"
+   - "short-description"
+   - "purpose"
+   - "acknowledgements"
+ -
+  term: "curated-text"
+  scopetag: "tev2"
+  locator: "curated-text.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "curated-text{ss}, ctext{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a text that documents a [concept](@) or other [knowledge artifact](@)\
+    \ of a specific [community](@) or other [party](@), and is located within a [scope](@)\
+    \ that is owned by that [community](@)/[party](@)."
+  created: "2022-06-02"
+  updated: "2022-08-04"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/curated-text.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "curated-text"
+   - "summary"
+   - "purpose"
+   - "notes"
+ -
+  term: "curatedir"
+  scopetag: "tev2"
+  locator: "curatedir.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "glossary-director{yies}, curatedir{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a directory within a [scopedir](@) within which every file contains\
+    \ a [curated texts](@) for that [scope](@)."
+  created: "2022-07-29"
+  updated: "2022-07-29"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/curatedir.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "curatedir"
+   - "summary"
+ -
+  term: "definition"
+  scopetag: "tev2"
+  locator: "definition.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "definition{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a text that helps [parties](@) to have the same understanding about\
+    \ the meaning of (and [concepts](@) behind) a [term](@), ideally in such a way\
+    \ that these [parties](@) can determine whether or not they make the same distinction."
+  created: "2022-06-06"
+  updated: "2022-06-06"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/definition.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "definition"
+   - "summary"
+   - "purpose"
+   - "criteria"
+   - "examples"
+   - "notes"
+ -
+  term: "dictionary"
+  scopetag: "tev2"
+  locator: "dictionary.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "dictionar{yies}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "an alphabetically sorted list of [terms](@) with various meanings\
+    \ that they may have in different contexts."
+  created: "2022-06-06"
+  updated: "2022-06-06"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/dictionary.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "dictionary"
+   - "summary"
+   - "purpose"
+   - "criteria"
+   - "examples"
+ -
+  term: "glossary"
+  scopetag: "tev2"
+  locator: "glossary.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "glossar{yies}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "an alphabetically sorted list of [terms](@) with the (single) meaning\
+    \ it has in (at least) one context."
+  created: "2022-06-06"
+  updated: "2022-06-06"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/glossary.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "glossary"
+   - "summary"
+   - "purpose"
+   - "criteria"
+   - "examples"
+ -
+  term: "glossarydir"
+  scopetag: "tev2"
+  locator: "glossarydir.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "glossary-director{yies}, glossarydir{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a directory within a [scopedir](@) within which the different versions\
+    \ of its ([machine readable](mrg@) and [human readable](hrg@)) [glossaries](@)\
+    \ are created and maintained."
+  created: "2022-07-29"
+  updated: "2022-07-29"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/glossarydir.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "glossarydir"
+   - "summary"
+ -
+  term: "grouptag"
+  scopetag: "tev2"
+  locator: "grouptag.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "grouptag{ss}, group-tag{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a [tag](@) that is used to group [terms](@) within a specific [scope](@)."
+  created: "2022-06-06"
+  updated: "2022-07-28"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/grouptag.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "grouptag"
+   - "summary"
+   - "criteria"
+   - "examples"
+ -
+  term: "identifier"
+  scopetag: "tev2"
+  locator: "identifier.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "identifier{ss} identification"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a character string that is being used for the identification of some\
+    \ [entity](@) (yet may refer to 0, 1, or more [entities](@), depending on the\
+    \ context within which it is being used)."
+  created: "2021-06-01"
+  updated: "2021-06-01"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/identifier.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "identifier"
+   - "short-description"
+ -
+  term: "identify"
+  scopetag: "tev2"
+  locator: "identify.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "identif{yies}, identif{ying}, identifiable, identification identification"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "an [act](@), by or on behalf of a [party](@), that results in the\
+    \ selection of either\n- a single [partial identity](@) that the party [owns](@),\
+    \ given some (observed or received) data, or\n- a single [entity](@) from a given\
+    \ set of entities that is the [subject](@) of a specified [partial identity](@)\
+    \ that the party [owns](@)."
+  created: "2021-06-01"
+  updated: "2021-06-01"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/identify.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "identify"
+   - "short-description"
+ -
+  term: "ingestion-profile"
+  scopetag: "tev2"
+  locator: "ingestion-profile.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "ingestion-profile{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "the specification of a method by which files that are in a particular\
+    \ place and format (e.g., wiki files) are turned into a [curated text](@)."
+  created: "2022-08-17"
+  updated: "2022-08-17"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/ingestion-profile.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "ingestion-profile"
+   - "summary"
+   - "purpose"
+   - "notes"
+ -
+  term: "knowledge-artifact"
+  scopetag: "tev2"
+  locator: "knowledge-artifact.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "knowledge-artifact{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "something that can be thought of as existing in a particular [knowledge](@),\
+    \ e.g. a [concept](@), or a [mental model](@)."
+  created: "2022-07-27"
+  updated: "2022-07-27"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/knowledge-artifact.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "knowledge-artifact"
+   - "summary"
+   - "purpose"
+   - "criteria"
+ -
+  term: "mental-model"
+  scopetag: "tev2"
+  locator: "mental-model.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "mental-model{ss}, pattern{ss}, conceptual-model{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "A [knowledge artifact](@) that relates a set of [concepts](@) (ideas),\
+    \ relations between them, and constraints about a certain topic, into a coherent\
+    \ and consistent whole (sometimes called 'viewpoint', or 'way of thinking')."
+  created: "2022-06-06"
+  updated: "2022-06-07"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/mental-model.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "mental-model"
+   - "summary"
+   - "purpose"
+   - "criteria"
+   - "notes"
+   - "on-using-existing-mental-models"
+   - "on-the-construction-of-mental-models"
+ -
+  term: "mrg-entry"
+  scopetag: "tev2"
+  locator: "mrg-entry.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "mrg-entr{yies}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "A machine-readable (and interpretable) artifact that contains (pointers\
+    \ to) data and meta-data about a particular  [knowledge artifact](@), such as\
+    \ the associated [term(s)](@), its [definition](@), etc., to make it easy for\
+    \ IT-tools to create, e.g. documentation, [glossaries](@), [dictionaries](@),\
+    \ whitepapers, etc. that uses such [terms](@) ([definitions](@), etc.)."
+  created: "2022-08-11"
+  updated: "2022-08-11"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/mrg-entry.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "mrg-entry"
+   - "summary"
+   - "purpose"
+ -
+  term: "renderable-ref"
+  scopetag: "tev2"
+  locator: "renderable-ref.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "renderable-ref{ss}, renderable-reference{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a text with which the [TRRT](@) replaces a [term ref](@), that can\
+    \ be processed by specific third party rendering tools, the result of which is\
+    \ a rendering of the original [term ref](@) that has additional characteristics\
+    \ that help [readers](@) to (better) understand the intention of its [author](@)."
+  created: "2022-06-06"
+  updated: "2022-08-04"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/renderable-ref.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "renderable-ref"
+   - "summary"
+   - "purpose"
+ -
+  term: "scope-directory"
+  scopetag: "tev2"
+  locator: "scope-directory.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "scope-director{yies}, scopedir{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a directory in a computer file system that contains all files that\
+    \ are either being [curated](@) within a particular [scope](@), or generated to\
+    \ serve some purpose within that [scope](@)."
+  created: "2022-07-29"
+  updated: "2022-07-29"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/scope-directory.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "scope-directory"
+   - "summary"
+   - "purpose"
+   - "criteria"
+ -
+  term: "scope"
+  scopetag: "tev2"
+  locator: "scope.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "scope{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "the extent of the [terms](@), [definitions](@) and other documentation\
+    \ that a [community](@) (which we call the [owner](@) of the [scope](@)) needs\
+    \ to express, communicate and validate its [knowledge](@) as relevant to achieving\
+    \ a specific subset of its [objectives](@)."
+  created: "2022-06-06"
+  updated: "2022-08-04"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/scope.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "scope"
+   - "summary"
+   - "purpose"
+ -
+  term: "scoped-term"
+  scopetag: "tev2"
+  locator: "scoped-term.md"
+  isa: null
+  termType: "concept"
+  formPhrases: null
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a [term](@) that represents (and [identifies](@)) a specific [knowledge\
+    \ artifact](@) of a particular [community](@) (or [party](@))."
+  created: "2022-06-06"
+  updated: "2022-08-04"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/scoped-term.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "scoped-term"
+   - "summary"
+ -
+  term: "scopetag"
+  scopetag: "tev2"
+  locator: "scopetag.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "scopetag{ss}, scope-tag{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a [tag](@) that is used to [identify](@) [scopes](@) from within\
+    \ a specific [scope](@)"
+  created: "2022-06-06"
+  updated: "2022-07-28"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/scopetag.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "scopetag"
+   - "summary"
+   - "criteria"
+   - "examples"
+   - "notes"
+ -
+  term: "semantics"
+  scopetag: "tev2"
+  locator: "semantics.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "semantics"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a mapping between the (tangible/textual) [terms](@) and (intangible)\
+    \ ideas/[concepts](@) - their meaning."
+  created: "2022-06-06"
+  updated: "2022-06-06"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/semantics.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "semantics"
+   - "summary"
+   - "purpose"
+   - "criteria"
+ -
+  term: "synonym"
+  scopetag: "tev2"
+  locator: "synonym.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "synonym{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a [term](@) that has the same meaning as another [term](@)."
+  created: "2022-08-17"
+  updated: "2022-08-17"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/synonym.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+ -
+  term: "tag"
+  scopetag: "tev2"
+  locator: "tag.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "tag{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "an alphanumeric string that is used to identify [scopes](@) (so called\
+    \ 'scopetags'), group [terms](@) (so called 'grouptags'), or identify a specific\
+    \ version of a [terminology](@) (so called 'versiontags') from within a specific\
+    \ [scope](@)."
+  created: "2022-06-06"
+  updated: "2022-06-06"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/tag.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "tag"
+   - "summary"
+   - "criteria"
+   - "examples"
+   - "notes"
+ -
+  term: "term-ref"
+  scopetag: "tev2"
+  locator: "term-ref.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "term-ref{ss}, term-reference{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a word or phrase that is [marked up (in a specific way)](/docs/tev2/spec-syntax/term-ref-syntax)\
+    \ so that it links to a particular [concept](@) (or other [knowledge artifact](@)),\
+    \ enabling it to be rendered in a variety of ways for the purpose of helping [readers](@)\
+    \ to (better) understand the intention of its [author](@)."
+  created: "2022-06-06"
+  updated: "2022-08-04"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/term-ref.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "term-ref"
+   - "summary"
+   - "purpose"
+ -
+  term: "term-syntax"
+  scopetag: "tev2"
+  locator: "term-syntax.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "term-syntaxes"
+  status: "proposed"
+  synonyms: null
+  groupTags: "syntax"
+  glossaryText: "the criterion that specifies which texts can serve as a [term](@),\
+    \ which is that the text must match with (PCRE) regex [`[A-Za-z0-9\\s_]+`](https://www.debuggex.com/r/YQppbqxps5jI0t0P)."
+  created: "2022-08-17"
+  updated: "2022-08-17"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/term-syntax.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "term-syntax"
+   - "summary"
+   - "purpose"
+   - "criterion"
+ -
+  term: "term-type"
+  scopetag: "tev2"
+  locator: "term-type.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "term-type{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "an [identifier](@) that is used to [identify](@) the particular *kind*\
+    \ of [knowledge artifact](@) that a [term name](@) represents. Examples include\
+    \ `concept`, `relation`, `pattern` (or `mental-model`)."
+  created: "2022-06-06"
+  updated: "2022-08-10"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/term-type.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "term-type"
+   - "summary"
+ -
+  term: "term"
+  scopetag: "tev2"
+  locator: "term.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "term{ss}, word{ss}, phrase{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a word or phrase (i.e.: text) that is used to represent specific\
+    \ [knowledge artifacts](@)."
+  created: "2022-06-06"
+  updated: "2022-08-09"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/term.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "term"
+   - "summary"
+   - "purpose"
+   - "criteria"
+   - "notes"
+ -
+  term: "terminology-process"
+  scopetag: "tev2"
+  locator: "terminology-process.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "terminology-process, terminology-processes"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a method for recognizing misunderstandings as such, and creating\
+    \ or maintaining [definitions](@) that resolve them."
+  created: "2022-06-06"
+  updated: "2022-06-06"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/terminology-process.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "terminology-process"
+   - "summary"
+   - "prerequisites"
+   - "creating-or-changing-a-definition"
+   - "conflict-mediation-and-resolution"
+   - "background"
+   - "notes"
+ -
+  term: "terminology-under-construction"
+  scopetag: "tev2"
+  locator: "terminology-under-construction.md"
+  isa: null
+  termType: "concept"
+  formPhrases: null
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a set of [MRG entries](@) that is in the process of being modified,\
+    \ the result of which is a set of [MRG entries](@) that document (a specific version\
+    \ of) a [terminology](@)."
+  created: "2022-06-06"
+  updated: "2022-08-09"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/terminology-under-construction.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+ -
+  term: "terminology"
+  scopetag: "tev2"
+  locator: "terminology.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "terminolog{yies}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a set of [terms](scoped-term@) that are used within a single [scope](@)\
+    \ to refer to [concepts](@) and other [knowledge artifacts](@) of a single [party](@)\
+    \ (e.g. a [community](@)), enabling [parties](@) to reason and communicate ideas\
+    \ they have about one or more specific topics."
+  created: "2022-06-06"
+  updated: "2022-08-11"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/terminology.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "terminology"
+   - "summary"
+   - "purpose"
+ -
+  term: "terms-community"
+  scopetag: "tev2"
+  locator: "terms-community.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "terms-communit{yies}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a [community](@) that maintains a [terminology](@) for the purpose\
+    \ of avoiding misunderstandings between its members as they collaborate."
+  created: "2022-06-06"
+  updated: "2022-06-06"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/terms-community.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "terms-community"
+   - "summary"
+   - "purpose"
+   - "criterion"
+   - "example"
+   - "notes"
+ -
+  term: "tev2"
+  scopetag: "tev2"
+  locator: "tev2.md"
+  isa: null
+  termType: "concept"
+  formPhrases: null
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a set of specifications and tools that caters for the [curationa](@)\
+    \ of [terminologies](@), as well as for its subsequent use in publications of\
+    \ different types (e.g. websites, whitepapers) and formats (e.g. html, LaTeX),\
+    \ as appropriate for different, individual [scopes](@)."
+  created: "2022-09-19"
+  updated: "2022-09-19"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/tev2.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "tev2-terminology-engine-version-2"
+   - "summary"
+ -
+  term: "versiontag"
+  scopetag: "tev2"
+  locator: "versiontag.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "versiontag{ss}, version-tag{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a [tag](@) that is used to [identify](@) a specific version of a\
+    \ [terminology](@) from within a specific [scope](@)."
+  created: "2022-06-06"
+  updated: "2022-07-28"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/versiontag.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "versiontag"
+   - "summary"
+   - "criteria"
+   - "examples"
+   - "notes"
+ -
+  term: "vocabulary"
+  scopetag: "tev2"
+  locator: "vocabulary.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "vocabular{yies}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "the sum or stock of words employed by a language, group, individual,\
+    \ or work or in a field of knowledge."
+  created: "2022-06-06"
+  updated: "2022-06-06"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/vocabulary.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "vocabulary"
+   - "summary"
+   - "purpose"
+   - "criteria"
+   - "examples"

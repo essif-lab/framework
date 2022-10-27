@@ -16,6 +16,7 @@
     "@docusaurus/core": "^2.0.1",
     "@docusaurus/preset-classic": "^2.0.1",
     "@material-ui/core": "^4.11.0",
+    "browserify-fs": "^1.0.0",
     "classnames": "^2.2.6",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
@@ -33,13 +34,16 @@
     ]
   },
   "devDependencies": {
+    "@types/node": "^18.11.0",
     "browserify": "^17.0.0",
-    "gulp": "^4.0.0",
+    "fancy-log": "^2.0.0",
+    "gulp": "^4.0.2",
     "gulp-typescript": "^6.0.0-alpha.1",
     "parse-md": "^2.0.4",
     "tsify": "^5.0.4",
     "typescript": "^4.8.4",
-    "vinyl-source-stream": "^2.0.0"
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^4.0.0"
   },
   "workspaces": [
     "packages\\a"

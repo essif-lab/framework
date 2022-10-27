@@ -1,7 +1,8 @@
 {
-      "files": ["trrt/main.ts"],
+      "files": ["trrt/Run.ts", "trrt/Converter.ts", "trrt/Interpreter.ts", "trrt/Resolver.ts", "trrt/MarkdownConverter.ts", "trrt/StandardInterpreter.ts", "trrt/AltInterpreter.ts"],
       "compilerOptions": {
+        "module": "commonjs",
         "noImplicitAny": true,
         "target": "es5"
       }
-    }
+}
