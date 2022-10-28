@@ -1,5 +1,5 @@
 {
-      "files": ["trrt/Run.ts", "trrt/Converter.ts", "trrt/Interpreter.ts", "trrt/Resolver.ts", "trrt/MarkdownConverter.ts", "trrt/StandardInterpreter.ts", "trrt/AltInterpreter.ts", "trrt/HTTPConverter.ts", "trrt/ESIFFConverter.ts"],
+      "files": ["trrt/Run.ts", "trrt/Converter.ts", "trrt/Interpreter.ts", "trrt/Resolver.ts", "trrt/MarkdownConverter.ts", "trrt/StandardInterpreter.ts", "trrt/AltInterpreter.ts", "trrt/HTTPConverter.ts", "trrt/ESIFFConverter.ts", "trrt/tests/ResolverTest.ts"],
       "compilerOptions": {
         "module": "commonjs",
         "noImplicitAny": true,

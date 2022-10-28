@@ -1,0 +1,2 @@
+import assert = require('assert');
+

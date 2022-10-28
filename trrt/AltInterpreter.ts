@@ -7,8 +7,8 @@ export class AltInterpreter implements Interpreter {
       constructor() {
 
       }
-
-      interpertAndConvert(converter: Converter, glossary: Map<string, string>, file_name: string, direcoty_path: string): boolean {
+      
+      interpert(data: string): Array<Map<string, string>> {
             throw new Error("Method not implemented.");
       }
 

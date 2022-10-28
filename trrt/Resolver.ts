@@ -2,11 +2,12 @@ import { Interpreter } from './Interpreter';
 import { Converter } from './Converter';
 import { StandardInterpreter } from './StandardInterpreter';
 import { MarkdownConverter } from './MarkdownConverter';
+import { AltInterpreter } from './AltInterpreter';
 
 import fs = require("fs");
 import path = require('path');
-import { AltInterpreter } from './AltInterpreter';
-
+import yaml = require('js-yaml');
+import http = require('http');
 
 export class Resolver {
       private output: string;
@@ -25,7 +26,8 @@ export class Resolver {
             this.scope = scopePath;
 
             // process optional paramters if not set in config 
-            if (typeof this.config !== undefined) {
+            if (configPath != undefined) {
+                  console.log("config path is set")
                   this.config = configPath;
                   this.processConfig();
             } else {
@@ -34,10 +36,10 @@ export class Resolver {
       }
 
       private setOptionalParams(directoryPath: string, interpreterType: string, converterType: string) {
-            if (typeof directoryPath !== undefined) {
+            if (directoryPath != undefined) {
                   this.directory = directoryPath;
             }
-            if (interpreterType !== undefined) {
+            if (interpreterType != undefined) {
                   if (interpreterType == "Standard") {
                         this.interpreter = new StandardInterpreter();
                   } else if (interpreterType == "Alt") {
@@ -50,7 +52,7 @@ export class Resolver {
                   this.interpreter = new StandardInterpreter();
             }
 
-            if (converterType !== undefined) {
+            if (converterType != undefined) {
                   if (converterType == "Markdown") {
                         this.converter = new MarkdownConverter();
                   } else if (converterType == "HTTP") {
@@ -66,16 +68,55 @@ export class Resolver {
             }
       }
 
-      private processConfig(): void {
+      private processConfig(): boolean {
             // read config file and set paramters
             console.log("Reading config file at: " + this.config);
-            fs.readFile(this.config, () => { });
+            fs.readFile(this.config, 'utf8', (err: Error, data: string) => {
+                  if (err) {
+                        console.log(" \t " + err);
+                        return false;
+                  } else {
+
+                  }
+            });
             this.setOptionalParams("", "", "");
+            return true;
       }
 
       private readGlossary(): Map<string, string> {
-            console.log("Loading gloassary from: " + this.scope);
-            fs.readFile(this.scope, () => { });
+            var mrgURL: string = ""; // create 'scopedir`/`mrgfile` url to download
+            fs.readFile(this.scope, 'utf8', (err: Error, data: string) => {
+                  if (err) {
+                        console.log(" \t " + err);
+                        return null;
+                  } else {
+                        console.log("Loading gloassary from: " + this.scope);
+                        const safDocument: Object = yaml.load(data);
+                        for (const [key, value] of Object.entries(safDocument)) {
+                              if (key == "scope") {
+                                    for (const [innerKey, innerValue] of Object.entries(value)) {
+                                          if (innerKey == "scopedir") {
+                                                mrgURL = mrgURL + innerValue;
+                                          }
+                                          if (innerKey == "mrgfile") {
+                                                mrgURL = mrgURL + "/" + innerValue;
+                                          }
+                                    }
+                              }
+                        }
+
+                        console.log("Dowloading MRG from: " + mrgURL);
+                        var mrgFile = fs.createWriteStream("");
+                        http.get(mrgURL, function (response) {
+                              response.pipe(mrgFile);
+                              mrgFile.on('finish', function () {
+                                    mrgFile.close();
+                              });
+                        }).on('error', function (err) {
+                              throw err;
+                        });
+                  }
+            });
             return null;
       }
 
@@ -92,6 +133,16 @@ export class Resolver {
             }
       }
 
+      private writeFile(file: string, data: string) {
+            fs.writeFile((this.output + file), data, (err) => {
+                  if (err) {
+                        console.log(" \t " + err);
+                  } else {
+                        console.log("Writing: " + file);
+                  }
+            });
+      }
+
       public resolve_terms(): boolean {
             this.glossary = this.readGlossary();
             this.createOutputDir();
@@ -104,7 +155,16 @@ export class Resolver {
                   } else {
                         files.forEach(file => {
                               if (path.extname(file) == ".md" || path.extname(file) == ".html") {
-                                    this.interpreter.interpertAndConvert(this.converter, this.glossary, file, this.directory);
+                                    fs.readFile(this.directory + file, 'utf8', (err: Error, data: string) => {
+                                          if (err) {
+                                                console.log(" \t " + err);
+                                          } else {
+                                                console.log("Reading: " + file);
+                                                var termProperties: Array<Map<string, string>> = this.interpreter.interpert(data);
+                                                data = this.converter.convert(data, this.glossary, termProperties);
+                                                this.writeFile(file, data);
+                                          }
+                                    });
                               } else {
                                     console.log(file + " does not have a recognised file type (*.md, *.html)");
                               }
