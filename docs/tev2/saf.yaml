@@ -1,5 +1,5 @@
 #
-# This is a Scope Administration File that can be used in conjunction with TEv2.
+# This is a Scope Administration File that can be used in conjunction with [Terminology Engine v2](https://essif-lab.github.io/framework/docs/tev2/tev2-overview).
 #
 # The first section defines meta-data concerning the scope itself, both for technical use and human use.
 # It shows where directories and files live that ar part of the scope, and also
