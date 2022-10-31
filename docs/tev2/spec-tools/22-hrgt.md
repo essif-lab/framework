@@ -11,7 +11,7 @@ date: 20220421
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-export const Mark = ({children}) => (
+export const mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );

@@ -10,8 +10,8 @@ scope:
   scopedir: https://github.com/essif-lab/framework/tree/master/docs/tev2  # URL of the scope-directory
   curatedir: terms # directory where all curated files are located. Full URL is `scopedir`/`curatedir`
   glossarydir: glossaries # directory where all glossary files and GDFs are located. Full URL is `scopedir`/`glossarydir`
-  mrgfile: mrg.tev2.yaml # file that contains the (default) machine readable glossary. Full URL is `scopedir`/`mrgfile`
-  hrgfile: glossary # file that contains the (default) human readable glossary. Full URL is `scopedir`/`hrgfile`
+  mrgfile: mrg-tev2-test.yaml # file that contains the (default) machine readable glossary. Full URL is `scopedir`/`mrgfile`
+  hrgfile: glossary-tev2 # file that contains the (default) human readable glossary. Full URL is `scopedir`/`hrgfile`
   license: LICENSE.md # file that contains the (default) licensing conditions. Full URL is `scopedir`/`license`
   statuses: [ proposed, approved, deprecated ] # list of status tags that are defined for terminological artifacts in this scope
   issues: https://github.com/essif-lab/framework/issues # URL where issues can be raised and handled
@@ -42,17 +42,20 @@ scopes:  #
 # See the Glossary Generation Tool (GGT) for details about the syntax and semantics.
 #
 versions:
-- vsntag: mrgtest # this version MUST only be used for testing the MRG generator
+- vsntag: test # this version MUST only be used for testing the MRG generator
+  mrgfile: mrg-tev2-test.yaml # URL: <scopedir>/<glossarydir>/<mrgfile>
   termselcrit:
   - "*@tev2" # import all tev2 terms.
 - vsntag: v0.1
+  mrgfile: mrg-tev2.v0.1.yaml # URL: <scopedir>/<glossarydir>/<mrgfile>
   termselcrit:
   - "tags[identify,ppa]@essif-lab"
   - "*@tev2" # import all tev2 terms.
-- vsntag: 0x921456 # a versiontag that identifies this version from all other versions in the SAF
+- vsntag: v0.9.4 # a versiontag that identifies this version from all other versions in the SAF
+  mrgfile: mrg-tev2-v0.9.4.yaml # URL: <scopedir>/<glossarydir>/<mrgfile>
   altvsntags: # alternative verstiontags
     - latest
-    - v0.9.4
+    - 0x921456
   termselcrit:
     - "tags[management]@essif-lab" # import all terms from the mrg of `essif-lab:latest` that have grouptag `management`.
     - "termids[party,community]@essif-lab:0.9.4" # import the terms `party` and `community` from the mrg of `essif-lab:0.9.4`.
@@ -60,9 +63,10 @@ versions:
   status: proposed
   from: 20220312
   to:
-- vsntag: 0x654129 # a versiontag that identifies this version from all other versions in the SAF
+- vsntag: v0.9.0 # a versiontag that identifies this version from all other versions in the SAF
+  mrgfile: mrg-tev2-v0.9.0.yaml # URL: <scopedir>/<glossarydir>/<mrgfile>
   altvsntags: # alternative verstiontags
-    - v0.9.0
+    - 0x654129
   termselcrit:
     - "*@essif-lab" # import all terms defined in the scope `essif-lab`
     - "-tags[terminology]" # remove all terms tagged with the grouptag `terminology`
