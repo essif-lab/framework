@@ -39,4 +39,4 @@ This technical support must, however, be complemented with methods that a [commu
 4. the differences of interpretation between the group members are dealt with in a constructive fashion, through arguments and clarifications.
 :::
 
-[^1]: Agredo-Delgado, V., Ruiz, P.H., Mon, A. et al. Applying a process for the shared understanding construction in computer-supported collaborative work: an experiment. Comput Math Organ Theory (2021). https://doi.org/10.1007/s10588-021-09326-z
+[^1]: Agredo-Delgado, V., Ruiz, P.H., Mon, A. et al. Applying a process for the shared understanding construction in computer-supported collaborative work: an experiment. Comput Math Organ Theory 28, 247-270 (2022). https://doi.org/10.1007/s10588-021-09326-z
