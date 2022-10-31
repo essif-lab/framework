@@ -31,7 +31,7 @@ Examples include ideas, or [concepts](@), [relations](@) between [concepts](@), 
 
 Within [TEv2](@), every [knowledge artifact](@) that exists in some [knowledge](@) may be documented in multiple [scopes](@), by at most one [curated text](@) per [scope](@). This [curated text](@) specifies the [(scoped) term](@) that represents the [artifact](knowledge-artifact@) within its [scope](@). Also, it may contain the [definition](@) that helps people determine whether or not something qualifies as an instance of that [artifact](knowledge-artifact@).
 
-The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 [Knowledge artifacts](@) exist because they are somehow relevant for realizing [objectives](@) of the [party](@) that has this [knowledge](@). Since [parties](@) rarely realize their [objectives](@) all by themselves, they will need to find ways to communicate them (their meanings) to other [parties](@) and/or [actors](@) that work for/with them, such that the lot of them have something we might call a 'common understanding'. To realize this 'common understanding', the [owner](@) of (the [knowledge](@) that contains) the [knowledge artifacts](@) must actively (consciously) understand and distinguish between each of them, specify names ([terms](@)) that represent them, and create and maintain [curated texts](@), [definitions](@) and perhaps other stuff.

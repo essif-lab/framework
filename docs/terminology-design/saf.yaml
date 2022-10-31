@@ -1,0 +1,45 @@
+#
+# This is a Scope Administration File that can be used in conjunction with TEv2.
+#
+# The first section defines meta-data concerning the scope itself, both for technical use and human use.
+# It shows where directories and files live that ar part of the scope, and also
+# ways in which people can contribute, raise issues, see what's going on, discuss, etc.
+#
+scope:
+  scopetag: termdsn # identifier that curators have determined for this terminology
+  scopedir: https://github.com/essif-lab/framework/tree/master/docs/terminology-design  # URL of the scope-directory
+  curatedir: terms # directory where all curated files are located. Full URL is `scopedir`/`curatedir`
+  glossarydir: glossaries # directory where all glossary files and GDFs are located. Full URL is `scopedir`/`glossarydir`
+  mrgfile: mrg.termdsn.yaml # file that contains the (default) machine readable glossary. Full URL is `scopedir`/`mrgfile`
+  hrgfile: glossary # file that contains the (default) human readable glossary. Full URL is `scopedir`/`hrgfile`
+  license: LICENSE.md # file that contains the (default) licensing conditions. Full URL is `scopedir`/`license`
+  statuses: [ proposed, approved, deprecated ] # list of status tags that are defined for terminological artifacts in this scope
+  issues: https://github.com/essif-lab/framework/issues # URL where issues can be raised and handled
+  website: https://essif-lab.github.io/framework/docs/terminology-design # base URL for creating links to rendered versions of CTexts
+  curators: # contacting individual curators
+  - name: RieksJ
+    email: # we split up the email address to reduce the likelihood of the address being harvested for spamming
+      id: rieks.joosten
+      at: tno.nl
+#
+# The second section contains a mapping between scopetags that are used within the scope, and the associated scopedirs.
+# This enables tools to find the [SAF](@) of these [scopes](@), and from there all other directories, files etc.
+# that live within them, e.g. to use/import their data.
+#
+scopes:  #
+- scopetags: [ tev2 ]
+  scopedir: https://github.com/essif-lab/framework/tree/master/docs/tev2
+- scopetags: [ essiflab, essif-lab ]
+  scopedir: https://github.com/essif-lab/framework/tree/master/docs
+- scopetags: [ ctwg ]
+  scopedir: https://github.com/trustoverip/ctwg
+#
+# The third section specifies the versions that are actively maintained by the curators.
+# For each version, the set of terms is selected that constitute the terminology.
+# See the Glossary Generation Tool (GGT) for details about the syntax and semantics.
+#
+versions:
+- vsntag: v0.1
+  altvsntags: [ latest ]
+  termselcrit:
+  - "*@tev2" # import all tev2 terms.

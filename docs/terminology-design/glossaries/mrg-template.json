@@ -1,0 +1,15 @@
+{ "terminology": {
+    "scopetag": "tev2",
+    "scopedir": "https://github.com/essif-lab/framework/tree/master/docs/tev2"
+  },
+  "scopes": [
+   { "scopetag": "essiflab",
+     "scopedir": "https://github.com/essif-lab/framework/tree/master/docs"
+   },
+   { "scopetag": "ctwg",
+     "scopedir": "https://github.com/trustoverip/ctwg"
+   }
+  ],
+  "entries": [
+  ]
+}
