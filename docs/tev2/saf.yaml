@@ -10,7 +10,7 @@ scope:
   scopedir: https://github.com/essif-lab/framework/tree/master/docs/tev2  # URL of the scope-directory
   curatedir: terms # directory where all curated files are located. Full URL is `scopedir`/`curatedir`
   glossarydir: glossaries # directory where all glossary files and GDFs are located. Full URL is `scopedir`/`glossarydir`
-  mrgfile: mrg.mrgtest.yaml # file that contains the (default) machine readable glossary. Full URL is `scopedir`/`mrgfile`
+  mrgfile: mrg.mrgtest.yaml # file that contains the (default) machine readable glossary. Full URL is `scopedir`/glossaries/ `mrgfile`
   hrgfile: glossary # file that contains the (default) human readable glossary. Full URL is `scopedir`/`hrgfile`
   license: LICENSE.md # file that contains the (default) licensing conditions. Full URL is `scopedir`/`license`
   statuses: [ proposed, approved, deprecated ] # list of status tags that are defined for terminological artifacts in this scope

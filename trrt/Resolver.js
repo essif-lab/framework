@@ -7,8 +7,10 @@ var AltInterpreter_1 = require("./AltInterpreter");
 var fs = require("fs");
 var path = require("path");
 var yaml = require("js-yaml");
+var console = require("console");
 var Resolver = /** @class */ (function () {
     function Resolver(outputPath, scopePath, directoryPath, configPath, interpreterType, covnerterType) {
+        this.localMargFile = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
         this.config = "";
         this.directory = ".";
         this.version = "";
@@ -90,26 +92,45 @@ var Resolver = /** @class */ (function () {
                 var safDocument = yaml.load(data);
                 for (var _i = 0, _a = Object.entries(safDocument); _i < _a.length; _i++) {
                     var _b = _a[_i], key = _b[0], value = _b[1];
-                    // console.log("Reading level 1: \n" + key + " : " + value);
                     if (key == "scope") {
                         for (var _c = 0, _d = Object.entries(value); _c < _d.length; _c++) {
                             var _e = _d[_c], innerKey = _e[0], innerValue = _e[1];
-                            // console.log("Reading level 2: \n" + innerKey + " : " + innerValue);
                             if (innerKey == "scopedir") {
                                 mrgURL = mrgURL + innerValue;
-                                console.log("Adding scopedir... " + mrgURL);
                             }
                             if (innerKey == "mrgfile") {
-                                mrgURL = mrgURL + innerValue;
-                                console.log("Adding mrgfile... " + mrgURL);
+                                mrgURL = mrgURL + "/glossaries/" + innerValue;
                             }
                         }
                     }
                 }
+                // remote mrg file
+                // console.log("Dowloading MRG from: " + mrgURL);
+                // var mrgFileDownload = fs.createWriteStream(this.localMargFile);
+                // https.get(mrgURL, function (response) {
+                //       response.pipe(mrgFileDownload);
+                //       mrgFileDownload.on('finish', function () {
+                //             mrgFileDownload.close();
+                //       });
+                // }).on('error', function (err) {
+                //       console.log(err)
+                // });
             }
         });
-        console.log("MRG URL is: " + mrgURL);
-        return null;
+        fs.readFile(this.localMargFile, 'utf8', function (err, data) {
+            if (err) {
+                console.log(err);
+            }
+            else {
+                var mrgDocument = yaml.load(data);
+                for (var _i = 0, _a = Object.entries(mrgDocument); _i < _a.length; _i++) {
+                    var _b = _a[_i], key = _b[0], value = _b[1];
+                    _this.glossary.set(key, value);
+                }
+                console.log(_this.glossary);
+            }
+        });
+        return this.glossary;
     };
     Resolver.prototype.createOutputDir = function () {
         if (!fs.existsSync(this.output)) {

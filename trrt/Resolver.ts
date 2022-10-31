@@ -7,12 +7,13 @@ import { AltInterpreter } from './AltInterpreter';
 import fs = require("fs");
 import path = require('path');
 import yaml = require('js-yaml');
-import http = require('http');
+import https = require('https');
+import console = require('console');
 
 export class Resolver {
       private output: string;
       private scope: string;
-
+      private localMargFile = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
       private config: string = "";
       private directory: string = ".";
       private version: string = "";
@@ -99,25 +100,54 @@ export class Resolver {
                                                 mrgURL = mrgURL + innerValue;
                                           }
                                           if (innerKey == "mrgfile") {
-                                                mrgURL = mrgURL + "/" + innerValue;
+                                                mrgURL = mrgURL + "/glossaries/" + innerValue;
                                           }
                                     }
                               }
                         }
 
-                        console.log("Dowloading MRG from: " + mrgURL);
-                        var mrgFile = fs.createWriteStream("");
-                        http.get(mrgURL, function (response) {
-                              response.pipe(mrgFile);
-                              mrgFile.on('finish', function () {
-                                    mrgFile.close();
-                              });
-                        }).on('error', function (err) {
-                              throw err;
-                        });
+                        // remote mrg file
+                        // console.log("Dowloading MRG from: " + mrgURL);
+                        // var mrgFileDownload = fs.createWriteStream(this.localMargFile);
+                        // https.get(mrgURL, function (response) {
+                        //       response.pipe(mrgFileDownload);
+                        //       mrgFileDownload.on('finish', function () {
+                        //             mrgFileDownload.close();
+                        //       });
+                        // }).on('error', function (err) {
+                        //       console.log(err)
+                        // });
+
+
+
                   }
             });
-            return null;
+
+            fs.readFile(this.localMargFile, 'utf8', (err: Error, data: string) => {
+                  if (err) {
+                        console.log(err);
+                  } else {
+                        const mrgDocument: Object = yaml.load(data);
+                        for (const [key, value] of Object.entries(mrgDocument)) {
+                              if (key == "entries") {
+                                    for (const [innerKey, innerValue] of Object.entries(value)) {
+                                          var term: string;
+                                          var url: string;
+                                          if (innerKey == "term") {
+                                                term = innerValue;
+                                          }
+                                          if (innerKey == "navurl") {
+                                                url = innerValue;
+                                          }
+                                          this.glossary.set(term, url);
+                                    }
+                              }
+                        }
+                        console.log(this.glossary);
+                  }
+            });
+
+            return this.glossary;
       }
 
       private createOutputDir(): boolean {
