@@ -30,7 +30,7 @@ A **Pattern**, **[mental model](https://en.wikipedia.org/wiki/Mental_model)** or
 
 Since every [pattern](@) is a [knowledge artifact](@), it will need to be documented in such a way that the different people that work with it have a (provably) common understanding of what it entails. Typically, such documentation is a [curated text](@) that would consist of an introductory text that explains the ideas behind the [pattern](@) and the purposes for which it was designed, as well as a more formal specification of the [concepts](@), [relations](@) and [constraints](@) that it consists of. In order to be consistent, the description of a [mental model](@) must reside in the [scope](@) that also includes defines these [concepts](@) and [relations](@). A [mental model](@) may also 'connect' [concepts](@) of different [scopes](@) (preferably no more than two), which you might call an 'interconnection pattern' between these [scopes](@).
 
-The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts (as a specialization of a [knowledge artifact](@)).
+The [terminology pattern](pattern-pattern-terminology@) provides an overview of how this concept fits in with related concepts (as a specialization of a [knowledge artifact](@)).
 
 ### Purpose
 

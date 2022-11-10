@@ -23,7 +23,7 @@ Here are some pointers:
 - The **[Purpose](/docs/tev2/overview/tev2-purpose)** states the objectives that [TEv2](@) seeks to realize.
 - The **[Design Principles](/docs/tev2/overview/tev2-design-principles)** are the main ideas behind the design of [TEv2](@).
 - The **[Architecture](/docs/tev2/overview/tev2-architecture)** provides an overview of the data and the files that [TEv2](@) works with, as well as of the tools and how they interrelate.
-- A more or less description of our way of thinking is provided as **[Terminology Support](/docs/tev2/terms/patterns/terminology-support)**.
+- A more or less description of our way of thinking is provided as **[Terminology Support](/docs/tev2/terms/patterns/pattern-terminology)**.
 
 ## Current status
 
