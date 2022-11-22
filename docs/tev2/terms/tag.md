@@ -36,7 +36,7 @@ Versiontags are used to identify a specific version of the [terminology](@) of t
 ### Criteria
 is an alphanumeric string that is used within a specific [scope](@) to identify [scopes](@) and/or group [knowledge artifacts](@), and/or identify a version of its [terminology](@). The alphanumeric string satisfies the regex `[a-z0-9_-]+`.
 
-The [terminology pattern](pattern-pattern-terminology@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
 ### Examples
 Examples of scopetags are `essif-lab`, `essiflab`, `toip`, or `ctwg`

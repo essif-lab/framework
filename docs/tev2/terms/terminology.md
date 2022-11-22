@@ -34,7 +34,7 @@ A [terminology](@) may be versioned, i.e. associated with a [versiontag](@). Thi
 
 A [terminology](@) can be documented by (at most) one [machine-readable glossary](mrg@), from which [human readable glossaries](hrg@) can be derived. Selecting the [(scoped) terms](@) that are part of a [terminology](@) and generating the various [glossaries](@) is done by the [curator(s)](@) of its [scope](@).
 
-The [terminology pattern](pattern-pattern-terminology@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
 The [terminology construction section](/docs/tev2/spec-tools/terminology-construction) describes how to construct a [terminology](@) by selecting (groups of) [terms](scoped-term@), and manipulating such selections.
 
