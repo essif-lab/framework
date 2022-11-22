@@ -17,7 +17,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 In order for a [community](@) (e.g. a workgroup, taskforce, project/product team, department, etc.) to realize its [objectives](@), it is beneficial that its members
 1. have **a [common understanding](@)** of the ideas, [concepts](@) and other [knowledge artifacts](@)[^1] that are relevant for realizing these [objectives](@),
 2. are **a [linguistic unity](@)**, i.e. they use the same [terms](@) to represent these ideas and [concepts](@), and
-3. are able to provide themselves with **assurances** that the above two points are in fact the case.
+3. are able to provide themselves with **assurances** that everyone consistently and consequently uses the same [term](@) for the same [concept](@).
 
 [^1]: ideas, [concepts](@) and other [knowledge artifacts](@) are (intangible) parts of a [knowledge](@). One could say that they constitute 'the mind' of [parties](@). They need a (tangible) representation, e.g. [terms](@), figures, sounds, etc. that [parties](@) can use to communicate with each other. The problem is that each participant of a [community](@) must be sufficiently sure that not only they all use the same [terms](@), but also that they have a [common understanding](@) of the actual [concept](@) that an individual [term](@) represents.
 
