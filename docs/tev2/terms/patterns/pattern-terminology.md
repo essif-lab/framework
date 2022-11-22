@@ -46,7 +46,7 @@ Here is a visual representation of this pattern, using the following **[notation
 
 <img
   alt="Conceptual model of the 'pattern-terminology' pattern"
-  src={useBaseUrl('images/patterns/pattern-pattern-terminology.png')}
+  src={useBaseUrl('images/patterns/pattern-terminology-support.png')}
 />
 
 The figure shows three areas:
