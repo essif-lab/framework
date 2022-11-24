@@ -36,7 +36,7 @@ As input, the [MRGT](@) is provided a [SAF](@), is pointed to the particular ent
 The [MRG](@) is then created as follows (starting with an empty file):
 
 1. The [MRG](@) `terminology` section is created, by copying relevant fields from the appropriate `versions` element in the [SAF](@).
-2. Then, the [terminology construction](/docs/tev2/spec-tools/terminology-construction) takes place, which can be thought of as constructing a set of tuples `{ [term, grouptags] }`, where [term](@) [identifies](@) (the [curated text](@) that documents) the particular [knowledge artifact](@), and `grouptags` is a set of [grouptags](@) that the tuple is associated with.
+2. Then, the [terminology construction](/docs/tev2/spec-tools/terminology-construction) takes place, which can be thought of as constructing a set of tuples `{ [term, grouptags] }`, where `term` [identifies](@) (the [curated text](@) that documents) the particular [knowledge artifact](@), and `grouptags` is a set of [grouptags](@) that the tuple is associated with.
 3. For every tuple in this set, an [MRG entry](@) is created, and added to the [MRG](@) under construction. The structure of each such [entry](mrg-entry@) depends on the type of the [knowledge artifact](@) that the [term](@) represents, as the [header](@) of a [curated text](@) depends on that type.
 4. By default, the result is put at the location as specified by the [SAF](@), i.e. in the directory as specified by the `glossarydir` field (in the [`scope` section](/docs/tev2/spec-files/saf#terminology)), and using the filename as specified by the `mrgfile` field of the specific version (in the [`versions` section](/docs/tev2/spec-files/saf#versions) of the [SAF](@)). However, the tool may specify ways to override this default.
 

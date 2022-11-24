@@ -95,10 +95,10 @@ The following table specifies the **generic header fields**:
 
 | Name            | Req'd | Description |
 | --------------- | :---: | ----------- |
-| `term`            | Y | Name ([Identifier](@)) that is used to represent a [knowledge artifact](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `term`            | Y | Name ([Identifier](@)) that is used to represent a [knowledge artifact](@).<br/>The `term`-field of a [term ref](@) that refers to this [curated text](@) must (be resolved to) match this value.<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `termType`        | n | [Text](term-type@) that [identifies](@) the kind of [knowledge artifact](@) that this [curated text](@) describes. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `isa`             | n | [concept](@) of which this is a specialization. |
-| `glossaryText`    | Y | Text that is used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](@). |
+| `glossaryText`    | Y | Text that is used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). This text MUST be expected to contain [term refs](@). |
 | `synonyms`        | n | List of [synonyms](@) for this [term](@). |
 | `groupTags`       | n | List of [grouptags](@), each of which signifies that the [(scoped) term](@) that this [curated text](@) documents, is part of the group of [terms](@) that it represents.<br/>Example: `[tev2, management]`.<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-]+)\s*(?:,\s*([a-z0-9_-]+))*\s*\])?`](https://www.debuggex.com/r/a51CXl1NzR3kwihT). |
 | `formPhrases`     | n | List of [texts](formphrase@) that are [used to convert](/docs/tev2/spec-tools/trrt#id) the `show text` parts of [term refs](@) into `term`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs). For details, see ['Syntax Specs - Form Phrases](/docs/tev2/spec-syntax/form-phrase-syntax). |
