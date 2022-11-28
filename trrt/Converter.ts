@@ -1,3 +1,3 @@
 export interface Converter {
-      convert(data: string, glossary: Map<string, string>, properties: Array<Map<string, string>>): string;
+      convert(glossary: Map<string, string>, properties: Map<string, string>): string;
 }

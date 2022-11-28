@@ -19,6 +19,37 @@ scopes:
   scopedir: "https://github.com/trustoverip/ctwg"
 entries:
  -
+  term: "actor"
+  scopetag: "tev2"
+  locator: "concept.md"
+  isa: null
+  termType: "concept"
+  formPhrases: "concept{ss}"
+  status: "proposed"
+  synonyms: null
+  groupTags: null
+  glossaryText: "a [knowledge artifact](@) that captures the ideas/thoughts behind\
+    \ a classification of [entities](@) (what makes [entities](@) in that class 'the\
+    \ same')."
+  created: "2022-06-06"
+  updated: "2022-06-06"
+  vsntag: "mrgtest"
+  commit: null
+  contributors: "RieksJ"
+  attribution: null
+  originalLicense: null
+  navurl: "terms/concept.md"
+  headingids:
+   - "tev2-curated-text-header"
+   - "curation-status"
+   - "origins-acknowledgements"
+   - "concept"
+   - "summary"
+   - "purpose"
+   - "criteria"
+   - "notes"
+   - "footnotes"
+ -
   term: "concept"
   scopetag: "tev2"
   locator: "concept.md"

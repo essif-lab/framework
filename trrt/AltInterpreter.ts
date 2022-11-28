@@ -8,8 +8,13 @@ export class AltInterpreter implements Interpreter {
 
       }
       
-      interpert(data: string): Array<Map<string, string>> {
-            throw new Error("Method not implemented.");
+      interpert(match: RegExpMatchArray): Map<string, string> {
+            var termProperties: Map<string, string> = new Map();
+            return termProperties;
+      }
+
+      getTermRegex(): RegExp {
+            return this.term_regex;
       }
 
 

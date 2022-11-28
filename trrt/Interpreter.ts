@@ -1,3 +1,4 @@
 export interface Interpreter {
-      interpert(data: string): Array<Map<string,string>>;
+      interpert(match: RegExpMatchArray): Map<string,string>;
+      getTermRegex() : RegExp;
 }

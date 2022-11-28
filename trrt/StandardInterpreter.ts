@@ -1,27 +1,15 @@
 import { Interpreter } from "./Interpreter";
 
 export class StandardInterpreter implements Interpreter {
-      private term_regex = /(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))(?<showtext>.+?)\]\((?<id>[a-z0-9_-]+?)(?:#(?<trait>[a-z0-9_-]+?))?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+?))?\)/g;
+      private term_regex: RegExp = /(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))(?<showtext>.+?)\]\((?<id>[a-z0-9_-]+?)(?:#(?<trait>[a-z0-9_-]+?))?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+?))?\)/g;
 
       public constructor() {
 
       }
-      
-      interpert(data: string): Map<string, string>[] {
-            const matches: IterableIterator<RegExpMatchArray> = data.matchAll(this.term_regex);
-            var allTermProperties: Array<Map<string, string>> = new Array();
-            // basic syntax, i.e. [showtext](term#trait@scopetag:vsntag);
-            // markdown output: [showtext](current-path/term#trait)
-            for (const match of Array.from(matches)) {
-                  allTermProperties.push(this.findMatchProperties(match));
-            }
-            return allTermProperties;
-      }
 
-
-      private findMatchProperties(match: RegExpMatchArray): Map<string, string> {
+      interpert(match: RegExpMatchArray): Map<string, string> {
             var termProperties: Map<string, string> = new Map();
-            
+
             if (match.groups.showtext != undefined) {
                   termProperties.set("showtext", match.groups.showtext);
             } else {
@@ -54,5 +42,9 @@ export class StandardInterpreter implements Interpreter {
             }
 
             return termProperties;
+      }
+
+      public getTermRegex(): RegExp {
+            return this.term_regex;
       }
 }

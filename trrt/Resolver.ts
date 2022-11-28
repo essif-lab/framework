@@ -13,7 +13,8 @@ import console = require('console');
 export class Resolver {
       private output: string;
       private scope: string;
-      private localMargFile = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
+      private tmpLocalMrgFile = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
+      private mrgWritePath = "/mrg.yaml"
       private config: string = "";
       private directory: string = ".";
       private version: string = "";
@@ -28,7 +29,7 @@ export class Resolver {
 
             // process optional paramters if not set in config 
             if (configPath != undefined) {
-                  console.log("config path is set")
+                  console.log("config path is set by user")
                   this.config = configPath;
                   this.processConfig();
             } else {
@@ -77,7 +78,7 @@ export class Resolver {
                         console.log(" \t " + err);
                         return false;
                   } else {
-
+                        // TODO read config file and ser optionalParams from those values 
                   }
             });
             this.setOptionalParams("", "", "");
@@ -85,67 +86,60 @@ export class Resolver {
       }
 
       private readGlossary(): Map<string, string> {
-            var mrgURL: string = ""; // create 'scopedir`/`mrgfile` url to download
-            fs.readFile(this.scope, 'utf8', (err: Error, data: string) => {
-                  if (err) {
-                        console.log(" \t " + err);
-                        return null;
-                  } else {
-                        console.log("Loading gloassary from: " + this.scope);
-                        const safDocument: Object = yaml.load(data);
-                        for (const [key, value] of Object.entries(safDocument)) {
-                              if (key == "scope") {
-                                    for (const [innerKey, innerValue] of Object.entries(value)) {
-                                          if (innerKey == "scopedir") {
-                                                mrgURL = mrgURL + innerValue;
-                                          }
-                                          if (innerKey == "mrgfile") {
-                                                mrgURL = mrgURL + "/glossaries/" + innerValue;
-                                          }
-                                    }
+            var mrgURL: string = ""; // create 'scopedir`/`mrgfile` url to download          
+            console.log("Loading gloassary from: " + this.scope);
+            const safDocument: Object = yaml.load(fs.readFileSync(this.scope, 'utf8'));
+            for (const [key, value] of Object.entries(safDocument)) {
+                  if (key == "scope") {
+                        for (const [innerKey, innerValue] of Object.entries(value)) {
+                              if (innerKey == "scopedir") {
+                                    mrgURL = mrgURL + innerValue;
+                              }
+                              if (innerKey == "glossarydir") {
+                                    mrgURL = mrgURL + "/" + innerValue;
+                              }
+                              if (innerKey == "mrgfile") {
+                                    mrgURL = mrgURL + "/" + innerValue;
                               }
                         }
-
-                        // remote mrg file
-                        // console.log("Dowloading MRG from: " + mrgURL);
-                        // var mrgFileDownload = fs.createWriteStream(this.localMargFile);
-                        // https.get(mrgURL, function (response) {
-                        //       response.pipe(mrgFileDownload);
-                        //       mrgFileDownload.on('finish', function () {
-                        //             mrgFileDownload.close();
-                        //       });
-                        // }).on('error', function (err) {
-                        //       console.log(err)
-                        // });
-
-
-
                   }
-            });
+            }
 
-            fs.readFile(this.localMargFile, 'utf8', (err: Error, data: string) => {
-                  if (err) {
-                        console.log(err);
-                  } else {
-                        const mrgDocument: Object = yaml.load(data);
-                        for (const [key, value] of Object.entries(mrgDocument)) {
-                              if (key == "entries") {
-                                    for (const [innerKey, innerValue] of Object.entries(value)) {
-                                          var term: string;
-                                          var url: string;
-                                          if (innerKey == "term") {
-                                                term = innerValue as string;
-                                          }
-                                          if (innerKey == "navurl") {
-                                                url = innerValue as string;
-                                          }
-                                          this.glossary.set(term, url);
+            console.log("The mrg URL is: " + mrgURL);
+            if (this.tmpLocalMrgFile) {
+                  const mrgDocument: Object = yaml.load(fs.readFileSync(this.tmpLocalMrgFile, 'utf8'));
+                  for (const [key, value] of Object.entries(mrgDocument)) {
+                        if (key == "entries") {
+                              for (const [innerKey, innerValue] of Object.entries(value)) {
+                                    var term: string;
+                                    var url: string;
+                                    if (innerKey == "term") {
+                                          term = innerValue as string;
                                     }
+                                    if (innerKey == "navurl") {
+                                          url = innerValue as string;
+                                    }
+                                    // TODO glossary doesn't seem to be processed well > everything is undefined? 
+                                    this.glossary.set(term, url);
                               }
                         }
-                        console.log(this.glossary);
                   }
-            });
+                  console.log(this.glossary.values);
+            } else {
+                  // remote mrg file
+                  console.log("Dowloading MRG from: " + mrgURL);
+                  var mrgFileDownload = fs.createWriteStream(this.mrgWritePath);
+                  https.get(mrgURL, function (response) {
+                        response.pipe(mrgFileDownload);
+                        mrgFileDownload.on('finish', function () {
+                              mrgFileDownload.close();
+                        });
+                  }).on('error', function (err) {
+                        console.log(err)
+                  }); 
+
+                  // TODO call glossary object from the previous branch 
+            }
 
             return this.glossary;
       }
@@ -173,35 +167,34 @@ export class Resolver {
             });
       }
 
+      private interpertAndConvert(data: string): string {
+            const matches: IterableIterator<RegExpMatchArray> = data.matchAll(this.interpreter.getTermRegex());
+            for (const match of Array.from(matches)) {
+                  var termProperties: Map<string, string> = this.interpreter.interpert(match);
+                  data = data.replace(this.interpreter.getTermRegex(), this.converter.convert(this.glossary, termProperties));
+            }
+            return data;
+      }
+
       public resolve_terms(): boolean {
             this.glossary = this.readGlossary();
             this.createOutputDir();
 
-            fs.readdir(this.directory, (err: Error, files: Array<string>) => {
-                  console.log("Reading " + this.directory + ".....");
-                  if (err) {
-                        console.log("\t " + err);
-                        return false;
+            var files = fs.readdirSync(this.directory);
+            console.log("Reading " + this.directory + ".....");
+
+            files.forEach(file => {
+                  if (path.extname(file) == ".md" || path.extname(file) == ".html") {
+                        var data = fs.readFileSync(this.directory + file, 'utf8')
+                        console.log("Reading: " + file);
+                        data = this.interpertAndConvert(data)
+                        this.writeFile(file, data);
                   } else {
-                        files.forEach(file => {
-                              if (path.extname(file) == ".md" || path.extname(file) == ".html") {
-                                    fs.readFile(this.directory + file, 'utf8', (err: Error, data: string) => {
-                                          if (err) {
-                                                console.log(" \t " + err);
-                                          } else {
-                                                console.log("Reading: " + file);
-                                                var termProperties: Array<Map<string, string>> = this.interpreter.interpert(data);
-                                                data = this.converter.convert(data, this.glossary, termProperties);
-                                                this.writeFile(file, data);
-                                          }
-                                    });
-                              } else {
-                                    console.log(file + " does not have a recognised file type (*.md, *.html)");
-                              }
-                        });
+                        console.log(file + " does not have a recognised file type (*.md, *.html)");
                   }
             });
-
             return true;
       }
+
+
 }

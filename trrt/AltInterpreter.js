@@ -5,8 +5,12 @@ var AltInterpreter = /** @class */ (function () {
     function AltInterpreter() {
         this.term_regex = /p/g;
     }
-    AltInterpreter.prototype.interpert = function (data) {
-        throw new Error("Method not implemented.");
+    AltInterpreter.prototype.interpert = function (match) {
+        var termProperties = new Map();
+        return termProperties;
+    };
+    AltInterpreter.prototype.getTermRegex = function () {
+        return this.term_regex;
     };
     return AltInterpreter;
 }());
