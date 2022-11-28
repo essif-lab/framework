@@ -4,7 +4,7 @@ term: scope
 termType: concept
 isa:
 glossaryText: "the extent of the [terms](@), [definitions](@) and other documentation that a [community](@) (which we call the [owner](@) of the [scope](@)) needs to express, communicate and validate its [knowledge](@) as relevant to achieving a specific subset of its [objectives](@)."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: scope{ss}
 # Curation status

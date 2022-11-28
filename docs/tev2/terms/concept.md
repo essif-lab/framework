@@ -4,7 +4,7 @@ term: concept
 termType: concept
 isa: knowledge-artifact
 glossaryText: "a [knowledge artifact](@) that captures the ideas/thoughts behind a classification of [entities](@) (what makes [entities](@) in that class 'the same')."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: concept{ss}
 # Curation status

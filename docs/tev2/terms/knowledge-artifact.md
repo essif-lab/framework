@@ -4,7 +4,7 @@ term: knowledge-artifact
 termType: concept
 isa:
 glossaryText: "something that can be thought of as existing in a particular [knowledge](@), e.g. a [concept](@), or a [mental model](@)."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: knowledge-artifact{ss}
 # Curation status

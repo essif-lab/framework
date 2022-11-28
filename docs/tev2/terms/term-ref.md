@@ -3,8 +3,8 @@
 term: term-ref
 termType: concept
 isa:
-glossaryText: "a word or phrase that is [marked up (in a specific way)](/docs/tev2/spec-syntax/term-ref-syntax) so that it links to a particular [concept](@) (or other [knowledge artifact](@)), enabling it to be rendered in a variety of ways for the purpose of helping [readers](@) to (better) understand the intention of its [author](@)."
-synonyms:
+glossaryText: "a word or phrase that is [marked up (in a specific way)](/docs/tev2/spec-syntax/term-ref-syntax) so that it refers to a particular [concept](@) (or other [knowledge artifact](@)), enabling it to be rendered in a variety of ways for the purpose of helping [readers](@) to (better) understand the intention of its [author](@)."
+synonymOf:
 groupTags:
 formPhrases: term-ref{ss}, term-reference{ss}
 # Curation status
@@ -25,7 +25,9 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 ### Summary
-A **Term Ref** is a word or phrase that is [marked up (in a specific way)](/docs/tev2/spec-syntax/term-ref-syntax) so that it links to a particular [concept](@) (or other [knowledge artifact](@)), enabling it to be rendered in a variety of ways for the purpose of helping [readers](@) to (better) understand the intention of its [author](@).
+A **Term Ref** is a word or phrase that is [marked up (in a specific way)](/docs/tev2/spec-syntax/term-ref-syntax) so that it refers to a particular [concept](@) (or other [knowledge artifact](@)), enabling it to be rendered in a variety of ways for the purpose of helping [readers](@) to (better) understand the intention of its [author](@).
+
+A [term ref](@) consists of two parts. The first part is the word or phrase that is marked up (the so-called `show text`). The second part is the actual reference that specifies the [concept](@) (or other [knowledge artifact](@)) to which the [term ref](@) refers. This second part is called a [term identifier](@).
 
 [Authors](@) need to know the [term ref syntax](/docs/tev2/spec-syntax/term-ref-syntax) that they are expected to use.
 

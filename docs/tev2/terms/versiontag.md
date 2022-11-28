@@ -4,7 +4,7 @@ term: versiontag
 termType: concept
 isa: tag
 glossaryText: "a [tag](@) that is used to [identify](@) a specific version of a [terminology](@) from within a specific [scope](@)."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: versiontag{ss}, version-tag{ss}
 # Curation status

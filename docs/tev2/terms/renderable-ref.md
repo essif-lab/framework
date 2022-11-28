@@ -4,7 +4,7 @@ term: renderable-ref
 termType: concept
 isa:
 glossaryText: "a text with which the [TRRT](@) replaces a [term ref](@), that can be processed by specific third party rendering tools, the result of which is a rendering of the original [term ref](@) that has additional characteristics that help [readers](@) to (better) understand the intention of its [author](@)."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: renderable-ref{ss}, renderable-reference{ss}
 # Curation status

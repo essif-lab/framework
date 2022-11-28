@@ -3,7 +3,7 @@
 term: terminology
 termType: concept
 groupTags:
-synonyms:
+synonymOf:
 formPhrases: terminolog{yies}
 # Curation status
 status: proposed

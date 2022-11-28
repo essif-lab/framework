@@ -4,7 +4,7 @@ sidebar_label: MR Glossary Generation
 displayed_sidebar: tev2SideBar
 hide_table_of_contents: true
 scopetag: tev2
-date: 20221024
+date: 20221127
 ---
 
 # Machine Readable Glossary Generation Tool
@@ -36,7 +36,7 @@ As input, the [MRGT](@) is provided a [SAF](@), is pointed to the particular ent
 The [MRG](@) is then created as follows (starting with an empty file):
 
 1. The [MRG](@) `terminology` section is created, by copying relevant fields from the appropriate `versions` element in the [SAF](@).
-2. Then, the [terminology construction](/docs/tev2/spec-tools/terminology-construction) takes place, which can be thought of as constructing a set of tuples `{ [term, grouptags] }`, where [term](@) [identifies](@) (the [curated text](@) that documents) the particular [knowledge artifact](@), and `grouptags` is a set of [grouptags](@) that the tuple is associated with.
+2. Then, the [terminology construction](/docs/tev2/spec-tools/terminology-construction) takes place, which can be thought of as constructing a set of tuples `{ [term, grouptags] }`, where `term` [identifies](@) (the [curated text](@) that documents) the particular [knowledge artifact](@), and `grouptags` is a set of [grouptags](@) that the tuple is associated with.
 3. For every tuple in this set, an [MRG entry](@) is created, and added to the [MRG](@) under construction. The structure of each such [entry](mrg-entry@) depends on the type of the [knowledge artifact](@) that the [term](@) represents, as the [header](@) of a [curated text](@) depends on that type.
 4. By default, the result is put at the location as specified by the [SAF](@), i.e. in the directory as specified by the `glossarydir` field (in the [`scope` section](/docs/tev2/spec-files/saf#terminology)), and using the filename as specified by the `mrgfile` field of the specific version (in the [`versions` section](/docs/tev2/spec-files/saf#versions) of the [SAF](@)). However, the tool may specify ways to override this default.
 
@@ -52,10 +52,15 @@ In case the [MRG entry](@) is a copy, the `vsntag` [field](/docs/tev2/spec-files
 
 #### Constructing an MRG Entry from a Curated Text
 
-Constructing an [MRG entry](@) from a [curated text](@) is done by
-1. copying the entire front matter of a [curated text](@) as the new [MRG entry](@),
-2. discarding every field that has a fieldname that, when converted into lowercase, matches any of the fieldnames in the table below,
-3. adding the fields in the below table with the specified contents, as follows:
+Constructing an [MRG entry](@) from a [curated text](@) is done as follows:
+1. create an empty/new [MRG entry](@);
+2. if the `synonymOf` field contains a [term identifier](@) that [identifies](@)
+   - a [curated text](@) in the [scope](@) in which the [MRG](@) is being created, then copy the entire front matter of that [curated text](@) into the [MRG entry](@);[^1]
+   - an [MRG entry](@) in an [MRG](@) other than the [MRG](@) that is being created, then copy that [MRG entry](@) into the [MRG entry](@) that has just been created;
+3. if the `synonymOf` field contains a text that is not a [term identifier](@), raise an [appropriate warning](#exceptions);
+4. copy every field in the front-matter of the [curated text](@) into the [MRG entry](@); if the field already exists in the [MRG entry](@), it will be overwritten;
+5. discard every field that has a field name that, when converted into lowercase, matches any of the field names in the table below;
+6. add the fields in the below table with the specified contents, as follows:
 
 | Field          | Value(s) that are assigned to the fields |
 | -------------- | :---------- |
@@ -64,7 +69,7 @@ Constructing an [MRG entry](@) from a [curated text](@) is done by
 | `navurl`       | path, relative to the URL as specified in the `website` field in the [`scope` section](/docs/tev2/spec-files/saf#terminology) of the [SAF](@), where the rendered version of the [curated text](@) is located. |
 | `headingids`   | a list of the [markdown headings](https://www.markdownguide.org/basic-syntax/#headings) and/or [heading ids](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids) that are found in the [curated text](@). |
 
-## Exceptions, Warnings, and Logging
+## Exceptions, Warnings, and Logging {#exceptions}
 
 The general principle is that the [MRGT](@) helps its users to do their jobs. This means that errors that terminate the processing are limited to the max, that warnings (perhaps at different 'levels' of detail/severity) are given output whenever possible (yet may be limited by command-line options), and that texts are tailored for the envisaged users of the tool.
 
@@ -79,3 +84,7 @@ The [MRGT](@) logs conditions that prevent it from properly:
 Also, the [MRGT](@) provides suggestions that help tool-operators ([curators](@)) to not only identify, but also fix any problems.
 
 The [MRGT](@) comes with documentation that enables developers to ascertain its correct functioning (e.g. by using a test set of files, test scripts that exercise its parameters, etc.), and also enables them to deploy the tool in a git repo and author/modify CI-pipes to use that deployment.
+
+## Notes
+
+[^1]: The algorithm ensures that an [MRG entry](@) for a [term](@) that is a [synonym](@) of another [term](@) identical to the [MRG entry](@) for that other [term](@), but if the [curated text](@) that specifies the [synonym](@) has additional front matter (e.g. a slightly modified `glossaryText` field), that front matter is retained in the [MRG entry](@). It is up to the [author](@) of the [curated text](@) to make sure this does not pose any problems, and up to the [ICTT](@) to do appropriate checks.

@@ -4,7 +4,7 @@ term: mental-model
 termType: concept
 isa: knowledge-artifact
 glossaryText: "A [knowledge artifact](@) that relates a set of [concepts](@) (ideas), relations between them, and constraints about a certain topic, into a coherent and consistent whole (sometimes called 'viewpoint', or 'way of thinking')."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: mental-model{ss}, pattern{ss}, conceptual-model{ss}
 # Curation status

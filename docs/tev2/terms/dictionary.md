@@ -4,7 +4,7 @@ term: dictionary
 termType: concept
 isa:
 glossaryText: "an alphabetically sorted list of [terms](@) with various meanings that they may have in different contexts."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: dictionar{yies}
 # Curation status

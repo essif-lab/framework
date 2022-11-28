@@ -188,6 +188,9 @@ As `pattern`s need to be discussed, we do not yet specify any constraints.
 </TabItem>
 </Tabs>
 
+:::info Editor's note
+Checks need to be added to ensure congruence between terms and any synonyms that are defined for them. For example, they should have the same value in various fields, e.g., `termType`, `isa` (but not `glossaryText` or `synonymOf`)
+:::
 ### Curated Text integrity
 
 The integrity of any [curated text](@) file requires the integrity conditions of the [MRG](@) file to be satisfied, as well as the following conditions:

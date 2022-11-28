@@ -4,7 +4,7 @@ term: term-syntax
 termType: concept
 isa:
 glossaryText: "the criterion that specifies which texts can serve as a [term](@), which is that the text must match with (PCRE) regex [`[A-Za-z0-9\\s_]+`](https://www.debuggex.com/r/YQppbqxps5jI0t0P)."
-synonyms:
+synonymOf:
 groupTags: syntax
 formPhrases: term-syntaxes
 # Curation status
