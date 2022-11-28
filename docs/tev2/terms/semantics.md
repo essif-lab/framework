@@ -4,7 +4,7 @@ term: semantics
 termType: concept
 isa:
 glossaryText: "a mapping between the (tangible/textual) [terms](@) and (intangible) ideas/[concepts](@) - their meaning."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: semantics
 # Curation status

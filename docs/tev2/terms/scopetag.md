@@ -4,7 +4,7 @@ term: scopetag
 termType: concept
 isa: tag
 glossaryText: "a [tag](@) that is used to [identify](@) [scopes](@) from within a specific [scope](@)"
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: scopetag{ss}, scope-tag{ss}
 # Curation status

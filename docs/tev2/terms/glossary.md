@@ -4,7 +4,7 @@ term: glossary
 termType: concept
 isa:
 glossaryText: "an alphabetically sorted list of [terms](@) with the (single) meaning it has in (at least) one context."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: glossar{yies}
 # Curation status

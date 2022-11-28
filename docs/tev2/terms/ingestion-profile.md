@@ -4,7 +4,7 @@ term: ingestion-profile
 termType: concept
 isa:
 glossaryText: the specification of a method by which files that are in a particular place and format (e.g., wiki files) are turned into a [curated text](@).
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: ingestion-profile{ss}
 # Curation status

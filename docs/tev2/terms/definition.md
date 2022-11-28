@@ -4,7 +4,7 @@ term: definition
 termType: concept
 isa:
 glossaryText: "a text that helps [parties](@) to have the same understanding about the meaning of (and [concepts](@) behind) a [term](@), ideally in such a way that these [parties](@) can determine whether or not they make the same distinction."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: definition{ss}
 # Curation status

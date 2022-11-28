@@ -4,7 +4,7 @@ term: linguistic-unity
 termType: concept
 isa:
 glossaryText: "the property of a [community](@) of having a [terminology](@) (language) that every member of the [community](@) uses."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases:
 # Curation status
@@ -26,7 +26,7 @@ The entire section on Terminology Design is still under construction.<br/>
 ## Summary
 We say that a [community](@) has the property of being a **linguistic unity** if there is a single [terminology](@) (language) that every member of the [community](@) uses.
 
-The mere existence of a [glossary](@) that is developed (and perhaps also maintained) in a [community](@) is not a sure sign a [linguistic unity](@). Different members in a [community](@) that has developed a [glossary](@) may keep using their own preferred [terms](@). If this is done in documentation, readers may get confused because 
+The mere existence of a [glossary](@) that is developed (and perhaps also maintained) in a [community](@) is not a sure sign a [linguistic unity](@). Different members in a [community](@) that has developed a [glossary](@) may keep using their own preferred [terms](@). If this is done in documentation, readers may get confused because
 
 :::info Editor's note
 examples of the aforementioned statement are needed/should be added, e.g. as a footnote

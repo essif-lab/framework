@@ -4,7 +4,7 @@ term: corpus
 termType: concept
 isa:
 glossaryText: "the documentation that describes the [knowledge](@) around a set of [terms](@) and [concepts](@)."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: corpus, corpus-of-terminology
 # Curation status

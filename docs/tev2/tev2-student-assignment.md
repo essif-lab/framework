@@ -10,13 +10,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Student Assignment
 
-This page explains what a group of students can do to create and contribute one or more tools to the toolbox of the  Terminology Engine v2 ([TEv2](@)), that caters for
+This page explains what a group of students can do to create and contribute one or more tools to the toolbox of the Terminology Engine v2 ([TEv2](@)), that caters for
 - the creation and maintenance (i.e. [curation](@)) of [terminologies](@), and
 - the subsequent use in publications of different types (e.g. websites, whitepapers) and formats (e.g. html, LaTeX).
 
 ## Context, Background
 
-The first part in understanding the assignment is to understand its context, what the needs are, how they are being adressed, and what the role of  [TEv2](@) in all this is.
+The first part in understanding the assignment is to understand its context, what the needs are, how they are being adressed, and what the role of [TEv2](@) in all this is.
 
 Here are some pointers:
 - The mission we try to realize (or at least contribute to), is **[Understanding One Another](/docs/tev2/overview/tev2-common-understanding)**.

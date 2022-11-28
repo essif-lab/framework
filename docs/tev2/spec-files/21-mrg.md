@@ -116,7 +116,7 @@ An [MRG entry](@) has additional fields that come from the front matter of the [
 - optional in the sense that they are intended to be used by third party rendering tools, such as Docusaurus or Jekyll - these are also not documented here.
 
 :::info Editor's note
-We need to think about how to refer readers to sections of plugins and redering tool documentation that they might want/need to use.
+We need to think about how to refer readers to sections of plugins and rendering tool documentation that they might want/need to use.
 :::
 
 The following table documents the fields that are used within the context of [TEv2](@)
@@ -133,11 +133,11 @@ The following table documents the fields that are used within the context of [TE
 | Name            | Req'd | Description |
 | --------------- | :---: | :---------- |
 | `vsnTag`          | Y | [Versiontag](@) that [identifies](@) the version of the [terminology](@) from which the contents of the [MRG entry](@) is obtained. If the contents of the [MRG entry](@) was constructed from a [curated text](@), its value equals the value of the `vsntag` field in the [`terminology`-section](#mrg-terminology) of the [MRG](@) that this [MRG entry](@) is a part of. As a result, `scopetag`:`versiontag` [identifies](@) the [terminology](@) from which this [MRG entry](@) has originated.<br/>Must satisfy regex `[a-z0-9_-.]+`.  |
-| `term`            | Y | [Term](@) ([Identifier](@)) that is used to represent a [knowledge artifact](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `term`            | Y | [Term](@) that is used to represent ([identify](@)) a [knowledge artifact](@) in this [scope](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `termType`        | Y | [Text](term-type@) that [identifies](@) the kind of [knowledge artifact](@) that this [MRG entry](@) refers to. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `isa`             | n | [concept](@) of which this is a specialization. |
 | `glossaryText`    | Y | Text that is used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](@). |
-| `synonyms`        | n | List of [synonyms](@) for this [term](@). |
+| `synonymOf`       | n | [term identifier](@) that [identifies](@) the [term](@) of which this is a [synonym](@). |
 | `groupTags`       | n | List of [grouptags](@), each of which signifies that the [(scoped) term](@) that this [curated text](@) documents, is part of the group of [terms](@) that it represents.<br/>Example: `[tev2, management]`.<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-]+)\s*(?:,\s*([a-z0-9_-]+))*\s*\])?`](https://www.debuggex.com/r/a51CXl1NzR3kwihT). |
 | `formPhrases`     | n | List of [texts](formphrase@) that are [used to convert](/docs/tev2/spec-tools/trrt#id) the `show text` parts of [term refs](@) into `term`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs). For details, see ['Syntax Specs - Form Phrases](/docs/tev2/spec-syntax/form-phrase-syntax). |
 | `status`          | n | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
@@ -148,7 +148,7 @@ The following table documents the fields that are used within the context of [TE
 | `originalLicense` | n | Reference to the license of the work from which the texts were derived. |
 | `locator`         | n | Text that identifies the file that holds the [curated text](@) of the [knowledge artifact](@) that this [MRG entry](@) describes. The full URL of the [curated text](@) is `scopedir`/`curatedir`/`locator`, where `scopedir` and `curatedir` can be found in the [SAF](@) (which is in the root of `scopedir`). Note that `locator` may contain a path. |
 | `navurl`          | n | URL that locates a human readable, rendered version of the [curated text](@) of the [knowledge artifact](@) that this [MRG entry](@) describes. This URL is used to resolve [term refs](@) that refer to this [knowledge artifact](@). |
-| `headingIds`      | n | List of texts that can be used as a `trait` in a [term ref](@), which typically are [markdown 'heading-ids'](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids). |
+| `headingIds`      | n | List of texts that can be used as a `trait` in a [term identifier](@), which typically are [markdown 'heading-ids'](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids). |
 
 
 

@@ -17,7 +17,7 @@ isa:
 term: Peer # Text that is the name of the concept in (human readable) texts.
 fullterm: "Peer Agent"
 shorterm:
-synonyms:
+synonymOf:
 glossaryText: "the %%agent^agent%% with whom/which this other %%agent^agent%% is communicating in that %%communication session^communication-session%%."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 title: "Peer Agent"

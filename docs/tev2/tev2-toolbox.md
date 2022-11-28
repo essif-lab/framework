@@ -32,4 +32,4 @@ As mentioned in the [TEv2 overview](/docs/tev2/tev2-overview), the toolbox is en
 
 - the **Human Readable Dictionary generation Tool ([HRDT](@))**. This tool generates a a Human Readable [Dictionary](@) ([HRD](@)), that renders the [terms](@) from a [machine readable dictionary (MRD)](@) into one of several formats, e.g. HTML, or PDF. [HRDs](@) can be created for different purposes, e.g. to compare different [terminologies](@) (across [scopes](@)), or as a reference of what [terms](@) mean in different [scopes](@).
 
-Additionally, a collection of code snippets is envisaged that can be used to automatically generate [MRGs](@) and [HRGs](@) upon  successful commits to the master-branch of an associated repo/wiki, enabling [curators](@) to establish CI/CD pipelines.
+Additionally, a collection of code snippets is envisaged that can be used to automatically generate [MRGs](@) and [HRGs](@) upon successful commits to the master-branch of an associated repo/wiki, enabling [curators](@) to establish CI/CD pipelines.
