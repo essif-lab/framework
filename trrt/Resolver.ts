@@ -134,10 +134,10 @@ export class Resolver {
                                           var term: string;
                                           var url: string;
                                           if (innerKey == "term") {
-                                                term = innerValue;
+                                                term = innerValue as string;
                                           }
                                           if (innerKey == "navurl") {
-                                                url = innerValue;
+                                                url = innerValue as string;
                                           }
                                           this.glossary.set(term, url);
                                     }

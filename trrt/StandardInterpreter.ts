@@ -6,8 +6,8 @@ export class StandardInterpreter implements Interpreter {
       public constructor() {
 
       }
-
-      public interpert(data: string): Array<Map<string, string>> {
+      
+      interpert(data: string): Map<string, string>[] {
             const matches: IterableIterator<RegExpMatchArray> = data.matchAll(this.term_regex);
             var allTermProperties: Array<Map<string, string>> = new Array();
             // basic syntax, i.e. [showtext](term#trait@scopetag:vsntag);
