@@ -21,24 +21,22 @@ entries:
  -
   term: "actor"
   scopetag: "tev2"
-  locator: "concept.md"
+  locator: "actor.md"
   isa: null
-  termType: "concept"
-  formPhrases: "concept{ss}"
+  termType: "actor"
+  formPhrases: "actor{ss}"
   status: "proposed"
   synonyms: null
   groupTags: null
-  glossaryText: "a [knowledge artifact](@) that captures the ideas/thoughts behind\
-    \ a classification of [entities](@) (what makes [entities](@) in that class 'the\
-    \ same')."
+  glossaryText: "a [person](@) that performs a [character](@) in a piece of media."
   created: "2022-06-06"
   updated: "2022-06-06"
   vsntag: "mrgtest"
   commit: null
-  contributors: "RieksJ"
+  contributors: "Chadha"
   attribution: null
   originalLicense: null
-  navurl: "terms/concept.md"
+  navurl: "terms/actor.md"
   headingids:
    - "tev2-curated-text-header"
    - "curation-status"

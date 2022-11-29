@@ -17,11 +17,11 @@ export class Resolver {
       private mrgWritePath = "/mrg.yaml"
       private config: string = "";
       private directory: string = ".";
+      // todo switch scope based on version 
       private version: string = "";
 
       private converter: Converter;
       private interpreter: Interpreter;
-      private glossary: Map<string, string> = new Map();
 
       public constructor(outputPath: string, scopePath: string, directoryPath?: string, configPath?: string, interpreterType?: string, covnerterType?: string) {
             this.output = outputPath;
@@ -73,61 +73,40 @@ export class Resolver {
       private processConfig(): boolean {
             // read config file and set paramters
             console.log("Reading config file at: " + this.config);
-            fs.readFile(this.config, 'utf8', (err: Error, data: string) => {
-                  if (err) {
-                        console.log(" \t " + err);
-                        return false;
-                  } else {
-                        // TODO read config file and ser optionalParams from those values 
-                  }
-            });
+            var file: string = fs.readFileSync(this.config, 'utf8');
             this.setOptionalParams("", "", "");
             return true;
       }
 
       private readGlossary(): Map<string, string> {
-            var mrgURL: string = ""; // create 'scopedir`/`mrgfile` url to download          
-            console.log("Loading gloassary from: " + this.scope);
-            const safDocument: Object = yaml.load(fs.readFileSync(this.scope, 'utf8'));
-            for (const [key, value] of Object.entries(safDocument)) {
-                  if (key == "scope") {
-                        for (const [innerKey, innerValue] of Object.entries(value)) {
-                              if (innerKey == "scopedir") {
-                                    mrgURL = mrgURL + innerValue;
-                              }
-                              if (innerKey == "glossarydir") {
-                                    mrgURL = mrgURL + "/" + innerValue;
-                              }
-                              if (innerKey == "mrgfile") {
-                                    mrgURL = mrgURL + "/" + innerValue;
-                              }
-                        }
-                  }
-            }
-
-            console.log("The mrg URL is: " + mrgURL);
+            var glossary: Map<string, string> = new Map();
             if (this.tmpLocalMrgFile) {
                   const mrgDocument: Object = yaml.load(fs.readFileSync(this.tmpLocalMrgFile, 'utf8'));
-                  for (const [key, value] of Object.entries(mrgDocument)) {
-                        if (key == "entries") {
+                  this.populateGlossary(mrgDocument, glossary);
+                  console.log(glossary);
+            } else {
+                  // remote mrg file            
+                  var mrgURL: string = ""; // create 'scopedir`/`mrgfile` url to download          
+                  console.log("Loading gloassary from: " + this.scope);
+                  const safDocument: Object = yaml.load(fs.readFileSync(this.scope, 'utf8'));
+                  for (const [key, value] of Object.entries(safDocument)) {
+                        if (key == "scope") {
                               for (const [innerKey, innerValue] of Object.entries(value)) {
-                                    var term: string;
-                                    var url: string;
-                                    if (innerKey == "term") {
-                                          term = innerValue as string;
+                                    if (innerKey == "scopedir") {
+                                          mrgURL = mrgURL + innerValue;
                                     }
-                                    if (innerKey == "navurl") {
-                                          url = innerValue as string;
+                                    if (innerKey == "glossarydir") {
+                                          mrgURL = mrgURL + "/" + innerValue;
                                     }
-                                    // TODO glossary doesn't seem to be processed well > everything is undefined? 
-                                    this.glossary.set(term, url);
+                                    if (innerKey == "mrgfile") {
+                                          mrgURL = mrgURL + "/" + innerValue;
+                                    }
                               }
                         }
                   }
-                  console.log(this.glossary.values);
-            } else {
-                  // remote mrg file
+
                   console.log("Dowloading MRG from: " + mrgURL);
+                  // TODO make sure this is synchronus 
                   var mrgFileDownload = fs.createWriteStream(this.mrgWritePath);
                   https.get(mrgURL, function (response) {
                         response.pipe(mrgFileDownload);
@@ -136,12 +115,35 @@ export class Resolver {
                         });
                   }).on('error', function (err) {
                         console.log(err)
-                  }); 
+                  });
 
-                  // TODO call glossary object from the previous branch 
+                  const mrgDocument: Object = yaml.load(fs.readFileSync(this.mrgWritePath, 'utf8'));
+                  this.populateGlossary(mrgDocument, glossary);
+                  console.log(glossary);
             }
 
-            return this.glossary;
+            return glossary;
+      }
+
+      private populateGlossary(mrgDocument: Object, glossary: Map<string, string>): Map<string, string> {
+            for (const [key, value] of Object.entries(mrgDocument)) {
+                  if (key == "entries") {
+                        for (const [innerKey, innerValue] of Object.entries(value)) {
+                              for (const [innermostKey, innermostValue] of Object.entries(innerValue)) {
+                                    var term: string;
+                                    var url: string;
+                                    if (innermostKey == "term") {
+                                          term = innermostValue as string;
+                                    }
+                                    if (innermostKey == "navurl") {
+                                          url = innermostValue as string;
+                                    }
+                                    glossary.set(term, url);
+                              }
+                        }
+                  }
+            }
+            return glossary;
       }
 
       private createOutputDir(): boolean {
@@ -158,28 +160,21 @@ export class Resolver {
       }
 
       private writeFile(file: string, data: string) {
-            fs.writeFile((this.output + file), data, (err) => {
-                  if (err) {
-                        console.log(" \t " + err);
-                  } else {
-                        console.log("Writing: " + file);
-                  }
-            });
+            console.log("Writing: " + file);
+            fs.writeFileSync(this.output + file, data);
       }
 
-      private interpertAndConvert(data: string): string {
+      private interpertAndConvert(data: string, glossary: Map<string, string>): string {
             const matches: IterableIterator<RegExpMatchArray> = data.matchAll(this.interpreter.getTermRegex());
             for (const match of Array.from(matches)) {
                   var termProperties: Map<string, string> = this.interpreter.interpert(match);
-                  data = data.replace(this.interpreter.getTermRegex(), this.converter.convert(this.glossary, termProperties));
+                  data = data.replace(this.interpreter.getTermRegex(), this.converter.convert(glossary, termProperties));
             }
             return data;
       }
 
       public resolve_terms(): boolean {
-            this.glossary = this.readGlossary();
             this.createOutputDir();
-
             var files = fs.readdirSync(this.directory);
             console.log("Reading " + this.directory + ".....");
 
@@ -187,7 +182,7 @@ export class Resolver {
                   if (path.extname(file) == ".md" || path.extname(file) == ".html") {
                         var data = fs.readFileSync(this.directory + file, 'utf8')
                         console.log("Reading: " + file);
-                        data = this.interpertAndConvert(data)
+                        data = this.interpertAndConvert(data, this.readGlossary())
                         this.writeFile(file, data);
                   } else {
                         console.log(file + " does not have a recognised file type (*.md, *.html)");
