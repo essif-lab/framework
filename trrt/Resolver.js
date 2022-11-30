@@ -160,11 +160,15 @@ var Resolver = /** @class */ (function () {
         fs.writeFileSync(this.output + file, data);
     };
     Resolver.prototype.interpertAndConvert = function (data, glossary) {
-        var matches = data.matchAll(this.interpreter.getTermRegex());
+        var matches = data.matchAll(this.interpreter.getGlobalTermRegex());
         for (var _i = 0, _a = Array.from(matches); _i < _a.length; _i++) {
             var match = _a[_i];
             var termProperties = this.interpreter.interpert(match);
-            data = data.replace(this.interpreter.getTermRegex(), this.converter.convert(glossary, termProperties));
+            var replacement = this.converter.convert(glossary, termProperties);
+            if (replacement != "") {
+                console.log("Replacing the match");
+                data = data.replace(this.interpreter.getLocalTermRegex(), replacement);
+            }
         }
         return data;
     };

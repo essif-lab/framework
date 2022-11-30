@@ -165,10 +165,14 @@ export class Resolver {
       }
 
       private interpertAndConvert(data: string, glossary: Map<string, string>): string {
-            const matches: IterableIterator<RegExpMatchArray> = data.matchAll(this.interpreter.getTermRegex());
+            const matches: IterableIterator<RegExpMatchArray> = data.matchAll(this.interpreter.getGlobalTermRegex());
             for (const match of Array.from(matches)) {
                   var termProperties: Map<string, string> = this.interpreter.interpert(match);
-                  data = data.replace(this.interpreter.getTermRegex(), this.converter.convert(glossary, termProperties));
+                  var replacement = this.converter.convert(glossary, termProperties);
+                  if (replacement != "") {
+                        console.log("Replacing the match")
+                        data = data.replace(this.interpreter.getLocalTermRegex(), replacement);
+                  }
             }
             return data;
       }

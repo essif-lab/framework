@@ -1,11 +1,11 @@
 import { Interpreter } from "./Interpreter";
 
 export class StandardInterpreter implements Interpreter {
-      private term_regex: RegExp = /(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))(?<showtext>.+?)\]\((?<id>[a-z0-9_-]+?)(?:#(?<trait>[a-z0-9_-]+?))?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+?))?\)/g;
+      private termRegexGlobal: RegExp = /(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))(?<showtext>.+?)\]\((?<id>[a-z0-9_-]+?)(?:#(?<trait>[a-z0-9_-]+?))?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+?))?\)/g;
 
-      public constructor() {
+      private termRegexLocal: RegExp = /(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))(?<showtext>.+?)\]\((?<id>[a-z0-9_-]+?)(?:#(?<trait>[a-z0-9_-]+?))?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+?))?\)/;
 
-      }
+      public constructor() {}
 
       interpert(match: RegExpMatchArray): Map<string, string> {
             var termProperties: Map<string, string> = new Map();
@@ -51,7 +51,11 @@ export class StandardInterpreter implements Interpreter {
             return termProperties;
       }
 
-      public getTermRegex(): RegExp {
-            return this.term_regex;
+      public getGlobalTermRegex(): RegExp {
+            return this.termRegexGlobal;
+      }
+
+      public getLocalTermRegex(): RegExp {
+            return this.termRegexLocal;
       }
 }
