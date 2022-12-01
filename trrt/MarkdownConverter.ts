@@ -3,9 +3,7 @@ import fs = require("fs");
 
 
 export class MarkdownConverter implements Converter {
-      public constructor() {
-
-      }
+      public constructor() {}
 
       public convert(glossary: Map<string, string>, properties: Map<string, string>): string {
             // trait (optional)
@@ -13,7 +11,6 @@ export class MarkdownConverter implements Converter {
             var markdownOut: string = "";
             if (properties.get("scopetag") == "default") {
                   if (properties.get("vsntag") == "latest") {
-                        // TODO handle empty showtext 
                         if (properties.get("trait") != "default") {
                               markdownOut = `[${properties.get("showtext")}](${glossary.get(properties.get("term"))}#${properties.get("trait")})`;
                         } else {
@@ -31,8 +28,6 @@ export class MarkdownConverter implements Converter {
                   return markdownOut;
                   // TODO go back and get the correct glossary
             }
-
-            // TODO do not change text in file if no match found
             return markdownOut;
       }
 

@@ -170,7 +170,6 @@ export class Resolver {
                   var termProperties: Map<string, string> = this.interpreter.interpert(match);
                   var replacement = this.converter.convert(glossary, termProperties);
                   if (replacement != "") {
-                        console.log("Replacing the match")
                         data = data.replace(this.interpreter.getLocalTermRegex(), replacement);
                   }
             }
