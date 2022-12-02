@@ -1,9 +1,10 @@
 import { Converter } from "./Converter";
-import fs = require("fs");
-
 
 export class HTTPConverter implements Converter {
-      public constructor() {}
+      public constructor() { }
+      getType(): string {
+            return "HTTP";
+      }
 
       convert(glossary: Map<string, string>, properties: Map<string, string>): string {
             var htmlOut: string = "";

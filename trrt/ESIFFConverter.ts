@@ -1,9 +1,10 @@
 import { Converter } from "./Converter";
-import fs = require("fs");
-
 
 export class ESSIFConverter implements Converter {
       public constructor() { }
+      getType(): string {
+            return "ESIFF";
+      }
 
       convert(glossary: Map<string, string>, properties: Map<string, string>): string {
             var esiffOut: string = "";

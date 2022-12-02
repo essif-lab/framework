@@ -7,6 +7,10 @@ export class StandardInterpreter implements Interpreter {
 
       public constructor() {}
 
+      getType(): string {
+            return "Standard";
+      }
+
       interpert(match: RegExpMatchArray): Map<string, string> {
             var termProperties: Map<string, string> = new Map();
 

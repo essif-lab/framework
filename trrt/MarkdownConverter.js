@@ -10,7 +10,6 @@ var MarkdownConverter = /** @class */ (function () {
         var markdownOut = "";
         if (properties.get("scopetag") == "default") {
             if (properties.get("vsntag") == "latest") {
-                // TODO handle empty showtext 
                 if (properties.get("trait") != "default") {
                     markdownOut = "[".concat(properties.get("showtext"), "](").concat(glossary.get(properties.get("term")), "#").concat(properties.get("trait"), ")");
                 }
@@ -30,7 +29,6 @@ var MarkdownConverter = /** @class */ (function () {
             return markdownOut;
             // TODO go back and get the correct glossary
         }
-        // TODO do not change text in file if no match found
         return markdownOut;
     };
     return MarkdownConverter;

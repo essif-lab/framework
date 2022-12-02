@@ -6,7 +6,7 @@ const safPath = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt
 
 function main(): void {
       let resolver: Resolver = new Resolver(outputPath, safPath, directoryPath);
-      if (resolver.resolve_terms()) {
+      if (resolver.resolve()) {
             console.log("Done...");
       } else {
             console.log("Failed to resolve terms, see logs....");

@@ -17,6 +17,7 @@ export class Resolver {
       private mrgWritePath = "/mrg.yaml"
       private config: string = "";
       private directory: string = ".";
+
       // todo switch scope based on version 
       private version: string = "";
 
@@ -78,6 +79,55 @@ export class Resolver {
             return true;
       }
 
+      public getDirectory(): string {
+            return this.directory;
+      }
+
+      public getInterpreterType(): string {
+            return this.interpreter.getType();
+      }
+
+      public getConverterType(): string {
+            return this.converter.getType();
+      }
+
+      private getMrgUrl(): string {
+            var mrgURL: string = "";
+            console.log("Loading gloassary from: " + this.scope);
+            const safDocument: Object = yaml.load(fs.readFileSync(this.scope, 'utf8'));
+            for (const [key, value] of Object.entries(safDocument)) {
+                  if (key == "scope") {
+                        for (const [innerKey, innerValue] of Object.entries(value)) {
+                              if (innerKey == "scopedir") {
+                                    if (innerValue != "" && innerValue != undefined) {
+                                          mrgURL = mrgURL + innerValue;
+                                    } else {
+                                          console.log("No scope directory defined in SAF");
+                                          return "";
+                                    }
+                              }
+                              if (innerKey == "glossarydir") {
+                                    if (innerValue != "" && innerValue != undefined) {
+                                          mrgURL = mrgURL + "/" + innerValue;
+                                    } else {
+                                          console.log("No glossary directory defined in SAF");
+                                          return "";
+                                    }
+                              }
+                              if (innerKey == "mrgfile") {
+                                    if (innerValue != "" && innerValue != undefined) {
+                                          mrgURL = mrgURL + "/" + innerValue;
+                                    } else {
+                                          console.log("No MRG file defined in SAF");
+                                          return "";
+                                    }
+                              }
+                        }
+                  }
+            }
+            return mrgURL;
+      }
+
       private readGlossary(): Map<string, string> {
             var glossary: Map<string, string> = new Map();
             if (this.tmpLocalMrgFile) {
@@ -86,44 +136,29 @@ export class Resolver {
                   console.log(glossary);
             } else {
                   // remote mrg file            
-                  var mrgURL: string = ""; // create 'scopedir`/`mrgfile` url to download          
-                  console.log("Loading gloassary from: " + this.scope);
-                  const safDocument: Object = yaml.load(fs.readFileSync(this.scope, 'utf8'));
-                  for (const [key, value] of Object.entries(safDocument)) {
-                        if (key == "scope") {
-                              for (const [innerKey, innerValue] of Object.entries(value)) {
-                                    if (innerKey == "scopedir") {
-                                          mrgURL = mrgURL + innerValue;
-                                    }
-                                    if (innerKey == "glossarydir") {
-                                          mrgURL = mrgURL + "/" + innerValue;
-                                    }
-                                    if (innerKey == "mrgfile") {
-                                          mrgURL = mrgURL + "/" + innerValue;
-                                    }
-                              }
-                        }
-                  }
-
-                  console.log("Dowloading MRG from: " + mrgURL);
-                  // TODO make sure this is synchronus 
-                  var mrgFileDownload = fs.createWriteStream(this.mrgWritePath);
-                  https.get(mrgURL, function (response) {
-                        response.pipe(mrgFileDownload);
-                        mrgFileDownload.on('finish', function () {
-                              mrgFileDownload.close();
+                  var mrgURL: string = this.getMrgUrl();
+                  if (mrgURL != "") {
+                        console.log("Dowloading MRG from: " + mrgURL);
+                        // TODO make sure this is synchronus 
+                        var mrgFileDownload = fs.createWriteStream(this.mrgWritePath);
+                        https.get(mrgURL, function (response) {
+                              response.pipe(mrgFileDownload);
+                              mrgFileDownload.on('finish', function () {
+                                    mrgFileDownload.close();
+                              });
+                        }).on('error', function (err) {
+                              console.log(err)
                         });
-                  }).on('error', function (err) {
-                        console.log(err)
-                  });
 
-                  const mrgDocument: Object = yaml.load(fs.readFileSync(this.mrgWritePath, 'utf8'));
-                  this.populateGlossary(mrgDocument, glossary);
-                  console.log(glossary);
+                        const mrgDocument: Object = yaml.load(fs.readFileSync(this.mrgWritePath, 'utf8'));
+                        this.populateGlossary(mrgDocument, glossary);
+                        console.log(glossary);
+                  }
             }
 
             return glossary;
       }
+
 
       private populateGlossary(mrgDocument: Object, glossary: Map<string, string>): Map<string, string> {
             for (const [key, value] of Object.entries(mrgDocument)) {
@@ -176,7 +211,7 @@ export class Resolver {
             return data;
       }
 
-      public resolve_terms(): boolean {
+      public resolve(): boolean {
             this.createOutputDir();
             var files = fs.readdirSync(this.directory);
             console.log("Reading " + this.directory + ".....");

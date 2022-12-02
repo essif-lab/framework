@@ -1,9 +1,11 @@
 import { Converter } from "./Converter";
-import fs = require("fs");
-
 
 export class MarkdownConverter implements Converter {
       public constructor() {}
+
+      getType(): string {
+            return "Markdown";
+      }
 
       public convert(glossary: Map<string, string>, properties: Map<string, string>): string {
             // trait (optional)
