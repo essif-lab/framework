@@ -1,5 +1,4 @@
 import { describe, expect, test, beforeEach, afterEach } from '@jest/globals';
-import exp = require('constants');
 import { Resolver } from '../Resolver';
 
 beforeEach(() => { });
@@ -67,7 +66,7 @@ describe('get empty glossary from missing mrg url', () => {
 describe('get <term, url> glossary from well defined mrg', () => {
      test("if mrg url is correct and mrg is correctly defined so that there is an srray of terms and they all have corresponding navurls  return a correctly structured glosssary object", () => {
           var resolver: Resolver = new Resolver("/", "/resources/test-saf.yaml");
-          var gloassary: Map<string, string>;
+          var gloassary: Map<string, string> = new Map();
           gloassary.set("concept", "http://test.gitlab.com/test/test-concept.md")
           expect(resolver['readGlossary']).toEqual(gloassary);
      })
@@ -75,6 +74,11 @@ describe('get <term, url> glossary from well defined mrg', () => {
 
 describe("get <term, empty> glossary from missing navurl mrg", () => {
      test("if mrg url is correct but mrg entries have terms with missing navurls return glossary object with a map from terms to empty strings", () => {
-          // todo
+          var resolver: Resolver = new Resolver("/", "/resources/broken-mrg-saf.yaml");
+          var gloassary: Map<string, string> = new Map();
+          gloassary.set("concept", "")
+          expect(resolver['readGlossary']).toEqual(gloassary);
      })
 });
+
+// todo overall resolve test 
