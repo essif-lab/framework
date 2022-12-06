@@ -6,6 +6,9 @@ var StandardInterpreter = /** @class */ (function () {
         this.termRegexGlobal = /(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))(?<showtext>.+?)\]\((?<id>[a-z0-9_-]+?)(?:#(?<trait>[a-z0-9_-]+?))?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+?))?\)/g;
         this.termRegexLocal = /(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))(?<showtext>.+?)\]\((?<id>[a-z0-9_-]+?)(?:#(?<trait>[a-z0-9_-]+?))?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+?))?\)/;
     }
+    StandardInterpreter.prototype.getType = function () {
+        return "Standard";
+    };
     StandardInterpreter.prototype.interpert = function (match) {
         var termProperties = new Map();
         if (match.groups.showtext != undefined && match.groups.showtext != "") {

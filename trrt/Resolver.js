@@ -3,14 +3,16 @@ exports.__esModule = true;
 exports.Resolver = void 0;
 var StandardInterpreter_1 = require("./StandardInterpreter");
 var MarkdownConverter_1 = require("./MarkdownConverter");
+var HTTPConverter_1 = require("./HTTPConverter");
 var AltInterpreter_1 = require("./AltInterpreter");
+var ESIFFConverter_1 = require("./ESIFFConverter");
 var fs = require("fs");
 var path = require("path");
 var yaml = require("js-yaml");
 var https = require("https");
 var console = require("console");
 var Resolver = /** @class */ (function () {
-    function Resolver(outputPath, scopePath, directoryPath, configPath, interpreterType, covnerterType) {
+    function Resolver(outputPath, scopePath, directoryPath, vsn, configPath, interpreterType, converterType) {
         this.tmpLocalMrgFile = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
         this.mrgWritePath = "/mrg.yaml";
         this.config = "";
@@ -26,12 +28,29 @@ var Resolver = /** @class */ (function () {
             this.processConfig();
         }
         else {
-            this.setOptionalParams(directoryPath, interpreterType, covnerterType);
+            this.setOptionalParams(directoryPath, vsn, interpreterType, converterType);
         }
     }
-    Resolver.prototype.setOptionalParams = function (directoryPath, interpreterType, converterType) {
+    Resolver.prototype.processConfig = function () {
+        // read config file and set paramters
+        console.log("Reading config file at: " + this.config);
+        var config = new Map(Object.entries(yaml.load(fs.readFileSync(this.config, 'utf8'))));
+        if (config.get("output") != "" || config.get("output") != undefined) {
+            this.output = config.get("output");
+        }
+        else if (config.get("scopedir") != "" || config.get("scopedir") != undefined) {
+            this.scope = config.get("scopedir");
+        }
+        // method	<methodarg>	n	Text, the syntax and semantics of which remain to be specified (see also the Editor's note below). When this parameter is omitted, term refs are replaced with some default renderable ref. --> TODO update documentation
+        this.setOptionalParams(config.get("input"), config.get("version"), config.get("interpreter"), config.get("converter"));
+        return true;
+    };
+    Resolver.prototype.setOptionalParams = function (directoryPath, vsn, interpreterType, converterType) {
         if (directoryPath != undefined) {
             this.directory = directoryPath;
+        }
+        if (vsn != undefined) {
+            this.version = vsn;
         }
         if (interpreterType != undefined) {
             if (interpreterType == "Standard") {
@@ -53,10 +72,10 @@ var Resolver = /** @class */ (function () {
                 this.converter = new MarkdownConverter_1.MarkdownConverter();
             }
             else if (converterType == "HTTP") {
-                // create different converter
+                this.converter = new HTTPConverter_1.HTTPConverter();
             }
             else if (converterType == "ESIFF") {
-                // create different converter
+                this.converter = new ESIFFConverter_1.ESSIFConverter();
             }
             else {
                 console.log(converterType + " is not a known converter, creating Markdown converter.");
@@ -67,12 +86,55 @@ var Resolver = /** @class */ (function () {
             this.converter = new MarkdownConverter_1.MarkdownConverter();
         }
     };
-    Resolver.prototype.processConfig = function () {
-        // read config file and set paramters
-        console.log("Reading config file at: " + this.config);
-        var file = fs.readFileSync(this.config, 'utf8');
-        this.setOptionalParams("", "", "");
-        return true;
+    Resolver.prototype.getDirectory = function () {
+        return this.directory;
+    };
+    Resolver.prototype.getInterpreterType = function () {
+        return this.interpreter.getType();
+    };
+    Resolver.prototype.getConverterType = function () {
+        return this.converter.getType();
+    };
+    Resolver.prototype.getMrgUrl = function () {
+        var mrgURL = "";
+        console.log("Loading gloassary from: " + this.scope);
+        var safDocument = yaml.load(fs.readFileSync(this.scope, 'utf8'));
+        for (var _i = 0, _a = Object.entries(safDocument); _i < _a.length; _i++) {
+            var _b = _a[_i], key = _b[0], value = _b[1];
+            if (key == "scope") {
+                for (var _c = 0, _d = Object.entries(value); _c < _d.length; _c++) {
+                    var _e = _d[_c], innerKey = _e[0], innerValue = _e[1];
+                    if (innerKey == "scopedir") {
+                        if (innerValue != "" && innerValue != undefined) {
+                            mrgURL = mrgURL + innerValue;
+                        }
+                        else {
+                            console.log("No scope directory defined in SAF");
+                            return "";
+                        }
+                    }
+                    if (innerKey == "glossarydir") {
+                        if (innerValue != "" && innerValue != undefined) {
+                            mrgURL = mrgURL + "/" + innerValue;
+                        }
+                        else {
+                            console.log("No glossary directory defined in SAF");
+                            return "";
+                        }
+                    }
+                    if (innerKey == "mrgfile") {
+                        if (innerValue != "" && innerValue != undefined) {
+                            mrgURL = mrgURL + "/" + innerValue;
+                        }
+                        else {
+                            console.log("No MRG file defined in SAF");
+                            return "";
+                        }
+                    }
+                }
+            }
+        }
+        return mrgURL;
     };
     Resolver.prototype.readGlossary = function () {
         var glossary = new Map();
@@ -83,64 +145,33 @@ var Resolver = /** @class */ (function () {
         }
         else {
             // remote mrg file            
-            var mrgURL = ""; // create 'scopedir`/`mrgfile` url to download          
-            console.log("Loading gloassary from: " + this.scope);
-            var safDocument = yaml.load(fs.readFileSync(this.scope, 'utf8'));
-            for (var _i = 0, _a = Object.entries(safDocument); _i < _a.length; _i++) {
-                var _b = _a[_i], key = _b[0], value = _b[1];
-                if (key == "scope") {
-                    for (var _c = 0, _d = Object.entries(value); _c < _d.length; _c++) {
-                        var _e = _d[_c], innerKey = _e[0], innerValue = _e[1];
-                        if (innerKey == "scopedir") {
-                            mrgURL = mrgURL + innerValue;
-                        }
-                        if (innerKey == "glossarydir") {
-                            mrgURL = mrgURL + "/" + innerValue;
-                        }
-                        if (innerKey == "mrgfile") {
-                            mrgURL = mrgURL + "/" + innerValue;
-                        }
-                    }
-                }
-            }
-            console.log("Dowloading MRG from: " + mrgURL);
-            // TODO make sure this is synchronus 
-            var mrgFileDownload = fs.createWriteStream(this.mrgWritePath);
-            https.get(mrgURL, function (response) {
-                response.pipe(mrgFileDownload);
-                mrgFileDownload.on('finish', function () {
-                    mrgFileDownload.close();
+            var mrgURL = this.getMrgUrl();
+            if (mrgURL != "") {
+                console.log("Dowloading MRG from: " + mrgURL);
+                // TODO make sure this is synchronus 
+                var mrgFileDownload = fs.createWriteStream(this.mrgWritePath);
+                https.get(mrgURL, function (response) {
+                    response.pipe(mrgFileDownload);
+                    mrgFileDownload.on('finish', function () {
+                        mrgFileDownload.close();
+                    });
+                }).on('error', function (err) {
+                    console.log(err);
                 });
-            }).on('error', function (err) {
-                console.log(err);
-            });
-            var mrgDocument = yaml.load(fs.readFileSync(this.mrgWritePath, 'utf8'));
-            this.populateGlossary(mrgDocument, glossary);
-            console.log(glossary);
+                var mrgDocument = yaml.load(fs.readFileSync(this.mrgWritePath, 'utf8'));
+                this.populateGlossary(mrgDocument, glossary);
+                console.log(glossary);
+            }
         }
         return glossary;
     };
     Resolver.prototype.populateGlossary = function (mrgDocument, glossary) {
-        for (var _i = 0, _a = Object.entries(mrgDocument); _i < _a.length; _i++) {
-            var _b = _a[_i], key = _b[0], value = _b[1];
-            if (key == "entries") {
-                for (var _c = 0, _d = Object.entries(value); _c < _d.length; _c++) {
-                    var _e = _d[_c], innerKey = _e[0], innerValue = _e[1];
-                    for (var _f = 0, _g = Object.entries(innerValue); _f < _g.length; _f++) {
-                        var _h = _g[_f], innermostKey = _h[0], innermostValue = _h[1];
-                        var term;
-                        var url;
-                        if (innermostKey == "term") {
-                            term = innermostValue;
-                        }
-                        if (innermostKey == "navurl") {
-                            url = innermostValue;
-                        }
-                        glossary.set(term, url);
-                    }
-                }
-            }
-        }
+        var mrg = new Map(Object.entries(mrgDocument));
+        var entries = new Map(Object.entries(mrg.get("entries")));
+        var innerValues = new Map(Object.entries(entries));
+        console.log("InnerValues");
+        console.log(innerValues);
+        glossary.set(innerValues.get("term"), innerValues.get("navurl"));
         return glossary;
     };
     Resolver.prototype.createOutputDir = function () {
@@ -171,7 +202,7 @@ var Resolver = /** @class */ (function () {
         }
         return data;
     };
-    Resolver.prototype.resolve_terms = function () {
+    Resolver.prototype.resolve = function () {
         var _this = this;
         this.createOutputDir();
         var files = fs.readdirSync(this.directory);

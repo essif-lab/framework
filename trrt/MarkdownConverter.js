@@ -4,6 +4,9 @@ exports.MarkdownConverter = void 0;
 var MarkdownConverter = /** @class */ (function () {
     function MarkdownConverter() {
     }
+    MarkdownConverter.prototype.getType = function () {
+        return "Markdown";
+    };
     MarkdownConverter.prototype.convert = function (glossary, properties) {
         // trait (optional)
         // trait identifies a particular kind of descriptive text that is associated with the knowledge artifact. If specified, it must be one of the elements in the list of headingid's as specified in the headingids field of the MRG entry. If omitted, the preceding #-character should also be omitted

@@ -2,13 +2,16 @@ import { Interpreter } from './Interpreter';
 import { Converter } from './Converter';
 import { StandardInterpreter } from './StandardInterpreter';
 import { MarkdownConverter } from './MarkdownConverter';
+import { HTTPConverter } from './HTTPConverter';
 import { AltInterpreter } from './AltInterpreter';
+import { ESSIFConverter } from './ESIFFConverter'
 
 import fs = require("fs");
 import path = require('path');
 import yaml = require('js-yaml');
 import https = require('https');
 import console = require('console');
+
 
 export class Resolver {
       private output: string;
@@ -24,7 +27,7 @@ export class Resolver {
       private converter: Converter;
       private interpreter: Interpreter;
 
-      public constructor(outputPath: string, scopePath: string, directoryPath?: string, configPath?: string, interpreterType?: string, covnerterType?: string) {
+      public constructor(outputPath: string, scopePath: string, directoryPath?: string, vsn?: string, configPath?: string, interpreterType?: string, converterType?: string) {
             this.output = outputPath;
             this.scope = scopePath;
 
@@ -34,14 +37,29 @@ export class Resolver {
                   this.config = configPath;
                   this.processConfig();
             } else {
-                  this.setOptionalParams(directoryPath, interpreterType, covnerterType);
+                  this.setOptionalParams(directoryPath, vsn, interpreterType, converterType);
             }
       }
 
-      private setOptionalParams(directoryPath: string, interpreterType: string, converterType: string) {
-            if (directoryPath != undefined) {
-                  this.directory = directoryPath;
+      private processConfig(): boolean {
+            // read config file and set paramters
+            console.log("Reading config file at: " + this.config);
+            const config: Map<string, string> = new Map(Object.entries(yaml.load(fs.readFileSync(this.config, 'utf8'))));
+
+            if (config.get("output") != "" || config.get("output") != undefined) {
+                  this.output = config.get("output");
+            } else if (config.get("scopedir") != "" || config.get("scopedir") != undefined) {
+                  this.scope = config.get("scopedir");
             }
+
+            // method	<methodarg>	n	Text, the syntax and semantics of which remain to be specified (see also the Editor's note below). When this parameter is omitted, term refs are replaced with some default renderable ref. --> TODO update documentation
+            this.setOptionalParams(config.get("input"), config.get("version"), config.get("interpreter"), config.get("converter"));
+            return true;
+      }
+
+      private setOptionalParams(directoryPath: string, vsn: string, interpreterType: string, converterType: string) {
+            if (directoryPath != undefined) { this.directory = directoryPath; }
+            if (vsn != undefined) { this.version = vsn; }
             if (interpreterType != undefined) {
                   if (interpreterType == "Standard") {
                         this.interpreter = new StandardInterpreter();
@@ -59,9 +77,9 @@ export class Resolver {
                   if (converterType == "Markdown") {
                         this.converter = new MarkdownConverter();
                   } else if (converterType == "HTTP") {
-                        // create different converter
+                        this.converter = new HTTPConverter();
                   } else if (converterType == "ESIFF") {
-                        // create different converter
+                        this.converter = new ESSIFConverter();
                   } else {
                         console.log(converterType + " is not a known converter, creating Markdown converter.");
                         this.converter = new MarkdownConverter();
@@ -69,14 +87,6 @@ export class Resolver {
             } else {
                   this.converter = new MarkdownConverter();
             }
-      }
-
-      private processConfig(): boolean {
-            // read config file and set paramters
-            console.log("Reading config file at: " + this.config);
-            var file: string = fs.readFileSync(this.config, 'utf8');
-            this.setOptionalParams("", "", "");
-            return true;
       }
 
       public getDirectory(): string {
@@ -161,23 +171,13 @@ export class Resolver {
 
 
       private populateGlossary(mrgDocument: Object, glossary: Map<string, string>): Map<string, string> {
-            for (const [key, value] of Object.entries(mrgDocument)) {
-                  if (key == "entries") {
-                        for (const [innerKey, innerValue] of Object.entries(value)) {
-                              for (const [innermostKey, innermostValue] of Object.entries(innerValue)) {
-                                    var term: string;
-                                    var url: string;
-                                    if (innermostKey == "term") {
-                                          term = innermostValue as string;
-                                    }
-                                    if (innermostKey == "navurl") {
-                                          url = innermostValue as string;
-                                    }
-                                    glossary.set(term, url);
-                              }
-                        }
-                  }
-            }
+            const mrg: Map<string, string> = new Map(Object.entries(mrgDocument));
+            const entries: Map<string, string> = new Map(Object.entries(mrg.get("entries")));
+            entries.forEach((key, value) => {
+                  const innerValues: Map<string, string> = new Map(Object.entries(yaml.load(value)));
+                  glossary.set(innerValues.get("term"), innerValues.get("navurl"));
+            })
+
             return glossary;
       }
 

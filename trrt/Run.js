@@ -6,7 +6,7 @@ var outputPath = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trr
 var safPath = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\saf.yaml";
 function main() {
     var resolver = new Resolver_1.Resolver(outputPath, safPath, directoryPath);
-    if (resolver.resolve_terms()) {
+    if (resolver.resolve()) {
         console.log("Done...");
     }
     else {
