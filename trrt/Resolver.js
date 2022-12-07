@@ -13,8 +13,7 @@ var https = require("https");
 var console = require("console");
 var Resolver = /** @class */ (function () {
     function Resolver(outputPath, scopePath, directoryPath, vsn, configPath, interpreterType, converterType) {
-        this.tmpLocalMrgFile = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
-        this.mrgWritePath = "/mrg.yaml";
+        this.mrgWritePath = "./mrg.yaml";
         this.config = "";
         this.directory = ".";
         // todo switch scope based on version 
@@ -98,41 +97,30 @@ var Resolver = /** @class */ (function () {
     Resolver.prototype.getMrgUrl = function () {
         var mrgURL = "";
         console.log("Loading gloassary from: " + this.scope);
-        var safDocument = yaml.load(fs.readFileSync(this.scope, 'utf8'));
-        for (var _i = 0, _a = Object.entries(safDocument); _i < _a.length; _i++) {
-            var _b = _a[_i], key = _b[0], value = _b[1];
-            if (key == "scope") {
-                for (var _c = 0, _d = Object.entries(value); _c < _d.length; _c++) {
-                    var _e = _d[_c], innerKey = _e[0], innerValue = _e[1];
-                    if (innerKey == "scopedir") {
-                        if (innerValue != "" && innerValue != undefined) {
-                            mrgURL = mrgURL + innerValue;
-                        }
-                        else {
-                            console.log("No scope directory defined in SAF");
-                            return "";
-                        }
-                    }
-                    if (innerKey == "glossarydir") {
-                        if (innerValue != "" && innerValue != undefined) {
-                            mrgURL = mrgURL + "/" + innerValue;
-                        }
-                        else {
-                            console.log("No glossary directory defined in SAF");
-                            return "";
-                        }
-                    }
-                    if (innerKey == "mrgfile") {
-                        if (innerValue != "" && innerValue != undefined) {
-                            mrgURL = mrgURL + "/" + innerValue;
-                        }
-                        else {
-                            console.log("No MRG file defined in SAF");
-                            return "";
-                        }
-                    }
-                }
-            }
+        var safDocument = new Map(Object.entries(yaml.load(fs.readFileSync(this.scope, 'utf8'))));
+        // JSON.stringfy() used to force object to string casting as javascript does not support typing otherwise
+        var scopeMap = new Map(Object.entries(yaml.load(JSON.stringify(safDocument.get("scope")))));
+        console.log(scopeMap);
+        if (scopeMap.get("scopedir") != "" && scopeMap.get("scopedir") != undefined) {
+            mrgURL = mrgURL + scopeMap.get("scopedir");
+        }
+        else {
+            console.log("No scope directory defined in SAF");
+            return "";
+        }
+        if (scopeMap.get("glossarydir") != "" && scopeMap.get("glossarydir") != undefined) {
+            mrgURL = mrgURL + "/" + scopeMap.get("glossarydir");
+        }
+        else {
+            console.log("No glossary directory defined in SAF");
+            return "";
+        }
+        if (scopeMap.get("mrgfile") != "" && scopeMap.get("mrgfile") != undefined) {
+            mrgURL = mrgURL + "/" + scopeMap.get("mrgfile");
+        }
+        else {
+            console.log("No MRG file defined in SAF");
+            return "";
         }
         return mrgURL;
     };
@@ -167,11 +155,12 @@ var Resolver = /** @class */ (function () {
     };
     Resolver.prototype.populateGlossary = function (mrgDocument, glossary) {
         var mrg = new Map(Object.entries(mrgDocument));
-        var entries = new Map(Object.entries(mrg.get("entries")));
-        var innerValues = new Map(Object.entries(entries));
-        console.log("InnerValues");
-        console.log(innerValues);
-        glossary.set(innerValues.get("term"), innerValues.get("navurl"));
+        for (var _i = 0, _a = Object.entries(mrg.get("entries")); _i < _a.length; _i++) {
+            var _b = _a[_i], key = _b[0], value = _b[1];
+            var stringValue = JSON.stringify(value);
+            var innerValues = new Map(Object.entries(yaml.load(stringValue)));
+            glossary.set(innerValues.get("term"), innerValues.get("navurl"));
+        }
         return glossary;
     };
     Resolver.prototype.createOutputDir = function () {

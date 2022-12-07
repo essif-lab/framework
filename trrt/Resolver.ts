@@ -16,8 +16,8 @@ import console = require('console');
 export class Resolver {
       private output: string;
       private scope: string;
-      private tmpLocalMrgFile = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
-      private mrgWritePath = "/mrg.yaml"
+      private tmpLocalMrgFile: string; // "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
+      private mrgWritePath = "./mrg.yaml"
       private config: string = "";
       private directory: string = ".";
 
@@ -104,37 +104,31 @@ export class Resolver {
       private getMrgUrl(): string {
             var mrgURL: string = "";
             console.log("Loading gloassary from: " + this.scope);
-            const safDocument: Object = yaml.load(fs.readFileSync(this.scope, 'utf8'));
-            for (const [key, value] of Object.entries(safDocument)) {
-                  if (key == "scope") {
-                        for (const [innerKey, innerValue] of Object.entries(value)) {
-                              if (innerKey == "scopedir") {
-                                    if (innerValue != "" && innerValue != undefined) {
-                                          mrgURL = mrgURL + innerValue;
-                                    } else {
-                                          console.log("No scope directory defined in SAF");
-                                          return "";
-                                    }
-                              }
-                              if (innerKey == "glossarydir") {
-                                    if (innerValue != "" && innerValue != undefined) {
-                                          mrgURL = mrgURL + "/" + innerValue;
-                                    } else {
-                                          console.log("No glossary directory defined in SAF");
-                                          return "";
-                                    }
-                              }
-                              if (innerKey == "mrgfile") {
-                                    if (innerValue != "" && innerValue != undefined) {
-                                          mrgURL = mrgURL + "/" + innerValue;
-                                    } else {
-                                          console.log("No MRG file defined in SAF");
-                                          return "";
-                                    }
-                              }
-                        }
-                  }
+            const safDocument: Map<string, string> = new Map(Object.entries(yaml.load(fs.readFileSync(this.scope, 'utf8'))));
+            // JSON.stringfy() used to force object to string casting as javascript does not support typing otherwise
+            const scopeMap: Map<string, string> = new Map(Object.entries(yaml.load(JSON.stringify(safDocument.get("scope")))));
+            console.log(scopeMap);
+            if (scopeMap.get("scopedir") != "" && scopeMap.get("scopedir") != undefined) {
+                  mrgURL = mrgURL + scopeMap.get("scopedir");
+            } else {
+                  console.log("No scope directory defined in SAF");
+                  return "";
             }
+
+            if (scopeMap.get("glossarydir") != "" && scopeMap.get("glossarydir") != undefined) {
+                  mrgURL = mrgURL + "/" + scopeMap.get("glossarydir");
+            } else {
+                  console.log("No glossary directory defined in SAF");
+                  return "";
+            }
+
+            if (scopeMap.get("mrgfile") != "" && scopeMap.get("mrgfile") != undefined) {
+                  mrgURL = mrgURL + "/" + scopeMap.get("mrgfile");
+            } else {
+                  console.log("No MRG file defined in SAF");
+                  return "";
+            }
+
             return mrgURL;
       }
 
@@ -172,12 +166,11 @@ export class Resolver {
 
       private populateGlossary(mrgDocument: Object, glossary: Map<string, string>): Map<string, string> {
             const mrg: Map<string, string> = new Map(Object.entries(mrgDocument));
-            const entries: Map<string, string> = new Map(Object.entries(mrg.get("entries")));
-            entries.forEach((key, value) => {
-                  const innerValues: Map<string, string> = new Map(Object.entries(yaml.load(value)));
+            for (const [key, value] of Object.entries(mrg.get("entries"))) {
+                  var stringValue: string = JSON.stringify(value);
+                  const innerValues: Map<string, string> = new Map(Object.entries(yaml.load(stringValue)));
                   glossary.set(innerValues.get("term"), innerValues.get("navurl"));
-            })
-
+            }
             return glossary;
       }
 
