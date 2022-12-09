@@ -1,15 +1,17 @@
 import { Resolver } from './Resolver';
+import { Logger } from "tslog";
 
 const directoryPath: string = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\tests\\";
 const outputPath: string = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\tests_converted\\";
 const safPath = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\saf.yaml";
 
 function main(): void {
+      const log = new Logger();
       let resolver: Resolver = new Resolver(outputPath, safPath, directoryPath);
       if (resolver.resolve()) {
-            console.log("Done...");
+            log.info("Resolution complete...");
       } else {
-            console.log("Failed to resolve terms, see logs....");
+            log.error("Failed to resolve terms, see logs....");
       }
 }
 

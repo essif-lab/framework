@@ -1,6 +1,8 @@
+import { Logger } from "tslog";
 import { Converter } from "./Converter";
 
 export class HTTPConverter implements Converter {
+      private log = new Logger();
       public constructor() { }
       getType(): string {
             return "HTTP";
@@ -15,15 +17,15 @@ export class HTTPConverter implements Converter {
                         } else {
                               htmlOut = `<a href="${glossary.get(properties.get("term"))}"><span style="font-weight:bold>${properties.get("showtext")}</span></a>`;
                         }
-                        console.log("The html term is: " + htmlOut)
+                        this.log.info("The html term is: " + htmlOut);
                   } else {
-                        console.log("No access for this version yet");
+                        this.log.error("No access for this version yet");
                         return htmlOut;
                         // TODO go back and get the correct glossary   
                   }
 
             } else {
-                  console.log("No access for this scope yet");
+                  this.log.error("No access for this scope yet");
                   return htmlOut;
                   // TODO go back and get the correct glossary
             }

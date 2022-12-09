@@ -1,8 +1,10 @@
 "use strict";
 exports.__esModule = true;
 exports.HTTPConverter = void 0;
+var tslog_1 = require("tslog");
 var HTTPConverter = /** @class */ (function () {
     function HTTPConverter() {
+        this.log = new tslog_1.Logger();
     }
     HTTPConverter.prototype.getType = function () {
         return "HTTP";
@@ -17,16 +19,16 @@ var HTTPConverter = /** @class */ (function () {
                 else {
                     htmlOut = "<a href=\"".concat(glossary.get(properties.get("term")), "\"><span style=\"font-weight:bold>").concat(properties.get("showtext"), "</span></a>");
                 }
-                console.log("The html term is: " + htmlOut);
+                this.log.info("The html term is: " + htmlOut);
             }
             else {
-                console.log("No access for this version yet");
+                this.log.error("No access for this version yet");
                 return htmlOut;
                 // TODO go back and get the correct glossary   
             }
         }
         else {
-            console.log("No access for this scope yet");
+            this.log.error("No access for this scope yet");
             return htmlOut;
             // TODO go back and get the correct glossary
         }

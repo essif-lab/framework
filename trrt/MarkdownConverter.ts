@@ -1,6 +1,8 @@
+import { Logger } from "tslog";
 import { Converter } from "./Converter";
 
 export class MarkdownConverter implements Converter {
+      private log = new Logger();
       public constructor() {}
 
       getType(): string {
@@ -18,15 +20,15 @@ export class MarkdownConverter implements Converter {
                         } else {
                               markdownOut = `[${properties.get("showtext")}](${glossary.get(properties.get("term"))})`;
                         }
-                        console.log("The markdown term is: " + markdownOut)
+                        this.log.info("The converted markdown term is: " + markdownOut)
                   } else {
-                        console.log("No access for this version yet");
+                        this.log.error("No access for this version yet");
                         return markdownOut;
                         // TODO go back and get the correct glossary   
                   }
 
             } else {
-                  console.log("No access for this scope yet");
+                  this.log.error("No access for this scope yet");
                   return markdownOut;
                   // TODO go back and get the correct glossary
             }

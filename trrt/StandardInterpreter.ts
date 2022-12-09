@@ -1,11 +1,11 @@
+import { Logger } from "tslog";
 import { Interpreter } from "./Interpreter";
 
 export class StandardInterpreter implements Interpreter {
+      private log = new Logger();
       private termRegexGlobal: RegExp = /(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))(?<showtext>.+?)\]\((?<id>[a-z0-9_-]+?)(?:#(?<trait>[a-z0-9_-]+?))?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+?))?\)/g;
-
       private termRegexLocal: RegExp = /(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))(?<showtext>.+?)\]\((?<id>[a-z0-9_-]+?)(?:#(?<trait>[a-z0-9_-]+?))?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+?))?\)/;
-
-      public constructor() {}
+      public constructor() { }
 
       getType(): string {
             return "Standard";
@@ -51,7 +51,7 @@ export class StandardInterpreter implements Interpreter {
             } else {
                   termProperties.set("vsntag", "latest");
             }
-            console.log(termProperties)
+            this.log.info(`Found term: ${termProperties}`);
             return termProperties;
       }
 

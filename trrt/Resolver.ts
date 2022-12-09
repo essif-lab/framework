@@ -10,20 +10,20 @@ import fs = require("fs");
 import path = require('path');
 import yaml = require('js-yaml');
 import https = require('https');
-import console = require('console');
+import { Logger } from 'tslog';
 
 
 export class Resolver {
+      private log = new Logger();
       private output: string;
+      // todo switch scope
       private scope: string;
-      private tmpLocalMrgFile: string; // "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
+      private tmpLocalMrgFile: string; // = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
       private mrgWritePath = "./mrg.yaml"
-      private config: string = "";
+      private config: string;
       private directory: string = ".";
-
       // todo switch scope based on version 
-      private version: string = "";
-
+      private version: string;
       private converter: Converter;
       private interpreter: Interpreter;
 
@@ -33,7 +33,6 @@ export class Resolver {
 
             // process optional paramters if not set in config 
             if (configPath != undefined) {
-                  console.log("config path is set by user")
                   this.config = configPath;
                   this.processConfig();
             } else {
@@ -43,12 +42,13 @@ export class Resolver {
 
       private processConfig(): boolean {
             // read config file and set paramters
-            console.log("Reading config file at: " + this.config);
+            this.log.trace(`Config path is set: ${this.config}`);
             const config: Map<string, string> = new Map(Object.entries(yaml.load(fs.readFileSync(this.config, 'utf8'))));
-
             if (config.get("output") != "" || config.get("output") != undefined) {
+                  this.log.trace(`Out path is set: ${config.get("output")}`);
                   this.output = config.get("output");
             } else if (config.get("scopedir") != "" || config.get("scopedir") != undefined) {
+                  this.log.trace(`Scope path is set: ${config.get("scopedir")}`);
                   this.scope = config.get("scopedir");
             }
 
@@ -66,7 +66,7 @@ export class Resolver {
                   } else if (interpreterType == "Alt") {
                         this.interpreter = new AltInterpreter();
                   } else {
-                        console.log(interpreterType + " is not a known interpreter, creating standard interpreter.");
+                        this.log.error(interpreterType + " is not a known interpreter, creating standard interpreter.");
                         this.interpreter = new StandardInterpreter();
                   }
             } else {
@@ -81,7 +81,7 @@ export class Resolver {
                   } else if (converterType == "ESIFF") {
                         this.converter = new ESSIFConverter();
                   } else {
-                        console.log(converterType + " is not a known converter, creating Markdown converter.");
+                        this.log.error(converterType + " is not a known converter, creating Markdown converter.");
                         this.converter = new MarkdownConverter();
                   }
             } else {
@@ -102,33 +102,34 @@ export class Resolver {
       }
 
       private getMrgUrl(): string {
-            var mrgURL: string = "";
-            console.log("Loading gloassary from: " + this.scope);
+            this.log.trace("Locating MRG from SAF at: " + this.scope);
             const safDocument: Map<string, string> = new Map(Object.entries(yaml.load(fs.readFileSync(this.scope, 'utf8'))));
             // JSON.stringfy() used to force object to string casting as javascript does not support typing otherwise
             const scopeMap: Map<string, string> = new Map(Object.entries(yaml.load(JSON.stringify(safDocument.get("scope")))));
-            console.log(scopeMap);
+            var mrgURL: string = "";
+
             if (scopeMap.get("scopedir") != "" && scopeMap.get("scopedir") != undefined) {
                   mrgURL = mrgURL + scopeMap.get("scopedir");
             } else {
-                  console.log("No scope directory defined in SAF");
+                  this.log.error("No scopedir defined in SAF");
                   return "";
             }
 
             if (scopeMap.get("glossarydir") != "" && scopeMap.get("glossarydir") != undefined) {
                   mrgURL = mrgURL + "/" + scopeMap.get("glossarydir");
             } else {
-                  console.log("No glossary directory defined in SAF");
+                  this.log.error("No glossarydir defined in SAF");
                   return "";
             }
 
             if (scopeMap.get("mrgfile") != "" && scopeMap.get("mrgfile") != undefined) {
                   mrgURL = mrgURL + "/" + scopeMap.get("mrgfile");
             } else {
-                  console.log("No MRG file defined in SAF");
+                  this.log.error("No mrgfile defined in SAF");
                   return "";
             }
 
+            this.log.trace(`MRG URL is: ${mrgURL}`);
             return mrgURL;
       }
 
@@ -137,26 +138,27 @@ export class Resolver {
             if (this.tmpLocalMrgFile) {
                   const mrgDocument: Object = yaml.load(fs.readFileSync(this.tmpLocalMrgFile, 'utf8'));
                   this.populateGlossary(mrgDocument, glossary);
-                  console.log(glossary);
+                  this.log.info(`Populated gloassary of ${this.scope}:${this.version}: ${glossary}`);
             } else {
                   // remote mrg file            
                   var mrgURL: string = this.getMrgUrl();
                   if (mrgURL != "") {
-                        console.log("Dowloading MRG from: " + mrgURL);
                         // TODO make sure this is synchronus 
                         var mrgFileDownload = fs.createWriteStream(this.mrgWritePath);
                         https.get(mrgURL, function (response) {
+                              this.log.trace("Downloading MRG....");
                               response.pipe(mrgFileDownload);
                               mrgFileDownload.on('finish', function () {
                                     mrgFileDownload.close();
                               });
                         }).on('error', function (err) {
-                              console.log(err)
+                              this.log.error(err)
                         });
 
                         const mrgDocument: Object = yaml.load(fs.readFileSync(this.mrgWritePath, 'utf8'));
+                        this.log.info(`MRG loaded: ${mrgDocument}`);
                         this.populateGlossary(mrgDocument, glossary);
-                        console.log(glossary);
+                        this.log.info(`Populated gloassary of ${this.scope}:${this.version}: ${glossary}`);
                   }
             }
 
@@ -176,10 +178,10 @@ export class Resolver {
 
       private createOutputDir(): boolean {
             if (!fs.existsSync(this.output)) {
-                  console.log("Creating output directoy " + this.output + ".....");
+                  this.log.info("Creating output directoy: " + this.output + ".....");
                   fs.mkdir(this.output, (err) => {
                         if (err) {
-                              console.log(err);
+                              this.log.error(err);
                               return false;
                         }
                   });
@@ -188,7 +190,7 @@ export class Resolver {
       }
 
       private writeFile(file: string, data: string) {
-            console.log("Writing: " + file);
+            this.log.trace("Writing: " + file);
             fs.writeFileSync(this.output + file, data);
       }
 
@@ -207,16 +209,16 @@ export class Resolver {
       public resolve(): boolean {
             this.createOutputDir();
             var files = fs.readdirSync(this.directory);
-            console.log("Reading " + this.directory + ".....");
+            this.log.info("Reading " + this.directory + ".....");
 
             files.forEach(file => {
                   if (path.extname(file) == ".md" || path.extname(file) == ".html") {
                         var data = fs.readFileSync(this.directory + file, 'utf8')
-                        console.log("Reading: " + file);
+                        this.log.trace("Reading: " + file);
                         data = this.interpertAndConvert(data, this.readGlossary())
                         this.writeFile(file, data);
                   } else {
-                        console.log(file + " does not have a recognised file type (*.md, *.html)");
+                        this.log.error(file + " does not have a recognised file type (*.md, *.html)");
                   }
             });
             return true;

@@ -1,8 +1,10 @@
 "use strict";
 exports.__esModule = true;
 exports.StandardInterpreter = void 0;
+var tslog_1 = require("tslog");
 var StandardInterpreter = /** @class */ (function () {
     function StandardInterpreter() {
+        this.log = new tslog_1.Logger();
         this.termRegexGlobal = /(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))(?<showtext>.+?)\]\((?<id>[a-z0-9_-]+?)(?:#(?<trait>[a-z0-9_-]+?))?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+?))?\)/g;
         this.termRegexLocal = /(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))(?<showtext>.+?)\]\((?<id>[a-z0-9_-]+?)(?:#(?<trait>[a-z0-9_-]+?))?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+?))?\)/;
     }
@@ -53,7 +55,7 @@ var StandardInterpreter = /** @class */ (function () {
         else {
             termProperties.set("vsntag", "latest");
         }
-        console.log(termProperties);
+        this.log.info("Found term: ".concat(termProperties));
         return termProperties;
     };
     StandardInterpreter.prototype.getGlobalTermRegex = function () {

@@ -1,8 +1,10 @@
 "use strict";
 exports.__esModule = true;
 exports.MarkdownConverter = void 0;
+var tslog_1 = require("tslog");
 var MarkdownConverter = /** @class */ (function () {
     function MarkdownConverter() {
+        this.log = new tslog_1.Logger();
     }
     MarkdownConverter.prototype.getType = function () {
         return "Markdown";
@@ -19,16 +21,16 @@ var MarkdownConverter = /** @class */ (function () {
                 else {
                     markdownOut = "[".concat(properties.get("showtext"), "](").concat(glossary.get(properties.get("term")), ")");
                 }
-                console.log("The markdown term is: " + markdownOut);
+                this.log.info("The converted markdown term is: " + markdownOut);
             }
             else {
-                console.log("No access for this version yet");
+                this.log.error("No access for this version yet");
                 return markdownOut;
                 // TODO go back and get the correct glossary   
             }
         }
         else {
-            console.log("No access for this scope yet");
+            this.log.error("No access for this scope yet");
             return markdownOut;
             // TODO go back and get the correct glossary
         }

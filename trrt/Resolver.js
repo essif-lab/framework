@@ -10,19 +10,16 @@ var fs = require("fs");
 var path = require("path");
 var yaml = require("js-yaml");
 var https = require("https");
-var console = require("console");
+var tslog_1 = require("tslog");
 var Resolver = /** @class */ (function () {
     function Resolver(outputPath, scopePath, directoryPath, vsn, configPath, interpreterType, converterType) {
+        this.log = new tslog_1.Logger();
         this.mrgWritePath = "./mrg.yaml";
-        this.config = "";
         this.directory = ".";
-        // todo switch scope based on version 
-        this.version = "";
         this.output = outputPath;
         this.scope = scopePath;
         // process optional paramters if not set in config 
         if (configPath != undefined) {
-            console.log("config path is set by user");
             this.config = configPath;
             this.processConfig();
         }
@@ -32,12 +29,14 @@ var Resolver = /** @class */ (function () {
     }
     Resolver.prototype.processConfig = function () {
         // read config file and set paramters
-        console.log("Reading config file at: " + this.config);
+        this.log.trace("Config path is set: ".concat(this.config));
         var config = new Map(Object.entries(yaml.load(fs.readFileSync(this.config, 'utf8'))));
         if (config.get("output") != "" || config.get("output") != undefined) {
+            this.log.trace("Out path is set: ".concat(config.get("output")));
             this.output = config.get("output");
         }
         else if (config.get("scopedir") != "" || config.get("scopedir") != undefined) {
+            this.log.trace("Scope path is set: ".concat(config.get("scopedir")));
             this.scope = config.get("scopedir");
         }
         // method	<methodarg>	n	Text, the syntax and semantics of which remain to be specified (see also the Editor's note below). When this parameter is omitted, term refs are replaced with some default renderable ref. --> TODO update documentation
@@ -59,7 +58,7 @@ var Resolver = /** @class */ (function () {
                 this.interpreter = new AltInterpreter_1.AltInterpreter();
             }
             else {
-                console.log(interpreterType + " is not a known interpreter, creating standard interpreter.");
+                this.log.error(interpreterType + " is not a known interpreter, creating standard interpreter.");
                 this.interpreter = new StandardInterpreter_1.StandardInterpreter();
             }
         }
@@ -77,7 +76,7 @@ var Resolver = /** @class */ (function () {
                 this.converter = new ESIFFConverter_1.ESSIFConverter();
             }
             else {
-                console.log(converterType + " is not a known converter, creating Markdown converter.");
+                this.log.error(converterType + " is not a known converter, creating Markdown converter.");
                 this.converter = new MarkdownConverter_1.MarkdownConverter();
             }
         }
@@ -95,33 +94,33 @@ var Resolver = /** @class */ (function () {
         return this.converter.getType();
     };
     Resolver.prototype.getMrgUrl = function () {
-        var mrgURL = "";
-        console.log("Loading gloassary from: " + this.scope);
+        this.log.trace("Locating MRG from SAF at: " + this.scope);
         var safDocument = new Map(Object.entries(yaml.load(fs.readFileSync(this.scope, 'utf8'))));
         // JSON.stringfy() used to force object to string casting as javascript does not support typing otherwise
         var scopeMap = new Map(Object.entries(yaml.load(JSON.stringify(safDocument.get("scope")))));
-        console.log(scopeMap);
+        var mrgURL = "";
         if (scopeMap.get("scopedir") != "" && scopeMap.get("scopedir") != undefined) {
             mrgURL = mrgURL + scopeMap.get("scopedir");
         }
         else {
-            console.log("No scope directory defined in SAF");
+            this.log.error("No scopedir defined in SAF");
             return "";
         }
         if (scopeMap.get("glossarydir") != "" && scopeMap.get("glossarydir") != undefined) {
             mrgURL = mrgURL + "/" + scopeMap.get("glossarydir");
         }
         else {
-            console.log("No glossary directory defined in SAF");
+            this.log.error("No glossarydir defined in SAF");
             return "";
         }
         if (scopeMap.get("mrgfile") != "" && scopeMap.get("mrgfile") != undefined) {
             mrgURL = mrgURL + "/" + scopeMap.get("mrgfile");
         }
         else {
-            console.log("No MRG file defined in SAF");
+            this.log.error("No mrgfile defined in SAF");
             return "";
         }
+        this.log.trace("MRG URL is: ".concat(mrgURL));
         return mrgURL;
     };
     Resolver.prototype.readGlossary = function () {
@@ -129,26 +128,27 @@ var Resolver = /** @class */ (function () {
         if (this.tmpLocalMrgFile) {
             var mrgDocument = yaml.load(fs.readFileSync(this.tmpLocalMrgFile, 'utf8'));
             this.populateGlossary(mrgDocument, glossary);
-            console.log(glossary);
+            this.log.info("Populated gloassary of ".concat(this.scope, ":").concat(this.version, ": ").concat(glossary));
         }
         else {
             // remote mrg file            
             var mrgURL = this.getMrgUrl();
             if (mrgURL != "") {
-                console.log("Dowloading MRG from: " + mrgURL);
                 // TODO make sure this is synchronus 
                 var mrgFileDownload = fs.createWriteStream(this.mrgWritePath);
                 https.get(mrgURL, function (response) {
+                    this.log.trace("Downloading MRG....");
                     response.pipe(mrgFileDownload);
                     mrgFileDownload.on('finish', function () {
                         mrgFileDownload.close();
                     });
                 }).on('error', function (err) {
-                    console.log(err);
+                    this.log.error(err);
                 });
                 var mrgDocument = yaml.load(fs.readFileSync(this.mrgWritePath, 'utf8'));
+                this.log.info("MRG loaded: ".concat(mrgDocument));
                 this.populateGlossary(mrgDocument, glossary);
-                console.log(glossary);
+                this.log.info("Populated gloassary of ".concat(this.scope, ":").concat(this.version, ": ").concat(glossary));
             }
         }
         return glossary;
@@ -164,11 +164,12 @@ var Resolver = /** @class */ (function () {
         return glossary;
     };
     Resolver.prototype.createOutputDir = function () {
+        var _this = this;
         if (!fs.existsSync(this.output)) {
-            console.log("Creating output directoy " + this.output + ".....");
+            this.log.info("Creating output directoy: " + this.output + ".....");
             fs.mkdir(this.output, function (err) {
                 if (err) {
-                    console.log(err);
+                    _this.log.error(err);
                     return false;
                 }
             });
@@ -176,7 +177,7 @@ var Resolver = /** @class */ (function () {
         }
     };
     Resolver.prototype.writeFile = function (file, data) {
-        console.log("Writing: " + file);
+        this.log.trace("Writing: " + file);
         fs.writeFileSync(this.output + file, data);
     };
     Resolver.prototype.interpertAndConvert = function (data, glossary) {
@@ -195,16 +196,16 @@ var Resolver = /** @class */ (function () {
         var _this = this;
         this.createOutputDir();
         var files = fs.readdirSync(this.directory);
-        console.log("Reading " + this.directory + ".....");
+        this.log.info("Reading " + this.directory + ".....");
         files.forEach(function (file) {
             if (path.extname(file) == ".md" || path.extname(file) == ".html") {
                 var data = fs.readFileSync(_this.directory + file, 'utf8');
-                console.log("Reading: " + file);
+                _this.log.trace("Reading: " + file);
                 data = _this.interpertAndConvert(data, _this.readGlossary());
                 _this.writeFile(file, data);
             }
             else {
-                console.log(file + " does not have a recognised file type (*.md, *.html)");
+                _this.log.error(file + " does not have a recognised file type (*.md, *.html)");
             }
         });
         return true;
