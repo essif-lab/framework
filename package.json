@@ -11,8 +11,8 @@
     "glossary": "docusaurus glossary",
     "test": "jest"
   },
-  "compilerOptions" : {
-    "inlineSourceMap": true, 
+  "compilerOptions": {
+    "inlineSourceMap": true,
     "target": "es2020"
   },
   "dependencies": {
@@ -23,6 +23,8 @@
     "@material-ui/core": "^4.11.0",
     "browserify-fs": "^1.0.0",
     "classnames": "^2.2.6",
+    "download": "^8.0.0",
+    "download-file-sync": "^1.0.4",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "tslog": "^4.4.4"
@@ -41,6 +43,7 @@
   },
   "devDependencies": {
     "@jest/globals": "^29.3.1",
+    "@types/download": "^8.0.1",
     "@types/js-yaml": "^4.0.5",
     "@types/node": "^18.11.0",
     "browserify": "^17.0.0",

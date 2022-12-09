@@ -5,13 +5,13 @@ import { MarkdownConverter } from './MarkdownConverter';
 import { HTTPConverter } from './HTTPConverter';
 import { AltInterpreter } from './AltInterpreter';
 import { ESSIFConverter } from './ESIFFConverter'
+import { Logger } from 'tslog';
+import download = require('download');
 
 import fs = require("fs");
 import path = require('path');
 import yaml = require('js-yaml');
 import https = require('https');
-import { Logger } from 'tslog';
-
 
 export class Resolver {
       private log = new Logger();
@@ -133,36 +133,32 @@ export class Resolver {
             return mrgURL;
       }
 
-      private readGlossary(): Map<string, string> {
+      private async readGlossary(): Promise<Map<string, string>> {
             var glossary: Map<string, string> = new Map();
             if (this.tmpLocalMrgFile) {
+                  // this is for local testing
                   const mrgDocument: Object = yaml.load(fs.readFileSync(this.tmpLocalMrgFile, 'utf8'));
                   this.populateGlossary(mrgDocument, glossary);
                   this.log.info(`Populated gloassary of ${this.scope}:${this.version}: ${glossary}`);
+                  return glossary;
             } else {
                   // remote mrg file            
                   var mrgURL: string = this.getMrgUrl();
                   if (mrgURL != "") {
                         // TODO make sure this is synchronus 
-                        var mrgFileDownload = fs.createWriteStream(this.mrgWritePath);
-                        https.get(mrgURL, function (response) {
-                              this.log.trace("Downloading MRG....");
-                              response.pipe(mrgFileDownload);
-                              mrgFileDownload.on('finish', function () {
-                                    mrgFileDownload.close();
-                              });
-                        }).on('error', function (err) {
-                              this.log.error(err)
-                        });
-
+                        this.log.trace("Downloading MRG....");
+                        fs.writeFileSync(this.mrgWritePath, await download(mrgURL));
                         const mrgDocument: Object = yaml.load(fs.readFileSync(this.mrgWritePath, 'utf8'));
                         this.log.info(`MRG loaded: ${mrgDocument}`);
                         this.populateGlossary(mrgDocument, glossary);
                         this.log.info(`Populated gloassary of ${this.scope}:${this.version}: ${glossary}`);
+
+                        return glossary;
+                  } else {
+                        this.log.error("No MRG to download, glossary empty");
+                        return glossary;
                   }
             }
-
-            return glossary;
       }
 
 
@@ -206,21 +202,22 @@ export class Resolver {
             return data;
       }
 
-      public resolve(): boolean {
+      public async resolve(): Promise<boolean> {
             this.createOutputDir();
             var files = fs.readdirSync(this.directory);
             this.log.info("Reading " + this.directory + ".....");
 
-            files.forEach(file => {
+            files.forEach(async file => {
                   if (path.extname(file) == ".md" || path.extname(file) == ".html") {
                         var data = fs.readFileSync(this.directory + file, 'utf8')
                         this.log.trace("Reading: " + file);
-                        data = this.interpertAndConvert(data, this.readGlossary())
+                        data = this.interpertAndConvert(data, await this.readGlossary());
                         this.writeFile(file, data);
                   } else {
                         this.log.error(file + " does not have a recognised file type (*.md, *.html)");
-                  }
+                  }   
             });
+            
             return true;
       }
 
