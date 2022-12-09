@@ -51,7 +51,7 @@ export class StandardInterpreter implements Interpreter {
             } else {
                   termProperties.set("vsntag", "latest");
             }
-            this.log.info(`Found term: ${termProperties}`);
+            this.log.trace(`Found term: ${match}`);
             return termProperties;
       }
 

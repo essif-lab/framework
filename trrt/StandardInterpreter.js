@@ -55,7 +55,7 @@ var StandardInterpreter = /** @class */ (function () {
         else {
             termProperties.set("vsntag", "latest");
         }
-        this.log.info("Found term: ".concat(termProperties));
+        this.log.trace("Found term: ".concat(match));
         return termProperties;
     };
     StandardInterpreter.prototype.getGlobalTermRegex = function () {

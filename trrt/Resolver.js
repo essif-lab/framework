@@ -50,8 +50,11 @@ var yaml = require("js-yaml");
 var Resolver = /** @class */ (function () {
     function Resolver(outputPath, scopePath, directoryPath, vsn, configPath, interpreterType, converterType) {
         this.log = new tslog_1.Logger();
+        this.tmpLocalMrgFile = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
         this.mrgWritePath = "./mrg.yaml";
         this.directory = ".";
+        // todo switch scope based on version 
+        this.version = "latest";
         this.output = outputPath;
         this.scope = scopePath;
         // process optional paramters if not set in config 
@@ -135,6 +138,13 @@ var Resolver = /** @class */ (function () {
         // JSON.stringfy() used to force object to string casting as javascript does not support typing otherwise
         var scopeMap = new Map(Object.entries(yaml.load(JSON.stringify(safDocument.get("scope")))));
         var mrgURL = "";
+        // move to seperate fuctions
+        if (scopeMap.get("website") != "" && scopeMap.get("website") != undefined) {
+            this.baseURL = scopeMap.get("website");
+        }
+        else {
+            this.log.error("No website defined in SAF");
+        }
         if (scopeMap.get("scopedir") != "" && scopeMap.get("scopedir") != undefined) {
             mrgURL = mrgURL + scopeMap.get("scopedir");
         }
@@ -161,18 +171,19 @@ var Resolver = /** @class */ (function () {
     };
     Resolver.prototype.readGlossary = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var glossary, mrgDocument, mrgURL, _a, _b, _c, mrgDocument;
+            var glossary, mrgURL, mrgDocument, _a, _b, _c, mrgDocument;
             return __generator(this, function (_d) {
                 switch (_d.label) {
                     case 0:
                         glossary = new Map();
+                        mrgURL = this.getMrgUrl();
                         if (!this.tmpLocalMrgFile) return [3 /*break*/, 1];
                         mrgDocument = yaml.load(fs.readFileSync(this.tmpLocalMrgFile, 'utf8'));
                         this.populateGlossary(mrgDocument, glossary);
-                        this.log.info("Populated gloassary of ".concat(this.scope, ":").concat(this.version, ": ").concat(glossary));
+                        this.log.info("Populated glossary of ".concat(this.scope, ":").concat(this.version));
+                        console.log(glossary);
                         return [2 /*return*/, glossary];
                     case 1:
-                        mrgURL = this.getMrgUrl();
                         if (!(mrgURL != "")) return [3 /*break*/, 3];
                         // TODO make sure this is synchronus 
                         this.log.trace("Downloading MRG....");
@@ -184,7 +195,8 @@ var Resolver = /** @class */ (function () {
                         mrgDocument = yaml.load(fs.readFileSync(this.mrgWritePath, 'utf8'));
                         this.log.info("MRG loaded: ".concat(mrgDocument));
                         this.populateGlossary(mrgDocument, glossary);
-                        this.log.info("Populated gloassary of ".concat(this.scope, ":").concat(this.version, ": ").concat(glossary));
+                        this.log.info("Populated gloassary of ".concat(this.scope, ":").concat(this.version));
+                        console.log(glossary);
                         return [2 /*return*/, glossary];
                     case 3:
                         this.log.error("No MRG to download, glossary empty");
@@ -199,7 +211,7 @@ var Resolver = /** @class */ (function () {
             var _b = _a[_i], key = _b[0], value = _b[1];
             var stringValue = JSON.stringify(value);
             var innerValues = new Map(Object.entries(yaml.load(stringValue)));
-            glossary.set(innerValues.get("term"), innerValues.get("navurl"));
+            glossary.set(innerValues.get("term"), "".concat(this.baseURL, "/").concat(innerValues.get("navurl")));
         }
         return glossary;
     };

@@ -14,6 +14,7 @@ export class AltInterpreter implements Interpreter {
 
       interpert(match: RegExpMatchArray): Map<string, string> {
             var termProperties: Map<string, string> = new Map();
+            // todo
             return termProperties;
       }
 

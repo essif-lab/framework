@@ -11,6 +11,7 @@ var AltInterpreter = /** @class */ (function () {
     };
     AltInterpreter.prototype.interpert = function (match) {
         var termProperties = new Map();
+        // todo
         return termProperties;
     };
     AltInterpreter.prototype.getGlobalTermRegex = function () {

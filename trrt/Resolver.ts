@@ -11,21 +11,21 @@ import download = require('download');
 import fs = require("fs");
 import path = require('path');
 import yaml = require('js-yaml');
-import https = require('https');
 
 export class Resolver {
       private log = new Logger();
       private output: string;
       // todo switch scope
       private scope: string;
-      private tmpLocalMrgFile: string; // = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
+      private tmpLocalMrgFile: string = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
       private mrgWritePath = "./mrg.yaml"
       private config: string;
       private directory: string = ".";
       // todo switch scope based on version 
-      private version: string;
+      private version: string = "latest";
       private converter: Converter;
       private interpreter: Interpreter;
+      private baseURL: string;
 
       public constructor(outputPath: string, scopePath: string, directoryPath?: string, vsn?: string, configPath?: string, interpreterType?: string, converterType?: string) {
             this.output = outputPath;
@@ -108,6 +108,13 @@ export class Resolver {
             const scopeMap: Map<string, string> = new Map(Object.entries(yaml.load(JSON.stringify(safDocument.get("scope")))));
             var mrgURL: string = "";
 
+            // move to seperate fuctions
+            if (scopeMap.get("website") != "" && scopeMap.get("website") != undefined) {
+                  this.baseURL = scopeMap.get("website");
+            } else {
+                  this.log.error("No website defined in SAF");
+            }
+
             if (scopeMap.get("scopedir") != "" && scopeMap.get("scopedir") != undefined) {
                   mrgURL = mrgURL + scopeMap.get("scopedir");
             } else {
@@ -135,15 +142,16 @@ export class Resolver {
 
       private async readGlossary(): Promise<Map<string, string>> {
             var glossary: Map<string, string> = new Map();
+            var mrgURL: string = this.getMrgUrl();
             if (this.tmpLocalMrgFile) {
                   // this is for local testing
                   const mrgDocument: Object = yaml.load(fs.readFileSync(this.tmpLocalMrgFile, 'utf8'));
                   this.populateGlossary(mrgDocument, glossary);
-                  this.log.info(`Populated gloassary of ${this.scope}:${this.version}: ${glossary}`);
+                  this.log.info(`Populated glossary of ${this.scope}:${this.version}`);
+                  console.log(glossary);
                   return glossary;
             } else {
-                  // remote mrg file            
-                  var mrgURL: string = this.getMrgUrl();
+                  // remote mrg file                  
                   if (mrgURL != "") {
                         // TODO make sure this is synchronus 
                         this.log.trace("Downloading MRG....");
@@ -151,8 +159,8 @@ export class Resolver {
                         const mrgDocument: Object = yaml.load(fs.readFileSync(this.mrgWritePath, 'utf8'));
                         this.log.info(`MRG loaded: ${mrgDocument}`);
                         this.populateGlossary(mrgDocument, glossary);
-                        this.log.info(`Populated gloassary of ${this.scope}:${this.version}: ${glossary}`);
-
+                        this.log.info(`Populated gloassary of ${this.scope}:${this.version}`);
+                        console.log(glossary);
                         return glossary;
                   } else {
                         this.log.error("No MRG to download, glossary empty");
@@ -167,7 +175,7 @@ export class Resolver {
             for (const [key, value] of Object.entries(mrg.get("entries"))) {
                   var stringValue: string = JSON.stringify(value);
                   const innerValues: Map<string, string> = new Map(Object.entries(yaml.load(stringValue)));
-                  glossary.set(innerValues.get("term"), innerValues.get("navurl"));
+                  glossary.set(innerValues.get("term"), `${this.baseURL}/${innerValues.get("navurl")}`);
             }
             return glossary;
       }
@@ -215,9 +223,9 @@ export class Resolver {
                         this.writeFile(file, data);
                   } else {
                         this.log.error(file + " does not have a recognised file type (*.md, *.html)");
-                  }   
+                  }
             });
-            
+
             return true;
       }
 
