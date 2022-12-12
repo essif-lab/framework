@@ -210,8 +210,34 @@ var Resolver = /** @class */ (function () {
         for (var _i = 0, _a = Object.entries(mrg.get("entries")); _i < _a.length; _i++) {
             var _b = _a[_i], key = _b[0], value = _b[1];
             var stringValue = JSON.stringify(value);
+            var alternatives;
             var innerValues = new Map(Object.entries(yaml.load(stringValue)));
+            if (innerValues.get("formPhrases") != null) {
+                alternatives = innerValues.get("formPhrases").split(",");
+                for (var _c = 0, alternatives_1 = alternatives; _c < alternatives_1.length; _c++) {
+                    var alternative = alternatives_1[_c];
+                    alternative = alternative.trim();
+                    if (alternative.includes("{")) {
+                        // if (alternative.substring(0, alternative.indexOf("{")) != innerValues.get("term").substring(0, innerValues.get("term").length - 1)) {
+                        //       alternatives.push(alternative.substring(0, alternative.indexOf("{")));
+                        // }
+                        if (alternative.includes("{ss}")) {
+                            alternatives.push(alternative.replace("{ss}", "s"));
+                        }
+                        else if (alternative.includes("{yies}")) {
+                            alternatives.push(alternative.replace("{yies}", "ies"));
+                        }
+                        else if (alternative.includes("{ying}")) {
+                            alternatives.push(alternative.replace("{ying}", "ing"));
+                        }
+                    }
+                }
+            }
             glossary.set(innerValues.get("term"), "".concat(this.baseURL, "/").concat(innerValues.get("navurl")));
+            for (var _d = 0, _e = alternatives.filter(function (s) { return !s.includes("{"); }); _d < _e.length; _d++) {
+                var alternative = _e[_d];
+                glossary.set(alternative, "".concat(this.baseURL, "/").concat(innerValues.get("navurl")));
+            }
         }
         return glossary;
     };

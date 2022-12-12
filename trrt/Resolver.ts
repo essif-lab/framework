@@ -174,8 +174,34 @@ export class Resolver {
             const mrg: Map<string, string> = new Map(Object.entries(mrgDocument));
             for (const [key, value] of Object.entries(mrg.get("entries"))) {
                   var stringValue: string = JSON.stringify(value);
+                  var alternatives: string[];
                   const innerValues: Map<string, string> = new Map(Object.entries(yaml.load(stringValue)));
+
+                  if (innerValues.get("formPhrases") != null) {
+                        alternatives = innerValues.get("formPhrases").split(",");
+                        for (var alternative of alternatives) {
+                              alternative = alternative.trim();
+                              if (alternative.includes("{")) {
+                                    // if (alternative.substring(0, alternative.indexOf("{")) != innerValues.get("term").substring(0, innerValues.get("term").length - 1)) {
+                                    //       alternatives.push(alternative.substring(0, alternative.indexOf("{")));
+                                    // }
+
+                                    if (alternative.includes("{ss}")) {
+                                          alternatives.push(alternative.replace("{ss}", "s"));
+                                    } else if (alternative.includes("{yies}")) {
+                                          alternatives.push(alternative.replace("{yies}", "ies"));
+                                    } else if (alternative.includes("{ying}")) {
+                                          alternatives.push(alternative.replace("{ying}", "ing"));
+                                    }
+
+                              }
+                        }
+                  }
+
                   glossary.set(innerValues.get("term"), `${this.baseURL}/${innerValues.get("navurl")}`);
+                  for (var alternative of alternatives.filter(s => !s.includes("{"))) {
+                        glossary.set(alternative, `${this.baseURL}/${innerValues.get("navurl")}`);
+                  }
             }
             return glossary;
       }
