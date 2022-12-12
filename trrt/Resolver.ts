@@ -179,19 +179,25 @@ export class Resolver {
 
                   if (innerValues.get("formPhrases") != null) {
                         alternatives = innerValues.get("formPhrases").split(",");
+                        alternatives.forEach(t => t.trim());
+                        // todo double check the white spaces in this glossary 
                         for (var alternative of alternatives) {
-                              alternative = alternative.trim();
                               if (alternative.includes("{")) {
-                                    // if (alternative.substring(0, alternative.indexOf("{")) != innerValues.get("term").substring(0, innerValues.get("term").length - 1)) {
-                                    //       alternatives.push(alternative.substring(0, alternative.indexOf("{")));
-                                    // }
-
                                     if (alternative.includes("{ss}")) {
                                           alternatives.push(alternative.replace("{ss}", "s"));
+                                          if (alternative.replace("{ss}", "")! in alternatives) {
+                                                alternatives.push(alternative.replace("{ss}", ""));
+                                          }
                                     } else if (alternative.includes("{yies}")) {
                                           alternatives.push(alternative.replace("{yies}", "ies"));
+                                          if (alternative.replace("{yies}", "y")! in alternatives) {
+                                                alternatives.push(alternative.replace("{yies}", "y"));
+                                          }
                                     } else if (alternative.includes("{ying}")) {
                                           alternatives.push(alternative.replace("{ying}", "ing"));
+                                          if (alternative.replace("{ying}", "y")! in alternatives) {
+                                                alternatives.push(alternative.replace("{ying}", "y"));
+                                          }
                                     }
 
                               }

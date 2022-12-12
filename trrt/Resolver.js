@@ -214,21 +214,27 @@ var Resolver = /** @class */ (function () {
             var innerValues = new Map(Object.entries(yaml.load(stringValue)));
             if (innerValues.get("formPhrases") != null) {
                 alternatives = innerValues.get("formPhrases").split(",");
+                alternatives.forEach(function (t) { return t.trim().trimStart(); });
                 for (var _c = 0, alternatives_1 = alternatives; _c < alternatives_1.length; _c++) {
                     var alternative = alternatives_1[_c];
-                    alternative = alternative.trim();
                     if (alternative.includes("{")) {
-                        // if (alternative.substring(0, alternative.indexOf("{")) != innerValues.get("term").substring(0, innerValues.get("term").length - 1)) {
-                        //       alternatives.push(alternative.substring(0, alternative.indexOf("{")));
-                        // }
                         if (alternative.includes("{ss}")) {
                             alternatives.push(alternative.replace("{ss}", "s"));
+                            if (alternative.replace("{ss}", "") in alternatives) {
+                                alternatives.push(alternative.replace("{ss}", ""));
+                            }
                         }
                         else if (alternative.includes("{yies}")) {
                             alternatives.push(alternative.replace("{yies}", "ies"));
+                            if (alternative.replace("{yies}", "y") in alternatives) {
+                                alternatives.push(alternative.replace("{yies}", "y"));
+                            }
                         }
                         else if (alternative.includes("{ying}")) {
                             alternatives.push(alternative.replace("{ying}", "ing"));
+                            if (alternative.replace("{ying}", "y") in alternatives) {
+                                alternatives.push(alternative.replace("{ying}", "y"));
+                            }
                         }
                     }
                 }
