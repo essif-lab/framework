@@ -17,50 +17,50 @@ export class Resolver {
       private output: string;
       // todo switch scope
       private scope: string;
-      private tmpLocalMrgFile: string = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
+      private tmpLocalMrgFile: string = ""; // = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
       private mrgWritePath = "./mrg.yaml"
-      private config: string;
+      private config?: string;
       private directory: string = ".";
       // todo switch scope based on version 
       private version: string = "latest";
-      private converter: Converter;
-      private interpreter: Interpreter;
-      private baseURL: string;
+      private converter?: Converter;
+      private interpreter?: Interpreter;
+      private baseURL?: string;
 
       public constructor(outputPath: string, scopePath: string, directoryPath?: string, vsn?: string, configPath?: string, interpreterType?: string, converterType?: string) {
             this.output = outputPath;
             this.scope = scopePath;
 
             // process optional paramters if not set in config 
-            if (configPath != undefined) {
+            if (configPath) {
                   this.config = configPath;
                   this.processConfig();
             } else {
-                  this.setOptionalParams(directoryPath, vsn, interpreterType, converterType);
+                  this.setOptionalParams(directoryPath!, vsn!, interpreterType!, converterType!);
             }
       }
 
       private processConfig(): boolean {
             // read config file and set paramters
             this.log.trace(`Config path is set: ${this.config}`);
-            const config: Map<string, string> = new Map(Object.entries(yaml.load(fs.readFileSync(this.config, 'utf8'))));
-            if (config.get("output") != "" || config.get("output") != undefined) {
+            const config: Map<string, string> = new Map(Object.entries(yaml.load(fs.readFileSync(this.config!, 'utf8')!)!));
+            if (config.get("output") != "" || config.get("output")) {
                   this.log.trace(`Out path is set: ${config.get("output")}`);
-                  this.output = config.get("output");
-            } else if (config.get("scopedir") != "" || config.get("scopedir") != undefined) {
+                  this.output = config.get("output")!;
+            } else if (config.get("scopedir") != "" || config.get("scopedir")) {
                   this.log.trace(`Scope path is set: ${config.get("scopedir")}`);
-                  this.scope = config.get("scopedir");
+                  this.scope = config.get("scopedir")!;
             }
 
             // method	<methodarg>	n	Text, the syntax and semantics of which remain to be specified (see also the Editor's note below). When this parameter is omitted, term refs are replaced with some default renderable ref. --> TODO update documentation
-            this.setOptionalParams(config.get("input"), config.get("version"), config.get("interpreter"), config.get("converter"));
+            this.setOptionalParams(config.get("input")!, config.get("version")!, config.get("interpreter")!, config.get("converter")!);
             return true;
       }
 
       private setOptionalParams(directoryPath: string, vsn: string, interpreterType: string, converterType: string) {
-            if (directoryPath != undefined) { this.directory = directoryPath; }
-            if (vsn != undefined) { this.version = vsn; }
-            if (interpreterType != undefined) {
+            if (directoryPath) { this.directory = directoryPath; }
+            if (vsn) { this.version = vsn; }
+            if (interpreterType) {
                   if (interpreterType == "Standard") {
                         this.interpreter = new StandardInterpreter();
                   } else if (interpreterType == "Alt") {
@@ -73,7 +73,7 @@ export class Resolver {
                   this.interpreter = new StandardInterpreter();
             }
 
-            if (converterType != undefined) {
+            if (converterType) {
                   if (converterType == "Markdown") {
                         this.converter = new MarkdownConverter();
                   } else if (converterType == "HTTP") {
@@ -94,42 +94,49 @@ export class Resolver {
       }
 
       public getInterpreterType(): string {
-            return this.interpreter.getType();
+            if (this.interpreter) {
+                  return this.interpreter.getType();
+            }
+            return "";
+
       }
 
       public getConverterType(): string {
-            return this.converter.getType();
+            if (this.converter) {
+                  return this.converter.getType();
+            }
+            return "";
       }
 
       private getMrgUrl(): string {
             this.log.trace("Locating MRG from SAF at: " + this.scope);
-            const safDocument: Map<string, string> = new Map(Object.entries(yaml.load(fs.readFileSync(this.scope, 'utf8'))));
+            const safDocument: Map<string, string> = new Map(Object.entries(yaml.load(fs.readFileSync(this.scope, 'utf8')!)!));
             // JSON.stringfy() used to force object to string casting as javascript does not support typing otherwise
-            const scopeMap: Map<string, string> = new Map(Object.entries(yaml.load(JSON.stringify(safDocument.get("scope")))));
+            const scopeMap: Map<string, string> = new Map(Object.entries(yaml.load(JSON.stringify(safDocument.get("scope"))!)!));
             var mrgURL: string = "";
 
             // move to seperate fuctions
-            if (scopeMap.get("website") != "" && scopeMap.get("website") != undefined) {
+            if (scopeMap.get("website") != "" && scopeMap.get("website")) {
                   this.baseURL = scopeMap.get("website");
             } else {
                   this.log.error("No website defined in SAF");
             }
 
-            if (scopeMap.get("scopedir") != "" && scopeMap.get("scopedir") != undefined) {
+            if (scopeMap.get("scopedir") != "" && scopeMap.get("scopedir")) {
                   mrgURL = mrgURL + scopeMap.get("scopedir");
             } else {
                   this.log.error("No scopedir defined in SAF");
                   return "";
             }
 
-            if (scopeMap.get("glossarydir") != "" && scopeMap.get("glossarydir") != undefined) {
+            if (scopeMap.get("glossarydir") != "" && scopeMap.get("glossarydir")) {
                   mrgURL = mrgURL + "/" + scopeMap.get("glossarydir");
             } else {
                   this.log.error("No glossarydir defined in SAF");
                   return "";
             }
 
-            if (scopeMap.get("mrgfile") != "" && scopeMap.get("mrgfile") != undefined) {
+            if (scopeMap.get("mrgfile") != "" && scopeMap.get("mrgfile")) {
                   mrgURL = mrgURL + "/" + scopeMap.get("mrgfile");
             } else {
                   this.log.error("No mrgfile defined in SAF");
@@ -145,7 +152,7 @@ export class Resolver {
             var mrgURL: string = this.getMrgUrl();
             if (this.tmpLocalMrgFile) {
                   // this is for local testing
-                  const mrgDocument: Object = yaml.load(fs.readFileSync(this.tmpLocalMrgFile, 'utf8'));
+                  const mrgDocument: any = yaml.load(fs.readFileSync(this.tmpLocalMrgFile, 'utf8'));
                   this.populateGlossary(mrgDocument, glossary);
                   this.log.info(`Populated glossary of ${this.scope}:${this.version}`);
                   console.log(glossary);
@@ -156,7 +163,7 @@ export class Resolver {
                         // TODO make sure this is synchronus 
                         this.log.trace("Downloading MRG....");
                         fs.writeFileSync(this.mrgWritePath, await download(mrgURL));
-                        const mrgDocument: Object = yaml.load(fs.readFileSync(this.mrgWritePath, 'utf8'));
+                        const mrgDocument: any = yaml.load(fs.readFileSync(this.mrgWritePath, 'utf8'));
                         this.log.info(`MRG loaded: ${mrgDocument}`);
                         this.populateGlossary(mrgDocument, glossary);
                         this.log.info(`Populated gloassary of ${this.scope}:${this.version}`);
@@ -172,13 +179,12 @@ export class Resolver {
 
       private populateGlossary(mrgDocument: Object, glossary: Map<string, string>): Map<string, string> {
             const mrg: Map<string, string> = new Map(Object.entries(mrgDocument));
-            for (const [key, value] of Object.entries(mrg.get("entries"))) {
-                  var stringValue: string = JSON.stringify(value);
+            for (const [key, value] of Object.entries(mrg.get("entries")!)) {
                   var alternatives: string[];
-                  const innerValues: Map<string, string> = new Map(Object.entries(yaml.load(stringValue)));
+                  const innerValues: Map<string, string> = new Map(Object.entries(yaml.load(JSON.stringify(value)!)!));
 
-                  if (innerValues.get("formPhrases") != null) {
-                        alternatives = innerValues.get("formPhrases").split(",");
+                  if (innerValues.get("formPhrases")) {
+                        alternatives = innerValues.get("formPhrases")!.split(",");
                         alternatives.forEach(t => t.trim());
                         // todo double check the white spaces in this glossary 
                         for (var alternative of alternatives) {
@@ -202,11 +208,13 @@ export class Resolver {
 
                               }
                         }
-                  }
 
-                  glossary.set(innerValues.get("term"), `${this.baseURL}/${innerValues.get("navurl")}`);
-                  for (var alternative of alternatives.filter(s => !s.includes("{"))) {
-                        glossary.set(alternative, `${this.baseURL}/${innerValues.get("navurl")}`);
+
+                        glossary.set(innerValues.get("term")!, `${this.baseURL}/${innerValues.get("navurl")}`);
+                        for (var alternative of alternatives.filter(s => !s.includes("{"))) {
+                              glossary.set(alternative, `${this.baseURL}/${innerValues.get("navurl")}`);
+                        }
+
                   }
             }
             return glossary;
@@ -223,6 +231,7 @@ export class Resolver {
                   });
                   return true;
             }
+            return true;
       }
 
       private writeFile(file: string, data: string) {
@@ -231,14 +240,15 @@ export class Resolver {
       }
 
       private interpertAndConvert(data: string, glossary: Map<string, string>): string {
-            const matches: IterableIterator<RegExpMatchArray> = data.matchAll(this.interpreter.getGlobalTermRegex());
+            const matches: IterableIterator<RegExpMatchArray> = data.matchAll(this.interpreter!.getGlobalTermRegex());
             for (const match of Array.from(matches)) {
-                  var termProperties: Map<string, string> = this.interpreter.interpert(match);
-                  var replacement = this.converter.convert(glossary, termProperties);
+                  var termProperties: Map<string, string> = this.interpreter!.interpert(match);
+                  var replacement = this.converter!.convert(glossary, termProperties);
                   if (replacement != "") {
-                        data = data.replace(this.interpreter.getLocalTermRegex(), replacement);
+                        data = data.replace(this.interpreter!.getLocalTermRegex(), replacement);
                   }
             }
+
             return data;
       }
 

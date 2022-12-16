@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -35,12 +36,30 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var Resolver_1 = require("./Resolver");
 var tslog_1 = require("tslog");
-var directoryPath = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\tests\\";
-var outputPath = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\tests_converted\\";
-var safPath = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\saf.yaml";
+var chalk = require('chalk');
+var clear = require('clear');
+var figlet = require('figlet');
+var path = require('path');
+var program = require('commander');
+// const directoryPath: string = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\tests\\";
+// const outputPath: string = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\tests_converted\\";
+// const safPath = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\saf.yaml";
+clear();
+console.log(chalk.red(figlet.textSync('trrt-cli', { horizontalLayout: 'full' })));
+program
+    .version('0.0.0')
+    .description("A CLI for the Term Reference Resolution Toolkit")
+    .option('-o, --output <path>', 'Path to outut converted files to')
+    .option('-s, --saf <path>', 'Path to read SAF file fromo ')
+    .option('-c, --config <path>', 'Path to configuration .yaml file')
+    .option('-d, --directory <path>', 'Path to directory where input files are located')
+    .option('-v, --version <vsn>', 'Default version to use when no version is set in term')
+    .option('-I, --interpreter <type>', 'Set interpreter to Standard or Alt syntax')
+    .option('-C, --converter <type>', 'Set converter to Mardownd HTTP or ESIFF output')
+    .parse(process.argv);
 function main() {
     return __awaiter(this, void 0, void 0, function () {
         var log, resolver;
@@ -48,7 +67,7 @@ function main() {
             switch (_a.label) {
                 case 0:
                     log = new tslog_1.Logger();
-                    resolver = new Resolver_1.Resolver(outputPath, safPath, directoryPath);
+                    resolver = new Resolver_1.Resolver(program.output, program.saf, program.directory, program.version, program.config, program.interpreter, program.converter);
                     return [4 /*yield*/, resolver.resolve()];
                 case 1:
                     if (_a.sent()) {

@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.AltInterpreter = void 0;
 var AltInterpreter = /** @class */ (function () {
     function AltInterpreter() {

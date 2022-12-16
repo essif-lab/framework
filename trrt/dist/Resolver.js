@@ -35,7 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.Resolver = void 0;
 var StandardInterpreter_1 = require("./StandardInterpreter");
 var MarkdownConverter_1 = require("./MarkdownConverter");
@@ -50,7 +50,7 @@ var yaml = require("js-yaml");
 var Resolver = /** @class */ (function () {
     function Resolver(outputPath, scopePath, directoryPath, vsn, configPath, interpreterType, converterType) {
         this.log = new tslog_1.Logger();
-        this.tmpLocalMrgFile = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
+        this.tmpLocalMrgFile = ""; // = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
         this.mrgWritePath = "./mrg.yaml";
         this.directory = ".";
         // todo switch scope based on version 
@@ -58,7 +58,7 @@ var Resolver = /** @class */ (function () {
         this.output = outputPath;
         this.scope = scopePath;
         // process optional paramters if not set in config 
-        if (configPath != undefined) {
+        if (configPath) {
             this.config = configPath;
             this.processConfig();
         }
@@ -70,11 +70,11 @@ var Resolver = /** @class */ (function () {
         // read config file and set paramters
         this.log.trace("Config path is set: ".concat(this.config));
         var config = new Map(Object.entries(yaml.load(fs.readFileSync(this.config, 'utf8'))));
-        if (config.get("output") != "" || config.get("output") != undefined) {
+        if (config.get("output") != "" || config.get("output")) {
             this.log.trace("Out path is set: ".concat(config.get("output")));
             this.output = config.get("output");
         }
-        else if (config.get("scopedir") != "" || config.get("scopedir") != undefined) {
+        else if (config.get("scopedir") != "" || config.get("scopedir")) {
             this.log.trace("Scope path is set: ".concat(config.get("scopedir")));
             this.scope = config.get("scopedir");
         }
@@ -83,13 +83,13 @@ var Resolver = /** @class */ (function () {
         return true;
     };
     Resolver.prototype.setOptionalParams = function (directoryPath, vsn, interpreterType, converterType) {
-        if (directoryPath != undefined) {
+        if (directoryPath) {
             this.directory = directoryPath;
         }
-        if (vsn != undefined) {
+        if (vsn) {
             this.version = vsn;
         }
-        if (interpreterType != undefined) {
+        if (interpreterType) {
             if (interpreterType == "Standard") {
                 this.interpreter = new StandardInterpreter_1.StandardInterpreter();
             }
@@ -104,7 +104,7 @@ var Resolver = /** @class */ (function () {
         else {
             this.interpreter = new StandardInterpreter_1.StandardInterpreter();
         }
-        if (converterType != undefined) {
+        if (converterType) {
             if (converterType == "Markdown") {
                 this.converter = new MarkdownConverter_1.MarkdownConverter();
             }
@@ -127,10 +127,16 @@ var Resolver = /** @class */ (function () {
         return this.directory;
     };
     Resolver.prototype.getInterpreterType = function () {
-        return this.interpreter.getType();
+        if (this.interpreter) {
+            return this.interpreter.getType();
+        }
+        return "";
     };
     Resolver.prototype.getConverterType = function () {
-        return this.converter.getType();
+        if (this.converter) {
+            return this.converter.getType();
+        }
+        return "";
     };
     Resolver.prototype.getMrgUrl = function () {
         this.log.trace("Locating MRG from SAF at: " + this.scope);
@@ -139,27 +145,27 @@ var Resolver = /** @class */ (function () {
         var scopeMap = new Map(Object.entries(yaml.load(JSON.stringify(safDocument.get("scope")))));
         var mrgURL = "";
         // move to seperate fuctions
-        if (scopeMap.get("website") != "" && scopeMap.get("website") != undefined) {
+        if (scopeMap.get("website") != "" && scopeMap.get("website")) {
             this.baseURL = scopeMap.get("website");
         }
         else {
             this.log.error("No website defined in SAF");
         }
-        if (scopeMap.get("scopedir") != "" && scopeMap.get("scopedir") != undefined) {
+        if (scopeMap.get("scopedir") != "" && scopeMap.get("scopedir")) {
             mrgURL = mrgURL + scopeMap.get("scopedir");
         }
         else {
             this.log.error("No scopedir defined in SAF");
             return "";
         }
-        if (scopeMap.get("glossarydir") != "" && scopeMap.get("glossarydir") != undefined) {
+        if (scopeMap.get("glossarydir") != "" && scopeMap.get("glossarydir")) {
             mrgURL = mrgURL + "/" + scopeMap.get("glossarydir");
         }
         else {
             this.log.error("No glossarydir defined in SAF");
             return "";
         }
-        if (scopeMap.get("mrgfile") != "" && scopeMap.get("mrgfile") != undefined) {
+        if (scopeMap.get("mrgfile") != "" && scopeMap.get("mrgfile")) {
             mrgURL = mrgURL + "/" + scopeMap.get("mrgfile");
         }
         else {
@@ -209,12 +215,12 @@ var Resolver = /** @class */ (function () {
         var mrg = new Map(Object.entries(mrgDocument));
         for (var _i = 0, _a = Object.entries(mrg.get("entries")); _i < _a.length; _i++) {
             var _b = _a[_i], key = _b[0], value = _b[1];
-            var stringValue = JSON.stringify(value);
             var alternatives;
-            var innerValues = new Map(Object.entries(yaml.load(stringValue)));
-            if (innerValues.get("formPhrases") != null) {
+            var innerValues = new Map(Object.entries(yaml.load(JSON.stringify(value))));
+            if (innerValues.get("formPhrases")) {
                 alternatives = innerValues.get("formPhrases").split(",");
-                alternatives.forEach(function (t) { return t.trim().trimStart(); });
+                alternatives.forEach(function (t) { return t.trim(); });
+                // todo double check the white spaces in this glossary 
                 for (var _c = 0, alternatives_1 = alternatives; _c < alternatives_1.length; _c++) {
                     var alternative = alternatives_1[_c];
                     if (alternative.includes("{")) {
@@ -238,11 +244,11 @@ var Resolver = /** @class */ (function () {
                         }
                     }
                 }
-            }
-            glossary.set(innerValues.get("term"), "".concat(this.baseURL, "/").concat(innerValues.get("navurl")));
-            for (var _d = 0, _e = alternatives.filter(function (s) { return !s.includes("{"); }); _d < _e.length; _d++) {
-                var alternative = _e[_d];
-                glossary.set(alternative, "".concat(this.baseURL, "/").concat(innerValues.get("navurl")));
+                glossary.set(innerValues.get("term"), "".concat(this.baseURL, "/").concat(innerValues.get("navurl")));
+                for (var _d = 0, _e = alternatives.filter(function (s) { return !s.includes("{"); }); _d < _e.length; _d++) {
+                    var alternative = _e[_d];
+                    glossary.set(alternative, "".concat(this.baseURL, "/").concat(innerValues.get("navurl")));
+                }
             }
         }
         return glossary;
@@ -259,6 +265,7 @@ var Resolver = /** @class */ (function () {
             });
             return true;
         }
+        return true;
     };
     Resolver.prototype.writeFile = function (file, data) {
         this.log.trace("Writing: " + file);

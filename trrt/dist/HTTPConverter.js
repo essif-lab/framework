@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.HTTPConverter = void 0;
 var tslog_1 = require("tslog");
 var HTTPConverter = /** @class */ (function () {
@@ -13,11 +13,12 @@ var HTTPConverter = /** @class */ (function () {
         var htmlOut = "";
         if (properties.get("scopetag") == "default") {
             if (properties.get("vsntag") == "latest") {
+                var term = glossary.get(properties.get("term"));
                 if (properties.get("trait") != "default") {
-                    htmlOut = "<a href=\"".concat(glossary.get(properties.get("term")), "#").concat(properties.get("trait"), "\"><span style=\"font-weight:bold>").concat(properties.get("showtext"), "</span></a>");
+                    htmlOut = "<a href=\"".concat(term, "#").concat(properties.get("trait"), "\"><span style=\"font-weight:bold>").concat(properties.get("showtext"), "</span></a>");
                 }
                 else {
-                    htmlOut = "<a href=\"".concat(glossary.get(properties.get("term")), "\"><span style=\"font-weight:bold>").concat(properties.get("showtext"), "</span></a>");
+                    htmlOut = "<a href=\"".concat(term, "\"><span style=\"font-weight:bold>").concat(properties.get("showtext"), "</span></a>");
                 }
                 this.log.info("The html term is: " + htmlOut);
             }

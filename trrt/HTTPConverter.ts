@@ -12,10 +12,11 @@ export class HTTPConverter implements Converter {
             var htmlOut: string = "";
             if (properties.get("scopetag") == "default") {
                   if (properties.get("vsntag") == "latest") {
+                        var term: string = glossary.get(properties.get("term")!)!;
                         if (properties.get("trait") != "default") {
-                              htmlOut = `<a href="${glossary.get(properties.get("term"))}#${properties.get("trait")}"><span style="font-weight:bold>${properties.get("showtext")}</span></a>`;
+                              htmlOut = `<a href="${term}#${properties.get("trait")}"><span style="font-weight:bold>${properties.get("showtext")}</span></a>`;
                         } else {
-                              htmlOut = `<a href="${glossary.get(properties.get("term"))}"><span style="font-weight:bold>${properties.get("showtext")}</span></a>`;
+                              htmlOut = `<a href="${term}"><span style="font-weight:bold>${properties.get("showtext")}</span></a>`;
                         }
                         this.log.info("The html term is: " + htmlOut);
                   } else {

@@ -3,7 +3,7 @@ import { Converter } from "./Converter";
 
 export class MarkdownConverter implements Converter {
       private log = new Logger();
-      public constructor() {}
+      public constructor() { }
 
       getType(): string {
             return "Markdown";
@@ -15,10 +15,11 @@ export class MarkdownConverter implements Converter {
             var markdownOut: string = "";
             if (properties.get("scopetag") == "default") {
                   if (properties.get("vsntag") == "latest") {
+                        var term: string = glossary.get(properties.get("term")!)!;
                         if (properties.get("trait") != "default") {
-                              markdownOut = `[${properties.get("showtext")}](${glossary.get(properties.get("term"))}#${properties.get("trait")})`;
+                              markdownOut = `[${properties.get("showtext")}](${term}#${properties.get("trait")})`;
                         } else {
-                              markdownOut = `[${properties.get("showtext")}](${glossary.get(properties.get("term"))})`;
+                              markdownOut = `[${properties.get("showtext")}](${term})`;
                         }
                         this.log.info("The converted markdown term is: " + markdownOut)
                   } else {

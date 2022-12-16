@@ -9,11 +9,21 @@
     "trrt/AltInterpreter.ts",
     "trrt/HTTPConverter.ts",
     "trrt/ESIFFConverter.ts",
-    "trrt/tests/ResolverTest.ts"
+    "trrt/tests/ResolverTest.ts",
+    "trrt/tests/ConverterTest.ts",
+    "trrt/tests/InterpreterTest.ts"
   ],
   "compilerOptions": {
     "module": "commonjs",
     "noImplicitAny": true,
-    "target": "es5"
+    "target": "es5",
+    "lib": ["es6", "es2015", "dom"],
+    "declaration": true,
+    "outDir": "trrt/dist",
+    "rootDir": "trrt",
+    "strict": true,
+    "types": ["node"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true
   }
 }

@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.MarkdownConverter = void 0;
 var tslog_1 = require("tslog");
 var MarkdownConverter = /** @class */ (function () {
@@ -15,11 +15,12 @@ var MarkdownConverter = /** @class */ (function () {
         var markdownOut = "";
         if (properties.get("scopetag") == "default") {
             if (properties.get("vsntag") == "latest") {
+                var term = glossary.get(properties.get("term"));
                 if (properties.get("trait") != "default") {
-                    markdownOut = "[".concat(properties.get("showtext"), "](").concat(glossary.get(properties.get("term")), "#").concat(properties.get("trait"), ")");
+                    markdownOut = "[".concat(properties.get("showtext"), "](").concat(term, "#").concat(properties.get("trait"), ")");
                 }
                 else {
-                    markdownOut = "[".concat(properties.get("showtext"), "](").concat(glossary.get(properties.get("term")), ")");
+                    markdownOut = "[".concat(properties.get("showtext"), "](").concat(term, ")");
                 }
                 this.log.info("The converted markdown term is: " + markdownOut);
             }

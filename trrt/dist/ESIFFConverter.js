@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.ESSIFConverter = void 0;
 var tslog_1 = require("tslog");
 var ESSIFConverter = /** @class */ (function () {
