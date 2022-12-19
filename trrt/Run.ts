@@ -22,8 +22,8 @@ console.log(
 program
       .version('0.0.0')
       .description("A CLI for the Term Reference Resolution Toolkit")
-      .option('-o, --output <path>', 'Path to outut converted files to')
-      .option('-s, --saf <path>', 'Path to read SAF file fromo ')
+      .option('-o, --output <path>', 'Path to outut converted files to (required)')
+      .option('-s, --saf <path>', 'Path to read SAF file from (required)')
       .option('-c, --config <path>', 'Path to configuration .yaml file')
       .option('-d, --directory <path>', 'Path to directory where input files are located')
       .option('-v, --version <vsn>', 'Default version to use when no version is set in term')
@@ -33,12 +33,17 @@ program
 
 async function main(): Promise<void> {
       const log = new Logger();
-      let resolver: Resolver = new Resolver(program.output, program.saf, program.directory, program.version, program.config, program.interpreter, program.converter);
-      if (await resolver.resolve()) {
-            log.info("Resolution complete...");
+      if (!program.output || !program.saf) {
+            program.outputHelp();
       } else {
-            log.error("Failed to resolve terms, see logs....");
+            let resolver: Resolver = new Resolver(program.output, program.saf, program.directory, program.version, program.config, program.interpreter, program.converter);
+            if (await resolver.resolve()) {
+                  log.info("Resolution complete...");
+            } else {
+                  log.error("Failed to resolve terms, see logs....");
+            }
       }
+
 }
 
 main();

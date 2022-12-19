@@ -52,8 +52,8 @@ console.log(chalk.red(figlet.textSync('trrt-cli', { horizontalLayout: 'full' }))
 program
     .version('0.0.0')
     .description("A CLI for the Term Reference Resolution Toolkit")
-    .option('-o, --output <path>', 'Path to outut converted files to')
-    .option('-s, --saf <path>', 'Path to read SAF file fromo ')
+    .option('-o, --output <path>', 'Path to outut converted files to (required)')
+    .option('-s, --saf <path>', 'Path to read SAF file from (required)')
     .option('-c, --config <path>', 'Path to configuration .yaml file')
     .option('-d, --directory <path>', 'Path to directory where input files are located')
     .option('-v, --version <vsn>', 'Default version to use when no version is set in term')
@@ -67,16 +67,21 @@ function main() {
             switch (_a.label) {
                 case 0:
                     log = new tslog_1.Logger();
+                    if (!(!program.output || !program.saf)) return [3 /*break*/, 1];
+                    program.outputHelp();
+                    return [3 /*break*/, 3];
+                case 1:
                     resolver = new Resolver_1.Resolver(program.output, program.saf, program.directory, program.version, program.config, program.interpreter, program.converter);
                     return [4 /*yield*/, resolver.resolve()];
-                case 1:
+                case 2:
                     if (_a.sent()) {
                         log.info("Resolution complete...");
                     }
                     else {
                         log.error("Failed to resolve terms, see logs....");
                     }
-                    return [2 /*return*/];
+                    _a.label = 3;
+                case 3: return [2 /*return*/];
             }
         });
     });
