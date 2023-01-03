@@ -70,4 +70,4 @@ Running the process consists of executing the following activities:[^1]
 
 ## Example
 
-An account of how this process was run several times in a project is described in this [real-life example](real-life-example)
+An account of how this process was run several times in a project is described in this [real-life example](/docs/terminology-design/methods/real-life-example)
