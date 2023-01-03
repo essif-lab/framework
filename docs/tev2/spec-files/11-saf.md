@@ -3,7 +3,7 @@ id: saf
 sidebar_label: SAF (Scope Admin File)
 hide_table_of_contents: true
 scopetag: tev2
-date: 20221024
+date: 20230103
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
@@ -154,6 +154,7 @@ The third section in the [SAF](@) specifies the [terminology](@) of the [scope](
 versions:
   - vsntag: v0.9.4 # a versiontag that identifies this version from all other versions in the SAF
     mrgfile: mrg-tev2-v0.9.4.yaml # URL: <scopedir>/<glossarydir>/<mrgfile>
+    hrgfile: glossary-tev2-v0.9.4.html # URL: <scopedir>/<glossarydir>/<hrgfile>
     altvsntags: # alternative verstiontags
       - latest
       - 0x921456
@@ -164,8 +165,9 @@ versions:
     status: proposed
     from: 20220312
     to:
-  - vsntag: v0.9.4 # a versiontag that identifies this version from all other versions in the SAF
-    mrgfile: mrg-tev2-v0.9.4.yaml # URL: <scopedir>/<glossarydir>/<mrgfile>
+  - vsntag: test # a versiontag that identifies this version from all other versions in the SAF
+    mrgfile: mrg-tev2-test.yaml # URL: <scopedir>/<glossarydir>/<mrgfile>
+    hrgfile: glossary-tev2-test.pdf # URL: <scopedir>/<glossarydir>/<hrgfile>
     altvsntags: # alternative verstiontags
       - 0x654129
     termselcrit:
@@ -191,6 +193,7 @@ The following fields are defined for the `versions` section of a [SAF](@):
 | ----------- | :---: | ----------- |
 | `vsntag`      | Y | [Versiontag](@) that that is used to [identify](@) this version within the set of all other versions that are maintained within this [scope](@). in this [SAF](@). It MUST NOT be changed during the lifetime of this version.<br/>Must satisfy regex `[a-z0-9_-\.]+`. |
 | `mrgfile`     | Y | URL of the [MRG](@)-file that contains the [MRG-entries](@) of this version. Full URL is `<scopedir>`/`<glossarydir>`/`<mrgfile>`. |
+| `hrgfile`     | n | Name of the file that contains the [HRG](@) that renders all [MRG-entries](@) contained in the [MRG](@) as specified by the `mrgfile` field of this `versions` section. Full URL is `<scopedir>`/`<glossarydir>`/`<hrgfile>`. |
 | `altvsntags`  | n | List of alternative [versiontags](@) that may be used to refer to this version of the [scope's](@) [terminology](@). A typical use of this field would be to tag a version as the 'latest' version.<br/>Must satisfy regex `[a-z0-9_-\.]+`. |
 | `license`     | n | File that contains the (default) licensing conditions. Full URL is `scopedir`/`license`. If not specified, its value defaults to the value of the `license` field in the `scope` section (of this [SAF](@)). The purpose of this field is to allow different versions of the [scope's](@) [terminology](@) to have different licenses. |
 | `termselcrit` | Y | List of [term selection criteria](@) that are used to generate (this version of) the [scope's](@) [terminology](@). See [Terminology Construction](/docs/tev2/spec-tools/terminology-construction) for details. |

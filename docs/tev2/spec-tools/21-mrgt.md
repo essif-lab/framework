@@ -29,6 +29,10 @@ The **Machine Readable Glossary generation Tool ([MRGT](@))** generates a Machin
 
 The (newly generated) [MRG](@) is meant to be processed by the other tools in the [toolbox](/docs/tev2/tev2-toolbox), regardless of whether such tools are called from within the context of another [scope](@). As it contains every [term](@) that is used in the [scope](@), and includes all the relevant meta-data, an [MRG](@) serves as the single, authoritative source of that (version of the) [scope's](@) [terminology](@).
 
+There is currently one implementation of the tool:
+- the repo is [here](https://github.com/trustoverip/ctwg-toolkit-mrg/)
+- the documentation is [here](https://github.com/trustoverip/ctwg-toolkit-mrg#readme)
+
 ## Generating an MRG
 
 As input, the [MRGT](@) is provided a [SAF](@), is pointed to the particular entry in its [`versions` section](/docs/tev2/spec-files/saf#versions) that specifies (a specific version of) a [terminology](@). This section not only includes meta-data for that [terminology](@), but also the set of '[term selection criteria](@)' that specify how the [terminology](@) needs to be [constructed](/docs/tev2/spec-tools/terminology-construction), and the file to which the result needs to be written.

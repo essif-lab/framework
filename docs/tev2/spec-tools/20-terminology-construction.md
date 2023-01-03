@@ -1,8 +1,7 @@
 ---
 id: terminology-construction
-sidebar_label: Terminology Construction
 displayed_sidebar: tev2SideBar
-hide_table_of_contents: true
+// hide_table_of_contents: true
 scopetag: tev2
 date: 20220801
 ---
@@ -41,12 +40,12 @@ A [curator](@) can add [MRG entries](@) to the [terminology under construction](
 
 Note that any reference to (an [MRG entry](@) in) (the specific version of) the [terminology](@) that is being constructed, MUST be interpreted as a reference to the [curated text](@) from which the [MRG entry](@) would have been constructed.
 
-The following instructions can be used for adding [MRG entries](@) (whitespace is disregarded):
+The following instructions can be used for adding [MRG entries](@) (whitespace in the syntax is disregarded):
 
 | Instruction<sup>*)</sup>   | The instruction creates, and subsequently adds an [MRG entry](@) for every [curated text](@) ... |
 | :------------------------- | :--------------------------------------------------------------------- |
 | `terms [ <termslist> ]`    | that documents the [knowledge artifact](@) that is represented by a [term](@) that appears in the `<termslist>`. |
-| `tags  [ <grouptagslist> ]`| that has an element in the list of [grouptags](@) that also appears in the `<groutagslist>`. |
+| `tags [ <grouptagslist> ]`| that has an element in the list of [grouptags](@) that also appears in the `<grouptagslist>`. |
 | `*`                        | that exists within the current [scope](@). |
 
 `<termslist>` and `<grouptagslist>` are comma-separated lists of [terms](@) and [grouptags](@) respectively.
@@ -67,7 +66,7 @@ The following instructions can be used for adding [MRG entries](@) (whitespace i
 
 ## Removing MRG Entries from a [terminology under construction](@) {#syntax-remove}
 
-A [curator](@) can remove [MRG entries](@) from the tuple set, using the following syntax (whitespace is disregarded):
+A [curator](@) can remove [MRG entries](@) from the tuple set, using the following syntax (whitespace in the syntax is disregarded):
 - `-tags [ <grouptagslist> ]`
 - `-terms [ <termslist> ]`
 
@@ -75,7 +74,7 @@ A [curator](@) can remove [MRG entries](@) from the [terminology under construct
 
 | Instruction<sup>*)</sup>   | The instruction removes an [MRG entry](@) from the [terminology under construction](@) if ... |
 | :------------------------- | :--------------------------------------------------------------------- |
-| `tags  [ <grouptagslist> ]`| one of its [grouptags](@) appears in the `<groutagslist>`. |
+| `-tags [ <grouptagslist> ]`| one of its [grouptags](@) appears in the `<groutagslist>`. |
 | `-terms [ <termslist> ]`   | the [term](@) that it specifies is an element of `<termslist>`. |
 
 `<termslist>` and `<grouptagslist>` are comma-separated lists of [terms](@), and [grouptags](@) respectively.

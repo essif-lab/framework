@@ -30,6 +30,10 @@ Term ref resolution is the same process as we use for ingestion, and other conve
 
 The **Term Ref(erence) Resolution Tool ([TRRT](@))** takes markdown files that contain so-called [term refs](@) (e.g. \[`terms communities`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](@) are converted to so-called [renderable refs](@), i.e. texts that can be further processed by tools such as Github pages, Docusaurus (plugins), etc., the result of which is that the rendered document contains markups that help [readers](@) to quickly find more explanations of the [concept](@) or other [knowledge artifact](@) that is being referenced.
 
+There is currently one implementation of the tool:
+- the repo in which the tool is being developed is [here](https://github.com/arabellastrange/framework-trrt).
+- the documentation is [<mark>tbd</mark>].
+
 <details>
   <summary>Examples</summary>
 
