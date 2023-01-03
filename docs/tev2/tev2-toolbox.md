@@ -24,7 +24,7 @@ As mentioned in the [TEv2 overview](/docs/tev2/tev2-overview), the toolbox is en
 
 - the **Machine Readable Glossary generation Tool ([MRGT](@))**. This tool reads the [SAF](@) of a [scope](@) to find the instructions by which it creates an [MRG](@) for each of the versions of the [terminology](@) that are maintained within that [scope](@).
 
-- the **Human Readable Glossary generation Tool ([HRGT](@)**. This tool reads the [MRG](@) of a [scope](@), resolves any [term refs](@) as necessary, and creates a rendering that results in a [HRG](@).
+- the **Human Readable Glossary generation Tool ([HRGT](@))**. This tool reads the [MRG](@) of a [scope](@), resolves any [term refs](@) as necessary, and creates a rendering that results in a [HRG](@).
 
 - the **Integrity Checker Tool ([ICT](@))**. This tool enables [curators](@) to test the integrity of [SAFs](@), [MRGs](@), and [curated texts](@) for integrity, logging any situation that may cause inconvenience or errors, and providing helptexts that are aimed at guiding [curators](@) to resolve any such issues.
 
@@ -32,4 +32,8 @@ As mentioned in the [TEv2 overview](/docs/tev2/tev2-overview), the toolbox is en
 
 - the **Human Readable Dictionary generation Tool ([HRDT](@))**. This tool generates a a Human Readable [Dictionary](@) ([HRD](@)), that renders the [terms](@) from a [machine readable dictionary (MRD)](@) into one of several formats, e.g. HTML, or PDF. [HRDs](@) can be created for different purposes, e.g. to compare different [terminologies](@) (across [scopes](@)), or as a reference of what [terms](@) mean in different [scopes](@).
 
-Additionally, a collection of code snippets is envisaged that can be used to automatically generate [MRGs](@) and [HRGs](@) upon successful commits to the master-branch of an associated repo/wiki, enabling [curators](@) to establish CI/CD pipelines.
+These tools are intended to be called from the command-line, typically
+1. in a context where the user is developing (documents, papers, etc.) locally, and
+2. in a github or gitlab context, where the tools are called from within a CI/CD pipeline.
+
+Apart from these tools, a collection of code snippets is envisaged that can be used to automatically generate [MRGs](@) and [HRGs](@) upon successful commits to the master-branch of an associated repo/wiki, enabling [curators](@) to establish CI/CD pipelines.
