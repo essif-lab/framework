@@ -6,11 +6,19 @@ export declare class Resolver {
     private mrgWritePath;
     private config?;
     private directory;
-    private version;
+    private version?;
     private converter?;
     private interpreter?;
     private baseURL?;
-    constructor(outputPath: string, scopePath: string, directoryPath?: string, vsn?: string, configPath?: string, interpreterType?: string, converterType?: string);
+    constructor({ outputPath, scopePath, directoryPath, vsn, configPath, interpreterType, converterType }: {
+        outputPath: string;
+        scopePath: string;
+        directoryPath?: string;
+        vsn?: string;
+        configPath?: string;
+        interpreterType?: string;
+        converterType?: string;
+    });
     private processConfig;
     private setOptionalParams;
     getDirectory(): string;

@@ -2,11 +2,10 @@
 
 import { Resolver } from './Resolver';
 import { Logger } from "tslog";
-const chalk = require('chalk');
-const clear = require('clear');
-const figlet = require('figlet');
-const path = require('path');
-const program = require('commander');
+import chalk = require('chalk');
+import clear = require('clear');
+import figlet = require('figlet');
+import program = require('commander');
 
 // const directoryPath: string = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\tests\\";
 // const outputPath: string = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\tests_converted\\";
@@ -26,7 +25,7 @@ program
       .option('-s, --saf <path>', 'Path to read SAF file from (required)')
       .option('-c, --config <path>', 'Path to configuration .yaml file')
       .option('-d, --directory <path>', 'Path to directory where input files are located')
-      .option('-v, --version <vsn>', 'Default version to use when no version is set in term')
+      .option('-V, --defaultversion <vsn>', 'Default version to use when no version is set in term')
       .option('-I, --interpreter <type>', 'Set interpreter to Standard or Alt syntax')
       .option('-C, --converter <type>', 'Set converter to Mardownd HTTP or ESIFF output')
       .parse(process.argv);
@@ -36,7 +35,7 @@ async function main(): Promise<void> {
       if (!program.output || !program.saf) {
             program.outputHelp();
       } else {
-            let resolver: Resolver = new Resolver(program.output, program.saf, program.directory, program.version, program.config, program.interpreter, program.converter);
+            let resolver: Resolver = new Resolver({ outputPath: program.output, scopePath: program.saf, directoryPath: program.directory, vsn: program.defaultversion, configPath: program.config, interpreterType: program.interpreter, converterType: program.converter });
             if (await resolver.resolve()) {
                   log.info("Resolution complete...");
             } else {

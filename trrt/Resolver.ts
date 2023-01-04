@@ -6,8 +6,8 @@ import { HTTPConverter } from './HTTPConverter';
 import { AltInterpreter } from './AltInterpreter';
 import { ESSIFConverter } from './ESIFFConverter'
 import { Logger } from 'tslog';
-import download = require('download');
 
+import download = require('download');
 import fs = require("fs");
 import path = require('path');
 import yaml = require('js-yaml');
@@ -22,12 +22,12 @@ export class Resolver {
       private config?: string;
       private directory: string = ".";
       // todo switch scope based on version 
-      private version: string = "latest";
+      private version?: string = "latest";
       private converter?: Converter;
       private interpreter?: Interpreter;
       private baseURL?: string;
 
-      public constructor(outputPath: string, scopePath: string, directoryPath?: string, vsn?: string, configPath?: string, interpreterType?: string, converterType?: string) {
+      public constructor({ outputPath, scopePath, directoryPath, vsn, configPath, interpreterType, converterType }: { outputPath: string; scopePath: string; directoryPath?: string; vsn?: string; configPath?: string; interpreterType?: string; converterType?: string; }) {
             this.output = outputPath;
             this.scope = scopePath;
 
