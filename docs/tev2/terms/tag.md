@@ -4,7 +4,7 @@ term: tag
 termType: concept
 isa: identifier
 glossaryText: "an alphanumeric string that is used to identify [scopes](@) (so called 'scopetags'), group [terms](@) (so called 'grouptags'), or identify a specific version of a [terminology](@) (so called 'versiontags') from within a specific [scope](@)."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: tag{ss}
 # Curation status
@@ -36,7 +36,7 @@ Versiontags are used to identify a specific version of the [terminology](@) of t
 ### Criteria
 is an alphanumeric string that is used within a specific [scope](@) to identify [scopes](@) and/or group [knowledge artifacts](@), and/or identify a version of its [terminology](@). The alphanumeric string satisfies the regex `[a-z0-9_-]+`.
 
-The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
 ### Examples
 Examples of scopetags are `essif-lab`, `essiflab`, `toip`, or `ctwg`

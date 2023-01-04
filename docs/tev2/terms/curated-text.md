@@ -4,7 +4,7 @@ term: curated-text
 termType: concept
 isa:
 glossaryText: a text that documents a [concept](@) or other [knowledge artifact](@) of a specific [community](@) or other [party](@), and is located within a [scope](@) that is owned by that [community](@)/[party](@).
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: curated-text{ss}, ctext{ss}
 # Curation status
@@ -38,7 +38,7 @@ Text needs to be revised from here onward. Here are some ideas to mention:
   - people can subsequently access nicely rendered, human readable versions
 :::
 
-The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
 ## Purpose
 

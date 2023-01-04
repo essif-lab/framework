@@ -21,7 +21,7 @@ TEv2 is designed to support an ever increasing variety of raw text formats, and 
 The architecture is not yet fully aligned with the (momentarily developing) ideas as explained in the section [Text Conversion Steps](#text-conversion-steps). This is still work that needs to be done.
 :::
 
-The architecture is based on the ToIP/eSSIF-Lab [Terminology Model](/docs/tev2/terms/patterns/terminology-support), which assumes that every [author](@)/group constitutes a so-called [terms-community](@) that [curates](@) one (or more) [scope(s)](@), that contains e.g. [definitions](@), [terms](@), [tags](@) etc. that constitute the [author](@)/group's [terminology](@). An overview is given in the figure below:
+The architecture is based on the ToIP/eSSIF-Lab [Terminology Model](/docs/tev2/terms/patterns/pattern-terminology), which assumes that every [author](@)/group constitutes a so-called [terms-community](@) that [curates](@) one (or more) [scope(s)](@), that contains e.g. [definitions](@), [terms](@), [tags](@) etc. that constitute the [author](@)/group's [terminology](@). An overview is given in the figure below:
 
 <img
   alt="TEv2 Overview"

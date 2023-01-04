@@ -4,7 +4,7 @@ term: curatedir
 termType: concept
 isa:
 glossaryText: "a directory within a [scopedir](@) within which every file contains a [curated texts](@) for that [scope](@)."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: glossary-director{yies}, curatedir{ss}
 # Curation status

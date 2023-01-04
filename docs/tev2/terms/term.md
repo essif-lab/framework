@@ -3,8 +3,8 @@
 term: term
 termType: concept
 isa: identifier
-glossaryText: "a word or phrase (i.e.: text) that is used to represent specific [knowledge artifacts](@)."
-synonyms:
+glossaryText: "a word or phrase (i.e.: text) that is used to represent ([identify](@)) a specific [knowledge artifact](@) (in some [scope](@))."
+synonymOf:
 groupTags:
 formPhrases: term{ss}, word{ss}, phrase{ss}
 # Curation status
@@ -25,15 +25,14 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 ### Summary
-A **Term** is a word or phrase (i.e.: text) that is used to represent specific [knowledge artifacts](@), e.g. [concepts](@), [relations](@) or [mental models](@).
+A **Term** is a word or phrase (i.e.: text) that is used to represent ([identify](@)) a specific [knowledge artifact](@), e.g. a [concept](@), [relation](@) or [mental model](@), in a particular [scope](@):
 
-Thus:
-- a single term may (and typically does) have different meanings ([semantics](@)) in different [scopes](@)/contexts. For example, in the context of a beauty-salon, the term 'nail' has a different meaning than in the context of constructing buildings.
-- different terms (in the same, or different [scopes](@)/contexts) may have the same meaning (i.e. represent the same [concept](@) ([synonymity](https://en.wikipedia.org/wiki/Synonym), [alias](https://www.merriam-webster.com/dictionary/alias)).
+- a single [term](@) may (and typically does) have different meanings ([semantics](@)) in different [scopes](@)/contexts. For example, in the context of a beauty-salon, the term 'nail' has a different meaning than in the context of constructing buildings.
+- different [terms](@) (in the same, or different [scopes](@)/contexts) may have the same meaning (i.e. represent the same [concept](@) ([synonymity](https://en.wikipedia.org/wiki/Synonym), [alias](https://www.merriam-webster.com/dictionary/alias)).
 
-The precise meaning of a term thus depends on the [scope](@)/context in which it is used. We use the phrase [scoped term](@) to refer to a term that is part of one particular [scope](@)/context, and refers to a single [concept](@) (or other [knowledge artifact](@)), and hence is unambiguous.
+The precise meaning of a [term](@) thus depends on the [scope](@)/context in which it is used. We use the phrase [scoped term](@) to refer to a term that is part of one particular [scope](@)/context, and refers to a single [concept](@) (or other [knowledge artifact](@)), and hence is unambiguous.
 
-The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 The [term-ref](@) [syntax specification](/docs/tev2/spec-syntax/term-ref-syntax) specifies the syntax that [authors](@) should use as they want to use a specific [term](@) in their text.
 
 ### Purpose

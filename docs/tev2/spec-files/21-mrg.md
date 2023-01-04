@@ -96,11 +96,30 @@ The following fields are defined for the section `scopes`:
 | `scopetag`   | Y | [Scopetag](@) of a third-party [scope](@), the [MRG](@) of which contains [MRG entries](@) that have been imported into the [MRG](@). This [scopetag](@) has been chosen by the [curators](@) of the [scope](@) of which the [MRG](@) is part, to refer to that particular third-party [scope](@). This [scopetag](@) may differ from the [scopetag](@) that the [curators](@) of that third-party [scope](@) have chosen for this [scope](@) <br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `scopedir`   | Y | URL that locates the [scope directory](@) associated with that third-party [scope](@). |
 
-## MRG Entries - Common Fields {#mrg-entries}
+## MRG Entries {#mrg-entries}
 
 An [MRG](@) consists of a list of [MRG entries](@), the purpose of which is that the various tools can find all data that is relevant for the purpose that such a tool serves.
 
-[MRG entries](@) are typed, and each type has its own [MRG entry](@) structure. However, all [MRG entries](@) have a common set of fields, as follows:
+An [MRG entry](@) has a few fields that are always present, because the [MRGT](@) generates them, as follows:
+
+| Field          | Value(s) that are assigned to the fields |
+| -------------- | :---------- |
+| `scopetag`     | [Scopetag](@) that [identifies](@) the [scope](@) from within which the contents of the [MRG entry](@) is [curated](@), and obtained. The [`scopes` section](#mrg-scopes) in the [MRG](@) SHOULD contain a mapping between the `scopetag` and its associated [scope directory](@).|
+| `locator`      | path, relative to `scopedir`/`curatedir`/, where `scopedir` can be obtained from the `scopes` section of the [MRG](@), and `curatedir` can be obtained from the [SAF](@) that lives in this `scopedir`, where the [curated text](@) lives from which the contents of the [MRG entry](@) was constructed. |
+| `navurl`       | path, relative to the URL as specified in the `website` field in the [`scope` section](/docs/tev2/spec-files/saf#terminology) of the [SAF](@) (that lives in the `scopedir` as specified in the `scopes` section of the [MRG](@)), where the rendered version of the [curated text](@) is located. |
+| `headingids`   | a list of the [markdown headings](https://www.markdownguide.org/basic-syntax/#headings) and/or [heading ids](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids) that are found in the [curated text](@). |
+
+An [MRG entry](@) has additional fields that come from the front matter of the [curated text](@) that the [MRG entry](@) represents. Some fields are
+- mandatory for all [curated texts](@), and hence will always appear in an [MRG entry](@); these appear in the table below.
+- optional for [curated texts](@) - typically, e.g. to accommodate for differences in the types [terminological artifacts](@) that [curated texts](@) document; these also appear in the table below.
+- optional in the sense that they are intended to be processed by TEv2 tool plugins - these are not documented here.
+- optional in the sense that they are intended to be used by third party rendering tools, such as Docusaurus or Jekyll - these are also not documented here.
+
+:::info Editor's note
+We need to think about how to refer readers to sections of plugins and rendering tool documentation that they might want/need to use.
+:::
+
+The following table documents the fields that are used within the context of [TEv2](@)
 
 <details>
   <summary>Legend</summary>
@@ -113,13 +132,12 @@ An [MRG](@) consists of a list of [MRG entries](@), the purpose of which is that
 
 | Name            | Req'd | Description |
 | --------------- | :---: | :---------- |
-| `scopeTag`        | Y | [Scopetag](@) that [identifies](@) the [scope](@) (within the scope in which the [MRG](@) is constructed) from within which the contents of the [MRG entry](@) is [curated](@), and obtained. The [`scopes` section](#mrg-scopes) in the [MRG](@) SHOULD contain a mapping between the `scopetag` and its associated [scope directory](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `vsnTag`          | Y | [Versiontag](@) that [identifies](@) the version of the [terminology](@) from which the contents of the [MRG entry](@) is obtained. If the contents of the [MRG entry](@) was constructed from a [curated text](@), its value equals the value of the `vsntag` field in the [`terminology`-section](#mrg-terminology) of the [MRG](@) that this [MRG entry](@) is a part of. As a result, `scopetag`:`versiontag` [identifies](@) the [terminology](@) from which this [MRG entry](@) has originated.<br/>Must satisfy regex `[a-z0-9_-.]+`.  |
-| `term`            | Y | [Term](@) ([Identifier](@)) that is used to represent a [knowledge artifact](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `term`            | Y | [Term](@) that is used to represent ([identify](@)) a [knowledge artifact](@) in this [scope](@).<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `termType`        | Y | [Text](term-type@) that [identifies](@) the kind of [knowledge artifact](@) that this [MRG entry](@) refers to. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
 | `isa`             | n | [concept](@) of which this is a specialization. |
 | `glossaryText`    | Y | Text that is used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). Note that this text SHOULD be allowed to contain [term refs](@). |
-| `synonyms`        | n | List of [synonyms](@) for this [term](@). |
+| `synonymOf`       | n | [term identifier](@) that [identifies](@) the [term](@) of which this is a [synonym](@). |
 | `groupTags`       | n | List of [grouptags](@), each of which signifies that the [(scoped) term](@) that this [curated text](@) documents, is part of the group of [terms](@) that it represents.<br/>Example: `[tev2, management]`.<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-]+)\s*(?:,\s*([a-z0-9_-]+))*\s*\])?`](https://www.debuggex.com/r/a51CXl1NzR3kwihT). |
 | `formPhrases`     | n | List of [texts](formphrase@) that are [used to convert](/docs/tev2/spec-tools/trrt#id) the `show text` parts of [term refs](@) into `term`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs). For details, see ['Syntax Specs - Form Phrases](/docs/tev2/spec-syntax/form-phrase-syntax). |
 | `status`          | n | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
@@ -130,7 +148,7 @@ An [MRG](@) consists of a list of [MRG entries](@), the purpose of which is that
 | `originalLicense` | n | Reference to the license of the work from which the texts were derived. |
 | `locator`         | n | Text that identifies the file that holds the [curated text](@) of the [knowledge artifact](@) that this [MRG entry](@) describes. The full URL of the [curated text](@) is `scopedir`/`curatedir`/`locator`, where `scopedir` and `curatedir` can be found in the [SAF](@) (which is in the root of `scopedir`). Note that `locator` may contain a path. |
 | `navurl`          | n | URL that locates a human readable, rendered version of the [curated text](@) of the [knowledge artifact](@) that this [MRG entry](@) describes. This URL is used to resolve [term refs](@) that refer to this [knowledge artifact](@). |
-| `headingIds`      | n | List of texts that can be used as a `trait` in a [term ref](@), which typically are [markdown 'heading-ids'](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids). |
+| `headingIds`      | n | List of texts that can be used as a `trait` in a [term identifier](@), which typically are [markdown 'heading-ids'](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids). |
 
 
 

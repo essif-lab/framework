@@ -4,7 +4,7 @@ term: scopetag
 termType: concept
 isa: tag
 glossaryText: "a [tag](@) that is used to [identify](@) [scopes](@) from within a specific [scope](@)"
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: scopetag{ss}, scope-tag{ss}
 # Curation status
@@ -29,7 +29,7 @@ A **Scopetag** is a [tag](@) that is used to [identify](@) [scopes](@), e.g. in 
 
 Scopetags [identify](@) a [scope](@) (from within a given [scope](@)), and hence can be used (within that given [scope](@)) to disambiguate [terms](@).
 
-The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
 ### Criteria
 A **Scopetag** (of/within a [scope](@)) is a [tag](@) that is used within that [scope](@) to [identify](@) itself or other [scopes](@). It satisfies the regex `[a-z0-9_-]+`.

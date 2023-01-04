@@ -4,7 +4,7 @@ term: mrg-entry
 termType: concept
 isa:
 glossaryText: "A machine-readable (and interpretable) artifact that contains (pointers to) data and meta-data about a particular  [knowledge artifact](@), such as the associated [term(s)](@), its [definition](@), etc., to make it easy for IT-tools to create, e.g. documentation, [glossaries](@), [dictionaries](@), whitepapers, etc. that uses such [terms](@) ([definitions](@), etc.)."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: mrg-entr{yies}
 # Curation status
@@ -17,7 +17,7 @@ attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 
-# Mrg Entry
+# MRG Entry
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
@@ -26,13 +26,13 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 
 ### Summary
 
-A **MRG Entry** is a machine-readable (and interpretable) artifact that contains (pointers to) data and meta-data about a particular  [knowledge artifact](@), such as the associated [term(s)](@), its [definition](@), etc., to make it easy for IT-tools to create, e.g. documentation, [glossaries](@), [dictionaries](@), whitepapers, etc. that uses such [terms](@) ([definitions](@), etc.).
+An **MRG Entry** is a machine-readable (and interpretable) artifact that contains (pointers to) data and meta-data about a particular  [knowledge artifact](@), such as the associated [term(s)](@), its [definition](@), etc., to make it easy for IT-tools to create, e.g. documentation, [glossaries](@), [dictionaries](@), whitepapers, etc. that uses such [terms](@) ([definitions](@), etc.).
 
 A [terminology](@) can be seen as the collection of [MRG entries](@) that hold all data related to the [terms](scoped-term@) that the [terminology](@) consists of.
 
 The contents of an [MRG entry](@) may vary, depending on the type of [knowledge artifact](@) that it documents. The kinds of data that are common for all [knowledge artifacts](@) are documented [here](http://localhost:3000/docs/tev2/spec-files/mrg#mrg-entries).
 
-The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
 The [terminology construction section](/docs/tev2/spec-tools/terminology-construction) describes how [MRG entries](@) are selected (and manipulated) for the construction of a particular [terminology](@).
 

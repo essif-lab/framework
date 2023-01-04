@@ -4,7 +4,7 @@ term: concept
 termType: concept
 isa: knowledge-artifact
 glossaryText: "a [knowledge artifact](@) that captures the ideas/thoughts behind a classification of [entities](@) (what makes [entities](@) in that class 'the same')."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: concept{ss}
 # Curation status
@@ -27,7 +27,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 ### Summary
 A **Concept** is a [knowledge artifact](@) that tries to capture the idea behind a classification of entities[^1], allowing us to reason about everything in the class as if it were one thing. For example, the ideas ([mental representations](https://en.wikipedia.org/wiki/Mental_representation)) you have when processing the sentences "I can drink beer from a beer glass' and 'I can drink beer from a coffee mug' shows that the concepts that are behind 'beer glass' and 'coffee mug' differ. Note that in order to communicate about this idea, we also need a word or phrase (i.e.: a [term](@) that we can use to refer to (instances of) this idea.
 
-The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts (as a specialization of a [knowledge artifact](@)).
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts (as a specialization of a [knowledge artifact](@)).
 
 ### Purpose
 Working together is easier when you and your peers share the same ideas. We need a way to test and ensure, that you and your peers _actually_ have the same understanding, for the purpose of making cooperation easier. Doing so is expected to not only reduce the number of terminological discussions, but also improve the efficiency and effectiveness of the remaining discussions.

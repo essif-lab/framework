@@ -4,7 +4,7 @@ term: scope
 termType: concept
 isa:
 glossaryText: "the extent of the [terms](@), [definitions](@) and other documentation that a [community](@) (which we call the [owner](@) of the [scope](@)) needs to express, communicate and validate its [knowledge](@) as relevant to achieving a specific subset of its [objectives](@)."
-synonyms:
+synonymOf:
 groupTags:
 formPhrases: scope{ss}
 # Curation status
@@ -35,7 +35,7 @@ A [scope](@) can contain multiple [terminologies](@); it is expected that at lea
 
 [Scopes](@) may overlap, or be nested, in a similar way as [namespaces](https://en.wikipedia.org/wiki/Namespace).
 
-The [terminology pattern](pattern-terminology-support@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 

@@ -8,17 +8,11 @@ date: 20220919
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-<!-- Use 'Mark' as an HTML tag, e.g. <Mark>text to mark</Mark?-->
-export const Mark = ({children}) => (
-  <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
-    {children}
-  </span> );
+## 1. Purpose
 
 :::info Editor's note
 This text is a first draft. Further work is defered until it is clear for what (actual) purposes it will be used, so that we can make sure it is fit for such purposes.
 :::
-
-## 1. Purpose
 
 [According to ISO 42010](http://www.iso-architecture.org/ieee-1471/cm/#:~:text=The%20Core%20of%20Architecture%20Description), the core of any architecture description (of a "System of Interest") consists of a specification of (%%identified|identify%%) stakeholders and their concerns, and a set of '(architecture) views' (that are governed by '(architecture) viewpoints') that address these concerns. A high quality architecture description will be complete in its list of stakeholders (or stakeholder %%roles|role%%) and their concerns. Also, it will have addressed each of them in one or more of its views.
 

@@ -22,4 +22,4 @@ The following perspectives are meant to help you get an overview of [TEv2](@) an
 - **[Purpose](/docs/tev2/overview/tev2-purpose)**. This perspective states the objectives that we seek to realize with [TEv2](@).
 - **[Design Principles](/docs/tev2/overview/tev2-design-principles)**. This perspective describes the main ideas behind the ways in which [TEv2](@) has been designed.
 - **[Architecture](/docs/tev2/overview/tev2-architecture)**. This perspective provides an overview of the files, tools and how they interrelate.
-- **[Terminology Support](/docs/tev2/terms/patterns/terminology-support)**. This perspective describes the mental model we use to think about what we're doing.
+- **[Terminology Support](/docs/tev2/terms/patterns/pattern-terminology)**. This perspective describes the mental model we use to think about what we're doing.

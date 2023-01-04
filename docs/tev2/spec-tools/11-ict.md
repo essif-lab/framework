@@ -12,8 +12,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<!-- Use 'Mark' as an HTML tag, e.g. <Mark>text to mark</Mark?-->
-export const Mark = ({children}) => (
+<!-- Use 'Mark' as an HTML tag, e.g. <mark>text to mark</Mark?-->
+export const mark = ({children}) => (
   <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
     {children}
   </span> );
@@ -134,11 +134,11 @@ Integrity checks for the `terminology` section include:
 
 Integrity checks for the `scopes` section include:
 - `scopetags` must be a nonempty list of [scopetags](@).
-- `scopedir` must be a valid URL, that points to an existing directory resource other than the [scopedir](@) of the current [scope](@). This directory MUST contain a [SAF](@). <Mark>Do we need an option to test the integrity of such [SAFs](@)?</Mark>
+- `scopedir` must be a valid URL, that points to an existing directory resource other than the [scopedir](@) of the current [scope](@). This directory MUST contain a [SAF](@). <mark>Do we need an option to test the integrity of such [SAFs](@)?</mark>
 
 Integrity checks for the `entries` section consist of one part that is generic for all entries, and another part that depends on the value of the `termtype` field (so that checking of e.g. entries of type `concept` and of type `pattern` can have different checks.) The checks that every entry must pass include the following:
 - `scopetag` MUST also appear as the value of `terminology.scopetag`, or as an element in one of the `scopes.scopetags` elements.
-- `termtype` SHOULD be a value for which a [ctext template](@) exists. <Mark>This needs further specification.</Mark>
+- `termtype` SHOULD be a value for which a [ctext template](@) exists. <mark>This needs further specification.</mark>
 - `grouptags` MUST be a list of [grouptag](@) elements.
 - `license` MUST be an existing file in the directory pointed to by `scopedir`.
 - `status` SHOULD match an element in the list `scope.statuses` of the [SAF](@).
@@ -159,7 +159,7 @@ For specific kinds of [MRG entries](@), the following additional constraints MUS
 <TabItem value="concept"><br/>
 
 The following constraints MUST hold for [MRG entries](@) of type `concept`:
-- if a `glossaryText` contains a [term ref](@), then the [term ref](@) SHOULD be resolvable <Mark>(reference to the term-ref-integrity checks)</Mark>.
+- if a `glossaryText` contains a [term ref](@), then the [term ref](@) SHOULD be resolvable <mark>(reference to the term-ref-integrity checks)</mark>.
 - `hoverText` MUST NOT contain any [term ref](@), nor any other [markdown links](https://www.markdownguide.org/basic-syntax/#links).
 
 </TabItem>
@@ -188,27 +188,30 @@ As `pattern`s need to be discussed, we do not yet specify any constraints.
 </TabItem>
 </Tabs>
 
+:::info Editor's note
+Checks need to be added to ensure congruence between terms and any synonyms that are defined for them. For example, they should have the same value in various fields, e.g., `termType`, `isa` (but not `glossaryText` or `synonymOf`)
+:::
 ### Curated Text integrity
 
 The integrity of any [curated text](@) file requires the integrity conditions of the [MRG](@) file to be satisfied, as well as the following conditions:
--  <Mark>TBD</Mark>
+-  <mark>TBD</mark>
 
 #### Concepts
 
 The integrity of any [curated text](@) file that has `termType: concept` requires the integrity conditions of a [curated text](@) file to be satisfied, as well as the following conditions:
--  <Mark>TBD</Mark>
+-  <mark>TBD</mark>
 
 #### Patterns
 
 The integrity of any [curated text](@) file that has `termType: concept` requires the integrity conditions of a [curated text](@) file to be satisfied, as well as the following conditions:
--  <Mark>TBD</Mark>
+-  <mark>TBD</mark>
 
 
 ## Processing, Errors and Warnings
 
 The [ICT](@) starts by reading its command-line and configuration file. If the command-line has a key that is also found in the configuration file, the command-line key-value pair takes precedence. The resulting set of key-value pairs is tested for proper syntax and validity. Every improper syntax and every invalidity found will be logged.
 
-Then, the [ICT](@) <Mark>TBD</Mark>
+Then, the [ICT](@) <mark>TBD</mark>
 
 The [ICT](@) logs every error- and/or warning condition that it comes across while processing its configuration file, commandline parameters, and input files, in a way that helps tool-operators and document [authors](@) to identify and fix such conditions.
 
