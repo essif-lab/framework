@@ -1,0 +1,20 @@
+{
+  "name": "trrt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arabellastrange/framework-trrt.git"
+  },
+  "author": "chadha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arabellastrange/framework-trrt/issues"
+  },
+  "homepage": "https://github.com/arabellastrange/framework-trrt#readme"
+}
