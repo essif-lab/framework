@@ -4,12 +4,14 @@
 # documentation.
 
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll site to Pages
+name: trrt
 
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["trrt"]
+    branches: [trrt]
+  pull_request:
+    branches: [trrt]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -18,7 +20,7 @@ on:
 permissions:
   contents: read
   pages: write
-  id-token: write
+  id-token: write 
 
 # Allow one concurrent deployment
 concurrency:
@@ -36,8 +38,17 @@ jobs:
         uses: ruby/setup-ruby@ee2113536afb7f793eed4ce60e8d3b26db912da4 # v1.127.0
         with:
           ruby-version: '3.0' # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          bundler-cach  e: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
+      - name: NodeJs
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+          run: |
+            cd trrt
+            npm run buil d
+            npm intall -g .
+            trrt Run.js -d framework/docs/tev2/tests -o framework/docs/tev2/tests_converted/ -s framework/docs/tev2/saf.yaml
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
