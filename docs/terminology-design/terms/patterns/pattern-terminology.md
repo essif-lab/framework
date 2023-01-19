@@ -22,9 +22,9 @@ originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::caution
-The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
-As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
+The entire section on Terminology Design is still under construction.
 :::
+
 
 This [mental model](@) aims to serve the following purposes:
 - enabling members of a [community](@), as well as other [parties](@), to document their understanding of the [concepts](@) and other [knowledge artifacts](@) (e.g., [mental models](@)) that are relevant for their purposes (i.e., realizing their [objectives](@)).
