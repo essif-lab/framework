@@ -17,7 +17,7 @@ export class Resolver {
       private output: string;
       // todo switch scope
       private scope: string;
-      private tmpLocalMrgFile: string = ""; // = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
+      private tmpLocalMrgFile: string  = ""; //"docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
       private mrgWritePath = "./mrg.yaml"
       private config?: string;
       private directory: string = ".";
@@ -259,7 +259,7 @@ export class Resolver {
 
             files.forEach(async file => {
                   if (path.extname(file) == ".md" || path.extname(file) == ".html") {
-                        var data = fs.readFileSync(this.directory + file, 'utf8')
+                        var data = fs.readFileSync(this.directory + "/" + file, 'utf8')
                         this.log.trace("Reading: " + file);
                         data = this.interpertAndConvert(data, await this.readGlossary());
                         this.writeFile(file, data);

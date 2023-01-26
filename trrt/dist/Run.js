@@ -39,11 +39,10 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var Resolver_1 = require("./Resolver");
 var tslog_1 = require("tslog");
-var chalk = require('chalk');
-var clear = require('clear');
-var figlet = require('figlet');
-var path = require('path');
-var program = require('commander');
+var chalk = require("chalk");
+var clear = require("clear");
+var figlet = require("figlet");
+var program = require("commander");
 // const directoryPath: string = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\tests\\";
 // const outputPath: string = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\tests_converted\\";
 // const safPath = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\saf.yaml";
@@ -56,7 +55,7 @@ program
     .option('-s, --saf <path>', 'Path to read SAF file from (required)')
     .option('-c, --config <path>', 'Path to configuration .yaml file')
     .option('-d, --directory <path>', 'Path to directory where input files are located')
-    .option('-v, --version <vsn>', 'Default version to use when no version is set in term')
+    .option('-V, --defaultversion <vsn>', 'Default version to use when no version is set in term')
     .option('-I, --interpreter <type>', 'Set interpreter to Standard or Alt syntax')
     .option('-C, --converter <type>', 'Set converter to Mardownd HTTP or ESIFF output')
     .parse(process.argv);
@@ -71,7 +70,7 @@ function main() {
                     program.outputHelp();
                     return [3 /*break*/, 3];
                 case 1:
-                    resolver = new Resolver_1.Resolver(program.output, program.saf, program.directory, program.version, program.config, program.interpreter, program.converter);
+                    resolver = new Resolver_1.Resolver({ outputPath: program.output, scopePath: program.saf, directoryPath: program.directory, vsn: program.defaultversion, configPath: program.config, interpreterType: program.interpreter, converterType: program.converter });
                     return [4 /*yield*/, resolver.resolve()];
                 case 2:
                     if (_a.sent()) {

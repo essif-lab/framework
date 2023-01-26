@@ -48,9 +48,10 @@ var fs = require("fs");
 var path = require("path");
 var yaml = require("js-yaml");
 var Resolver = /** @class */ (function () {
-    function Resolver(outputPath, scopePath, directoryPath, vsn, configPath, interpreterType, converterType) {
+    function Resolver(_a) {
+        var outputPath = _a.outputPath, scopePath = _a.scopePath, directoryPath = _a.directoryPath, vsn = _a.vsn, configPath = _a.configPath, interpreterType = _a.interpreterType, converterType = _a.converterType;
         this.log = new tslog_1.Logger();
-        this.tmpLocalMrgFile = ""; // = "C:\\Users\\degachic\\Documents\\workspace\\trrt\\framework-trrt\\docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
+        this.tmpLocalMrgFile = "docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
         this.mrgWritePath = "./mrg.yaml";
         this.directory = ".";
         // todo switch scope based on version 
@@ -297,7 +298,7 @@ var Resolver = /** @class */ (function () {
                         switch (_c.label) {
                             case 0:
                                 if (!(path.extname(file) == ".md" || path.extname(file) == ".html")) return [3 /*break*/, 2];
-                                data = fs.readFileSync(this.directory + file, 'utf8');
+                                data = fs.readFileSync(this.directory + "/" + file, 'utf8');
                                 this.log.trace("Reading: " + file);
                                 _a = this.interpertAndConvert;
                                 _b = [data];
