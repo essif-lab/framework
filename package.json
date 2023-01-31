@@ -1,9 +1,9 @@
 {
   "name": "essif-lab",
   "version": "0.0.0",
-  "main": "./trrt/Run.js",
+  "main": "./trrt/dist/Run.js",
   "bin": {
-    "trrt": "./trrt/Run.js"
+    "trrt": "./trrt/dist/Run.js"
   },
   "private": true,
   "scripts": {

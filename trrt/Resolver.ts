@@ -17,7 +17,7 @@ export class Resolver {
       private output: string;
       // todo switch scope
       private scope: string;
-      private tmpLocalMrgFile: string  = ""; //"docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
+      private tmpLocalMrgFile: string  = "docs\\tev2\\glossaries\\mrg.mrgtest.yaml"; // temp
       private mrgWritePath = "./mrg.yaml"
       private config?: string;
       private directory: string = ".";
