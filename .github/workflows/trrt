@@ -28,6 +28,45 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  checks:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+      - name: Test Build
+        run: |
+          yarn install --frozen-lockfile
+          STAGING=true yarn docusaurus parse
+          STAGING=true yarn docusaurus glossary
+          STAGING=true yarn build
+          mv build public
+  gh-release:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+      - uses: webfactory/ssh-agent@v0.5.0
+        with:
+          ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
+      - name: Release to GitHub Pages
+        env:
+          USE_SSH: true
+          GIT_USER: "MarIliadi"
+        run: |
+          git config --global user.email "miliadi@admin.grnet.gr"
+          git config --global user.name "MarIliadi"
+          yarn install --frozen-lockfile
+          STAGING=true yarn docusaurus parse
+          STAGING=true yarn docusaurus glossary
+          STAGING=true yarn build
+          mv build public
+          STAGING=true yarn deploy
   # Build job
   build:
     runs-on: ubuntu-latest
@@ -46,9 +85,9 @@ jobs:
           node-version: '16.x'
           run: |
             cd trrt
-            npm run buil d
+            npm run build
             npm intall -g .
-            trrt Run.js -d framework/docs/tev2/tests -o framework/docs/tev2/tests_converted/ -s framework/docs/tev2/saf.yaml
+            trrt -o docs/tev2/tests_converted -s docs/tev2/saf.yaml -d docs/tev2/tests
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
