@@ -5,7 +5,7 @@ termType: concept
 isa:
 glossaryText: "a directory within a [scopedir](@) within which every file contains a [curated texts](@) for that [scope](@)."
 synonymOf:
-groupTags:
+grouptags:
 formPhrases: glossary-director{yies}, curatedir{ss}
 # Curation status
 status: proposed

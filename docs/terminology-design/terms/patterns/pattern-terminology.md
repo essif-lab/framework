@@ -5,7 +5,7 @@ termType: pattern
 isa:
 glossaryText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
 synonymOf:
-groupTags:
+grouptags:
 formPhrases: mental-model{ss}
 # Curation status
 status: proposed

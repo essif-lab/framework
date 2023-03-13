@@ -2,7 +2,7 @@
 # TEv2 Curated Text Header
 term: terminology
 termType: concept
-groupTags:
+grouptags:
 synonymOf:
 formPhrases: terminolog{yies}
 # Curation status

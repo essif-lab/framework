@@ -5,7 +5,7 @@ termType: concept
 isa: tag
 glossaryText: "a [tag](@) that is used to [identify](@) a specific version of a [terminology](@) from within a specific [scope](@)."
 synonymOf:
-groupTags:
+grouptags:
 formPhrases: versiontag{ss}, version-tag{ss}
 # Curation status
 status: proposed

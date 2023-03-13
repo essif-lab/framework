@@ -5,7 +5,7 @@ termType: concept
 isa:
 glossaryText: "a set of specifications and tools that caters for the [curationa](@) of [terminologies](@), as well as for its subsequent use in publications of different types (e.g. websites, whitepapers) and formats (e.g. html, LaTeX), as appropriate for different, individual [scopes](@)."
 synonymOf:
-groupTags:
+grouptags:
 formPhrases:
 # Curation status
 status: proposed

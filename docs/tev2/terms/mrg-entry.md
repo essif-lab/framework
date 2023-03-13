@@ -5,7 +5,7 @@ termType: concept
 isa:
 glossaryText: "A machine-readable (and interpretable) artifact that contains (pointers to) data and meta-data about a particular  [knowledge artifact](@), such as the associated [term(s)](@), its [definition](@), etc., to make it easy for IT-tools to create, e.g. documentation, [glossaries](@), [dictionaries](@), whitepapers, etc. that uses such [terms](@) ([definitions](@), etc.)."
 synonymOf:
-groupTags:
+grouptags:
 formPhrases: mrg-entr{yies}
 # Curation status
 status: proposed

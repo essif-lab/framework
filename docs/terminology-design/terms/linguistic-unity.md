@@ -5,7 +5,7 @@ termType: concept
 isa:
 glossaryText: "the property of a [community](@) of having a [terminology](@) (language) that every member of the [community](@) uses."
 synonymOf:
-groupTags:
+grouptags:
 formPhrases:
 # Curation status
 status: proposed

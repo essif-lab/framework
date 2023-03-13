@@ -5,7 +5,7 @@ termType: concept
 isa: term
 glossaryText: "a [term](@) that has the same (or similar) meaning as another [term](@)."
 synonymOf:
-groupTags:
+grouptags:
 formPhrases: synonym{ss}
 # Curation status
 status: proposed

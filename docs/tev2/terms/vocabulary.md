@@ -5,7 +5,7 @@ termType: concept
 isa:
 glossaryText: "the sum or stock of words employed by a language, group, individual, or work or in a field of knowledge."
 synonymOf:
-groupTags:
+grouptags:
 formPhrases: vocabular{yies}
 # Curation status
 status: proposed

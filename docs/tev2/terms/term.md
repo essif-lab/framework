@@ -5,7 +5,7 @@ termType: concept
 isa: identifier
 glossaryText: "a word or phrase (i.e.: text) that is used to represent ([identify](@)) a specific [knowledge artifact](@) (in some [scope](@))."
 synonymOf:
-groupTags:
+grouptags:
 formPhrases: term{ss}, word{ss}, phrase{ss}
 # Curation status
 status: proposed
