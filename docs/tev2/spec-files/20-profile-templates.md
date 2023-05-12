@@ -61,7 +61,7 @@ This template allows [interpreters](@) for [ingestible content](@) to be created
 | `isa`             | {{`isa`}}              | n  |            | concept of which this is a specialization. |
 | `glossaryText`    | {{`glossaryText`}}     | Y  |            | text that summarizes the meaning of the term. |
 | `synonyms`        | {{`synonymsList`}}     | n  |            | other words/phrases that mean the same. |
-| `groupTags`       | {{`groupTagsList`}}    | n  |            | comma-separated list of tags/keywords to which the term belongs. |
+| `grouptags`       | {{`grouptagsList`}}    | n  |            | comma-separated list of tags/keywords to which the term belongs. |
 | `formPhrases`     | {{`formPhrasesList`}}  | n  |            | comma-separated list of [formPhrases](https://essif-lab.github.io/framework/docs/tev2/spec-syntax/form-phrase-syntax) |
 | `status`          | {{`status`}}           | n  | `proposed` | status/phase in the lifecycle of the term. |
 | `created`         | {{`created`}}          | n  | today      | date when the term was first conceived/documented. |

@@ -5,7 +5,7 @@ termType: concept
 isa:
 glossaryText: "a person that has expert [knowledge](@) about a specific topic (subject matter), or skills in a particular area (domain)."
 synonymOf: subject-matter-expert
-groupTags:
+grouptags:
 formPhrases: domain-expert{ss}, subject-matter-expert{ss}
 # Curation status
 status: proposed

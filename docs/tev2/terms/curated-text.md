@@ -5,7 +5,7 @@ termType: concept
 isa:
 glossaryText: a text that documents a [concept](@) or other [knowledge artifact](@) of a specific [community](@) or other [party](@), and is located within a [scope](@) that is owned by that [community](@)/[party](@).
 synonymOf:
-groupTags:
+grouptags:
 formPhrases: curated-text{ss}, ctext{ss}
 # Curation status
 status: proposed

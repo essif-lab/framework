@@ -5,7 +5,7 @@ termType: concept
 isa: scopedir
 glossaryText: "a directory in a computer file system that contains all files that are either being [curated](@) within a particular [scope](@), or generated to serve some purpose within that [scope](@)."
 synonymOf:
-groupTags:
+grouptags:
 formPhrases: scope-director{yies}, scopedir{ss}
 # Curation status
 status: proposed

@@ -4,7 +4,7 @@ term: scoped-term
 termType: concept
 isa: term
 glossaryText: "a [term](@) that represents (and [identifies](@)) a specific [knowledge artifact](@) of a particular [community](@) (or [party](@))."
-groupTags:
+grouptags:
 # Curation status
 status: proposed
 created: 2022-06-06

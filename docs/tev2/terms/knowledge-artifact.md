@@ -5,7 +5,7 @@ termType: concept
 isa:
 glossaryText: "something that can be thought of as existing in a particular [knowledge](@), e.g. a [concept](@), or a [mental model](@)."
 synonymOf:
-groupTags:
+grouptags:
 formPhrases: knowledge-artifact{ss}
 # Curation status
 status: proposed

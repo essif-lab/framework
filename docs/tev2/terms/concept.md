@@ -5,7 +5,7 @@ termType: concept
 isa: knowledge-artifact
 glossaryText: "a [knowledge artifact](@) that captures the ideas/thoughts behind a classification of [entities](@) (what makes [entities](@) in that class 'the same')."
 synonymOf:
-groupTags:
+grouptags:
 formPhrases: concept{ss}
 # Curation status
 status: proposed
@@ -25,7 +25,11 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 ### Summary
-A **Concept** is a [knowledge artifact](@) that tries to capture the idea behind a classification of entities[^1], allowing us to reason about everything in the class as if it were one thing. For example, the ideas ([mental representations](https://en.wikipedia.org/wiki/Mental_representation)) you have when processing the sentences "I can drink beer from a beer glass' and 'I can drink beer from a coffee mug' shows that the concepts that are behind 'beer glass' and 'coffee mug' differ. Note that in order to communicate about this idea, we also need a word or phrase (i.e.: a [term](@) that we can use to refer to (instances of) this idea.
+A **Concept** is a [knowledge artifact](@) that tries to capture the idea behind a classification of entities[^1], allowing us to reason about everything in the class as if it were one thing. For example, the ideas ([mental representations](https://en.wikipedia.org/wiki/Mental_representation)) you have when processing the sentences "I can drink beer from a beer glass' and 'I can drink beer from a coffee mug' shows that the concepts that are behind 'beer glass' and 'coffee mug' differ. Note that in order to communicate about this idea, we also need a word or phrase (i.e.: a [term](@)[^2] that we can use to refer to (instances of) this idea).
+
+[^1]: WikiPedia has a concise [explanation of concepts](https://en.wikipedia.org/wiki/Concept). We use the term 'concept' as a [mental representation](https://en.wikipedia.org/wiki/Mental_representation).
+
+[^2]: For the difference between 'Concept' and 'Term', see https://simple.wikipedia.org/wiki/Concept.
 
 The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts (as a specialization of a [knowledge artifact](@)).
 
@@ -41,10 +45,3 @@ There is an important [distinction between concepts and the (multitude of) terms
 * different terms are used in different contexts for the same concept
 * in different contexts, a single term may refer to different concepts
 * to resolve terminological disputes, which usually are about the 'correct' meaning of a term, try to establish the criteria that the different participants use for the concept behind the term. That helps participants understand each others (different) positions, and provides a better basis for resolving the conflict.
-
-
-### Footnotes
-
-[^1]: WikiPedia has a concise [explanation of concepts](https://en.wikipedia.org/wiki/Concept). We use the term 'concept' as a [mental representation](https://en.wikipedia.org/wiki/Mental_representation).
-
-[^2]: For the difference between 'Concept' and 'Term', see https://simple.wikipedia.org/wiki/Concept.

@@ -5,7 +5,7 @@ termType: concept
 isa: identifier
 glossaryText: "an [identifier](@) that is used to [identify](@) (a specific trait of) a [term](@) that is [defined](@) in a particular [terminology](@)."
 synonymOf:
-groupTags:
+grouptags:
 formPhrases: term-identifier{ss}
 # Curation status
 status: proposed

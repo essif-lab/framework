@@ -5,7 +5,7 @@ termType: concept
 isa:
 glossaryText: "a mapping between the (tangible/textual) [terms](@) and (intangible) ideas/[concepts](@) - their meaning."
 synonymOf:
-groupTags:
+grouptags:
 formPhrases: semantics
 # Curation status
 status: proposed

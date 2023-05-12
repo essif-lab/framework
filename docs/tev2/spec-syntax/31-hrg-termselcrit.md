@@ -39,7 +39,7 @@ The following instructions can be used for adding [terms](@) (whitespace in the 
 | Instruction                | The instruction adds every [MRG entry](@) from the [MRG](@) to the [terminology under construction](@) ... |
 | :------------------------- | :--------------------------------------------------------------------- |
 | `terms [ <termslist> ]`    | whose `term`-field is an element of `<termslist>`. |
-| `tags  [ <grouptagslist> ]`| whose `groupTags` field contains an element that is also an element of `<grouptagslist>`. |
+| `tags  [ <grouptagslist> ]`| whose `grouptags` field contains an element that is also an element of `<grouptagslist>`. |
 | `*`                        | that exists within the [MRG](@) from which the [HRG](@) is generated. |
 
 Notes:
@@ -64,7 +64,7 @@ The following instructions can be used for removing [terms](@) from the set of s
 | Instruction   | The instruction removes every [MRG entry](@) from the [terminology under construction](@) ... |
 | :------------------------- | :--------------------------------------------------------------------- |
 | `-terms [ <termslist> ]` | whose `term`-field is an element of `<termslist>`. |
-| `-tags  [ <grouptagslist> ]` | whose `groupTags` field contains an element that is also an element of `<groutagslist>`. |
+| `-tags  [ <grouptagslist> ]` | whose `grouptags` field contains an element that is also an element of `<groutagslist>`. |
 
 Notes:
 - `<termslist>` and `<grouptagslist>` are comma-separated lists of [terms](@), and [grouptags](@) respectively.

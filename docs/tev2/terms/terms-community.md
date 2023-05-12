@@ -5,7 +5,7 @@ termType: concept
 isa: community
 glossaryText: "a [community](@) that maintains a [terminology](@) for the purpose of avoiding misunderstandings between its members as they collaborate."
 synonymOf:
-groupTags:
+grouptags:
 formPhrases: terms-communit{yies}
 # Curation status
 status: proposed
