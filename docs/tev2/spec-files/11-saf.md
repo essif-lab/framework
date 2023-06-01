@@ -56,7 +56,7 @@ scope:
   license: LICENSE.md # file that contains the (default) licensing conditions. Full URL is `scopedir`/`license`
   statuses: [ proposed, approved, deprecated ] # list of status tags that are defined for knowledge artifacts in this scope
   issues: https://github.com/essif-lab/framework/issues # URL where issues can be raised and handled
-  website: https://essif-lab.github.io/framework/docs/tev2/tev2-overview # home page of the terminology
+  website: https://essif-lab.github.io/framework/docs/tev2/tev2-overview # base URL for creating links to rendered versions of Curated Texts
   slack: https://trustoverip.slack.com/archives/C01BBNGRPUH # slack channel for discussions
   curators: # contacting individual curators
   - name: RieksJ
@@ -89,8 +89,7 @@ The following fields are defined for the `scope` section of a [SAF](@):
 | `license`     | Y | File in the root of the [scopedir](@) that contains the (default) licensing data. |
 | `statuses`    | n | Ordered list of [tags](@) that are defined in this [scope](@) for specifying stages in the life-cycle of [knowledge artifacts](@). The first element in the list represents the first stage, and the last element the last stage in the life-cycle. |
 | `issues`      | n | URL where issues can be reported and handled.|
-| `website`     | n | URL for the home page of the [terminology](@). |
-| `slack`       | n | URL for the slack channel for discussions. |
+| `website`     | n | base URL for creating links to rendered versions of [Curated Texts](@). It should also serve as the home page of the [terminology](@). |
 | `curators`    | n | Data that can be used to contact individual [curators](@). |
 <!--
 | `dateformat`  | n | Regex (PCRE) that has named capturing groups for YYYY, MM and DD, and that can be used to parse the date fields used in this [scope](@) ) (provided another regex doesn't override it). When not provided, tools should use the regex "**(?P<YYYY\>\d{4})-?(?P<MM\>\d{2})-?(?P<DD\>\d{2})(?P<tzone\>Z&#124[+-]\d{2}:\d{2})?**" for this (noting that in certain contexts, `\` characters may need to be escaped). |
