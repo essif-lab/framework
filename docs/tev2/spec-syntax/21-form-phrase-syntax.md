@@ -17,7 +17,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 
 This document specifies the syntax of [form phrases](@), i.e. texts that are
 - specified in the header field `formphrases` in [curated texts](@);
-- conformant to the (PCRE) regex `(?:\[\s*([a-z0-9_-{}]+)\s*(?:,\s*([a-z0-9_-{}]+))*\s*\])?` (see [Debuggex](https://www.debuggex.com/r/C0IZ2ZN-qnQzGB2B) for a visualization).
+- conformant to the (PCRE) regex `(?:\s*(?:[a-z0-9_-{}]+)\s*(?:,\s*([a-z0-9_-{}]+))*)?` (see [Debuggex](https://www.debuggex.com/r/20MNb2zgNwLDD-dD) for a visualization).
 - present in [MRG entries](@);
 - [used to convert](/docs/tev2/spec-tools/trrt#id) the `show text` parts of [term refs](@) into `term`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs).
 
