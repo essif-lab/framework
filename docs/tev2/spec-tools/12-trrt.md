@@ -152,11 +152,11 @@ Finding a [term ref](@) in the file can be done by using a regular expressions (
 [^1]: These regexps may need to be improved to cater for exceptional situations, so that they do not match e.g. pieces of code (such as the regex specifications we presented above). Alternatively, [TRRT](@) might specify specific syntax for pieces of text from within which a match with these regexps is ignored.
 
 - For the [basic syntax](/docs/tev2/spec-syntax/term-ref-syntax#basic-syntax), you can use the PCRE regex
-  - [``(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))``](https://www.debuggex.com/r/Resuq7vbjHUOUXSx) to find the `[` that starts a [term ref](@), and
+  - [``(?:(?<=[^`\\])|^)\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))``](https://www.debuggex.com/r/elHhGEpyv-6qDqTT) to find the `[` that starts a [term ref](@), and
   - [``(?P<showtext>.+?)\]\((?P<id>[a-z0-9_-]+?)(?:#(?P<trait>[a-z0-9_-]+?))?@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsntag>[a-z0-9_-]+?))?\)``](https://www.debuggex.com/r/OC3lxllHc9GleXES) to find the various parts of the [term ref](@) as (named) capturing groups.
 
 - For the [alternative syntax](/docs/tev2/spec-syntax/term-ref-syntax#alternative-syntax), you can use the PCRE regex
-  - [``(?<=[^`\\])\[(?=[^@\]]+@[:a-z0-9_-]*\](?:\([#a-z0-9_-]+\))?)``](https://www.debuggex.com/r/I_hsZPQ5DJRAjCNg) to find the `[` that starts a [term ref](@), and
+  - [``(?:(?<=[^`\\])|^)\[(?=[^@\]]+@[:a-z0-9_-]*\](?:\([#a-z0-9_-]+\))?)``](https://www.debuggex.com/r/LNYagr5GAL5nUE-t) to find the `[` that starts a [term ref](@), and
   - [``(?P<showtext>.+?)@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsntag>[a-z0-9_-]+?))?\](?P<ref>\((?P<id>[a-z0-9_-]*)(?:#(?P<trait>[a-z0-9_-]+?))?\))?``](https://www.debuggex.com/r/kuFFBhpWnB42WbDC) to subsequently obtain the various fields as (named) capturing groups from the PCRE regex.
 
 Note that when any of the named capturing groups is empty, it must be filled with its default value, as specified below.

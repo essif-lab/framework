@@ -15,7 +15,7 @@ scope:
   license: LICENSE.md # file that contains the (default) licensing conditions. Full URL is `scopedir`/`license`
   statuses: [ proposed, approved, deprecated ] # list of status tags that are defined for terminological artifacts in this scope
   issues: https://github.com/essif-lab/framework/issues # URL where issues can be raised and handled
-  website: https://essif-lab.github.io/framework/docs/tev2 # base URL for creating links to rendered versions of CTexts
+  website: https://essif-lab.github.io/framework/docs/tev2 # base URL for creating links to rendered versions of Curated Texts. It should also serve as the home page of the Tterminology.
   slack: https://trustoverip.slack.com/archives/C01BBNGRPUH # slack channel for discussions
   curators: # contacting individual curators
   - name: RieksJ

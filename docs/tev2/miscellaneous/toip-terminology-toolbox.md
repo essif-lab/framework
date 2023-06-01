@@ -215,10 +215,10 @@ the **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes markdown files th
 
 Finding a [term ref](@) in the file can be done by using a regular expression (regex).
 - For the original syntax, you can use the PCRE regex
-  - ``(?<=[^`\\])\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))`` to find the `[` that starts a [term ref](@), and
+  - ``(?:(?<=[^`\\])|^)\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))`` to find the `[` that starts a [term ref](@), and
   - ``(?P<showtext>.+?)\]\((?P<id>[a-z0-9_-]+?)(?:#(?P<headingid>[a-z0-9_-]+?))?@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsn>[a-z0-9_-]+?))?\)`` to find the various parts of the [term ref](@) as (named) capturing groups.
 - For the alternative syntax, you can use the PCRE regex
-  - ``(?<=[^`\\])\[(?=[^@\]]+@[:a-z0-9_-]*\](?:\([#a-z0-9_-]+\))?)`` to find the `[` that starts a [term ref](@), and
+  - ``(?:(?<=[^`\\])|^)\[(?=[^@\]]+@[:a-z0-9_-]*\](?:\([#a-z0-9_-]+\))?)`` to find the `[` that starts a [term ref](@), and
   - ``(?P<showtext>.+?)@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsn>[a-z0-9_-]+?))?\](?P<ref>\((?P<id>[a-z0-9_-]*)(?:#(?P<headingid>[a-z0-9_-]+?))?\))?`` to subsequently obtain the various fields as (named) capturing groups from the PCRE regex.
 
 Notes:
