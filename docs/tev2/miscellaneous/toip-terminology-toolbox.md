@@ -26,7 +26,7 @@ The initial/prototype versions of tools may not have implemented everything (e.g
 
 1. We will have the following 'tools' in the tt-toolbox, each of which can be run 'manually' (i.e. from the commandline), and also made part of a github CI street. Each tool is always called from the context of exactly one [scope](@):
 
-    - the **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes markdown files that contain so-called [term refs](@) (e.g. \[`terms community`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](@) are converted to regular [Markdown links](https://www.markdownguide.org/basic-syntax/#links), allowing such files to be further processed, e.g. by Github pages, Docusaurus or similar tools.
+    - the **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes files that contain so-called [term refs](@) and outputs a copy of these files in which these [term refs](@) are converted into so-called [renderable refs](@), i.e. texts that can be further processed by tools such as GitHub pages, Docusaurus, etc. The result of this is that the rendered document contains markups that help [readers](@) to quickly find more explanations of the [concept](@) or other [knowledge artifact](@) that is being referenced.
 
     - the **Glossary Generation Tool ([GGT](#mrgt))** takes a [Glossary Definition File (GDF)](#gdf) as input, and generates both a **Machine Readable [Glossary](@) ([MRG](#mrg))** and a **Human Readable [Glossary](@)**, both of which render the [terminology](@) of the [scope](@) from which the [GGT](#mrgt) is called. The[(GDF)](#gdf) specifies the set of [terms](term@) to be included, and for the HRG also how they are to be rendered.
 
@@ -209,7 +209,7 @@ There must be some license notification.
 :::
 ## Reference Resolution Tool (TRRT) {#trrt}
 
-the **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes markdown files that contain so-called [term refs](@) (e.g. \[`terms community`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](@) are converted to regular [Markdown links](https://www.markdownguide.org/basic-syntax/#links), allowing such files to be further processed, e.g. by Github pages, Docusaurus or similar tools. Future versions of the [TRRT](#trrt) may support conversion of [term refs](@) in other file types (e.g. HTML, LaTeX, docx, odt).
+The **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes files that contain so-called [term refs](@) and outputs a copy of these files in which these [term refs](@) are converted into so-called [renderable refs](@), i.e. texts that can be further processed by tools such as GitHub pages, Docusaurus, etc. The result of this is that the rendered document contains markups that help [readers](@) to quickly find more explanations of the [concept](@) or other [knowledge artifact](@) that is being referenced.
 
 ### Basic TRRT functions
 
@@ -233,7 +233,7 @@ When a [term ref](@) is located, and its parts are known, any parts that are omi
 
 To resolve a link, TRRT uses a (PCRE) regex that uses the names of the capturing groups, as well as `url`, which is the URL of the glossary that needs to be referenced. The default regex for this is `[$<showtext>]($<url>/glossary.$<vsn>/#$<id>)`.
 
-The [TRRT](#trrt) may provide an option to specify other defaults in a configuration file or as  command-line arguments.
+The [TRRT](#trrt) may provide an option to specify other defaults in a configuration file or as command-line arguments.
 
 The conversion of a [term ref](@) into a regular [Markdown link](https://www.markdownguide.org/basic-syntax/#links) can be done as follows, where any errors that occur are logged with a specific message, the file that is being processed, and the line number and character position of the [term ref](@) that caused the error:
 - Get the SAF of the [scope](@) from which the [TRRT](#trrt) is called;
