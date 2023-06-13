@@ -47,7 +47,7 @@ For the date of the tooling status, see the "<i>last updated on</i>" text at the
 ### Under development
 
 - [MRGT](/docs/tev2/spec-tools/mrgt), which is in [this toip repo](https://github.com/trustoverip/ctwg-toolkit-mrg). The tool works, but still has some [bugs/issues](https://github.com/trustoverip/ctwg-toolkit-mrg/issues) that need to be fixed.
-- [TRRT](/docs/tev2/spec-tools/trrt), which is currently actively developed by TNO in [this (private) repo](https://github.com/arabellastrange/framework-trrt).
+- [TRRT](/docs/tev2/spec-tools/trrt), which is currently actively developed by TNO in [this repo](https://github.com/essif-lab/trrt).
 
 ### High priority
 - ingress tools that convert wiki-files (and perhaps some other formats) into [curated texts](/docs/tev2/spec-files/00-ctext.md);

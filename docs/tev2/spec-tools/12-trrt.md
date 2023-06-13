@@ -28,10 +28,10 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 Term ref resolution is the same process as we use for ingestion, and other conversions, as (will be) explained in the [profiles template section](/docs/tev2/spec-files/profile-templates). When that 'conversion pattern' is stable and properly documented, we need to revise this section to align with those descriptions.
 :::
 
-The **Term Ref(erence) Resolution Tool ([TRRT](@))** takes markdown files that contain so-called [term refs](@) (e.g. \[`terms communities`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](@) are converted to so-called [renderable refs](@), i.e. texts that can be further processed by tools such as Github pages, Docusaurus (plugins), etc., the result of which is that the rendered document contains markups that help [readers](@) to quickly find more explanations of the [concept](@) or other [knowledge artifact](@) that is being referenced.
+The **Term Ref(erence) Resolution Tool ([TRRT](@))** takes files that contain so-called [term refs](@) and outputs a copy of these files in which these [term refs](@) are converted into so-called [renderable refs](@), i.e. texts that can be further processed by tools such as GitHub pages, Docusaurus, etc. The result of this is that the rendered document contains markups that help [readers](@) to quickly find more explanations of the [concept](@) or other [knowledge artifact](@) that is being referenced.
 
 There is currently one implementation of the tool:
-- the repo in which the tool is being developed is [here](https://github.com/arabellastrange/framework-trrt).
+- the repo in which the tool is being developed is [here](https://github.com/essif-lab/trrt).
 - the documentation is [<mark>tbd</mark>].
 
 <details>
@@ -84,9 +84,9 @@ Note that this text is not readily renderable in a browser. `<Term ...>` and `</
 
 Conceptually, [term ref](@) conversion is a simple two-step process:
 1. The [term ref](@) is interpreted, the result of which is a set of variables (or if regexes are used: [named capturing groups](https://riptutorial.com/regex/example/2479/named-capture-groups)) whose contents [identify](@) an [MRG entry](@) from a specific [MRG](@).
-2. Then, using the contents of the [identified](@) [MRG entry](@), the [term ref](@) is replaced with a [renderable ref](@), of the kind as specified by the [TRRT's](@) command line arguments or configuration file. Depending on the specific kind, the [renderable ref](@) may include all sorts of code that is processed further by other, third party rendering tools.
+2. Then, using the contents of the [identified](@) [MRG entry](@), the [term ref](@) is replaced by a converter with a [renderable ref](@), of the kind as specified by the [TRRT's](@) command line arguments or configuration file. Through the use of converters, the [renderable ref](@) may include all sorts of code that is processed further by other, third party rendering tools.
 
-By cleanly separating [term ref](@) interpretation from the part where it is overwritten with a [renderable ref](@), it becomes easy to extend the capabilities of the [TRRT](@) to include ways for rendering [term refs](@), e.g. for LaTeX, PDF, docx, odt and other formats, as well as for formats that we currently even know we would like to have.
+By cleanly separating [term ref](@) interpretation from the part where it is overwritten with a [renderable ref](@), it becomes easy to extend the capabilities of the [TRRT](@) to include ways for rendering [term refs](@), e.g. for LaTeX, PDF, docx, odt and other formats, as well as for formats that we currently do not even know we would like to have.
 
 In order to convert [term refs](@) into [renderable refs](@), [TRRT](@) expects the [SAF](@) and the [MRG](@) of the [scope](@) from within which it is being called, to be available. The [MRG](@) is used to resolve all links to [terms](@) that are part of the [terminology](@) of this [scope](@). The [SAF](@) is used to locate the [MRGs](@) of any (other) [scope](@) whose [scopetag](@) is used as part of a [term ref](@) that needs to be resolved.
 
@@ -119,15 +119,9 @@ The columns in the following table are defined as follows:
 | `input`    | `<globpattern>` | n | [Globpattern](https://en.wikipedia.org/wiki/Glob_(programming)#Syntax) that specifies the set of (input) files that are to be processed. |
 | `output`   | `<dir>`         | Y | Directory where output files are to be written. This directory is specified as an absolute or relative path. |
 | `scopedir` | `<path>`        | Y | Path of the [scope directory](@) from which the tool is called. It MUST contain the [SAF](@) for that [scope](@), which we will refer to as the 'current scope' for the [TRRT](@). |
-| `version`  | `<versiontag>`  | n | Version of the [terminology](@) that is to be used to resolve [term refs](@) for which neither a `scope` nor a `version` part has been specified (which is the most common case). It MUST match either the `vsntag` field, or an element of the `altvsntags` field of a [terminology](@)-version as specified in the [`versions` section](/docs/tev2/spec-files/saf#versions) of the [SAF](@). When not specified, its value is taken from the `vsntag` field in the [terminology section](/docs/tev2/spec-files/mrg#mrg-terminology) of the default [MRG](@) (which is [identified](@) by the contents of the `mrgfile` field (in the [`scope` section](/docs/tev2/spec-files/saf#terminology) of the [SAF](@)).
-| `method`   | `<methodarg>`   | n | <mark>Text, the syntax and semantics of which remain to be specified (see also the Editor's note below).</mark> When this parameter is omitted, [term refs](@) are replaced with some default [renderable ref](@). |
-
-:::info Editor's Note:
-Various `method`s are envisaged, yet remain to be properly specified. One example is where the [term ref](@) `[Actions](@)` would be replaced with a construct such as `<Term reference="action" popup="<popuptext>">actions</Term>`
-where<br/>
-- `<popuptext>` is the text provided in the `hoverText` field of the [MRG entry](@) whose `term` field is 'action', and
-- `<Term ...>` and `</Term>` represent a React component that supports linking and tooltip functionality, so that users hovering over the link will see a popup/tooltip with the text `<popuptext>`, and will navigate to the location of the (human readable, i.e. rendered) file that contains details and further explanations, as specified in the `navurl` field of the [MRG entry](@).
-:::
+| `version`  | `<versiontag>`  | n | Version of the [terminology](@) that is to be used to resolve [term refs](@) for which neither a `scope` nor a `version` part has been specified (which is the most common case). It MUST match either the `vsntag` field, or an element of the `altvsntags` field of a [terminology](@)-version as specified in the [`versions` section](/docs/tev2/spec-files/saf#versions) of the [SAF](@). When not specified, its value is taken from the `vsntag` field in the [terminology section](/docs/tev2/spec-files/mrg#mrg-terminology) of the default [MRG](@) (which is [identified](@) by the contents of the `mrgfile` field (in the [`scope` section](/docs/tev2/spec-files/saf#terminology) of the [SAF](@)). |
+| `interpreter` | `<type>`   | n | Allows for the switching between interpreter types. By default the `AltInterpreter` and `StandardInterpreter` are available. When this parameter is omitted, the basic [term ref](@) syntax is used. |
+| `converter` | `<type>`   | n | The type of converter which creates the [renderable refs](@). When this parameter is omitted, the Markdown converter is used. |
 
 ## Term Ref Resolution
 
@@ -139,7 +133,7 @@ The [term ref](@) resolution process has three steps:
 ### Interpretation of the Term Ref
 
 The following kinds of [term ref](@) syntaxes are (to be) supported:
-- the [basic syntax](/docs/tev2/spec-syntax/term-ref-syntax#basic-syntax), i.e. \[`showtext`\](`term`#`trait`@`scopetag`:`vsntag`);
+- the [basic syntax](/docs/tev2/spec-syntax/term-ref-syntax#basic-syntax), i.e. \[`show text`\](`term`#`trait`@`scopetag`:`vsntag`);
 - the [alternative syntax](/docs/tev2/spec-syntax/term-ref-syntax#alternative-syntax), e.g. \[`show text`@\], which basically moves the `@`-character from the basic syntax within the square brackets, which in many (if not most) cases is more convenient for [authors](@), but has the drawback that the rendering of the plain markdown text would be rendered as [show text@], which may be inconvenient.
 
 Interpretation of a [term ref](@) leads to the population of the following variables (or, in case regexes are used, named capturing groups):
@@ -147,19 +141,17 @@ Interpretation of a [term ref](@) leads to the population of the following varia
 <details>
 <summary>Using regexes to find the values for the variables</summary>
 
-Finding a [term ref](@) in the file can be done by using a regular expressions (regexes - you can use [debuggex](https://www.debuggex.com/) to see what these regexps do (make sure you choose PCRE as the regex flavor to work with)).[^1]
-
-[^1]: These regexps may need to be improved to cater for exceptional situations, so that they do not match e.g. pieces of code (such as the regex specifications we presented above). Alternatively, [TRRT](@) might specify specific syntax for pieces of text from within which a match with these regexps is ignored.
+Finding a [term ref](@) in the file can be done by using a regular expressions (regexes - you can use [debuggex](https://www.debuggex.com/) to see what these regexps do (make sure you choose PCRE as the regex flavor to work with)).
 
 - For the [basic syntax](/docs/tev2/spec-syntax/term-ref-syntax#basic-syntax), you can use the PCRE regex
-  - [``(?:(?<=[^`\\])|^)\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))``](https://www.debuggex.com/r/elHhGEpyv-6qDqTT) to find the `[` that starts a [term ref](@), and
-  - [``(?P<showtext>.+?)\]\((?P<id>[a-z0-9_-]+?)(?:#(?P<trait>[a-z0-9_-]+?))?@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsntag>[a-z0-9_-]+?))?\)``](https://www.debuggex.com/r/OC3lxllHc9GleXES) to find the various parts of the [term ref](@) as (named) capturing groups.
+  - [``(?:(?<=[^`\\])|^)\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))``](https://www.debuggex.com/r/G1uvznpNG1mhqEx5) to find the `[` that starts a [term ref](@), and
+  - [``(?<showtext>[^\n\]@]+)\]\((?:(?<id>[a-z0-9_-]*)?(?:#(?<trait>[a-z0-9_-]+))?)?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+))?\)``](https://www.debuggex.com/r/36D57uOvsnyPehh3) to find the various parts of the [term ref](@) as (named) capturing groups.
 
 - For the [alternative syntax](/docs/tev2/spec-syntax/term-ref-syntax#alternative-syntax), you can use the PCRE regex
-  - [``(?:(?<=[^`\\])|^)\[(?=[^@\]]+@[:a-z0-9_-]*\](?:\([#a-z0-9_-]+\))?)``](https://www.debuggex.com/r/LNYagr5GAL5nUE-t) to find the `[` that starts a [term ref](@), and
-  - [``(?P<showtext>.+?)@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsntag>[a-z0-9_-]+?))?\](?P<ref>\((?P<id>[a-z0-9_-]*)(?:#(?P<trait>[a-z0-9_-]+?))?\))?``](https://www.debuggex.com/r/kuFFBhpWnB42WbDC) to subsequently obtain the various fields as (named) capturing groups from the PCRE regex.
+  - [``(?:(?<=[^`\\])|^)\[(?=[^@\]]+@[:a-z0-9_-]*\](?:\([#a-z0-9_-]+\))?)``](https://www.debuggex.com/r/7dEYEdoc52QeIxf4) to find the `[` that starts a [term ref](@), and
+  - [``(?<showtext>[^\n\]@]+?)@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+?))?\](?:\((?<id>[a-z0-9_-]*)(?:#(?<trait>[a-z0-9_-]+?))?\))?``](https://www.debuggex.com/r/tMBiAk_W9ipNc9Mm) to subsequently obtain the various fields as (named) capturing groups from the PCRE regex.
 
-Note that when any of the named capturing groups is empty, it must be filled with its default value, as specified below.
+Note that when a value of a named capturing group is empty, it is filled by the [TRRT](@) with (default) values according to the specifications below.
 </details>
 
 #### `showtext` (required) {#showtext}

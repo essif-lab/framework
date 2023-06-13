@@ -26,7 +26,7 @@ The initial/prototype versions of tools may not have implemented everything (e.g
 
 1. We will have the following 'tools' in the tt-toolbox, each of which can be run 'manually' (i.e. from the commandline), and also made part of a github CI street. Each tool is always called from the context of exactly one [scope](@):
 
-    - the **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes markdown files that contain so-called [term refs](@) (e.g. \[`terms community`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](@) are converted to regular [Markdown links](https://www.markdownguide.org/basic-syntax/#links), allowing such files to be further processed, e.g. by Github pages, Docusaurus or similar tools.
+    - the **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes files that contain so-called [term refs](@) and outputs a copy of these files in which these [term refs](@) are converted into so-called [renderable refs](@), i.e. texts that can be further processed by tools such as GitHub pages, Docusaurus, etc. The result of this is that the rendered document contains markups that help [readers](@) to quickly find more explanations of the [concept](@) or other [knowledge artifact](@) that is being referenced.
 
     - the **Glossary Generation Tool ([GGT](#mrgt))** takes a [Glossary Definition File (GDF)](#gdf) as input, and generates both a **Machine Readable [Glossary](@) ([MRG](#mrg))** and a **Human Readable [Glossary](@)**, both of which render the [terminology](@) of the [scope](@) from which the [GGT](#mrgt) is called. The[(GDF)](#gdf) specifies the set of [terms](term@) to be included, and for the HRG also how they are to be rendered.
 
@@ -209,21 +209,21 @@ There must be some license notification.
 :::
 ## Reference Resolution Tool (TRRT) {#trrt}
 
-the **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes markdown files that contain so-called [term refs](@) (e.g. \[`terms community`\](`terms-community`@`ctwg`)) and creates a copy for each of these files in which all [term refs](@) are converted to regular [Markdown links](https://www.markdownguide.org/basic-syntax/#links), allowing such files to be further processed, e.g. by Github pages, Docusaurus or similar tools. Future versions of the [TRRT](#trrt) may support conversion of [term refs](@) in other file types (e.g. HTML, LaTeX, docx, odt).
+The **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes files that contain so-called [term refs](@) and outputs a copy of these files in which these [term refs](@) are converted into so-called [renderable refs](@), i.e. texts that can be further processed by tools such as GitHub pages, Docusaurus, etc. The result of this is that the rendered document contains markups that help [readers](@) to quickly find more explanations of the [concept](@) or other [knowledge artifact](@) that is being referenced.
 
 ### Basic TRRT functions
 
 Finding a [term ref](@) in the file can be done by using a regular expression (regex).
-- For the original syntax, you can use the PCRE regex
-  - ``(?:(?<=[^`\\])|^)\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))`` to find the `[` that starts a [term ref](@), and
-  - ``(?P<showtext>.+?)\]\((?P<id>[a-z0-9_-]+?)(?:#(?P<headingid>[a-z0-9_-]+?))?@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsn>[a-z0-9_-]+?))?\)`` to find the various parts of the [term ref](@) as (named) capturing groups.
-- For the alternative syntax, you can use the PCRE regex
-  - ``(?:(?<=[^`\\])|^)\[(?=[^@\]]+@[:a-z0-9_-]*\](?:\([#a-z0-9_-]+\))?)`` to find the `[` that starts a [term ref](@), and
-  - ``(?P<showtext>.+?)@(?P<scopetag>[a-z0-9_-]*)(?::(?P<vsn>[a-z0-9_-]+?))?\](?P<ref>\((?P<id>[a-z0-9_-]*)(?:#(?P<headingid>[a-z0-9_-]+?))?\))?`` to subsequently obtain the various fields as (named) capturing groups from the PCRE regex.
+- For the [basic syntax](/docs/tev2/spec-syntax/term-ref-syntax#basic-syntax), you can use the PCRE regex
+  - [``(?:(?<=[^`\\])|^)\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))``](https://www.debuggex.com/r/G1uvznpNG1mhqEx5) to find the `[` that starts a [term ref](@), and
+  - [``(?<showtext>[^\n\]@]+)\]\((?:(?<id>[a-z0-9_-]*)?(?:#(?<trait>[a-z0-9_-]+))?)?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+))?\)``](https://www.debuggex.com/r/36D57uOvsnyPehh3) to find the various parts of the [term ref](@) as (named) capturing groups.
+
+- For the [alternative syntax](/docs/tev2/spec-syntax/term-ref-syntax#alternative-syntax), you can use the PCRE regex
+  - [``(?:(?<=[^`\\])|^)\[(?=[^@\]]+@[:a-z0-9_-]*\](?:\([#a-z0-9_-]+\))?)``](https://www.debuggex.com/r/7dEYEdoc52QeIxf4) to find the `[` that starts a [term ref](@), and
+  - [``(?<showtext>[^\n\]@]+?)@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+?))?\](?:\((?<id>[a-z0-9_-]*)(?:#(?<trait>[a-z0-9_-]+?))?\))?``](https://www.debuggex.com/r/tMBiAk_W9ipNc9Mm) to subsequently obtain the various fields as (named) capturing groups from the PCRE regex.
 
 Notes:
 - You can use [debuggex](https://www.debuggex.com/) to see what these regexps do (make sure you choose PCRE as the regex flavor to work with).
-- These regexps should be improved to cater for exceptional situations, so that they do not match e.g. pieces of code (such as the regex specifications we presented above). Alternatively, [TRRT](#trrt) might specify specific syntax for pieces of text from within which a match with these regexps is ignored.
 
 When a [term ref](@) is located, and its parts are known, any parts that are omitted (empty capturing groups) should be provided with their default value, as follows:
 - the `scopetag` default refers to the [scope](@) from which the [TRRT](#trrt) is called.
@@ -233,7 +233,7 @@ When a [term ref](@) is located, and its parts are known, any parts that are omi
 
 To resolve a link, TRRT uses a (PCRE) regex that uses the names of the capturing groups, as well as `url`, which is the URL of the glossary that needs to be referenced. The default regex for this is `[$<showtext>]($<url>/glossary.$<vsn>/#$<id>)`.
 
-The [TRRT](#trrt) may provide an option to specify other defaults in a configuration file or as  command-line arguments.
+The [TRRT](#trrt) may provide an option to specify other defaults in a configuration file or as command-line arguments.
 
 The conversion of a [term ref](@) into a regular [Markdown link](https://www.markdownguide.org/basic-syntax/#links) can be done as follows, where any errors that occur are logged with a specific message, the file that is being processed, and the line number and character position of the [term ref](@) that caused the error:
 - Get the SAF of the [scope](@) from which the [TRRT](#trrt) is called;
