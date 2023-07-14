@@ -1,10 +1,7 @@
----
-id: tev2-common-understanding
-sidebar_label: Understanding One Another
-displayed_sidebar: tev2SideBar
-scopetag: tev2
-date: 20220513
----
+$1:::caution
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications
+:::
+
 
 # Enabling a Common Understanding in a Community
 

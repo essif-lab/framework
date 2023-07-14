@@ -1,12 +1,7 @@
----
-id: profile-templates
-sidebar_label: Profile Templates
-hide_table_of_contents: true
-scopetag: tev2
-date: 20220816
----
+$1:::caution
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications
+:::
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Profile Templates
 
