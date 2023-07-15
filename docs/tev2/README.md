@@ -7,6 +7,10 @@ date: 20220402
 
 # Contributing to TEv2 Tools
 
+:::caution
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/tev2-readme
+:::
+
 :::info Editor's note
 This documentation is based on the [ToIP TT-Tools Proposal](https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/toip-terminology-toolbox) memo, which we currently keep as a reference.
 :::

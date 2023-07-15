@@ -14,6 +14,10 @@ import TabItem from '@theme/TabItem';
 # Machine Readable Glossary (MRG)
 
 :::caution
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/mrg
+:::
+
+:::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::

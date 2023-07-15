@@ -9,6 +9,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Using Markdown files in a Git Repo
 
+:::caution
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/contributors-repo
+:::
+
 <img
   alt="This page is under construction"
   src={useBaseUrl('images/wip/wip-under-construction.png')}

@@ -8,6 +8,10 @@ date: 20230731
 
 # MRG Import Tool
 
+:::caution
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/mrg-importer
+:::
+
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 import Tabs from '@theme/Tabs';

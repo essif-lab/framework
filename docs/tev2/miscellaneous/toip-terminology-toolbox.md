@@ -8,6 +8,10 @@ date: 20220421
 
 # ToIP TT-Tools Proposal
 
+:::caution
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/toip-terminology-toolbox
+:::
+
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info

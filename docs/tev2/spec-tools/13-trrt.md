@@ -8,6 +8,10 @@ date: 20220421
 
 # Term Reference Resolution Tool
 
+:::caution
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/trrt
+:::
+
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 import Tabs from '@theme/Tabs';

@@ -9,6 +9,10 @@ date: 20220801
 
 # Human Readable Dictionary Generation Tool
 
+:::caution
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/hrdt
+:::
+
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 export const mark = ({children}) => (

@@ -9,6 +9,10 @@ date: 20220801
 
 # Machine Readable Dictionary Generation Tool
 
+:::caution
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/mrdt
+:::
+
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 <img

@@ -7,6 +7,10 @@ date: 20220819
 
 # TEv2 - Glossary and Mental Models
 
+:::caution
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/tev2-glossary
+:::
+
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::caution

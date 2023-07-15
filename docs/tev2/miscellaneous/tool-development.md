@@ -9,6 +9,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Tool Development
 
+:::caution
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/tool-development
+:::
+
 This page intends to provide (lots of pointers to) information that people may need in order to decide whether or not to contribute to the construction of the Terminology Engine v2 ([TEv2](@)) toolbox, and if so, determine where to help out.
 
 ## What it is about
