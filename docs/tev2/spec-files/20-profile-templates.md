@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # Profile Templates
 
 :::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/profile-templates
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-files/profile-templates
 :::
 
 :::caution

@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 # Scope Administration File (SAF)
 
 :::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/saf
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-files/saf
 :::
 
 :::caution

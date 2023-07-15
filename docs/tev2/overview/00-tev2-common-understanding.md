@@ -9,7 +9,7 @@ date: 20220513
 # Enabling a Common Understanding in a Community
 
 :::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/tev2-common-understanding
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/overview/tev2-common-understanding
 :::
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

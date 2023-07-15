@@ -10,7 +10,7 @@ date: 20221127
 # Machine Readable Glossary Generation Tool
 
 :::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/mrgt
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-tools/mrgt
 :::
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

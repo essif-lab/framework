@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # Curated Texts
 
 :::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/ctext
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-files/ctext
 :::
 
 :::caution

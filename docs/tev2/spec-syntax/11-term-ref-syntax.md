@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # Term References - Syntax
 
 :::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/term-ref-syntax
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-syntax/term-ref-syntax
 :::
 
 :::caution

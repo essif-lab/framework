@@ -1,5 +1,5 @@
 ---
-id: tev2-readme
+id: readme
 sidebar_label: Contributing
 scopetag: tev2
 date: 20220402
@@ -8,7 +8,7 @@ date: 20220402
 # Contributing to TEv2 Tools
 
 :::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/tev2-readme
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/readme
 :::
 
 :::info Editor's note
