@@ -1,7 +1,12 @@
-$1:::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications
-:::
+---
+id: ctext
+sidebar_label: Curated Texts
+hide_table_of_contents: true
+scopetag: tev2
+date: 20220713
+---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Curated Texts
 
@@ -39,6 +44,7 @@ Every [curated text](@) consists of two parts: a ([YAML](https://yaml.org/spec/1
 term: curated-text
 termType: concept
 isa:
+glossaryTerm:
 glossaryText: a text that documents a [concept](@) or other [knowledge artifact](@) of a specific [community](@) or other [party](@), and is located within a [scope](@) that is owned by that [community](@)/[party](@).
 synonymOf:
 grouptags:
@@ -83,23 +89,24 @@ The following table specifies the **generic header fields**:
   <summary>Legend</summary>
 
 1. **`Name`** contains the field name;
-2. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that the field is required, unless the [curated text](@) documents a [synonym](@) of another [term](@), in which case it is optional. The `F` means that we reserve this field for Future Use.
+2. **`Req'd`** specifies whether (`Y`) or not (`n`, or `F`) the field is required to be present as a header field. The `F` means that we reserve this field for Future Use.
 3. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
 
 </details>
 
 | Name            | Req'd | Description |
 | --------------- | :---: | ----------- |
-| `term`            | Y  | [term](@) that is used to represent ([identify](@)) a specific [knowledge artifact](@).<br/>The `term`-field of a [term identifier](@) that refers to this [curated text](@) must (be resolved to) match this value.<br/>Must satisfy regex `[a-z0-9_-]+`. |
-| `termType`        | n  | [Text](term-type@) that [identifies](@) the kind of [knowledge artifact](@) that this [curated text](@) describes. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
-| `isa`             | n  | [concept](@) of which this is a specialization. |
-| `glossaryText`    | Y* | Text that is used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). This text MUST be expected to contain [term refs](@). |
-| `synonymOf`       | n  | [term identifier](@) that [identifies](@) the [term](@) of which this is a [synonym](@). |
-| `grouptags`       | n  | List of [grouptags](@), each of which signifies that the [(scoped) term](@) that this [curated text](@) documents, is part of the group of [terms](@) that it represents.<br/>Example: `[tev2, management]`.<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-]+)\s*(?:,\s*([a-z0-9_-]+))*\s*\])?`](https://www.debuggex.com/r/a51CXl1NzR3kwihT). |
-| `formPhrases`     | n  | List of [texts](formphrase@) that are [used to convert](/docs/tev2/spec-tools/trrt#id) the `show text` parts of [term refs](@) into `term`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs). For details, see ['Syntax Specs - Form Phrases](/docs/tev2/spec-syntax/form-phrase-syntax). |
-| `status`          | n  | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
-| `created`         | n  | Date at which of the [curated text](@) was created, in the date format as used within this [scope](@). |
-| `updated`         | n  | Date at which of the [curated text](@) was last modified, in the date format as used within this [scope](@). |
-| `contributors`    | n  | Text that shows (or refers to) the people that have contributed to this [curated text](@). |
-| `attribution`     | n  | Text that credits the original creation of the texts in the document. |
-| `originalLicense` | n  | Reference to the license of the work from which the texts were derived. |
+| `term`            | Y | [term](@) that is used to represent ([identify](@)) a specific [knowledge artifact](@).<br/>The `term`-field of a [term identifier](@) that refers to this [curated text](@) must (be resolved to) match this value.<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `termType`        | n | [Text](term-type@) that [identifies](@) the kind of [knowledge artifact](@) that this [curated text](@) describes. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`.<br/>Must satisfy regex `[a-z0-9_-]+`. |
+| `isa`             | n | [knowledge artifact](@) of which this is a specialization. |
+| `glossaryTerm`    | n | Text that is used for the [term](@) in a human readable [glossary](@). For example, for a [term](@) called `member`, you may want to specify a glossaryTerm `member (of a [ommunity](@))`. |
+| `glossaryText`    | n | Text that is used as the (raw) contents for the entry of this [term](@) in a human readable [glossary](@). This text MUST be expected to contain [term refs](@). |
+| `synonymOf`       | n | [term identifier](@) that [identifies](@) the [term](@) of which this is a [synonym](@). |
+| `grouptags`       | n | List of [grouptags](@), each of which signifies that the [(scoped) term](@) that this [curated text](@) documents, is part of the group of [terms](@) that it represents.<br/>Example: `[tev2, management]`.<br/>Must satisfy regex [`(?:\[\s*([a-z0-9_-]+)\s*(?:,\s*([a-z0-9_-]+))*\s*\])?`](https://www.debuggex.com/r/a51CXl1NzR3kwihT). |
+| `formPhrases`     | n | List of [texts](formphrase@) that are [used to convert](/docs/tev2/spec-tools/trrt#id) the `show text` parts of [term refs](@) into `term`s, for the purpose of accommodating plural forms (for nouns) or conjugate forms (for verbs). For details, see ['Syntax Specs - Form Phrases](/docs/tev2/spec-syntax/form-phrase-syntax). |
+| `status`          | n | Text that identifies the status of the term. ([Communities](@) of) [scopes](@) may specify values for this field. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
+| `created`         | n | Date at which of the [curated text](@) was created, in the date format as used within this [scope](@). |
+| `updated`         | n | Date at which of the [curated text](@) was last modified, in the date format as used within this [scope](@). |
+| `contributors`    | n | Text that shows (or refers to) the people that have contributed to this [curated text](@). |
+| `attribution`     | n | Text that credits the original creation of the texts in the document. |
+| `originalLicense` | n | Reference to the license of the work from which the texts were derived. |

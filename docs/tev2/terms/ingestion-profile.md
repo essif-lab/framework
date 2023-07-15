@@ -3,6 +3,7 @@
 term: ingestion-profile
 termType: concept
 isa:
+glossaryTerm:
 glossaryText: the specification of a method by which files that are in a particular place and format (e.g., wiki files) are turned into a [curated text](@).
 synonymOf:
 grouptags:

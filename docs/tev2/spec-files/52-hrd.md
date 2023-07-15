@@ -1,7 +1,10 @@
-$1:::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications
-:::
-
+---
+id: hrd
+sidebar_label: HRD (Human Readable Dictionary)
+hide_table_of_contents: true
+scopetag: tev2
+date: 20220503
+---
 
 # Human Readable Dictionary (HRD)
 

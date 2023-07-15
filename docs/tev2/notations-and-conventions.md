@@ -5,11 +5,6 @@ date: 20220803
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-:::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications
-:::
-
-
 # Notations and Conventions
 
 This document provides an overview of the notations and conventions being used within this [scope](@).

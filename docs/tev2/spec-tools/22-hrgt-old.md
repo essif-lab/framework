@@ -1,7 +1,11 @@
-$1:::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications
-:::
-
+---
+id: hrgt-old
+sidebar_label: HR Glossary Generation (previous version)
+displayed_sidebar: tev2SideBar
+hide_table_of_contents: true
+scopetag: tev2
+date: 20220421
+---
 
 # Human Readable Glossary Generation Tool
 

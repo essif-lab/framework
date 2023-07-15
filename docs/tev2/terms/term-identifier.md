@@ -3,6 +3,7 @@
 term: term-identifier
 termType: concept
 isa: identifier
+glossaryTerm:
 glossaryText: "an [identifier](@) that is used to [identify](@) (a specific trait of) a [term](@) that is [defined](@) in a particular [terminology](@)."
 synonymOf:
 grouptags:

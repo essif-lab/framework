@@ -1,7 +1,11 @@
-$1:::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications
-:::
-
+---
+id: hrgt
+sidebar_label: HR Glossary Generation
+displayed_sidebar: tev2SideBar
+// hide_table_of_contents: true
+scopetag: tev2
+date: 20230103
+---
 
 # Human Readable Glossary Generation Tool
 
@@ -21,7 +25,11 @@ The entire section on Terminology Engine v 2 (TEv2) is still under construction.
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
 :::
 
-The **Human Readable Glossary generation Tool ([HRGT](@))** generates a Human Readable [Glossary](@) ([HRG](@)) that consists of (a selection of) the [terms](@) that are part of the [terminology](@) of a specific [scope](@). The [HRGT](@) takes one specific [MRG](@) as its input, and converts (a selection of) its [MRG entries](@) into one of the supported output formats, e.g. HTML, or PDF. The selection of the [MRG entries](@), as well as the specification of the output format, headers, footers, etc., can be configured as well as customized. Thus, the [HRGT](@) provides a flexible means for creating all sorts of outputs that are either already human readable or can be processed further by third-party rendering tools, such as [github pages](https://pages.github.com/) or [Docusaurus](https://docusaurus.io/docs/docs-introduction), etc. (see also: [Using the Tools](/docs/tev2/tev2-toolbox)).
+The **Human Readable Glossary generation Tool ([HRGT](@))** generates a Human Readable [Glossary](@) ([HRG](@)) that consists of (a selection of) the [terms](@) that are part of the [terminology](@) of a specific [scope](@). 
+
+The [HRGT](@) takes one specific [MRG](@) as its input, and converts (a selection of) its [MRG entries](@) into one of the supported output formats, e.g. HTML, or PDF. The file that contains the [MRG](@) is named `mrg.<scopetag>.<vsntag>.yaml`, where the combination of `<scopetag>` and `<vsntag>` identify a particular [terminology](@). See the [MRG file naming conventions](/docs/tev2/spec-files/mrg#mrg-file-naming) for details.
+
+The selection of the [MRG entries](@) that are to be included in the [HRG](@), as well as the specification of the output format, headers, footers, etc., can be configured as well as customized. Thus, the [HRGT](@) provides a flexible means for creating all sorts of outputs that are either already human readable or can be processed further by third-party rendering tools, such as [github pages](https://pages.github.com/) or [Docusaurus](https://docusaurus.io/docs/docs-introduction), etc. (see also: [Using the Tools](/docs/tev2/tev2-toolbox)).
 
 There is currently one implementation of the tool underway:
 - the repo in which the tool is being developed is [<mark>tbd</mark>].
@@ -55,7 +63,7 @@ The columns in the following table are defined as follows:
 | `config`      | n | Path (including the filename) of the tool's (YAML) configuration file. This file contains the default key-value pairs to be used. Allowed keys (and the associated values) are documented in this table. Command-line arguments override key-value pairs specified in the configuration file. This parameter MUST NOT appear in the configuration file itself. |
 | `scopedir`    | n | Path of the [scope directory](@) from which the tool is called. It MUST contain the [SAF](@) for that [scope](@), which we will refer to as the 'current scope' for the [HRGT](@). If omitted, the current directory is assumed to tbe the [scope directory](@). |
 | `input`       | n | [Globpattern](https://en.wikipedia.org/wiki/Glob_(programming)#Syntax) that specifies the set of (input) files ([MRGs](@)) that are to be processed. If omitted, the [HRG](@) is generated for the default [MRG](@) of the current scope (as specified in the `mrgfile` field of the `scope` section in its [SAF](@). |
-| `output`      | n | text that is used as the first part of the name of the file(s) that contain(s) the generated [HRG(s)](@). If omitted, the text `glossary-` will be used. Thus, output file names consists of the concatenation of `output` and the input filename, where the file extension depends on the type of output that will be written (e.g.: `.html`, `.pdf`, etc.). |
+| `output`      | n | text that is used as the last part of the name of the file(s) that contain(s) the generated [HRG(s)](@). This text must specify an appropriate extension, such as HTML or PDF. The filename(s) will be of the form `hrg.<scopetag>.<vsntag>.<output>`, where `<scopetag>` is the [scopetag](@) of the [scope](@) within which the [HRG](@) is generated, and `<vsntag>` [identifies](@) the version of the [terminology](@) in that [scope](@). From this, it follows that an [MRG](@)-file exists named `mrg.<scopetag>.<vsntag>.yaml`, which is used as the source for the entries in the [HRG](@). |
 | `termselcrit` | n | List of [term selection criteria](@) that are used to generate (this version of) the [scope's](@) [terminology](@). If omitted, all [MRG entries](@) from the source [MRG](@) will be selected. See [Terminology Construction](/docs/tev2/spec-tools/terminology-construction) for details. |
 | `method`      | n | <mark>Text, the syntax and semantics of which remain to be specified (see also the Editor's note below).</mark> When this parameter is omitted, the [HRG](@) is generated as an HTML file. |
 | `license`     | n | File that contains the (default) licensing conditions. Full URL is `scopedir`/`license`. If not specified, its value defaults to the value of the `license` field in the `scope` section (of the [SAF](@) of the current scope). The purpose of this field is to enable different [HRGs](@) to have different licenses. |
@@ -84,7 +92,9 @@ Then, the [HRGT](@) reads the specified input files (in arbitrary order), and pr
 - select the (subset of) [MRG entries](@) from that [MRG](@) that must appear in the [HRG](@) - see [HRG Term Selection](/docs/tev2/spec-syntax/hrg-termselcrit) for details. Conceptually, this will result in an [MRG](@) that only contains [MRG entries](@) that need to appear in the [HRG](@) as well;
 - (alphabetically) sort these entries;
 - convert each entry into a specific 'rendered' format (as specified by the user), thereby resolving any [term refs](@) (by appropriately calling the [TRRT](@))[^1], adding hyperlinks to the [curated text](@) that the entry relates to, 'meta-data' (e.g. the associated [grouptags](@), contributors, etc.), and anything else, as required for the particular kind of [HRG](@) that is being generated;
-- concatenate these rendered entries, optionally including/inserting some navigation bars (e.g. before a new letter starts);
+:::info Editor's note
+The [TRRT](https://github.com/tno-terminology-design/trrt) has a nice setup for implementing [text conversion steps](/docs/tev2/overview/tev2-design-principles#text-conversion-steps). We should check that out and adapt the specifications text in this section so that this stuff can be reused as much as possible.
+:::
 - construct the [HRG](@) by adding (rendered) header- and footer-material and (optionally) licensing information;
 - write the [HRG](@) to the designated output file.
 

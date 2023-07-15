@@ -3,6 +3,7 @@
 term: vocabulary
 termType: concept
 isa:
+glossaryTerm:
 glossaryText: "the sum or stock of words employed by a language, group, individual, or work or in a field of knowledge."
 synonymOf:
 grouptags:

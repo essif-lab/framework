@@ -1,7 +1,11 @@
-$1:::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications
-:::
+---
+id: tev2-spec-files
+hide_table_of_contents: false
+scopetag: tev2
+date: 20220819
+---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # TEv2 - Files (Structure, Specs)
 

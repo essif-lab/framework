@@ -3,6 +3,7 @@
 term: scopetag
 termType: concept
 isa: tag
+glossaryTerm:
 glossaryText: "a [tag](@) that is used to [identify](@) [scopes](@) from within a specific [scope](@)"
 synonymOf:
 grouptags:

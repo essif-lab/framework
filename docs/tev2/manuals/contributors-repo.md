@@ -1,7 +1,11 @@
-$1:::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications
-:::
+---
+id: contributors-repo
+sidebar_label: Using Git Repo Markdown
+scopetag: tev2
+date: 20220513
+---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Using Markdown files in a Git Repo
 

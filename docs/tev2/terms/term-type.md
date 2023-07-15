@@ -3,6 +3,7 @@
 term: term-type
 termType: concept
 isa: identifier
+glossaryTerm:
 glossaryText: "an [identifier](@) that is used to [identify](@) the particular *kind* of [knowledge artifact](@) that a [term name](@) represents. Examples include `concept`, `relation`, `pattern` (or `mental-model`)."
 synonymOf:
 grouptags:
