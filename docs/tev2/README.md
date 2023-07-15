@@ -7,8 +7,8 @@ date: 20220402
 
 # Contributing to TEv2 Tools
 
-:::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/readme
+:::danger This page is deprecated.
+The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/readme
 :::
 
 :::info Editor's note

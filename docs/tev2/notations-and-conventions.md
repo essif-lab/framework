@@ -7,8 +7,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Notations and Conventions
 
-:::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/notations-and-conventions
+:::danger This page is deprecated.
+The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/notations-and-conventions
 :::
 
 This document provides an overview of the notations and conventions being used within this [scope](@).

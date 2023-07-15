@@ -9,8 +9,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Using Wikis
 
-:::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/manuals/contributors-wiki
+:::danger This page is deprecated.
+The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/manuals/contributors-wiki
 :::
 
 <img

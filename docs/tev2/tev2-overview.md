@@ -10,8 +10,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Terminology Engine v2 - Overview
 
-:::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/tev2-overview
+:::danger This page is deprecated. 
+The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/tev2-overview
 :::
 
 :::caution

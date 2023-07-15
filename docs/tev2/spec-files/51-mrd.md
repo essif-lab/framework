@@ -8,8 +8,8 @@ date: 20220503
 
 # Machine Readable Dictionary (MRD)
 
-:::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-files/mrd
+:::danger This page is deprecated.
+The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-files/mrd
 :::
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

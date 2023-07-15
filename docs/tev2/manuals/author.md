@@ -10,8 +10,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Authors Manual
 
-:::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/manuals/author
+:::danger This page is deprecated.
+The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/manuals/author
 :::
 
 <img

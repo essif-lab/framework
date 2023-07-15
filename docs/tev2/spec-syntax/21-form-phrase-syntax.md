@@ -10,8 +10,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Form Phrases - Syntax
 
-:::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-syntax/form-phrase-syntax
+:::danger This page is deprecated.
+The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-syntax/form-phrase-syntax
 :::
 
 :::caution

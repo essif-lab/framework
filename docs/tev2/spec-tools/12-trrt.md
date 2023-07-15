@@ -1,9 +1,16 @@
-$1:::caution
-This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications
-:::
-
+---
+id: trrt
+sidebar_label: Term Ref Resolution
+displayed_sidebar: tev2SideBar
+scopetag: tev2
+date: 20220421
+---
 
 # Term Reference Resolution Tool
+
+:::danger This page is deprecated.
+The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-tools/trrt
+:::
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
@@ -28,7 +35,7 @@ Term ref resolution is the same process as we use for ingestion, and other conve
 The **Term Ref(erence) Resolution Tool ([TRRT](@))** takes files that contain so-called [term refs](@) and outputs a copy of these files in which these [term refs](@) are converted into so-called [renderable refs](@), i.e. texts that can be further processed by tools such as GitHub pages, Docusaurus, etc. The result of this is that the rendered document contains markups that help [readers](@) to quickly find more explanations of the [concept](@) or other [knowledge artifact](@) that is being referenced.
 
 There is currently one implementation of the tool:
-- the repo in which the tool is being developed is [here](https://github.com/essif-lab/trrt).
+- the repo is [here](https://github.com/tno-terminology-design/trrt).
 - the documentation is [<mark>tbd</mark>].
 
 <details>
@@ -87,6 +94,14 @@ By cleanly separating [term ref](@) interpretation from the part where it is ove
 
 In order to convert [term refs](@) into [renderable refs](@), [TRRT](@) expects the [SAF](@) and the [MRG](@) of the [scope](@) from within which it is being called, to be available. The [MRG](@) is used to resolve all links to [terms](@) that are part of the [terminology](@) of this [scope](@). The [SAF](@) is used to locate the [MRGs](@) of any (other) [scope](@) whose [scopetag](@) is used as part of a [term ref](@) that needs to be resolved.
 
+## Installing the Tool
+
+The tool can be installed from the command line and made globally available by executing
+
+~~~
+npm install tno-terminology-design/trrt -g
+~~~
+
 ## Calling the Tool
 
 The behavior of the [TRRT](@) can be configured per call e.g. by a configuration file and/or command-line parameters. The command-line syntax is as follows:
@@ -114,11 +129,11 @@ The columns in the following table are defined as follows:
 | :--------- | :------------ | :---: | :---------- |
 | `config`   | `<path>`        | n | Path (including the filename) of the tool's (YAML) configuration file. This file contains the default key-value pairs to be used. Allowed keys (and the associated values) are documented in this table. Command-line arguments override key-value pairs specified in the configuration file. This parameter MUST NOT appear in the configuration file itself. |
 | `input`    | `<globpattern>` | n | [Globpattern](https://en.wikipedia.org/wiki/Glob_(programming)#Syntax) that specifies the set of (input) files that are to be processed. |
-| `output`   | `<dir>`         | Y | Directory where output files are to be written. This directory is specified as an absolute or relative path. |
+| `output`   | `<dir>`         | Y | (Root) directory where output files are to be written. This directory is specified as an absolute or relative path. |
 | `scopedir` | `<path>`        | Y | Path of the [scope directory](@) from which the tool is called. It MUST contain the [SAF](@) for that [scope](@), which we will refer to as the 'current scope' for the [TRRT](@). |
-| `version`  | `<versiontag>`  | n | Version of the [terminology](@) that is to be used to resolve [term refs](@) for which neither a `scope` nor a `version` part has been specified (which is the most common case). It MUST match either the `vsntag` field, or an element of the `altvsntags` field of a [terminology](@)-version as specified in the [`versions` section](/docs/tev2/spec-files/saf#versions) of the [SAF](@). When not specified, its value is taken from the `vsntag` field in the [terminology section](/docs/tev2/spec-files/mrg#mrg-terminology) of the default [MRG](@) (which is [identified](@) by the contents of the `mrgfile` field (in the [`scope` section](/docs/tev2/spec-files/saf#terminology) of the [SAF](@)). |
-| `interpreter` | `<type>`   | n | Allows for the switching between interpreter types. By default the `AltInterpreter` and `StandardInterpreter` are available. When this parameter is omitted, the basic [term ref](@) syntax is used. |
-| `converter` | `<type>`   | n | The type of converter which creates the [renderable refs](@). When this parameter is omitted, the Markdown converter is used. |
+| `version`  | `<versiontag>`  | n | Version of the [terminology](@) that is to be used to resolve [term refs](@) for which neither a `scope` nor a `version` part has been specified (which is the most common case). It MUST match either the `vsntag` field, or an element of the `altvsntags` field as specified in the [`versions` section](/docs/tev2/spec-files/saf#versions) of the [SAF](@). When not specified, its value is taken from the `defaultvsn` field in the [terminology section](/docs/tev2/spec-files/mrg#mrg-terminology) of the default [MRG](@) (which is [identified](@) by the contents of the `mrgfile` field (in the [`scope` section](/docs/tev2/spec-files/saf#terminology) of the [SAF](@)). |
+| `interpreter` | `<type>`     | n | Allows for the switching between interpreter types. By default the `AltInterpreter` and `StandardInterpreter` are available. When this parameter is omitted, the basic [term ref](@) syntax is used. |
+| `converter` | `<type>`       | n | The type of converter which creates the [renderable refs](@). When this parameter is omitted, the Markdown converter is used. |
 
 ## Term Ref Resolution
 
