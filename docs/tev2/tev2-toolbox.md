@@ -1,11 +1,7 @@
----
-id: tev2-toolbox
-displayed_sidebar: tev2SideBar
-scopetag: tev2
-date: 20220421
----
+$1:::caution
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications
+:::
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # TEv2 Terminology Toolbox
 

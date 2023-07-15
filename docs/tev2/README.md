@@ -1,9 +1,7 @@
----
-id: tev2-readme
-sidebar_label: Contributing
-scopetag: tev2
-date: 20220402
----
+$1:::caution
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications
+:::
+
 
 # Contributing to TEv2 Tools
 

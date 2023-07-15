@@ -6,6 +6,11 @@ scopetag: tev2
 date: 20220421
 ---
 
+:::caution
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications
+:::
+
+
 # ToIP TT-Tools Proposal
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

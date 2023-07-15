@@ -1,12 +1,7 @@
----
-id: contributor
-sidebar_label: Contributors
-displayed_sidebar: tev2SideBar
-scopetag: tev2
-date: 20220513
----
+$1:::caution
+This page is deprecated. The current version can be found at https://tno-terminology-design.github.io/tev2-specifications
+:::
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Contributors Manual
 
