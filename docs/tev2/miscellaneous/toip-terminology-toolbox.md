@@ -8,13 +8,17 @@ date: 20220421
 
 # ToIP TT-Tools Proposal
 
+:::danger This page is deprecated.
+The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/miscellaneous/toip-terminology-toolbox
+:::
+
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info
 This document is a first specification of results that the [ToIP Concepts & Terminology Working Group (CTWG)](https://wiki.trustoverip.org/pages/viewpage.action?pageId=65700) aims to realize. The ideas in this memo are being elaborated on as specifications for the [eSSIF-Lab Terminology Engine v2](/docs/tev2/tev2-overview), as documented on this site. As elaboration progresses, deviations from this memo may arise. At some point, we will add `info` blocks such as these to document such differences.
 :::
 
-The intended audience is expected to be familiar with the [mental model on terminology](https://essif-lab.github.io/framework/docs/terms/pattern-terminology#formalized-model) and the current way(s) of working of the CTWG.
+The intended audience is expected to be familiar with the [mental model on terminology](https://tno-terminology-design.github.io/tev2-specifications/docs/terms/pattern-terminology#formalized-model) and the current way(s) of working of the CTWG.
 
 The document assumes that within ToIP multiple [scopes](scope@) are created and maintained, each of which having (at least) one [tag](@) that [identifies](identify@essiflab) the [scope](@) within the context of ToIP. Also, the document assumes that anyone that has some dealing with terminology, is doing so within the context of a single such [scope](@).
 

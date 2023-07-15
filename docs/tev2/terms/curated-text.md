@@ -3,6 +3,7 @@
 term: curated-text
 termType: concept
 isa:
+glossaryTerm:
 glossaryText: a text that documents a [concept](@) or other [knowledge artifact](@) of a specific [community](@) or other [party](@), and is located within a [scope](@) that is owned by that [community](@)/[party](@).
 synonymOf:
 grouptags:

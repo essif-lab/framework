@@ -3,6 +3,7 @@
 term: terminology-under-construction
 termType: concept
 isa:
+glossaryTerm:
 glossaryText: "a set of [MRG entries](@) that is in the process of being modified, the result of which is a set of [MRG entries](@) that document (a specific version of) a [terminology](@)."
 synonymOf:
 grouptags:

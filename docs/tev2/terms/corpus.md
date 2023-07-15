@@ -3,6 +3,7 @@
 term: corpus
 termType: concept
 isa:
+glossaryTerm:
 glossaryText: "the documentation that describes the [knowledge](@) around a set of [terms](@) and [concepts](@)."
 synonymOf:
 grouptags:

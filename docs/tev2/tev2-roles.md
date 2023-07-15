@@ -8,6 +8,10 @@ date: 20220513
 
 # TEv2 - Roles
 
+:::danger This page is deprecated.
+The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/tev2-roles
+:::
+
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 export const mark = ({children}) => (

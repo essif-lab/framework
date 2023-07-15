@@ -3,6 +3,7 @@
 term: term
 termType: concept
 isa: identifier
+glossaryTerm:
 glossaryText: "a word or phrase (i.e.: text) that is used to represent ([identify](@)) a specific [knowledge artifact](@) (in some [scope](@))."
 synonymOf:
 grouptags:

@@ -3,6 +3,7 @@
 term: curatedir
 termType: concept
 isa:
+glossaryTerm:
 glossaryText: "a directory within a [scopedir](@) within which every file contains a [curated texts](@) for that [scope](@)."
 synonymOf:
 grouptags:

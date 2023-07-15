@@ -3,6 +3,7 @@
 term: synonym
 termType: concept
 isa: term
+glossaryTerm:
 glossaryText: "a [term](@) that has the same (or similar) meaning as another [term](@)."
 synonymOf:
 grouptags:

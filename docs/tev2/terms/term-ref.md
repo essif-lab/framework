@@ -3,6 +3,7 @@
 term: term-ref
 termType: concept
 isa:
+glossaryTerm:
 glossaryText: "a word or phrase that is [marked up (in a specific way)](/docs/tev2/spec-syntax/term-ref-syntax) so that it refers to a particular [concept](@) (or other [knowledge artifact](@)), enabling it to be rendered in a variety of ways for the purpose of helping [readers](@) to (better) understand the intention of its [author](@)."
 synonymOf:
 grouptags:

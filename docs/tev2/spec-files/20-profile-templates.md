@@ -10,6 +10,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Profile Templates
 
+:::danger This page is deprecated.
+The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-files/profile-templates
+:::
+
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>
 As TEv2 is not (yet) available, the texts that specify the tool are still 'raw', i.e. not yet processed.<br/>[readers](@) will need to see through some (currently unprocessed) notational conventions.
@@ -48,7 +52,7 @@ This template allows [interpreters](@) for [ingestible content](@) to be created
 
 1. **`Name`** contains the field name;
 2. **`Moustache`** specifies the name of the variable, in so-called [moustache](https://mustache.github.io/mustache.5.html) format
-3. **`Req'd`** specifies whether (`Y`, or `Y*`) or not (`n`, or `F`) the field is required to be present as a header field. The `Y*` signifies that currently, the field is required, but that we envisage it to become optional when tooling becomes more mature, and will be able to automatically create the specified default value. The `F` means that we reserve this field for Future Use.
+3. **`Req'd`** specifies whether (`Y`) or not (`n`, or `F`) the field is required to be present as a header field. The `F` means that we reserve this field for Future Use.
 4/ **`Default`** specifies the value that the interpreter must use as a default value for the variable in case the interpreted text does not specify a value. If no default is specified, the default value is "empty" or "void".
 3. **`Description`** specifies the meaning of the field, and other things you may need to know, e.g. why it is needed, a required syntax, etc.
 
@@ -58,11 +62,11 @@ This template allows [interpreters](@) for [ingestible content](@) to be created
 | :---------------- | :------------------- | :----: | :------: | :---------- |
 | `term`            | {{`term`}}             | Y  |            | word/phrase that represents a concept. |
 | `termType`        | {{`termType`}}         | n  | `concept`  | kind of concept (e.g. `concept` (default), or `mental model`). |
-| `isa`             | {{`isa`}}              | n  |            | concept of which this is a specialization. |
+| `isa`             | {{`isa`}}              | n  |            | knowledge artifact of which this is a specialization. |
 | `glossaryText`    | {{`glossaryText`}}     | Y  |            | text that summarizes the meaning of the term. |
 | `synonyms`        | {{`synonymsList`}}     | n  |            | other words/phrases that mean the same. |
 | `grouptags`       | {{`grouptagsList`}}    | n  |            | comma-separated list of tags/keywords to which the term belongs. |
-| `formPhrases`     | {{`formPhrasesList`}}  | n  |            | comma-separated list of [formPhrases](https://essif-lab.github.io/framework/docs/tev2/spec-syntax/form-phrase-syntax) |
+| `formPhrases`     | {{`formPhrasesList`}}  | n  |            | comma-separated list of [formPhrases](https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-syntax/form-phrase-syntax) |
 | `status`          | {{`status`}}           | n  | `proposed` | status/phase in the lifecycle of the term. |
 | `created`         | {{`created`}}          | n  | today      | date when the term was first conceived/documented. |
 | `updated`         | {{`updated`}}          | n  | today      | date when the term was last updated. |

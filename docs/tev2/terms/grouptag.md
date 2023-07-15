@@ -3,6 +3,7 @@
 term: grouptag
 termType: concept
 isa: tag
+glossaryTerm:
 glossaryText: "a [tag](@) that is used to group [terms](@) within a specific [scope](@)."
 synonymOf:
 grouptags:

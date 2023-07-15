@@ -3,6 +3,7 @@
 term: semantics
 termType: concept
 isa:
+glossaryTerm:
 glossaryText: "a mapping between the (tangible/textual) [terms](@) and (intangible) ideas/[concepts](@) - their meaning."
 synonymOf:
 grouptags:

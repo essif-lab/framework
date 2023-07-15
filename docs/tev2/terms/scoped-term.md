@@ -3,6 +3,7 @@
 term: scoped-term
 termType: concept
 isa: term
+glossaryTerm:
 glossaryText: "a [term](@) that represents (and [identifies](@)) a specific [knowledge artifact](@) of a particular [community](@) (or [party](@))."
 grouptags:
 # Curation status

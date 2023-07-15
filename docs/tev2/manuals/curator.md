@@ -10,6 +10,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Curators Manual - Overview
 
+:::danger This page is deprecated.
+The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/manuals/curator
+:::
+
 <img
   alt="This page is under construction"
   src={useBaseUrl('images/wip/wip-under-construction.png')}

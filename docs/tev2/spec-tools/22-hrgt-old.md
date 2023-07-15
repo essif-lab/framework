@@ -9,6 +9,10 @@ date: 20220421
 
 # Human Readable Glossary Generation Tool
 
+:::danger This page is deprecated.
+The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-tools/hrgt-old
+:::
+
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 export const mark = ({children}) => (

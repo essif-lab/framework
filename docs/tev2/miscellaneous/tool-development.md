@@ -9,6 +9,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Tool Development
 
+:::danger This page is deprecated.
+The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/miscellaneous/tool-development
+:::
+
 This page intends to provide (lots of pointers to) information that people may need in order to decide whether or not to contribute to the construction of the Terminology Engine v2 ([TEv2](@)) toolbox, and if so, determine where to help out.
 
 ## What it is about
@@ -47,7 +51,7 @@ For the date of the tooling status, see the "<i>last updated on</i>" text at the
 ### Under development
 
 - [MRGT](/docs/tev2/spec-tools/mrgt), which is in [this toip repo](https://github.com/trustoverip/ctwg-toolkit-mrg). The tool works, but still has some [bugs/issues](https://github.com/trustoverip/ctwg-toolkit-mrg/issues) that need to be fixed.
-- [TRRT](/docs/tev2/spec-tools/trrt), which is currently actively developed by TNO in [this repo](https://github.com/essif-lab/trrt).
+- [TRRT](/docs/tev2/spec-tools/trrt), which is currently actively developed by TNO in [this repo](https://github.com/tno-terminology-design/trrt).
 
 ### High priority
 - ingress tools that convert wiki-files (and perhaps some other formats) into [curated texts](/docs/tev2/spec-files/00-ctext.md);
