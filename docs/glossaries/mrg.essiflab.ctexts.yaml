@@ -2,21 +2,20 @@ terminology:
   scopetag: essiflab
   scopedir: https://github.com/essif-lab/framework/tree/master/docs
   curatedir: terms
-  vsntag: ''
-  altvsntags: ''
+  glossarydir: glossaries
+  website: https://essif-lab.github.io/framework
+  navpath: /docs/terms
   license: LICENSE.md
-  version:
-    vsntag: cterms
-    terms:
-      - '*'
-  date: '20230720'
+  version: ctexts
+  altversions: curated-terms, owned-terms
+  date: '20230721'
 scopes:
   scopes: []
 entries:
   - id: action
     title: Action
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: action
     formphrases: action{ss}, acting, activit(yies)
@@ -39,7 +38,7 @@ entries:
   - id: actor
     title: Actor
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: actor
     formphrases: actor{ss}, digital-actor{ss}
@@ -61,7 +60,7 @@ entries:
   - id: advertisement
     title: Advertisement
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: advertisement
     formphrases: advertisement{ss}, advertise, advertising
@@ -87,7 +86,7 @@ entries:
   - id: agent
     title: Agent
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: agent
     formphrases: agent{ss}, digital-agent{ss}
@@ -108,7 +107,7 @@ entries:
   - id: assertion
     title: Assertion
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: assertion
     formphrases: assertion{ss}, claim{ss}, statement{ss}
@@ -129,7 +128,7 @@ entries:
   - id: assessment-framework
     title: Assessment framework
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: assessment-framework
     formphrases: assessment-framework{ss}
@@ -153,7 +152,7 @@ entries:
   - id: attribute
     title: Attribute
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: attribute
     formphrases: attribute{ss}
@@ -173,7 +172,7 @@ entries:
   - id: authority
     title: Authority (Centralized or Decentralized)
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: authority
     formphrases: authorit{yies}
@@ -193,7 +192,7 @@ entries:
   - id: capability-of-an-actor
     title: Capability (of an Actor)
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: capability-of-an-actor
     formphrases: capabilit{yies}-of-an-actor
@@ -213,7 +212,7 @@ entries:
   - id: capability
     title: Capability (of a Party)
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: capability
     formphrases: capabilit{yies}, capabilit{yies}-of-a-party
@@ -242,7 +241,7 @@ entries:
   - id: colleague
     title: Colleague
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: colleague
     formphrases: colleague{ss}, digital-colleague{ss}
@@ -262,7 +261,7 @@ entries:
   - id: commitment-decision
     title: Commitment Decision
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: commitment-decision
     formphrases: commitment-decision{ss}
@@ -284,7 +283,7 @@ entries:
   - id: communication-channel
     title: Communication Channel
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: communication-channel
     formphrases: communication-channel{ss}, digital-communication-channel{ss}
@@ -303,7 +302,7 @@ entries:
   - id: communication-session
     title: Communication Session
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: communication-session
     formphrases: communication-session{ss}, digital-communication-session{ss}
@@ -320,7 +319,7 @@ entries:
   - id: community
     title: Community
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: community
     formphrases: communit{yies}
@@ -343,7 +342,7 @@ entries:
   - id: compliance-level
     title: Compliance level
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: compliance-level
     formphrases: compliance-level{ss}
@@ -364,7 +363,7 @@ entries:
   - id: compliance-management
     title: Compliance management
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: compliance-management
     formphrases: compliance-management
@@ -384,7 +383,7 @@ entries:
   - id: compliance-objective
     title: Compliance Objective
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: compliance-objective
     formphrases: compliance-objective{ss}
@@ -408,7 +407,7 @@ entries:
   - id: compliance
     title: Compliance
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: compliance
     formphrases: compliance
@@ -427,7 +426,7 @@ entries:
   - id: concept-file
     title: Concept-file
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: concept-file
     formphrases: concept-file{ss}
@@ -446,7 +445,7 @@ entries:
   - id: concept
     title: Concept
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: concept
     formphrases: concept{ss}
@@ -469,7 +468,7 @@ entries:
   - id: control-level
     title: Control level
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: control-level
     formphrases: control-level{ss}
@@ -489,7 +488,7 @@ entries:
   - id: control-objective
     title: Control Objective
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: control-objective
     formphrases: control-objective{ss}
@@ -513,7 +512,7 @@ entries:
   - id: control-process
     title: Control Process
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: control-process
     formphrases: control-process, control-processes
@@ -538,7 +537,7 @@ entries:
   - id: control
     title: Control
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: control
     formphrases: control{ss}
@@ -561,7 +560,7 @@ entries:
   - id: controller
     title: Controller
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: controller
     formphrases: controller{ss}
@@ -585,7 +584,7 @@ entries:
   - id: controllership
     title: Controllership
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: controllership
     formphrases: controllership
@@ -605,7 +604,7 @@ entries:
   - id: corpus
     title: Corpus of Terminology
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: corpus
     formphrases: corpus, corpus-of-terminology
@@ -625,7 +624,7 @@ entries:
   - id: credential-catalogue
     title: Credential Catalogue
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: credential-catalogue
     formphrases: credential-catalogue{ss}
@@ -649,7 +648,7 @@ entries:
   - id: credential-type
     title: Credential Type
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: credential-type
     formphrases: credential-type{ss}
@@ -668,7 +667,7 @@ entries:
   - id: credential
     title: Credential
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: credential
     formphrases: credential{ss}, verifiable-credential{ss}, attribute-based-credential{ss}
@@ -692,7 +691,7 @@ entries:
   - id: data
     title: Data
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: data
     formphrases: data, digital-data
@@ -713,7 +712,7 @@ entries:
   - id: decision
     title: Decision
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: decision
     formphrases: decision{ss}
@@ -733,7 +732,7 @@ entries:
   - id: definition
     title: Definition
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: definition
     formphrases: definition{ss}
@@ -758,7 +757,7 @@ entries:
   - id: delegate
     title: Delegate
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: delegate
     formphrases: delegate{ss}, delegated, delegating, delegator{ss}, delegatee{ss}
@@ -784,7 +783,7 @@ entries:
   - id: dependent
     title: Dependent
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: dependent
     formphrases: dependent{ss}
@@ -804,7 +803,7 @@ entries:
       - criteria
   - id: dictionary-file
     title: Dictionary-file
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: dictionary
     termid: dictionary-file
     status: draft
@@ -822,7 +821,7 @@ entries:
   - id: dictionary
     title: Dictionary
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: dictionary
     formphrases: dictionar{yies}
@@ -844,7 +843,7 @@ entries:
   - id: documentation-interop
     title: Documentation Interoperability
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: documentation-interop
     formphrases: documentation-interop
@@ -863,7 +862,7 @@ entries:
   - id: ecosystem
     title: Ecosystem
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: ecosystem
     formphrases: ecosystem{ss}
@@ -885,7 +884,7 @@ entries:
   - id: employee
     title: Employee
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: employee
     formphrases: employee{ss}
@@ -907,7 +906,7 @@ entries:
   - id: employer
     title: Employer
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: employer
     formphrases: employer{ss}
@@ -927,7 +926,7 @@ entries:
   - id: employment-contract
     title: Employment Contract
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: employment-contract
     formphrases: employment-contract{ss}
@@ -952,7 +951,7 @@ entries:
   - id: entity
     title: Entity
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: entity
     formphrases: entit{yies}
@@ -970,7 +969,7 @@ entries:
       - related-concepts
   - id: eSSIFLab-scope
     title: 'Scope: essifLabTerminology'
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: scope
     termid: eSSIFLab
     status: draft
@@ -989,7 +988,7 @@ entries:
   - id: expectation
     title: Expectation
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: expectation
     formphrases: expectation{ss}
@@ -1009,7 +1008,7 @@ entries:
   - id: framework
     title: Framework (Conceptual)
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: framework
     formphrases: framework{ss}, conceptual-framework{ss}
@@ -1026,7 +1025,7 @@ entries:
       - short-description
   - id: glossary-file
     title: Glossary-file
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: glossary
     termid: glossary-file
     status: draft
@@ -1060,7 +1059,7 @@ entries:
     displayed_sidebar: essifLabSideBar
     hoverText: 'Glossary: an alphabetically sorted list of Terms with the (single)
       meaning it has in (at least) one context.'
-    scopetag: <scopetag>
+    scopetag: essiflab
     locator: <locator>/glossary
     navurl: <navurl>/glossary
     headingids:
@@ -1073,7 +1072,7 @@ entries:
   - id: governance
     title: Governance
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: governance
     formphrases: governance, govern, governs, governed, governed-by, governing, governing-part{yies},
@@ -1097,7 +1096,7 @@ entries:
   - id: governor
     title: Governor
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: governor
     formphrases: governor{ss}
@@ -1119,7 +1118,7 @@ entries:
   - id: guardian
     title: Guardian
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: guardian
     formphrases: guardian
@@ -1141,7 +1140,7 @@ entries:
   - id: guardianship-arrangement
     title: Guardianship Arrangement
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: guardianship-arrangement
     formphrases: guardianship-arrangement{ss}, guardianship{ss}
@@ -1166,7 +1165,7 @@ entries:
   - id: guardianship-type
     title: Guardianship-type
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: guardianship-type
     formphrases: guardianship-type{ss}, guardianship-arrangement-type{ss}
@@ -1186,7 +1185,7 @@ entries:
   - id: holder-policy
     title: Holder Policy
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: holder-policy
     formphrases: holder-polic{yies}
@@ -1205,7 +1204,7 @@ entries:
   - id: holder
     title: Holder
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: holder
     formphrases: holder{ss}
@@ -1230,7 +1229,7 @@ entries:
   - id: human-being
     title: Human Being
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: human-being
     formphrases: human-being{ss}, human{ss}, person{ss}, individual{ss}, people
@@ -1251,7 +1250,7 @@ entries:
   - id: identifier
     title: Identifier
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: identifier
     formphrases: identifier{ss}
@@ -1276,7 +1275,7 @@ entries:
   - id: identify
     title: Identify
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: identify
     formphrases: identify, identifies, identifying, identifiable, identified, identification
@@ -1300,7 +1299,7 @@ entries:
   - id: identity
     title: Identity
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: identity
     formphrases: identit{yies}
@@ -1320,7 +1319,7 @@ entries:
   - id: information-process
     title: Information Process
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: information-process
     formphrases: information-process, information-processes
@@ -1340,7 +1339,7 @@ entries:
   - id: issuer-policy
     title: Isuer Policy
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: issuer-policy
     formphrases: issuer-polic{yies}
@@ -1359,7 +1358,7 @@ entries:
   - id: issuer
     title: Issuer
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: issuer
     formphrases: issuer{ss}
@@ -1386,7 +1385,7 @@ entries:
   - id: jurisdiction
     title: Jurisdiction
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: jurisdiction
     formphrases: jurisdiction{ss}
@@ -1412,7 +1411,7 @@ entries:
   - id: knowledge
     title: Knowledge
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: knowledge
     formphrases: knowledge{ss}
@@ -1435,7 +1434,7 @@ entries:
   - id: legal-entity
     title: Legal Entity
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: legal-entity
     formphrases: legal-entit{yies}
@@ -1457,7 +1456,7 @@ entries:
   - id: legal-jurisdiction
     title: Legal Jurisdiction
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: term
     termid: legal-jurisdiction
     formphrases: legal-jurisdiction{ss}
@@ -1477,7 +1476,7 @@ entries:
   - id: legal-system
     title: Legal System
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: legal-system
     formphrases: legal-system{ss}
@@ -1499,7 +1498,7 @@ entries:
   - id: management
     title: Management
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: management
     formphrases: management, manager, manages, managed, managed-by, management, managing,
@@ -1520,7 +1519,7 @@ entries:
   - id: mandate
     title: Mandate
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: mandate
     formphrases: mandate{ss}, mandated, mandating, mandator{ss}, mandatee{ss}
@@ -1546,7 +1545,7 @@ entries:
   - id: mental-model
     title: Mental Model
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: term
     termid: mental-model
     formphrases: mental-model{ss}
@@ -1566,7 +1565,7 @@ entries:
   - id: mission
     title: Mission
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: mission
     formphrases: mission{ss}
@@ -1584,7 +1583,7 @@ entries:
   - id: normative-framework
     title: Normative framework
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: normative-framework
     formphrases: normative-framework{ss}
@@ -1606,7 +1605,7 @@ entries:
   - id: objective
     title: Objective
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: objective
     formphrases: objective{ss}
@@ -1629,7 +1628,7 @@ entries:
   - id: obligation
     title: Obligation
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: obligation
     formphrases: obligation{ss}
@@ -1649,7 +1648,7 @@ entries:
   - id: onboarding
     title: Onboarding
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: onboarding
     formphrases: onboarding, onboard, onboards, onboarded
@@ -1677,7 +1676,7 @@ entries:
   - id: organization
     title: Organization
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: organization
     formphrases: organization{ss}
@@ -1701,7 +1700,7 @@ entries:
   - id: outsourcing
     title: Outsourcing
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: outsourceing
     formphrases: outsourc{eing}, outsourced
@@ -1724,7 +1723,7 @@ entries:
   - id: owned
     title: Owned
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: owned
     formphrases: owned
@@ -1745,7 +1744,7 @@ entries:
   - id: owner
     title: Owner
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: owner
     formphrases: owner{ss}, own{ss}
@@ -1766,7 +1765,7 @@ entries:
   - id: ownership
     title: Ownership
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: ownership
     formphrases: ownership{ss}, owning, legal-ownership{ss}, rightful-ownership{ss},
@@ -1793,7 +1792,7 @@ entries:
   - id: partial-identity
     title: Partial identity
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: term
     termid: partial-identity
     formphrases: partial-identit{yies}
@@ -1835,7 +1834,7 @@ entries:
     displayed_sidebar: essifLabSideBar
     hoverText: 'Participant (in/of a Transaction): a Party is negotiating (or has
       negotiated) a Transaction Agreement.'
-    scopetag: <scopetag>
+    scopetag: essiflab
     locator: <locator>/participant
     navurl: <navurl>/participant
     headingids:
@@ -1844,7 +1843,7 @@ entries:
   - id: party
     title: Party
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: party
     formphrases: part{yies}
@@ -1868,7 +1867,7 @@ entries:
   - id: pattern-decentralized-grc
     title: Decentralized Risk Management, Governance and Compliance
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: decentralized-grc
     formphrases: decentralized-grc
@@ -1888,7 +1887,7 @@ entries:
   - id: pattern-decentralized-risk-management
     title: Decentralized (Networked) Risk Management (NRM)
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: decentralized-risk-management
     formphrases: decentralized-risk-management
@@ -1918,7 +1917,7 @@ entries:
   - id: pattern-decision-making
     title: Decision Making
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: decision-making
     formphrases: decision-making
@@ -1940,7 +1939,7 @@ entries:
   - id: pattern-duties-and-rights
     title: Duties and Rights
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: duties-and-rights
     formphrases: duties-and-rights
@@ -1959,7 +1958,7 @@ entries:
   - id: pattern-file
     title: Pattern-file
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: pattern-file
     formphrases: pattern-file
@@ -1977,7 +1976,7 @@ entries:
   - id: pattern-governance-and-management
     title: Governance and Management
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: governance-and-management
     formphrases: governance-and-management
@@ -1999,7 +1998,7 @@ entries:
   - id: pattern-guardianship
     title: Guardianship
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: guardianship
     formphrases: guardianship
@@ -2021,7 +2020,7 @@ entries:
   - id: pattern-identification
     title: Identification Pattern
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: identification
     formphrases: identification
@@ -2045,7 +2044,7 @@ entries:
   - id: pattern-identifier
     title: Identifier Pattern
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: identifier
     formphrases: identifier
@@ -2064,7 +2063,7 @@ entries:
   - id: pattern-identity
     title: Identity Pattern
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: identity
     formphrases: identity
@@ -2085,7 +2084,7 @@ entries:
   - id: pattern-jurisdiction
     title: Jurisdictions
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: jurisdiction
     formphrases: jurisdiction
@@ -2104,7 +2103,7 @@ entries:
   - id: pattern-mandates-delegation-hiring
     title: Mandates, Delegation and Hiring
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: mandates-delegation-hiring
     formphrases: mandates-delegation-hiring
@@ -2119,7 +2118,7 @@ entries:
   - id: pattern-mental-model
     title: Mental Models
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: mental-model
     formphrases: mental-model
@@ -2138,7 +2137,7 @@ entries:
   - id: pattern-party-actor-action
     title: Parties, Actors and Actions
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: party-actor-action
     formphrases: party-actor-action
@@ -2165,7 +2164,7 @@ entries:
   - id: pattern-party-representation
     title: Party Representation
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: party-representation
     formphrases: party-representation
@@ -2189,7 +2188,7 @@ entries:
   - id: pattern-semantics
     title: Semantics Pattern
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: semantics
     formphrases:
@@ -2211,7 +2210,7 @@ entries:
   - id: pattern-terminology
     title: Terminology Pattern
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: terminology
     formphrases: terminology
@@ -2232,7 +2231,7 @@ entries:
   - id: pattern-trust
     title: Trust Pattern
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: trust
     formphrases: trust
@@ -2251,7 +2250,7 @@ entries:
   - id: pattern-world-model
     title: eSSIF-Lab World Model
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: pattern
     termid: world-model
     formphrases: world-model
@@ -2276,7 +2275,7 @@ entries:
   - id: pattern
     title: Pattern
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: pattern
     formphrases: pattern{ss}
@@ -2300,7 +2299,7 @@ entries:
   - id: peer-actor
     title: Peer Actor
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: term
     termid: peer-actor
     formphrases: peer-actor{ss}
@@ -2343,7 +2342,7 @@ entries:
     displayed_sidebar: essifLabSideBar
     hoverText: 'Peer Agent (of some other Agent in a Communication Session): the Agent
       with whom/which this other Agent is communicating in that Communication Session.'
-    scopetag: <scopetag>
+    scopetag: essiflab
     locator: <locator>/peer-agent
     navurl: <navurl>/peer-agent
     headingids:
@@ -2352,7 +2351,7 @@ entries:
   - id: peer-party
     title: Peer Party
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: term
     termid: peer-party
     formphrases: peer-part{yies}
@@ -2371,7 +2370,7 @@ entries:
   - id: policy
     title: Policy
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: policy
     formphrases: polic{yies}, business-polic{yies}, operational-polic{yies}
@@ -2396,7 +2395,7 @@ entries:
   - id: presentation-request
     title: Presentation Request
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: presentation-request
     formphrases: presentation-request{ss}, verifiable-presentation-request{ss}
@@ -2414,7 +2413,7 @@ entries:
   - id: presentation
     title: Presentation
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: presentation
     formphrases: presentation{ss}, verifiable-presentation{ss}
@@ -2441,7 +2440,7 @@ entries:
   - id: principal
     title: Principal
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: principal
     formphrases: principal{ss}
@@ -2464,7 +2463,7 @@ entries:
   - id: qualified-data
     title: Qualified Data
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: qualified-data
     formphrases: qualified-data
@@ -2490,7 +2489,7 @@ entries:
   - id: revocation-component
     title: Revocation component
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: revocation-component
     formphrases: revocation-component{ss}, revocator{ss+}
@@ -2511,7 +2510,7 @@ entries:
   - id: revocation-policy
     title: Revocation Policy
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: revocation-policy
     formphrases: revocation-polic{yies}
@@ -2530,7 +2529,7 @@ entries:
   - id: revoke
     title: Revoke/Revocation
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: revoke
     formphrases: revo(cat(or|ion)|ke[sd]?|king)
@@ -2550,7 +2549,7 @@ entries:
   - id: risk-level
     title: Risk level
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: risk-level
     formphrases: risk-level{ss}
@@ -2572,7 +2571,7 @@ entries:
   - id: risk-management
     title: Risk management
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: risk-management
     formphrases: risk-management, risk-manager{ss}
@@ -2594,7 +2593,7 @@ entries:
   - id: risk-objective
     title: Risk Objective
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: risk-objective
     formphrases: risk-objective{ss}
@@ -2616,7 +2615,7 @@ entries:
   - id: risk-owner
     title: Risk Owner
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: risk-owner
     formphrases: risk-owner{ss}
@@ -2636,7 +2635,7 @@ entries:
   - id: risk
     title: Risk
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: risk
     formphrases: risk{ss}
@@ -2658,7 +2657,7 @@ entries:
   - id: role-name
     title: Role name
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: term
     termid: role-name
     formphrases: role-name{ss}
@@ -2677,7 +2676,7 @@ entries:
   - id: role
     title: Role
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: role
     formphrases: role{ss}
@@ -2702,7 +2701,7 @@ entries:
   - id: scope-file
     title: Scope-file
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: scope-file
     formphrases: scope-file{ss}
@@ -2721,7 +2720,7 @@ entries:
   - id: scope-of-control
     title: Scope of Control
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: scope-of-control
     formphrases: scope-of-control, scopes-of-control
@@ -2742,7 +2741,7 @@ entries:
   - id: scope
     title: Scope
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: scope
     formphrases: scope{ss}
@@ -2765,7 +2764,7 @@ entries:
   - id: scoped-term
     title: Term (Scoped)
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: term
     status: draft
@@ -2783,7 +2782,7 @@ entries:
   - id: self-sovereign-identity
     title: Self-Sovereign Identity (SSI)
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: term
     termid: self-sovereign-identity
     formphrases: self-sovereign-identit{yies}
@@ -2806,7 +2805,7 @@ entries:
   - id: self-sovereignty
     title: Self-Sovereignty
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: self-sovereignty
     formphrases: self-sovereignty, autonomy
@@ -2829,7 +2828,7 @@ entries:
   - id: semantics
     title: Semantics
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: semantics
     formphrases: semantics
@@ -2849,7 +2848,7 @@ entries:
   - id: ssi-agent
     title: SSI Agent
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: term
     termid: ssi-agent
     formphrases: ssi-agent{ss}
@@ -2869,7 +2868,7 @@ entries:
   - id: ssi-assurance-community
     title: SSI Assurance Community (SSI-AC)
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: ssi-assurance-community
     formphrases: ssi-assurance-communit{yies}, ac{ss}, assurance-communit{yies}, ssi-ac{ss},
@@ -2890,7 +2889,7 @@ entries:
   - id: ssi-infrastructure
     title: SSI Infrastructure
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: ssi-infrastructure
     formphrases: ssi-infrastructure{ss}
@@ -2912,7 +2911,7 @@ entries:
   - id: ssi
     title: SSI (Self-Sovereign Identity)
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: term
     termid: ssi
     formphrases: ssi
@@ -2935,7 +2934,7 @@ entries:
   - id: subject
     title: Subject
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: term
     termid: subject
     formphrases: subject{ss}
@@ -2958,7 +2957,7 @@ entries:
   - id: tag
     title: Tag
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: tag
     formphrases: tag{ss}
@@ -2981,7 +2980,7 @@ entries:
   - id: term-file
     title: Term-file
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: term-file
     formphrases: term-file{ss}
@@ -2999,7 +2998,7 @@ entries:
   - id: term
     title: Term
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: term
     formphrases: term{ss}, word{ss}, phrase{ss}
@@ -3021,7 +3020,7 @@ entries:
   - id: terminology-process
     title: Terminology Process
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: terminology-process
     formphrases: terminology-process, terminology-processes
@@ -3044,7 +3043,7 @@ entries:
   - id: terminology
     title: Terminology
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: terminology
     formphrases: terminolog{yies}
@@ -3067,7 +3066,7 @@ entries:
   - id: terms-community
     title: Terms Community
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: terms-community
     formphrases: terms-communit{yies}
@@ -3089,7 +3088,7 @@ entries:
   - id: transaction-agreement
     title: Transaction Agreement
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: transaction-agreement
     formphrases: transaction-agreement{ss}
@@ -3107,7 +3106,7 @@ entries:
   - id: transaction-form
     title: Transaction Form
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: transaction-form
     formphrases: transaction-form{ss}
@@ -3126,7 +3125,7 @@ entries:
   - id: transaction-id
     title: Transaction Id
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: transaction-id
     formphrases: transaction-id{ss}
@@ -3145,7 +3144,7 @@ entries:
   - id: transaction-proposal
     title: Transaction Proposal
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: transaction-proposal
     formphrases: transaction-proposal{ss}
@@ -3165,7 +3164,7 @@ entries:
   - id: transaction-request
     title: Transaction Request
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: transaction-request
     formphrases: transaction-request{ss}
@@ -3185,7 +3184,7 @@ entries:
   - id: transaction
     title: Transaction
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: transaction
     formphrases: transaction{ss}
@@ -3204,7 +3203,7 @@ entries:
   - id: trust-level
     title: Trust level
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: trust-level
     formphrases: trust-level{ss}, level{ss}-of-trust
@@ -3222,7 +3221,7 @@ entries:
   - id: trust
     title: Trust
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: trust
     formphrases: trust, trusts, trusting, trusted
@@ -3240,7 +3239,7 @@ entries:
   - id: validate
     title: Validate
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: validate
     formphrases: validate, validates, validated, validating
@@ -3259,7 +3258,7 @@ entries:
   - id: validator-policy
     title: Validator Policy
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: validator-policy
     formphrases: validator-polic{yies}
@@ -3278,7 +3277,7 @@ entries:
   - id: validator
     title: Validator
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: validator
     formphrases: validator{ss}
@@ -3297,7 +3296,7 @@ entries:
   - id: verifier-policy
     title: Verifier Policy
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: verifier-policy
     formphrases: verifier-polic{yies}
@@ -3316,7 +3315,7 @@ entries:
   - id: verifier
     title: Verifier
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: verifier
     formphrases: verifier{ss}
@@ -3339,7 +3338,7 @@ entries:
   - id: verify
     title: Verify
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: verify
     formphrases: verify, verifies, verified, verifying
@@ -3361,7 +3360,7 @@ entries:
   - id: vocabulary
     title: Vocabulary
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: vocabulary
     formphrases: vocabular{yies}
@@ -3382,7 +3381,7 @@ entries:
   - id: wallet-policy
     title: Wallet Policy
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: wallet-policy
     formphrases: wallet-polic{yies}
@@ -3401,7 +3400,7 @@ entries:
   - id: wallet
     title: Wallet
     displayed_sidebar: essifLabSideBar
-    scopetag: <scopetag>
+    scopetag: essiflab
     type: concept
     termid: wallet
     formphrases: wallet{ss}

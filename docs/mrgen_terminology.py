@@ -3,7 +3,7 @@ import sys
 import os
 from ruamel.yaml import YAML
 
-def construct_terminology_section(version_tag, saf_data):
+def construct_terminology_section(saf_data, version_tag):
     today = datetime.datetime.now().strftime("%Y%m%d")
     yaml = YAML()
     yaml.indent(mapping=2, sequence=4, offset=2)
@@ -29,10 +29,12 @@ def construct_terminology_section(version_tag, saf_data):
         "scopetag": saf_data.get("scope", {}).get("scopetag"),
         "scopedir": saf_data.get("scope", {}).get("scopedir"),
         "curatedir": saf_data.get("scope", {}).get("curatedir"),
-        "vsntag": saf_data.get("scope", {}).get("vsntag", ""),
-        "altvsntags": saf_data.get("scope", {}).get("altvsntags", ""),
+        "glossarydir": saf_data.get("scope", {}).get("glossarydir"),
+        "website": saf_data.get("scope", {}).get("website"),
+        "navpath": saf_data.get("scope", {}).get("navpath"),
         "license": saf_data.get("scope", {}).get("license", ""),
-        "version": found_version,
+        "version": vsntag,
+        "altversions": altvsntags,
         "date": today
     }
 
@@ -46,8 +48,8 @@ def construct_terminology_section(version_tag, saf_data):
         raise Exception("Error: 'curatedir' field missing in SAF.yaml.")
 
     # Set other missing fields to empty string
-    terminology_section.setdefault("vsntag", "")
-    terminology_section.setdefault("altvsntags", "")
+    terminology_section.setdefault("website", "")
+    terminology_section.setdefault("navpath", "")
     terminology_section.setdefault("license", "")
 
     return terminology_section

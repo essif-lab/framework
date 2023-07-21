@@ -3,7 +3,7 @@ import os
 from ruamel.yaml import YAML
 import glob
 
-def process_markdown_file(md_file, error_messages):
+def process_markdown_file(md_file, saf_data, error_messages):
     with open(md_file, 'r', encoding='utf-8') as f:
         content = f.read()
 
@@ -34,7 +34,7 @@ def process_markdown_file(md_file, error_messages):
         error_messages.append(f"Error: 'id' field is missing in {md_file}")
         return None
 
-    mrg_entry['scopetag'] = '<scopetag>'
+    mrg_entry['scopetag'] = saf_data.get("scope", {}).get("scopetag")  # Use the actual scopetag value
     mrg_entry['locator'] = '<locator>/' + mrg_entry['id']
     mrg_entry['navurl'] = '<navurl>/' + mrg_entry['id']
 
@@ -86,10 +86,17 @@ def generate_heading_id(heading_text):
         return None
     return generated_id
 
-def construct_entries_section(directory):
+def construct_entries_section(saf_data):
+    directory = saf_data.get("scope", {}).get("curatedir")
+    if not directory:
+        print("Error: 'curatedir' field missing in SAF.yaml.")
+        return
+
     if not os.path.exists(directory):
         print(f"Error: Directory '{directory}' does not exist.")
         return []
+
+    print(f"Processing files in directory: {directory}")
 
     markdown_files = glob.glob(os.path.join(directory, '*.md'))
 
@@ -101,7 +108,7 @@ def construct_entries_section(directory):
     error_messages = []
 
     for md_file in markdown_files:
-        mrg_entry = process_markdown_file(md_file, error_messages)
+        mrg_entry = process_markdown_file(md_file, saf_data, error_messages)
         if mrg_entry:
             mrg_entries.append(mrg_entry)
 

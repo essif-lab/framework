@@ -17,24 +17,29 @@ def main(version_tag=None):
     with open(saf_path, "r", encoding="utf-8") as saf_file:
         saf_data = yaml.safe_load(saf_file)
 
-    curatedir = saf_data.get("scope", {}).get("curatedir")
-    if not curatedir:
-        print("Error: 'curatedir' field missing in SAF.yaml.")
-        return
-
     if version_tag is None:
         version_tag = saf_data.get("scope", {}).get("defaultvsn")
 
-    print(f"Processing files in directory: {curatedir}")
     print(f"Version tag: {version_tag}")
 
-    mrg_terminology = mrgen_terminology.construct_terminology_section(version_tag, saf_data)
-    mrg_scopes = mrgen_scopes.construct_scopes_section()
-    mrg_entries = mrgen_entries.construct_entries_section(curatedir)
+    scope_tag = saf_data.get("scope", {}).get("scopetag", "")
 
-    # Generate YAML file
-    file_name = f"mrg.{mrg_terminology['scopetag']}.{version_tag}.yaml"
-    file_path = os.path.join(os.getcwd(), file_name)
+    # Generate YAML filename and path
+    file_name = f"mrg.{scope_tag}.{version_tag}.yaml"
+
+    # Check if glossarydir exists
+    glossary_dir = saf_data.get("scope", {}).get("glossarydir", "")
+    if not os.path.exists(os.path.join(os.getcwd(), glossary_dir)):
+        print(f"Error: 'glossarydir' directory '{glossary_dir}' does not exist in {os.path.join(os.getcwd())}.")
+        return
+    
+    # Create the full path for the MRG file
+    file_path = os.path.join(os.getcwd(), glossary_dir, file_name)
+
+    # Generate the contents of the MRG file
+    mrg_terminology = mrgen_terminology.construct_terminology_section(saf_data, version_tag)
+    mrg_scopes = mrgen_scopes.construct_scopes_section(saf_data)
+    mrg_entries = mrgen_entries.construct_entries_section(saf_data)
 
     yaml_data = {
         "terminology": mrg_terminology,

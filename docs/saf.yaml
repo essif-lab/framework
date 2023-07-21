@@ -14,7 +14,8 @@ scope:
   license: LICENSE.md # file that contains the (default) licensing conditions. Full URL is `scopedir`/`license`
   statuses: [ proposed, approved, deprecated ] # list of status tags that are defined for terminological artifacts in this scope
   issues: https://github.com/essif-lab/framework/issues # URL where issues can be raised and handled
-  website: https://essif-lab.github.io/framework/terminology # home page of the terminology
+  website: https://essif-lab.github.io/framework # home page of the terminology
+  navpath: /docs/terms # path, relative to `website`, where curated texts are rendered
   slack: https://trustoverip.slack.com/archives/C01BBNGRPUH # slack channel for discussions
   curators: # contacting individual curators
   - name: RieksJ
@@ -39,7 +40,8 @@ versions:
   - vsntag: test # this version MUST only be used for testing the MRG generator
     terms:
     - "[essiflab]@essiflab" # import all tev2 terms.
-  - vsntag: cterms # this version contains all terms that are curated by essiflab
+  - vsntag: ctexts # this version contains all terms that are curated by essiflab
+    altvsntags: curated-terms, owned-terms # alternative verstiontags
     terms:
     - "*" # import all terms as curated in the current scope.
   - vsntag: v0.1 # a versiontag that identifies this version from all other versions in the SAF
