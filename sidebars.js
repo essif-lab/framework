@@ -10,6 +10,23 @@ const sidebars = {
         'essifLab-principles',
         'essifLab-collaborative-understanding',
         'ssi-standards',
+        {
+          label: 'SSI Standards',
+          type: 'category',
+          collapsed: true,
+          items: [
+            {
+              label: 'Overview',
+              type: 'link', // Changed "type" to lowercase "link"
+              href: 'https://tno-ssi-lab.github.io/standardisation-overview/',
+            },
+            {
+              label: 'Documentation',
+              type: 'link', // Changed "type" to lowercase "link"
+              href: 'https://tno-ssi-lab.github.io/standardisation-overview/docs.html/',
+            },
+          ],
+        },
         'essifLab-project',
         { label: 'Mental Models',
           type: 'category',
