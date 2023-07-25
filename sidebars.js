@@ -9,22 +9,12 @@ const sidebars = {
         'essifLab-objectives',
         'essifLab-principles',
         'essifLab-collaborative-understanding',
-        'ssi-standards',
-        {
-          label: 'SSI Standards',
+        { label: 'SSI Standards',
           type: 'category',
           collapsed: true,
           items: [
-            {
-              label: 'Overview',
-              type: 'link', // Changed "type" to lowercase "link"
-              href: 'https://tno-ssi-lab.github.io/standardisation-overview/',
-            },
-            {
-              label: 'Documentation',
-              type: 'link', // Changed "type" to lowercase "link"
-              href: 'https://tno-ssi-lab.github.io/standardisation-overview/docs.html/',
-            },
+            { label: 'Overview',      type: 'link', href: 'https://tno-ssi-lab.github.io/standardisation-overview/' },
+            { label: 'Documentation', type: 'link', href: 'https://tno-ssi-lab.github.io/standardisation-overview/docs.html/' },
           ],
         },
         'essifLab-project',
