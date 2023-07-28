@@ -28,7 +28,7 @@ scope:
 # that live within them, e.g. to use/import their data.
 #
 scopes:  #
-- scopetags: # definition of (scope) tag(s) that are used within this scope to refer to a specific terminology
+- scopetag: # definition of (scope) tag(s) that are used within this scope to refer to a specific terminology
   - tev2
   scopedir: https://github.com/tno-terminology-design/tev2/tree/master/docs/tev2 # URL of the scope-directory
 #

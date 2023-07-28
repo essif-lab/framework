@@ -114,9 +114,9 @@ The `scopetags` section is a list that specifies a mapping between [scopetags](@
 # that live within them, e.g. to use/import their data.
 #
 scopes:  #
-- scopetags: [ essiflab, essif-lab ] # definition of (scope) tag(s) that are used within this scope to refer to a specific terminology
+- scopetag: essiflab # definition of (scope) tag(s) that are used within this scope to refer to a specific terminology
   scopedir: https://github.com/essif-lab/framework/tree/master/docs # URL of the scope-directory
-- scopetags: [ ctwg, toip-ctwg ] # definition of (scope)tag(s) that are used within this scope to refer to a specific terminology
+- scopetag: ctwg  # definition of (scope)tag(s) that are used within this scope to refer to a specific terminology
   scopedir: https://github.com/trustoverip/ctwg # URL of the scope-directory
 ~~~
 
