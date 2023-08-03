@@ -1,3 +1,5 @@
+# ChatGPT intro: I'm trying to build a machine readable glossary (MRG) from markdown files. The structure of the files and other things is found in the SAF.yaml file, e.g. where these markdown files are located (`curatedir`), and where the MRG is to be written (`glossarydir`). Here is the script I use:
+
 import argparse
 import os
 import yaml
@@ -98,14 +100,14 @@ def process_markdown_file(md_file, saf_data, error_messages):
         error_messages.append(f"Error: Invalid YAML front matter in {md_file}")
         return None
 
-    # Raise error if 'id' is missing
-    if 'id' not in mrg_entry:
-        error_messages.append(f"Error: 'id' field is missing in {md_file}")
+    # Raise error if 'term' is missing
+    if 'term' not in mrg_entry:
+        error_messages.append(f"Error: 'term' field is missing in {md_file}")
         return None
 
     mrg_entry['scopetag'] = saf_data.get("scope", {}).get("scopetag")  # Use the actual scopetag value
-    mrg_entry['locator'] = '<locator>/' + mrg_entry['id']
-    mrg_entry['navurl'] = '<navurl>/' + mrg_entry['id']
+    mrg_entry['locator'] = '<locator>/' + mrg_entry['term']
+    mrg_entry['navurl'] = '<navurl>/' + mrg_entry['term']
 
     # Find heading tags in the markdown body
     body_content = content[end_index+3:]
@@ -142,6 +144,20 @@ def process_markdown_file(md_file, saf_data, error_messages):
             replacement = f"[{show_text}](@)"
             glossary_text = glossary_text.replace(placeholder, replacement)
         mrg_entry['glossaryText'] = glossary_text
+
+    # Replace hoverText placeholders if it exists
+    hover_text = mrg_entry.get('hoverText')
+
+    if hover_text:
+        def capitalize_first_letters(match):
+            text = match.group(1)
+            words = text.split()
+            capitalized_words = [word.capitalize() if word.islower() else word for word in words]
+            return ' '.join(capitalized_words)
+
+        hover_text = re.sub(r'\[([^\]]+?)\]\(.*?@[^@]*\)', capitalize_first_letters, hover_text)
+
+        mrg_entry['hoverText'] = hover_text
 
     return mrg_entry
 
