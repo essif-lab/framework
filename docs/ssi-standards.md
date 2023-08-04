@@ -4,6 +4,14 @@ title: SSI Standards
 date: 20210601
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# SSI Standards
+
+:::danger This page is deprecated (and outdated)
+For an overview of SSI-related standards, please visit https://tno-ssi-lab.github.io/standardisation-overview/
+:::
+
 The purpose of this document is to provide an overview of standards activities for self-sovereign identity (SSI) and their relevance to eSSIF-Lab.
 
 ## 1.  Introduction
