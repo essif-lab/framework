@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: onboarding
+term: onboarding
 formphrases: onboarding, onboard, onboards, onboarded
 status: draft
 grouptags:

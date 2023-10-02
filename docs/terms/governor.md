@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: governor
+term: governor
 formphrases: governor{ss}
 status: draft
 grouptags:

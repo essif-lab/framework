@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: presentation
+term: presentation
 formphrases: presentation{ss}, verifiable-presentation{ss}
 status: draft
 grouptags:

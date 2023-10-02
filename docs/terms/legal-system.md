@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: legal-system
+term: legal-system
 formphrases: legal-system{ss}
 status: draft
 grouptags:

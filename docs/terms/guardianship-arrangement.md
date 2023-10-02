@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: guardianship-arrangement
+term: guardianship-arrangement
 formphrases: guardianship-arrangement{ss}, guardianship{ss}
 status: draft
 grouptags:

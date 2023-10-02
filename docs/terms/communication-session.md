@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: communication-session
+term: communication-session
 formphrases: communication-session{ss}, digital-communication-session{ss}
 status: draft
 grouptags:

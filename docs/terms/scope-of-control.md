@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
 type: concept
 termid: scope-of-control
+term: scope-of-control
 formphrases: scope-of-control, scopes-of-control
 status: draft
 grouptags:

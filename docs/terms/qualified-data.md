@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: qualified-data
+term: qualified-data
 formphrases: qualified-data
 status: draft
 grouptags:

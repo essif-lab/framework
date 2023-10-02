@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: policy
+term: policy
 formphrases: polic{yies}, business-polic{yies}, operational-polic{yies}
 status: draft
 grouptags:

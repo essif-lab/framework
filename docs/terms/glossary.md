@@ -5,6 +5,7 @@ id: glossary
 scope: essiflab
 termtype: concept
 termid: glossary
+term: glossary
 formphrases: glossar{yies}
 grouptags:
 status: proposed

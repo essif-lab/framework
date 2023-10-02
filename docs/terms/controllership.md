@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: controllership
+term: controllership
 formphrases: controllership
 status: draft
 grouptags:

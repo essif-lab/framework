@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: party
+term: party
 formphrases: part{yies}
 status: draft
 grouptags:

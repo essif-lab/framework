@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: trust
+term: trust
 formphrases: trust, trusts, trusting, trusted
 status: draft
 grouptags:

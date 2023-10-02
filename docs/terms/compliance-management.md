@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: compliance-management
+term: compliance-management
 formphrases: compliance-management
 status: draft
 grouptags:

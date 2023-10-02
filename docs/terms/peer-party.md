@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: term
 termid: peer-party
+term: peer-party
 formphrases: peer-part{yies}
 conceptref: essifLab:party
 status: draft

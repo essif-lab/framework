@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: colleague
+term: colleague
 formphrases: colleague{ss}, digital-colleague{ss}
 status: draft
 grouptags:

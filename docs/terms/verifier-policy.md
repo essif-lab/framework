@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: verifier-policy
+term: verifier-policy
 formphrases: verifier-polic{yies}
 status: draft
 grouptags:

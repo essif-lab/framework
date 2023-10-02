@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: assertion
+term: assertion
 formphrases: assertion{ss}, claim{ss}, statement{ss}
 status: draft
 grouptags:

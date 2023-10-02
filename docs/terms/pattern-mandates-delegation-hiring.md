@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
 termid: mandates-delegation-hiring
+term: mandates-delegation-hiring
 formphrases: mandates-delegation-hiring
 status: draft
 grouptags:

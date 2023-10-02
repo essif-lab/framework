@@ -1,0 +1,3516 @@
+terminology:
+  scopetag: essiflab
+  scopedir: https://github.com/essif-lab/framework/tree/master/docs
+  curatedir: terms
+  glossarydir: glossaries
+  website: https://essif-lab.github.io/framework
+  navpath: /docs/terms
+  license: LICENSE.md
+  version: terms
+  altversions: curated-terms, owned-terms
+  date: '20231002'
+scopes:
+  scopes: []
+entries:
+  - id: action
+    title: Action
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: action
+    term: action
+    formphrases: action{ss}, acting, activit(yies)
+    status: draft
+    grouptags:
+    hoverText: "Action: something that is actually done (a 'unit of work' that is
+      executed) by a single Actor (on behalf of a given Party), as a single operation,
+      in a specific context."
+    glossaryText: something that is actually done (a 'unit of work' that is executed)
+      by a single [actor](@) (on behalf of a given [party](@)), as a single operation,
+      in a specific context.
+    date: 20220324
+    locator: <locator>/action
+    navurl: <navurl>/action
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+      - notes
+  - id: actor
+    title: Actor
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: actor
+    term: actor
+    formphrases: actor{ss}, digital-actor{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Actor: Entity that can act (do things/execute Actions), e.g. people,
+      machines, but not Organizations.'
+    glossaryText: Entity that can act (do things/execute [actions](@)), e.g. people,
+      machines, but not [organizations](@).
+    date: 20210601
+    locator: <locator>/actor
+    navurl: <navurl>/actor
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+      - examples
+      - related-concepts
+  - id: advertisement
+    title: Advertisement
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: advertisement
+    term: advertisement
+    formphrases: advertisement{ss}, advertise, advertising
+    status: draft
+    grouptags:
+    hoverText: 'Advertisement (of a Party): an offer of that Party to provide a (type
+      of) Credential, where the offer includes (a reference to) the syntax and semantics
+      specifications of that Credential, and also lists various other characteristics
+      that enable other Parties to decide whether or not a Credential that the advertising
+      Party has issued under this offer, isValid to be processed in one or more of
+      its Information processes.'
+    glossaryText: an offer by a specific [party](@) to provide a (type of) [credential](@),
+      where the offer includes (a reference to) the syntax and semantics specifications
+      of that [credential](@), and also lists various other characteristics that enable
+      other [parties](@) to decide whether or not a [credential](@) that the advertising
+      [party](@) has issued under this offer, is [valid](@) to be processed in one
+      or more of its [information processes](@).
+    date: 20220918
+    locator: <locator>/advertisement
+    navurl: <navurl>/advertisement
+    headingids:
+      - short-description
+  - id: agent
+    title: Agent
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: agent
+    term: agent
+    formphrases: agent{ss}, digital-agent{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Agent (of a Party): an Actor that is executing an Action on behalf
+      of a Party (called the Principal of that Actor).'
+    glossaryText: an [actor](@) that is executing an [action](@) on behalf of a [party](@)
+      (called the [principal](@) of that [actor](@)).
+    date: 20210601
+    locator: <locator>/agent
+    navurl: <navurl>/agent
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+      - examples
+  - id: assertion
+    title: Assertion
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: assertion
+    term: assertion
+    formphrases: assertion{ss}, claim{ss}, statement{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Assertion: a declaration/statement, made by a specific Party, that
+      something is the case.'
+    glossaryText: a declaration/statement, made by a specific [party](@), that something
+      is the case.
+    date: 20210601
+    locator: <locator>/assertion
+    navurl: <navurl>/assertion
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+      - notes
+  - id: assessment-framework
+    title: Assessment framework
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: assessment-framework
+    term: assessment-framework
+    formphrases: assessment-framework{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Assessment framework (for a set of requirements on a specified kind
+      of Entity)): the combination of a set of criteria that an auditor can assess
+      by applying them to an Entity (of the specified kind), and the procedures that
+      this Auditor will follow for doing so, for the purpose of establishing the extent
+      in which that Entity conforms to the stated set of requirements.'
+    glossaryText: the combination of a set of criteria that an auditor can assess
+      by applying them to an [entity](@) (of a specific kind), and the procedures
+      that this auditor will follow for doing so, for the purpose of establishing
+      the extent in which that [entity](@) conforms to a stated set of requirements.
+    date: 20220203
+    locator: <locator>/assessment-framework
+    navurl: <navurl>/assessment-framework
+    headingids:
+      - short-description
+      - purpose
+  - id: attribute
+    title: Attribute
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: attribute
+    term: attribute
+    formphrases: attribute{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Attribute (of an Entity): Data, that represents a characteristic that
+      a Party (the Owner of the attribute) has attributed to an Entity (which is the
+      Subject of that attribute).'
+    glossaryText: '[Data](@), that represents a characteristic that a [party](@) (the
+      [owner](@) of the [attribute](@)) has attributed to an [entity](@) (which is
+      the [subject](@) of that attribute).'
+    date: 20210821
+    locator: <locator>/attribute
+    navurl: <navurl>/attribute
+    headingids:
+      - short-description
+  - id: authority
+    title: Authority (Centralized or Decentralized)
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: authority
+    term: authority
+    formphrases: authorit{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Authority: a Party of which certain decisions, ideas, rules etc. are
+      followed by other Parties.'
+    glossaryText: a [party](@) of which certain decisions, ideas, rules etc. are followed
+      by other [parties](@).
+    date: 20210601
+    locator: <locator>/authority
+    navurl: <navurl>/authority
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+  - id: capability-of-an-actor
+    title: Capability (of an Actor)
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: capability-of-an-actor
+    term: capability-of-an-actor
+    formphrases: capabilit{yies}-of-an-actor
+    status: draft
+    grouptags:
+    hoverText: "Capability (of an Actor): the potential of that Actor to execute a
+      (named) coherent set of Actions (a 'function', or 'task') on behalf of some
+      Party."
+    glossaryText: The potential of an [actor](@) to execute a (named) coherent set
+      of [actions](@) (a 'function', or 'task') on behalf of some [party](@).
+    date: 20220922
+    locator: <locator>/capability-of-an-actor
+    navurl: <navurl>/capability-of-an-actor
+    headingids:
+      - short-description
+      - examples
+  - id: capability
+    title: Capability (of a Party)
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: capability
+    term: capability
+    formphrases: capabilit{yies}, capabilit{yies}-of-a-party
+    status: draft
+    grouptags:
+    hoverText: "Capability (of a Party): the (named) combination of (a) the Party's
+      means to get something done, (b) the Party's Governance process that that ensures
+      that its (business) Policies for getting that something done are being created
+      and maintained, and (c) the Party's Management process that creates and maintains
+      the (operational) Policies, such that every Employee that has a task in getting
+      this something done can find and interpret a Policy and use it as it executes
+      Actions in such tasks."
+    glossaryText: The (named) combination of (a) the means of a specific [party](@)
+      to get something done, (b) the [party's](@) [governance](@) process that ensures
+      that its (business) [policies](@) for getting that something done are being
+      created and maintained, and (c) the [party's](@) [management](@) process that
+      creates and maintains the (operational) [policies](@), such that every [employee](@)
+      that has a task in getting this something done can find and interpret a [policy](@)
+      and use it as it executes [actions](@) in such tasks.
+    date: 20220922
+    locator: <locator>/capability
+    navurl: <navurl>/capability
+    headingids:
+      - short-description
+      - examples
+  - id: colleague
+    title: Colleague
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: colleague
+    term: colleague
+    formphrases: colleague{ss}, digital-colleague{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Colleagues: two or more (digital or non-digital) Agents that have
+      the same Principal (i.e. Party on whose behalf they are executing an Action).'
+    glossaryText: two or more (digital or non-digital) [agents](@) that have the same
+      [principal](@) (i.e. [party](@) on whose behalf they are executing an [action](@)).
+    date: 20220330
+    locator: <locator>/colleague
+    navurl: <navurl>/colleague
+    headingids:
+      - short-description
+      - examples
+      - purpose
+  - id: commitment-decision
+    title: Commitment Decision
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: commitment-decision
+    term: commitment-decision
+    formphrases: commitment-decision{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Commitment Decision (of a Party in a Business Transaction): the decision
+      of that Party whether or not to commit to that Business Transaction, i.e. (promise)
+      to fulfill the Obligations that the associated Business Transaction Agreement
+      Proposal would impose on that Party once it were signed.'
+    glossaryText: the decision of that [party](@) whether or not to commit to that
+      [business transaction](@), i.e. (promise) to fulfill the [obligations](@) that
+      the associated [transaction agreement proposal](@) would impose on that [party](@)
+      once it were signed.
+    date: 20210601
+    locator: <locator>/commitment-decision
+    navurl: <navurl>/commitment-decision
+    headingids:
+      - short-description
+  - id: communication-channel
+    title: Communication Channel
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: communication-channel
+    term: communication-channel
+    formphrases: communication-channel{ss}, digital-communication-channel{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Communication Channel: a (digital or non-digital) means by which two
+      Actors can exchange messages with one another.'
+    glossaryText: a (digital or non-digital) means by which two [actors](@) can exchange
+      messages with one another.
+    date: 20210601
+    locator: <locator>/communication-channel
+    navurl: <navurl>/communication-channel
+    headingids:
+      - notes
+      - related-concepts
+  - id: communication-session
+    title: Communication Session
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: communication-session
+    term: communication-session
+    formphrases: communication-session{ss}, digital-communication-session{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Communication Session: a time interval during which two Actors have
+      an established Communication Channel that does not exist outside of that time
+      interval.'
+    glossaryText: a time interval during which two [actors](@) have an established
+      [communication channel](@) that does not exist outside of that time interval.
+    date: 20210601
+    locator: <locator>/communication-session
+    navurl: <navurl>/communication-session
+  - id: community
+    title: Community
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: community
+    term: community
+    formphrases: communit{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Community: a Party, consisting of at least two different Parties (the
+      members of the Community) that seek to collaborate with each other so that each
+      of them can achieve its individual Objectives more efficiently and/or effectively.'
+    glossaryText: a [party](@), consisting of at least two different [parties](@)
+      (the members of the [community](@)) that seek to collaborate with each other
+      so that each of them can achieve its individual [objectives](@) more efficiently
+      and/or effectively.
+    date: 20210601
+    locator: <locator>/community
+    navurl: <navurl>/community
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+  - id: compliance-level
+    title: Compliance level
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: compliance-level
+    term: compliance-level
+    formphrases: compliance-level{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Compliance level (of an Entity, regarding a stated (set of) requirement(s)):
+      a measure for stating how well the Entity conforms with the stated (set of)
+      requirement(s).'
+    glossaryText: a measure for stating how well an [entity](@) conforms with a stated
+      (set of) requirement(s).
+    date: 20220203
+    locator: <locator>/compliance-level
+    navurl: <navurl>/compliance-level
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+  - id: compliance-management
+    title: Compliance management
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: compliance-management
+    term: compliance-management
+    formphrases: compliance-management
+    status: draft
+    grouptags:
+    hoverText: 'Compliance management (by a Party): the process that is run by (or
+      on behalf of) that Party for the purpose of Managing its Compliance-objectives.'
+    glossaryText: the process that is run by (or on behalf of) a specific [party](@)
+      for the purpose of [managing](@) its [compliance objectives](@).
+    date: 20220203
+    locator: <locator>/compliance-management
+    navurl: <navurl>/compliance-management
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+  - id: compliance-objective
+    title: Compliance Objective
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: compliance-objective
+    term: compliance-objective
+    formphrases: compliance-objective{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Compliance objective (of a Party): an Objective, owned by that Party,
+      that aims to reach and maintain a state of affairs in which a specific set of
+      Entities that this Party controls are in accordance with a specific set of requirements
+      (e.g., laws, regulations, standards, etc.).'
+    glossaryText: an [objective](@), owned by a [party](@), that aims to reach and
+      maintain a state of affairs in which a specific set of [entities](@) that this
+      [party](@) controls are in accordance with a specific set of requirements (e.g.,
+      laws, regulations, standards, etc.).
+    date: 20220203
+    locator: <locator>/compliance-objective
+    navurl: <navurl>/compliance-objective
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+  - id: compliance
+    title: Compliance
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: compliance
+    term: compliance
+    formphrases: compliance
+    status: draft
+    grouptags:
+    hoverText: 'Compliance (of a Party): the state of realization of a set of conformance
+      criteria or normative framework of that Party.'
+    glossaryText: the state of realization of a set of conformance criteria or normative
+      framework of a [party](@).
+    date: 20220220
+    locator: <locator>/compliance
+    navurl: <navurl>/compliance
+    headingids:
+      - short-description
+      - purpose
+  - id: concept-file
+    title: Concept-file
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: concept-file
+    term: concept-file
+    formphrases: concept-file{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Concept-file: a file whose contents defines/specifies a Concept.'
+    glossaryText: a file whose contents defines/specifies a [concept](@).
+    date: 20210601
+    locator: <locator>/concept-file
+    navurl: <navurl>/concept-file
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+      - examples
+  - id: concept
+    title: Concept
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: concept
+    term: concept
+    formphrases: concept{ss}
+    status: draft
+    grouptags:
+    hoverText: "Concept: the ideas/thoughts behind a classification of Entities (what
+      makes Entities in that class 'the same')."
+    glossaryText: the ideas/thoughts behind a classification of [entities](@) (what
+      makes [entities](@) in that class 'the same').
+    date: 20210601
+    locator: <locator>/concept
+    navurl: <navurl>/concept
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - related-concepts
+      - notes
+      - footnotes
+  - id: control-level
+    title: Control level
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: control-level
+    term: control-level
+    formphrases: control-level{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Control level (of a Control): a measure for the efficiency and effectiveness
+      in which a Control produces the results of its Control Objective.'
+    glossaryText: a measure for the efficiency and effectiveness in which a [control](@)
+      produces the results specified by its [control objective](@)
+    date: 20220212
+    locator: <locator>/control-level
+    navurl: <navurl>/control-level
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+  - id: control-objective
+    title: Control Objective
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: control-objective
+    term: control-objective
+    formphrases: control-objective{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Control objective (of a Party): an Objective, owned by that Party,
+      that aims to contribute to the realization of another (set of) Objective(s)
+      of that Party, by producing results that this Party needs to realize these other
+      Objective(s).'
+    glossaryText: an [objective](@), owned by a [party](@), that aims to contribute
+      to the realization of another (set of) [objective(s)](@) of that [party](@),
+      by producing results that this [party](@) needs to realize these other [objective(s)](@).
+    date: 20220203
+    locator: <locator>/control-objective
+    navurl: <navurl>/control-objective
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - notes
+  - id: control-process
+    title: Control Process
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: control-process
+    term: control-process
+    formphrases: control-process, control-processes
+    status: draft
+    grouptags:
+    hoverText: 'Control Process (of a Party): a process that is run by a Party to
+      ensure that a specific set of its control Objectives are realized.'
+    glossaryText: a process, [owned](@) and run by a [party](@), to ensure that a
+      specific subset of its control [objectives](@) are realized.
+    date: 20210830
+    locator: <locator>/control-process
+    navurl: <navurl>/control-process
+    headingids:
+      - short-description
+      - control-process
+      - 1-setting-of-initial-control-objectives
+      - 2-measuring-results-effects
+      - 3-judging-results-effects
+      - 4-reflection-learning
+      - 5-decision-making
+      - controlling-the-control-process-itself
+  - id: control
+    title: Control
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: control
+    term: control
+    formphrases: control{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Control (of a Party): the combination of resources (e.g. people, tools,
+      budgets, time) and processes that are tasked to realize a specific Control Objective
+      of that Party.'
+    glossaryText: the combination of resources (e.g. people, tools, budgets, time)
+      and processes that are tasked to realize a specific [control objective](@) of
+      a particular [party](@).
+    date: 20220212
+    locator: <locator>/control
+    navurl: <navurl>/control
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - notes
+  - id: controller
+    title: Controller
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: controller
+    term: controller
+    formphrases: controller{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Controller (of an Entity): the role that an Actor performs as it is
+      executing actions on that Entity for the purpose of ensuring that the Entity
+      will act/behave, or be used, in a particular way.'
+    glossaryText: the role that an [actor](@) performs as it is executing actions
+      on that [entity](@) for the purpose of ensuring that the [entity](@) will act/behave,
+      or be used, in a particular way.
+    date: 20211222
+    locator: <locator>/controller
+    navurl: <navurl>/controller
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - notes
+      - related-concepts
+  - id: controllership
+    title: Controllership
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: controllership
+    term: controllership
+    formphrases: controllership
+    status: draft
+    grouptags:
+    hoverText: 'Controllership (of an Actor over an Entity): the Capability  of an
+      Actor to execute actions on that Entity for the purpose of ensuring that the
+      Entity will act/behave, or be used, in a particular way.'
+    glossaryText: the [capability](@) of an [actor](@) to execute [actions](@) on
+      a specific [entity](@) for the purpose of ensuring that this [entity](@) will
+      act/behave, or be used, in a particular way.
+    date: 20211222
+    locator: <locator>/controllership
+    navurl: <navurl>/controllership
+    headingids:
+      - short-description
+  - id: corpus
+    title: Corpus of Terminology
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: corpus
+    term: corpus
+    formphrases: corpus, corpus-of-terminology
+    status: draft
+    grouptags:
+    hoverText: 'Corpus (of Terminology): the documentation that describes the Knowledge
+      around a set of Terms and Concepts.'
+    glossaryText: the documentation that describes the [knowledge](@) around a set
+      of [terms](@) and [concepts](@).
+    date: 20210601
+    locator: <locator>/corpus
+    navurl: <navurl>/corpus
+    headingids:
+      - short-description
+      - purpose
+      - acknowledgements
+  - id: credential-catalogue
+    title: Credential Catalogue
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: credential-catalogue
+    term: credential-catalogue
+    formphrases: credential-catalogue{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Credential Catalogue: a functional component that has the [](capability-of-an-actor@)
+      to register and advertise the information about Credential Types that their
+      respective Governing Parties have decided to disclose so as to enable other
+      Parties to decide whether or not it is beneficial for them to use Credentials
+      of such types.'
+    glossaryText: a functional component that has the [](capability-of-an-actor@)
+      to register and advertise the information about [credential types](@) that their
+      respective [governing parties](@) have decided to disclose so as to enable other
+      [parties](@) to decide whether or not it is beneficial for them to use [credentials](@)
+      of such types.
+    date: 20210601
+    locator: <locator>/credential-catalogue
+    navurl: <navurl>/credential-catalogue
+    headingids:
+      - short-description
+  - id: credential-type
+    title: Credential Type
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: credential-type
+    term: credential-type
+    formphrases: credential-type{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Credential Type: the specification of the contents, properties, constraints
+      etc. that Credentials of this type must have/comply with.'
+    glossaryText: the specification of the contents, properties, constraints etc.
+      that [credentials](@) of this type must have/comply with.
+    date: 20210601
+    locator: <locator>/credential-type
+    navurl: <navurl>/credential-type
+    headingids:
+      - short-description
+      - purpose
+  - id: credential
+    title: Credential
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: credential
+    term: credential
+    formphrases: credential{ss}, verifiable-credential{ss}, attribute-based-credential{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Credential: data, representing a set of Assertions (claims, statements),
+      authored and signed by, or on behalf of, a specific Party.'
+    glossaryText: data, representing a set of [assertions](@) (claims, statements),
+      authored and signed by, or on behalf of, a specific [party](@).
+    date: 20210601
+    locator: <locator>/credential
+    navurl: <navurl>/credential
+    headingids:
+      - short-description
+      - examples
+      - purpose
+      - criteria
+      - notes
+      - related-concepts
+      - references
+  - id: data
+    title: Data
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: data
+    term: data
+    formphrases: data, digital-data
+    status: draft
+    grouptags:
+    hoverText: 'Data: something (tangible) that can be used to communicate a meaning
+      (which is intangible/information).'
+    glossaryText: something (tangible) that can be used to communicate a meaning (which
+      is intangible/information).
+    date: 20210601
+    locator: <locator>/data
+    navurl: <navurl>/data
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - related-concepts
+  - id: decision
+    title: Decision
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: decision
+    term: decision
+    formphrases: decision{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Decision (of a Party): the conclusion that this Party inferences from
+      a set of Data that it considers to be facts.'
+    glossaryText: the conclusion that a [party](@) inferences from a set of [data](@)
+      that it considers to be facts.
+    date: 20211111
+    locator: <locator>/decision
+    navurl: <navurl>/decision
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+  - id: definition
+    title: Definition
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: definition
+    term: definition
+    formphrases: definition{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Definition: a text that helps Parties to have the same understanding
+      about the meaning of (and Concepts behind) a Term, ideally in such a way that
+      these Parties can determine whether or not they make the same distinction.'
+    glossaryText: a text that helps [parties](@) to have the same understanding about
+      the meaning of (and [concepts](@) behind) a [term](@), ideally in such a way
+      that these [parties](@) can determine whether or not they make the same distinction.
+    date: 20210601
+    locator: <locator>/definition
+    navurl: <navurl>/definition
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - examples
+      - related-concepts
+      - notes
+  - id: delegate
+    title: Delegate
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: delegate
+    term: delegate
+    formphrases: delegate{ss}, delegated, delegating, delegator{ss}, delegatee{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Delegate: the transferral of Ownership of one or more Obligations
+      of a Party (the Delegator), including the associated accountability, to another
+      Party (the Delegatee), which implies that the Delegatee can realize such Obligations
+      as it sees fit.'
+    glossaryText: the transferral of [ownership](@) of one or more [obligations](@)
+      of a [party](@) (the [delegator](@)), including the associated accountability,
+      to another [party](@) (the [delegatee](@))), which implies that the [delegatee](@)
+      can realize such [obligations](@) as it sees fit.
+    date: 20220222
+    locator: <locator>/delegate
+    navurl: <navurl>/delegate
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+      - examples
+      - notes
+  - id: dependent
+    title: Dependent
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: dependent
+    term: dependent
+    formphrases: dependent{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Dependent (in a Guardianship Arrangement): an Entity for the caring
+      for and/or protecting/guarding/defending of which a Guardianship Arrangement
+      has been established.'
+    glossaryText: an [entity](@) for the caring for and/or protecting/guarding/defending
+      of which a [guardianship arrangement](@) has been established.
+    date: 20210601
+    locator: <locator>/dependent
+    navurl: <navurl>/dependent
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+  - id: dictionary-file
+    title: Dictionary-file
+    scopetag: essiflab
+    type: dictionary
+    termid: dictionary-file
+    term: dictionary-file
+    status: draft
+    grouptags:
+    hoverText: 'Dictionary-file: a file whose contents specifies the contents of a
+      Dictionary.'
+    glossaryText: a file whose contents specifies the contents of a [dictionary](@).
+    date: 20210601
+    locator: <locator>/dictionary-file
+    navurl: <navurl>/dictionary-file
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+  - id: dictionary
+    title: Dictionary
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: dictionary
+    term: dictionary
+    formphrases: dictionar{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Dictionary: an alphabetically sorted list of Terms with various meanings
+      they may have in different contexts.'
+    glossaryText: an alphabetically sorted list of [terms](@) with various meanings
+      they may have in different contexts.
+    date: 20210601
+    locator: <locator>/dictionary
+    navurl: <navurl>/dictionary
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - examples
+      - related-concepts
+  - id: documentation-interop
+    title: Documentation Interoperability
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: documentation-interop
+    term: documentation-interop
+    formphrases: documentation-interop
+    status: draft
+    grouptags:
+    hoverText: 'Documentation Interoperability: the property that a documentation
+      system of making its content comprehensible for a variety of people that come
+      from different backgrounds.'
+    glossaryText: the property that a documentation system of making its content comprehensible
+      for a variety of people that come from different backgrounds.
+    date: 20210601
+    locator: <locator>/documentation-interop
+    navurl: <navurl>/documentation-interop
+    headingids:
+      - related-concepts
+  - id: ecosystem
+    title: Ecosystem
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: ecosystem
+    term: ecosystem
+    formphrases: ecosystem{ss}
+    status: draft
+    grouptags:
+    hoverText: "Ecosystem: a set of at least two (autonomous) Parties (its 'members')
+      whose individual work complements that of other members, and is of benefit to
+      the set as a whole."
+    glossaryText: a set of at least two (autonomous) [parties](@) (its 'members')
+      whose individual work complements that of other members, and is of benefit to
+      the set as a whole.
+    date: 20210601
+    locator: <locator>/ecosystem
+    navurl: <navurl>/ecosystem
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+  - id: employee
+    title: Employee
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: employee
+    term: employee
+    formphrases: employee{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Employee (of a Party): a (human or digital) Actor for whom/which it
+      is realistic that it might execute Actions on behalf of that Party (called the
+      Employer of that Actor).'
+    glossaryText: a (human or non-human (digital)) [actor](@) for whom/which it is
+      realistic that it might execute [actions](@) on behalf of a [party](@) (called
+      the [employer](@) of that [actor](@)).
+    date: 20221007
+    locator: <locator>/employee
+    navurl: <navurl>/employee
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+  - id: employer
+    title: Employer
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: employer
+    term: employer
+    formphrases: employer{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Employer (of an Actor): a Party on whose behalf this (human or non-human)
+      Actor (called an Employee of that Party) might execute Actions.'
+    glossaryText: a [party](@) on whose behalf a (human or non-human) [actor](@) (called
+      an [employee](@) of that [party](@)) might execute [actions](@).
+    date: 20220916
+    locator: <locator>/employer
+    navurl: <navurl>/employer
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+  - id: employment-contract
+    title: Employment Contract
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: employment-contract
+    term: employment-contract
+    formphrases: employment-contract{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Employment Contract (between two Parties, concerning a set of Actors):
+      an agreement/contract between these Parties that states (or refers to) all (sets
+      of) rights and duties under which the Actors (the Subjects of the contract),
+      that are controlled by one Party, can and/or must work for the other Party.'
+    glossaryText: an agreement/contract between two [parties](@), one of which controls
+      a set of [actors](@) (the [subjects](@) of the contract), that states (or refers
+      to) all (sets of) rights and duties under which these [actors](@) can and/or
+      must work for the other [party](@).
+    date: 20210601
+    locator: <locator>/employment-contract
+    navurl: <navurl>/employment-contract
+    headingids:
+      - short-description
+      - examples
+      - purpose
+      - criteria
+  - id: entity
+    title: Entity
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: entity
+    term: entity
+    formphrases: entit{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Entity: someone or something that is known to exist.'
+    glossaryText: someone or something that is known to exist.
+    date: 20210601
+    locator: <locator>/entity
+    navurl: <navurl>/entity
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+      - related-concepts
+  - id: eSSIFLab-scope
+    title: 'Scope: essifLabTerminology'
+    scopetag: essiflab
+    type: scope
+    termid: eSSIFLab
+    term: eSSIFLab
+    status: draft
+    grouptags:
+    hoverText: 'ESSIFLab: specification of the eSSIF-Lab scope.'
+    glossaryText: specification of the eSSIF-Lab scope.
+    date: 20210601
+    locator: <locator>/eSSIFLab
+    navurl: <navurl>/eSSIFLab
+    headingids:
+      - governance
+      - objectives-issues
+      - scope-uri
+      - inclusions
+      - background
+  - id: expectation
+    title: Expectation
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: expectation
+    term: expectation
+    formphrases: expectation{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Expectation (of a Party): an Objective that is Owned by that Party
+      for having a specific (set of) result(s) produced, where the actual production
+      thereof is (going to be) outsourced to another Party.'
+    glossaryText: an [objective](@) that is [owned](@) by a [party](@) for having
+      a specific (set of) result(s) produced, where the actual production thereof
+      is (going to be) outsourced to another [party](@).
+    date: 20220908
+    locator: <locator>/expectation
+    navurl: <navurl>/expectation
+    headingids:
+      - short-description
+  - id: framework
+    title: Framework (Conceptual)
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: framework
+    term: framework
+    formphrases: framework{ss}, conceptual-framework{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Framework (Conceptual): A set of assumptions, concepts, values, and
+      practices that constitutes a way of viewing reality.'
+    glossaryText: A set of assumptions, concepts, values, and practices that constitutes
+      a way of viewing reality.
+    date: 20220405
+    locator: <locator>/framework
+    navurl: <navurl>/framework
+    headingids:
+      - short-description
+  - id: glossary-file
+    title: Glossary-file
+    scopetag: essiflab
+    type: glossary
+    termid: glossary-file
+    term: glossary-file
+    status: draft
+    grouptags:
+    hoverText: 'Glossary-file: a file whose contents defines/specifies a Glossary.'
+    glossaryText: a file whose contents defines/specifies a [glossary](@).
+    date: 20210601
+    locator: <locator>/glossary-file
+    navurl: <navurl>/glossary-file
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+# `Multiple-use fields` (used by TEv2 and Docusaurus)
+  - id: glossary
+# TEv2: generic front-matter for curated texts
+    scope: essiflab
+    termtype: concept
+    termid: glossary
+    term: glossary
+    formphrases: glossar{yies}
+    grouptags:
+    status: proposed
+    created: 2022-06-06
+    updated: 2021-06-01
+    vsntag: v0.1
+    contributors: RieksJ
+    glossaryText: an alphabetically sorted list of [terms](@) with the (single) meaning
+      it has in (at least) one context.
+# Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
+    title: Glossary
+    displayed_sidebar: essifLabSideBar
+    hoverText: 'Glossary: an alphabetically sorted list of Terms with the (single)
+      meaning it has in (at least) one context.'
+    scopetag: essiflab
+    locator: <locator>/glossary
+    navurl: <navurl>/glossary
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - examples
+      - related-concepts
+      - notes
+  - id: governance
+    title: Governance
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: governance
+    term: governance
+    formphrases: governance, govern, governs, governed, governed-by, governing, governing-part{yies},
+      governor{ss}, government{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Governance: the act or process of governing or overseeing the realization
+      of (the results associated with) a set of Objectives by the Owner of these Objectives,
+      in order to ensure they will be fit for the purposes that this Owner intends
+      to use them for.'
+    glossaryText: the [act](@) or process of governing or overseeing the realization
+      of (the results associated with) a set of [objectives](@) by the [owner](@)
+      of these [objectives](@), in order to ensure they will be fit for the purposes
+      that this [owner](@) intends to use them for.
+    date: 20210830
+    locator: <locator>/governance
+    navurl: <navurl>/governance
+    headingids:
+      - short-description
+      - purpose
+  - id: governor
+    title: Governor
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: governor
+    term: governor
+    formphrases: governor{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Governor: a Role that a Party (better: Employee of a specific Party)
+      performs as it Governs a (coherent) set of Expectations of that Party, within
+      a particular focus.'
+    glossaryText: 'a [role](@) that a [party](@) (better: [employee](@) of a specific
+      [party](@)) performs as it [governs](@) a (coherent) set of [expectations](@)
+      of that [party](@), within a particular focus.'
+    date: 20220915
+    locator: <locator>/governor
+    navurl: <navurl>/governor
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+  - id: guardian
+    title: Guardian
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: guardian
+    term: guardian
+    formphrases: guardian
+    status: draft
+    grouptags:
+    hoverText: 'Guardian: a Party that has been assigned rights and duties in a Guardianship
+      Arrangement for the purpose of caring for and/or protecting/guarding/defending
+      the Entity that is the Dependent in that Guardianship Arrangement.'
+    glossaryText: a [party](@) that has been assigned rights and duties in a [Guardianship
+      Arrangement](@) for the purpose of caring for and/or protecting/guarding/defending
+      the [entity](@) that is the [dependent](@) in that Guardianship Arrangement.
+    date: 20210601
+    locator: <locator>/guardian
+    navurl: <navurl>/guardian
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+  - id: guardianship-arrangement
+    title: Guardianship Arrangement
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: guardianship-arrangement
+    term: guardianship-arrangement
+    formphrases: guardianship-arrangement{ss}, guardianship{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Guardianship Arrangement (in a Jurisdiction): a set of rights and
+      duties between Legal Entities of the Jurisdiction that have been established
+      and are enforced within that Jurisdiction for the purpose of caring for and/or
+      protecting/guarding/defending one or more of these Entities.'
+    glossaryText: 'Guardianship Arrangement (in a Jurisdiction): the specification
+      of a set of rights and duties between [legal entities](@) of the [jurisdiction](@)
+      that enforces these rights and duties, for the purpose of caring for and/or
+      protecting/guarding/defending one or more of these [entities](@).'
+    date: 20210601
+    locator: <locator>/guardianship-arrangement
+    navurl: <navurl>/guardianship-arrangement
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - notes
+  - id: guardianship-type
+    title: Guardianship-type
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: guardianship-type
+    term: guardianship-type
+    formphrases: guardianship-type{ss}, guardianship-arrangement-type{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Guardianship-type (in a Jurisdiction): a class of Guardianship Arrangements
+      within the Jurisdiction that governs and manages them.'
+    glossaryText: a class of [guardianship arrangements](@) within the [jurisdiction](@)
+      that governs and manages them.
+    date: 20210601
+    locator: <locator>/guardianship-type
+    navurl: <navurl>/guardianship-type
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+  - id: holder-policy
+    title: Holder Policy
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: holder-policy
+    term: holder-policy
+    formphrases: holder-polic{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Holder Policy: a Digital Policy that contains the rules, working-instructions,
+      preferences and other guidance for an operational Holder component to function
+      in accordance with the Objectives of its Principal'
+    glossaryText: a [digital policy](@) that enables an operational [holder](@) component
+      to function in accordance with the [objectives](@) of its [principal](@).
+    date: 20210601
+    locator: <locator>/holder-policy
+    navurl: <navurl>/holder-policy
+    headingids:
+      - short-description
+  - id: holder
+    title: Holder
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: holder
+    term: holder
+    formphrases: holder{ss}
+    status: draft
+    grouptags:
+    hoverText: "Holder (functional component): a component that implements the Capability
+      to handle presentation requests from a Peer Agent, produce the requested data
+      (a presentation) according to its Principal's holder-policy, and send that in
+      response to the request."
+    glossaryText: a component that implements the [capability](@) to handle [presentation
+      requests](@) from a [peer agent](@), produce the requested data (a presentation)
+      according to its [principal](@)'s [holder-policy](@), and send that in response
+      to the request.
+    date: 20210601
+    locator: <locator>/holder
+    navurl: <navurl>/holder
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - functionality
+  - id: human-being
+    title: Human Being
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: human-being
+    term: human-being
+    formphrases: human-being{ss}, human{ss}, person{ss}, individual{ss}, people
+    status: draft
+    grouptags:
+    hoverText: 'Human Being: a person of flesh and blood (homo sapiens), that we classify
+      both as a Party, an Actor, and a Jurisdiction.'
+    glossaryText: a person of flesh and blood (homo sapiens), that we classify both
+      as a [party](@),an [actor](@), and a [jurisdiction](@).
+    date: 20210601
+    locator: <locator>/human-being
+    navurl: <navurl>/human-being
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - notes
+  - id: identifier
+    title: Identifier
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: identifier
+    term: identifier
+    formphrases: identifier{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Identifier: a character string that is being used for the identification
+      of some Entity (yet may refer to 0, 1, or more Entities, depending on the context
+      within which it is being used).'
+    glossaryText: a character string that is being used for the identification of
+      some [entity](@) (yet may refer to 0, 1, or more [entities](@), depending on
+      the context within which it is being used).
+    date: 20210601
+    locator: <locator>/identifier
+    navurl: <navurl>/identifier
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+      - examples
+      - notes
+      - discussion-scope-of-identification
+  - id: identify
+    title: Identify
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: identify
+    term: identify
+    formphrases: identify, identifies, identifying, identifiable, identified, identification
+    status: draft
+    grouptags:
+    hoverText: 'Identify: an Act, by or on behalf of a Party, that results in the
+      selection of either (a) a single Partial identity that the party Owns, given
+      some (observed or received) data, or (b) a single Entity from a given set of
+      entities that is the Subject of a specified Partial identity that the party
+      Owns.'
+    glossaryText: "an [act](@), by or on behalf of a [party](@), that results in the
+      selection of either\n- a single [partial identity](@) that the party [owns](@),
+      given some (observed or received) data, or\n- a single [entity](@) from a given
+      set of entities that is the [subject](@) of a specified [partial identity](@)
+      that the party [owns](@)."
+    date: 20210812
+    locator: <locator>/identify
+    navurl: <navurl>/identify
+    headingids:
+      - short-description
+  - id: identity
+    title: Identity
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: identity
+    term: identity
+    formphrases: identit{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Identity (of an Entity): the combined Knowledge about that Entity
+      of all Parties, i.e. the union of all Partial Identities of which that Entity
+      is the Subject.'
+    glossaryText: the combined [knowledge](@) about that [entity](@) of all [parties](@),
+      i.e. the union of all [partial identities](@) of which that [entity](@) is the
+      [subject](@).
+    date: 20210803
+    locator: <locator>/identity
+    navurl: <navurl>/identity
+    headingids:
+      - short-description
+  - id: information-process
+    title: Information Process
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: information-process
+    term: information-process
+    formphrases: information-process, information-processes
+    status: draft
+    grouptags:
+    hoverText: 'Information Process: a coherent set of Actions that are (to be) performed
+      by a single Party, in which data (that is controlled by this Party) is created,
+      read, updated and/or deleted.'
+    glossaryText: A coherent set of [actions@] that are (to be) performed by a single
+      [party@], in which [data](@) (that is controlled by this [party](@) is created,
+      read, updated and/or deleted.
+    date: 20210922
+    locator: <locator>/information-process
+    navurl: <navurl>/information-process
+    headingids:
+      - short-description
+  - id: issuer-policy
+    title: Isuer Policy
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: issuer-policy
+    term: issuer-policy
+    formphrases: issuer-polic{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Issuer Policy: a Digital Policy that contains the rules, working-instructions,
+      preferences and other guidance for an operational Issuer component to function
+      in accordance with the Objectives of its Principal.'
+    glossaryText: a [digital policy](@) that enables an operational [issuer](@) component
+      to function in accordance with the [objectives](@) of its [principal](@).
+    date: 20210601
+    locator: <locator>/issuer-policy
+    navurl: <navurl>/issuer-policy
+    headingids:
+      - short-description
+  - id: issuer
+    title: Issuer
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: issuer
+    term: issuer
+    formphrases: issuer{ss}
+    status: draft
+    grouptags:
+    hoverText: "Issuer (functional component): a component that implements the Capability
+      to construct Credentials from data objects, according to the content of its
+      Principal's Issuer-Policy (specifically regarding the way in which the Credential
+      is to be digitally signed), and pass it to the Wallet-component of its Principal
+      allowing it to be issued."
+    glossaryText: a component that implements the [capability](@) to construct [credentials](@)
+      from data objects, according to the content of its [principal](@)'s [issuer](@)-Policy
+      (specifically regarding the way in which the [credential](@) is to be digitally
+      signed), and pass it to the [wallet](@)-component of its [principal](@) allowing
+      it to be issued.
+    date: 20210601
+    locator: <locator>/issuer
+    navurl: <navurl>/issuer
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - functionality
+  - id: jurisdiction
+    title: Jurisdiction
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: jurisdiction
+    term: jurisdiction
+    formphrases: jurisdiction{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Jurisdiction: the composition of a Legal System (legislation, enforcement
+      thereof, and conflict resolution), a Party that governs that Legal System, a
+      scope within which that Legal System is operational, and one or more Objectives
+      for the purpose of which the Legal System is operated.'
+    glossaryText: the composition of a [legal system](@) (legislation, enforcement
+      thereof, and conflict resolution), a [party](@) that governs that [legal system](@),
+      a scope within which that [legal system](@) is operational, and one or more
+      [objectives](@) for the purpose of which the [legal system](@) is operated.
+      See also the [Jurisdictions pattern](@).
+    date: 20210601
+    locator: <locator>/jurisdiction
+    navurl: <navurl>/jurisdiction
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - notes
+  - id: knowledge
+    title: Knowledge
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: knowledge
+    term: knowledge
+    formphrases: knowledge{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Knowledge: The (intangible) sum of what is known by a specific Party,
+      as well as the familiarity, awareness or understanding of someone or something
+      by that Party.'
+    glossaryText: The (intangible) sum of what is known by a specific [party](@),
+      as well as the familiarity, awareness or understanding of someone or something
+      by that [party](@).
+    date: 20210601
+    locator: <locator>/knowledge
+    navurl: <navurl>/knowledge
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+      - notes
+  - id: legal-entity
+    title: Legal Entity
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: legal-entity
+    term: legal-entity
+    formphrases: legal-entit{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Legal Entity (of a Jurisdiction): an Entity that is known by, recognized
+      to exist, and registered in that Jurisdiction.'
+    glossaryText: an [entity](@) that is known by, recognized to exist, and registered
+      in that [jurisdiction](@).
+    date: 20210601
+    locator: <locator>/legal-entity
+    navurl: <navurl>/legal-entity
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - examples
+      - notes
+  - id: legal-jurisdiction
+    title: Legal Jurisdiction
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: term
+    termid: legal-jurisdiction
+    term: legal-jurisdiction
+    formphrases: legal-jurisdiction{ss}
+    conceptref: essifLab:jurisdiction
+    status: draft
+    grouptags:
+    hoverText: 'Legal Jurisdiction: a Jurisdiction that is governed/operated by a
+      governmental body.'
+    glossaryText: a [jurisdiction](@) that is governed/operated by a governmental
+      body.
+    date: 20210601
+    locator: <locator>/legal-jurisdiction
+    navurl: <navurl>/legal-jurisdiction
+    headingids:
+      - short-description
+      - purpose
+  - id: legal-system
+    title: Legal System
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: legal-system
+    term: legal-system
+    formphrases: legal-system{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Legal-system: a system in which rules are defined, and mechanisms
+      for their enforcement and conflict resolution are (implicitly or explicitly)
+      specified.'
+    glossaryText: a system in which rules are defined, and mechanisms for their enforcement
+      and conflict resolution are (implicitly or explicitly) specified.
+    date: 20210601
+    locator: <locator>/legal-system
+    navurl: <navurl>/legal-system
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - examples
+  - id: management
+    title: Management
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: management
+    term: management
+    formphrases: management, manager, manages, managed, managed-by, management, managing,
+      managing-part{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Management: the act or process of managing or actually realizing of
+      (the results associated with) a set of Objectives by the Owner of these Objectives.'
+    glossaryText: the [act](@) or process of managing or actually realizing of (the
+      results associated with) a set of [objectives](@) by the [owner](@) of these
+      [objectives](@).
+    date: 20210830
+    locator: <locator>/management
+    navurl: <navurl>/management
+    headingids:
+      - short-description
+      - purpose
+  - id: mandate
+    title: Mandate
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: mandate
+    term: mandate
+    formphrases: mandate{ss}, mandated, mandating, mandator{ss}, mandatee{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Mandate: a right or duty that one Party (the Mandator) has granted
+      to another Party or Employee (the Mandatee) for executing a specific (set of)
+      Actions in the name of, and under responsibility/accountability of, this (first)
+      Party.'
+    glossaryText: a right or duty that one [party](@) (the [mandator](@)) has granted
+      to another [party](@) or [employee](@) (the [mandatee](@)) for executing a specific
+      (set of) [actions](@) in the name of, and under responsibility/accountability
+      of, this (first) [party](@).
+    date: 20220220
+    locator: <locator>/mandate
+    navurl: <navurl>/mandate
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+      - examples
+      - notes
+  - id: mental-model
+    title: Mental Model
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: term
+    termid: mental-model
+    term: mental-model
+    formphrases: mental-model{ss}
+    conceptref: essifLab:pattern
+    status: draft
+    grouptags:
+    hoverText: "Mental Model (Pattern): A description, both casual and formal, of
+      a set of Concepts (ideas), relations between them, and constraints, that together
+      form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain
+      topic."
+    glossaryText: A description, both casual and formal, of a set of [concepts](@)
+      (ideas), relations between them, and constraints, that together form a coherent
+      and consistent 'viewpoint', or 'way of thinking' about a certain topic.
+    date: 20210804
+    locator: <locator>/mental-model
+    navurl: <navurl>/mental-model
+  - id: mission
+    title: Mission
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: mission
+    term: mission
+    formphrases: mission{ss}
+    status: draft
+    grouptags:
+    hoverText: "Mission: an Objective of a Party that provides an answer to the question
+      why that Party exists - i.e. its 'raison d'être'."
+    glossaryText: an [objective](@) of a [party](@) that provides an answer to the
+      question why that [party](@) exists - i.e. its 'raison d'être'.
+    date: 2022-09-08
+    locator: <locator>/mission
+    navurl: <navurl>/mission
+    headingids:
+      - short-description
+  - id: normative-framework
+    title: Normative framework
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: normative-framework
+    term: normative-framework
+    formphrases: normative-framework{ss}
+    status: draft
+    grouptags:
+    hoverText: "Normative framework (for a specific class of Entities)): a set of
+      rules that are followed and/or criteria that remain fulfilled by (a specific
+      kind of) Entities whose behavior and/or properties are characterized as 'normal'."
+    glossaryText: a set of rules that are followed and/or criteria that remain fulfilled
+      by (a specific kind of) [entities](@) whose behavior and/or properties are characterized
+      as 'normal'.
+    date: 20220203
+    locator: <locator>/normative-framework
+    navurl: <navurl>/normative-framework
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+  - id: objective
+    title: Objective
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: objective
+    term: objective
+    formphrases: objective{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Objective: Something toward which a Party (its Owner) directs effort
+      (an aim, goal, or end of action).'
+    glossaryText: Something toward which a [party](@) (its [owner](@)) directs effort
+      (an aim, goal, or end of action).
+    date: 20210601
+    locator: <locator>/objective
+    navurl: <navurl>/objective
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+      - examples
+      - formalization
+      - chaining-managing-and-governing-objectives
+  - id: obligation
+    title: Obligation
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: obligation
+    term: obligation
+    formphrases: obligation{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Obligation (of a Party): an Objective that is Owned by that Party
+      for producing a specific (set of) result(s) that are to be used (consumed) by
+      that Party and/or other Parties.'
+    glossaryText: an [objective](@) that is [owned](@) by the [party](@) for producing
+      a specific (set of) result(s) that are to be used (consumed) by that [party](@)
+      and/or other [parties](@).
+    date: 20210601
+    locator: <locator>/obligation
+    navurl: <navurl>/obligation
+    headingids:
+      - short-description
+  - id: onboarding
+    title: Onboarding
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: onboarding
+    term: onboarding
+    formphrases: onboarding, onboard, onboards, onboarded
+    status: draft
+    grouptags:
+    hoverText: 'Onboarding (of an Actor, by a Party): a process that is run for this
+      Actor on behalf of the Party, that terminates successfully if and  only if the
+      Party has (a) established the suitability of the Actor for executing certain
+      kinds of Actions on its behalf, (b) ensured that their mutual rights and duties
+      are properly specified and will be appropriately enforced, and (c) provided
+      the circumstances/contexts within which the Actor is enabled to do so.'
+    glossaryText: A process that is run for a specific (set of) [actor(s)](@) on behalf
+      of a specific [party](@), that terminates successfully if and  only if the [party](@)
+      has (a) established the suitability of the [actor](@) for executing certain
+      kinds of [actions](@) on its behalf, (b) ensured that their mutual rights and
+      duties are properly specified and will be appropriately enforced, and (c) provided
+      the circumstances/contexts within which the [actor](@) is enabled to do so.
+    date: 20220922
+    locator: <locator>/onboarding
+    navurl: <navurl>/onboarding
+    headingids:
+      - short-description
+      - examples
+      - purpose
+  - id: organization
+    title: Organization
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: organization
+    term: organization
+    formphrases: organization{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Organization: a Party that is capable of setting Objectives and making
+      sure these are realized by Actors that it has Onboarded and/or by (vetted) Parties
+      that are committed to contribute to these Objectives.'
+    glossaryText: a [party](@) that is capable of setting [objectives](@) and making
+      sure these are realized by [actors](@) that it has [onboarded](@) and/or by
+      (vetted) [parties](@) that are committed to contribute to these [objectives](@).
+    date: 20210601
+    locator: <locator>/organization
+    navurl: <navurl>/organization
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - examples
+      - notes
+  - id: outsourcing
+    title: Outsourcing
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: outsourceing
+    term: outsourceing
+    formphrases: outsourc{eing}, outsourced
+    status: draft
+    grouptags:
+    hoverText: 'Outsourcing: the state of affairs in which a Party has an Objective
+      (better: an Expectation) for the realization of a (set of) result(s), where
+      the actual production of these results is expected to be done by a Party other
+      than itself.'
+    glossaryText: 'the state of affairs in which a [party](@) has an [objective](@)
+      (better: an [expectation](@)) for the realization of a (set of) result(s), where
+      the actual production of these results is expected to be done by a [party](@)
+      other than itself.'
+    date: 2022-10-18
+    locator: <locator>/outsourceing
+    navurl: <navurl>/outsourceing
+    headingids:
+      - short-description
+      - examples
+  - id: owned
+    title: Owned
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: owned
+    term: owned
+    formphrases: owned
+    status: draft
+    grouptags:
+    hoverText: 'Owned (by an Owner, in some Jurisdiction): an Entity over which another
+      Entity (its Owner) has the power (duty, right) to enjoy it, dispose of it and
+      control it; that power is limited to (the scope of) that Jurisdiction, and by
+      its rules.'
+    glossaryText: an [entity](@) over which another [entity](@) (its [owner](@)) has
+      the power (duty, right) to enjoy it, dispose of it and control it; that power
+      is limited to (the scope of) that [jurisdiction](@), and by its rules.
+    date: 20210601
+    locator: <locator>/owned
+    navurl: <navurl>/owned
+    headingids:
+      - related-concepts
+  - id: owner
+    title: Owner
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: owner
+    term: owner
+    formphrases: owner{ss}, own{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Owner (of an Entity): the role that a Party performs when it is exercising
+      its legal, rightful or natural title to control that Entity.'
+    glossaryText: the role that a [party](@) performs when it is exercising its legal,
+      rightful or natural title to control that [entity](@).
+    date: 20210601
+    locator: <locator>/owner
+    navurl: <navurl>/owner
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - related-concepts
+  - id: ownership
+    title: Ownership
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: ownership
+    term: ownership
+    formphrases: ownership{ss}, owning, legal-ownership{ss}, rightful-ownership{ss},
+      natural-ownership{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Ownership (of an Entity over another in a Jurisdiction): a relationship
+      between two Entities in which one of them (called the Owner) has legal, rightful
+      or natural rights and/or duties to enjoy, dispose of, and control the other
+      (called the Owned).'
+    glossaryText: a relationship between two [entities](@) that exists within the
+      [scope of control](@) of a [jurisdiction](@), in which one of them (called the
+      [owner](@)) has legal, rightful or natural rights and/or duties to enjoy, dispose
+      of, and control the other (called the [owned](@)).
+    date: 20220218
+    locator: <locator>/ownership
+    navurl: <navurl>/ownership
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - notes
+      - examples
+  - id: partial-identity
+    title: Partial identity
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: term
+    termid: partial-identity
+    term: partial-identity
+    formphrases: partial-identit{yies}
+    status: draft
+    grouptags:
+    hoverText: "Partial identity (of an Entity): all Knowledge that a specific Party
+      (= the Owner of the partial identity) has about that Entity (= the 'Subject'
+      of the partial identity)."
+    glossaryText: all [knowledge](@) that a specific [party](@) (= the [owner](@)
+      of the partial identity) has about that [entity](@) (= the '[subject](@)' of
+      the partial identity).
+    date: 20210803
+    locator: <locator>/partial-identity
+    navurl: <navurl>/partial-identity
+    headingids:
+      - short-description
+  - id: party
+    title: Party
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: party
+    term: party
+    formphrases: part{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Party: an Entity that sets its Objectives, maintains its Knowledge,
+      and uses that Knowledge to pursue its Objectives in an autonomous (sovereign)
+      manner. Humans and Organizations are the typical examples.'
+    glossaryText: an [entity](@) that sets its [objectives](@), maintains its [knowledge](@),
+      and uses that [knowledge](@) to pursue its [objectives](@) in an autonomous
+      (sovereign) manner. Humans and [organizations](@) are the typical examples.
+    date: 20210601
+    locator: <locator>/party
+    navurl: <navurl>/party
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+      - examples
+      - related-terms
+  - id: pattern-decentralized-grc
+    title: Decentralized Risk Management, Governance and Compliance
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: decentralized-grc
+    term: decentralized-grc
+    formphrases: decentralized-grc
+    status: draft
+    grouptags:
+    hoverText: The Decentralized Risk Management, Governance and Compliance pattern
+      describes how Parties can set Objectives, and apply decentralized Risk Management
+      to become and remain successful.
+    date: 20210601
+    locator: <locator>/decentralized-grc
+    navurl: <navurl>/decentralized-grc
+    headingids:
+      - decentralized-governance-risk-management-and-compliance
+      - introduction
+      - mental-model
+      - summary
+  - id: pattern-decentralized-risk-management
+    title: Decentralized (Networked) Risk Management (NRM)
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: decentralized-risk-management
+    term: decentralized-risk-management
+    formphrases: decentralized-risk-management
+    status: draft
+    grouptags:
+    hoverText: The Decentralized (Networked) Risk Management (NRM) pattern describes
+      how Parties can deal with the Risks associated with their Objectives, i.e. ensure
+      that the Objectives they pursue are properly realized and they become/remain
+      successful.
+    date: 20220220
+    locator: <locator>/decentralized-risk-management
+    navurl: <navurl>/decentralized-risk-management
+    headingids:
+      - traditional-risk-management-and-nrm
+      - scope-context-criteria
+      - risk-assessment
+      - risk-treatment
+      - communication-and-consultation
+      - monitoring-and-review
+      - recording-and-reporting
+      - networked-risk-management
+      - scoping
+      - introduction
+      - mental-model
+      - summary
+      - notes
+  - id: pattern-decision-making
+    title: Decision Making
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: decision-making
+    term: decision-making
+    formphrases: decision-making
+    status: draft
+    grouptags:
+    hoverText: The Decision Making pattern captures the Concepts and relations that
+      explain how Parties would, could, or should reason in order to reach good conclusions
+      and make good decisions. This can be used as a basis for understanding the information
+      needs of Parties as they need to decide e.g. whether or not to commit to a Transaction
+      proposal, or whether or not data is Valid for some purpose. This pattern is
+      based on Toulmin's use of arguments.
+    date: 20210804
+    locator: <locator>/decision-making
+    navurl: <navurl>/decision-making
+    headingids:
+      - purpose
+      - introduction
+      - formalized-model
+  - id: pattern-duties-and-rights
+    title: Duties and Rights
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: duties-and-rights
+    term: duties-and-rights
+    formphrases: duties-and-rights
+    status: draft
+    grouptags:
+    hoverText: The Duties and Rights pattern captures the Concepts and relations that
+      explain what a generic duties and rights consists of (based on Hofeld's theories),
+      and relates it to Jurisdictions, Parties and Legal Entities.
+    date: 20210601
+    locator: <locator>/duties-and-rights
+    navurl: <navurl>/duties-and-rights
+    headingids:
+      - purpose
+      - introduction
+      - formalized-model
+  - id: pattern-file
+    title: Pattern-file
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: pattern-file
+    term: pattern-file
+    formphrases: pattern-file
+    status: draft
+    grouptags:
+    hoverText: 'Pattern-file: a file whose contents describes/documents a Pattern.'
+    glossaryText: a file whose contents describes/documents a [pattern](@).
+    date: 20210601
+    locator: <locator>/pattern-file
+    navurl: <navurl>/pattern-file
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+  - id: pattern-governance-and-management
+    title: Governance and Management
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: governance-and-management
+    term: governance-and-management
+    formphrases: governance-and-management
+    status: draft
+    grouptags:
+    hoverText: The Governance and Management pattern explains how Parties organize
+      that their Objectives are realized, either by doing the associated work themselves,
+      or by arranging for other Parties to do that.
+    date: 20210830
+    locator: <locator>/governance-and-management
+    navurl: <navurl>/governance-and-management
+    headingids:
+      - purpose
+      - introduction
+      - governance-and-management
+      - matching
+      - relation-management
+      - resilience
+  - id: pattern-guardianship
+    title: Guardianship
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: guardianship
+    term: guardianship
+    formphrases: guardianship
+    status: draft
+    grouptags:
+    hoverText: The Guardianships pattern captures the Concepts and relations that
+      explain what a generic Guardianship consists of, and how it relates to Guardians,
+      Dependents, Jurisdictions, etc.
+    date: 20210601
+    locator: <locator>/guardianship
+    navurl: <navurl>/guardianship
+    headingids:
+      - purpose
+      - introduction
+      - formalized-model
+      - guardianship-governance
+      - define-time-guardianship-types
+      - run-time-guardianship-arrangements
+  - id: pattern-identification
+    title: Identification Pattern
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: identification
+    term: identification
+    formphrases: identification
+    status: draft
+    grouptags:
+    hoverText: The eSSIF-Lab Identification Pattern describes mechanisms that a Party
+      uses to Identify Entities, and mechanisms for communicating with another Party
+      such that both Parties can identify an entity and know whether or not they identify
+      the same entity.
+    date: 20210803
+    locator: <locator>/identification
+    navurl: <navurl>/identification
+    headingids:
+      - purpose
+      - introduction
+      - 1-identification-selecting-a-partial-identity-partial-identity
+      - 2-identification-selecting-an-entity-entity-from-a-set
+      - identification-in-it-and-or-administrative-contexts
+      - formalized-model-information-realm
+      - formalized-model-data-realm
+  - id: pattern-identifier
+    title: Identifier Pattern
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: identifier
+    term: identifier
+    formphrases: identifier
+    status: draft
+    grouptags:
+    hoverText: The eSSIF-Lab Identifier Pattern describes how Identifiers are defined
+      and used for Identification purposes.
+    date: 20210830
+    locator: <locator>/identifier
+    navurl: <navurl>/identifier
+    headingids:
+      - purpose
+      - introduction
+      - formalized-model
+      - references
+  - id: pattern-identity
+    title: Identity Pattern
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: identity
+    term: identity
+    formphrases: identity
+    status: draft
+    grouptags:
+    hoverText: The eSSIF-Lab Identity Pattern shows how digital identities work, how
+      this relates to (attributes in) credentials, and how all this can be made to
+      work in SSI contexts.
+    date: 20210803
+    locator: <locator>/identity
+    navurl: <navurl>/identity
+    headingids:
+      - purpose
+      - introduction
+      - formalized-model
+      - identity-information-realm
+      - identity-data-realm
+  - id: pattern-jurisdiction
+    title: Jurisdictions
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: jurisdiction
+    term: jurisdiction
+    formphrases: jurisdiction
+    status: draft
+    grouptags:
+    hoverText: The Jurisdictions pattern captures the Concepts and relations that
+      explain what a generic Jurisdiction consists of, and relates it to Parties and
+      Legal Entities.
+    date: 20210601
+    locator: <locator>/jurisdiction
+    navurl: <navurl>/jurisdiction
+    headingids:
+      - purpose
+      - introduction
+      - formalized-model
+  - id: pattern-mandates-delegation-hiring
+    title: Mandates, Delegation and Hiring
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: mandates-delegation-hiring
+    term: mandates-delegation-hiring
+    formphrases: mandates-delegation-hiring
+    status: draft
+    grouptags:
+    hoverText: The Mandates, Delegation and Hiring pattern (which remains to be documented)
+      captures the ideas behind Mandating, Delegating, Hiring and their relations.
+      This is a work-in-progress.
+    date: 20210601
+    locator: <locator>/mandates-delegation-hiring
+    navurl: <navurl>/mandates-delegation-hiring
+  - id: pattern-mental-model
+    title: Mental Models
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: mental-model
+    term: mental-model
+    formphrases: mental-model
+    status: draft
+    grouptags:
+    hoverText: The Mental Models pattern captures the foundational Concepts and relations
+      that we need for creating, maintaining and using  (decentralized) Vocabularies
+      (Terminologies) that groups of people can use for the specific purposes they
+      pursue.
+    date: 20210601
+    locator: <locator>/mental-model
+    navurl: <navurl>/mental-model
+    headingids:
+      - purpose
+      - introduction
+  - id: pattern-party-actor-action
+    title: Parties, Actors and Actions
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: party-actor-action
+    term: party-actor-action
+    formphrases: party-actor-action
+    status: draft
+    grouptags:
+    hoverText: "The Parties, Actors and Actions pattern captures the foundational
+      concepts and relations that we need for thinking about how things get done.
+      It answers questions such as: 'Who/what does things?', 'How are their actions
+      being guided/controlled?', 'Who controls whom/what?', 'Who/what may be held
+      accountable?'."
+    glossaryText: "'Who/what does things?', 'How are their [actions](@) being guided/[controlled](@)?',
+      'Who [controls](@) whom/what?', 'Who/what may be held accountable?'."
+    date: 20210602
+    locator: <locator>/party-actor-action
+    navurl: <navurl>/party-actor-action
+    headingids:
+      - summary
+      - purpose
+      - introduction
+      - formalized-model
+      - organizations-human-beings-and-non-human-actors
+      - parties-actors-and-ways-they-relate
+      - actions-policies-and-objectives
+  - id: pattern-party-representation
+    title: Party Representation
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: party-representation
+    term: party-representation
+    formphrases: party-representation
+    status: draft
+    grouptags:
+    hoverText: The Party Representation pattern captures the foundational concepts
+      and relations that we need for thinking about how Parties can be represented
+      in various circumstances.
+    glossaryText: The Party Representation pattern captures the foundational concepts
+      and relations that we need for thinking about how [parties](@) can be represented
+      in various circumstances.
+    date: 20210601
+    locator: <locator>/party-representation
+    navurl: <navurl>/party-representation
+    headingids:
+      - summary
+      - purpose
+      - introduction
+      - formalized-model
+      - miscellaneous
+  - id: pattern-semantics
+    title: Semantics Pattern
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: semantics
+    term: semantics
+    formphrases:
+    status: draft
+    grouptags:
+    hoverText: The Semantics pattern describes the relations between the (intangible)
+      Concepts that are part of a Party's Knowledge, and how they are (tangibly) represented
+      by Terms, Attributes, etc.
+    glossaryText: The Semantics pattern describes the relations between the (intangible)
+      [Concepts](@) that are part of a [party's](@) [knowledge](@), and how they are
+      (tangibly) represented by [terms](@), [attributes](@), etc.
+    date: 202120607
+    locator: <locator>/semantics
+    navurl: <navurl>/semantics
+    headingids:
+      - purpose
+      - introduction
+      - formalized-model
+  - id: pattern-terminology
+    title: Terminology Pattern
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: terminology
+    term: terminology
+    formphrases: terminology
+    status: draft
+    grouptags:
+    hoverText: The eSSIF-Lab Terminology Pattern describes the relations between Terminology
+      Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc.
+    date: 20211101
+    locator: <locator>/terminology
+    navurl: <navurl>/terminology
+    headingids:
+      - purpose
+      - introduction
+      - formalized-model
+      - white
+      - green
+      - yellow
+  - id: pattern-trust
+    title: Trust Pattern
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: trust
+    term: trust
+    formphrases: trust
+    status: draft
+    grouptags:
+    hoverText: The eSSIF-Lab Trust Pattern describes how the concept of Trust relates
+      to Parties that do the trusting, and other concepts that express what it is
+      that these Parties trust.
+    date: 20210830
+    locator: <locator>/trust
+    navurl: <navurl>/trust
+    headingids:
+      - purpose
+      - introduction
+      - formalized-model
+  - id: pattern-world-model
+    title: eSSIF-Lab World Model
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: pattern
+    termid: world-model
+    term: world-model
+    formphrases: world-model
+    status: draft
+    grouptags:
+    hoverText: The eSSF-Lab World Model is the set of Concepts, relations between
+      them (Patterns), and principles (that are the starting point for eSSIF-Lab's
+      thinking).
+    glossaryText: The set of [concepts](@), relations between them ([patterns](@)),
+      and [Principles](essifLab-principles) (that are the starting point for eSSIF-Lab's
+      thinking).
+    date: 20211101
+    locator: <locator>/world-model
+    navurl: <navurl>/world-model
+    headingids:
+      - essif-lab-world-model
+      - the-universe-consists-of-entities
+      - parties-entities-that-manage-and-use-a-knowledge-autonomously
+      - actors-entities-that-can-act-do-things
+      - jurisdiction-authority-with-mechanisms-for-defining-rules-enforcing-them-and-resolving-disputes
+      - transactions-the-exchange-of-goods-services-funds-or-data-between-parties
+  - id: pattern
+    title: Pattern
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: pattern
+    term: pattern
+    formphrases: pattern{ss}
+    status: draft
+    grouptags:
+    hoverText: "Pattern (also: Mental Model): A description, both casual and formal,
+      of a set of Concepts (ideas), relations between them, and constraints, that
+      together form a coherent and consistent 'viewpoint', or 'way of thinking' about
+      a certain topic."
+    glossaryText: A description, both casual and formal, of a set of [concepts](@)
+      (ideas), relations between them, and constraints, that together form a coherent
+      and consistent 'viewpoint', or 'way of thinking' about a certain topic.
+    date: 20210804
+    locator: <locator>/pattern
+    navurl: <navurl>/pattern
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - notes
+  - id: peer-actor
+    title: Peer Actor
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: term
+    termid: peer-actor
+    term: peer-actor
+    formphrases: peer-actor{ss}
+    conceptref: essifLab:Actor
+    status: draft
+    grouptags:
+    hoverText: 'Peer Actor (of some other Actor in a Communication Session): the Actor
+      with whom/which this other Actor is communicating in that Communication Session.'
+    glossaryText: the [actor](@) with whom/which this other [actor](@) is communicating
+      in that [communication session](@).
+    date: 20210601
+    locator: <locator>/peer-actor
+    navurl: <navurl>/peer-actor
+    headingids:
+      - short-description
+      - purpose
+  - id: peer-party
+    title: Peer Party
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: term
+    termid: peer-party
+    term: peer-party
+    formphrases: peer-part{yies}
+    conceptref: essifLab:party
+    status: draft
+    grouptags:
+    hoverText: 'Peer Party (of another Party that is a participant in a Business Transaction):
+      a Party that also participates in that Business Transaction.'
+    glossaryText: a [party](@) that also participates in that [business transaction](@).
+    date: 20210601
+    locator: <locator>/peer-party
+    navurl: <navurl>/peer-party
+    headingids:
+      - purpose
+      - notes
+  - id: policy
+    title: Policy
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: policy
+    term: policy
+    formphrases: polic{yies}, business-polic{yies}, operational-polic{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Policy: a (set of) rules, working-instructions, preferences and other
+      guidance for the execution of one or more kinds of Actions, that Agents of the
+      Party that Governs the policy have access to and can interpret such that this
+      results in these Actions being executed as intended by that Party.'
+    glossaryText: a (set of) rules, working-instructions, preferences and other guidance
+      for the execution of one or more kinds of [actions](@), that [agents](@) of
+      the [party](@) that [governs](@) the policy have access to and can interpret
+      such that this results in these [actions](@) being executed as intended by that
+      [party](@).
+    date: 20210901
+    locator: <locator>/policy
+    navurl: <navurl>/policy
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+  - id: presentation-request
+    title: Presentation Request
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: presentation-request
+    term: presentation-request
+    formphrases: presentation-request{ss}, verifiable-presentation-request{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Presentation Request: a (signed) digital message that a Verifier component
+      sends to a Holder component asking for specific data from one or more Verifiable
+      Credentials that are issued by specific Parties.'
+    glossaryText: a (signed) digital message that a [verifier](@) component sends
+      to a [holder](@) component asking for specific data from one or more [verifiable](@)
+      [credentials](@) that are issued by specific Parties.
+    date: 20210601
+    locator: <locator>/presentation-request
+    navurl: <navurl>/presentation-request
+  - id: presentation
+    title: Presentation
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: presentation
+    term: presentation
+    formphrases: presentation{ss}, verifiable-presentation{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Presentation: a (signed) digital message that a Holder component may
+      send to a Verifier component that contains data derived from one or more Verifiable
+      Credentials (that (a Colleague component of) the Holder component has received
+      from Issuer components of one or more Parties), as a response to a specific
+      Presentation Request of a Verifier component.'
+    glossaryText: a (signed) digital message that a [holder](@) component may send
+      to a [verifier](@) component that contains data derived from one or more [verifiable](@)
+      [credentials](@) (that (a [colleague](@) component of) the [holder](@) component
+      has received from [issuer](@) components of one or more [parties](@)), as a
+      response to a specific [presentation request](@) of a [Verifier](@) component.
+    date: 20210601
+    locator: <locator>/presentation
+    navurl: <navurl>/presentation
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - references
+  - id: principal
+    title: Principal
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: principal
+    term: principal
+    formphrases: principal{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Principal (of an Actor): the Party for whom, or on behalf of whom,
+      the Actor is executing an Action (this Actor is then called an Agent of that
+      Party).'
+    glossaryText: the [party](@) for whom, or on behalf of whom, the [actor](@) is
+      executing an [action](@) (this [actor](@) is then called an [agent](@) of that
+      [party](@)).
+    date: 20210601
+    locator: <locator>/principal
+    navurl: <navurl>/principal
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+      - examples
+  - id: qualified-data
+    title: Qualified Data
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: qualified-data
+    term: qualified-data
+    formphrases: qualified-data
+    status: draft
+    grouptags:
+    hoverText: 'Qualified Data: data that comes with assurances, at least regarding
+      its provenance and integrity (immutability), that make this data valid to be
+      used for specific purposes of individual Parties.'
+    glossaryText: '[data](@) that comes with assurances, at least regarding its provenance
+      and integrity (immutability), that make this data valid to be used for specific
+      purposes of individual [parties](@).'
+    date: 20210601
+    locator: <locator>/qualified-data
+    navurl: <navurl>/qualified-data
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+      - backgrounds
+      - issuer-perspective
+      - validator-perspective
+      - holder-perspective
+  - id: revocation-component
+    title: Revocation component
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: revocation-component
+    term: revocation-component
+    formphrases: revocation-component{ss}, revocator{ss+}
+    status: draft
+    grouptags:
+    hoverText: "Revocation (functional) component: a component that implements the
+      Capability to Revoke Credentials that are issued by its Principal, according
+      to its Principal's Revocation Policy."
+    glossaryText: a component that implements the [capability](@) to [revoke](@) [credentials](@)
+      that are issued by its [principal](@), according to its [principal's](@) [revocation
+      policy](@).
+    date: 20211006
+    locator: <locator>/revocation-component
+    navurl: <navurl>/revocation-component
+    headingids:
+      - short-description
+      - purpose
+  - id: revocation-policy
+    title: Revocation Policy
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: revocation-policy
+    term: revocation-policy
+    formphrases: revocation-polic{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Revocation Policy: a Digital Policy that contains the rules, working-instructions,
+      preferences and other guidance for an operational Revocation component to function
+      in accordance with the Objectives of its Principal.'
+    glossaryText: a [digital policy](@) that enables an operational [revocation component](@)
+      to function in accordance with the [objectives](@) of its [principal](@).
+    date: 20211006
+    locator: <locator>/revocation-policy
+    navurl: <navurl>/revocation-policy
+    headingids:
+      - short-description
+  - id: revoke
+    title: Revoke/Revocation
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: revoke
+    term: revoke
+    formphrases: revo(cat(or|ion)|ke[sd]?|king)
+    hoverText: 'revoke/revocation of a credential: the act, by or on behalf of the
+      party that has issued the Credential, of no longer vouching for the correctness
+      or any other qualification of (arbitrary parts of) the credential.'
+    glossaryText: the act, by or on behalf of the [party](@) that has issued the [credential](@),
+      of no longer vouching for the correctness or any other qualification of (arbitrary
+      parts of) that [credential](@).
+    date: 20211006
+    locator: <locator>/revoke
+    navurl: <navurl>/revoke
+    headingids:
+      - short-description
+      - purpose
+      - notes
+  - id: risk-level
+    title: Risk level
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: risk-level
+    term: risk-level
+    formphrases: risk-level{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Risk level (of an Objective): a measure for the deviation of the intended
+      realization (results) of a specific Objective, that its Owner uses to represent
+      the priority with which the Risk of that Objective should be reckoned with.'
+    glossaryText: a measure for the deviation of the intended realization (results)
+      of a specific [objective](@) that its [owner](@) uses to represent the priority
+      with which the [risk](@) of that [objective](@) should be reckoned with.
+    date: 20210601
+    locator: <locator>/risk-level
+    navurl: <navurl>/risk-level
+    headingids:
+      - short-description
+      - purpose
+      - references
+  - id: risk-management
+    title: Risk management
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: risk-management
+    term: risk-management
+    formphrases: risk-management, risk-manager{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Risk management: a process that is run by (or on behalf of) a specific
+      Party for the purpose of Managing the Risks that it Owns (thereby realizing
+      specific Risk Objectives).'
+    glossaryText: a process that is run by (or on behalf of) a specific [party](@)
+      for the purpose of [managing](@) the [risks](@) that it [owns](@) (thereby realizing
+      specific [risk objectives](@)).
+    date: 20220206
+    locator: <locator>/risk-management
+    navurl: <navurl>/risk-management
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+  - id: risk-objective
+    title: Risk Objective
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: risk-objective
+    term: risk-objective
+    formphrases: risk-objective{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Risk objective (of a Party): an Objective, owned by that Party, that
+      aims to reach and maintain a state of affairs in which the Risks associated
+      with a specific set of its Objectives become, and/or remain, acceptable.'
+    glossaryText: an [objective](@), owned by a [party](@), that aims to reach and
+      maintain a state of affairs in which the [risks](@) associated with a specific
+      set of its [objectives](@) become, and/or remain, acceptable.
+    date: 20220203
+    locator: <locator>/risk-objective
+    navurl: <navurl>/risk-objective
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+  - id: risk-owner
+    title: Risk Owner
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: risk-owner
+    term: risk-owner
+    formphrases: risk-owner{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Risk-owner (of a Risk): the Party that is the Owner of the Objective
+      to which the Risk is associated.'
+    glossaryText: the [party](@) that is the [owner](@) of the [objective](@) to which
+      a [risk](@) is associated.
+    date: 20210601
+    locator: <locator>/risk-owner
+    navurl: <navurl>/risk-owner
+    headingids:
+      - short-description
+      - purpose
+      - formalization
+  - id: risk
+    title: Risk
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: risk
+    term: risk
+    formphrases: risk{ss}
+    status: draft
+    grouptags:
+    hoverText: "Risk (of a Party's Objective): the effects that uncertainty (i.e.
+      a lack of information, understanding or knowledge of events, their consequences
+      or likelihoods) can have on the intended realization of that Party's Objective."
+    glossaryText: the effects that uncertainty (i.e. a lack of information, understanding
+      or [knowledge](@) of events, their consequences or likelihoods) can have on
+      the intended realization of an [objective](@) of a [party](@).
+    date: 20210601
+    locator: <locator>/risk
+    navurl: <navurl>/risk
+    headingids:
+      - short-description
+      - purpose
+      - references
+  - id: role-name
+    title: Role name
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: term
+    termid: role-name
+    term: role-name
+    formphrases: role-name{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Role name: name (text) that refers to (and identifies) a Role in a
+      a specific context.'
+    glossaryText: name (text) that refers to (and identifies) a [role](@) in a specific
+      context.
+    date: 20210601
+    locator: <locator>/role-name
+    navurl: <navurl>/role-name
+    headingids:
+      - short-description
+      - related-concepts
+  - id: role
+    title: Role
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: role
+    term: role
+    formphrases: role{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Role (of an Entity in some context): a defined set of characteristics
+      that the Entity has in some context, such as responsibilities (Obligations)
+      it may have, Actions (behaviors) it may execute, or pieces of Knowledge that
+      it is expected to have in that context, which are referenced to by a specific
+      (Role-)name.'
+    glossaryText: a defined set of characteristics that an [entity](@) has in some
+      context, such as [responsibilities](@) it may have, [actions](@) (behaviors)
+      it may execute, or pieces of [knowledge](@) that it is expected to have in that
+      context, which are referenced to by a specific [role name](@).
+    date: 20210601
+    locator: <locator>/role
+    navurl: <navurl>/role
+    headingids:
+      - short-description
+      - purpose
+      - examples
+  - id: scope-file
+    title: Scope-file
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: scope-file
+    term: scope-file
+    formphrases: scope-file{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Scope-file: a file whose contents defines/specifies a Scope.'
+    glossaryText: a file whose contents defines/specifies a [scope](@).
+    date: 20210601
+    locator: <locator>/scope-file
+    navurl: <navurl>/scope-file
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+      - references
+  - id: scope-of-control
+    title: Scope of Control
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: scope-of-control
+    term: scope-of-control
+    formphrases: scope-of-control, scopes-of-control
+    status: draft
+    grouptags:
+    hoverText: 'Scope of Control (of a Party): the extent of the area or subject matter
+      that the Party controls.'
+    glossaryText: the extent of the area or subject matter that a [party](@) [controls](@).
+    date: 20210601
+    locator: <locator>/scope-of-control
+    navurl: <navurl>/scope-of-control
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - examples
+      - notes
+  - id: scope
+    title: Scope
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: scope
+    term: scope
+    formphrases: scope{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Scope: the extent of the area or subject matter (which we use, e.g.,
+      to define Patterns, Concepts, Terms and Glossaries in, but it serves other purposes
+      as well).'
+    glossaryText: the extent of the area or subject matter (which we use, e.g., to
+      define [patterns](@), [concepts](@), [terms](@) and [glossaries](@) in, but
+      it serves other purposes as well).
+    date: 20210601
+    locator: <locator>/scope
+    navurl: <navurl>/scope
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - notes
+  - id: scoped-term
+    title: Term (Scoped)
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: term
+    term: term
+    status: draft
+    grouptags:
+    hoverText: 'Scoped Term: a Term, the meaning of which is determined by the Definition
+      to which it refers in a specific Scope/context.'
+    glossaryText: a [term](@), the meaning of which is determined by the [definition](@)
+      to which it refers in a specific [scope](@)/context.
+    date: 20211101
+    locator: <locator>/term
+    navurl: <navurl>/term
+    headingids:
+      - short-description
+      - purpose
+  - id: self-sovereign-identity
+    title: Self-Sovereign Identity (SSI)
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: term
+    termid: self-sovereign-identity
+    term: self-sovereign-identity
+    formphrases: self-sovereign-identit{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Self-Sovereign Identity (or SSI): a term that has many different interpretations,
+      and that we use to refer to concepts/ideas, architectures, processes and technologies
+      that aim to support (autonomous) Parties as they negotiate and execute electronic
+      Transactions with one another.'
+    glossaryText: Self-Sovereign Identity (SSI) is a term that has many different
+      interpretations, and that we use to refer to concepts/ideas, architectures,
+      processes and technologies that aim to support (autonomous) [parties](@) as
+      they negotiate and execute electronic [transactions](@) with one another.
+    date: 20210601
+    locator: <locator>/self-sovereign-identity
+    navurl: <navurl>/self-sovereign-identity
+    headingids:
+      - short-description
+      - purpose
+  - id: self-sovereignty
+    title: Self-Sovereignty
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: self-sovereignty
+    term: self-sovereignty
+    formphrases: self-sovereignty, autonomy
+    status: draft
+    grouptags:
+    hoverText: 'Self-Sovereign(ty): the characteristic of every Party that it is autonomous
+      in managing and operating its own Knowledge, particularly in making decisions
+      and deciding how to decide.'
+    glossaryText: the characteristic of every [party](@) that it is autonomous in
+      managing and operating its [own](@) [knowledge](@), particularly in making decisions
+      and deciding how to decide.
+    date: 20210601
+    locator: <locator>/self-sovereignty
+    navurl: <navurl>/self-sovereignty
+    headingids:
+      - short-description
+      - background
+      - implications
+      - purpose
+  - id: semantics
+    title: Semantics
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: semantics
+    term: semantics
+    formphrases: semantics
+    status: draft
+    grouptags:
+    hoverText: 'Semantics: a mapping between the (tangible/textual) Terms and (intangible)
+      ideas/Concepts - their meaning.'
+    glossaryText: a mapping between the (tangible/textual) [terms](@) and (intangible)
+      ideas/[concepts](@) - their meaning.
+    date: 20210601
+    locator: <locator>/semantics
+    navurl: <navurl>/semantics
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+  - id: ssi-agent
+    title: SSI Agent
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: term
+    termid: ssi-agent
+    term: ssi-agent
+    formphrases: ssi-agent{ss}
+    conceptref: essifLab:Agent
+    status: draft
+    grouptags:
+    hoverText: 'SSI-Agent: a Digital Agent that provides one or more of the SSI functionalities
+      (Issuer, Holder, Verifier, Wallet) to its Principal.'
+    glossaryText: a [digital agent](@) that provides one or more of the [ssi functionalities](@)
+      ([issuer](@), [holder](@), [verifier](@), [wallet](@)) to its [principal](@).
+    date: 20210601
+    locator: <locator>/ssi-agent
+    navurl: <navurl>/ssi-agent
+    headingids:
+      - short-description
+      - purpose
+  - id: ssi-assurance-community
+    title: SSI Assurance Community (SSI-AC)
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: ssi-assurance-community
+    term: ssi-assurance-community
+    formphrases: ssi-assurance-communit{yies}, ac{ss}, assurance-communit{yies}, ssi-ac{ss},
+      ssi-assurance-communit{yies}
+    status: draft
+    grouptags:
+    hoverText: 'SSI Assurance Community (SSI-AC): a Community that supports its members
+      as they seek to increase their confidence in the SSI infrastructure and/or (specific)
+      qualifications of the data exchanged through that infrastructure.'
+    glossaryText: a [community](@) that supports its members as they seek to increase
+      their confidence in the [SSI infrastructure](@) and/or (specific) [qualifications](@)
+      of the data exchanged through that infrastructure.
+    date: 20210601
+    locator: <locator>/ssi-assurance-community
+    navurl: <navurl>/ssi-assurance-community
+    headingids:
+      - short-description
+  - id: ssi-infrastructure
+    title: SSI Infrastructure
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: ssi-infrastructure
+    term: ssi-infrastructure
+    formphrases: ssi-infrastructure{ss}
+    status: draft
+    grouptags:
+    hoverText: 'SSI Infrastructure: the technological components that are (envisaged
+      to be) deployed all over the world for the purpose of providing, requesting
+      and obtaining Qualified Data, for the purpose of negotiating and/or executing
+      electronic Transactions.'
+    glossaryText: the technological components that are (envisaged to be) all over
+      the world for the purpose of providing, requesting and obtaining [qualified
+      data](@), for the purpose of negotiating and/or executing electronic [transactions](@).
+    date: 20210601
+    locator: <locator>/ssi-infrastructure
+    navurl: <navurl>/ssi-infrastructure
+    headingids:
+      - short-description
+      - purpose
+  - id: ssi
+    title: SSI (Self-Sovereign Identity)
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: term
+    termid: ssi
+    term: ssi
+    formphrases: ssi
+    conceptref: essifLab:self-sovereign-identity
+    status: draft
+    grouptags:
+    hoverText: 'SSI (Self-Sovereign Identity): a term that has many different interpretations,
+      and that we use to refer to concepts/ideas, architectures, processes and technologies
+      that aim to support (autonomous) Parties as they negotiate and execute electronic
+      Transactions with one another.'
+    glossaryText: SSI (Self-Sovereign Identity) is a term that has many different
+      interpretations, and that we use to refer to concepts/ideas, architectures,
+      processes and technologies that aim to support (autonomous) [parties](@) as
+      they negotiate and execute electronic [transactions](@) with one another.
+    date: 20210601
+    locator: <locator>/ssi
+    navurl: <navurl>/ssi
+    headingids:
+      - short-description
+  - id: subject
+    title: Subject
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: term
+    termid: subject
+    term: subject
+    formphrases: subject{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Subject (of some coherent data set): the (single) Entity to which
+      a coherent data set relates/pertains, such as attributes, Claims/Assertions,
+      files/dossiers, (verifiable) credentials, Partial Identities, Employment Contracts,
+      etc.'
+    glossaryText: the (single) [entity](@) to which a given set of coherent data relates/pertains.
+      Examples of such sets include attributes, [Claims/Assertions](@), files/dossiers,
+      [(verifiable) credentials](@), [(partial) identities](@), [employment contracts](@),
+      etc.
+    date: 20210613
+    locator: <locator>/subject
+    navurl: <navurl>/subject
+    headingids:
+      - short-description
+      - purpose
+  - id: tag
+    title: Tag
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: tag
+    term: tag
+    formphrases: tag{ss}
+    status: draft
+    grouptags:
+    hoverText: "Tag: an alphanumeric string that is used to identify Scopes (so called
+      'scopetags'), group Terms (so called 'grouptags'), or identify a specific version
+      of a Terminology (so called 'versiontags') from within a specific Scope."
+    glossaryText: an alphanumeric string that is used to identify [scopes](@) (so
+      called 'scopetags'), group [terms](@) (so called 'grouptags'), or identify a
+      specific version of a [terminology](@) (so called 'versiontags') from within
+      a specific [scope](@).
+    date: 20210601
+    locator: <locator>/tag
+    navurl: <navurl>/tag
+    headingids:
+      - short-description
+      - criteria
+      - examples
+  - id: term-file
+    title: Term-file
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: term-file
+    term: term-file
+    formphrases: term-file{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Term-file: a file whose contents defines/specifies a Term.'
+    glossaryText: a file whose contents defines/specifies a [term](@).
+    date: 20210601
+    locator: <locator>/term-file
+    navurl: <navurl>/term-file
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+  - id: term
+    title: Term
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: term
+    term: term
+    formphrases: term{ss}, word{ss}, phrase{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Term: a word or phrase (i.e.: text) that is used in at least one Scope/context
+      to represent a specific Concept.'
+    glossaryText: 'a word or phrase (i.e.: text) that is used in at least one [scope](@)/context
+      to represent a specific [concept](@).'
+    date: 20220421
+    locator: <locator>/term
+    navurl: <navurl>/term
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - notes
+      - footnotes
+  - id: terminology-process
+    title: Terminology Process
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: terminology-process
+    term: terminology-process
+    formphrases: terminology-process, terminology-processes
+    status: draft
+    grouptags:
+    hoverText: 'Terminology Process: a method for recognizing misunderstandings as
+      such, and creating or maintaining Definitions that resolve them.'
+    glossaryText: a method for recognizing misunderstandings as such, and creating
+      or maintaining [definitions](@) that resolve them.
+    date: 20210601
+    locator: <locator>/terminology-process
+    navurl: <navurl>/terminology-process
+    headingids:
+      - short-description
+      - prerequisites
+      - creating-or-changing-a-definition
+      - conflict-mediation-and-resolution
+      - background
+      - notes
+  - id: terminology
+    title: Terminology
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: terminology
+    term: terminology
+    formphrases: terminolog{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Terminology (in/of a Scope): the set of terms that are used within
+      a single Scope to refer to a single Definition, enabling Parties to reason and
+      communicate ideas they have about one or more specific topics.'
+    glossaryText: the set of [terms](@) that are used within a single [scope](@) to
+      refer to a single [definition](@), enabling [parties](@) to reason and communicate
+      ideas they have about one or more specific topics.
+    date: 20211101
+    locator: <locator>/terminology
+    navurl: <navurl>/terminology
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - examples
+  - id: terms-community
+    title: Terms Community
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: terms-community
+    term: terms-community
+    formphrases: terms-communit{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Terms Community: a Community that maintains a Terminology for the
+      purpose of avoiding misunderstandings between its members as they collaborate.'
+    glossaryText: a [community](@) that maintains a [terminology](@) for the purpose
+      of avoiding misunderstandings between its members as they collaborate.
+    date: 20211101
+    locator: <locator>/terms-community
+    navurl: <navurl>/terms-community
+    headingids:
+      - short-description
+      - purpose
+      - criterion
+      - example
+      - notes
+  - id: transaction-agreement
+    title: Transaction Agreement
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: transaction-agreement
+    term: transaction-agreement
+    formphrases: transaction-agreement{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Transaction Agreement (for a specific Business Transaction): the set
+      of rules that specify the rights (Expectations) and duties (Obligations) of
+      Participants towards one another in the context of a specific Business Transaction.'
+    glossaryText: the set of rules that specify the rights ([expectations](@)) and
+      duties ([obligations](@)) of [participants](@) towards one another in the context
+      of a specific [business transaction](@).
+    date: 20210601
+    locator: <locator>/transaction-agreement
+    navurl: <navurl>/transaction-agreement
+  - id: transaction-form
+    title: Transaction Form
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: transaction-form
+    term: transaction-form
+    formphrases: transaction-form{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Transaction Form (for some kind of Business Transaction and some Party):
+      the specification of the set of data that this Party needs to (a) commit to
+      a (proposed) Business Transaction of that kind, (b) fulfill its duties/Obligations
+      and (c) escalate if necessary.'
+    glossaryText: the specification of the set of data that this [party](@) needs
+      to (a) commit to a (proposed) [business transaction](@) of that kind, (b) fulfill
+      its duties/[obligations](@) and (c) escalate if necessary.
+    date: 20210601
+    locator: <locator>/transaction-form
+    navurl: <navurl>/transaction-form
+  - id: transaction-id
+    title: Transaction Id
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: transaction-id
+    term: transaction-id
+    formphrases: transaction-id{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Transaction Id (for a specific Business Transaction and a Participant):
+      character string that this Participant uses to identify, and refer to, that
+      Business Transaction.'
+    glossaryText: character string that this [participant](@) uses to identify, and
+      refer to, that [business transaction](@).
+    date: 20210601
+    locator: <locator>/transaction-id
+    navurl: <navurl>/transaction-id
+    headingids:
+      - related-concepts
+  - id: transaction-proposal
+    title: Transaction Proposal
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: transaction-proposal
+    term: transaction-proposal
+    formphrases: transaction-proposal{ss}
+    status: draft
+    grouptags:
+    hoverText: "Transaction (Agreement) Proposal: a Transaction Agreement that is
+      'in-the-making' (ranging from an empty document to a document that would be
+      a Transaction Agreement if it were signed by all Participants)."
+    glossaryText: a [transaction agreement](@) that is 'in-the-making' (ranging from
+      an empty document to a document that would be a [transaction agreement](@) if
+      it were signed by all [participants](@)).
+    date: 20210601
+    locator: <locator>/transaction-proposal
+    navurl: <navurl>/transaction-proposal
+    headingids:
+      - related-concepts
+  - id: transaction-request
+    title: Transaction Request
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: transaction-request
+    term: transaction-request
+    formphrases: transaction-request{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Transaction Request: a message, send by a requesting Party to a providing
+      Party, that initiates the negotiation of a new Transaction Agreement between
+      these Parties for the provisioning of a specific product or service.'
+    glossaryText: a message, send by a requesting [party](@) to a providing [party](@),
+      that initiates the negotiation of a new [transaction agreement](@) between these
+      [parties](@) for the provisioning of a specific product or service.
+    date: 20210601
+    locator: <locator>/transaction-request
+    navurl: <navurl>/transaction-request
+    headingids:
+      - related-concepts
+  - id: transaction
+    title: Transaction
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: transaction
+    term: transaction
+    formphrases: transaction{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Transaction: the exchange of goods, services, funds, or data between
+      some Parties (called Participants of the Transaction).'
+    glossaryText: the exchange of goods, services, funds, or data between some [parties](@)
+      (called [participants](@) of the [transaction](@)).
+    date: 20210601
+    locator: <locator>/transaction
+    navurl: <navurl>/transaction
+    headingids:
+      - short-description
+      - high-level-example
+  - id: trust-level
+    title: Trust level
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: trust-level
+    term: trust-level
+    formphrases: trust-level{ss}, level{ss}-of-trust
+    status: draft
+    grouptags:
+    hoverText: 'Trust level (of a Party in X): the (subjective) degree of belief or
+      confidence that this Party has in X'
+    glossaryText: the (subjective) degree of belief or confidence that a [party](@)
+      has in X (someone, something, ...).
+    date: 20220222
+    locator: <locator>/trust-level
+    navurl: <navurl>/trust-level
+    headingids:
+      - short-description
+  - id: trust
+    title: Trust
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: trust
+    term: trust
+    formphrases: trust, trusts, trusting, trusted
+    status: draft
+    grouptags:
+    hoverText: 'Trust (of a Party in X): the (un)conscious decision by this Party
+      to believe that X is in fact the case'
+    glossaryText: the (un)conscious decision by a [party](@) to believe that X is
+      in fact the case.
+    date: 20220222
+    locator: <locator>/trust
+    navurl: <navurl>/trust
+    headingids:
+      - short-description
+  - id: validate
+    title: Validate
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: validate
+    term: validate
+    formphrases: validate, validates, validated, validating
+    status: draft
+    grouptags:
+    hoverText: 'Validate/validation of data: the act, by or on behalf of a Party,
+      of determining whether or not that data is valid to be used for some specific
+      purpose(s) of that Party.'
+    glossaryText: the act, by or on behalf of a [party](@), of determining whether
+      or not that data is valid to be used for some specific purpose(s) of that [party](@).
+    date: 20210802
+    locator: <locator>/validate
+    navurl: <navurl>/validate
+    headingids:
+      - short-description
+  - id: validator-policy
+    title: Validator Policy
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: validator-policy
+    term: validator-policy
+    formphrases: validator-polic{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Validator Policy: a Digital Policy that contains the rules, working-instructions,
+      preferences and other guidance for an operational Validator component to function
+      in accordance with the Objectives of its Principal.'
+    glossaryText: a [digital policy](@) that enables an operational [validator](@)
+      component to function in accordance with the [objectives](@) of its [principal](@).
+    date: 20220915
+    locator: <locator>/validator-policy
+    navurl: <navurl>/validator-policy
+    headingids:
+      - short-description
+  - id: validator
+    title: Validator
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: validator
+    term: validator
+    formphrases: validator{ss}
+    status: draft
+    grouptags:
+    hoverText: 'Validator (functional component): a component that implements the
+      Capability to determine whether or not (verified) data is valid to be used for
+      some specific purpose(s).'
+    glossaryText: a component that implements the [capability](@) to determine whether
+      or not ([verified](@)) data is valid to be used for some specific purpose(s).
+    date: 20210802
+    locator: <locator>/validator
+    navurl: <navurl>/validator
+    headingids:
+      - short-description
+  - id: verifier-policy
+    title: Verifier Policy
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: verifier-policy
+    term: verifier-policy
+    formphrases: verifier-polic{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Verifier Policy: a Digital Policy that contains the rules, working-instructions,
+      preferences and other guidance for an operational Verifier component to function
+      in accordance with the Objectives of its Principal.'
+    glossaryText: a [digital policy](@) that enables an operational [verifier](@)
+      component to function in accordance with the [objectives](@) of its [principal](@).
+    date: 20210601
+    locator: <locator>/verifier-policy
+    navurl: <navurl>/verifier-policy
+    headingids:
+      - short-description
+  - id: verifier
+    title: Verifier
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: verifier
+    term: verifier
+    formphrases: verifier{ss}
+    status: draft
+    grouptags:
+    hoverText: "Verifier (functional component): a component that implements the Capability
+      to request Peer Agents to present (provide) data from credentials (of a specified
+      kind, issued by specified Parties), and to verify such responses (check structure,
+      signatures, dates), according to its Principal's Verifier Policy."
+    glossaryText: a component that implements the [capability](@) to request [peer
+      agents](@) to present (provide) data from credentials (of a specified kind,
+      issued by specified [parties](@)), and to verify such responses (check structure,
+      signatures, dates), according to its [principal](@)'s [verifier policy](@).
+    date: 20210601
+    locator: <locator>/verifier
+    navurl: <navurl>/verifier
+    headingids:
+      - short-description
+      - purpose
+  - id: verify
+    title: Verify
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: verify
+    term: verify
+    formphrases: verify, verifies, verified, verifying
+    status: draft
+    grouptags:
+    hoverText: 'Verify/verification of data: the act, by or on behalf of a Party,
+      of determining whether that data is authentic (i.e. originates from the Party
+      that authored it), timely (i.e. has not expired), and conforms to other specifications
+      that apply to its structure.'
+    glossaryText: The act, by or on behalf of a [party](@), of determining whether
+      that data is authentic (i.e. originates from the [party](@) that authored it),
+      timely (i.e. has not expired), and conforms to other specifications that apply
+      to its structure.
+    date: 20210802
+    locator: <locator>/verify
+    navurl: <navurl>/verify
+    headingids:
+      - short-description
+  - id: vocabulary
+    title: Vocabulary
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: vocabulary
+    term: vocabulary
+    formphrases: vocabular{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Vocabulary: the sum or stock of words employed by a language, group,
+      individual, or work or in a field of knowledge.'
+    glossaryText: the sum or stock of words employed by a language, group, individual,
+      or work or in a field of knowledge.
+    date: 20210601
+    locator: <locator>/vocabulary
+    navurl: <navurl>/vocabulary
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - examples
+  - id: wallet-policy
+    title: Wallet Policy
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: wallet-policy
+    term: wallet-policy
+    formphrases: wallet-polic{yies}
+    status: draft
+    grouptags:
+    hoverText: 'Wallet Policy: a Digital Policy that contains the rules, working-instructions,
+      preferences and other guidance for an operational Wallet component to function
+      in accordance with the Objectives of its Principal.'
+    glossaryText: a [digital policy](@) that enables an operational [wallet](@) component
+      to function in accordance with the [objectives](@) of its [principal](@).
+    date: 20210601
+    locator: <locator>/wallet-policy
+    navurl: <navurl>/wallet-policy
+    headingids:
+      - short-description
+  - id: wallet
+    title: Wallet
+    displayed_sidebar: essifLabSideBar
+    scopetag: essiflab
+    type: concept
+    termid: wallet
+    term: wallet
+    formphrases: wallet{ss}
+    status: draft
+    grouptags:
+    hoverText: "Wallet (functional component): a component that implements the Capability
+      to securely store data as requested by Colleague Agents, and to provide stored
+      data to Colleague Agents or Peer Agents, all in Compliance with the rules of
+      its Principal's Wallet Policy."
+    glossaryText: a component that implements the [capability](@) to securely store
+      data as requested by [colleague agents](@), and to provide stored data to [colleague
+      agents](@) or [peer agents](@), all in [compliance](@) with the rules of its
+      [principal](@)'s [wallet policy](@).
+    date: 20210601
+    locator: <locator>/wallet
+    navurl: <navurl>/wallet
+    headingids:
+      - short-description
+      - purpose
+      - criteria
+      - functionality

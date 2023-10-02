@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: jurisdiction
+term: jurisdiction
 formphrases: jurisdiction{ss}
 status: draft
 grouptags:

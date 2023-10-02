@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: pattern-file
+term: pattern-file
 formphrases: pattern-file
 status: draft
 grouptags:

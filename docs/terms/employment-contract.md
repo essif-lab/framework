@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: employment-contract
+term: employment-contract
 formphrases: employment-contract{ss}
 status: draft
 grouptags:

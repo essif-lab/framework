@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: human-being
+term: human-being
 formphrases: human-being{ss}, human{ss}, person{ss}, individual{ss}, people
 status: draft
 grouptags:

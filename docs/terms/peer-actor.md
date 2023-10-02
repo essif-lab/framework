@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: term
 termid: peer-actor
+term: peer-actor
 formphrases: peer-actor{ss}
 conceptref: essifLab:Actor
 status: draft

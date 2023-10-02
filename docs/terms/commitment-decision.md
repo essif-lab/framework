@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: commitment-decision
+term: commitment-decision
 formphrases: commitment-decision{ss}
 status: draft
 grouptags:

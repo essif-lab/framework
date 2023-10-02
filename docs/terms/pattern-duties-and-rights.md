@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
 termid: duties-and-rights
+term: duties-and-rights
 formphrases: duties-and-rights
 status: draft
 grouptags:

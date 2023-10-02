@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: validate
+term: validate
 formphrases: validate, validates, validated, validating
 status: draft
 grouptags:

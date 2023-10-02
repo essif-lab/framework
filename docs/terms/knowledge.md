@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: knowledge
+term: knowledge
 formphrases: knowledge{ss}
 status: draft
 grouptags:

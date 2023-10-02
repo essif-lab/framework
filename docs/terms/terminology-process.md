@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
 termid: terminology-process
+term: terminology-process
 formphrases: terminology-process, terminology-processes
 status: draft
 grouptags:

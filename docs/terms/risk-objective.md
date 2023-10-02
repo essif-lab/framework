@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: risk-objective
+term: risk-objective
 formphrases: risk-objective{ss}
 status: draft
 grouptags:

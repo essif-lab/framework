@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: guardian
+term: guardian
 formphrases: guardian
 status: draft
 grouptags:

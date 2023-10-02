@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: term
 termid: partial-identity
+term: partial-identity
 formphrases: partial-identit{yies}
 status: draft
 grouptags:

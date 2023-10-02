@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: controller
+term: controller
 formphrases: controller{ss}
 status: draft
 grouptags:

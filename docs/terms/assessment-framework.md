@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: assessment-framework
+term: assessment-framework
 formphrases: assessment-framework{ss}
 status: draft
 grouptags:

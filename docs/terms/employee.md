@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: employee
+term: employee
 formphrases: employee{ss}
 status: draft
 grouptags:

@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: objective
+term: objective
 formphrases: objective{ss}
 status: draft
 grouptags:

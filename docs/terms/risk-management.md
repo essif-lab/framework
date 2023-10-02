@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: risk-management
+term: risk-management
 formphrases: risk-management, risk-manager{ss}
 status: draft
 grouptags:

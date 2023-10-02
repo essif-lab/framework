@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: trust-level
+term: trust-level
 formphrases: trust-level{ss}, level{ss}-of-trust
 status: draft
 grouptags:

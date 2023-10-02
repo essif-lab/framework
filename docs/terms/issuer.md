@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: issuer
+term: issuer
 formphrases: issuer{ss}
 status: draft
 grouptags:

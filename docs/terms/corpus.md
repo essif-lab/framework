@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
 termid: corpus
+term: corpus
 formphrases: corpus, corpus-of-terminology
 status: draft
 grouptags:

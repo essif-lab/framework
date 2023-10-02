@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: capability
+term: capability
 formphrases: capabilit{yies}, capabilit{yies}-of-a-party
 status: draft
 grouptags:

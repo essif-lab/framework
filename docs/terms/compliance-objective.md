@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: compliance-objective
+term: compliance-objective
 formphrases: compliance-objective{ss}
 status: draft
 grouptags:

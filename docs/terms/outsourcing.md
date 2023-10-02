@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: outsourceing
+term: outsourceing
 formphrases: outsourc{eing}, outsourced
 status: draft
 grouptags:

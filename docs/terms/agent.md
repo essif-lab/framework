@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: agent
+term: agent
 formphrases: agent{ss}, digital-agent{ss}
 status: draft
 grouptags:

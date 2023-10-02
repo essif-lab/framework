@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: risk-owner
+term: risk-owner
 formphrases: risk-owner{ss}
 status: draft
 grouptags:

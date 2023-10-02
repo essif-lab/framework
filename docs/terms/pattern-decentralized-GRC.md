@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
 termid: decentralized-grc
+term: decentralized-grc
 formphrases: decentralized-grc
 status: draft
 grouptags:

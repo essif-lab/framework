@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: legal-entity
+term: legal-entity
 formphrases: legal-entit{yies}
 status: draft
 grouptags:

@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: community
+term: community
 formphrases: communit{yies}
 status: draft
 grouptags:

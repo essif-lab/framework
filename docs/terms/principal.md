@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: principal
+term: principal
 formphrases: principal{ss}
 status: draft
 grouptags:

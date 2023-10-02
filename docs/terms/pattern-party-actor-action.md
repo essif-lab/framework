@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
 termid: party-actor-action
+term: party-actor-action
 formphrases: party-actor-action
 status: draft
 grouptags:

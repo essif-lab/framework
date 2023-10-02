@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
 type: term
 termid: ssi
+term: ssi
 formphrases: ssi
 conceptref: essifLab:self-sovereign-identity
 status: draft

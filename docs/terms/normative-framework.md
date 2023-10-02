@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: normative-framework
+term: normative-framework
 formphrases: normative-framework{ss}
 status: draft
 grouptags:

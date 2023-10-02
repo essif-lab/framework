@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: action
+term: action
 formphrases: action{ss}, acting, activit(yies)
 status: draft
 grouptags:

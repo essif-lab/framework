@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: management
+term: management
 formphrases: management, manager, manages, managed, managed-by, management, managing, managing-part{yies}
 status: draft
 grouptags:

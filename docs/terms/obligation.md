@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: obligation
+term: obligation
 formphrases: obligation{ss}
 status: draft
 grouptags:

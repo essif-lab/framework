@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: revocation-component
+term: revocation-component
 formphrases: revocation-component{ss}, revocator{ss+}
 status: draft
 grouptags:

@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
 termid: decision-making
+term: decision-making
 formphrases: decision-making
 status: draft
 grouptags:

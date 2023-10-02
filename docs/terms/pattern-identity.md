@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
 termid: identity
+term: identity
 formphrases: identity
 status: draft
 grouptags:

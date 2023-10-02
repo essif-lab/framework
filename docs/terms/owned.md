@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: owned
+term: owned
 formphrases: owned
 status: draft
 grouptags:

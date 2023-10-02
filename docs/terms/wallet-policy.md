@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: wallet-policy
+term: wallet-policy
 formphrases: wallet-polic{yies}
 status: draft
 grouptags:

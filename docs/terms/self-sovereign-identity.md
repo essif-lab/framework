@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
 type: term
 termid: self-sovereign-identity
+term: self-sovereign-identity
 formphrases: self-sovereign-identit{yies}
 status: draft
 grouptags:

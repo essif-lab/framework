@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: mandate
+term: mandate
 formphrases: mandate{ss}, mandated, mandating, mandator{ss}, mandatee{ss}
 status: draft
 grouptags:

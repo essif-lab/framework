@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
 type: concept
 termid: ssi-infrastructure
+term: ssi-infrastructure
 formphrases: ssi-infrastructure{ss}
 status: draft
 grouptags:

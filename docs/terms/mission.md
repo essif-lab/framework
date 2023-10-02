@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: mission
+term: mission
 formphrases: mission{ss}
 status: draft
 grouptags:

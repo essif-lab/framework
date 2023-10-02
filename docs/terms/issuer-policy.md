@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: issuer-policy
+term: issuer-policy
 formphrases: issuer-polic{yies}
 status: draft
 grouptags:

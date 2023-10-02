@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: documentation-interop
+term: documentation-interop
 formphrases: documentation-interop
 status: draft
 grouptags:

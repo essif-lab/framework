@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: actor
+term: actor
 formphrases: actor{ss}, digital-actor{ss}
 status: draft
 grouptags:

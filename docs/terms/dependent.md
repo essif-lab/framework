@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: dependent
+term: dependent
 formphrases: dependent{ss}
 status: draft
 grouptags:

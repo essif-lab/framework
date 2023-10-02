@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
 termid: jurisdiction
+term: jurisdiction
 formphrases: jurisdiction
 status: draft
 grouptags:

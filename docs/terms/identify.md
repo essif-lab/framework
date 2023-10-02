@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: identify
+term: identify
 formphrases: identify, identifies, identifying, identifiable, identified, identification
 status: draft
 grouptags:

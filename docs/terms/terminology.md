@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
 termid: terminology
+term: terminology
 formphrases: terminolog{yies}
 status: draft
 grouptags:

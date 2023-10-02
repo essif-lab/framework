@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: advertisement
+term: advertisement
 formphrases: advertisement{ss}, advertise, advertising
 status: draft
 grouptags:

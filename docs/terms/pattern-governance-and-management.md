@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
 termid: governance-and-management
+term: governance-and-management
 formphrases: governance-and-management
 status: draft
 grouptags:

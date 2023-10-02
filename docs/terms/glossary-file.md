@@ -4,6 +4,7 @@ title: "Glossary-file"
 scopetag: essifLab
 type: glossary
 termid: glossary-file
+term: glossary-file
 status: draft
 grouptags:
 hoverText: "Glossary-file: a file whose contents defines/specifies a Glossary."

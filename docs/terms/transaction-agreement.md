@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: transaction-agreement
+term: transaction-agreement
 formphrases: transaction-agreement{ss}
 status: draft
 grouptags:

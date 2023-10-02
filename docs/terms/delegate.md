@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: delegate
+term: delegate
 formphrases: delegate{ss}, delegated, delegating, delegator{ss}, delegatee{ss}
 status: draft
 grouptags:

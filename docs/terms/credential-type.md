@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: credential-type
+term: credential-type
 formphrases: credential-type{ss}
 status: draft
 grouptags:

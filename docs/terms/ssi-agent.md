@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: term
 termid: ssi-agent
+term: ssi-agent
 formphrases: ssi-agent{ss}
 conceptref: essifLab:Agent
 status: draft

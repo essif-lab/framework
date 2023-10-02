@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
 termid: trust
+term: trust
 formphrases: trust
 status: draft
 grouptags:

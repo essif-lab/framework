@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: authority
+term: authority
 formphrases: authorit{yies}
 status: draft
 grouptags:

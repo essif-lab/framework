@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
 type: concept
 termid: self-sovereignty
+term: self-sovereignty
 formphrases: self-sovereignty, autonomy
 status: draft
 grouptags:

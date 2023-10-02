@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
 termid: world-model
+term: world-model
 formphrases: world-model
 status: draft
 grouptags:

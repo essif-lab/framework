@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: holder-policy
+term: holder-policy
 formphrases: holder-polic{yies}
 status: draft
 grouptags:

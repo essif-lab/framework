@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: ecosystem
+term: ecosystem
 formphrases: ecosystem{ss}
 status: draft
 grouptags:

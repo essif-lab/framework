@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: capability-of-an-actor
+term: capability-of-an-actor
 formphrases: capabilit{yies}-of-an-actor
 status: draft
 grouptags:

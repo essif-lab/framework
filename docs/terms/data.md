@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: data
+term: data
 formphrases: data, digital-data
 status: draft
 grouptags:

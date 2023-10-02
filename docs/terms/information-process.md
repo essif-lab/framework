@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: information-process
+term: information-process
 formphrases: information-process, information-processes
 status: draft
 grouptags:

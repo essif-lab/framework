@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
 termid: framework
+term: framework
 formphrases: framework{ss}, conceptual-framework{ss}
 status: draft
 grouptags:

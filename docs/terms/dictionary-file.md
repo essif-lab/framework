@@ -4,6 +4,7 @@ title: "Dictionary-file"
 scopetag: essifLab
 type: dictionary
 termid: dictionary-file
+term: dictionary-file
 status: draft
 grouptags:
 hoverText: "Dictionary-file: a file whose contents specifies the contents of a Dictionary."

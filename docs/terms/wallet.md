@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: wallet
+term: wallet
 formphrases: wallet{ss}
 status: draft
 grouptags:

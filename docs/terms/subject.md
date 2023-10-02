@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
 type: term
 termid: subject
+term: subject
 formphrases: subject{ss}
 status: draft
 grouptags:

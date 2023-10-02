@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
 termid: decentralized-risk-management
+term: decentralized-risk-management
 formphrases: decentralized-risk-management
 status: draft
 grouptags:

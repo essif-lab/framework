@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: expectation
+term: expectation
 formphrases: expectation{ss}
 status: draft
 grouptags:

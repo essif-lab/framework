@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
 termid: decision
+term: decision
 formphrases: decision{ss}
 status: draft
 grouptags:

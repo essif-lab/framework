@@ -5,6 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
 termid: party-representation
+term: party-representation
 formphrases: party-representation
 status: draft
 grouptags:
