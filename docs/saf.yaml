@@ -10,7 +10,7 @@ scope:
   scopedir: https://github.com/essif-lab/framework/tree/master/docs # URL of the scope-directory
   curatedir: terms # directory where all curated files are located. Full URL is `scopedir`/`curatedir`
   glossarydir: glossaries # directory where all glossary files and GDFs are located. Full URL is `scopedir`/`glossarydir`
-  defaultvsn: cterms # versiontag that identifies the default terminology for this scope. The associated MRG is located at scopedir/glossarydir/mrg.scopetag.defaultvsn.yaml
+  defaultvsn: terms # versiontag that identifies the default terminology for this scope. The associated MRG is located at scopedir/glossarydir/mrg.scopetag.defaultvsn.yaml
   license: LICENSE.md # file that contains the (default) licensing conditions. Full URL is `scopedir`/`license`
   statuses: [ proposed, approved, deprecated ] # list of status tags that are defined for terminological artifacts in this scope
   issues: https://github.com/essif-lab/framework/issues # URL where issues can be raised and handled
@@ -40,7 +40,7 @@ versions:
   - vsntag: test # this version MUST only be used for testing the MRG generator
     terms:
     - "[essiflab]@essiflab" # import all tev2 terms.
-  - vsntag: ctexts # this version contains all terms that are curated by essiflab
+  - vsntag: terms # this version contains all terms that are curated by essiflab
     altvsntags: curated-terms, owned-terms # alternative verstiontags
     terms:
     - "*" # import all terms as curated in the current scope.
