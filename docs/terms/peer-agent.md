@@ -5,7 +5,6 @@ id: peer-agent
 scope: essiflab
 termtype: concept
 termid: peer-agent
-term: peer-agent
 formphrases: peer-agent{ss}
 grouptags:
 status: proposed

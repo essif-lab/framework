@@ -5,7 +5,6 @@ id: participant
 scope: essiflab
 termtype: concept
 termid: participant
-term: participant
 formphrases: participant{ss}
 grouptags:
 status: proposed
