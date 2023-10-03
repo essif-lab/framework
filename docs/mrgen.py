@@ -42,7 +42,7 @@ def construct_terminology_section(saf_data, version_tag):
         "website": saf_data.get("scope", {}).get("website"),
         "navpath": saf_data.get("scope", {}).get("navpath"),
         "license": saf_data.get("scope", {}).get("license", ""),
-        "version": vsntag,
+        "vsntag": vsntag,
         "altversions": altvsntags,
         "date": today
     }

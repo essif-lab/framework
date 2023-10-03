@@ -6,7 +6,7 @@ terminology:
   website: https://essif-lab.github.io/framework
   navpath: /docs/terms
   license: LICENSE.md
-  version: terms
+  vsntag: terms
   altversions: curated-terms, owned-terms
   date: '20231002'
 scopes:
