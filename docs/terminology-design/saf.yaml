@@ -41,5 +41,5 @@ scopes:  #
 versions:
 - vsntag: v0.1
   altvsntags: [ latest ]
-  termselcrit:
+  termselection:
   - "*@tev2" # import all tev2 terms.

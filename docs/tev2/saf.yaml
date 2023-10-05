@@ -40,11 +40,11 @@ scopes:  #
 versions:
 - vsntag: test # this version MUST only be used for testing the MRG generator
   mrgfile: mrg-tev2-test.yaml # URL: <scopedir>/<glossarydir>/<mrgfile>
-  termselcrit:
+  termselection:
   - "*@tev2" # import all tev2 terms.
 - vsntag: v0.1
   mrgfile: mrg-tev2.v0.1.yaml # URL: <scopedir>/<glossarydir>/<mrgfile>
-  termselcrit:
+  termselection:
   - "tags[identify,ppa]@essif-lab"
   - "*@tev2" # import all tev2 terms.
 - vsntag: v0.9.4 # a versiontag that identifies this version from all other versions in the SAF
@@ -52,7 +52,7 @@ versions:
   altvsntags: # alternative verstiontags
     - latest
     - 0x921456
-  termselcrit:
+  termselection:
     - "tags[management]@essif-lab" # import all terms from the mrg of `essif-lab:latest` that have grouptag `management`.
     - "termids[party,community]@essif-lab:0.9.4" # import the terms `party` and `community` from the mrg of `essif-lab:0.9.4`.
     - "*@tev2" # import all terms defined in the scope `tev2`
@@ -63,7 +63,7 @@ versions:
   mrgfile: mrg-tev2-v0.9.0.yaml # URL: <scopedir>/<glossarydir>/<mrgfile>
   altvsntags: # alternative verstiontags
     - 0x654129
-  termselcrit:
+  termselection:
     - "*@essif-lab" # import all terms defined in the scope `essif-lab`
     - "-tags[terminology]" # remove all terms tagged with the grouptag `terminology`
     - "*@tev2" # import all terms defined in the scope `tev2`
