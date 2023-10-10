@@ -28,8 +28,7 @@ scope:
 # that live within them, e.g. to use/import their data.
 #
 scopes:  #
-- scopetag: # definition of (scope) tag(s) that are used within this scope to refer to a specific terminology
-  - tev2
+- scopetag: tev2 # definition of (scope) tag(s) that are used within this scope to refer to a specific terminology
   scopedir: https://github.com/tno-terminology-design/tev2/tree/master/docs/tev2 # URL of the scope-directory
 #
 # The third section specifies the versions that are actively maintained by the curators.
@@ -37,11 +36,8 @@ scopes:  #
 # See the Glossary Generation Tool (GGT) for details about the syntax and semantics.
 #
 versions:
-  - vsntag: test # this version MUST only be used for testing the MRG generator
-    termselection:
-    - "*@tev2" # import all tev2 terms from its default MRG.
   - vsntag: terms # this version contains all terms that are curated by essiflab
-    altvsntags: curated-terms, owned-terms # alternative verstiontags
+    altvsntags: [ curated-terms, owned-terms ] # alternative verstiontags
     termselection:
     - "*" # import all terms as curated in the current scope.
   - vsntag: v0.1 # a versiontag that identifies this version from all other versions in the SAF
