@@ -34,7 +34,7 @@ where:
 - `term text`: The term or phrase you want to be visible in the documentation page.
   It may consist of any character except `|` (AND perhaps some other that the author of this documentation wasn't aware of).
 - `term-name`: The filename of the term file, which resides under `/docs/terms/` directory.
-  Example: `%%actions|action%%` will highlight `actions` for the reader, and refer it to the page `/docs/terms/action.md`
+  Example: `[actions](@)` will highlight `actions` for the reader, and refer it to the page `/docs/terms/action.md`
 
 This syntax can be used in `*.mdx` and `*.md` files that reside in the `/docs/` or the `/docs/terms/` directory.
 
@@ -96,7 +96,7 @@ Notes:
 - `typeid` (required) is an element of the set {`concept`,`pattern`,`term`}, depending on the class of which the `id` is an instance. This field is used to determine what goes in the glossary, and may be used for other things in future. For every `typeid` there is a [template file](https://github.com/essif-lab/framework/tree/master/docs/tev1).
 - `stage` (optional) is reserved for future use, when terms will be managed with a lifecycle. Then, this field will state the phase in the lifecycle that the document is in.
 - `hoverText` (required) is a string that will show as a popup when the term is highlighted and a user hoves over it with the mouse. The `hoverText` attribute **MUST NOT contain `%%`-syntax**.
-- `glossaryText` (optional) is a string that is put in the glossary as the description of the term. If `%%`-syntax is used in a `glossaryText` string, **the `|` character must be replaced with the `^`-character**. Example: `%%actors|actor%%` is NOT allowed in the `glossaryText`. It should be `%%actors^actor%%`.
+- `glossaryText` (optional) is a string that is put in the glossary as the description of the term. If `%%`-syntax is used in a `glossaryText` string, **the `|` character must be replaced with the `^`-character**. Example: `[actors](@)` is NOT allowed in the `glossaryText`. It should be `%%actors^actor%%`.
 - additional fields that you MAY use are specified as [Docusaurus markdown front matter](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter).
 
 ### Running the script

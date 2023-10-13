@@ -31,4 +31,4 @@ The Concepts and Terminology part of eSSIF-Lab aims helps eSSIF-Lab community pa
 <!--This scope may include other scopes, which means that everything in that other scope is also considered part of this scope. In case of collisions, this scope MUST provide a means to resolve such conflicts without modifying anything in included scopes. For eSSIF-Lab, we include `essifLabTerminology`-->
 
 ### Background
-The %%terminology pattern|pattern-terminology%% provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.

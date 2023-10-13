@@ -10,7 +10,7 @@ formPhrases: capabilit{yies}-of-an-actor
 status: draft
 grouptags:
 hoverText: "Capability (of an Actor): the potential of that Actor to execute a (named) coherent set of Actions (a 'function', or 'task') on behalf of some Party."
-glossaryText: "The potential of an %%actor^actor%% to execute a (named) coherent set of %%actions^action%% (a 'function', or 'task') on behalf of some %%party^party%%."
+glossaryText: "The potential of an [actor](@) to execute a (named) coherent set of [action](@) (a 'function', or 'task') on behalf of some [party](@)."
 date: 20220922
 ---
 
@@ -18,7 +18,7 @@ date: 20220922
 This page is a first draft. Additional contents (and a proper review) are needed.
 :::
 ### Short Description
-A **capability (of an %%actor|actor%%)** is the potential of that %%actor|actor%% to execute a (named) coherent set of %%actions|action%% (a 'function', or 'task') on behalf of some %%party|party%%.
+A **capability (of an [actor](@))** is the potential of that [actor](@) to execute a (named) coherent set of [actions](@) (a 'function', or 'task') on behalf of some [party](@).
 
 ### Examples
 

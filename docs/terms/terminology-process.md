@@ -10,19 +10,19 @@ formPhrases: terminology-process, terminology-processes
 status: draft
 grouptags:
 hoverText: "Terminology Process: a method for recognizing misunderstandings as such, and creating or maintaining Definitions that resolve them."
-glossaryText: "a method for recognizing misunderstandings as such, and creating or maintaining %%definitions^definition%% that resolve them."
+glossaryText: "a method for recognizing misunderstandings as such, and creating or maintaining [definition](@) that resolve them."
 date: 20210601
 ---
 
 ### Short Description
-The eSSIF-Lab **terminology process** is a method for recognizing misunderstandings as such, and creating or maintaining %%definitions|definition%% that resolve them. It helps %%parties|party%% that work together to realize certain %%objectives|objective%% (in some %%scope|scope%%) by enabling them to establish a %%terminology|terminology%% that has the property that every party has the same understanding of each of its %%terms|term%%, and that each of these %%terms|term%% is relevant for the realizations of these %%objectives|objective%%.
+The eSSIF-Lab **terminology process** is a method for recognizing misunderstandings as such, and creating or maintaining [definitions](@) that resolve them. It helps [parties](@) that work together to realize certain [objectives](@) (in some [scope](@)) by enabling them to establish a [terminology](@) that has the property that every party has the same understanding of each of its [terms](@), and that each of these [terms](@) is relevant for the realizations of these [objectives](@).
 
 ### Prerequisites
-This process focuses on the creation and maintenance of qualitatively good definitions, i.e. %%definitions|definition%% that satisfy the following quality criteria:
-- the %%definition|definition%% is associated with a %%scope|scope%% that is explicitly defined, i.e. any %%party|party%% can unambiguously determine whether or not the definition applies;
+This process focuses on the creation and maintenance of qualitatively good definitions, i.e. [definitions](@) that satisfy the following quality criteria:
+- the [definition](@) is associated with a [scope](@) that is explicitly defined, i.e. any [party](@) can unambiguously determine whether or not the definition applies;
 - the [criteria](https://www.lexico.com/definition/criterion) of the definition are well-formed, meaning that all stakeholders make the same judgements c.q. reach the same conclusions when using these criteria in a given situation that is relevant within the scope.
 - the definition is relevant, which means that stakeholders have identified cases that demonstrate how the use of this definition helps them realize their objectives and/or address issues that prevent them from doing so, or they have agreed that relevance is obvious.
-- there is consensus between the stakeholders regarding the %%term|term%% - the actual word or phrase - that is to be used to refer to (unidentified, or arbitrary, or specific) %%entities|entity%% that satisfy the criterion.
+- there is consensus between the stakeholders regarding the [term](@) - the actual word or phrase - that is to be used to refer to (unidentified, or arbitrary, or specific) [entities](@) that satisfy the criterion.
 
 This process does not prohibit that definitions may satisfy other criteria, or be associated with other attributes so that they may become better suited to serve other purposes as well. For example, a definition that is to be used in an educational context may be required to come with examples, and/or explanations about why the distinction is made as it is.
 
@@ -86,4 +86,4 @@ Obviously, criteria that are relevant in one context may not not be relevant in 
 
 [^NASA]: NASA has designed so-called 'space cups' for drinking liquids such a s coffee in the International Space Station ISS. See https://www.nasa.gov/mission_pages/station/research/experiments/2029.html.
 
-[^test]: If you test a criterion by simply asking stakeholders to assert that the criteria is relevant, you run the %%risk|risk%% that they have their own interpretation of the term 'relevant'. In order to mitigate this %%risk|risk%%, you should either define 'relevance (of a criterion that is used in a definition)' as the property of helping stakeholders in the scope of that definition to to realize their objectives and/or address issues that prevent them from doing so, or you should ask the question as we stated here.
+[^test]: If you test a criterion by simply asking stakeholders to assert that the criteria is relevant, you run the [risk](@) that they have their own interpretation of the term 'relevant'. In order to mitigate this [risk](@), you should either define 'relevance (of a criterion that is used in a definition)' as the property of helping stakeholders in the scope of that definition to to realize their objectives and/or address issues that prevent them from doing so, or you should ask the question as we stated here.

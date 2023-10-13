@@ -11,7 +11,7 @@ conceptref: essifLab:pattern
 status: draft
 grouptags:
 hoverText: "Mental Model (Pattern): A description, both casual and formal, of a set of Concepts (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
-glossaryText: "A description, both casual and formal, of a set of %%concepts^concept%% (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
+glossaryText: "A description, both casual and formal, of a set of [concept](@) (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
 date: 20210804
 ---
 
@@ -19,4 +19,4 @@ date: 20210804
 Additional content is needed here.
 :::
 
-See also: %%pattern|pattern%%.
+See also: [pattern](@).

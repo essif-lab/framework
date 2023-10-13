@@ -12,7 +12,7 @@ This document provides an overview of the notations and conventions being used w
 We use keywords such as “shall”, “should”, “may” etc. as defined by [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
 ### Capitalization of words in mid-sentence
-A word in mid-sentence that is capitalized is a %%term|term%% that has a %%definition|definition%% in the %%Corpus of Terminology|corpus%%. This allows readers to distinguish between the more colloquial meanings of words (by not capitalizing them) and those that are actually defined. We appreciate any feedback regarding our (im)proper use of this kind of capitalization of words.
+A word in mid-sentence that is capitalized is a [term](@) that has a [definition](@) in the [Corpus of Terminology](corpus@). This allows readers to distinguish between the more colloquial meanings of words (by not capitalizing them) and those that are actually defined. We appreciate any feedback regarding our (im)proper use of this kind of capitalization of words.
 
 :::note
 We are working towards deprecating this convention, as we now have better ways of referring to words that are defined in the eSSIF-Lab Corpus.
@@ -20,18 +20,18 @@ We are working towards deprecating this convention, as we now have better ways o
 
 ### Pattern diagram notations
 
-%%Pattern|pattern%% diagrams will be visualized in this document using a notation that is very similar to that used by [UML](https://www.uml-diagrams.org/). The following diagram shows the various notations that we will be using that are basically taken from [UML](https://www.uml-diagrams.org/). There are a few exceptions, that are not shown in the figure; they are explained at the end.
+[Pattern](@) diagrams will be visualized in this document using a notation that is very similar to that used by [UML](https://www.uml-diagrams.org/). The following diagram shows the various notations that we will be using that are basically taken from [UML](https://www.uml-diagrams.org/). There are a few exceptions, that are not shown in the figure; they are explained at the end.
 <br/><br/>
 <img
   alt="Notations and conventions"
   src={useBaseUrl('images/essif-lab-notations-and-conventions.png')}
 /><br/><br/>
 
-A **rectangle**, e.g. 'Person', represents a (named) %%concept|concept%%, or [entity-class](https://www.uml-diagrams.org/class.html). The (operational) extension of a %%concept|concept%% is the sets of its instances (for 'Person', the extension consists of the set of actual people of flesh and blood tha are in the scope of the model). The extensions of different concepts are disjunct (do not overlap), unless there is an 'ISA' relation between them (see below). When a rectangle is in a **coloured area that has a name**, it is a child (or part) of the concept with that name (see below)
+A **rectangle**, e.g. 'Person', represents a (named) [concept](@), or [entity-class](https://www.uml-diagrams.org/class.html). The (operational) extension of a [concept](@) is the sets of its instances (for 'Person', the extension consists of the set of actual people of flesh and blood tha are in the scope of the model). The extensions of different concepts are disjunct (do not overlap), unless there is an 'ISA' relation between them (see below). When a rectangle is in a **coloured area that has a name**, it is a child (or part) of the concept with that name (see below)
 
-A **solid line with a closed arrowhead**, e.g. 'owns', represents a (named) relation/[association](https://www.uml-diagrams.org/association.html) between the two %%concepts|concept%% it connects. The concept at the arrowhead ('House') is called the 'target %%concept|concept%%' (TGT) for that relation; the other ('Person') is called the 'source %%concept|concept%%' (SRC). The relation is labeled such that `<SRC> <relation label> <TGT>` (Person owns House) suggests the phrase that describes the intension(al definition) of that relation. The (operational) extension of a relation embraces all pairs (SRC,TGT) for which the relation holds. In the example, it consists of all pairs (P,H), where P is a Person and H is a House, such that the phrase 'P owns H' is true.
+A **solid line with a closed arrowhead**, e.g. 'owns', represents a (named) relation/[association](https://www.uml-diagrams.org/association.html) between the two [concepts](@) it connects. The concept at the arrowhead ('House') is called the 'target [concept](@)' (TGT) for that relation; the other ('Person') is called the 'source [concept](@)' (SRC). The relation is labeled such that `<SRC> <relation label> <TGT>` (Person owns House) suggests the phrase that describes the intension(al definition) of that relation. The (operational) extension of a relation embraces all pairs (SRC,TGT) for which the relation holds. In the example, it consists of all pairs (P,H), where P is a Person and H is a House, such that the phrase 'P owns H' is true.
 
-A **green name** at either [end of a relation/association](https://www.uml-diagrams.org/association.html#association-end) is what UML calls 'role'; this name may be used to refer to (an instance of) the %%concept|concept%% at which the name is placed as it performs its/this role in this relation. In the figure, `owner` is the role that a Person fulfills in the relation 'owns'. If we assert that a Person (P) is the owner of a specific House (H), or that House H is owned by Person P, this means that (P,H) is an element of the extension of the relation 'owns'.
+A **green name** at either [end of a relation/association](https://www.uml-diagrams.org/association.html#association-end) is what UML calls 'role'; this name may be used to refer to (an instance of) the [concept](@) at which the name is placed as it performs its/this role in this relation. In the figure, `owner` is the role that a Person fulfills in the relation 'owns'. If we assert that a Person (P) is the owner of a specific House (H), or that House H is owned by Person P, this means that (P,H) is an element of the extension of the relation 'owns'.
 
 A **solid line with an open arrowhead**, represents a [generalization relation](https://www.uml-diagrams.org/generalization.html). It can be read as `<SRC> is a <TGT>`, and is therefore also referred to as an ISA-relation. The SRC of the relation is the specialization (subclass) of the TGT (which in turn is a generalization of SRC). This means that SRC satisfies all constraints that TGT satisfies, and also that SRC has all attributes (properties, characteristics) that TGT has. The figure shows 'Self Employed Retailer is a Person' as an example.
 
@@ -57,10 +57,10 @@ A **line with a hollow diamond** at one end represents an [aggregation](https://
 The following notational conventions are not used by [UML](https://www.uml-diagrams.org/), but are specific to our use.
 
 We use a **coloring convention** to distinguish between what is 'officially' part of the eSSIF-Lab models, and parts that are not.
-- **blue** is used to color the lines and other symbols that are part of the 'official' models. Typically, they are explicitly defined or otherwise explained, e.g. in a %%mental model|pattern%%. Their definitions/meanings may differ from 'common knowledge'.
+- **blue** is used to color the lines and other symbols that are part of the 'official' models. Typically, they are explicitly defined or otherwise explained, e.g. in a [mental model](pattern@). Their definitions/meanings may differ from 'common knowledge'.
 - **red** is used to color the lines and other symbols that are part of our 'common knowledge', and hence need not be explicitly defined. They appear to explain where eSSIF-Lab models link to these commonly known/used concepts. We think of them as necessary in order to bridge possible gaps between 'common understanding' and the eSSIF-Lab ways of thinking. Whenever a 'red concept' is nevertheless defined, this is for the purpose of conveying what we conceive the 'common knowledge' to be.
 
 We use a **line typing convention** within a diagram, as follows:
-- **solid lines** are used for lines and other symbols that are part of the %%model|pattern%% that is represented by the diagram;
+- **solid lines** are used for lines and other symbols that are part of the [model](pattern@) that is represented by the diagram;
 - **dashed lines** are used for lines and other symbols that are (authoritatively) defined elsewhere.
-For example, the concept %%party|party%% is authoritatively defined in the %%party, actor and action pattern|pattern-party-actor-action%%, so the diagram there shows a solid (blue) line for that concept. It also appears in other diagrams, e.g. in the %%jurisdiction pattern|pattern-jurisdiction%%, where the concept is represented with a (blue) dashed line.
+For example, the concept [party](@) is authoritatively defined in the [party, actor and action pattern](pattern-party-actor-action@), so the diagram there shows a solid (blue) line for that concept. It also appears in other diagrams, e.g. in the [jurisdiction pattern](pattern-jurisdiction@), where the concept is represented with a (blue) dashed line.

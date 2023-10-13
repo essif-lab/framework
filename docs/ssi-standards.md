@@ -16,11 +16,11 @@ The purpose of this document is to provide an overview of standards activities f
 
 ## 1.  Introduction
 
-Self-sovereign identity (SSI) is work in progress, which includes the work on standards for SSI. Such standards include %%frameworks|framework%%, schemas, data models, protocols, APIs, open-source code and more. The present document provides an overview on those standards and work-in-progress. Most pieces of text have been directly copied from the referenced websites.
+Self-sovereign identity (SSI) is work in progress, which includes the work on standards for SSI. Such standards include [frameworks](@), schemas, data models, protocols, APIs, open-source code and more. The present document provides an overview on those standards and work-in-progress. Most pieces of text have been directly copied from the referenced websites.
 
 ## 2.  W3C CCG: Credentials Community Group
 
-The [W3C Credentials Community Group](https://www.w3.org/community/credentials/) explores the creation, storage, presentation, verification, and user control of credentials. It focuses on a verifiable credential (a set of claims) created by an issuer about a %%subject|subject%% — a person, group, or thing — and seek solutions inclusive of approaches such as: self-sovereign identity; presentation of proofs by the bearer; data minimization; and centralized, federated, and decentralized registry and identity systems. Its tasks include drafting and incubating Internet specifications for further standardization and prototyping and testing reference implementations.
+The [W3C Credentials Community Group](https://www.w3.org/community/credentials/) explores the creation, storage, presentation, verification, and user control of credentials. It focuses on a verifiable credential (a set of claims) created by an issuer about a [subject](@) — a person, group, or thing — and seek solutions inclusive of approaches such as: self-sovereign identity; presentation of proofs by the bearer; data minimization; and centralized, federated, and decentralized registry and identity systems. Its tasks include drafting and incubating Internet specifications for further standardization and prototyping and testing reference implementations.
 
 W3C CCG has published a first version of [Verifiable Claims Data Model and Representations 1.0](https://www.w3.org/2017/05/vc-data-model/CGFR/2017-05-01/) in May 2017. That specification introduces verifiable claims as follows.
 
