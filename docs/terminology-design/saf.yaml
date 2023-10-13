@@ -10,12 +10,13 @@ scope:
   scopedir: https://github.com/essif-lab/framework/tree/master/docs/terminology-design  # URL of the scope-directory
   curatedir: terms # directory where all curated files are located. Full URL is `scopedir`/`curatedir`
   glossarydir: glossaries # directory where all glossary files and GDFs are located. Full URL is `scopedir`/`glossarydir`
-  mrgfile: mrg.termdsn.yaml # file that contains the (default) machine readable glossary. Full URL is `scopedir`/`mrgfile`
-  hrgfile: glossary # file that contains the (default) human readable glossary. Full URL is `scopedir`/`hrgfile`
+  defaultvsn: default  # file that contains the (default) machine readable glossary. Full URL is `scopedir`/`mrgfile`
+  website: https://essif-lab.github.io/framework/docs/terminology-design # base URL for creating links to rendered versions of Curated Texts. It should also serve as the home page of the Tterminology.
+  navpath: terms # Path do directory where curated texts are rendered (relative to scopedir)
+  bodyFileID: id # Name of the field in the front matter of a body file that Docusaurus uses to generate a URL for that page.
   license: LICENSE.md # file that contains the (default) licensing conditions. Full URL is `scopedir`/`license`
   statuses: [ proposed, approved, deprecated ] # list of status tags that are defined for terminological artifacts in this scope
   issues: https://github.com/essif-lab/framework/issues # URL where issues can be raised and handled
-  website: https://essif-lab.github.io/framework/docs/terminology-design # base URL for creating links to rendered versions of Curated Texts. It should also serve as the home page of the Tterminology.
   curators: # contacting individual curators
   - name: RieksJ
     email: # we split up the email address to reduce the likelihood of the address being harvested for spamming
@@ -39,7 +40,12 @@ scopes:  #
 # See the Glossary Generation Tool (GGT) for details about the syntax and semantics.
 #
 versions:
-- vsntag: v0.1
+- vsntag: default
   altvsntags: [ latest ]
   termselection:
-  - "*@tev2" # import all tev2 terms.
+  - "*@tev2:terms"     # add all terms curated within scope `tev2`
+  - "*@essiflab:terms" # add all terms curated within scope `essiflab``.
+  - "*"                # add all terms curated in this scope
+- vsntag: terms
+  termselection:
+  - "*" # add all terms curated in this scope
