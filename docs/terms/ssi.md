@@ -6,7 +6,7 @@ scopetag: eSSIFLab
 type: term
 termid: ssi
 term: ssi
-formphrases: ssi
+formPhrases: ssi
 conceptref: essifLab:self-sovereign-identity
 status: draft
 grouptags:

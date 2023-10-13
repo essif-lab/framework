@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: governance
 term: governance
-formphrases: governance, govern, governs, governed, governed-by, governing, governing-part{yies}, governor{ss}, government{ss}
+formPhrases: governance, govern, governs, governed, governed-by, governing, governing-part{yies}, governor{ss}, government{ss}
 status: draft
 grouptags:
 hoverText: "Governance: the act or process of governing or overseeing the realization of (the results associated with) a set of Objectives by the Owner of these Objectives, in order to ensure they will be fit for the purposes that this Owner intends to use them for."

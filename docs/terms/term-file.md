@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: term-file
 term: term-file
-formphrases: term-file{ss}
+formPhrases: term-file{ss}
 status: draft
 grouptags:
 hoverText: "Term-file: a file whose contents defines/specifies a Term."

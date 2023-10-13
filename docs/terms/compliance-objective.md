@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: compliance-objective
 term: compliance-objective
-formphrases: compliance-objective{ss}
+formPhrases: compliance-objective{ss}
 status: draft
 grouptags:
 hoverText: "Compliance objective (of a Party): an Objective, owned by that Party, that aims to reach and maintain a state of affairs in which a specific set of Entities that this Party controls are in accordance with a specific set of requirements (e.g., laws, regulations, standards, etc.)."

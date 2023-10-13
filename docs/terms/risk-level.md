@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: risk-level
 term: risk-level
-formphrases: risk-level{ss}
+formPhrases: risk-level{ss}
 status: draft
 grouptags:
 hoverText: "Risk level (of an Objective): a measure for the deviation of the intended realization (results) of a specific Objective, that its Owner uses to represent the priority with which the Risk of that Objective should be reckoned with."

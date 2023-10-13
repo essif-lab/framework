@@ -6,7 +6,7 @@ scope: essiflab
 termtype: concept
 termid: glossary
 term: glossary
-formphrases: glossar{yies}
+formPhrases: glossar{yies}
 grouptags:
 status: proposed
 created: 2022-06-06

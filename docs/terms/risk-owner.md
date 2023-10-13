@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: risk-owner
 term: risk-owner
-formphrases: risk-owner{ss}
+formPhrases: risk-owner{ss}
 status: draft
 grouptags:
 hoverText: "Risk-owner (of a Risk): the Party that is the Owner of the Objective to which the Risk is associated."

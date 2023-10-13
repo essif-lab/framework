@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: mission
 term: mission
-formphrases: mission{ss}
+formPhrases: mission{ss}
 status: draft
 grouptags:
 hoverText: "Mission: an Objective of a Party that provides an answer to the question why that Party exists - i.e. its 'raison d'être'."

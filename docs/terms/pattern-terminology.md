@@ -6,7 +6,7 @@ scopetag: essifLab
 type: pattern
 termid: terminology
 term: terminology
-formphrases: terminology
+formPhrases: terminology
 status: draft
 grouptags:
 hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."

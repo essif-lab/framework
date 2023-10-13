@@ -6,7 +6,7 @@ scopetag: essifLab
 type: term
 termid: peer-actor
 term: peer-actor
-formphrases: peer-actor{ss}
+formPhrases: peer-actor{ss}
 conceptref: essifLab:Actor
 status: draft
 grouptags:

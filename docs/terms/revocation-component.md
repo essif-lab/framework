@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: revocation-component
 term: revocation-component
-formphrases: revocation-component{ss}, revocator{ss+}
+formPhrases: revocation-component{ss}, revocator{ss+}
 status: draft
 grouptags:
 hoverText: "Revocation (functional) component: a component that implements the Capability to Revoke Credentials that are issued by its Principal, according to its Principal's Revocation Policy."

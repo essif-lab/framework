@@ -6,7 +6,7 @@ scopetag: essifLabTerminology
 type: concept
 termid: dictionary
 term: dictionary
-formphrases: dictionar{yies}
+formPhrases: dictionar{yies}
 status: draft
 grouptags:
 hoverText: "Dictionary: an alphabetically sorted list of Terms with various meanings they may have in different contexts."

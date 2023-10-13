@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: risk-objective
 term: risk-objective
-formphrases: risk-objective{ss}
+formPhrases: risk-objective{ss}
 status: draft
 grouptags:
 hoverText: "Risk objective (of a Party): an Objective, owned by that Party, that aims to reach and maintain a state of affairs in which the Risks associated with a specific set of its Objectives become, and/or remain, acceptable."

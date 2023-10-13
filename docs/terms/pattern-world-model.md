@@ -6,7 +6,7 @@ scopetag: essifLab
 type: pattern
 termid: world-model
 term: world-model
-formphrases: world-model
+formPhrases: world-model
 status: draft
 grouptags:
 hoverText: "The eSSF-Lab World Model is the set of Concepts, relations between them (Patterns), and principles (that are the starting point for eSSIF-Lab's thinking)."

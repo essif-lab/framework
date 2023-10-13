@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: verify
 term: verify
-formphrases: verify, verifies, verified, verifying
+formPhrases: verify, verifies, verified, verifying
 status: draft
 grouptags:
 hoverText: "Verify/verification of data: the act, by or on behalf of a Party, of determining whether that data is authentic (i.e. originates from the Party that authored it), timely (i.e. has not expired), and conforms to other specifications that apply to its structure."

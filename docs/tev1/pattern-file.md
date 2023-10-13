@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: scopeID
 type: pattern
 termid: patternID
-formphrases: patternID{ss}
+formPhrases: patternID{ss}
 status: draft
 grouptags:
 hoverText: "PatternID: popuptext for 'patternID' (tbd)."

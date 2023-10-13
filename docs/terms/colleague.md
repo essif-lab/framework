@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: colleague
 term: colleague
-formphrases: colleague{ss}, digital-colleague{ss}
+formPhrases: colleague{ss}, digital-colleague{ss}
 status: draft
 grouptags:
 hoverText: "Colleagues: two or more (digital or non-digital) Agents that have the same Principal (i.e. Party on whose behalf they are executing an Action)."

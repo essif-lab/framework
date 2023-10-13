@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: onboarding
 term: onboarding
-formphrases: onboarding, onboard, onboards, onboarded
+formPhrases: onboarding, onboard, onboards, onboarded
 status: draft
 grouptags:
 hoverText: "Onboarding (of an Actor, by a Party): a process that is run for this Actor on behalf of the Party, that terminates successfully if and  only if the Party has (a) established the suitability of the Actor for executing certain kinds of Actions on its behalf, (b) ensured that their mutual rights and duties are properly specified and will be appropriately enforced, and (c) provided the circumstances/contexts within which the Actor is enabled to do so."

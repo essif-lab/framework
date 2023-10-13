@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: risk
 term: risk
-formphrases: risk{ss}
+formPhrases: risk{ss}
 status: draft
 grouptags:
 hoverText: "Risk (of a Party's Objective): the effects that uncertainty (i.e. a lack of information, understanding or knowledge of events, their consequences or likelihoods) can have on the intended realization of that Party's Objective."

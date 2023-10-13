@@ -6,7 +6,7 @@ scopetag: essifLab
 type: term
 termid: ssi-agent
 term: ssi-agent
-formphrases: ssi-agent{ss}
+formPhrases: ssi-agent{ss}
 conceptref: essifLab:Agent
 status: draft
 grouptags:

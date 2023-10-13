@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: holder
 term: holder
-formphrases: holder{ss}
+formPhrases: holder{ss}
 status: draft
 grouptags:
 hoverText: "Holder (functional component): a component that implements the Capability to handle presentation requests from a Peer Agent, produce the requested data (a presentation) according to its Principal's holder-policy, and send that in response to the request."

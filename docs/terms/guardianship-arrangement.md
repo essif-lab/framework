@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: guardianship-arrangement
 term: guardianship-arrangement
-formphrases: guardianship-arrangement{ss}, guardianship{ss}
+formPhrases: guardianship-arrangement{ss}, guardianship{ss}
 status: draft
 grouptags:
 hoverText: "Guardianship Arrangement (in a Jurisdiction): a set of rights and duties between Legal Entities of the Jurisdiction that have been established and are enforced within that Jurisdiction for the purpose of caring for and/or protecting/guarding/defending one or more of these Entities."

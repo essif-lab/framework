@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: party
 term: party
-formphrases: part{yies}
+formPhrases: part{yies}
 status: draft
 grouptags:
 hoverText: "Party: an Entity that sets its Objectives, maintains its Knowledge, and uses that Knowledge to pursue its Objectives in an autonomous (sovereign) manner. Humans and Organizations are the typical examples."

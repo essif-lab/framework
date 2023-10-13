@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: obligation
 term: obligation
-formphrases: obligation{ss}
+formPhrases: obligation{ss}
 status: draft
 grouptags:
 hoverText: "Obligation (of a Party): an Objective that is Owned by that Party for producing a specific (set of) result(s) that are to be used (consumed) by that Party and/or other Parties."

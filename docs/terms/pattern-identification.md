@@ -6,7 +6,7 @@ scopetag: essifLab
 type: pattern
 termid: identification
 term: identification
-formphrases: identification
+formPhrases: identification
 status: draft
 grouptags:
 hoverText: "The eSSIF-Lab Identification Pattern describes mechanisms that a Party uses to Identify Entities, and mechanisms for communicating with another Party such that both Parties can identify an entity and know whether or not they identify the same entity."

@@ -6,7 +6,7 @@ scopetag: essifLabTerminology
 type: concept
 termid: terminology-process
 term: terminology-process
-formphrases: terminology-process, terminology-processes
+formPhrases: terminology-process, terminology-processes
 status: draft
 grouptags:
 hoverText: "Terminology Process: a method for recognizing misunderstandings as such, and creating or maintaining Definitions that resolve them."

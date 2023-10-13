@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: presentation
 term: presentation
-formphrases: presentation{ss}, verifiable-presentation{ss}
+formPhrases: presentation{ss}, verifiable-presentation{ss}
 status: draft
 grouptags:
 hoverText: "Presentation: a (signed) digital message that a Holder component may send to a Verifier component that contains data derived from one or more Verifiable Credentials (that (a Colleague component of) the Holder component has received from Issuer components of one or more Parties), as a response to a specific Presentation Request of a Verifier component."

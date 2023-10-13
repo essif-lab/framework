@@ -6,7 +6,7 @@ scopetag: essifLabTerminology
 type: concept
 termid: tag
 term: tag
-formphrases: tag{ss}
+formPhrases: tag{ss}
 status: draft
 grouptags:
 hoverText: "Tag: an alphanumeric string that is used to identify Scopes (so called 'scopetags'), group Terms (so called 'grouptags'), or identify a specific version of a Terminology (so called 'versiontags') from within a specific Scope."

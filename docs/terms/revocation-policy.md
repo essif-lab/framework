@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: revocation-policy
 term: revocation-policy
-formphrases: revocation-polic{yies}
+formPhrases: revocation-polic{yies}
 status: draft
 grouptags:
 hoverText: "Revocation Policy: a Digital Policy that contains the rules, working-instructions, preferences and other guidance for an operational Revocation component to function in accordance with the Objectives of its Principal."

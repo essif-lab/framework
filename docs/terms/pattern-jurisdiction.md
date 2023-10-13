@@ -6,7 +6,7 @@ scopetag: essifLab
 type: pattern
 termid: jurisdiction
 term: jurisdiction
-formphrases: jurisdiction
+formPhrases: jurisdiction
 status: draft
 grouptags:
 hoverText: "The Jurisdictions pattern captures the Concepts and relations that explain what a generic Jurisdiction consists of, and relates it to Parties and Legal Entities."

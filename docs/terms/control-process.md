@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: control-process
 term: control-process
-formphrases: control-process, control-processes
+formPhrases: control-process, control-processes
 status: draft
 grouptags:
 hoverText: "Control Process (of a Party): a process that is run by a Party to ensure that a specific set of its control Objectives are realized."

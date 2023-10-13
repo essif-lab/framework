@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: legal-entity
 term: legal-entity
-formphrases: legal-entit{yies}
+formPhrases: legal-entit{yies}
 status: draft
 grouptags:
 hoverText: "Legal Entity (of a Jurisdiction): an Entity that is known by, recognized to exist, and registered in that Jurisdiction."

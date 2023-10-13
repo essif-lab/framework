@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: entity
 term: entity
-formphrases: entit{yies}
+formPhrases: entit{yies}
 status: draft
 grouptags:
 hoverText: "Entity: someone or something that is known to exist."

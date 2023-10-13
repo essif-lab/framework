@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: pattern
 term: pattern
-formphrases: pattern{ss}
+formPhrases: pattern{ss}
 status: draft
 grouptags:
 hoverText: "Pattern (also: Mental Model): A description, both casual and formal, of a set of Concepts (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."

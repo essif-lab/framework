@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: guardianship-type
 term: guardianship-type
-formphrases: guardianship-type{ss}, guardianship-arrangement-type{ss}
+formPhrases: guardianship-type{ss}, guardianship-arrangement-type{ss}
 status: draft
 grouptags:
 hoverText: "Guardianship-type (in a Jurisdiction): a class of Guardianship Arrangements within the Jurisdiction that governs and manages them."

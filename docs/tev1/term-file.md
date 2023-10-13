@@ -5,7 +5,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: scopeID
 type: term
 termid: termID
-formphrases: termID{ss}
+formPhrases: termID{ss}
 conceptref: <ExistingConceptScopeID>:<ExistingtermID>
 status: draft
 grouptags:

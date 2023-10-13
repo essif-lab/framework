@@ -6,7 +6,7 @@ scopetag: eSSIFLab
 type: term
 termid: subject
 term: subject
-formphrases: subject{ss}
+formPhrases: subject{ss}
 status: draft
 grouptags:
 hoverText: "Subject (of some coherent data set): the (single) Entity to which a coherent data set relates/pertains, such as attributes, Claims/Assertions, files/dossiers, (verifiable) credentials, Partial Identities, Employment Contracts, etc."

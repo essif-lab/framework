@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: validator
 term: validator
-formphrases: validator{ss}
+formPhrases: validator{ss}
 status: draft
 grouptags:
 hoverText: "Validator (functional component): a component that implements the Capability to determine whether or not (verified) data is valid to be used for some specific purpose(s)."

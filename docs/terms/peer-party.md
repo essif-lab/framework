@@ -6,7 +6,7 @@ scopetag: essifLab
 type: term
 termid: peer-party
 term: peer-party
-formphrases: peer-part{yies}
+formPhrases: peer-part{yies}
 conceptref: essifLab:party
 status: draft
 grouptags:

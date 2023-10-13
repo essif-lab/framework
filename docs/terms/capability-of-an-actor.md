@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: capability-of-an-actor
 term: capability-of-an-actor
-formphrases: capabilit{yies}-of-an-actor
+formPhrases: capabilit{yies}-of-an-actor
 status: draft
 grouptags:
 hoverText: "Capability (of an Actor): the potential of that Actor to execute a (named) coherent set of Actions (a 'function', or 'task') on behalf of some Party."

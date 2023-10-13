@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: credential-catalogue
 term: credential-catalogue
-formphrases: credential-catalogue{ss}
+formPhrases: credential-catalogue{ss}
 status: draft
 grouptags:
 hoverText: "Credential Catalogue: a functional component that has the [](capability-of-an-actor@) to register and advertise the information about Credential Types that their respective Governing Parties have decided to disclose so as to enable other Parties to decide whether or not it is beneficial for them to use Credentials of such types."

@@ -6,7 +6,7 @@ scopetag: essifLab
 type: pattern
 termid: semantics
 term: semantics
-formphrases:
+formPhrases:
 status: draft
 grouptags:
 hoverText: "The Semantics pattern describes the relations between the (intangible) Concepts that are part of a Party's Knowledge, and how they are (tangibly) represented by Terms, Attributes, etc."

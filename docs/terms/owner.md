@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: owner
 term: owner
-formphrases: owner{ss}, own{ss}
+formPhrases: owner{ss}, own{ss}
 status: draft
 grouptags:
 hoverText: "Owner (of an Entity): the role that a Party performs when it is exercising its legal, rightful or natural title to control that Entity."

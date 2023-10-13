@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: communication-channel
 term: communication-channel
-formphrases: communication-channel{ss}, digital-communication-channel{ss}
+formPhrases: communication-channel{ss}, digital-communication-channel{ss}
 status: draft
 grouptags:
 hoverText: "Communication Channel: a (digital or non-digital) means by which two Actors can exchange messages with one another."

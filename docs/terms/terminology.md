@@ -6,7 +6,7 @@ scopetag: essifLabTerminology
 type: concept
 termid: terminology
 term: terminology
-formphrases: terminolog{yies}
+formPhrases: terminolog{yies}
 status: draft
 grouptags:
 hoverText: "Terminology (in/of a Scope): the set of terms that are used within a single Scope to refer to a single Definition, enabling Parties to reason and communicate ideas they have about one or more specific topics."

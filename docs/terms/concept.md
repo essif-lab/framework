@@ -6,7 +6,7 @@ scopetag: essifLabTerminology
 type: concept
 termid: concept
 term: concept
-formphrases: concept{ss}
+formPhrases: concept{ss}
 status: draft
 grouptags:
 hoverText: "Concept: the ideas/thoughts behind a classification of Entities (what makes Entities in that class 'the same')."

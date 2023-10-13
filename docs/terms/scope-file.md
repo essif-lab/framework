@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: scope-file
 term: scope-file
-formphrases: scope-file{ss}
+formPhrases: scope-file{ss}
 status: draft
 grouptags:
 hoverText: "Scope-file: a file whose contents defines/specifies a Scope."

@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: organization
 term: organization
-formphrases: organization{ss}
+formPhrases: organization{ss}
 status: draft
 grouptags:
 hoverText: "Organization: a Party that is capable of setting Objectives and making sure these are realized by Actors that it has Onboarded and/or by (vetted) Parties that are committed to contribute to these Objectives."

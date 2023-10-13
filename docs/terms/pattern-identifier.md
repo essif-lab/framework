@@ -6,7 +6,7 @@ scopetag: essifLab
 type: pattern
 termid: identifier
 term: identifier
-formphrases: identifier
+formPhrases: identifier
 status: draft
 grouptags:
 hoverText: "The eSSIF-Lab Identifier Pattern describes how Identifiers are defined and used for Identification purposes."

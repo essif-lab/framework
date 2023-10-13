@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: identity
 term: identity
-formphrases: identit{yies}
+formPhrases: identit{yies}
 status: draft
 grouptags:
 hoverText: "Identity (of an Entity): the combined Knowledge about that Entity of all Parties, i.e. the union of all Partial Identities of which that Entity is the Subject."

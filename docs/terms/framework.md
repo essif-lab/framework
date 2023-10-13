@@ -6,7 +6,7 @@ scopetag: essifLabTerminology
 type: concept
 termid: framework
 term: framework
-formphrases: framework{ss}, conceptual-framework{ss}
+formPhrases: framework{ss}, conceptual-framework{ss}
 status: draft
 grouptags:
 hoverText: "Framework (Conceptual): A set of assumptions, concepts, values, and practices that constitutes a way of viewing reality."

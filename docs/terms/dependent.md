@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: dependent
 term: dependent
-formphrases: dependent{ss}
+formPhrases: dependent{ss}
 status: draft
 grouptags:
 hoverText: "Dependent (in a Guardianship Arrangement): an Entity for the caring for and/or protecting/guarding/defending of which a Guardianship Arrangement has been established."

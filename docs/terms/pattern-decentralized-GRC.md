@@ -6,7 +6,7 @@ scopetag: essifLab
 type: pattern
 termid: decentralized-grc
 term: decentralized-grc
-formphrases: decentralized-grc
+formPhrases: decentralized-grc
 status: draft
 grouptags:
 hoverText: "The Decentralized Risk Management, Governance and Compliance pattern describes how Parties can set Objectives, and apply decentralized Risk Management to become and remain successful."

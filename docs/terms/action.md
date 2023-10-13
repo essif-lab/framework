@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: action
 term: action
-formphrases: action{ss}, acting, activit(yies)
+formPhrases: action{ss}, acting, activit(yies)
 status: draft
 grouptags:
 hoverText: "Action: something that is actually done (a 'unit of work' that is executed) by a single Actor (on behalf of a given Party), as a single operation, in a specific context."

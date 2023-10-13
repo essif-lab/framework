@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: identifier
 term: identifier
-formphrases: identifier{ss}
+formPhrases: identifier{ss}
 status: draft
 grouptags:
 hoverText: "Identifier: a character string that is being used for the identification of some Entity (yet may refer to 0, 1, or more Entities, depending on the context within which it is being used)."

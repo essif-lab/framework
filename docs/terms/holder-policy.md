@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: holder-policy
 term: holder-policy
-formphrases: holder-polic{yies}
+formPhrases: holder-polic{yies}
 status: draft
 grouptags:
 hoverText: "Holder Policy: a Digital Policy that contains the rules, working-instructions, preferences and other guidance for an operational Holder component to function in accordance with the Objectives of its Principal"

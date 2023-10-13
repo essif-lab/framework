@@ -6,7 +6,7 @@ scopetag: essifLabTerminology
 type: concept
 termid: semantics
 term: semantics
-formphrases: semantics
+formPhrases: semantics
 status: draft
 grouptags:
 hoverText: "Semantics: a mapping between the (tangible/textual) Terms and (intangible) ideas/Concepts - their meaning."

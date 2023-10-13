@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: verifier-policy
 term: verifier-policy
-formphrases: verifier-polic{yies}
+formPhrases: verifier-polic{yies}
 status: draft
 grouptags:
 hoverText: "Verifier Policy: a Digital Policy that contains the rules, working-instructions, preferences and other guidance for an operational Verifier component to function in accordance with the Objectives of its Principal."

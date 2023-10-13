@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: controllership
 term: controllership
-formphrases: controllership
+formPhrases: controllership
 status: draft
 grouptags:
 hoverText: "Controllership (of an Actor over an Entity): the Capability  of an Actor to execute actions on that Entity for the purpose of ensuring that the Entity will act/behave, or be used, in a particular way."

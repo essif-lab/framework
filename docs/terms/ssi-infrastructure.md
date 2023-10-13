@@ -6,7 +6,7 @@ scopetag: eSSIFLab
 type: concept
 termid: ssi-infrastructure
 term: ssi-infrastructure
-formphrases: ssi-infrastructure{ss}
+formPhrases: ssi-infrastructure{ss}
 status: draft
 grouptags:
 hoverText: "SSI Infrastructure: the technological components that are (envisaged to be) deployed all over the world for the purpose of providing, requesting and obtaining Qualified Data, for the purpose of negotiating and/or executing electronic Transactions."

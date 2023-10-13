@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: compliance-management
 term: compliance-management
-formphrases: compliance-management
+formPhrases: compliance-management
 status: draft
 grouptags:
 hoverText: "Compliance management (by a Party): the process that is run by (or on behalf of) that Party for the purpose of Managing its Compliance-objectives."

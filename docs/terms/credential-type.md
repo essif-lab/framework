@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: credential-type
 term: credential-type
-formphrases: credential-type{ss}
+formPhrases: credential-type{ss}
 status: draft
 grouptags:
 hoverText: "Credential Type: the specification of the contents, properties, constraints etc. that Credentials of this type must have/comply with."

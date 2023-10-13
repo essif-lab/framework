@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: data
 term: data
-formphrases: data, digital-data
+formPhrases: data, digital-data
 status: draft
 grouptags:
 hoverText: "Data: something (tangible) that can be used to communicate a meaning (which is intangible/information)."

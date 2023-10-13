@@ -6,7 +6,7 @@ scopetag: essifLab
 type: concept
 termid: validator-policy
 term: validator-policy
-formphrases: validator-polic{yies}
+formPhrases: validator-polic{yies}
 status: draft
 grouptags:
 hoverText: "Validator Policy: a Digital Policy that contains the rules, working-instructions, preferences and other guidance for an operational Validator component to function in accordance with the Objectives of its Principal."

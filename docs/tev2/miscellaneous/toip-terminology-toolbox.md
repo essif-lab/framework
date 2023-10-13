@@ -179,7 +179,7 @@ For example, consider the [term](@) `curate` as defined in the [CTWG terms wiki]
   date: 20211123
   versiontag: 9
   commit:
-  formphrases: [ curate, curates, curated, curation ]
+  formPhrases: [ curate, curates, curated, curation ]
   status: proposed
   term: curate
   synonyms: curation
