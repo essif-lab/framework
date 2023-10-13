@@ -10,7 +10,7 @@ scope:
   scopedir: https://github.com/essif-lab/framework/tree/master/docs # URL of the scope-directory
   curatedir: terms # directory where all curated files are located. Full URL is `scopedir`/`curatedir`
   glossarydir: glossaries # directory where all glossary files and GDFs are located. Full URL is `scopedir`/`glossarydir`
-  defaultvsn: terms # versiontag that identifies the default terminology for this scope. The associated MRG is located at scopedir/glossarydir/mrg.scopetag.defaultvsn.yaml
+  defaultvsn: latest # versiontag that identifies the default terminology for this scope. The associated MRG is located at scopedir/glossarydir/mrg.scopetag.defaultvsn.yaml
   license: LICENSE.md # file that contains the (default) licensing conditions. Full URL is `scopedir`/`license`
   statuses: [ proposed, approved, deprecated ] # list of status tags that are defined for terminological artifacts in this scope
   issues: https://github.com/essif-lab/framework/issues # URL where issues can be raised and handled
@@ -36,13 +36,13 @@ scopes:  #
 # See the Glossary Generation Tool (GGT) for details about the syntax and semantics.
 #
 versions:
-  - vsntag: terms # this version contains all terms that are curated by essiflab
-    altvsntags: [ curated-terms, owned-terms ] # alternative verstiontags
+  - vsntag: latest # this version contains all terms that are curated by essiflab
+    altvsntags: [ documentation, terms ] # alternative verstiontags
     termselection:
     - "*" # import all terms as curated in the current scope.
-  - vsntag: v0.1 # a versiontag that identifies this version from all other versions in the SAF
+  - vsntag: test # a versiontag that identifies this version from all other versions in the SAF
     altvsntags: # alternative verstiontags
-    - latest
+    - extended
     termselection:
     - "*@tev2" # import all terms defined in the scope `tev2`
     - "*" # import all terms defined in the scope `essiflab`
