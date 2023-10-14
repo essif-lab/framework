@@ -30,3 +30,37 @@ html[data-theme='dark'] {
   .button.button--secondary.button--outline:not(.button--active):not(:hover) {
   color: var(--ifm-color-secondary);
 }
+
+a[hovertext] {
+  position: relative;
+  cursor: help;
+  font-weight: 600;
+}
+
+a[hovertext]::after {
+  content: attr(hoverText);
+  position: absolute;
+  width: max-content;
+  background: var(--ifm-color-content);
+  color: var(--ifm-color-content-inverse);
+  font-size: var(--ifm-code-font-size);
+  font-weight: 400;
+  max-width: 25vw;
+  padding: 4px 8px;
+  border-radius: 4px;
+  line-height: 1.2em;
+  white-space: pre-wrap;
+  word-break: break-word;
+  top: calc(100% + 10px);
+  transform: translateX(-50%);
+  transition: opacity 0.3s, visibility 0.3s;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+a[hovertext]:hover::after {
+  visibility: visible;
+  opacity: .95;
+}
