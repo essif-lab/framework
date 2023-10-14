@@ -29,7 +29,7 @@ scope:
 #
 scopes:  #
 - scopetag: tev2 # definition of (scope) tag(s) that are used within this scope to refer to a specific terminology
-  scopedir: https://github.com/tno-terminology-design/tev2/tree/master/docs/tev2 # URL of the scope-directory
+  scopedir: https://github.com/tno-terminology-design/tev2-specifications/tree/main/docs # URL of the scope-directory
 #
 # The third section specifies the versions that are actively maintained by the curators.
 # For each version, the set of terms is selected that constitute the terminology.
