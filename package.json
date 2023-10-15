@@ -2,9 +2,16 @@
   "name": "essif-lab",
   "version": "0.0.0",
   "private": true,
+  "config": {
+    "terminology": "docs/terminology-config.yaml"
+  },
   "scripts": {
     "start": "docusaurus start",
     "build": "docusaurus build",
+    "build:terminology": "npm run build:mrg-import && npm run build:mrgt && npm run build:trrt",
+    "build:mrg-import": "bun mrg-import -c $npm_package_config_terminology",
+    "build:mrgt": "bun mrgt -c $npm_package_config_terminology",
+    "build:trrt": "bun trrt -c $npm_package_config_terminology",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "parse": "docusaurus parse",
@@ -16,6 +23,9 @@
     "@docusaurus/core": "^2.4.0",
     "@docusaurus/preset-classic": "^2.4.0",
     "@material-ui/core": "^4.11.0",
+    "@tno-terminology-design/mrg-import": "^0.1.5",
+    "@tno-terminology-design/mrgt": "^0.1.5",
+    "@tno-terminology-design/trrt": "^1.0.7",
     "classnames": "^2.2.6",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
