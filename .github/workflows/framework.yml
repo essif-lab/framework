@@ -24,7 +24,7 @@ jobs:
         run: bun install
 
       - name: Run Terminology Design tools
-        run: bun run build:terminology
+        run: npm run build:terminology
 
       - name: Build and Deploy
         run: |
