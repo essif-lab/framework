@@ -4,7 +4,6 @@ title: "Communication Channel"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: communication-channel
 term: communication-channel
 formPhrases: communication-channel{ss}, digital-communication-channel{ss}
 status: draft

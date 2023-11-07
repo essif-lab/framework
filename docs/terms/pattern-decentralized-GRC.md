@@ -4,7 +4,6 @@ title: "Decentralized Risk Management, Governance and Compliance"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
-termid: decentralized-grc
 term: decentralized-grc
 formPhrases: decentralized-grc
 status: draft

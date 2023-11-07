@@ -8,7 +8,7 @@ date: 20220819
 # TEv2 - Syntax (Specs)
 
 :::danger This page is deprecated.
-The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/tev2-syntax
+The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

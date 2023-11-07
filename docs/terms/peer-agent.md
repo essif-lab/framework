@@ -4,7 +4,7 @@ id: peer-agent
 # TEv2: generic front-matter for curated texts
 scope: essiflab
 termtype: concept
-termid: peer-agent
+term: peer-agent
 formPhrases: peer-agent{ss}
 grouptags:
 status: proposed

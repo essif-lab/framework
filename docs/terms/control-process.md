@@ -4,7 +4,6 @@ title: "Control Process"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: control-process
 term: control-process
 formPhrases: control-process, control-processes
 status: draft

@@ -4,7 +4,6 @@ title: "Parties, Actors and Actions"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
-termid: party-actor-action
 term: party-actor-action
 formPhrases: party-actor-action
 status: draft

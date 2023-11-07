@@ -4,7 +4,6 @@ title: "Compliance"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: compliance
 term: compliance
 formPhrases: compliance
 status: draft

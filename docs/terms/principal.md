@@ -4,7 +4,6 @@ title: "Principal"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: principal
 term: principal
 formPhrases: principal{ss}
 status: draft

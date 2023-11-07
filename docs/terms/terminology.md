@@ -4,7 +4,6 @@ title: "Terminology"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
-termid: terminology
 term: terminology
 formPhrases: terminolog{yies}
 status: draft

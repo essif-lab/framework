@@ -9,7 +9,7 @@ date: 20220421
 # ToIP TT-Tools Proposal
 
 :::danger This page is deprecated.
-The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/miscellaneous/toip-terminology-toolbox
+The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
@@ -174,7 +174,7 @@ For example, consider the [term](@) `curate` as defined in the [CTWG terms wiki]
   id: concept-curate
   scopetag: ctwg
   termtype: concept
-  termid: curate
+  term: curate
   grouptags:
   date: 20211123
   versiontag: 9

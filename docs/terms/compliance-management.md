@@ -4,7 +4,6 @@ title: "Compliance management"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: compliance-management
 term: compliance-management
 formPhrases: compliance-management
 status: draft

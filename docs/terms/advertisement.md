@@ -4,7 +4,6 @@ title: "Advertisement"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: advertisement
 term: advertisement
 formPhrases: advertisement{ss}, advertise, advertising
 status: draft

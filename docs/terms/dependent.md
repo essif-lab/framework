@@ -4,7 +4,6 @@ title: "Dependent"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: dependent
 term: dependent
 formPhrases: dependent{ss}
 status: draft

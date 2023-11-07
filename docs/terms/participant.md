@@ -4,7 +4,7 @@ id: participant
 # TEv2: generic front-matter for curated texts
 scope: essiflab
 termtype: concept
-termid: participant
+term: participant
 formPhrases: participant{ss}
 grouptags:
 status: proposed

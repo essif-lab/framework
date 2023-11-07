@@ -4,7 +4,6 @@ title: "Decision"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: decision
 term: decision
 formPhrases: decision{ss}
 status: draft

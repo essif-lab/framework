@@ -3,7 +3,6 @@ id: eSSIFLab-scope
 title: "Scope: essifLabTerminology"
 scopetag: essifLabTerminology
 type: scope
-termid: eSSIFLab
 term: eSSIFLab
 status: draft
 grouptags:

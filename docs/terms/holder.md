@@ -4,7 +4,6 @@ title: "Holder"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: holder
 term: holder
 formPhrases: holder{ss}
 status: draft

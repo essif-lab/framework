@@ -4,7 +4,6 @@ title: "Mental Model"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: term
-termid: mental-model
 term: mental-model
 formPhrases: mental-model{ss}
 conceptref: essifLab:pattern

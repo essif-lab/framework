@@ -4,7 +4,6 @@ title: "Jurisdictions"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
-termid: jurisdiction
 term: jurisdiction
 formPhrases: jurisdiction
 status: draft

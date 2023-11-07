@@ -4,7 +4,6 @@ title: "Transaction Request"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: transaction-request
 term: transaction-request
 formPhrases: transaction-request{ss}
 status: draft

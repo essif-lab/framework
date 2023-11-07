@@ -4,7 +4,6 @@ title: "Revocation Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: revocation-policy
 term: revocation-policy
 formPhrases: revocation-polic{yies}
 status: draft

@@ -4,7 +4,6 @@ title: "Controller"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: controller
 term: controller
 formPhrases: controller{ss}
 status: draft

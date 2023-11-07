@@ -4,7 +4,6 @@ title: "Mental Models"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: pattern
-termid: mental-model
 term: mental-model
 formPhrases: mental-model
 status: draft

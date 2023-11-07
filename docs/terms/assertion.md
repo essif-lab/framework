@@ -4,7 +4,6 @@ title: "Assertion"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: assertion
 term: assertion
 formPhrases: assertion{ss}, claim{ss}, statement{ss}
 status: draft

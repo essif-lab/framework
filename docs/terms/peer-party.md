@@ -4,7 +4,6 @@ title: "Peer Party"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: term
-termid: peer-party
 term: peer-party
 formPhrases: peer-part{yies}
 conceptref: essifLab:party

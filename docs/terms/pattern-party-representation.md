@@ -4,7 +4,6 @@ title: "Party Representation"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
-termid: party-representation
 term: party-representation
 formPhrases: party-representation
 status: draft

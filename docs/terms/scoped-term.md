@@ -4,7 +4,6 @@ title: "Term (Scoped)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
-termid: term
 term: term
 status: draft
 grouptags:

@@ -4,7 +4,6 @@ title: "Agent"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: agent
 term: agent
 formPhrases: agent{ss}, digital-agent{ss}
 status: draft

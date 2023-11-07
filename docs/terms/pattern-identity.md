@@ -4,9 +4,8 @@ title: "Identity Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
-termid: identity
-term: identity
-formPhrases: identity
+term: pattern-identity
+formPhrases:
 status: draft
 grouptags:
 hoverText: "The eSSIF-Lab Identity Pattern shows how digital identities work, how this relates to (attributes in) credentials, and how all this can be made to work in SSI contexts."

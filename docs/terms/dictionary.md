@@ -4,7 +4,6 @@ title: "Dictionary"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
-termid: dictionary
 term: dictionary
 formPhrases: dictionar{yies}
 status: draft

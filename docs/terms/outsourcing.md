@@ -4,7 +4,6 @@ title: "Outsourcing"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: outsourceing
 term: outsourceing
 formPhrases: outsourc{eing}, outsourced
 status: draft

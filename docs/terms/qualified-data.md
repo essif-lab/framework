@@ -4,7 +4,6 @@ title: "Qualified Data"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: qualified-data
 term: qualified-data
 formPhrases: qualified-data
 status: draft

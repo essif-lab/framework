@@ -4,7 +4,6 @@ title: "Scope-file"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: scope-file
 term: scope-file
 formPhrases: scope-file{ss}
 status: draft

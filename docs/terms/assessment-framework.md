@@ -4,7 +4,6 @@ title: "Assessment framework"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: assessment-framework
 term: assessment-framework
 formPhrases: assessment-framework{ss}
 status: draft

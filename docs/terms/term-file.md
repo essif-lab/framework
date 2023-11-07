@@ -4,7 +4,6 @@ title: "Term-file"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: term-file
 term: term-file
 formPhrases: term-file{ss}
 status: draft

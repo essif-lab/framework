@@ -4,7 +4,6 @@ title: "Mission"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: mission
 term: mission
 formPhrases: mission{ss}
 status: draft

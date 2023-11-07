@@ -4,7 +4,6 @@ title: "Risk management"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: risk-management
 term: risk-management
 formPhrases: risk-management, risk-manager{ss}
 status: draft

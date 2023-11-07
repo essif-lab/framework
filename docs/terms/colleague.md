@@ -4,7 +4,6 @@ title: "Colleague"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: colleague
 term: colleague
 formPhrases: colleague{ss}, digital-colleague{ss}
 status: draft

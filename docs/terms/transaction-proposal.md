@@ -4,7 +4,6 @@ title: "Transaction Proposal"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: transaction-proposal
 term: transaction-proposal
 formPhrases: transaction-proposal{ss}
 status: draft

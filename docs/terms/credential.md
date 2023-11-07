@@ -4,7 +4,6 @@ title: "Credential"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: credential
 term: credential
 formPhrases: credential{ss}, verifiable-credential{ss}, attribute-based-credential{ss}
 status: draft

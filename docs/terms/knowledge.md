@@ -4,7 +4,6 @@ title: "Knowledge"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: knowledge
 term: knowledge
 formPhrases: knowledge{ss}
 status: draft

@@ -4,7 +4,6 @@ title: "Corpus of Terminology"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
-termid: corpus
 term: corpus
 formPhrases: corpus, corpus-of-terminology
 status: draft

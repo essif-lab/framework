@@ -4,7 +4,6 @@ title: "Partial identity"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: term
-termid: partial-identity
 term: partial-identity
 formPhrases: partial-identit{yies}
 status: draft

@@ -4,7 +4,6 @@ title: "Legal Jurisdiction"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: term
-termid: legal-jurisdiction
 term: legal-jurisdiction
 formPhrases: legal-jurisdiction{ss}
 conceptref: essifLab:jurisdiction

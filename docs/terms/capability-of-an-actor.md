@@ -4,7 +4,6 @@ title: "Capability (of an Actor)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: capability-of-an-actor
 term: capability-of-an-actor
 formPhrases: capabilit{yies}-of-an-actor
 status: draft

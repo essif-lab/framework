@@ -4,7 +4,6 @@ title: "Capability (of a Party)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: capability
 term: capability
 formPhrases: capabilit{yies}, capabilit{yies}-of-a-party
 status: draft

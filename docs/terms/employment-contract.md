@@ -4,7 +4,6 @@ title: "Employment Contract"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: employment-contract
 term: employment-contract
 formPhrases: employment-contract{ss}
 status: draft

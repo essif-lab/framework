@@ -4,7 +4,6 @@ title: "Entity"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: entity
 term: entity
 formPhrases: entit{yies}
 status: draft

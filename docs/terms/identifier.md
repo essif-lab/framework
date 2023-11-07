@@ -4,7 +4,6 @@ title: "Identifier"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: identifier
 term: identifier
 formPhrases: identifier{ss}
 status: draft

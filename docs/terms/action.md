@@ -4,7 +4,6 @@ title: "Action"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: action
 term: action
 formPhrases: action{ss}, acting, activit{yies} 
 status: draft

@@ -4,7 +4,6 @@ title: "Party"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: party
 term: party
 formPhrases: part{yies}
 status: draft

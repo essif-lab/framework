@@ -4,7 +4,6 @@ title: "Ecosystem"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: ecosystem
 term: ecosystem
 formPhrases: ecosystem{ss}
 status: draft

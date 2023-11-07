@@ -4,7 +4,6 @@ title: "Validator"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: validator
 term: validator
 formPhrases: validator{ss}
 status: draft

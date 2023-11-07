@@ -4,7 +4,6 @@ title: "Role name"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: term
-termid: role-name
 term: role-name
 formPhrases: role-name{ss}
 status: draft

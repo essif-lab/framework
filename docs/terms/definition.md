@@ -4,7 +4,6 @@ title: "Definition"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
-termid: definition
 term: definition
 formPhrases: definition{ss}
 status: draft

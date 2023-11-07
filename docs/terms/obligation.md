@@ -4,7 +4,6 @@ title: "Obligation"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: obligation
 term: obligation
 formPhrases: obligation{ss}
 status: draft

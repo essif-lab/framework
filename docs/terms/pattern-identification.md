@@ -4,7 +4,6 @@ title: "Identification Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
-termid: identification
 term: identification
 formPhrases: identification
 status: draft

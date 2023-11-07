@@ -4,7 +4,6 @@ title: "Governance"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: governance
 term: governance
 formPhrases: governance, govern, governs, governed, governed-by, governing, governing-part{yies}, governor{ss}, government{ss}
 status: draft

@@ -4,7 +4,6 @@ title: "Risk Owner"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: risk-owner
 term: risk-owner
 formPhrases: risk-owner{ss}
 status: draft

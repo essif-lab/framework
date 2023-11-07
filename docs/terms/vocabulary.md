@@ -4,7 +4,6 @@ title: "Vocabulary"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
-termid: vocabulary
 term: vocabulary
 formPhrases: vocabular{yies}
 status: draft

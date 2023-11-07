@@ -4,7 +4,6 @@ title: "Onboarding"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: onboarding
 term: onboarding
 formPhrases: onboarding, onboard, onboards, onboarded
 status: draft

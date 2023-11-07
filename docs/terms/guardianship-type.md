@@ -4,7 +4,6 @@ title: "Guardianship-type"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: guardianship-type
 term: guardianship-type
 formPhrases: guardianship-type{ss}, guardianship-arrangement-type{ss}
 status: draft

@@ -4,7 +4,6 @@ title: "Objective"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: objective
 term: objective
 formPhrases: objective{ss}
 status: draft

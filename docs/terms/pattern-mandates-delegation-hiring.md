@@ -4,7 +4,6 @@ title: "Mandates, Delegation and Hiring"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
-termid: mandates-delegation-hiring
 term: mandates-delegation-hiring
 formPhrases: mandates-delegation-hiring
 status: draft

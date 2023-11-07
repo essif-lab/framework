@@ -4,7 +4,6 @@ title: "Data"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: data
 term: data
 formPhrases: data, digital-data
 status: draft

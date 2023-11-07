@@ -4,7 +4,6 @@ title: "Decentralized (Networked) Risk Management (NRM)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
-termid: decentralized-risk-management
 term: decentralized-risk-management
 formPhrases: decentralized-risk-management
 status: draft

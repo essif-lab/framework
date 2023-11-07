@@ -4,7 +4,6 @@ title: "Actor"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: actor
 term: actor
 formPhrases: actor{ss}, digital-actor{ss}
 status: draft

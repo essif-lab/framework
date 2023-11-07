@@ -4,9 +4,8 @@ title: "Identifier Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
-termid: identifier
-term: identifier
-formPhrases: identifier
+term: pattern-identifier
+formPhrases:
 status: draft
 grouptags:
 hoverText: "The eSSIF-Lab Identifier Pattern describes how Identifiers are defined and used for Identification purposes."

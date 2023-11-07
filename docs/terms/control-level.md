@@ -4,7 +4,6 @@ title: "Control level"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: control-level
 term: control-level
 formPhrases: control-level{ss}
 status: draft

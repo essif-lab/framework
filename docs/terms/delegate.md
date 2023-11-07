@@ -4,7 +4,6 @@ title: "Delegate"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: delegate
 term: delegate
 formPhrases: delegate{ss}, delegated, delegating, delegator{ss}, delegatee{ss}
 status: draft
