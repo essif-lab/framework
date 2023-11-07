@@ -1,7 +1,7 @@
 ---
 id: curating
 sidebar_label: Curating
-displayed_sidebar: terminologyDesignSideBar
+# displayed_sidebar:terminologyDesignSideBar
 scopetag: termdsn
 date: 20230111
 ---

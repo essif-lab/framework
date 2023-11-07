@@ -1,7 +1,7 @@
 ---
 id: tev2-terminology-curation
 sidebar_label: Terminology Curation
-displayed_sidebar: tev2SideBar
+# displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220303
 ---

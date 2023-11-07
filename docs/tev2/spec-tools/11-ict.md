@@ -1,7 +1,7 @@
 ---
 id: ict
 sidebar_label: Integrity Checking
-displayed_sidebar: tev2SideBar
+# displayed_sidebar: tev2SideBar
 # hide_table_of_contents: true
 scopetag: tev2
 date: 20220421

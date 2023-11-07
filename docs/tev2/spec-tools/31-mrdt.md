@@ -1,7 +1,7 @@
 ---
 id: mrdt
 sidebar_label: MR Dictionary Generation
-displayed_sidebar: tev2SideBar
+# displayed_sidebar: tev2SideBar
 hide_table_of_contents: true
 scopetag: tev2
 date: 20220801

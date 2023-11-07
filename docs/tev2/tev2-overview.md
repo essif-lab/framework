@@ -1,7 +1,7 @@
 ---
 id: tev2-overview
 sidebar_label: TEv2 Overview
-displayed_sidebar: tev2SideBar
+# displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220303
 ---
