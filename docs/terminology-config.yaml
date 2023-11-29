@@ -1,23 +1,34 @@
 # TNO Terminology Design tools configuration file (yaml)
 
 ## General
-scopedir: docs      # path of the scope directory where the SAF is located
-onNotExist: warn    # the action in case a `vsntag` was specified, but wasn't found in the SAF
-
+scopedir: docs # path of the scope directory where the SAF is located
+onNotExist: warn # the action in case a `vsntag` was specified, but wasn't found in the SAF
+output: . # (root) directory for output files to be written to
 
 ## Machine Readable Glossary Tool
-vsntag:             # versiontag for which the MRG needs to be (re)generated. Leave empty to process all versions
+mrgt:
+  vsntag: # versiontag for which the MRG needs to be (re)generated. Leave empty to process all versions
 
+## Human Readable Glossary Tool
+hrgt:
+  interpreter: basic
+  converter: |
+    ### [{{#if glossaryTerm}}{{glossaryTerm}}{{else}}{{capFirst term}}{{/if}}]({{localize navurl}})\n
+    {{#if glossaryText}}{{glossaryText}}{{else}}no `glossaryText` was specified for this entry.{{/if}}\n
+  force: true
+  input:
+    - "docs/glossary.md"
 
 ## Term Reference Resolution Tool
-output: .           # (root) directory for output files to be written
-interpreter:        # type of interpreter, either: a regex, "alt", or "basic"
-  (?:(?<=[^`\\])|^)\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))(?<showtext>[^\n\]@]+)\]\((?:(?<id>[a-z0-9_-]*)?(?:#(?<trait>[a-z0-9_-]+))?)?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+))?\)
-converter: >-       # Type of converter, either: a mustache template, "http", or "markdown"
-  <a
-  href="{{localize navurl}}{{#if trait}}#{{trait}}{{/if}}"
-  hovertext="{{#if hoverText}}{{hoverText}}{{else}}{{#if glossaryTerm}}{{glossaryTerm}}{{else}}{{capFirst term}}{{/if}}: {{noRefs glossaryText type="markdown"}}{{/if}}"
-  >{{showtext}}</a>
-force: true         # toggle overwriting of existing files
-input:              # glob pattern strings for files to be processed by the TRRT
-  - "**/*.md"
+trrt:
+  interpreter: # type of interpreter, either: a regex, "alt", or "basic"
+    (?:(?<=[^`\\])|^)\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))(?<showtext>[^\n\]@]+)\]\((?:(?<id>[a-z0-9_-]*)?(?:#(?<trait>[a-z0-9_-]+))?)?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+))?\)
+  converter:
+    > # Type of converter, either: a mustache template, "http", or "markdown"
+    <a
+    href="{{localize navurl}}{{#if trait}}#{{trait}}{{/if}}"
+    hovertext="{{#if hoverText}}{{hoverText}}{{else}}{{#if glossaryTerm}}{{glossaryTerm}}{{else}}{{capFirst term}}{{/if}}: {{noRefs glossaryText type="markdown"}}{{/if}}"
+    >{{showtext}}</a>
+  force: true # toggle overwriting of existing files
+  input: # glob pattern strings for files to be processed by the TRRT
+    - "**/*.md"
