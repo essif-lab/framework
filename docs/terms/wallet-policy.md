@@ -4,7 +4,6 @@ title: "Wallet Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: wallet-policy
 term: wallet-policy
 formPhrases: wallet-polic{yies}
 status: draft

@@ -4,7 +4,6 @@ title: "Owner"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: owner
 term: owner
 formPhrases: owner{ss}, own{ss}
 status: draft

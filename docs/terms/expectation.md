@@ -4,7 +4,6 @@ title: "Expectation"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: expectation
 term: expectation
 formPhrases: expectation{ss}
 status: draft

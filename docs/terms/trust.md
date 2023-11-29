@@ -4,7 +4,6 @@ title: "Trust"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: trust
 term: trust
 formPhrases: trust, trusts, trusting, trusted
 status: draft

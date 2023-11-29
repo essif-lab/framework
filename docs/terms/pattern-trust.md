@@ -4,7 +4,6 @@ title: "Trust Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
-termid: trust
 term: trust
 formPhrases: trust
 status: draft

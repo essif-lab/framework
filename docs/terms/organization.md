@@ -4,7 +4,6 @@ title: "Organization"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: organization
 term: organization
 formPhrases: organization{ss}
 status: draft

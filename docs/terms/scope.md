@@ -4,7 +4,6 @@ title: "Scope"
 displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
 type: concept
-termid: scope
 term: scope
 formPhrases: scope{ss}
 status: draft

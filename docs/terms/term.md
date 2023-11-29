@@ -4,7 +4,6 @@ title: "Term"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
-termid: term
 term: term
 formPhrases: term{ss}, word{ss}, phrase{ss}
 status: draft

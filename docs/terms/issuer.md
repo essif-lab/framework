@@ -4,7 +4,6 @@ title: "Issuer"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: issuer
 term: issuer
 formPhrases: issuer{ss}
 status: draft

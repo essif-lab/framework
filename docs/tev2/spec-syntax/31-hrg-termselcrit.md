@@ -1,6 +1,6 @@
 ---
 id: hrg-termselcrit
-displayed_sidebar: tev2SideBar
+# displayed_sidebar: tev2SideBar
 // hide_table_of_contents: true
 scopetag: tev2
 date: 20230103
@@ -9,7 +9,7 @@ date: 20230103
 # HRG Selection Criteria
 
 :::danger This page is deprecated.
-The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-syntax/hrg-termselcrit
+The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

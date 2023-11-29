@@ -4,7 +4,6 @@ title: "Isuer Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: issuer-policy
 term: issuer-policy
 formPhrases: issuer-polic{yies}
 status: draft

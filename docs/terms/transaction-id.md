@@ -4,7 +4,6 @@ title: "Transaction Id"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: transaction-id
 term: transaction-id
 formPhrases: transaction-id{ss}
 status: draft

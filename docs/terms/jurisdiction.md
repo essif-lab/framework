@@ -4,7 +4,6 @@ title: "Jurisdiction"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: jurisdiction
 term: jurisdiction
 formPhrases: jurisdiction{ss}
 status: draft

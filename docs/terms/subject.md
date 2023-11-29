@@ -4,7 +4,6 @@ title: "Subject"
 displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
 type: term
-termid: subject
 term: subject
 formPhrases: subject{ss}
 status: draft

@@ -4,7 +4,6 @@ title: "Compliance Objective"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: compliance-objective
 term: compliance-objective
 formPhrases: compliance-objective{ss}
 status: draft

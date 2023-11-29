@@ -4,7 +4,6 @@ title: "Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: pattern
 term: pattern
 formPhrases: pattern{ss}
 status: draft

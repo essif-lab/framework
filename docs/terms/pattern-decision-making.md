@@ -4,7 +4,6 @@ title: "Decision Making"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
-termid: decision-making
 term: decision-making
 formPhrases: decision-making
 status: draft

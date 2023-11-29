@@ -4,7 +4,6 @@ title: "Verify"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: verify
 term: verify
 formPhrases: verify, verifies, verified, verifying
 status: draft

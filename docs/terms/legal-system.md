@@ -4,7 +4,6 @@ title: "Legal System"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: legal-system
 term: legal-system
 formPhrases: legal-system{ss}
 status: draft

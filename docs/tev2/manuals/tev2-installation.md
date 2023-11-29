@@ -10,7 +10,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # Installation
 
 :::danger This page is deprecated.
-The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/manuals/tev2-installation
+The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 <img

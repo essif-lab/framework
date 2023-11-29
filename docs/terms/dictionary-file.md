@@ -3,7 +3,6 @@ id: dictionary-file
 title: "Dictionary-file"
 scopetag: essifLab
 type: dictionary
-termid: dictionary-file
 term: dictionary-file
 status: draft
 grouptags:

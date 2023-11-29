@@ -4,7 +4,6 @@ title: "Verifier Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: verifier-policy
 term: verifier-policy
 formPhrases: verifier-polic{yies}
 status: draft

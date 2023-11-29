@@ -4,7 +4,6 @@ title: "Transaction Agreement"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: transaction-agreement
 term: transaction-agreement
 formPhrases: transaction-agreement{ss}
 status: draft

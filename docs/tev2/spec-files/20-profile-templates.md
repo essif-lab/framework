@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # Profile Templates
 
 :::danger This page is deprecated.
-The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-files/profile-templates
+The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 :::caution
@@ -66,7 +66,7 @@ This template allows [interpreters](@) for [ingestible content](@) to be created
 | `glossaryText`    | {{`glossaryText`}}     | Y  |            | text that summarizes the meaning of the term. |
 | `synonyms`        | {{`synonymsList`}}     | n  |            | other words/phrases that mean the same. |
 | `grouptags`       | {{`grouptagsList`}}    | n  |            | comma-separated list of tags/keywords to which the term belongs. |
-| `formPhrases`     | {{`formPhrasesList`}}  | n  |            | comma-separated list of [formPhrases](https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-syntax/form-phrase-syntax) |
+| `formPhrases`     | {{`formPhrasesList`}}  | n  |            | comma-separated list of formPhrases |
 | `status`          | {{`status`}}           | n  | `proposed` | status/phase in the lifecycle of the term. |
 | `created`         | {{`created`}}          | n  | today      | date when the term was first conceived/documented. |
 | `updated`         | {{`updated`}}          | n  | today      | date when the term was last updated. |

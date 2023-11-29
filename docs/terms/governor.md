@@ -4,7 +4,6 @@ title: "Governor"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: governor
 term: governor
 formPhrases: governor{ss}
 status: draft

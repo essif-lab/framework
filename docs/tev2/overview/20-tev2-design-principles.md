@@ -1,7 +1,7 @@
 ---
 id: tev2-design-principles
 sidebar_label: Design Principles
-displayed_sidebar: tev2SideBar
+# displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220303
 ---
@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # TEv2 - Design Principles
 
 :::danger This page is deprecated.
-The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/overview/tev2-design-principles
+The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 :::caution

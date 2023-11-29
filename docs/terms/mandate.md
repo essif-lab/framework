@@ -4,7 +4,6 @@ title: "Mandate"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: mandate
 term: mandate
 formPhrases: mandate{ss}, mandated, mandating, mandator{ss}, mandatee{ss}
 status: draft

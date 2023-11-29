@@ -4,7 +4,6 @@ title: "Duties and Rights"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
-termid: duties-and-rights
 term: duties-and-rights
 formPhrases: duties-and-rights
 status: draft

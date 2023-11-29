@@ -1,7 +1,7 @@
 ---
 id: ict
 sidebar_label: Integrity Checking
-displayed_sidebar: tev2SideBar
+# displayed_sidebar: tev2SideBar
 # hide_table_of_contents: true
 scopetag: tev2
 date: 20220421
@@ -25,7 +25,7 @@ The text below will need a thorough revision due to various changes that have no
 # Integrity Checker Tool (ICT)
 
 :::danger This page is deprecated.
-The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-tools/ict
+The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 :::caution

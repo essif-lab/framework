@@ -4,7 +4,6 @@ title: "Documentation Interoperability"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: documentation-interop
 term: documentation-interop
 formPhrases: documentation-interop
 status: draft

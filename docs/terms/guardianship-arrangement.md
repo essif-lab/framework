@@ -4,7 +4,6 @@ title: "Guardianship Arrangement"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: guardianship-arrangement
 term: guardianship-arrangement
 formPhrases: guardianship-arrangement{ss}, guardianship{ss}
 status: draft

@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # Student Assignment
 
 :::danger This page is deprecated.
-The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/tev2-student-assignment
+The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 This page explains what a group of students can do to create and contribute one or more tools to the toolbox of the Terminology Engine v2 ([TEv2](@)), that caters for

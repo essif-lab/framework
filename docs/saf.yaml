@@ -40,12 +40,3 @@ versions:
     altvsntags: [ latest, documentation, terms ] # alternative verstiontags
     termselection:
     - "*" # import all terms as curated in the current scope.
-  - vsntag: test # a versiontag that identifies this version from all other versions in the SAF
-    altvsntags: # alternative verstiontags
-    - extended
-    termselection:
-    - "*@tev2" # import all terms defined in the scope `tev2`
-    - "*" # import all terms defined in the scope `essiflab`
-    status: proposed
-    from: 20220202
-    to:

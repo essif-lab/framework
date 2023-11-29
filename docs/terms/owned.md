@@ -4,7 +4,6 @@ title: "Owned"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: owned
 term: owned
 formPhrases: owned
 status: draft

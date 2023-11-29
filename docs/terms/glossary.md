@@ -4,7 +4,6 @@ id: glossary
 # TEv2: generic front-matter for curated texts
 scope: essiflab
 termtype: concept
-termid: glossary
 term: glossary
 formPhrases: glossar{yies}
 grouptags:

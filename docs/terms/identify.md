@@ -4,7 +4,6 @@ title: "Identify"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: identify
 term: identify
 formPhrases: identify, identifies, identifying, identifiable, identified, identification
 status: draft

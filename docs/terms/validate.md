@@ -4,7 +4,6 @@ title: "Validate"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: validate
 term: validate
 formPhrases: validate, validates, validated, validating
 status: draft

@@ -4,7 +4,7 @@ id: participant
 # TEv2: generic front-matter for curated texts
 scope: essiflab
 termtype: concept
-termid: participant
+term: participant
 formPhrases: participant{ss}
 grouptags:
 status: proposed
@@ -14,9 +14,6 @@ vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 isa:
-term: Participant # Text that is the name of the concept in (human readable) texts.
-fullterm:
-shorterm:
 synonymOf:
 glossaryText: "a [party](@) is negotiating (or has negotiated) a [transaction agreement](@)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):

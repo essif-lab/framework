@@ -4,7 +4,6 @@ title: "Ownership"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: ownership
 term: ownership
 formPhrases: ownership{ss}, owning, legal-ownership{ss}, rightful-ownership{ss}, natural-ownership{ss}
 status: draft

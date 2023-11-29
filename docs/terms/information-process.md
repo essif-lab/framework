@@ -4,7 +4,6 @@ title: "Information Process"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: information-process
 term: information-process
 formPhrases: information-process, information-processes
 status: draft

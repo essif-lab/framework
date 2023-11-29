@@ -4,7 +4,6 @@ title: "Presentation"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: presentation
 term: presentation
 formPhrases: presentation{ss}, verifiable-presentation{ss}
 status: draft

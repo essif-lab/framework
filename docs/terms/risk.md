@@ -4,7 +4,6 @@ title: "Risk"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: risk
 term: risk
 formPhrases: risk{ss}
 status: draft

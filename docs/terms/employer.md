@@ -4,7 +4,6 @@ title: "Employer"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: employer
 term: employer
 formPhrases: employer{ss}
 status: draft

@@ -4,7 +4,6 @@ title: "Wallet"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: wallet
 term: wallet
 formPhrases: wallet{ss}
 status: draft

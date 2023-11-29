@@ -4,7 +4,6 @@ title: "Peer Actor"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: term
-termid: peer-actor
 term: peer-actor
 formPhrases: peer-actor{ss}
 conceptref: essifLab:Actor

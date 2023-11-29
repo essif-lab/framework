@@ -4,7 +4,6 @@ title: "Authority (Centralized or Decentralized)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: authority
 term: authority
 formPhrases: authorit{yies}
 status: draft

@@ -4,7 +4,7 @@ id: peer-agent
 # TEv2: generic front-matter for curated texts
 scope: essiflab
 termtype: concept
-termid: peer-agent
+term: peer-agent
 formPhrases: peer-agent{ss}
 grouptags:
 status: proposed
@@ -14,7 +14,6 @@ vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
 isa:
-term: Peer # Text that is the name of the concept in (human readable) texts.
 fullterm: "Peer Agent"
 shorterm:
 synonymOf:

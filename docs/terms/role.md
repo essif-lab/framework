@@ -4,7 +4,6 @@ title: "Role"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: role
 term: role
 formPhrases: role{ss}
 status: draft

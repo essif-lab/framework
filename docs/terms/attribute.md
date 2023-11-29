@@ -4,7 +4,6 @@ title: "Attribute"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: attribute
 term: attribute
 formPhrases: attribute{ss}
 status: draft

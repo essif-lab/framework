@@ -4,7 +4,6 @@ title: "SSI Infrastructure"
 displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
 type: concept
-termid: ssi-infrastructure
 term: ssi-infrastructure
 formPhrases: ssi-infrastructure{ss}
 status: draft

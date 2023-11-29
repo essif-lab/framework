@@ -4,7 +4,6 @@ title: "Compliance level"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: compliance-level
 term: compliance-level
 formPhrases: compliance-level{ss}
 status: draft

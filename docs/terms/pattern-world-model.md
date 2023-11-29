@@ -4,7 +4,6 @@ title: "eSSIF-Lab World Model"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
-termid: world-model
 term: world-model
 formPhrases: world-model
 status: draft

@@ -15,11 +15,7 @@ entries:
     type: 'concept'
     termid: 'action'
     term: 'action'
-<<<<<<< HEAD
-    formPhrases: 'action{ss}, acting, activit(yies)'
-=======
     formPhrases: 'action{ss}, acting, activit{yies}'
->>>>>>> upstream/master
     status: 'draft'
     grouptags: null
     hoverText: 'Action: something that is actually done (a ''unit of work'' that is executed) by a single Actor (on behalf of a given Party), as a single operation, in a specific context.'
@@ -1304,11 +1300,7 @@ entries:
     status: 'draft'
     grouptags: null
     hoverText: 'Identify: an Act, by or on behalf of a Party, that results in the selection of either (a) a single Partial identity that the party Owns, given some (observed or received) data, or (b) a single Entity from a given set of entities that is the Subject of a specified Partial identity that the party Owns.'
-<<<<<<< HEAD
-    glossaryText: 'an [act](action@), by or on behalf of a [party](@), that results in the selection of either&#10;- a single [partial identity](@) that the party [owns](@), given some (observed or received) data, or&#10;- a single [entity](@) from a given set of entities that is the [subject](@) of a specified [partial identity](@) that the party [owns](@).'
-=======
     glossaryText: "an [act](action@), by or on behalf of a [party](@), that results in the selection of either\n- a single [partial identity](@) that the party [owns](@), given some (observed or received) data, or\n- a single [entity](@) from a given set of entities that is the [subject](@) of a specified [partial identity](@) that the party [owns](@)."
->>>>>>> upstream/master
     date: 20210812
     scopetag: 'essiflab'
     locator: 'identify.md'

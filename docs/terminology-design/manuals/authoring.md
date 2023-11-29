@@ -1,7 +1,7 @@
 ---
 id: authoring
 sidebar_label: Authoring
-displayed_sidebar: terminologyDesignSideBar
+# displayed_sidebar:terminologyDesignSideBar
 scopetag: termdsn
 date: 20230111
 ---

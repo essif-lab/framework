@@ -4,7 +4,6 @@ title: "Terminology Process"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
-termid: terminology-process
 term: terminology-process
 formPhrases: terminology-process, terminology-processes
 status: draft

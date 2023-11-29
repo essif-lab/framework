@@ -4,7 +4,6 @@ title: "Risk level"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: risk-level
 term: risk-level
 formPhrases: risk-level{ss}
 status: draft

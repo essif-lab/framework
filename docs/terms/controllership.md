@@ -4,7 +4,6 @@ title: "Controllership"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: controllership
 term: controllership
 formPhrases: controllership
 status: draft

@@ -3,7 +3,7 @@ id: essifLab-fcomp-<fcompid>
 title: "<Name of the Functional Component> (Acronym)>"
 scopetag: essifLab
 type: fcomp
-termid: <fcompid>
+term: <fcompid>
 status: draft
 grouptags:
 hoverText: "<short description that pops up when user hovers over a reference to this component."

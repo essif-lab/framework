@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 # Scope Administration File (SAF)
 
 :::danger This page is deprecated.
-The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/spec-files/saf
+The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 :::caution
@@ -59,7 +59,7 @@ scope:
   license: LICENSE.md # file that contains the (default) licensing conditions. Full URL is `scopedir`/`license`
   statuses: [ proposed, approved, deprecated ] # list of status tags that are defined for knowledge artifacts in this scope
   issues: https://github.com/tno-terminology-design/tev2-specifications/issues # URL where issues can be raised and handled
-  website: https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/tev2-overview # base URL for creating links to rendered versions of Curated Texts
+  website: https://tno-terminology-design.github.io/tev2-specifications/docs # base URL for creating links to rendered versions of Curated Texts
   curators: # contacting individual curators
   - name: RieksJ
     email: # we split up the email address to reduce the likelihood of the address being harvested for spamming

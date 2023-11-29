@@ -4,7 +4,6 @@ title: "Commitment Decision"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: commitment-decision
 term: commitment-decision
 formPhrases: commitment-decision{ss}
 status: draft

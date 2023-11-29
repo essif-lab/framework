@@ -4,7 +4,6 @@ title: "Tag"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
-termid: tag
 term: tag
 formPhrases: tag{ss}
 status: draft

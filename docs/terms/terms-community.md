@@ -4,7 +4,6 @@ title: "Terms Community"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: terms-community
 term: terms-community
 formPhrases: terms-communit{yies}
 status: draft

@@ -4,7 +4,6 @@ title: "Validator Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: validator-policy
 term: validator-policy
 formPhrases: validator-polic{yies}
 status: draft

@@ -4,7 +4,6 @@ title: "Semantics"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 type: concept
-termid: semantics
 term: semantics
 formPhrases: semantics
 status: draft

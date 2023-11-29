@@ -4,7 +4,6 @@ title: "Control Objective"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: control-objective
 term: control-objective
 formPhrases: control-objective{ss}
 status: draft

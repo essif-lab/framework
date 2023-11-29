@@ -4,7 +4,6 @@ title: "Holder Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: holder-policy
 term: holder-policy
 formPhrases: holder-polic{yies}
 status: draft

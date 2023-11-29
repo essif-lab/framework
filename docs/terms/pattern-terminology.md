@@ -4,7 +4,6 @@ title: "Terminology Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
-termid: terminology
 term: terminology
 formPhrases: terminology
 status: draft

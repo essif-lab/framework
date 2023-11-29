@@ -4,7 +4,6 @@ title: "Employee"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: employee
 term: employee
 formPhrases: employee{ss}
 status: draft

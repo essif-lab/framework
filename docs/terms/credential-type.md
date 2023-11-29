@@ -4,7 +4,6 @@ title: "Credential Type"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: concept
-termid: credential-type
 term: credential-type
 formPhrases: credential-type{ss}
 status: draft

@@ -1,6 +1,6 @@
 ---
 id: tev2-toolbox
-displayed_sidebar: tev2SideBar
+# displayed_sidebar: tev2SideBar
 scopetag: tev2
 date: 20220421
 ---
@@ -10,7 +10,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # TEv2 Terminology Toolbox
 
 :::danger This page is deprecated.
-The current version can be found at https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/tev2-toolbox
+The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 :::caution
@@ -20,7 +20,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 
 This document is meant as a specification of results that the ToIP CTWG aims to realize, that can serve as the basis for the specification of terminology tooling.
 
-The intended audience is expected to be familiar with the [mental model on terminology](https://tno-terminology-design.github.io/tev2-specifications/docs/tev2/terms/pattern/pattern-terminology#formalized-model) and the current way(s) of working of the CTWG.
+The intended audience is expected to be familiar with the [mental model on terminology](https://tno-terminology-design.github.io/tev2-specifications/docs/terms/pattern/pattern-terminology#formalized-model) and the current way(s) of working of the CTWG.
 
 As mentioned in the [TEv2 overview](/docs/tev2/tev2-overview), the toolbox is envisaged to have a variety of tools, including:
 

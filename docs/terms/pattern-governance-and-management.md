@@ -4,7 +4,6 @@ title: "Governance and Management"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 type: pattern
-termid: governance-and-management
 term: governance-and-management
 formPhrases: governance-and-management
 status: draft
