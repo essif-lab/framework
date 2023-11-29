@@ -292,7 +292,8 @@ The implementation of the `<Term ...>` ... `</Term>` construct will differ from 
 - `scopedir` is the URL that locates the [scope directory](@) of that [scope](@);
 - `curatedir` is the directory in that `scopedir` where [knowledge artifacts](@) (c.q. [curated texts](@)) live; its value is found both in the [SAF](@) and in the [MRG](@) of the [scope](@);
 - `locator` is the path (including filename), relative to `scopedir`/`curatedir`/, of the [curated file](@) that describes the [knowledge artifact](@) that is being referred to.
-  :::
+
+:::
 
 </TabItem>
 </Tabs>

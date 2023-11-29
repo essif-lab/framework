@@ -157,7 +157,7 @@ Selecting [terms](term@) of another [scope](@) is done by [specifying](term-sele
 We leave the specification of additional syntax for GDFs, e.g. for the inclusion of headers, footers and other stuff that is specific for the generation of [HRGs](#hrg), as work to be done.
 
 :::info Editor's Note
-Currently, every [MRG](#mrg)/[HRG](#hrg) is to be accompanied by a specific [GDF]{#gdf} that specifies their contents. Texts need to be revised to accommodate for the more practical way of specifying a [scope's](@) [terminology](@), which is to specify the [term selection criteria](@) in the [SAF](@). [HRGs](@), or other flavors of [MRGs](@) will then require a (type-sepecif) [GDF]{#gdf}.
+Currently, every [MRG](#mrg)/[HRG](#hrg) is to be accompanied by a specific [GDF](#gdf) that specifies their contents. Texts need to be revised to accommodate for the more practical way of specifying a [scope's](@) [terminology](@), which is to specify the [term selection criteria](@) in the [SAF](@). [HRGs](@), or other flavors of [MRGs](@) will then require a (type-sepecif) [GDF](#gdf).
 :::
 
 ## Glossary Generation Tool (GGT) {#mrgt}
