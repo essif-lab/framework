@@ -10,12 +10,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # Installation
 
 :::danger This page is deprecated.
-The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
+The current TEv2 website is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 <img
-  alt="This page is under construction"
-  src={useBaseUrl('images/wip/wip-under-construction.png')}
+alt="This page is under construction"
+src={useBaseUrl('images/wip/wip-under-construction.png')}
 /><br/><br/>
 
 :::caution
@@ -32,6 +32,7 @@ This page should only document the generic stuff. Any installation details that 
 :::
 
 TEv2 is a tool for [curating](@) [terminology](@)-related data from the perspective of a single [scope](@). Installation comprises
+
 - setting up, or appointing an (online) directory that will serve as a [scope directory](@);
 - creating a [Scope Administration File (SAF)]/tev2/spec-files/saf, and providing the configuration of the [scope](@) and its [terminology](@);
 - installing the [tev2-toolbox](/docs/tev2/tev2-toolbox);

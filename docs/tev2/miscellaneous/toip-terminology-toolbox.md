@@ -9,7 +9,7 @@ date: 20220421
 # ToIP TT-Tools Proposal
 
 :::danger This page is deprecated.
-The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
+The current TEv2 website is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
@@ -30,9 +30,9 @@ The initial/prototype versions of tools may not have implemented everything (e.g
 
 1. We will have the following 'tools' in the tt-toolbox, each of which can be run 'manually' (i.e. from the commandline), and also made part of a github CI street. Each tool is always called from the context of exactly one [scope](@):
 
-    - the **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes files that contain so-called [term refs](@) and outputs a copy of these files in which these [term refs](@) are converted into so-called [renderable refs](@), i.e. texts that can be further processed by tools such as GitHub pages, Docusaurus, etc. The result of this is that the rendered document contains markups that help [readers](@) to quickly find more explanations of the [concept](@) or other [knowledge artifact](@) that is being referenced.
+   - the **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes files that contain so-called [term refs](@) and outputs a copy of these files in which these [term refs](@) are converted into so-called [renderable refs](@), i.e. texts that can be further processed by tools such as GitHub pages, Docusaurus, etc. The result of this is that the rendered document contains markups that help [readers](@) to quickly find more explanations of the [concept](@) or other [knowledge artifact](@) that is being referenced.
 
-    - the **Glossary Generation Tool ([GGT](#mrgt))** takes a [Glossary Definition File (GDF)](#gdf) as input, and generates both a **Machine Readable [Glossary](@) ([MRG](#mrg))** and a **Human Readable [Glossary](@)**, both of which render the [terminology](@) of the [scope](@) from which the [GGT](#mrgt) is called. The[(GDF)](#gdf) specifies the set of [terms](term@) to be included, and for the HRG also how they are to be rendered.
+   - the **Glossary Generation Tool ([GGT](#mrgt))** takes a [Glossary Definition File (GDF)](#gdf) as input, and generates both a **Machine Readable [Glossary](@) ([MRG](#mrg))** and a **Human Readable [Glossary](@)**, both of which render the [terminology](@) of the [scope](@) from which the [GGT](#mrgt) is called. The[(GDF)](#gdf) specifies the set of [terms](term@) to be included, and for the HRG also how they are to be rendered.
 
 2. setup a CI pipe for generating [glossaries](glossary@) for the `#toip` and `@` [scopes](scope@), that will (initially) generate a [glossary](@) upon any successful commit to the master-branch of the associated repo/wiki, so we can see how that works and what (else) we need.
 
@@ -45,6 +45,7 @@ The initial/prototype versions of tools may not have implemented everything (e.g
 A [term ref](@) is similar to a [Markdown link](https://www.markdownguide.org/basic-syntax/#links), but rather than linking to some complicated URL or fragment, it refers/links to a specific descriptive text (e.g. a [definition](@), purpose, or example) that is associated with (a specific version of) a [(scoped) term](scoped-term@), which is [identified](identify@essiflab) by its [scope](@) and the [term](@) (label, text).
 
 The complete, generic structure[^1] of a [term ref](@) is: \[`show text`\](`id`#`heading-id`@`scopetag`:`vsn`), where:
+
 - `show-text` (required) is the text that will be highlighted/emphasized to indicate it is linked. It must not contain the characters `@` or `]`.
 - `id` (optional) is a text that [identifies](identify@essiflab) the [(scoped) term](scoped-term@) in the part of the [corpus](@) that contains the [terminology](@) of a specified [scope](@). If omitted, its value will be assigned the default, which is typically `show-text` in which every character in the range [A-Z] is converted to lower-case, and every sequence of characters, all of which are not in [A-Z], [a-z], `_` or `-`, are converted to `-`. `id` shall only contain characters in regex `[a-z0-9_-]`.
 - `heading-id` (optional) is a text that [identifies](identify@essiflab) a particular kind of descriptive text that is associated with the [term](@). If omitted (in which case the preceding `#`-character may also be omitted), the [term ref](@) will by default dereference to the text of its [glossary](@) entry. While it is envisaged that `heading-id` must be a text from a predefined set of allowed/supported texts (e.g. `purpose`, `criteria`, `example-3`), the precise semantics remain to be specified. For now, `heading-id` shall be constrained to only contain characters in regex `[a-z0-9_-]`.
@@ -67,10 +68,10 @@ The usefulness becomes even greater as the [TRRT](#trrt) also implements more so
 
 This leads to an alternative notation that can be used in addition to the previously specified notation. Here is the alternative syntax and its equivalent counterpart:
 
-| Alternative syntax | Equivalent regular syntax |
-| :----------------: | :-----------------------: |
-| \[`show text`@\] | \[`show text`\](@) |
-| \[`show text`@`scopetag`\] | \[`show text`\](`show-text`@`scopetag`) |
+|                 Alternative syntax                  |              Equivalent regular syntax              |
+| :-------------------------------------------------: | :-------------------------------------------------: |
+|                  \[`show text`@\]                   |                 \[`show text`\](@)                  |
+|             \[`show text`@`scopetag`\]              |       \[`show text`\](`show-text`@`scopetag`)       |
 | \[`show text`@`scopetag`:`vsn`\](`id`#`heading-id`) | \[`show text`\](`id`#`heading-id`@`scopetag`:`vsn`) |
 
 In the last row of the above table, `id` and `#heading-id` are optional. Thus, `[definition@]()` is equivalent with `[definition](@)` and with `[definition](@)`. Regexes for this alternative syntax are specified in the [TRRT](#trrt) section.
@@ -80,6 +81,7 @@ In the last row of the above table, `id` and `#heading-id` are optional. Thus, `
 This document assumes that anyone that has some dealing with [terminology](@), is doing so within the context of a single [scope](@), and that all related documents (specifications, white papers, [terminological artifacts](@), etc.) are organized in a single directory that can be (read) accessed by tools that are called from within other [scopes](scope@). We use the [term](@) **[scope](@) directory** to refer to this directory of a specific [scope](@). Thus, documents that belong to a [scope](@) are expected to reside (or have a reference/link file) in its [scope directory](@).
 
 Every [scope](@) has an **scope administration file (SAF)** that is located in the root of the [scope directory](@). This file is manually maintained by the [curator(s)](curator@) of the [scope](@)). It contains at least:
+
 - the set of [scope tags](@) that [identify](@essiflab) the [scopes](scope@) from which [terms](term@) may be used (imported), and for each of them the URL of its associated [scope directory](@); this set SHOULD include the [scope tag](@) (and associated URL) that the [curator(s)](curator@) of the [scope](@) have chosen for the [scope](@) itself.
 - the URL of the directory in which the [glossaries](glossary@) of the [scope](@), and the associated [GDFs](#gdf), are located.
 - the name of the [GDFs](#gdf) that specifies the particulars for generating both the [MRG](#mrg) and [HRG](#hrg) that are to be generated whenever an update of the [scope's](scope@) part of the [corpus](@) is done.
@@ -87,6 +89,7 @@ Every [scope](@) has an **scope administration file (SAF)** that is located in t
 - a specification of the default date format.
 
 Every [scope](@) has a set of (generated) [MRGs](#mrg) and [HRGs](#hrg) that are located in (a subdirectory of) the [scope's](scope@) [scope directory](@), the URL of which is found in the [scope's](scope@) SAF. MRGs have the following file names:
+
 - `glossary` is the latest/most recently generated HRG of the [scope](@).
 - `glossary.latest` is the latest/most recently generated MRG of the [scope](@).
 - `hrg.<vsn>` and `mrg.<vsn>`, are specific versions of a HRG and MRG respectively, where `<vsn>` is the [versiontag](@) that [identifies](identify@essiflab) the version of the [terminology](@) that they render.
@@ -95,14 +98,16 @@ Every [scope](@) has a set of [GDFs](#gdf), that are located in the same directo
 
 ## Machine Readable Glossaries (MRGs) {#mrg}
 
-A Machine Readable Glossary (MRG) is the single source for *all* terminology-related data that is available from its [scope](@), for a specific version. Thus, the MRGs of all ToIP [scopes](@) constitute the ToIP [corpus](@).
+A Machine Readable Glossary (MRG) is the single source for _all_ terminology-related data that is available from its [scope](@), for a specific version. Thus, the MRGs of all ToIP [scopes](@) constitute the ToIP [corpus](@).
 
 Every MRG:
+
 - specifies the version of the [glossary](@) itself;
 - specifies the default dateformat used;
 - contains a (sorted) list of (glossary) entries, where each entry contains all data related to a single [term](@), and can be identified by its `id` (that typically, but not necessarily, is the same as the [term](@) - for example, a [term](@) that contains whitespace would have a `id` where the whitespace is replaced by a `-` character).
 
 A MRG entry for an MRG SHOULD accommodate for (at least) the following fields:
+
 - `scopetag` (required): the [tag](@) of the [scope](@) in which the [term](@) is defined (as a [glossary](@) not only contains [terms](term@) that are defined in the [scope](@) itself, but also [terms](term@) that are defined in other [scopes](@).
 - `id` (required): the text that [identifies](identify@essiflab) the [term](@) within the context of the MRG, and can also be used as an `id` in a [term ref](@). The `id` shall only contain characters in regex `[a-z0-9_-]`. For [terms](term@) of other types than 'concept', the `id` would typically be of the form `<type>-<termid>`, e.g. as in `pattern-identify`.
 - `termtype` (optional): a text that identifies the kind of entity that the [term](@) refers to. The `termtype` shall only contain characters in regex `[a-z0-9_-]`. Typical values would be `concept`, `relation`, `pattern` (or `mental-model`), `term` (or `alias`), or `usecase`. When omitted, it defaults to `concept`.
@@ -143,6 +148,7 @@ Every [glossary](@) is said to 'render' the [terminology](@) of a particular [sc
 Because [terminologies](terminology@) tend to change over time, they (and a [glossary](@) that renders it) may be versioned.
 
 The contents of a [glossary](@) consists of one entry (which we call **MRG entries**) for every [term](@) that is
+
 - [defined](definition@) in the [scope](@) iself;
 - (explicitly or implicitly) selected by the [curators](curator@) of the [scope](@) and that is part of the contents of a [glossary](@) of another [scope](@).
 
@@ -153,15 +159,18 @@ We leave the specification of additional syntax for GDFs, e.g. for the inclusion
 :::info Editor's Note
 Currently, every [MRG](#mrg)/[HRG](#hrg) is to be accompanied by a specific [GDF]{#gdf} that specifies their contents. Texts need to be revised to accommodate for the more practical way of specifying a [scope's](@) [terminology](@), which is to specify the [term selection criteria](@) in the [SAF](@). [HRGs](@), or other flavors of [MRGs](@) will then require a (type-sepecif) [GDF]{#gdf}.
 :::
+
 ## Glossary Generation Tool (GGT) {#mrgt}
 
 The **Glossary Generation tool ([GGT](#mrgt))** takes a glossary definition file (GDF) as input (that specifies e.g. [terms](term@) to be included from other [terminologies](terminology@), ways in which [terms](term@) are to be rendered, etc.), and generates a (machine readable, and optionally also a human readable) [glossary](@) that renders the [terminology](@) of the [scope](@) from which the [GGT](#mrgt) is called.
 
 The [GGT](#mrgt) first creates an [MRG](#mrg) (which does the 'heavy lifting'), and from that, a [HRG](#hrg) will be created. Different [HRGs](#hrg), i.e. different human-readable renderings of the [terminology](@) may be created from the same [MRG](#mrg).
+
 ### Creating an MRG
 
 Creating an [MRG](#mrg) works as follows:
-- Create an initial set of MRG entries, i.e. one for every [term](@) (from [scopes](scope@) other than the one we create the MRG for) that is selected per the specifications in the [GDF](#gdf). A MRG entry is constructed by interpreting the [term file](@essiflab) that defines the [term](@), and producing the MRG entry structure as defined for [MRGs](#mrg). Note that this can only be done for [term files](term-file@essiflab) that have a syntax that is supported by the [GGT](#mrgt). If the created MRG entry has an `id` that is the same as the `id`-field of an existing glossary-entry, that MRG entry will be discarded (meaning that the newly created MRG entry  'overrides' the existing one).
+
+- Create an initial set of MRG entries, i.e. one for every [term](@) (from [scopes](scope@) other than the one we create the MRG for) that is selected per the specifications in the [GDF](#gdf). A MRG entry is constructed by interpreting the [term file](@essiflab) that defines the [term](@), and producing the MRG entry structure as defined for [MRGs](#mrg). Note that this can only be done for [term files](term-file@essiflab) that have a syntax that is supported by the [GGT](#mrgt). If the created MRG entry has an `id` that is the same as the `id`-field of an existing glossary-entry, that MRG entry will be discarded (meaning that the newly created MRG entry 'overrides' the existing one).
 - Add a MRG entry for every [term](@) that is defined in the [scope](@) from which the [GGT](#mrgt) is called, again removing any existing glossary-entry that has an `id`-field that is the same as a newly added one.
 - Perform completeness and consistency checks on the set of MRG entries, to ensure that
   - every MRG entry is [identifiable](identify@essiflab) by its `id`-field;
@@ -170,7 +179,8 @@ Creating an [MRG](#mrg) works as follows:
 - Add header/meta data as needed as specified for [MRGs](#mrg).
 
 For example, consider the [term](@) `curate` as defined in the [CTWG terms wiki](https://github.com/trustoverip/ctwg/wiki/curate). The wiki-page would be interpreted, which would lead to the following (machine readable) MRG entry:
-~~~
+
+```
   id: concept-curate
   scopetag: ctwg
   termtype: concept
@@ -186,7 +196,7 @@ For example, consider the [term](@) `curate` as defined in the [CTWG terms wiki]
   glossaryText: To evolve [concept](@) and [term](@) data in the direction of greater quality and richer content within a specific [scope](@).
   hoverText: Curate: to evolve concept and term data in the direction of greater quality and richer content within a specific scope.
   url: https://github.com/trustoverip/ctwg/wiki/curate
-~~~
+```
 
 Glossaries are generated at a default location, which for ToIP is `http://trustoverip.github.io/<terms-community>/glossary`, where `<terms-community>` is the name of the [terms-community](@) that [curates](curate@) the [terms](term@) in the [glossary](@).
 
@@ -211,6 +221,7 @@ Choice bars (e.g. `[ A B C D .... Z ]` may need to be inserted here and there).
 Meta-data (group tags, the scopetag of the scope where it was defined, contributors, versions, dates, etc.) may need to be included.
 There must be some license notification.
 :::
+
 ## Reference Resolution Tool (TRRT) {#trrt}
 
 The **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes files that contain so-called [term refs](@) and outputs a copy of these files in which these [term refs](@) are converted into so-called [renderable refs](@), i.e. texts that can be further processed by tools such as GitHub pages, Docusaurus, etc. The result of this is that the rendered document contains markups that help [readers](@) to quickly find more explanations of the [concept](@) or other [knowledge artifact](@) that is being referenced.
@@ -218,18 +229,22 @@ The **Term Ref(erence) Resolution Tool ([TRRT](#trrt))** takes files that contai
 ### Basic TRRT functions
 
 Finding a [term ref](@) in the file can be done by using a regular expression (regex).
+
 - For the [basic syntax](/docs/tev2/spec-syntax/term-ref-syntax#basic-syntax), you can use the PCRE regex
-  - [``(?:(?<=[^`\\])|^)\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))``](https://www.debuggex.com/r/G1uvznpNG1mhqEx5) to find the `[` that starts a [term ref](@), and
-  - [``(?<showtext>[^\n\]@]+)\]\((?:(?<id>[a-z0-9_-]*)?(?:#(?<trait>[a-z0-9_-]+))?)?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+))?\)``](https://www.debuggex.com/r/36D57uOvsnyPehh3) to find the various parts of the [term ref](@) as (named) capturing groups.
+
+  - [`` (?:(?<=[^`\\])|^)\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\)) ``](https://www.debuggex.com/r/G1uvznpNG1mhqEx5) to find the `[` that starts a [term ref](@), and
+  - [`(?<showtext>[^\n\]@]+)\]\((?:(?<id>[a-z0-9_-]*)?(?:#(?<trait>[a-z0-9_-]+))?)?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+))?\)`](https://www.debuggex.com/r/36D57uOvsnyPehh3) to find the various parts of the [term ref](@) as (named) capturing groups.
 
 - For the [alternative syntax](/docs/tev2/spec-syntax/term-ref-syntax#alternative-syntax), you can use the PCRE regex
-  - [``(?:(?<=[^`\\])|^)\[(?=[^@\]]+@[:a-z0-9_-]*\](?:\([#a-z0-9_-]+\))?)``](https://www.debuggex.com/r/7dEYEdoc52QeIxf4) to find the `[` that starts a [term ref](@), and
-  - [``(?<showtext>[^\n\]@]+?)@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+?))?\](?:\((?<id>[a-z0-9_-]*)(?:#(?<trait>[a-z0-9_-]+?))?\))?``](https://www.debuggex.com/r/tMBiAk_W9ipNc9Mm) to subsequently obtain the various fields as (named) capturing groups from the PCRE regex.
+  - [`` (?:(?<=[^`\\])|^)\[(?=[^@\]]+@[:a-z0-9_-]*\](?:\([#a-z0-9_-]+\))?) ``](https://www.debuggex.com/r/7dEYEdoc52QeIxf4) to find the `[` that starts a [term ref](@), and
+  - [`(?<showtext>[^\n\]@]+?)@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+?))?\](?:\((?<id>[a-z0-9_-]*)(?:#(?<trait>[a-z0-9_-]+?))?\))?`](https://www.debuggex.com/r/tMBiAk_W9ipNc9Mm) to subsequently obtain the various fields as (named) capturing groups from the PCRE regex.
 
 Notes:
+
 - You can use [debuggex](https://www.debuggex.com/) to see what these regexps do (make sure you choose PCRE as the regex flavor to work with).
 
 When a [term ref](@) is located, and its parts are known, any parts that are omitted (empty capturing groups) should be provided with their default value, as follows:
+
 - the `scopetag` default refers to the [scope](@) from which the [TRRT](#trrt) is called.
 - the `vsn` defaults to `latest`.
 - the `headingid` defaults to the empty string.
@@ -240,6 +255,7 @@ To resolve a link, TRRT uses a (PCRE) regex that uses the names of the capturing
 The [TRRT](#trrt) may provide an option to specify other defaults in a configuration file or as command-line arguments.
 
 The conversion of a [term ref](@) into a regular [Markdown link](https://www.markdownguide.org/basic-syntax/#links) can be done as follows, where any errors that occur are logged with a specific message, the file that is being processed, and the line number and character position of the [term ref](@) that caused the error:
+
 - Get the SAF of the [scope](@) from which the [TRRT](#trrt) is called;
 - Using its contents, dereference `scopetag` to its associated [scope directory](@);
 - Get the SAF of that [scope directory](@);
@@ -253,6 +269,7 @@ The conversion of a [term ref](@) into a regular [Markdown link](https://www.mar
 - Output `\[`, `showtext`, `\](`, the contents of `link`, and `)`.
 
 The behavior of the [TRRT](#trrt) can be configured per call e.g. by a configuration file and/or command-line parameters. Examples include specifications for:
+
 - the default `scopetag`;
 - the set of source file(s) to process;
 - the location(s) of destination file(s);
@@ -272,7 +289,7 @@ The [TRRT](#trrt) should come with documentation that enables developers to asce
 
 This section contains some notes of a discussion between Daniel and Rieks on these matters of some time ago.
 
-- A ToIP [glossary](@) will be put by default at `http://trustoverip.github.io/<terms-community>/glossary`, where `<terms-community>` is the name of the [terms-community](@). This allows every  [terms-community](@) to have its own [glossary](@). However, the above specifications allow [terms-communities](terms-community@) to [curate](@) multiple [scopes](scope@).
+- A ToIP [glossary](@) will be put by default at `http://trustoverip.github.io/<terms-community>/glossary`, where `<terms-community>` is the name of the [terms-community](@). This allows every [terms-community](@) to have its own [glossary](@). However, the above specifications allow [terms-communities](terms-community@) to [curate](@) multiple [scopes](scope@).
 - Storing [glossaries](glossary@) elsewhere was seen to break the (basic workings of the postprocessing tool, but the above specifications would fix that.
 - Entries, e.g. 'foo' can be referenced as `http://trustoverip.github.io/<community>/[glossary](@)#foo` (in case of a standalone glossary), and `http://trustoverip.github.io/<community>/document-that-includes-glossary-fragment#foo` (in case of a fragmented glossary).
 - There will be a new convention for content authors who want to reference [terms](term@) (let's call it the 'short form'). This topic is fully addressed above, and extended to be a bit more generic.
@@ -285,12 +302,14 @@ This section contains some notes of a discussion between Daniel and Rieks on the
   - github-pages pages (e.g. https://github.com/trustoverip/ctwg-terms/docs
 - We could also see GGT and TRRT to be extended, e.g. to work in conjunction with LaTeX or word-processor documents. This needs some looking into, but [pandoc](https://pandoc.org/) may be useful here.
 
------
+---
+
 ## Notes
 
 [^1]: We want to enable authors to use [term refs](id@) pervasively, which means it must be easy to use, and mistakes should be (relatively) hard to make, yet easy to detect, identify, and correct. [Markdown links](https://www.markdownguide.org/basic-syntax/#links) are of the form \[`show text`\](`ref-text`), where `show text` is the text that is rendered and emphasized so that a [reader](@) knows it can be clicked, and `ref-text` is a (relative or absolute) URL, or a [heading ID](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids), that identifies the resource (e.g. web page, or place therein) that is being referenced.
 
 So, we need a syntax for [term refs](id@) that is
+
 - sufficiently similar to a [Markdown link](https://www.markdownguide.org/basic-syntax/#links),
 - 'humanly interpretable' when it isn't processed by the [TRRT](#trrt),
 - easy to use for authors, and

@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # Term References - Syntax
 
 :::danger This page is deprecated.
-The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
+The current TEv2 website is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 :::caution
@@ -24,7 +24,7 @@ As an [author](@) or [curator](@), you want to be able to mark words or phrases,
 :::info Editor's note
 Also, you will want to (and actually can) control the effect that your [term refs](@) must have when it is rendered. After all, the effect you seek it to have as part of a rendered static website (e.g. so that it produces a popup with its definition) would be quite different form when it would be part of a PDF (in which case you may want it to become part of an automatically generated [glossary](@) in one of the papers annexes). Selecting the effect is done by properly instructing the [term ref resolution tool](trrt@) when your text is processed for rendering.
 
-We need some text here that points to the documentation for doing so. This could be e.g. in the [authors manual](/docs/tev2/manuals/[author](@)) and [curators manual](/docs/tev2/manuals/curator), but also in the [TRRT specifications](/docs/tev2/spec-tools/trrt), or in some manual that deals with adding rendering plugins.
+We need some text here that points to the documentation for doing so. This could be e.g. in the [authors manual](</docs/tev2/manuals/[author](@)>) and [curators manual](/docs/tev2/manuals/curator), but also in the [TRRT specifications](/docs/tev2/spec-tools/trrt), or in some manual that deals with adding rendering plugins.
 :::
 
 while at the same time referring to the [definition](@) that defines its meaning. i.e. the syntax that you need to use in such texts. The way in which the [term](@) (and its [definition](@)) may be rendered depends on the artifact that is being generated. For example, when a [term](@) is rendered in a web-site, it may be enhanced, showing a popup that contains its [definition](@) when a [reader](@) hovers the mouse over it, and that hyperlinks to the page in the website that explains the term in more detail when the [reader](@) clicks on it. When a [term](@) is rendered in a PDF file, its definition may appear as an entry in a [glossary](@) that is added somewhere in the PDF. It all depends on the rendering tools that are being used, and this is out of scope for this specification.
@@ -67,6 +67,7 @@ If omitted (in which case the preceding `#`-character may also be omitted), the 
 :::info Editor's note
 The semantics of `trait` need to be better specified.
 :::
+
 ### `scopetag` {#scopetag}
 
 **`scopetag`** is a [tag](@) that [identifies](@) the [scope](@) of the [terminology](@) that contains the [(scoped) term](scoped-term@) that is being referenced.<br/>It must satisfy the regex `[a-z0-9_-]+`. Also, it must appear as such in the `scopes` section of the [SAF](@) of the [scope](@) within which the document containing the [term ref](@) is being maintained, or it must be the [scopetag](@) of the [scope](@) itself.
@@ -92,15 +93,15 @@ This is particularly useful in the vast majority of cases, where the default pro
 The usefulness becomes even greater as the [TRRT](@) also implements more sophisticated ways to derive a `term` from a `show text`, e.g. to accommodate for plural forms (of nouns), or conjugate forms (for verbs).
 
 :::info Editor's note
-This alternative notation will assume that the `showtext` part of a [term ref](@) won't contain the `@` character. However, it is likely that some [authors](@) will want to use an email address as the `showtext` part of a *regular* link, e.g. as in `[rieks.joosten@tno.nl](mailto:rieks.joosten@tno.nl)`. However, since [scopetags](@) should not contain `.`-characters, `[rieks.joosten@tno.nl]` does not qualify as a `showtext` in our syntax. [Authors](@) should [use angle brackets to link to email addresses](https://www.markdownguide.org/basic-syntax/#urls-and-email-addresses), as in `<rieks.joosten@tno.nl>`.
+This alternative notation will assume that the `showtext` part of a [term ref](@) won't contain the `@` character. However, it is likely that some [authors](@) will want to use an email address as the `showtext` part of a _regular_ link, e.g. as in `[rieks.joosten@tno.nl](mailto:rieks.joosten@tno.nl)`. However, since [scopetags](@) should not contain `.`-characters, `[rieks.joosten@tno.nl]` does not qualify as a `showtext` in our syntax. [Authors](@) should [use angle brackets to link to email addresses](https://www.markdownguide.org/basic-syntax/#urls-and-email-addresses), as in `<rieks.joosten@tno.nl>`.
 :::
 
 This leads to an alternative notation that can be used in addition to the previously specified notation. Here is the alternative syntax and its equivalent counterpart:
 
-| Alternative syntax | Equivalent regular syntax |
-| :----------------: | :-----------------------: |
-| \[`show text`@\] | \[`show text`\](@) |
-| \[`show text`@`scopetag`\] | \[`show text`\](`showtext`@`scopetag`) |
+|                 Alternative syntax                  |              Equivalent regular syntax              |
+| :-------------------------------------------------: | :-------------------------------------------------: |
+|                  \[`show text`@\]                   |                 \[`show text`\](@)                  |
+|             \[`show text`@`scopetag`\]              |       \[`show text`\](`showtext`@`scopetag`)        |
 | \[`show text`@`scopetag`:`vsntag`\](`term`#`trait`) | \[`show text`\](`term`#`trait`@`scopetag`:`vsntag`) |
 
 In the last row of the above table, `term` and `#trait` are optional. Thus, `[definition@]()` is equivalent with `[definition](@)` and with `[definition](@)`.

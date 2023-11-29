@@ -10,7 +10,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # TEv2 Terminology Toolbox
 
 :::danger This page is deprecated.
-The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
+The current TEv2 website is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 :::caution
@@ -37,6 +37,7 @@ As mentioned in the [TEv2 overview](/docs/tev2/tev2-overview), the toolbox is en
 - the **Human Readable Dictionary generation Tool ([HRDT](@))**. This tool generates a a Human Readable [Dictionary](@) ([HRD](@)), that renders the [terms](@) from a [machine readable dictionary (MRD)](@) into one of several formats, e.g. HTML, or PDF. [HRDs](@) can be created for different purposes, e.g. to compare different [terminologies](@) (across [scopes](@)), or as a reference of what [terms](@) mean in different [scopes](@).
 
 These tools are intended to be called from the command-line, typically
+
 1. in a context where the user is developing (documents, papers, etc.) locally, and
 2. in a github or gitlab context, where the tools are called from within a CI/CD pipeline.
 

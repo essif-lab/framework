@@ -10,19 +10,19 @@ date: 20220421
 # Human Readable Glossary Generation Tool
 
 :::danger This page is deprecated.
-The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
+The current TEv2 website is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 export const mark = ({children}) => (
-  <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
-    {children}
-  </span> );
+<span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
+{children}
+</span> );
 
 <img
-  alt="This page is under construction"
-  src={useBaseUrl('images/wip/wip-under-construction.png')}
+alt="This page is under construction"
+src={useBaseUrl('images/wip/wip-under-construction.png')}
 /><br/><br/>
 
 :::caution
@@ -34,22 +34,25 @@ The **Human Readable Glossary generation Tool ([HRGT](@))** generates a Human Re
 
 :::info Editor's note
 The envisaged versatility of the [HRGT](@) is likely to imply requirements regarding, e.g.:
+
 - the kinds of [knowledge artifacts](@) that should be listed;
 - whether or not to include/exclude specific (groups of) [artifacts](knowledge-artifact@);
 - the format (e.g. HTML, PDF, LaTeX) to generate towards, and the structure of each [HRG entry](@);
 - the beginning (header) and ending (footer) of the [HRG](@) file
-and possibly some other stuff.
+  and possibly some other stuff.
 
 Before this can really be properly specified, we seek to do some experiments to see what is really needed in order to keep it as simple as possible. Therefore, the text that follows must be interpreted as Work in Progress.
 :::
 
 There is currently one implementation of the tool:
+
 - the repo in which the tool is being developed is [<mark>tbd</mark>].
 - the documentation is [<mark>tbd</mark>].
 
 The [HRGT](@) operates on a single [MRG](@) of a [scope](@), which contains (data and/or pointers to) _all_ [knowledge artifacts](@) of that [scope](@).
 
 The construction of a [HRG](@) can be envisaged as
+
 - selecting the [mrg entries](@) that must appear in the [HRG](@). Selection may depend on the specification of the kinds of [knowledge artifacts](@) that should be included, and/or specifying [tags](@) for the (groups of) [artifacts](knowledge-artifact@), or specific [terms](@);
 - alphabetically sorting these entries;
 - converting each entry into its 'rendered' format, thereby resolving any [term refs](@) (by appropriately calling the [TRRT](@)), adding hyperlinks to the [curated text](@) that the entry relates to, 'meta-data' (e.g. the associated [grouptags](@), contributors, etc.), and anything else, as required for the particular kind of [HRG](@) that is being generated;
