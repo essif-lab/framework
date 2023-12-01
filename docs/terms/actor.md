@@ -9,6 +9,7 @@ formPhrases: actor{ss}, digital-actor{ss}
 status: draft
 grouptags:
 hoverText: "Actor: Entity that can act (do things/execute Actions), e.g. people, machines, but not Organizations."
+glossaryTerm: "Actor"
 glossaryText: "Entity that can act (do things/execute [action](@)), e.g. people, machines, but not [organization](@)."
 date: 20210601
 ---

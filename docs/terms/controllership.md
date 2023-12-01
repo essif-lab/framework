@@ -9,6 +9,7 @@ formPhrases: controllership
 status: draft
 grouptags:
 hoverText: "Controllership (of an Actor over an Entity): the Capability  of an Actor to execute actions on that Entity for the purpose of ensuring that the Entity will act/behave, or be used, in a particular way."
+glossaryTerm: "Controllership"
 glossaryText: "the [capability](@) of an [actor](@) to execute [action](@) on a specific [entity](@) for the purpose of ensuring that this [entity](@) will act/behave, or be used, in a particular way."
 date: 20211222
 ---

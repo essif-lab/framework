@@ -9,6 +9,7 @@ formPhrases: party-representation
 status: draft
 grouptags:
 hoverText: "The Party Representation pattern captures the foundational concepts and relations that we need for thinking about how Parties can be represented in various circumstances."
+glossaryTerm: "Party Representation"
 glossaryText: "The Party Representation pattern captures the foundational concepts and relations that we need for thinking about how [parties](@) can be represented in various circumstances."
 date: 20210601
 ---

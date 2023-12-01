@@ -9,6 +9,7 @@ formPhrases: communication-channel{ss}, digital-communication-channel{ss}
 status: draft
 grouptags:
 hoverText: "Communication Channel: a (digital or non-digital) means by which two Actors can exchange messages with one another."
+glossaryTerm: "Communication Channel"
 glossaryText: "a (digital or non-digital) means by which two [actor](@) can exchange messages with one another."
 date: 20210601
 ---

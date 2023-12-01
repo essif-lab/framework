@@ -8,6 +8,7 @@ term: term
 status: draft
 grouptags:
 hoverText: "Scoped Term: a Term, the meaning of which is determined by the Definition to which it refers in a specific Scope/context."
+glossaryTerm: "Term (Scoped)"
 glossaryText: "a [term](@), the meaning of which is determined by the [definition](@) to which it refers in a specific [scope](@)/context."
 date: 20211101
 ---

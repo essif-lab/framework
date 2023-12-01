@@ -9,6 +9,7 @@ formPhrases: identit{yies}
 status: draft
 grouptags:
 hoverText: "Identity (of an Entity): the combined Knowledge about that Entity of all Parties, i.e. the union of all Partial Identities of which that Entity is the Subject."
+glossaryTerm: "Identity"
 glossaryText: "the combined [knowledge](@) about that [entity](@) of all [parties](@), i.e. the union of all [partial identities](partial-identity@) of which that [entity](@) is the [subject](@)."
 date: 20210803
 ---

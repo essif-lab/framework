@@ -9,6 +9,7 @@ formPhrases: risk-level{ss}
 status: draft
 grouptags:
 hoverText: "Risk level (of an Objective): a measure for the deviation of the intended realization (results) of a specific Objective, that its Owner uses to represent the priority with which the Risk of that Objective should be reckoned with."
+glossaryTerm: "Risk level"
 glossaryText: "a measure for the deviation of the intended realization (results) of a specific [objective](@) that its [owner](@) uses to represent the priority with which the [risk](@) of that [objective](@) should be reckoned with."
 date: 20210601
 ---

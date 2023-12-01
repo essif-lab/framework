@@ -9,6 +9,7 @@ formPhrases: authorit{yies}
 status: draft
 grouptags:
 hoverText: "Authority: a Party of which certain decisions, ideas, rules etc. are followed by other Parties."
+glossaryTerm: "Authority (Centralized or Decentralized)"
 glossaryText: "a [party](@) of which certain decisions, ideas, rules etc. are followed by other [parties](@)."
 date: 20210601
 ---

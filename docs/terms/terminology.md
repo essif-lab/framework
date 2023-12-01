@@ -9,6 +9,7 @@ formPhrases: terminolog{yies}
 status: draft
 grouptags:
 hoverText: "Terminology (in/of a Scope): the set of terms that are used within a single Scope to refer to a single Definition, enabling Parties to reason and communicate ideas they have about one or more specific topics."
+glossaryTerm: "Terminology"
 glossaryText: "the set of [term](@) that are used within a single [scope](@) to refer to a single [definition](@), enabling [parties](@) to reason and communicate ideas they have about one or more specific topics."
 date: 20211101
 ---

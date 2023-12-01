@@ -9,6 +9,7 @@ formPhrases: compliance-level{ss}
 status: draft
 grouptags:
 hoverText: "Compliance level (of an Entity, regarding a stated (set of) requirement(s)): a measure for stating how well the Entity conforms with the stated (set of) requirement(s)."
+glossaryTerm: "Compliance level"
 glossaryText: "a measure for stating how well an [entity](@) conforms with a stated (set of) requirement(s)."
 date: 20220203
 ---

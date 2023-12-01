@@ -9,6 +9,7 @@ formPhrases: holder{ss}
 status: draft
 grouptags:
 hoverText: "Holder (functional component): a component that implements the Capability to handle presentation requests from a Peer Agent, produce the requested data (a presentation) according to its Principal's holder-policy, and send that in response to the request."
+glossaryTerm: "Holder"
 glossaryText: "a component that implements the [capability](@) to handle [presentation requests](presentation-request@) from a [peer agent](@), produce the requested data (a presentation) according to its [principal](@)'s [holder-policy](@), and send that in response to the request."
 date: 20210601
 ---

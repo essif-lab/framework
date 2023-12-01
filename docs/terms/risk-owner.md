@@ -9,6 +9,7 @@ formPhrases: risk-owner{ss}
 status: draft
 grouptags:
 hoverText: "Risk-owner (of a Risk): the Party that is the Owner of the Objective to which the Risk is associated."
+glossaryTerm: "Risk Owner"
 glossaryText: "the [party](@) that is the [owner](@) of the [objective](@) to which a [risk](@) is associated."
 date: 20210601
 ---

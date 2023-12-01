@@ -9,6 +9,7 @@ formPhrases: compliance-objective{ss}
 status: draft
 grouptags:
 hoverText: "Compliance objective (of a Party): an Objective, owned by that Party, that aims to reach and maintain a state of affairs in which a specific set of Entities that this Party controls are in accordance with a specific set of requirements (e.g., laws, regulations, standards, etc.)."
+glossaryTerm: "Compliance Objective"
 glossaryText: "an [objective](@), owned by a [party](@), that aims to reach and maintain a state of affairs in which a specific set of [entities](@) that this [party](@) controls are in accordance with a specific set of requirements (e.g., laws, regulations, standards, etc.)."
 date: 20220203
 ---

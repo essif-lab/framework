@@ -9,6 +9,7 @@ formPhrases: agent{ss}, digital-agent{ss}
 status: draft
 grouptags:
 hoverText: "Agent (of a Party): an Actor that is executing an Action on behalf of a Party (called the Principal of that Actor)."
+glossaryTerm: "Agent"
 glossaryText: "an [actor](@) that is executing an [action](@) on behalf of a [party](@) (called the [principal](@) of that [actor](@))."
 date: 20210601
 ---

@@ -9,6 +9,7 @@ formPhrases: ssi-assurance-communit{yies}, ac{ss}, assurance-communit{yies}, ssi
 status: draft
 grouptags:
 hoverText: "SSI Assurance Community (SSI-AC): a Community that supports its members as they seek to increase their confidence in the SSI infrastructure and/or (specific) qualifications of the data exchanged through that infrastructure."
+glossaryTerm: "SSI Assurance Community (SSI-AC)"
 glossaryText: "a [community](@) that supports its members as they seek to increase their confidence in the [SSI infrastructure](@) and/or (specific) [qualifications](qualified-data@) of the data exchanged through that infrastructure."
 date: 20210601
 ---

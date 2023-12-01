@@ -9,6 +9,7 @@ formPhrases: control-objective{ss}
 status: draft
 grouptags:
 hoverText: "Control objective (of a Party): an Objective, owned by that Party, that aims to contribute to the realization of another (set of) Objective(s) of that Party, by producing results that this Party needs to realize these other Objective(s)."
+glossaryTerm: "Control Objective"
 glossaryText: "an [objective](@), owned by a [party](@), that aims to contribute to the realization of another (set of) [objective](@) of that [party](@), by producing results that this [party](@) needs to realize these other [objective](@)."
 date: 20220203
 ---

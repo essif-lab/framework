@@ -9,6 +9,7 @@ formPhrases: communit{yies}
 status: draft
 grouptags:
 hoverText: "Community: a Party, consisting of at least two different Parties (the members of the Community) that seek to collaborate with each other so that each of them can achieve its individual Objectives more efficiently and/or effectively."
+glossaryTerm: "Community"
 glossaryText: "a [party](@), consisting of at least two different [parties](@) (the members of the [community](@)) that seek to collaborate with each other so that each of them can achieve its individual [objective](@) more efficiently and/or effectively."
 date: 20210601
 ---

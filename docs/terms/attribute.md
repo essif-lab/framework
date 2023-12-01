@@ -9,6 +9,7 @@ formPhrases: attribute{ss}
 status: draft
 grouptags:
 hoverText: "Attribute (of an Entity): Data, that represents a characteristic that a Party (the Owner of the attribute) has attributed to an Entity (which is the Subject of that attribute)."
+glossaryTerm: "Attribute"
 glossaryText: "[Data](@), that represents a characteristic that a [party](@) (the [owner](@) of the [attribute](@)) has attributed to an [entity](@) (which is the [subject](@) of that attribute)."
 date: 20210821
 ---

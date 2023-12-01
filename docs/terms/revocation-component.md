@@ -9,6 +9,7 @@ formPhrases: revocation-component{ss}, revocator{ss+}
 status: draft
 grouptags:
 hoverText: "Revocation (functional) component: a component that implements the Capability to Revoke Credentials that are issued by its Principal, according to its Principal's Revocation Policy."
+glossaryTerm: "Revocation component"
 glossaryText: "a component that implements the [capability](@) to [revoke](@) [credential](@) that are issued by its [principal](@), according to its [principal](@) [revocation policy](@)."
 date: 20211006
 ---

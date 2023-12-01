@@ -9,6 +9,7 @@ formPhrases: tag{ss}
 status: draft
 grouptags:
 hoverText: "Tag: an alphanumeric string that is used to identify Scopes (so called 'scopetags'), group Terms (so called 'grouptags'), or identify a specific version of a Terminology (so called 'versiontags') from within a specific Scope."
+glossaryTerm: "Tag"
 glossaryText: "an alphanumeric string that is used to identify [scope](@) (so called 'scopetags'), group [term](@) (so called 'grouptags'), or identify a specific version of a [terminology](@) (so called 'versiontags') from within a specific [scope](@)."
 date: 20210601
 ---

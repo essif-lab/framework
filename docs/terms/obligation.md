@@ -9,6 +9,7 @@ formPhrases: obligation{ss}
 status: draft
 grouptags:
 hoverText: "Obligation (of a Party): an Objective that is Owned by that Party for producing a specific (set of) result(s) that are to be used (consumed) by that Party and/or other Parties."
+glossaryTerm: "Obligation"
 glossaryText: "an [objective](@) that is [owned](@) by the [party](@) for producing a specific (set of) result(s) that are to be used (consumed) by that [party](@) and/or other [parties](@)."
 date: 20210601
 ---

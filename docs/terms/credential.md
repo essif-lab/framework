@@ -9,6 +9,7 @@ formPhrases: credential{ss}, verifiable-credential{ss}, attribute-based-credenti
 status: draft
 grouptags:
 hoverText: "Credential: data, representing a set of Assertions (claims, statements), authored and signed by, or on behalf of, a specific Party."
+glossaryTerm: "Credential"
 glossaryText: "data, representing a set of [assertion](@) (claims, statements), authored and signed by, or on behalf of, a specific [party](@)."
 date: 20210601
 ---

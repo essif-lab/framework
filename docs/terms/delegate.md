@@ -9,6 +9,7 @@ formPhrases: delegate{ss}, delegated, delegating, delegator{ss}, delegatee{ss}
 status: draft
 grouptags:
 hoverText: "Delegate: the transferral of Ownership of one or more Obligations of a Party (the Delegator), including the associated accountability, to another Party (the Delegatee), which implies that the Delegatee can realize such Obligations as it sees fit."
+glossaryTerm: "Delegate"
 glossaryText: "the transferral of [ownership](@) of one or more [obligation](@) of a [party](@) (the [delegator](delegate@)), including the associated accountability, to another [party](@) (the [delegatee](delegate@))), which implies that the [delegatee](delegate@) can realize such [obligation](@) as it sees fit."
 date: 20220222
 ---

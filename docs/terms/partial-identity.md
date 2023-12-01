@@ -9,6 +9,7 @@ formPhrases: partial-identit{yies}
 status: draft
 grouptags:
 hoverText: "Partial identity (of an Entity): all Knowledge that a specific Party (= the Owner of the partial identity) has about that Entity (= the 'Subject' of the partial identity)."
+glossaryTerm: "Partial identity"
 glossaryText: "all [knowledge](@) that a specific [party](@) (= the [owner](@) of the partial identity) has about that [entity](@) (= the '[subject](@)' of the partial identity)."
 date: 20210803
 ---

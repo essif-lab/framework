@@ -9,6 +9,7 @@ formPhrases: pattern-file
 status: draft
 grouptags:
 hoverText: "Pattern-file: a file whose contents describes/documents a Pattern."
+glossaryTerm: "Pattern-file"
 glossaryText: "a file whose contents describes/documents a [pattern](@)."
 date: 20210601
 ---

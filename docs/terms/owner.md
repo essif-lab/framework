@@ -9,6 +9,7 @@ formPhrases: owner{ss}, own{ss}
 status: draft
 grouptags:
 hoverText: "Owner (of an Entity): the role that a Party performs when it is exercising its legal, rightful or natural title to control that Entity."
+glossaryTerm: "Owner"
 glossaryText: "the role that a [party](@) performs when it is exercising its legal, rightful or natural title to control that [entity](@)."
 date: 20210601
 ---

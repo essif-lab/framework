@@ -9,6 +9,7 @@ formPhrases: principal{ss}
 status: draft
 grouptags:
 hoverText: "Principal (of an Actor): the Party for whom, or on behalf of whom, the Actor is executing an Action (this Actor is then called an Agent of that Party)."
+glossaryTerm: "Principal"
 glossaryText: "the [party](@) for whom, or on behalf of whom, the [actor](@) is executing an [action](@) (this [actor](@) is then called an [agent](@) of that [party](@))."
 date: 20210601
 ---

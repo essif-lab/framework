@@ -9,6 +9,7 @@ formPhrases: identifier{ss}
 status: draft
 grouptags:
 hoverText: "Identifier: a character string that is being used for the identification of some Entity (yet may refer to 0, 1, or more Entities, depending on the context within which it is being used)."
+glossaryTerm: "Identifier"
 glossaryText: "a character string that is being used for the identification of some [entity](@) (yet may refer to 0, 1, or more [entities](@), depending on the context within which it is being used)."
 date: 20210601
 ---

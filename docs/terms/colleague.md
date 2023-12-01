@@ -9,6 +9,7 @@ formPhrases: colleague{ss}, digital-colleague{ss}
 status: draft
 grouptags:
 hoverText: "Colleagues: two or more (digital or non-digital) Agents that have the same Principal (i.e. Party on whose behalf they are executing an Action)."
+glossaryTerm: "Colleague"
 glossaryText: "two or more (digital or non-digital) [agent](@) that have the same [principal](@) (i.e. [party](@) on whose behalf they are executing an [action](@))."
 date: 20220330
 ---

@@ -9,6 +9,7 @@ formPhrases: definition{ss}
 status: draft
 grouptags:
 hoverText: "Definition: a text that helps Parties to have the same understanding about the meaning of (and Concepts behind) a Term, ideally in such a way that these Parties can determine whether or not they make the same distinction."
+glossaryTerm: "Definition"
 glossaryText: "a text that helps [parties](@) to have the same understanding about the meaning of (and [concept](@) behind) a [term](@), ideally in such a way that these [parties](@) can determine whether or not they make the same distinction."
 date: 20210601
 ---

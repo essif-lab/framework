@@ -9,6 +9,7 @@ formPhrases: data, digital-data
 status: draft
 grouptags:
 hoverText: "Data: something (tangible) that can be used to communicate a meaning (which is intangible/information)."
+glossaryTerm: "Data"
 glossaryText: "something (tangible) that can be used to communicate a meaning (which is intangible/information)."
 date: 20210601
 ---

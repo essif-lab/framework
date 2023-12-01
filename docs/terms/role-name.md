@@ -9,6 +9,7 @@ formPhrases: role-name{ss}
 status: draft
 grouptags:
 hoverText: "Role name: name (text) that refers to (and identifies) a Role in a a specific context."
+glossaryTerm: "Role name"
 glossaryText: "name (text) that refers to (and identifies) a [role](@) in a specific context."
 date: 20210601
 ---

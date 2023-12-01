@@ -9,6 +9,7 @@ formPhrases: scope{ss}
 status: draft
 grouptags:
 hoverText: "Scope: the extent of the area or subject matter (which we use, e.g., to define Patterns, Concepts, Terms and Glossaries in, but it serves other purposes as well)."
+glossaryTerm: "Scope"
 glossaryText: "the extent of the area or subject matter (which we use, e.g., to define [pattern](@), [concept](@), [term](@) and [glossaries](@) in, but it serves other purposes as well)."
 date: 20210601
 ---

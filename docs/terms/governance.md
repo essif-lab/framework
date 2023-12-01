@@ -9,6 +9,7 @@ formPhrases: governance, govern, governs, governed, governed-by, governing, gove
 status: draft
 grouptags:
 hoverText: "Governance: the act or process of governing or overseeing the realization of (the results associated with) a set of Objectives by the Owner of these Objectives, in order to ensure they will be fit for the purposes that this Owner intends to use them for."
+glossaryTerm: "Governance"
 glossaryText: "the [act](action@) or process of governing or overseeing the realization of (the results associated with) a set of [objective](@) by the [owner](@) of these [objective](@), in order to ensure they will be fit for the purposes that this [owner](@) intends to use them for."
 date: 20210830
 ---

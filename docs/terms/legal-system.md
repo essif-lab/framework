@@ -9,6 +9,7 @@ formPhrases: legal-system{ss}
 status: draft
 grouptags:
 hoverText: "Legal-system: a system in which rules are defined, and mechanisms for their enforcement and conflict resolution are (implicitly or explicitly) specified."
+glossaryTerm: "Legal System"
 glossaryText: "a system in which rules are defined, and mechanisms for their enforcement and conflict resolution are (implicitly or explicitly) specified."
 date: 20210601
 ---

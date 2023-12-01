@@ -9,6 +9,7 @@ formPhrases: verify, verifies, verified, verifying
 status: draft
 grouptags:
 hoverText: "Verify/verification of data: the act, by or on behalf of a Party, of determining whether that data is authentic (i.e. originates from the Party that authored it), timely (i.e. has not expired), and conforms to other specifications that apply to its structure."
+glossaryTerm: "Verify"
 glossaryText: "The act, by or on behalf of a [party](@), of determining whether that data is authentic (i.e. originates from the [party](@) that authored it), timely (i.e. has not expired), and conforms to other specifications that apply to its structure."
 date: 20210802
 ---

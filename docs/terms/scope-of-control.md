@@ -9,6 +9,7 @@ formPhrases: scope-of-control, scopes-of-control
 status: draft
 grouptags:
 hoverText: "Scope of Control (of a Party): the extent of the area or subject matter that the Party controls."
+glossaryTerm: "Scope of Control"
 glossaryText: "the extent of the area or subject matter that a [party](@) [controls](controller@)."
 date: 20210601
 ---

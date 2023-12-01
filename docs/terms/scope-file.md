@@ -9,6 +9,7 @@ formPhrases: scope-file{ss}
 status: draft
 grouptags:
 hoverText: "Scope-file: a file whose contents defines/specifies a Scope."
+glossaryTerm: "Scope-file"
 glossaryText: "a file whose contents defines/specifies a [scope](@)."
 date: 20210601
 ---

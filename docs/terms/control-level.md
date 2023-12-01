@@ -9,6 +9,7 @@ formPhrases: control-level{ss}
 status: draft
 grouptags:
 hoverText: "Control level (of a Control): a measure for the efficiency and effectiveness in which a Control produces the results of its Control Objective."
+glossaryTerm: "Control level"
 glossaryText: "a measure for the efficiency and effectiveness in which a [control](controller@) produces the results specified by its [control objective](@)"
 date: 20220212
 ---

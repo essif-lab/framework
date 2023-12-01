@@ -9,6 +9,7 @@ formPhrases: employee{ss}
 status: draft
 grouptags:
 hoverText: "Employee (of a Party): a (human or digital) Actor for whom/which it is realistic that it might execute Actions on behalf of that Party (called the Employer of that Actor)."
+glossaryTerm: "Employee"
 glossaryText: "a (human or non-human (digital)) [actor](@) for whom/which it is realistic that it might execute [action](@) on behalf of a [party](@) (called the [employer](@) of that [actor](@))."
 date: 20221007
 ---

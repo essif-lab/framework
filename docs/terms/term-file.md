@@ -9,6 +9,7 @@ formPhrases: term-file{ss}
 status: draft
 grouptags:
 hoverText: "Term-file: a file whose contents defines/specifies a Term."
+glossaryTerm: "Term-file"
 glossaryText: "a file whose contents defines/specifies a [term](@)."
 date: 20210601
 ---

@@ -9,6 +9,7 @@ formPhrases: owned
 status: draft
 grouptags:
 hoverText: "Owned (by an Owner, in some Jurisdiction): an Entity over which another Entity (its Owner) has the power (duty, right) to enjoy it, dispose of it and control it; that power is limited to (the scope of) that Jurisdiction, and by its rules."
+glossaryTerm: "Owned"
 glossaryText: "an [entity](@) over which another [entity](@) (its [owner](@)) has the power (duty, right) to enjoy it, dispose of it and control it; that power is limited to (the scope of) that [jurisdiction](@), and by its rules."
 date: 20210601
 ---

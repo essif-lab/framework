@@ -9,6 +9,7 @@ formPhrases: concept-file{ss}
 status: draft
 grouptags:
 hoverText: "Concept-file: a file whose contents defines/specifies a Concept."
+glossaryTerm: "Concept-file"
 glossaryText: "a file whose contents defines/specifies a [concept](@)."
 date: 20210601
 ---

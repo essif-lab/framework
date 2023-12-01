@@ -9,6 +9,7 @@ formPhrases: governor{ss}
 status: draft
 grouptags:
 hoverText: "Governor: a Role that a Party (better: Employee of a specific Party) performs as it Governs a (coherent) set of Expectations of that Party, within a particular focus."
+glossaryTerm: "Governor"
 glossaryText: "a [role](@) that a [party](@) (better: [employee](@) of a specific [party](@)) performs as it [governs](governance@) a (coherent) set of [expectation](@) of that [party](@), within a particular focus."
 date: 20220915
 ---

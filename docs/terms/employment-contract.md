@@ -9,6 +9,7 @@ formPhrases: employment-contract{ss}
 status: draft
 grouptags:
 hoverText: "Employment Contract (between two Parties, concerning a set of Actors): an agreement/contract between these Parties that states (or refers to) all (sets of) rights and duties under which the Actors (the Subjects of the contract), that are controlled by one Party, can and/or must work for the other Party."
+glossaryTerm: "Employment Contract"
 glossaryText: "an agreement/contract between two [parties](@), one of which controls a set of [actor](@) (the [subject](@) of the contract), that states (or refers to) all (sets of) rights and duties under which these [actor](@) can and/or must work for the other [party](@)."
 date: 20210601
 ---

@@ -9,6 +9,7 @@ formPhrases: control-process, control-processes
 status: draft
 grouptags:
 hoverText: "Control Process (of a Party): a process that is run by a Party to ensure that a specific set of its control Objectives are realized."
+glossaryTerm: "Control Process"
 glossaryText: "a process, [owned](@) and run by a [party](@), to ensure that a specific subset of its control [objective](@) are realized."
 date: 20210830
 ---

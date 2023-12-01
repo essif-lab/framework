@@ -9,6 +9,7 @@ formPhrases: ssi-infrastructure{ss}
 status: draft
 grouptags:
 hoverText: "SSI Infrastructure: the technological components that are (envisaged to be) deployed all over the world for the purpose of providing, requesting and obtaining Qualified Data, for the purpose of negotiating and/or executing electronic Transactions."
+glossaryTerm: "SSI Infrastructure"
 glossaryText: "the technological components that are (envisaged to be) all over the world for the purpose of providing, requesting and obtaining [qualified data](@), for the purpose of negotiating and/or executing electronic [transaction](@)."
 date: 20210601
 ---

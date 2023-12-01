@@ -10,6 +10,7 @@ conceptref: essifLab:Actor
 status: draft
 grouptags:
 hoverText: "Peer Actor (of some other Actor in a Communication Session): the Actor with whom/which this other Actor is communicating in that Communication Session."
+glossaryTerm: "Peer Actor"
 glossaryText: "the [actor](@) with whom/which this other [actor](@) is communicating in that [communication session](@)."
 date: 20210601
 ---

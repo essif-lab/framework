@@ -9,6 +9,7 @@ formPhrases: issuer{ss}
 status: draft
 grouptags:
 hoverText: "Issuer (functional component): a component that implements the Capability to construct Credentials from data objects, according to the content of its Principal's Issuer-Policy (specifically regarding the way in which the Credential is to be digitally signed), and pass it to the Wallet-component of its Principal allowing it to be issued."
+glossaryTerm: "Issuer"
 glossaryText: "a component that implements the [capability](@) to construct [credential](@) from data objects, according to the content of its [principal](@)'s [issuer](@)-Policy (specifically regarding the way in which the [credential](@) is to be digitally signed), and pass it to the [wallet](@)-component of its [principal](@) allowing it to be issued."
 date: 20210601
 ---

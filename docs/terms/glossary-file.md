@@ -7,6 +7,7 @@ term: glossary-file
 status: draft
 grouptags:
 hoverText: "Glossary-file: a file whose contents defines/specifies a Glossary."
+glossaryTerm: "Glossary-file"
 glossaryText: "a file whose contents defines/specifies a [glossary](@)."
 date: 20210601
 ---
