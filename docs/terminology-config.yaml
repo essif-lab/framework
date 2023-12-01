@@ -24,7 +24,7 @@ trrt:
   interpreter: # type of interpreter, either: a regex, "alt", or "basic"
     (?:(?<=[^`\\])|^)\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))(?<showtext>[^\n\]@]+)\]\((?:(?<id>[a-z0-9_-]*)?(?:#(?<trait>[a-z0-9_-]+))?)?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+))?\)
   converter:
-    >+ # Type of converter, either: a mustache template, "http", or "markdown"
+    >- # Type of converter, either: a mustache template, "http", or "markdown"
     <a
     href="{{localize navurl}}{{#if trait}}#{{trait}}{{/if}}"
     hovertext="{{#if hoverText}}{{hoverText}}{{else}}{{#if glossaryTerm}}{{glossaryTerm}}{{else}}{{capFirst term}}{{/if}}: {{noRefs glossaryText type="markdown"}}{{/if}}"
