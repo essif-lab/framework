@@ -3,7 +3,7 @@ id: party
 title: "Party"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: party
 formPhrases: part{yies}
 status: draft

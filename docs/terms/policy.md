@@ -3,7 +3,7 @@ id: policy
 title: "Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: policy
 formPhrases: polic{yies}, business-polic{yies}, operational-polic{yies}
 status: draft

@@ -3,7 +3,7 @@ id: transaction-request
 title: "Transaction Request"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: transaction-request
 formPhrases: transaction-request{ss}
 status: draft

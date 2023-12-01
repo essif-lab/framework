@@ -3,7 +3,7 @@ id: pattern-party-representation
 title: "Party Representation"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: pattern
+termType: pattern
 term: party-representation
 formPhrases: party-representation
 status: draft

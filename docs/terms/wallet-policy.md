@@ -3,7 +3,7 @@ id: wallet-policy
 title: "Wallet Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: wallet-policy
 formPhrases: wallet-polic{yies}
 status: draft

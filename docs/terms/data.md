@@ -3,7 +3,7 @@ id: data
 title: "Data"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: data
 formPhrases: data, digital-data
 status: draft

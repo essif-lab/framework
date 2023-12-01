@@ -3,7 +3,7 @@ id: issuer-policy
 title: "Isuer Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: issuer-policy
 formPhrases: issuer-polic{yies}
 status: draft

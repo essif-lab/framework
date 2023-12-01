@@ -3,7 +3,7 @@ id: advertisement
 title: "Advertisement"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: advertisement
 formPhrases: advertisement{ss}, advertise, advertising
 status: draft

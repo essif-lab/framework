@@ -3,7 +3,7 @@ id: pattern
 title: "Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: pattern
 formPhrases: pattern{ss}
 status: draft

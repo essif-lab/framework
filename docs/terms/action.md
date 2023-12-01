@@ -3,7 +3,7 @@ id: action
 title: "Action"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: action
 formPhrases: action{ss}, acting, activit{yies} 
 status: draft

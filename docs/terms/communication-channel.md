@@ -3,7 +3,7 @@ id: communication-channel
 title: "Communication Channel"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: communication-channel
 formPhrases: communication-channel{ss}, digital-communication-channel{ss}
 status: draft

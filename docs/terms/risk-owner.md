@@ -3,7 +3,7 @@ id: risk-owner
 title: "Risk Owner"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: risk-owner
 formPhrases: risk-owner{ss}
 status: draft

@@ -3,7 +3,7 @@ id: tag
 title: "Tag"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
-type: concept
+termType: concept
 term: tag
 formPhrases: tag{ss}
 status: draft

@@ -3,7 +3,7 @@ id: identity
 title: "Identity"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: identity
 formPhrases: identit{yies}
 status: draft

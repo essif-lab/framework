@@ -3,7 +3,7 @@ id: pattern-party-actor-action
 title: "Parties, Actors and Actions"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: pattern
+termType: pattern
 term: party-actor-action
 formPhrases: party-actor-action
 status: draft

@@ -3,7 +3,7 @@ id: role-name
 title: "Role name"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: term
+termType: term
 term: role-name
 formPhrases: role-name{ss}
 status: draft

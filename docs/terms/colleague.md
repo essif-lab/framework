@@ -3,7 +3,7 @@ id: colleague
 title: "Colleague"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: colleague
 formPhrases: colleague{ss}, digital-colleague{ss}
 status: draft

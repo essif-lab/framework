@@ -3,7 +3,7 @@ id: scoped-term
 title: "Term (Scoped)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
-type: concept
+termType: concept
 term: term
 status: draft
 grouptags:

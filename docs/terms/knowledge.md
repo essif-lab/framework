@@ -3,7 +3,7 @@ id: knowledge
 title: "Knowledge"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: knowledge
 formPhrases: knowledge{ss}
 status: draft

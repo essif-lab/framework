@@ -3,7 +3,7 @@ id: actor
 title: "Actor"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: actor
 formPhrases: actor{ss}, digital-actor{ss}
 status: draft

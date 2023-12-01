@@ -3,7 +3,7 @@ id: control-objective
 title: "Control Objective"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: control-objective
 formPhrases: control-objective{ss}
 status: draft

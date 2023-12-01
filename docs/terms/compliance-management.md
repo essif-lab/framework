@@ -3,7 +3,7 @@ id: compliance-management
 title: "Compliance management"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: compliance-management
 formPhrases: compliance-management
 status: draft

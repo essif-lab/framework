@@ -3,7 +3,7 @@ id: capability-of-an-actor
 title: "Capability (of an Actor)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: capability-of-an-actor
 formPhrases: capabilit{yies}-of-an-actor
 status: draft

@@ -3,7 +3,7 @@ id: validate
 title: "Validate"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: validate
 formPhrases: validate, validates, validated, validating
 status: draft

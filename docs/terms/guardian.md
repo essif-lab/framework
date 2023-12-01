@@ -3,7 +3,7 @@ id: guardian
 title: "Guardian"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: guardian
 formPhrases: guardian
 status: draft

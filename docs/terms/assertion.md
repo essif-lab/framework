@@ -3,7 +3,7 @@ id: assertion
 title: "Assertion"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: assertion
 formPhrases: assertion{ss}, claim{ss}, statement{ss}
 status: draft

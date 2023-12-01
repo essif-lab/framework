@@ -3,7 +3,7 @@ id: ecosystem
 title: "Ecosystem"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: ecosystem
 formPhrases: ecosystem{ss}
 status: draft

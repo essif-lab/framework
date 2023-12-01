@@ -3,7 +3,7 @@ id: role
 title: "Role"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: role
 formPhrases: role{ss}
 status: draft

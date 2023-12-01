@@ -3,7 +3,7 @@ id: mission
 title: "Mission"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: mission
 formPhrases: mission{ss}
 status: draft

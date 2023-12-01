@@ -3,7 +3,7 @@ id: pattern-semantics
 title: "Semantics Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: pattern
+termType: pattern
 term: semantics
 formPhrases:
 status: draft

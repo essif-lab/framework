@@ -3,7 +3,7 @@ id: terms-community
 title: "Terms Community"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: terms-community
 formPhrases: terms-communit{yies}
 status: draft

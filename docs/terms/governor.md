@@ -3,7 +3,7 @@ id: governor
 title: "Governor"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: governor
 formPhrases: governor{ss}
 status: draft

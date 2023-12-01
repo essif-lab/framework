@@ -3,7 +3,7 @@ id: risk-management
 title: "Risk management"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: risk-management
 formPhrases: risk-management, risk-manager{ss}
 status: draft

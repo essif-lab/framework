@@ -3,7 +3,7 @@ id: objective
 title: "Objective"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: objective
 formPhrases: objective{ss}
 status: draft

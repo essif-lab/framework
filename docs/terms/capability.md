@@ -3,7 +3,7 @@ id: capability
 title: "Capability (of a Party)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: capability
 formPhrases: capabilit{yies}, capabilit{yies}-of-a-party
 status: draft

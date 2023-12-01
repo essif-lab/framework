@@ -3,7 +3,7 @@ id: issuer
 title: "Issuer"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: issuer
 formPhrases: issuer{ss}
 status: draft

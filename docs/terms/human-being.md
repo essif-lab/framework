@@ -3,7 +3,7 @@ id: human-being
 title: "Human Being"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: human-being
 formPhrases: human-being{ss}, human{ss}, person{ss}, individual{ss}, people
 status: draft

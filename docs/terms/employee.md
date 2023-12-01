@@ -3,7 +3,7 @@ id: employee
 title: "Employee"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: employee
 formPhrases: employee{ss}
 status: draft

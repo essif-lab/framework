@@ -3,7 +3,7 @@ id: information-process
 title: "Information Process"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: information-process
 formPhrases: information-process, information-processes
 status: draft

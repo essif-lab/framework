@@ -3,7 +3,7 @@ id: validator-policy
 title: "Validator Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: validator-policy
 formPhrases: validator-polic{yies}
 status: draft

@@ -3,7 +3,7 @@ id: wallet
 title: "Wallet"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: wallet
 formPhrases: wallet{ss}
 status: draft

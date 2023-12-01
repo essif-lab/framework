@@ -3,7 +3,7 @@ id: organization
 title: "Organization"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: organization
 formPhrases: organization{ss}
 status: draft

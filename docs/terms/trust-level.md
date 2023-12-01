@@ -3,7 +3,7 @@ id: trust-level
 title: "Trust level"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: trust-level
 formPhrases: trust-level{ss}, level{ss}-of-trust
 status: draft

@@ -3,7 +3,7 @@ id: risk
 title: "Risk"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: risk
 formPhrases: risk{ss}
 status: draft

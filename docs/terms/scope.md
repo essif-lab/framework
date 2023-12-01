@@ -3,7 +3,7 @@ id: scope
 title: "Scope"
 displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
-type: concept
+termType: concept
 term: scope
 formPhrases: scope{ss}
 status: draft

@@ -3,7 +3,7 @@ id: self-sovereignty
 title: "Self-Sovereignty"
 displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
-type: concept
+termType: concept
 term: self-sovereignty
 formPhrases: self-sovereignty, autonomy
 status: draft

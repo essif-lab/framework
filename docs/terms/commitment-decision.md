@@ -3,7 +3,7 @@ id: commitment-decision
 title: "Commitment Decision"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: commitment-decision
 formPhrases: commitment-decision{ss}
 status: draft

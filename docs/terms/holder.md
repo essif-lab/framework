@@ -3,7 +3,7 @@ id: holder
 title: "Holder"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: holder
 formPhrases: holder{ss}
 status: draft

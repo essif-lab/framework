@@ -3,7 +3,7 @@ id: credential-catalogue
 title: "Credential Catalogue"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: credential-catalogue
 formPhrases: credential-catalogue{ss}
 status: draft

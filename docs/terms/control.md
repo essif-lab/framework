@@ -3,7 +3,7 @@ id: control
 title: "Control"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: control
 formPhrases: control{ss}
 status: draft

@@ -3,7 +3,7 @@ id: peer-actor
 title: "Peer Actor"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: term
+termType: term
 term: peer-actor
 formPhrases: peer-actor{ss}
 conceptref: essifLab:Actor

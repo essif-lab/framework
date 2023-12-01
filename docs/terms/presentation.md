@@ -3,7 +3,7 @@ id: presentation
 title: "Presentation"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: presentation
 formPhrases: presentation{ss}, verifiable-presentation{ss}
 status: draft

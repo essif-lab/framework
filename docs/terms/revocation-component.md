@@ -3,7 +3,7 @@ id: revocation-component
 title: "Revocation component"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: revocation-component
 formPhrases: revocation-component{ss}, revocator{ss+}
 status: draft

@@ -3,7 +3,7 @@ id: verify
 title: "Verify"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: verify
 formPhrases: verify, verifies, verified, verifying
 status: draft

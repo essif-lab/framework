@@ -3,7 +3,7 @@ id: transaction-proposal
 title: "Transaction Proposal"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: transaction-proposal
 formPhrases: transaction-proposal{ss}
 status: draft

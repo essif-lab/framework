@@ -3,7 +3,7 @@ id: dictionary
 title: "Dictionary"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
-type: concept
+termType: concept
 term: dictionary
 formPhrases: dictionar{yies}
 status: draft

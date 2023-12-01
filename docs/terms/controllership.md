@@ -3,7 +3,7 @@ id: controllership
 title: "Controllership"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: controllership
 formPhrases: controllership
 status: draft

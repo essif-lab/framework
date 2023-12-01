@@ -3,7 +3,7 @@ id: obligation
 title: "Obligation"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: obligation
 formPhrases: obligation{ss}
 status: draft

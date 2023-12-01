@@ -3,7 +3,7 @@ id: ssi-assurance-community
 title: "SSI Assurance Community (SSI-AC)"
 displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
-type: concept
+termType: concept
 term: ssi-assurance-community
 formPhrases: ssi-assurance-communit{yies}, ac{ss}, assurance-communit{yies}, ssi-ac{ss}, ssi-assurance-communit{yies}
 status: draft

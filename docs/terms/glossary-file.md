@@ -2,7 +2,7 @@
 id: glossary-file
 title: "Glossary-file"
 scopetag: essifLab
-type: glossary
+termType: glossary
 term: glossary-file
 status: draft
 grouptags:

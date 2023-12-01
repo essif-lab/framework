@@ -3,7 +3,7 @@ id: ssi-agent
 title: "SSI Agent"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: term
+termType: term
 term: ssi-agent
 formPhrases: ssi-agent{ss}
 conceptref: essifLab:Agent
