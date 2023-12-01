@@ -3,7 +3,7 @@ id: subject
 title: "Subject"
 displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
-termType: term
+termType: concept
 term: subject
 formPhrases: subject{ss}
 status: draft

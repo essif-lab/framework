@@ -3,7 +3,7 @@ id: partial-identity
 title: "Partial identity"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termType: term
+termType: concept
 term: partial-identity
 formPhrases: partial-identit{yies}
 status: draft

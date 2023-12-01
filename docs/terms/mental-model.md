@@ -3,7 +3,7 @@ id: mental-model
 title: "Mental Model"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termType: term
+termType: concept
 term: mental-model
 formPhrases: mental-model{ss}
 conceptref: essifLab:pattern

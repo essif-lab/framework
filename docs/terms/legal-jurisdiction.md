@@ -3,7 +3,7 @@ id: legal-jurisdiction
 title: "Legal Jurisdiction"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-termType: term
+termType: concept
 term: legal-jurisdiction
 formPhrases: legal-jurisdiction{ss}
 conceptref: essifLab:jurisdiction

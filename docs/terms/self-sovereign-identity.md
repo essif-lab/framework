@@ -3,7 +3,7 @@ id: self-sovereign-identity
 title: "Self-Sovereign Identity (SSI)"
 displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
-termType: term
+termType: concept
 term: self-sovereign-identity
 formPhrases: self-sovereign-identit{yies}
 status: draft
