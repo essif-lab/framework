@@ -3,12 +3,13 @@ id: scope-file
 title: "Scope-file"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: scope-file
 formPhrases: scope-file{ss}
 status: draft
 grouptags:
 hoverText: "Scope-file: a file whose contents defines/specifies a Scope."
+glossaryTerm: "Scope-file"
 glossaryText: "a file whose contents defines/specifies a [scope](@)."
 date: 20210601
 ---

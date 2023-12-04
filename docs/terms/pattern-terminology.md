@@ -3,7 +3,7 @@ id: pattern-terminology
 title: "Terminology Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: pattern
+termType: pattern
 term: terminology
 formPhrases: terminology
 status: draft

@@ -3,12 +3,13 @@ id: qualified-data
 title: "Qualified Data"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: qualified-data
 formPhrases: qualified-data
 status: draft
 grouptags:
 hoverText: "Qualified Data: data that comes with assurances, at least regarding its provenance and integrity (immutability), that make this data valid to be used for specific purposes of individual Parties."
+glossaryTerm: "Qualified Data"
 glossaryText: "[data](@) that comes with assurances, at least regarding its provenance and integrity (immutability), that make this data valid to be used for specific purposes of individual [parties](@)."
 date: 20210601
 ---

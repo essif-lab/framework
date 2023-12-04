@@ -3,12 +3,13 @@ id: pattern-world-model
 title: "eSSIF-Lab World Model"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: pattern
+termType: pattern
 term: world-model
 formPhrases: world-model
 status: draft
 grouptags:
 hoverText: "The eSSF-Lab World Model is the set of Concepts, relations between them (Patterns), and principles (that are the starting point for eSSIF-Lab's thinking)."
+glossaryTerm: "eSSIF-Lab World Model"
 glossaryText: "The set of [concept](@), relations between them ([pattern](@)), and [Principles](essifLab-principles) (that are the starting point for eSSIF-Lab's thinking)."
 date: 20211101
 ---

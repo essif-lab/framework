@@ -3,12 +3,13 @@ id: compliance
 title: "Compliance"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: compliance
 formPhrases: compliance
 status: draft
 grouptags:
 hoverText: "Compliance (of a Party): the state of realization of a set of conformance criteria or normative framework of that Party."
+glossaryTerm: "Compliance"
 glossaryText: "the state of realization of a set of conformance criteria or normative framework of a [party](@)."
 date: 20220220
 ---

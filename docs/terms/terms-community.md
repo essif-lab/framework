@@ -3,12 +3,13 @@ id: terms-community
 title: "Terms Community"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: terms-community
 formPhrases: terms-communit{yies}
 status: draft
 grouptags:
 hoverText: "Terms Community: a Community that maintains a Terminology for the purpose of avoiding misunderstandings between its members as they collaborate."
+glossaryTerm: "Terms Community"
 glossaryText: "a [community](@) that maintains a [terminology](@) for the purpose of avoiding misunderstandings between its members as they collaborate."
 date: 20211101
 ---

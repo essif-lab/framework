@@ -3,12 +3,13 @@ id: dictionary
 title: "Dictionary"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
-type: concept
+termType: concept
 term: dictionary
 formPhrases: dictionar{yies}
 status: draft
 grouptags:
 hoverText: "Dictionary: an alphabetically sorted list of Terms with various meanings they may have in different contexts."
+glossaryTerm: "Dictionary"
 glossaryText: "an alphabetically sorted list of [term](@) with various meanings they may have in different contexts."
 date: 20210601
 ---

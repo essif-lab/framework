@@ -3,12 +3,13 @@ id: information-process
 title: "Information Process"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: information-process
 formPhrases: information-process, information-processes
 status: draft
 grouptags:
 hoverText: "Information Process: a coherent set of Actions that are (to be) performed by a single Party, in which data (that is controlled by this Party) is created, read, updated and/or deleted."
+glossaryTerm: "Information Process"
 glossaryText: "A coherent set of [actions@] that are (to be) performed by a single [party@], in which [data](@) (that is controlled by this [party](@) is created, read, updated and/or deleted."
 date: 20210922
 ---

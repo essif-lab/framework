@@ -3,12 +3,13 @@ id: actor
 title: "Actor"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: actor
 formPhrases: actor{ss}, digital-actor{ss}
 status: draft
 grouptags:
 hoverText: "Actor: Entity that can act (do things/execute Actions), e.g. people, machines, but not Organizations."
+glossaryTerm: "Actor"
 glossaryText: "Entity that can act (do things/execute [action](@)), e.g. people, machines, but not [organization](@)."
 date: 20210601
 ---

@@ -3,12 +3,13 @@ id: vocabulary
 title: "Vocabulary"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
-type: concept
+termType: concept
 term: vocabulary
 formPhrases: vocabular{yies}
 status: draft
 grouptags:
 hoverText: "Vocabulary: the sum or stock of words employed by a language, group, individual, or work or in a field of knowledge."
+glossaryTerm: "Vocabulary"
 glossaryText: "the sum or stock of words employed by a language, group, individual, or work or in a field of knowledge."
 date: 20210601
 ---

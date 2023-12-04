@@ -3,12 +3,13 @@ id: compliance-management
 title: "Compliance management"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: compliance-management
 formPhrases: compliance-management
 status: draft
 grouptags:
 hoverText: "Compliance management (by a Party): the process that is run by (or on behalf of) that Party for the purpose of Managing its Compliance-objectives."
+glossaryTerm: "Compliance management"
 glossaryText: "the process that is run by (or on behalf of) a specific [party](@) for the purpose of [managing](management@) its [compliance objectives](compliance-objective@)."
 date: 20220203
 ---

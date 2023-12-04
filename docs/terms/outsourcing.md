@@ -3,12 +3,13 @@ id: outsourcing
 title: "Outsourcing"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: outsourceing
 formPhrases: outsourc{eing}, outsourced
 status: draft
 grouptags:
 hoverText: "Outsourcing: the state of affairs in which a Party has an Objective (better: an Expectation) for the realization of a (set of) result(s), where the actual production of these results is expected to be done by a Party other than itself."
+glossaryTerm: "Outsourcing"
 glossaryText: "the state of affairs in which a [party](@) has an [objective](@) (better: an [expectation](@)) for the realization of a (set of) result(s), where the actual production of these results is expected to be done by a [party](@) other than itself."
 date: 2022-10-18
 ---

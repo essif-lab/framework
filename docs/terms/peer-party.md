@@ -3,13 +3,14 @@ id: peer-party
 title: "Peer Party"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: term
+termType: concept
 term: peer-party
 formPhrases: peer-part{yies}
 conceptref: essifLab:party
 status: draft
 grouptags:
 hoverText: "Peer Party (of another Party that is a participant in a Business Transaction): a Party that also participates in that Business Transaction."
+glossaryTerm: "Peer Party"
 glossaryText: "a [party](@) that also participates in that [business transaction](transaction@)."
 date: 20210601
 ---

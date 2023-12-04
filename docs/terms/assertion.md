@@ -3,12 +3,13 @@ id: assertion
 title: "Assertion"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: assertion
 formPhrases: assertion{ss}, claim{ss}, statement{ss}
 status: draft
 grouptags:
 hoverText: "Assertion: a declaration/statement, made by a specific Party, that something is the case."
+glossaryTerm: "Assertion"
 glossaryText: "a declaration/statement, made by a specific [party](@), that something is the case."
 date: 20210601
 ---

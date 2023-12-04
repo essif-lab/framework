@@ -3,12 +3,13 @@ id: transaction-id
 title: "Transaction Id"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: transaction-id
 formPhrases: transaction-id{ss}
 status: draft
 grouptags:
 hoverText: "Transaction Id (for a specific Business Transaction and a Participant): character string that this Participant uses to identify, and refer to, that Business Transaction."
+glossaryTerm: "Transaction Id"
 glossaryText: "character string that this [participant](@) uses to identify, and refer to, that [business transaction](transaction@)."
 date: 20210601
 ---

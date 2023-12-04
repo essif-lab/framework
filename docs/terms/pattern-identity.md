@@ -3,7 +3,7 @@ id: pattern-identity
 title: "Identity Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: pattern
+termType: pattern
 term: pattern-identity
 formPhrases:
 status: draft

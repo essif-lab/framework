@@ -3,12 +3,13 @@ id: pattern-party-actor-action
 title: "Parties, Actors and Actions"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: pattern
+termType: pattern
 term: party-actor-action
 formPhrases: party-actor-action
 status: draft
 grouptags:
 hoverText: "The Parties, Actors and Actions pattern captures the foundational concepts and relations that we need for thinking about how things get done. It answers questions such as: 'Who/what does things?', 'How are their actions being guided/controlled?', 'Who controls whom/what?', 'Who/what may be held accountable?'."
+glossaryTerm: "Parties, Actors and Actions"
 glossaryText: "'Who/what does things?', 'How are their [action](@) being guided/[controlled](controller@)?', 'Who [controls](controller@) whom/what?', 'Who/what may be held accountable?'."
 date: 20210602
 ---

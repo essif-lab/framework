@@ -3,12 +3,13 @@ id: objective
 title: "Objective"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: objective
 formPhrases: objective{ss}
 status: draft
 grouptags:
 hoverText: "Objective: Something toward which a Party (its Owner) directs effort (an aim, goal, or end of action)."
+glossaryTerm: "Objective"
 glossaryText: "Something toward which a [party](@) (its [owner](@)) directs effort (an aim, goal, or end of action)."
 date: 20210601
 ---

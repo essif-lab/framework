@@ -3,12 +3,13 @@ id: risk-objective
 title: "Risk Objective"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: risk-objective
 formPhrases: risk-objective{ss}
 status: draft
 grouptags:
 hoverText: "Risk objective (of a Party): an Objective, owned by that Party, that aims to reach and maintain a state of affairs in which the Risks associated with a specific set of its Objectives become, and/or remain, acceptable."
+glossaryTerm: "Risk Objective"
 glossaryText: "an [objective](@), owned by a [party](@), that aims to reach and maintain a state of affairs in which the [risk](@) associated with a specific set of its [objective](@) become, and/or remain, acceptable."
 date: 20220203
 ---

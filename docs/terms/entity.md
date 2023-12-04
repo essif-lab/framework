@@ -3,12 +3,13 @@ id: entity
 title: "Entity"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: entity
 formPhrases: entit{yies}
 status: draft
 grouptags:
 hoverText: "Entity: someone or something that is known to exist."
+glossaryTerm: "Entity"
 glossaryText: "someone or something that is known to exist."
 date: 20210601
 ---

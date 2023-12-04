@@ -3,12 +3,13 @@ id: controller
 title: "Controller"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: controller
 formPhrases: controller{ss}
 status: draft
 grouptags:
 hoverText: "Controller (of an Entity): the role that an Actor performs as it is executing actions on that Entity for the purpose of ensuring that the Entity will act/behave, or be used, in a particular way."
+glossaryTerm: "Controller"
 glossaryText: "the role that an [actor](@) performs as it is executing actions on that [entity](@) for the purpose of ensuring that the [entity](@) will act/behave, or be used, in a particular way."
 date: 20211222
 ---

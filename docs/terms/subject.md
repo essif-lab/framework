@@ -3,12 +3,13 @@ id: subject
 title: "Subject"
 displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
-type: term
+termType: concept
 term: subject
 formPhrases: subject{ss}
 status: draft
 grouptags:
 hoverText: "Subject (of some coherent data set): the (single) Entity to which a coherent data set relates/pertains, such as attributes, Claims/Assertions, files/dossiers, (verifiable) credentials, Partial Identities, Employment Contracts, etc."
+glossaryTerm: "Subject"
 glossaryText: "the (single) [entity](@) to which a given set of coherent data relates/pertains. Examples of such sets include attributes, [Claims/Assertions](assertion@), files/dossiers, [(verifiable) credentials](credential@), [(partial) identities](partial-identity@), [employment contracts](employment-contract@), etc."
 date: 20210613
 ---

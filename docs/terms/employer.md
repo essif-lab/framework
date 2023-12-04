@@ -3,12 +3,13 @@ id: employer
 title: "Employer"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: employer
 formPhrases: employer{ss}
 status: draft
 grouptags:
 hoverText: "Employer (of an Actor): a Party on whose behalf this (human or non-human) Actor (called an Employee of that Party) might execute Actions."
+glossaryTerm: "Employer"
 glossaryText: "a [party](@) on whose behalf a (human or non-human) [actor](@) (called an [employee](@) of that [party](@)) might execute [action](@)."
 date: 20220916
 ---

@@ -3,12 +3,13 @@ id: pattern
 title: "Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: pattern
 formPhrases: pattern{ss}
 status: draft
 grouptags:
 hoverText: "Pattern (also: Mental Model): A description, both casual and formal, of a set of Concepts (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
+glossaryTerm: "Pattern"
 glossaryText: "A description, both casual and formal, of a set of [concept](@) (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
 date: 20210804
 ---

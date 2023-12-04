@@ -3,12 +3,13 @@ id: guardianship-type
 title: "Guardianship-type"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: guardianship-type
 formPhrases: guardianship-type{ss}, guardianship-arrangement-type{ss}
 status: draft
 grouptags:
 hoverText: "Guardianship-type (in a Jurisdiction): a class of Guardianship Arrangements within the Jurisdiction that governs and manages them."
+glossaryTerm: "Guardianship-type"
 glossaryText: "a class of [guardianship arrangements](guardianship-arrangement@) within the [jurisdiction](@) that governs and manages them."
 date: 20210601
 ---

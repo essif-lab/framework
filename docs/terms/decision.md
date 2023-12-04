@@ -3,12 +3,13 @@ id: decision
 title: "Decision"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: decision
 formPhrases: decision{ss}
 status: draft
 grouptags:
 hoverText: "Decision (of a Party): the conclusion that this Party inferences from a set of Data that it considers to be facts."
+glossaryTerm: "Decision"
 glossaryText: "the conclusion that a [party](@) inferences from a set of [data](@) that it considers to be facts."
 date: 20211111
 ---

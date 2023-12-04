@@ -3,12 +3,13 @@ id: concept-file
 title: "Concept-file"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: concept-file
 formPhrases: concept-file{ss}
 status: draft
 grouptags:
 hoverText: "Concept-file: a file whose contents defines/specifies a Concept."
+glossaryTerm: "Concept-file"
 glossaryText: "a file whose contents defines/specifies a [concept](@)."
 date: 20210601
 ---

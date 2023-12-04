@@ -3,12 +3,13 @@ id: guardian
 title: "Guardian"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: guardian
 formPhrases: guardian
 status: draft
 grouptags:
 hoverText: "Guardian: a Party that has been assigned rights and duties in a Guardianship Arrangement for the purpose of caring for and/or protecting/guarding/defending the Entity that is the Dependent in that Guardianship Arrangement."
+glossaryTerm: "Guardian"
 glossaryText: "a [party](@) that has been assigned rights and duties in a [Guardianship Arrangement](@) for the purpose of caring for and/or protecting/guarding/defending the [entity](@) that is the [dependent](@) in that Guardianship Arrangement."
 date: 20210601
 ---

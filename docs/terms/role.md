@@ -3,12 +3,13 @@ id: role
 title: "Role"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: role
 formPhrases: role{ss}
 status: draft
 grouptags:
 hoverText: "Role (of an Entity in some context): a defined set of characteristics that the Entity has in some context, such as responsibilities (Obligations) it may have, Actions (behaviors) it may execute, or pieces of Knowledge that it is expected to have in that context, which are referenced to by a specific (Role-)name."
+glossaryTerm: "Role"
 glossaryText: "a defined set of characteristics that an [entity](@) has in some context, such as [responsibilities](obligation@) it may have, [action](@) (behaviors) it may execute, or pieces of [knowledge](@) that it is expected to have in that context, which are referenced to by a specific [role name](@)."
 date: 20210601
 ---

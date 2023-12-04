@@ -3,12 +3,13 @@ id: pattern-semantics
 title: "Semantics Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: pattern
+termType: pattern
 term: semantics
 formPhrases:
 status: draft
 grouptags:
 hoverText: "The Semantics pattern describes the relations between the (intangible) Concepts that are part of a Party's Knowledge, and how they are (tangibly) represented by Terms, Attributes, etc."
+glossaryTerm: "Semantics Pattern"
 glossaryText: "The Semantics pattern describes the relations between the (intangible) [Concept](@) that are part of a [party](@) [knowledge](@), and how they are (tangibly) represented by [term](@), [attribute](@), etc."
 date: 202120607
 ---

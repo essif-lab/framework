@@ -3,7 +3,7 @@ id: pattern-governance-and-management
 title: "Governance and Management"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: pattern
+termType: pattern
 term: governance-and-management
 formPhrases: governance-and-management
 status: draft

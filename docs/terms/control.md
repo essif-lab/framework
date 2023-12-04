@@ -3,12 +3,13 @@ id: control
 title: "Control"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: control
 formPhrases: control{ss}
 status: draft
 grouptags:
 hoverText: "Control (of a Party): the combination of resources (e.g. people, tools, budgets, time) and processes that are tasked to realize a specific Control Objective of that Party."
+glossaryTerm: "Control"
 glossaryText: "the combination of resources (e.g. people, tools, budgets, time) and processes that are tasked to realize a specific [control objective](@) of a particular [party](@)."
 date: 20220212
 ---

@@ -3,12 +3,13 @@ id: semantics
 title: "Semantics"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
-type: concept
+termType: concept
 term: semantics
 formPhrases: semantics
 status: draft
 grouptags:
 hoverText: "Semantics: a mapping between the (tangible/textual) Terms and (intangible) ideas/Concepts - their meaning."
+glossaryTerm: "Semantics"
 glossaryText: "a mapping between the (tangible/textual) [term](@) and (intangible) ideas/[concept](@) - their meaning."
 date: 20210601
 ---

@@ -3,12 +3,13 @@ id: concept
 title: "Concept"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
-type: concept
+termType: concept
 term: concept
 formPhrases: concept{ss}
 status: draft
 grouptags:
 hoverText: "Concept: the ideas/thoughts behind a classification of Entities (what makes Entities in that class 'the same')."
+glossaryTerm: "Concept"
 glossaryText: "the ideas/thoughts behind a classification of [entities](@) (what makes [entities](@) in that class 'the same')."
 date: 20210601
 ---

@@ -3,12 +3,13 @@ id: ecosystem
 title: "Ecosystem"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: ecosystem
 formPhrases: ecosystem{ss}
 status: draft
 grouptags:
 hoverText: "Ecosystem: a set of at least two (autonomous) Parties (its 'members') whose individual work complements that of other members, and is of benefit to the set as a whole."
+glossaryTerm: "Ecosystem"
 glossaryText: "a set of at least two (autonomous) [parties](@) (its 'members') whose individual work complements that of other members, and is of benefit to the set as a whole."
 date: 20210601
 ---

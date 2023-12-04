@@ -3,12 +3,13 @@ id: wallet
 title: "Wallet"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: wallet
 formPhrases: wallet{ss}
 status: draft
 grouptags:
 hoverText: "Wallet (functional component): a component that implements the Capability to securely store data as requested by Colleague Agents, and to provide stored data to Colleague Agents or Peer Agents, all in Compliance with the rules of its Principal's Wallet Policy."
+glossaryTerm: "Wallet"
 glossaryText: "a component that implements the [capability](@) to securely store data as requested by [colleague agents](colleague@), and to provide stored data to [colleague agents](colleague@) or [peer agents](peer-agent@), all in [compliance](@) with the rules of its [principal](@)'s [wallet policy](@)."
 date: 20210601
 ---

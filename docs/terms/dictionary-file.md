@@ -2,11 +2,12 @@
 id: dictionary-file
 title: "Dictionary-file"
 scopetag: essifLab
-type: dictionary
+termType: concept
 term: dictionary-file
 status: draft
 grouptags:
 hoverText: "Dictionary-file: a file whose contents specifies the contents of a Dictionary."
+glossaryTerm: "Dictionary-file"
 glossaryText: "a file whose contents specifies the contents of a [dictionary](@)."
 date: 20210601
 ---

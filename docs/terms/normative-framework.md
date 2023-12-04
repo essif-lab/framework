@@ -3,12 +3,13 @@ id: normative-framework
 title: "Normative framework"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: normative-framework
 formPhrases: normative-framework{ss}
 status: draft
 grouptags:
 hoverText: "Normative framework (for a specific class of Entities)): a set of rules that are followed and/or criteria that remain fulfilled by (a specific kind of) Entities whose behavior and/or properties are characterized as 'normal'."
+glossaryTerm: "Normative framework"
 glossaryText: "a set of rules that are followed and/or criteria that remain fulfilled by (a specific kind of) [entities](@) whose behavior and/or properties are characterized as 'normal'."
 date: 20220203
 ---

@@ -3,12 +3,13 @@ id: management
 title: "Management"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: management
 formPhrases: management, manager, manage, manages, managed, managed-by, management, managing, managing-part{yies}
 status: draft
 grouptags:
 hoverText: "Management: the act or process of managing or actually realizing of (the results associated with) a set of Objectives by the Owner of these Objectives."
+glossaryTerm: "Management"
 glossaryText: "the [act](action@) or process of managing or actually realizing of (the results associated with) a set of [objective](@) by the [owner](@) of these [objective](@)."
 date: 20210830
 ---

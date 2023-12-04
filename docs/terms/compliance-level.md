@@ -3,12 +3,13 @@ id: compliance-level
 title: "Compliance level"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: compliance-level
 formPhrases: compliance-level{ss}
 status: draft
 grouptags:
 hoverText: "Compliance level (of an Entity, regarding a stated (set of) requirement(s)): a measure for stating how well the Entity conforms with the stated (set of) requirement(s)."
+glossaryTerm: "Compliance level"
 glossaryText: "a measure for stating how well an [entity](@) conforms with a stated (set of) requirement(s)."
 date: 20220203
 ---

@@ -3,12 +3,13 @@ id: human-being
 title: "Human Being"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: human-being
 formPhrases: human-being{ss}, human{ss}, person{ss}, individual{ss}, people
 status: draft
 grouptags:
 hoverText: "Human Being: a person of flesh and blood (homo sapiens), that we classify both as a Party, an Actor, and a Jurisdiction."
+glossaryTerm: "Human Being"
 glossaryText: "a person of flesh and blood (homo sapiens), that we classify both as a [party](@),an [actor](@), and a [jurisdiction](@)."
 date: 20210601
 ---

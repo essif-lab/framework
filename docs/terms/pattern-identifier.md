@@ -3,7 +3,7 @@ id: pattern-identifier
 title: "Identifier Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: pattern
+termType: pattern
 term: pattern-identifier
 formPhrases:
 status: draft

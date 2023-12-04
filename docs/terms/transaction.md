@@ -3,12 +3,13 @@ id: transaction
 title: "Transaction"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: transaction
 formPhrases: transaction{ss}
 status: draft
 grouptags:
 hoverText: "Transaction: the exchange of goods, services, funds, or data between some Parties (called Participants of the Transaction)."
+glossaryTerm: "Transaction"
 glossaryText: "the exchange of goods, services, funds, or data between some [parties](@) (called [participant](@) of the [transaction](@))."
 date: 20210601
 ---

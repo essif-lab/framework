@@ -3,12 +3,13 @@ id: issuer-policy
 title: "Isuer Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: issuer-policy
 formPhrases: issuer-polic{yies}
 status: draft
 grouptags:
 hoverText: "Issuer Policy: a Digital Policy that contains the rules, working-instructions, preferences and other guidance for an operational Issuer component to function in accordance with the Objectives of its Principal."
+glossaryTerm: "Isuer Policy"
 glossaryText: "a [digital policy](policy@) that enables an operational [issuer](@) component to function in accordance with the [objective](@) of its [principal](@)."
 date: 20210601
 ---

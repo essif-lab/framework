@@ -3,12 +3,13 @@ id: credential-type
 title: "Credential Type"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: credential-type
 formPhrases: credential-type{ss}
 status: draft
 grouptags:
 hoverText: "Credential Type: the specification of the contents, properties, constraints etc. that Credentials of this type must have/comply with."
+glossaryTerm: "Credential Type"
 glossaryText: "the specification of the contents, properties, constraints etc. that [credential](@) of this type must have/comply with."
 date: 20210601
 ---

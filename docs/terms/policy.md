@@ -3,12 +3,13 @@ id: policy
 title: "Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
-type: concept
+termType: concept
 term: policy
 formPhrases: polic{yies}, business-polic{yies}, operational-polic{yies}
 status: draft
 grouptags:
 hoverText: "Policy: a (set of) rules, working-instructions, preferences and other guidance for the execution of one or more kinds of Actions, that Agents of the Party that Governs the policy have access to and can interpret such that this results in these Actions being executed as intended by that Party."
+glossaryTerm: "Policy"
 glossaryText: "a (set of) rules, working-instructions, preferences and other guidance for the execution of one or more kinds of [action](@), that [agent](@) of the [party](@) that [governs](governance@) the policy have access to and can interpret such that this results in these [action](@) being executed as intended by that [party](@)."
 date: 20210901
 ---
