@@ -10,7 +10,7 @@ status: draft
 grouptags:
 hoverText: "Onboarding (of an Actor, by a Party): a process that is run for this Actor on behalf of the Party, that terminates successfully if and  only if the Party has (a) established the suitability of the Actor for executing certain kinds of Actions on its behalf, (b) ensured that their mutual rights and duties are properly specified and will be appropriately enforced, and (c) provided the circumstances/contexts within which the Actor is enabled to do so."
 glossaryTerm: "Onboarding"
-glossaryText: "A process that is run for a specific (set of) [actor](@) on behalf of a specific [party](@), that terminates successfully if and  only if the [party](@) has (a) established the suitability of the [actor](@) for executing certain kinds of [action](@) on its behalf, (b) ensured that their mutual rights and duties are properly specified and will be appropriately enforced, and (c) provided the circumstances/contexts within which the [actor](@) is enabled to do so."
+glossaryText: "a process that is run for a specific (set of) [actor](@) on behalf of a specific [party](@), that terminates successfully if and  only if the [party](@) has (a) established the suitability of the [actor](@) for executing certain kinds of [action](@) on its behalf, (b) ensured that their mutual rights and duties are properly specified and will be appropriately enforced, and (c) provided the circumstances/contexts within which the [actor](@) is enabled to do so."
 date: 20220922
 ---
 

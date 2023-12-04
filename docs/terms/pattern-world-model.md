@@ -10,7 +10,7 @@ status: draft
 grouptags:
 hoverText: "The eSSF-Lab World Model is the set of Concepts, relations between them (Patterns), and principles (that are the starting point for eSSIF-Lab's thinking)."
 glossaryTerm: "eSSIF-Lab World Model"
-glossaryText: "The set of [concept](@), relations between them ([pattern](@)), and [Principles](essifLab-principles) (that are the starting point for eSSIF-Lab's thinking)."
+glossaryText: "the set of [concept](@), relations between them ([pattern](@)), and [Principles](essifLab-principles) (that are the starting point for eSSIF-Lab's thinking)."
 date: 20211101
 ---
 

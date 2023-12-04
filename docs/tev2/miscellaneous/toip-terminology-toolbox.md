@@ -193,7 +193,7 @@ For example, consider the [term](@) `curate` as defined in the [CTWG terms wiki]
   status: proposed
   term: curate
   synonyms: curation
-  glossaryText: To evolve [concept](@) and [term](@) data in the direction of greater quality and richer content within a specific [scope](@).
+  glossaryText: to evolve [concept](@) and [term](@) data in the direction of greater quality and richer content within a specific [scope](@).
   hoverText: Curate: to evolve concept and term data in the direction of greater quality and richer content within a specific scope.
   url: https://github.com/trustoverip/ctwg/wiki/curate
 ```

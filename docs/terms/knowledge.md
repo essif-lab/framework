@@ -10,7 +10,7 @@ status: draft
 grouptags:
 hoverText: "Knowledge: The (intangible) sum of what is known by a specific Party, as well as the familiarity, awareness or understanding of someone or something by that Party."
 glossaryTerm: "Knowledge"
-glossaryText: "The (intangible) sum of what is known by a specific [party](@), as well as the familiarity, awareness or understanding of someone or something by that [party](@)."
+glossaryText: "the (intangible) sum of what is known by a specific [party](@), as well as the familiarity, awareness or understanding of someone or something by that [party](@)."
 date: 20210601
 ---
 

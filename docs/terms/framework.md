@@ -10,7 +10,7 @@ status: draft
 grouptags:
 hoverText: "Framework (Conceptual): A set of assumptions, concepts, values, and practices that constitutes a way of viewing reality."
 glossaryTerm: "Framework (Conceptual)"
-glossaryText: "A set of assumptions, concepts, values, and practices that constitutes a way of viewing reality."
+glossaryText: "a set of assumptions, concepts, values, and practices that constitutes a way of viewing reality."
 date: 20220405
 ---
 

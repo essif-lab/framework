@@ -3,7 +3,7 @@
 term: author
 termType: concept
 isa: tev2-role
-glossaryText: "A person that creates and maintains texts (documentation, whitepapers, specifications, standards, [curated texts](@), etc.), and while doing so ensures that every [term](@) that it uses and that is defined in the [context](scope@) of that text, is used in the meaning in which that [term](@) is defined."
+glossaryText: "a person that creates and maintains texts (documentation, whitepapers, specifications, standards, [curated texts](@), etc.), and while doing so ensures that every [term](@) that it uses and that is defined in the [context](scope@) of that text, is used in the meaning in which that [term](@) is defined."
 synonymOf:
 grouptags:
 formPhrases: author{ss}

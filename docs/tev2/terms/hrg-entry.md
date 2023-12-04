@@ -4,7 +4,7 @@ term: hrg-entry
 termType: concept
 isa:
 glossaryTerm:
-glossaryText: "A specific kind of (human-readable) rendering of the combination of a [term](@) and a means that helps [readers](@) to understand the meaning of that [term](@) when it is used in a sentence."
+glossaryText: "a specific kind of (human-readable) rendering of the combination of a [term](@) and a means that helps [readers](@) to understand the meaning of that [term](@) when it is used in a sentence."
 synonymOf:
 grouptags:
 formPhrases: hrg-entr{yies}

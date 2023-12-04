@@ -10,7 +10,7 @@ status: draft
 grouptags:
 hoverText: "Capability (of an Actor): the potential of that Actor to execute a (named) coherent set of Actions (a 'function', or 'task') on behalf of some Party."
 glossaryTerm: "Capability (of an Actor)"
-glossaryText: "The potential of an [actor](@) to execute a (named) coherent set of [action](@) (a 'function', or 'task') on behalf of some [party](@)."
+glossaryText: "the potential of an [actor](@) to execute a (named) coherent set of [action](@) (a 'function', or 'task') on behalf of some [party](@)."
 date: 20220922
 ---
 
