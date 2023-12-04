@@ -1,6 +1,5 @@
 ---
 id: pattern-identification
-title: "Identification Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
@@ -11,6 +10,9 @@ grouptags:
 hoverText: "The eSSIF-Lab Identification Pattern describes mechanisms that a Party uses to Identify Entities, and mechanisms for communicating with another Party such that both Parties can identify an entity and know whether or not they identify the same entity."
 date: 20210803
 ---
+
+# Identification Pattern
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

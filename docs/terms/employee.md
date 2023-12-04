@@ -1,6 +1,5 @@
 ---
 id: employee
-title: "Employee"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Employee"
 glossaryText: "a (human or non-human (digital)) [actor](@) for whom/which it is realistic that it might execute [action](@) on behalf of a [party](@) (called the [employer](@) of that [actor](@))."
 date: 20221007
 ---
+
+# Employee
+
 
 :::info Editor's note
 Additional content is needed here.

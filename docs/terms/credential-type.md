@@ -1,6 +1,5 @@
 ---
 id: credential-type
-title: "Credential Type"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Credential Type"
 glossaryText: "the specification of the contents, properties, constraints etc. that [credential](@) of this type must have/comply with."
 date: 20210601
 ---
+
+# Credential Type
+
 
 ### Short Description
 

@@ -1,6 +1,5 @@
 ---
 id: owner
-title: "Owner"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Owner"
 glossaryText: "the role that a [party](@) performs when it is exercising its legal, rightful or natural title to control that [entity](@)."
 date: 20210601
 ---
+
+# Owner
+
 
 ### Short Description
 

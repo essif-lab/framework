@@ -1,6 +1,5 @@
 ---
 id: issuer
-title: "Issuer"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Issuer"
 glossaryText: "a component that implements the [capability](@) to construct [credential](@) from data objects, according to the content of its [principal](@)'s [issuer](@)-Policy (specifically regarding the way in which the [credential](@) is to be digitally signed), and pass it to the [wallet](@)-component of its [principal](@) allowing it to be issued."
 date: 20210601
 ---
+
+# Issuer
+
 
 :::info Editor's note
 *This text needs to be revised.*

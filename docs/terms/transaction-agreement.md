@@ -1,6 +1,5 @@
 ---
 id: transaction-agreement
-title: "Transaction Agreement"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Transaction Agreement"
 glossaryText: "the set of rules that specify the rights ([expectation](@)) and duties ([obligation](@)) of [participant](@) towards one another in the context of a specific [business transaction](transaction@)."
 date: 20210601
 ---
+
+# Transaction Agreement
+
 
 :::info Editor's note
 Additional content is needed here.

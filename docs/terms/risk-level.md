@@ -1,6 +1,5 @@
 ---
 id: risk-level
-title: "Risk level"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Risk level"
 glossaryText: "a measure for the deviation of the intended realization (results) of a specific [objective](@) that its [owner](@) uses to represent the priority with which the [risk](@) of that [objective](@) should be reckoned with."
 date: 20210601
 ---
+
+# Risk level
+
 
 ### Short Description
 

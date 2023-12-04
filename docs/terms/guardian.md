@@ -1,6 +1,5 @@
 ---
 id: guardian
-title: "Guardian"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Guardian"
 glossaryText: "a [party](@) that has been assigned rights and duties in a [Guardianship Arrangement](@) for the purpose of caring for and/or protecting/guarding/defending the [entity](@) that is the [dependent](@) in that Guardianship Arrangement."
 date: 20210601
 ---
+
+# Guardian
+
 
 :::info Editor's note
 Additional content is needed here.

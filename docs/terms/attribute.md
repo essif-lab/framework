@@ -1,6 +1,5 @@
 ---
 id: attribute
-title: "Attribute"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Attribute"
 glossaryText: "[data](@), that represents a characteristic that a [party](@) (the [owner](@) of the [attribute](@)) has attributed to an [entity](@) (which is the [subject](@) of that attribute)."
 date: 20210821
 ---
+
+# Attribute
+
 
 ### Short Description
 

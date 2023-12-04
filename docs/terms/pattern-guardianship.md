@@ -1,6 +1,5 @@
 ---
 id: pattern-guardianship
-title: "Guardianship"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
@@ -11,6 +10,9 @@ grouptags:
 hoverText: "The Guardianships pattern captures the Concepts and relations that explain what a generic Guardianship consists of, and how it relates to Guardians, Dependents, Jurisdictions, etc."
 date: 20210601
 ---
+
+# Guardianship
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

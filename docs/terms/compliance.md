@@ -1,6 +1,5 @@
 ---
 id: compliance
-title: "Compliance"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Compliance"
 glossaryText: "the state of realization of a set of conformance criteria or normative framework of a [party](@)."
 date: 20220220
 ---
+
+# Compliance
+
 
 ### Short Description
 

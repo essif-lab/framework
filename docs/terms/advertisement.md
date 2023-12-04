@@ -1,6 +1,5 @@
 ---
 id: advertisement
-title: "Advertisement"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Advertisement"
 glossaryText: "an offer by a specific [party](@) to provide a (type of) [credential](@), where the offer includes (a reference to) the syntax and semantics specifications of that [credential](@), and also lists various other characteristics that enable other [parties](@) to decide whether or not a [credential](@) that the advertising [party](@) has issued under this offer, is [valid](validate@) to be processed in one or more of its [information processes](information-process@)."
 date: 20220918
 ---
+
+# Advertisement
+
 
 :::info Editor's note
 Additional descriptions are needed here.

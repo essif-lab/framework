@@ -1,6 +1,5 @@
 ---
 id: pattern-identifier
-title: "Identifier Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
@@ -11,6 +10,9 @@ grouptags:
 hoverText: "The eSSIF-Lab Identifier Pattern describes how Identifiers are defined and used for Identification purposes."
 date: 20210830
 ---
+
+# Identifier Pattern
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

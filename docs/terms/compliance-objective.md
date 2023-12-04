@@ -1,6 +1,5 @@
 ---
 id: compliance-objective
-title: "Compliance Objective"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Compliance Objective"
 glossaryText: "an [objective](@), owned by a [party](@), that aims to reach and maintain a state of affairs in which a specific set of [entities](@) that this [party](@) controls are in accordance with a specific set of requirements (e.g., laws, regulations, standards, etc.)."
 date: 20220203
 ---
+
+# Compliance Objective
+
 
 ### Short Description
 

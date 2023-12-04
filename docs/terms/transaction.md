@@ -1,6 +1,5 @@
 ---
 id: transaction
-title: "Transaction"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Transaction"
 glossaryText: "the exchange of goods, services, funds, or data between some [parties](@) (called [participant](@) of the [transaction](@))."
 date: 20210601
 ---
+
+# Transaction
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

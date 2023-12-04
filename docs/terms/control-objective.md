@@ -1,6 +1,5 @@
 ---
 id: control-objective
-title: "Control Objective"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Control Objective"
 glossaryText: "an [objective](@), owned by a [party](@), that aims to contribute to the realization of another (set of) [objective](@) of that [party](@), by producing results that this [party](@) needs to realize these other [objective](@)."
 date: 20220203
 ---
+
+# Control Objective
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

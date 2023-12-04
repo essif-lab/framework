@@ -1,6 +1,5 @@
 ---
 id: employment-contract
-title: "Employment Contract"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Employment Contract"
 glossaryText: "an agreement/contract between two [parties](@), one of which controls a set of [actor](@) (the [subject](@) of the contract), that states (or refers to) all (sets of) rights and duties under which these [actor](@) can and/or must work for the other [party](@)."
 date: 20210601
 ---
+
+# Employment Contract
+
 
 ### Short Description
 

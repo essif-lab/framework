@@ -1,6 +1,5 @@
 ---
 id: party
-title: "Party"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Party"
 glossaryText: "an [entity](@) that sets its [objective](@), maintains its [knowledge](@), and uses that [knowledge](@) to pursue its [objective](@) in an autonomous (sovereign) manner. Humans and [organization](@) are the typical examples."
 date: 20210601
 ---
+
+# Party
+
 
 ### Short Description
 

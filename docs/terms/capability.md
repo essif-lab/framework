@@ -1,6 +1,5 @@
 ---
 id: capability
-title: "Capability (of a Party)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Capability (of a Party)"
 glossaryText: "the (named) combination of (a) the means of a specific [party](@) to get something done, (b) the [party](@) [governance](@) process that ensures that its (business) [policies](@) for getting that something done are being created and maintained, and (c) the [party](@) [management](@) process that creates and maintains the (operational) [policies](@), such that every [employee](@) that has a task in getting this something done can find and interpret a [policy](@) and use it as it executes [action](@) in such tasks."
 date: 20220922
 ---
+
+# Capability (of a Party)
+
 
 :::info Editor's note
 This page is a first draft, and needs to be properly reviewed.

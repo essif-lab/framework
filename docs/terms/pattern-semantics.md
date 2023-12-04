@@ -1,6 +1,5 @@
 ---
 id: pattern-semantics
-title: "Semantics Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
@@ -13,6 +12,9 @@ glossaryTerm: "Semantics Pattern"
 glossaryText: "the Semantics pattern describes the relations between the (intangible) [Concept](@) that are part of a [party](@) [knowledge](@), and how they are (tangibly) represented by [term](@), [attribute](@), etc."
 date: 202120607
 ---
+
+# Semantics Pattern
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

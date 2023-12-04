@@ -1,6 +1,5 @@
 ---
 id: peer-actor
-title: "Peer Actor"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -14,6 +13,9 @@ glossaryTerm: "Peer Actor"
 glossaryText: "the [actor](@) with whom/which this other [actor](@) is communicating in that [communication session](@)."
 date: 20210601
 ---
+
+# Peer Actor
+
 
 :::info Editor's note
 Additional content is needed here.

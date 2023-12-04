@@ -1,6 +1,5 @@
 ---
 id: credential
-title: "Credential"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Credential"
 glossaryText: "data, representing a set of [assertion](@) (claims, statements), authored and signed by, or on behalf of, a specific [party](@)."
 date: 20210601
 ---
+
+# Credential
+
 
 ### Short Description
 

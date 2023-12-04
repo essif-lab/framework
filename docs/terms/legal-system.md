@@ -1,6 +1,5 @@
 ---
 id: legal-system
-title: "Legal System"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Legal System"
 glossaryText: "a system in which rules are defined, and mechanisms for their enforcement and conflict resolution are (implicitly or explicitly) specified."
 date: 20210601
 ---
+
+# Legal System
+
 
 ### Short Description
 

@@ -1,6 +1,5 @@
 ---
 id: peer-party
-title: "Peer Party"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -14,6 +13,9 @@ glossaryTerm: "Peer Party"
 glossaryText: "a [party](@) that also participates in that [business transaction](transaction@)."
 date: 20210601
 ---
+
+# Peer Party
+
 
 ### Purpose
 

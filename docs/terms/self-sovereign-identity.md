@@ -1,6 +1,5 @@
 ---
 id: self-sovereign-identity
-title: "Self-Sovereign Identity (SSI)"
 displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Self-Sovereign Identity (SSI)"
 glossaryText: "self-Sovereign Identity (SSI) is a term that has many different interpretations, and that we use to refer to concepts/ideas, architectures, processes and technologies that aim to support (autonomous) [parties](@) as they negotiate and execute electronic [transaction](@) with one another."
 date: 20210601
 ---
+
+# Self-Sovereign Identity (SSI)
+
 
 ### Short Description
 

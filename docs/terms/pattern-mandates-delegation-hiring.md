@@ -1,6 +1,5 @@
 ---
 id: pattern-mandates-delegation-hiring
-title: "Mandates, Delegation and Hiring"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
@@ -11,6 +10,9 @@ grouptags:
 hoverText: "The Mandates, Delegation and Hiring pattern (which remains to be documented) captures the ideas behind Mandating, Delegating, Hiring and their relations. This is a work-in-progress."
 date: 20210601
 ---
+
+# Mandates, Delegation and Hiring
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

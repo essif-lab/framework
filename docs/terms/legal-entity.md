@@ -1,6 +1,5 @@
 ---
 id: legal-entity
-title: "Legal Entity"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Legal Entity"
 glossaryText: "an [entity](@) that is known by, recognized to exist, and registered in that [jurisdiction](@)."
 date: 20210601
 ---
+
+# Legal Entity
+
 
 ### Short Description
 

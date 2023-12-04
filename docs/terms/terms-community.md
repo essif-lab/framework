@@ -1,6 +1,5 @@
 ---
 id: terms-community
-title: "Terms Community"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Terms Community"
 glossaryText: "a [community](@) that maintains a [terminology](@) for the purpose of avoiding misunderstandings between its members as they collaborate."
 date: 20211101
 ---
+
+# Terms Community
+
 
 ### Short Description
 

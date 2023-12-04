@@ -1,6 +1,5 @@
 ---
 id: transaction-form
-title: "Transaction Form"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Transaction Form"
 glossaryText: "the specification of the set of data that this [party](@) needs to (a) commit to a (proposed) [business transaction](transaction@) of that kind, (b) fulfill its duties/[obligation](@) and (c) escalate if necessary."
 date: 20210601
 ---
+
+# Transaction Form
+
 
 :::info Editor's note
 Additional content is needed here.

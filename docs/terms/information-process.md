@@ -1,6 +1,5 @@
 ---
 id: information-process
-title: "Information Process"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Information Process"
 glossaryText: "a coherent set of [actions@] that are (to be) performed by a single [party@], in which [data](@) (that is controlled by this [party](@) is created, read, updated and/or deleted."
 date: 20210922
 ---
+
+# Information Process
+
 
 ### Short Description
 

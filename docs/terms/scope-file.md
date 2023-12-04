@@ -1,6 +1,5 @@
 ---
 id: scope-file
-title: "Scope-file"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Scope-file"
 glossaryText: "a file whose contents defines/specifies a [scope](@)."
 date: 20210601
 ---
+
+# Scope-file
+
 
 ### Short Description
 

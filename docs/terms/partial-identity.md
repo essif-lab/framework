@@ -1,6 +1,5 @@
 ---
 id: partial-identity
-title: "Partial identity"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Partial identity"
 glossaryText: "all [knowledge](@) that a specific [party](@) (= the [owner](@) of the partial identity) has about that [entity](@) (= the '[subject](@)' of the partial identity)."
 date: 20210803
 ---
+
+# Partial identity
+
 
 ### Short Description
 

@@ -1,6 +1,5 @@
 ---
 id: trust-level
-title: "Trust level"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Trust level"
 glossaryText: "the (subjective) degree of belief or confidence that a [party](@) has in X (someone, something, ...)."
 date: 20220222
 ---
+
+# Trust level
+
 
 ### Short Description
 

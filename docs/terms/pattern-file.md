@@ -1,6 +1,5 @@
 ---
 id: pattern-file
-title: "Pattern-file"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Pattern-file"
 glossaryText: "a file whose contents describes/documents a [pattern](@)."
 date: 20210601
 ---
+
+# Pattern-file
+
 
 ### Short Description
 

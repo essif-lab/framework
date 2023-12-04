@@ -1,6 +1,5 @@
 ---
 id: pattern-jurisdiction
-title: "Jurisdictions"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
@@ -11,6 +10,9 @@ grouptags:
 hoverText: "The Jurisdictions pattern captures the Concepts and relations that explain what a generic Jurisdiction consists of, and relates it to Parties and Legal Entities."
 date: 20210601
 ---
+
+# Jurisdictions
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

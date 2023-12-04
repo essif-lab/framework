@@ -1,10 +1,12 @@
 ---
 id: essifLab-pattern-list
-title: "Overview of eSSIF-Lab Mental Models"
 sidebar_label: Mental Models
 scopetag: essifLab
 date: 20210908
 ---
+
+# Overview of eSSIF-Lab Mental Models
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

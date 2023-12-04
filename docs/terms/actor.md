@@ -1,6 +1,5 @@
 ---
 id: actor
-title: "Actor"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Actor"
 glossaryText: "entity that can act (do things/execute [action](@)), e.g. people, machines, but not [organization](@)."
 date: 20210601
 ---
+
+# Actor
+
 ### Short Description
 
 An **Actor** is someone or something that can act, i.e. actually do things, execute [actions](@), such as people or machines. Actors will generally execute [actions](@) in different ways, depending on the context, or the [party](@) on whose behalf they act.

@@ -1,6 +1,5 @@
 ---
 id: pattern-mental-model
-title: "Mental Models"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: pattern
@@ -11,6 +10,9 @@ grouptags:
 hoverText: "The Mental Models pattern captures the foundational Concepts and relations that we need for creating, maintaining and using  (decentralized) Vocabularies (Terminologies) that groups of people can use for the specific purposes they pursue."
 date: 20210601
 ---
+
+# Mental Models
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

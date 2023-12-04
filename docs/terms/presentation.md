@@ -1,6 +1,5 @@
 ---
 id: presentation
-title: "Presentation"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Presentation"
 glossaryText: "a (signed) digital message that a [holder](@) component may send to a [verifier](@) component that contains data derived from one or more [verifiable](verify@) [credential](@) (that (a [colleague](@) component of) the [holder](@) component has received from [issuer](@) components of one or more [parties](@)), as a response to a specific [presentation request](@) of a [Verifier](@) component."
 date: 20210601
 ---
+
+# Presentation
+
 
 ### Short Description
 

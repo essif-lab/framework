@@ -1,6 +1,5 @@
 ---
 id: pattern-terminology
-title: "Terminology Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
@@ -11,6 +10,9 @@ grouptags:
 hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
 date: 20211101
 ---
+
+# Terminology Pattern
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

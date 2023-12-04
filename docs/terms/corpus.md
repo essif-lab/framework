@@ -1,6 +1,5 @@
 ---
 id: corpus
-title: "Corpus of Terminology"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Corpus of Terminology"
 glossaryText: "the documentation that describes the [knowledge](@) around a set of [term](@) and [concept](@)."
 date: 20210601
 ---
+
+# Corpus of Terminology
+
 
 ## Short Description
 

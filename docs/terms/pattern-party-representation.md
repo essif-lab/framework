@@ -1,6 +1,5 @@
 ---
 id: pattern-party-representation
-title: "Party Representation"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
@@ -13,6 +12,9 @@ glossaryTerm: "Party Representation"
 glossaryText: "the Party Representation pattern captures the foundational concepts and relations that we need for thinking about how [parties](@) can be represented in various circumstances."
 date: 20210601
 ---
+
+# Party Representation
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

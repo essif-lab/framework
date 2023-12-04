@@ -1,6 +1,5 @@
 ---
 id: capability-of-an-actor
-title: "Capability (of an Actor)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Capability (of an Actor)"
 glossaryText: "the potential of an [actor](@) to execute a (named) coherent set of [action](@) (a 'function', or 'task') on behalf of some [party](@)."
 date: 20220922
 ---
+
+# Capability (of an Actor)
+
 
 :::info Editor's note
 This page is a first draft. Additional contents (and a proper review) are needed.

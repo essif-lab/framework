@@ -1,6 +1,5 @@
 ---
 id: entity
-title: "Entity"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Entity"
 glossaryText: "someone or something that is known to exist."
 date: 20210601
 ---
+
+# Entity
+
 
 ### Short Description
 

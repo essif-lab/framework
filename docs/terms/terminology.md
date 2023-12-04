@@ -1,6 +1,5 @@
 ---
 id: terminology
-title: "Terminology"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Terminology"
 glossaryText: "the set of [term](@) that are used within a single [scope](@) to refer to a single [definition](@), enabling [parties](@) to reason and communicate ideas they have about one or more specific topics."
 date: 20211101
 ---
+
+# Terminology
+
 
 ### Short Description
 

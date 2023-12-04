@@ -1,6 +1,5 @@
 ---
 id: delegate
-title: "Delegate"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Delegate"
 glossaryText: "the transferral of [ownership](@) of one or more [obligation](@) of a [party](@) (the [delegator](delegate@)), including the associated accountability, to another [party](@) (the [delegatee](delegate@))), which implies that the [delegatee](delegate@) can realize such [obligation](@) as it sees fit."
 date: 20220222
 ---
+
+# Delegate
+
 
 ### Short Description
 

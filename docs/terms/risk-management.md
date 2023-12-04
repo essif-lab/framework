@@ -1,6 +1,5 @@
 ---
 id: risk-management
-title: "Risk management"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Risk management"
 glossaryText: "a process that is run by (or on behalf of) a specific [party](@) for the purpose of [managing](management@) the [risk](@) that it [owns](@) (thereby realizing specific [risk objectives](risk-objective@))."
 date: 20220206
 ---
+
+# Risk management
+
 
 ### Short Description
 

@@ -1,6 +1,5 @@
 ---
 id: knowledge
-title: "Knowledge"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Knowledge"
 glossaryText: "the (intangible) sum of what is known by a specific [party](@), as well as the familiarity, awareness or understanding of someone or something by that [party](@)."
 date: 20210601
 ---
+
+# Knowledge
+
 
 ### Short Description
 

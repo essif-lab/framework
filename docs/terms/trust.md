@@ -1,6 +1,5 @@
 ---
 id: trust
-title: "Trust"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Trust"
 glossaryText: "the (un)conscious decision by a [party](@) to believe that X is in fact the case."
 date: 20220222
 ---
+
+# Trust
+
 
 ### Short Description
 

@@ -1,6 +1,5 @@
 ---
 id: decision
-title: "Decision"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Decision"
 glossaryText: "the conclusion that a [party](@) inferences from a set of [data](@) that it considers to be facts."
 date: 20211111
 ---
+
+# Decision
+
 
 ### Short Description
 

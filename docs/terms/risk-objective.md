@@ -1,6 +1,5 @@
 ---
 id: risk-objective
-title: "Risk Objective"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Risk Objective"
 glossaryText: "an [objective](@), owned by a [party](@), that aims to reach and maintain a state of affairs in which the [risk](@) associated with a specific set of its [objective](@) become, and/or remain, acceptable."
 date: 20220203
 ---
+
+# Risk Objective
+
 
 ### Short Description
 

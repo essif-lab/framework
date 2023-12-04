@@ -1,6 +1,5 @@
 ---
 id: obligation
-title: "Obligation"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Obligation"
 glossaryText: "an [objective](@) that is [owned](@) by the [party](@) for producing a specific (set of) result(s) that are to be used (consumed) by that [party](@) and/or other [parties](@)."
 date: 20210601
 ---
+
+# Obligation
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

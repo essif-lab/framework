@@ -1,6 +1,5 @@
 ---
 id: revocation-component
-title: "Revocation component"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Revocation component"
 glossaryText: "a component that implements the [capability](@) to [revoke](@) [credential](@) that are issued by its [principal](@), according to its [principal](@) [revocation policy](@)."
 date: 20211006
 ---
+
+# Revocation component
+
 
 :::info Editor's note
 *this section needs to be revised*

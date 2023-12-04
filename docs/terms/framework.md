@@ -1,6 +1,5 @@
 ---
 id: framework
-title: "Framework (Conceptual)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Framework (Conceptual)"
 glossaryText: "a set of assumptions, concepts, values, and practices that constitutes a way of viewing reality."
 date: 20220405
 ---
+
+# Framework (Conceptual)
+
 
 ### Short Description
 

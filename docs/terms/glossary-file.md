@@ -1,6 +1,5 @@
 ---
 id: glossary-file
-title: "Glossary-file"
 scopetag: essifLab
 termType: concept
 term: glossary-file
@@ -11,6 +10,9 @@ glossaryTerm: "Glossary-file"
 glossaryText: "a file whose contents defines/specifies a [glossary](@)."
 date: 20210601
 ---
+
+# Glossary-file
+
 
 ### Short Description
 

@@ -1,6 +1,5 @@
 ---
 id: expectation
-title: "Expectation"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Expectation"
 glossaryText: "an [objective](@) that is [owned](@) by a [party](@) for having a specific (set of) result(s) produced, where the actual production thereof is (going to be) outsourced to another [party](@)."
 date: 20220908
 ---
+
+# Expectation
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

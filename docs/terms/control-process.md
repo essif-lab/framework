@@ -1,6 +1,5 @@
 ---
 id: control-process
-title: "Control Process"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Control Process"
 glossaryText: "a process, [owned](@) and run by a [party](@), to ensure that a specific subset of its control [objective](@) are realized."
 date: 20210830
 ---
+
+# Control Process
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

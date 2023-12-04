@@ -1,6 +1,5 @@
 ---
 id: dependent
-title: "Dependent"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Dependent"
 glossaryText: "an [entity](@) for the caring for and/or protecting/guarding/defending of which a [guardianship arrangement](@) has been established."
 date: 20210601
 ---
+
+# Dependent
+
 
 :::info Editor's note
 Additional content is needed here.

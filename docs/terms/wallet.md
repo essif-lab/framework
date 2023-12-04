@@ -1,6 +1,5 @@
 ---
 id: wallet
-title: "Wallet"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Wallet"
 glossaryText: "a component that implements the [capability](@) to securely store data as requested by [colleague agents](colleague@), and to provide stored data to [colleague agents](colleague@) or [peer agents](peer-agent@), all in [compliance](@) with the rules of its [principal](@)'s [wallet policy](@)."
 date: 20210601
 ---
+
+# Wallet
+
 
 ### Short Description
 

@@ -1,6 +1,5 @@
 ---
 id: validate
-title: "Validate"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Validate"
 glossaryText: "the act, by or on behalf of a [party](@), of determining whether or not that data is valid to be used for some specific purpose(s) of that [party](@)."
 date: 20210802
 ---
+
+# Validate
+
 
 ### Short Description
 

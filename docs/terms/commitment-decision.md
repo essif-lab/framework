@@ -1,6 +1,5 @@
 ---
 id: commitment-decision
-title: "Commitment Decision"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Commitment Decision"
 glossaryText: "the decision of that [party](@) whether or not to commit to that [business transaction](transaction@), i.e. (promise) to fulfill the [obligation](@) that the associated [transaction agreement proposal](transaction-proposal@) would impose on that [party](@) once it were signed."
 date: 20210601
 ---
+
+# Commitment Decision
+
 
 :::info Editor's note
 Additional content is needed here.

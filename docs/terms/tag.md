@@ -1,6 +1,5 @@
 ---
 id: tag
-title: "Tag"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Tag"
 glossaryText: "an alphanumeric string that is used to identify [scope](@) (so called 'scopetags'), group [term](@) (so called 'grouptags'), or identify a specific version of a [terminology](@) (so called 'versiontags') from within a specific [scope](@)."
 date: 20210601
 ---
+
+# Tag
+
 
 ### Short Description
 

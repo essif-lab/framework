@@ -1,6 +1,5 @@
 ---
 id: mission
-title: "Mission"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Mission"
 glossaryText: "an [objective](@) of a [party](@) that provides an answer to the question why that [party](@) exists - i.e. its 'raison d'être'."
 date: 2022-09-08
 ---
+
+# Mission
+
 
 ### Short Description
 

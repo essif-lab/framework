@@ -1,6 +1,5 @@
 ---
 id: agent
-title: "Agent"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Agent"
 glossaryText: "an [actor](@) that is executing an [action](@) on behalf of a [party](@) (called the [principal](@) of that [actor](@))."
 date: 20210601
 ---
+
+# Agent
+
 
 ### Short Description
 

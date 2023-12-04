@@ -1,6 +1,5 @@
 ---
 id: pattern-world-model
-title: "eSSIF-Lab World Model"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
@@ -13,6 +12,9 @@ glossaryTerm: "eSSIF-Lab World Model"
 glossaryText: "the set of [concept](@), relations between them ([pattern](@)), and [Principles](essifLab-principles) (that are the starting point for eSSIF-Lab's thinking)."
 date: 20211101
 ---
+
+# eSSIF-Lab World Model
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

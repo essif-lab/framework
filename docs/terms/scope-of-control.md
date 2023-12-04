@@ -1,6 +1,5 @@
 ---
 id: scope-of-control
-title: "Scope of Control"
 displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Scope of Control"
 glossaryText: "the extent of the area or subject matter that a [party](@) [controls](controller@)."
 date: 20210601
 ---
+
+# Scope of Control
+
 
 ### Short Description
 

@@ -1,6 +1,5 @@
 ---
 id: organization
-title: "Organization"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Organization"
 glossaryText: "a [party](@) that is capable of setting [objective](@) and making sure these are realized by [actor](@) that it has [onboarded](onboarding@) and/or by (vetted) [parties](@) that are committed to contribute to these [objective](@)."
 date: 20210601
 ---
+
+# Organization
+
 ### Short Description
 
 An **Organization** is a [party](@) that is capable of setting [objectives](@) and making sure these are realized by [actors](@) that it has [onboarded](onboarding@) and/or by (vetted) [parties](@) that are committed to contribute to these [objectives](@).

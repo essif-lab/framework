@@ -1,6 +1,5 @@
 ---
 id: holder
-title: "Holder"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Holder"
 glossaryText: "a component that implements the [capability](@) to handle [presentation requests](presentation-request@) from a [peer agent](@), produce the requested data (a presentation) according to its [principal](@)'s [holder-policy](@), and send that in response to the request."
 date: 20210601
 ---
+
+# Holder
+
 
 :::info Editor's note
 In other SSI contexts, this term has a different meaning. We intend to rework the framework in such a way that we can use this term in various ways (e.g. as a [party](@), a [role name](@), or an [actor](@) that performs the [role](@) associated with the [role name](@)

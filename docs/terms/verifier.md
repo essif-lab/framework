@@ -1,6 +1,5 @@
 ---
 id: verifier
-title: "Verifier"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Verifier"
 glossaryText: "a component that implements the [capability](@) to request [peer agents](peer-agent@) to present (provide) data from credentials (of a specified kind, issued by specified [parties](@)), and to verify such responses (check structure, signatures, dates), according to its [principal](@)'s [verifier policy](@)."
 date: 20210601
 ---
+
+# Verifier
+
 
 :::info Editor's note
 *this section needs to be revised*

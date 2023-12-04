@@ -1,6 +1,5 @@
 ---
 id: validator
-title: "Validator"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Validator"
 glossaryText: "a component that implements the [capability](@) to determine whether or not ([verified](verify@)) data is valid to be used for some specific purpose(s)."
 date: 20210802
 ---
+
+# Validator
+
 
 :::info Editor's note
 *This text needs to be revised. (see also "issuer", "verifier" for inspiration)*

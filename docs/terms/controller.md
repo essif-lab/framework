@@ -1,6 +1,5 @@
 ---
 id: controller
-title: "Controller"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Controller"
 glossaryText: "the role that an [actor](@) performs as it is executing actions on that [entity](@) for the purpose of ensuring that the [entity](@) will act/behave, or be used, in a particular way."
 date: 20211222
 ---
+
+# Controller
+
 
 ### Short Description
 

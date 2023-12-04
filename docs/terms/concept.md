@@ -1,6 +1,5 @@
 ---
 id: concept
-title: "Concept"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Concept"
 glossaryText: "the ideas/thoughts behind a classification of [entities](@) (what makes [entities](@) in that class 'the same')."
 date: 20210601
 ---
+
+# Concept
+
 
 ### Short Description
 

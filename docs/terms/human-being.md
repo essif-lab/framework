@@ -1,6 +1,5 @@
 ---
 id: human-being
-title: "Human Being"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Human Being"
 glossaryText: "a person of flesh and blood (homo sapiens), that we classify both as a [party](@),an [actor](@), and a [jurisdiction](@)."
 date: 20210601
 ---
+
+# Human Being
+
 
 ### Short Description
 

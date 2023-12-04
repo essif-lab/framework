@@ -1,6 +1,5 @@
 ---
 id: verifier-policy
-title: "Verifier Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Verifier Policy"
 glossaryText: "a [digital policy](policy@) that enables an operational [verifier](@) component to function in accordance with the [objective](@) of its [principal](@)."
 date: 20210601
 ---
+
+# Verifier Policy
+
 
 :::info Editor's note
 Additional content is needed here.

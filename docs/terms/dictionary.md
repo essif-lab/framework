@@ -1,6 +1,5 @@
 ---
 id: dictionary
-title: "Dictionary"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Dictionary"
 glossaryText: "an alphabetically sorted list of [term](@) with various meanings they may have in different contexts."
 date: 20210601
 ---
+
+# Dictionary
+
 
 ### Short Description
 

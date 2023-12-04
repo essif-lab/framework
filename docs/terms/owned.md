@@ -1,6 +1,5 @@
 ---
 id: owned
-title: "Owned"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Owned"
 glossaryText: "an [entity](@) over which another [entity](@) (its [owner](@)) has the power (duty, right) to enjoy it, dispose of it and control it; that power is limited to (the scope of) that [jurisdiction](@), and by its rules."
 date: 20210601
 ---
+
+# Owned
+
 
 see: [ownership](@)
 

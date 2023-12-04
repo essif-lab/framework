@@ -1,6 +1,5 @@
 ---
 id: governor
-title: "Governor"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Governor"
 glossaryText: "a [role](@) that a [party](@) (better: [employee](@) of a specific [party](@)) performs as it [governs](governance@) a (coherent) set of [expectation](@) of that [party](@), within a particular focus."
 date: 20220915
 ---
+
+# Governor
+
 
 :::info Editor's note
 This page is a first draft and may need revision.

@@ -1,6 +1,5 @@
 ---
 id: guardianship-arrangement
-title: "Guardianship Arrangement"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Guardianship Arrangement"
 glossaryText: "guardianship Arrangement (in a Jurisdiction): the specification of a set of rights and duties between [legal entities](legal-entity@) of the [jurisdiction](@) that enforces these rights and duties, for the purpose of caring for and/or protecting/guarding/defending one or more of these [entities](legal-entity@)."
 date: 20210601
 ---
+
+# Guardianship Arrangement
+
 
 ### Short Description
 

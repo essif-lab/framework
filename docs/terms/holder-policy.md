@@ -1,6 +1,5 @@
 ---
 id: holder-policy
-title: "Holder Policy"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Holder Policy"
 glossaryText: "a [digital policy](policy@) that enables an operational [holder](@) component to function in accordance with the [objective](@) of its [principal](@)."
 date: 20210601
 ---
+
+# Holder Policy
+
 
 :::info Editor's note
 Additional content is needed here.

@@ -1,6 +1,5 @@
 ---
 id: objective
-title: "Objective"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Objective"
 glossaryText: "something toward which a [party](@) (its [owner](@)) directs effort (an aim, goal, or end of action)."
 date: 20210601
 ---
+
+# Objective
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

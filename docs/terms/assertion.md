@@ -1,6 +1,5 @@
 ---
 id: assertion
-title: "Assertion"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Assertion"
 glossaryText: "a declaration/statement, made by a specific [party](@), that something is the case."
 date: 20210601
 ---
+
+# Assertion
+
 
 ### Short Description
 

@@ -1,6 +1,5 @@
 ---
 id: term
-title: "Term"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Term"
 glossaryText: "a word or phrase (i.e.: text) that is used in at least one [scope](@)/context to represent a specific [concept](@)."
 date: 20220421
 ---
+
+# Term
+
 
 ### Short Description
 

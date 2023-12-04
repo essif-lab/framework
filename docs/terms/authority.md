@@ -1,6 +1,5 @@
 ---
 id: authority
-title: "Authority (Centralized or Decentralized)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Authority (Centralized or Decentralized)"
 glossaryText: "a [party](@) of which certain decisions, ideas, rules etc. are followed by other [parties](@)."
 date: 20210601
 ---
+
+# Authority (Centralized or Decentralized)
+
 
 ### Short Description
 

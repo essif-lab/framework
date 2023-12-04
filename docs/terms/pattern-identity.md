@@ -1,6 +1,5 @@
 ---
 id: pattern-identity
-title: "Identity Pattern"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
@@ -11,6 +10,9 @@ grouptags:
 hoverText: "The eSSIF-Lab Identity Pattern shows how digital identities work, how this relates to (attributes in) credentials, and how all this can be made to work in SSI contexts."
 date: 20210803
 ---
+
+# Identity Pattern
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

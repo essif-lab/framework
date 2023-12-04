@@ -1,6 +1,5 @@
 ---
 id: employer
-title: "Employer"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Employer"
 glossaryText: "a [party](@) on whose behalf a (human or non-human) [actor](@) (called an [employee](@) of that [party](@)) might execute [action](@)."
 date: 20220916
 ---
+
+# Employer
+
 
 :::info Editor's note
 Additional content is needed here.

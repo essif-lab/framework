@@ -1,6 +1,5 @@
 ---
 id: scoped-term
-title: "Term (Scoped)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: concept
@@ -12,6 +11,9 @@ glossaryTerm: "Term (Scoped)"
 glossaryText: "a [term](@), the meaning of which is determined by the [definition](@) to which it refers in a specific [scope](@)/context."
 date: 20211101
 ---
+
+# Term (Scoped)
+
 
 ### Short Description
 

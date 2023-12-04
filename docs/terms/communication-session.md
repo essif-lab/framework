@@ -1,6 +1,5 @@
 ---
 id: communication-session
-title: "Communication Session"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Communication Session"
 glossaryText: "a time interval during which two [actor](@) have an established [communication channel](@) that does not exist outside of that time interval."
 date: 20210601
 ---
+
+# Communication Session
+
 
 :::info Editor's note
 Additional content is needed here.

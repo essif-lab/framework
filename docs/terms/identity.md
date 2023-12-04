@@ -1,6 +1,5 @@
 ---
 id: identity
-title: "Identity"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Identity"
 glossaryText: "the combined [knowledge](@) about that [entity](@) of all [parties](@), i.e. the union of all [partial identities](partial-identity@) of which that [entity](@) is the [subject](@)."
 date: 20210803
 ---
+
+# Identity
+
 
 ### Short Description
 

@@ -1,6 +1,5 @@
 ---
 id: transaction-id
-title: "Transaction Id"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Transaction Id"
 glossaryText: "character string that this [participant](@) uses to identify, and refer to, that [business transaction](transaction@)."
 date: 20210601
 ---
+
+# Transaction Id
+
 
 :::info Editor's note
 Additional content is needed here.

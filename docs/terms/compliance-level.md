@@ -1,6 +1,5 @@
 ---
 id: compliance-level
-title: "Compliance level"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Compliance level"
 glossaryText: "a measure for stating how well an [entity](@) conforms with a stated (set of) requirement(s)."
 date: 20220203
 ---
+
+# Compliance level
+
 
 ### Short Description
 

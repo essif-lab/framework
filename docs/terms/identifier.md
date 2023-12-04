@@ -1,6 +1,5 @@
 ---
 id: identifier
-title: "Identifier"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Identifier"
 glossaryText: "a character string that is being used for the identification of some [entity](@) (yet may refer to 0, 1, or more [entities](@), depending on the context within which it is being used)."
 date: 20210601
 ---
+
+# Identifier
+
 
 ### Short Description
 

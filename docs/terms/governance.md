@@ -1,6 +1,5 @@
 ---
 id: governance
-title: "Governance"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Governance"
 glossaryText: "the [act](action@) or process of governing or overseeing the realization of (the results associated with) a set of [objective](@) by the [owner](@) of these [objective](@), in order to ensure they will be fit for the purposes that this [owner](@) intends to use them for."
 date: 20210830
 ---
+
+# Governance
+
 
 ### Short Description
 

@@ -1,6 +1,5 @@
 ---
 id: guardianship-type
-title: "Guardianship-type"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Guardianship-type"
 glossaryText: "a class of [guardianship arrangements](guardianship-arrangement@) within the [jurisdiction](@) that governs and manages them."
 date: 20210601
 ---
+
+# Guardianship-type
+
 
 :::info Editor's note
 Additional content is needed here.

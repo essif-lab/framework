@@ -1,6 +1,5 @@
 ---
 id: community
-title: "Community"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Community"
 glossaryText: "a [party](@), consisting of at least two different [parties](@) (the members of the [community](@)) that seek to collaborate with each other so that each of them can achieve its individual [objective](@) more efficiently and/or effectively."
 date: 20210601
 ---
+
+# Community
+
 
 ### Short Description
 

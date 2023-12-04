@@ -23,10 +23,12 @@ synonymOf:
 glossaryText: "the [agent](@) with whom/which this other [agent](@) is communicating in that [communication session](@)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 
-title: "Peer Agent"
 displayed_sidebar: essifLabSideBar
 hoverText: "Peer Agent (of some other Agent in a Communication Session): the Agent with whom/which this other Agent is communicating in that Communication Session."
 ---
+
+# Peer Agent
+
 
 :::info Editor's note
 Additional content is needed here.

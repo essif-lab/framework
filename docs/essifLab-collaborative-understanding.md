@@ -1,10 +1,12 @@
 ---
 id: essifLab-collaborative-understanding
-title: "Fostering a Collaborative Understanding"
 sidebar_label: Collaborative Understanding
 scopetag: essifLab
 date: 20220802
 ---
+
+# Fostering a Collaborative Understanding
+
 
 When people from various backgrounds (and cultures) work together, it is inevitable that misunderstandings occur, i.e. texts (written or spoken) are easily interpreted in ways other than what the author intended. More often than not, such misunderstandings go undetected, and rightfully so, as in most cases it doesn't cause serious problems.
 

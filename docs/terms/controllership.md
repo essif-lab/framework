@@ -1,6 +1,5 @@
 ---
 id: controllership
-title: "Controllership"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Controllership"
 glossaryText: "the [capability](@) of an [actor](@) to execute [action](@) on a specific [entity](@) for the purpose of ensuring that this [entity](@) will act/behave, or be used, in a particular way."
 date: 20211222
 ---
+
+# Controllership
+
 
 ### Short Description
 

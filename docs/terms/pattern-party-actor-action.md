@@ -1,6 +1,5 @@
 ---
 id: pattern-party-actor-action
-title: "Parties, Actors and Actions"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
@@ -13,6 +12,9 @@ glossaryTerm: "Parties, Actors and Actions"
 glossaryText: "'Who/what does things?', 'How are their [action](@) being guided/[controlled](controller@)?', 'Who [controls](controller@) whom/what?', 'Who/what may be held accountable?'."
 date: 20210602
 ---
+
+# Parties, Actors and Actions
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

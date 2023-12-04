@@ -1,6 +1,5 @@
 ---
 id: presentation-request
-title: "Presentation Request"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Presentation Request"
 glossaryText: "a (signed) digital message that a [verifier](@) component sends to a [holder](@) component asking for specific data from one or more [verifiable](verify@) [credential](@) that are issued by specific Parties."
 date: 20210601
 ---
+
+# Presentation Request
+
 
 :::info Editor's note
 Additional content is needed here.

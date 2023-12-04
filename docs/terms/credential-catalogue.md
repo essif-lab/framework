@@ -1,6 +1,5 @@
 ---
 id: credential-catalogue
-title: "Credential Catalogue"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Credential Catalogue"
 glossaryText: "a functional component that has the [](capability-of-an-actor@) to register and advertise the information about [credential types](credential-type@) that their respective [governing parties](governance@) have decided to disclose so as to enable other [parties](@) to decide whether or not it is beneficial for them to use [credential](@) of such types."
 date: 20210601
 ---
+
+# Credential Catalogue
+
 
 :::info Editor's note
 Additional content is needed here.

@@ -1,6 +1,5 @@
 ---
 id: mental-model
-title: "Mental Model"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -14,6 +13,9 @@ glossaryTerm: "Mental Model"
 glossaryText: "a description, both casual and formal, of a set of [concept](@) (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
 date: 20210804
 ---
+
+# Mental Model
+
 
 :::info Editor's note
 Additional content is needed here.

@@ -1,6 +1,5 @@
 ---
 id: normative-framework
-title: "Normative framework"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Normative framework"
 glossaryText: "a set of rules that are followed and/or criteria that remain fulfilled by (a specific kind of) [entities](@) whose behavior and/or properties are characterized as 'normal'."
 date: 20220203
 ---
+
+# Normative framework
+
 
 ### Short Description
 

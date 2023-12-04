@@ -1,6 +1,5 @@
 ---
 id: risk-owner
-title: "Risk Owner"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Risk Owner"
 glossaryText: "the [party](@) that is the [owner](@) of the [objective](@) to which a [risk](@) is associated."
 date: 20210601
 ---
+
+# Risk Owner
+
 
 ### Short Description
 

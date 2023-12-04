@@ -1,6 +1,5 @@
 ---
 id: role-name
-title: "Role name"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Role name"
 glossaryText: "name (text) that refers to (and identifies) a [role](@) in a specific context."
 date: 20210601
 ---
+
+# Role name
+
 
 ### Short Description
 

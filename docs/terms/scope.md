@@ -1,6 +1,5 @@
 ---
 id: scope
-title: "Scope"
 displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Scope"
 glossaryText: "the extent of the area or subject matter (which we use, e.g., to define [pattern](@), [concept](@), [term](@) and [glossaries](@) in, but it serves other purposes as well)."
 date: 20210601
 ---
+
+# Scope
+
 
 ### Short Description
 

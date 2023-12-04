@@ -1,6 +1,5 @@
 ---
 id: concept-file
-title: "Concept-file"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Concept-file"
 glossaryText: "a file whose contents defines/specifies a [concept](@)."
 date: 20210601
 ---
+
+# Concept-file
+
 
 ### Short Description
 

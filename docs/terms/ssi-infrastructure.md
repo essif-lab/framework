@@ -1,6 +1,5 @@
 ---
 id: ssi-infrastructure
-title: "SSI Infrastructure"
 displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "SSI Infrastructure"
 glossaryText: "the technological components that are (envisaged to be) all over the world for the purpose of providing, requesting and obtaining [qualified data](@), for the purpose of negotiating and/or executing electronic [transaction](@)."
 date: 20210601
 ---
+
+# SSI Infrastructure
+
 
 ### Short Description
 

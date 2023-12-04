@@ -1,6 +1,5 @@
 ---
 id: transaction-proposal
-title: "Transaction Proposal"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Transaction Proposal"
 glossaryText: "a [transaction agreement](@) that is 'in-the-making' (ranging from an empty document to a document that would be a [transaction agreement](@) if it were signed by all [participant](@))."
 date: 20210601
 ---
+
+# Transaction Proposal
+
 
 :::info Editor's note
 Additional content is needed here.

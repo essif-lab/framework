@@ -1,6 +1,5 @@
 ---
 id: pattern-decentralized-risk-management
-title: "Decentralized (Networked) Risk Management (NRM)"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
@@ -11,6 +10,9 @@ grouptags:
 hoverText: "The Decentralized (Networked) Risk Management (NRM) pattern describes how Parties can deal with the Risks associated with their Objectives, i.e. ensure that the Objectives they pursue are properly realized and they become/remain successful."
 date: 20220220
 ---
+
+# Decentralized (Networked) Risk Management (NRM)
+
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 

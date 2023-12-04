@@ -1,6 +1,5 @@
 ---
 id: compliance-management
-title: "Compliance management"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Compliance management"
 glossaryText: "the process that is run by (or on behalf of) a specific [party](@) for the purpose of [managing](management@) its [compliance objectives](compliance-objective@)."
 date: 20220203
 ---
+
+# Compliance management
+
 
 ### Short Description
 

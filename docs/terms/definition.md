@@ -1,6 +1,5 @@
 ---
 id: definition
-title: "Definition"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Definition"
 glossaryText: "a text that helps [parties](@) to have the same understanding about the meaning of (and [concept](@) behind) a [term](@), ideally in such a way that these [parties](@) can determine whether or not they make the same distinction."
 date: 20210601
 ---
+
+# Definition
+
 
 ### Short Description
 

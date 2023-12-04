@@ -1,6 +1,5 @@
 ---
 id: ssi-agent
-title: "SSI Agent"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -14,6 +13,9 @@ glossaryTerm: "SSI Agent"
 glossaryText: "a [digital agent](agent@) that provides one or more of the [ssi functionalities](ssi-agent@) ([issuer](@), [holder](@), [verifier](@), [wallet](@)) to its [principal](@)."
 date: 20210601
 ---
+
+# SSI Agent
+
 
 ### Short Description
 

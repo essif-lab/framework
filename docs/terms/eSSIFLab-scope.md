@@ -1,6 +1,5 @@
 ---
 id: eSSIFLab-scope
-title: "Scope: essifLabTerminology"
 scopetag: essifLabTerminology
 termType: scope
 term: eSSIFLab
@@ -11,6 +10,9 @@ glossaryTerm: "Scope: essifLabTerminology"
 glossaryText: "specification of the eSSIF-Lab scope."
 date: 20210601
 ---
+
+# Scope: essifLabTerminology
+
 
 ### Governance
 

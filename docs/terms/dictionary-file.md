@@ -1,6 +1,5 @@
 ---
 id: dictionary-file
-title: "Dictionary-file"
 scopetag: essifLab
 termType: concept
 term: dictionary-file
@@ -11,6 +10,9 @@ glossaryTerm: "Dictionary-file"
 glossaryText: "a file whose contents specifies the contents of a [dictionary](@)."
 date: 20210601
 ---
+
+# Dictionary-file
+
 
 ### Short Description
 

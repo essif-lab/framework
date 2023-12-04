@@ -1,6 +1,5 @@
 ---
 id: terminology-process
-title: "Terminology Process"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Terminology Process"
 glossaryText: "a method for recognizing misunderstandings as such, and creating or maintaining [definition](@) that resolve them."
 date: 20210601
 ---
+
+# Terminology Process
+
 
 ### Short Description
 

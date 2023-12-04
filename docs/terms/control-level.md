@@ -1,6 +1,5 @@
 ---
 id: control-level
-title: "Control level"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Control level"
 glossaryText: "a measure for the efficiency and effectiveness in which a [control](controller@) produces the results specified by its [control objective](@)"
 date: 20220212
 ---
+
+# Control level
+
 
 ### Short Description
 

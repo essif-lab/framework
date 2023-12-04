@@ -17,10 +17,12 @@ contributors: RieksJ
 glossaryText: "an alphabetically sorted list of [term](@) with the (single) meaning it has in (at least) one context."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 
-title: "Glossary"
 displayed_sidebar: essifLabSideBar
 hoverText: "Glossary: an alphabetically sorted list of Terms with the (single) meaning it has in (at least) one context."
 ---
+
+# Glossary
+
 
 ### Short Description
 

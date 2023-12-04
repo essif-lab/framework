@@ -21,10 +21,12 @@ synonymOf:
 glossaryText: "a [party](@) is negotiating (or has negotiated) a [transaction agreement](@)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
 
-title: "Participant"
 displayed_sidebar: essifLabSideBar
 hoverText: "Participant (in/of a Transaction): a Party is negotiating (or has negotiated) a Transaction Agreement."
 ---
+
+# Participant
+
 
 ### Purpose
 

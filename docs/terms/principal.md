@@ -1,6 +1,5 @@
 ---
 id: principal
-title: "Principal"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Principal"
 glossaryText: "the [party](@) for whom, or on behalf of whom, the [actor](@) is executing an [action](@) (this [actor](@) is then called an [agent](@) of that [party](@))."
 date: 20210601
 ---
+
+# Principal
+
 
 ### Short Description
 

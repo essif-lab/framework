@@ -1,6 +1,5 @@
 ---
 id: verify
-title: "Verify"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Verify"
 glossaryText: "the act, by or on behalf of a [party](@), of determining whether that data is authentic (i.e. originates from the [party](@) that authored it), timely (i.e. has not expired), and conforms to other specifications that apply to its structure."
 date: 20210802
 ---
+
+# Verify
+
 
 ### Short Description
 

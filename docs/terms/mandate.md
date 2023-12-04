@@ -1,6 +1,5 @@
 ---
 id: mandate
-title: "Mandate"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Mandate"
 glossaryText: "a right or duty that one [party](@) (the [mandator](mandate@)) has granted to another [party](@) or [employee](@) (the [mandatee](mandate@)) for executing a specific (set of) [action](@) in the name of, and under responsibility/accountability of, this (first) [party](@)."
 date: 20220220
 ---
+
+# Mandate
+
 
 ### Short Description
 

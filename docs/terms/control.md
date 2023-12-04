@@ -1,6 +1,5 @@
 ---
 id: control
-title: "Control"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Control"
 glossaryText: "the combination of resources (e.g. people, tools, budgets, time) and processes that are tasked to realize a specific [control objective](@) of a particular [party](@)."
 date: 20220212
 ---
+
+# Control
+
 
 ### Short Description
 

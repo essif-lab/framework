@@ -1,6 +1,5 @@
 ---
 id: communication-channel
-title: "Communication Channel"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Communication Channel"
 glossaryText: "a (digital or non-digital) means by which two [actor](@) can exchange messages with one another."
 date: 20210601
 ---
+
+# Communication Channel
+
 
 :::info Editor's note
 Additional content is needed here.

@@ -1,6 +1,5 @@
 ---
 id: transaction-request
-title: "Transaction Request"
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
@@ -13,6 +12,9 @@ glossaryTerm: "Transaction Request"
 glossaryText: "a message, send by a requesting [party](@) to a providing [party](@), that initiates the negotiation of a new [transaction agreement](@) between these [parties](@) for the provisioning of a specific product or service."
 date: 20210601
 ---
+
+# Transaction Request
+
 
 :::info Editor's note
 Additional content is needed here.
