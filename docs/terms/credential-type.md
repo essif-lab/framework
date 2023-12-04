@@ -15,7 +15,6 @@ date: 20210601
 
 # Credential Type
 
-
 ### Short Description
 
 A **credential-type** is a specification that states

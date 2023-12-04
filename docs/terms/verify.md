@@ -15,7 +15,6 @@ date: 20210802
 
 # Verify
 
-
 ### Short Description
 
 **Verification** (of data) is the act, by or on behalf of a [party](@), of determining whether that data is authentic (i.e. originates from the [party](@) that authored it), timely (i.e. has not expired), and conforms to other specifications that apply to its structure. It does NOT imply that whatever the data represents is actually true, accurate, real or justified (as per the definitions of [Merriam-Webster](https://www.merriam-webster.com/dictionary/verify) or [Lexico (Oxford dictionary)](https://www.merriam-webster.com/dictionary/verify)).

@@ -15,7 +15,6 @@ date: 20210601
 
 # Vocabulary
 
-
 ### Short Description
 
 A **vocabulary** is the complete set of words and phrases that one or more people and/or organizations have at their disposal for reasoning and communicating about any topic. Since they are often interested in specific topics, [terminologies](@) may be subsets of their vocabularies.

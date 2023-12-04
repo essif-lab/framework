@@ -16,7 +16,6 @@ date: 20210804
 
 # Mental Model
 
-
 :::info Editor's note
 Additional content is needed here.
 :::

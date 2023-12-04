@@ -15,7 +15,6 @@ date: 20210601
 
 # Community
 
-
 ### Short Description
 
 A **Community** is a [party](@), consisting of at least two different [parties](@) (the members of the [community](@)) that seek to collaborate with each other so that each of them can achieve its individual [objectives](@) more efficiently and/or effectively. As a [party](@), the community sets its own [objectives](@) that its members contribute to realizing, because the results thereof aim to facilitate their cooperation.

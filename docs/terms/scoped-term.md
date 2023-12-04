@@ -14,7 +14,6 @@ date: 20211101
 
 # Term (Scoped)
 
-
 ### Short Description
 
 A **scoped term** is a [term](@), the meaning of which is determined by the [definition](@) to which it refers in a specific [scope](@)/context. Thus, a scoped term has a precise, well defined meaning. One can say that a scoped term is a [term](@) that is disambiguated.

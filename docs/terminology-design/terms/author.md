@@ -1,6 +1,5 @@
 ---
 # TEv2 Curated Text Header
-
 term: author
 termType: concept
 isa: tev2-role
@@ -9,12 +8,10 @@ synonymOf:
 grouptags:
 formPhrases: author{ss}
 # Curation status
-
 status: proposed
 created: 2023-01-10
 updated: 2023-01-10
 # Origins/Acknowledgements
-
 contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"

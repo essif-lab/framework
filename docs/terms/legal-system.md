@@ -15,7 +15,6 @@ date: 20210601
 
 # Legal System
 
-
 ### Short Description
 
 A **Legal System** is a system in which rules are defined ([legislature](https://en.wikipedia.org/wiki/Legislature)) and a mechanism for their enforcement is implicitly or explicitly defined ([executive](https://en.wikipedia.org/wiki/Executive_(government))), as well as a mechanism for conflict resolution ([judiciary](https://en.wikipedia.org/wiki/Judiciary)). A legal system is designed and governed by a single [party](@). A legal system can be operationalized by assigning it a scope within which enforcement and conflict resolution are implemented. The associated operational tasks may be [mandated](mandate@) or [delegated](delegate@) to other [parties](@). Depending on the individual legal system, 'rules' may be called 'laws', 'regulations', 'directives', 'policies', 'working instructions', etc. Other terms exist for specializations of these terms, e.g. 'order', '[mandate](@)', and others.

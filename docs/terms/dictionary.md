@@ -15,7 +15,6 @@ date: 20210601
 
 # Dictionary
 
-
 ### Short Description
 
 A Dictionary is an alphabetically sorted list of terms and explanations. Each term may have multiple such explanations, which come from different [scopes/contexts](scope@).

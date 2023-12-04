@@ -15,7 +15,6 @@ date: 20210601
 
 # Definition
 
-
 ### Short Description
 
 A **Definition** is a text that helps [parties](@) to have the same understanding about the meaning of a [term](@), and hence enables communications. The quality of a definition is the extent in which parties can use it to actually demonstrate that they have the same understanding.

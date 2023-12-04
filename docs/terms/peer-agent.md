@@ -1,9 +1,7 @@
 ---
 # `Multiple-use fields` (used by TEv2 and Docusaurus)
-
 id: peer-agent
 # TEv2: generic front-matter for curated texts
-
 scope: essiflab
 termtype: concept
 term: peer-agent
@@ -15,20 +13,17 @@ updated: 2021-06-01
 vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
-
 isa:
 fullterm: "Peer Agent"
 shorterm:
 synonymOf:
 glossaryText: "the [agent](@) with whom/which this other [agent](@) is communicating in that [communication session](@)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-
 displayed_sidebar: essifLabSideBar
 hoverText: "Peer Agent (of some other Agent in a Communication Session): the Agent with whom/which this other Agent is communicating in that Communication Session."
 ---
 
 # Peer Agent
-
 
 :::info Editor's note
 Additional content is needed here.

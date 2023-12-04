@@ -15,7 +15,6 @@ date: 20210601
 
 # Term-file
 
-
 ### Short Description
 
 A **term-file** is a file that defined/specifies a specific [term](@). To facilitate authors, a self-explanatory [template file](/tev1/term-file.md) is available.

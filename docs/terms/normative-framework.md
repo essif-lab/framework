@@ -15,7 +15,6 @@ date: 20220203
 
 # Normative framework
 
-
 ### Short Description
 
 A **Normative framework** is a set of rules that are followed and/or criteria that remain fulfilled by (a specific kind of) [entities](@) whose behavior and/or properties are characterized as 'normal'. Equivalently, one might say that abiding by the rules in an applicable [normative framework](@) is what constitutes normal behavior, and that having properties as specified by an applicable [normative framework](@) is what normally, [entities](@) would have.

@@ -15,7 +15,6 @@ date: 20220405
 
 # Framework (Conceptual)
 
-
 ### Short Description
 
 A **(conceptual) framework** is set of assumptions, concepts, values, and practices that constitutes a way of viewing reality. The eSSIF-Lab framework is such a conceptual framework.

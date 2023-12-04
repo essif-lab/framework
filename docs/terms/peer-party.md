@@ -16,7 +16,6 @@ date: 20210601
 
 # Peer Party
 
-
 ### Purpose
 
 Within the context of a [(business) transaction](transaction@), at least two [parties](@) participate. From the perspective of any such [party](@), we need the ability to refer to (any of) the other [party](@)/parties.

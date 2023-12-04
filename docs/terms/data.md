@@ -15,7 +15,6 @@ date: 20210601
 
 # Data
 
-
 ### Short Description
 
 **Data** something (tangible) that can be used to communicate a meaning (which is intangible/information). Examples include words, bit(string)s, pictures, sounds, smells, tastes, etc. We use the term [digital data](data@) to refer to data that consists of bits.

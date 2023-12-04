@@ -15,7 +15,6 @@ date: 20210830
 
 # Management
 
-
 ### Short Description
 
 **Management** is the [act](action@) or process of managing or actually realizing of (the results associated with) a set of  [objectives](@) that are [owned](@) by a single [party](@). This act or process is conducted by ([agents](@) that do so on behalf of) this [party](@).

@@ -15,7 +15,6 @@ date: 20220203
 
 # Control Objective
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Short Description

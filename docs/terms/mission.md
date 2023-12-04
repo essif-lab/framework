@@ -15,7 +15,6 @@ date: 2022-09-08
 
 # Mission
 
-
 ### Short Description
 
 The **Mission** or **[Mission Statement](https://en.wikipedia.org/wiki/Mission_statement)** of a [party](@) is an [objective](@) of that [party](@) in which it states why it exists, what its overall goal is - the goal of its operations.

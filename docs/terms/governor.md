@@ -15,7 +15,6 @@ date: 20220915
 
 # Governor
 
-
 :::info Editor's note
 This page is a first draft and may need revision.
 :::

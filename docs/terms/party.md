@@ -15,7 +15,6 @@ date: 20210601
 
 # Party
 
-
 ### Short Description
 
 A **party** is an [entity](@) that sets its [objectives](@), maintains its [knowledge](@), and uses that [knowledge](@) to pursue its [objectives](@) in an autonomous (sovereign) manner. One might say that they have a mind of their own. Typical examples are individual people and [organizations](@). Their minds (subjective knowledge) are what distinguishes one [party](@) from another, so every [party](@) is 1-1 related to its knowledge (mind).

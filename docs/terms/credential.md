@@ -15,7 +15,6 @@ date: 20210601
 
 # Credential
 
-
 ### Short Description
 
 A **credential** is a set of (related) [assertions](@) (also referred to as claims, or statements), to which metadata is added (e.g. date of issuing), and a number of proofs, which typically include a  proof of provenance (i.e. proof that it was created on behalf of a specific [party](@)), and a proof of integrity (i.e. proof that the data hasn't changed since it was issued).

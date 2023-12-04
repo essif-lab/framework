@@ -13,7 +13,6 @@ date: 20210601
 
 # Dictionary-file
 
-
 ### Short Description
 
 A **dictionary-file** is a file that contains the specification of what does (not) go into a specific [dictionary](@). To facilitate authors, a self-explanatory [template file](/tev1/dictionary-file.md) is available.

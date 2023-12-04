@@ -16,7 +16,6 @@ date: 20210601
 
 # SSI Agent
 
-
 ### Short Description
 
 An **SSI-agent** is a [digital agent](agent@) that provides one or more of the SSI functionalities (i.e. [issuer](@), [holder](@), [verifier](@), [wallet](@)) to its [principal](@).

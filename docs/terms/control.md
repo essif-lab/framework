@@ -15,7 +15,6 @@ date: 20220212
 
 # Control
 
-
 ### Short Description
 
 A **Control** is the combination of resources (e.g. people, tools, budgets, time) and processes that are tasked to realize a specific [(control) objective](control-objective@) of a specific [party](@). Typically, a control has a [management](@) lifecycle that consists of selecting/designing it, implementing and operating it, changing it when necessary, and dismantling it when it is no longer needed. Also, it has a [governance](@) lifecycle that (ideally continually) monitors the extent at which it produces the results that determine whether or not its control objective is realized, and specifying changes to better ensure its efficiency and effectiveness.

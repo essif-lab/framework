@@ -15,7 +15,6 @@ date: 20211111
 
 # Decision
 
-
 ### Short Description
 
 A **decision** (of a [party](@)) is the conclusion that this [party](@) inferences from a set of [data](@) that it considers to be facts. The method of inferencing does not need to be mathematically sound (and more often than not, that is in fact the case). [Toulmin's model for reasoning](https://www.cambridge.org/core/books/uses-of-argument/26CF801BC12004587B66778297D5567C) is a generic and useful model for explaining how decisions generally come to pass.

@@ -15,7 +15,6 @@ date: 20210802
 
 # Validate
 
-
 ### Short Description
 
 **Validation** (of data) is the act, by or on behalf of a [party](@), of determining whether or not that data is valid to be used for some specific purpose(s) of that [party](@). This determination can only be made after it has been determined that data has the correct structure (syntax), and conforms to other specifications that apply to its structure ([verification](verify@)).

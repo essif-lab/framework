@@ -15,7 +15,6 @@ date: 20220212
 
 # Control level
 
-
 ### Short Description
 
 A **control-level** is a measure for the efficiency and effectiveness in which a [control](controller@) produces the results specified by its [control objective](@).

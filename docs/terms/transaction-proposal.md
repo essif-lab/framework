@@ -15,7 +15,6 @@ date: 20210601
 
 # Transaction Proposal
 
-
 :::info Editor's note
 Additional content is needed here.
 :::

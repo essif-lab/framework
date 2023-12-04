@@ -15,7 +15,6 @@ date: 20210601
 
 # SSI Assurance Community (SSI-AC)
 
-
 ### Short Description
 
 An **Assurance Community** is a [community](@) that supports its members as they seek to increase their confidence in the [SSI infrastructure](@) and/or (specific) [qualifications](qualified-data@) of the data exchanged through that infrastructure." The nature of a community being that its members share some common ground ensures that this objective may be realized by exploring that existing common ground.

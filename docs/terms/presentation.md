@@ -15,13 +15,11 @@ date: 20210601
 
 # Presentation
 
-
 ### Short Description
 
 ### Purpose
 
 ### Criteria
-
 
 ### References
 

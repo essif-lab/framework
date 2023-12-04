@@ -15,7 +15,6 @@ date: 20220922
 
 # Capability (of a Party)
 
-
 :::info Editor's note
 This page is a first draft, and needs to be properly reviewed.
 :::

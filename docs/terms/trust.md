@@ -15,7 +15,6 @@ date: 20220222
 
 # Trust
 
-
 ### Short Description
 
 **Trust** (of a [party](@) in X) is the (un)conscious decision by that [party](@) that X is in fact the case. X can be anything. To trust is to believe to the extent that one can rely on X to be the case. One can trust a president - e.g. to make the right decisions. One may trust (rely on) one's own judgements or conscience.

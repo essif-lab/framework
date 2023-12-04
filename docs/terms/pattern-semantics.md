@@ -15,7 +15,6 @@ date: 202120607
 
 # Semantics Pattern
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Purpose

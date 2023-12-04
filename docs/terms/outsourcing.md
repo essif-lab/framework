@@ -15,7 +15,6 @@ date: 2022-10-18
 
 # Outsourcing
 
-
 ### Short Description
 
 **Oursourcing** is the state of affairs in which a [party](@) has an [objective](@) (better: an [expectation](@)) for the realization of a (set of) result(s), where the actual production of these results is expected to be done by a [party](@) other than itself.

@@ -15,7 +15,6 @@ date: 20210812
 
 # Identify
 
-
 ### Short Description
 
 **Identification** is an [act](action@), by or on behalf of a [party](@), that results in either the selection of

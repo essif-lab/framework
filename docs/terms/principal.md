@@ -15,7 +15,6 @@ date: 20210601
 
 # Principal
 
-
 ### Short Description
 
 A **principal** (of an [actor](@)) is a [party](@) on whose behalf the [actor](@) is executing an [action](@). As, and in the context where the [actor](@) is doing this, we say that the [party](@) fulfills the role of [principal](@) for that [actor](@). We also say that the [actor](@) fulfills the role of [agent](@) for that [party](@).

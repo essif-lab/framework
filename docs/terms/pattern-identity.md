@@ -13,7 +13,6 @@ date: 20210803
 
 # Identity Pattern
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Purpose

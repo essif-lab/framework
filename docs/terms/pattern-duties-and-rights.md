@@ -13,7 +13,6 @@ date: 20210601
 
 # Duties and Rights
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note
@@ -24,7 +23,6 @@ This is work that is being envisaged.
 The **Duties-and-rights pattern** captures the concepts and relations that explain what (generic) duties and rights are, thereby following the [theory of Hohfeld](https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst), which is not only the basis of [legal systems](legal-system@) (in [jurisdictions](@)), but can be used to generically model duties and rights.
 
 ### Introduction
-
 
 ### Formalized model
 

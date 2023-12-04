@@ -15,7 +15,6 @@ date: 20220918
 
 # Advertisement
 
-
 :::info Editor's note
 Additional descriptions are needed here.
 :::

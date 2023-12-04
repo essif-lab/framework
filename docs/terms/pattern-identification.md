@@ -13,7 +13,6 @@ date: 20210803
 
 # Identification Pattern
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note

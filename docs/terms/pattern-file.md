@@ -15,7 +15,6 @@ date: 20210601
 
 # Pattern-file
 
-
 ### Short Description
 
 A **pattern-file** is a file that describes a [pattern](@). To facilitate authors, a self-explanatory [template file](/tev1/pattern-file.md) is available.

@@ -13,7 +13,6 @@ date: 20210601
 
 # Jurisdictions
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Purpose

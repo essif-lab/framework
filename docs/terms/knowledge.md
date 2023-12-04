@@ -15,7 +15,6 @@ date: 20210601
 
 # Knowledge
 
-
 ### Short Description
 
 **Knowledge** is the (intangible) sum of what is known, the familiarity, awareness or understanding of someone or something ([WikiPedia](https://en.wikipedia.org/wiki/Knowledge)). It includes facts ([propositional knowledge](https://en.wikipedia.org/wiki/Propositional_knowledge)), skills ([procedural knowledge](https://en.wikipedia.org/wiki/Procedural_knowledge)), or objects ([acquaintance knowledge](https://en.wikipedia.org/wiki/Knowledge_by_acquaintance)). Knowledge can be acquired in many different ways and from many different sources, including but not limited to experience, reason, memory, testimony, scientific inquiry, education, and practice.

@@ -15,7 +15,6 @@ date: 20210601
 
 # Holder
 
-
 :::info Editor's note
 In other SSI contexts, this term has a different meaning. We intend to rework the framework in such a way that we can use this term in various ways (e.g. as a [party](@), a [role name](@), or an [actor](@) that performs the [role](@) associated with the [role name](@)
 :::

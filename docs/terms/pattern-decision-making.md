@@ -13,7 +13,6 @@ date: 20210804
 
 # Decision Making
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note

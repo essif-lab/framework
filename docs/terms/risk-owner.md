@@ -15,7 +15,6 @@ date: 20210601
 
 # Risk Owner
 
-
 ### Short Description
 
 A **risk owner** is the [party](@) that is the [owner](@) of the [objective](@) to which the [risk](@) is associated.

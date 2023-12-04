@@ -15,7 +15,6 @@ date: 20210922
 
 # Information Process
 
-
 ### Short Description
 
 An **Information Process** is a coherent set of [actions@] that are (to be) performed by a single [party@], in which [data](@) (that is controlled by this [party](@) is created, read, updated and/or deleted.

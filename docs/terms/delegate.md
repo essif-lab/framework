@@ -15,7 +15,6 @@ date: 20220222
 
 # Delegate
 
-
 ### Short Description
 
 A **delegate** is the transferral of [ownership](@) of one or more [obligations](@) (duties) of a [party](@) (the [delegator](delegate@)), including the associated accountability, to another [party](@) (the [delegatee](delegate@)), including the associated accountability, to another [party](@) (the [delegatee](delegate@)). Doing so has several consequences:

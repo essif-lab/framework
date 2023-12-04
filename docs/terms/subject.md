@@ -15,7 +15,6 @@ date: 20210613
 
 # Subject
 
-
 ### Short Description
 
 The **Subject** of some coherent data set is the (single) [entity](@) to which that data set relates/pertains. Examples of such sets include attributes, [Claims/Assertions](assertion@), files/dossiers, [(verifiable) credentials](credential@), [(partial) identities](partial-identity@), etc.

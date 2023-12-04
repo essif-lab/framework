@@ -1,6 +1,5 @@
 ---
 # TEv2 Curated Text Header
-
 term: identifier
 termType: concept
 isa:
@@ -10,12 +9,10 @@ synonymOf:
 grouptags:
 formPhrases: identifier{ss} identification
 # Curation status
-
 status: proposed
 created: 2021-06-01
 updated: 2021-06-01
 # Origins/Acknowledgements
-
 contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
@@ -45,7 +42,7 @@ An **Identifier** is a character string that is being used for identification pu
 
 The following strings are examples: 'localhost', 'https://localhost/', 'Trust over IP community', 'the mayor of New York', 'guardianship', 'my mother', 'did:sov:2wJPyULfLLnYTEFYzByfUR', 'did:sov:2wJ', 'issue #24', etc., etc.
 
------
+---
 ### Notes
 
 [^1]: This is the definition of [RFC 3986, Section 1.1.](https://tools.ietf.org/html/rfc3986#section-1.1) but without the requirement of complying with URI syntax constraints. Note that there is consensus in the literature about this. For example, [(Allen, 2016)](http://www.lifewithalacrity.com/2016/04/the-path-to-self-soverereign-identity.html) defines 'Identifier' as “A name or other label that uniquely identifies an identity.”. [Pfitzmann and Hansen, 2010](https://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf) say (in footnote 57): “A name or another bit string”. The [DID-core specification](https://www.w3.org/TR/did-core/) of W3C [defines 'decentralized identifiers' as specializations of URIs](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers).

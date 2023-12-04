@@ -15,7 +15,6 @@ date: 20210601
 
 # Jurisdiction
 
-
 ### Short Description
 
 A **Jurisdiction** is the composition of a (non-empty) set of [objectives](@), one [scope](@), one [legal system](@) and one [party](@) (called the [Governor](governance@) of the Jurisdiction) that operates the legal system within that scope. While most people are familiar with what we call [legal jurisdictions](legal-jurisdiction@), please observe that [organizations](@) habitually will have rules (business policies) in place, enforce them (to some extent), and have ways of resolving conflicts, and therefore qualify as a jurisdiction. Specifically, multi-national organizations are known to govern multiple jurisdictions, aligning the scopes with the scopes of other (often legal) jurisdictions for the purpose of preventing situations in which conflicting rules apply, which would lead to many effort-intensive conflict-resolution cases.

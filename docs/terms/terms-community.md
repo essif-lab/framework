@@ -15,7 +15,6 @@ date: 20211101
 
 # Terms Community
 
-
 ### Short Description
 
 A **terms-community** is a [community](@) that maintains a [terminology](@) for the purpose of its members to avoid misunderstandings in their collaborations. They do so by:

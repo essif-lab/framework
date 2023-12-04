@@ -15,7 +15,6 @@ date: 20210803
 
 # Partial identity
 
-
 ### Short Description
 
 A **Partial identity (of an [entity](@))** is all [knowledge](@) that a specific [party](@) has about that [entity](@). This [entity](@) is referred to as the *[subject](@)* of the partial identity. The [party](@) fulfills the role of [owner](@) of the partial entity, as the partial identity is part of the [knowledge](@) that this party owns (see the [party-actor pattern](pattern-party-actor-action@) for details).

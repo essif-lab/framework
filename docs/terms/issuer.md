@@ -15,7 +15,6 @@ date: 20210601
 
 # Issuer
 
-
 :::info Editor's note
 *This text needs to be revised.*
 In other SSI contexts, this term has a different meaning. We intend to rework the framework in such a way that we can use this term in various ways (e.g. as a [party](@), a [role name](@), or an [actor](@) that performs the [role](@) associated with the [role name](@)

@@ -15,7 +15,6 @@ date: 20211101
 
 # eSSIF-Lab World Model
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ## eSSIF-Lab World Model

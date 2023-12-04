@@ -15,7 +15,6 @@ date: 20210601
 
 # Party Representation
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note

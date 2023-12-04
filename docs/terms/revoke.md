@@ -13,7 +13,6 @@ date: 20211006
 
 # Revoke/Revocation
 
-
 ### Short Description
 
 **Revocation** (of a [credential](@)) is the act, by or on behalf of the [party](@) that has issued the [credential](@), of no longer vouching for the correctness or any other qualification of (arbitrary parts of) that [credential](@).

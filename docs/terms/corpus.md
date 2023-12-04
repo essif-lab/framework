@@ -15,7 +15,6 @@ date: 20210601
 
 # Corpus of Terminology
 
-
 ## Short Description
 
 The **Corpus** or **Corpus of Terminology** is the documentation that describes the [knowledge](@) around a set of [terms](@) and [concepts](@). It is typically [governed](governance@) by conventions that are specified by a group of [terms communities](terms-community@), such as [TOIP's Concepts and Terminology Working Group](https://wiki.trustoverip.org/pages/viewpage.action?pageId=65700).

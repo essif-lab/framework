@@ -15,7 +15,6 @@ date: 20210601
 
 # Legal Entity
 
-
 ### Short Description
 
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->

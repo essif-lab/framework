@@ -15,7 +15,6 @@ date: 20210601
 
 # Guardian
 
-
 :::info Editor's note
 Additional content is needed here.
 :::

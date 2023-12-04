@@ -15,7 +15,6 @@ date: 20211006
 
 # Revocation Policy
 
-
 :::info Editor's note
 Additional content is needed here.
 :::

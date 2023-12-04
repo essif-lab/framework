@@ -15,7 +15,6 @@ date: 20210901
 
 # Policy
 
-
 ### Short Description
 
 A **policy** is a (set of) rules, working instructions and/or other guidance for the execution of one or more kinds of [actions](@) that [agents](@) of the [party](@) that [governs](governance@) the policy have access to and can interpret such that this results in these [actions](@) being executed as intended by that [party](@).

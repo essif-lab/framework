@@ -15,7 +15,6 @@ date: 20210830
 
 # Governance
 
-
 ### Short Description
 
 **Governance** is the [act](action@) or process of governing or overseeing the realization of (the results associated with) a set of [objectives](@) that are [owned](@) by a single [party](@), in order to ensure these results will be fit for the purposes that this [party](@) intends to use them for. This act or process is conducted by ([agents](@) that do so on behalf of) this [party](@).

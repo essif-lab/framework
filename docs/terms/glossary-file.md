@@ -13,7 +13,6 @@ date: 20210601
 
 # Glossary-file
 
-
 ### Short Description
 
 A **glossary-file** is a file that contains the specification of what does (not) go into a specific [glossary](@). To facilitate authors, a self-explanatory [template file](/tev1/glossary-file.md) is available.

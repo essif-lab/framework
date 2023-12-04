@@ -15,7 +15,6 @@ date: 20210601
 
 # Authority (Centralized or Decentralized)
 
-
 ### Short Description
 
 An **Authority** is a [party](@) of which certain decisions, ideas, rules etc. are followed by other [parties](@). We distinguish between two kinds of authority:

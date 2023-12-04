@@ -319,7 +319,6 @@ By 'securely storing data' we mean that such data
 
 -   remains available until a request is received from an [digital colleague](colleague@) that is entitled to request deletion of such data;
 -   remains unchanged during the time in which it is stored;
-
 -   can only become available to [digital colleagues](colleague@) that implement a functionality that requires such access (e.g. a [colleague](@) [holder](@) component);
 -   can only be stored by [digital colleagues](colleague@) that implement a functionality that require such data to be stored (e.g. a [colleague](@) [holder](@) or [issuer](@) component).
 

@@ -15,7 +15,6 @@ date: 20210804
 
 # Pattern
 
-
 ### Short Description
 
 A **pattern** (also called **[mental model](https://en.wikipedia.org/wiki/Mental_model)** or **[conceptual model](https://en.wikipedia.org/wiki/Conceptual_model)**) captures a limited set of [concepts](@) (ideas), relations between them, and constraints, such that together they form a coherent and consistent whole. They have been crafted so that they may serve as a basis for architecting, designing, and implementing IT components and their [governance](@) processes.

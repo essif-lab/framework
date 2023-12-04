@@ -15,7 +15,6 @@ date: 20210601
 
 # Transaction
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Short Description

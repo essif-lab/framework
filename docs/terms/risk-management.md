@@ -15,7 +15,6 @@ date: 20220206
 
 # Risk management
 
-
 ### Short Description
 
 **Risk management** is a process that is run by (or on behalf of) a specific [party](@) for the purpose of [managing](management@) the [risks](@) that it [owns](@) (thereby realizing specific [risk objectives](risk-objective@)). The overall [risk objective](@) that [parties](@) seek to [manage](management@) is to ensure that the set of all [risks](@) that they perceive to run are, as a whole, acceptable.

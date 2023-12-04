@@ -15,7 +15,6 @@ date: 20210830
 
 # Control Process
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Short Description

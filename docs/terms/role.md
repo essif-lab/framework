@@ -15,7 +15,6 @@ date: 20210601
 
 # Role
 
-
 ### Short Description
 
 A **Role** (of an [entity](@) in some context) is a named set of characteristics that the entity has, [actions](@) (behaviors) that it may execute, or pieces of [knowledge](@) that it is expected to have in that context.

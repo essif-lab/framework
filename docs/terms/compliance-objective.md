@@ -15,7 +15,6 @@ date: 20220203
 
 # Compliance Objective
 
-
 ### Short Description
 
 A **compliance-objective** is an [objective](@), owned by a [party](@), that aims to reach and maintain a state of affairs in which a specific set of [entities](@) that this [party](@) controls are in accordance with a specific set of requirements (e.g., laws, regulations, standards, etc.). A [party](@) that has compliance objectives will have a [management](@) process that aims to realize these [objectives](@), for the purpose of becoming [compliant](compliance@).

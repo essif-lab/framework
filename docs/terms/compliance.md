@@ -15,7 +15,6 @@ date: 20220220
 
 # Compliance
 
-
 ### Short Description
 
 **Compliance** is the state of realization of a set of conformance criteria or normative framework of a [party](@), where

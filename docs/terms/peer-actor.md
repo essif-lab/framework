@@ -16,7 +16,6 @@ date: 20210601
 
 # Peer Actor
 
-
 :::info Editor's note
 Additional content is needed here.
 :::

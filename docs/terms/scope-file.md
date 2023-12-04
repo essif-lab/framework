@@ -15,7 +15,6 @@ date: 20210601
 
 # Scope-file
 
-
 ### Short Description
 
 A **scope-file** is a file that contains the specification of a specific [scope](@). To facilitate authors, a self-explanatory [template file](/tev1/scope-file.md) is available.

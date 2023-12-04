@@ -15,7 +15,6 @@ date: 20220330
 
 # Colleague
 
-
 ### Short Description
 
 A **colleague** is one of two or more (digital or non-digital) [agents](@) that have the same [principal](@) (on whose behalf they are executing an [action](@)).

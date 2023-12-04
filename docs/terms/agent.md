@@ -15,7 +15,6 @@ date: 20210601
 
 # Agent
 
-
 ### Short Description
 
 An **agent** (of a [party](@)) is an [actor](@) that is executing an [action](@) on behalf of that [party](@). As, and in the context where the [actor](@) is doing this, we say that it fulfills the role of [agent](@) for that [party](@). We also say that the [party](@) fulfills the role of [principal](@) (for that [actor](@)).

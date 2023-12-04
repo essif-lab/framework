@@ -15,7 +15,6 @@ date: 20211101
 
 # Terminology
 
-
 ### Short Description
 
 A **terminology** is the set of [terms](@) that are used within a single [scope](@) to refer to a single [definition](@), enabling [parties](@) to reason and communicate ideas they have about one or more specific topics. The [definition](@) that a [term](@) refers to may be defined in the same, or any other [scope](@). Further details can be obtained from the [terminology pattern](pattern-terminology@).

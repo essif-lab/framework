@@ -15,7 +15,6 @@ date: 20210601
 
 # Risk
 
-
 ### Short Description
 
 A **Risk** is the set of effects that uncertainty can have on the intended realization of an [objective](@) that is [owned](@) by a [party](@) (and that therefore also [owns](risk-owner@) the [risk](@) associated with that [objective](@)). *Uncertainty* is the condition in which a [party](@) lacks information, understanding or [knowledge](@) of events, their consequences or likelihoods. The effects that uncertainty can have on an [objective](@) show as the difference between the results that a [party](@) expects to be produced as it pursues an [objective](@), and the results that will actually be produced in the pursuit of that same [objective](@).

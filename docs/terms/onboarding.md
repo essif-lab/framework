@@ -15,7 +15,6 @@ date: 20220922
 
 # Onboarding
 
-
 ### Short Description
 
 **Onboarding** (of an [actor](@)[^1]) is a process that is run for a specific (set of) [actor(s)](@) on behalf of a specific [party](@), that terminates successfully if and  only if the [party](@) has (a) established the suitability of the [actor(s)](@) for executing certain kinds of [actions](@) on its behalf, (b) ensured that their mutual rights and duties are properly specified and will be appropriately enforced, and (c) provided the circumstances/contexts within which the [actor](@) is enabled to do so.

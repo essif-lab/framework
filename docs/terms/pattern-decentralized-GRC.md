@@ -13,7 +13,6 @@ date: 20210601
 
 # Decentralized Risk Management, Governance and Compliance
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note

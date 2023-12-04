@@ -15,7 +15,6 @@ date: 20210601
 
 # Scope of Control
 
-
 ### Short Description
 
 A **Scope of Control (of a Party)** is the extent of the area or subject matter (as in [OED](https://www.lexico.com/definition/scope) that the [party](@) [controls](controller@). One might say that the party is 'sovereign' or 'autonomous' within its scope of control.

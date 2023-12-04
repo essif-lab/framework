@@ -15,7 +15,6 @@ date: 20210601
 
 # Risk level
 
-
 ### Short Description
 
 A **risk-level** a measure for the deviation of the intended realization (results) of a specific [objective](@) that its [owner](@) uses to represent the priority with which the [risk](@) of that [objective](@) should be reckoned with.

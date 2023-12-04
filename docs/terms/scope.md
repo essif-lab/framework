@@ -15,7 +15,6 @@ date: 20210601
 
 # Scope
 
-
 ### Short Description
 
 A **scope** (in the eSSIFLab context) is the extent of the area or subject matter (as in [OED](https://www.lexico.com/definition/scope). We use it, e.g., to define patterns, concepts, terms and glossaries in, but a scope may serve other (additional) purposes. Scopes may overlap, or be nested. It is comparable to [Namespaces](https://en.wikipedia.org/wiki/Namespace), were it not that entities other than names (signs that are used to identify/refer to objects of various kinds) can reside in a scope as it is defined here.

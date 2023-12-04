@@ -13,7 +13,6 @@ date: 20210830
 
 # Identifier Pattern
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note
@@ -27,7 +26,6 @@ The **Identifier pattern** captures the concepts and relations that help to expl
 Related topics can be found in the [identity pattern](pattern-identity@) and the [identification pattern](pattern-identification@).
 
 ### Introduction
-
 
 ### Formalized model
 

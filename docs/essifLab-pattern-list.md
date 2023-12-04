@@ -7,7 +7,6 @@ date: 20210908
 
 # Overview of eSSIF-Lab Mental Models
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 Within eSSIF-Lab, we maintain a set of [mental models](https://en.wikipedia.org/wiki/Mental_model), which we also call [patterns](@), which are descriptions, both casual and formal, of sets of [concepts](@) (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic.[^1]  They have been crafted so that they may serve as a basis for architecting, designing, and implementing IT components and their [governance](@) processes.

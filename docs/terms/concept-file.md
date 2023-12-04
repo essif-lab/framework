@@ -15,7 +15,6 @@ date: 20210601
 
 # Concept-file
 
-
 ### Short Description
 
 A **concept-file** is a file that contains documentation about a specific [concept](@). To facilitate authors, a self-explanatory [template file](/tev1/concept-file.md) is available.

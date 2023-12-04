@@ -15,7 +15,6 @@ date: 20210601
 
 # SSI Infrastructure
 
-
 ### Short Description
 
 The **SSI Infrastructure** consists of the technological components that are (envisaged to be) deployed all over the world for the purpose of providing, requesting and obtaining [qualified data](@) for the purpose of negotiating and/or executing electronic [transactions](@).

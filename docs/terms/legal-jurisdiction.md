@@ -16,7 +16,6 @@ date: 20210601
 
 # Legal Jurisdiction
 
-
 ### Short Description
 
 A **Legal Jurisdiction** is a [jurisdiction](@) tha tis governed/operated by a governmental body.

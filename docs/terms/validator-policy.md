@@ -15,7 +15,6 @@ date: 20220915
 
 # Validator Policy
 
-
 :::info Editor's note
 Additional content is needed here.
 :::

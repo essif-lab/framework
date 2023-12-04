@@ -1,6 +1,5 @@
 ---
 # TEv2 Curated Text Header
-
 term: domain-expert
 termType: concept
 isa:
@@ -9,12 +8,10 @@ synonymOf: subject-matter-expert
 grouptags:
 formPhrases: domain-expert{ss}, subject-matter-expert{ss}
 # Curation status
-
 status: proposed
 created: 2022-11-23
 updated: 2022-11-23
 # Origins/Acknowledgements
-
 contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"

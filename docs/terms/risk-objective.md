@@ -15,7 +15,6 @@ date: 20220203
 
 # Risk Objective
 
-
 ### Short Description
 
 A **risk objective** is an [objective](@), owned by a [party](@), that aims to reach and maintain a state of affairs in which the [risks](@) associated with a specific set of its [objectives](@) become, and/or remain, acceptable. The (business) process that seeks to realize [risk objectives](risk-objective@) is referred to as a [risk management](@) process - this is in line with well-known ISO standards, such as ISO 31000, ISO9001, ISO27001, etc.

@@ -13,7 +13,6 @@ date: 20210601
 
 # Mental Models
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note

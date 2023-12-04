@@ -15,7 +15,6 @@ date: 20210601
 
 # Role name
 
-
 ### Short Description
 
 A **Role name** is a name by which a [role](@) can be referred to, and which [identifies](identifier@) that [role](@) in contexts in which it is used. Accordingly, using it without properly referencing the context may cause misunderstandings, as role names refer to different [roles](@) in different contexts.

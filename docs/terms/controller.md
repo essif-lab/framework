@@ -15,7 +15,6 @@ date: 20211222
 
 # Controller
 
-
 ### Short Description
 
 A **Controller** of an [entity](@) is the role that an [actor](@) performs as it is executing actions on that [entity](@) for the purpose of ensuring that the [entity](@) will act/behave, or be used, in a particular way. Thus, a controller controls the behavior and/or use of the [entity](@) it controls.

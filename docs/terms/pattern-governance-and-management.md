@@ -13,7 +13,6 @@ date: 20210830
 
 # Governance and Management
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Purpose

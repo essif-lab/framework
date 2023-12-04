@@ -15,7 +15,6 @@ date: 20220220
 
 # Mandate
 
-
 ### Short Description
 
 A **mandate** a right or duty that one [party](@) (the [mandator](mandate@)) has granted to another [party](@) or [employee](@) (the [mandatee](mandate@)) for executing a specific (set of) [actions](@) in the name of, and under responsibility/accountability of, this (first) [party](@). Because of that, such [actions](@) must be executed according to the [policies](@) of the [mandator](mandate@), and this is what distinguishes it from a [delegate](@).

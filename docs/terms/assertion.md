@@ -15,7 +15,6 @@ date: 20210601
 
 # Assertion
 
-
 ### Short Description
 
 An **Assertion** is a declaration/statement that is made by one specific [party](@) (which we refer to as its [owner](@))[^1]. Such a statement may or may not reflect what that [party](@) holds or [knows](knowledge@) to be true - [parties](@) may lie.

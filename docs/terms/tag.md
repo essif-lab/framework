@@ -15,7 +15,6 @@ date: 20210601
 
 # Tag
 
-
 ### Short Description
 
 A **Tag** is an alphanumeric string that is used to identify [scope](@) (so called 'scopetags'), group [terms](@) (so called 'grouptags'), or identify a specific version of a [terminology](@) (so called 'versiontags') from within a specific [scope](@).

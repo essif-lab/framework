@@ -15,7 +15,6 @@ date: 20210601
 
 # Human Being
 
-
 ### Short Description
 
 A **Human Being** is a person of flesh and blood (homo sapiens), each of which qualifies as:

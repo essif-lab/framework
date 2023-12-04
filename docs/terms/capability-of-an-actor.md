@@ -15,7 +15,6 @@ date: 20220922
 
 # Capability (of an Actor)
 
-
 :::info Editor's note
 This page is a first draft. Additional contents (and a proper review) are needed.
 :::

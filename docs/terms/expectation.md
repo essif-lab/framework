@@ -15,7 +15,6 @@ date: 20220908
 
 # Expectation
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Short Description

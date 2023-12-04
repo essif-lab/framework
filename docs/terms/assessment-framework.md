@@ -15,7 +15,6 @@ date: 20220203
 
 # Assessment Framework
 
-
 ### Short Description
 
 An **assessment framework** is the combination of criteria that an auditor can evaluate by applying them to an [entity](@) (of a specific kind), and the procedures that this auditor will follow for doing so, for the purpose of establishing the extent in which that [entity](@) conforms to a stated set of requirements. Thus, an [entity](@) can be assessed against an assessment framework.

@@ -1,9 +1,7 @@
 ---
 # `Multiple-use fields` (used by TEv2 and Docusaurus)
-
 id: participant
 # TEv2: generic front-matter for curated texts
-
 scope: essiflab
 termtype: concept
 term: participant
@@ -15,18 +13,15 @@ updated: 2021-06-01
 vsntag: v0.1
 contributors: RieksJ
 # TEv2: type-specific front-matter for type `concept`
-
 isa:
 synonymOf:
 glossaryText: "a [party](@) is negotiating (or has negotiated) a [transaction agreement](@)."
 # Docusaurus \(see https://docusaurus\.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter\):
-
 displayed_sidebar: essifLabSideBar
 hoverText: "Participant (in/of a Transaction): a Party is negotiating (or has negotiated) a Transaction Agreement."
 ---
 
 # Participant
-
 
 ### Purpose
 

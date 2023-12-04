@@ -15,7 +15,6 @@ date: 20220203
 
 # Compliance level
 
-
 ### Short Description
 
 A **compliance-level** is a measure for stating how well a [entity](@) conforms with a stated (set of) requirement(s).

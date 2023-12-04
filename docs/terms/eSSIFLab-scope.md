@@ -13,7 +13,6 @@ date: 20210601
 
 # Scope: essifLabTerminology
 
-
 ### Governance
 
 <!--This section identifies the organizational body (Jurisdiction) that governs the scope. Optionally, a reference to the governance framework/procedures may be made.-->

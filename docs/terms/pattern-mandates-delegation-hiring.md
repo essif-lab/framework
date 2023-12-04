@@ -13,7 +13,6 @@ date: 20210601
 
 # Mandates, Delegation and Hiring
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note

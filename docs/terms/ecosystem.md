@@ -15,7 +15,6 @@ date: 20210601
 
 # Ecosystem
 
-
 ### Short Description
 
 An Ecosystem is a set of at least two (autonomous) [parties](@) (the members of the ecosystem) whose individual work complements that of other members, and is of benefit to the set as a whole.

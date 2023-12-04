@@ -15,7 +15,6 @@ date: 20210601
 
 # Employment Contract
 
-
 ### Short Description
 
 An **employment contract** is an agreement/contract between two [parties](@), one of which controls a set of [actors](@) (the [subjects](@) of the contract), that states (or refers to) all (sets of) rights and duties under which these [actors](@) can and/or must work for the other [party](@). This includes rights and duties of both [parties](@), as well as rights and duties of the [actor(s)](@) that are the [subject](@) of the contract.

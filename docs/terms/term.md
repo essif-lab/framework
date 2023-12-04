@@ -15,7 +15,6 @@ date: 20220421
 
 # Term
 
-
 ### Short Description
 
 A Term is a word or phrase (i.e.: text) that is used in at least one [scope](@)/context to represent a specific [concept](@). As a consequence:

@@ -13,7 +13,6 @@ date: 20210830
 
 # Trust Pattern
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note
@@ -25,7 +24,6 @@ This is work in progress and needs discussion.
 The **Trust pattern** captures the concepts and relations that help to explain how [trust](@) relates to [parties](@) that do the trusting, and other concepts that express what it is that these [parties](@) trust.
 
 ### Introduction
-
 
 ### Formalized model
 

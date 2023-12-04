@@ -1,6 +1,5 @@
 ---
 # TEv2 Curated Text Header
-
 term: linguistic-unity
 termType: concept
 isa:
@@ -9,12 +8,10 @@ synonymOf:
 grouptags:
 formPhrases:
 # Curation status
-
 status: proposed
 created: 2022-10-26
 updated: 2022-10-26
 # Origins/Acknowledgements
-
 contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"

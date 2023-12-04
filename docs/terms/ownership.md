@@ -15,7 +15,6 @@ date: 20220218
 
 # Ownership
 
-
 ### Short Description
 
 **Ownership** is a relationship between two [entities](@) that exists within the [scope of control](@) of a [jurisdiction](@), in which one of them (called the [owner](@)) has legal, rightful or natural rights and/or duties to enjoy, dispose of, and control the other (called the [owned](@)).

@@ -15,7 +15,6 @@ date: 20210602
 
 # Parties, Actors and Actions
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ## Summary

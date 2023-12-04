@@ -13,7 +13,6 @@ date: 20220220
 
 # Decentralized (Networked) Risk Management (NRM)
 
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 :::info Editor's note

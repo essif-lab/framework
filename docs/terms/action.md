@@ -15,7 +15,6 @@ date: 20220324
 
 # Action
 
-
 ### Short Description
 
 An **Action** is something that is actually done (a 'unit of work' that is executed) by a single [actor](@) (on behalf of a given [party](@)), as a single operation, in a specific context. It is characteristic for an [action](@) that can be done either completely or not at all; it cannot be executed for (say) 50% (that's what 'unit of work' refers to).

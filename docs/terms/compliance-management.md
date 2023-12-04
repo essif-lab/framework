@@ -15,7 +15,6 @@ date: 20220203
 
 # Compliance management
 
-
 ### Short Description
 
 **Compliance management** is the process that is run by (or on behalf of) a specific [party](@) for the purpose of [managing](management@) its [compliance objectives](compliance-objective@).
