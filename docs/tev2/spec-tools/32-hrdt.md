@@ -10,19 +10,19 @@ date: 20220801
 # Human Readable Dictionary Generation Tool
 
 :::danger This page is deprecated.
-The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
+The current TEv2 website is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 export const mark = ({children}) => (
-  <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
-    {children}
-  </span> );
+<span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
+{children}
+</span> );
 
 <img
-  alt="This page is under construction"
-  src={useBaseUrl('images/wip/wip-under-construction.png')}
+alt="This page is under construction"
+src={useBaseUrl('images/wip/wip-under-construction.png')}
 /><br/><br/>
 
 :::caution
@@ -33,6 +33,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 The **Human Readable Dictionary generation Tool ([HRDT](@))** generates a Human Readable [Dictionary](@) ([HRD](@)), that renders the [terms](@) from a [machine readable dictionary (MRD)](@) into one of several formats, e.g. HTML, or PDF. This rendering may be subject to further processing by third-party rendering tools, such as [github pages](https://pages.github.com/) or [Docusaurus](https://docusaurus.io/docs/docs-introduction), etc. (see also: [Using the Tools](/docs/tev2/tev2-toolbox)).
 
 [HRDs](@) can be created for different purposes, e.g. to
+
 - compare [terminologies](@) between different [scopes](@), which helps e.g. when aligning [terminologies](@) between them.
 - provide an overview of what various [scopes](@) utilize specific [terms](@) for (education).
 

@@ -9,15 +9,15 @@ date: 20220513
 # TEv2 - Roles
 
 :::danger This page is deprecated.
-The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
+The current TEv2 website is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 export const mark = ({children}) => (
-  <span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
-    {children}
-  </span> );
+<span style={{ color:'black', backgroundColor:'yellow', padding:'0.2rem', borderRadius:'2px', }}>
+{children}
+</span> );
 
 :::caution
 The entire section on Terminology Engine v 2 (TEv2) is still under construction.<br/>

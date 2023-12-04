@@ -10,12 +10,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # Using LaTeX source texts
 
 :::danger This page is deprecated.
-The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
+The current TEv2 website is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 <img
-  alt="This page is under construction"
-  src={useBaseUrl('images/wip/wip-under-construction.png')}
+alt="This page is under construction"
+src={useBaseUrl('images/wip/wip-under-construction.png')}
 /><br/><br/>
 
 :::caution
@@ -25,6 +25,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 
 :::note Editor's note:
 Text needs to be drafted to work out the idea that LaTeX is a raw text that can be highly configured. For starters, it would be helpful if LaTeX [authors](@) could
+
 - specify [term refs](@) in their documents, and
 - specify a location where a [glossary](@) could be inserted.
 

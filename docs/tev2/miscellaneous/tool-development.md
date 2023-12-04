@@ -10,7 +10,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # Tool Development
 
 :::danger This page is deprecated.
-The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
+The current TEv2 website is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 This page intends to provide (lots of pointers to) information that people may need in order to decide whether or not to contribute to the construction of the Terminology Engine v2 ([TEv2](@)) toolbox, and if so, determine where to help out.
@@ -35,14 +35,14 @@ There are various things that make the further development of [TEv2](@) challeng
 
 ### Pointers to what you need to know
 
-
 :::info In order to appreciate and come to grips with these challenges, it will definitely help if you read up on some more backgrounds of what we try to do. Here are some pointers:
+
 - The [TEv2 Overview](/docs/tev2/tev2-overview) (and its sub-documents) will provide you with with such backgrounds.
 - Other documented topics include:
   - [file structure spec](/docs/tev2/tev2-spec-files)
   - [syntax specifications](/docs/tev2/tev2-syntax)
   - [specifications of individual tools](/docs/tev2/tev2-toolbox) - not all specifications hare already been drafted/checked.
-:::
+    :::
 
 ## Tooling status as of ...
 
@@ -54,16 +54,18 @@ For the date of the tooling status, see the "<i>last updated on</i>" text at the
 - [TRRT](/docs/tev2/spec-tools/trrt), which is currently actively developed by TNO in [this repo](https://github.com/tno-terminology-design/trrt).
 
 ### High priority
+
 - ingress tools that convert wiki-files (and perhaps some other formats) into [curated texts](/docs/tev2/spec-files/00-ctext.md);
 - [HRGT](/docs/tev2/spec-tools/hrgt), so that we can actually generate human-readable glossaries. For this tool, specifications need to be further drafted (and agreed on).
 
 ### Medium priority:
+
 - [ICT](/docs/tev2/spec-tools/ict), which allows for integrity checking. The current specifications are outdated and first need to be revised.
 
 ### Lower priority:
+
 - extensions for the [TRRT](@), and perhaps other tools, so that they can be used in [ReSpec](https://dev.w3.org/2008/video/mediaann/ReSpec.js/documentation.html) environments, such as often used for W3C standards.
 - [MRDT](/docs/tev2/spec-tools/mrdt) and [HRDT](/docs/tev2/spec-tools/hrdt)
-
 
 ## Starting to contribute
 

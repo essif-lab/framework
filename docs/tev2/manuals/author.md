@@ -11,12 +11,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # Authors Manual
 
 :::danger This page is deprecated.
-The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
+The current TEv2 website is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 <img
-  alt="This page is under construction"
-  src={useBaseUrl('images/wip/wip-under-construction.png')}
+alt="This page is under construction"
+src={useBaseUrl('images/wip/wip-under-construction.png')}
 /><br/><br/>
 
 :::caution

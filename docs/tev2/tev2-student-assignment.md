@@ -11,10 +11,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # Student Assignment
 
 :::danger This page is deprecated.
-The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
+The current TEv2 website is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 This page explains what a group of students can do to create and contribute one or more tools to the toolbox of the Terminology Engine v2 ([TEv2](@)), that caters for
+
 - the creation and maintenance (i.e. [curation](@)) of [terminologies](@), and
 - the subsequent use in publications of different types (e.g. websites, whitepapers) and formats (e.g. html, LaTeX).
 
@@ -23,6 +24,7 @@ This page explains what a group of students can do to create and contribute one 
 The first part in understanding the assignment is to understand its context, what the needs are, how they are being adressed, and what the role of [TEv2](@) in all this is.
 
 Here are some pointers:
+
 - The mission we try to realize (or at least contribute to), is **[Understanding One Another](/docs/tev2/overview/tev2-common-understanding)**.
 - The **[Purpose](/docs/tev2/overview/tev2-purpose)** states the objectives that [TEv2](@) seeks to realize.
 - The **[Design Principles](/docs/tev2/overview/tev2-design-principles)** are the main ideas behind the design of [TEv2](@).

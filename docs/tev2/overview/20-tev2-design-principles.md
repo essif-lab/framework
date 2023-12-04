@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # TEv2 - Design Principles
 
 :::danger This page is deprecated.
-The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
+The current TEv2 website is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 :::caution
@@ -57,9 +57,11 @@ Figure 1 shows how (raw) texts are converted into other formats, and that this i
 </p>
 
 This pattern shows that conversion consists of two generic parts
+
 1. an interpreter, that is capable of interpreting a (source) file of a particular format (e.g. a wiki-page), and that then produces a set of so-called ["moustache"-variables](https://mustache.github.io/mustache.5.html), that are specified by a ("moustache") profile.
 2. a convertor, that is capable of converting the source text into another (converted) text, thereby using the values that the interpreter has assigned to the "moustache"-variables.
 
 Using this pattern is beneficial e.g.,
+
 - in cases where source texts of different formats or layouts are being used that must be converted to a particular and well structured file, as is the case when ingesting texts that are contributions e.g. to a [scope's](@) [terminology](@). Different interpreters can be used for different layouts, and after using a particular converter, they can all be said to result in a converted text of a specific layout and contents.
 - in cases where a specific kind of source needs to be converted into various different kinds of rendered texts. For example, creating a [human readable glossary](@) from a [machine readable glossary](@) can be done in many ways, e.g. as a webpage, or as a piece of LaTeX that can be included (as an appendix) in a paper; also, the contents of such a glossary may differ: you could have simple lists of [terms](@) and explanations, but you could also opt to add meta-data, e.g. list the [grouptags](@) of each [term](@), (references to) attributions and/or licensing data, people that contributed to the documentation of the [term](@), etc.

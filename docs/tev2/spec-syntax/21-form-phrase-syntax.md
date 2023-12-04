@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 # Form Phrases - Syntax
 
 :::danger This page is deprecated.
-The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
+The current TEv2 website is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 :::caution
@@ -20,6 +20,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 This document specifies the syntax of [form phrases](@), i.e. texts that are
+
 - specified in the header field `formphrases` in [curated texts](@);
 - conformant to the (PCRE) regex `(?:\s*(?:[a-z0-9_-{}]+)\s*(?:,\s*([a-z0-9_-{}]+))*)?` (see [Debuggex](https://www.debuggex.com/r/20MNb2zgNwLDD-dD) for a visualization).
 - present in [MRG entries](@);
@@ -34,15 +35,16 @@ A formphrase 'macro' is a set of characters between braces `{` and `}` that are 
 
 Suppose we have a [curated text](@) for the term `actor`, and in its front matter, we specify:
 
-~~~ yaml
+```yaml
 formPhrases: actor{ss}
-~~~
+```
 
 The part `{ss}` is a macro, that suppose it is associated with the regex `(?:'?s|\(s\))?`.
 
 When the [trrt](@) converts a [ref text](@), one of the things it needs to do is to [convert a so-called `show-text` into a `term`](/docs/tev2/spec-tools/trrt#term) that exists in some [curated text](@). If the `show-text` does not match the `term` of any of the [curated texts](@), the [trrt](@) will try to match it against every form phrase in every [curated text](@), including the formphrase `actor{ss}`.
 
 This is done as follows:
+
 1. all macros in the formphrase are replaced with their respective regexes, thereby transforming the formphrase into a regex itself;
 2. a regex engine is called that determines whether or not `show-text` satisfies that regex. If (and only if) it does, there is a match.
 
@@ -54,8 +56,8 @@ An `term` is said to match such an element if and only if the regex that consist
 As the [trrt](@) has not yet been fully specified, nor implemented, the table below must currently be seen as a set of macro's that we intend to implement, but may not yet be there. The workaround is to replace a formphrase that is an element in the list of formphrases in a [curated text](@) with the set of words that it stands for. If you maintain [curated texts](@) with a good editor, e.g. VSCode, that should not be an issue as these macros are easily found and replaced by their expansions.
 :::
 
-| macro    |           regex                       |     example     | texts that the example matches |
-| -------- | :-----------------------------------: | :-------------: | :----------------------------- |
-| `{ss}`   | <code>('?s\|(s\))?</code>             | `actor{ss}`     | matches: "actor", "actors", "actor's", and "actor(s)" |
-| `{yies}` | <code>(y\|y's\|ies)</code>            | `part{yies}`    | matches: "party", "party's", and "parties" |
+| macro    |                 regex                 |     example     | texts that the example matches                                                   |
+| -------- | :-----------------------------------: | :-------------: | :------------------------------------------------------------------------------- |
+| `{ss}`   |       <code>('?s\|(s\))?</code>       |   `actor{ss}`   | matches: "actor", "actors", "actor's", and "actor(s)"                            |
+| `{yies}` |      <code>(y\|y's\|ies)</code>       |  `part{yies}`   | matches: "party", "party's", and "parties"                                       |
 | `{ying}` | <code>(y\|ier\|ying\|ies\|ied)</code> | `identif{ying}` | matches: "identify", "identifier", "identifying", "identifies", and "identified" |

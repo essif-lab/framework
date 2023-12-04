@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 # Scope Administration File (SAF)
 
 :::danger This page is deprecated.
-The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
+The current TEv2 website is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 :::caution
@@ -31,6 +31,7 @@ This document specifies the structure of such [SAFs](@).
 ## Scope Administration File Field Descriptions
 
 A [SAF](@) has three main parts:
+
 1. The **`scope`** (singular) section defines meta-data concerning the [scope](@) itself, both for technical use and human use. It shows where directories and files live that ar part of the [scope](@), and also ways in which people can contribute, raise issues, see what's going on, discuss, etc.
 2. The **`scopes`** (plural) section contains a mapping between [scopetags](@) that are used within the [scope](@), and the associated [scopedirs](@). This enables tools to find the [SAF](@) of these [scopes](@), and from there all other directories, files etc. that live within them, e.g. to use/import their data.
 3. The **`versions`** section specifies all versions of the [terminology](@) that are actively maintained by the [curators](@) of the [scope](@), and for each of them, the set of [terms](@) that constitute this [terminology](@).
@@ -42,7 +43,7 @@ The following sections specify the fields for each of these parts.
 <details>
   <summary>Example of a `scope` section</summary>
 
-~~~ yaml
+```yaml
 #
 # This is a Scope Administration File that can be used in conjunction with TEv2.
 #
@@ -52,20 +53,20 @@ The following sections specify the fields for each of these parts.
 #
 scope:
   scopetag: tev2 # identifier that curators have determined for this terminology
-  scopedir: https://github.com/tno-terminology-design/tev2-specifications/tree/master/docs/tev2  # URL of the scope-directory
+  scopedir: https://github.com/tno-terminology-design/tev2-specifications/tree/master/docs/tev2 # URL of the scope-directory
   curatedir: terms # directory where all curated files are located. Full URL is `scopedir`/`curatedir`
   glossarydir: glossaries # directory where all glossary files and GDFs are located. Full URL is `scopedir`/`glossarydir`
   defaultvsn: latest # vsntag that identifies the default terminology. MRG is located at `scopedir`/`glossarydir`/mrg.`scopetag`.`defaultvsn`.yaml
   license: LICENSE.md # file that contains the (default) licensing conditions. Full URL is `scopedir`/`license`
-  statuses: [ proposed, approved, deprecated ] # list of status tags that are defined for knowledge artifacts in this scope
+  statuses: [proposed, approved, deprecated] # list of status tags that are defined for knowledge artifacts in this scope
   issues: https://github.com/tno-terminology-design/tev2-specifications/issues # URL where issues can be raised and handled
   website: https://tno-terminology-design.github.io/tev2-specifications/docs # base URL for creating links to rendered versions of Curated Texts
   curators: # contacting individual curators
-  - name: RieksJ
-    email: # we split up the email address to reduce the likelihood of the address being harvested for spamming
-      id: rieks.joosten
-      at: tno.nl
-~~~
+    - name: RieksJ
+      email: # we split up the email address to reduce the likelihood of the address being harvested for spamming
+        id: rieks.joosten
+        at: tno.nl
+```
 
 </details>
 
@@ -80,18 +81,19 @@ The following fields are defined for the `scope` section of a [SAF](@):
 
 </details>
 
-| Name        | Req'd | Description |
-| :---------- | :---: | :---------- |
-| `scopetag`    | Y | [Scopetag](@) that [curators](@) of this scope have determined for this [terminology](@). The associated [scopedir](@) is specified in the section `scopes`. |
-| `scopedir`    | Y | URL of the location of the [scopedir](@) associated with the [scopetags](@) listed in the `scopetags` field. |
-| `curatedir`   | Y | Path to the directory where all [curated files](@) are located. This directory may contain subdirectories to allow [curators](@) to organize the files in any way they see fit. Full URL is `<scopedir>`/`<curatedir>`.|
-| `glossarydir` | Y | Path to the directory where all [glossary](@)-related files are located. Full URL is `<scopedir>`/`<glossarydir>`. This directory SHOULD contain one [MRG](@) for every element in the version-section in the [SAF](@), and one or multiple [HRGs](@). It MAY contain other files, e.g. containing instructions, headers, footers or other things that are necessary for generating specific [glossaries](@). |
-| `defaultvsn`  | Y | [versiontag](@) that [identifies](@) the default [terminology](@) for this [scope](@). The associated [MRG](@) is located at `scopedir`/`glossarydir`/mrg.`scopetag`.`defaultvsn`.yaml |
-| `license`     | Y | File in the root of the [scopedir](@) that contains the (default) licensing data. |
-| `statuses`    | n | Ordered list of [tags](@) that are defined in this [scope](@) for specifying stages in the life-cycle of [knowledge artifacts](@). The first element in the list represents the first stage, and the last element the last stage in the life-cycle. |
-| `issues`      | n | URL where issues can be reported and handled.|
-| `website`     | n | base URL for creating links to rendered versions of [Curated Texts](@). It should also serve as the home page of the [terminology](@). |
-| `curators`    | n | Data that can be used to contact individual [curators](@). |
+| Name          | Req'd | Description                                                                                                                                                                                                                                                                                                                                                                                                   |
+| :------------ | :---: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `scopetag`    |   Y   | [Scopetag](@) that [curators](@) of this scope have determined for this [terminology](@). The associated [scopedir](@) is specified in the section `scopes`.                                                                                                                                                                                                                                                  |
+| `scopedir`    |   Y   | URL of the location of the [scopedir](@) associated with the [scopetags](@) listed in the `scopetags` field.                                                                                                                                                                                                                                                                                                  |
+| `curatedir`   |   Y   | Path to the directory where all [curated files](@) are located. This directory may contain subdirectories to allow [curators](@) to organize the files in any way they see fit. Full URL is `<scopedir>`/`<curatedir>`.                                                                                                                                                                                       |
+| `glossarydir` |   Y   | Path to the directory where all [glossary](@)-related files are located. Full URL is `<scopedir>`/`<glossarydir>`. This directory SHOULD contain one [MRG](@) for every element in the version-section in the [SAF](@), and one or multiple [HRGs](@). It MAY contain other files, e.g. containing instructions, headers, footers or other things that are necessary for generating specific [glossaries](@). |
+| `defaultvsn`  |   Y   | [versiontag](@) that [identifies](@) the default [terminology](@) for this [scope](@). The associated [MRG](@) is located at `scopedir`/`glossarydir`/mrg.`scopetag`.`defaultvsn`.yaml                                                                                                                                                                                                                        |
+| `license`     |   Y   | File in the root of the [scopedir](@) that contains the (default) licensing data.                                                                                                                                                                                                                                                                                                                             |
+| `statuses`    |   n   | Ordered list of [tags](@) that are defined in this [scope](@) for specifying stages in the life-cycle of [knowledge artifacts](@). The first element in the list represents the first stage, and the last element the last stage in the life-cycle.                                                                                                                                                           |
+| `issues`      |   n   | URL where issues can be reported and handled.                                                                                                                                                                                                                                                                                                                                                                 |
+| `website`     |   n   | base URL for creating links to rendered versions of [Curated Texts](@). It should also serve as the home page of the [terminology](@).                                                                                                                                                                                                                                                                        |
+| `curators`    |   n   | Data that can be used to contact individual [curators](@).                                                                                                                                                                                                                                                                                                                                                    |
+
 <!--
 | `dateformat`  | n | Regex (PCRE) that has named capturing groups for YYYY, MM and DD, and that can be used to parse the date fields used in this [scope](@) ) (provided another regex doesn't override it). When not provided, tools should use the regex "**(?P<YYYY\>\d{4})-?(?P<MM\>\d{2})-?(?P<DD\>\d{2})(?P<tzone\>Z&#124[+-]\d{2}:\d{2})?**" for this (noting that in certain contexts, `\` characters may need to be escaped). |
 -->
@@ -107,18 +109,18 @@ The `scopetags` section is a list that specifies a mapping between [scopetags](@
 <details>
   <summary>Example of a `scopes` section</summary>
 
-~~~ yaml
+```yaml
 #
 # The second section contains a mapping between scopetags that are used within the scope, and the associated scopedirs.
 # This enables tools to find the [SAF](@) of these [scopes](@), and from there all other directories, files etc.
 # that live within them, e.g. to use/import their data.
 #
-scopes:  #
-- scopetag: essiflab # definition of (scope) tag(s) that are used within this scope to refer to a specific terminology
-  scopedir: https://github.com/essif-lab/framework/tree/master/docs # URL of the scope-directory
-- scopetag: ctwg  # definition of (scope)tag(s) that are used within this scope to refer to a specific terminology
-  scopedir: https://github.com/trustoverip/ctwg # URL of the scope-directory
-~~~
+scopes: #
+  - scopetag: essiflab # definition of (scope) tag(s) that are used within this scope to refer to a specific terminology
+    scopedir: https://github.com/essif-lab/framework/tree/master/docs # URL of the scope-directory
+  - scopetag: ctwg # definition of (scope)tag(s) that are used within this scope to refer to a specific terminology
+    scopedir: https://github.com/trustoverip/ctwg # URL of the scope-directory
+```
 
 </details>
 
@@ -137,10 +139,10 @@ The following fields are defined for the `scopes` section of a [SAF](@):
 It may be simpler to change the `scopetags`-field, which is currently a list of scopetags, into a `scopetag`-field, which would specifiy a single scopetag. This would encourage curators to use no more than one scopetag for each scope they refer to, but if they really wanted to, they could make multiple entries with different scopetags that refer to the same scopedir.
 :::
 
-| Name        | Req'd | Description |
-| ----------- | :---: | ----------- |
-| `scopetags`   | Y | List of at least one [scopetag](@), that the [curator(s)](@) of this [scope](@) have determined for the [terminology](@) of a specific [scope](@). The associated [scopedir](@) is specified in the section `scopes`.|
-| `scopedir`    | Y | URL of the location of the [scopedir](@) associated with the [scopetags](@) listed in the `scopetags` field. |
+| Name        | Req'd | Description                                                                                                                                                                                                           |
+| ----------- | :---: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `scopetags` |   Y   | List of at least one [scopetag](@), that the [curator(s)](@) of this [scope](@) have determined for the [terminology](@) of a specific [scope](@). The associated [scopedir](@) is specified in the section `scopes`. |
+| `scopedir`  |   Y   | URL of the location of the [scopedir](@) associated with the [scopetags](@) listed in the `scopetags` field.                                                                                                          |
 
 ### SAF Versions - Enabling changes and updates in a scope's Terminology {#versions}
 
@@ -149,7 +151,7 @@ The third section in the [SAF](@) specifies the [terminology](@) of the [scope](
 <details>
   <summary>Example of a `versions` section</summary>
 
-~~~ yaml
+```yaml
 #
 # The third section specifies the versions that are actively maintained by the curators.
 # For each version, the set of terms is selected that constitute the terminology.
@@ -174,7 +176,7 @@ versions:
       - "*@essif-lab" # import all terms defined in the scope `essif-lab`
       - "-tags[terminology]" # remove all terms tagged with the grouptag `terminology`
       - "*@tev2" # import all terms defined in the scope `tev2`
-~~~
+```
 
 </details>
 
@@ -189,15 +191,15 @@ The following fields are defined for the `versions` section of a [SAF](@):
 
 </details>
 
-| Name        | Req'd | Description |
-| ----------- | :---: | ----------- |
-| `vsntag`      | Y | [Versiontag](@) that that is used to [identify](@) this version within the set of all other versions that are maintained within this [scope](@). in this [SAF](@). It MUST NOT be changed during the lifetime of this version.<br/>Must satisfy regex `[a-z0-9_-\.]+`. |
-| `altvsntags`  | n | List of alternative [versiontags](@) that may be used to refer to this version of the [scope's](@) [terminology](@). A typical use of this field would be to tag a version as the 'latest' version.<br/>Must satisfy regex `[a-z0-9_-\.]+`. |
-| `license`     | n | File that contains the (default) licensing conditions. Full URL is `scopedir`/`license`. If not specified, its value defaults to the value of the `license` field in the `scope` section (of this [SAF](@)). The purpose of this field is to allow different versions of the [scope's](@) [terminology](@) to have different licenses. |
-| `termselcrit` | Y | List of [term selection criteria](@) that are used to generate (this version of) the [scope's](@) [terminology](@). See [Terminology Construction](/docs/tev2/spec-tools/terminology-construction) for details. |
-| `status`      | n | Text that [identifies](@) the status of the [term](@). ([Communities](@) of) [scopes](@) may specify values for this field. If not specified, the status SHOULD be assumed to be 'concept', 'draft', 'proposed', or similar. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
-| `from`        | F | Date at which it was decided to establish this version. |
-| `to`          | F | Date at which this version will expire (or has expired). |
+| Name          | Req'd | Description                                                                                                                                                                                                                                                                                                                                                            |
+| ------------- | :---: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `vsntag`      |   Y   | [Versiontag](@) that that is used to [identify](@) this version within the set of all other versions that are maintained within this [scope](@). in this [SAF](@). It MUST NOT be changed during the lifetime of this version.<br/>Must satisfy regex `[a-z0-9_-\.]+`.                                                                                                 |
+| `altvsntags`  |   n   | List of alternative [versiontags](@) that may be used to refer to this version of the [scope's](@) [terminology](@). A typical use of this field would be to tag a version as the 'latest' version.<br/>Must satisfy regex `[a-z0-9_-\.]+`.                                                                                                                            |
+| `license`     |   n   | File that contains the (default) licensing conditions. Full URL is `scopedir`/`license`. If not specified, its value defaults to the value of the `license` field in the `scope` section (of this [SAF](@)). The purpose of this field is to allow different versions of the [scope's](@) [terminology](@) to have different licenses.                                 |
+| `termselcrit` |   Y   | List of [term selection criteria](@) that are used to generate (this version of) the [scope's](@) [terminology](@). See [Terminology Construction](/docs/tev2/spec-tools/terminology-construction) for details.                                                                                                                                                        |
+| `status`      |   n   | Text that [identifies](@) the status of the [term](@). ([Communities](@) of) [scopes](@) may specify values for this field. If not specified, the status SHOULD be assumed to be 'concept', 'draft', 'proposed', or similar. An example is the [status tags used by ToIP](https://github.com/trustoverip/concepts-and-terminology-wg/blob/master/docs/status-tags.md). |
+| `from`        |   F   | Date at which it was decided to establish this version.                                                                                                                                                                                                                                                                                                                |
+| `to`          |   F   | Date at which this version will expire (or has expired).                                                                                                                                                                                                                                                                                                               |
 
 :::info Editor's note
 The `from` and `to` dates have been included to (in future) enable one to refer to a specific version of the terminology that was valid at a particular date. This feature needs to be worked out, and will impact [terminology construction](/docs/tev2/spec-tools/terminology-construction), [term ref specs](/docs/tev2/spec-syntax/term-ref-syntax), and various tools.

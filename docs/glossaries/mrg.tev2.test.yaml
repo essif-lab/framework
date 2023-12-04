@@ -1,0 +1,54 @@
+terminology:
+  scopetag: 'tev2'
+  scopedir: 'https://github.com/tno-terminology-design/tev2-specifications/tree/main/docs'
+  curatedir: 'terms'
+  vsntag: 'test'
+  altvsntags:
+    - 'firstAltVsnTag'
+    - 'secondAltVsnTag'
+scopes:
+  - scopetag: 'essif-lab'
+    scopedir: 'https://github.com/essif-lab/framework/tree/master/docs'
+entries:
+  - id: 'community'
+    title: 'Community'
+    displayed_sidebar: 'essifLabSideBar'
+    type: 'concept'
+    termid: 'community'
+    term: 'community'
+    formPhrases: 'communit{yies}'
+    status: 'draft'
+    grouptags: null
+    hoverText: 'Community: a Party, consisting of at least two different Parties (the members of the Community) that seek to collaborate with each other so that each of them can achieve its individual Objectives more efficiently and/or effectively.'
+    glossaryText: 'a [party](@), consisting of at least two different [parties](@) (the members of the [community](@)) that seek to collaborate with each other so that each of them can achieve its individual [objective](@) more efficiently and/or effectively.'
+    date: 20210601
+    scopetag: 'tev2'
+    locator: 'community.md'
+    navurl: 'https://essif-lab.github.io/framework/docs/terms/community'
+    headingids:
+      - 'short-description'
+      - 'purpose'
+      - 'criterion'
+    vsntag: 'test'
+  - id: 'party'
+    title: 'Party'
+    displayed_sidebar: 'essifLabSideBar'
+    type: 'concept'
+    termid: 'party'
+    term: 'party'
+    formPhrases: 'part{yies}'
+    status: 'draft'
+    grouptags: null
+    hoverText: 'Party: an Entity that sets its Objectives, maintains its Knowledge, and uses that Knowledge to pursue its Objectives in an autonomous (sovereign) manner. Humans and Organizations are the typical examples.'
+    glossaryText: 'an [entity](@) that sets its [objective](@), maintains its [knowledge](@), and uses that [knowledge](@) to pursue its [objective](@) in an autonomous (sovereign) manner. Humans and [organization](@) are the typical examples.'
+    date: 20210601
+    scopetag: 'tev2'
+    locator: 'party.md'
+    navurl: 'https://essif-lab.github.io/framework/docs/terms/party'
+    headingids:
+      - 'short-description'
+      - 'purpose'
+      - 'criterion'
+      - 'examples'
+      - 'related-terms'
+    vsntag: 'test'

@@ -10,14 +10,14 @@ date: 20220801
 # Machine Readable Dictionary Generation Tool
 
 :::danger This page is deprecated.
-The current TEv2 webiste is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
+The current TEv2 website is located at https://tno-terminology-design.github.io/tev2-specifications/docs/overview/overview-tev2
 :::
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 <img
-  alt="This page is under construction"
-  src={useBaseUrl('images/wip/wip-under-construction.png')}
+alt="This page is under construction"
+src={useBaseUrl('images/wip/wip-under-construction.png')}
 /><br/><br/>
 
 :::caution
