@@ -15,6 +15,7 @@ date: 20210601
 ---
 
 ### Short Description
+
 A **risk-level** a measure for the deviation of the intended realization (results) of a specific [objective](@) that its [owner](@) uses to represent the priority with which the [risk](@) of that [objective](@) should be reckoned with.
 
 Risk-levels can be expressed in many forms, such as
@@ -29,6 +30,7 @@ Every [party](@) that has a [risk management](@) process in place should establi
 Note the difference between risk-level and [risk](@): where risk-level is about _expected_ effects that uncertainties of various kinds may have on the realization of its associated [objective](@), [risk](@) is about the kinds of (or: _possible_)  effects that such uncertainties can have.
 
 ### Purpose
+
 The purpose of risk-levels is that it enables the [party](@) that has defined them to compare them, which allows it to prioritize the [risks](@)/[objectives](@) that it needs to manage.
 
 ### References

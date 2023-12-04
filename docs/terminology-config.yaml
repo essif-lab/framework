@@ -1,15 +1,18 @@
 # TNO Terminology Design tools configuration file (yaml)
 
 ## General
+
 scopedir: docs # path of the scope directory where the SAF is located
 onNotExist: warn # the action in case a `vsntag` was specified, but wasn't found in the SAF
 output: . # (root) directory for output files to be written to
 
 ## Machine Readable Glossary Tool
+
 mrgt:
   vsntag: # versiontag for which the MRG needs to be (re)generated. Leave empty to process all versions
 
 ## Human Readable Glossary Tool
+
 hrgt:
   interpreter: basic
   converter: |+
@@ -20,6 +23,7 @@ hrgt:
     - "docs/glossary.md"
 
 ## Term Reference Resolution Tool
+
 trrt:
   interpreter: # type of interpreter, either: a regex, "alt", or "basic"
     (?:(?<=[^`\\])|^)\[(?=[^@\]]+\]\([#a-z0-9_-]*@[:a-z0-9_-]*\))(?<showtext>[^\n\]@]+)\]\((?:(?<id>[a-z0-9_-]*)?(?:#(?<trait>[a-z0-9_-]+))?)?@(?<scopetag>[a-z0-9_-]*)(?::(?<vsntag>[a-z0-9_-]+))?\)

@@ -1,6 +1,7 @@
 ---
 id: hrg-termselcrit
 # displayed_sidebar: tev2SideBar
+
 // hide_table_of_contents: true
 scopetag: tev2
 date: 20230103

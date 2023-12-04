@@ -1,5 +1,6 @@
 ---
 # TEv2 Curated Text Header
+
 term: scope
 termType: concept
 isa:
@@ -9,10 +10,12 @@ synonymOf:
 grouptags:
 formPhrases: scope{ss}
 # Curation status
+
 status: proposed
 created: 2022-06-06
 updated: 2022-08-04
 # Origins/Acknowledgements
+
 contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
@@ -26,6 +29,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 ### Summary
+
 A **scope** is the extent of the [terms](@), [definitions](@) and other documentation that a [community](@) (which we call the [owner](@) of the [scope](@)) needs to express, communicate and validate its [knowledge](@) as relevant to achieving a specific subset of its [objectives](@).
 
 Other documentation includes [curated texts](@), and artifacts that are generated from that, such as [glossaries](@), [dictionaries](@) and the like. It also includes [tags](@) that can be used e.g. to refer to other [scopes](@) ([scopetags](@)), identify different versions for artifacts ([versiontags](@)), or create particular groups of [terms](@) ([grouptags](@)).

@@ -15,6 +15,7 @@ date: 20210601
 ---
 
 ### Short Description
+
 A **Risk** is the set of effects that uncertainty can have on the intended realization of an [objective](@) that is [owned](@) by a [party](@) (and that therefore also [owns](risk-owner@) the [risk](@) associated with that [objective](@)). *Uncertainty* is the condition in which a [party](@) lacks information, understanding or [knowledge](@) of events, their consequences or likelihoods. The effects that uncertainty can have on an [objective](@) show as the difference between the results that a [party](@) expects to be produced as it pursues an [objective](@), and the results that will actually be produced in the pursuit of that same [objective](@).
 
 While traditionally these effects are assumed to be negative (i.e. damaging, harmful) to this party, they may also be positive. For example, if you buy a ticket in a lottery, you (should) expect to lose money (the prize of the ticket). However, there is this uncertainty, this lack of information, the effect of it would be that this intended/expected result is deviated from, and you actually win a prize. If this risk is unacceptable (e.g. if you do not know how to manage large amounts of money), then that would call the risk to be [managed](risk-management@).
@@ -26,6 +27,7 @@ An _acceptable risk_ is a set of such effects that the [risk owner](@) has decid
 The [owner](@) of a risk that is associated with an [objective](@) must be the [party](@) that [owns](@) that [objective](@), and vice versa, because [ownership](@) implies the [authority](@) to realize the [objective](@), which in turn implies the authority to manage the associated risks. Of course, as [owners](@) are [parties](@), a [risk owner](@) may [mandate](@) actors to execute the actions that are necessary to manage a risk, but that does not relieve the party from its ownership (and facing possibly associated consequences). In fact, the objective of [mandating](mandate@) [risk management](@) activities may come with risks which are often overlooked.
 
 ### Purpose
+
 The concept of (managing) risk enables their [owners](@) to become and stay successful. The reason is simple: nobody knows everything so there are always uncertainties, lack of information, understanding or [knowledge](@) of events, their consequences or likelihoods. The effects that such uncertainties can have on the realization of one's [objectives](@), can be very harmful and should be mitigated. Knowing such effects enables parties to mitigate their risks. But also, such uncertainties may be joyful (e.g. as in a lottery), and it may be useful to properly prepare for the opportunities that may arise.
 
 ### References

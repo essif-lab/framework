@@ -15,9 +15,11 @@ date: 20210601
 ---
 
 ### Short Description
+
 The eSSIF-Lab **terminology process** is a method for recognizing misunderstandings as such, and creating or maintaining [definitions](@) that resolve them. It helps [parties](@) that work together to realize certain [objectives](@) (in some [scope](@)) by enabling them to establish a [terminology](@) that has the property that every party has the same understanding of each of its [terms](@), and that each of these [terms](@) is relevant for the realizations of these [objectives](@).
 
 ### Prerequisites
+
 This process focuses on the creation and maintenance of qualitatively good definitions, i.e. [definitions](@) that satisfy the following quality criteria:
 - the [definition](@) is associated with a [scope](@) that is explicitly defined, i.e. any [party](@) can unambiguously determine whether or not the definition applies;
 - the [criteria](https://www.lexico.com/definition/criterion) of the definition are well-formed, meaning that all stakeholders make the same judgements c.q. reach the same conclusions when using these criteria in a given situation that is relevant within the scope.

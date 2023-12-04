@@ -29,4 +29,5 @@ A [Communication Channel](@) is said to be **secure** if it provides the followi
 - the receiver of a message can determine whether or not the message has been received as it was transmitted (message integrity).
 
 ### Related Concepts
+
 - [Communication Session](@)

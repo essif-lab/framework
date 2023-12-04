@@ -15,6 +15,7 @@ date: 20220324
 ---
 
 ### Short Description
+
 An **Action** is something that is actually done (a 'unit of work' that is executed) by a single [actor](@) (on behalf of a given [party](@)), as a single operation, in a specific context. It is characteristic for an [action](@) that can be done either completely or not at all; it cannot be executed for (say) 50% (that's what 'unit of work' refers to).
 
 During the time interval in which the [action](@) is executed, the [actor](@) may still execute other [actions](@) in other execution-contexts; this is often referred to as 'multi-tasking'.
@@ -28,9 +29,11 @@ The fact that an [action](@) can only be completely executed or not at all, make
  The [Parties, Actors and Actions pattern](pattern-party-actor-action@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
+
 The ability to distinguish between (non)actions allows one to determine which (kinds of) [actors](@) are capable of executing actions (e.g. by establishing that they have the competences required by the [party](@), which is part of their [onboarding](@)), and as a consequence may be permitted and/or required to execute them. Also, this ability enables [parties](@) to determine the execution-[policy](@), i.e. the set of rules, working-instructions, preferences and other guidance that [actors](@) should obey or comply with when executing an [action](@) on its behalf.
 
 ### Criterion
+
 An **Action** is something
 - that is actually done (a unit of work that is executed) by a single [actor](@) (on behalf of a given [party](@)), as a single operation, in a specific context;
 - that is designed to be done either done completely or not at all (it cannot be done partially, e.g. for 50%);

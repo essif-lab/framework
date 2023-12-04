@@ -58,3 +58,4 @@ Here are some characteristics of the tools being supplied:
 - The glossary will be automatically updated as contributions to the Corpus of Terminology are being merged into the master branch.
 
 ## References
+

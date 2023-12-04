@@ -15,6 +15,7 @@ date: 20211101
 ---
 
 ### Short Description
+
 A **terms-community** is a [community](@) that maintains a [terminology](@) for the purpose of its members to avoid misunderstandings in their collaborations. They do so by:
 - [defining](definition@) a set of [terms](@) that are specific to them, and that are relevant for its members to interact as they seek to realize their individual [objectives](@).
 - determining which [terms](@) they will be using within their [community](@) in the meaning as [defined](definition@) by others.
@@ -26,9 +27,11 @@ A terms-community would typically create and (automatically) publish a [glossary
 Further details can be found in the [terminology pattern](pattern-terminology@).
 
 ### Purpose
+
 The purpose of establishing and maintaining a [terminology](@), and hence for having a [terms-community](@), is to ensure that any communications between its members is understood in the same meaning as it was said/written, which is prerequisite for reasoning, arguing, and making collective decisions.
 
 ### Criterion
+
 a [community](@) that maintains a [terminology](@) for the purpose of its members to avoid misunderstandings in their collaborations.
 
 ## Example

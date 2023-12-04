@@ -15,11 +15,13 @@ date: 20210601
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Purpose
+
 The **Guardianship pattern** captures the concepts and relations that explain how generic guardianships work, and can be constructed. It shows that [guardianship arrangements](guardianship-arrangement@) are embedded in a [jurisdiction](@) that govern such arrangements.
 
 The contribution of this pattern is to establish a building block and terminology for constructing a consistent, coherent and sufficiently complete mental model that allows [parties](@) to convey guardianship-related ideas to other parties, without running the risk of being misunderstood, by expressing any guardianship-related use-case in terms of the model. This will enable us to draft requirements and specifications for infrastructural IT, and make a start with specifying standardizable data structures (schemas) for use in combination with VCs.
 
 ### Introduction
+
 The term 'guardianship' has many definitions/descriptions, such as:
 - “The position of protecting or defending something” or “The position of being legally responsible for the care of someone who is unable to manage their own affairs.” (both from the [Oxford dictionary](https://www.lexico.com/en/definition/guardianship)),
 - “One who has the care of the person or property of another” or “One that guards” (both from [Merriam-Webster](https://www.merriam-webster.com/dictionary/guardianship)),
@@ -45,6 +47,7 @@ The wealth in varieties in guardianship arrangements can now easily be explained
 For a guardianship arrangement to be meaningful and relevant, it must be associated to a (single) jurisdiction that creates, modifies and dissolves the relation, specifies who the guardian and dependent are, and assigns each of them a set of rights and duties (including 'negative' rights and duties, i.e. what they may/must NOT do). A jurisdiction is implicitly tasked to enforce such rights and duties, and provide for the resolution of conflicts, yet is (and remains) self-sovereign in determining the extent in which it does so.
 
 ### Formalized model
+
 Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img

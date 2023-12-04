@@ -15,6 +15,7 @@ date: 20210601
 ---
 
 ### Short Description
+
 **Qualified data** is [data](@) that comes with assurances, at least regarding its provenance and integrity (immutability), that make this data valid to be used for specific purposes of individual [parties](@).
 
 Qualified data has two perspectives:
@@ -27,10 +28,12 @@ Qualified data comes in two flavors:
 - as data that satisfies the requirements of the [party](@) that will be using it, e.g. for decision making. Since parties are autonomous (self-sovereign), such requirements must be expected to be subjective: every party will have its
 
 ### Purpose
+
 The ability to distinguish between (non)qualified-data is relevant in many situations, including:
 - electronic communication: the qualified-data
 
 ### Criterion
+
 The **qualified-data** (of an [actor](@)) is the [party](@) for whom the actor is an [agent](@), i.e. on whose behalf the actor is (in the process of) executing some [action](@).
 
 

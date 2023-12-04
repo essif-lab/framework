@@ -20,12 +20,15 @@ NOTE: This file contains further explanations in comments. You may need to edit 
 -->
 
 ## Summary
+
 <!-- provide a text that summarizes the *functionality* of the component. This is a sort of TL;DR-section. -->
 
 ## Context Diagram
+
 <!-- insert a figure here that shows how your component relates to the other functional components, so that readers get an idea of where it belongs. You may want to add a few lines explaining the purpose of these relations. -->
 
 ## Functional Description
+
 <!-- describe the functionality of the component in all details that a reader may want to be informed about, e.g. for the purposes of
   - deeply understanding the component's function;
   - designing a technical component that implements the functionality;
@@ -33,9 +36,11 @@ NOTE: This file contains further explanations in comments. You may need to edit 
 -->
 
 ## Functional API specification
+
 <!-- identify the various APIs, and provide a subsection `API xxx` for each of them -->
 
 ### API 'xxx'
+
 <!-- specify the following items for the API:
   - the purpose(s) (what objective(s) does (using) the API realize). We need this to establish whether or not the API is fit for such purpose(s).
   - a high-level protocol flow that allows people to understand its working at a functional level.

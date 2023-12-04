@@ -1,15 +1,18 @@
 ---
 # TEv2 Curated Text Header
+
 term: terminology
 termType: concept
 grouptags:
 synonymOf:
 formPhrases: terminolog{yies}
 # Curation status
+
 status: proposed
 created: 2022-06-06
 updated: 2022-08-11
 # Origins/Acknowledgements
+
 contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
@@ -25,6 +28,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 ### Summary
+
 A **terminology** is a set of [terms](scoped-term@) that are used within a single [scope](@) to refer to [concepts](@) and other [knowledge artifacts](@) of a single [party](@) (e.g. a [community](@)), enabling [parties](@) to reason and communicate ideas they have about one or more specific topics. It may be viewed as a topic-specific subset of that [party's](@) [vocabulary](@).
 
 As each [term](@) in the [terminology](@) comes with all sorts of related data, such as a [definition](@), [documentation](curated-text@) about the [knowledge artifact](@) that it represents, [terms](@) that can be used as synonyms, etc., and since (pointers to) all that data is gathered in a single [MRG entry](@), we can also say that a [terminology](@) consists of the set of [MRG entries](@) that hold such data of the [terms](@) that the [terminology](@) consists of.
@@ -40,4 +44,5 @@ The [terminology pattern](pattern-terminology@) provides an overview of how this
 The [terminology construction section](/docs/tev2/spec-tools/terminology-construction) describes how to construct a [terminology](@) by selecting (groups of) [terms](scoped-term@), and manipulating such selections.
 
 ### Purpose
+
 In order for [parties](@) to properly reason and/or communicate ideas ([concepts](@) and other [knowledge artifacts](@)) about some topic - in particular when it is a specialist topic - they have to establish a set of [terms](@), the meaning of which should be [defined](@) (or otherwise documented) in such a way that the likelihood of misunderstandings between them is minimized. This set of terms is called a `**terminology**`

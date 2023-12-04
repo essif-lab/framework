@@ -46,6 +46,7 @@ Every [curated text](@) consists of two parts: a ([YAML](https://yaml.org/spec/1
 ```yaml
 ---
 # TEv2 Curated Text Header
+
 term: curated-text
 termType: concept
 isa:
@@ -55,15 +56,18 @@ synonymOf:
 grouptags:
 formPhrases: curated-text{ss}, ctext{ss}
 # Curation status
+
 status: proposed
 created: 2022-06-02
 updated: 2022-08-04
 # Origins/Acknowledgements
+
 contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 ---
 # Curated Text
+
 A curated text starts with three dashes `---`.
 This indicates the start of its (YAML) header.
 Typically, the header consists of a sequence of key-value pairs.

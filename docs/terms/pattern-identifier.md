@@ -19,6 +19,7 @@ This is work in progress and needs discussion.
 :::
 
 ### Purpose
+
 The **Identifier pattern** captures the concepts and relations that help to explain how [identifiers](@) are defined and used for [identification](identify@) purposes.
 
 Related topics can be found in the [identity pattern](pattern-identity@) and the [identification pattern](pattern-identification@).
@@ -27,6 +28,7 @@ Related topics can be found in the [identity pattern](pattern-identity@) and the
 
 
 ### Formalized model
+
 Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img

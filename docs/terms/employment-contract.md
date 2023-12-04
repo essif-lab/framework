@@ -33,8 +33,10 @@ Accountants that are [employed](employee@) by an accountancy firm have a contrac
 The [Parties, Actors and Actions pattern](pattern-party-actor-action@) describes how this concept fits in with related concepts.
 
 ### Purpose
+
 The purpose of having [employment contracts](employment-contract@) is to ensure that [expectations](@) that [parties](@) have towards one another, and towards [actors](@) that work for them, are matched by corresponding [obligations](@) of the reciprocal [party](@) (for details on matching, see the section **[Matching](pattern-governance-and-management#matching)** of the [Governance and Management pattern](pattern-governance-and-management@)). An [employment contract](@) that is made explicit, and electronically available, may also serve as part of the chain of assets that are needed to determine the right (or duty) of an [actor](@) to execute an [action](@) on behalf of some [party](@).
 ### Criteria
+
 An [employment contract](@) is an agreement/contract
 - between two [parties](@), one of which controls a set of [actors](@) (the [subjects](@) of the contract);
 - that states (or refers to) all (sets of) rights and duties under which these [actors](@) can and/or must work for the other [party](@);

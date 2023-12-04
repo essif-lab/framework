@@ -1,5 +1,6 @@
 ---
 # TEv2 Curated Text Header
+
 term: common-understanding
 termType: concept
 isa:
@@ -8,10 +9,12 @@ synonymOf:
 grouptags:
 formPhrases:
 # Curation status
+
 status: proposed
 created: 2022-10-26
 updated: 2022-10-26
 # Origins/Acknowledgements
+
 contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
@@ -24,6 +27,7 @@ The entire section on Terminology Design is still under construction.<br/>
 :::
 
 ## Summary
+
 A **common understanding** is the state of a [community](@) where every member has the same understanding about the meaning of
 1. the [terms](@) used in the [community](@),
 2. the relations between these [terms](@), and
@@ -45,7 +49,9 @@ We need to say that this is what 'terminology design' is about, and point to the
 
 
 ## Purpose
+
 Having a [common understanding](@) is one of the prerequisites of efficiently and effectively working together.
 
 ## Criteria
+
 A **common understanding** the state of a [community](@) where every member has the same understanding about the meaning of (a) the [terms](@) used in the [community](@), (b) the relations between these [terms](@), and (c) any constraints/rules that apply.

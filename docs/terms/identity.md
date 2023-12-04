@@ -15,6 +15,7 @@ date: 20210803
 ---
 
 ### Short Description
+
 The **Identity** (of an [entity](@)) is the combined [knowledge](@) about that [entity](@) of all [parties](@), i.e. the union of all [partial identities](partial-identity@) of which that [entity](@) is the [subject](@).
 
 We realize that this is a term that is heavily debated. However for our purposes, it is useful to see the identity of a person (or other [entity](@)) as the union of all characteristics, judgements and other [knowledge](@) that [parties](@) have about that person.

@@ -32,3 +32,4 @@ The [Parties, Actors and Actions pattern](pattern-party-actor-action@) provides 
 ### Purpose
 
 ### Criteria
+

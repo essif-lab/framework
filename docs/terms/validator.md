@@ -20,6 +20,7 @@ In other SSI contexts, this term has a different meaning. We intend to rework th
 :::
 
 ### Short Description
+
 A **validator** is a (functional) component that implements the [capability](@) to determine whether or not (verified) data is [valid](validate@) to be used for some specific purpose(s).
 
 :::info Editor's note

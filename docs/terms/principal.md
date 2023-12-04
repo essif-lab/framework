@@ -15,6 +15,7 @@ date: 20210601
 ---
 
 ### Short Description
+
 A **principal** (of an [actor](@)) is a [party](@) on whose behalf the [actor](@) is executing an [action](@). As, and in the context where the [actor](@) is doing this, we say that the [party](@) fulfills the role of [principal](@) for that [actor](@). We also say that the [actor](@) fulfills the role of [agent](@) for that [party](@).
 
 Being a [principal](@) (or [agent](@) for that matter) is a [role](@) (characteristic/property) that a [party](@) (or an [actor](@), respectively) only has at a point in time where the [actor](@) is _actually executing an [action](@)_ on behalf of that [party](@). At any point in time, a [party](@) can fulfill the [role](@) of [principal](@) for many [actors](@), depending on the amount of [actions](@) that are being executed on its behalf.
@@ -22,9 +23,11 @@ Being a [principal](@) (or [agent](@) for that matter) is a [role](@) (character
 [Principals](@) are expected to provide its [agents](@) with the [policies](@) that provide the [agents](@) with the rules, working-instructions, preferences and other guidance that they need to comply with when executing the action. This, and relations with other concepts are described in the [Parties, Actors and Actions pattern](pattern-party-actor-action@).
 
 ### Purpose
+
 The purpose of being able to distinguish between [parties](@) that are, and that are not fulfilling the [role](@) of [principal](@) (of the [actor](@) that is executing some [action](@)), is that it is instrumental in discussions about who is (not) responsible/accountable for that [action](@) - including the way in which the [action](@) is executed, as well as the results produced by that [action](@).
 
 ### Criterion
+
 The **principal** (of an [actor](@)) is the [party](@) for whom the [actor](@) is an [agent](@), i.e. on whose behalf the [actor](@) is (in the process of) executing some [action](@).
 
 ### Examples

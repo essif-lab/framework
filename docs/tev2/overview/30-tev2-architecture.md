@@ -2,6 +2,7 @@
 id: tev2-architecture
 sidebar_label: Architecture
 # displayed_sidebar: tev2SideBar
+
 scopetag: tev2
 date: 20220303
 ---

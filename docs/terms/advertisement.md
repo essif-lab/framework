@@ -19,4 +19,5 @@ Additional descriptions are needed here.
 :::
 
 ### Short Description
+
 An **Advertisement** is an offer by a specific [party](@) to provide a (type of) [credential](@), where the offer includes (a reference to) the syntax and semantics specifications of that [credential](@), and also lists various other characteristics that enable other [parties](@) to decide whether or not a [credential](@) that the advertising [party](@) has issued under this offer, is [valid](validate@) to be processed in one or more of its [information processes](information-process@).

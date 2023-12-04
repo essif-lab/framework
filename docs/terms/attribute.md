@@ -15,6 +15,7 @@ date: 20210821
 ---
 
 ### Short Description
+
 An **Attribute** is [data](@), that represents a characteristic that a [party](@) (the [owner](@) of the [attribute](@)) has attributed to an [entity](@) (the [subject](@) of the [attribute](@)). An attribute typically represents a [statement](assertion@) ([assertion](@), [claim](assertion@)) of its [owner](@), that states the attribution of that characteristic to its [subject](@).
 
 Note that

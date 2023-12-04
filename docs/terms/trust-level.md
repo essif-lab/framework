@@ -15,6 +15,7 @@ date: 20220222
 ---
 
 ### Short Description
+
 A **trust level** is a (subjective) degree of belief or confidence that a [party](@) has in (the truth of) X, where X is an arbitrary [statement](assertion@) that can be true or false. For example, the degree of belief you have in that the president of the US makes the right decisions is the [trust level](@) associated with you (as a [party](@)), and the [assertion](@) "the president of the US makes the right decisions".
 
 [trust levels](trust-level@) are subjective judgements made by individual [parties](@). Given the same exact circumstances, two [parties](@) will perceive different levels of trust based e.g.on their [risk](@) tolerance and history with trust issues. A [statement](assertion@) would typically have as many [trust levels](trust-level@) associated with it as there are [parties](@) that have made such judgements. Note that [parties](@) may associate [trust levels](trust-level@) to their own judgements, including judgements about their [trust levels](trust-level@) themselves.

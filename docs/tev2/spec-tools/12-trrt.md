@@ -2,6 +2,7 @@
 id: trrt
 sidebar_label: Term Ref Resolution
 # displayed_sidebar: tev2SideBar
+
 scopetag: tev2
 date: 20220421
 ---

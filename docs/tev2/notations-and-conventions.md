@@ -14,9 +14,11 @@ The current version can be found at https:///miscellaneous/notations-and-convent
 This document provides an overview of the notations and conventions being used within this [scope](@).
 
 ### RFC 2119
+
 We use keywords such as “shall”, “should”, “may” etc. as defined by [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
 ### Capitalization of words in mid-sentence
+
 A word in mid-sentence that is capitalized is a [term](@) that has a [definition](@) in the [Corpus of Terminology](corpus@). This allows readers to distinguish between the more colloquial meanings of words (by not capitalizing them) and those that are actually defined. We appreciate any feedback regarding our (im)proper use of this kind of capitalization of words.
 
 :::note

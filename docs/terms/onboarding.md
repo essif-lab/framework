@@ -47,6 +47,7 @@ Note that the banking app, once installed on the customer's mobile phone, is als
 Your typical SSI wallet app that is deployed on a mobile phone is said to work for the [person](human-being@) that operates the wallet app (which is different from the banking app in the previous paragraph). While this may be different for the various wallet apps, we expect that the [person](human-being@) would first go and shop around to see which wallet app has the features it likes (step 1). The contract (step 2) is implicit: the rights and duties are defined by the [](capability-of-an-actor@) of the wallet app. When the user installs the app on its mobile phone (step 3) onboarding is complete. The process in which the user provides the app with rights (e.g. to the phone's storage, NFC [](capability-of-an-actor@), etc.), or retracts such rights, is outside the scope of the onboarding process.
 
 ### Purpose
+
 The purpose of the onboarding process is to ensure/establish that an [actor](@) that does not work for a [party](@) in an [employee](@)-[employer](@) relationship (see the [parties, actors and actions pattern](pattern-party-actor-action@)), but for which there is a request to start working for that [party](@):
 1. is capable of executing such [actions](@) ONLY according to the applicable [policies](@) of that [party](@);
 2. is provided with the means to execute such actions, and

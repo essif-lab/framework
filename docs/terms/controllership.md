@@ -15,6 +15,7 @@ date: 20211222
 ---
 
 ### Short Description
+
 **Controllership** (of an [actor](@) over an [entity](@)) is the [capability](@) of an [actor](@) to execute [actions](@) on a specific [entity](@) for the purpose of ensuring that this [entity](@) will act/behave, or be used, in a particular way.
 
 For further details, see [controller](@).

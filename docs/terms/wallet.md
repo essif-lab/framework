@@ -15,6 +15,7 @@ date: 20210601
 ---
 
 ### Short Description
+
 A **Wallet** is is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture-framework)) that provides (secure) storage of credentials - regardless of the [party](@) that has issued them (i.e. so-called self-signed credentials may be stored there, too). Another task of the wallet is to (securely) store (private) keys that can be used to sign or seal data on behalf of its Principal. Perhaps the most important task of the Wallet is to ensure that credentials and keys can only become available to another component if they have the same (single) Principal, and will become available if such other component implements a functionality that needs it.
 
 :::info Editor's note
@@ -22,9 +23,11 @@ Additional content is needed here.
 :::
 
 ### Purpose
+
 The purpose of the Wallet function is.
 
 ### Criteria
+
 A **Wallet** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture-framework) whose function is to ... (tbd).
 
 ### Functionality

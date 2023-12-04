@@ -15,6 +15,7 @@ date: 20220218
 ---
 
 ### Short Description
+
 **Ownership** is a relationship between two [entities](@) that exists within the [scope of control](@) of a [jurisdiction](@), in which one of them (called the [owner](@)) has legal, rightful or natural rights and/or duties to enjoy, dispose of, and control the other (called the [owned](@)).
 
 The titles are specified by (the rules of) the [legal system](@) of the [jurisdiction](@), and the meaning of an ownership instance (i.e.: what you can(not) do with it) depend on the ways in which such rules are enforced, and disputes resolved. Obviously both the [owner](@) and the [owned](@) must be known (i.e.: be [legal entities](legal-entity@)) in that [jurisdiction](@)).
@@ -22,9 +23,11 @@ The titles are specified by (the rules of) the [legal system](@) of the [jurisdi
 We may use adjectives in combination with 'ownership' to signify the kind of [jurisdiction](@) within which that relationship exists. For example, 'legal ownership' signifies that the relationship exists in a [legal jurisdiction](@), and 'natural ownership' that it is in the [jurisdiction](@) called 'nature'. An example of natural ownership is any statement uttered or authored by (or on behalf of) a [party](@) (the [owner](@) of the statement), because [parties](@) have a natural right to express themselves.
 
 ### Purpose
+
 **Ownership** is a means by which [jurisdictions](@) ensure that [owners](@) can autonomously enjoy, dispose of and control the [entities](@) that they [owns](@) to the extent of the entitlements (rights and duties) as defined in the [jurisdiction's](@) [legal system](@), and within its [scope of control](@).
 
 ### Criteria
+
 **Ownership** is a relationship between two [legal entities](legal-entity@) (called the [owner](@) and the [owned](@)) within a single [jurisdiction](@), whose [legal system](@) (a) defines the rights and duties of the [owner](@) to enjoy, dispose of and control the [owned](@), (b) enforces them, and (c) provides a means to settle disputes.
 
 ### Notes

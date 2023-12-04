@@ -15,6 +15,7 @@ date: 20220220
 ---
 
 ### Short Description
+
 A **mandate** a right or duty that one [party](@) (the [mandator](mandate@)) has granted to another [party](@) or [employee](@) (the [mandatee](mandate@)) for executing a specific (set of) [actions](@) in the name of, and under responsibility/accountability of, this (first) [party](@). Because of that, such [actions](@) must be executed according to the [policies](@) of the [mandator](mandate@), and this is what distinguishes it from a [delegate](@).
 
 Note that [actors](@) are never [mandatees](mandate@); they can only be that in their capacity of being [employed](employee@) by a specific [party](@), which may be the [mandator](mandate@) itself, but also some other [party](@). The reason for that is that this ensures the [actor](@) is [onboarded](onboarding@) by that [party](@), which makes that [party](@) accountable in cases where the [actor](@) misbehaves by misusing, or exceeding the rights and duties that are granted by the [mandate](@).
@@ -40,8 +41,10 @@ A special kind of [mandate](@) is that where the right to [mandate](@) certain r
 As explained (see the [duties and rights pattern](pattern-duties-and-rights@)), rights and duties are relations between [legal entities](legal-entity@): [parties](@) have rights/duties *towards* others. For example, a [party](@) that is holder of a bank account has a right (that it can exercise) towards the bank to transfer money out of the account, which implies that the bank has a corresponding duty to enable that [party](@) to exercise that right. This makes that it is not trivial to operationalize [mandates](@): simply creating a [mandate](@) by the [mandator](mandate@) does not mean that the [party](@) that has the corresponding duties and/or rights can recognize them as being authentic, or can handle them. This is particularly an issue when verifying the authenticity and subsequent handling are to be done electronically.
 
 ### Purpose
+
 The purpose of (formal and/or explicit) [mandates](@) is that it enables [parties](@) to establish whether or not [actors](@) that execute (a) specific [action(s)](@) are entitled to do so.
 ### Criterion
+
 A mandate is ([data](@), that expresses) a [volition](https://www.merriam-webster.com/dictionary/volition) of a [party](@) (in the role of [mandator](mandate@)) that pertains to:
 - a set of rights and/or duties that the [mandator](mandate@) disposes of, and that are the subject of the [mandate](@);
 - at least one other [party](@) and/or [agent](@) (in the role of [mandatee](mandate@));

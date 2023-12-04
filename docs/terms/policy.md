@@ -15,6 +15,7 @@ date: 20210901
 ---
 
 ### Short Description
+
 A **policy** is a (set of) rules, working instructions and/or other guidance for the execution of one or more kinds of [actions](@) that [agents](@) of the [party](@) that [governs](governance@) the policy have access to and can interpret such that this results in these [actions](@) being executed as intended by that [party](@).
 
 A bit more elaborate: as per the [party-actor-action pattern](pattern-party-actor-action@), an [agent](@) executes [actions](@) on behalf of its [principal](@). Policies are sets of rules that express, amongst other things, how this [party](@) wants [actions](@) of specific kinds to be executed. That is why [agents](@) need to be able to not only access such guidance, but also be able to interpret its contents such that it leads to the execution of such actions as intended by said [party](@). This requires that the policy be readable by the agent, and that the agent is capable of interpreting it as intended by its principal.
@@ -32,9 +33,11 @@ It should be part of the [principal's](@) [governance](@) processes
 The [Parties, Actors and Actions pattern](pattern-party-actor-action@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
+
 The purpose of **policies** is to enable [parties](@) to provide its [agents](@) with the rules and other guidance that they need to execute [actions](@) that comply with such rules.
 
 ### Criterion
+
 A **policy** is
 - a (set of) rules, working-instructions, preferences and other guidance for the execution of one or more kinds of [actions](@), possibly using different representations so as to be readable/interpretable by different kinds of [actors](@);
 - [managed](management@) by a single [party](@) that decides what goes in the policy and what does not;

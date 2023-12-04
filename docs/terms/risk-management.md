@@ -15,6 +15,7 @@ date: 20220206
 ---
 
 ### Short Description
+
 **Risk management** is a process that is run by (or on behalf of) a specific [party](@) for the purpose of [managing](management@) the [risks](@) that it [owns](@) (thereby realizing specific [risk objectives](risk-objective@)). The overall [risk objective](@) that [parties](@) seek to [manage](management@) is to ensure that the set of all [risks](@) that they perceive to run are, as a whole, acceptable.
 
 For various purposes, a [party](@) may decide to run multiple [risk management](@) processes. For example, it may run one process for [managing](management@) the [risks](@) related to quality, or information security, or environmental issues. This allows a [party](@) to design, maintain and realize [risk objectives](risk-objective@) that are tailored to such topics. Also, a [party](@) may run different [risk management](@) processes (perhaps with the same [risk objectives](risk-objective@)) for different parts of its [scope of control](@). However, a [party](@) should ensure that the combination of these processes result in its overall [risk management](@) to be complete, coherent and consistent.
@@ -33,7 +34,9 @@ We distinguish between the following kinds of risk-management:
 - **decentralized or networked risk-management**, which is a kind of [risk management](@) that assumes that the [party](@) that runs it acknowledges the autonomy of other [parties](@) to determine their own [objectives](@) and [manage](management@) the associated [risks](@) as they see fit. This implies that this [party](@) will communicate with these other [parties](@) about their mutual [expectations](@), and find ways that help each other to manage their individual, subjective [risks](@).
 
 ### Purpose
+
 The purpose of a **Risk Management** process (that is run by, or on behalf of, some [party](@)), is to manage the [risks](@) that it [owns](@) within its [scope of control](@). This may entail helping its stakeholders, i.e. the [parties](@) that either produce or consume the results of [objectives](@) that this [party](@) owns, to [manage](management@) their [risks](@) as well.
 
 ### Criterion
+
 A Risk Management (process) is a set of related [activities](@) that a [party](@) runs for the purpose of realizing a set of [risk objectives](risk-objective@) that it [owns](@), where the realization of these [risk objectives](risk-objective@) ensure that (a specific subset of) the set of all [objectives](@) that the [party](@) [owns](@) come with associated [risks](@) that, on the whole, this [party](@) finds acceptable.

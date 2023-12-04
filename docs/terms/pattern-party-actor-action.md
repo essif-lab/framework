@@ -17,12 +17,15 @@ date: 20210602
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ## Summary
+
 This pattern captures the essence of how things are done. It answers questions such as: "Who/what does things?", "How are their [actions](@) being guided/[controlled](controller@)?", "Who [controls](controller@) whom/what?", "Who/what may be held accountable?". These questions need to have a precise answer if you want to design or implement systems where [actors](@) can be anything, ranging from programs/apps running on computers as well as [humans](human-being@). This pattern provides a way of looking at [organizations](@), [people](human-being@), and non-human [actors](@). It shows how they interact with one another, and how they may or may not work for one another. The pattern describes how [parties](@) are '[(self) sovereign](self-sovereignty@)' as they construct their own world view, reason with that, and make their (subjective) decisions autonomously. It also shows how this [knowledge](@) is used, where it is used, and also: where it is not used. The latter implies that [parties](@) have a limited [scope of control](@), which gives rise to their need to work together with other [parties](@), that have their own sovereignty. Such interactions with others, however, are outside the scope of this pattern.
 
 ## Purpose
+
 In order for [people](human-being@) or [organizations](@) to decide what to do (themselves), what to ask others to do (for which these others generally require some form of compensation, how to know that the associated [risks](@) are worth taking, this pattern provides a simple [mental model](pattern@) that provides the basis for thinking/reasoning about such questions. The [pattern](@) is expected to be helpful to those that think about designing complex systems (systems of systems) that are owned by different parties, and in which both [human](human-being@) and non-human [actors](@) take part.
 
 ## Introduction
+
 One may readily observe that in some way, [people](human-being@) and [organizations](@) are similar. This is indicated e.g. by the notion of 'personality' that many [legal jurisdictions](legal-jurisdiction@) assign to (specific kinds of) [organizations](@). They can both be assigned rights and duties, be held accountable, and subjected to prosecution: they can sue and be sued.
 
 [People](human-being@) and [organizations](@) are also different. [People](human-being@) qualify as [actors](@), meaning that they can actually do things. [People](human-being@) can drink beer or sign contracts, which [organizations](@) cannot. [Organizations](@) need [actors](@) to do things on their behalf. Still, it is a common and accepted practice to say something like "[TNO](https://www.tno.nl/en/) has signed a contract", as if [TNO](https://www.tno.nl/en/) were an [actor](@). There is no problem with that, as long as we interpret such phrases to mean that the [organization](@) that is said to act is actually using an [actor](@) that acts on its behalf. So, "TNO has signed a contract" means that some [actor](@) exists that has signed the contract on TNO's behalf.
@@ -34,6 +37,7 @@ We use the term [party](@) to refer to entities that autonomously maintain a spe
 This mental model is about how [parties](@) and [actors](@) relate to one another, and how [actions](@) are executed by an [actor](@) on behalf of, and using the [knowledge](@) of, a [party](@). The relevance of modeling this somewhat formally is that it will make it easier to build IT systems, where IT (that is running) qualifies as [actors](@), and [people](human-being@) and [organizations](@) (businesses, enterprises, governments) qualify as [parties](@). We like to think this mental model contributes to bridging the gap between business and IT.
 
 ## Formalized model
+
 Here is a visual representation of this pattern, using the usual **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**. Please not that in this pattern, the relation '**`is acting on behalf of`**' has synonyms in other patterns, including '*`acts on behalf of`*', '*`is executing on behalf of`*', '*`executes on behalf of`*', that should not be confused with the '**`works for`**' relation (as further explained below).
 
 <img

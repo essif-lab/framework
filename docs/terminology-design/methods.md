@@ -16,6 +16,7 @@ export const mark = ({text}) => ( <span style={{ color:'black', backgroundColor:
 />
 
 ## Summary
+
 The (high-level) process that we call **Terminology Design** aims to establish and maintain [terminologies](@) for various [contexts](@) that are suitable for, e.g.:
 - creating and maintaining e.g.,:
   - a common understanding between a group of people that work together as they pursue specific objectives;

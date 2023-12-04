@@ -1,5 +1,6 @@
 ---
 # TEv2 Curated Text Header
+
 term: pattern-terminology
 termType: pattern
 isa:
@@ -8,10 +9,12 @@ synonymOf:
 grouptags:
 formPhrases: mental-model{ss}
 # Curation status
+
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 # Origins/Acknowledgements
+
 contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
@@ -42,6 +45,7 @@ Also, this [management](@) may cause reference documents to be created and maint
 2. the terminology-related part. This is where [concepts](@), [definitions](@), [terms](@), [glossaries](@) etc. live. This part is what one needs to create tools/support for managing and maintaining a [terminology](@). Here, we have [concepts](@) with their [definitions](@) and [terms](@) as a means to refer to either. A [concept](@), its [definition](@) live in the same [scope](@), and within that [scope](@) there must be a [term](@) to refer to that [concept](@) and its [definition](@). Within a specific [scope](@), every [term](@) is associated with precisely one such [concept](@) and [definition](@). However, within a [scope](@), a [concept](@)/[definition](@) pair may be referred to by multiple [terms](@), which are then synonyms or aliases of each other.
 
 ### Formalized model
+
 Here is a visual representation of this pattern, using the following **[notations and conventions](/docs/tev2/notations-and-conventions#pattern-diagram-notations)**:
 
 <img
@@ -104,6 +108,7 @@ When we say that a [terms-community](@) [curates](@) a [scope](@), this means th
 - [manages](@) (creates/maintains) the various [tags](@) in the scope, i.e. defines a [scopetag](@) for the [scope](@), [versiontags](@) (if necessary) for the different versions of the [terminology](@) of that [scope](@), and (optionally) any [grouptags](@) for grouping sets of [terms](@).
 
 #### Yellow: Intangible Concepts {#yellow}
+
 The intangible [knowledge artifacts](@) (e.g., [concepts](@), [relations](@), [patterns](@) etc.) are important because this is where the misunderstandings live. The [knowledge](@) of a [party](@) uses a subjective [conceptualization](@) of the world (that the [party](@) has perceived to be living in for as long as it exists) for its individual reasoning, arguing, communicating, decision making etc. Because of this, two [parties](@) that collaborate (i.e.: form a [community](@)) cannot be expected to have the same conceptualizations. However, it is a common belief that if one uses a [term](@) to refer to a [concept](@) in its [knowledge](@), the other will then relate it to 'the same' [concept](@) within its own knowledge, that we should not assume actually exists. For example, when one of them uses the [term](@) 'identity', it knows which [concept](@) that relates to within its own [knowledge](@). However, others need to hallucinate as to what that [concept](@) might be, and typically respond by thinking that the [concept](@) that the [term](@) refers to in their own [knowledge](@) would be its intended meaning. In many cases that doesn't pose a problem, because the [concepts](@) of both [knowledges](@) are 'sufficiently the same'. In other cases, the differences in meaning may be such that it disrupts the collaboration between the [parties](@). And that is when it helps to have 'good [definitions](@)', because they have the property that collaborators can assess whether or not the [concepts](@) in their [knowledge](@) (that a well-defined [term](@) refers to) are 'sufficiently the same'.
 
 In order to keep the work of devising [definitions](@) to a minimum, it helps to know the [objectives](@) that the members of the [community](@) collaboratively seek to realize. Any [definition](@) should define a [concept](@) that is relevant for that collaboration. Other definitions are just useless work.

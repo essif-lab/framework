@@ -15,9 +15,11 @@ date: 20210803
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Purpose
+
 The **Identity pattern** captures the concepts and relations that explain how digital identities work, how this relates to (attributes in) [credentials](@), and how all this can be made to work in [SSI contexts](self-sovereign-identity@).
 
 ### Introduction
+
 The term 'identity' is [used in many ways](https://en.wikipedia.org/wiki/Identity) in different contexts, and is often related to intangibles, such as feelings, emotions, ideas of belonging, and the like. However, in [SSI contexts](self-sovereign-identity@), we need to work with tangible things - specifically: data that can be issued, stored, processed, transferred, requested and obtained. Still, in such contexts, we have observed that people use the term 'identity' to refer to various concepts/ideas, e.g.:
 - a string of alphanumeric characters that can be used to [identify](identifier@) someone, e.g. a name or an identification number (in general: an [identifier](@)),
 - a (coherent) set of [assertions](@) (statements, claims) about someone, represented as data, e.g. digital, or in print, usually including an [identifier](@) of some kind;
@@ -47,6 +49,7 @@ More importantly, in interactions between the protagonist and an arbitrary [part
 This use of attributions is particularly relevant for [SSI contexts](self-sovereign-identity@) in which the focus is on supporting (electronic) [transactions](@). That support consists, amongst other things, of enabling a participating [party](@) to request for, and obtain data that are statements about [entities](@) (in particular about other participating parties) that this party determines to be [valid](validate@) for making the decision of whether or not to commit. Knowing the [party](@) that authored (issued) such data helps to determine not only the meaning of that data, but also to determine its (un)trustworthiness. Knowing that a set of data originates from a single partial identity is a prerequisite for doing this.
 
 ### Formalized model
+
 Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img

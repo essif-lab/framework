@@ -15,6 +15,7 @@ date: 20210601
 ---
 
 ### Short Description
+
 A **Community** is a [party](@), consisting of at least two different [parties](@) (the members of the [community](@)) that seek to collaborate with each other so that each of them can achieve its individual [objectives](@) more efficiently and/or effectively. As a [party](@), the community sets its own [objectives](@) that its members contribute to realizing, because the results thereof aim to facilitate their cooperation.
 
 There is no fundamental difference between [communities](@) and other [parties](@) in the sense that they are all [parties](@) that set [objectives](@) and [produce](management@) and/or [consume](governance@) associated results. However, the kind of [objectives](@) of a [community](@) is expected to serve the cooperation of its members, facilitate their collaborations, and remove any obstacles thereto. A [community](@) serves its members as they seek to realize their individual [objectives](@).
@@ -29,9 +30,11 @@ Note that a single set of [parties](@) can constitute different communities, the
 A community is a specialization of the more generic [ecosystem](@) in the sense that it is a [party](@) in its own right (which an ecosystem need not be), and it (actively) facilitates the cooperation between its members, whereas in non-community ecosystems, such cooperation is not actively planned or organized.
 
 ### Purpose
+
 The purpose of having [communities](@) is to organize and optimize collaborations between [parties](@) that reduce their individual effort for realizing their individual [objectives](@) to a greater extent than the effort they must put into contributing to the community.
 
 ### Criterion
+
 A **Community** is a [party](@),
 - that consists of at least two different [parties](@) (its members);
 - that sets [objectives](@) for realizing results that enable its members to achieve their individual [objectives](@) more efficiently and/or effectively;

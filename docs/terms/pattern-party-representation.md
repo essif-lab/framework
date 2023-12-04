@@ -21,13 +21,16 @@ This pattern is still under development
 :::
 
 ### Summary
+
 This pattern captures the essence of how [parties](@) can be represented in various circumstances, thereby extending the [parties, actors, actions pattern](pattern-party-actor-action@).
 
 ### Purpose
+
 Within the context of [SSI](self-sovereign-identity@), we are interested in coming to grips with (answering) questions such as 'in what ways can [parties](@) be represented?', 'what kind(s) of [entities](@) can represent [parties](@)', 'how can we deal with representation constraints, i.e. provide guarantees that the represented [party](@) isn't completely at the mercy of the one representing it?'.
 
 This model attempts to provide answers to such questions.
 ### Introduction
+
 There are very many different forms of representation. [Claims](assertion@), for example, represent characteristics attributed to [entities](@), [Terms](@) represent (intangible) [concepts](@), [legal entities](legal-entity@) are represented in the [knowledge](@) of a [jurisdiction](@), [agents](@) represent [parties](@) as they execute [actions](@), and so on. We specifically focus on
 
 [Merriam-Webster](https://www.merriam-webster.com/dictionary/representation) considers both 'the action of representing', i.e. the action or fact of one [party](@) standing for another so as to have the rights and duties of the [party](@) represented, or the substitution of one [party](@) in place of another, e.g. a child taking the place of a deceased parent), and 'the fact of being represented', which is its passive counterpart.
@@ -59,6 +62,7 @@ This pattern also describes how [parties](@) can be said to perform an [action](
 In this model, we do not consider [actors](@) representing [parties](@), as this is already elaborated on in the [parties, actors, action model](pattern-party-actor-action@), which defines notions such as [agents](@) (and [principals](@))
 
 ### Formalized model
+
 Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img
@@ -67,6 +71,7 @@ Here is a visual representation of this pattern, using the following **[notation
 />
 
 ### Miscellaneous
+
 The seemingly simple notion of 'representation' turns out to be quite elusive in various circumstances. The painter [Rene Magritte was heavily reproached](https://en.wikipedia.org/wiki/The_Treachery_of_Images) for writing "Ceci n'est pas une pipe" (this is not a pipe) under a painting that showed a pipe. But he was right: you cannot stuff the image of a pipe in the same way you stuff the pipe that it represents.
 
 In general, representation is quite complex, as can be readily experienced when diving into [Semiotics](https://en.wikipedia.org/wiki/Semiotics), that studies the workings of [signs](https://en.wikipedia.org/wiki/Sign_(semiotics)) (i.e. anything that communicates a meaning that is not the sign itself). Our [terminology model](pattern-terminology@) specifies that a [term](@) (within a specific [scope](@)/context) refers to (the [definition](@) of) a [concept](@), which is one way of representing (intangible) ideas.

@@ -34,6 +34,7 @@ The [pattern](@) also hints at the relation between [semantics](@) and
 :::
 
 ### Formalized model
+
 Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img

@@ -18,6 +18,7 @@ date: 20220922
 This page is a first draft. Additional contents (and a proper review) are needed.
 :::
 ### Short Description
+
 A **capability (of an [actor](@))** is the potential of that [actor](@) to execute a (named) coherent set of [actions](@) (a 'function', or 'task') on behalf of some [party](@).
 
 ### Examples

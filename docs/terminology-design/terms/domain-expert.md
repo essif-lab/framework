@@ -1,5 +1,6 @@
 ---
 # TEv2 Curated Text Header
+
 term: domain-expert
 termType: concept
 isa:
@@ -8,10 +9,12 @@ synonymOf: subject-matter-expert
 grouptags:
 formPhrases: domain-expert{ss}, subject-matter-expert{ss}
 # Curation status
+
 status: proposed
 created: 2022-11-23
 updated: 2022-11-23
 # Origins/Acknowledgements
+
 contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
@@ -24,14 +27,17 @@ The entire section on Terminology Design is still under construction.<br/>
 :::
 
 ## Summary
+
 A **domain expert** or **subject matter expert** is a person that has expert [knowledge](@) about a specific topic (subject matter), or skills in a particular area (domain). Their knowledge and skills are instrumental, e.g., in the design and development of architectures, information or production processes, and in the specifications of systems, components or other artifacts.
 
 A common assumption is that [domain experts](@) are capable of expressing the [knowledge](@) that they can prove they have. Under this assumption, it is logical to expect that [domain experts](@) are capable to author e.g., the specifications of an IT system that is complete, consistent, coherent, correct, clear and concise. As this assumption is actually a misconception[^1], such expectations inevitably lead to problems.[^2]
 
 ## Purpose
+
 The purpose of having **domain experts** and **subject matter experts** make (or contribute to the creation of) certain artifacts, such as an architecture, an information or production process, the specifications of a system (component), etc., is that their knowledge and skills reduce the [risk](@) of the artifact not being fit-for-purpose.
 
 ## Criteria
+
 A **domain expert** or **subject matter expert** is a person that has expert [knowledge](@) about a specific topic (subject matter), or skills in a particular area (domain).
 
 ## Notes

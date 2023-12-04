@@ -20,6 +20,7 @@ In other SSI contexts, this term has a different meaning. We intend to rework th
 :::
 
 ### Short Description
+
 A **Verifier** is is a (functional) component that implements the [capability](@) to request [peer agents](peer-agent@) to present (provide) data from [credentials](@) (of a specified kind, issued by specified [parties](@)), and to [verify](@) such responses (check structure, signatures, dates), according to its [principal's](@) [verifier policy](@).
 
 :::info Editor's note
@@ -27,4 +28,5 @@ Additional content is needed here.
 :::
 
 ### Purpose
+
 The purpose of the Verifier function is.

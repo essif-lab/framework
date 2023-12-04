@@ -17,6 +17,7 @@ date: 20220203
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Short Description
+
 A **control objective** is an [objective](@), owned by a [party](@), that aims to contribute to the realization of another (set of) [objective(s)](@) of that [party](@), by producing results that this [party](@) needs to realize these other [objective(s)](@). A control objective has the property that it is both [managed](management@) (as it produces specific results) and also [governed](governance@) (as it uses these results - as a contribution to the realization of other objectives of that [party](@)) by (or on behalf of) its [owner](@).
 
 The [governance](@) aspect entails the specification of the results that are needed, and the characteristics that they should have in order to be a useful and relevant contribution for the [objective](@) for which it is a control.  as a realization
@@ -38,9 +39,11 @@ We have observed that (the [management](@) of) the [controls](controller@) assoc
 Control objectives should also be associated with [assessment frameworks](assessment-framework@) that auditors will use for determining the [control-levels](@) for each of these objectives.
 
 ### Purpose
+
 The purpose of control-objectives is help [parties](@) determine and prioritize the work they need to do in order to ensure that the [controls](controller@) they run become, and/or remain, acceptable.
 
 ### Criteria
+
 A [control-objective](@) is an [objective](@) that
 - is associated with one or more (classes of) [objectives](@) that are controlled by the [owner](@) of the [control-objective](@);
 - is associated with one or more [normative frameworks](normative-framework@) that these (classes of) [objectives](@) are to comply with;

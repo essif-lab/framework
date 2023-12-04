@@ -15,6 +15,7 @@ date: 20220203
 ---
 
 ### Short Description
+
 A **compliance-level** is a measure for stating how well a [entity](@) conforms with a stated (set of) requirement(s).
 
 Compliance-levels can be expressed in many forms, such as
@@ -31,9 +32,11 @@ In order to be meaningful, every [party](@) that uses [compliance levels](compli
 Also, [parties](@) should specify the [assessment framework(s)](assessment-framework@) that auditors should use for determining the [compliance levels](compliance-level@).
 
 ### Purpose
+
 The purpose of compliance-levels is help [parties](@) determine and prioritize the work they need to do in order to become [compliant](compliance@).
 
 ### Criteria
+
 A [compliance-level](@)
 - is a measure of some kind (e.g. 'Low', 'Medium', 'High', or a digit in some integer interval, or similar);
 - signifies a statement about how well an [entity](@) conforms with a stated (set of) requirement(s);

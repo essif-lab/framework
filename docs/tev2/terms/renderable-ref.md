@@ -1,5 +1,6 @@
 ---
 # TEv2 Curated Text Header
+
 term: renderable-ref
 termType: concept
 isa:
@@ -9,10 +10,12 @@ synonymOf:
 grouptags:
 formPhrases: renderable-ref{ss}, renderable-reference{ss}
 # Curation status
+
 status: proposed
 created: 2022-06-06
 updated: 2022-08-04
 # Origins/Acknowledgements
+
 contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
@@ -26,6 +29,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 ### Summary
+
 A **Renderable Ref(erence)** is a text with which the [TRRT](@) replaces a [term ref](@), that can be processed by specific third party rendering tools, the result of which is a rendering of the original [term ref](@) that has additional characteristics that help [readers](@) to (better) understand the intention of its [author](@).
 
 For example, when rendering a [term ref](@)
@@ -35,4 +39,5 @@ For example, when rendering a [term ref](@)
 [Curators](@), which are expected to control the ways in which authored texts are further processed (into rendered texts), will need to know the options provided by the [TRRT tool](/docs/tev2/spec-tools/trrt) in order to ensure that the [term refs](@) that are used in an authored text are rendered with the kind of [renderable refs](@) that produce the envisaged rendering effects.
 
 ### Purpose
+
 [Renderable refs](@) enable authored texts to be rendered in various ways, depending on the kind of target towards which is rendered.

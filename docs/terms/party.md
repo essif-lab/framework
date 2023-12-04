@@ -15,6 +15,7 @@ date: 20210601
 ---
 
 ### Short Description
+
 A **party** is an [entity](@) that sets its [objectives](@), maintains its [knowledge](@), and uses that [knowledge](@) to pursue its [objectives](@) in an autonomous (sovereign) manner. One might say that they have a mind of their own. Typical examples are individual people and [organizations](@). Their minds (subjective knowledge) are what distinguishes one [party](@) from another, so every [party](@) is 1-1 related to its knowledge (mind).
 
 Specifically, every party autonomously manages its
@@ -27,6 +28,7 @@ It is important to note that:
 - parties can own, or be, [jurisdictions](@); this is further explained in the [Jurisdictions pattern](pattern-jurisdiction@).
 
 ### Purpose
+
 It is in one's mind - with one's knowledge - that objectives are being set, strategies are being devised, decisions are being made and so on. Specifically, interacting with others, e.g. to conduct [business transactions](transaction@), requires making numerous decisions, each of which is based on a subjective argument. The evaluation of such an argument requires the acquisition and processing of data, which implies additional decisions (that provide assurances that evaluation will arrive at the right conclusion), such as establishing:
 - which data is required,
 - what conditions such data should satisfy in order to be [valid](validate@) for performing in the evaluation,
@@ -34,6 +36,7 @@ It is in one's mind - with one's knowledge - that objectives are being set, stra
 etcetera. For all of this, it is beneficial to introduce a concept that captures this idea of [knowledge](@) or mind in terms of _the_ entity that has it at its disposition, governs it, and has it used to realize its [objectives](@).
 
 ### Criterion
+
 [Entity](@) that is the 'sovereign' over a [body of knowledge (information)](knowledge@), which means that it decides about, and can be asked to account for:
 - the [body of knowledge](knowledge@) itself, and the (continuous) changes in it, e.g. concerning
   - the interpretation of [data](@) that it has received
@@ -46,6 +49,7 @@ etcetera. For all of this, it is beneficial to introduce a concept that captures
 - its [data](@), i.e. the tangible representations of a subset[^2] of its knowledge that it uses, e.g. to communicate with others (e.g. in messages), to remember (store it somewhere), or to further process.
 
 ### Examples
+
 People obviously qualify. Enterprises, governments, and other organizations also qualify as they can be seen as having their own knowledge (e.g. in their registrations, databases etc.), ways to reason with that knowledge (business rules, exercised by their employees or IT systems), and making decision.
 
 Human beings are specifically attributed the rights to be sovereign over their own knowledge, in the freedoms of information gathering, forming an opinion, and the freedom of speech, e.g. in the [ECHR](https://www.echr.coe.int "European Convention of Human Rights") ([ECHR articles 9-11](https://www.echr.coe.int/Documents/Convention_ENG.pdf))
@@ -53,6 +57,7 @@ Human beings are specifically attributed the rights to be sovereign over their o
 Stones, pictures, ideas, etc. do not qualify. Also, electronic components do not qualify[^3].
 
 ### Related Terms
+
 The term '[Identity Owner](https://docs.google.com/document/d/1gfIz5TT0cNp2kxGMLFXr19x1uoZsruUe_0glHst2fZ8/edit#heading=h.2e5lma3u6c9g)' (from the [Sovrin Glossary](https://sovrin.org/library/glossary/)) is quite similar for this term, as becomes apparent from its [Taxonomy of Entities](https://docs.google.com/document/d/1gfIz5TT0cNp2kxGMLFXr19x1uoZsruUe_0glHst2fZ8/edit#heading=h.mq7pzglc1j96). However, there it is defined as "_the subclassifications of Sovrin Entity that may be held legally accountable_", which does not fit in our model because:
 - it is a subclass of Sovrin Entity, and Parties need not necessarily be Sovrin Entities;
 - legal accountability can only be meaningful for [legal entities](legal-entity@) within a [jurisdiction](@) that has established criteria for determining which of their [legal entities](legal-entity@) can be accountable for what.

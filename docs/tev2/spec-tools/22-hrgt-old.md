@@ -2,6 +2,7 @@
 id: hrgt-old
 sidebar_label: HR Glossary Generation (previous version)
 # displayed_sidebar: tev2SideBar
+
 hide_table_of_contents: true
 scopetag: tev2
 date: 20220421

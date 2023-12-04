@@ -16,4 +16,5 @@ date: 20210601
 ---
 
 ### Short Description
+
 SSI is an abbreviation of [Self-Sovereign Identity](self-sovereign-identity@)

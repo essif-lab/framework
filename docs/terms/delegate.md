@@ -15,6 +15,7 @@ date: 20220222
 ---
 
 ### Short Description
+
 A **delegate** is the transferral of [ownership](@) of one or more [obligations](@) (duties) of a [party](@) (the [delegator](delegate@)), including the associated accountability, to another [party](@) (the [delegatee](delegate@)), including the associated accountability, to another [party](@) (the [delegatee](delegate@)). Doing so has several consequences:
 
 - the [delegatee](delegate@), as the new [owner](@), is autonomous and must therefore be expected (or: is free) to realize such [obligations](@) as it sees fit.
@@ -28,9 +29,11 @@ While a [party](@) is usually free to [delegate](@) its [obligations](@), it may
 
 
 ### Purpose
+
 The purpose of (formal and/or explicit) [delegates](@) is that it enables [parties](@) to establish whether or not [parties](@) that have a specific [action(s)](@) executed, are entitled to do so.
 
 ### Criterion
+
 A **delegate** is the transferral of [ownership](@) of one or more [obligations](@) of a [party](@) (the [delegator](delegate@)), including the associated accountability, to another [party](@) (the [delegatee](delegate@)), including the associated accountability, to another [party](@) (the [delegatee](delegate@)), which implies that the [delegatee](delegate@) can realize such [obligations](@) as it sees fit.
 
 ### Examples

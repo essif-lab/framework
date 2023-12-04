@@ -1,5 +1,6 @@
 ---
 # TEv2 Curated Text Header
+
 term: term-type
 termType: concept
 isa: identifier
@@ -9,10 +10,12 @@ synonymOf:
 grouptags:
 formPhrases: term-type{ss}
 # Curation status
+
 status: proposed
 created: 2022-06-06
 updated: 2022-08-10
 # Origins/Acknowledgements
+
 contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
@@ -26,6 +29,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 ### Summary
+
 A **Term Type** is an [identifier](@) that is used to [identify](@) the particular *kind* of [knowledge artifact](@) that a [term name](@) represents. Examples include `concept`, `relation`, `pattern` (or `mental-model`).
 
 The ability to specify a [term type](@) as part of a [term](@) mimicks the common practice of disambiguating semantically overloaded [term(name)s](term-name@).

@@ -19,12 +19,14 @@ This is work in progress and needs discussion.
 :::
 
 ### Purpose
+
 The **Trust pattern** captures the concepts and relations that help to explain how [trust](@) relates to [parties](@) that do the trusting, and other concepts that express what it is that these [parties](@) trust.
 
 ### Introduction
 
 
 ### Formalized model
+
 Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img

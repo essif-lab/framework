@@ -15,6 +15,7 @@ date: 20210601
 ---
 
 ### Short Description
+
 The **SSI Infrastructure** consists of the technological components that are (envisaged to be) deployed all over the world for the purpose of providing, requesting and obtaining [qualified data](@) for the purpose of negotiating and/or executing electronic [transactions](@).
 
 Like any other (hard) [Infrastructure](https://en.wikipedia.org/wiki/Infrastructure), such components are (to be) designed to be interoperable, both
@@ -26,4 +27,5 @@ It is foreseen that SSI components in this infrastructure are designed and creat
 This implies that the SSI Infrastructure (a 'hard' infrastructure) needs to be complemented with a complementary 'soft infrastructure', e.g. as can be provided with [assurance communities](ssi-assurance-community@).
 
 ### Purpose
+
 The **SSI Infrastructure** supports the sustainable functionality of [parties](@) by providing IT services and facilities necessary for (electronic) [transactions](@) to be negotiated and executed.

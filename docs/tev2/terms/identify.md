@@ -1,5 +1,6 @@
 ---
 # TEv2 Curated Text Header
+
 term: identify
 termType: concept
 isa:
@@ -9,10 +10,12 @@ synonymOf:
 grouptags:
 formPhrases: identif{yies}, identif{ying}, identifiable, identification identification
 # Curation status
+
 status: proposed
 created: 2021-06-01
 updated: 2021-06-01
 # Origins/Acknowledgements
+
 contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
@@ -21,6 +24,7 @@ originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?
 # Identify
 
 ### Short Description
+
 **Identification** is an [act](@), by or on behalf of a [party](@), that results in either the selection of
 1. a single [partial identity](@) that the party [owns](@), given some (observed or received) data, or
 2. a single [entity](@) from a given set of entities that is the [subject](@) of a specified [partial identity](@) that the party [owns](@).

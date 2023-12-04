@@ -15,6 +15,7 @@ date: 20210812
 ---
 
 ### Short Description
+
 **Identification** is an [act](action@), by or on behalf of a [party](@), that results in either the selection of
 1. a single [partial identity](@) that the party [owns](@), given some (observed or received) data, or
 2. a single [entity](@) from a given set of entities that is the [subject](@) of a specified [partial identity](@) that the party [owns](@).

@@ -19,11 +19,13 @@ This is work in progress and needs discussion.
 :::
 
 ### Purpose
+
 The **Identification pattern** captures the concepts and relations that help to explain the mechanisms that a [party](@) uses to [identify](@) [entities](@), and mechanisms for communicating with another party such that both parties can identify an entity and know whether or not they identify the same entity.
 
 Related topics can be found in the [identity pattern](pattern-identity@) and the [identifier pattern](pattern-identifier@).
 
 ### Introduction
+
 In 'the wild', terms such as [identify](https://www.merriam-webster.com/dictionary/identify), [identification](https://www.merriam-webster.com/dictionary/identification), [identity](https://www.merriam-webster.com/dictionary/identity) are defined such that the can be used without all too many problems in everyday discussions. However, if we want to use these terms for our [purposes](../essifLab-objectives), their definition must be much more precise, particularly because we want to use them in IT-contexts. Lets show this by example.
 
 Here, we discuss [identification](identify@) in a way that we expect to be useful in IT-contexts (or non-IT, but still administrative contexts). Basically, two things are needed:
@@ -65,6 +67,7 @@ Such representations can come in many forms. In a human administrative context, 
 This is particularly true for the [action](@) that is commonly referred to as 'logging in'. The [actor](@) that is 'logging in' some user onto a system (or provide the user access to some other physical or electronic location), will identity (and subsequently authenticate) the user, i.e. search for the account to associate the user with, from where it can find all other data that is needed about the user in that particular context.
 
 ### Formalized model - information realm
+
 Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img
@@ -87,6 +90,7 @@ This process of accumulation of characteristics (and selecting the [entities](@)
 - there is a single [partial identity](@) and a single [entity](@) that both match all such characteristics, in which case identification is successful and the [subject](@)-relation between the [entity](@) and [partial identity](@) has been established.
 
 ### Formalized model - data realm
+
 Here is a visual representation of a similar pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img

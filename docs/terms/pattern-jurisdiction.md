@@ -15,9 +15,11 @@ date: 20210601
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Purpose
+
 The **Jurisdiction pattern** captures the concepts and relations that explain how one can perceive a generic [jurisdiction](@), how it works, and how it can be put to use in [SSI contexts](self-sovereign-identity@).
 
 ### Introduction
+
 Many people are familiar with what we call [legal jurisdictions](legal-jurisdiction@), e.g. a government that has a [legal system](@) in place which it applies to [entities](@) that it knows to exist in its [scope of control](@).
 
 While differences exist, a legal jurisdiction typically has a [legal system](@), i.e. a set of rules (laws, regulations, etc.) that it enforces (within the scope of control of the legal jurisdiction), and a mechanism for resolving conflicts. The rules typically apply to entities whose existence is known within the legal jurisdiction. For example: a refugee that asks for asylum would typically first need to be registered (which is: legally establishing its existence) before the application can even be considered. Such entities are generically known as [legal entities](legal-entity@).
@@ -42,6 +44,7 @@ From the above, one might even be inclined to think that *every* [party](@) qual
 Note that while a [jurisdiction](@) is a [party](@), a jurisdiction may also be owned by a (different) party, and it makes sense to distinguish between them. For example, a multinational organization may own subsidiaries in different countries, each of which could be a jurisdiction in their own right, for the purpose of aligning their rules of operation with the local legal jurisdiction. e.g. for organizations.
 
 ### Formalized model
+
 Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img

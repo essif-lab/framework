@@ -15,6 +15,7 @@ export const mark = ({text}) => ( <span style={{ color:'black', backgroundColor:
 />
 
 ## Summary
+
 **Criteria Elicitation** is a process where a set of people (the participants in the process) learn what [concept(s)](@) a specific person (the protagonist[^1] of the process) has in mind when (s)he uses a particular [term](@) (the subject of the process). The process is complete when the participants can use the [term](@) in the same way as the protagonist, thereby showing that they now all have the same understanding of these [concept(s)](@).
 
 [^1]: We consider the protagonist of the process to also be one of its participants.

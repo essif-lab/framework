@@ -20,12 +20,15 @@ In other SSI contexts, this term has a different meaning. We intend to rework th
 :::
 
 ### Short Description
+
 An **issuer** is a (functional) component that implements the [capability](@) to construct [credentials](@) from data objects, according to the content of its [principal's](@) [issuer-policy](@) (specifically regarding the way in which the [credential](@) is to be digitally signed), and pass it to the [wallet](@)-component of its [principal](@) allowing it to be issued.
 
 ### Purpose
+
 The purpose of the Issuer function is.
 
 ### Criteria
+
 A **Issuer** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture-framework) whose function is to ... (tbd).
 
 ### Functionality

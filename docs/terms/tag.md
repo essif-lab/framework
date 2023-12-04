@@ -15,6 +15,7 @@ date: 20210601
 ---
 
 ### Short Description
+
 A **Tag** is an alphanumeric string that is used to identify [scope](@) (so called 'scopetags'), group [terms](@) (so called 'grouptags'), or identify a specific version of a [terminology](@) (so called 'versiontags') from within a specific [scope](@).
 
 Scopetags [identify](@) a [scope](@) (from within a given [scope](@)), and hence can be used (within that given [scope](@)) to disambiguate [terms](@). For example, `#essif-lab:term` is an [identifier](@) for the [concept](@) that within the [scope](@) [identified](identify@) by the scopetag `essif-lab` is referred to by the [term](@) 'term'. Scopetags typically satisfy the regex `#[a-z0-9_-]+` and is often preceded by the `#` character to designate that it is a tag.
@@ -24,7 +25,9 @@ Grouptags may be used within a [scope](@) to tag various sorts or [knowledge art
 Versiontags are used to identify a specific version of the [terminology](@) of the [scope](@) within which the versiontag lives. It may have various forms, and would typically be chosen such that it comes in handy with the tools that the [terms community](@) has decided to use to curate that [scope](@).
 
 ### Criteria
+
 is an alphanumeric string that is used to identify [scope](@) and/or group [terms](@), and that satisfies the regex `#[a-z0-9_-]+`.
 
 ### Examples
+
 Examples of scopetags are `essif-lab`, `essiflab`, `toip`, or `ctwg`

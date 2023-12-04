@@ -19,12 +19,15 @@ In other SSI contexts, this term has a different meaning. We intend to rework th
 :::
 
 ### Short Description
+
 A **Holder** is an (architectural) function (a functional component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture-framework)) that handles [presentation requests](presentation-request@) that it receives from [verifier](@) components (of other [parties](@), but also of its own [owner](@)). Typically, this means looking for the requested data in the [principal's](@) [wallet](@), and using it to construct a [presentation](@) (=response). However, if the [wallet](@) doesn't have it, the [holder](@) may negotiate a [transaction](@) with a component of the designated [issuer](@) for the purpose of obtaining the needed credential, which - when obtained - it can subsequently store in the [wallet](@) and use in the [presentation](@).
 
 ### Purpose
+
 The purpose of the Holder component is to handle [presentation requests](presentation-request@) that it receives from [verifier](@) components (both of its own [owner](@), and of other [parties](@)), and responding to such requests.
 
 ### Criteria
+
 A **Holder** is a component in the [eSSIF-Lab functional architecture](../essifLab-fw-conceptual-architecture-framework) whose function is to handle [presentation requests](presentation-request@) that it receives from [verifier](@) components (both of its [owner](@), and of other [Parties](@)).
 
 ### Functionality

@@ -15,6 +15,7 @@ date: 20210601
 ---
 
 ### Short Description
+
 A **risk owner** is the [party](@) that is the [owner](@) of the [objective](@) to which the [risk](@) is associated.
 
 The [owner](@) of a [risk](@) that is associated with an [objective](@) must be the [party](@) that [owns](@) that [objective](@), and vice versa, because [ownership](@) implies the [authority](@) (rights and duties) to realize the [objective](@), which in turn implies the [authority](@) to [manage](management@) the associated [risks](@). Of course, as all [owners](@) are [parties](@), a [risk owner](@) may [mandate](@) [actors](@) to execute the [actions](@) that are necessary to [manage](management@) a [risk](@), but that does not relieve the [party](@) from its ownership (and facing possibly associated consequences). In fact, the objective of [mandating](mandate@) [risk management](@) activities may come with [risks](@) which are often overlooked.
@@ -22,6 +23,7 @@ The [owner](@) of a [risk](@) that is associated with an [objective](@) must be 
 Networked Risk Management (reference needed) exploits the fact that the owner of a [risk](@) and the owner of the associated [objective](@) are one and the same [party](@), the fact that in [human beings](human-being@) are often not aware of the [risks](@) they run, and the observation that important [risks](@) often manifest themselves in feelings of insecurity or anxiety/tension, abdominal pain, sleepless nights, or other types of physical discomfort (the degree of which can be seen as the associated [risk level](@)). Noticing that a [person](human-being@) shows signals of physical discomfort can be used as a trigger for an [activity](@), the result of which is that the associated [objective](@) is identified (and made explicit), so that it can be analyzed, evaluated and treated (see [risk-management](@)).
 
 ### Purpose
+
 Knowing who [owns](@) a [risk](@) is knowing who is accountable when something goes wrong. When the associated [objective](@) is also identified, the [risk](@) can subsequently be [managed](risk-management@).
 
 ### Formalization

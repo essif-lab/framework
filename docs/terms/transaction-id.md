@@ -21,4 +21,5 @@ Additional content is needed here.
 Explain that different [transaction](@) [participants](@) are each likely to use their own [identifiers](@) for identifying, and referring to, the various [transactions](@) that they participate in. A [participant](@) should communicate its [transaction id](@) to another [participant](@) if it expects that other [participant](@) to refer to the [transaction](@) in a way that it can dereference (i.e.: can use to identify the [transaction](@) with.
 
 ### Related Concepts
+
 - [Identifier](@)

@@ -22,4 +22,5 @@ date: 20210601
 
 
 ### References
+
 - [verifiable presentation](https://www.w3.org/TR/vc-data-model/#dfn-verifiable-presentations).

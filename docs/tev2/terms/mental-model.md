@@ -1,5 +1,6 @@
 ---
 # TEv2 Curated Text Header
+
 term: mental-model
 termType: concept
 isa: knowledge-artifact
@@ -9,10 +10,12 @@ synonymOf:
 grouptags:
 formPhrases: mental-model{ss}, pattern{ss}, conceptual-model{ss}
 # Curation status
+
 status: proposed
 created: 2022-06-06
 updated: 2022-06-07
 # Origins/Acknowledgements
+
 contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"

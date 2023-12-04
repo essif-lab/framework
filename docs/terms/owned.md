@@ -19,5 +19,6 @@ see: [ownership](@)
 Explain that the fact that the description does not preclude arbitrary Entities to be owners doesn't mean that arbitrary Entities can in fact be owners; that is up to (the Legal System of) the Jurisdiction to provide guidance for.
 
 ### Related Concepts
+
 - [Ownership relation](ownership@)
 - [Owner](@)

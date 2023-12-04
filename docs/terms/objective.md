@@ -17,6 +17,7 @@ date: 20210601
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Short Description
+
 An **Objective** is something toward which a [party](@) (its [owner](@)) directs effort (an aim, goal, or end of action). Typically, the realization of an objective can be observed in terms of results, e.g. products that have been produced, services that are being provided, a situation or state (e.g. happiness) that has been continued etc. A [party](@) that has an objective does not necessarily produce these results itself; it may also seek to realize them in order to use (consume) them - thus, production and consumption of results are the two different perspectives from which an objective can be perceived.
 
 The [ownership](@) of the objective is implied: it is the [party](@) that [owns](@) the [knowledge](@) of which it is a part. This [party](@) also (consciously or unconsciously) creates, maintains and enforces the rules (rights and duties) that determine how the [objective](@) is pursued ([managed](management@) and/or [governed](governance@)). And it will (consciously or unconsciously) have a means in place to resolve any (internal) disputes that may arise. Thus, the  [party](@) qualifies as a [jurisdiction](@), the [legal system](@) of which has the rules and mechanisms to [manage](management@) and [govern](governance@) the [objectives](@) it [owns](@). The [risk](@) associated with an [objective](@) is [owned](@) by the [objective's](@) [owner](@). Typically, [parties](@) will also have [objectives](risk-objective@), the [pursuit](risk-management@) of which ensures that the overall (residual) risk they bear becomes and remains acceptable.
@@ -37,9 +38,11 @@ There are various ways for [parties](@) to come to grips with specifying and [ma
 We refer you to the [Governance and Management pattern](pattern-governance-and-management@) for a description of how to think about objectives in contexts where there are multiple [parties](@).
 
 ### Purpose
+
 The ability to distinguish between (non)objectives is relevant as objectives are the drivers behind the reasoning and decisions that [parties](@) make, the [policies](@) and working instructions that they specify so that its [agents](@) know what to do, when to do it, and how to do it. Moreover, objectives are 1-1 associated with [risks](@). Finally, objectives must be known in order to obtain (personal) data according to the [GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 ### Criterion
+
 An **objective** is something
 - that is [owned](@) by a single [party](@);
 - toward which its [owner](@) directs its efforts: an aim, goal, or end of action - this action is related to the the owner producing the associated results ([management](@)) and/or consuming the results ([governance](@));
@@ -61,6 +64,7 @@ An **objective** may have additional attributes. Here are some examples (includi
 - `maintSpec` [0..1]: specification for maintaining the implemented production mechanism.
 
 ### Examples
+
 - generically: anything that, according to a [party](@) c.q. its way of thinking, is important to be realized or maintained, qualifies as an objective (and identifies its [owner](@) as that [party](@)).
 - most people have an objective that could be described as "to stay alive".
 - the equivalent in [organizations](@) is 'continuation of its existence' (many [organizations](@) operate 'business-continuity processes' to realize this, and to identify and mitigate any associated [risks](@)).

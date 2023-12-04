@@ -15,6 +15,7 @@ date: 20210830
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Purpose
+
 The **Governance and Management pattern** captures the concepts and relations that explain how [parties](@) organize that [their](owner@) [objectives](@) are realized, either by doing the associated work themselves ([management](@)), or by arranging for other [parties](@) to do that ([governance](@)). The contribution of this pattern is to show how this is done, based on the idea that every [objective](@) is [owned](@) by a single [party](@).
 
 ### Introduction

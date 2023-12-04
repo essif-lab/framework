@@ -15,6 +15,7 @@ date: 20210601
 ---
 
 ### Short Description
+
 An **agent** (of a [party](@)) is an [actor](@) that is executing an [action](@) on behalf of that [party](@). As, and in the context where the [actor](@) is doing this, we say that it fulfills the role of [agent](@) for that [party](@). We also say that the [party](@) fulfills the role of [principal](@) (for that [actor](@)).
 
 Being an [agent](@) (or [principal](@) for that matter) is a [role](@) (characteristic/property) that an [actor](@) (or a [party](@), respectively) only has at a point in time where the [actor](@) is _actually executing an [action](@)_ on behalf of that [party](@).
@@ -24,8 +25,10 @@ During the time interval in which the action is executed, the actor may execute 
 [Agents](@) are expected to access (and hence have access to) the [policies](@) that their respective [principals](@) provide in order for these [agents](@) to execute [actions](@) in compliance therewith. This, and relations with other concepts are described in the [Parties, Actors and Actions pattern](pattern-party-actor-action@).
 
 ### Purpose
+
 The purpose of the concept [agent](@) is that it is an enabler for the [capability](@) of determining its [principal](@), because it is an [actor](@) with the property that it is executing some [action](@) on behalf of a [party](@)) - its [principal](@). The relevance of this [capability](@) finds its origin in the fact that it is not the [actor](@) that is held accountable for the [actions](@) it executes, but the [party](@) on whose behalf they are are executed.
 ### Criterion
+
 **Agent** is a [role name](@) that generically refers to an [actor](@) that is executing some [action](@) on behalf of a [party](@).
 
 ### Examples

@@ -17,6 +17,7 @@ date: 20220908
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Short Description
+
 An **Expectation** is an [objective](@) that is [owned](@) by a [party](@) for having a specific (set of) result(s) produced, where the actual production thereof is (going to be) outsourced to another [party](@).
 
 In the figure below, [objectives](@) Obj-1b.1 and Obj-1b.3 are [expectations](@) of Red towards Blue and Green respectively. Also, [objective](@) Obj-Yel-m is an [expectation](@) of Yellow towards Red.

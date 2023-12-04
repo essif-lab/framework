@@ -2,6 +2,7 @@
 id: tev2-common-understanding
 sidebar_label: Understanding One Another
 # displayed_sidebar: tev2SideBar
+
 scopetag: tev2
 date: 20220513
 ---

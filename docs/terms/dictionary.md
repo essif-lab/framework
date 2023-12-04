@@ -25,9 +25,11 @@ The [terminology pattern](pattern-terminology@) provides an overview of how this
 A dictionary helps people to get introduced in the domain for which the dictionary is created. Usually, this is a larger domain e.g. of some language, or about computer security.
 
 ### Criteria
+
 an alphabetical list of words or phrases with possibly multiple, short explanations, that exists for the purpose of helping people to find out what a word may mean in various [scopes/contexts](scope@).
 
 ### Examples
+
 Examples include the [NIST Computer Security Resource Center](https://csrc.nist.gov/glossary), [Merriam-Webster](https://www.merriam-webster.com/dictionary/).
 
 ### Related Concepts

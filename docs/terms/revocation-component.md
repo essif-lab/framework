@@ -20,6 +20,7 @@ In other SSI contexts, this term has a different meaning. We intend to rework th
 :::
 
 ### Short Description
+
 A **Revocation component** is a (functional) component that implements the [capability](@) to [revoke](@) [credentials](@) that are issued by its [principal](@), according to its [principal's](@) [revocation policy](@)..
 
 :::info Editor's note
@@ -27,4 +28,5 @@ Additional content is needed here.
 :::
 
 ### Purpose
+
 The purpose of the Revocation function is.

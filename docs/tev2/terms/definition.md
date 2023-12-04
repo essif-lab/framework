@@ -1,5 +1,6 @@
 ---
 # TEv2 Curated Text Header
+
 term: definition
 termType: concept
 isa:
@@ -9,10 +10,12 @@ synonymOf:
 grouptags:
 formPhrases: definition{ss}
 # Curation status
+
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 # Origins/Acknowledgements
+
 contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
@@ -26,6 +29,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 ### Summary
+
 A **Definition** is a text that helps [parties](@) to have the same understanding about the meaning of a [term](@), and hence enables communications. The quality of a definition is the extent in which parties can use it to actually demonstrate that they have the same understanding.
 
 The problem that definitions (as we see them) contribute to solving is misunderstandings that may arise as every [party](@) has its own [knowledge](@) and autonomously determines the [semantics](@) it uses to express itself in texts/speech/pictures, and interpret that of other parties. The fact that the semantics of parties is subjective makes it realistic to assume that the meaning that a party intends to convey as it expresses itself is not the same as how another party interprets that expression - a 'misunderstanding'.
@@ -45,15 +49,18 @@ The eSSIF-Lab [terminology process](@) provides guidance for making and maintain
 Practical guidance is provided by the report "[On Terminology, and the Resolution of Related Issues](http://resolver.tudelft.nl/uuid:964a90da-da81-4d38-9f45-84f3f5fa96b3)".
 
 ### Purpose
+
 Working together is easier when you and your peers share the same ideas. We need a way to test and ensure, that you and your peers _actually_ have the same understanding, for the purpose of making cooperation easier. Doing so is expected to not only reduce the number of terminological discussions, but also improve the efficiency and effectiveness of the remaining discussions.
 
 ### Criteria
+
 A **definition** is a text that comprises at a minimum:
 - a [scope](@) that is curated ([controlled](@)) by a [party](@), and that is related to (the pursuit of) a non-empty set of [objectives](@);
 - a [criterion](https://www.lexico.com/definition/criterion) that specifies the necessary and sufficient conditions for determining what does and what does not constitute some [concept](@) (idea, class of [entities](@));
 - a [name or phrase](@) that is used within the [scope](@) to refer to (unidentified, or arbitrary, or specific) [entities](@) that satisfy the criterion.
 
 ### Examples
+
 - The definition of the term [definition](@) (a) is defined in, and hence valid in the scope `eSSIFLab`, (b) specifies a criterion (see the `Criteria` section above), and (d) has a name (i.e. `definition`) associated with it. Since it satisfies the criteria of `definition`, it can be referred to as 'the definition of `definition`'.
 - The [concepts](@) defined within the scope eSSIFLab have definitions associated with them, where the criteria, relevance and terms are defined in the [concept-file](@) of that concept.
 

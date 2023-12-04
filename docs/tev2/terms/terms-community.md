@@ -1,5 +1,6 @@
 ---
 # TEv2 Curated Text Header
+
 term: terms-community
 termType: concept
 isa: community
@@ -9,10 +10,12 @@ synonymOf:
 grouptags:
 formPhrases: terms-communit{yies}
 # Curation status
+
 status: proposed
 created: 2022-06-06
 updated: 2022-06-06
 # Origins/Acknowledgements
+
 contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
@@ -26,6 +29,7 @@ As TEv2 is not (yet) available, the texts that specify the tool are still 'raw',
 :::
 
 ### Summary
+
 A **terms-community** is a [community](@) that maintains a [terminology](@) for the purpose of its members to avoid misunderstandings in their collaborations. They do so by:
 - [defining](@) a set of [terms](@) that are specific to them, and that are relevant for its members to interact as they seek to realize their individual [objectives](@).
 - determining which [terms](@) they will be using within their [community](@) in the meaning as [defined](@) by others.
@@ -37,9 +41,11 @@ A terms-community would typically create and (automatically) publish a [glossary
 The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
+
 The purpose of establishing and maintaining a [terminology](@), and hence for having a [terms-community](@), is to ensure that any communications between its members is understood in the same meaning as it was said/written, which is prerequisite for reasoning, arguing, and making collective decisions. After all, as Confucius said: "The whole end o f speech is to be understood."
 
 ### Criterion
+
 a [community](@) that maintains a [terminology](@) for the purpose of its members to avoid misunderstandings in their collaborations.
 
 ## Example

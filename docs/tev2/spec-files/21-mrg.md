@@ -163,3 +163,4 @@ The following table documents the fields that are used within the context of [TE
 | `headingIds`      |   n   | List of texts that can be used as a `trait` in a [term identifier](@), which typically are [markdown 'heading-ids'](https://www.markdownguide.org/extended-syntax/#linking-to-heading-ids).                                                                                                                                                                                                                                                                                                                                                  |
 
 # Footnotes
+

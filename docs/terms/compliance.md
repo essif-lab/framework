@@ -15,6 +15,7 @@ date: 20220220
 ---
 
 ### Short Description
+
 **Compliance** is the state of realization of a set of conformance criteria or normative framework of a [party](@), where
 - a 'normative framework' is a set of related requirements that need to be complemented with a set of conformance criteria in order to be actually testable;
 - a 'conformance criteria' is an (actually testable) requirement or condition that must be satisfied to claim conformance (compliance), and
@@ -31,4 +32,5 @@ We use the term [compliance management](@) to refer to the [management](@) proce
 Compliance with a set of conformance criteria or a normative framework is typically asserted by a [party](@), and may be attested to by an (independent) auditor.
 
 ### Purpose
+
 The purpose of **compliance** (being compliant, or in the process of becoming compliant) is that it may help to mitigate [risks](@), e.g. of being fined for being non-compliant. Also, it may help to provide opportunities; for example, being compliant with the ISO 9001 management requirements is often required for organizations in order to qualify for becoming a supplier.

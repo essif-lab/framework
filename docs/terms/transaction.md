@@ -17,6 +17,7 @@ date: 20210601
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Short Description
+
 A **transaction** is an exchange of goods, services, funds, or data between some [parties](@). These [parties](@) are called the [participants of the transaction](participant@). A typical [business transaction](transaction@) consists of three phases. In the first phase, a [transaction agreement](@) is negotiated between the participants. That phase ends when either participant quits the negotiation, or all participants commit to the transaction, which basically is a promise to the other participants that it will keep up its end of the [transaction agreement](@). In the second phase, the participants work to fulfill their promise. That phase ends when they deliver the results, and inform their peers of that they're done. In the final phase, participants check whether or not they have received what was promised, and that it conforms the criteria in the transaction agreement. This may lead to some discussion and possible rectifications. The final phase ends either when one of the participants escalates (e.g. goes to court), or all results are accepted. This way of looking at [business transactions](transaction@) has been described extensively in the [DEMO](https://en.wikipedia.org/wiki/Design_%26_Engineering_Methodology_for_Organizations) transaction model.
 
 

@@ -17,6 +17,7 @@ date: 20210601
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 ### Short Description
+
 An **Obligation** is an [objective](@) that is [owned](@) by the [party](@) for producing a specific (set of) result(s) that are to be used (consumed) by that [party](@) and/or other [parties](@).
 
 In the figure below, [objectives](@) Obj-1 is an [obligations](@) of Red towards Yellow. Also, [objective](@) Obj-Grn-k is an [obligation](@) of Green towards Red.

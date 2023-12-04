@@ -17,6 +17,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 This pattern describes how [terms](@) are [scoped](scope@) (which software engineers call 'namespaces'), how parties govern such scopes/namespaces, and that if you use criteria to define/specify terms, people can test if they have the same understanding of a term by making sure that everyone reaches the same conclusions as they evaluate such criteria in various relevant use-cases.
 
 ## Purpose
+
 The prime objective of working with a [terminology](@) is to enable individual members of a [community](@) to understand the [words and phrases](term@) that are used by its members ***in the same, single meaning***. This is to say that ***the differences in the individual understandings of words or phrases by different members of the same [community](@) do not pose any problems in their collaborations***.
 
 This suggests that (members of) a [community](@) need the ability and means to (a) establish and maintain (i.e.: [owns](@)) their own [terminology](@), and (b) to ensure it is fit for the purpose of eliminating such misunderstandings.
@@ -50,6 +51,7 @@ Also, this [management](@) may cause reference documents to be created and maint
 
 
 ### Formalized model
+
 Here is a visual representation of this pattern, using the following **[notations and conventions](../notations-and-conventions#pattern-diagram-notations)**:
 
 <img
@@ -63,6 +65,7 @@ The figure shows three areas:
 - the [yellow area](#yellow) represents a [knowledge](@), in which intangible artifacts such as [objectives](@) and [concepts](@) reside.
 
 #### Wit: Parties, Communities and Tags {#white}
+
 Members of a [community](@) that want or need to collaborate with each other may feel the need for a [terminology](@) that helps to effectively prevent misunderstandings within the [community](@) as they may hamper collaboration. [Communities](@) typically express this need as a wish for creating a [glossary](@).
 
 Our [model](pattern@) expresses this idea by saying that a [community](@) can commit to use a [terminology](@), that can be represented/rendered as a [glossary](@) in different ways (e.g. as a PDF, HTML website, etc.). When a [community](@) is committed to use a [terminology](@), this means that whenever any of the [community](@) members uses a [term](@) in some communication that is contained in the [terminology](@), then the meaning of that [term](@) (i.e. the [definition](@) of the concept to which that [term](@) refers) is also specified by that [terminology](@). More details are in the section [Green: Scopes - Terminological Concepts](#green).
@@ -85,6 +88,7 @@ We refer the reader to the [governance and management pattern](pattern-governanc
 Note that for a [terms-community](@) to serve itself, it may want to commit to a [terminology](@) such as the one we are developing here.
 
 #### Groen: Scopes - Terminological Concepts {#green}
+
 Every [terminology](@) is scoped, i.e. part of a [scope](@). This [scope](@) also consists of [definitions](@), [scoped terms](scoped-term@), and various kinds of [tags](@). These components of the [scope](@) exist for as long as the [scope](@) exists. Note that if a [scoped term](@) ceases to exist,[terms](@) with the same name typically continue to exist in the [scope(s)](@) of which they are still a part.
 
 Apart from the multiplicity constrained that are showed in the figure, some additional rules apply:
@@ -100,6 +104,7 @@ When we say that a [terms-community](@) curates a [scope](@), this means that th
 - [manages](management@) (creates/maintains) the various [tags](@) in the scope, i.e. defines a [scopetag](tag@) for the [scope](@), [versiontags](tag@) (if necessary) for the different versions of the [terminology](@) of that [scope](@), and (optionally) any [grouptags](tag@) for grouping sets of [terms](scoped-term@).
 
 #### Geel: Intangible Concepts {#yellow}
+
 The intangible [concepts](@) are important because this is where the misunderstandings live. The [knowledge](@) of a [party](@) uses a subjective [conceptualization](concept@) of the world (that the [party](@) has perceived to be living in for as long as it exists) for its individual reasoning, arguing, communicating, decision making etc. Because of this, two [parties](@) that collaborate (i.e.: form a [community](@)) cannot be expected to have the same conceptualizations. However, it is a common belief that if one uses a [term](@) to refer to a [concept](@) in its [knowledge](@), the other will then relate it to 'the same' [concept](@) within its own knowledge, that we should not assume actually exists. For example, when one of them uses the [term](@) 'identity', it knows which [concept](@) that relates to within its own [knowledge](@). However, others need to hallucinate as to what that [concept](@) might be, and typically respond by thinking that the [concept](@) that the [term](@) refers to in their own [knowledge](@) would be its intended meaning. In many cases that doesn't pose a problem, because the [concepts](@) of both [knowledges](@) are 'sufficiently the same'. In other cases, the differences in meaning may be such that it disrupts the collaboration between the [parties](@). And that is when it helps to have 'good [definitions](@)', because they have the property that collaborators can assess whether or not the [concepts](@) in their [knowledge](@) (that a well-defined [term](@) refers to) are 'sufficiently the same'.
 
 In order to keep the work of devising [definitions](@) to a minimum, it helps to know the [objectives](@) that the members of the [community](@) collaboratively seek to realize. Any [definition](@) should define a [concept](@) that is relevant for that collaboration. Other definitions are just useless work.
