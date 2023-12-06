@@ -45,11 +45,9 @@ The following sections specify the fields for each of these parts.
 
 ```yaml
 #
-
 # This is a Scope Administration File that can be used in conjunction with TEv2.
 
 #
-
 # The first section defines meta-data concerning the scope itself, both for technical use and human use.
 
 # It shows where directories and files live that ar part of the scope, and also
@@ -118,7 +116,6 @@ The `scopetags` section is a list that specifies a mapping between [scopetags](@
 
 ```yaml
 #
-
 # The second section contains a mapping between scopetags that are used within the scope, and the associated scopedirs.
 
 # This enables tools to find the [SAF](@) of these [scopes](@), and from there all other directories, files etc.
@@ -165,7 +162,6 @@ The third section in the [SAF](@) specifies the [terminology](@) of the [scope](
 
 ```yaml
 #
-
 # The third section specifies the versions that are actively maintained by the curators.
 
 # For each version, the set of terms is selected that constitute the terminology.

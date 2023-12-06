@@ -1,13 +1,9 @@
 ---
 id: essifLab-glossary
 sidebar_label: Glossary
-date: 20210601
+date: 20231207
 ---
 
 # eSSIF-Lab Glossary
 
-# eSSIF-Lab Glossary
-
-{% hrg="" %}
-
----
+{% hrg=":hrg" %}

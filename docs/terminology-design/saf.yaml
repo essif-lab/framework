@@ -1,9 +1,7 @@
 #
-
 # This is a Scope Administration File that can be used in conjunction with [Terminology Engine v2](https://essif-lab.github.io/framework/docs/tev2/tev2-overview).
 
 #
-
 # The first section defines meta-data concerning the scope itself, both for technical use and human use.
 
 # It shows where directories and files live that ar part of the scope, and also
@@ -30,7 +28,6 @@ scope:
       id: rieks.joosten
       at: tno.nl
 #
-
 # The second section contains a mapping between scopetags that are used within the scope, and the associated scopedirs.
 
 # This enables tools to find the [SAF](@) of these [scopes](@), and from there all other directories, files etc.
@@ -47,7 +44,6 @@ scopes:  #
 - scopetag: ctwg
   scopedir: https://github.com/trustoverip/ctwg
 #
-
 # The third section specifies the versions that are actively maintained by the curators.
 
 # For each version, the set of terms is selected that constitute the terminology.
