@@ -3,7 +3,7 @@ id: pattern-identity
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
-term: pattern-identity
+term: identity
 formPhrases:
 status: draft
 grouptags:
