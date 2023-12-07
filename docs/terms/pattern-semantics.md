@@ -10,8 +10,6 @@ grouptags:
 glossaryTerm: Semantics Pattern
 glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain the relations between the (intangible) [concepts](@) (and other [semantic units](@)) that are part of a [party's](@) [knowledge](@), and how they are (tangibly) represented by [terms](@), [attributes](@), etc."
 hoverText: "The Semantics pattern describes the relations between the (intangible) Concepts that are part of a Party's Knowledge, and how they are (tangibly) represented by Terms, Attributes, etc."
-glossaryTerm: "Semantics Pattern"
-glossaryText: "the Semantics pattern describes the relations between the (intangible) [Concept](@) that are part of a [party](@) [knowledge](@), and how they are (tangibly) represented by [term](@), [attribute](@), etc."
 date: 202120607
 ---
 

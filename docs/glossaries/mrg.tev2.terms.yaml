@@ -5,18 +5,6 @@ terminology:
   vsntag: 'terms'
 scopes: []
 entries:
-  - term: '@'
-    termType: 'error'
-    hoverText: 'Error - the reference cannot be resolved.'
-    sidebar_label: 'Term ref not found'
-    scopetag: 'tev2'
-    termid: 'error:@'
-    locator: '@.md'
-    navurl: 'https://tno-terminology-design.github.io/tev2-specifications/docs/terms/@'
-    headingids:
-      - 'error---the-reference-cannot-be-resolved'
-      - '"@"'
-    vsntag: 'terms'
   - id: 'author'
     term: 'author'
     termType: 'concept'
