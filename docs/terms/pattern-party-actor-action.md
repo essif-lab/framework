@@ -5,7 +5,7 @@ scopetag: essifLab
 termType: pattern
 term: party-actor-action
 formPhrases: party-actor-action
-status: draft
+status: stable
 grouptags: 
 glossaryTerm: Party, Actor and Actions Pattern
 glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain how things get done. It answers questions such as: 'Who/what does things?', 'How are their actions being guided/controlled?', 'Who controls whom/what?', 'Who/what may be held accountable?'."

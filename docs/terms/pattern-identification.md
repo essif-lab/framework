@@ -5,7 +5,7 @@ scopetag: essifLab
 termType: pattern
 term: identification
 formPhrases: identification
-status: draft
+status: reviewable
 grouptags:
 glossaryTerm: Identification Pattern
 glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain the mechanisms that [parties](@) may use to [identify](@) [entities](@), and mechanisms for communicating with another [parties](@) such that both [parties](@) can [identify](@) an [entity](@) and know whether or not they [identify](@) the same [entity](@)."

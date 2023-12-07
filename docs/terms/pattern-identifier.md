@@ -5,7 +5,7 @@ scopetag: essifLab
 termType: pattern
 term: identifier
 formPhrases:
-status: draft
+status: reviewable
 grouptags:
 glossaryTerm: Identifier Pattern
 glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain how [identifiers](@) are defined and used for [identification](@) purposes."

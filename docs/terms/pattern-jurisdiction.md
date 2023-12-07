@@ -5,7 +5,7 @@ scopetag: essifLab
 termType: pattern
 term: jurisdiction
 formPhrases: jurisdiction
-status: draft
+status: stable
 grouptags:
 glossaryTerm: Jurisdiction Pattern
 glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain what a generic [jurisdiction](@) consists of, and relates it to [parties](@) and [legal entities](@)."

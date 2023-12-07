@@ -5,7 +5,7 @@ scopetag: essifLab
 termType: pattern
 term: guardianship
 formPhrases: guardianship
-status: draft
+status: stable
 grouptags:
 glossaryTerm: Guardianship Pattetrn
 glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain what a generic [guardianship](@) consists of, and how it relates to [guardians](@), [dependents](@), [jurisdictions](@), etc."

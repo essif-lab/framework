@@ -40,7 +40,12 @@ versions:
     altvsntags: [ latest, documentation, terms ] # alternative verstiontags
     termselection:
     - "*" # import all terms as curated in the current scope.
-  - vsntag: hrg # this version contains all terms that are curated by essiflab
+  - vsntag: ctext # this version contains all terms that are curated by essiflab
     termselection:
     - "*" # import all terms as curated in the current scope.
-    - -termType[pattern]
+  - vsntag: all-patterns
+    termselection:
+    - "termType[pattern]" # import all terms as curated in the current scope.
+  - vsntag: stable-patterns
+    termselection:
+    - "status[stable]" # import all terms as curated in the current scope.

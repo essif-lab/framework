@@ -5,7 +5,7 @@ scopetag: essifLab
 termType: pattern
 term: identity
 formPhrases:
-status: draft
+status: reviewable
 grouptags:
 glossaryTerm: Identity Pattern
 glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain how [digital identities](identity@) work, how this relates to (attributes in) [credentials](@), and how all this can be made to work in [SSI](@) contexts."

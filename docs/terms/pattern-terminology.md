@@ -5,7 +5,7 @@ scopetag: essifLab
 termType: pattern
 term: terminology
 formPhrases: terminology
-status: draft
+status: reviewable
 grouptags:
 glossaryTerm: "Terminology Pattern"
 glossaryText: "a set of [concepts](@) and other [semantic units](@) that one can use to explain one's thinking about a certain topic, as well as to devise/design a way of thinking that members of a [community](@) can use to align their thinking as they pursue that [community's](@) [objectives](@)."

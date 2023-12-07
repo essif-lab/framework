@@ -5,7 +5,7 @@ scopetag: essifLab
 termType: pattern
 term: governance-and-management
 formPhrases: governance-and-management
-status: draft
+status: reviewable
 grouptags:
 glossaryTerm: Governance and Management Pattern
 glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain how [parties](@) organize that their [objectives](@) are realized, either by doing the associated work themselves, or by arranging for other [parties](@) to do that."

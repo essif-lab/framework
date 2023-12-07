@@ -5,7 +5,7 @@ scopetag: essifLab
 termType: pattern
 term: decentralized-risk-management
 formPhrases: decentralized-risk-management
-status: draft
+status: reviewable
 grouptags:
 glossaryTerm: Decentralized Risk Management Pattern
 glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain how individual [parties](@) can efficiently and effectively perform their own [risk management](@) processes, while taking into account that there are other [parties](@) that have [expectations](@) towards them."
