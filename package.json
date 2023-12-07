@@ -14,13 +14,9 @@
     "build:hrgt": "bun hrgt -c $npm_package_config_terminology",
     "build:trrt": "bun trrt -c $npm_package_config_terminology",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "parse": "docusaurus parse",
-    "glossary": "docusaurus glossary"
+    "deploy": "docusaurus deploy"
   },
   "dependencies": {
-    "@docusaurus-terminology/parser": "^1.3.0",
-    "@docusaurus-terminology/term": "^1.0.0",
     "@docusaurus/core": "^2.4.0",
     "@docusaurus/preset-classic": "^2.4.0",
     "@material-ui/core": "^4.11.0",
