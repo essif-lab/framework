@@ -7,6 +7,8 @@ term: trust
 formPhrases: trust
 status: draft
 grouptags:
+glossaryTerm: Trust Pattern
+glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain how the concept of [trust](@) relates to [parties](@) that do the trusting, and other concepts that express what it is that these [parties](@) trust."
 hoverText: "The eSSIF-Lab Trust Pattern describes how the concept of Trust relates to Parties that do the trusting, and other concepts that express what it is that these Parties trust."
 date: 20210830
 ---

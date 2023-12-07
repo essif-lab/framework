@@ -7,6 +7,8 @@ term: identifier
 formPhrases:
 status: draft
 grouptags:
+glossaryTerm: Identifier Pattern
+glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain how [identifiers](@) are defined and used for [identification](@) purposes."
 hoverText: "The eSSIF-Lab Identifier Pattern describes how Identifiers are defined and used for Identification purposes."
 date: 20210830
 ---

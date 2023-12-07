@@ -7,6 +7,8 @@ term: duties-and-rights
 formPhrases: duties-and-rights
 status: draft
 grouptags:
+glossaryTerm: Duties and Rights Pattern
+glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain what a generic duties and rights consists of (based on [Hofeld's theories](https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst)), and relates it to [jurisdictions](@), [parties](@) and [legal entities](@)."
 hoverText: "The Duties and Rights pattern captures the Concepts and relations that explain what a generic duties and rights consists of (based on Hofeld's theories), and relates it to Jurisdictions, Parties and Legal Entities."
 date: 20210601
 ---

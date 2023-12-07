@@ -7,6 +7,8 @@ term: mental-model
 formPhrases: mental-model
 status: draft
 grouptags:
+glossaryTerm: Mental Model Pattern
+glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain how to create, maintain and use (decentralized) [vocabularies](@) ([terminologies](@)) that groups of people can use for the specific purposes they pursue."
 hoverText: "The Mental Models pattern captures the foundational Concepts and relations that we need for creating, maintaining and using  (decentralized) Vocabularies (Terminologies) that groups of people can use for the specific purposes they pursue."
 date: 20210601
 ---

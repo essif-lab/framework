@@ -7,7 +7,9 @@ term: decentralized-grc
 formPhrases: decentralized-grc
 status: draft
 grouptags:
-hoverText: "The Decentralized Risk Management, Governance and Compliance pattern describes how Parties can set Objectives, and apply decentralized Risk Management to become and remain successful."
+glossaryTerm: Decentralized GRC Pattern
+glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain one's thinking about topics related to Governance, Risk management and Compliance (GRC) in a decentralized context, i.e., a context in which [parties](@) all autonomously do their own GRC."
+hoverText: "The Decentralized GRC (Governance, Risk Management, and Compliance) pattern describes how Parties can set Objectives, and apply decentralized Risk Management to become and remain successful."
 date: 20210601
 ---
 

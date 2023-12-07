@@ -1,12 +1,13 @@
 ---
 # TEv2 Curated Text Header
-term: pattern-terminology
+term: terminology
 termType: pattern
 isa:
-glossaryText: "the eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
+glossaryTerm: "Terminology Pattern"
+glossaryText: "a set of [concepts](@) and other [semantic units](@) that one can use to explain one's thinking about a certain topic, as well as to devise/design a way of thinking that members of a [community](@) can use to align their thinking as they pursue that [community's](@) [objectives](@)."
 synonymOf:
 grouptags:
-formPhrases: mental-model{ss}
+formPhrases: mental-model, mental-model-pattern, terminology-pattern
 # Curation status
 status: proposed
 created: 2022-06-06
@@ -24,7 +25,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 :::caution
 The entire section on Terminology Design is still under construction.
 :::
-
 
 This [mental model](@) aims to serve the following purposes:
 - enabling members of a [community](@), as well as other [parties](@), to document their understanding of the [concepts](@) and other [knowledge artifacts](@) (e.g., [mental models](@)) that are relevant for their purposes (i.e., realizing their [objectives](@)).

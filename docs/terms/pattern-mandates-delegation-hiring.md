@@ -7,6 +7,8 @@ term: mandates-delegation-hiring
 formPhrases: mandates-delegation-hiring
 status: draft
 grouptags:
+glossaryTerm: Mandates, Delegation and Hiring Pattern
+glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain the ideas behind Mandating, Delegating, Hiring and their relations."
 hoverText: "The Mandates, Delegation and Hiring pattern (which remains to be documented) captures the ideas behind Mandating, Delegating, Hiring and their relations. This is a work-in-progress."
 date: 20210601
 ---

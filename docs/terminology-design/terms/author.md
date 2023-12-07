@@ -16,7 +16,6 @@ contributors: RieksJ
 attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
 originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 # TRRT elements
-
 hoverText: "Author: a person that creates and maintains texts (documentation, whitepapers, specifications, standards, Curated-texts, etc.), and while doing so ensures that every Term that it uses and that is defined in the context (Scope) of that text, is used in the meaning in which that Term is defined."
 ---
 

@@ -7,6 +7,8 @@ term: identity
 formPhrases:
 status: draft
 grouptags:
+glossaryTerm: Identity Pattern
+glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain how [digital identities](identity@) work, how this relates to (attributes in) [credentials](@), and how all this can be made to work in [SSI](@) contexts."
 hoverText: "The eSSIF-Lab Identity Pattern shows how digital identities work, how this relates to (attributes in) credentials, and how all this can be made to work in SSI contexts."
 date: 20210803
 ---

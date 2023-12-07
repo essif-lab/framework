@@ -7,6 +7,8 @@ term: decentralized-risk-management
 formPhrases: decentralized-risk-management
 status: draft
 grouptags:
+glossaryTerm: Decentralized Risk Management Pattern
+glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain how individual [parties](@) can efficiently and effectively perform their own [risk management](@) processes, while taking into account that there are other [parties](@) that have [expectations](@) towards them."
 hoverText: "The Decentralized (Networked) Risk Management (NRM) pattern describes how Parties can deal with the Risks associated with their Objectives, i.e. ensure that the Objectives they pursue are properly realized and they become/remain successful."
 date: 20220220
 ---

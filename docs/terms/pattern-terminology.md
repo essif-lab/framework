@@ -1,5 +1,5 @@
 ---
-id: pattern-terminology
+id: terminology
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
@@ -7,7 +7,9 @@ term: terminology
 formPhrases: terminology
 status: draft
 grouptags:
-hoverText: "The eSSIF-Lab Terminology Pattern describes the relations between Terminology Terms such as 'Concept', 'Term', 'Pattern', 'Mental Model', 'Glossary' etc."
+glossaryTerm: "Terminology Pattern"
+glossaryText: "a set of [concepts](@) and other [semantic units](@) that one can use to explain one's thinking about a certain topic, as well as to devise/design a way of thinking that members of a [community](@) can use to align their thinking as they pursue that [community's](@) [objectives](@)."
+hoverText: "a set of Concepts and other Semantic units that one can use to explain one's thinking about a certain topic, as well as to devise/design a way of thinking that members of a Community can use to align their thinking as they pursue that Community's Objectives."
 date: 20211101
 ---
 

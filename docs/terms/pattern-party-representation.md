@@ -7,6 +7,8 @@ term: party-representation
 formPhrases: party-representation
 status: draft
 grouptags:
+glossaryTerm: Party Representation Pattern
+glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain how [parties](@) can be represented in various circumstances."
 hoverText: "The Party Representation pattern captures the foundational concepts and relations that we need for thinking about how Parties can be represented in various circumstances."
 glossaryTerm: "Party Representation"
 glossaryText: "the Party Representation pattern captures the foundational concepts and relations that we need for thinking about how [parties](@) can be represented in various circumstances."
