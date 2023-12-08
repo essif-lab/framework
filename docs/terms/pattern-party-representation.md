@@ -13,12 +13,12 @@ hoverText: "The Party Representation pattern captures the foundational concepts 
 date: 20210601
 ---
 
-# Party Representation
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
+# Party Representation
+
 :::info Editor's note
-This pattern is still under development
+This is work that is in its early drafting stage. If you have suggestions, please [raise an issue](https://github.com/essif-lab/framework/issues/new).
 :::
 
 ### Summary
@@ -30,6 +30,7 @@ This pattern captures the essence of how [parties](@) can be represented in vari
 Within the context of [SSI](self-sovereign-identity@), we are interested in coming to grips with (answering) questions such as 'in what ways can [parties](@) be represented?', 'what kind(s) of [entities](@) can represent [parties](@)', 'how can we deal with representation constraints, i.e. provide guarantees that the represented [party](@) isn't completely at the mercy of the one representing it?'.
 
 This model attempts to provide answers to such questions.
+
 ### Introduction
 
 There are very many different forms of representation. [Claims](assertion@), for example, represent characteristics attributed to [entities](@), [Terms](@) represent (intangible) [concepts](@), [legal entities](legal-entity@) are represented in the [knowledge](@) of a [jurisdiction](@), [agents](@) represent [parties](@) as they execute [actions](@), and so on. We specifically focus on

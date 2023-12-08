@@ -5,7 +5,7 @@ scopetag: essifLab
 termType: pattern
 term: duties-and-rights
 formPhrases: duties-and-rights
-status: draft
+status: idea
 grouptags:
 glossaryTerm: Duties and Rights Pattern
 glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain what a generic duties and rights consists of (based on [Hofeld's theories](https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst)), and relates it to [jurisdictions](@), [parties](@) and [legal entities](@)."
@@ -13,13 +13,14 @@ hoverText: "The Duties and Rights pattern captures the Concepts and relations th
 date: 20210601
 ---
 
-# Duties and Rights
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
+# Duties and Rights
+
 :::info Editor's note
-This is work that is being envisaged.
+This is work that is still an idea. If you want to help, do so by telling us [in a new issue](https://github.com/essif-lab/framework/issues/new).
 :::
+
 ### Purpose
 
 The **Duties-and-rights pattern** captures the concepts and relations that explain what (generic) duties and rights are, thereby following the [theory of Hohfeld](https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst), which is not only the basis of [legal systems](legal-system@) (in [jurisdictions](@)), but can be used to generically model duties and rights.

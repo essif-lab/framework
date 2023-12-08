@@ -720,6 +720,8 @@ entries:
     navurl: 'https://essif-lab.github.io/framework/docs/terms/pattern-decentralized-risk-management'
     headingids:
       - 'decentralized-(networked)-risk-management-(nrm)'
+      - 'introduction'
+      - 'purpose'
       - 'traditional-risk-management-and-nrm'
       - 'scope,-context,-criteria'
       - 'risk-assessment'
@@ -910,7 +912,7 @@ entries:
     termType: 'pattern'
     term: 'duties-and-rights'
     formPhrases: 'duties-and-rights'
-    status: 'draft'
+    status: 'idea'
     grouptags: null
     glossaryTerm: 'Duties and Rights Pattern'
     glossaryText: 'a set of [concepts](@) and other [semantic units](@) that can be used to explain what a generic duties and rights consists of (based on [Hofeld''s theories](https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst)), and relates it to [jurisdictions](@), [parties](@) and [legal entities](@).'
@@ -1659,7 +1661,7 @@ entries:
     termType: 'pattern'
     term: 'mandates-delegation-hiring'
     formPhrases: 'mandates-delegation-hiring'
-    status: 'draft'
+    status: 'idea'
     grouptags: null
     glossaryTerm: 'Mandates, Delegation and Hiring Pattern'
     glossaryText: 'a set of [concepts](@) and other [semantic units](@) that can be used to explain the ideas behind Mandating, Delegating, Hiring and their relations.'
@@ -1986,7 +1988,6 @@ entries:
     navurl: 'https://essif-lab.github.io/framework/docs/terms/pattern-party-actor-action'
     headingids:
       - 'parties,-actors-and-actions'
-      - 'summary'
       - 'purpose'
       - 'introduction'
       - 'formalized-model'

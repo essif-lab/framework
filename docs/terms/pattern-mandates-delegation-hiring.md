@@ -5,7 +5,7 @@ scopetag: essifLab
 termType: pattern
 term: mandates-delegation-hiring
 formPhrases: mandates-delegation-hiring
-status: draft
+status: idea
 grouptags:
 glossaryTerm: Mandates, Delegation and Hiring Pattern
 glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain the ideas behind Mandating, Delegating, Hiring and their relations."
@@ -13,12 +13,12 @@ hoverText: "The Mandates, Delegation and Hiring pattern (which remains to be doc
 date: 20210601
 ---
 
-# Mandates, Delegation and Hiring
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
+# Mandates, Delegation and Hiring
+
 :::info Editor's note
-This is work that is being envisaged.
+This is work that is still an idea. If you want to help, do so by telling us [in a new issue](https://github.com/essif-lab/framework/issues/new).
 :::
 
 The idea here is to observe that:

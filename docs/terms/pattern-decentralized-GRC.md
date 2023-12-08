@@ -13,12 +13,12 @@ hoverText: "The Decentralized GRC (Governance, Risk Management, and Compliance) 
 date: 20210601
 ---
 
-# Decentralized Risk Management, Governance and Compliance
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
+# Decentralized Risk Management, Governance and Compliance
+
 :::info Editor's note
-This is work that is being envisaged, and needs a good deal of work.
+This is work that is in its early drafting stage. If you have suggestions, please [raise an issue](https://github.com/essif-lab/framework/issues/new).
 :::
 
 :::info Editor's note

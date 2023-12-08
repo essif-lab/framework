@@ -13,9 +13,13 @@ hoverText: "a set of Concepts and other Semantic units that one can use to expla
 date: 20211101
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 # Terminology Pattern
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
+:::info Editor's note
+This is work in progress, and needs to be reviewed.  If you want to comment, please [raise an issue](https://github.com/essif-lab/framework/issues/new).
+:::
 
 This pattern describes how [terms](@) are [scoped](scope@) (which software engineers call 'namespaces'), how parties govern such scopes/namespaces, and that if you use criteria to define/specify terms, people can test if they have the same understanding of a term by making sure that everyone reaches the same conclusions as they evaluate such criteria in various relevant use-cases.
 

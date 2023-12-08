@@ -5,7 +5,7 @@ scopetag: essifLab
 termType: pattern
 term: semantics
 formPhrases:
-status: draft
+status: idea
 grouptags:
 glossaryTerm: Semantics Pattern
 glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain the relations between the (intangible) [concepts](@) (and other [semantic units](@)) that are part of a [party's](@) [knowledge](@), and how they are (tangibly) represented by [terms](@), [attributes](@), etc."
@@ -13,9 +13,13 @@ hoverText: "The Semantics pattern describes the relations between the (intangibl
 date: 202120607
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 # Semantics Pattern
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
+:::info Editor's note
+This is work that is still an idea. If you want to help, do so by telling us [in a new issue](https://github.com/essif-lab/framework/issues/new).
+:::
 
 ### Purpose
 

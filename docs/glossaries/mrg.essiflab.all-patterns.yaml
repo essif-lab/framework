@@ -44,6 +44,8 @@ entries:
     navurl: 'https://essif-lab.github.io/framework/docs/terms/pattern-decentralized-risk-management'
     headingids:
       - 'decentralized-(networked)-risk-management-(nrm)'
+      - 'introduction'
+      - 'purpose'
       - 'traditional-risk-management-and-nrm'
       - 'scope,-context,-criteria'
       - 'risk-assessment'
@@ -84,7 +86,7 @@ entries:
     termType: 'pattern'
     term: 'duties-and-rights'
     formPhrases: 'duties-and-rights'
-    status: 'draft'
+    status: 'idea'
     grouptags: null
     glossaryTerm: 'Duties and Rights Pattern'
     glossaryText: 'a set of [concepts](@) and other [semantic units](@) that can be used to explain what a generic duties and rights consists of (based on [Hofeld''s theories](https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst)), and relates it to [jurisdictions](@), [parties](@) and [legal entities](@).'
@@ -244,7 +246,7 @@ entries:
     termType: 'pattern'
     term: 'mandates-delegation-hiring'
     formPhrases: 'mandates-delegation-hiring'
-    status: 'draft'
+    status: 'idea'
     grouptags: null
     glossaryTerm: 'Mandates, Delegation and Hiring Pattern'
     glossaryText: 'a set of [concepts](@) and other [semantic units](@) that can be used to explain the ideas behind Mandating, Delegating, Hiring and their relations.'
@@ -294,7 +296,6 @@ entries:
     navurl: 'https://essif-lab.github.io/framework/docs/terms/pattern-party-actor-action'
     headingids:
       - 'parties,-actors-and-actions'
-      - 'summary'
       - 'purpose'
       - 'introduction'
       - 'formalized-model'
@@ -330,7 +331,7 @@ entries:
     termType: 'pattern'
     term: 'semantics'
     formPhrases: null
-    status: 'draft'
+    status: 'idea'
     grouptags: null
     glossaryTerm: 'Semantics Pattern'
     glossaryText: 'a set of [concepts](@) and other [semantic units](@) that can be used to explain the relations between the (intangible) [concepts](@) (and other [semantic units](@)) that are part of a [party''s](@) [knowledge](@), and how they are (tangibly) represented by [terms](@), [attributes](@), etc.'
@@ -375,7 +376,7 @@ entries:
     termType: 'pattern'
     term: 'trust'
     formPhrases: 'trust'
-    status: 'draft'
+    status: 'idea'
     grouptags: null
     glossaryTerm: 'Trust Pattern'
     glossaryText: 'a set of [concepts](@) and other [semantic units](@) that can be used to explain how the concept of [trust](@) relates to [parties](@) that do the trusting, and other concepts that express what it is that these [parties](@) trust.'

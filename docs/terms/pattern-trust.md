@@ -5,7 +5,7 @@ scopetag: essifLab
 termType: pattern
 term: trust
 formPhrases: trust
-status: draft
+status: idea
 grouptags:
 glossaryTerm: Trust Pattern
 glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain how the concept of [trust](@) relates to [parties](@) that do the trusting, and other concepts that express what it is that these [parties](@) trust."
@@ -13,12 +13,12 @@ hoverText: "The eSSIF-Lab Trust Pattern describes how the concept of Trust relat
 date: 20210830
 ---
 
-# Trust Pattern
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
+# Trust Pattern
+
 :::info Editor's note
-This is work in progress and needs discussion.
+This is work that is still an idea. If you want to help, do so by telling us [in a new issue](https://github.com/essif-lab/framework/issues/new).
 :::
 
 ### Purpose

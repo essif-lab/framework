@@ -13,11 +13,9 @@ hoverText: "The Parties, Actors and Actions pattern captures the foundational co
 date: 20210602
 ---
 
-# Parties, Actors and Actions
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-## Summary
+# Parties, Actors and Actions
 
 This pattern captures the essence of how things are done. It answers questions such as: "Who/what does things?", "How are their [actions](@) being guided/[controlled](controller@)?", "Who [controls](controller@) whom/what?", "Who/what may be held accountable?". These questions need to have a precise answer if you want to design or implement systems where [actors](@) can be anything, ranging from programs/apps running on computers as well as [humans](human-being@). This pattern provides a way of looking at [organizations](@), [people](human-being@), and non-human [actors](@). It shows how they interact with one another, and how they may or may not work for one another. The pattern describes how [parties](@) are '[(self) sovereign](self-sovereignty@)' as they construct their own world view, reason with that, and make their (subjective) decisions autonomously. It also shows how this [knowledge](@) is used, where it is used, and also: where it is not used. The latter implies that [parties](@) have a limited [scope of control](@), which gives rise to their need to work together with other [parties](@), that have their own sovereignty. Such interactions with others, however, are outside the scope of this pattern.
 

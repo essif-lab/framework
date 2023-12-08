@@ -13,12 +13,12 @@ hoverText: "The eSSIF-Lab Identification Pattern describes mechanisms that a Par
 date: 20210803
 ---
 
-# Identification Pattern
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
+# Identification Pattern
+
 :::info Editor's note
-This is work in progress and needs discussion.
+This is work in progress, and needs to be reviewed.  If you want to comment, please [raise an issue](https://github.com/essif-lab/framework/issues/new).
 :::
 
 ### Purpose

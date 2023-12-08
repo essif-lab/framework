@@ -13,12 +13,12 @@ hoverText: "The eSSIF-Lab Identifier Pattern describes how Identifiers are defin
 date: 20210830
 ---
 
-# Identifier Pattern
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
+# Identifier Pattern
+
 :::info Editor's note
-This is work in progress and needs discussion.
+This is work in progress, and needs to be reviewed.  If you want to comment, please [raise an issue](https://github.com/essif-lab/framework/issues/new).
 :::
 
 ### Purpose

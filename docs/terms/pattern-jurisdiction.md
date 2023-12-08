@@ -13,9 +13,9 @@ hoverText: "The Jurisdictions pattern captures the Concepts and relations that e
 date: 20210601
 ---
 
-# Jurisdictions
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Jurisdictions
 
 ### Purpose
 

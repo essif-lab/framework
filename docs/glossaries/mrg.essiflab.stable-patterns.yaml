@@ -67,7 +67,6 @@ entries:
     navurl: 'https://essif-lab.github.io/framework/docs/terms/pattern-party-actor-action'
     headingids:
       - 'parties,-actors-and-actions'
-      - 'summary'
       - 'purpose'
       - 'introduction'
       - 'formalized-model'

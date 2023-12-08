@@ -13,9 +13,13 @@ hoverText: "The Governance and Management pattern explains how Parties organize 
 date: 20210830
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 # Governance and Management
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
+:::info Editor's note
+This is work in progress, and needs to be reviewed.  If you want to comment, please [raise an issue](https://github.com/essif-lab/framework/issues/new).
+:::
 
 ### Purpose
 

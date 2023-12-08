@@ -13,13 +13,14 @@ hoverText: "The Decision Making pattern captures the Concepts and relations that
 date: 20210804
 ---
 
-# Decision Making
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
+# Decision Making
+
 :::info Editor's note
-This is work that is being envisaged.
+This is work that is in its early drafting stage. If you have suggestions, please [raise an issue](https://github.com/essif-lab/framework/issues/new).
 :::
+
 ### Purpose
 
 The **Decision making pattern** captures the [concepts](@) and relations that explain how [parties](@) would, could, or should reason in order to reach good conclusions and make good decisions. This can be used as a basis for understanding the information needs of  [parties](@) as they need to decide e.g. whether or not to commit to a [transaction](@) proposal, or whether or not data is [valid](validate@) for some purpose. This pattern is based on [Toulmin's use of arguments](https://www.cambridge.org/core/books/uses-of-argument/26CF801BC12004587B66778297D5567C) (of which a pragmatical text can be found [here](https://owl.purdue.edu/owl/general_writing/academic_writing/historical_perspectives_on_argumentation/toulmin_argument.html)).

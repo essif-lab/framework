@@ -13,9 +13,9 @@ hoverText: "The Guardianships pattern captures the Concepts and relations that e
 date: 20210601
 ---
 
-# Guardianship
-
 import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Guardianship
 
 ### Purpose
 

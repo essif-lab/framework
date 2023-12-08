@@ -13,9 +13,13 @@ hoverText: "The eSSIF-Lab Identity Pattern shows how digital identities work, ho
 date: 20210803
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 # Identity Pattern
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
+:::info Editor's note
+This is work in progress, and needs to be reviewed.  If you want to comment, please [raise an issue](https://github.com/essif-lab/framework/issues/new).
+:::
 
 ### Purpose
 
