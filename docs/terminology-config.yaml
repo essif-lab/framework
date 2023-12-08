@@ -14,24 +14,24 @@ mrgt:
 ## Human Readable Glossary Tool
 
 hrgt:
-  interpreter: basic
+  interpreter: default
   converter: |+
     ### [{{#if glossaryTerm}}{{glossaryTerm}}{{else}}{{capFirst term}}{{/if}}]({{localize navurl}})\n
     {{#if glossaryText}}{{glossaryText}}{{else}}no `glossaryText` was specified for this entry.{{/if}}\n
-  force: true
+  force: true # overwrite existing files
   input:
     - "glossary.md"
 
 ## Term Reference Resolution Tool
 
 trrt:
-  interpreter: basic # type of interpreter, either: a regex, "alt", or "basic"
+  interpreter: default # type of interpreter, either: a regex, "alt", or "basic"
   converter:
     >- # Type of converter, either: a mustache template, "http", or "markdown"
     <a
     href="{{localize navurl}}{{#if trait}}#{{trait}}{{/if}}"
     hovertext="{{#if hoverText}}{{hoverText}}{{else}}{{#if glossaryTerm}}{{glossaryTerm}}{{else}}{{capFirst term}}{{/if}}: {{noRefs glossaryText type="markdown"}}{{/if}}"
     >{{showtext}}</a>
-  force: true # toggle overwriting of existing files
+  force: true # overwrite existing files
   input: # glob pattern strings for files to be processed by the TRRT
     - "**/*.md"
