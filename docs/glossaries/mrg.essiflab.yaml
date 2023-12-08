@@ -6,7 +6,6 @@ terminology:
   altvsntags:
     - 'latest'
     - 'documentation'
-    - 'terms'
 scopes: []
 entries:
   - id: 'action'

@@ -37,7 +37,7 @@ scopes:  #
 #
 versions:
   - vsntag: default # this version contains all terms that are curated by essiflab
-    altvsntags: [ latest, documentation, terms ] # alternative verstiontags
+    altvsntags: [ latest, documentation ] # alternative verstiontags
     termselection:
     - "*" # import all terms as curated in the current scope.
   - vsntag: ctext # this version contains all terms that are curated by essiflab
