@@ -6,7 +6,9 @@ terminology:
   altvsntags:
     - 'latest'
     - 'documentation'
-scopes: []
+scopes:
+  - scopetag: 'tev2'
+    scopedir: 'https://github.com/tno-terminology-design/tev2-specifications/tree/main/docs'
 entries:
   - id: 'action'
     displayed_sidebar: 'essifLabSideBar'
@@ -781,6 +783,30 @@ entries:
       - 'introduction'
       - 'formalized-model'
     vsntag: 'default'
+  - id: 'define'
+    term: 'define'
+    termType: 'concept'
+    isa: null
+    glossaryTerm: 'Define'
+    glossaryText: 'to provide a criterion and a [term](@), where the criterion can be used by people to determine whether or not something is an instance/example of a [concept](@) (or other [semantic unit](@)), and the [term](@) is used to refer to that [concept](@), or an arbitrary instance thereof.'
+    synonymOf: null
+    grouptags: 'terminology'
+    formPhrases: 'defines, defined, defining'
+    status: 'proposed'
+    created: 20230723
+    updated: 20230723
+    contributors: 'RieksJ'
+    attribution: '[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)'
+    originalLicense: '[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)'
+    scopetag: 'tev2'
+    termid: 'concept:define'
+    locator: 'define.md'
+    navurl: 'https://tno-terminology-design.github.io/tev2-specifications/docs/terms/define'
+    headingids:
+      - 'define'
+      - 'examples'
+      - 'notes'
+    vsntag: 'documentation'
   - id: 'definition'
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
@@ -1211,7 +1237,7 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'guardian'
-    formPhrases: 'guardian'
+    formPhrases: 'guardian{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Guardian: a Party that has been assigned rights and duties in a Guardianship Arrangement for the purpose of caring for and/or protecting/guarding/defending the Entity that is the Dependent in that Guardianship Arrangement.'
@@ -1256,7 +1282,7 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'guardianship-arrangement'
-    formPhrases: 'guardianship-arrangement{ss}, guardianship{ss}'
+    formPhrases: 'guardianship-arrangement{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Guardianship Arrangement (in a Jurisdiction): a set of rights and duties between Legal Entities of the Jurisdiction that have been established and are enforced within that Jurisdiction for the purpose of caring for and/or protecting/guarding/defending one or more of these Entities.'
@@ -1409,7 +1435,7 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'identify'
-    formPhrases: 'identify, identifies, identifying, identifiable, identified, identification'
+    formPhrases: 'identify, identifies, identifying, identified, identifiable'
     status: 'draft'
     grouptags: null
     hoverText: 'Identify: an Act, by or on behalf of a Party, that results in the selection of either (a) a single Partial identity that the party Owns, given some (observed or received) data, or (b) a single Entity from a given set of entities that is the Subject of a specified Partial identity that the party Owns.'
@@ -2215,6 +2241,30 @@ entries:
       - 'criterion'
       - 'examples'
     vsntag: 'default'
+  - id: 'property'
+    term: 'property'
+    termType: 'concept'
+    isa: null
+    glossaryTerm: 'Property (of a Concept)'
+    glossaryText: 'a connection or association between a [concept](@) and a primitive data element, such as a text or a number, that represents some characteristic that instances of the [concept](@) may have.'
+    synonymOf: null
+    grouptags: 'conceptual-modeling'
+    formPhrases: 'propert{yies}'
+    status: 'proposed'
+    created: 2023-07-31T00:00:00.000Z
+    updated: 2023-07-31T00:00:00.000Z
+    contributors: 'RieksJ'
+    attribution: '[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)'
+    originalLicense: '[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)'
+    scopetag: 'tev2'
+    termid: 'concept:property'
+    locator: 'property.md'
+    navurl: 'https://tno-terminology-design.github.io/tev2-specifications/docs/terms/property'
+    headingids:
+      - 'property-(of-a-concept)'
+      - 'examples'
+      - 'notes'
+    vsntag: 'documentation'
   - id: 'qualified-data'
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
@@ -2240,6 +2290,30 @@ entries:
       - 'validator-perspective'
       - 'holder-perspective'
     vsntag: 'default'
+  - id: 'relation'
+    term: 'relation'
+    termType: 'concept'
+    isa: null
+    glossaryTerm: 'Relation (between Concepts)'
+    glossaryText: 'a (significant) connection or association between two or more [concepts](@). These connections define the way these [concepts](@) are interrelated, providing insights into how they interact and influence each other.'
+    synonymOf: null
+    grouptags: 'conceptual-modeling'
+    formPhrases: 'relation{ss}'
+    status: 'proposed'
+    created: 2023-07-31T00:00:00.000Z
+    updated: 2023-07-31T00:00:00.000Z
+    contributors: 'RieksJ'
+    attribution: '[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)'
+    originalLicense: '[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)'
+    scopetag: 'tev2'
+    termid: 'concept:relation'
+    locator: 'relation.md'
+    navurl: 'https://tno-terminology-design.github.io/tev2-specifications/docs/terms/relation'
+    headingids:
+      - 'relation-(between-concepts)'
+      - 'examples'
+      - 'notes'
+    vsntag: 'documentation'
   - id: 'revocation-component'
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
@@ -2553,6 +2627,31 @@ entries:
       - 'implications'
       - 'purpose'
     vsntag: 'default'
+  - term: 'semantic-unit'
+    termType: 'concept'
+    isa: null
+    glossaryTerm: 'Semantic Unit'
+    glossaryText: 'a basic building block of meaning or representation that exists within the ''mind'' of a [party](@) (i.e., in its [knowledge](@)). Examples include ideas, or [concepts](@), [properties](@) of [concepts](@), [relations](@) between [concepts](@), constraints over such [concepts](@) and [relations](@), etc.'
+    hoverText: 'a basic building block of meaning or representation that exists within the ''mind'' of a party, e.g., a concept, relation, or property. Parties use terms (words/phrases) to refer to these intangible building blocks.'
+    synonymOf: null
+    grouptags: null
+    formPhrases: 'semantic-unit{ss}'
+    status: 'proposed'
+    created: 2022-07-27T00:00:00.000Z
+    updated: 2022-07-27T00:00:00.000Z
+    contributors: 'RieksJ'
+    attribution: '[eSSIF-Lab](https://essif-lab.github.io/framework)'
+    originalLicense: '[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)'
+    scopetag: 'tev2'
+    termid: 'concept:semantic-unit'
+    locator: 'semantic-unit.md'
+    navurl: 'https://tno-terminology-design.github.io/tev2-specifications/docs/terms/semantic-unit'
+    headingids:
+      - 'semantic-unit'
+      - 'summary'
+      - 'purpose'
+      - 'criteria'
+    vsntag: 'documentation'
   - id: 'semantics'
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
@@ -2963,7 +3062,7 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'validate'
-    formPhrases: 'validate, validates, validated, validating'
+    formPhrases: 'validate, validates, validated, validating, valid'
     status: 'draft'
     grouptags: null
     hoverText: 'Validate/validation of data: the act, by or on behalf of a Party, of determining whether or not that data is valid to be used for some specific purpose(s) of that Party.'

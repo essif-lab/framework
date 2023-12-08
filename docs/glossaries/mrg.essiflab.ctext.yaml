@@ -1208,7 +1208,7 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'guardian'
-    formPhrases: 'guardian'
+    formPhrases: 'guardian{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Guardian: a Party that has been assigned rights and duties in a Guardianship Arrangement for the purpose of caring for and/or protecting/guarding/defending the Entity that is the Dependent in that Guardianship Arrangement.'
@@ -1253,7 +1253,7 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'guardianship-arrangement'
-    formPhrases: 'guardianship-arrangement{ss}, guardianship{ss}'
+    formPhrases: 'guardianship-arrangement{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Guardianship Arrangement (in a Jurisdiction): a set of rights and duties between Legal Entities of the Jurisdiction that have been established and are enforced within that Jurisdiction for the purpose of caring for and/or protecting/guarding/defending one or more of these Entities.'
@@ -1406,7 +1406,7 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'identify'
-    formPhrases: 'identify, identifies, identifying, identifiable, identified, identification'
+    formPhrases: 'identify, identifies, identifying, identified, identifiable'
     status: 'draft'
     grouptags: null
     hoverText: 'Identify: an Act, by or on behalf of a Party, that results in the selection of either (a) a single Partial identity that the party Owns, given some (observed or received) data, or (b) a single Entity from a given set of entities that is the Subject of a specified Partial identity that the party Owns.'
@@ -2960,7 +2960,7 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'validate'
-    formPhrases: 'validate, validates, validated, validating'
+    formPhrases: 'validate, validates, validated, validating, valid'
     status: 'draft'
     grouptags: null
     hoverText: 'Validate/validation of data: the act, by or on behalf of a Party, of determining whether or not that data is valid to be used for some specific purpose(s) of that Party.'

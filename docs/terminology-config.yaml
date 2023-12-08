@@ -20,7 +20,7 @@ hrgt:
     {{#if glossaryText}}{{glossaryText}}{{else}}no `glossaryText` was specified for this entry.{{/if}}\n
   force: true # overwrite existing files
   input:
-    - "glossary.md"
+    - "essifLab-glossary.md"
 
 ## Term Reference Resolution Tool
 

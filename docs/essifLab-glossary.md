@@ -6,4 +6,4 @@ date: 20231207
 
 # eSSIF-Lab Glossary
 
-{% hrg=":hrg" %}
+{% hrg="" %}

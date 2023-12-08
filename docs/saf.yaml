@@ -39,6 +39,9 @@ versions:
   - vsntag: default # this version contains all terms that are curated by essiflab
     altvsntags: [ latest, documentation ] # alternative verstiontags
     termselection:
+    - term[concept,property,relation,pattern,semantic-unit]@tev2
+    - term[glossary,dictionary,terminology,vocabulary]@tev2
+    - term[semantics,term,define,definition]@tev2
     - "*" # import all terms as curated in the current scope.
   - vsntag: ctext # this version contains all terms that are curated by essiflab
     termselection:
