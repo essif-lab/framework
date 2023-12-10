@@ -347,7 +347,7 @@ entries:
       - 'introduction'
       - 'formalized-model'
     vsntag: 'all-patterns'
-  - id: 'terminology'
+  - id: 'pattern-terminology'
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'terminology'
