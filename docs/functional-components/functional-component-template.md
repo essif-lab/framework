@@ -10,13 +10,14 @@ indexText: "<short description that is used in the FComp-Index; you can use doub
 date: 20210601
 ---
 
-# <Name of the Functional Component> (Acronym)>
+# <Name of the Functional Component (Acronym)>
 
 <-- Do the following:
-  - replace all `<fcompid>` occurrances with a string that is all lowercase. The string will be used for reference purposes, so it shouldn't be very long. The string may include `-` and it must not include whitespace.
-  - replace `<Name of the Functional Component> (Acronym)>` with a string that states the name of your functional component, and the acronym that we can use to refer to it.
-  - think of a good 'hoverText' and 'indexText'. In the 'indexText', you can use double-percent-constructs to help readers understand your texts better; such constructs produce pop-over texts, and links to the referred-to texts.
-  - remove this paragraph of text (or make it a 'normal' comment, which it currently is so that you see it)
+
+- replace all `<fcompid>` occurrances with a string that is all lowercase. The string will be used for reference purposes, so it shouldn't be very long. The string may include `-` and it must not include whitespace.
+- replace `<Name of the Functional Component (Acronym)>` with a string that states the name of your functional component, and the acronym that we can use to refer to it.
+- think of a good 'hoverText' and 'indexText'. In the 'indexText', you can use double-percent-constructs to help readers understand your texts better; such constructs produce pop-over texts, and links to the referred-to texts.
+- remove this paragraph of text (or make it a 'normal' comment, which it currently is so that you see it)
 
 NOTE: This file contains further explanations in comments. You may need to edit the file to see these explanations.
 -->
