@@ -1,18 +1,15 @@
-const path = require('path');
+const path = require("path");
 module.exports = {
-  title: 'eSSIF-Lab',
-  tagline: 'eSSIF-Lab Framework',
-  url: 'https://essif-lab.github.io',
-  baseUrl: '/framework/',
-  favicon: 'images/favicon.ico',
-  organizationName: 'essif-lab',
-  projectName: 'framework',
-  onBrokenLinks: 'log',
+  title: "eSSIF-Lab",
+  tagline: "eSSIF-Lab Framework",
+  url: "https://essif-lab.github.io",
+  baseUrl: "/framework/",
+  favicon: "images/favicon.ico",
+  organizationName: "essif-lab",
+  projectName: "framework",
+  onBrokenLinks: "log",
   scripts: [
-    { src: '/framework/js/fix-location.js',
-      async: false,
-      defer: false,
-    },
+    { src: "/framework/js/fix-location.js", async: false, defer: false },
   ],
   themeConfig: {
     docs: {
@@ -23,51 +20,71 @@ module.exports = {
     },
     navbar: {
       // title: 'ESSIF-Lab',
-      logo: { src: 'images/essif-lab-logo.png', },
+      logo: { src: "images/essif-lab-logo.png" },
       items: [
-        { to: 'docs/essifLab',                    label: 'eSSIF-Lab',     position: 'left'},
-        { to: 'docs/essifLab-project',            label: 'EU Project',    position: 'left'},
-        { to: 'docs/essifLab-pattern-list',       label: 'Mental Models', position: 'left'},
-        { to: 'docs/essifLab-glossary',           label: 'Glossary',      position: 'left'},
-        { href: 'https://github.com/essif-lab/framework', label: 'Github', position: 'right',
+        { to: "docs/essifLab", label: "eSSIF-Lab", position: "left" },
+        { to: "docs/essifLab-project", label: "EU Project", position: "left" },
+        {
+          to: "docs/essifLab-pattern-list",
+          label: "Mental Models",
+          position: "left",
+        },
+        { to: "docs/essifLab-glossary", label: "Glossary", position: "left" },
+        {
+          href: "https://github.com/essif-lab/framework",
+          label: "Github",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
-        { title: 'eSSIF-Lab',
+        {
+          title: "eSSIF-Lab",
           items: [
-            { label: 'Community',  to: 'docs/essifLab' },
-            { label: 'Vision',     to: 'docs/essifLab-vision' },
-            { label: 'Objectives', to: 'docs/essifLab-objectives' },
-            { label: 'Principles', to: 'docs/essifLab-principles' },
+            { label: "Community", to: "docs/essifLab" },
+            { label: "Vision", to: "docs/essifLab-vision" },
+            { label: "Objectives", to: "docs/essifLab-objectives" },
+            { label: "Principles", to: "docs/essifLab-principles" },
           ],
         },
         {
-          title: 'EU Project',
+          title: "EU Project",
           items: [
-            { label: 'Project', to: 'docs/essifLab-project' },
-            { label: 'Project website',  href: 'https://essif-lab.eu/' },
-            { label: '*Project* gitlab', href: 'https://gitlab.grnet.gr/essif-lab/essif-lab', },
+            { label: "Project", to: "docs/essifLab-project" },
+            { label: "Project website", href: "https://essif-lab.eu/" },
+            {
+              label: "*Project* gitlab",
+              href: "https://gitlab.grnet.gr/essif-lab/essif-lab",
+            },
           ],
         },
         {
-          title: 'eSSIF-lab Framework',
+          title: "eSSIF-lab Framework",
           items: [
-            { label: 'Framework', to: 'docs/essifLab-fw' },
+            { label: "Framework", to: "docs/essifLab-fw" },
             // { label: 'Governance', to: 'docs/essifLab-fw-governance' },
             // { label: 'Business-architecture', to: 'docs/essifLab-fw-bus-arch' },
-            { label: 'Conceptual architecture', to: 'docs/essifLab-fw-conceptual-architecture-framework' },
+            {
+              label: "Conceptual architecture",
+              to: "docs/essifLab-fw-conceptual-architecture-framework",
+            },
           ],
         },
         {
-          title: 'eSSIF-lab Terminology',
+          title: "eSSIF-lab Terminology",
           items: [
-            { label: 'Introduction',  to: 'docs/essifLab-collaborative-understanding' },
-            { label: 'Glossary',      to: 'docs/essifLab-glossary' },
-            { label: 'Mental Models', to: 'docs/essifLab-pattern-list' },
-            { label: 'Github', href: 'https://github.com/essif-lab/framework/tree/master/docs/terms' },
+            {
+              label: "Introduction",
+              to: "docs/essifLab-collaborative-understanding",
+            },
+            { label: "Glossary", to: "docs/essifLab-glossary" },
+            { label: "Mental Models", to: "docs/essifLab-pattern-list" },
+            {
+              label: "Github",
+              href: "https://github.com/essif-lab/framework/tree/master/docs/terms",
+            },
           ],
         },
       ],
@@ -88,30 +105,31 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/essif-lab/framework/blob/master/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/essif-lab/framework/blob/master/",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           breadcrumbs: false,
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
   ],
   plugins: [
     [
-      '@docusaurus-terminology/parser',
-      { termsDir: './docs/terms',
-        glossaryFilepath: './docs/glossary.md',
-        noParseFiles: ['./docs/tev1/terminology-engine-v1.mdx'],
-        glossaryPatternSeparator: '^',
-        glossaryTermPatterns: ['term', 'concept']
-      }
-    ]
-  ]
+      "@docusaurus-terminology/parser",
+      {
+        termsDir: "./docs/terms",
+        glossaryFilepath: "./docs/glossary.md",
+        noParseFiles: ["./docs/tev1/terminology-engine-v1.mdx"],
+        glossaryPatternSeparator: "^",
+        glossaryTermPatterns: ["term", "concept"],
+      },
+    ],
+  ],
 };
