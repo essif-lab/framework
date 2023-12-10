@@ -1,5 +1,5 @@
 ---
-id: terminology
+id: pattern-terminology
 displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
