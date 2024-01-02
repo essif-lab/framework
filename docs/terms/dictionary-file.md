@@ -3,6 +3,8 @@ id: dictionary-file
 scopetag: essifLab
 termType: concept
 term: dictionary-file
+formPhrases: [ "dictionary-file{ss}" ]
+
 status: draft
 grouptags:
 hoverText: "Dictionary-file: a file whose contents specifies the contents of a Dictionary."

@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: scope-file
-formPhrases: scope-file{ss}
+formPhrases: [ "scope-file{ss}" ]
 status: draft
 grouptags:
 hoverText: "Scope-file: a file whose contents defines/specifies a Scope."

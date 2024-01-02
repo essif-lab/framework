@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: management
-formPhrases: management, manager, manage, manages, managed, managed-by, management, managing, managing-part{yies}
+formPhrases: [ management, manager, manage, manages, managed, managed-by, management, managing, "managing-part{yies}" ]
 status: draft
 grouptags:
 hoverText: "Management: the act or process of managing or actually realizing of (the results associated with) a set of Objectives by the Owner of these Objectives."

@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: peer-actor
-formPhrases: peer-actor{ss}
+formPhrases: [ "peer-actor{ss}" ]
 conceptref: essifLab:Actor
 status: draft
 grouptags:

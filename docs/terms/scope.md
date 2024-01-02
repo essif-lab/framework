@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: eSSIFLab
 termType: concept
 term: scope
-formPhrases: scope{ss}
+formPhrases: [ "scope{ss}" ]
 status: draft
 grouptags:
 hoverText: "Scope: the extent of the area or subject matter (which we use, e.g., to define Patterns, Concepts, Terms and Glossaries in, but it serves other purposes as well)."

@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: expectation
-formPhrases: expectation{ss}
+formPhrases: [ "expectation{ss}" ]
 status: draft
 grouptags:
 hoverText: "Expectation (of a Party): an Objective that is Owned by that Party for having a specific (set of) result(s) produced, where the actual production thereof is (going to be) outsourced to another Party."

@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: control-level
-formPhrases: control-level{ss}
+formPhrases: [ "control-level{ss}" ]
 status: draft
 grouptags:
 hoverText: "Control level (of a Control): a measure for the efficiency and effectiveness in which a Control produces the results of its Control Objective."

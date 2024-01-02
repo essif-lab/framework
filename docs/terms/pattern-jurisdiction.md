@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
 term: jurisdiction
-formPhrases: jurisdiction
+formPhrases: [ jurisdiction ]
 status: stable
 grouptags:
 glossaryTerm: Jurisdiction Pattern

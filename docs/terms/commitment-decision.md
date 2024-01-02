@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: commitment-decision
-formPhrases: commitment-decision{ss}
+formPhrases: [ "commitment-decision{ss}" ]
 status: draft
 grouptags:
 hoverText: "Commitment Decision (of a Party in a Business Transaction): the decision of that Party whether or not to commit to that Business Transaction, i.e. (promise) to fulfill the Obligations that the associated Business Transaction Agreement Proposal would impose on that Party once it were signed."

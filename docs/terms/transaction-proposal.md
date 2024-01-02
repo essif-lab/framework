@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: transaction-proposal
-formPhrases: transaction-proposal{ss}
+formPhrases: [ "transaction-proposal{ss}" ]
 status: draft
 grouptags:
 hoverText: "Transaction (Agreement) Proposal: a Transaction Agreement that is 'in-the-making' (ranging from an empty document to a document that would be a Transaction Agreement if it were signed by all Participants)."

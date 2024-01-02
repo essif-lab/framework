@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: actor
-formPhrases: actor{ss}, digital-actor{ss}
+formPhrases: [ "actor{ss}", "digital-actor{ss}" ]
 status: draft
 grouptags:
 hoverText: "Actor: Entity that can act (do things/execute Actions), e.g. people, machines, but not Organizations."

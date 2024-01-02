@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
 term: identification
-formPhrases: identification
+formPhrases: [ identification ]
 status: reviewable
 grouptags:
 glossaryTerm: Identification Pattern

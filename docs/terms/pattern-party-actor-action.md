@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
 term: party-actor-action
-formPhrases: party-actor-action
+formPhrases: [ party-actor-action ]
 status: stable
 grouptags: 
 glossaryTerm: Party, Actor and Actions Pattern

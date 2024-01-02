@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
 term: guardianship
-formPhrases: guardianship
+formPhrases: [ guardianship ]
 status: stable
 grouptags:
 glossaryTerm: Guardianship Pattetrn

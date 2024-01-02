@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: objective
-formPhrases: objective{ss}
+formPhrases: [ "objective{ss}" ]
 status: draft
 grouptags:
 hoverText: "Objective: Something toward which a Party (its Owner) directs effort (an aim, goal, or end of action)."

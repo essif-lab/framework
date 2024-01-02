@@ -5,7 +5,7 @@ id: participant
 scope: essiflab
 termtype: concept
 term: participant
-formPhrases: participant{ss}
+formPhrases: [ "participant{ss}" ]
 grouptags:
 status: proposed
 created: 2022-06-06

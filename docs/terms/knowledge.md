@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: knowledge
-formPhrases: knowledge{ss}
+formPhrases: [ "knowledge{ss}" ]
 status: draft
 grouptags:
 hoverText: "Knowledge: The (intangible) sum of what is known by a specific Party, as well as the familiarity, awareness or understanding of someone or something by that Party."

@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
 term: party-representation
-formPhrases: party-representation
+formPhrases: [ party-representation ]
 status: draft
 grouptags:
 glossaryTerm: Party Representation Pattern

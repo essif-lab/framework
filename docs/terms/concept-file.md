@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: concept-file
-formPhrases: concept-file{ss}
+formPhrases: [ "concept-file{ss}" ]
 status: draft
 grouptags:
 hoverText: "Concept-file: a file whose contents defines/specifies a Concept."

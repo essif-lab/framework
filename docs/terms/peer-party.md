@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: peer-party
-formPhrases: peer-part{yies}
+formPhrases: [ "peer-part{yies}" ]
 conceptref: essifLab:party
 status: draft
 grouptags:

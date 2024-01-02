@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
 term: duties-and-rights
-formPhrases: duties-and-rights
+formPhrases: [ duties-and-rights ]
 status: idea
 grouptags:
 glossaryTerm: Duties and Rights Pattern

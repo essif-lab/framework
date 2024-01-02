@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: presentation-request
-formPhrases: presentation-request{ss}, verifiable-presentation-request{ss}
+formPhrases: [ "presentation-request{ss}", "verifiable-presentation-request{ss}" ]
 status: draft
 grouptags:
 hoverText: "Presentation Request: a (signed) digital message that a Verifier component sends to a Holder component asking for specific data from one or more Verifiable Credentials that are issued by specific Parties."

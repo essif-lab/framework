@@ -10,9 +10,9 @@ indexText: "<short description that is used in the FComp-Index; you can use doub
 date: 20210601
 ---
 
-# <Name of the Functional Component (Acronym)>
+# \<Name of the Functional Component (Acronym)>
 
-<-- Do the following:
+\<-- Do the following:
 
 - replace all `<fcompid>` occurrances with a string that is all lowercase. The string will be used for reference purposes, so it shouldn't be very long. The string may include `-` and it must not include whitespace.
 - replace `<Name of the Functional Component (Acronym)>` with a string that states the name of your functional component, and the acronym that we can use to refer to it.

@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: concept
 term: term
-formPhrases: term{ss}, word{ss}, phrase{ss}
+formPhrases: [ "term{ss}", "word{ss}", "phrase{ss}" ]
 status: draft
 grouptags:
 hoverText: "Term: a word or phrase (i.e.: text) that is used in at least one Scope/context to represent a specific Concept."

@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: trust
-formPhrases: trust, trusts, trusting, trusted
+formPhrases: [ trust, trusts, trusting, trusted ]
 status: draft
 grouptags:
 hoverText: "Trust (of a Party in X): the (un)conscious decision by this Party to believe that X is in fact the case"

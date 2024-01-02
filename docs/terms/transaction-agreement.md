@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: transaction-agreement
-formPhrases: transaction-agreement{ss}
+formPhrases: [ "transaction-agreement{ss}" ]
 status: draft
 grouptags:
 hoverText: "Transaction Agreement (for a specific Business Transaction): the set of rules that specify the rights (Expectations) and duties (Obligations) of Participants towards one another in the context of a specific Business Transaction."

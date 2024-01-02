@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
 term: governance-and-management
-formPhrases: governance-and-management
+formPhrases: [ governance-and-management ]
 status: reviewable
 grouptags:
 glossaryTerm: Governance and Management Pattern

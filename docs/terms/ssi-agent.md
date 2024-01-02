@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: ssi-agent
-formPhrases: ssi-agent{ss}
+formPhrases: [ "ssi-agent{ss}" ]
 conceptref: essifLab:Agent
 status: draft
 grouptags:

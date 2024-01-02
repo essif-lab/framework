@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: control-process
-formPhrases: control-process, control-processes
+formPhrases: [ control-process, control-processes ]
 status: draft
 grouptags:
 hoverText: "Control Process (of a Party): a process that is run by a Party to ensure that a specific set of its control Objectives are realized."

@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: advertisement
-formPhrases: advertisement{ss}, advertise, advertising
+formPhrases: [ "advertisement{ss}", advertise, advertising ]
 status: draft
 grouptags:
 hoverText: "Advertisement (of a Party): an offer of that Party to provide a (type of) Credential, where the offer includes (a reference to) the syntax and semantics specifications of that Credential, and also lists various other characteristics that enable other Parties to decide whether or not a Credential that the advertising Party has issued under this offer, isValid to be processed in one or more of its Information processes."
