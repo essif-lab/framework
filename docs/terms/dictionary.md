@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: concept
 term: dictionary
-formPhrases: dictionar{yies}
+formPhrases: [ "dictionar{yies}" ]
 status: draft
 grouptags:
 hoverText: "Dictionary: an alphabetically sorted list of Terms with various meanings they may have in different contexts."

@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: mental-model
-formPhrases: mental-model{ss}
+formPhrases: [ "mental-model{ss}" ]
 conceptref: essifLab:pattern
 status: draft
 grouptags:

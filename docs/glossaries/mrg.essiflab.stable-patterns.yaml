@@ -1,76 +1,97 @@
 terminology:
-  scopetag: 'essiflab'
-  scopedir: 'https://github.com/essif-lab/framework/tree/master/docs'
-  curatedir: 'terms'
-  vsntag: 'stable-patterns'
+  scopetag: "essiflab"
+  scopedir: "https://github.com/essif-lab/framework/tree/master/docs"
+  curatedir: "terms"
+  glossarydir: "glossaries"
+  defaultvsn: "default"
+  license: "LICENSE.md"
+  statuses:
+    - "proposed"
+    - "approved"
+    - "deprecated"
+  issues: "https://github.com/essif-lab/framework/issues"
+  website: "https://essif-lab.github.io/framework"
+  navpath: "/docs/terms"
+  slack: "https://trustoverip.slack.com/archives/C01BBNGRPUH"
+  curators:
+    - name: "RieksJ"
+      email:
+        id: "rieks.joosten"
+        at: "tno.nl"
+  defaulttype: "concept"
+  localscopedir: "/home/runner/work/framework/framework/docs"
+  vsntag: "stable-patterns"
 scopes: []
 entries:
-  - id: 'pattern-guardianship'
-    displayed_sidebar: 'essifLabSideBar'
-    termType: 'pattern'
-    term: 'guardianship'
-    formPhrases: 'guardianship'
-    status: 'stable'
+  - id: "pattern-guardianship"
+    displayed_sidebar: "essifLabSideBar"
+    termType: "pattern"
+    term: "guardianship"
+    formPhrases:
+      - "guardianship"
+    status: "stable"
     grouptags: null
-    glossaryTerm: 'Guardianship Pattetrn'
-    glossaryText: 'a set of [concepts](@) and other [semantic units](@) that can be used to explain what a generic [guardianship](@) consists of, and how it relates to [guardians](@), [dependents](@), [jurisdictions](@), etc.'
-    hoverText: 'The Guardianships pattern captures the Concepts and relations that explain what a generic Guardianship consists of, and how it relates to Guardians, Dependents, Jurisdictions, etc.'
+    glossaryTerm: "Guardianship Pattetrn"
+    glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain what a generic [guardianship](@) consists of, and how it relates to [guardians](@), [dependents](@), [jurisdictions](@), etc."
+    hoverText: "The Guardianships pattern captures the Concepts and relations that explain what a generic Guardianship consists of, and how it relates to Guardians, Dependents, Jurisdictions, etc."
     date: 20210601
-    scopetag: 'essiflab'
-    termid: 'pattern:guardianship'
-    locator: 'pattern-guardianship.md'
-    navurl: 'https://essif-lab.github.io/framework/docs/terms/pattern-guardianship'
+    scopetag: "essiflab"
+    locator: "pattern-guardianship.md"
+    navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-guardianship"
     headingids:
-      - 'guardianship'
-      - 'purpose'
-      - 'introduction'
-      - 'formalized-model'
-      - 'guardianship-governance'
-      - 'define-time:-guardianship-types'
-      - 'run-time:-guardianship-arrangements'
-    vsntag: 'stable-patterns'
-  - id: 'pattern-jurisdiction'
-    displayed_sidebar: 'essifLabSideBar'
-    termType: 'pattern'
-    term: 'jurisdiction'
-    formPhrases: 'jurisdiction'
-    status: 'stable'
+      - "guardianship"
+      - "purpose"
+      - "introduction"
+      - "formalized-model"
+      - "guardianship-governance"
+      - "define-time:-guardianship-types"
+      - "run-time:-guardianship-arrangements"
+    termid: "pattern:guardianship"
+    vsntag: "stable-patterns"
+  - id: "pattern-jurisdiction"
+    displayed_sidebar: "essifLabSideBar"
+    termType: "pattern"
+    term: "jurisdiction"
+    formPhrases:
+      - "jurisdiction"
+    status: "stable"
     grouptags: null
-    glossaryTerm: 'Jurisdiction Pattern'
-    glossaryText: 'a set of [concepts](@) and other [semantic units](@) that can be used to explain what a generic [jurisdiction](@) consists of, and relates it to [parties](@) and [legal entities](@).'
-    hoverText: 'The Jurisdictions pattern captures the Concepts and relations that explain what a generic Jurisdiction consists of, and relates it to Parties and Legal Entities.'
+    glossaryTerm: "Jurisdiction Pattern"
+    glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain what a generic [jurisdiction](@) consists of, and relates it to [parties](@) and [legal entities](@)."
+    hoverText: "The Jurisdictions pattern captures the Concepts and relations that explain what a generic Jurisdiction consists of, and relates it to Parties and Legal Entities."
     date: 20210601
-    scopetag: 'essiflab'
-    termid: 'pattern:jurisdiction'
-    locator: 'pattern-jurisdiction.md'
-    navurl: 'https://essif-lab.github.io/framework/docs/terms/pattern-jurisdiction'
+    scopetag: "essiflab"
+    locator: "pattern-jurisdiction.md"
+    navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-jurisdiction"
     headingids:
-      - 'jurisdictions'
-      - 'purpose'
-      - 'introduction'
-      - 'formalized-model'
-    vsntag: 'stable-patterns'
-  - id: 'pattern-party-actor-action'
-    displayed_sidebar: 'essifLabSideBar'
-    termType: 'pattern'
-    term: 'party-actor-action'
-    formPhrases: 'party-actor-action'
-    status: 'stable'
+      - "jurisdictions"
+      - "purpose"
+      - "introduction"
+      - "formalized-model"
+    termid: "pattern:jurisdiction"
+    vsntag: "stable-patterns"
+  - id: "pattern-party-actor-action"
+    displayed_sidebar: "essifLabSideBar"
+    termType: "pattern"
+    term: "party-actor-action"
+    formPhrases:
+      - "party-actor-action"
+    status: "stable"
     grouptags: null
-    glossaryTerm: 'Party, Actor and Actions Pattern'
-    glossaryText: 'a set of [concepts](@) and other [semantic units](@) that can be used to explain how things get done. It answers questions such as: ''Who/what does things?'', ''How are their actions being guided/controlled?'', ''Who controls whom/what?'', ''Who/what may be held accountable?''.'
-    hoverText: 'The Parties, Actors and Actions pattern captures the foundational concepts and relations that we need for thinking about how things get done. It answers questions such as: ''Who/what does things?'', ''How are their actions being guided/controlled?'', ''Who controls whom/what?'', ''Who/what may be held accountable?''.'
+    glossaryTerm: "Party, Actor and Actions Pattern"
+    glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain how things get done. It answers questions such as: 'Who/what does things?', 'How are their actions being guided/controlled?', 'Who controls whom/what?', 'Who/what may be held accountable?'."
+    hoverText: "The Parties, Actors and Actions pattern captures the foundational concepts and relations that we need for thinking about how things get done. It answers questions such as: 'Who/what does things?', 'How are their actions being guided/controlled?', 'Who controls whom/what?', 'Who/what may be held accountable?'."
     date: 20210602
-    scopetag: 'essiflab'
-    termid: 'pattern:party-actor-action'
-    locator: 'pattern-party-actor-action.md'
-    navurl: 'https://essif-lab.github.io/framework/docs/terms/pattern-party-actor-action'
+    scopetag: "essiflab"
+    locator: "pattern-party-actor-action.md"
+    navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-party-actor-action"
     headingids:
-      - 'parties,-actors-and-actions'
-      - 'purpose'
-      - 'introduction'
-      - 'formalized-model'
-      - 'organizations,-human-beings,-and-non-human-actors'
-      - 'parties,-actors-and-ways-they-relate'
-      - 'actions,-policies-and-objectives'
-    vsntag: 'stable-patterns'
+      - "parties,-actors-and-actions"
+      - "purpose"
+      - "introduction"
+      - "formalized-model"
+      - "organizations,-human-beings,-and-non-human-actors"
+      - "parties,-actors-and-ways-they-relate"
+      - "actions,-policies-and-objectives"
+    termid: "pattern:party-actor-action"
+    vsntag: "stable-patterns"

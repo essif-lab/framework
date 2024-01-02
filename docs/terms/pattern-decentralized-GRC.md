@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
 term: decentralized-grc
-formPhrases: decentralized-grc
+formPhrases: [ "decentralized-grc" ]
 status: draft
 grouptags:
 glossaryTerm: Decentralized GRC Pattern

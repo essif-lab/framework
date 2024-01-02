@@ -5,7 +5,7 @@ id: glossary
 scope: essiflab
 termtype: concept
 term: glossary
-formPhrases: glossar{yies}
+formPhrases: [ "glossar{yies}" ]
 grouptags:
 status: proposed
 created: 2022-06-06

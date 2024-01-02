@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: transaction-id
-formPhrases: transaction-id{ss}
+formPhrases: [ "transaction-id{ss}" ]
 status: draft
 grouptags:
 hoverText: "Transaction Id (for a specific Business Transaction and a Participant): character string that this Participant uses to identify, and refer to, that Business Transaction."

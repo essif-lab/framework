@@ -5,7 +5,7 @@ id: peer-agent
 scope: essiflab
 termtype: concept
 term: peer-agent
-formPhrases: peer-agent{ss}
+formPhrases: [ "peer-agent{ss}" ]
 grouptags:
 status: proposed
 created: 2022-06-06

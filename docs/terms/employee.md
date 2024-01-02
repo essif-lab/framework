@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: employee
-formPhrases: employee{ss}
+formPhrases: [ "employee{ss}" ]
 status: draft
 grouptags:
 hoverText: "Employee (of a Party): a (human or digital) Actor for whom/which it is realistic that it might execute Actions on behalf of that Party (called the Employer of that Actor)."

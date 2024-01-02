@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
 term: decision-making
-formPhrases: decision-making
+formPhrases: [ decision-making ]
 status: draft
 grouptags:
 glossaryTerm: Decision Making Pattern

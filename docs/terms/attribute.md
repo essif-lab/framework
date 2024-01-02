@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: attribute
-formPhrases: attribute{ss}
+formPhrases: [ "attribute{ss}" ]
 status: draft
 grouptags:
 hoverText: "Attribute (of an Entity): Data, that represents a characteristic that a Party (the Owner of the attribute) has attributed to an Entity (which is the Subject of that attribute)."

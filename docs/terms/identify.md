@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: identify
-formPhrases: identify, identifies, identifying, identified, identifiable
+formPhrases: [ identify, identifies, identifying, identified, identifiable ]
 status: draft
 grouptags:
 hoverText: "Identify: an Act, by or on behalf of a Party, that results in the selection of either (a) a single Partial identity that the party Owns, given some (observed or received) data, or (b) a single Entity from a given set of entities that is the Subject of a specified Partial identity that the party Owns."

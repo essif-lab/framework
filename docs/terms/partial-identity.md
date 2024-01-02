@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: partial-identity
-formPhrases: partial-identit{yies}
+formPhrases: [ "partial-identit{yies}" ]
 status: draft
 grouptags:
 hoverText: "Partial identity (of an Entity): all Knowledge that a specific Party (= the Owner of the partial identity) has about that Entity (= the 'Subject' of the partial identity)."

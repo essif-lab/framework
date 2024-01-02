@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: decision
-formPhrases: decision{ss}
+formPhrases:  [ "decision{ss}" ]
 status: draft
 grouptags:
 hoverText: "Decision (of a Party): the conclusion that this Party inferences from a set of Data that it considers to be facts."

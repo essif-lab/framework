@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: assertion
-formPhrases: assertion{ss}, claim{ss}, statement{ss}
+formPhrases: [ "assertion{ss}", "claim{ss}", "statement{ss}" ]
 status: draft
 grouptags:
 hoverText: "Assertion: a declaration/statement, made by a specific Party, that something is the case."

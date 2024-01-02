@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: governor
-formPhrases: governor{ss}
+formPhrases: [ "governor{ss}" ]
 status: draft
 grouptags:
 hoverText: "Governor: a Role that a Party (better: Employee of a specific Party) performs as it Governs a (coherent) set of Expectations of that Party, within a particular focus."

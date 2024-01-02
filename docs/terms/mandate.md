@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: mandate
-formPhrases: mandate{ss}, mandated, mandating, mandator{ss}, mandatee{ss}
+formPhrases: [ "mandate{ss}", mandated, mandating, "mandator{ss}", "mandatee{ss}" ]
 status: draft
 grouptags:
 hoverText: "Mandate: a right or duty that one Party (the Mandator) has granted to another Party or Employee (the Mandatee) for executing a specific (set of) Actions in the name of, and under responsibility/accountability of, this (first) Party."

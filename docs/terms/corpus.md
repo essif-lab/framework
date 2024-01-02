@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: concept
 term: corpus
-formPhrases: corpus, corpus-of-terminology
+formPhrases: [ corpus, corpus-of-terminology ]
 status: draft
 grouptags:
 hoverText: "Corpus (of Terminology): the documentation that describes the Knowledge around a set of Terms and Concepts."

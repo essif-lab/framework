@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: pattern
 term: world-model
-formPhrases: world-model
+formPhrases: [ world-model ]
 status: draft
 grouptags:
 glossaryTerm: "eSSIF-Lab World Model"

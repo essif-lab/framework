@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: authority
-formPhrases: authorit{yies}
+formPhrases: [ "authorit{yies}" ]
 status: draft
 grouptags:
 hoverText: "Authority: a Party of which certain decisions, ideas, rules etc. are followed by other Parties."

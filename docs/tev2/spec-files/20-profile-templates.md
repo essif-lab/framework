@@ -61,21 +61,21 @@ This template allows [interpreters](@) for [ingestible content](@) to be created
 
 </details>
 
-| Name              | Moustache              | Req'd? |  Default   | Description                                                                    |
-| :---------------- | :--------------------- | :----: | :--------: | :----------------------------------------------------------------------------- |
-| `term`            | {{`term`}}             |   Y    |            | word/phrase that represents a concept.                                         |
-| `termType`        | {{`termType`}}         |   n    | `concept`  | kind of concept (e.g. `concept` (default), or `mental model`).                 |
-| `isa`             | {{`isa`}}              |   n    |            | knowledge artifact of which this is a specialization.                          |
-| `glossaryText`    | {{`glossaryText`}}     |   Y    |            | text that summarizes the meaning of the term.                                  |
-| `synonyms`        | {{`synonymsList`}}     |   n    |            | other words/phrases that mean the same.                                        |
-| `grouptags`       | {{`grouptagsList`}}    |   n    |            | comma-separated list of tags/keywords to which the term belongs.               |
-| `formPhrases`     | {{`formPhrasesList`}}  |   n    |            | comma-separated list of formPhrases                                            |
-| `status`          | {{`status`}}           |   n    | `proposed` | status/phase in the lifecycle of the term.                                     |
-| `created`         | {{`created`}}          |   n    |   today    | date when the term was first conceived/documented.                             |
-| `updated`         | {{`updated`}}          |   n    |   today    | date when the term was last updated.                                           |
-| `contributors`    | {{`ContributorsList`}} |   n    |            | comma-separated list of texts, each of which somehow represents a contributor. |
-| `attribution`     | {{`attribution`}}      |   n    |            | text that credits the original creation of the texts in the document.          |
-| `originalLicense` | {{`originalLicense`}}  |   n    |            | reference to the license of the work from which the texts were derived.        |
+| Name              | Moustache               | Req'd? |  Default   | Description                                                                    |
+| :---------------- | :---------------------- | :----: | :--------: | :----------------------------------------------------------------------------- |
+| `term`            | \{{`term`}}             |   Y    |            | word/phrase that represents a concept.                                         |
+| `termType`        | \{{`termType`}}         |   n    | `concept`  | kind of concept (e.g. `concept` (default), or `mental model`).                 |
+| `isa`             | \{{`isa`}}              |   n    |            | knowledge artifact of which this is a specialization.                          |
+| `glossaryText`    | \{{`glossaryText`}}     |   Y    |            | text that summarizes the meaning of the term.                                  |
+| `synonyms`        | \{{`synonymsList`}}     |   n    |            | other words/phrases that mean the same.                                        |
+| `grouptags`       | \{{`grouptagsList`}}    |   n    |            | comma-separated list of tags/keywords to which the term belongs.               |
+| `formPhrases`     | \{{`formPhrasesList`}}  |   n    |            | comma-separated list of formPhrases                                            |
+| `status`          | \{{`status`}}           |   n    | `proposed` | status/phase in the lifecycle of the term.                                     |
+| `created`         | \{{`created`}}          |   n    |   today    | date when the term was first conceived/documented.                             |
+| `updated`         | \{{`updated`}}          |   n    |   today    | date when the term was last updated.                                           |
+| `contributors`    | \{{`ContributorsList`}} |   n    |            | comma-separated list of texts, each of which somehow represents a contributor. |
+| `attribution`     | \{{`attribution`}}      |   n    |            | text that credits the original creation of the texts in the document.          |
+| `originalLicense` | \{{`originalLicense`}}  |   n    |            | reference to the license of the work from which the texts were derived.        |
 
 ## Transformation profile {#transformation-profile}
 

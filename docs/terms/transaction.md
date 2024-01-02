@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: transaction
-formPhrases: transaction{ss}
+formPhrases: [ "transaction{ss}" ]
 status: draft
 grouptags:
 hoverText: "Transaction: the exchange of goods, services, funds, or data between some Parties (called Participants of the Transaction)."

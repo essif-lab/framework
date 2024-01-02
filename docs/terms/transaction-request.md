@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: transaction-request
-formPhrases: transaction-request{ss}
+formPhrases: [ "transaction-request{ss}" ]
 status: draft
 grouptags:
 hoverText: "Transaction Request: a message, send by a requesting Party to a providing Party, that initiates the negotiation of a new Transaction Agreement between these Parties for the provisioning of a specific product or service."

@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: legal-jurisdiction
-formPhrases: legal-jurisdiction{ss}
+formPhrases: [ "legal-jurisdiction{ss}" ]
 conceptref: essifLab:jurisdiction
 status: draft
 grouptags:

@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: concept
 term: vocabulary
-formPhrases: vocabular{yies}
+formPhrases: [ "vocabular{yies}" ]
 status: draft
 grouptags:
 hoverText: "Vocabulary: the sum or stock of words employed by a language, group, individual, or work or in a field of knowledge."

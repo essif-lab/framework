@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLab
 termType: concept
 term: action
-formPhrases: action{ss}, acting, activit{yies} 
+formPhrases: [ "action{ss}", "acting", "activit{yies}" ]
 status: draft
 grouptags:
 hoverText: "Action: something that is actually done (a 'unit of work' that is executed) by a single Actor (on behalf of a given Party), as a single operation, in a specific context."
