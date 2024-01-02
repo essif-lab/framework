@@ -9,7 +9,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'decentralized-grc'
-    formPhrases: 'decentralized-grc'
+    formPhrases:
+      - 'decentralized-grc'
     status: 'draft'
     grouptags: null
     glossaryTerm: 'Decentralized GRC Pattern'
@@ -31,7 +32,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'decentralized-risk-management'
-    formPhrases: 'decentralized-risk-management'
+    formPhrases:
+      - 'decentralized-risk-management'
     status: 'reviewable'
     grouptags: null
     glossaryTerm: 'Decentralized Risk Management Pattern'
@@ -64,7 +66,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'decision-making'
-    formPhrases: 'decision-making'
+    formPhrases:
+      - 'decision-making'
     status: 'draft'
     grouptags: null
     glossaryTerm: 'Decision Making Pattern'
@@ -85,7 +88,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'duties-and-rights'
-    formPhrases: 'duties-and-rights'
+    formPhrases:
+      - 'duties-and-rights'
     status: 'idea'
     grouptags: null
     glossaryTerm: 'Duties and Rights Pattern'
@@ -106,7 +110,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'governance-and-management'
-    formPhrases: 'governance-and-management'
+    formPhrases:
+      - 'governance-and-management'
     status: 'reviewable'
     grouptags: null
     glossaryTerm: 'Governance and Management Pattern'
@@ -130,7 +135,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'guardianship'
-    formPhrases: 'guardianship'
+    formPhrases:
+      - 'guardianship'
     status: 'stable'
     grouptags: null
     glossaryTerm: 'Guardianship Pattetrn'
@@ -154,7 +160,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'identification'
-    formPhrases: 'identification'
+    formPhrases:
+      - 'identification'
     status: 'reviewable'
     grouptags: null
     glossaryTerm: 'Identification Pattern'
@@ -224,7 +231,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'jurisdiction'
-    formPhrases: 'jurisdiction'
+    formPhrases:
+      - 'jurisdiction'
     status: 'stable'
     grouptags: null
     glossaryTerm: 'Jurisdiction Pattern'
@@ -245,7 +253,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'mandates-delegation-hiring'
-    formPhrases: 'mandates-delegation-hiring'
+    formPhrases:
+      - 'mandates-delegation-hiring'
     status: 'idea'
     grouptags: null
     glossaryTerm: 'Mandates, Delegation and Hiring Pattern'
@@ -263,7 +272,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'mental-model'
-    formPhrases: 'mental-model'
+    formPhrases:
+      - 'mental-model'
     status: 'draft'
     grouptags: null
     glossaryTerm: 'Mental Model Pattern'
@@ -283,7 +293,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'party-actor-action'
-    formPhrases: 'party-actor-action'
+    formPhrases:
+      - 'party-actor-action'
     status: 'stable'
     grouptags: null
     glossaryTerm: 'Party, Actor and Actions Pattern'
@@ -307,7 +318,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'party-representation'
-    formPhrases: 'party-representation'
+    formPhrases:
+      - 'party-representation'
     status: 'draft'
     grouptags: null
     glossaryTerm: 'Party Representation Pattern'
@@ -351,7 +363,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'terminology'
-    formPhrases: 'terminology'
+    formPhrases:
+      - 'terminology'
     status: 'reviewable'
     grouptags: null
     glossaryTerm: 'Terminology Pattern'
@@ -375,7 +388,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'trust'
-    formPhrases: 'trust'
+    formPhrases:
+      - 'trust'
     status: 'idea'
     grouptags: null
     glossaryTerm: 'Trust Pattern'
@@ -396,7 +410,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'world-model'
-    formPhrases: 'world-model'
+    formPhrases:
+      - 'world-model'
     status: 'draft'
     grouptags: null
     glossaryTerm: 'eSSIF-Lab World Model'

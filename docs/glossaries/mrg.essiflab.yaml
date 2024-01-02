@@ -14,7 +14,10 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'action'
-    formPhrases: 'action{ss}, acting, activit{yies}'
+    formPhrases:
+      - 'action{ss}'
+      - 'acting'
+      - 'activit{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Action: something that is actually done (a ''unit of work'' that is executed) by a single Actor (on behalf of a given Party), as a single operation, in a specific context.'
@@ -36,7 +39,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'actor'
-    formPhrases: 'actor{ss}, digital-actor{ss}'
+    formPhrases:
+      - 'actor{ss}'
+      - 'digital-actor{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Actor: Entity that can act (do things/execute Actions), e.g. people, machines, but not Organizations.'
@@ -59,7 +64,10 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'advertisement'
-    formPhrases: 'advertisement{ss}, advertise, advertising'
+    formPhrases:
+      - 'advertisement{ss}'
+      - 'advertise'
+      - 'advertising'
     status: 'draft'
     grouptags: null
     hoverText: 'Advertisement (of a Party): an offer of that Party to provide a (type of) Credential, where the offer includes (a reference to) the syntax and semantics specifications of that Credential, and also lists various other characteristics that enable other Parties to decide whether or not a Credential that the advertising Party has issued under this offer, isValid to be processed in one or more of its Information processes.'
@@ -78,7 +86,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'agent'
-    formPhrases: 'agent{ss}, digital-agent{ss}'
+    formPhrases:
+      - 'agent{ss}'
+      - 'digital-agent{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Agent (of a Party): an Actor that is executing an Action on behalf of a Party (called the Principal of that Actor).'
@@ -100,7 +110,10 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'assertion'
-    formPhrases: 'assertion{ss}, claim{ss}, statement{ss}'
+    formPhrases:
+      - 'assertion{ss}'
+      - 'claim{ss}'
+      - 'statement{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Assertion: a declaration/statement, made by a specific Party, that something is the case.'
@@ -122,7 +135,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'assessment-framework'
-    formPhrases: 'assessment-framework{ss}'
+    formPhrases:
+      - 'assessment-framework{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Assessment framework (for a set of requirements on a specified kind of Entity)): the combination of a set of criteria that an auditor can assess by applying them to an Entity (of the specified kind), and the procedures that this Auditor will follow for doing so, for the purpose of establishing the extent in which that Entity conforms to the stated set of requirements.'
@@ -142,7 +156,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'attribute'
-    formPhrases: 'attribute{ss}'
+    formPhrases:
+      - 'attribute{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Attribute (of an Entity): Data, that represents a characteristic that a Party (the Owner of the attribute) has attributed to an Entity (which is the Subject of that attribute).'
@@ -161,7 +176,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'authority'
-    formPhrases: 'authorit{yies}'
+    formPhrases:
+      - 'authorit{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Authority: a Party of which certain decisions, ideas, rules etc. are followed by other Parties.'
@@ -182,7 +198,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'capability'
-    formPhrases: 'capabilit{yies}, capabilit{yies}-of-a-party'
+    formPhrases:
+      - 'capabilit{yies}'
+      - 'capabilit{yies}-of-a-party'
     status: 'draft'
     grouptags: null
     hoverText: 'Capability (of a Party): the (named) combination of (a) the Party''s means to get something done, (b) the Party''s Governance process that that ensures that its (business) Policies for getting that something done are being created and maintained, and (c) the Party''s Management process that creates and maintains the (operational) Policies, such that every Employee that has a task in getting this something done can find and interpret a Policy and use it as it executes Actions in such tasks.'
@@ -202,7 +220,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'capability-of-an-actor'
-    formPhrases: 'capabilit{yies}-of-an-actor'
+    formPhrases:
+      - 'capabilit{yies}-of-an-actor'
     status: 'draft'
     grouptags: null
     hoverText: 'Capability (of an Actor): the potential of that Actor to execute a (named) coherent set of Actions (a ''function'', or ''task'') on behalf of some Party.'
@@ -222,7 +241,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'colleague'
-    formPhrases: 'colleague{ss}, digital-colleague{ss}'
+    formPhrases:
+      - 'colleague{ss}'
+      - 'digital-colleague{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Colleagues: two or more (digital or non-digital) Agents that have the same Principal (i.e. Party on whose behalf they are executing an Action).'
@@ -243,7 +264,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'commitment-decision'
-    formPhrases: 'commitment-decision{ss}'
+    formPhrases:
+      - 'commitment-decision{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Commitment Decision (of a Party in a Business Transaction): the decision of that Party whether or not to commit to that Business Transaction, i.e. (promise) to fulfill the Obligations that the associated Business Transaction Agreement Proposal would impose on that Party once it were signed.'
@@ -262,7 +284,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'communication-channel'
-    formPhrases: 'communication-channel{ss}, digital-communication-channel{ss}'
+    formPhrases:
+      - 'communication-channel{ss}'
+      - 'digital-communication-channel{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Communication Channel: a (digital or non-digital) means by which two Actors can exchange messages with one another.'
@@ -282,7 +306,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'communication-session'
-    formPhrases: 'communication-session{ss}, digital-communication-session{ss}'
+    formPhrases:
+      - 'communication-session{ss}'
+      - 'digital-communication-session{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Communication Session: a time interval during which two Actors have an established Communication Channel that does not exist outside of that time interval.'
@@ -300,7 +326,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'community'
-    formPhrases: 'communit{yies}'
+    formPhrases:
+      - 'communit{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Community: a Party, consisting of at least two different Parties (the members of the Community) that seek to collaborate with each other so that each of them can achieve its individual Objectives more efficiently and/or effectively.'
@@ -321,7 +348,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'compliance'
-    formPhrases: 'compliance'
+    formPhrases:
+      - 'compliance'
     status: 'draft'
     grouptags: null
     hoverText: 'Compliance (of a Party): the state of realization of a set of conformance criteria or normative framework of that Party.'
@@ -341,7 +369,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'compliance-level'
-    formPhrases: 'compliance-level{ss}'
+    formPhrases:
+      - 'compliance-level{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Compliance level (of an Entity, regarding a stated (set of) requirement(s)): a measure for stating how well the Entity conforms with the stated (set of) requirement(s).'
@@ -362,7 +391,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'compliance-management'
-    formPhrases: 'compliance-management'
+    formPhrases:
+      - 'compliance-management'
     status: 'draft'
     grouptags: null
     hoverText: 'Compliance management (by a Party): the process that is run by (or on behalf of) that Party for the purpose of Managing its Compliance-objectives.'
@@ -383,7 +413,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'compliance-objective'
-    formPhrases: 'compliance-objective{ss}'
+    formPhrases:
+      - 'compliance-objective{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Compliance objective (of a Party): an Objective, owned by that Party, that aims to reach and maintain a state of affairs in which a specific set of Entities that this Party controls are in accordance with a specific set of requirements (e.g., laws, regulations, standards, etc.).'
@@ -404,7 +435,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'concept'
-    formPhrases: 'concept{ss}'
+    formPhrases:
+      - 'concept{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Concept: the ideas/thoughts behind a classification of Entities (what makes Entities in that class ''the same'').'
@@ -428,7 +460,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'concept-file'
-    formPhrases: 'concept-file{ss}'
+    formPhrases:
+      - 'concept-file{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Concept-file: a file whose contents defines/specifies a Concept.'
@@ -450,7 +483,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'control'
-    formPhrases: 'control{ss}'
+    formPhrases:
+      - 'control{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Control (of a Party): the combination of resources (e.g. people, tools, budgets, time) and processes that are tasked to realize a specific Control Objective of that Party.'
@@ -472,7 +506,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'control-level'
-    formPhrases: 'control-level{ss}'
+    formPhrases:
+      - 'control-level{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Control level (of a Control): a measure for the efficiency and effectiveness in which a Control produces the results of its Control Objective.'
@@ -493,7 +528,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'control-objective'
-    formPhrases: 'control-objective{ss}'
+    formPhrases:
+      - 'control-objective{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Control objective (of a Party): an Objective, owned by that Party, that aims to contribute to the realization of another (set of) Objective(s) of that Party, by producing results that this Party needs to realize these other Objective(s).'
@@ -515,7 +551,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'control-process'
-    formPhrases: 'control-process, control-processes'
+    formPhrases:
+      - 'control-process'
+      - 'control-processes'
     status: 'draft'
     grouptags: null
     hoverText: 'Control Process (of a Party): a process that is run by a Party to ensure that a specific set of its control Objectives are realized.'
@@ -541,7 +579,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'controller'
-    formPhrases: 'controller{ss}'
+    formPhrases:
+      - 'controller{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Controller (of an Entity): the role that an Actor performs as it is executing actions on that Entity for the purpose of ensuring that the Entity will act/behave, or be used, in a particular way.'
@@ -564,7 +603,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'controllership'
-    formPhrases: 'controllership'
+    formPhrases:
+      - 'controllership'
     status: 'draft'
     grouptags: null
     hoverText: 'Controllership (of an Actor over an Entity): the Capability  of an Actor to execute actions on that Entity for the purpose of ensuring that the Entity will act/behave, or be used, in a particular way.'
@@ -583,7 +623,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'corpus'
-    formPhrases: 'corpus, corpus-of-terminology'
+    formPhrases:
+      - 'corpus'
+      - 'corpus-of-terminology'
     status: 'draft'
     grouptags: null
     hoverText: 'Corpus (of Terminology): the documentation that describes the Knowledge around a set of Terms and Concepts.'
@@ -604,7 +646,10 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'credential'
-    formPhrases: 'credential{ss}, verifiable-credential{ss}, attribute-based-credential{ss}'
+    formPhrases:
+      - 'credential{ss}'
+      - 'verifiable-credential{ss}'
+      - 'attribute-based-credential{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Credential: data, representing a set of Assertions (claims, statements), authored and signed by, or on behalf of, a specific Party.'
@@ -629,7 +674,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'credential-catalogue'
-    formPhrases: 'credential-catalogue{ss}'
+    formPhrases:
+      - 'credential-catalogue{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Credential Catalogue: a functional component that has the Capability (of an Actor) to register and advertise the information about Credential Types that their respective Governing Parties have decided to disclose so as to enable other Parties to decide whether or not it is beneficial for them to use Credentials of such types.'
@@ -648,7 +694,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'credential-type'
-    formPhrases: 'credential-type{ss}'
+    formPhrases:
+      - 'credential-type{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Credential Type: the specification of the contents, properties, constraints etc. that Credentials of this type must have/comply with.'
@@ -668,7 +715,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'data'
-    formPhrases: 'data, digital-data'
+    formPhrases:
+      - 'data'
+      - 'digital-data'
     status: 'draft'
     grouptags: null
     hoverText: 'Data: something (tangible) that can be used to communicate a meaning (which is intangible/information).'
@@ -690,7 +739,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'decentralized-grc'
-    formPhrases: 'decentralized-grc'
+    formPhrases:
+      - 'decentralized-grc'
     status: 'draft'
     grouptags: null
     glossaryTerm: 'Decentralized GRC Pattern'
@@ -712,7 +762,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'decentralized-risk-management'
-    formPhrases: 'decentralized-risk-management'
+    formPhrases:
+      - 'decentralized-risk-management'
     status: 'reviewable'
     grouptags: null
     glossaryTerm: 'Decentralized Risk Management Pattern'
@@ -745,7 +796,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'decision'
-    formPhrases: 'decision{ss}'
+    formPhrases:
+      - 'decision{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Decision (of a Party): the conclusion that this Party inferences from a set of Data that it considers to be facts.'
@@ -766,7 +818,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'decision-making'
-    formPhrases: 'decision-making'
+    formPhrases:
+      - 'decision-making'
     status: 'draft'
     grouptags: null
     glossaryTerm: 'Decision Making Pattern'
@@ -790,8 +843,12 @@ entries:
     glossaryTerm: 'Define'
     glossaryText: 'to provide a criterion and a [term](@), where the criterion can be used by people to determine whether or not something is an instance/example of a [concept](@) (or other [semantic unit](@)), and the [term](@) is used to refer to that [concept](@), or an arbitrary instance thereof.'
     synonymOf: null
-    grouptags: 'terminology'
-    formPhrases: 'defines, defined, defining'
+    grouptags:
+      - 'terminology'
+    formPhrases:
+      - 'defines'
+      - 'defined'
+      - 'defining'
     status: 'proposed'
     created: 20230723
     updated: 20230723
@@ -811,7 +868,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'definition'
-    formPhrases: 'definition{ss}'
+    formPhrases:
+      - 'definition{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Definition: a text that helps Parties to have the same understanding about the meaning of (and Concepts behind) a Term, ideally in such a way that these Parties can determine whether or not they make the same distinction.'
@@ -835,7 +893,12 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'delegate'
-    formPhrases: 'delegate{ss}, delegated, delegating, delegator{ss}, delegatee{ss}'
+    formPhrases:
+      - 'delegate{ss}'
+      - 'delegated'
+      - 'delegating'
+      - 'delegator{ss}'
+      - 'delegatee{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Delegate: the transferral of Ownership of one or more Obligations of a Party (the Delegator), including the associated accountability, to another Party (the Delegatee), which implies that the Delegatee can realize such Obligations as it sees fit.'
@@ -858,7 +921,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'dependent'
-    formPhrases: 'dependent{ss}'
+    formPhrases:
+      - 'dependent{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Dependent (in a Guardianship Arrangement): an Entity for the caring for and/or protecting/guarding/defending of which a Guardianship Arrangement has been established.'
@@ -879,7 +943,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'dictionary'
-    formPhrases: 'dictionar{yies}'
+    formPhrases:
+      - 'dictionar{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Dictionary: an alphabetically sorted list of Terms with various meanings they may have in different contexts.'
@@ -901,6 +966,8 @@ entries:
   - id: 'dictionary-file'
     termType: 'concept'
     term: 'dictionary-file'
+    formPhrases:
+      - 'dictionary-file{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Dictionary-file: a file whose contents specifies the contents of a Dictionary.'
@@ -921,7 +988,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'documentation-interop'
-    formPhrases: 'documentation-interop'
+    formPhrases:
+      - 'documentation-interop'
     status: 'draft'
     grouptags: null
     hoverText: 'Documentation Interoperability: the property that a documentation system of making its content comprehensible for a variety of people that come from different backgrounds.'
@@ -940,7 +1008,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'duties-and-rights'
-    formPhrases: 'duties-and-rights'
+    formPhrases:
+      - 'duties-and-rights'
     status: 'idea'
     grouptags: null
     glossaryTerm: 'Duties and Rights Pattern'
@@ -961,7 +1030,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'ecosystem'
-    formPhrases: 'ecosystem{ss}'
+    formPhrases:
+      - 'ecosystem{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Ecosystem: a set of at least two (autonomous) Parties (its ''members'') whose individual work complements that of other members, and is of benefit to the set as a whole.'
@@ -982,7 +1052,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'employee'
-    formPhrases: 'employee{ss}'
+    formPhrases:
+      - 'employee{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Employee (of a Party): a (human or digital) Actor for whom/which it is realistic that it might execute Actions on behalf of that Party (called the Employer of that Actor).'
@@ -1003,7 +1074,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'employer'
-    formPhrases: 'employer{ss}'
+    formPhrases:
+      - 'employer{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Employer (of an Actor): a Party on whose behalf this (human or non-human) Actor (called an Employee of that Party) might execute Actions.'
@@ -1024,7 +1096,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'employment-contract'
-    formPhrases: 'employment-contract{ss}'
+    formPhrases:
+      - 'employment-contract{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Employment Contract (between two Parties, concerning a set of Actors): an agreement/contract between these Parties that states (or refers to) all (sets of) rights and duties under which the Actors (the Subjects of the contract), that are controlled by one Party, can and/or must work for the other Party.'
@@ -1046,7 +1119,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'entity'
-    formPhrases: 'entit{yies}'
+    formPhrases:
+      - 'entit{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Entity: someone or something that is known to exist.'
@@ -1089,7 +1163,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'expectation'
-    formPhrases: 'expectation{ss}'
+    formPhrases:
+      - 'expectation{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Expectation (of a Party): an Objective that is Owned by that Party for having a specific (set of) result(s) produced, where the actual production thereof is (going to be) outsourced to another Party.'
@@ -1108,7 +1183,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'framework'
-    formPhrases: 'framework{ss}, conceptual-framework{ss}'
+    formPhrases:
+      - 'framework{ss}'
+      - 'conceptual-framework{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Framework (Conceptual): A set of assumptions, concepts, values, and practices that constitutes a way of viewing reality.'
@@ -1127,7 +1204,8 @@ entries:
     scope: 'essiflab'
     termtype: 'concept'
     term: 'glossary'
-    formPhrases: 'glossar{yies}'
+    formPhrases:
+      - 'glossar{yies}'
     grouptags: null
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
@@ -1172,7 +1250,16 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'governance'
-    formPhrases: 'governance, govern, governs, governed, governed-by, governing, governing-part{yies}, governor{ss}, government{ss}'
+    formPhrases:
+      - 'governance'
+      - 'govern'
+      - 'governs'
+      - 'governed'
+      - 'governed-by'
+      - 'governing'
+      - 'governing-part{yies}'
+      - 'governor{ss}'
+      - 'government{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Governance: the act or process of governing or overseeing the realization of (the results associated with) a set of Objectives by the Owner of these Objectives, in order to ensure they will be fit for the purposes that this Owner intends to use them for.'
@@ -1192,7 +1279,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'governance-and-management'
-    formPhrases: 'governance-and-management'
+    formPhrases:
+      - 'governance-and-management'
     status: 'reviewable'
     grouptags: null
     glossaryTerm: 'Governance and Management Pattern'
@@ -1216,7 +1304,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'governor'
-    formPhrases: 'governor{ss}'
+    formPhrases:
+      - 'governor{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Governor: a Role that a Party (better: Employee of a specific Party) performs as it Governs a (coherent) set of Expectations of that Party, within a particular focus.'
@@ -1237,7 +1326,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'guardian'
-    formPhrases: 'guardian{ss}'
+    formPhrases:
+      - 'guardian{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Guardian: a Party that has been assigned rights and duties in a Guardianship Arrangement for the purpose of caring for and/or protecting/guarding/defending the Entity that is the Dependent in that Guardianship Arrangement.'
@@ -1258,7 +1348,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'guardianship'
-    formPhrases: 'guardianship'
+    formPhrases:
+      - 'guardianship'
     status: 'stable'
     grouptags: null
     glossaryTerm: 'Guardianship Pattetrn'
@@ -1282,7 +1373,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'guardianship-arrangement'
-    formPhrases: 'guardianship-arrangement{ss}'
+    formPhrases:
+      - 'guardianship-arrangement{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Guardianship Arrangement (in a Jurisdiction): a set of rights and duties between Legal Entities of the Jurisdiction that have been established and are enforced within that Jurisdiction for the purpose of caring for and/or protecting/guarding/defending one or more of these Entities.'
@@ -1304,7 +1396,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'guardianship-type'
-    formPhrases: 'guardianship-type{ss}, guardianship-arrangement-type{ss}'
+    formPhrases:
+      - 'guardianship-type{ss}'
+      - 'guardianship-arrangement-type{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Guardianship-type (in a Jurisdiction): a class of Guardianship Arrangements within the Jurisdiction that governs and manages them.'
@@ -1325,7 +1419,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'holder'
-    formPhrases: 'holder{ss}'
+    formPhrases:
+      - 'holder{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Holder (functional component): a component that implements the Capability to handle presentation requests from a Peer Agent, produce the requested data (a presentation) according to its Principal''s holder-policy, and send that in response to the request.'
@@ -1347,7 +1442,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'holder-policy'
-    formPhrases: 'holder-polic{yies}'
+    formPhrases:
+      - 'holder-polic{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Holder Policy: a Digital Policy that contains the rules, working-instructions, preferences and other guidance for an operational Holder component to function in accordance with the Objectives of its Principal'
@@ -1366,7 +1462,12 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'human-being'
-    formPhrases: 'human-being{ss}, human{ss}, person{ss}, individual{ss}, people'
+    formPhrases:
+      - 'human-being{ss}'
+      - 'human{ss}'
+      - 'person{ss}'
+      - 'individual{ss}'
+      - 'people'
     status: 'draft'
     grouptags: null
     hoverText: 'Human Being: a person of flesh and blood (homo sapiens), that we classify both as a Party, an Actor, and a Jurisdiction.'
@@ -1388,7 +1489,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'identification'
-    formPhrases: 'identification'
+    formPhrases:
+      - 'identification'
     status: 'reviewable'
     grouptags: null
     glossaryTerm: 'Identification Pattern'
@@ -1435,7 +1537,12 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'identify'
-    formPhrases: 'identify, identifies, identifying, identified, identifiable'
+    formPhrases:
+      - 'identify'
+      - 'identifies'
+      - 'identifying'
+      - 'identified'
+      - 'identifiable'
     status: 'draft'
     grouptags: null
     hoverText: 'Identify: an Act, by or on behalf of a Party, that results in the selection of either (a) a single Partial identity that the party Owns, given some (observed or received) data, or (b) a single Entity from a given set of entities that is the Subject of a specified Partial identity that the party Owns.'
@@ -1477,7 +1584,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'information-process'
-    formPhrases: 'information-process, information-processes'
+    formPhrases:
+      - 'information-process'
+      - 'information-processes'
     status: 'draft'
     grouptags: null
     hoverText: 'Information Process: a coherent set of Actions that are (to be) performed by a single Party, in which data (that is controlled by this Party) is created, read, updated and/or deleted.'
@@ -1496,7 +1605,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'issuer'
-    formPhrases: 'issuer{ss}'
+    formPhrases:
+      - 'issuer{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Issuer (functional component): a component that implements the Capability to construct Credentials from data objects, according to the content of its Principal''s Issuer-Policy (specifically regarding the way in which the Credential is to be digitally signed), and pass it to the Wallet-component of its Principal allowing it to be issued.'
@@ -1518,7 +1628,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'issuer-policy'
-    formPhrases: 'issuer-polic{yies}'
+    formPhrases:
+      - 'issuer-polic{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Issuer Policy: a Digital Policy that contains the rules, working-instructions, preferences and other guidance for an operational Issuer component to function in accordance with the Objectives of its Principal.'
@@ -1537,7 +1648,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'jurisdiction'
-    formPhrases: 'jurisdiction'
+    formPhrases:
+      - 'jurisdiction'
     status: 'stable'
     grouptags: null
     glossaryTerm: 'Jurisdiction Pattern'
@@ -1558,7 +1670,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'knowledge'
-    formPhrases: 'knowledge{ss}'
+    formPhrases:
+      - 'knowledge{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Knowledge: The (intangible) sum of what is known by a specific Party, as well as the familiarity, awareness or understanding of someone or something by that Party.'
@@ -1580,7 +1693,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'legal-entity'
-    formPhrases: 'legal-entit{yies}'
+    formPhrases:
+      - 'legal-entit{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Legal Entity (of a Jurisdiction): an Entity that is known by, recognized to exist, and registered in that Jurisdiction.'
@@ -1603,7 +1717,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'legal-jurisdiction'
-    formPhrases: 'legal-jurisdiction{ss}'
+    formPhrases:
+      - 'legal-jurisdiction{ss}'
     conceptref: 'essifLab:jurisdiction'
     status: 'draft'
     grouptags: null
@@ -1624,7 +1739,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'legal-system'
-    formPhrases: 'legal-system{ss}'
+    formPhrases:
+      - 'legal-system{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Legal-system: a system in which rules are defined, and mechanisms for their enforcement and conflict resolution are (implicitly or explicitly) specified.'
@@ -1646,7 +1762,16 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'management'
-    formPhrases: 'management, manager, manage, manages, managed, managed-by, management, managing, managing-part{yies}'
+    formPhrases:
+      - 'management'
+      - 'manager'
+      - 'manage'
+      - 'manages'
+      - 'managed'
+      - 'managed-by'
+      - 'management'
+      - 'managing'
+      - 'managing-part{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Management: the act or process of managing or actually realizing of (the results associated with) a set of Objectives by the Owner of these Objectives.'
@@ -1666,7 +1791,12 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'mandate'
-    formPhrases: 'mandate{ss}, mandated, mandating, mandator{ss}, mandatee{ss}'
+    formPhrases:
+      - 'mandate{ss}'
+      - 'mandated'
+      - 'mandating'
+      - 'mandator{ss}'
+      - 'mandatee{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Mandate: a right or duty that one Party (the Mandator) has granted to another Party or Employee (the Mandatee) for executing a specific (set of) Actions in the name of, and under responsibility/accountability of, this (first) Party.'
@@ -1689,7 +1819,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'mandates-delegation-hiring'
-    formPhrases: 'mandates-delegation-hiring'
+    formPhrases:
+      - 'mandates-delegation-hiring'
     status: 'idea'
     grouptags: null
     glossaryTerm: 'Mandates, Delegation and Hiring Pattern'
@@ -1707,7 +1838,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'mental-model'
-    formPhrases: 'mental-model'
+    formPhrases:
+      - 'mental-model'
     status: 'draft'
     grouptags: null
     glossaryTerm: 'Mental Model Pattern'
@@ -1727,7 +1859,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'mission'
-    formPhrases: 'mission{ss}'
+    formPhrases:
+      - 'mission{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Mission: an Objective of a Party that provides an answer to the question why that Party exists - i.e. its ''raison d''être''.'
@@ -1746,7 +1879,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'normative-framework'
-    formPhrases: 'normative-framework{ss}'
+    formPhrases:
+      - 'normative-framework{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Normative framework (for a specific class of Entities)): a set of rules that are followed and/or criteria that remain fulfilled by (a specific kind of) Entities whose behavior and/or properties are characterized as ''normal''.'
@@ -1767,7 +1901,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'objective'
-    formPhrases: 'objective{ss}'
+    formPhrases:
+      - 'objective{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Objective: Something toward which a Party (its Owner) directs effort (an aim, goal, or end of action).'
@@ -1791,7 +1926,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'obligation'
-    formPhrases: 'obligation{ss}'
+    formPhrases:
+      - 'obligation{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Obligation (of a Party): an Objective that is Owned by that Party for producing a specific (set of) result(s) that are to be used (consumed) by that Party and/or other Parties.'
@@ -1810,7 +1946,11 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'onboarding'
-    formPhrases: 'onboarding, onboard, onboards, onboarded'
+    formPhrases:
+      - 'onboarding'
+      - 'onboard'
+      - 'onboards'
+      - 'onboarded'
     status: 'draft'
     grouptags: null
     hoverText: 'Onboarding (of an Actor, by a Party): a process that is run for this Actor on behalf of the Party, that terminates successfully if and  only if the Party has (a) established the suitability of the Actor for executing certain kinds of Actions on its behalf, (b) ensured that their mutual rights and duties are properly specified and will be appropriately enforced, and (c) provided the circumstances/contexts within which the Actor is enabled to do so.'
@@ -1831,7 +1971,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'organization'
-    formPhrases: 'organization{ss}'
+    formPhrases:
+      - 'organization{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Organization: a Party that is capable of setting Objectives and making sure these are realized by Actors that it has Onboarded and/or by (vetted) Parties that are committed to contribute to these Objectives.'
@@ -1853,8 +1994,11 @@ entries:
   - id: 'outsourcing'
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
-    term: 'outsourceing'
-    formPhrases: 'outsourc{eing}, outsourced'
+    term: 'outsourcing'
+    formPhrases:
+      - 'outsourcing'
+      - 'outsource'
+      - 'outsourced'
     status: 'draft'
     grouptags: null
     hoverText: 'Outsourcing: the state of affairs in which a Party has an Objective (better: an Expectation) for the realization of a (set of) result(s), where the actual production of these results is expected to be done by a Party other than itself.'
@@ -1862,7 +2006,7 @@ entries:
     glossaryText: 'the state of affairs in which a [party](@) has an [objective](@) (better: an [expectation](@)) for the realization of a (set of) result(s), where the actual production of these results is expected to be done by a [party](@) other than itself.'
     date: 2022-10-18T00:00:00.000Z
     scopetag: 'essiflab'
-    termid: 'concept:outsourceing'
+    termid: 'concept:outsourcing'
     locator: 'outsourcing.md'
     navurl: 'https://essif-lab.github.io/framework/docs/terms/outsourcing'
     headingids:
@@ -1874,7 +2018,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'owned'
-    formPhrases: 'owned'
+    formPhrases:
+      - 'owned'
     status: 'draft'
     grouptags: null
     hoverText: 'Owned (by an Owner, in some Jurisdiction): an Entity over which another Entity (its Owner) has the power (duty, right) to enjoy it, dispose of it and control it; that power is limited to (the scope of) that Jurisdiction, and by its rules.'
@@ -1893,7 +2038,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'owner'
-    formPhrases: 'owner{ss}, own{ss}'
+    formPhrases:
+      - 'owner{ss}'
+      - 'own{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Owner (of an Entity): the role that a Party performs when it is exercising its legal, rightful or natural title to control that Entity.'
@@ -1915,7 +2062,12 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'ownership'
-    formPhrases: 'ownership{ss}, owning, legal-ownership{ss}, rightful-ownership{ss}, natural-ownership{ss}'
+    formPhrases:
+      - 'ownership{ss}'
+      - 'owning'
+      - 'legal-ownership{ss}'
+      - 'rightful-ownership{ss}'
+      - 'natural-ownership{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Ownership (of an Entity over another in a Jurisdiction): a relationship between two Entities in which one of them (called the Owner) has legal, rightful or natural rights and/or duties to enjoy, dispose of, and control the other (called the Owned).'
@@ -1938,7 +2090,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'partial-identity'
-    formPhrases: 'partial-identit{yies}'
+    formPhrases:
+      - 'partial-identit{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Partial identity (of an Entity): all Knowledge that a specific Party (= the Owner of the partial identity) has about that Entity (= the ''Subject'' of the partial identity).'
@@ -1957,7 +2110,8 @@ entries:
     scope: 'essiflab'
     termtype: 'concept'
     term: 'participant'
-    formPhrases: 'participant{ss}'
+    formPhrases:
+      - 'participant{ss}'
     grouptags: null
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
@@ -1981,7 +2135,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'party'
-    formPhrases: 'part{yies}'
+    formPhrases:
+      - 'part{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Party: an Entity that sets its Objectives, maintains its Knowledge, and uses that Knowledge to pursue its Objectives in an autonomous (sovereign) manner. Humans and Organizations are the typical examples.'
@@ -2004,7 +2159,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'party-actor-action'
-    formPhrases: 'party-actor-action'
+    formPhrases:
+      - 'party-actor-action'
     status: 'stable'
     grouptags: null
     glossaryTerm: 'Party, Actor and Actions Pattern'
@@ -2028,7 +2184,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'party-representation'
-    formPhrases: 'party-representation'
+    formPhrases:
+      - 'party-representation'
     status: 'draft'
     grouptags: null
     glossaryTerm: 'Party Representation Pattern'
@@ -2051,7 +2208,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'pattern'
-    formPhrases: 'pattern{ss}'
+    formPhrases:
+      - 'pattern{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Pattern (also: Mental Model): A description, both casual and formal, of a set of Concepts (ideas), relations between them, and constraints, that together form a coherent and consistent ''viewpoint'', or ''way of thinking'' about a certain topic.'
@@ -2073,7 +2231,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'pattern-file'
-    formPhrases: 'pattern-file'
+    formPhrases:
+      - 'pattern-file'
     status: 'draft'
     grouptags: null
     hoverText: 'Pattern-file: a file whose contents describes/documents a Pattern.'
@@ -2094,7 +2253,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'peer-actor'
-    formPhrases: 'peer-actor{ss}'
+    formPhrases:
+      - 'peer-actor{ss}'
     conceptref: 'essifLab:Actor'
     status: 'draft'
     grouptags: null
@@ -2115,7 +2275,8 @@ entries:
     scope: 'essiflab'
     termtype: 'concept'
     term: 'peer-agent'
-    formPhrases: 'peer-agent{ss}'
+    formPhrases:
+      - 'peer-agent{ss}'
     grouptags: null
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
@@ -2141,7 +2302,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'peer-party'
-    formPhrases: 'peer-part{yies}'
+    formPhrases:
+      - 'peer-part{yies}'
     conceptref: 'essifLab:party'
     status: 'draft'
     grouptags: null
@@ -2162,7 +2324,10 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'policy'
-    formPhrases: 'polic{yies}, business-polic{yies}, operational-polic{yies}'
+    formPhrases:
+      - 'polic{yies}'
+      - 'business-polic{yies}'
+      - 'operational-polic{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Policy: a (set of) rules, working-instructions, preferences and other guidance for the execution of one or more kinds of Actions, that Agents of the Party that Governs the policy have access to and can interpret such that this results in these Actions being executed as intended by that Party.'
@@ -2183,7 +2348,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'presentation'
-    formPhrases: 'presentation{ss}, verifiable-presentation{ss}'
+    formPhrases:
+      - 'presentation{ss}'
+      - 'verifiable-presentation{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Presentation: a (signed) digital message that a Holder component may send to a Verifier component that contains data derived from one or more Verifiable Credentials (that (a Colleague component of) the Holder component has received from Issuer components of one or more Parties), as a response to a specific Presentation Request of a Verifier component.'
@@ -2205,7 +2372,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'presentation-request'
-    formPhrases: 'presentation-request{ss}, verifiable-presentation-request{ss}'
+    formPhrases:
+      - 'presentation-request{ss}'
+      - 'verifiable-presentation-request{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Presentation Request: a (signed) digital message that a Verifier component sends to a Holder component asking for specific data from one or more Verifiable Credentials that are issued by specific Parties.'
@@ -2223,7 +2392,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'principal'
-    formPhrases: 'principal{ss}'
+    formPhrases:
+      - 'principal{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Principal (of an Actor): the Party for whom, or on behalf of whom, the Actor is executing an Action (this Actor is then called an Agent of that Party).'
@@ -2248,8 +2418,10 @@ entries:
     glossaryTerm: 'Property (of a Concept)'
     glossaryText: 'a connection or association between a [concept](@) and a primitive data element, such as a text or a number, that represents some characteristic that instances of the [concept](@) may have.'
     synonymOf: null
-    grouptags: 'conceptual-modeling'
-    formPhrases: 'propert{yies}'
+    grouptags:
+      - 'conceptual-modeling'
+    formPhrases:
+      - 'propert{yies}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -2269,7 +2441,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'qualified-data'
-    formPhrases: 'qualified-data'
+    formPhrases:
+      - 'qualified-data'
     status: 'draft'
     grouptags: null
     hoverText: 'Qualified Data: data that comes with assurances, at least regarding its provenance and integrity (immutability), that make this data valid to be used for specific purposes of individual Parties.'
@@ -2297,8 +2470,10 @@ entries:
     glossaryTerm: 'Relation (between Concepts)'
     glossaryText: 'a (significant) connection or association between two or more [concepts](@). These connections define the way these [concepts](@) are interrelated, providing insights into how they interact and influence each other.'
     synonymOf: null
-    grouptags: 'conceptual-modeling'
-    formPhrases: 'relation{ss}'
+    grouptags:
+      - 'conceptual-modeling'
+    formPhrases:
+      - 'relation{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -2318,7 +2493,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'revocation-component'
-    formPhrases: 'revocation-component{ss}, revocator{ss+}'
+    formPhrases:
+      - 'revocation-component{ss}'
+      - 'revocator{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Revocation (functional) component: a component that implements the Capability to Revoke Credentials that are issued by its Principal, according to its Principal''s Revocation Policy.'
@@ -2338,7 +2515,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'revocation-policy'
-    formPhrases: 'revocation-polic{yies}'
+    formPhrases:
+      - 'revocation-polic{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Revocation Policy: a Digital Policy that contains the rules, working-instructions, preferences and other guidance for an operational Revocation component to function in accordance with the Objectives of its Principal.'
@@ -2357,7 +2535,12 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'revoke'
-    formPhrases: 'revo(cat(or|ion)|ke[sd]?|king)'
+    formPhrases:
+      - 'revocator'
+      - 'revocation'
+      - 'revokes'
+      - 'revoked'
+      - 'revoking'
     hoverText: 'revoke/revocation of a credential: the act, by or on behalf of the party that has issued the Credential, of no longer vouching for the correctness or any other qualification of (arbitrary parts of) the credential.'
     glossaryTerm: 'Revoke/Revocation'
     glossaryText: 'the act, by or on behalf of the [party](@) that has issued the [credential](@), of no longer vouching for the correctness or any other qualification of (arbitrary parts of) that [credential](@).'
@@ -2376,7 +2559,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'risk'
-    formPhrases: 'risk{ss}'
+    formPhrases:
+      - 'risk{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Risk (of a Party''s Objective): the effects that uncertainty (i.e. a lack of information, understanding or knowledge of events, their consequences or likelihoods) can have on the intended realization of that Party''s Objective.'
@@ -2397,7 +2581,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'risk-level'
-    formPhrases: 'risk-level{ss}'
+    formPhrases:
+      - 'risk-level{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Risk level (of an Objective): a measure for the deviation of the intended realization (results) of a specific Objective, that its Owner uses to represent the priority with which the Risk of that Objective should be reckoned with.'
@@ -2418,7 +2603,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'risk-management'
-    formPhrases: 'risk-management, risk-manager{ss}'
+    formPhrases:
+      - 'risk-management'
+      - 'risk-manager{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Risk management: a process that is run by (or on behalf of) a specific Party for the purpose of Managing the Risks that it Owns (thereby realizing specific Risk Objectives).'
@@ -2439,7 +2626,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'risk-objective'
-    formPhrases: 'risk-objective{ss}'
+    formPhrases:
+      - 'risk-objective{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Risk objective (of a Party): an Objective, owned by that Party, that aims to reach and maintain a state of affairs in which the Risks associated with a specific set of its Objectives become, and/or remain, acceptable.'
@@ -2460,7 +2648,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'risk-owner'
-    formPhrases: 'risk-owner{ss}'
+    formPhrases:
+      - 'risk-owner{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Risk-owner (of a Risk): the Party that is the Owner of the Objective to which the Risk is associated.'
@@ -2481,7 +2670,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'role'
-    formPhrases: 'role{ss}'
+    formPhrases:
+      - 'role{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Role (of an Entity in some context): a defined set of characteristics that the Entity has in some context, such as responsibilities (Obligations) it may have, Actions (behaviors) it may execute, or pieces of Knowledge that it is expected to have in that context, which are referenced to by a specific (Role-)name.'
@@ -2502,7 +2692,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'role-name'
-    formPhrases: 'role-name{ss}'
+    formPhrases:
+      - 'role-name{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Role name: name (text) that refers to (and identifies) a Role in a a specific context.'
@@ -2522,7 +2713,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'scope'
-    formPhrases: 'scope{ss}'
+    formPhrases:
+      - 'scope{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Scope: the extent of the area or subject matter (which we use, e.g., to define Patterns, Concepts, Terms and Glossaries in, but it serves other purposes as well).'
@@ -2544,7 +2736,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'scope-file'
-    formPhrases: 'scope-file{ss}'
+    formPhrases:
+      - 'scope-file{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Scope-file: a file whose contents defines/specifies a Scope.'
@@ -2566,7 +2759,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'scope-of-control'
-    formPhrases: 'scope-of-control, scopes-of-control'
+    formPhrases:
+      - 'scope-of-control'
+      - 'scopes-of-control'
     status: 'draft'
     grouptags: null
     hoverText: 'Scope of Control (of a Party): the extent of the area or subject matter that the Party controls.'
@@ -2589,7 +2784,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'self-sovereign-identity'
-    formPhrases: 'self-sovereign-identit{yies}'
+    formPhrases:
+      - 'self-sovereign-identit{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Self-Sovereign Identity (or SSI): a term that has many different interpretations, and that we use to refer to concepts/ideas, architectures, processes and technologies that aim to support (autonomous) Parties as they negotiate and execute electronic Transactions with one another.'
@@ -2609,7 +2805,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'self-sovereignty'
-    formPhrases: 'self-sovereignty, autonomy'
+    formPhrases:
+      - 'self-sovereignty'
+      - 'autonomy'
     status: 'draft'
     grouptags: null
     hoverText: 'Self-Sovereign(ty): the characteristic of every Party that it is autonomous in managing and operating its own Knowledge, particularly in making decisions and deciding how to decide.'
@@ -2635,7 +2833,8 @@ entries:
     hoverText: 'a basic building block of meaning or representation that exists within the ''mind'' of a party, e.g., a concept, relation, or property. Parties use terms (words/phrases) to refer to these intangible building blocks.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'semantic-unit{ss}'
+    formPhrases:
+      - 'semantic-unit{ss}'
     status: 'proposed'
     created: 2022-07-27T00:00:00.000Z
     updated: 2022-07-27T00:00:00.000Z
@@ -2656,7 +2855,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'semantics'
-    formPhrases: 'semantics'
+    formPhrases:
+      - 'semantics'
     status: 'draft'
     grouptags: null
     hoverText: 'Semantics: a mapping between the (tangible/textual) Terms and (intangible) ideas/Concepts - their meaning.'
@@ -2677,7 +2877,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'ssi'
-    formPhrases: 'ssi'
+    formPhrases:
+      - 'ssi'
     conceptref: 'essifLab:self-sovereign-identity'
     status: 'draft'
     grouptags: null
@@ -2697,7 +2898,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'ssi-agent'
-    formPhrases: 'ssi-agent{ss}'
+    formPhrases:
+      - 'ssi-agent{ss}'
     conceptref: 'essifLab:Agent'
     status: 'draft'
     grouptags: null
@@ -2718,7 +2920,12 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'ssi-assurance-community'
-    formPhrases: 'ssi-assurance-communit{yies}, ac{ss}, assurance-communit{yies}, ssi-ac{ss}, ssi-assurance-communit{yies}'
+    formPhrases:
+      - 'ssi-assurance-communit{yies}'
+      - 'ac{ss}'
+      - 'assurance-communit{yies}'
+      - 'ssi-ac{ss}'
+      - 'ssi-assurance-communit{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'SSI Assurance Community (SSI-AC): a Community that supports its members as they seek to increase their confidence in the SSI infrastructure and/or (specific) qualifications of the data exchanged through that infrastructure.'
@@ -2737,7 +2944,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'ssi-infrastructure'
-    formPhrases: 'ssi-infrastructure{ss}'
+    formPhrases:
+      - 'ssi-infrastructure{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'SSI Infrastructure: the technological components that are (envisaged to be) deployed all over the world for the purpose of providing, requesting and obtaining Qualified Data, for the purpose of negotiating and/or executing electronic Transactions.'
@@ -2757,7 +2965,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'subject'
-    formPhrases: 'subject{ss}'
+    formPhrases:
+      - 'subject{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Subject (of some coherent data set): the (single) Entity to which a coherent data set relates/pertains, such as attributes, Claims/Assertions, files/dossiers, (verifiable) credentials, Partial Identities, Employment Contracts, etc.'
@@ -2777,7 +2986,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'tag'
-    formPhrases: 'tag{ss}'
+    formPhrases:
+      - 'tag{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Tag: an alphanumeric string that is used to identify Scopes (so called ''scopetags''), group Terms (so called ''grouptags''), or identify a specific version of a Terminology (so called ''versiontags'') from within a specific Scope.'
@@ -2798,7 +3008,10 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'term'
-    formPhrases: 'term{ss}, word{ss}, phrase{ss}'
+    formPhrases:
+      - 'term{ss}'
+      - 'word{ss}'
+      - 'phrase{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Term: a word or phrase (i.e.: text) that is used in at least one Scope/context to represent a specific Concept.'
@@ -2821,7 +3034,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'term-file'
-    formPhrases: 'term-file{ss}'
+    formPhrases:
+      - 'term-file{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Term-file: a file whose contents defines/specifies a Term.'
@@ -2842,7 +3056,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'terminology'
-    formPhrases: 'terminolog{yies}'
+    formPhrases:
+      - 'terminolog{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Terminology (in/of a Scope): the set of terms that are used within a single Scope to refer to a single Definition, enabling Parties to reason and communicate ideas they have about one or more specific topics.'
@@ -2864,7 +3079,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'terminology-process'
-    formPhrases: 'terminology-process, terminology-processes'
+    formPhrases:
+      - 'terminology-process'
+      - 'terminology-processes'
     status: 'draft'
     grouptags: null
     hoverText: 'Terminology Process: a method for recognizing misunderstandings as such, and creating or maintaining Definitions that resolve them.'
@@ -2888,7 +3105,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'terms-community'
-    formPhrases: 'terms-communit{yies}'
+    formPhrases:
+      - 'terms-communit{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Terms Community: a Community that maintains a Terminology for the purpose of avoiding misunderstandings between its members as they collaborate.'
@@ -2911,7 +3129,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'transaction'
-    formPhrases: 'transaction{ss}'
+    formPhrases:
+      - 'transaction{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Transaction: the exchange of goods, services, funds, or data between some Parties (called Participants of the Transaction).'
@@ -2931,7 +3150,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'transaction-agreement'
-    formPhrases: 'transaction-agreement{ss}'
+    formPhrases:
+      - 'transaction-agreement{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Transaction Agreement (for a specific Business Transaction): the set of rules that specify the rights (Expectations) and duties (Obligations) of Participants towards one another in the context of a specific Business Transaction.'
@@ -2949,7 +3169,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'transaction-form'
-    formPhrases: 'transaction-form{ss}'
+    formPhrases:
+      - 'transaction-form{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Transaction Form (for some kind of Business Transaction and some Party): the specification of the set of data that this Party needs to (a) commit to a (proposed) Business Transaction of that kind, (b) fulfill its duties/Obligations and (c) escalate if necessary.'
@@ -2967,7 +3188,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'transaction-id'
-    formPhrases: 'transaction-id{ss}'
+    formPhrases:
+      - 'transaction-id{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Transaction Id (for a specific Business Transaction and a Participant): character string that this Participant uses to identify, and refer to, that Business Transaction.'
@@ -2986,7 +3208,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'transaction-proposal'
-    formPhrases: 'transaction-proposal{ss}'
+    formPhrases:
+      - 'transaction-proposal{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Transaction (Agreement) Proposal: a Transaction Agreement that is ''in-the-making'' (ranging from an empty document to a document that would be a Transaction Agreement if it were signed by all Participants).'
@@ -3005,7 +3228,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'transaction-request'
-    formPhrases: 'transaction-request{ss}'
+    formPhrases:
+      - 'transaction-request{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Transaction Request: a message, send by a requesting Party to a providing Party, that initiates the negotiation of a new Transaction Agreement between these Parties for the provisioning of a specific product or service.'
@@ -3024,7 +3248,11 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'trust'
-    formPhrases: 'trust, trusts, trusting, trusted'
+    formPhrases:
+      - 'trust'
+      - 'trusts'
+      - 'trusting'
+      - 'trusted'
     status: 'draft'
     grouptags: null
     hoverText: 'Trust (of a Party in X): the (un)conscious decision by this Party to believe that X is in fact the case'
@@ -3043,7 +3271,9 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'trust-level'
-    formPhrases: 'trust-level{ss}, level{ss}-of-trust'
+    formPhrases:
+      - 'trust-level{ss}'
+      - 'level{ss}-of-trust'
     status: 'draft'
     grouptags: null
     hoverText: 'Trust level (of a Party in X): the (subjective) degree of belief or confidence that this Party has in X'
@@ -3062,7 +3292,12 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'validate'
-    formPhrases: 'validate, validates, validated, validating, valid'
+    formPhrases:
+      - 'validate'
+      - 'validates'
+      - 'validated'
+      - 'validating'
+      - 'valid'
     status: 'draft'
     grouptags: null
     hoverText: 'Validate/validation of data: the act, by or on behalf of a Party, of determining whether or not that data is valid to be used for some specific purpose(s) of that Party.'
@@ -3081,7 +3316,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'validator'
-    formPhrases: 'validator{ss}'
+    formPhrases:
+      - 'validator{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Validator (functional component): a component that implements the Capability to determine whether or not (verified) data is valid to be used for some specific purpose(s).'
@@ -3100,7 +3336,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'validator-policy'
-    formPhrases: 'validator-polic{yies}'
+    formPhrases:
+      - 'validator-polic{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Validator Policy: a Digital Policy that contains the rules, working-instructions, preferences and other guidance for an operational Validator component to function in accordance with the Objectives of its Principal.'
@@ -3119,7 +3356,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'verifier'
-    formPhrases: 'verifier{ss}'
+    formPhrases:
+      - 'verifier{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Verifier (functional component): a component that implements the Capability to request Peer Agents to present (provide) data from credentials (of a specified kind, issued by specified Parties), and to verify such responses (check structure, signatures, dates), according to its Principal''s Verifier Policy.'
@@ -3139,7 +3377,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'verifier-policy'
-    formPhrases: 'verifier-polic{yies}'
+    formPhrases:
+      - 'verifier-polic{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Verifier Policy: a Digital Policy that contains the rules, working-instructions, preferences and other guidance for an operational Verifier component to function in accordance with the Objectives of its Principal.'
@@ -3158,7 +3397,11 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'verify'
-    formPhrases: 'verify, verifies, verified, verifying'
+    formPhrases:
+      - 'verify'
+      - 'verifies'
+      - 'verified'
+      - 'verifying'
     status: 'draft'
     grouptags: null
     hoverText: 'Verify/verification of data: the act, by or on behalf of a Party, of determining whether that data is authentic (i.e. originates from the Party that authored it), timely (i.e. has not expired), and conforms to other specifications that apply to its structure.'
@@ -3177,7 +3420,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'vocabulary'
-    formPhrases: 'vocabular{yies}'
+    formPhrases:
+      - 'vocabular{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Vocabulary: the sum or stock of words employed by a language, group, individual, or work or in a field of knowledge.'
@@ -3199,7 +3443,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'wallet'
-    formPhrases: 'wallet{ss}'
+    formPhrases:
+      - 'wallet{ss}'
     status: 'draft'
     grouptags: null
     hoverText: 'Wallet (functional component): a component that implements the Capability to securely store data as requested by Colleague Agents, and to provide stored data to Colleague Agents or Peer Agents, all in Compliance with the rules of its Principal''s Wallet Policy.'
@@ -3221,7 +3466,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'concept'
     term: 'wallet-policy'
-    formPhrases: 'wallet-polic{yies}'
+    formPhrases:
+      - 'wallet-polic{yies}'
     status: 'draft'
     grouptags: null
     hoverText: 'Wallet Policy: a Digital Policy that contains the rules, working-instructions, preferences and other guidance for an operational Wallet component to function in accordance with the Objectives of its Principal.'
@@ -3240,7 +3486,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'world-model'
-    formPhrases: 'world-model'
+    formPhrases:
+      - 'world-model'
     status: 'draft'
     grouptags: null
     glossaryTerm: 'eSSIF-Lab World Model'

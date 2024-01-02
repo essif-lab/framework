@@ -107,7 +107,8 @@ entries:
     hoverText: 'Author: a person that creates a text that is meant to be read and understood by others - usually, a particular audience.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'author{ss}'
+    formPhrases:
+      - 'author{ss}'
     status: 'proposed'
     created: 20230723
     updated: 20230723
@@ -129,7 +130,8 @@ entries:
     glossaryText: 'the part of a [curated text](@) that contains arbitrarily structured documentation about the [semantic unit](@) that the [curated text](@) documents. Bodies live either in [curated text files](@) (behind the [header](@)), or in separate so-called [body files](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'bod{yies}'
+    formPhrases:
+      - 'bod{yies}'
     status: 'proposed'
     created: 20230723
     updated: 20230723
@@ -155,7 +157,8 @@ entries:
     glossaryText: 'a file that is located somewhere within the [scopedir](@), and that contains the [body](@) of a [curated text](@). The [header](@) of that [curated text](@) has a field `bodyFile` that specifes its location within the [scopedir](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'body-file{ss}'
+    formPhrases:
+      - 'body-file{ss}'
     status: 'proposed'
     created: 20230723
     updated: 20230723
@@ -218,7 +221,8 @@ entries:
     glossaryText: 'a [semantic unit](@) that captures the ideas/thoughts behind a classification of [entities](@) (what makes [entities](@) in that class ''the same'').'
     synonymOf: null
     grouptags: null
-    formPhrases: 'concept{ss}'
+    formPhrases:
+      - 'concept{ss}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-06T00:00:00.000Z
@@ -245,7 +249,8 @@ entries:
     hoverText: 'Conceptualization: a mental representation or abstract idea formed by a party to categorize, organize, and make sense of information, experiences, objects, or abstract notions; it allows the party to recognize similarities and differences between entities or events.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'conceptualization{ss}'
+    formPhrases:
+      - 'conceptualization{ss}'
     status: 'proposed'
     created: 20230723
     updated: 20230723
@@ -310,10 +315,11 @@ entries:
     termType: 'concept'
     isa: null
     glossaryTerm: 'Converter'
-    glossaryText: 'a software component that takes the output of an [interpreter](@), i.e., the set of moustache variables it has produced, and processes these, possibly with other data from e.g. a [MRG](@), to generate a new, converted text in a different format. The converter uses the values assigned to the moustache variables to produce the transformed output.'
+    glossaryText: 'a specification for constructing a text, for which it can use texts that are the values of [moustache variables](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'converter{ss}'
+    formPhrases:
+      - 'converter{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -334,7 +340,11 @@ entries:
     glossaryText: 'the documentation that describes the [knowledge](@) around a set of [terms](@) and [concepts](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'corpus, corpora, corpus-of-terminology, corpus-of-a-terminology'
+    formPhrases:
+      - 'corpus'
+      - 'corpora'
+      - 'corpus-of-terminology'
+      - 'corpus-of-a-terminology'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-06T00:00:00.000Z
@@ -381,10 +391,14 @@ entries:
     termType: 'concept'
     isa: null
     glossaryTerm: 'Curate'
-    glossaryText: 'to select, organize, and present [terms](@), [definitions](@), and other, related content in a thoughtful and purposeful manner to establish shared understanding among a [community](@) working together on a particular set of objectives.'
+    glossaryText: 'to select, organize, and present [terms](@), [definitions](@), and other, related content in a thoughtful and purposeful manner to establish shared understanding among a [community](@) working together on a particular set of [objectives](@).'
     synonymOf: null
     grouptags: 'terminology, cm-party-actor-action'
-    formPhrases: 'curates, curated, curating, curation'
+    formPhrases:
+      - 'curates'
+      - 'curated'
+      - 'curating'
+      - 'curation'
     status: 'proposed'
     created: 20230723
     updated: 20230723
@@ -405,7 +419,8 @@ entries:
     glossaryTerm: 'Curated File'
     glossaryText: 'a file that is located in the [scopedir](@) of a specific [scope](@), and is (therefore) [curated](@) by (one of) the [curators](@) of that [scope](@).'
     grouptags: null
-    formPhrases: 'curated-file{ss}'
+    formPhrases:
+      - 'curated-file{ss}'
     status: 'proposed'
     created: 20231009
     updated: 20231009
@@ -426,7 +441,9 @@ entries:
     glossaryText: 'a text that documents a [concept](@) or other [semantic unit](@) of a particular [party](@), and specifies, e.g., the [term(s)](@) by which the [party](@) refers thereto, its [definition](@), and any other relevant information.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'curated-text{ss}, ctext{ss}'
+    formPhrases:
+      - 'curated-text{ss}'
+      - 'ctext{ss}'
     status: 'proposed'
     created: 2022-06-02T00:00:00.000Z
     updated: 2022-08-04T00:00:00.000Z
@@ -449,7 +466,9 @@ entries:
     glossaryTerm: 'Curated Text File'
     glossaryText: 'a file that contains either a (complete) [curated text](@), or the [header](@) of that [curated text](@) and a reference to the [file](body-file@) that contains its [body](@).'
     grouptags: null
-    formPhrases: 'curated-text-file{ss}, ctext-file{ss}'
+    formPhrases:
+      - 'curated-text-file{ss}'
+      - 'ctext-file{ss}'
     status: 'proposed'
     created: 20231009
     updated: 20231009
@@ -477,7 +496,9 @@ entries:
     glossaryText: 'a directory within a [scopedir](@) within which every file contains a [curated text](@) for that [scope](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'curatedir{ss}, curate-director{yies}'
+    formPhrases:
+      - 'curatedir{ss}'
+      - 'curate-director{yies}'
     status: 'proposed'
     created: 2022-07-29T00:00:00.000Z
     updated: 2022-07-29T00:00:00.000Z
@@ -496,11 +517,14 @@ entries:
     termType: 'concept'
     isa: null
     glossaryTerm: 'Curator (of a Scope)'
-    glossaryText: 'a person responsible for curating, managing, and maintaining the [terminologies](@), to ensure shared understanding among a [community](@) working together on a particular set of objectives.'
+    glossaryText: 'a person responsible for curating, managing, and maintaining the [terminologies](@), to ensure shared understanding among a [community](@) working together on a particular set of [objectives](@).'
     hoverText: 'Curator: {{noRefs glossaryText}}'
     synonymOf: null
-    grouptags: 'terminology'
-    formPhrases: 'curator{ss}, terminology-curator{ss}'
+    grouptags:
+      - 'terminology'
+    formPhrases:
+      - 'curator{ss}'
+      - 'terminology-curator{ss}'
     status: 'proposed'
     created: 20230723
     updated: 20230723
@@ -522,7 +546,8 @@ entries:
     glossaryTerm: 'Current Scope'
     glossaryText: 'the [scope](@) that is the context within which a [curator](@) is acting, or a tool is being called.'
     grouptags: null
-    formPhrases: 'current-scope{ss}'
+    formPhrases:
+      - 'current-scope{ss}'
     status: 'proposed'
     created: 20231009
     updated: 20231009
@@ -543,8 +568,12 @@ entries:
     glossaryTerm: 'Define'
     glossaryText: 'to provide a criterion and a [term](@), where the criterion can be used by people to determine whether or not something is an instance/example of a [concept](@) (or other [semantic unit](@)), and the [term](@) is used to refer to that [concept](@), or an arbitrary instance thereof.'
     synonymOf: null
-    grouptags: 'terminology'
-    formPhrases: 'defines, defined, defining'
+    grouptags:
+      - 'terminology'
+    formPhrases:
+      - 'defines'
+      - 'defined'
+      - 'defining'
     status: 'proposed'
     created: 20230723
     updated: 20230723
@@ -567,7 +596,9 @@ entries:
     glossaryText: 'the combination of a [term](@) and a descriptive text, where the [term](@) refers to a [concept](@) or other [semantic unit](@), and the descriptive text enables a set of [parties](@) to have the same understanding about that [concept](@). Ideally, the descriptive text is a criterion that such [parties](@) can use to determine what is, and what is not, an instance (or example) of that [concept](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'definition{ss}, good-definition{ss}'
+    formPhrases:
+      - 'definition{ss}'
+      - 'good-definition{ss}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-06T00:00:00.000Z
@@ -593,7 +624,8 @@ entries:
     glossaryText: 'an alphabetically sorted list of [terms](@) with various meanings that they may have in different contexts.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'dictionar{yies}'
+    formPhrases:
+      - 'dictionar{yies}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-06T00:00:00.000Z
@@ -658,7 +690,9 @@ entries:
     isa: null
     glossaryTerm: 'Form Phrase (of a Term)'
     glossaryText: 'a word or phrase, other than the actual [term](@) that, when used in a [TermRef](@) would typically also refer to this [term](@). Form phrases may include plural forms, possessive extensions, verb-conjugation forms, and other variations.'
-    formPhrases: 'formphrase{ss}, form-phrase{ss}'
+    formPhrases:
+      - 'formphrase{ss}'
+      - 'form-phrase{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -684,7 +718,8 @@ entries:
     glossaryText: 'a text that has been processed and arranged to have a specific layout, style, and presentation, making it visually appealing and easy to read.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'formatted-text{ss}'
+    formPhrases:
+      - 'formatted-text{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -708,7 +743,8 @@ entries:
     glossaryText: 'an alphabetically sorted list of [terms](@) with the (single) meaning it has in (at least) one context.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'glossar{yies}'
+    formPhrases:
+      - 'glossar{yies}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-06T00:00:00.000Z
@@ -733,7 +769,9 @@ entries:
     glossaryText: 'a directory within a [scopedir](@) within which the different versions of its ([machine readable](mrg@) and [human readable](hrg@)) [glossaries](@) are created and maintained.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'glossarydir{ss}, glossary-director{yies}'
+    formPhrases:
+      - 'glossarydir{ss}'
+      - 'glossary-director{yies}'
     status: 'proposed'
     created: 2022-07-29T00:00:00.000Z
     updated: 2022-07-29T00:00:00.000Z
@@ -754,7 +792,9 @@ entries:
     isa: null
     glossaryTerm: 'Glossary Term'
     glossaryText: 'a human readable text that will be used as the [term](@) in a [definition](@) as presented in a [HRG](@).'
-    formPhrases: 'glossaryterm{ss}, glossary-term{ss}'
+    formPhrases:
+      - 'glossaryterm{ss}'
+      - 'glossary-term{ss}'
     scopetag: 'tev2'
     termid: 'concept:glossaryterm'
     locator: 'glossaryterm.md'
@@ -766,9 +806,11 @@ entries:
     term: 'glossarytext'
     termType: 'concept'
     isa: null
-    glossarytext: 'Glossary Text'
+    glossaryTerm: 'Glossary Text'
     glossaryText: 'a human readable text that will be used as the [definition](@) for a particular [term](@), as presented in a [HRG](@).'
-    formPhrases: 'glossarytext{ss}, glossary-text{ss}'
+    formPhrases:
+      - 'glossarytext{ss}'
+      - 'glossary-text{ss}'
     scopetag: 'tev2'
     termid: 'concept:glossarytext'
     locator: 'glossarytext.md'
@@ -803,7 +845,9 @@ entries:
     glossaryText: 'a [tag](@) that is used to group [terms](@) within a specific [scope](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'grouptag{ss}, group-tag{ss}'
+    formPhrases:
+      - 'grouptag{ss}'
+      - 'group-tag{ss}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-07-28T00:00:00.000Z
@@ -829,7 +873,8 @@ entries:
     glossaryText: 'the part of a [curated text](@), which is at the beginning of that text, that starts with a line that (only) contains three subsequent ''-''characters, and that ends with a second occurrance of such a line. Headers live in [curated text files](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'header{ss}'
+    formPhrases:
+      - 'header{ss}'
     status: 'proposed'
     created: 20230723
     updated: 20230723
@@ -857,8 +902,13 @@ entries:
     glossaryTerm: 'Human Readable Dictionary (HRD)'
     glossaryText: 'a [dictionary](@) that presents terms and their meanings in a format that is easily understandable and accessible to humans, typically organized alphabetically.'
     synonymOf: null
-    grouptags: 'dictionary, reference-materials'
-    formPhrases: 'hrd{ss}, human-readable-dictionar{yies}, human-readable-dictionar{yies}-hrd{ss}'
+    grouptags:
+      - 'dictionary'
+      - 'reference-materials'
+    formPhrases:
+      - 'hrd{ss}'
+      - 'human-readable-dictionar{yies}'
+      - 'human-readable-dictionar{yies}-hrd{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -880,8 +930,13 @@ entries:
     glossaryTerm: 'Human Readable Dictionary Tool (HRDT)'
     glossaryText: 'a software tool designed to create, manage, and process [Human Readable Dictionaries (HRDs)](hrd@).'
     synonymOf: null
-    grouptags: 'tools, dictionary-tools'
-    formPhrases: 'human-readable-dictionary-tool{ss}, hrd-tool{ss}, hrdt{ss}'
+    grouptags:
+      - 'tools'
+      - 'dictionary-tools'
+    formPhrases:
+      - 'human-readable-dictionary-tool{ss}'
+      - 'hrd-tool{ss}'
+      - 'hrdt{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -902,8 +957,13 @@ entries:
     glossaryTerm: 'Human Readable Glossary (HRG)'
     glossaryText: 'a [glossary](@) that is designed to be easily understandable and accessible to humans. HRGs present terms and their meanings in a format that prioritizes human comprehension and may include additional contextual information to aid understanding.'
     synonymOf: null
-    grouptags: 'glossaries, data-structures'
-    formPhrases: 'hrg{ss}, human-readable-glossar{yies}, human-readable-glossar{yies}-hrg{ss}'
+    grouptags:
+      - 'glossaries'
+      - 'data-structures'
+    formPhrases:
+      - 'hrg{ss}'
+      - 'human-readable-glossar{yies}'
+      - 'human-readable-glossar{yies}-hrg{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -924,8 +984,11 @@ entries:
     glossaryTerm: 'HRG Entry'
     glossaryText: 'A specific kind of (human-readable) rendering of the combination of a [term](@) and a means that helps [readers](@) to understand the meaning of that [term](@) when it is used in a sentence.'
     synonymOf: null
-    grouptags: 'glossary-entries, reference-materials'
-    formPhrases: 'hrg-entr{yies}'
+    grouptags:
+      - 'glossary-entries'
+      - 'reference-materials'
+    formPhrases:
+      - 'hrg-entr{yies}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -948,7 +1011,8 @@ entries:
     glossaryText: 'a list of alphabetically sorted [HRG entries](@) that can be further processed by tools such as the [TRRT](@), as well as rendering tools such as GitHub pages, Docusaurus, etc.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'hrg-list{ss}'
+    formPhrases:
+      - 'hrg-list{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -971,8 +1035,14 @@ entries:
     glossaryAlias: 'HRGT'
     glossaryText: 'a software tool designed to create, manage, and process [Human Readable Glossaries (HRGs)](@), as [specified by TEv2](/docs/spec-tools-envisaged/hrgt). HRGTs offer features for selecting [terms](@) that are [curated](@) within the [scope](@) it is run in, or from other [scopes](@).'
     synonymOf: null
-    grouptags: 'tools, glossary-tools'
-    formPhrases: 'hrgt{ss}, human-readable-glossary-tool{ss}, human-readable-glossary-tool{ss}-hrtt{ss}, hrt{ss}-human-readable-glossary-tool{ss}'
+    grouptags:
+      - 'tools'
+      - 'glossary-tools'
+    formPhrases:
+      - 'hrgt{ss}'
+      - 'human-readable-glossary-tool{ss}'
+      - 'human-readable-glossary-tool{ss}-hrtt{ss}'
+      - 'hrt{ss}-human-readable-glossary-tool{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -989,6 +1059,7 @@ entries:
       - 'installing-the-tool'
       - 'calling-the-tool'
       - 'mrg-ref-handling'
+      - 'hrg-sorting-{#hrg-sorting}'
       - 'example'
       - 'processing,-errors-and-warnings'
       - 'deploying-the-tool'
@@ -1002,8 +1073,12 @@ entries:
     glossaryAlias: 'ICT'
     glossaryText: 'a software tool designed to check the integrity and conformity of various files used in the curation and management of [glossaries](@), [dictionaries](@), [curated texts](@), and other data within a terminology project. The ICT verifies that the files adhere to the [TEv2 file specifications](/docs-spec-files), ensuring the consistency and accuracy of the terminology data.'
     synonymOf: null
-    grouptags: 'tools, quality-assurance'
-    formPhrases: 'ict, integrity-checker'
+    grouptags:
+      - 'tools'
+      - 'quality-assurance'
+    formPhrases:
+      - 'ict'
+      - 'integrity-checker'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1063,7 +1138,8 @@ entries:
     glossaryText: 'a character string that is being used for the identification of some [entity](@) (yet may refer to 0, 1, or more [entities](@), depending on the context within which it is being used).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'identifier{ss}'
+    formPhrases:
+      - 'identifier{ss}'
     status: 'proposed'
     created: 2021-06-01T00:00:00.000Z
     updated: 2021-06-01T00:00:00.000Z
@@ -1090,7 +1166,11 @@ entries:
     glossaryText: 'an [act](@), by or on behalf of a [party](@), that results in the selection of either&#10;- a single [partial identity](@) that the party [owns](@), given some (observed or received) data, or&#10;- a single [entity](@) from a given set of entities that is the [subject](@) of a specified [partial identity](@) that the party [owns](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'identif{yies}, identif{ying}, identifiable, identification'
+    formPhrases:
+      - 'identif{yies}'
+      - 'identif{ying}'
+      - 'identifiable'
+      - 'identification'
     status: 'proposed'
     created: 2021-06-01T00:00:00.000Z
     updated: 2021-06-01T00:00:00.000Z
@@ -1137,7 +1217,13 @@ entries:
     hoverText: 'Ingestion Process: {{noRefs glossaryText}}'
     synonymOf: null
     grouptags: null
-    formPhrases: 'ingestion-process, ingestion-processes, ingest, ingests, ingested, ingestion'
+    formPhrases:
+      - 'ingestion-process'
+      - 'ingestion-processes'
+      - 'ingest'
+      - 'ingests'
+      - 'ingested'
+      - 'ingestion'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1160,7 +1246,8 @@ entries:
     glossaryText: 'the specification of a method by which files that are in a particular place and format (e.g., wiki files) are turned into a [curated text](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'ingestion-profile{ss}'
+    formPhrases:
+      - 'ingestion-profile{ss}'
     status: 'proposed'
     created: 2022-08-17T00:00:00.000Z
     updated: 2022-08-17T00:00:00.000Z
@@ -1182,13 +1269,13 @@ entries:
     termType: 'concept'
     isa: null
     glossaryTerm: 'Interpreter'
-    glossaryText: 'a software component that reads a (source) text of a specific format, such as a wiki-page or JSON file, and produces a set of [moustache variables](@) based on a predefined profile. These [variables](moustache-variables@) represent extracted data or metadata from the source text.'
-    synonymOf: null
+    glossaryText: 'a [(PCRE) regex](https://www.debuggex.com/cheatsheet/regex/pcre) that is used to locate a particular text construct (such as a [TermRef](@) or [MRGRef](@)) in a text, and that uses (PCRE) named groups to provide the values for the [moustache variables](@) in the [moustache profile](@) for which it is designed.'
     grouptags: null
-    formPhrases: 'interpreter{ss}'
+    formPhrases:
+      - 'interpreter{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
-    updated: 2023-07-31T00:00:00.000Z
+    updated: 2023-12-18T00:00:00.000Z
     contributors: 'RieksJ'
     attribution: '[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)'
     originalLicense: '[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)'
@@ -1249,7 +1336,8 @@ entries:
     glossaryText: 'See: [semantic unit](@). (term is deprecated)'
     synonymOf: 'semantic-unit'
     grouptags: null
-    formPhrases: 'knowledge-artifact{ss}'
+    formPhrases:
+      - 'knowledge-artifact{ss}'
     status: 'deprecated'
     created: 2022-07-27T00:00:00.000Z
     updated: 2023-09-26T00:00:00.000Z
@@ -1313,7 +1401,10 @@ entries:
     glossaryText: 'a [semantic unit](@) that relates a set of [concepts](@) (ideas), [relations](@) between them, and constraints about a certain topic, into a coherent and consistent whole (sometimes called ''viewpoint'', or ''way of thinking'').'
     synonymOf: null
     grouptags: null
-    formPhrases: 'mental-model{ss}, pattern{ss}, conceptual-model{ss}'
+    formPhrases:
+      - 'mental-model{ss}'
+      - 'pattern{ss}'
+      - 'conceptual-model{ss}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-07T00:00:00.000Z
@@ -1333,15 +1424,38 @@ entries:
       - 'on-using-(existing)-mental-models'
       - 'on-the-construction-of-mental-models'
     vsntag: 'documentation'
+  - id: 'moustache-profile'
+    term: 'moustache-profile'
+    termType: 'concept'
+    glossaryTerm: 'Moustache Profile'
+    glossaryText: 'a set of [moustache variables](@) that specify the expected results or executing a particular [interpreter](@). For example, the moustache profile for [TRRT](@) [interpreters](@) consists of the [variables](moustache-variable@) `{{showtext}}`, `{{termType}}`, `{{term}}`, `{{trait}}`, `{{scopetag}}`, and `{{vsntag}}`.'
+    grouptags: null
+    formPhrases:
+      - 'moustache-profile{ss}'
+      - 'profile{ss}'
+    status: 'proposed'
+    created: 2023-12-18T00:00:00.000Z
+    updated: 2023-12-18T00:00:00.000Z
+    contributors: 'RieksJ'
+    attribution: '[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)'
+    originalLicense: '[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)'
+    scopetag: 'tev2'
+    termid: 'concept:moustache-profile'
+    locator: 'moustache-profile.md'
+    navurl: 'https://tno-terminology-design.github.io/tev2-specifications/docs/terms/moustache-profile'
+    headingids:
+      - 'moustache-profile'
+    vsntag: 'documentation'
   - id: 'moustache-variable'
     term: 'moustache-variable'
     termType: 'concept'
     isa: null
     glossaryTerm: 'Moustache Variable'
-    glossaryText: 'a placeholder in the form of a ''moustache'' tag, e.g. `{{variable_name}}``, within some text. They are used, e.g., by the [TRRT](@), where they get their values from an [interpreter](@), and where they are used in a selected [converter](@) for the purpose of replacing [TermRefs](@) with [renderable refs](@).'
+    glossaryText: 'a placeholder in the form of a ''moustache'' tag, e.g. `{{variable_name}}``, within some text. They are used, e.g., by the [TRRT](@), where they get their values from an [interpreter](@), and where they are used in a selected [converter](@) for the purpose of replacing [TermRefs](@) with [renderable refs](@). See also https://mustache.github.io/mustache.5.html'
     synonymOf: null
     grouptags: null
-    formPhrases: 'moustache-variable{ss}'
+    formPhrases:
+      - 'moustache-variable{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1364,7 +1478,10 @@ entries:
     glossaryText: 'a type of [dictionary](@) that is formatted in a way that can be easily processed and interpreted by computers or software programs. It uses the YAML format to represent the [terms](@) and their [meanings](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'machine-readable-dictionar{yies}, mrd{ss}, machine-readable-dictionary-mrd{ss}'
+    formPhrases:
+      - 'machine-readable-dictionar{yies}'
+      - 'mrd{ss}'
+      - 'machine-readable-dictionary-mrd{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1387,8 +1504,13 @@ entries:
     glossaryTerm: 'Machine Readable Dictionary Tool (MRDT)'
     glossaryText: 'a software tool designed to create, manage, and process [Machine Readable Dictionaries (MRDs)](mrd@).'
     synonymOf: null
-    grouptags: 'tools, dictionary-tools'
-    formPhrases: 'machine-readable-dictionary-tool{ss}, mrd-tool{ss}, mrdt{ss}'
+    grouptags:
+      - 'tools'
+      - 'dictionary-tools'
+    formPhrases:
+      - 'machine-readable-dictionary-tool{ss}'
+      - 'mrd-tool{ss}'
+      - 'mrdt{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1406,13 +1528,18 @@ entries:
     term: 'mrg'
     termType: 'concept'
     isa: 'glossary'
-    bodyFile: '/spec-files/31-mrg.md'
+    bodyFile: '/spec-files/32-mrg.md'
     glossaryTerm: 'Machine Readable Glossary (MRG)'
     glossaryText: 'a [glossary](@) for a particular (version of a) [terminology](@) that is formatted in YAML, according to the [TEv2 MRG specifications](/docs/spec-files/mrg), to enable automated processing and integration with software systems.'
     hoverText: 'MRG: {{noRefs glossaryText}}'
     synonymOf: null
-    grouptags: 'glossaries, data-structures'
-    formPhrases: 'mrg{ss}, machine-readable-glossar{yies}, machine-readable-glossar{yies}-mrg{ss}'
+    grouptags:
+      - 'glossaries'
+      - 'data-structures'
+    formPhrases:
+      - 'mrg{ss}'
+      - 'machine-readable-glossar{yies}'
+      - 'machine-readable-glossar{yies}-mrg{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1439,7 +1566,8 @@ entries:
     glossaryText: 'A machine-readable (and interpretable) artifact that contains (pointers to) data and meta-data about a particular  [semantic unit](@), such as the associated [term(s)](@), its [definition](@), etc., to make it easy for IT-tools to create, e.g. documentation, [glossaries](@), [dictionaries](@), whitepapers, etc. that uses such [terms](@) ([definitions](@), etc.).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'mrg-entr{yies}'
+    formPhrases:
+      - 'mrg-entr{yies}'
     status: 'proposed'
     created: 2022-08-11T00:00:00.000Z
     updated: 2022-08-11T00:00:00.000Z
@@ -1462,8 +1590,14 @@ entries:
     glossaryTerm: 'MRG Import (Tool)'
     glossaryText: 'is a tool in the [TEv2](@) toolbox that is run within a particular [scope](@) for the purpose of obtaining [MRGs](@) from other [scopes](@), as specified in the [scope''s](@) [SAF](@), and putting them in the [scope''s](@) [glossarydir](@).'
     synonymOf: null
-    grouptags: 'glossary-entries, terminology-management-tools'
-    formPhrases: 'mrg-import, mrg-importer, mrg-import-tool, mrg-importer-tool'
+    grouptags:
+      - 'glossary-entries'
+      - 'terminology-management-tools'
+    formPhrases:
+      - 'mrg-import'
+      - 'mrg-importer'
+      - 'mrg-import-tool'
+      - 'mrg-importer-tool'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1490,7 +1624,9 @@ entries:
     glossaryText: 'a text that is [marked up (in a specific way)](/docs/spec-syntax/mrg-ref-syntax) so that it refers to a particular [terminology](@), as well as to a specific way for creating an associated [HRG](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'mrg-ref{ss}, mrgref{ss}'
+    formPhrases:
+      - 'mrg-ref{ss}'
+      - 'mrgref{ss}'
     status: 'proposed'
     created: 2023-11-27T00:00:00.000Z
     updated: 2023-11-27T00:00:00.000Z
@@ -1531,8 +1667,14 @@ entries:
     glossaryText: 'a software tool designed to create, manage, and process [Machine Readable Glossaries (MRGs)](@), as [specified by TEv2](/docs/spec-tools/mrgt). MRGTs offer features for selecting [terms](@) that are [curated](@) within the [scope](@) it is run in, or from other [scopes](@).'
     hoverText: 'MRGT: {{noRefs glossaryText}}'
     synonymOf: null
-    grouptags: 'tools, glossary-tools'
-    formPhrases: 'mrgt{ss}, machine-readable-glossary-tool{ss}, machine-readable-glossary-tool{ss}-mrgt{ss}, mrgt{ss}-machin-readable-glossary-tool{ss}'
+    grouptags:
+      - 'tools'
+      - 'glossary-tools'
+    formPhrases:
+      - 'mrgt{ss}'
+      - 'machine-readable-glossary-tool{ss}'
+      - 'machine-readable-glossary-tool{ss}-mrgt{ss}'
+      - 'mrgt{ss}-machin-readable-glossary-tool{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1552,6 +1694,7 @@ entries:
       - 'storing-a-[provisional-mrg](@)-in-the-[glossarydir](@)-{#mrgt-mrg-filenames}'
       - 'phase-2:-post-processing-synonyms-{#mrgt-post-processing}'
       - 'phase-3:-post-processing-other-fields'
+      - 'phase-4:-checking-the-result'
       - 'exceptions,-warnings,-and-logging-{#exceptions}'
       - 'notes'
     vsntag: 'documentation'
@@ -1563,7 +1706,8 @@ entries:
     hoverText: 'the path of the directory, relative to the base URL of a static website, that contains the rendered versions of curated texts.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'navpath{ss}'
+    formPhrases:
+      - 'navpath{ss}'
     status: 'proposed'
     created: 2022-10-06T00:00:00.000Z
     updated: 2022-10-06T00:00:00.000Z
@@ -1776,8 +1920,10 @@ entries:
     glossaryTerm: 'Property (of a Concept)'
     glossaryText: 'a connection or association between a [concept](@) and a primitive data element, such as a text or a number, that represents some characteristic that instances of the [concept](@) may have.'
     synonymOf: null
-    grouptags: 'conceptual-modeling'
-    formPhrases: 'propert{yies}'
+    grouptags:
+      - 'conceptual-modeling'
+    formPhrases:
+      - 'propert{yies}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1801,7 +1947,8 @@ entries:
     glossaryText: 'a set of [provisional MRG entries](@), to which such [entries](provisional-mrg-entry@) can be added, removed or modified, as specified by [term selection instructions](@), and that are ultimately [further processed](/docs/spec-tools/mrgt#mrgt-post-processing) to result in a proper [MRG](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'provisional-mrg{ss}'
+    formPhrases:
+      - 'provisional-mrg{ss}'
     status: 'proposed'
     created: 20231010
     updated: 20231010
@@ -1823,7 +1970,8 @@ entries:
     glossaryText: 'an [MRG entry](@) that is ''under construction''; it contains ''raw'' data that documents (the [semantic unit](@) referred to by) a [term](@), that is obtained either from (the [header](@) of) a [curated text](@), or from an [MRG entry](@) of some existing [MRG](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'provisional-mrg-entr{yies}'
+    formPhrases:
+      - 'provisional-mrg-entr{yies}'
     status: 'proposed'
     created: 20231010
     updated: 20231010
@@ -1845,7 +1993,8 @@ entries:
     glossaryText: 'a person that reads a text that is authored by another person (its [author](@)), and that tries to understand the meaning of this text in the way its [author](@) intended.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'reader{ss}'
+    formPhrases:
+      - 'reader{ss}'
     status: 'proposed'
     created: 20230723
     updated: 20230723
@@ -1866,8 +2015,10 @@ entries:
     glossaryTerm: 'Relation (between Concepts)'
     glossaryText: 'a (significant) connection or association between two or more [concepts](@). These connections define the way these [concepts](@) are interrelated, providing insights into how they interact and influence each other.'
     synonymOf: null
-    grouptags: 'conceptual-modeling'
-    formPhrases: 'relation{ss}'
+    grouptags:
+      - 'conceptual-modeling'
+    formPhrases:
+      - 'relation{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1890,7 +2041,10 @@ entries:
     glossaryText: 'a text with which the [TRRT](@) replaces a [TermRef](@), that can be processed by specific third party rendering tools, the result of which is a rendering of the original [TermRef](@) that has additional characteristics that help [readers](@) to (better) understand the intention of its [author](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'renderable-ref{ss}, renderable-reference{ss}'
+    formPhrases:
+      - 'renderable-ref{ss}'
+      - 'renderableref{ss}'
+      - 'renderable-reference{ss}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-08-04T00:00:00.000Z
@@ -1951,13 +2105,18 @@ entries:
   - id: 'saf'
     term: 'saf'
     termType: 'concept'
-    bodyFile: '/spec-files/21-saf.md'
+    bodyFile: '/spec-files/12-saf.md'
     glossaryTerm: 'Scope Administration File (SAF)'
     glossaryText: 'a YAML file that contains essential data about a particular [scope](@) (e.g., specifying where its [curated texts](@), [glossaries](@) etc. live), the relationships this [scope](@) has with other [scopes](@), and the specifications of the different [terminologies](@) that are [curated](@) within that [scope](@). The SAF of a [scope](@) is located in its [scopedir](@).'
     hoverText: 'SAF: a YAML file that contains essential data about a particular scope, such as the locations of the scope''s curated texts, glossaries, and the specifications of the curated terminologies. The SAF is located in the so-called scopedir.'
     synonymOf: null
-    grouptags: 'terminology-management'
-    formPhrases: 'saf{ss}, scope-administration-file{ss}, scope-administration-file{ss}-saf{ss}, saf{ss}-scope-administration-file{ss}'
+    grouptags:
+      - 'terminology-management'
+    formPhrases:
+      - 'saf{ss}'
+      - 'scope-administration-file{ss}'
+      - 'scope-administration-file{ss}-saf{ss}'
+      - 'saf{ss}-scope-administration-file{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1996,7 +2155,9 @@ entries:
     glossaryText: 'the extent of the [terms](@), [definitions](@) and other documentation that a [community](@) (which we call the [owner](@) of the [scope](@)) needs to express, communicate and validate its [knowledge](@) as relevant to achieving a specific subset of its [objectives](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'scope{ss}, scope-context{ss}'
+    formPhrases:
+      - 'scope{ss}'
+      - 'scope-context{ss}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-08-04T00:00:00.000Z
@@ -2018,7 +2179,8 @@ entries:
     glossaryTerm: 'Scoped Term'
     glossaryText: 'a [term](@) that represents (and [identifies](@)) a specific [semantic unit](@) of a particular [community](@) (or [party](@)).'
     grouptags: null
-    formPhrases: 'scoped-term{ss}'
+    formPhrases:
+      - 'scoped-term{ss}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-08-04T00:00:00.000Z
@@ -2040,7 +2202,9 @@ entries:
     glossaryText: 'a directory in a computer file system that contains all files that are either being [curated](@) within a particular [scope](@), or generated to serve some purpose within that [scope](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'scopedir{ss}, scope-director{yies}'
+    formPhrases:
+      - 'scopedir{ss}'
+      - 'scope-director{yies}'
     status: 'proposed'
     created: 2022-07-29T00:00:00.000Z
     updated: 2022-07-29T00:00:00.000Z
@@ -2064,7 +2228,9 @@ entries:
     glossaryText: 'a [tag](@) that is used to [identify](@) [scopes](@) from within a specific [scope](@)'
     synonymOf: null
     grouptags: null
-    formPhrases: 'scopetag{ss}, scope-tag{ss}'
+    formPhrases:
+      - 'scopetag{ss}'
+      - 'scope-tag{ss}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-07-28T00:00:00.000Z
@@ -2090,7 +2256,8 @@ entries:
     hoverText: 'a basic building block of meaning or representation that exists within the ''mind'' of a party, e.g., a concept, relation, or property. Parties use terms (words/phrases) to refer to these intangible building blocks.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'semantic-unit{ss}'
+    formPhrases:
+      - 'semantic-unit{ss}'
     status: 'proposed'
     created: 2022-07-27T00:00:00.000Z
     updated: 2022-07-27T00:00:00.000Z
@@ -2114,7 +2281,8 @@ entries:
     glossaryText: 'a mapping between the (tangible/textual) [terms](@) and (intangible) ideas/[concepts](@) - their meaning.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'semantics'
+    formPhrases:
+      - 'semantics'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-06T00:00:00.000Z
@@ -2158,7 +2326,8 @@ entries:
     glossaryText: 'a [term](@) that has the same (or sufficiently similar) meaning as another [term](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'synonym{ss}'
+    formPhrases:
+      - 'synonym{ss}'
     status: 'proposed'
     created: 2022-11-27T00:00:00.000Z
     updated: 2022-11-27T00:00:00.000Z
@@ -2183,7 +2352,8 @@ entries:
     glossaryText: 'an alphanumeric string that is used to identify [scopes](@) (so called ''scopetags''), group [terms](@) (so called ''grouptags''), or identify a specific version of a [terminology](@) (so called ''versiontags'') from within a specific [scope](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'tag{ss}'
+    formPhrases:
+      - 'tag{ss}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-06T00:00:00.000Z
@@ -2208,7 +2378,10 @@ entries:
     glossaryText: 'a word or phrase (i.e.: text) that is used to represent ([identify](@)) a specific [semantic unit](@) (in some [scope](@)).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'term{ss}, word{ss}, phrase{ss}'
+    formPhrases:
+      - 'term{ss}'
+      - 'word{ss}'
+      - 'phrase{ss}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-08-09T00:00:00.000Z
@@ -2233,7 +2406,8 @@ entries:
     bodyFile: '/spec-syntax/21-term-identifier-syntax.md'
     glossaryTerm: 'Term Identifier'
     glossaryText: 'a [text](identifier@), of the form `<termid>@<terminology-identifier>`, that is used for [identifying](@) a [semantic unit](@) within a designated [terminology](@). If `@<terminology-identifier>` is omitted, the current (or default) [terminology](@) is assumed.'
-    formPhrases: 'term-identifier{ss}'
+    formPhrases:
+      - 'term-identifier{ss}'
     status: 'proposed'
     created: 2022-11-24T00:00:00.000Z
     updated: 2023-11-24T00:00:00.000Z
@@ -2257,7 +2431,10 @@ entries:
     glossaryText: 'a word or phrase that is [marked up (in a specific way)](/docs/spec-syntax/term-ref-syntax) so that it refers to a particular [concept](@) (or other [semantic unit](@)), enabling it to be rendered in a variety of ways for the purpose of helping [readers](@) to (better) understand the intention of its [author](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'term-ref{ss}, termref{ss}, term-reference{ss}'
+    formPhrases:
+      - 'term-ref{ss}'
+      - 'termref{ss}'
+      - 'term-reference{ss}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-08-04T00:00:00.000Z
@@ -2280,8 +2457,12 @@ entries:
     glossaryTerm: 'Term Selection Instruction'
     glossaryText: 'an instruction that is used to select one or more [terms](scoped-term@) for the purpose of processing their documentation, e.g., to create an [MRG](@).'
     synonymOf: null
-    grouptags: 'glossary-entries, terminology-management'
-    formPhrases: 'term-selection-instruction{ss}, selection-instruction{ss}'
+    grouptags:
+      - 'glossary-entries'
+      - 'terminology-management'
+    formPhrases:
+      - 'term-selection-instruction{ss}'
+      - 'selection-instruction{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -2304,7 +2485,8 @@ entries:
     glossaryText: 'a [text](identifier@) that [identifies](@) a particular *kind* of [semantic unit](@) within a particular [scope](@). Examples include `concept`, `relation`, `pattern` (or `mental-model`).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'term-type{ss}'
+    formPhrases:
+      - 'term-type{ss}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2023-08-01T00:00:00.000Z
@@ -2327,7 +2509,9 @@ entries:
     glossaryText: 'a text of the form `<termType>:<term>` that serves as an unambiguous [identifier](@) for a specific [semantic unit](@) in some given [scope](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'termid{ss}, term-id{ss}'
+    formPhrases:
+      - 'termid{ss}'
+      - 'term-id{ss}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-08-09T00:00:00.000Z
@@ -2345,7 +2529,8 @@ entries:
     termType: 'concept'
     grouptags: null
     synonymOf: null
-    formPhrases: 'terminolog{yies}'
+    formPhrases:
+      - 'terminolog{yies}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-08-11T00:00:00.000Z
@@ -2372,7 +2557,8 @@ entries:
     hoverText: 'a text (identifier), of the form `<scopetag>:<vsntag>`, that identifies a terminology from within a particular scope. If `<scopetag>` and/or `:<vsntag>` is omitted, their values are taken be the current (or default) ones.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'terminology-identifier{ss}'
+    formPhrases:
+      - 'terminology-identifier{ss}'
     status: 'proposed'
     created: 2023-09-29T00:00:00.000Z
     updated: 2023-09-29T00:00:00.000Z
@@ -2396,7 +2582,8 @@ entries:
     glossaryText: 'a method for recognizing misunderstandings as such, and creating or maintaining [definitions](@) that resolve them.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'terminology-processes'
+    formPhrases:
+      - 'terminology-processes'
     status: 'proposed'
     created: 20230723
     updated: 20230723
@@ -2422,7 +2609,8 @@ entries:
     glossaryText: 'a [community](@) that maintains a [terminology](@) for the purpose of avoiding misunderstandings between its members as they collaborate.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'terms-communit{yies}'
+    formPhrases:
+      - 'terms-communit{yies}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-06T00:00:00.000Z
@@ -2471,7 +2659,9 @@ entries:
     glossaryText: 'any software application or utility designed to support and streamline various tasks related to terminology management following the TEv2 specifications.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'tev2-tool{ss}, tool{ss}'
+    formPhrases:
+      - 'tev2-tool{ss}'
+      - 'tool{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -2543,8 +2733,13 @@ entries:
     glossaryAlias: 'TRRT'
     glossaryText: 'a [TEv2 tool](@) that is designed to facilitate the visualization and rendering of [TermRefs](@).'
     synonymOf: null
-    grouptags: 'tev2-tool, tev2-toolbox'
-    formPhrases: 'trrt{ss}, termref-rendering-tool{ss}, term-ref-rendering-tool{ss}'
+    grouptags:
+      - 'tev2-tool'
+      - 'tev2-toolbox'
+    formPhrases:
+      - 'trrt{ss}'
+      - 'termref-rendering-tool{ss}'
+      - 'term-ref-rendering-tool{ss}'
     status: 'proposed'
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -2616,7 +2811,10 @@ entries:
     glossaryText: 'a [tag](@) that is used to [identify](@) a specific version of a [terminology](@) from within a specific [scope](@).'
     synonymOf: null
     grouptags: null
-    formPhrases: 'versiontag{ss}, version-tag{ss}, vsntag{ss}'
+    formPhrases:
+      - 'versiontag{ss}'
+      - 'version-tag{ss}'
+      - 'vsntag{ss}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-07-28T00:00:00.000Z
@@ -2641,7 +2839,8 @@ entries:
     glossaryText: 'the sum or stock of words employed by a language, group, individual, or work or in a field of knowledge.'
     synonymOf: null
     grouptags: null
-    formPhrases: 'vocabular{yies}'
+    formPhrases:
+      - 'vocabular{yies}'
     status: 'proposed'
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-06T00:00:00.000Z

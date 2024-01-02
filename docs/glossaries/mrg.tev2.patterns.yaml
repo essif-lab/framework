@@ -328,7 +328,7 @@ entries:
       - 'formalized-model'
       - 'miscellaneous'
     vsntag: 'default'
-  - term: 'pattern-terminology'
+  - term: 'terminology'
     termType: 'pattern'
     isa: null
     glossaryTerm: 'Terminology Pattern'
@@ -343,7 +343,7 @@ entries:
     attribution: '[eSSIF-Lab](https://essif-lab.github.io/framework)'
     originalLicense: '[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)'
     scopetag: 'tev2'
-    termid: 'pattern:pattern-terminology'
+    termid: 'pattern:terminology'
     locator: 'patterns/pattern-terminology.md'
     navurl: 'https://tno-terminology-design.github.io/tev2-specifications/docs/terms/patterns/pattern-terminology'
     headingids:

@@ -9,7 +9,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'guardianship'
-    formPhrases: 'guardianship'
+    formPhrases:
+      - 'guardianship'
     status: 'stable'
     grouptags: null
     glossaryTerm: 'Guardianship Pattetrn'
@@ -33,7 +34,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'jurisdiction'
-    formPhrases: 'jurisdiction'
+    formPhrases:
+      - 'jurisdiction'
     status: 'stable'
     grouptags: null
     glossaryTerm: 'Jurisdiction Pattern'
@@ -54,7 +56,8 @@ entries:
     displayed_sidebar: 'essifLabSideBar'
     termType: 'pattern'
     term: 'party-actor-action'
-    formPhrases: 'party-actor-action'
+    formPhrases:
+      - 'party-actor-action'
     status: 'stable'
     grouptags: null
     glossaryTerm: 'Party, Actor and Actions Pattern'
