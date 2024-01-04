@@ -19,7 +19,7 @@ date: 20210601
 
 The **Corpus** or **Corpus of Terminology** is the documentation that describes the [knowledge](@) around a set of [terms](@) and [concepts](@). It is typically [governed](governance@) by conventions that are specified by a group of [terms communities](terms-community@), such as [TOIP's Concepts and Terminology Working Group](https://wiki.trustoverip.org/pages/viewpage.action?pageId=65700).
 
-The [Terminology Pattern](pattern-terminology@) relates this concept with other terminological [concepts](@).
+The [Terminology Pattern](pattern:terminology@) relates this concept with other terminological [concepts](@).
 
 ## Purpose
 

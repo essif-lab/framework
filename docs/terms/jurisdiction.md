@@ -9,7 +9,7 @@ status: draft
 grouptags:
 hoverText: "Jurisdiction: the composition of a Legal System (legislation, enforcement thereof, and conflict resolution), a Party that governs that Legal System, a scope within which that Legal System is operational, and one or more Objectives for the purpose of which the Legal System is operated."
 glossaryTerm: "Jurisdiction"
-glossaryText: "the composition of a [legal system](@) (legislation, enforcement thereof, and conflict resolution), a [party](@) that governs that [legal system](@), a scope within which that [legal system](@) is operational, and one or more [objective](@) for the purpose of which the [legal system](@) is operated. See also the [Jurisdictions pattern](pattern-jurisdiction@)."
+glossaryText: "the composition of a [legal system](@) (legislation, enforcement thereof, and conflict resolution), a [party](@) that governs that [legal system](@), a scope within which that [legal system](@) is operational, and one or more [objective](@) for the purpose of which the [legal system](@) is operated. See also the [Jurisdictions pattern](pattern:jurisdiction@)."
 date: 20210601
 ---
 
@@ -19,7 +19,7 @@ date: 20210601
 
 A **Jurisdiction** is the composition of a (non-empty) set of [objectives](@), one [scope](@), one [legal system](@) and one [party](@) (called the [Governor](governance@) of the Jurisdiction) that operates the legal system within that scope. While most people are familiar with what we call [legal jurisdictions](legal-jurisdiction@), please observe that [organizations](@) habitually will have rules (business policies) in place, enforce them (to some extent), and have ways of resolving conflicts, and therefore qualify as a jurisdiction. Specifically, multi-national organizations are known to govern multiple jurisdictions, aligning the scopes with the scopes of other (often legal) jurisdictions for the purpose of preventing situations in which conflicting rules apply, which would lead to many effort-intensive conflict-resolution cases.
 
-The [Jurisdictions pattern](pattern-jurisdiction@) provides an overview of how this concept fits in with related concepts.
+The [Jurisdictions pattern](pattern:jurisdiction@) provides an overview of how this concept fits in with related concepts.
 
 Within the context of [Self-Sovereign Identity (SSI)](self-sovereign-identity@), jurisdictions are relevant because it is typical for (business) [transactions](@) to be governed by (at least) one jurisdiction, whose [legal system](@) may contain rules of various kinds, e.g. in the areas of
 - escalation - i.e. what can be done if a [transaction](@) goes sour;

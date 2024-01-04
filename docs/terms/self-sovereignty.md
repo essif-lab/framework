@@ -29,7 +29,7 @@ The eSSIF-Lab vision extends these rights and freedoms - within the limits of th
 
 The characteristic of [self-sovereignty](@), that we attribute to every single [party](@), has profound consequences. Here are a few:
 
-Every [party](@) decides autonomously on the *meaning/definition of [terms](terminology@) that it uses in an attempt to convey such meaning to other parties. The fact that such other parties also do this is a major cause of misunderstandings, as the same words may have different meanings for different parties. The eSSIF-Lab [Terminology pattern](pattern-terminology@) provides a mental model and a mechanism that is aimed to detect such misunderstandings and resolve them.
+Every [party](@) decides autonomously on the *meaning/definition of [terms](terminology@) that it uses in an attempt to convey such meaning to other parties. The fact that such other parties also do this is a major cause of misunderstandings, as the same words may have different meanings for different parties. The eSSIF-Lab [Terminology pattern](pattern:terminology@) provides a mental model and a mechanism that is aimed to detect such misunderstandings and resolve them.
 
 Since every [party](@) is autonomous in its decision making, any argument that it uses for reaching a conclusion (decision) is subjective (=specific for that party). This implies that the kinds of data which a party needs in order to decide whether or not to commit to a [transaction](@) are subjective, as well as the data it needs in order to decide whether or not such data is [valid](validate@) to be used in such an argument.
 

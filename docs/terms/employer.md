@@ -28,7 +28,7 @@ In practice, the term 'employer' often implies a [party](@) that has [onboarded]
 - a [party](@) that [controls](scope-of-control@) a technical component (an [actor](@), that is then also [onboarded](onboarding@)), also qualifies as an [employer](@) of that component.
 - a [party](@) that has [mandated](mandate@) an [actor](@) (human or non-human) for executing certain [actions](@) on its behalf, qualifies as an [employer](@) of that [actor](@).
 
-The [Parties, Actors and Actions pattern](pattern-party-actor-action@) provides an overview of how this concept fits in with related concepts.
+The [Parties, Actors and Actions pattern](party-actor-action@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 

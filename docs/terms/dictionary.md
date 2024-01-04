@@ -19,7 +19,7 @@ date: 20210601
 
 A Dictionary is an alphabetically sorted list of terms and explanations. Each term may have multiple such explanations, which come from different [scopes/contexts](scope@).
 
-The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern:terminology@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 

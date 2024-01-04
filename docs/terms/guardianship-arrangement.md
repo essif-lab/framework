@@ -21,8 +21,8 @@ A **Guardianship Arrangement** is the specification of a set of rights and dutie
 
 The rules that govern the creation, updating and deletion of guardianship arrangements belong to the [legal system](@) of a specific [jurisdiction](@). This jurisdiction also defines the [guardianship type](@) that an arrangement is an instance (example) of, i.e. the roles of the dependent and guardians. In the end, the meaning (effectiveness, impact) that a guardianship arrangement has depends on jurisdiction, i.e. on the way the specified rights and duties can be enforced, and disputes settled. Note that this implies that all entities mentioned in a guardianship arrangement must be [legal entities](legal-entity@) of that jurisdiction.
 
-The [Guardianship pattern](pattern-guardianship@) provides an overview of how this concept fits in with related concepts.
-The [Jurisdiction pattern](pattern-jurisdiction@) provides backgrounds on jurisdictions and how they function.
+The [Guardianship pattern](pattern:guardianship@) provides an overview of how this concept fits in with related concepts.
+The [Jurisdiction pattern](pattern:jurisdiction@) provides backgrounds on jurisdictions and how they function.
 
 ### Purpose
 

@@ -19,7 +19,7 @@ date: 20210601
 
 An **Actor** is someone or something that can act, i.e. actually do things, execute [actions](@), such as people or machines. Actors will generally execute [actions](@) in different ways, depending on the context, or the [party](@) on whose behalf they act.
 
-An [organization](@) is not considered to be an [actor](@). [Organizations](@) cannot drink beer, (digitally or manually) sign and/or encrypt documents, hire [people](human-being@), buy computers, etc. They need [actors](@) ([people](human-being@), machines, etc) to act on their behalf. This is elaborated further on in the [Parties, Actors and Actions pattern](pattern-party-actor-action@).
+An [organization](@) is not considered to be an [actor](@). [Organizations](@) cannot drink beer, (digitally or manually) sign and/or encrypt documents, hire [people](human-being@), buy computers, etc. They need [actors](@) ([people](human-being@), machines, etc) to act on their behalf. This is elaborated further on in the [Parties, Actors and Actions pattern](party-actor-action@).
 
 ### Purpose
 

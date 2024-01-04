@@ -24,4 +24,4 @@ This is work that is still an idea. If you want to help, do so by telling us [in
 The idea here is to observe that:
 - [mandating](mandate@) and [delegating](delegate@) are the same except for the transfer of accountability for the transferred actions;
 - the differences with guardianship seems to be not all that big, so we may see a merge with that model;
-- ownership (as defined in the [party-actor-action pattern](pattern-party-actor-action@)) can possibly be made part of this, too.
+- ownership (as defined in the [party-actor-action pattern](party-actor-action@)) can possibly be made part of this, too.

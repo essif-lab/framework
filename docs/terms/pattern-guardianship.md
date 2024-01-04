@@ -39,11 +39,11 @@ So, it seems that most people will acknowledge that 'guardianship' is an arrange
 
 Note that '[dependent](@)' and '[guardian](@)' are roles in a specific [guardianship arrangement](@). They do not have an independent existence (as e.g. a human being does). A 'dependent' or 'guardian' only exists for as long as the arrangement exists and the arrangement has assigned such roles.
 
-The actual activities that a [guardian](@) performs as (s)he cares for, guards, or … its [dependent](@) (in a specific [guardianship arrangement](@)) differ from case to case, and from situation to situation. Still, in general we can say that a guardianship arrangement comes with [rights and duties](pattern-duties-and-rights@) that enable (or force) a guardian to execute (or refrain from executing) specific actions - for the purpose of caring/guarding/… its dependent.
+The actual activities that a [guardian](@) performs as (s)he cares for, guards, or … its [dependent](@) (in a specific [guardianship arrangement](@)) differ from case to case, and from situation to situation. Still, in general we can say that a guardianship arrangement comes with [rights and duties](pattern:duties-and-rights@) that enable (or force) a guardian to execute (or refrain from executing) specific actions - for the purpose of caring/guarding/… its dependent.
 
 A guardianship arrangement may also impose rights and duties to the dependent. For example, a guardianship arrangement that exists for the purpose of taking care of the financial situation of the dependent may impose a duty on the dependent to not engage in acts that may have significant financial consequences, such as committing itself to a loan.
 
-A guardianship arrangement is meaningful to the extent in which such rights and duties are actually upheld and/or enforced. Defining and enforcing rights and duties, as well as resolving conflicts that may arise, are the very essence of a [jurisdiction](@) - for details see the [Jurisdictions pattern](pattern-jurisdiction@)
+A guardianship arrangement is meaningful to the extent in which such rights and duties are actually upheld and/or enforced. Defining and enforcing rights and duties, as well as resolving conflicts that may arise, are the very essence of a [jurisdiction](@) - for details see the [Jurisdictions pattern](pattern:jurisdiction@)
 
 The wealth in varieties in guardianship arrangements can now easily be explained by observing that the various [Jurisdictions](@) all exercise their self-sovereignty as they operate their [legal systems](legal-system@).
 

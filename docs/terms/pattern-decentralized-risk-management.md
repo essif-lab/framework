@@ -22,7 +22,7 @@ This is work in progress.
 :::
 
 :::info Editor's note
-This work needs to be compared with and integrated with (or separated from) the contents of the [Decentralized GRC pattern](pattern-decentralized-grc@)
+This work needs to be compared with and integrated with (or separated from) the contents of the [Decentralized GRC pattern](pattern:decentralized-grc@)
 :::
 
 ## Introduction

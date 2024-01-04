@@ -19,7 +19,7 @@ date: 20210901
 
 A **policy** is a (set of) rules, working instructions and/or other guidance for the execution of one or more kinds of [actions](@) that [agents](@) of the [party](@) that [governs](governance@) the policy have access to and can interpret such that this results in these [actions](@) being executed as intended by that [party](@).
 
-A bit more elaborate: as per the [party-actor-action pattern](pattern-party-actor-action@), an [agent](@) executes [actions](@) on behalf of its [principal](@). Policies are sets of rules that express, amongst other things, how this [party](@) wants [actions](@) of specific kinds to be executed. That is why [agents](@) need to be able to not only access such guidance, but also be able to interpret its contents such that it leads to the execution of such actions as intended by said [party](@). This requires that the policy be readable by the agent, and that the agent is capable of interpreting it as intended by its principal.
+A bit more elaborate: as per the [party-actor-action pattern](party-actor-action@), an [agent](@) executes [actions](@) on behalf of its [principal](@). Policies are sets of rules that express, amongst other things, how this [party](@) wants [actions](@) of specific kinds to be executed. That is why [agents](@) need to be able to not only access such guidance, but also be able to interpret its contents such that it leads to the execution of such actions as intended by said [party](@). This requires that the policy be readable by the agent, and that the agent is capable of interpreting it as intended by its principal.
 
 There are situations in which the [party](@) that [governs](governance@) a policy is incapable of expressing it in such a way that its [agents](@) can interpret it. This is, for example, the case when the [party](@) is a [person](human-being@) that wants to use an IT component for some complex computations. Then, this [party](@) can create and maintain a so-called [business policy](policy@), i.e. a policy that states its guidance in 'business speak', and assign some [employee(s)](@) the task of translating (or mapping) it onto some artifact that the [agents](@) can interpret (which we call an [operational policy](policy@)). That could, e.g., be a configuration file, or the setting of preferences.
 
@@ -31,7 +31,7 @@ It should be part of the [principal's](@) [governance](@) processes
 - to publish such artifacts such that at least every of its [agents](@) that may need to access them, can find and access them as needed.
 - to inform its [agents](@) whenever updates have been made that they need to be aware of (specifically if agents are allowed to keep local copies of such artifacts).
 
-The [Parties, Actors and Actions pattern](pattern-party-actor-action@) provides an overview of how this concept fits in with related concepts.
+The [Parties, Actors and Actions pattern](party-actor-action@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 

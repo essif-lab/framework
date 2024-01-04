@@ -21,7 +21,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 A **Control Process** is a process, [owned](@) and run by a [party](@), to ensure that a specific subset of its control [objectives](@) are realized. Control objectives are [objectives](@) that a party sets to be in control of something. A party that wants to control the quality of its processes, or the information security, may create a set of objectives the realization of which signify its being 'in control' on such topics.
 
-As with all [objectives](@), control objectives are associated with results, which are to be produced, and used. It is typical for control objectives that their [owner](@) actually uses (consumes) the results, implying that the [owner](@) will do their [governance](@). The [owner](@) may do their [management](@) as well, or outsource it. See the [governance and management pattern](pattern-governance-and-management@) for an elaboration on this.
+As with all [objectives](@), control objectives are associated with results, which are to be produced, and used. It is typical for control objectives that their [owner](@) actually uses (consumes) the results, implying that the [owner](@) will do their [governance](@). The [owner](@) may do their [management](@) as well, or outsource it. See the [governance and management pattern](pattern:governance-and-management@) for an elaboration on this.
 
 ### Control Process
 

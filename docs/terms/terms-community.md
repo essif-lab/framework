@@ -25,7 +25,7 @@ Note that a terms-community (whose [objectives](@) are limited to maintaining a 
 
 A terms-community would typically create and (automatically) publish a [glossary](@) that contains all terms that it curates, i.e. both defined by themselves as by others. Such a document then serves as the authoritative register for terminology within the [scope](@) of the (larger) [community](@) as it seeks to realize its community-[objectives](@). Also, this [glossary](@) is useful for non-members, as they will be enabled to understand what is being communicated within, or from that [community](@).
 
-Further details can be found in the [terminology pattern](pattern-terminology@).
+Further details can be found in the [terminology pattern](pattern:terminology@).
 
 ### Purpose
 

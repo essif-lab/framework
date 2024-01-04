@@ -28,7 +28,7 @@ In practice, the term 'employee' often implies a [person](human-being@) that is 
 - a technical (digital) component ([actor](@)) that is [controlled](scope-of-control@) by a [party](@) (implying that it is also [onboarded](onboarding@)), also qualifies as an [employee](@) of that [party](@).
 - any [actor](@) (human or non-human) that is [mandated](mandate@) for executing certain [actions](@) on behalf of some [party](@), qualifies as an [employee](@) of that [party](@).
 
-The [Parties, Actors and Actions pattern](pattern-party-actor-action@) provides an overview of how this concept fits in with related concepts.
+The [Parties, Actors and Actions pattern](party-actor-action@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 

@@ -65,4 +65,4 @@ We use a **coloring convention** to distinguish between what is 'officially' par
 We use a **line typing convention** within a diagram, as follows:
 - **solid lines** are used for lines and other symbols that are part of the [model](pattern@) that is represented by the diagram;
 - **dashed lines** are used for lines and other symbols that are (authoritatively) defined elsewhere.
-For example, the concept [party](@) is authoritatively defined in the [party, actor and action pattern](pattern-party-actor-action@), so the diagram there shows a solid (blue) line for that concept. It also appears in other diagrams, e.g. in the [jurisdiction pattern](pattern-jurisdiction@), where the concept is represented with a (blue) dashed line.
+For example, the concept [party](@) is authoritatively defined in the [party, actor and action pattern](party-actor-action@), so the diagram there shows a solid (blue) line for that concept. It also appears in other diagrams, e.g. in the [jurisdiction pattern](pattern:jurisdiction@), where the concept is represented with a (blue) dashed line.

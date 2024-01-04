@@ -27,7 +27,7 @@ The fact that an [action](@) can only be completely executed or not at all, make
 - [policies](@), that provide [actors](@) that execute the [action](@) the necessary guidance regarding how to do the actual work,
 - etc.
 
- The [Parties, Actors and Actions pattern](pattern-party-actor-action@) provides an overview of how this concept fits in with related concepts.
+ The [Parties, Actors and Actions pattern](party-actor-action@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 
@@ -49,10 +49,10 @@ An **Action** is something
 
 - Specific kinds of [actions](@) may be grouped together (at define/design time) in various ways to form e.g., workflows, a case-types, procedures, processes, etc.
 
-- When an [actor](@) is executing an [action](@) on behalf of a [party](@), we say that the [actor](@) acts as the [agent](@) of that [party](@), and the [party](@) fulfills the role of [principal](@) for that [actor](@). See the [parties, actors and action pattern](pattern-party-actor-action@) for details.
+- When an [actor](@) is executing an [action](@) on behalf of a [party](@), we say that the [actor](@) acts as the [agent](@) of that [party](@), and the [party](@) fulfills the role of [principal](@) for that [actor](@). See the [parties, actors and action pattern](party-actor-action@) for details.
 
 - A [party](@) will typically only assign an [actor](@) the task to execute an [action](@) after having [onboarded](onboarding@) that [actor](@) and having ensured the [actor](@) has been provided the means to successfully do so.
 
 - While the way an [action](@) is executed is primarily guided by a [policy](@) of its [owner](@) (i.e. the [party](@) on whose behalf the [action](@) is executed), the [actor](@) that executes it may have additional [knowledge](@) that it can tap into, and use it where the [policy](@) of the [party](@) does not provide (sufficient) guidance. For example, a [policy](@) would typically prescribe the structure of a letter of confirmation, but leave it to (additional [knowledge](@) that) the [actor](@) (can tap into) to fill in the details.
 
-- The result of an action is typically something that contributes to the realization of an [objective](@) of the [party](@) on whose behalf it was executed. As such, [actions](@) can be considered part of processes that [manage](management@) that [objective](@). The [governance and management pattern](pattern-governance-and-management@) has more on this.
+- The result of an action is typically something that contributes to the realization of an [objective](@) of the [party](@) on whose behalf it was executed. As such, [actions](@) can be considered part of processes that [manage](management@) that [objective](@). The [governance and management pattern](pattern:governance-and-management@) has more on this.

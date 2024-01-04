@@ -22,7 +22,7 @@ This is work that is in its early drafting stage. If you have suggestions, pleas
 :::
 
 :::info Editor's note
-This work needs to be compared with and integrated with (or separated from) the contents of the [Decentralized Risk Management pattern](pattern-decentralized-risk-management@)
+This work needs to be compared with and integrated with (or separated from) the contents of the [Decentralized Risk Management pattern](pattern:decentralized-risk-management@)
 :::
 
 # Decentralized, Governance, Risk Management and Compliance

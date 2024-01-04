@@ -23,7 +23,7 @@ A Term is a word or phrase (i.e.: text) that is used in at least one [scope](@)/
 
 The precise meaning of a term thus depends on the [scope](@)/context in which it is used. We use the phrase [scoped term](@) to refer to a term in a particular [scope](@)/context, and hence is part of the [terminology](@) of that [scope](@), and means whatever [concept](@) it represents in that [scope](@)
 
-The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern:terminology@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 

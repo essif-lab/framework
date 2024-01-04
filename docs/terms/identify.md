@@ -37,4 +37,4 @@ Non-human [actors](@) can also perform identification. However, since they canno
 
 More related texts can be found in the
 - description of the terms [identifier](@), and [identify](@)
-- mental models on [identifiers](pattern-identifier@) and [identification](pattern-identification@)
+- mental models on [identifiers](pattern:identifier@) and [identification](pattern:identification@)

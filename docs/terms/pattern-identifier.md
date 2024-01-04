@@ -25,7 +25,7 @@ This is work in progress, and needs to be reviewed.  If you want to comment, ple
 
 The **Identifier pattern** captures the concepts and relations that help to explain how [identifiers](@) are defined and used for [identification](identify@) purposes.
 
-Related topics can be found in the [identity pattern](pattern-identity@) and the [identification pattern](pattern-identification@).
+Related topics can be found in the [identity pattern](pattern:identity@) and the [identification pattern](pattern:identification@).
 
 ### Introduction
 

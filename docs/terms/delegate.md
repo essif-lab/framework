@@ -26,7 +26,7 @@ The transferral of [ownership](@) of an [obligation](@) differs from having a [p
 
 [Delegates](@) are subject to the [legal system](@) of a [jurisdiction](@), which has the rules and constraints that specify what can(not) be done with them. Thus, [delegated](delegate@) [obligations](@) are duties that are enforced using the means that its [jurisdiction](@) applies for that. The same goes in case of conflicts that concern [delegates](@). Also, [jurisdictions](@) may themselves specify [delegates](@), or templates for [delegates](@) that e.g. only require the [delegator](delegate@) and [delegatee(s)](delegate@) to be filled in.
 
-While a [party](@) is usually free to [delegate](@) its [obligations](@), it may result in 'mismatches' of corresponding [expectations](@) of other [parties](@) - see the section **[Matching](pattern-governance-and-management#matching)** of the [Governance and Management pattern](pattern-governance-and-management@).
+While a [party](@) is usually free to [delegate](@) its [obligations](@), it may result in 'mismatches' of corresponding [expectations](@) of other [parties](@) - see the section **[Matching](pattern:governance-and-management#matching)** of the [Governance and Management pattern](pattern:governance-and-management@).
 
 
 ### Purpose

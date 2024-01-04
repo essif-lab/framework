@@ -25,7 +25,7 @@ This is work in progress, and needs to be reviewed.  If you want to comment, ple
 
 The **Identification pattern** captures the concepts and relations that help to explain the mechanisms that a [party](@) uses to [identify](@) [entities](@), and mechanisms for communicating with another party such that both parties can identify an entity and know whether or not they identify the same entity.
 
-Related topics can be found in the [identity pattern](pattern-identity@) and the [identifier pattern](pattern-identifier@).
+Related topics can be found in the [identity pattern](pattern:identity@) and the [identifier pattern](pattern:identifier@).
 
 ### Introduction
 
@@ -59,7 +59,7 @@ Similar to before, this identification process is (also) said to fail if an [ent
 
 ### Identification in IT and/or administrative contexts
 
-In the above examples, we tacitly assumed that the [party](@) is also an [actor](@) (see that [party-actor-action pattern](pattern-party-actor-action@) for details), which implies that the [actor](@) has access to all [knowledge](@) of the [party](@), which includes all [partial identities](partial-identity@).
+In the above examples, we tacitly assumed that the [party](@) is also an [actor](@) (see that [party-actor-action pattern](party-actor-action@) for details), which implies that the [actor](@) has access to all [knowledge](@) of the [party](@), which includes all [partial identities](partial-identity@).
 
 In many contexts, this assumption does not hold. Examples include IT-contexts, or [organizational](organization@) administrative contexts, the difference being that the [agent](@) that is doing the identification is not the same [entity](@) as the [party](@) that owns the [partial identities](partial-identity@) that are being used in the process. In IT-contexts, an [agent](@) could be a web server, or a mobile app. In administrative contexts of an [organization](@) (which could also be IT-contexts with web server and other [agents](@)), you could also encounter human [agents](@) that are tasked with identification.
 
@@ -78,7 +78,7 @@ Here is a visual representation of this pattern, using the following **[notation
   src={useBaseUrl('images/patterns/pattern-identification.png')}
 />
 
-The figure shows that a [party](@) can know (about the existence of) any number of [entities](@), one of which is that [party](@) itself. As explained in the [party-actor-action pattern](pattern-party-actor-action@), this [party](@) has ([owns](@), [governs](governance@)) its own [knowledge](@). Also, as explained in the [identity pattern](pattern-identity@), [partial identities](partial-identity@) are a part of that [knowledge](@).
+The figure shows that a [party](@) can know (about the existence of) any number of [entities](@), one of which is that [party](@) itself. As explained in the [party-actor-action pattern](party-actor-action@), this [party](@) has ([owns](@), [governs](governance@)) its own [knowledge](@). Also, as explained in the [identity pattern](pattern:identity@), [partial identities](partial-identity@) are a part of that [knowledge](@).
 
 As mentioned above, [identification](identify@) is an [act](action@), by (an [agent](@) of) a [party](@) that results in the establishment of a 1-1 relation between an [entity](@) (that exists in the real world) and a [partial identity](@) (that exists in the [knowledge](@) of that [party](@)). This [act](action@) takes place in a specific context/situation, in which a set of [entities](@) is present.
 

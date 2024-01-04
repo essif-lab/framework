@@ -41,7 +41,7 @@ Supporting such transactions requires each participant to have one or more [elec
 This functional architecture is a work-in-progress that is currently being conducted by [parties](@) that are funded by the [eSSIF-Lab project](https://essif-lab.eu/). Working with [parties](@) that have different backgrounds presents the challenge of resolving the issues that arise from such differences e.g. as technical interoperability or semantic interoperability. The eSSIF-Lab project adds '[documentation interoperability](documentation-interop@)' to this.
 
 In order to achieve '[documentation interoperability](documentation-interop@)', we think that contributing [parties](@)
-- should develop (learn, actively use and continually improve upon) a small set of [terms](@) that can be used as a basis for exchanging ideas ([concepts](@)), discussions, etc. We suggest to start with the terms used (and defined) by the ["Parties, Actors and Actions" pattern](pattern-party-actor-action@), and to extend on that as we go.
+- should develop (learn, actively use and continually improve upon) a small set of [terms](@) that can be used as a basis for exchanging ideas ([concepts](@)), discussions, etc. We suggest to start with the terms used (and defined) by the ["Parties, Actors and Actions" pattern](party-actor-action@), and to extend on that as we go.
 - should develop their documentation using these terms, and adding additional terminology if they think this helps others to understand their documentation. The eSSIF-Lab project is developing tooling (a '[Terminology Engine](terminology-contributions)') that allows for this.
 - ideally help to improve this tooling.
 

@@ -47,20 +47,20 @@ We postulate that every party has [objectives](@) that it pursues. A large part 
 
 While [parties](@) are their own (self-)sovereigns and in principle can do as they please, they live in a universe with many other parties, that are also 'self-sovereigns'. This means that they need to come to terms with one another as they have interactions with one another that may influence the [knowledge](@) of the participating parties, and have other consequences as well. Such [transactions](@) between parties is not only one of the focal points of this framework: it is the reason we created it.
 
-You can learn more about parties from the [parties, actors and action pattern](pattern-party-actor-action@).
+You can learn more about parties from the [parties, actors and action pattern](party-actor-action@).
 
 
 ### Actors: Entities that can act (do things)
 
 Another fundamental category is called [actor](@), which is defined as an [entity](@) that can act (do things). It is important to note that while some entity classes (e.g. human beings) qualify as both [actors](@) and [parties](@), other entity classes do not (e.g. [organizations](@), or robots). As an actor does something (executing an [action](@)), it uses the [knowledge](@) of one specific [party](@) as the main/dominant guidance for executing that action, yet it may also use [knowledge](@) of other [parties](@) when such is necessary to properly execute the action. We say that the [actor](@) is executing that [action](@) on behalf of that [party](@). [Actors](@) may execute different [actions](@) on behalf of different [parties](@). It is a particular contribution of this [framework](@) that using it allows one to determine which [actor](@) executes what [action](@) on behalf of what [party](@). This is particularly relevant in the context of two interacting/transacting parties.
 
-You can learn more about actors from the [parties, actors and action pattern](pattern-party-actor-action@).
+You can learn more about actors from the [parties, actors and action pattern](party-actor-action@).
 
 ### Jurisdiction: Authority with mechanisms for defining rules, enforcing them, and resolving disputes
 
 A third fundamental category is called [jurisdiction](@), which is a foundational concept for organizing collaborations between [parties](@), e.g. in [communities](@) or [ecosystems](@). Basically, a jurisdiction is an [authority](@) that has mechanisms for defining and maintaining rules, enforcement thereof, and a mechanism for resolving conflicts within its [scope of control](@).
 
-You can learn more about jurisdictions from the [jurisdictions pattern](pattern-jurisdiction@).
+You can learn more about jurisdictions from the [jurisdictions pattern](pattern:jurisdiction@).
 
 ### Transactions: the exchange of goods, services, funds, or data between parties
 

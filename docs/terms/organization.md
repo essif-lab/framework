@@ -23,7 +23,7 @@ Enterprises and governments are the canonical examples. However, parts of enterp
 
 ### Purpose
 
-The purpose of documenting this term is to provide additional clarity w.r.t. definitions given in english dictionaries. Also, we need this notion as it is used in the eSSIF-Lab [Parties, Actors and Actions pattern](pattern-party-actor-action@).
+The purpose of documenting this term is to provide additional clarity w.r.t. definitions given in english dictionaries. Also, we need this notion as it is used in the eSSIF-Lab [Parties, Actors and Actions pattern](party-actor-action@).
 
 ### Criteria
 

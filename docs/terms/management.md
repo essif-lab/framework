@@ -24,7 +24,7 @@ In order to keep tabs on the efficiency of the [management](@) process, performa
 
 The [management](@) of a set of [objectives](@) can be implemented as a [control process](@). The control objectives that are needed by this control process would typically come from a [policy](@) of the owner of the [objectives](@) that are managed.
 
-We make a clear distinction between [governance](@) and [management](@), which is explained in the [governance and management pattern](pattern-governance-and-management@).
+We make a clear distinction between [governance](@) and [management](@), which is explained in the [governance and management pattern](pattern:governance-and-management@).
 
 ### Purpose
 

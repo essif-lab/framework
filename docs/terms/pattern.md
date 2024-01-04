@@ -21,7 +21,7 @@ A **pattern** (also called **[mental model](https://en.wikipedia.org/wiki/Mental
 
 Patterns use (tangible) [terms](@) to refer to these (intangible) concepts and relations, so in order to be consistent, a pattern must reside in the scope that defines these concepts and relations. A pattern may also 'connect' concepts of different scopes (preferably no more than two), which you might call an 'interconnection pattern' between these scopes.
 
-The [terminology pattern](pattern-terminology@) provides an overview of how this concept fits in with related concepts.
+The [terminology pattern](pattern:terminology@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 

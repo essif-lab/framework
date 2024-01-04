@@ -20,7 +20,7 @@ date: 20210601
 
 A **Legal Jurisdiction** is a [jurisdiction](@) tha tis governed/operated by a governmental body.
 
-The [Jurisdictions pattern](pattern-jurisdiction@) provides an overview of how this concept fits in with related concepts.
+The [Jurisdictions pattern](pattern:jurisdiction@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 

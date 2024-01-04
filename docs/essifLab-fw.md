@@ -38,7 +38,7 @@ A party usually cannot realize its objectives on its own. To do this, the party 
 
 ### 2.3 Business Transactions
 
-In the eSSIF-Lab world view, [actors](@) interact with each other (as [agents](@) for their [principals](@)) to negotiate and execute [transactions](@). An agent uses the [knowledge](@) of its principal as its main guidance for such negotiations and execution. An agent may also use knowledge of other [parties](@) to fill in any gaps, or to provide additional details, as necessary. The [party-actor-action pattern](pattern-party-actor-action@) explains the concepts behind this.
+In the eSSIF-Lab world view, [actors](@) interact with each other (as [agents](@) for their [principals](@)) to negotiate and execute [transactions](@). An agent uses the [knowledge](@) of its principal as its main guidance for such negotiations and execution. An agent may also use knowledge of other [parties](@) to fill in any gaps, or to provide additional details, as necessary. The [party-actor-action pattern](party-actor-action@) explains the concepts behind this.
 
 The participants of a transaction are [parties](@), that employ [actors](@) that do the associated work on their behalf. A party may employ different actors for executing different actions within a single transaction, each of which will use the knowledge of this party (its principal) to guide the execution of these actions, so that the entire transaction is performed according to how the party wants it to be done.
 

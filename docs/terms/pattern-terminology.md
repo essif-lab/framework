@@ -90,7 +90,7 @@ A [terms-community](@) is a [community](@) that
     - can be associated with [definitions](@) as a means of grouping the [concepts](@) such [definitions](@) define - the so-called [group tags](tag@).
     - [identify](@) a specific version of the [terminology](@) - the so-called [version tags](tag@).
 
-We refer the reader to the [governance and management pattern](pattern-governance-and-management@) to learn more about transferring such results between a [terms-community](@) and the [communities](@) that it serves.
+We refer the reader to the [governance and management pattern](pattern:governance-and-management@) to learn more about transferring such results between a [terms-community](@) and the [communities](@) that it serves.
 
 Note that for a [terms-community](@) to serve itself, it may want to commit to a [terminology](@) such as the one we are developing here.
 

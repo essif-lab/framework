@@ -25,8 +25,8 @@ Specifically, every party autonomously manages its
 - [data](@), i.e. the tangible representation of a subset of its intangible [knowledge](@) that it uses to communicate with others, to remember (store), or process.
 
 It is important to note that:
-- parties do not have the ability to [act](actor@). This, however, does not preclude that specializations of parties exist that do have this ability) (e.g. [human beings](human-being@)). The relation between parties, actors and acting is explained in the [Parties, Actors and Actions pattern](pattern-party-actor-action@).
-- parties can own, or be, [jurisdictions](@); this is further explained in the [Jurisdictions pattern](pattern-jurisdiction@).
+- parties do not have the ability to [act](actor@). This, however, does not preclude that specializations of parties exist that do have this ability) (e.g. [human beings](human-being@)). The relation between parties, actors and acting is explained in the [Parties, Actors and Actions pattern](party-actor-action@).
+- parties can own, or be, [jurisdictions](@); this is further explained in the [Jurisdictions pattern](pattern:jurisdiction@).
 
 ### Purpose
 

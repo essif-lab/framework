@@ -21,7 +21,7 @@ date: 20220922
 
 [^1]: One might ask whether or not [parties](@) could also be onboarded. We choose to not think about this, as we already have the concept of [outsourcing](@). So, hiring people from an employment agency would be a form of [outsourcing](@), even though these people will be provided with the means for doing the tasks they are assigned. A [party](@) that hires its own people however is considered a form of [onboarding](@).
 
-After an [actor](@) has been [onboarded](onboarding@) successfully by a [party](@), we say that they have set up an [employee](@)-[employer](@) relationship, i.e. we can say that the [actor](@) now `works for` that [party](@), as modeled in the [party actor action pattern](pattern-party-actor-action@). This is prerequisite for engaging in an [agent](@)-[principal](@) relationship, that is elaborated on in the [party actor action pattern](pattern-party-actor-action@) as well.
+After an [actor](@) has been [onboarded](onboarding@) successfully by a [party](@), we say that they have set up an [employee](@)-[employer](@) relationship, i.e. we can say that the [actor](@) now `works for` that [party](@), as modeled in the [party actor action pattern](party-actor-action@). This is prerequisite for engaging in an [agent](@)-[principal](@) relationship, that is elaborated on in the [party actor action pattern](party-actor-action@) as well.
 
 So, onboarding consists of three parts that the [party](@) typically executes consecutively:
 
@@ -33,7 +33,7 @@ So, onboarding consists of three parts that the [party](@) typically executes co
 
 We use the relation `works for` to model the fact that a [party](@) has successfully completed these three steps. Equivalently, we can say that an [actor](@) and a [party](@) are in an [employee](@)-[employer](@) relationship. Thus, every [agent](@)-[principal](@) pair in the relation `is acting on behalf of` MUST also appear as an [employee](@)-[employer](@) pair in the relation `works for`.
 
-The [Parties, Actors and Actions pattern](pattern-party-actor-action@) describes how this concept fits in with related concepts.
+The [Parties, Actors and Actions pattern](party-actor-action@) describes how this concept fits in with related concepts.
 
 ### Examples
 
@@ -49,7 +49,7 @@ Your typical SSI wallet app that is deployed on a mobile phone is said to work f
 
 ### Purpose
 
-The purpose of the onboarding process is to ensure/establish that an [actor](@) that does not work for a [party](@) in an [employee](@)-[employer](@) relationship (see the [parties, actors and actions pattern](pattern-party-actor-action@)), but for which there is a request to start working for that [party](@):
+The purpose of the onboarding process is to ensure/establish that an [actor](@) that does not work for a [party](@) in an [employee](@)-[employer](@) relationship (see the [parties, actors and actions pattern](party-actor-action@)), but for which there is a request to start working for that [party](@):
 1. is capable of executing such [actions](@) ONLY according to the applicable [policies](@) of that [party](@);
 2. is provided with the means to execute such actions, and
 3. is stimulated (if not: forced) to not execute any other [actions](@);

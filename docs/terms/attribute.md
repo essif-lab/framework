@@ -23,4 +23,4 @@ Note that
 - the [party](@) that has stated its attribution of the characteristic to the [entity](@) [owns](@) the [attribute](@);
 - the [entity](@) wo which the characteristic is attributed, is the [subject](@) of the [attribute](@).
 
-Related topics can be found in the [identity pattern](pattern-identity@), the [identification pattern](pattern-identification@) and the [identifier pattern](pattern-identifier@).
+Related topics can be found in the [identity pattern](pattern:identity@), the [identification pattern](pattern:identification@) and the [identifier pattern](pattern:identifier@).

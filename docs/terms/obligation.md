@@ -34,4 +34,4 @@ The figure shows four [parties](@) (Red, Yellow, Blue and Green) and their assoc
 
 The arrows indicate that results produced to realize a certain [objective](@) (at the source of the arrow) are (to be) used to produce the results of another [objective](@) (at the end/tip of the arrow).
 
-For more information, e.g. about how different [parties](@) interact in their roles of producer and consumer, we refer you to the [Governance and Management pattern](pattern-governance-and-management@).
+For more information, e.g. about how different [parties](@) interact in their roles of producer and consumer, we refer you to the [Governance and Management pattern](pattern:governance-and-management@).

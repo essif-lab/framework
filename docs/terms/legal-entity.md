@@ -20,7 +20,7 @@ date: 20210601
 <!--REQUIRED--in 1-3 sentences that describe the concept to a layperson with reasonable accuracy.-->
 A **Legal Entity** is an [entity](@) that is known by and recognized to exist in a [jurisdiction](@). For [legal jurisdictions](legal-jurisdiction@), this usually means that the entity is registered. Legal jurisdictions usually have a registration for its citizens, foreigners, enterprises, felonies, etc. Non-legal jurisdictions (e.g. a soccer club) register their members, donators, staff, properties, etc., either on the record, or off the record.
 
-The [Jurisdictions pattern](pattern-jurisdiction@) provides an overview of how this concept fits in with related concepts.
+The [Jurisdictions pattern](pattern:jurisdiction@) provides an overview of how this concept fits in with related concepts.
 
 ### Purpose
 

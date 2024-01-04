@@ -21,7 +21,7 @@ An **employment contract** is an agreement/contract between two [parties](@), on
 
 Rights and duties pertain to e.g., (groups of) [actions](@) that the [actor(s)](@) are expected (not) to execute, which [policies](@) they would be expected (not) to follow, the conditions under which the [actor(s)](@) should work (e.g. times, locations, ...), the provisioning of any means needed to perform, etc. And of course, the contract would also state how the [party](@) that controls these [actors](@) will be remunerated.
 
-The creation of [employment contracts](employment-contract@) are part of what is called [onboarding](@) (of an [actor](@), that is a [subject](@) of the [employment contract](@), by the [party](@) that wants to deploy the [actor](@) as one of its [agents](@). More details are given in the [party actor action pattern](pattern-party-actor-action@).
+The creation of [employment contracts](employment-contract@) are part of what is called [onboarding](@) (of an [actor](@), that is a [subject](@) of the [employment contract](@), by the [party](@) that wants to deploy the [actor](@) as one of its [agents](@). More details are given in the [party actor action pattern](party-actor-action@).
 
 ### Examples
 
@@ -31,11 +31,11 @@ An [individual](human-being@) that is an [employee](@) for an employment agency 
 
 Accountants that are [employed](employee@) by an accountancy firm have a contract with the accountancy firm stating the conditions (rights and duties of either) under which they work for that firm. When the firm receives an order from some [organization](@) for an accountancy job, it can then assign the accountant to that job. However, while this accountant may work at the premises of the [organization](@), the latter will not have [onboarded](onboarding@)
 
-The [Parties, Actors and Actions pattern](pattern-party-actor-action@) describes how this concept fits in with related concepts.
+The [Parties, Actors and Actions pattern](party-actor-action@) describes how this concept fits in with related concepts.
 
 ### Purpose
 
-The purpose of having [employment contracts](employment-contract@) is to ensure that [expectations](@) that [parties](@) have towards one another, and towards [actors](@) that work for them, are matched by corresponding [obligations](@) of the reciprocal [party](@) (for details on matching, see the section **[Matching](pattern-governance-and-management#matching)** of the [Governance and Management pattern](pattern-governance-and-management@)). An [employment contract](@) that is made explicit, and electronically available, may also serve as part of the chain of assets that are needed to determine the right (or duty) of an [actor](@) to execute an [action](@) on behalf of some [party](@).
+The purpose of having [employment contracts](employment-contract@) is to ensure that [expectations](@) that [parties](@) have towards one another, and towards [actors](@) that work for them, are matched by corresponding [obligations](@) of the reciprocal [party](@) (for details on matching, see the section **[Matching](pattern:governance-and-management#matching)** of the [Governance and Management pattern](pattern:governance-and-management@)). An [employment contract](@) that is made explicit, and electronically available, may also serve as part of the chain of assets that are needed to determine the right (or duty) of an [actor](@) to execute an [action](@) on behalf of some [party](@).
 ### Criteria
 
 An [employment contract](@) is an agreement/contract
