@@ -15,3 +15,5 @@ start_server.bat
 *.ffs_gui
 *.lnk
 .vscode/settings.json
+
+package-lock.json
