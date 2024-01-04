@@ -2,6 +2,24 @@ terminology:
   scopetag: "tev2"
   scopedir: "https://github.com/tno-terminology-design/tev2-specifications/tree/main/docs"
   curatedir: "terms"
+  glossarydir: "glossaries"
+  defaultvsn: "documentation"
+  website: "https://tno-terminology-design.github.io/tev2-specifications/docs"
+  navpath: "/terms"
+  bodyFileID: "id"
+  license: "LICENSE.md"
+  statuses:
+    - "proposed"
+    - "approved"
+    - "deprecated"
+  issues: "https://github.com/tno-terminology-design/tev2-specifications/issues"
+  curators:
+    - name: "RieksJ"
+      email:
+        id: "rieks.joosten"
+        at: "tno.nl"
+  defaulttype: "concept"
+  localscopedir: "/home/runner/work/tev2-specifications/tev2-specifications/docs"
   vsntag: "patterns"
 scopes:
   - scopetag: "essif-lab"
@@ -11,7 +29,8 @@ entries:
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "decentralized-grc"
-    formPhrases: "decentralized-grc"
+    formPhrases:
+      - "decentralized-grc"
     status: "draft"
     grouptags: null
     glossaryTerm: "Decentralized GRC Pattern"
@@ -19,7 +38,6 @@ entries:
     hoverText: "The Decentralized GRC (Governance, Risk Management, and Compliance) pattern describes how Parties can set Objectives, and apply decentralized Risk Management to become and remain successful."
     date: 20210601
     scopetag: "tev2"
-    termid: "pattern:decentralized-grc"
     locator: "pattern-decentralized-GRC.md"
     navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-decentralized-GRC"
     headingids:
@@ -28,12 +46,14 @@ entries:
       - "introduction"
       - "mental-model"
       - "summary"
+    termid: "pattern:decentralized-grc"
     vsntag: "default"
   - id: "pattern-decentralized-risk-management"
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "decentralized-risk-management"
-    formPhrases: "decentralized-risk-management"
+    formPhrases:
+      - "decentralized-risk-management"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Decentralized Risk Management Pattern"
@@ -41,7 +61,6 @@ entries:
     hoverText: "The Decentralized (Networked) Risk Management (NRM) pattern describes how Parties can deal with the Risks associated with their Objectives, i.e. ensure that the Objectives they pursue are properly realized and they become/remain successful."
     date: 20220220
     scopetag: "tev2"
-    termid: "pattern:decentralized-risk-management"
     locator: "pattern-decentralized-risk-management.md"
     navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-decentralized-risk-management"
     headingids:
@@ -61,12 +80,14 @@ entries:
       - "mental-model"
       - "summary"
       - "notes"
+    termid: "pattern:decentralized-risk-management"
     vsntag: "default"
   - id: "pattern-decision-making"
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "decision-making"
-    formPhrases: "decision-making"
+    formPhrases:
+      - "decision-making"
     status: "draft"
     grouptags: null
     glossaryTerm: "Decision Making Pattern"
@@ -74,7 +95,6 @@ entries:
     hoverText: "The Decision Making pattern captures the Concepts and relations that explain how Parties would, could, or should reason in order to reach good conclusions and make good decisions. This can be used as a basis for understanding the information needs of Parties as they need to decide e.g. whether or not to commit to a Transaction proposal, or whether or not data is Valid for some purpose. This pattern is based on Toulmin's use of arguments."
     date: 20210804
     scopetag: "tev2"
-    termid: "pattern:decision-making"
     locator: "pattern-decision-making.md"
     navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-decision-making"
     headingids:
@@ -82,12 +102,14 @@ entries:
       - "purpose"
       - "introduction"
       - "formalized-model"
+    termid: "pattern:decision-making"
     vsntag: "default"
   - id: "pattern-duties-and-rights"
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "duties-and-rights"
-    formPhrases: "duties-and-rights"
+    formPhrases:
+      - "duties-and-rights"
     status: "idea"
     grouptags: null
     glossaryTerm: "Duties and Rights Pattern"
@@ -95,7 +117,6 @@ entries:
     hoverText: "The Duties and Rights pattern captures the Concepts and relations that explain what a generic duties and rights consists of (based on Hofeld's theories), and relates it to Jurisdictions, Parties and Legal Entities."
     date: 20210601
     scopetag: "tev2"
-    termid: "pattern:duties-and-rights"
     locator: "pattern-duties-and-rights.md"
     navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-duties-and-rights"
     headingids:
@@ -103,12 +124,14 @@ entries:
       - "purpose"
       - "introduction"
       - "formalized-model"
+    termid: "pattern:duties-and-rights"
     vsntag: "default"
   - id: "pattern-governance-and-management"
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "governance-and-management"
-    formPhrases: "governance-and-management"
+    formPhrases:
+      - "governance-and-management"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Governance and Management Pattern"
@@ -116,7 +139,6 @@ entries:
     hoverText: "The Governance and Management pattern explains how Parties organize that their Objectives are realized, either by doing the associated work themselves, or by arranging for other Parties to do that."
     date: 20210830
     scopetag: "tev2"
-    termid: "pattern:governance-and-management"
     locator: "pattern-governance-and-management.md"
     navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-governance-and-management"
     headingids:
@@ -127,12 +149,14 @@ entries:
       - "matching"
       - "relation-management"
       - "resilience"
+    termid: "pattern:governance-and-management"
     vsntag: "default"
   - id: "pattern-guardianship"
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "guardianship"
-    formPhrases: "guardianship"
+    formPhrases:
+      - "guardianship"
     status: "stable"
     grouptags: null
     glossaryTerm: "Guardianship Pattetrn"
@@ -140,7 +164,6 @@ entries:
     hoverText: "The Guardianships pattern captures the Concepts and relations that explain what a generic Guardianship consists of, and how it relates to Guardians, Dependents, Jurisdictions, etc."
     date: 20210601
     scopetag: "tev2"
-    termid: "pattern:guardianship"
     locator: "pattern-guardianship.md"
     navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-guardianship"
     headingids:
@@ -151,12 +174,14 @@ entries:
       - "guardianship-governance"
       - "define-time:-guardianship-types"
       - "run-time:-guardianship-arrangements"
+    termid: "pattern:guardianship"
     vsntag: "default"
   - id: "pattern-identification"
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "identification"
-    formPhrases: "identification"
+    formPhrases:
+      - "identification"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Identification Pattern"
@@ -164,7 +189,6 @@ entries:
     hoverText: "The eSSIF-Lab Identification Pattern describes mechanisms that a Party uses to Identify Entities, and mechanisms for communicating with another Party such that both Parties can identify an entity and know whether or not they identify the same entity."
     date: 20210803
     scopetag: "tev2"
-    termid: "pattern:identification"
     locator: "pattern-identification.md"
     navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-identification"
     headingids:
@@ -176,12 +200,13 @@ entries:
       - "identification-in-it-and/or-administrative-contexts"
       - "formalized-model---information-realm"
       - "formalized-model---data-realm"
+    termid: "pattern:identification"
     vsntag: "default"
   - id: "pattern-identifier"
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "identifier"
-    formPhrases: null
+    formPhrases: []
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Identifier Pattern"
@@ -189,7 +214,6 @@ entries:
     hoverText: "The eSSIF-Lab Identifier Pattern describes how Identifiers are defined and used for Identification purposes."
     date: 20210830
     scopetag: "tev2"
-    termid: "pattern:identifier"
     locator: "pattern-identifier.md"
     navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-identifier"
     headingids:
@@ -198,12 +222,13 @@ entries:
       - "introduction"
       - "formalized-model"
       - "references"
+    termid: "pattern:identifier"
     vsntag: "default"
   - id: "pattern-identity"
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "identity"
-    formPhrases: null
+    formPhrases: []
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Identity Pattern"
@@ -211,7 +236,6 @@ entries:
     hoverText: "The eSSIF-Lab Identity Pattern shows how digital identities work, how this relates to (attributes in) credentials, and how all this can be made to work in SSI contexts."
     date: 20210803
     scopetag: "tev2"
-    termid: "pattern:identity"
     locator: "pattern-identity.md"
     navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-identity"
     headingids:
@@ -221,12 +245,14 @@ entries:
       - "formalized-model"
       - "identity---information-realm"
       - "identity---data-realm"
+    termid: "pattern:identity"
     vsntag: "default"
   - id: "pattern-jurisdiction"
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "jurisdiction"
-    formPhrases: "jurisdiction"
+    formPhrases:
+      - "jurisdiction"
     status: "stable"
     grouptags: null
     glossaryTerm: "Jurisdiction Pattern"
@@ -234,7 +260,6 @@ entries:
     hoverText: "The Jurisdictions pattern captures the Concepts and relations that explain what a generic Jurisdiction consists of, and relates it to Parties and Legal Entities."
     date: 20210601
     scopetag: "tev2"
-    termid: "pattern:jurisdiction"
     locator: "pattern-jurisdiction.md"
     navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-jurisdiction"
     headingids:
@@ -242,12 +267,14 @@ entries:
       - "purpose"
       - "introduction"
       - "formalized-model"
+    termid: "pattern:jurisdiction"
     vsntag: "default"
   - id: "pattern-mandates-delegation-hiring"
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "mandates-delegation-hiring"
-    formPhrases: "mandates-delegation-hiring"
+    formPhrases:
+      - "mandates-delegation-hiring"
     status: "idea"
     grouptags: null
     glossaryTerm: "Mandates, Delegation and Hiring Pattern"
@@ -255,17 +282,18 @@ entries:
     hoverText: "The Mandates, Delegation and Hiring pattern (which remains to be documented) captures the ideas behind Mandating, Delegating, Hiring and their relations. This is a work-in-progress."
     date: 20210601
     scopetag: "tev2"
-    termid: "pattern:mandates-delegation-hiring"
     locator: "pattern-mandates-delegation-hiring.md"
     navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-mandates-delegation-hiring"
     headingids:
       - "mandates,-delegation-and-hiring"
+    termid: "pattern:mandates-delegation-hiring"
     vsntag: "default"
   - id: "pattern-mental-model"
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "mental-model"
-    formPhrases: "mental-model"
+    formPhrases:
+      - "mental-model"
     status: "draft"
     grouptags: null
     glossaryTerm: "Mental Model Pattern"
@@ -273,19 +301,20 @@ entries:
     hoverText: "The Mental Models pattern captures the foundational Concepts and relations that we need for creating, maintaining and using  (decentralized) Vocabularies (Terminologies) that groups of people can use for the specific purposes they pursue."
     date: 20210601
     scopetag: "tev2"
-    termid: "pattern:mental-model"
     locator: "pattern-mental-model.md"
     navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-mental-model"
     headingids:
       - "mental-models"
       - "purpose"
       - "introduction"
+    termid: "pattern:mental-model"
     vsntag: "default"
   - id: "pattern-party-actor-action"
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "party-actor-action"
-    formPhrases: "party-actor-action"
+    formPhrases:
+      - "party-actor-action"
     status: "stable"
     grouptags: null
     glossaryTerm: "Party, Actor and Actions Pattern"
@@ -293,7 +322,6 @@ entries:
     hoverText: "The Parties, Actors and Actions pattern captures the foundational concepts and relations that we need for thinking about how things get done. It answers questions such as: 'Who/what does things?', 'How are their actions being guided/controlled?', 'Who controls whom/what?', 'Who/what may be held accountable?'."
     date: 20210602
     scopetag: "tev2"
-    termid: "pattern:party-actor-action"
     locator: "pattern-party-actor-action.md"
     navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-party-actor-action"
     headingids:
@@ -304,12 +332,14 @@ entries:
       - "organizations,-human-beings,-and-non-human-actors"
       - "parties,-actors-and-ways-they-relate"
       - "actions,-policies-and-objectives"
+    termid: "pattern:party-actor-action"
     vsntag: "default"
   - id: "pattern-party-representation"
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "party-representation"
-    formPhrases: "party-representation"
+    formPhrases:
+      - "party-representation"
     status: "draft"
     grouptags: null
     glossaryTerm: "Party Representation Pattern"
@@ -317,7 +347,6 @@ entries:
     hoverText: "The Party Representation pattern captures the foundational concepts and relations that we need for thinking about how Parties can be represented in various circumstances."
     date: 20210601
     scopetag: "tev2"
-    termid: "pattern:party-representation"
     locator: "pattern-party-representation.md"
     navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-party-representation"
     headingids:
@@ -327,38 +356,82 @@ entries:
       - "introduction"
       - "formalized-model"
       - "miscellaneous"
+    termid: "pattern:party-representation"
     vsntag: "default"
-  - term: "terminology"
+  - id: "pattern-semantics"
+    displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
-    isa: null
-    glossaryTerm: "Terminology Pattern"
-    glossaryText: "a [mental model](@) that describes the relations between a [community](@), its (intangible) [knowledge](@), and the artifacts we use to document that [knowledge](@), such as [terms](@), [definitions](@), [mental models](@), [glossaries](@), etc."
-    synonymOf: null
+    term: "semantics"
+    formPhrases: []
+    status: "idea"
     grouptags: null
-    formPhrases: null
-    status: "proposed"
-    created: 2022-06-06T00:00:00.000Z
-    updated: 2022-06-06T00:00:00.000Z
-    contributors: "RieksJ"
-    attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
-    originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
+    glossaryTerm: "Semantics Pattern"
+    glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain the relations between the (intangible) [concepts](@) (and other [semantic units](@)) that are part of a [party's](@) [knowledge](@), and how they are (tangibly) represented by [terms](@), [attributes](@), etc."
+    hoverText: "The Semantics pattern describes the relations between the (intangible) Concepts that are part of a Party's Knowledge, and how they are (tangibly) represented by Terms, Attributes, etc."
+    date: 202120607
     scopetag: "tev2"
-    termid: "pattern:terminology"
-    locator: "patterns/pattern-terminology.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/patterns/pattern-terminology"
+    locator: "pattern-semantics.md"
+    navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-semantics"
     headingids:
-      - "create-and-maintain-terminologies"
+      - "semantics-pattern"
+      - "purpose"
       - "introduction"
       - "formalized-model"
-      - "white:-parties,-communities-{#white}"
-      - "green:-scopes---data-artifacts-for-referencing-and-documenting-knowledge-{#green}"
-      - "yellow:-intangible-concepts-{#yellow}"
-    vsntag: "patterns"
+    termid: "pattern:semantics"
+    vsntag: "default"
+  - id: "pattern-terminology"
+    displayed_sidebar: "essifLabSideBar"
+    termType: "pattern"
+    term: "terminology"
+    formPhrases:
+      - "terminology"
+    status: "reviewable"
+    grouptags: null
+    glossaryTerm: "Terminology Pattern"
+    glossaryText: "a set of [concepts](@) and other [semantic units](@) that one can use to explain one's thinking about a certain topic, as well as to devise/design a way of thinking that members of a [community](@) can use to align their thinking as they pursue that [community's](@) [objectives](@)."
+    hoverText: "a set of Concepts and other Semantic units that one can use to explain one's thinking about a certain topic, as well as to devise/design a way of thinking that members of a Community can use to align their thinking as they pursue that Community's Objectives."
+    date: 20211101
+    scopetag: "tev2"
+    locator: "pattern-terminology.md"
+    navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-terminology"
+    headingids:
+      - "terminology-pattern"
+      - "purpose"
+      - "introduction"
+      - "formalized-model"
+      - "wit:-parties,-communities-and-tags-{#white}"
+      - "groen:-scopes---terminological-concepts-{#green}"
+      - "geel:-intangible-concepts-{#yellow}"
+    termid: "pattern:terminology"
+    vsntag: "default"
+  - id: "pattern-trust"
+    displayed_sidebar: "essifLabSideBar"
+    termType: "pattern"
+    term: "trust"
+    formPhrases:
+      - "trust"
+    status: "idea"
+    grouptags: null
+    glossaryTerm: "Trust Pattern"
+    glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain how the concept of [trust](@) relates to [parties](@) that do the trusting, and other concepts that express what it is that these [parties](@) trust."
+    hoverText: "The eSSIF-Lab Trust Pattern describes how the concept of Trust relates to Parties that do the trusting, and other concepts that express what it is that these Parties trust."
+    date: 20210830
+    scopetag: "tev2"
+    locator: "pattern-trust.md"
+    navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-trust"
+    headingids:
+      - "trust-pattern"
+      - "purpose"
+      - "introduction"
+      - "formalized-model"
+    termid: "pattern:trust"
+    vsntag: "default"
   - id: "pattern-world-model"
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "world-model"
-    formPhrases: "world-model"
+    formPhrases:
+      - "world-model"
     status: "draft"
     grouptags: null
     glossaryTerm: "eSSIF-Lab World Model"
@@ -366,7 +439,6 @@ entries:
     hoverText: "The eSSF-Lab World Model is the set of Concepts, relations between them (Patterns), and principles (that are the starting point for eSSIF-Lab's thinking)."
     date: 20211101
     scopetag: "tev2"
-    termid: "pattern:world-model"
     locator: "pattern-world-model.md"
     navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-world-model"
     headingids:
@@ -377,5 +449,6 @@ entries:
       - "actors:-entities-that-can-act-(do-things)"
       - "jurisdiction:-authority-with-mechanisms-for-defining-rules,-enforcing-them,-and-resolving-disputes"
       - "transactions:-the-exchange-of-goods,-services,-funds,-or-data-between-parties"
+    termid: "pattern:world-model"
     vsntag: "default"
 filename: "mrg.tev2.patterns.yaml"

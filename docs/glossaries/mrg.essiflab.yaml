@@ -988,13 +988,13 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:define"
     locator: "define.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/define"
     headingids:
       - "define"
       - "examples"
       - "notes"
+    termid: "concept:define"
     vsntag: "documentation"
   - id: "definition"
     displayed_sidebar: "essifLabSideBar"
@@ -1959,7 +1959,7 @@ entries:
     grouptags: null
     hoverText: "Jurisdiction: the composition of a Legal System (legislation, enforcement thereof, and conflict resolution), a Party that governs that Legal System, a scope within which that Legal System is operational, and one or more Objectives for the purpose of which the Legal System is operated."
     glossaryTerm: "Jurisdiction"
-    glossaryText: "the composition of a [legal system](@) (legislation, enforcement thereof, and conflict resolution), a [party](@) that governs that [legal system](@), a scope within which that [legal system](@) is operational, and one or more [objective](@) for the purpose of which the [legal system](@) is operated. See also the [Jurisdictions pattern](pattern-jurisdiction@)."
+    glossaryText: "the composition of a [legal system](@) (legislation, enforcement thereof, and conflict resolution), a [party](@) that governs that [legal system](@), a scope within which that [legal system](@) is operational, and one or more [objective](@) for the purpose of which the [legal system](@) is operated. See also the [Jurisdictions pattern](pattern:jurisdiction@)."
     date: 20210601
     scopetag: "essiflab"
     locator: "jurisdiction.md"
@@ -2873,7 +2873,10 @@ entries:
     grouptags:
       - "conceptual-modeling"
     formPhrases:
-      - "propert{yies}"
+      - "property"
+      - "propertys"
+      - "property's"
+      - "properties"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -2881,13 +2884,13 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:property"
     locator: "property.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/property"
     headingids:
       - "property-(of-a-concept)"
       - "examples"
       - "notes"
+    termid: "concept:property"
     vsntag: "documentation"
   - id: "qualified-data"
     displayed_sidebar: "essifLabSideBar"
@@ -2925,7 +2928,10 @@ entries:
     grouptags:
       - "conceptual-modeling"
     formPhrases:
-      - "relation{ss}"
+      - "relation"
+      - "relations"
+      - "relation's"
+      - "relation(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -2933,13 +2939,13 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:relation"
     locator: "relation.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/relation"
     headingids:
       - "relation-(between-concepts)"
       - "examples"
       - "notes"
+    termid: "concept:relation"
     vsntag: "documentation"
   - id: "revocation-component"
     displayed_sidebar: "essifLabSideBar"
@@ -3325,7 +3331,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "semantic-unit{ss}"
+      - "semantic-unit"
+      - "semantic-units"
+      - "semantic-unit's"
+      - "semantic-unit(s)"
     status: "proposed"
     created: 2022-07-27T00:00:00.000Z
     updated: 2022-07-27T00:00:00.000Z
@@ -3333,7 +3342,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:semantic-unit"
     locator: "semantic-unit.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/semantic-unit"
     headingids:
@@ -3341,6 +3349,7 @@ entries:
       - "summary"
       - "purpose"
       - "criteria"
+    termid: "concept:semantic-unit"
     vsntag: "documentation"
   - id: "semantics"
     displayed_sidebar: "essifLabSideBar"

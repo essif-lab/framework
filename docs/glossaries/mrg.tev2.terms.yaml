@@ -2,6 +2,24 @@ terminology:
   scopetag: "tev2"
   scopedir: "https://github.com/tno-terminology-design/tev2-specifications/tree/main/docs"
   curatedir: "terms"
+  glossarydir: "glossaries"
+  defaultvsn: "documentation"
+  website: "https://tno-terminology-design.github.io/tev2-specifications/docs"
+  navpath: "/terms"
+  bodyFileID: "id"
+  license: "LICENSE.md"
+  statuses:
+    - "proposed"
+    - "approved"
+    - "deprecated"
+  issues: "https://github.com/tno-terminology-design/tev2-specifications/issues"
+  curators:
+    - name: "RieksJ"
+      email:
+        id: "rieks.joosten"
+        at: "tno.nl"
+  defaulttype: "concept"
+  localscopedir: "/home/runner/work/tev2-specifications/tev2-specifications/docs"
   vsntag: "terms"
 scopes: []
 entries:
@@ -15,7 +33,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "author{ss}"
+      - "author"
+      - "authors"
+      - "author's"
+      - "author(s)"
     status: "proposed"
     created: 20230723
     updated: 20230723
@@ -23,11 +44,11 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:author"
     locator: "author.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/author"
     headingids:
       - "author"
+    termid: "concept:author"
     vsntag: "terms"
   - id: "body"
     term: "body"
@@ -38,7 +59,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "bod{yies}"
+      - "body"
+      - "bodys"
+      - "body's"
+      - "bodies"
     status: "proposed"
     created: 20230723
     updated: 20230723
@@ -46,7 +70,6 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:body"
     locator: "body.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/body"
     headingids:
@@ -54,6 +77,7 @@ entries:
       - "here-is-where-the-header-stuff-of-the-curated-text-goes."
       - "the-body-of-the-curated-text-starts-below-the-next-line."
       - "curated-text"
+    termid: "concept:body"
     vsntag: "terms"
   - id: "body-file"
     term: "body-file"
@@ -65,7 +89,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "body-file{ss}"
+      - "body-file"
+      - "body-files"
+      - "body-file's"
+      - "body-file(s)"
     status: "proposed"
     created: 20230723
     updated: 20230723
@@ -73,11 +100,11 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:body-file"
     locator: "body-file.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/spec-files/body-file"
     headingids:
       - "body-files"
+    termid: "concept:body-file"
     vsntag: "terms"
   - term: "concept"
     termType: "concept"
@@ -87,7 +114,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "concept{ss}"
+      - "concept"
+      - "concepts"
+      - "concept's"
+      - "concept(s)"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-06T00:00:00.000Z
@@ -95,7 +125,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:concept"
     locator: "concept.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/concept"
     headingids:
@@ -104,6 +133,7 @@ entries:
       - "purpose"
       - "criteria"
       - "notes"
+    termid: "concept:concept"
     vsntag: "terms"
   - id: "conceptualization"
     term: "conceptualization"
@@ -115,7 +145,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "conceptualization{ss}"
+      - "conceptualization"
+      - "conceptualizations"
+      - "conceptualization's"
+      - "conceptualization(s)"
     status: "proposed"
     created: 20230723
     updated: 20230723
@@ -123,13 +156,13 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:conceptualization"
     locator: "conceptualization.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/conceptualization"
     headingids:
       - "conceptualization"
       - "summary"
       - "background"
+    termid: "concept:conceptualization"
     vsntag: "terms"
   - id: "converter"
     term: "converter"
@@ -140,7 +173,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "converter{ss}"
+      - "converter"
+      - "converters"
+      - "converter's"
+      - "converter(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -148,11 +184,11 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:converter"
     locator: "converter.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/converter"
     headingids:
       - "converter"
+    termid: "concept:converter"
     vsntag: "terms"
   - term: "corpus"
     termType: "concept"
@@ -173,7 +209,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:corpus"
     locator: "corpus.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/corpus"
     headingids:
@@ -181,6 +216,7 @@ entries:
       - "short-description"
       - "purpose"
       - "acknowledgements"
+    termid: "concept:corpus"
     vsntag: "terms"
   - id: "curate"
     term: "curate"
@@ -202,12 +238,12 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:curate"
     locator: "curate.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/curate"
     headingids:
       - "curate"
       - "notes"
+    termid: "concept:curate"
     vsntag: "terms"
   - term: "curated-file"
     termType: "concept"
@@ -216,7 +252,10 @@ entries:
     glossaryText: "a file that is located in the [scopedir](@) of a specific [scope](@), and is (therefore) [curated](@) by (one of) the [curators](@) of that [scope](@)."
     grouptags: null
     formPhrases:
-      - "curated-file{ss}"
+      - "curated-file"
+      - "curated-files"
+      - "curated-file's"
+      - "curated-file(s)"
     status: "proposed"
     created: 20231009
     updated: 20231009
@@ -224,11 +263,11 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:curated-file"
     locator: "curated-file.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/curated-file"
     headingids:
       - "curated-files"
+    termid: "concept:curated-file"
     vsntag: "terms"
   - term: "curated-text"
     termType: "concept"
@@ -238,8 +277,14 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "curated-text{ss}"
-      - "ctext{ss}"
+      - "curated-text"
+      - "curated-texts"
+      - "curated-text's"
+      - "curated-text(s)"
+      - "ctext"
+      - "ctexts"
+      - "ctext's"
+      - "ctext(s)"
     status: "proposed"
     created: 2022-06-02T00:00:00.000Z
     updated: 2022-08-04T00:00:00.000Z
@@ -247,13 +292,13 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:curated-text"
     locator: "curated-text.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/curated-text"
     headingids:
       - "curated-text"
       - "purpose"
       - "notes"
+    termid: "concept:curated-text"
     vsntag: "terms"
   - term: "curated-text-file"
     termType: "concept"
@@ -263,8 +308,14 @@ entries:
     glossaryText: "a file that contains either a (complete) [curated text](@), or the [header](@) of that [curated text](@) and a reference to the [file](body-file@) that contains its [body](@)."
     grouptags: null
     formPhrases:
-      - "curated-text-file{ss}"
-      - "ctext-file{ss}"
+      - "curated-text-file"
+      - "curated-text-files"
+      - "curated-text-file's"
+      - "curated-text-file(s)"
+      - "ctext-file"
+      - "ctext-files"
+      - "ctext-file's"
+      - "ctext-file(s)"
     status: "proposed"
     created: 20231009
     updated: 20231009
@@ -272,7 +323,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:curated-text-file"
     locator: "curated-text-file.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/spec-files/curated-text-file"
     headingids:
@@ -284,6 +334,7 @@ entries:
       - "curated-text"
       - "header-structure-{#header}"
       - "predefined-tev2-header-fields-{#header-fields}"
+    termid: "concept:curated-text-file"
     vsntag: "terms"
   - term: "curatedir"
     termType: "concept"
@@ -293,8 +344,14 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "curatedir{ss}"
-      - "curate-director{yies}"
+      - "curatedir"
+      - "curatedirs"
+      - "curatedir's"
+      - "curatedir(s)"
+      - "curate-directory"
+      - "curate-directorys"
+      - "curate-directory's"
+      - "curate-directories"
     status: "proposed"
     created: 2022-07-29T00:00:00.000Z
     updated: 2022-07-29T00:00:00.000Z
@@ -302,11 +359,11 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:curatedir"
     locator: "curatedir.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/curatedir"
     headingids:
       - "curatedir"
+    termid: "concept:curatedir"
     vsntag: "terms"
   - id: "curator"
     term: "curator"
@@ -319,8 +376,14 @@ entries:
     grouptags:
       - "terminology"
     formPhrases:
-      - "curator{ss}"
-      - "terminology-curator{ss}"
+      - "curator"
+      - "curators"
+      - "curator's"
+      - "curator(s)"
+      - "terminology-curator"
+      - "terminology-curators"
+      - "terminology-curator's"
+      - "terminology-curator(s)"
     status: "proposed"
     created: 20230723
     updated: 20230723
@@ -328,13 +391,13 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:curator"
     locator: "curator.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/curator"
     headingids:
       - "curator-(of-a-scope)"
       - "examples"
       - "notes"
+    termid: "concept:curator"
     vsntag: "terms"
   - term: "current-scope"
     termType: "concept"
@@ -343,7 +406,10 @@ entries:
     glossaryText: "the [scope](@) that is the context within which a [curator](@) is acting, or a tool is being called."
     grouptags: null
     formPhrases:
-      - "current-scope{ss}"
+      - "current-scope"
+      - "current-scopes"
+      - "current-scope's"
+      - "current-scope(s)"
     status: "proposed"
     created: 20231009
     updated: 20231009
@@ -351,11 +417,11 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:current-scope"
     locator: "current-scope.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/current-scope"
     headingids:
       - "current-scope"
+    termid: "concept:current-scope"
     vsntag: "terms"
   - id: "define"
     term: "define"
@@ -377,13 +443,13 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:define"
     locator: "define.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/define"
     headingids:
       - "define"
       - "examples"
       - "notes"
+    termid: "concept:define"
     vsntag: "terms"
   - term: "definition"
     termType: "concept"
@@ -393,8 +459,14 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "definition{ss}"
-      - "good-definition{ss}"
+      - "definition"
+      - "definitions"
+      - "definition's"
+      - "definition(s)"
+      - "good-definition"
+      - "good-definitions"
+      - "good-definition's"
+      - "good-definition(s)"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-06T00:00:00.000Z
@@ -402,7 +474,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:definition"
     locator: "definition.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/definition"
     headingids:
@@ -412,6 +483,7 @@ entries:
       - "criteria"
       - "examples"
       - "notes"
+    termid: "concept:definition"
     vsntag: "terms"
   - term: "dictionary"
     termType: "concept"
@@ -421,7 +493,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "dictionar{yies}"
+      - "dictionary"
+      - "dictionarys"
+      - "dictionary's"
+      - "dictionaries"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-06T00:00:00.000Z
@@ -429,7 +504,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:dictionary"
     locator: "dictionary.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/dictionary"
     headingids:
@@ -438,6 +512,7 @@ entries:
       - "purpose"
       - "criteria"
       - "examples"
+    termid: "concept:dictionary"
     vsntag: "terms"
   - id: "form-phrase"
     term: "form-phrase"
@@ -446,8 +521,14 @@ entries:
     glossaryTerm: "Form Phrase (of a Term)"
     glossaryText: "a word or phrase, other than the actual [term](@) that, when used in a [TermRef](@) would typically also refer to this [term](@). Form phrases may include plural forms, possessive extensions, verb-conjugation forms, and other variations."
     formPhrases:
-      - "formphrase{ss}"
-      - "form-phrase{ss}"
+      - "formphrase"
+      - "formphrases"
+      - "formphrase's"
+      - "formphrase(s)"
+      - "form-phrase"
+      - "form-phrases"
+      - "form-phrase's"
+      - "form-phrase(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -455,7 +536,6 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:form-phrase"
     locator: "formphrase.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/formphrase"
     headingids:
@@ -464,6 +544,7 @@ entries:
       - "notes"
       - "miscellaneous"
       - "summary"
+    termid: "concept:form-phrase"
     vsntag: "terms"
   - id: "formatted-text"
     term: "formatted-text"
@@ -474,7 +555,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "formatted-text{ss}"
+      - "formatted-text"
+      - "formatted-texts"
+      - "formatted-text's"
+      - "formatted-text(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -482,7 +566,6 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:formatted-text"
     locator: "formatted-text.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/formatted-text"
     headingids:
@@ -490,6 +573,7 @@ entries:
       - "examples"
       - "notes"
       - "miscellanous"
+    termid: "concept:formatted-text"
     vsntag: "terms"
   - term: "glossary"
     termType: "concept"
@@ -499,7 +583,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "glossar{yies}"
+      - "glossary"
+      - "glossarys"
+      - "glossary's"
+      - "glossaries"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-06T00:00:00.000Z
@@ -507,7 +594,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:glossary"
     locator: "glossary.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/glossary"
     headingids:
@@ -516,6 +602,7 @@ entries:
       - "purpose"
       - "criteria"
       - "examples"
+    termid: "concept:glossary"
     vsntag: "terms"
   - term: "glossarydir"
     termType: "concept"
@@ -525,8 +612,14 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "glossarydir{ss}"
-      - "glossary-director{yies}"
+      - "glossarydir"
+      - "glossarydirs"
+      - "glossarydir's"
+      - "glossarydir(s)"
+      - "glossary-directory"
+      - "glossary-directorys"
+      - "glossary-directory's"
+      - "glossary-directories"
     status: "proposed"
     created: 2022-07-29T00:00:00.000Z
     updated: 2022-07-29T00:00:00.000Z
@@ -534,12 +627,12 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:glossarydir"
     locator: "glossarydir.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/glossarydir"
     headingids:
       - "glossarydir"
       - "summary"
+    termid: "concept:glossarydir"
     vsntag: "terms"
   - id: "glossaryterm"
     term: "glossaryterm"
@@ -548,14 +641,20 @@ entries:
     glossaryTerm: "Glossary Term"
     glossaryText: "a human readable text that will be used as the [term](@) in a [definition](@) as presented in a [HRG](@)."
     formPhrases:
-      - "glossaryterm{ss}"
-      - "glossary-term{ss}"
+      - "glossaryterm"
+      - "glossaryterms"
+      - "glossaryterm's"
+      - "glossaryterm(s)"
+      - "glossary-term"
+      - "glossary-terms"
+      - "glossary-term's"
+      - "glossary-term(s)"
     scopetag: "tev2"
-    termid: "concept:glossaryterm"
     locator: "glossaryterm.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/glossaryterm"
     headingids:
       - "glossary-term"
+    termid: "concept:glossaryterm"
     vsntag: "terms"
   - id: "glossarytext"
     term: "glossarytext"
@@ -564,14 +663,20 @@ entries:
     glossaryTerm: "Glossary Text"
     glossaryText: "a human readable text that will be used as the [definition](@) for a particular [term](@), as presented in a [HRG](@)."
     formPhrases:
-      - "glossarytext{ss}"
-      - "glossary-text{ss}"
+      - "glossarytext"
+      - "glossarytexts"
+      - "glossarytext's"
+      - "glossarytext(s)"
+      - "glossary-text"
+      - "glossary-texts"
+      - "glossary-text's"
+      - "glossary-text(s)"
     scopetag: "tev2"
-    termid: "concept:glossarytext"
     locator: "glossarytext.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/glossarytext"
     headingids:
       - "glossary-text"
+    termid: "concept:glossarytext"
     vsntag: "terms"
   - term: "grouptag"
     termType: "concept"
@@ -581,8 +686,14 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "grouptag{ss}"
-      - "group-tag{ss}"
+      - "grouptag"
+      - "grouptags"
+      - "grouptag's"
+      - "grouptag(s)"
+      - "group-tag"
+      - "group-tags"
+      - "group-tag's"
+      - "group-tag(s)"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-07-28T00:00:00.000Z
@@ -590,7 +701,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:grouptag"
     locator: "grouptag.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/grouptag"
     headingids:
@@ -598,6 +708,7 @@ entries:
       - "summary"
       - "criteria"
       - "examples"
+    termid: "concept:grouptag"
     vsntag: "terms"
   - id: "header"
     term: "header"
@@ -609,7 +720,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "header{ss}"
+      - "header"
+      - "headers"
+      - "header's"
+      - "header(s)"
     status: "proposed"
     created: 20230723
     updated: 20230723
@@ -617,7 +731,6 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:header"
     locator: "header.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/spec-files/curated-text-file"
     headingids:
@@ -629,6 +742,7 @@ entries:
       - "curated-text"
       - "header-structure-{#header}"
       - "predefined-tev2-header-fields-{#header-fields}"
+    termid: "concept:header"
     vsntag: "terms"
   - id: "hrd"
     term: "hrd"
@@ -641,9 +755,30 @@ entries:
       - "dictionary"
       - "reference-materials"
     formPhrases:
-      - "hrd{ss}"
-      - "human-readable-dictionar{yies}"
-      - "human-readable-dictionar{yies}-hrd{ss}"
+      - "hrd"
+      - "hrds"
+      - "hrd's"
+      - "hrd(s)"
+      - "human-readable-dictionary"
+      - "human-readable-dictionarys"
+      - "human-readable-dictionary's"
+      - "human-readable-dictionaries"
+      - "human-readable-dictionary-hrd"
+      - "human-readable-dictionary-hrds"
+      - "human-readable-dictionary-hrd's"
+      - "human-readable-dictionary-hrd(s)"
+      - "human-readable-dictionarys-hrd"
+      - "human-readable-dictionarys-hrds"
+      - "human-readable-dictionarys-hrd's"
+      - "human-readable-dictionarys-hrd(s)"
+      - "human-readable-dictionary's-hrd"
+      - "human-readable-dictionary's-hrds"
+      - "human-readable-dictionary's-hrd's"
+      - "human-readable-dictionary's-hrd(s)"
+      - "human-readable-dictionaries-hrd"
+      - "human-readable-dictionaries-hrds"
+      - "human-readable-dictionaries-hrd's"
+      - "human-readable-dictionaries-hrd(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -651,12 +786,12 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:hrd"
     locator: "hrd.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/hrd"
     headingids:
       - "hrd---human-readable-dictionary"
       - "examples"
+    termid: "concept:hrd"
     vsntag: "terms"
   - id: "hrdt"
     term: "hrdt"
@@ -669,9 +804,18 @@ entries:
       - "tools"
       - "dictionary-tools"
     formPhrases:
-      - "human-readable-dictionary-tool{ss}"
-      - "hrd-tool{ss}"
-      - "hrdt{ss}"
+      - "human-readable-dictionary-tool"
+      - "human-readable-dictionary-tools"
+      - "human-readable-dictionary-tool's"
+      - "human-readable-dictionary-tool(s)"
+      - "hrd-tool"
+      - "hrd-tools"
+      - "hrd-tool's"
+      - "hrd-tool(s)"
+      - "hrdt"
+      - "hrdts"
+      - "hrdt's"
+      - "hrdt(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -679,11 +823,11 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:hrdt"
     locator: "hrdt.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/hrdt"
     headingids:
       - "hrdt---human-readable-dictionary-tool"
+    termid: "concept:hrdt"
     vsntag: "terms"
   - id: "hrg"
     term: "hrg"
@@ -696,9 +840,30 @@ entries:
       - "glossaries"
       - "data-structures"
     formPhrases:
-      - "hrg{ss}"
-      - "human-readable-glossar{yies}"
-      - "human-readable-glossar{yies}-hrg{ss}"
+      - "hrg"
+      - "hrgs"
+      - "hrg's"
+      - "hrg(s)"
+      - "human-readable-glossary"
+      - "human-readable-glossarys"
+      - "human-readable-glossary's"
+      - "human-readable-glossaries"
+      - "human-readable-glossary-hrg"
+      - "human-readable-glossary-hrgs"
+      - "human-readable-glossary-hrg's"
+      - "human-readable-glossary-hrg(s)"
+      - "human-readable-glossarys-hrg"
+      - "human-readable-glossarys-hrgs"
+      - "human-readable-glossarys-hrg's"
+      - "human-readable-glossarys-hrg(s)"
+      - "human-readable-glossary's-hrg"
+      - "human-readable-glossary's-hrgs"
+      - "human-readable-glossary's-hrg's"
+      - "human-readable-glossary's-hrg(s)"
+      - "human-readable-glossaries-hrg"
+      - "human-readable-glossaries-hrgs"
+      - "human-readable-glossaries-hrg's"
+      - "human-readable-glossaries-hrg(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -706,11 +871,11 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:hrg"
     locator: "hrg.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/hrg"
     headingids:
       - "hrg---human-readable-glossary"
+    termid: "concept:hrg"
     vsntag: "terms"
   - id: "hrg-entry"
     term: "hrg-entry"
@@ -723,7 +888,10 @@ entries:
       - "glossary-entries"
       - "reference-materials"
     formPhrases:
-      - "hrg-entr{yies}"
+      - "hrg-entry"
+      - "hrg-entrys"
+      - "hrg-entry's"
+      - "hrg-entries"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -731,12 +899,12 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:hrg-entry"
     locator: "hrg-entry.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/hrg-entry"
     headingids:
       - "hrg-entry"
       - "purpose"
+    termid: "concept:hrg-entry"
     vsntag: "terms"
   - id: "hrg-list"
     term: "hrg-list"
@@ -747,7 +915,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "hrg-list{ss}"
+      - "hrg-list"
+      - "hrg-lists"
+      - "hrg-list's"
+      - "hrg-list(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -755,11 +926,11 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:hrg-list"
     locator: "hrg-list.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/hrg-list"
     headingids:
       - "hrg-list"
+    termid: "concept:hrg-list"
     vsntag: "terms"
   - id: "hrgt"
     term: "hrgt"
@@ -774,10 +945,46 @@ entries:
       - "tools"
       - "glossary-tools"
     formPhrases:
-      - "hrgt{ss}"
-      - "human-readable-glossary-tool{ss}"
-      - "human-readable-glossary-tool{ss}-hrtt{ss}"
-      - "hrt{ss}-human-readable-glossary-tool{ss}"
+      - "hrgt"
+      - "hrgts"
+      - "hrgt's"
+      - "hrgt(s)"
+      - "human-readable-glossary-tool"
+      - "human-readable-glossary-tools"
+      - "human-readable-glossary-tool's"
+      - "human-readable-glossary-tool(s)"
+      - "human-readable-glossary-tool-hrtt"
+      - "human-readable-glossary-tool-hrtts"
+      - "human-readable-glossary-tool-hrtt's"
+      - "human-readable-glossary-tool-hrtt(s)"
+      - "human-readable-glossary-tools-hrtt"
+      - "human-readable-glossary-tools-hrtts"
+      - "human-readable-glossary-tools-hrtt's"
+      - "human-readable-glossary-tools-hrtt(s)"
+      - "human-readable-glossary-tool's-hrtt"
+      - "human-readable-glossary-tool's-hrtts"
+      - "human-readable-glossary-tool's-hrtt's"
+      - "human-readable-glossary-tool's-hrtt(s)"
+      - "human-readable-glossary-tool(s)-hrtt"
+      - "human-readable-glossary-tool(s)-hrtts"
+      - "human-readable-glossary-tool(s)-hrtt's"
+      - "human-readable-glossary-tool(s)-hrtt(s)"
+      - "hrt-human-readable-glossary-tool"
+      - "hrt-human-readable-glossary-tools"
+      - "hrt-human-readable-glossary-tool's"
+      - "hrt-human-readable-glossary-tool(s)"
+      - "hrts-human-readable-glossary-tool"
+      - "hrts-human-readable-glossary-tools"
+      - "hrts-human-readable-glossary-tool's"
+      - "hrts-human-readable-glossary-tool(s)"
+      - "hrt's-human-readable-glossary-tool"
+      - "hrt's-human-readable-glossary-tools"
+      - "hrt's-human-readable-glossary-tool's"
+      - "hrt's-human-readable-glossary-tool(s)"
+      - "hrt(s)-human-readable-glossary-tool"
+      - "hrt(s)-human-readable-glossary-tools"
+      - "hrt(s)-human-readable-glossary-tool's"
+      - "hrt(s)-human-readable-glossary-tool(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -785,7 +992,6 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:hrgt"
     locator: "hrgt.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/spec-tools/hrgt"
     headingids:
@@ -798,6 +1004,7 @@ entries:
       - "example"
       - "processing,-errors-and-warnings"
       - "deploying-the-tool"
+    termid: "concept:hrgt"
     vsntag: "terms"
   - id: "ict"
     term: "ict"
@@ -821,7 +1028,6 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "acronym:ict"
     locator: "ict.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/spec-tools-envisaged/ict"
     headingids:
@@ -840,6 +1046,7 @@ entries:
       - "processing,-errors-and-warnings"
       - "deploying-the-tool"
       - "discussion-notes"
+    termid: "acronym:ict"
     vsntag: "terms"
   - term: "identifier"
     termType: "concept"
@@ -849,7 +1056,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "identifier{ss}"
+      - "identifier"
+      - "identifiers"
+      - "identifier's"
+      - "identifier(s)"
     status: "proposed"
     created: 2021-06-01T00:00:00.000Z
     updated: 2021-06-01T00:00:00.000Z
@@ -857,7 +1067,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:identifier"
     locator: "identifier.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/identifier"
     headingids:
@@ -868,6 +1077,7 @@ entries:
       - "examples"
       - "notes"
       - "discussion---scope-of-identification"
+    termid: "concept:identifier"
     vsntag: "terms"
   - term: "identify"
     termType: "concept"
@@ -877,8 +1087,13 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "identif{yies}"
-      - "identif{ying}"
+      - "identify"
+      - "identifys"
+      - "identify's"
+      - "identifies"
+      - "identifier"
+      - "identifying"
+      - "identified"
       - "identifiable"
       - "identification"
     status: "proposed"
@@ -888,12 +1103,12 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:identify"
     locator: "identify.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/identify"
     headingids:
       - "identify"
       - "short-description"
+    termid: "concept:identify"
     vsntag: "terms"
   - id: "ingestion"
     term: "ingestion"
@@ -918,13 +1133,13 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:ingestion"
     locator: "ingestion-process.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/ingestion-process"
     headingids:
       - "ingestion-(process)"
       - "examples"
       - "notes"
+    termid: "concept:ingestion"
     vsntag: "terms"
   - term: "ingestion-profile"
     termType: "concept"
@@ -934,7 +1149,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "ingestion-profile{ss}"
+      - "ingestion-profile"
+      - "ingestion-profiles"
+      - "ingestion-profile's"
+      - "ingestion-profile(s)"
     status: "proposed"
     created: 2022-08-17T00:00:00.000Z
     updated: 2022-08-17T00:00:00.000Z
@@ -942,7 +1160,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:ingestion-profile"
     locator: "ingestion-profile.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/ingestion-profile"
     headingids:
@@ -950,6 +1167,7 @@ entries:
       - "summary"
       - "purpose"
       - "notes"
+    termid: "concept:ingestion-profile"
     vsntag: "terms"
   - id: "interpreter"
     term: "interpreter"
@@ -959,7 +1177,10 @@ entries:
     glossaryText: "a [(PCRE) regex](https://www.debuggex.com/cheatsheet/regex/pcre) that is used to locate a particular text construct (such as a [TermRef](@) or [MRGRef](@)) in a text, and that uses (PCRE) named groups to provide the values for the [moustache variables](@) in the [moustache profile](@) for which it is designed."
     grouptags: null
     formPhrases:
-      - "interpreter{ss}"
+      - "interpreter"
+      - "interpreters"
+      - "interpreter's"
+      - "interpreter(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-12-18T00:00:00.000Z
@@ -967,11 +1188,11 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:interpreter"
     locator: "interpreter.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/interpreter"
     headingids:
       - "interpreter"
+    termid: "concept:interpreter"
     vsntag: "terms"
   - term: "knowledge artifact"
     termType: "concept"
@@ -981,7 +1202,10 @@ entries:
     synonymOf: "semantic-unit"
     grouptags: null
     formPhrases:
-      - "knowledge-artifact{ss}"
+      - "knowledge-artifact"
+      - "knowledge-artifacts"
+      - "knowledge-artifact's"
+      - "knowledge-artifact(s)"
     status: "deprecated"
     created: 2022-07-27T00:00:00.000Z
     updated: 2023-09-26T00:00:00.000Z
@@ -989,11 +1213,11 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:knowledge artifact"
     locator: "knowledge-artifact.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/knowledge-artifact"
     headingids:
       - "knowledge-artifact"
+    termid: "concept:knowledge artifact"
     vsntag: "terms"
   - term: "mental-model"
     termType: "concept"
@@ -1003,9 +1227,18 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "mental-model{ss}"
-      - "pattern{ss}"
-      - "conceptual-model{ss}"
+      - "mental-model"
+      - "mental-models"
+      - "mental-model's"
+      - "mental-model(s)"
+      - "pattern"
+      - "patterns"
+      - "pattern's"
+      - "pattern(s)"
+      - "conceptual-model"
+      - "conceptual-models"
+      - "conceptual-model's"
+      - "conceptual-model(s)"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-07T00:00:00.000Z
@@ -1013,7 +1246,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:mental-model"
     locator: "mental-model.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/mental-model"
     headingids:
@@ -1024,6 +1256,7 @@ entries:
       - "notes"
       - "on-using-(existing)-mental-models"
       - "on-the-construction-of-mental-models"
+    termid: "concept:mental-model"
     vsntag: "terms"
   - id: "moustache-profile"
     term: "moustache-profile"
@@ -1032,8 +1265,14 @@ entries:
     glossaryText: "a set of [moustache variables](@) that specify the expected results or executing a particular [interpreter](@). For example, the moustache profile for [TRRT](@) [interpreters](@) consists of the [variables](moustache-variable@) `{{showtext}}`, `{{termType}}`, `{{term}}`, `{{trait}}`, `{{scopetag}}`, and `{{vsntag}}`."
     grouptags: null
     formPhrases:
-      - "moustache-profile{ss}"
-      - "profile{ss}"
+      - "moustache-profile"
+      - "moustache-profiles"
+      - "moustache-profile's"
+      - "moustache-profile(s)"
+      - "profile"
+      - "profiles"
+      - "profile's"
+      - "profile(s)"
     status: "proposed"
     created: 2023-12-18T00:00:00.000Z
     updated: 2023-12-18T00:00:00.000Z
@@ -1041,11 +1280,11 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:moustache-profile"
     locator: "moustache-profile.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/moustache-profile"
     headingids:
       - "moustache-profile"
+    termid: "concept:moustache-profile"
     vsntag: "terms"
   - id: "moustache-variable"
     term: "moustache-variable"
@@ -1056,7 +1295,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "moustache-variable{ss}"
+      - "moustache-variable"
+      - "moustache-variables"
+      - "moustache-variable's"
+      - "moustache-variable(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1064,12 +1306,12 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:moustache-variable"
     locator: "moustache-variable.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/moustache-variable"
     headingids:
       - "moustache-variable"
       - "notes"
+    termid: "concept:moustache-variable"
     vsntag: "terms"
   - id: "mrd"
     term: "mrd"
@@ -1080,9 +1322,18 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "machine-readable-dictionar{yies}"
-      - "mrd{ss}"
-      - "machine-readable-dictionary-mrd{ss}"
+      - "machine-readable-dictionary"
+      - "machine-readable-dictionarys"
+      - "machine-readable-dictionary's"
+      - "machine-readable-dictionaries"
+      - "mrd"
+      - "mrds"
+      - "mrd's"
+      - "mrd(s)"
+      - "machine-readable-dictionary-mrd"
+      - "machine-readable-dictionary-mrds"
+      - "machine-readable-dictionary-mrd's"
+      - "machine-readable-dictionary-mrd(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1090,13 +1341,13 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:mrd"
     locator: "mrd.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/mrd"
     headingids:
       - "machine-readable-dictionary"
       - "examples"
       - "notes"
+    termid: "concept:mrd"
     vsntag: "terms"
   - id: "mrdt"
     term: "mrdt"
@@ -1109,9 +1360,18 @@ entries:
       - "tools"
       - "dictionary-tools"
     formPhrases:
-      - "machine-readable-dictionary-tool{ss}"
-      - "mrd-tool{ss}"
-      - "mrdt{ss}"
+      - "machine-readable-dictionary-tool"
+      - "machine-readable-dictionary-tools"
+      - "machine-readable-dictionary-tool's"
+      - "machine-readable-dictionary-tool(s)"
+      - "mrd-tool"
+      - "mrd-tools"
+      - "mrd-tool's"
+      - "mrd-tool(s)"
+      - "mrdt"
+      - "mrdts"
+      - "mrdt's"
+      - "mrdt(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1119,11 +1379,11 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:mrdt"
     locator: "mrdt.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/mrdt"
     headingids:
       - "mrdt---machine-readable-dictionary-tool"
+    termid: "concept:mrdt"
     vsntag: "terms"
   - id: "mrg"
     term: "mrg"
@@ -1138,9 +1398,30 @@ entries:
       - "glossaries"
       - "data-structures"
     formPhrases:
-      - "mrg{ss}"
-      - "machine-readable-glossar{yies}"
-      - "machine-readable-glossar{yies}-mrg{ss}"
+      - "mrg"
+      - "mrgs"
+      - "mrg's"
+      - "mrg(s)"
+      - "machine-readable-glossary"
+      - "machine-readable-glossarys"
+      - "machine-readable-glossary's"
+      - "machine-readable-glossaries"
+      - "machine-readable-glossary-mrg"
+      - "machine-readable-glossary-mrgs"
+      - "machine-readable-glossary-mrg's"
+      - "machine-readable-glossary-mrg(s)"
+      - "machine-readable-glossarys-mrg"
+      - "machine-readable-glossarys-mrgs"
+      - "machine-readable-glossarys-mrg's"
+      - "machine-readable-glossarys-mrg(s)"
+      - "machine-readable-glossary's-mrg"
+      - "machine-readable-glossary's-mrgs"
+      - "machine-readable-glossary's-mrg's"
+      - "machine-readable-glossary's-mrg(s)"
+      - "machine-readable-glossaries-mrg"
+      - "machine-readable-glossaries-mrgs"
+      - "machine-readable-glossaries-mrg's"
+      - "machine-readable-glossaries-mrg(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1148,7 +1429,6 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:mrg"
     locator: "mrg.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/spec-files/mrg"
     headingids:
@@ -1159,6 +1439,7 @@ entries:
       - "mrg-`scopes`-section-{#mrg-scopes}"
       - "mrg-entries-(the-`entries`-section)-{#mrg-entries}"
       - "footnotes"
+    termid: "concept:mrg"
     vsntag: "terms"
   - term: "mrg-entry"
     termType: "concept"
@@ -1168,7 +1449,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "mrg-entr{yies}"
+      - "mrg-entry"
+      - "mrg-entrys"
+      - "mrg-entry's"
+      - "mrg-entries"
     status: "proposed"
     created: 2022-08-11T00:00:00.000Z
     updated: 2022-08-11T00:00:00.000Z
@@ -1176,12 +1460,12 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:mrg-entry"
     locator: "mrg-entry.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/mrg-entry"
     headingids:
       - "mrg-entry"
       - "purpose"
+    termid: "concept:mrg-entry"
     vsntag: "terms"
   - id: "mrg-import"
     term: "mrg-import"
@@ -1206,7 +1490,6 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:mrg-import"
     locator: "mrg-import.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/spec-tools/mrg-import"
     headingids:
@@ -1216,6 +1499,7 @@ entries:
       - "calling-the-tool"
       - "processing,-errors-and-warnings"
       - "deploying-the-tool"
+    termid: "concept:mrg-import"
     vsntag: "terms"
   - term: "mrg-ref"
     termType: "concept"
@@ -1226,8 +1510,14 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "mrg-ref{ss}"
-      - "mrgref{ss}"
+      - "mrg-ref"
+      - "mrg-refs"
+      - "mrg-ref's"
+      - "mrg-ref(s)"
+      - "mrgref"
+      - "mrgrefs"
+      - "mrgref's"
+      - "mrgref(s)"
     status: "proposed"
     created: 2023-11-27T00:00:00.000Z
     updated: 2023-11-27T00:00:00.000Z
@@ -1235,7 +1525,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:mrg-ref"
     locator: "mrg-ref.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/spec-syntax/mrg-ref-syntax"
     headingids:
@@ -1257,6 +1546,7 @@ entries:
       - "[curator-(of-a-scope)](/docs/terms/curator)"
       - "[definition](/docs/terms/definition)"
       - "custom-glossary-converters-{#custom-glossary-converters}"
+    termid: "concept:mrg-ref"
     vsntag: "terms"
   - id: "mrgt"
     term: "mrgt"
@@ -1272,10 +1562,46 @@ entries:
       - "tools"
       - "glossary-tools"
     formPhrases:
-      - "mrgt{ss}"
-      - "machine-readable-glossary-tool{ss}"
-      - "machine-readable-glossary-tool{ss}-mrgt{ss}"
-      - "mrgt{ss}-machin-readable-glossary-tool{ss}"
+      - "mrgt"
+      - "mrgts"
+      - "mrgt's"
+      - "mrgt(s)"
+      - "machine-readable-glossary-tool"
+      - "machine-readable-glossary-tools"
+      - "machine-readable-glossary-tool's"
+      - "machine-readable-glossary-tool(s)"
+      - "machine-readable-glossary-tool-mrgt"
+      - "machine-readable-glossary-tool-mrgts"
+      - "machine-readable-glossary-tool-mrgt's"
+      - "machine-readable-glossary-tool-mrgt(s)"
+      - "machine-readable-glossary-tools-mrgt"
+      - "machine-readable-glossary-tools-mrgts"
+      - "machine-readable-glossary-tools-mrgt's"
+      - "machine-readable-glossary-tools-mrgt(s)"
+      - "machine-readable-glossary-tool's-mrgt"
+      - "machine-readable-glossary-tool's-mrgts"
+      - "machine-readable-glossary-tool's-mrgt's"
+      - "machine-readable-glossary-tool's-mrgt(s)"
+      - "machine-readable-glossary-tool(s)-mrgt"
+      - "machine-readable-glossary-tool(s)-mrgts"
+      - "machine-readable-glossary-tool(s)-mrgt's"
+      - "machine-readable-glossary-tool(s)-mrgt(s)"
+      - "mrgt-machin-readable-glossary-tool"
+      - "mrgt-machin-readable-glossary-tools"
+      - "mrgt-machin-readable-glossary-tool's"
+      - "mrgt-machin-readable-glossary-tool(s)"
+      - "mrgts-machin-readable-glossary-tool"
+      - "mrgts-machin-readable-glossary-tools"
+      - "mrgts-machin-readable-glossary-tool's"
+      - "mrgts-machin-readable-glossary-tool(s)"
+      - "mrgt's-machin-readable-glossary-tool"
+      - "mrgt's-machin-readable-glossary-tools"
+      - "mrgt's-machin-readable-glossary-tool's"
+      - "mrgt's-machin-readable-glossary-tool(s)"
+      - "mrgt(s)-machin-readable-glossary-tool"
+      - "mrgt(s)-machin-readable-glossary-tools"
+      - "mrgt(s)-machin-readable-glossary-tool's"
+      - "mrgt(s)-machin-readable-glossary-tool(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1283,7 +1609,6 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:mrgt"
     locator: "mrgt.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/spec-tools/mrgt"
     headingids:
@@ -1298,6 +1623,7 @@ entries:
       - "phase-4:-checking-the-result"
       - "exceptions,-warnings,-and-logging-{#exceptions}"
       - "notes"
+    termid: "concept:mrgt"
     vsntag: "terms"
   - term: "navpath"
     termType: "concept"
@@ -1308,7 +1634,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "navpath{ss}"
+      - "navpath"
+      - "navpaths"
+      - "navpath's"
+      - "navpath(s)"
     status: "proposed"
     created: 2022-10-06T00:00:00.000Z
     updated: 2022-10-06T00:00:00.000Z
@@ -1316,11 +1645,11 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:navpath"
     locator: "navpath.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/navpath"
     headingids:
       - "navpath"
+    termid: "concept:navpath"
     vsntag: "terms"
   - id: "property"
     term: "property"
@@ -1332,7 +1661,10 @@ entries:
     grouptags:
       - "conceptual-modeling"
     formPhrases:
-      - "propert{yies}"
+      - "property"
+      - "propertys"
+      - "property's"
+      - "properties"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1340,13 +1672,13 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:property"
     locator: "property.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/property"
     headingids:
       - "property-(of-a-concept)"
       - "examples"
       - "notes"
+    termid: "concept:property"
     vsntag: "terms"
   - id: "provisional-mrg"
     term: "provisional-mrg"
@@ -1357,7 +1689,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "provisional-mrg{ss}"
+      - "provisional-mrg"
+      - "provisional-mrgs"
+      - "provisional-mrg's"
+      - "provisional-mrg(s)"
     status: "proposed"
     created: 20231010
     updated: 20231010
@@ -1365,11 +1700,11 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:provisional-mrg"
     locator: "provisional-mrg.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/provisional-mrg"
     headingids:
       - "provisional-mrg"
+    termid: "concept:provisional-mrg"
     vsntag: "terms"
   - id: "provisional-mrg-entry"
     term: "provisional-mrg-entry"
@@ -1380,7 +1715,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "provisional-mrg-entr{yies}"
+      - "provisional-mrg-entry"
+      - "provisional-mrg-entrys"
+      - "provisional-mrg-entry's"
+      - "provisional-mrg-entries"
     status: "proposed"
     created: 20231010
     updated: 20231010
@@ -1388,11 +1726,11 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:provisional-mrg-entry"
     locator: "provisional-mrg-entry.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/provisional-mrg-entry"
     headingids:
       - "provisional-mrg-entry"
+    termid: "concept:provisional-mrg-entry"
     vsntag: "terms"
   - id: "reader"
     term: "reader"
@@ -1403,7 +1741,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "reader{ss}"
+      - "reader"
+      - "readers"
+      - "reader's"
+      - "reader(s)"
     status: "proposed"
     created: 20230723
     updated: 20230723
@@ -1411,11 +1752,11 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:reader"
     locator: "reader.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/reader"
     headingids:
       - "reader"
+    termid: "concept:reader"
     vsntag: "terms"
   - id: "relation"
     term: "relation"
@@ -1427,7 +1768,10 @@ entries:
     grouptags:
       - "conceptual-modeling"
     formPhrases:
-      - "relation{ss}"
+      - "relation"
+      - "relations"
+      - "relation's"
+      - "relation(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1435,13 +1779,13 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:relation"
     locator: "relation.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/relation"
     headingids:
       - "relation-(between-concepts)"
       - "examples"
       - "notes"
+    termid: "concept:relation"
     vsntag: "terms"
   - term: "renderable-ref"
     termType: "concept"
@@ -1451,9 +1795,18 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "renderable-ref{ss}"
-      - "renderableref{ss}"
-      - "renderable-reference{ss}"
+      - "renderable-ref"
+      - "renderable-refs"
+      - "renderable-ref's"
+      - "renderable-ref(s)"
+      - "renderableref"
+      - "renderablerefs"
+      - "renderableref's"
+      - "renderableref(s)"
+      - "renderable-reference"
+      - "renderable-references"
+      - "renderable-reference's"
+      - "renderable-reference(s)"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-08-04T00:00:00.000Z
@@ -1461,13 +1814,13 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:renderable-ref"
     locator: "renderable-ref.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/renderable-ref"
     headingids:
       - "renderable-ref"
       - "summary"
       - "purpose"
+    termid: "concept:renderable-ref"
     vsntag: "terms"
   - id: "saf"
     term: "saf"
@@ -1480,10 +1833,46 @@ entries:
     grouptags:
       - "terminology-management"
     formPhrases:
-      - "saf{ss}"
-      - "scope-administration-file{ss}"
-      - "scope-administration-file{ss}-saf{ss}"
-      - "saf{ss}-scope-administration-file{ss}"
+      - "saf"
+      - "safs"
+      - "saf's"
+      - "saf(s)"
+      - "scope-administration-file"
+      - "scope-administration-files"
+      - "scope-administration-file's"
+      - "scope-administration-file(s)"
+      - "scope-administration-file-saf"
+      - "scope-administration-file-safs"
+      - "scope-administration-file-saf's"
+      - "scope-administration-file-saf(s)"
+      - "scope-administration-files-saf"
+      - "scope-administration-files-safs"
+      - "scope-administration-files-saf's"
+      - "scope-administration-files-saf(s)"
+      - "scope-administration-file's-saf"
+      - "scope-administration-file's-safs"
+      - "scope-administration-file's-saf's"
+      - "scope-administration-file's-saf(s)"
+      - "scope-administration-file(s)-saf"
+      - "scope-administration-file(s)-safs"
+      - "scope-administration-file(s)-saf's"
+      - "scope-administration-file(s)-saf(s)"
+      - "saf-scope-administration-file"
+      - "saf-scope-administration-files"
+      - "saf-scope-administration-file's"
+      - "saf-scope-administration-file(s)"
+      - "safs-scope-administration-file"
+      - "safs-scope-administration-files"
+      - "safs-scope-administration-file's"
+      - "safs-scope-administration-file(s)"
+      - "saf's-scope-administration-file"
+      - "saf's-scope-administration-files"
+      - "saf's-scope-administration-file's"
+      - "saf's-scope-administration-file(s)"
+      - "saf(s)-scope-administration-file"
+      - "saf(s)-scope-administration-files"
+      - "saf(s)-scope-administration-file's"
+      - "saf(s)-scope-administration-file(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1491,7 +1880,6 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:saf"
     locator: "saf.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/spec-files/saf"
     headingids:
@@ -1514,6 +1902,7 @@ entries:
       - "see-the-glossary-generation-tool-(ggt)-for-details-about-the-syntax-and-semantics."
       - "versions:"
       - "notes"
+    termid: "concept:saf"
     vsntag: "terms"
   - term: "scope"
     termType: "concept"
@@ -1523,8 +1912,14 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "scope{ss}"
-      - "scope-context{ss}"
+      - "scope"
+      - "scopes"
+      - "scope's"
+      - "scope(s)"
+      - "scope-context"
+      - "scope-contexts"
+      - "scope-context's"
+      - "scope-context(s)"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-08-04T00:00:00.000Z
@@ -1532,13 +1927,13 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:scope"
     locator: "scope.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/scope"
     headingids:
       - "scope"
       - "summary"
       - "purpose"
+    termid: "concept:scope"
     vsntag: "terms"
   - term: "scoped-term"
     termType: "concept"
@@ -1547,7 +1942,10 @@ entries:
     glossaryText: "a [term](@) that represents (and [identifies](@)) a specific [semantic unit](@) of a particular [community](@) (or [party](@))."
     grouptags: null
     formPhrases:
-      - "scoped-term{ss}"
+      - "scoped-term"
+      - "scoped-terms"
+      - "scoped-term's"
+      - "scoped-term(s)"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-08-04T00:00:00.000Z
@@ -1555,12 +1953,12 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:scoped-term"
     locator: "scoped-term.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/scoped-term"
     headingids:
       - "scoped-term"
       - "summary"
+    termid: "concept:scoped-term"
     vsntag: "terms"
   - term: "scopedir"
     termType: "concept"
@@ -1570,8 +1968,14 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "scopedir{ss}"
-      - "scope-director{yies}"
+      - "scopedir"
+      - "scopedirs"
+      - "scopedir's"
+      - "scopedir(s)"
+      - "scope-directory"
+      - "scope-directorys"
+      - "scope-directory's"
+      - "scope-directories"
     status: "proposed"
     created: 2022-07-29T00:00:00.000Z
     updated: 2022-07-29T00:00:00.000Z
@@ -1579,7 +1983,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:scopedir"
     locator: "scopedir.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/scopedir"
     headingids:
@@ -1587,6 +1990,7 @@ entries:
       - "summary"
       - "purpose"
       - "criteria"
+    termid: "concept:scopedir"
     vsntag: "terms"
   - term: "scopetag"
     termType: "concept"
@@ -1596,8 +2000,14 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "scopetag{ss}"
-      - "scope-tag{ss}"
+      - "scopetag"
+      - "scopetags"
+      - "scopetag's"
+      - "scopetag(s)"
+      - "scope-tag"
+      - "scope-tags"
+      - "scope-tag's"
+      - "scope-tag(s)"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-07-28T00:00:00.000Z
@@ -1605,7 +2015,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:scopetag"
     locator: "scopetag.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/scopetag"
     headingids:
@@ -1614,6 +2023,7 @@ entries:
       - "criteria"
       - "examples"
       - "notes"
+    termid: "concept:scopetag"
     vsntag: "terms"
   - term: "semantic-unit"
     termType: "concept"
@@ -1624,7 +2034,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "semantic-unit{ss}"
+      - "semantic-unit"
+      - "semantic-units"
+      - "semantic-unit's"
+      - "semantic-unit(s)"
     status: "proposed"
     created: 2022-07-27T00:00:00.000Z
     updated: 2022-07-27T00:00:00.000Z
@@ -1632,7 +2045,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:semantic-unit"
     locator: "semantic-unit.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/semantic-unit"
     headingids:
@@ -1640,6 +2052,7 @@ entries:
       - "summary"
       - "purpose"
       - "criteria"
+    termid: "concept:semantic-unit"
     vsntag: "terms"
   - term: "semantics"
     termType: "concept"
@@ -1657,7 +2070,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:semantics"
     locator: "semantics.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/semantics"
     headingids:
@@ -1665,6 +2077,7 @@ entries:
       - "summary"
       - "purpose"
       - "criteria"
+    termid: "concept:semantics"
     vsntag: "terms"
   - term: "synonym"
     termType: "concept"
@@ -1674,7 +2087,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "synonym{ss}"
+      - "synonym"
+      - "synonyms"
+      - "synonym's"
+      - "synonym(s)"
     status: "proposed"
     created: 2022-11-27T00:00:00.000Z
     updated: 2022-11-27T00:00:00.000Z
@@ -1682,7 +2098,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:synonym"
     locator: "synonym.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/synonym"
     headingids:
@@ -1691,6 +2106,7 @@ entries:
       - "the-`synonymof`-field-{#synonym-of}"
       - "how-synonyms-work"
       - "purpose"
+    termid: "concept:synonym"
     vsntag: "terms"
   - term: "tag"
     termType: "concept"
@@ -1700,7 +2116,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "tag{ss}"
+      - "tag"
+      - "tags"
+      - "tag's"
+      - "tag(s)"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-06T00:00:00.000Z
@@ -1708,7 +2127,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:tag"
     locator: "tag.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/tag"
     headingids:
@@ -1717,6 +2135,7 @@ entries:
       - "criteria"
       - "examples"
       - "notes"
+    termid: "concept:tag"
     vsntag: "terms"
   - term: "term"
     termType: "concept"
@@ -1726,9 +2145,18 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "term{ss}"
-      - "word{ss}"
-      - "phrase{ss}"
+      - "term"
+      - "terms"
+      - "term's"
+      - "term(s)"
+      - "word"
+      - "words"
+      - "word's"
+      - "word(s)"
+      - "phrase"
+      - "phrases"
+      - "phrase's"
+      - "phrase(s)"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-08-09T00:00:00.000Z
@@ -1736,7 +2164,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:term"
     locator: "term.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/term"
     headingids:
@@ -1746,6 +2173,7 @@ entries:
       - "criteria"
       - "notes"
       - "footnotes"
+    termid: "concept:term"
     vsntag: "terms"
   - term: "term-identifier"
     termType: "concept"
@@ -1754,7 +2182,10 @@ entries:
     glossaryTerm: "Term Identifier"
     glossaryText: "a [text](identifier@), of the form `<termid>@<terminology-identifier>`, that is used for [identifying](@) a [semantic unit](@) within a designated [terminology](@). If `@<terminology-identifier>` is omitted, the current (or default) [terminology](@) is assumed."
     formPhrases:
-      - "term-identifier{ss}"
+      - "term-identifier"
+      - "term-identifiers"
+      - "term-identifier's"
+      - "term-identifier(s)"
     status: "proposed"
     created: 2022-11-24T00:00:00.000Z
     updated: 2023-11-24T00:00:00.000Z
@@ -1762,7 +2193,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:term-identifier"
     locator: "term-identifier.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/spec-syntax/term-identifier-syntax"
     headingids:
@@ -1770,6 +2200,7 @@ entries:
       - "syntax"
       - "semantics---looking-for-mrg-entries-{#term-identifiers-mrg-semantics}"
       - "examples"
+    termid: "concept:term-identifier"
     vsntag: "terms"
   - term: "term-ref"
     termType: "concept"
@@ -1779,9 +2210,18 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "term-ref{ss}"
-      - "termref{ss}"
-      - "term-reference{ss}"
+      - "term-ref"
+      - "term-refs"
+      - "term-ref's"
+      - "term-ref(s)"
+      - "termref"
+      - "termrefs"
+      - "termref's"
+      - "termref(s)"
+      - "term-reference"
+      - "term-references"
+      - "term-reference's"
+      - "term-reference(s)"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-08-04T00:00:00.000Z
@@ -1789,13 +2229,13 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:term-ref"
     locator: "term-ref.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/term-ref"
     headingids:
       - "term-ref"
       - "summary"
       - "purpose"
+    termid: "concept:term-ref"
     vsntag: "terms"
   - id: "term-selection-instruction"
     term: "term-selection-instruction"
@@ -1808,8 +2248,14 @@ entries:
       - "glossary-entries"
       - "terminology-management"
     formPhrases:
-      - "term-selection-instruction{ss}"
-      - "selection-instruction{ss}"
+      - "term-selection-instruction"
+      - "term-selection-instructions"
+      - "term-selection-instruction's"
+      - "term-selection-instruction(s)"
+      - "selection-instruction"
+      - "selection-instructions"
+      - "selection-instruction's"
+      - "selection-instruction(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -1817,13 +2263,13 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:term-selection-instruction"
     locator: "term-selection-instruction.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/term-selection-instruction"
     headingids:
       - "term-selection-instruction"
       - "examples"
       - "notes"
+    termid: "concept:term-selection-instruction"
     vsntag: "terms"
   - term: "term-type"
     termType: "concept"
@@ -1833,7 +2279,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "term-type{ss}"
+      - "term-type"
+      - "term-types"
+      - "term-type's"
+      - "term-type(s)"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2023-08-01T00:00:00.000Z
@@ -1841,13 +2290,13 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:term-type"
     locator: "term-type.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/term-type"
     headingids:
       - "term-type"
       - "default-term-type"
       - "recommended-term-types"
+    termid: "concept:term-type"
     vsntag: "terms"
   - term: "termid"
     termType: "concept"
@@ -1857,8 +2306,14 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "termid{ss}"
-      - "term-id{ss}"
+      - "termid"
+      - "termids"
+      - "termid's"
+      - "termid(s)"
+      - "term-id"
+      - "term-ids"
+      - "term-id's"
+      - "term-id(s)"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-08-09T00:00:00.000Z
@@ -1866,18 +2321,47 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:termid"
     locator: "termid.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/termid"
     headingids:
       - "term-id"
+    termid: "concept:termid"
+    vsntag: "terms"
+  - term: "terminology"
+    termType: "pattern"
+    isa: null
+    glossaryTerm: "Terminology Pattern"
+    glossaryText: "a [mental model](@) that describes the relations between a [community](@), its (intangible) [knowledge](@), and the artifacts we use to document that [knowledge](@), such as [terms](@), [definitions](@), [mental models](@), [glossaries](@), etc."
+    synonymOf: null
+    grouptags: null
+    formPhrases: []
+    status: "proposed"
+    created: 2022-06-06T00:00:00.000Z
+    updated: 2022-06-06T00:00:00.000Z
+    contributors: "RieksJ"
+    attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
+    originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
+    scopetag: "tev2"
+    locator: "patterns/pattern-terminology.md"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/patterns/pattern-terminology"
+    headingids:
+      - "create-and-maintain-terminologies"
+      - "introduction"
+      - "formalized-model"
+      - "white:-parties,-communities-{#white}"
+      - "green:-scopes---data-artifacts-for-referencing-and-documenting-knowledge-{#green}"
+      - "yellow:-intangible-concepts-{#yellow}"
+    termid: "pattern:terminology"
     vsntag: "terms"
   - term: "terminology"
     termType: "concept"
     grouptags: null
     synonymOf: null
     formPhrases:
-      - "terminolog{yies}"
+      - "terminology"
+      - "terminologys"
+      - "terminology's"
+      - "terminologies"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-08-11T00:00:00.000Z
@@ -1887,13 +2371,13 @@ entries:
     glossaryTerm: null
     glossaryText: "a set of [terms](scoped-term@) that are used within a single [scope](@) to refer to [concepts](@) and other [semantic units](@) of a single [party](@) (e.g. a [community](@)), enabling [parties](@) to reason and communicate ideas they have about one or more specific topics."
     scopetag: "tev2"
-    termid: "concept:terminology"
     locator: "terminology.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/terminology"
     headingids:
       - "terminology"
       - "summary"
       - "purpose"
+    termid: "concept:terminology"
     vsntag: "terms"
   - term: "terminology-identifier"
     termType: "concept"
@@ -1905,7 +2389,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "terminology-identifier{ss}"
+      - "terminology-identifier"
+      - "terminology-identifiers"
+      - "terminology-identifier's"
+      - "terminology-identifier(s)"
     status: "proposed"
     created: 2023-09-29T00:00:00.000Z
     updated: 2023-09-29T00:00:00.000Z
@@ -1913,13 +2400,13 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:terminology-identifier"
     locator: "terminology-identifier.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/spec-syntax/terminology-identifier-syntax"
     headingids:
       - "terminology-identifiers"
       - "syntax"
       - "examples"
+    termid: "concept:terminology-identifier"
     vsntag: "terms"
   - id: "terminology-process"
     term: "terminology-process"
@@ -1938,7 +2425,6 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:terminology-process"
     locator: "terminology-process.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/terminology-process"
     headingids:
@@ -1948,6 +2434,7 @@ entries:
       - "conflict-mediation-and-resolution"
       - "background"
       - "notes"
+    termid: "concept:terminology-process"
     vsntag: "terms"
   - term: "terms-community"
     termType: "concept"
@@ -1957,7 +2444,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "terms-communit{yies}"
+      - "terms-community"
+      - "terms-communitys"
+      - "terms-community's"
+      - "terms-communities"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-06T00:00:00.000Z
@@ -1965,7 +2455,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:terms-community"
     locator: "terms-community.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/terms-community"
     headingids:
@@ -1975,6 +2464,7 @@ entries:
       - "criterion"
       - "example"
       - "notes"
+    termid: "concept:terms-community"
     vsntag: "terms"
   - term: "tev2"
     termType: "concept"
@@ -1983,7 +2473,7 @@ entries:
     glossaryText: "a set of specifications and tools that caters for the [curation](@) of [terminologies](@), as well as for its subsequent use in publications of different types (e.g. websites, whitepapers) and formats (e.g. html, LaTeX), as appropriate for different, individual [scopes](@)."
     synonymOf: null
     grouptags: null
-    formPhrases: null
+    formPhrases: []
     status: "proposed"
     created: 2022-09-19T00:00:00.000Z
     updated: 2022-09-19T00:00:00.000Z
@@ -1991,12 +2481,12 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:tev2"
     locator: "tev2.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/tev2"
     headingids:
       - "tev2-(terminology-engine,-version-2)"
       - "summary"
+    termid: "concept:tev2"
     vsntag: "terms"
   - id: "tev2-tool"
     term: "tev2-tool"
@@ -2007,8 +2497,14 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "tev2-tool{ss}"
-      - "tool{ss}"
+      - "tev2-tool"
+      - "tev2-tools"
+      - "tev2-tool's"
+      - "tev2-tool(s)"
+      - "tool"
+      - "tools"
+      - "tool's"
+      - "tool(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -2016,7 +2512,6 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:tev2-tool"
     locator: "tev2-tool.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/tev2-tool"
     headingids:
@@ -2024,6 +2519,7 @@ entries:
       - "description"
       - "examples"
       - "notes"
+    termid: "concept:tev2-tool"
     vsntag: "terms"
   - id: "tev2-toolbox"
     term: "tev2-toolbox"
@@ -2033,7 +2529,7 @@ entries:
     glossaryText: "the collection of tools designed to support and facilitate the process of terminology management following the [TEv2 specifications](/docs/overview). These tools assist [curators](@) in various tasks related to the curation, creation, and maintenance of terminological assets."
     synonymOf: null
     grouptags: null
-    formPhrases: null
+    formPhrases: []
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -2041,7 +2537,6 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:tev2-toolbox"
     locator: "tev2-toolbox.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/tev2-toolbox"
     headingids:
@@ -2050,6 +2545,7 @@ entries:
       - "functionality"
       - "examples"
       - "notes"
+    termid: "concept:tev2-toolbox"
     vsntag: "terms"
   - id: "trrt"
     term: "trrt"
@@ -2064,9 +2560,18 @@ entries:
       - "tev2-tool"
       - "tev2-toolbox"
     formPhrases:
-      - "trrt{ss}"
-      - "termref-rendering-tool{ss}"
-      - "term-ref-rendering-tool{ss}"
+      - "trrt"
+      - "trrts"
+      - "trrt's"
+      - "trrt(s)"
+      - "termref-rendering-tool"
+      - "termref-rendering-tools"
+      - "termref-rendering-tool's"
+      - "termref-rendering-tool(s)"
+      - "term-ref-rendering-tool"
+      - "term-ref-rendering-tools"
+      - "term-ref-rendering-tool's"
+      - "term-ref-rendering-tool(s)"
     status: "proposed"
     created: 2023-07-31T00:00:00.000Z
     updated: 2023-07-31T00:00:00.000Z
@@ -2074,7 +2579,6 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:trrt"
     locator: "trrt.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/spec-tools/trrt"
     headingids:
@@ -2092,6 +2596,7 @@ entries:
       - "rewriting-the-term-ref-with-a-renderable-ref"
       - "processing,-errors-and-warnings"
       - "deploying-the-tool"
+    termid: "concept:trrt"
     vsntag: "terms"
   - term: "versiontag"
     termType: "concept"
@@ -2101,9 +2606,18 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "versiontag{ss}"
-      - "version-tag{ss}"
-      - "vsntag{ss}"
+      - "versiontag"
+      - "versiontags"
+      - "versiontag's"
+      - "versiontag(s)"
+      - "version-tag"
+      - "version-tags"
+      - "version-tag's"
+      - "version-tag(s)"
+      - "vsntag"
+      - "vsntags"
+      - "vsntag's"
+      - "vsntag(s)"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-07-28T00:00:00.000Z
@@ -2111,7 +2625,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:versiontag"
     locator: "versiontag.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/versiontag"
     headingids:
@@ -2120,6 +2633,7 @@ entries:
       - "criteria"
       - "examples"
       - "notes"
+    termid: "concept:versiontag"
     vsntag: "terms"
   - term: "vocabulary"
     termType: "concept"
@@ -2129,7 +2643,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
-      - "vocabular{yies}"
+      - "vocabulary"
+      - "vocabularys"
+      - "vocabulary's"
+      - "vocabularies"
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
     updated: 2022-06-06T00:00:00.000Z
@@ -2137,7 +2654,6 @@ entries:
     attribution: "[eSSIF-Lab](https://essif-lab.github.io/framework)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    termid: "concept:vocabulary"
     locator: "vocabulary.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/vocabulary"
     headingids:
@@ -2146,5 +2662,6 @@ entries:
       - "purpose"
       - "criteria"
       - "examples"
+    termid: "concept:vocabulary"
     vsntag: "terms"
 filename: "mrg.tev2.terms.yaml"
