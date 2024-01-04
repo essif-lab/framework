@@ -29,7 +29,6 @@ The mechanisms we provide include:
 - a [process](terminology-process@) for [managing](management@) the [meaning](definition@) of [terms](@) in the context of so-called [terms-communities](@);
 - a [set of terms and definitions](essifLab-glossary) that are managed according to that process;
 - a [set of mental models](essifLab-pattern-list), each of which shows how various terms relate to one another in a consistent and coherent way;
-- a tool, i.e. [Docusaurus](https://docusaurus.io/) + [a plugin](tev1/terminology-engine-v1), that allows for making web-based documentation such as what you are looking at now.
 
 ### Background
 
