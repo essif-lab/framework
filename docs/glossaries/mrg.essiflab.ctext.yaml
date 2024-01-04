@@ -948,7 +948,6 @@ entries:
       - "definition(s)"
     status: "draft"
     grouptags: null
-    hoverText: "Definition: a text that helps Parties to have the same understanding about the meaning of (and Concepts behind) a Term, ideally in such a way that these Parties can determine whether or not they make the same distinction."
     glossaryTerm: "Definition"
     glossaryText: "a text that helps [parties](@) to have the same understanding about the meaning of (and [concept](@) behind) a [term](@), ideally in such a way that these [parties](@) can determine whether or not they make the same distinction."
     date: 20210601
@@ -960,7 +959,6 @@ entries:
       - "short-description"
       - "purpose"
       - "criteria"
-      - "examples"
       - "related-concepts"
       - "notes"
     termid: "concept:definition"
@@ -3064,6 +3062,26 @@ entries:
       - "examples"
       - "notes"
     termid: "concept:scope-of-control"
+    vsntag: "ctext"
+  - id: "scoped-term"
+    displayed_sidebar: "essifLabSideBar"
+    termType: "concept"
+    term: "scoped-term"
+    status: "draft"
+    grouptags: null
+    hoverText: "Scoped Term: a Term, the meaning of which is determined by the Definition to which it refers in a specific Scope/context."
+    glossaryTerm: "Term (Scoped)"
+    glossaryText: "a [term](@), the meaning of which is determined by the [definition](@) to which it refers in a specific [scope](@)/context."
+    date: 20211101
+    scopetag: "essiflab"
+    locator: "scoped-term.md"
+    navurl: "https://essif-lab.github.io/framework/docs/terms/scoped-term"
+    formPhrases: []
+    headingids:
+      - "term-(scoped)"
+      - "short-description"
+      - "purpose"
+    termid: "concept:scoped-term"
     vsntag: "ctext"
   - id: "self-sovereign-identity"
     displayed_sidebar: "essifLabSideBar"
