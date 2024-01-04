@@ -138,7 +138,7 @@ It is expected that there are already some interfaces out there that may turn ou
 
 [ABC] Its origins lie with the [*ABC4Trust project*](https://abc4trust.eu/). Extensive [*documentation*](https://abc4trust.eu/index.php/pub) is available, e.g. an [*Architecture for Attribute-based Credential Technologies*](https://abc4trust.eu/download/Deliverable_D2.2.pdf) (also one [*for developers*](https://abc4trust.eu/download/ABC4Trust-H2.2_ABC4Trust_Architecture_for_Developers.pdf)).
 
-[eIDAS5] [*"Regulation (EU) No 910/2014 of the European Parliament and of the Council of 23 July 2014 on electronic identification and trust services for electronic [transactions](@) in the internal market and repealing Directive 1999/93/EC"*](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.257.01.0073.01.ENG). *EUR-Lex*. The European Parliament and the Council of the European Union.
+[eIDAS5] [*"Regulation (EU) No 910/2014 of the European Parliament and of the Council of 23 July 2014 on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC"*](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.257.01.0073.01.ENG). *EUR-Lex*. The European Parliament and the Council of the European Union.
 
 ------
 

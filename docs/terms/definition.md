@@ -7,7 +7,6 @@ term: definition
 formPhrases: [ "definition{ss}" ]
 status: draft
 grouptags:
-hoverText: "Definition: a text that helps Parties to have the same understanding about the meaning of (and Concepts behind) a Term, ideally in such a way that these Parties can determine whether or not they make the same distinction."
 glossaryTerm: "Definition"
 glossaryText: "a text that helps [parties](@) to have the same understanding about the meaning of (and [concept](@) behind) a [term](@), ideally in such a way that these [parties](@) can determine whether or not they make the same distinction."
 date: 20210601
@@ -44,11 +43,6 @@ A **definition** is a text that comprises at a minimum:
 - a [scope](@) that is curated ([controlled](controller@)) by a [party](@), and that is related to (the pursuit of) a non-empty set of [objectives](@);
 - a [criterion](https://www.lexico.com/definition/criterion) that specifies the necessary and sufficient conditions for determining what does and what does not constitute some [concept](@) (idea, class of [entities](@));
 - a [name or phrase](term@) that is used within the [scope](@) to refer to (unidentified, or arbitrary, or specific) [entities](@) that satisfy the criterion.
-
-### Examples
-
-- The definition of the term [definition](@) (a) is defined in, and hence valid in the scope `eSSIFLab`, (b) specifies a criterion (see the `Criteria` section above), and (d) has a name (i.e. `definition`) associated with it. Since it satisfies the criteria of `definition`, it can be referred to as 'the definition of `definition`'.
-- The [concepts](@) defined within the scope eSSIFLab have definitions associated with them, where the criteria, relevance and terms are defined in the [concept-file](@) of that concept.
 
 ### Related Concepts
 

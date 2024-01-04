@@ -41,7 +41,7 @@ Traditional tools usually come with drawbacks that reduce their practical useful
 The eSSIF-Lab terminology effort is an attempt to improve on this, by
 - creating and using tools that help authors and readers to understand the texts the create/read;
 - creating and maintaining a [Terminology Corpus](corpus@) that documents such understanding;
-- automatically regenerate [knowledge artifacts (e.g. [glossaries](@) or [dictionaries](@)) as the [corpus](@) is being updated.
+- automatically regenerate [semantic units](@) (e.g. [glossaries](@) or [dictionaries](@)) as the [corpus](@) is being updated.
 
 ### eSSIF-Lab Terminology Engine
 

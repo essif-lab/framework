@@ -3,7 +3,7 @@ id: scoped-term
 displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: concept
-term: term
+term: scoped-term
 status: draft
 grouptags:
 hoverText: "Scoped Term: a Term, the meaning of which is determined by the Definition to which it refers in a specific Scope/context."
