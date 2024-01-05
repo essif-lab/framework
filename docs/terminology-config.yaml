@@ -15,9 +15,7 @@ mrgt:
 
 hrgt:
   interpreter: default
-  converter: |+
-    ### [{{#if glossaryTerm}}{{glossaryTerm}}{{else}}{{capFirst term}}{{/if}}]({{localize navurl}})\n
-    {{#if glossaryText}}{{glossaryText}}{{else}}no `glossaryText` was specified for this entry.{{/if}}\n
+  converter: markdown-section-3
   force: true # overwrite existing files
   input:
     - "essifLab-glossary.md"
