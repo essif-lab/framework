@@ -7,7 +7,7 @@ term: guardianship
 formPhrases: [ guardianship ]
 status: stable
 grouptags:
-glossaryTerm: Guardianship Pattetrn
+glossaryTerm: Guardianship Pattern
 glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain what a generic [guardianship](@) consists of, and how it relates to [guardians](@), [dependents](@), [jurisdictions](@), etc."
 hoverText: "The Guardianships pattern captures the Concepts and relations that explain what a generic Guardianship consists of, and how it relates to Guardians, Dependents, Jurisdictions, etc."
 date: 20210601
@@ -16,8 +16,6 @@ date: 20210601
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Guardianship
-
-### Purpose
 
 The **Guardianship pattern** captures the concepts and relations that explain how generic guardianships work, and can be constructed. It shows that [guardianship arrangements](guardianship-arrangement@) are embedded in a [jurisdiction](@) that govern such arrangements.
 
