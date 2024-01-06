@@ -852,8 +852,8 @@ entries:
     attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
-    locator: "formphrase.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/formphrase"
+    locator: "form-phrase.md"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/form-phrase"
     headingids:
       - "form-phrase"
       - "examples"
@@ -1323,7 +1323,7 @@ entries:
     bodyFile: "/spec-tools/22-hrgt.md"
     glossaryTerm: "Human Readable Glossary Tool"
     glossaryAlias: "HRGT"
-    glossaryText: "a software tool designed to create, manage, and process [Human Readable Glossaries (HRGs)](@), as [specified by TEv2](/docs/spec-tools-envisaged/hrgt). HRGTs offer features for selecting [terms](@) that are [curated](@) within the [scope](@) it is run in, or from other [scopes](@)."
+    glossaryText: "a software tool designed to create, manage, and process [Human Readable Glossaries (HRGs)](@), as [specified by TEv2](/docs/spec-tools/hrgt). HRGTs offer features for selecting [terms](@) that are [curated](@) within the [scope](@) it is run in, or from other [scopes](@)."
     synonymOf: null
     grouptags:
       - "tools"
@@ -1599,7 +1599,7 @@ entries:
     termType: "concept"
     isa: null
     glossaryTerm: "Ingestion (Process)"
-    glossaryText: "the process that is run by a [terms-community](@), in which their members suggest, draft, and discuss [definitions](@) ([terms](@) + [criteria](@)) that are relevant for a particular [scope](@), and converting such contributions into [curated texts](@) that accurately document the [concepts](@) and other [semantic units](@) and that adhere to the [TEv2-specifications](/docs/spec-files/ctext-file)."
+    glossaryText: "the process that is run by a [terms-community](@), in which their members suggest, draft, and discuss [definitions](@) ([terms](@) + [criteria](@)) that are relevant for a particular [scope](@), and converting such contributions into [curated texts](@) that accurately document the [concepts](@) and other [semantic units](@) and that adhere to the [TEv2-specifications](/docs/spec-files/curated-text-file)."
     hoverText: "Ingestion Process: {{noRefs glossaryText}}"
     synonymOf: null
     grouptags: null
