@@ -844,6 +844,7 @@ entries:
     term: "decentralized-grc"
     formPhrases:
       - "decentralized-grc"
+      - "decentralized-grc-pattern"
     status: "draft"
     grouptags: null
     glossaryTerm: "Decentralized GRC Pattern"
@@ -867,6 +868,7 @@ entries:
     term: "decentralized-risk-management"
     formPhrases:
       - "decentralized-risk-management"
+      - "decentralized-risk-management-pattern"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Decentralized Risk Management Pattern"
@@ -926,6 +928,7 @@ entries:
     term: "decision-making"
     formPhrases:
       - "decision-making"
+      - "decision-making-pattern"
     status: "draft"
     grouptags: null
     glossaryTerm: "Decision Making Pattern"
@@ -1111,6 +1114,7 @@ entries:
     term: "duties-and-rights"
     formPhrases:
       - "duties-and-rights"
+      - "duties-and-rights-pattern"
     status: "idea"
     grouptags: null
     glossaryTerm: "Duties and Rights Pattern"
@@ -1400,6 +1404,7 @@ entries:
     term: "governance-and-management"
     formPhrases:
       - "governance-and-management"
+      - "governance-and-management-pattern"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Governance and Management Pattern"
@@ -1489,30 +1494,6 @@ entries:
     navurl: "https://essif-lab.github.io/framework/docs/terms/guardianship"
     headingids: []
     termid: "concept:guardianship"
-    vsntag: "default"
-  - id: "pattern-guardianship"
-    displayed_sidebar: "essifLabSideBar"
-    termType: "pattern"
-    term: "guardianship"
-    formPhrases:
-      - "guardianship"
-    status: "stable"
-    grouptags: null
-    glossaryTerm: "Guardianship Pattern"
-    glossaryText: "a set of [concepts](@) and other [semantic units](@) that can be used to explain what a generic [guardianship](@) consists of, and how it relates to [guardians](@), [dependents](@), [jurisdictions](@), etc."
-    hoverText: "The Guardianships pattern captures the Concepts and relations that explain what a generic Guardianship consists of, and how it relates to Guardians, Dependents, Jurisdictions, etc."
-    date: 20210601
-    scopetag: "essiflab"
-    locator: "pattern-guardianship.md"
-    navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-guardianship"
-    headingids:
-      - "guardianship"
-      - "introduction"
-      - "formalized-model"
-      - "guardianship-governance"
-      - "define-time:-guardianship-types"
-      - "run-time:-guardianship-arrangements"
-    termid: "pattern:guardianship"
     vsntag: "default"
   - id: "guardianship-arrangement"
     displayed_sidebar: "essifLabSideBar"
@@ -1663,6 +1644,7 @@ entries:
     term: "identification"
     formPhrases:
       - "identification"
+      - "identification-pattern"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Identification Pattern"
@@ -1715,7 +1697,8 @@ entries:
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "identifier"
-    formPhrases: []
+    formPhrases:
+      - "identifier-pattern"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Identifier Pattern"
@@ -1784,7 +1767,8 @@ entries:
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "identity"
-    formPhrases: []
+    formPhrases:
+      - "identity-pattern"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Identity Pattern"
@@ -1905,6 +1889,7 @@ entries:
     term: "jurisdiction"
     formPhrases:
       - "jurisdiction"
+      - "jurisdiction-pattern"
     status: "stable"
     grouptags: null
     glossaryTerm: "Jurisdiction Pattern"
@@ -2025,37 +2010,6 @@ entries:
       - "examples"
     termid: "concept:legal-system"
     vsntag: "default"
-  - id: "management"
-    displayed_sidebar: "essifLabSideBar"
-    termType: "concept"
-    term: "management"
-    formPhrases:
-      - "management"
-      - "manager"
-      - "manage"
-      - "manages"
-      - "managed"
-      - "managed-by"
-      - "managing"
-      - "managing-party"
-      - "managing-partys"
-      - "managing-party's"
-      - "managing-parties"
-    status: "draft"
-    grouptags: null
-    hoverText: "Management: the act or process of managing or actually realizing of (the results associated with) a set of Objectives by the Owner of these Objectives."
-    glossaryTerm: "Management"
-    glossaryText: "the [act](action@) or process of managing or actually realizing of (the results associated with) a set of [objective](@) by the [owner](@) of these [objective](@)."
-    date: 20210830
-    scopetag: "essiflab"
-    locator: "management.md"
-    navurl: "https://essif-lab.github.io/framework/docs/terms/management"
-    headingids:
-      - "management"
-      - "short-description"
-      - "purpose"
-    termid: "concept:management"
-    vsntag: "default"
   - id: "mandate"
     displayed_sidebar: "essifLabSideBar"
     termType: "concept"
@@ -2099,6 +2053,7 @@ entries:
     term: "mandates-delegation-hiring"
     formPhrases:
       - "mandates-delegation-hiring"
+      - "mandates-delegation-hiring-pattern"
     status: "idea"
     grouptags: null
     glossaryTerm: "Mandates, Delegation and Hiring Pattern"
@@ -2141,6 +2096,7 @@ entries:
     term: "mental-model"
     formPhrases:
       - "mental-model"
+      - "mental-model-pattern"
     status: "draft"
     grouptags: null
     glossaryTerm: "Mental Model Pattern"
@@ -2504,6 +2460,7 @@ entries:
     term: "party-actor-action"
     formPhrases:
       - "party-actor-action"
+      - "party-actor-action-pattern"
     status: "stable"
     grouptags: null
     glossaryTerm: "Party, Actor and Actions Pattern"
@@ -2529,6 +2486,7 @@ entries:
     term: "party-representation"
     formPhrases:
       - "party-representation"
+      - "party-representation-pattern"
     status: "draft"
     grouptags: null
     glossaryTerm: "Party Representation Pattern"
@@ -3276,7 +3234,8 @@ entries:
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "semantics"
-    formPhrases: []
+    formPhrases:
+      - "semantics-pattern"
     status: "idea"
     grouptags: null
     glossaryTerm: "Semantics Pattern"
@@ -3513,7 +3472,7 @@ entries:
     termType: "pattern"
     term: "terminology"
     formPhrases:
-      - "terminology"
+      - "terminology-pattern"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Terminology Pattern"
@@ -3728,7 +3687,7 @@ entries:
     termType: "pattern"
     term: "trust"
     formPhrases:
-      - "trust"
+      - "trust-pattern"
     status: "idea"
     grouptags: null
     glossaryTerm: "Trust Pattern"
@@ -4016,6 +3975,7 @@ entries:
     term: "world-model"
     formPhrases:
       - "world-model"
+      - "world-model-pattern"
     status: "draft"
     grouptags: null
     glossaryTerm: "eSSIF-Lab World Model"
