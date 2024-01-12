@@ -3,7 +3,7 @@ id: pattern-guardianship
 displayed_sidebar: essifLabSideBar
 termType: pattern
 term: guardianship
-formPhrases: [ "guardianship{ss}", "guardianship{ss}-pattern ]
+formPhrases: [ "guardianship{ss}", "guardianship{ss}-pattern" ]
 status: stable
 grouptags:
 glossaryTerm: Guardianship Pattern
