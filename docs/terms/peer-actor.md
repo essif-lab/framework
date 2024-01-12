@@ -1,7 +1,6 @@
 ---
 id: peer-actor
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: peer-actor
 formPhrases: [ "peer-actor{ss}" ]

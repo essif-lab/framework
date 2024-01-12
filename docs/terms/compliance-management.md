@@ -1,7 +1,6 @@
 ---
 id: compliance-management
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: compliance-management
 formPhrases: [ "compliance-management" ]

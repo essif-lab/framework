@@ -1,7 +1,6 @@
 ---
 id: credential-catalogue
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: credential-catalogue
 formPhrases: [ "credential-catalogue{ss}" ]

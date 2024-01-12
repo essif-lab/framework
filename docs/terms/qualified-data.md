@@ -1,7 +1,6 @@
 ---
 id: qualified-data
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: qualified-data
 formPhrases: [ "qualified-data" ]

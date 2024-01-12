@@ -1,7 +1,6 @@
 ---
 id: compliance-level
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: compliance-level
 formPhrases: [ "compliance-level{ss}" ]

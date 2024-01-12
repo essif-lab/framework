@@ -1,7 +1,6 @@
 ---
 id: identifier
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: identifier
 formPhrases: [ "identifier{ss}" ]

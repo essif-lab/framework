@@ -1,10 +1,9 @@
 ---
 id: pattern-trust
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: pattern
 term: trust
-formPhrases: [ trust ]
+formPhrases: [ "trust-pattern" ]
 status: idea
 grouptags:
 glossaryTerm: Trust Pattern

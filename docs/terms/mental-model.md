@@ -1,7 +1,6 @@
 ---
 id: mental-model
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: mental-model
 formPhrases: [ "mental-model{ss}" ]

@@ -1,7 +1,6 @@
 ---
 id: actor
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: actor
 formPhrases: [ "actor{ss}", "digital-actor{ss}" ]

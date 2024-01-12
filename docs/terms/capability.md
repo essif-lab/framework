@@ -1,7 +1,6 @@
 ---
 id: capability
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: capability
 formPhrases: [ "capabilit{yies}", "capabilit{yies}-of-a-party" ]

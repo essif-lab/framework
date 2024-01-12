@@ -1,7 +1,6 @@
 ---
 id: mission
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: mission
 formPhrases: [ "mission{ss}" ]

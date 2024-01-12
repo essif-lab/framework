@@ -1,10 +1,9 @@
 ---
 id: pattern-decentralized-risk-management
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: pattern
 term: decentralized-risk-management
-formPhrases: [ "decentralized-risk-management" ]
+formPhrases: [ "decentralized-risk-management", "decentralized-risk-management-pattern" ]
 status: reviewable
 grouptags:
 glossaryTerm: Decentralized Risk Management Pattern

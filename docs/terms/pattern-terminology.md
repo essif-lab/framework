@@ -1,10 +1,9 @@
 ---
 id: pattern-terminology
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: pattern
 term: terminology
-formPhrases: [ terminology ]
+formPhrases: [ "terminology-pattern" ]
 status: reviewable
 grouptags:
 glossaryTerm: "Terminology Pattern"

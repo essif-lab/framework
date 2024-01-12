@@ -1,7 +1,6 @@
 ---
 id: employment-contract
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: employment-contract
 formPhrases: [ "employment-contract{ss}" ]

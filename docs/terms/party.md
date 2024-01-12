@@ -1,7 +1,6 @@
 ---
 id: party
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: party
 formPhrases: [ "part{yies}" ]

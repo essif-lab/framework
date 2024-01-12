@@ -1,10 +1,9 @@
 ---
 id: ssi
 displayed_sidebar: essifLabSideBar
-scopetag: eSSIFLab
 termType: concept
 term: ssi
-formPhrases: [ ssi ]
+formPhrases: [ "ssi" ]
 conceptref: essifLab:self-sovereign-identity
 status: draft
 grouptags:

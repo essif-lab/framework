@@ -1,10 +1,9 @@
 ---
 id: risk-management
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: risk-management
-formPhrases: [ risk-management, "risk-manager{ss}" ]
+formPhrases: [ "risk-management", "risk-manager{ss}" ]
 status: draft
 grouptags:
 hoverText: "Risk management: a process that is run by (or on behalf of) a specific Party for the purpose of Managing the Risks that it Owns (thereby realizing specific Risk Objectives)."

@@ -1,7 +1,6 @@
 ---
 id: trust-level
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: trust-level
 formPhrases: [ "trust-level{ss}", "level{ss}-of-trust" ]

@@ -1,7 +1,6 @@
 ---
 id: normative-framework
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: normative-framework
 formPhrases: [ "normative-framework{ss}" ]

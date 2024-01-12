@@ -2,7 +2,6 @@
 id: generic-governance-process
 title: A Generic Governance Process
 sidebar_label: Generic Governance Process
-scopetag: essifLab
 date: 20220912
 ---
 

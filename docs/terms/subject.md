@@ -1,7 +1,6 @@
 ---
 id: subject
 displayed_sidebar: essifLabSideBar
-scopetag: eSSIFLab
 termType: concept
 term: subject
 formPhrases: [ "subject{ss}" ]

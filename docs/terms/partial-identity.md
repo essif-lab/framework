@@ -1,7 +1,6 @@
 ---
 id: partial-identity
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: partial-identity
 formPhrases: [ "partial-identit{yies}" ]

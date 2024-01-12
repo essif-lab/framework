@@ -1,7 +1,6 @@
 ---
 id: action
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: action
 formPhrases: [ "action{ss}", "acting", "activit{yies}" ]

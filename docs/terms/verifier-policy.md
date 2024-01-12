@@ -1,7 +1,6 @@
 ---
 id: verifier-policy
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: verifier-policy
 formPhrases: [ "verifier-polic{yies}" ]

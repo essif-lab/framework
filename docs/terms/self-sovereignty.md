@@ -1,10 +1,9 @@
 ---
 id: self-sovereignty
 displayed_sidebar: essifLabSideBar
-scopetag: eSSIFLab
 termType: concept
 term: self-sovereignty
-formPhrases: [ self-sovereignty, autonomy ]
+formPhrases: [ "self-sovereignty", "autonomy" ]
 status: draft
 grouptags:
 hoverText: "Self-Sovereign(ty): the characteristic of every Party that it is autonomous in managing and operating its own Knowledge, particularly in making decisions and deciding how to decide."

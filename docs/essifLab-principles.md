@@ -2,7 +2,6 @@
 id: essifLab-principles
 title: eSSIF-Lab Principles
 sidebar_label: Principles
-scopetag: essifLab
 date: 20210601
 ---
 

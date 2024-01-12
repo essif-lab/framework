@@ -1,7 +1,6 @@
 ---
 id: communication-session
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: communication-session
 formPhrases: [ "communication-session{ss}", "digital-communication-session{ss}" ]

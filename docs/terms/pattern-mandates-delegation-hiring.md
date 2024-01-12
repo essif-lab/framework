@@ -1,10 +1,9 @@
 ---
 id: pattern-mandates-delegation-hiring
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: pattern
 term: mandates-delegation-hiring
-formPhrases: [ mandates-delegation-hiring ]
+formPhrases: [ "mandates-delegation-hiring", "mandates-delegation-hiring-pattern" ]
 status: idea
 grouptags:
 glossaryTerm: Mandates, Delegation and Hiring Pattern

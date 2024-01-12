@@ -1,7 +1,6 @@
 ---
 id: revocation-component
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: revocation-component
 formPhrases: [ "revocation-component{ss}", "revocator{ss}" ]

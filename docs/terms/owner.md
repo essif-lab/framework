@@ -1,7 +1,6 @@
 ---
 id: owner
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: owner
 formPhrases: [ "owner{ss}", "own{ss}" ]

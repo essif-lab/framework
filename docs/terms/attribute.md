@@ -1,7 +1,6 @@
 ---
 id: attribute
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: attribute
 formPhrases: [ "attribute{ss}" ]

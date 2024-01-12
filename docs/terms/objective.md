@@ -1,7 +1,6 @@
 ---
 id: objective
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: objective
 formPhrases: [ "objective{ss}" ]

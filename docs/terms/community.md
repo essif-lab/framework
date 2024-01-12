@@ -1,7 +1,6 @@
 ---
 id: community
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: community
 formPhrases: [ "communit{yies}" ]

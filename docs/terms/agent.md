@@ -1,7 +1,6 @@
 ---
 id: agent
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: agent
 formPhrases: [ "agent{ss}", "digital-agent{ss}" ]

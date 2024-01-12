@@ -1,10 +1,9 @@
 ---
 id: pattern-party-representation
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: pattern
 term: party-representation
-formPhrases: [ party-representation ]
+formPhrases: [ "party-representation", "party-representation-pattern" ]
 status: draft
 grouptags:
 glossaryTerm: Party Representation Pattern

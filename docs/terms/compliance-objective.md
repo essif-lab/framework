@@ -1,7 +1,6 @@
 ---
 id: compliance-objective
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: compliance-objective
 formPhrases: [ "compliance-objective{ss}" ]

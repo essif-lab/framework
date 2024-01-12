@@ -1,7 +1,6 @@
 ---
 id: ownership
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: ownership
 formPhrases: [ "ownership{ss}", "owning", "legal-ownership{ss}", "rightful-ownership{ss}", "natural-ownership{ss}" ]

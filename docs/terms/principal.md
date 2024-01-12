@@ -1,7 +1,6 @@
 ---
 id: principal
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: principal
 formPhrases: [ "principal{ss}" ]

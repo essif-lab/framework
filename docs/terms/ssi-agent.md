@@ -1,7 +1,6 @@
 ---
 id: ssi-agent
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: ssi-agent
 formPhrases: [ "ssi-agent{ss}" ]

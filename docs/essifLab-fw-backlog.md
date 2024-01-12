@@ -2,7 +2,6 @@
 id: essifLab-fw-backlog
 title: eSSIF-Lab Framework Backlog
 sidebar_label: Work-In-Progress
-scopetag: essifLab
 date: 20220107
 ---
 

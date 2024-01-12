@@ -2,7 +2,6 @@
 id: essifLab-project
 title: The EU Project 'eSSIF-Lab'
 sidebar_label: EU Project 'eSSIF-Lab'
-scopetag: essifLab
 date: 20210601
 ---
 

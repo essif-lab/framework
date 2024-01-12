@@ -1,7 +1,6 @@
 ---
 id: terminology-contributions
 sidebar_label: Contributing to the Terminology Effort
-scopetag: essifLab
 date: 20210601
 ---
 

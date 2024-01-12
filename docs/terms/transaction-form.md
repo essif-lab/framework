@@ -1,7 +1,6 @@
 ---
 id: transaction-form
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: transaction-form
 formPhrases: [ "transaction-form{ss}" ]

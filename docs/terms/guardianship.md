@@ -1,7 +1,6 @@
 ---
 id: guardianship
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: guardianship
 formPhrases: [ "guardianship{ss}" ]

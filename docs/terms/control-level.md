@@ -1,7 +1,6 @@
 ---
 id: control-level
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: control-level
 formPhrases: [ "control-level{ss}" ]

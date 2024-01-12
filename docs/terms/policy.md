@@ -1,7 +1,6 @@
 ---
 id: policy
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: policy
 formPhrases: [ "polic{yies}", "business-polic{yies}", "operational-polic{yies}" ]

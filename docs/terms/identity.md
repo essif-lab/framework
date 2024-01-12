@@ -1,7 +1,6 @@
 ---
 id: identity
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: identity
 formPhrases: [ "identit{yies}" ]

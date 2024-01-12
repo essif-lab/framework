@@ -2,7 +2,6 @@
 id: essifLab-fw-conceptual-architecture-framework
 title: Conceptual Architecture Framework
 sidebar_label: Conceptual Architecture FW
-scopetag: essifLab
 date: 20220919
 ---
 

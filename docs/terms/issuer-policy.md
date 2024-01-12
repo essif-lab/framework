@@ -1,7 +1,6 @@
 ---
 id: issuer-policy
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: issuer-policy
 formPhrases: [ "issuer-polic{yies}" ]

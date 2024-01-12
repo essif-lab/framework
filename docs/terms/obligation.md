@@ -1,7 +1,6 @@
 ---
 id: obligation
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: obligation
 formPhrases: [ "obligation{ss}" ]

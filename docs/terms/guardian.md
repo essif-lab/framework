@@ -1,7 +1,6 @@
 ---
 id: guardian
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: guardian
 formPhrases: [ "guardian{ss}" ]

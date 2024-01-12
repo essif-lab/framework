@@ -1,7 +1,6 @@
 ---
 id: essifLab-collaborative-understanding
 sidebar_label: Collaborative Understanding
-scopetag: essifLab
 date: 20220802
 ---
 

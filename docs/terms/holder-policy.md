@@ -1,7 +1,6 @@
 ---
 id: holder-policy
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: holder-policy
 formPhrases: [ "holder-polic{yies}" ]

@@ -1,7 +1,6 @@
 ---
 id: expectation
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: expectation
 formPhrases: [ "expectation{ss}" ]

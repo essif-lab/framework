@@ -2,7 +2,6 @@
 id: essifLab-fw
 title: eSSIF-Lab Framework
 sidebar_label: Framework
-scopetag: essifLab
 date: 20210601
 ---
 

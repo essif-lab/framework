@@ -1,7 +1,6 @@
 ---
 id: control-objective
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: control-objective
 formPhrases: [ "control-objective{ss}" ]

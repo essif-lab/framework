@@ -1,7 +1,6 @@
 ---
 id: wallet-policy
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: wallet-policy
 formPhrases: [ "wallet-polic{yies}" ]

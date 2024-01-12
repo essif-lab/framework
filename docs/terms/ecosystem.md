@@ -1,7 +1,6 @@
 ---
 id: ecosystem
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: ecosystem
 formPhrases: [ "ecosystem{ss}" ]

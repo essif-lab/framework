@@ -1,7 +1,6 @@
 ---
 id: governor
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: governor
 formPhrases: [ "governor{ss}" ]

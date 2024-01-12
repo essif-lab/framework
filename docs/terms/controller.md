@@ -1,7 +1,6 @@
 ---
 id: controller
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: controller
 formPhrases: [ "controller{ss}" ]

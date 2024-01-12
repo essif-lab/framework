@@ -1,7 +1,6 @@
 ---
 id: assessment-framework
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: assessment-framework
 formPhrases: [ "assessment-framework{ss}" ]

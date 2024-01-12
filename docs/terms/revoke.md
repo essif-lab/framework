@@ -1,10 +1,9 @@
 ---
 id: revoke
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: revoke
-formPhrases: [ revocator, revocation, revokes, revoked, revoking ] 
+formPhrases: [ "revocator", "revocation", "revokes", "revoked", "revoking" ] 
 hoverText: "revoke/revocation of a credential: the act, by or on behalf of the party that has issued the Credential, of no longer vouching for the correctness or any other qualification of (arbitrary parts of) the credential."
 glossaryTerm: "Revoke/Revocation"
 glossaryText: "the act, by or on behalf of the [party](@) that has issued the [credential](@), of no longer vouching for the correctness or any other qualification of (arbitrary parts of) that [credential](@)."

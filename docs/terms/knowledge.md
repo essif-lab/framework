@@ -1,7 +1,6 @@
 ---
 id: knowledge
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: knowledge
 formPhrases: [ "knowledge{ss}" ]

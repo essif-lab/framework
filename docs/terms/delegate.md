@@ -1,7 +1,6 @@
 ---
 id: delegate
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: delegate
 formPhrases: [ "delegate{ss}", "delegated", "delegating", "delegator{ss}", "delegatee{ss}" ]

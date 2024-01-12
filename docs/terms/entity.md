@@ -1,7 +1,6 @@
 ---
 id: entity
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: entity
 formPhrases: [ "entit{yies}" ]

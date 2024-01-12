@@ -1,7 +1,6 @@
 ---
 id: legal-system
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: legal-system
 formPhrases: [ "legal-system{ss}" ]

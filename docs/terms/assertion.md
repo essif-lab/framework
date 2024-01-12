@@ -1,7 +1,6 @@
 ---
 id: assertion
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: assertion
 formPhrases: [ "assertion{ss}", "claim{ss}", "statement{ss}" ]

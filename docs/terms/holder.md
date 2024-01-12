@@ -1,7 +1,6 @@
 ---
 id: holder
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: holder
 formPhrases: [ "holder{ss}" ]

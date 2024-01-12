@@ -1,7 +1,6 @@
 ---
 id: jurisdiction
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: jurisdiction
 formPhrases: [ "jurisdiction{ss}" ]

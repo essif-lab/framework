@@ -1,7 +1,6 @@
 ---
 id: validator
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: validator
 formPhrases: [ "validator{ss}" ]

@@ -1,7 +1,6 @@
 ---
 id: legal-entity
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: legal-entity
 formPhrases: [ "legal-entit{yies}" ]

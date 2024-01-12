@@ -1,7 +1,6 @@
 ---
 id: risk-owner
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: risk-owner
 formPhrases: [ "risk-owner{ss}" ]

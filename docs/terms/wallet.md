@@ -1,7 +1,6 @@
 ---
 id: wallet
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: wallet
 formPhrases: [ "wallet{ss}" ]

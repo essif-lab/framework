@@ -1,7 +1,6 @@
 ---
 id: presentation
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: presentation
 formPhrases: [ "presentation{ss}", "verifiable-presentation{ss}" ]

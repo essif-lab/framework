@@ -1,7 +1,6 @@
 ---
 id: presentation-request
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: presentation-request
 formPhrases: [ "presentation-request{ss}", "verifiable-presentation-request{ss}" ]

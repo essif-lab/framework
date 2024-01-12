@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: pattern
 term: mental-model
-formPhrases: [ mental-model ]
+formPhrases: [ "mental-model", "mental-model-pattern" ]
 status: draft
 grouptags:
 glossaryTerm: Mental Model Pattern

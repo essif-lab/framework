@@ -1,10 +1,9 @@
 ---
 id: pattern-jurisdiction
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: pattern
 term: jurisdiction
-formPhrases: [ jurisdiction ]
+formPhrases: [ "jurisdiction", "jurisdiction-pattern" ]
 status: stable
 grouptags:
 glossaryTerm: Jurisdiction Pattern

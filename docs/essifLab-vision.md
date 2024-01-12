@@ -2,7 +2,6 @@
 id: essifLab-vision
 title: eSSIF-Lab Vision
 sidebar_label: Vision
-scopetag: essifLab
 date: 20210601
 ---
 

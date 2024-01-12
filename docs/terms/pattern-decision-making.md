@@ -1,10 +1,9 @@
 ---
 id: pattern-decision-making
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: pattern
 term: decision-making
-formPhrases: [ decision-making ]
+formPhrases: [ "decision-making", "decision-making-pattern" ]
 status: draft
 grouptags:
 glossaryTerm: Decision Making Pattern

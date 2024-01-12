@@ -1,10 +1,9 @@
 ---
 id: pattern-duties-and-rights
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: pattern
 term: duties-and-rights
-formPhrases: [ duties-and-rights ]
+formPhrases: [ "duties-and-rights", "duties-and-rights-pattern" ]
 status: idea
 grouptags:
 glossaryTerm: Duties and Rights Pattern

@@ -1,10 +1,9 @@
 ---
 id: pattern-semantics
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: pattern
 term: semantics
-formPhrases:
+formPhrases: [ "semantics-pattern" ]
 status: idea
 grouptags:
 glossaryTerm: Semantics Pattern

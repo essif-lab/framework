@@ -1,10 +1,9 @@
 ---
 id: pattern-world-model
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: pattern
 term: world-model
-formPhrases: [ world-model ]
+formPhrases: [ "world-model", "world-model-pattern" ]
 status: draft
 grouptags:
 glossaryTerm: "eSSIF-Lab World Model"

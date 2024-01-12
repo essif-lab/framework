@@ -1,7 +1,6 @@
 ---
 id: self-sovereign-identity
 displayed_sidebar: essifLabSideBar
-scopetag: eSSIFLab
 termType: concept
 term: self-sovereign-identity
 formPhrases: [ "self-sovereign-identit{yies}" ]

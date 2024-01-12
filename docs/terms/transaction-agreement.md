@@ -1,7 +1,6 @@
 ---
 id: transaction-agreement
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: transaction-agreement
 formPhrases: [ "transaction-agreement{ss}" ]

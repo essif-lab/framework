@@ -4,7 +4,7 @@ displayed_sidebar: essifLabSideBar
 scopetag: essifLabTerminology
 termType: concept
 term: semantics
-formPhrases: [ semantics ]
+formPhrases: [ "semantics" ]
 status: draft
 grouptags:
 hoverText: "Semantics: a mapping between the (tangible/textual) Terms and (intangible) ideas/Concepts - their meaning."

@@ -1,7 +1,6 @@
 ---
 id: credential
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: credential
 formPhrases: [ "credential{ss}", "verifiable-credential{ss}", "attribute-based-credential{ss}" ]

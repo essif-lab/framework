@@ -1,10 +1,9 @@
 ---
 id: pattern-identifier
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: pattern
 term: identifier
-formPhrases:
+formPhrases: [ "identifier-pattern" ]
 status: reviewable
 grouptags:
 glossaryTerm: Identifier Pattern

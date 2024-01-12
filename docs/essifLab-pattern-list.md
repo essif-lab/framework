@@ -1,7 +1,6 @@
 ---
 id: essifLab-pattern-list
 sidebar_label: Mental Models
-scopetag: essifLab
 date: 20210908
 ---
 

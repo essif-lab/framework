@@ -1,7 +1,6 @@
 ---
 id: capability-of-an-actor
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: capability-of-an-actor
 formPhrases: [ "capabilit{yies}-of-an-actor" ]

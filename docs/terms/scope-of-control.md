@@ -1,10 +1,9 @@
 ---
 id: scope-of-control
 displayed_sidebar: essifLabSideBar
-scopetag: eSSIFLab
 termType: concept
 term: scope-of-control
-formPhrases: [ scope-of-control, scopes-of-control ]
+formPhrases: [ "scope-of-control", "scopes-of-control" ]
 status: draft
 grouptags:
 hoverText: "Scope of Control (of a Party): the extent of the area or subject matter that the Party controls."

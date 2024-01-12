@@ -1,7 +1,6 @@
 ---
 id: role
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: role
 formPhrases: [ "role{ss}" ]

@@ -1,7 +1,6 @@
 ---
 id: scope
 displayed_sidebar: essifLabSideBar
-scopetag: eSSIFLab
 termType: concept
 term: scope
 formPhrases: [ "scope{ss}" ]

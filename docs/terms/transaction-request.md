@@ -1,7 +1,6 @@
 ---
 id: transaction-request
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: transaction-request
 formPhrases: [ "transaction-request{ss}" ]

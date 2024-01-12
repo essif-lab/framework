@@ -1,7 +1,6 @@
 ---
 id: communication-channel
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: communication-channel
 formPhrases: [ "communication-channel{ss}", "digital-communication-channel{ss}" ]

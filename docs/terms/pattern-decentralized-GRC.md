@@ -1,10 +1,9 @@
 ---
 id: pattern-decentralized-grc
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: pattern
 term: decentralized-grc
-formPhrases: [ "decentralized-grc" ]
+formPhrases: [ "decentralized-grc", "decentralized-grc-pattern" ]
 status: draft
 grouptags:
 glossaryTerm: Decentralized GRC Pattern

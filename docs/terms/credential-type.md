@@ -1,7 +1,6 @@
 ---
 id: credential-type
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: credential-type
 formPhrases: [ "credential-type{ss}" ]

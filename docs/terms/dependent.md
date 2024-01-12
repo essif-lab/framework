@@ -1,7 +1,6 @@
 ---
 id: dependent
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: dependent
 formPhrases: [ "dependent{ss}" ]

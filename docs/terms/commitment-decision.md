@@ -1,7 +1,6 @@
 ---
 id: commitment-decision
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: commitment-decision
 formPhrases: [ "commitment-decision{ss}" ]

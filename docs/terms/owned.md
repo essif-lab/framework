@@ -1,10 +1,9 @@
 ---
 id: owned
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: owned
-formPhrases: [ owned ]
+formPhrases: [ "owned" ]
 status: draft
 grouptags:
 hoverText: "Owned (by an Owner, in some Jurisdiction): an Entity over which another Entity (its Owner) has the power (duty, right) to enjoy it, dispose of it and control it; that power is limited to (the scope of) that Jurisdiction, and by its rules."

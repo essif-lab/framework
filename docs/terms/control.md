@@ -1,7 +1,6 @@
 ---
 id: control
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: control
 formPhrases: [ "control{ss}" ]

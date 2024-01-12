@@ -1,7 +1,6 @@
 ---
 id: guardianship-type
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: guardianship-type
 formPhrases: [ "guardianship-type{ss}", "guardianship-arrangement-type{ss}" ]

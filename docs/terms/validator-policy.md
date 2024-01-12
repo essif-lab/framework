@@ -1,7 +1,6 @@
 ---
 id: validator-policy
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: validator-policy
 formPhrases: [ "validator-polic{yies}" ]

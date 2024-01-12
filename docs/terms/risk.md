@@ -1,7 +1,6 @@
 ---
 id: risk
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: risk
 formPhrases: [ "risk{ss}" ]

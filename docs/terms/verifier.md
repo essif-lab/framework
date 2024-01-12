@@ -1,7 +1,6 @@
 ---
 id: verifier
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: verifier
 formPhrases: [ "verifier{ss}" ]

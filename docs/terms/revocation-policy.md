@@ -1,7 +1,6 @@
 ---
 id: revocation-policy
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: revocation-policy
 formPhrases: [ "revocation-polic{yies}" ]

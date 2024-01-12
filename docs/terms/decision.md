@@ -1,7 +1,6 @@
 ---
 id: decision
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: decision
 formPhrases:  [ "decision{ss}" ]

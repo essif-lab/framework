@@ -1,7 +1,6 @@
 ---
 id: organization
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: organization
 formPhrases: [ "organization{ss}" ]

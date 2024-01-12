@@ -1,10 +1,9 @@
 ---
 id: data
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: data
-formPhrases: [ data, digital-data ]
+formPhrases: [ "data", "digital-data" ]
 status: draft
 grouptags:
 hoverText: "Data: something (tangible) that can be used to communicate a meaning (which is intangible/information)."

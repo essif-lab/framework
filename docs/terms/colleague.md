@@ -1,7 +1,6 @@
 ---
 id: colleague
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: colleague
 formPhrases: [ "colleague{ss}", "digital-colleague{ss}" ]

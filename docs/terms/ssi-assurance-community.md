@@ -1,7 +1,6 @@
 ---
 id: ssi-assurance-community
 displayed_sidebar: essifLabSideBar
-scopetag: eSSIFLab
 termType: concept
 term: ssi-assurance-community
 formPhrases: [ "ssi-assurance-communit{yies}", "ac{ss}", "assurance-communit{yies}", "ssi-ac{ss}", "ssi-assurance-communit{yies}" ]

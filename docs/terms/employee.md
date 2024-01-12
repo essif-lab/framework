@@ -1,7 +1,6 @@
 ---
 id: employee
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: employee
 formPhrases: [ "employee{ss}" ]

@@ -1,7 +1,6 @@
 ---
 id: pattern
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: pattern
 formPhrases: [ "pattern{ss}" ]

@@ -1,7 +1,6 @@
 ---
 id: ssi-infrastructure
 displayed_sidebar: essifLabSideBar
-scopetag: eSSIFLab
 termType: concept
 term: ssi-infrastructure
 formPhrases: [ "ssi-infrastructure{ss}" ]

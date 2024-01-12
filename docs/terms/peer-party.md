@@ -1,7 +1,6 @@
 ---
 id: peer-party
 displayed_sidebar: essifLabSideBar
-scopetag: essifLab
 termType: concept
 term: peer-party
 formPhrases: [ "peer-part{yies}" ]
