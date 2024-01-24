@@ -16,6 +16,7 @@ scope:
   issues: https://github.com/essif-lab/framework/issues # URL where issues can be raised and handled
   website: https://essif-lab.github.io/framework # home page of the terminology
   navpath: /docs/terms # path, relative to `website`, where curated texts are rendered
+  navid: id # Name of the field in the front matter of a **body file** that uniquely identify that file (e.g., "id", "slug", "permalink")
   slack: https://trustoverip.slack.com/archives/C01BBNGRPUH # slack channel for discussions
   curators: # contacting individual curators
   - name: RieksJ
