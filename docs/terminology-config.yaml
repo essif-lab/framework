@@ -2,7 +2,7 @@
 
 ## General
 
-scopedir: .  # path of the scope directory where the SAF is located
+scopedir: . # path of the scope directory where the SAF is located
 onNotExist: warn # the action in case a `vsntag` was specified, but wasn't found in the SAF
 output: . # (root) directory for output files to be written to
 
@@ -27,9 +27,9 @@ trrt:
   converter:
     >- # Type of converter, either: a mustache template, "http", or "markdown"
     <a
-    href="{{localize navurl}}{{#if trait}}#{{trait}}{{/if}}"
+    href="{{localize navurl}}{{#if ref.trait}}#{{ref.trait}}{{/if}}"
     hovertext="{{#if hoverText}}{{hoverText}}{{else}}{{#if glossaryTerm}}{{glossaryTerm}}{{else}}{{capFirst term}}{{/if}}: {{noRefs glossaryText type="markdown"}}{{/if}}"
-    >{{showtext}}</a>
+    >{{ref.showtext}}</a>
   force: true # overwrite existing files
   input: # glob pattern strings for files to be processed by the TRRT
     - "**/*.md"
