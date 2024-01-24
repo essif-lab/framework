@@ -6,7 +6,7 @@ terminology:
   defaultvsn: "documentation"
   website: "https://tno-terminology-design.github.io/tev2-specifications/docs"
   navpath: "/terms"
-  bodyFileID: "id"
+  navid: "id"
   license: "LICENSE.md"
   statuses:
     - "proposed"
@@ -31,6 +31,7 @@ entries:
     term: "decentralized-grc"
     formPhrases:
       - "decentralized-grc"
+      - "decentralized-grc-pattern"
     status: "draft"
     grouptags: null
     glossaryTerm: "Decentralized GRC Pattern"
@@ -54,6 +55,7 @@ entries:
     term: "decentralized-risk-management"
     formPhrases:
       - "decentralized-risk-management"
+      - "decentralized-risk-management-pattern"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Decentralized Risk Management Pattern"
@@ -88,6 +90,7 @@ entries:
     term: "decision-making"
     formPhrases:
       - "decision-making"
+      - "decision-making-pattern"
     status: "draft"
     grouptags: null
     glossaryTerm: "Decision Making Pattern"
@@ -110,6 +113,7 @@ entries:
     term: "duties-and-rights"
     formPhrases:
       - "duties-and-rights"
+      - "duties-and-rights-pattern"
     status: "idea"
     grouptags: null
     glossaryTerm: "Duties and Rights Pattern"
@@ -132,6 +136,7 @@ entries:
     term: "governance-and-management"
     formPhrases:
       - "governance-and-management"
+      - "governance-and-management-pattern"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Governance and Management Pattern"
@@ -157,6 +162,13 @@ entries:
     term: "guardianship"
     formPhrases:
       - "guardianship"
+      - "guardianships"
+      - "guardianship's"
+      - "guardianship(s)"
+      - "guardianship-pattern"
+      - "guardianships-pattern"
+      - "guardianship's-pattern"
+      - "guardianship(s)-pattern"
     status: "stable"
     grouptags: null
     glossaryTerm: "Guardianship Pattern"
@@ -181,6 +193,7 @@ entries:
     term: "identification"
     formPhrases:
       - "identification"
+      - "identification-pattern"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Identification Pattern"
@@ -205,7 +218,8 @@ entries:
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "identifier"
-    formPhrases: []
+    formPhrases:
+      - "identifier-pattern"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Identifier Pattern"
@@ -227,7 +241,8 @@ entries:
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "identity"
-    formPhrases: []
+    formPhrases:
+      - "identity-pattern"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Identity Pattern"
@@ -252,6 +267,7 @@ entries:
     term: "jurisdiction"
     formPhrases:
       - "jurisdiction"
+      - "jurisdiction-pattern"
     status: "stable"
     grouptags: null
     glossaryTerm: "Jurisdiction Pattern"
@@ -274,6 +290,7 @@ entries:
     term: "mandates-delegation-hiring"
     formPhrases:
       - "mandates-delegation-hiring"
+      - "mandates-delegation-hiring-pattern"
     status: "idea"
     grouptags: null
     glossaryTerm: "Mandates, Delegation and Hiring Pattern"
@@ -293,6 +310,7 @@ entries:
     term: "mental-model"
     formPhrases:
       - "mental-model"
+      - "mental-model-pattern"
     status: "draft"
     grouptags: null
     glossaryTerm: "Mental Model Pattern"
@@ -314,6 +332,7 @@ entries:
     term: "party-actor-action"
     formPhrases:
       - "party-actor-action"
+      - "party-actor-action-pattern"
     status: "stable"
     grouptags: null
     glossaryTerm: "Party, Actor and Actions Pattern"
@@ -339,6 +358,7 @@ entries:
     term: "party-representation"
     formPhrases:
       - "party-representation"
+      - "party-representation-pattern"
     status: "draft"
     grouptags: null
     glossaryTerm: "Party Representation Pattern"
@@ -361,7 +381,8 @@ entries:
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "semantics"
-    formPhrases: []
+    formPhrases:
+      - "semantics-pattern"
     status: "idea"
     grouptags: null
     glossaryTerm: "Semantics Pattern"
@@ -383,7 +404,7 @@ entries:
     termType: "pattern"
     term: "terminology"
     formPhrases:
-      - "terminology"
+      - "terminology-pattern"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Terminology Pattern"
@@ -408,7 +429,7 @@ entries:
     termType: "pattern"
     term: "trust"
     formPhrases:
-      - "trust"
+      - "trust-pattern"
     status: "idea"
     grouptags: null
     glossaryTerm: "Trust Pattern"
@@ -431,6 +452,7 @@ entries:
     term: "world-model"
     formPhrases:
       - "world-model"
+      - "world-model-pattern"
     status: "draft"
     grouptags: null
     glossaryTerm: "eSSIF-Lab World Model"

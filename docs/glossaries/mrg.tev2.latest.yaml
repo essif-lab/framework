@@ -6,7 +6,7 @@ terminology:
   defaultvsn: "documentation"
   website: "https://tno-terminology-design.github.io/tev2-specifications/docs"
   navpath: "/terms"
-  bodyFileID: "id"
+  navid: "id"
   license: "LICENSE.md"
   statuses:
     - "proposed"
@@ -124,6 +124,7 @@ entries:
     termid: "concept:assertion"
     vsntag: "default"
   - id: "author"
+    displayed_sidebar: "tev2SideBar"
     term: "author"
     termType: "concept"
     isa: null
@@ -151,6 +152,7 @@ entries:
     termid: "concept:author"
     vsntag: "documentation"
   - id: "body"
+    displayed_sidebar: "tev2SideBar"
     term: "body"
     termType: "concept"
     isa: null
@@ -180,6 +182,7 @@ entries:
     termid: "concept:body"
     vsntag: "documentation"
   - id: "body-file"
+    displayed_sidebar: "tev2SideBar"
     term: "body-file"
     termType: "concept"
     isa: "curated-file"
@@ -201,7 +204,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "body-file.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/body-file"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/11-body-file"
     headingids:
       - "body-files"
     termid: "concept:body-file"
@@ -256,7 +259,9 @@ entries:
       - "criteria"
     termid: "concept:compliance-objective"
     vsntag: "default"
-  - term: "concept"
+  - id: "concept"
+    displayed_sidebar: "tev2SideBar"
+    term: "concept"
     termType: "concept"
     isa: "semantic-unit"
     glossaryTerm: null
@@ -283,9 +288,11 @@ entries:
       - "purpose"
       - "criteria"
       - "notes"
+      - "how-to-resolve-a-dispute"
     termid: "concept:concept"
     vsntag: "documentation"
   - id: "conceptualization"
+    displayed_sidebar: "tev2SideBar"
     term: "conceptualization"
     termType: "concept"
     isa: null
@@ -367,6 +374,7 @@ entries:
     termid: "concept:control-objective"
     vsntag: "default"
   - id: "converter"
+    displayed_sidebar: "tev2SideBar"
     term: "converter"
     termType: "concept"
     isa: null
@@ -393,10 +401,11 @@ entries:
     termid: "concept:converter"
     vsntag: "documentation"
   - id: "converter-profile"
+    displayed_sidebar: "tev2SideBar"
     term: "converter-profile"
     termType: "concept"
     glossaryTerm: "Converter Profile"
-    glossaryText: "the set of [moustache variables](@) that are (made) available to [converters](@) of a particular [TEv2 tool](@), enabling them to produce the texts by which the [TEv2 tool](@) will replace the text constructs that are located by the [interpreter](@)."
+    glossaryText: "a data object, of a type that is specific for a [text conversion tool](@), that [converters](@) use to create texts by which the [tool](text-conversion-tool@) will replace the text constructs that are located by its [interpreter](@)."
     grouptags: null
     formPhrases:
       - "converter-profile"
@@ -418,9 +427,18 @@ entries:
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/converter-profile"
     headingids:
       - "converter-profile"
+      - "converter-profile-object-{#object}"
+      - "`err`-fields"
+      - "helper-functions"
+      - "`capfirst`"
+      - "`norefs`"
+      - "`ifvalue`"
+      - "`localize`"
     termid: "concept:converter-profile"
     vsntag: "documentation"
-  - term: "corpus"
+  - id: "corpus"
+    displayed_sidebar: "tev2SideBar"
+    term: "corpus"
     termType: "concept"
     isa: null
     glossaryTerm: null
@@ -486,6 +504,7 @@ entries:
     termid: "concept:credential"
     vsntag: "default"
   - id: "curate"
+    displayed_sidebar: "tev2SideBar"
     term: "curate"
     termType: "concept"
     isa: null
@@ -514,7 +533,9 @@ entries:
       - "notes"
     termid: "concept:curate"
     vsntag: "documentation"
-  - term: "curated-file"
+  - id: "curated-file"
+    displayed_sidebar: "tev2SideBar"
+    term: "curated-file"
     termType: "concept"
     isa: null
     glossaryTerm: "Curated File"
@@ -538,7 +559,9 @@ entries:
       - "curated-files"
     termid: "concept:curated-file"
     vsntag: "documentation"
-  - term: "curated-text"
+  - id: "curated-text"
+    displayed_sidebar: "tev2SideBar"
+    term: "curated-text"
     termType: "concept"
     isa: null
     glossaryTerm: "Curated Text"
@@ -569,7 +592,9 @@ entries:
       - "notes"
     termid: "concept:curated-text"
     vsntag: "documentation"
-  - term: "curated-text-file"
+  - id: "curated-text-file"
+    displayed_sidebar: "tev2SideBar"
+    term: "curated-text-file"
     termType: "concept"
     isa: "curated-file"
     bodyFile: "/specs/files/10-curated-text-file.md"
@@ -593,10 +618,10 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "curated-text-file.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/curated-text-file"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/10-curated-text-file"
     headingids:
       - "curated-text-files"
-      - "docusaurus-front-matter"
+      - "docusaurus-[front-matter](@)"
       - "tev2-curated-text-header"
       - "tev2-curation-status"
       - "origins/acknowledgements"
@@ -605,7 +630,9 @@ entries:
       - "predefined-tev2-header-fields-{#header-fields}"
     termid: "concept:curated-text-file"
     vsntag: "documentation"
-  - term: "curatedir"
+  - id: "curatedir"
+    displayed_sidebar: "tev2SideBar"
+    term: "curatedir"
     termType: "concept"
     isa: null
     glossaryTerm: "Curatedir"
@@ -635,6 +662,7 @@ entries:
     termid: "concept:curatedir"
     vsntag: "documentation"
   - id: "curator"
+    displayed_sidebar: "tev2SideBar"
     term: "curator"
     termType: "concept"
     isa: null
@@ -667,7 +695,9 @@ entries:
       - "notes"
     termid: "concept:curator"
     vsntag: "documentation"
-  - term: "current-scope"
+  - id: "current-scope"
+    displayed_sidebar: "tev2SideBar"
+    term: "current-scope"
     termType: "concept"
     isa: null
     glossaryTerm: "Current Scope"
@@ -692,6 +722,7 @@ entries:
     termid: "concept:current-scope"
     vsntag: "documentation"
   - id: "define"
+    displayed_sidebar: "tev2SideBar"
     term: "define"
     termType: "concept"
     isa: null
@@ -719,7 +750,9 @@ entries:
       - "notes"
     termid: "concept:define"
     vsntag: "documentation"
-  - term: "definition"
+  - id: "definition"
+    displayed_sidebar: "tev2SideBar"
+    term: "definition"
     termType: "concept"
     isa: null
     glossaryTerm: null
@@ -753,7 +786,9 @@ entries:
       - "notes"
     termid: "concept:definition"
     vsntag: "documentation"
-  - term: "dictionary"
+  - id: "dictionary"
+    displayed_sidebar: "tev2SideBar"
+    term: "dictionary"
     termType: "concept"
     isa: null
     glossaryTerm: null
@@ -832,6 +867,7 @@ entries:
     termid: "concept:expectation"
     vsntag: "default"
   - id: "form-phrase"
+    displayed_sidebar: "tev2SideBar"
     term: "form-phrase"
     termType: "concept"
     isa: null
@@ -864,6 +900,7 @@ entries:
     termid: "concept:form-phrase"
     vsntag: "documentation"
   - id: "form-phrase-macro"
+    displayed_sidebar: "tev2SideBar"
     term: "form-phrase-macro"
     termType: "concept"
     isa: null
@@ -896,6 +933,7 @@ entries:
     termid: "concept:form-phrase-macro"
     vsntag: "documentation"
   - id: "formatted-text"
+    displayed_sidebar: "tev2SideBar"
     term: "formatted-text"
     termType: "concept"
     isa: "text-format"
@@ -924,7 +962,32 @@ entries:
       - "miscellaneous"
     termid: "concept:formatted-text"
     vsntag: "documentation"
-  - term: "glossary"
+  - id: "front-matter"
+    displayed_sidebar: "tev2SideBar"
+    term: "front-matter"
+    termType: "concept"
+    isa: null
+    glossaryTerm: "Front Matter"
+    glossaryText: "a section at the top of a file that contains YAML (or similarly formatted) metadata, such as title, description, tags, and more. It is used in static site generators, as well as by [TEv2](@). The front-matter must be the first thing in the file and must be enclosed in triple-dashed lines for YAML."
+    status: "proposed"
+    created: 20240121
+    updated: 20240121
+    contributors: "RieksJ"
+    attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
+    originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
+    scopetag: "tev2"
+    locator: "front-matter.md"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/front-matter"
+    formPhrases: []
+    headingids:
+      - "front-matter"
+      - "tev2-use-of-front-matter"
+      - "front-matter-use-in-static-site-generators"
+    termid: "concept:front-matter"
+    vsntag: "documentation"
+  - id: "glossary"
+    displayed_sidebar: "tev2SideBar"
+    term: "glossary"
     termType: "concept"
     isa: null
     glossaryTerm: null
@@ -953,7 +1016,9 @@ entries:
       - "examples"
     termid: "concept:glossary"
     vsntag: "documentation"
-  - term: "glossarydir"
+  - id: "glossarydir"
+    displayed_sidebar: "tev2SideBar"
+    term: "glossarydir"
     termType: "concept"
     isa: "scopedir"
     glossaryTerm: "Glossarydir"
@@ -984,6 +1049,7 @@ entries:
     termid: "concept:glossarydir"
     vsntag: "documentation"
   - id: "glossaryterm"
+    displayed_sidebar: "tev2SideBar"
     term: "glossaryterm"
     termType: "concept"
     isa: null
@@ -1006,6 +1072,7 @@ entries:
     termid: "concept:glossaryterm"
     vsntag: "documentation"
   - id: "glossarytext"
+    displayed_sidebar: "tev2SideBar"
     term: "glossarytext"
     termType: "concept"
     isa: null
@@ -1065,7 +1132,9 @@ entries:
       - "purpose"
     termid: "concept:governance"
     vsntag: "default"
-  - term: "grouptag"
+  - id: "grouptag"
+    displayed_sidebar: "tev2SideBar"
+    term: "grouptag"
     termType: "concept"
     isa: "tag"
     glossaryTerm: null
@@ -1098,6 +1167,7 @@ entries:
     termid: "concept:grouptag"
     vsntag: "documentation"
   - id: "handlebars-expression"
+    displayed_sidebar: "tev2SideBar"
     term: "handlebars-expression"
     termType: "concept"
     isa: null
@@ -1128,6 +1198,7 @@ entries:
     termid: "concept:handlebars-expression"
     vsntag: "documentation"
   - id: "header"
+    displayed_sidebar: "tev2SideBar"
     term: "header"
     termType: "concept"
     isa: null
@@ -1149,10 +1220,10 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "header.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/curated-text-file"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/10-curated-text-file"
     headingids:
       - "curated-text-files"
-      - "docusaurus-front-matter"
+      - "docusaurus-[front-matter](@)"
       - "tev2-curated-text-header"
       - "tev2-curation-status"
       - "origins/acknowledgements"
@@ -1162,10 +1233,12 @@ entries:
     termid: "concept:header"
     vsntag: "documentation"
   - id: "hrd"
+    displayed_sidebar: "tev2SideBar"
     term: "hrd"
     termType: "concept"
     isa: "dictionary"
-    glossaryTerm: "Human Readable Dictionary (HRD)"
+    glossaryTerm: "Human Readable Dictionary"
+    glossaryAlias: "HRD"
     glossaryText: "a [dictionary](@) that presents terms and their meanings in a format that is easily understandable and accessible to humans, typically organized alphabetically."
     synonymOf: null
     grouptags:
@@ -1211,10 +1284,12 @@ entries:
     termid: "concept:hrd"
     vsntag: "documentation"
   - id: "hrdt"
+    displayed_sidebar: "tev2SideBar"
     term: "hrdt"
     termType: "concept"
     isa: null
-    glossaryTerm: "Human Readable Dictionary Tool (HRDT)"
+    glossaryTerm: "Human Readable Dictionary Tool"
+    glossaryAlias: "HRDT"
     glossaryText: "a software tool designed to create, manage, and process [Human Readable Dictionaries (HRDs)](hrd@)."
     synonymOf: null
     grouptags:
@@ -1247,10 +1322,12 @@ entries:
     termid: "concept:hrdt"
     vsntag: "documentation"
   - id: "hrg"
+    displayed_sidebar: "tev2SideBar"
     term: "hrg"
     termType: "concept"
     isa: "glossary"
-    glossaryTerm: "Human Readable Glossary (HRG)"
+    glossaryTerm: "Human Readable Glossary"
+    glossaryAlias: "HRG"
     glossaryText: "a [glossary](@) that is designed to be easily understandable and accessible to humans. HRGs present terms and their meanings in a format that prioritizes human comprehension and may include additional contextual information to aid understanding."
     synonymOf: null
     grouptags:
@@ -1295,6 +1372,7 @@ entries:
     termid: "concept:hrg"
     vsntag: "documentation"
   - id: "hrg-entry"
+    displayed_sidebar: "tev2SideBar"
     term: "hrg-entry"
     termType: "concept"
     isa: "glossary-entry"
@@ -1324,6 +1402,7 @@ entries:
     termid: "concept:hrg-entry"
     vsntag: "documentation"
   - id: "hrg-list"
+    displayed_sidebar: "tev2SideBar"
     term: "hrg-list"
     termType: "concept"
     isa: null
@@ -1350,6 +1429,7 @@ entries:
     termid: "concept:hrg-list"
     vsntag: "documentation"
   - id: "hrgt"
+    displayed_sidebar: "tev2SideBar"
     term: "hrgt"
     termType: "concept"
     isa: null
@@ -1410,7 +1490,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "hrgt.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools/hrgt"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools/22-hrgt"
     headingids:
       - "human-readable-glossary-generator-tool-(hrgt)"
       - "installing-the-tool"
@@ -1423,13 +1503,16 @@ entries:
       - "sorting-the-[hrg-list](@)"
       - "hrgt-converter-profile-{#converter-profile}"
       - "hrgt-predefined-converters-{#predefined-converters}"
+      - "[{{#if-glossaryterm}}{{glossaryterm}}{{else}}{{capfirst-term}}{{/if}}]({{localize-navurl}})\\n\\n{{#if-glossarytext}}{{glossarytext}}{{else}}no-`glossarytext`-was-specified-for-this-entry.{{/if}}\\n\\n"
+      - "[{{#if-glossaryterm}}{{glossaryterm}}{{else}}{{capfirst-term}}{{/if}}]({{localize-navurl}})\\n\\n{{#if-glossarytext}}{{glossarytext}}{{else}}no-`glossarytext`-was-specified-for-this-entry.{{/if}}\\n\\n"
       - "hrgt-predefined-sorters-{#predefined-sorters}"
       - "example"
-      - "processing,-errors-and-warnings"
+      - "errors-and-warnings"
       - "deploying-the-tool"
     termid: "concept:hrgt"
     vsntag: "documentation"
   - id: "ict"
+    displayed_sidebar: "tev2SideBar"
     term: "ict"
     termType: "acronym"
     isa: null
@@ -1452,7 +1535,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "ict.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools-envisaged/ict"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools-envisaged/11-ict"
     headingids:
       - "integrity-checker-tool-(ict)"
       - "integrity-checker-tool-(ict)"
@@ -1477,6 +1560,7 @@ entries:
     term: "identification"
     formPhrases:
       - "identification"
+      - "identification-pattern"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Identification Pattern"
@@ -1497,7 +1581,9 @@ entries:
       - "formalized-model---data-realm"
     termid: "pattern:identification"
     vsntag: "default"
-  - term: "identifier"
+  - id: "identifier"
+    displayed_sidebar: "tev2SideBar"
+    term: "identifier"
     termType: "concept"
     isa: null
     glossaryTerm: null
@@ -1532,7 +1618,8 @@ entries:
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "identifier"
-    formPhrases: []
+    formPhrases:
+      - "identifier-pattern"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Identifier Pattern"
@@ -1550,7 +1637,9 @@ entries:
       - "references"
     termid: "pattern:identifier"
     vsntag: "default"
-  - term: "identify"
+  - id: "identify"
+    displayed_sidebar: "tev2SideBar"
+    term: "identify"
     termType: "concept"
     isa: null
     glossaryTerm: null
@@ -1605,7 +1694,8 @@ entries:
     displayed_sidebar: "essifLabSideBar"
     termType: "pattern"
     term: "identity"
-    formPhrases: []
+    formPhrases:
+      - "identity-pattern"
     status: "reviewable"
     grouptags: null
     glossaryTerm: "Identity Pattern"
@@ -1625,6 +1715,7 @@ entries:
     termid: "pattern:identity"
     vsntag: "default"
   - id: "ingestion"
+    displayed_sidebar: "tev2SideBar"
     term: "ingestion"
     termType: "concept"
     isa: null
@@ -1652,7 +1743,9 @@ entries:
       - "notes"
     termid: "concept:ingestion"
     vsntag: "documentation"
-  - term: "ingestion-profile"
+  - id: "ingestion-profile"
+    displayed_sidebar: "tev2SideBar"
+    term: "ingestion-profile"
     termType: "concept"
     isa: null
     glossaryTerm: "Ingestion Profile"
@@ -1681,6 +1774,7 @@ entries:
     termid: "concept:ingestion-profile"
     vsntag: "documentation"
   - id: "interpreter"
+    displayed_sidebar: "tev2SideBar"
     term: "interpreter"
     termType: "concept"
     isa: null
@@ -1705,7 +1799,9 @@ entries:
       - "interpreter"
     termid: "concept:interpreter"
     vsntag: "documentation"
-  - term: "interpreter-profile"
+  - id: "interpreter-profile"
+    displayed_sidebar: "tev2SideBar"
+    term: "interpreter-profile"
     termType: "concept"
     isa: null
     glossaryTerm: "Interpreter Profile"
@@ -1761,6 +1857,7 @@ entries:
     term: "jurisdiction"
     formPhrases:
       - "jurisdiction"
+      - "jurisdiction-pattern"
     status: "stable"
     grouptags: null
     glossaryTerm: "Jurisdiction Pattern"
@@ -1803,7 +1900,9 @@ entries:
       - "notes"
     termid: "concept:knowledge"
     vsntag: "default"
-  - term: "knowledge artifact"
+  - id: "knowledge artifact"
+    displayed_sidebar: "tev2SideBar"
+    term: "knowledge artifact"
     termType: "concept"
     isa: null
     glossaryTerm: "Knowledge Artifact"
@@ -1886,7 +1985,9 @@ entries:
       - "purpose"
     termid: "concept:management"
     vsntag: "default"
-  - term: "mental-model"
+  - id: "mental-model"
+    displayed_sidebar: "tev2SideBar"
+    term: "mental-model"
     termType: "concept"
     isa: "semantic-unit"
     glossaryTerm: "Mental Model"
@@ -1926,6 +2027,7 @@ entries:
     termid: "concept:mental-model"
     vsntag: "documentation"
   - id: "moustache-variable"
+    displayed_sidebar: "tev2SideBar"
     term: "moustache-variable"
     termType: "concept"
     isa: null
@@ -1953,10 +2055,12 @@ entries:
     termid: "concept:moustache-variable"
     vsntag: "documentation"
   - id: "mrd"
+    displayed_sidebar: "tev2SideBar"
     term: "mrd"
     termType: "concept"
     isa: "dictionary"
-    glossaryTerm: "Machine Readable Dictionary (MRD)"
+    glossaryTerm: "Machine Readable Dictionary"
+    glossaryAlias: "MRD"
     glossaryText: "a type of [dictionary](@) that is formatted in a way that can be easily processed and interpreted by computers or software programs. It uses the YAML format to represent the [terms](@) and their [meanings](@)."
     synonymOf: null
     grouptags: null
@@ -1989,10 +2093,12 @@ entries:
     termid: "concept:mrd"
     vsntag: "documentation"
   - id: "mrdt"
+    displayed_sidebar: "tev2SideBar"
     term: "mrdt"
     termType: "concept"
     isa: null
-    glossaryTerm: "Machine Readable Dictionary Tool (MRDT)"
+    glossaryTerm: "Machine Readable Dictionary Tool"
+    glossaryAlias: "MRDT"
     glossaryText: "a software tool designed to create, manage, and process [Machine Readable Dictionaries (MRDs)](mrd@)."
     synonymOf: null
     grouptags:
@@ -2025,11 +2131,13 @@ entries:
     termid: "concept:mrdt"
     vsntag: "documentation"
   - id: "mrg"
+    displayed_sidebar: "tev2SideBar"
     term: "mrg"
     termType: "concept"
     isa: "glossary"
     bodyFile: "/specs/files/32-mrg.md"
-    glossaryTerm: "Machine Readable Glossary (MRG)"
+    glossaryTerm: "Machine Readable Glossary"
+    glossaryAlias: "MRG"
     glossaryText: "a [glossary](@) for a particular (version of a) [terminology](@) that is formatted in YAML, according to the [TEv2 MRG specifications](/docs/specs/files/mrg), to enable automated processing and integration with software systems."
     synonymOf: null
     grouptags:
@@ -2068,7 +2176,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "mrg.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/mrg"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/32-mrg"
     headingids:
       - "machine-readable-glossary-(mrg)"
       - "file-naming-conventions-{#file-naming-conventions}"
@@ -2079,7 +2187,9 @@ entries:
       - "footnotes"
     termid: "concept:mrg"
     vsntag: "documentation"
-  - term: "mrg-entry"
+  - id: "mrg-entry"
+    displayed_sidebar: "tev2SideBar"
+    term: "mrg-entry"
     termType: "concept"
     isa: null
     glossaryTerm: "MRG Entry"
@@ -2110,6 +2220,7 @@ entries:
     termid: "concept:mrg-entry"
     vsntag: "documentation"
   - id: "mrg-import"
+    displayed_sidebar: "tev2SideBar"
     term: "mrg-import"
     termType: "concept"
     isa: null
@@ -2133,7 +2244,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "mrg-import.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools/mrg-import"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools/13-mrg-import"
     headingids:
       - "mrg-import-tool"
       - "mrg-files"
@@ -2143,7 +2254,9 @@ entries:
       - "deploying-the-tool"
     termid: "concept:mrg-import"
     vsntag: "documentation"
-  - term: "mrg-ref"
+  - id: "mrg-ref"
+    displayed_sidebar: "tev2SideBar"
+    term: "mrg-ref"
     termType: "concept"
     isa: null
     bodyFile: "/specs/syntax/41-mrg-ref-syntax.md"
@@ -2168,16 +2281,15 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "mrg-ref.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/syntax/mrg-ref-syntax"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/syntax/41-mrg-ref-syntax"
     headingids:
       - "mrg-references---syntax"
       - "default-mrgref-syntax-{#default-mrgref-syntax}"
       - "predefined-mrgref-interpreters-{#predefined-mrgref-interpreters}"
+      - "predefined-mrgref-sorters-{#predefined-mrgref-sorters}"
       - "predefined-mrgref-converters-{#predefined-mrgref-converters}"
       - "converter-for-markdown-tables"
       - "converter-for-essif-lab-glossary-lookalikes"
-      - "docusaurus-header-fields:"
-      - "glossary"
       - "docusaurus-header-fields:"
       - "glossary"
       - "docusaurus-header-fields:"
@@ -2191,6 +2303,7 @@ entries:
     termid: "concept:mrg-ref"
     vsntag: "documentation"
   - id: "mrgt"
+    displayed_sidebar: "tev2SideBar"
     term: "mrgt"
     termType: "concept"
     isa: null
@@ -2251,7 +2364,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "mrgt.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools/mrgt"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools/21-mrgt"
     headingids:
       - "machine-readable-glossary-generation-tool"
       - "installing-the-tool"
@@ -2261,12 +2374,17 @@ entries:
       - "storing-a-[provisional-mrg](@)-in-the-[glossarydir](@)-{#mrg-filenames}"
       - "phase-2:-post-processing-synonyms-{#post-processing}"
       - "phase-3:-post-processing-other-fields"
+      - "constructing-the-`navurl`-field-{#navurl-construction}"
+      - "constructing-the-`headingid`-fields-(#headingids-construction)"
+      - "this-is-a-markdown-header"
+      - "this-is-a-markdown-header-{#custom-id}"
       - "phase-4:-checking-the-result"
       - "exceptions,-warnings,-and-logging-{#exceptions}"
       - "notes"
     termid: "concept:mrgt"
     vsntag: "documentation"
   - id: "named-capturing-group"
+    displayed_sidebar: "tev2SideBar"
     term: "named-capturing-group"
     termType: "concept"
     isa: null
@@ -2295,7 +2413,9 @@ entries:
       - "named-capturing-group"
     termid: "concept:named-capturing-group"
     vsntag: "documentation"
-  - term: "navpath"
+  - id: "navpath"
+    displayed_sidebar: "tev2SideBar"
+    term: "navpath"
     termType: "concept"
     isa: null
     glossaryTerm: null
@@ -2525,6 +2645,7 @@ entries:
     termid: "concept:party"
     vsntag: "default"
   - id: "property"
+    displayed_sidebar: "tev2SideBar"
     term: "property"
     termType: "concept"
     isa: null
@@ -2554,6 +2675,7 @@ entries:
     termid: "concept:property"
     vsntag: "documentation"
   - id: "provisional-mrg"
+    displayed_sidebar: "tev2SideBar"
     term: "provisional-mrg"
     termType: "concept"
     isa: null
@@ -2580,6 +2702,7 @@ entries:
     termid: "concept:provisional-mrg"
     vsntag: "documentation"
   - id: "provisional-mrg-entry"
+    displayed_sidebar: "tev2SideBar"
     term: "provisional-mrg-entry"
     termType: "concept"
     isa: null
@@ -2606,6 +2729,7 @@ entries:
     termid: "concept:provisional-mrg-entry"
     vsntag: "documentation"
   - id: "reader"
+    displayed_sidebar: "tev2SideBar"
     term: "reader"
     termType: "concept"
     isa: null
@@ -2632,10 +2756,12 @@ entries:
     termid: "concept:reader"
     vsntag: "documentation"
   - id: "regex"
+    displayed_sidebar: "tev2SideBar"
     term: "regex"
     termType: "concept"
     isa: null
-    glossaryTerm: "Regular Expression (Regex)"
+    glossaryTerm: "Regular Expression"
+    glossaryAlias: "Regex"
     glossaryText: "a sequence of characters that specifies a text pattern that can be searched for within other, larger texts, for the purpose of, e.g., replacing the text pattern with some other text. Within [TEv2](@), we use a [JavaScript flavor (ECMAScript 2022)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)."
     synonymOf: null
     grouptags: null
@@ -2664,6 +2790,7 @@ entries:
     termid: "concept:regex"
     vsntag: "documentation"
   - id: "regularized-form-phrase"
+    displayed_sidebar: "tev2SideBar"
     term: "regularized-form-phrase"
     termType: "concept"
     isa: null
@@ -2695,11 +2822,12 @@ entries:
     termid: "concept:regularized-form-phrase"
     vsntag: "documentation"
   - id: "regularized-text"
+    displayed_sidebar: "tev2SideBar"
     term: "regularized-text"
     termType: "concept"
     isa: null
     glossaryTerm: "Regularized Text"
-    glossaryText: "a character string that starts with a lowercase character (`[a-z]`), and has subsequent characters that match [regex](@) `[a-z]_[0-9]-`, and doesn't end with a `-` character. In other words, every text that matches the [regex](@) `^[a-z]([a-z]_[0-9]-)*(?<=[^-])$` is a regularized text."
+    glossaryText: "a character string that starts with a lowercase character (`[a-z]`), and has subsequent characters that match [regex](@) `[a-z_0-9-]`, and doesn't end with a `-` character. In other words, every text that matches the [regex](@) `^[a-z][a-z_0-9-]*(?<=[^-])$` is a regularized text."
     formPhrases:
       - "regularized-text"
       - "regularized-texts"
@@ -2718,11 +2846,12 @@ entries:
       - "regularized-text"
       - "purpose"
       - "use-of-regularized-texts-within-[tev2](@)"
-      - "regularizing-texts-(#regularization-process)"
+      - "regularizing-texts-{#regularization-process}"
       - "notes"
     termid: "concept:regularized-text"
     vsntag: "documentation"
   - id: "relation"
+    displayed_sidebar: "tev2SideBar"
     term: "relation"
     termType: "concept"
     isa: null
@@ -2751,7 +2880,9 @@ entries:
       - "notes"
     termid: "concept:relation"
     vsntag: "documentation"
-  - term: "renderable-ref"
+  - id: "renderable-ref"
+    displayed_sidebar: "tev2SideBar"
+    term: "renderable-ref"
     termType: "concept"
     isa: null
     glossaryTerm: "Renderable Ref"
@@ -2837,10 +2968,12 @@ entries:
     termid: "concept:risk-objective"
     vsntag: "default"
   - id: "saf"
+    displayed_sidebar: "tev2SideBar"
     term: "saf"
     termType: "concept"
     bodyFile: "/specs/files/12-saf.md"
-    glossaryTerm: "Scope Administration File (SAF)"
+    glossaryTerm: "Scope Administration File"
+    glossaryAlias: "SAF"
     glossaryText: "a YAML file that contains essential data about a particular [scope](@) (e.g., specifying where its [curated texts](@), [glossaries](@) etc. live), the relationships this [scope](@) has with other [scopes](@), and the specifications of the different [terminologies](@) that are [curated](@) within that [scope](@). The SAF of a [scope](@) is located in its [scopedir](@)."
     hoverText: "SAF: a YAML file that contains essential data about a particular scope, such as the locations of the scope's curated texts, glossaries, and the specifications of the curated terminologies. The SAF is located in the so-called scopedir."
     synonymOf: null
@@ -2895,7 +3028,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "saf.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/saf"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/12-saf"
     headingids:
       - "scope-administration-file-(saf)"
       - "scope-administration-file-field-descriptions"
@@ -2918,7 +3051,9 @@ entries:
       - "notes"
     termid: "concept:saf"
     vsntag: "documentation"
-  - term: "scope"
+  - id: "scope"
+    displayed_sidebar: "tev2SideBar"
+    term: "scope"
     termType: "concept"
     isa: null
     glossaryTerm: null
@@ -2949,7 +3084,9 @@ entries:
       - "purpose"
     termid: "concept:scope"
     vsntag: "documentation"
-  - term: "scoped-term"
+  - id: "scoped-term"
+    displayed_sidebar: "tev2SideBar"
+    term: "scoped-term"
     termType: "concept"
     isa: "term"
     glossaryTerm: "Scoped Term"
@@ -2974,7 +3111,9 @@ entries:
       - "summary"
     termid: "concept:scoped-term"
     vsntag: "documentation"
-  - term: "scopedir"
+  - id: "scopedir"
+    displayed_sidebar: "tev2SideBar"
+    term: "scopedir"
     termType: "concept"
     isa: null
     glossaryTerm: null
@@ -3006,7 +3145,9 @@ entries:
       - "criteria"
     termid: "concept:scopedir"
     vsntag: "documentation"
-  - term: "scopetag"
+  - id: "scopetag"
+    displayed_sidebar: "tev2SideBar"
+    term: "scopetag"
     termType: "concept"
     isa: "tag"
     glossaryTerm: null
@@ -3039,7 +3180,9 @@ entries:
       - "notes"
     termid: "concept:scopetag"
     vsntag: "documentation"
-  - term: "semantic-unit"
+  - id: "semantic-unit"
+    displayed_sidebar: "tev2SideBar"
+    term: "semantic-unit"
     termType: "concept"
     isa: null
     glossaryTerm: "Semantic Unit"
@@ -3068,7 +3211,9 @@ entries:
       - "criteria"
     termid: "concept:semantic-unit"
     vsntag: "documentation"
-  - term: "semantics"
+  - id: "semantics"
+    displayed_sidebar: "tev2SideBar"
+    term: "semantics"
     termType: "concept"
     isa: null
     glossaryTerm: null
@@ -3094,6 +3239,7 @@ entries:
     termid: "concept:semantics"
     vsntag: "documentation"
   - id: "sorter"
+    displayed_sidebar: "tev2SideBar"
     term: "sorter"
     termType: "concept"
     isa: null
@@ -3140,7 +3286,9 @@ entries:
       - "short-description"
     termid: "concept:ssi"
     vsntag: "default"
-  - term: "synonym"
+  - id: "synonym"
+    displayed_sidebar: "tev2SideBar"
+    term: "synonym"
     termType: "concept"
     isa: "term"
     glossaryTerm: "Synonym (of a [term](@))"
@@ -3169,7 +3317,9 @@ entries:
       - "purpose"
     termid: "concept:synonym"
     vsntag: "documentation"
-  - term: "tag"
+  - id: "tag"
+    displayed_sidebar: "tev2SideBar"
+    term: "tag"
     termType: "concept"
     isa: "identifier"
     glossaryTerm: null
@@ -3198,7 +3348,9 @@ entries:
       - "notes"
     termid: "concept:tag"
     vsntag: "documentation"
-  - term: "term"
+  - id: "term"
+    displayed_sidebar: "tev2SideBar"
+    term: "term"
     termType: "concept"
     isa: "identifier"
     glossaryTerm: null
@@ -3255,7 +3407,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "term-identifier.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/syntax/term-identifier-syntax"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/syntax/21-term-identifier-syntax"
     headingids:
       - "term-identifier"
       - "syntax"
@@ -3263,7 +3415,9 @@ entries:
       - "examples"
     termid: "concept:term-identifier"
     vsntag: "documentation"
-  - term: "term-ref"
+  - id: "term-ref"
+    displayed_sidebar: "tev2SideBar"
+    term: "term-ref"
     termType: "concept"
     isa: null
     glossaryTerm: "TermRef"
@@ -3299,6 +3453,7 @@ entries:
     termid: "concept:term-ref"
     vsntag: "documentation"
   - id: "term-selection-instruction"
+    displayed_sidebar: "tev2SideBar"
     term: "term-selection-instruction"
     termType: "concept"
     isa: null
@@ -3332,7 +3487,9 @@ entries:
       - "notes"
     termid: "concept:term-selection-instruction"
     vsntag: "documentation"
-  - term: "term-type"
+  - id: "term-type"
+    displayed_sidebar: "tev2SideBar"
+    term: "term-type"
     termType: "concept"
     isa: "identifier"
     glossaryTerm: "Term Type"
@@ -3363,7 +3520,9 @@ entries:
       - "recommended-term-types"
     termid: "concept:term-type"
     vsntag: "documentation"
-  - term: "termid"
+  - id: "termid"
+    displayed_sidebar: "tev2SideBar"
+    term: "termid"
     termType: "concept"
     isa: "identifier"
     glossaryTerm: null
@@ -3392,7 +3551,9 @@ entries:
       - "term-id"
     termid: "concept:termid"
     vsntag: "documentation"
-  - term: "terminology"
+  - id: "terminology"
+    displayed_sidebar: "tev2SideBar"
+    term: "terminology"
     termType: "concept"
     grouptags: null
     synonymOf: null
@@ -3418,7 +3579,9 @@ entries:
       - "purpose"
     termid: "concept:terminology"
     vsntag: "documentation"
-  - term: "terminology"
+  - id: "terminology"
+    displayed_sidebar: "tev2SideBar"
+    term: "terminology"
     termType: "pattern"
     isa: null
     glossaryTerm: "Terminology Pattern"
@@ -3470,7 +3633,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "terminology-identifier.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/syntax/terminology-identifier-syntax"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/syntax/31-terminology-identifier-syntax"
     headingids:
       - "terminology-identifiers"
       - "syntax"
@@ -3479,6 +3642,7 @@ entries:
     termid: "concept:terminology-identifier"
     vsntag: "documentation"
   - id: "terminology-process"
+    displayed_sidebar: "tev2SideBar"
     term: "terminology-process"
     termType: "concept"
     isa: null
@@ -3506,7 +3670,9 @@ entries:
       - "notes"
     termid: "concept:terminology-process"
     vsntag: "documentation"
-  - term: "terms-community"
+  - id: "terms-community"
+    displayed_sidebar: "tev2SideBar"
+    term: "terms-community"
     termType: "concept"
     isa: "community"
     glossaryTerm: "Terms Community"
@@ -3536,7 +3702,9 @@ entries:
       - "notes"
     termid: "concept:terms-community"
     vsntag: "documentation"
-  - term: "tev2"
+  - id: "tev2"
+    displayed_sidebar: "tev2SideBar"
+    term: "tev2"
     termType: "concept"
     isa: null
     glossaryTerm: "TEv2"
@@ -3557,6 +3725,7 @@ entries:
     termid: "concept:tev2"
     vsntag: "documentation"
   - id: "tev2-text-conversion-tool"
+    displayed_sidebar: "tev2SideBar"
     term: "tev2-text-conversion-tool"
     termType: "concept"
     isa: "tev2-tool"
@@ -3591,6 +3760,7 @@ entries:
     termid: "concept:tev2-text-conversion-tool"
     vsntag: "documentation"
   - id: "tev2-tool"
+    displayed_sidebar: "tev2SideBar"
     term: "tev2-tool"
     termType: "concept"
     isa: null
@@ -3624,6 +3794,7 @@ entries:
     termid: "concept:tev2-tool"
     vsntag: "documentation"
   - id: "tev2-toolbox"
+    displayed_sidebar: "tev2SideBar"
     term: "tev2-toolbox"
     termType: "concept"
     isa: null
@@ -3709,7 +3880,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "trrt.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools/trrt"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools/12-trrt"
     headingids:
       - "term-reference-resolution-tool-(trrt)"
       - "installing-the-tool-{#install}"
@@ -3727,7 +3898,7 @@ entries:
       - "the-`html-link`-converter"
       - "the-`html-hovertext-link`-converter"
       - "the-`html-glossarytext-link`-converter"
-      - "processing,-errors-and-warnings"
+      - "errors-and-warnings"
       - "deploying-the-tool"
     termid: "concept:trrt"
     vsntag: "documentation"
@@ -3778,7 +3949,9 @@ entries:
       - "short-description"
     termid: "concept:verify"
     vsntag: "default"
-  - term: "versiontag"
+  - id: "versiontag"
+    displayed_sidebar: "tev2SideBar"
+    term: "versiontag"
     termType: "concept"
     isa: "tag"
     glossaryTerm: null
@@ -3815,7 +3988,9 @@ entries:
       - "notes"
     termid: "concept:versiontag"
     vsntag: "documentation"
-  - term: "vocabulary"
+  - id: "vocabulary"
+    displayed_sidebar: "tev2SideBar"
+    term: "vocabulary"
     termType: "concept"
     isa: null
     glossaryTerm: null

@@ -12,6 +12,7 @@ terminology:
   issues: "https://github.com/essif-lab/framework/issues"
   website: "https://essif-lab.github.io/framework"
   navpath: "/docs/terms"
+  navid: "id"
   slack: "https://trustoverip.slack.com/archives/C01BBNGRPUH"
   curators:
     - name: "RieksJ"
@@ -946,6 +947,7 @@ entries:
     termid: "pattern:decision-making"
     vsntag: "default"
   - id: "define"
+    displayed_sidebar: "tev2SideBar"
     term: "define"
     termType: "concept"
     isa: null
@@ -2789,6 +2791,7 @@ entries:
     termid: "concept:principal"
     vsntag: "default"
   - id: "property"
+    displayed_sidebar: "tev2SideBar"
     term: "property"
     termType: "concept"
     isa: null
@@ -2844,6 +2847,7 @@ entries:
     termid: "concept:qualified-data"
     vsntag: "default"
   - id: "relation"
+    displayed_sidebar: "tev2SideBar"
     term: "relation"
     termType: "concept"
     isa: null
@@ -3241,7 +3245,9 @@ entries:
       - "purpose"
     termid: "concept:self-sovereignty"
     vsntag: "default"
-  - term: "semantic-unit"
+  - id: "semantic-unit"
+    displayed_sidebar: "tev2SideBar"
+    term: "semantic-unit"
     termType: "concept"
     isa: null
     glossaryTerm: "Semantic Unit"

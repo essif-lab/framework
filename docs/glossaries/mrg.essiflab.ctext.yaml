@@ -12,6 +12,7 @@ terminology:
   issues: "https://github.com/essif-lab/framework/issues"
   website: "https://essif-lab.github.io/framework"
   navpath: "/docs/terms"
+  navid: "id"
   slack: "https://trustoverip.slack.com/archives/C01BBNGRPUH"
   curators:
     - name: "RieksJ"
