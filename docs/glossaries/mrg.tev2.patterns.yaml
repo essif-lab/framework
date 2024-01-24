@@ -19,7 +19,6 @@ terminology:
         id: "rieks.joosten"
         at: "tno.nl"
   defaulttype: "concept"
-  localscopedir: "/home/runner/work/tev2-specifications/tev2-specifications/docs"
   vsntag: "patterns"
 scopes:
   - scopetag: "essif-lab"

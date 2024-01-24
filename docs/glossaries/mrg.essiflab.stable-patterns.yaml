@@ -20,7 +20,6 @@ terminology:
         id: "rieks.joosten"
         at: "tno.nl"
   defaulttype: "concept"
-  localscopedir: "/home/runner/work/framework/framework/docs"
   vsntag: "stable-patterns"
 scopes: []
 entries:
@@ -31,12 +30,10 @@ entries:
     formPhrases:
       - "guardianship"
       - "guardianships"
-      - "guardianship's"
-      - "guardianship(s)"
+      - "guardianship-s"
       - "guardianship-pattern"
       - "guardianships-pattern"
-      - "guardianship's-pattern"
-      - "guardianship(s)-pattern"
+      - "guardianship-s-pattern"
     status: "stable"
     grouptags: null
     glossaryTerm: "Guardianship Pattern"

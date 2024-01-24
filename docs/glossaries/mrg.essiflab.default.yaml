@@ -20,7 +20,6 @@ terminology:
         id: "rieks.joosten"
         at: "tno.nl"
   defaulttype: "concept"
-  localscopedir: "/home/runner/work/framework/framework/docs"
   vsntag: "default"
   altvsntags:
     - "latest"
@@ -36,12 +35,10 @@ entries:
     formPhrases:
       - "action"
       - "actions"
-      - "action's"
-      - "action(s)"
+      - "action-s"
       - "acting"
       - "activity"
-      - "activitys"
-      - "activity's"
+      - "activity-s"
       - "activities"
     status: "draft"
     grouptags: null
@@ -67,12 +64,10 @@ entries:
     formPhrases:
       - "actor"
       - "actors"
-      - "actor's"
-      - "actor(s)"
+      - "actor-s"
       - "digital-actor"
       - "digital-actors"
-      - "digital-actor's"
-      - "digital-actor(s)"
+      - "digital-actor-s"
     status: "draft"
     grouptags: null
     hoverText: "Actor: Entity that can act (do things/execute Actions), e.g. people, machines, but not Organizations."
@@ -98,8 +93,7 @@ entries:
     formPhrases:
       - "advertisement"
       - "advertisements"
-      - "advertisement's"
-      - "advertisement(s)"
+      - "advertisement-s"
       - "advertise"
       - "advertising"
     status: "draft"
@@ -123,12 +117,10 @@ entries:
     formPhrases:
       - "agent"
       - "agents"
-      - "agent's"
-      - "agent(s)"
+      - "agent-s"
       - "digital-agent"
       - "digital-agents"
-      - "digital-agent's"
-      - "digital-agent(s)"
+      - "digital-agent-s"
     status: "draft"
     grouptags: null
     hoverText: "Agent (of a Party): an Actor that is executing an Action on behalf of a Party (called the Principal of that Actor)."
@@ -153,16 +145,13 @@ entries:
     formPhrases:
       - "assertion"
       - "assertions"
-      - "assertion's"
-      - "assertion(s)"
+      - "assertion-s"
       - "claim"
       - "claims"
-      - "claim's"
-      - "claim(s)"
+      - "claim-s"
       - "statement"
       - "statements"
-      - "statement's"
-      - "statement(s)"
+      - "statement-s"
     status: "draft"
     grouptags: null
     hoverText: "Assertion: a declaration/statement, made by a specific Party, that something is the case."
@@ -187,8 +176,7 @@ entries:
     formPhrases:
       - "assessment-framework"
       - "assessment-frameworks"
-      - "assessment-framework's"
-      - "assessment-framework(s)"
+      - "assessment-framework-s"
     status: "draft"
     grouptags: null
     hoverText: "Assessment framework (for a set of requirements on a specified kind of Entity)): the combination of a set of criteria that an auditor can assess by applying them to an Entity (of the specified kind), and the procedures that this Auditor will follow for doing so, for the purpose of establishing the extent in which that Entity conforms to the stated set of requirements."
@@ -211,8 +199,7 @@ entries:
     formPhrases:
       - "attribute"
       - "attributes"
-      - "attribute's"
-      - "attribute(s)"
+      - "attribute-s"
     status: "draft"
     grouptags: null
     hoverText: "Attribute (of an Entity): Data, that represents a characteristic that a Party (the Owner of the attribute) has attributed to an Entity (which is the Subject of that attribute)."
@@ -233,8 +220,7 @@ entries:
     term: "authority"
     formPhrases:
       - "authority"
-      - "authoritys"
-      - "authority's"
+      - "authority-s"
       - "authorities"
     status: "draft"
     grouptags: null
@@ -258,12 +244,10 @@ entries:
     term: "capability"
     formPhrases:
       - "capability"
-      - "capabilitys"
-      - "capability's"
+      - "capability-s"
       - "capabilities"
       - "capability-of-a-party"
-      - "capabilitys-of-a-party"
-      - "capability's-of-a-party"
+      - "capability-s-of-a-party"
       - "capabilities-of-a-party"
     status: "draft"
     grouptags: null
@@ -286,8 +270,7 @@ entries:
     term: "capability-of-an-actor"
     formPhrases:
       - "capability-of-an-actor"
-      - "capabilitys-of-an-actor"
-      - "capability's-of-an-actor"
+      - "capability-s-of-an-actor"
       - "capabilities-of-an-actor"
     status: "draft"
     grouptags: null
@@ -311,12 +294,10 @@ entries:
     formPhrases:
       - "colleague"
       - "colleagues"
-      - "colleague's"
-      - "colleague(s)"
+      - "colleague-s"
       - "digital-colleague"
       - "digital-colleagues"
-      - "digital-colleague's"
-      - "digital-colleague(s)"
+      - "digital-colleague-s"
     status: "draft"
     grouptags: null
     hoverText: "Colleagues: two or more (digital or non-digital) Agents that have the same Principal (i.e. Party on whose behalf they are executing an Action)."
@@ -340,8 +321,7 @@ entries:
     formPhrases:
       - "commitment-decision"
       - "commitment-decisions"
-      - "commitment-decision's"
-      - "commitment-decision(s)"
+      - "commitment-decision-s"
     status: "draft"
     grouptags: null
     hoverText: "Commitment Decision (of a Party in a Business Transaction): the decision of that Party whether or not to commit to that Business Transaction, i.e. (promise) to fulfill the Obligations that the associated Business Transaction Agreement Proposal would impose on that Party once it were signed."
@@ -363,12 +343,10 @@ entries:
     formPhrases:
       - "communication-channel"
       - "communication-channels"
-      - "communication-channel's"
-      - "communication-channel(s)"
+      - "communication-channel-s"
       - "digital-communication-channel"
       - "digital-communication-channels"
-      - "digital-communication-channel's"
-      - "digital-communication-channel(s)"
+      - "digital-communication-channel-s"
     status: "draft"
     grouptags: null
     hoverText: "Communication Channel: a (digital or non-digital) means by which two Actors can exchange messages with one another."
@@ -391,12 +369,10 @@ entries:
     formPhrases:
       - "communication-session"
       - "communication-sessions"
-      - "communication-session's"
-      - "communication-session(s)"
+      - "communication-session-s"
       - "digital-communication-session"
       - "digital-communication-sessions"
-      - "digital-communication-session's"
-      - "digital-communication-session(s)"
+      - "digital-communication-session-s"
     status: "draft"
     grouptags: null
     hoverText: "Communication Session: a time interval during which two Actors have an established Communication Channel that does not exist outside of that time interval."
@@ -416,8 +392,7 @@ entries:
     term: "community"
     formPhrases:
       - "community"
-      - "communitys"
-      - "community's"
+      - "community-s"
       - "communities"
     status: "draft"
     grouptags: null
@@ -463,8 +438,7 @@ entries:
     formPhrases:
       - "compliance-level"
       - "compliance-levels"
-      - "compliance-level's"
-      - "compliance-level(s)"
+      - "compliance-level-s"
     status: "draft"
     grouptags: null
     hoverText: "Compliance level (of an Entity, regarding a stated (set of) requirement(s)): a measure for stating how well the Entity conforms with the stated (set of) requirement(s)."
@@ -510,8 +484,7 @@ entries:
     formPhrases:
       - "compliance-objective"
       - "compliance-objectives"
-      - "compliance-objective's"
-      - "compliance-objective(s)"
+      - "compliance-objective-s"
     status: "draft"
     grouptags: null
     hoverText: "Compliance objective (of a Party): an Objective, owned by that Party, that aims to reach and maintain a state of affairs in which a specific set of Entities that this Party controls are in accordance with a specific set of requirements (e.g., laws, regulations, standards, etc.)."
@@ -535,8 +508,7 @@ entries:
     formPhrases:
       - "concept"
       - "concepts"
-      - "concept's"
-      - "concept(s)"
+      - "concept-s"
     status: "draft"
     grouptags: null
     hoverText: "Concept: the ideas/thoughts behind a classification of Entities (what makes Entities in that class 'the same')."
@@ -563,8 +535,7 @@ entries:
     formPhrases:
       - "control"
       - "controls"
-      - "control's"
-      - "control(s)"
+      - "control-s"
     status: "draft"
     grouptags: null
     hoverText: "Control (of a Party): the combination of resources (e.g. people, tools, budgets, time) and processes that are tasked to realize a specific Control Objective of that Party."
@@ -589,8 +560,7 @@ entries:
     formPhrases:
       - "control-level"
       - "control-levels"
-      - "control-level's"
-      - "control-level(s)"
+      - "control-level-s"
     status: "draft"
     grouptags: null
     hoverText: "Control level (of a Control): a measure for the efficiency and effectiveness in which a Control produces the results of its Control Objective."
@@ -614,8 +584,7 @@ entries:
     formPhrases:
       - "control-objective"
       - "control-objectives"
-      - "control-objective's"
-      - "control-objective(s)"
+      - "control-objective-s"
     status: "draft"
     grouptags: null
     hoverText: "Control objective (of a Party): an Objective, owned by that Party, that aims to contribute to the realization of another (set of) Objective(s) of that Party, by producing results that this Party needs to realize these other Objective(s)."
@@ -668,8 +637,7 @@ entries:
     formPhrases:
       - "controller"
       - "controllers"
-      - "controller's"
-      - "controller(s)"
+      - "controller-s"
     status: "draft"
     grouptags: null
     hoverText: "Controller (of an Entity): the role that an Actor performs as it is executing actions on that Entity for the purpose of ensuring that the Entity will act/behave, or be used, in a particular way."
@@ -738,16 +706,13 @@ entries:
     formPhrases:
       - "credential"
       - "credentials"
-      - "credential's"
-      - "credential(s)"
+      - "credential-s"
       - "verifiable-credential"
       - "verifiable-credentials"
-      - "verifiable-credential's"
-      - "verifiable-credential(s)"
+      - "verifiable-credential-s"
       - "attribute-based-credential"
       - "attribute-based-credentials"
-      - "attribute-based-credential's"
-      - "attribute-based-credential(s)"
+      - "attribute-based-credential-s"
     status: "draft"
     grouptags: null
     hoverText: "Credential: data, representing a set of Assertions (claims, statements), authored and signed by, or on behalf of, a specific Party."
@@ -775,8 +740,7 @@ entries:
     formPhrases:
       - "credential-catalogue"
       - "credential-catalogues"
-      - "credential-catalogue's"
-      - "credential-catalogue(s)"
+      - "credential-catalogue-s"
     status: "draft"
     grouptags: null
     hoverText: "Credential Catalogue: a functional component that has the Capability (of an Actor) to register and advertise the information about Credential Types that their respective Governing Parties have decided to disclose so as to enable other Parties to decide whether or not it is beneficial for them to use Credentials of such types."
@@ -798,8 +762,7 @@ entries:
     formPhrases:
       - "credential-type"
       - "credential-types"
-      - "credential-type's"
-      - "credential-type(s)"
+      - "credential-type-s"
     status: "draft"
     grouptags: null
     hoverText: "Credential Type: the specification of the contents, properties, constraints etc. that Credentials of this type must have/comply with."
@@ -854,7 +817,7 @@ entries:
     date: 20210601
     scopetag: "essiflab"
     locator: "pattern-decentralized-GRC.md"
-    navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-decentralized-GRC"
+    navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-decentralized-grc"
     headingids:
       - "decentralized-risk-management,-governance-and-compliance"
       - "decentralized,-governance,-risk-management-and-compliance"
@@ -905,8 +868,7 @@ entries:
     formPhrases:
       - "decision"
       - "decisions"
-      - "decision's"
-      - "decision(s)"
+      - "decision-s"
     status: "draft"
     grouptags: null
     hoverText: "Decision (of a Party): the conclusion that this Party inferences from a set of Data that it considers to be facts."
@@ -982,8 +944,7 @@ entries:
     formPhrases:
       - "definition"
       - "definitions"
-      - "definition's"
-      - "definition(s)"
+      - "definition-s"
     status: "draft"
     grouptags: null
     glossaryTerm: "Definition"
@@ -1008,18 +969,15 @@ entries:
     formPhrases:
       - "delegate"
       - "delegates"
-      - "delegate's"
-      - "delegate(s)"
+      - "delegate-s"
       - "delegated"
       - "delegating"
       - "delegator"
       - "delegators"
-      - "delegator's"
-      - "delegator(s)"
+      - "delegator-s"
       - "delegatee"
       - "delegatees"
-      - "delegatee's"
-      - "delegatee(s)"
+      - "delegatee-s"
     status: "draft"
     grouptags: null
     hoverText: "Delegate: the transferral of Ownership of one or more Obligations of a Party (the Delegator), including the associated accountability, to another Party (the Delegatee), which implies that the Delegatee can realize such Obligations as it sees fit."
@@ -1045,8 +1003,7 @@ entries:
     formPhrases:
       - "dependent"
       - "dependents"
-      - "dependent's"
-      - "dependent(s)"
+      - "dependent-s"
     status: "draft"
     grouptags: null
     hoverText: "Dependent (in a Guardianship Arrangement): an Entity for the caring for and/or protecting/guarding/defending of which a Guardianship Arrangement has been established."
@@ -1069,8 +1026,7 @@ entries:
     term: "dictionary"
     formPhrases:
       - "dictionary"
-      - "dictionarys"
-      - "dictionary's"
+      - "dictionary-s"
       - "dictionaries"
     status: "draft"
     grouptags: null
@@ -1140,8 +1096,7 @@ entries:
     formPhrases:
       - "ecosystem"
       - "ecosystems"
-      - "ecosystem's"
-      - "ecosystem(s)"
+      - "ecosystem-s"
     status: "draft"
     grouptags: null
     hoverText: "Ecosystem: a set of at least two (autonomous) Parties (its 'members') whose individual work complements that of other members, and is of benefit to the set as a whole."
@@ -1165,8 +1120,7 @@ entries:
     formPhrases:
       - "employee"
       - "employees"
-      - "employee's"
-      - "employee(s)"
+      - "employee-s"
     status: "draft"
     grouptags: null
     hoverText: "Employee (of a Party): a (human or digital) Actor for whom/which it is realistic that it might execute Actions on behalf of that Party (called the Employer of that Actor)."
@@ -1190,8 +1144,7 @@ entries:
     formPhrases:
       - "employer"
       - "employers"
-      - "employer's"
-      - "employer(s)"
+      - "employer-s"
     status: "draft"
     grouptags: null
     hoverText: "Employer (of an Actor): a Party on whose behalf this (human or non-human) Actor (called an Employee of that Party) might execute Actions."
@@ -1215,8 +1168,7 @@ entries:
     formPhrases:
       - "employment-contract"
       - "employment-contracts"
-      - "employment-contract's"
-      - "employment-contract(s)"
+      - "employment-contract-s"
     status: "draft"
     grouptags: null
     hoverText: "Employment Contract (between two Parties, concerning a set of Actors): an agreement/contract between these Parties that states (or refers to) all (sets of) rights and duties under which the Actors (the Subjects of the contract), that are controlled by one Party, can and/or must work for the other Party."
@@ -1240,8 +1192,7 @@ entries:
     term: "entity"
     formPhrases:
       - "entity"
-      - "entitys"
-      - "entity's"
+      - "entity-s"
       - "entities"
     status: "draft"
     grouptags: null
@@ -1289,8 +1240,7 @@ entries:
     formPhrases:
       - "expectation"
       - "expectations"
-      - "expectation's"
-      - "expectation(s)"
+      - "expectation-s"
     status: "draft"
     grouptags: null
     hoverText: "Expectation (of a Party): an Objective that is Owned by that Party for having a specific (set of) result(s) produced, where the actual production thereof is (going to be) outsourced to another Party."
@@ -1312,12 +1262,10 @@ entries:
     formPhrases:
       - "framework"
       - "frameworks"
-      - "framework's"
-      - "framework(s)"
+      - "framework-s"
       - "conceptual-framework"
       - "conceptual-frameworks"
-      - "conceptual-framework's"
-      - "conceptual-framework(s)"
+      - "conceptual-framework-s"
     status: "draft"
     grouptags: null
     hoverText: "Framework (Conceptual): A set of assumptions, concepts, values, and practices that constitutes a way of viewing reality."
@@ -1338,8 +1286,7 @@ entries:
     term: "glossary"
     formPhrases:
       - "glossary"
-      - "glossarys"
-      - "glossary's"
+      - "glossary-s"
       - "glossaries"
     grouptags: null
     status: "proposed"
@@ -1374,17 +1321,14 @@ entries:
       - "governed-by"
       - "governing"
       - "governing-party"
-      - "governing-partys"
-      - "governing-party's"
+      - "governing-party-s"
       - "governing-parties"
       - "governor"
       - "governors"
-      - "governor's"
-      - "governor(s)"
+      - "governor-s"
       - "government"
       - "governments"
-      - "government's"
-      - "government(s)"
+      - "government-s"
     status: "draft"
     grouptags: null
     hoverText: "Governance: the act or process of governing or overseeing the realization of (the results associated with) a set of Objectives by the Owner of these Objectives, in order to ensure they will be fit for the purposes that this Owner intends to use them for."
@@ -1433,8 +1377,7 @@ entries:
     formPhrases:
       - "governor"
       - "governors"
-      - "governor's"
-      - "governor(s)"
+      - "governor-s"
     status: "draft"
     grouptags: null
     hoverText: "Governor: a Role that a Party (better: Employee of a specific Party) performs as it Governs a (coherent) set of Expectations of that Party, within a particular focus."
@@ -1458,8 +1401,7 @@ entries:
     formPhrases:
       - "guardian"
       - "guardians"
-      - "guardian's"
-      - "guardian(s)"
+      - "guardian-s"
     status: "draft"
     grouptags: null
     hoverText: "Guardian: a Party that has been assigned rights and duties in a Guardianship Arrangement for the purpose of caring for and/or protecting/guarding/defending the Entity that is the Dependent in that Guardianship Arrangement."
@@ -1483,8 +1425,7 @@ entries:
     formPhrases:
       - "guardianship"
       - "guardianships"
-      - "guardianship's"
-      - "guardianship(s)"
+      - "guardianship-s"
     status: "draft"
     grouptags: null
     synonymOf: "guardianship-arrangement"
@@ -1504,12 +1445,10 @@ entries:
     formPhrases:
       - "guardianship"
       - "guardianships"
-      - "guardianship's"
-      - "guardianship(s)"
+      - "guardianship-s"
       - "guardianship-pattern"
       - "guardianships-pattern"
-      - "guardianship's-pattern"
-      - "guardianship(s)-pattern"
+      - "guardianship-s-pattern"
     status: "stable"
     grouptags: null
     glossaryTerm: "Guardianship Pattern"
@@ -1535,8 +1474,7 @@ entries:
     formPhrases:
       - "guardianship-arrangement"
       - "guardianship-arrangements"
-      - "guardianship-arrangement's"
-      - "guardianship-arrangement(s)"
+      - "guardianship-arrangement-s"
     status: "draft"
     grouptags: null
     hoverText: "Guardianship Arrangement (in a Jurisdiction): a set of rights and duties between Legal Entities of the Jurisdiction that have been established and are enforced within that Jurisdiction for the purpose of caring for and/or protecting/guarding/defending one or more of these Entities."
@@ -1561,12 +1499,10 @@ entries:
     formPhrases:
       - "guardianship-type"
       - "guardianship-types"
-      - "guardianship-type's"
-      - "guardianship-type(s)"
+      - "guardianship-type-s"
       - "guardianship-arrangement-type"
       - "guardianship-arrangement-types"
-      - "guardianship-arrangement-type's"
-      - "guardianship-arrangement-type(s)"
+      - "guardianship-arrangement-type-s"
     status: "draft"
     grouptags: null
     hoverText: "Guardianship-type (in a Jurisdiction): a class of Guardianship Arrangements within the Jurisdiction that governs and manages them."
@@ -1590,8 +1526,7 @@ entries:
     formPhrases:
       - "holder"
       - "holders"
-      - "holder's"
-      - "holder(s)"
+      - "holder-s"
     status: "draft"
     grouptags: null
     hoverText: "Holder (functional component): a component that implements the Capability to handle presentation requests from a Peer Agent, produce the requested data (a presentation) according to its Principal's holder-policy, and send that in response to the request."
@@ -1615,8 +1550,7 @@ entries:
     term: "holder-policy"
     formPhrases:
       - "holder-policy"
-      - "holder-policys"
-      - "holder-policy's"
+      - "holder-policy-s"
       - "holder-policies"
     status: "draft"
     grouptags: null
@@ -1639,20 +1573,16 @@ entries:
     formPhrases:
       - "human-being"
       - "human-beings"
-      - "human-being's"
-      - "human-being(s)"
+      - "human-being-s"
       - "human"
       - "humans"
-      - "human's"
-      - "human(s)"
+      - "human-s"
       - "person"
       - "persons"
-      - "person's"
-      - "person(s)"
+      - "person-s"
       - "individual"
       - "individuals"
-      - "individual's"
-      - "individual(s)"
+      - "individual-s"
       - "people"
     status: "draft"
     grouptags: null
@@ -1705,8 +1635,7 @@ entries:
     formPhrases:
       - "identifier"
       - "identifiers"
-      - "identifier's"
-      - "identifier(s)"
+      - "identifier-s"
     status: "draft"
     grouptags: null
     hoverText: "Identifier: a character string that is being used for the identification of some Entity (yet may refer to 0, 1, or more Entities, depending on the context within which it is being used)."
@@ -1779,8 +1708,7 @@ entries:
     term: "identity"
     formPhrases:
       - "identity"
-      - "identitys"
-      - "identity's"
+      - "identity-s"
       - "identities"
     status: "draft"
     grouptags: null
@@ -1848,8 +1776,7 @@ entries:
     formPhrases:
       - "issuer"
       - "issuers"
-      - "issuer's"
-      - "issuer(s)"
+      - "issuer-s"
     status: "draft"
     grouptags: null
     hoverText: "Issuer (functional component): a component that implements the Capability to construct Credentials from data objects, according to the content of its Principal's Issuer-Policy (specifically regarding the way in which the Credential is to be digitally signed), and pass it to the Wallet-component of its Principal allowing it to be issued."
@@ -1873,8 +1800,7 @@ entries:
     term: "issuer-policy"
     formPhrases:
       - "issuer-policy"
-      - "issuer-policys"
-      - "issuer-policy's"
+      - "issuer-policy-s"
       - "issuer-policies"
     status: "draft"
     grouptags: null
@@ -1897,8 +1823,7 @@ entries:
     formPhrases:
       - "jurisdiction"
       - "jurisdictions"
-      - "jurisdiction's"
-      - "jurisdiction(s)"
+      - "jurisdiction-s"
     status: "draft"
     grouptags: null
     hoverText: "Jurisdiction: the composition of a Legal System (legislation, enforcement thereof, and conflict resolution), a Party that governs that Legal System, a scope within which that Legal System is operational, and one or more Objectives for the purpose of which the Legal System is operated."
@@ -1946,8 +1871,7 @@ entries:
     formPhrases:
       - "knowledge"
       - "knowledges"
-      - "knowledge's"
-      - "knowledge(s)"
+      - "knowledge-s"
     status: "draft"
     grouptags: null
     hoverText: "Knowledge: The (intangible) sum of what is known by a specific Party, as well as the familiarity, awareness or understanding of someone or something by that Party."
@@ -1971,8 +1895,7 @@ entries:
     term: "legal-entity"
     formPhrases:
       - "legal-entity"
-      - "legal-entitys"
-      - "legal-entity's"
+      - "legal-entity-s"
       - "legal-entities"
     status: "draft"
     grouptags: null
@@ -1999,8 +1922,7 @@ entries:
     formPhrases:
       - "legal-jurisdiction"
       - "legal-jurisdictions"
-      - "legal-jurisdiction's"
-      - "legal-jurisdiction(s)"
+      - "legal-jurisdiction-s"
     conceptref: "essifLab:jurisdiction"
     status: "draft"
     grouptags: null
@@ -2024,8 +1946,7 @@ entries:
     formPhrases:
       - "legal-system"
       - "legal-systems"
-      - "legal-system's"
-      - "legal-system(s)"
+      - "legal-system-s"
     status: "draft"
     grouptags: null
     hoverText: "Legal-system: a system in which rules are defined, and mechanisms for their enforcement and conflict resolution are (implicitly or explicitly) specified."
@@ -2056,8 +1977,7 @@ entries:
       - "managed-by"
       - "managing"
       - "managing-party"
-      - "managing-partys"
-      - "managing-party's"
+      - "managing-party-s"
       - "managing-parties"
     status: "draft"
     grouptags: null
@@ -2081,18 +2001,15 @@ entries:
     formPhrases:
       - "mandate"
       - "mandates"
-      - "mandate's"
-      - "mandate(s)"
+      - "mandate-s"
       - "mandated"
       - "mandating"
       - "mandator"
       - "mandators"
-      - "mandator's"
-      - "mandator(s)"
+      - "mandator-s"
       - "mandatee"
       - "mandatees"
-      - "mandatee's"
-      - "mandatee(s)"
+      - "mandatee-s"
     status: "draft"
     grouptags: null
     hoverText: "Mandate: a right or duty that one Party (the Mandator) has granted to another Party or Employee (the Mandatee) for executing a specific (set of) Actions in the name of, and under responsibility/accountability of, this (first) Party."
@@ -2138,8 +2055,7 @@ entries:
     formPhrases:
       - "mental-model"
       - "mental-models"
-      - "mental-model's"
-      - "mental-model(s)"
+      - "mental-model-s"
     conceptref: "essifLab:pattern"
     status: "draft"
     grouptags: null
@@ -2183,8 +2099,7 @@ entries:
     formPhrases:
       - "mission"
       - "missions"
-      - "mission's"
-      - "mission(s)"
+      - "mission-s"
     status: "draft"
     grouptags: null
     hoverText: "Mission: an Objective of a Party that provides an answer to the question why that Party exists - i.e. its 'raison d'être'."
@@ -2206,8 +2121,7 @@ entries:
     formPhrases:
       - "normative-framework"
       - "normative-frameworks"
-      - "normative-framework's"
-      - "normative-framework(s)"
+      - "normative-framework-s"
     status: "draft"
     grouptags: null
     hoverText: "Normative framework (for a specific class of Entities)): a set of rules that are followed and/or criteria that remain fulfilled by (a specific kind of) Entities whose behavior and/or properties are characterized as 'normal'."
@@ -2231,8 +2145,7 @@ entries:
     formPhrases:
       - "objective"
       - "objectives"
-      - "objective's"
-      - "objective(s)"
+      - "objective-s"
     status: "draft"
     grouptags: null
     hoverText: "Objective: Something toward which a Party (its Owner) directs effort (an aim, goal, or end of action)."
@@ -2259,8 +2172,7 @@ entries:
     formPhrases:
       - "obligation"
       - "obligations"
-      - "obligation's"
-      - "obligation(s)"
+      - "obligation-s"
     status: "draft"
     grouptags: null
     hoverText: "Obligation (of a Party): an Objective that is Owned by that Party for producing a specific (set of) result(s) that are to be used (consumed) by that Party and/or other Parties."
@@ -2307,8 +2219,7 @@ entries:
     formPhrases:
       - "organization"
       - "organizations"
-      - "organization's"
-      - "organization(s)"
+      - "organization-s"
     status: "draft"
     grouptags: null
     hoverText: "Organization: a Party that is capable of setting Objectives and making sure these are realized by Actors that it has Onboarded and/or by (vetted) Parties that are committed to contribute to these Objectives."
@@ -2377,12 +2288,10 @@ entries:
     formPhrases:
       - "owner"
       - "owners"
-      - "owner's"
-      - "owner(s)"
+      - "owner-s"
       - "own"
       - "owns"
-      - "own's"
-      - "own(s)"
+      - "own-s"
     status: "draft"
     grouptags: null
     hoverText: "Owner (of an Entity): the role that a Party performs when it is exercising its legal, rightful or natural title to control that Entity."
@@ -2407,21 +2316,17 @@ entries:
     formPhrases:
       - "ownership"
       - "ownerships"
-      - "ownership's"
-      - "ownership(s)"
+      - "ownership-s"
       - "owning"
       - "legal-ownership"
       - "legal-ownerships"
-      - "legal-ownership's"
-      - "legal-ownership(s)"
+      - "legal-ownership-s"
       - "rightful-ownership"
       - "rightful-ownerships"
-      - "rightful-ownership's"
-      - "rightful-ownership(s)"
+      - "rightful-ownership-s"
       - "natural-ownership"
       - "natural-ownerships"
-      - "natural-ownership's"
-      - "natural-ownership(s)"
+      - "natural-ownership-s"
     status: "draft"
     grouptags: null
     hoverText: "Ownership (of an Entity over another in a Jurisdiction): a relationship between two Entities in which one of them (called the Owner) has legal, rightful or natural rights and/or duties to enjoy, dispose of, and control the other (called the Owned)."
@@ -2446,8 +2351,7 @@ entries:
     term: "partial-identity"
     formPhrases:
       - "partial-identity"
-      - "partial-identitys"
-      - "partial-identity's"
+      - "partial-identity-s"
       - "partial-identities"
     status: "draft"
     grouptags: null
@@ -2470,8 +2374,7 @@ entries:
     formPhrases:
       - "participant"
       - "participants"
-      - "participant's"
-      - "participant(s)"
+      - "participant-s"
     grouptags: null
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
@@ -2497,8 +2400,7 @@ entries:
     term: "party"
     formPhrases:
       - "party"
-      - "partys"
-      - "party's"
+      - "party-s"
       - "parties"
     status: "draft"
     grouptags: null
@@ -2576,8 +2478,7 @@ entries:
     formPhrases:
       - "pattern"
       - "patterns"
-      - "pattern's"
-      - "pattern(s)"
+      - "pattern-s"
     status: "draft"
     grouptags: null
     hoverText: "Pattern (also: Mental Model): A description, both casual and formal, of a set of Concepts (ideas), relations between them, and constraints, that together form a coherent and consistent 'viewpoint', or 'way of thinking' about a certain topic."
@@ -2602,8 +2503,7 @@ entries:
     formPhrases:
       - "peer-actor"
       - "peer-actors"
-      - "peer-actor's"
-      - "peer-actor(s)"
+      - "peer-actor-s"
     conceptref: "essifLab:Actor"
     status: "draft"
     grouptags: null
@@ -2627,8 +2527,7 @@ entries:
     formPhrases:
       - "peer-agent"
       - "peer-agents"
-      - "peer-agent's"
-      - "peer-agent(s)"
+      - "peer-agent-s"
     grouptags: null
     status: "proposed"
     created: 2022-06-06T00:00:00.000Z
@@ -2656,8 +2555,7 @@ entries:
     term: "peer-party"
     formPhrases:
       - "peer-party"
-      - "peer-partys"
-      - "peer-party's"
+      - "peer-party-s"
       - "peer-parties"
     conceptref: "essifLab:party"
     status: "draft"
@@ -2681,16 +2579,13 @@ entries:
     term: "policy"
     formPhrases:
       - "policy"
-      - "policys"
-      - "policy's"
+      - "policy-s"
       - "policies"
       - "business-policy"
-      - "business-policys"
-      - "business-policy's"
+      - "business-policy-s"
       - "business-policies"
       - "operational-policy"
-      - "operational-policys"
-      - "operational-policy's"
+      - "operational-policy-s"
       - "operational-policies"
     status: "draft"
     grouptags: null
@@ -2715,12 +2610,10 @@ entries:
     formPhrases:
       - "presentation"
       - "presentations"
-      - "presentation's"
-      - "presentation(s)"
+      - "presentation-s"
       - "verifiable-presentation"
       - "verifiable-presentations"
-      - "verifiable-presentation's"
-      - "verifiable-presentation(s)"
+      - "verifiable-presentation-s"
     status: "draft"
     grouptags: null
     hoverText: "Presentation: a (signed) digital message that a Holder component may send to a Verifier component that contains data derived from one or more Verifiable Credentials (that (a Colleague component of) the Holder component has received from Issuer components of one or more Parties), as a response to a specific Presentation Request of a Verifier component."
@@ -2745,12 +2638,10 @@ entries:
     formPhrases:
       - "presentation-request"
       - "presentation-requests"
-      - "presentation-request's"
-      - "presentation-request(s)"
+      - "presentation-request-s"
       - "verifiable-presentation-request"
       - "verifiable-presentation-requests"
-      - "verifiable-presentation-request's"
-      - "verifiable-presentation-request(s)"
+      - "verifiable-presentation-request-s"
     status: "draft"
     grouptags: null
     hoverText: "Presentation Request: a (signed) digital message that a Verifier component sends to a Holder component asking for specific data from one or more Verifiable Credentials that are issued by specific Parties."
@@ -2771,8 +2662,7 @@ entries:
     formPhrases:
       - "principal"
       - "principals"
-      - "principal's"
-      - "principal(s)"
+      - "principal-s"
     status: "draft"
     grouptags: null
     hoverText: "Principal (of an Actor): the Party for whom, or on behalf of whom, the Actor is executing an Action (this Actor is then called an Agent of that Party)."
@@ -2802,8 +2692,7 @@ entries:
       - "conceptual-modeling"
     formPhrases:
       - "property"
-      - "propertys"
-      - "property's"
+      - "property-s"
       - "properties"
     status: "proposed"
     created: 20230731
@@ -2859,8 +2748,7 @@ entries:
     formPhrases:
       - "relation"
       - "relations"
-      - "relation's"
-      - "relation(s)"
+      - "relation-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -2883,12 +2771,10 @@ entries:
     formPhrases:
       - "revocation-component"
       - "revocation-components"
-      - "revocation-component's"
-      - "revocation-component(s)"
+      - "revocation-component-s"
       - "revocator"
       - "revocators"
-      - "revocator's"
-      - "revocator(s)"
+      - "revocator-s"
     status: "draft"
     grouptags: null
     hoverText: "Revocation (functional) component: a component that implements the Capability to Revoke Credentials that are issued by its Principal, according to its Principal's Revocation Policy."
@@ -2910,8 +2796,7 @@ entries:
     term: "revocation-policy"
     formPhrases:
       - "revocation-policy"
-      - "revocation-policys"
-      - "revocation-policy's"
+      - "revocation-policy-s"
       - "revocation-policies"
     status: "draft"
     grouptags: null
@@ -2958,8 +2843,7 @@ entries:
     formPhrases:
       - "risk"
       - "risks"
-      - "risk's"
-      - "risk(s)"
+      - "risk-s"
     status: "draft"
     grouptags: null
     hoverText: "Risk (of a Party's Objective): the effects that uncertainty (i.e. a lack of information, understanding or knowledge of events, their consequences or likelihoods) can have on the intended realization of that Party's Objective."
@@ -2983,8 +2867,7 @@ entries:
     formPhrases:
       - "risk-level"
       - "risk-levels"
-      - "risk-level's"
-      - "risk-level(s)"
+      - "risk-level-s"
     status: "draft"
     grouptags: null
     hoverText: "Risk level (of an Objective): a measure for the deviation of the intended realization (results) of a specific Objective, that its Owner uses to represent the priority with which the Risk of that Objective should be reckoned with."
@@ -3009,8 +2892,7 @@ entries:
       - "risk-management"
       - "risk-manager"
       - "risk-managers"
-      - "risk-manager's"
-      - "risk-manager(s)"
+      - "risk-manager-s"
     status: "draft"
     grouptags: null
     hoverText: "Risk management: a process that is run by (or on behalf of) a specific Party for the purpose of Managing the Risks that it Owns (thereby realizing specific Risk Objectives)."
@@ -3034,8 +2916,7 @@ entries:
     formPhrases:
       - "risk-objective"
       - "risk-objectives"
-      - "risk-objective's"
-      - "risk-objective(s)"
+      - "risk-objective-s"
     status: "draft"
     grouptags: null
     hoverText: "Risk objective (of a Party): an Objective, owned by that Party, that aims to reach and maintain a state of affairs in which the Risks associated with a specific set of its Objectives become, and/or remain, acceptable."
@@ -3059,8 +2940,7 @@ entries:
     formPhrases:
       - "risk-owner"
       - "risk-owners"
-      - "risk-owner's"
-      - "risk-owner(s)"
+      - "risk-owner-s"
     status: "draft"
     grouptags: null
     hoverText: "Risk-owner (of a Risk): the Party that is the Owner of the Objective to which the Risk is associated."
@@ -3084,8 +2964,7 @@ entries:
     formPhrases:
       - "role"
       - "roles"
-      - "role's"
-      - "role(s)"
+      - "role-s"
     status: "draft"
     grouptags: null
     hoverText: "Role (of an Entity in some context): a defined set of characteristics that the Entity has in some context, such as responsibilities (Obligations) it may have, Actions (behaviors) it may execute, or pieces of Knowledge that it is expected to have in that context, which are referenced to by a specific (Role-)name."
@@ -3109,8 +2988,7 @@ entries:
     formPhrases:
       - "role-name"
       - "role-names"
-      - "role-name's"
-      - "role-name(s)"
+      - "role-name-s"
     status: "draft"
     grouptags: null
     hoverText: "Role name: name (text) that refers to (and identifies) a Role in a a specific context."
@@ -3133,8 +3011,7 @@ entries:
     formPhrases:
       - "scope"
       - "scopes"
-      - "scope's"
-      - "scope(s)"
+      - "scope-s"
     status: "draft"
     grouptags: null
     hoverText: "Scope: the extent of the area or subject matter (which we use, e.g., to define Patterns, Concepts, Terms and Glossaries in, but it serves other purposes as well)."
@@ -3203,8 +3080,7 @@ entries:
     term: "self-sovereign-identity"
     formPhrases:
       - "self-sovereign-identity"
-      - "self-sovereign-identitys"
-      - "self-sovereign-identity's"
+      - "self-sovereign-identity-s"
       - "self-sovereign-identities"
     status: "draft"
     grouptags: null
@@ -3258,8 +3134,7 @@ entries:
     formPhrases:
       - "semantic-unit"
       - "semantic-units"
-      - "semantic-unit's"
-      - "semantic-unit(s)"
+      - "semantic-unit-s"
     status: "proposed"
     created: 20220727
     updated: 20220727
@@ -3348,8 +3223,7 @@ entries:
     formPhrases:
       - "ssi-agent"
       - "ssi-agents"
-      - "ssi-agent's"
-      - "ssi-agent(s)"
+      - "ssi-agent-s"
     conceptref: "essifLab:Agent"
     status: "draft"
     grouptags: null
@@ -3372,21 +3246,17 @@ entries:
     term: "ssi-assurance-community"
     formPhrases:
       - "ssi-assurance-community"
-      - "ssi-assurance-communitys"
-      - "ssi-assurance-community's"
+      - "ssi-assurance-community-s"
       - "ssi-assurance-communities"
       - "ac"
       - "acs"
-      - "ac's"
-      - "ac(s)"
+      - "ac-s"
       - "assurance-community"
-      - "assurance-communitys"
-      - "assurance-community's"
+      - "assurance-community-s"
       - "assurance-communities"
       - "ssi-ac"
       - "ssi-acs"
-      - "ssi-ac's"
-      - "ssi-ac(s)"
+      - "ssi-ac-s"
     status: "draft"
     grouptags: null
     hoverText: "SSI Assurance Community (SSI-AC): a Community that supports its members as they seek to increase their confidence in the SSI infrastructure and/or (specific) qualifications of the data exchanged through that infrastructure."
@@ -3408,8 +3278,7 @@ entries:
     formPhrases:
       - "ssi-infrastructure"
       - "ssi-infrastructures"
-      - "ssi-infrastructure's"
-      - "ssi-infrastructure(s)"
+      - "ssi-infrastructure-s"
     status: "draft"
     grouptags: null
     hoverText: "SSI Infrastructure: the technological components that are (envisaged to be) deployed all over the world for the purpose of providing, requesting and obtaining Qualified Data, for the purpose of negotiating and/or executing electronic Transactions."
@@ -3432,8 +3301,7 @@ entries:
     formPhrases:
       - "subject"
       - "subjects"
-      - "subject's"
-      - "subject(s)"
+      - "subject-s"
     status: "draft"
     grouptags: null
     hoverText: "Subject (of some coherent data set): the (single) Entity to which a coherent data set relates/pertains, such as attributes, Claims/Assertions, files/dossiers, (verifiable) credentials, Partial Identities, Employment Contracts, etc."
@@ -3456,8 +3324,7 @@ entries:
     formPhrases:
       - "tag"
       - "tags"
-      - "tag's"
-      - "tag(s)"
+      - "tag-s"
     status: "draft"
     grouptags: null
     hoverText: "Tag: an alphanumeric string that is used to identify Scopes (so called 'scopetags'), group Terms (so called 'grouptags'), or identify a specific version of a Terminology (so called 'versiontags') from within a specific Scope."
@@ -3481,16 +3348,13 @@ entries:
     formPhrases:
       - "term"
       - "terms"
-      - "term's"
-      - "term(s)"
+      - "term-s"
       - "word"
       - "words"
-      - "word's"
-      - "word(s)"
+      - "word-s"
       - "phrase"
       - "phrases"
-      - "phrase's"
-      - "phrase(s)"
+      - "phrase-s"
     status: "draft"
     grouptags: null
     hoverText: "Term: a word or phrase (i.e.: text) that is used in at least one Scope/context to represent a specific Concept."
@@ -3515,8 +3379,7 @@ entries:
     term: "terminology"
     formPhrases:
       - "terminology"
-      - "terminologys"
-      - "terminology's"
+      - "terminology-s"
       - "terminologies"
     status: "draft"
     grouptags: null
@@ -3555,9 +3418,9 @@ entries:
       - "purpose"
       - "introduction"
       - "formalized-model"
-      - "wit:-parties,-communities-and-tags-{#white}"
-      - "groen:-scopes---terminological-concepts-{#green}"
-      - "geel:-intangible-concepts-{#yellow}"
+      - "white"
+      - "green"
+      - "yellow"
     termid: "pattern:terminology"
     vsntag: "default"
   - id: "terminology-process"
@@ -3592,8 +3455,7 @@ entries:
     term: "terms-community"
     formPhrases:
       - "terms-community"
-      - "terms-communitys"
-      - "terms-community's"
+      - "terms-community-s"
       - "terms-communities"
     status: "draft"
     grouptags: null
@@ -3620,8 +3482,7 @@ entries:
     formPhrases:
       - "transaction"
       - "transactions"
-      - "transaction's"
-      - "transaction(s)"
+      - "transaction-s"
     status: "draft"
     grouptags: null
     hoverText: "Transaction: the exchange of goods, services, funds, or data between some Parties (called Participants of the Transaction)."
@@ -3644,8 +3505,7 @@ entries:
     formPhrases:
       - "transaction-agreement"
       - "transaction-agreements"
-      - "transaction-agreement's"
-      - "transaction-agreement(s)"
+      - "transaction-agreement-s"
     status: "draft"
     grouptags: null
     hoverText: "Transaction Agreement (for a specific Business Transaction): the set of rules that specify the rights (Expectations) and duties (Obligations) of Participants towards one another in the context of a specific Business Transaction."
@@ -3666,8 +3526,7 @@ entries:
     formPhrases:
       - "transaction-form"
       - "transaction-forms"
-      - "transaction-form's"
-      - "transaction-form(s)"
+      - "transaction-form-s"
     status: "draft"
     grouptags: null
     hoverText: "Transaction Form (for some kind of Business Transaction and some Party): the specification of the set of data that this Party needs to (a) commit to a (proposed) Business Transaction of that kind, (b) fulfill its duties/Obligations and (c) escalate if necessary."
@@ -3688,8 +3547,7 @@ entries:
     formPhrases:
       - "transaction-id"
       - "transaction-ids"
-      - "transaction-id's"
-      - "transaction-id(s)"
+      - "transaction-id-s"
     status: "draft"
     grouptags: null
     hoverText: "Transaction Id (for a specific Business Transaction and a Participant): character string that this Participant uses to identify, and refer to, that Business Transaction."
@@ -3711,8 +3569,7 @@ entries:
     formPhrases:
       - "transaction-proposal"
       - "transaction-proposals"
-      - "transaction-proposal's"
-      - "transaction-proposal(s)"
+      - "transaction-proposal-s"
     status: "draft"
     grouptags: null
     hoverText: "Transaction (Agreement) Proposal: a Transaction Agreement that is 'in-the-making' (ranging from an empty document to a document that would be a Transaction Agreement if it were signed by all Participants)."
@@ -3734,8 +3591,7 @@ entries:
     formPhrases:
       - "transaction-request"
       - "transaction-requests"
-      - "transaction-request's"
-      - "transaction-request(s)"
+      - "transaction-request-s"
     status: "draft"
     grouptags: null
     hoverText: "Transaction Request: a message, send by a requesting Party to a providing Party, that initiates the negotiation of a new Transaction Agreement between these Parties for the provisioning of a specific product or service."
@@ -3802,12 +3658,10 @@ entries:
     formPhrases:
       - "trust-level"
       - "trust-levels"
-      - "trust-level's"
-      - "trust-level(s)"
+      - "trust-level-s"
       - "level-of-trust"
       - "levels-of-trust"
-      - "level's-of-trust"
-      - "level(s)-of-trust"
+      - "level-s-of-trust"
     status: "draft"
     grouptags: null
     hoverText: "Trust level (of a Party in X): the (subjective) degree of belief or confidence that this Party has in X"
@@ -3853,8 +3707,7 @@ entries:
     formPhrases:
       - "validator"
       - "validators"
-      - "validator's"
-      - "validator(s)"
+      - "validator-s"
     status: "draft"
     grouptags: null
     hoverText: "Validator (functional component): a component that implements the Capability to determine whether or not (verified) data is valid to be used for some specific purpose(s)."
@@ -3875,8 +3728,7 @@ entries:
     term: "validator-policy"
     formPhrases:
       - "validator-policy"
-      - "validator-policys"
-      - "validator-policy's"
+      - "validator-policy-s"
       - "validator-policies"
     status: "draft"
     grouptags: null
@@ -3899,8 +3751,7 @@ entries:
     formPhrases:
       - "verifier"
       - "verifiers"
-      - "verifier's"
-      - "verifier(s)"
+      - "verifier-s"
     status: "draft"
     grouptags: null
     hoverText: "Verifier (functional component): a component that implements the Capability to request Peer Agents to present (provide) data from credentials (of a specified kind, issued by specified Parties), and to verify such responses (check structure, signatures, dates), according to its Principal's Verifier Policy."
@@ -3922,8 +3773,7 @@ entries:
     term: "verifier-policy"
     formPhrases:
       - "verifier-policy"
-      - "verifier-policys"
-      - "verifier-policy's"
+      - "verifier-policy-s"
       - "verifier-policies"
     status: "draft"
     grouptags: null
@@ -3968,8 +3818,7 @@ entries:
     term: "vocabulary"
     formPhrases:
       - "vocabulary"
-      - "vocabularys"
-      - "vocabulary's"
+      - "vocabulary-s"
       - "vocabularies"
     status: "draft"
     grouptags: null
@@ -3995,8 +3844,7 @@ entries:
     formPhrases:
       - "wallet"
       - "wallets"
-      - "wallet's"
-      - "wallet(s)"
+      - "wallet-s"
     status: "draft"
     grouptags: null
     hoverText: "Wallet (functional component): a component that implements the Capability to securely store data as requested by Colleague Agents, and to provide stored data to Colleague Agents or Peer Agents, all in Compliance with the rules of its Principal's Wallet Policy."
@@ -4020,8 +3868,7 @@ entries:
     term: "wallet-policy"
     formPhrases:
       - "wallet-policy"
-      - "wallet-policys"
-      - "wallet-policy's"
+      - "wallet-policy-s"
       - "wallet-policies"
     status: "draft"
     grouptags: null

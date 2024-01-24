@@ -20,7 +20,6 @@ terminology:
         id: "rieks.joosten"
         at: "tno.nl"
   defaulttype: "concept"
-  localscopedir: "/home/runner/work/framework/framework/docs"
   vsntag: "all-patterns"
 scopes: []
 entries:
@@ -39,7 +38,7 @@ entries:
     date: 20210601
     scopetag: "essiflab"
     locator: "pattern-decentralized-GRC.md"
-    navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-decentralized-GRC"
+    navurl: "https://essif-lab.github.io/framework/docs/terms/pattern-decentralized-grc"
     headingids:
       - "decentralized-risk-management,-governance-and-compliance"
       - "decentralized,-governance,-risk-management-and-compliance"
@@ -162,12 +161,10 @@ entries:
     formPhrases:
       - "guardianship"
       - "guardianships"
-      - "guardianship's"
-      - "guardianship(s)"
+      - "guardianship-s"
       - "guardianship-pattern"
       - "guardianships-pattern"
-      - "guardianship's-pattern"
-      - "guardianship(s)-pattern"
+      - "guardianship-s-pattern"
     status: "stable"
     grouptags: null
     glossaryTerm: "Guardianship Pattern"
@@ -418,9 +415,9 @@ entries:
       - "purpose"
       - "introduction"
       - "formalized-model"
-      - "wit:-parties,-communities-and-tags-{#white}"
-      - "groen:-scopes---terminological-concepts-{#green}"
-      - "geel:-intangible-concepts-{#yellow}"
+      - "white"
+      - "green"
+      - "yellow"
     termid: "pattern:terminology"
     vsntag: "all-patterns"
   - id: "pattern-trust"

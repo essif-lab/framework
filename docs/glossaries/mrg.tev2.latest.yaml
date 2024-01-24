@@ -19,7 +19,6 @@ terminology:
         id: "rieks.joosten"
         at: "tno.nl"
   defaulttype: "concept"
-  localscopedir: "/home/runner/work/tev2-specifications/tev2-specifications/docs"
   vsntag: "documentation"
   altvsntags:
     - "latest"
@@ -136,8 +135,7 @@ entries:
     formPhrases:
       - "author"
       - "authors"
-      - "author's"
-      - "author(s)"
+      - "author-s"
     status: "proposed"
     created: 20230723
     updated: 20230723
@@ -162,8 +160,7 @@ entries:
     grouptags: null
     formPhrases:
       - "body"
-      - "bodys"
-      - "body's"
+      - "body-s"
       - "bodies"
     status: "proposed"
     created: 20230723
@@ -194,8 +191,7 @@ entries:
     formPhrases:
       - "body-file"
       - "body-files"
-      - "body-file's"
-      - "body-file(s)"
+      - "body-file-s"
     status: "proposed"
     created: 20230723
     updated: 20230723
@@ -204,7 +200,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "body-file.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/11-body-file"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/body-file"
     headingids:
       - "body-files"
     termid: "concept:body-file"
@@ -271,8 +267,7 @@ entries:
     formPhrases:
       - "concept"
       - "concepts"
-      - "concept's"
-      - "concept(s)"
+      - "concept-s"
     status: "proposed"
     created: 20220606
     updated: 20220606
@@ -304,8 +299,7 @@ entries:
     formPhrases:
       - "conceptualization"
       - "conceptualizations"
-      - "conceptualization's"
-      - "conceptualization(s)"
+      - "conceptualization-s"
     status: "proposed"
     created: 20230723
     updated: 20230723
@@ -385,8 +379,7 @@ entries:
     formPhrases:
       - "converter"
       - "converters"
-      - "converter's"
-      - "converter(s)"
+      - "converter-s"
     status: "proposed"
     created: 20230731
     updated: 20240108
@@ -410,12 +403,10 @@ entries:
     formPhrases:
       - "converter-profile"
       - "converter-profiles"
-      - "converter-profile's"
-      - "converter-profile(s)"
+      - "converter-profile-s"
       - "profile"
       - "profiles"
-      - "profile's"
-      - "profile(s)"
+      - "profile-s"
     status: "proposed"
     created: 20231218
     updated: 20240108
@@ -427,7 +418,7 @@ entries:
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/converter-profile"
     headingids:
       - "converter-profile"
-      - "converter-profile-object-{#object}"
+      - "object"
       - "`err`-fields"
       - "helper-functions"
       - "`capfirst`"
@@ -544,8 +535,7 @@ entries:
     formPhrases:
       - "curated-file"
       - "curated-files"
-      - "curated-file's"
-      - "curated-file(s)"
+      - "curated-file-s"
     status: "proposed"
     created: 20231009
     updated: 20231009
@@ -571,12 +561,10 @@ entries:
     formPhrases:
       - "curated-text"
       - "curated-texts"
-      - "curated-text's"
-      - "curated-text(s)"
+      - "curated-text-s"
       - "ctext"
       - "ctexts"
-      - "ctext's"
-      - "ctext(s)"
+      - "ctext-s"
     status: "proposed"
     created: 20220602
     updated: 20220804
@@ -604,12 +592,10 @@ entries:
     formPhrases:
       - "curated-text-file"
       - "curated-text-files"
-      - "curated-text-file's"
-      - "curated-text-file(s)"
+      - "curated-text-file-s"
       - "ctext-file"
       - "ctext-files"
-      - "ctext-file's"
-      - "ctext-file(s)"
+      - "ctext-file-s"
     status: "proposed"
     created: 20231009
     updated: 20231009
@@ -618,7 +604,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "curated-text-file.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/10-curated-text-file"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/curated-text-file"
     headingids:
       - "curated-text-files"
       - "docusaurus-[front-matter](@)"
@@ -626,8 +612,8 @@ entries:
       - "tev2-curation-status"
       - "origins/acknowledgements"
       - "curated-text"
-      - "header-structure-{#header}"
-      - "predefined-tev2-header-fields-{#header-fields}"
+      - "header"
+      - "header-fields"
     termid: "concept:curated-text-file"
     vsntag: "documentation"
   - id: "curatedir"
@@ -642,11 +628,9 @@ entries:
     formPhrases:
       - "curatedir"
       - "curatedirs"
-      - "curatedir's"
-      - "curatedir(s)"
+      - "curatedir-s"
       - "curate-directory"
-      - "curate-directorys"
-      - "curate-directory's"
+      - "curate-directory-s"
       - "curate-directories"
     status: "proposed"
     created: 20220729
@@ -674,12 +658,10 @@ entries:
     formPhrases:
       - "curator"
       - "curators"
-      - "curator's"
-      - "curator(s)"
+      - "curator-s"
       - "terminology-curator"
       - "terminology-curators"
-      - "terminology-curator's"
-      - "terminology-curator(s)"
+      - "terminology-curator-s"
     status: "proposed"
     created: 20230723
     updated: 20230723
@@ -706,8 +688,7 @@ entries:
     formPhrases:
       - "current-scope"
       - "current-scopes"
-      - "current-scope's"
-      - "current-scope(s)"
+      - "current-scope-s"
     status: "proposed"
     created: 20231009
     updated: 20231009
@@ -762,12 +743,10 @@ entries:
     formPhrases:
       - "definition"
       - "definitions"
-      - "definition's"
-      - "definition(s)"
+      - "definition-s"
       - "good-definition"
       - "good-definitions"
-      - "good-definition's"
-      - "good-definition(s)"
+      - "good-definition-s"
     status: "proposed"
     created: 20220606
     updated: 20220606
@@ -797,8 +776,7 @@ entries:
     grouptags: null
     formPhrases:
       - "dictionary"
-      - "dictionarys"
-      - "dictionary's"
+      - "dictionary-s"
       - "dictionaries"
     status: "proposed"
     created: 20220606
@@ -876,12 +854,10 @@ entries:
     formPhrases:
       - "formphrase"
       - "formphrases"
-      - "formphrase's"
-      - "formphrase(s)"
+      - "formphrase-s"
       - "form-phrase"
       - "form-phrases"
-      - "form-phrase's"
-      - "form-phrase(s)"
+      - "form-phrase-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -894,7 +870,7 @@ entries:
     headingids:
       - "form-phrase"
       - "purpose"
-      - "specifying-form-phrases-in-curated-texts-{#specifying}"
+      - "specifying"
       - "using-form-phrases"
       - "guidance-for-choosing-form-phrases"
     termid: "concept:form-phrase"
@@ -907,14 +883,12 @@ entries:
     glossaryTerm: "Form Phrase Macro"
     glossaryText: "a sequence of characters (the macro name) that [identifies](@) a sequence (map) of character strings that specify typical variations of a [form phrase](@), such as plural forms, possessie extensions, verb-conjugation forms, etc."
     formPhrases:
-      - "formphrase macro"
-      - "formphrase macros"
-      - "formphrase macro's"
-      - "formphrase macro(s)"
-      - "form-phrase macro"
-      - "form-phrase macros"
-      - "form-phrase macro's"
-      - "form-phrase macro(s)"
+      - "formphrase-macro"
+      - "formphrase-macros"
+      - "formphrase-macro-s"
+      - "form-phrase-macro"
+      - "form-phrase-macros"
+      - "form-phrase-macro-s"
     status: "proposed"
     created: 20240108
     updated: 20240108
@@ -928,7 +902,7 @@ entries:
       - "form-phrase-macro"
       - "purpose"
       - "form-phrase-macro-expansion-(#expansion-process)"
-      - "predefined-[form-phrase-macros](@)-{#predefineds}"
+      - "predefineds"
       - "custom-[form-phrase-macros](@)"
     termid: "concept:form-phrase-macro"
     vsntag: "documentation"
@@ -944,8 +918,7 @@ entries:
     formPhrases:
       - "formatted-text"
       - "formatted-texts"
-      - "formatted-text's"
-      - "formatted-text(s)"
+      - "formatted-text-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -996,8 +969,7 @@ entries:
     grouptags: null
     formPhrases:
       - "glossary"
-      - "glossarys"
-      - "glossary's"
+      - "glossary-s"
       - "glossaries"
     status: "proposed"
     created: 20220606
@@ -1028,11 +1000,9 @@ entries:
     formPhrases:
       - "glossarydir"
       - "glossarydirs"
-      - "glossarydir's"
-      - "glossarydir(s)"
+      - "glossarydir-s"
       - "glossary-directory"
-      - "glossary-directorys"
-      - "glossary-directory's"
+      - "glossary-directory-s"
       - "glossary-directories"
     status: "proposed"
     created: 20220729
@@ -1058,12 +1028,10 @@ entries:
     formPhrases:
       - "glossaryterm"
       - "glossaryterms"
-      - "glossaryterm's"
-      - "glossaryterm(s)"
+      - "glossaryterm-s"
       - "glossary-term"
       - "glossary-terms"
-      - "glossary-term's"
-      - "glossary-term(s)"
+      - "glossary-term-s"
     scopetag: "tev2"
     locator: "glossaryterm.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/glossaryterm"
@@ -1081,12 +1049,10 @@ entries:
     formPhrases:
       - "glossarytext"
       - "glossarytexts"
-      - "glossarytext's"
-      - "glossarytext(s)"
+      - "glossarytext-s"
       - "glossary-text"
       - "glossary-texts"
-      - "glossary-text's"
-      - "glossary-text(s)"
+      - "glossary-text-s"
     scopetag: "tev2"
     locator: "glossarytext.md"
     navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/glossarytext"
@@ -1144,12 +1110,10 @@ entries:
     formPhrases:
       - "grouptag"
       - "grouptags"
-      - "grouptag's"
-      - "grouptag(s)"
+      - "grouptag-s"
       - "group-tag"
       - "group-tags"
-      - "group-tag's"
-      - "group-tag(s)"
+      - "group-tag-s"
     status: "proposed"
     created: 20220606
     updated: 20220728
@@ -1178,12 +1142,10 @@ entries:
     formPhrases:
       - "handlebar-expression"
       - "handlebar-expressions"
-      - "handlebar-expression's"
-      - "handlebar-expression(s)"
+      - "handlebar-expression-s"
       - "handlebars-expression"
       - "handlebars-expressions"
-      - "handlebars-expression's"
-      - "handlebars-expression(s)"
+      - "handlebars-expression-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -1210,8 +1172,7 @@ entries:
     formPhrases:
       - "header"
       - "headers"
-      - "header's"
-      - "header(s)"
+      - "header-s"
     status: "proposed"
     created: 20230723
     updated: 20230723
@@ -1220,7 +1181,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "header.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/10-curated-text-file"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/curated-text-file"
     headingids:
       - "curated-text-files"
       - "docusaurus-[front-matter](@)"
@@ -1228,8 +1189,8 @@ entries:
       - "tev2-curation-status"
       - "origins/acknowledgements"
       - "curated-text"
-      - "header-structure-{#header}"
-      - "predefined-tev2-header-fields-{#header-fields}"
+      - "header"
+      - "header-fields"
     termid: "concept:header"
     vsntag: "documentation"
   - id: "hrd"
@@ -1247,28 +1208,19 @@ entries:
     formPhrases:
       - "hrd"
       - "hrds"
-      - "hrd's"
-      - "hrd(s)"
+      - "hrd-s"
       - "human-readable-dictionary"
-      - "human-readable-dictionarys"
-      - "human-readable-dictionary's"
+      - "human-readable-dictionary-s"
       - "human-readable-dictionaries"
       - "human-readable-dictionary-hrd"
       - "human-readable-dictionary-hrds"
-      - "human-readable-dictionary-hrd's"
-      - "human-readable-dictionary-hrd(s)"
-      - "human-readable-dictionarys-hrd"
-      - "human-readable-dictionarys-hrds"
-      - "human-readable-dictionarys-hrd's"
-      - "human-readable-dictionarys-hrd(s)"
-      - "human-readable-dictionary's-hrd"
-      - "human-readable-dictionary's-hrds"
-      - "human-readable-dictionary's-hrd's"
-      - "human-readable-dictionary's-hrd(s)"
+      - "human-readable-dictionary-hrd-s"
+      - "human-readable-dictionary-s-hrd"
+      - "human-readable-dictionary-s-hrds"
+      - "human-readable-dictionary-s-hrd-s"
       - "human-readable-dictionaries-hrd"
       - "human-readable-dictionaries-hrds"
-      - "human-readable-dictionaries-hrd's"
-      - "human-readable-dictionaries-hrd(s)"
+      - "human-readable-dictionaries-hrd-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -1298,16 +1250,13 @@ entries:
     formPhrases:
       - "human-readable-dictionary-tool"
       - "human-readable-dictionary-tools"
-      - "human-readable-dictionary-tool's"
-      - "human-readable-dictionary-tool(s)"
+      - "human-readable-dictionary-tool-s"
       - "hrd-tool"
       - "hrd-tools"
-      - "hrd-tool's"
-      - "hrd-tool(s)"
+      - "hrd-tool-s"
       - "hrdt"
       - "hrdts"
-      - "hrdt's"
-      - "hrdt(s)"
+      - "hrdt-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -1336,28 +1285,19 @@ entries:
     formPhrases:
       - "hrg"
       - "hrgs"
-      - "hrg's"
-      - "hrg(s)"
+      - "hrg-s"
       - "human-readable-glossary"
-      - "human-readable-glossarys"
-      - "human-readable-glossary's"
+      - "human-readable-glossary-s"
       - "human-readable-glossaries"
       - "human-readable-glossary-hrg"
       - "human-readable-glossary-hrgs"
-      - "human-readable-glossary-hrg's"
-      - "human-readable-glossary-hrg(s)"
-      - "human-readable-glossarys-hrg"
-      - "human-readable-glossarys-hrgs"
-      - "human-readable-glossarys-hrg's"
-      - "human-readable-glossarys-hrg(s)"
-      - "human-readable-glossary's-hrg"
-      - "human-readable-glossary's-hrgs"
-      - "human-readable-glossary's-hrg's"
-      - "human-readable-glossary's-hrg(s)"
+      - "human-readable-glossary-hrg-s"
+      - "human-readable-glossary-s-hrg"
+      - "human-readable-glossary-s-hrgs"
+      - "human-readable-glossary-s-hrg-s"
       - "human-readable-glossaries-hrg"
       - "human-readable-glossaries-hrgs"
-      - "human-readable-glossaries-hrg's"
-      - "human-readable-glossaries-hrg(s)"
+      - "human-readable-glossaries-hrg-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -1384,8 +1324,7 @@ entries:
       - "reference-materials"
     formPhrases:
       - "hrg-entry"
-      - "hrg-entrys"
-      - "hrg-entry's"
+      - "hrg-entry-s"
       - "hrg-entries"
     status: "proposed"
     created: 20230731
@@ -1413,8 +1352,7 @@ entries:
     formPhrases:
       - "hrg-list"
       - "hrg-lists"
-      - "hrg-list's"
-      - "hrg-list(s)"
+      - "hrg-list-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -1444,44 +1382,28 @@ entries:
     formPhrases:
       - "hrgt"
       - "hrgts"
-      - "hrgt's"
-      - "hrgt(s)"
+      - "hrgt-s"
       - "human-readable-glossary-tool"
       - "human-readable-glossary-tools"
-      - "human-readable-glossary-tool's"
-      - "human-readable-glossary-tool(s)"
+      - "human-readable-glossary-tool-s"
       - "human-readable-glossary-tool-hrgt"
       - "human-readable-glossary-tool-hrgts"
-      - "human-readable-glossary-tool-hrgt's"
-      - "human-readable-glossary-tool-hrgt(s)"
+      - "human-readable-glossary-tool-hrgt-s"
       - "human-readable-glossary-tools-hrgt"
       - "human-readable-glossary-tools-hrgts"
-      - "human-readable-glossary-tools-hrgt's"
-      - "human-readable-glossary-tools-hrgt(s)"
-      - "human-readable-glossary-tool's-hrgt"
-      - "human-readable-glossary-tool's-hrgts"
-      - "human-readable-glossary-tool's-hrgt's"
-      - "human-readable-glossary-tool's-hrgt(s)"
-      - "human-readable-glossary-tool(s)-hrgt"
-      - "human-readable-glossary-tool(s)-hrgts"
-      - "human-readable-glossary-tool(s)-hrgt's"
-      - "human-readable-glossary-tool(s)-hrgt(s)"
+      - "human-readable-glossary-tools-hrgt-s"
+      - "human-readable-glossary-tool-s-hrgt"
+      - "human-readable-glossary-tool-s-hrgts"
+      - "human-readable-glossary-tool-s-hrgt-s"
       - "hrgt-human-readable-glossary-tool"
       - "hrgt-human-readable-glossary-tools"
-      - "hrgt-human-readable-glossary-tool's"
-      - "hrgt-human-readable-glossary-tool(s)"
+      - "hrgt-human-readable-glossary-tool-s"
       - "hrgts-human-readable-glossary-tool"
       - "hrgts-human-readable-glossary-tools"
-      - "hrgts-human-readable-glossary-tool's"
-      - "hrgts-human-readable-glossary-tool(s)"
-      - "hrgt's-human-readable-glossary-tool"
-      - "hrgt's-human-readable-glossary-tools"
-      - "hrgt's-human-readable-glossary-tool's"
-      - "hrgt's-human-readable-glossary-tool(s)"
-      - "hrgt(s)-human-readable-glossary-tool"
-      - "hrgt(s)-human-readable-glossary-tools"
-      - "hrgt(s)-human-readable-glossary-tool's"
-      - "hrgt(s)-human-readable-glossary-tool(s)"
+      - "hrgts-human-readable-glossary-tool-s"
+      - "hrgt-s-human-readable-glossary-tool"
+      - "hrgt-s-human-readable-glossary-tools"
+      - "hrgt-s-human-readable-glossary-tool-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -1490,22 +1412,20 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "hrgt.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools/22-hrgt"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools/hrgt"
     headingids:
       - "human-readable-glossary-generator-tool-(hrgt)"
       - "installing-the-tool"
       - "calling-the-tool"
-      - "hrg-generation-{#what-it-does}"
-      - "hrgt-interpreter-profile-{#interpreter-profile}"
-      - "hrgt-predefined-interpreters-{#predefined-interpreters}"
-      - "processing-{#processing}"
-      - "finding-the-[mrg](@)-associated-with-an-[mrgref](@)-"
+      - "what-it-does"
+      - "interpreter-profile"
+      - "predefined-interpreters"
+      - "processing"
+      - "finding-the-[mrg](@)-associated-with-an-[mrgref](@)"
       - "sorting-the-[hrg-list](@)"
-      - "hrgt-converter-profile-{#converter-profile}"
-      - "hrgt-predefined-converters-{#predefined-converters}"
-      - "[{{#if-glossaryterm}}{{glossaryterm}}{{else}}{{capfirst-term}}{{/if}}]({{localize-navurl}})\\n\\n{{#if-glossarytext}}{{glossarytext}}{{else}}no-`glossarytext`-was-specified-for-this-entry.{{/if}}\\n\\n"
-      - "[{{#if-glossaryterm}}{{glossaryterm}}{{else}}{{capfirst-term}}{{/if}}]({{localize-navurl}})\\n\\n{{#if-glossarytext}}{{glossarytext}}{{else}}no-`glossarytext`-was-specified-for-this-entry.{{/if}}\\n\\n"
-      - "hrgt-predefined-sorters-{#predefined-sorters}"
+      - "converter-profile"
+      - "predefined-converters"
+      - "predefined-sorters"
       - "example"
       - "errors-and-warnings"
       - "deploying-the-tool"
@@ -1535,7 +1455,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "ict.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools-envisaged/11-ict"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools-envisaged/ict"
     headingids:
       - "integrity-checker-tool-(ict)"
       - "integrity-checker-tool-(ict)"
@@ -1593,8 +1513,7 @@ entries:
     formPhrases:
       - "identifier"
       - "identifiers"
-      - "identifier's"
-      - "identifier(s)"
+      - "identifier-s"
     status: "proposed"
     created: 20210601
     updated: 20210601
@@ -1724,6 +1643,10 @@ entries:
     synonymOf: null
     grouptags: null
     formPhrases:
+      - "ingestion-processe"
+      - "ingestion-processes"
+      - "ingestion-processed"
+      - "ingestion-processing"
       - "ingest"
       - "ingests"
       - "ingested"
@@ -1755,8 +1678,7 @@ entries:
     formPhrases:
       - "ingestion-profile"
       - "ingestion-profiles"
-      - "ingestion-profile's"
-      - "ingestion-profile(s)"
+      - "ingestion-profile-s"
     status: "proposed"
     created: 20220817
     updated: 20220817
@@ -1784,8 +1706,7 @@ entries:
     formPhrases:
       - "interpreter"
       - "interpreters"
-      - "interpreter's"
-      - "interpreter(s)"
+      - "interpreter-s"
     status: "proposed"
     created: 20230731
     updated: 20240108
@@ -1810,8 +1731,7 @@ entries:
     formPhrases:
       - "interpreter-profile"
       - "interpreter-profiles"
-      - "interpreter-profile's"
-      - "interpreter-profile(s)"
+      - "interpreter-profile-s"
     status: "proposed"
     created: 20231218
     updated: 20240108
@@ -1912,8 +1832,7 @@ entries:
     formPhrases:
       - "knowledge-artifact"
       - "knowledge-artifacts"
-      - "knowledge-artifact's"
-      - "knowledge-artifact(s)"
+      - "knowledge-artifact-s"
     status: "deprecated"
     created: 20220727
     updated: 20230926
@@ -1922,7 +1841,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "knowledge-artifact.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/knowledge-artifact"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/knowledge%20artifact"
     headingids:
       - "knowledge-artifact"
     termid: "concept:knowledge artifact"
@@ -1997,16 +1916,13 @@ entries:
     formPhrases:
       - "mental-model"
       - "mental-models"
-      - "mental-model's"
-      - "mental-model(s)"
+      - "mental-model-s"
       - "pattern"
       - "patterns"
-      - "pattern's"
-      - "pattern(s)"
+      - "pattern-s"
       - "conceptual-model"
       - "conceptual-models"
-      - "conceptual-model's"
-      - "conceptual-model(s)"
+      - "conceptual-model-s"
     status: "proposed"
     created: 20220606
     updated: 20220607
@@ -2038,8 +1954,7 @@ entries:
     formPhrases:
       - "moustache-variable"
       - "moustache-variables"
-      - "moustache-variable's"
-      - "moustache-variable(s)"
+      - "moustache-variable-s"
     status: "proposed"
     created: 20230731
     updated: 20240108
@@ -2066,17 +1981,14 @@ entries:
     grouptags: null
     formPhrases:
       - "machine-readable-dictionary"
-      - "machine-readable-dictionarys"
-      - "machine-readable-dictionary's"
+      - "machine-readable-dictionary-s"
       - "machine-readable-dictionaries"
       - "mrd"
       - "mrds"
-      - "mrd's"
-      - "mrd(s)"
+      - "mrd-s"
       - "machine-readable-dictionary-mrd"
       - "machine-readable-dictionary-mrds"
-      - "machine-readable-dictionary-mrd's"
-      - "machine-readable-dictionary-mrd(s)"
+      - "machine-readable-dictionary-mrd-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -2107,16 +2019,13 @@ entries:
     formPhrases:
       - "machine-readable-dictionary-tool"
       - "machine-readable-dictionary-tools"
-      - "machine-readable-dictionary-tool's"
-      - "machine-readable-dictionary-tool(s)"
+      - "machine-readable-dictionary-tool-s"
       - "mrd-tool"
       - "mrd-tools"
-      - "mrd-tool's"
-      - "mrd-tool(s)"
+      - "mrd-tool-s"
       - "mrdt"
       - "mrdts"
-      - "mrdt's"
-      - "mrdt(s)"
+      - "mrdt-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -2146,28 +2055,19 @@ entries:
     formPhrases:
       - "mrg"
       - "mrgs"
-      - "mrg's"
-      - "mrg(s)"
+      - "mrg-s"
       - "machine-readable-glossary"
-      - "machine-readable-glossarys"
-      - "machine-readable-glossary's"
+      - "machine-readable-glossary-s"
       - "machine-readable-glossaries"
       - "machine-readable-glossary-mrg"
       - "machine-readable-glossary-mrgs"
-      - "machine-readable-glossary-mrg's"
-      - "machine-readable-glossary-mrg(s)"
-      - "machine-readable-glossarys-mrg"
-      - "machine-readable-glossarys-mrgs"
-      - "machine-readable-glossarys-mrg's"
-      - "machine-readable-glossarys-mrg(s)"
-      - "machine-readable-glossary's-mrg"
-      - "machine-readable-glossary's-mrgs"
-      - "machine-readable-glossary's-mrg's"
-      - "machine-readable-glossary's-mrg(s)"
+      - "machine-readable-glossary-mrg-s"
+      - "machine-readable-glossary-s-mrg"
+      - "machine-readable-glossary-s-mrgs"
+      - "machine-readable-glossary-s-mrg-s"
       - "machine-readable-glossaries-mrg"
       - "machine-readable-glossaries-mrgs"
-      - "machine-readable-glossaries-mrg's"
-      - "machine-readable-glossaries-mrg(s)"
+      - "machine-readable-glossaries-mrg-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -2176,14 +2076,14 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "mrg.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/32-mrg"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/mrg"
     headingids:
       - "machine-readable-glossary-(mrg)"
-      - "file-naming-conventions-{#file-naming-conventions}"
+      - "file-naming-conventions"
       - "mrg-structure"
-      - "mrg-`terminology`-section-{#terminology}"
-      - "mrg-`scopes`-section-{#scopes}"
-      - "mrg-entries-(the-`entries`-section)-{#entries}"
+      - "terminology"
+      - "scopes"
+      - "entries"
       - "footnotes"
     termid: "concept:mrg"
     vsntag: "documentation"
@@ -2198,12 +2098,10 @@ entries:
     grouptags: null
     formPhrases:
       - "mrg-entry"
-      - "mrg-entrys"
-      - "mrg-entry's"
+      - "mrg-entry-s"
       - "mrg-entries"
       - "mrgentry"
-      - "mrgentrys"
-      - "mrgentry's"
+      - "mrgentry-s"
       - "mrgentries"
     status: "proposed"
     created: 20220811
@@ -2244,7 +2142,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "mrg-import.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools/13-mrg-import"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools/mrg-import"
     headingids:
       - "mrg-import-tool"
       - "mrg-files"
@@ -2267,12 +2165,10 @@ entries:
     formPhrases:
       - "mrg-ref"
       - "mrg-refs"
-      - "mrg-ref's"
-      - "mrg-ref(s)"
+      - "mrg-ref-s"
       - "mrgref"
       - "mrgrefs"
-      - "mrgref's"
-      - "mrgref(s)"
+      - "mrgref-s"
     status: "proposed"
     created: 20231127
     updated: 20231127
@@ -2281,13 +2177,13 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "mrg-ref.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/syntax/41-mrg-ref-syntax"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/syntax/mrg-ref-syntax"
     headingids:
       - "mrg-references---syntax"
-      - "default-mrgref-syntax-{#default-mrgref-syntax}"
-      - "predefined-mrgref-interpreters-{#predefined-mrgref-interpreters}"
-      - "predefined-mrgref-sorters-{#predefined-mrgref-sorters}"
-      - "predefined-mrgref-converters-{#predefined-mrgref-converters}"
+      - "default-mrgref-syntax"
+      - "predefined-mrgref-interpreters"
+      - "predefined-mrgref-sorters"
+      - "predefined-mrgref-converters"
       - "converter-for-markdown-tables"
       - "converter-for-essif-lab-glossary-lookalikes"
       - "docusaurus-header-fields:"
@@ -2299,7 +2195,7 @@ entries:
       - "[glossary](/docs/terms/glossary)"
       - "[curator-(of-a-scope)](/docs/terms/curator)"
       - "[definition](/docs/terms/definition)"
-      - "custom-glossary-converters-{#custom-glossary-converters}"
+      - "custom-glossary-converters"
     termid: "concept:mrg-ref"
     vsntag: "documentation"
   - id: "mrgt"
@@ -2318,44 +2214,28 @@ entries:
     formPhrases:
       - "mrgt"
       - "mrgts"
-      - "mrgt's"
-      - "mrgt(s)"
+      - "mrgt-s"
       - "machine-readable-glossary-tool"
       - "machine-readable-glossary-tools"
-      - "machine-readable-glossary-tool's"
-      - "machine-readable-glossary-tool(s)"
+      - "machine-readable-glossary-tool-s"
       - "machine-readable-glossary-tool-mrgt"
       - "machine-readable-glossary-tool-mrgts"
-      - "machine-readable-glossary-tool-mrgt's"
-      - "machine-readable-glossary-tool-mrgt(s)"
+      - "machine-readable-glossary-tool-mrgt-s"
       - "machine-readable-glossary-tools-mrgt"
       - "machine-readable-glossary-tools-mrgts"
-      - "machine-readable-glossary-tools-mrgt's"
-      - "machine-readable-glossary-tools-mrgt(s)"
-      - "machine-readable-glossary-tool's-mrgt"
-      - "machine-readable-glossary-tool's-mrgts"
-      - "machine-readable-glossary-tool's-mrgt's"
-      - "machine-readable-glossary-tool's-mrgt(s)"
-      - "machine-readable-glossary-tool(s)-mrgt"
-      - "machine-readable-glossary-tool(s)-mrgts"
-      - "machine-readable-glossary-tool(s)-mrgt's"
-      - "machine-readable-glossary-tool(s)-mrgt(s)"
+      - "machine-readable-glossary-tools-mrgt-s"
+      - "machine-readable-glossary-tool-s-mrgt"
+      - "machine-readable-glossary-tool-s-mrgts"
+      - "machine-readable-glossary-tool-s-mrgt-s"
       - "mrgt-machine-readable-glossary-tool"
       - "mrgt-machine-readable-glossary-tools"
-      - "mrgt-machine-readable-glossary-tool's"
-      - "mrgt-machine-readable-glossary-tool(s)"
+      - "mrgt-machine-readable-glossary-tool-s"
       - "mrgts-machine-readable-glossary-tool"
       - "mrgts-machine-readable-glossary-tools"
-      - "mrgts-machine-readable-glossary-tool's"
-      - "mrgts-machine-readable-glossary-tool(s)"
-      - "mrgt's-machine-readable-glossary-tool"
-      - "mrgt's-machine-readable-glossary-tools"
-      - "mrgt's-machine-readable-glossary-tool's"
-      - "mrgt's-machine-readable-glossary-tool(s)"
-      - "mrgt(s)-machine-readable-glossary-tool"
-      - "mrgt(s)-machine-readable-glossary-tools"
-      - "mrgt(s)-machine-readable-glossary-tool's"
-      - "mrgt(s)-machine-readable-glossary-tool(s)"
+      - "mrgts-machine-readable-glossary-tool-s"
+      - "mrgt-s-machine-readable-glossary-tool"
+      - "mrgt-s-machine-readable-glossary-tools"
+      - "mrgt-s-machine-readable-glossary-tool-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -2364,22 +2244,22 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "mrgt.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools/21-mrgt"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools/mrgt"
     headingids:
       - "machine-readable-glossary-generation-tool"
       - "installing-the-tool"
       - "calling-the-tool"
       - "running-the-tool"
-      - "phase-1:-constructing-a-[provisional-mrg](@)-{#constructing-provisional-mrg}"
-      - "storing-a-[provisional-mrg](@)-in-the-[glossarydir](@)-{#mrg-filenames}"
-      - "phase-2:-post-processing-synonyms-{#post-processing}"
+      - "constructing-provisional-mrg"
+      - "mrg-filenames"
+      - "post-processing"
       - "phase-3:-post-processing-other-fields"
-      - "constructing-the-`navurl`-field-{#navurl-construction}"
+      - "navurl-construction"
       - "constructing-the-`headingid`-fields-(#headingids-construction)"
       - "this-is-a-markdown-header"
-      - "this-is-a-markdown-header-{#custom-id}"
+      - "custom-id"
       - "phase-4:-checking-the-result"
-      - "exceptions,-warnings,-and-logging-{#exceptions}"
+      - "exceptions"
       - "notes"
     termid: "concept:mrgt"
     vsntag: "documentation"
@@ -2394,12 +2274,10 @@ entries:
     formPhrases:
       - "named-capturing-group"
       - "named-capturing-groups"
-      - "named-capturing-group's"
-      - "named-capturing-group(s)"
+      - "named-capturing-group-s"
       - "capturing-group"
       - "capturing-groups"
-      - "capturing-group's"
-      - "capturing-group(s)"
+      - "capturing-group-s"
     status: "proposed"
     created: 20231220
     updated: 20231220
@@ -2426,8 +2304,7 @@ entries:
     formPhrases:
       - "navpath"
       - "navpaths"
-      - "navpath's"
-      - "navpath(s)"
+      - "navpath-s"
     status: "proposed"
     created: 20221006
     updated: 20221006
@@ -2656,8 +2533,7 @@ entries:
       - "conceptual-modeling"
     formPhrases:
       - "property"
-      - "propertys"
-      - "property's"
+      - "property-s"
       - "properties"
     status: "proposed"
     created: 20230731
@@ -2686,8 +2562,7 @@ entries:
     formPhrases:
       - "provisional-mrg"
       - "provisional-mrgs"
-      - "provisional-mrg's"
-      - "provisional-mrg(s)"
+      - "provisional-mrg-s"
     status: "proposed"
     created: 20231010
     updated: 20231010
@@ -2712,8 +2587,7 @@ entries:
     grouptags: null
     formPhrases:
       - "provisional-mrg-entry"
-      - "provisional-mrg-entrys"
-      - "provisional-mrg-entry's"
+      - "provisional-mrg-entry-s"
       - "provisional-mrg-entries"
     status: "proposed"
     created: 20231010
@@ -2740,8 +2614,7 @@ entries:
     formPhrases:
       - "reader"
       - "readers"
-      - "reader's"
-      - "reader(s)"
+      - "reader-s"
     status: "proposed"
     created: 20230723
     updated: 20230723
@@ -2770,12 +2643,10 @@ entries:
       - "regexes"
       - "regexp"
       - "regexps"
-      - "regexp's"
-      - "regexp(s)"
+      - "regexp-s"
       - "regular-expression"
       - "regular-expressions"
-      - "regular-expression's"
-      - "regular-expression(s)"
+      - "regular-expression-s"
     status: "proposed"
     created: 20231219
     updated: 20240108
@@ -2799,12 +2670,10 @@ entries:
     formPhrases:
       - "regularized-formphrase"
       - "regularized-formphrases"
-      - "regularized-formphrase's"
-      - "regularized-formphrase(s)"
+      - "regularized-formphrase-s"
       - "regularized-form-phrase"
       - "regularized-form-phrases"
-      - "regularized-form-phrase's"
-      - "regularized-form-phrase(s)"
+      - "regularized-form-phrase-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -2818,7 +2687,7 @@ entries:
       - "regularized-form-phrase"
       - "purpose"
       - "need-for-regularizing-form-phrases"
-      - "regularizing-form-phrases-{#regularization-process}"
+      - "regularization-process"
     termid: "concept:regularized-form-phrase"
     vsntag: "documentation"
   - id: "regularized-text"
@@ -2831,8 +2700,7 @@ entries:
     formPhrases:
       - "regularized-text"
       - "regularized-texts"
-      - "regularized-text's"
-      - "regularized-text(s)"
+      - "regularized-text-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -2846,7 +2714,7 @@ entries:
       - "regularized-text"
       - "purpose"
       - "use-of-regularized-texts-within-[tev2](@)"
-      - "regularizing-texts-{#regularization-process}"
+      - "regularization-process"
       - "notes"
     termid: "concept:regularized-text"
     vsntag: "documentation"
@@ -2863,8 +2731,7 @@ entries:
     formPhrases:
       - "relation"
       - "relations"
-      - "relation's"
-      - "relation(s)"
+      - "relation-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -2892,16 +2759,13 @@ entries:
     formPhrases:
       - "renderable-ref"
       - "renderable-refs"
-      - "renderable-ref's"
-      - "renderable-ref(s)"
+      - "renderable-ref-s"
       - "renderableref"
       - "renderablerefs"
-      - "renderableref's"
-      - "renderableref(s)"
+      - "renderableref-s"
       - "renderable-reference"
       - "renderable-references"
-      - "renderable-reference's"
-      - "renderable-reference(s)"
+      - "renderable-reference-s"
     status: "proposed"
     created: 20220606
     updated: 20220804
@@ -2982,44 +2846,28 @@ entries:
     formPhrases:
       - "saf"
       - "safs"
-      - "saf's"
-      - "saf(s)"
+      - "saf-s"
       - "scope-administration-file"
       - "scope-administration-files"
-      - "scope-administration-file's"
-      - "scope-administration-file(s)"
+      - "scope-administration-file-s"
       - "scope-administration-file-saf"
       - "scope-administration-file-safs"
-      - "scope-administration-file-saf's"
-      - "scope-administration-file-saf(s)"
+      - "scope-administration-file-saf-s"
       - "scope-administration-files-saf"
       - "scope-administration-files-safs"
-      - "scope-administration-files-saf's"
-      - "scope-administration-files-saf(s)"
-      - "scope-administration-file's-saf"
-      - "scope-administration-file's-safs"
-      - "scope-administration-file's-saf's"
-      - "scope-administration-file's-saf(s)"
-      - "scope-administration-file(s)-saf"
-      - "scope-administration-file(s)-safs"
-      - "scope-administration-file(s)-saf's"
-      - "scope-administration-file(s)-saf(s)"
+      - "scope-administration-files-saf-s"
+      - "scope-administration-file-s-saf"
+      - "scope-administration-file-s-safs"
+      - "scope-administration-file-s-saf-s"
       - "saf-scope-administration-file"
       - "saf-scope-administration-files"
-      - "saf-scope-administration-file's"
-      - "saf-scope-administration-file(s)"
+      - "saf-scope-administration-file-s"
       - "safs-scope-administration-file"
       - "safs-scope-administration-files"
-      - "safs-scope-administration-file's"
-      - "safs-scope-administration-file(s)"
-      - "saf's-scope-administration-file"
-      - "saf's-scope-administration-files"
-      - "saf's-scope-administration-file's"
-      - "saf's-scope-administration-file(s)"
-      - "saf(s)-scope-administration-file"
-      - "saf(s)-scope-administration-files"
-      - "saf(s)-scope-administration-file's"
-      - "saf(s)-scope-administration-file(s)"
+      - "safs-scope-administration-file-s"
+      - "saf-s-scope-administration-file"
+      - "saf-s-scope-administration-files"
+      - "saf-s-scope-administration-file-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -3028,22 +2876,22 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "saf.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/12-saf"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/files/saf"
     headingids:
       - "scope-administration-file-(saf)"
       - "scope-administration-file-field-descriptions"
-      - "saf-terminology---defining-the-scope-itself-{#scope-section}"
+      - "scope-section"
       - "#-this-is-a-scope-administration-file-that-can-be-used-in-conjunction-with-tev2."
       - "#-the-first-section-defines-meta-data-concerning-the-scope-itself,-both-for-technical-use-and-human-use."
       - "it-shows-where-directories-and-files-live-that-ar-part-of-the-scope,-and-also"
       - "ways-in-which-people-can-contribute,-raise-issues,-see-what's-going-on,-discuss,-etc."
       - "scope:"
-      - "saf-scopes---mapping-scopetags-and-scopedirs-{#scopes}"
+      - "scopes"
       - "#-the-second-section-contains-a-mapping-between-scopetags-that-are-used-within-the-scope,-and-the-associated-scopedirs."
       - "this-enables-tools-to-find-the-[saf](@)-of-these-[scopes](@),-and-from-there-all-other-directories,-files-etc."
       - "that-live-within-them,-e.g.-to-use/import-their-data."
       - "scopes:-#"
-      - "saf-versions---enabling-changes-and-updates-in-a-scope's-terminology-{#versions}"
+      - "versions"
       - "#-the-third-section-specifies-the-versions-that-are-actively-maintained-by-the-curators."
       - "for-each-version,-the-set-of-terms-is-selected-that-constitute-the-terminology."
       - "see-the-glossary-generation-tool-(ggt)-for-details-about-the-syntax-and-semantics."
@@ -3063,12 +2911,10 @@ entries:
     formPhrases:
       - "scope"
       - "scopes"
-      - "scope's"
-      - "scope(s)"
+      - "scope-s"
       - "scope-context"
       - "scope-contexts"
-      - "scope-context's"
-      - "scope-context(s)"
+      - "scope-context-s"
     status: "proposed"
     created: 20220606
     updated: 20220804
@@ -3095,8 +2941,7 @@ entries:
     formPhrases:
       - "scoped-term"
       - "scoped-terms"
-      - "scoped-term's"
-      - "scoped-term(s)"
+      - "scoped-term-s"
     status: "proposed"
     created: 20220606
     updated: 20220804
@@ -3123,11 +2968,9 @@ entries:
     formPhrases:
       - "scopedir"
       - "scopedirs"
-      - "scopedir's"
-      - "scopedir(s)"
+      - "scopedir-s"
       - "scope-directory"
-      - "scope-directorys"
-      - "scope-directory's"
+      - "scope-directory-s"
       - "scope-directories"
     status: "proposed"
     created: 20220729
@@ -3157,12 +3000,10 @@ entries:
     formPhrases:
       - "scopetag"
       - "scopetags"
-      - "scopetag's"
-      - "scopetag(s)"
+      - "scopetag-s"
       - "scope-tag"
       - "scope-tags"
-      - "scope-tag's"
-      - "scope-tag(s)"
+      - "scope-tag-s"
     status: "proposed"
     created: 20220606
     updated: 20220728
@@ -3193,8 +3034,7 @@ entries:
     formPhrases:
       - "semantic-unit"
       - "semantic-units"
-      - "semantic-unit's"
-      - "semantic-unit(s)"
+      - "semantic-unit-s"
     status: "proposed"
     created: 20220727
     updated: 20220727
@@ -3250,8 +3090,7 @@ entries:
     formPhrases:
       - "sorter"
       - "sorters"
-      - "sorter's"
-      - "sorter(s)"
+      - "sorter-s"
     status: "proposed"
     created: 20230731
     updated: 20240108
@@ -3298,8 +3137,7 @@ entries:
     formPhrases:
       - "synonym"
       - "synonyms"
-      - "synonym's"
-      - "synonym(s)"
+      - "synonym-s"
     status: "proposed"
     created: 20221127
     updated: 20221127
@@ -3312,7 +3150,7 @@ entries:
     headingids:
       - "synonym"
       - "summary"
-      - "the-`synonymof`-field-{#synonym-of}"
+      - "synonym-of"
       - "how-synonyms-work"
       - "purpose"
     termid: "concept:synonym"
@@ -3329,8 +3167,7 @@ entries:
     formPhrases:
       - "tag"
       - "tags"
-      - "tag's"
-      - "tag(s)"
+      - "tag-s"
     status: "proposed"
     created: 20220606
     updated: 20220606
@@ -3360,16 +3197,13 @@ entries:
     formPhrases:
       - "term"
       - "terms"
-      - "term's"
-      - "term(s)"
+      - "term-s"
       - "word"
       - "words"
-      - "word's"
-      - "word(s)"
+      - "word-s"
       - "phrase"
       - "phrases"
-      - "phrase's"
-      - "phrase(s)"
+      - "phrase-s"
     status: "proposed"
     created: 20220606
     updated: 20220809
@@ -3397,8 +3231,7 @@ entries:
     formPhrases:
       - "term-identifier"
       - "term-identifiers"
-      - "term-identifier's"
-      - "term-identifier(s)"
+      - "term-identifier-s"
     status: "proposed"
     created: 20221124
     updated: 20231124
@@ -3407,11 +3240,11 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "term-identifier.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/syntax/21-term-identifier-syntax"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/syntax/term-identifier-syntax"
     headingids:
       - "term-identifier"
       - "syntax"
-      - "semantics---looking-for-mrg-entries-{#term-identifiers-mrg-semantics}"
+      - "term-identifiers-mrg-semantics"
       - "examples"
     termid: "concept:term-identifier"
     vsntag: "documentation"
@@ -3427,16 +3260,13 @@ entries:
     formPhrases:
       - "term-ref"
       - "term-refs"
-      - "term-ref's"
-      - "term-ref(s)"
+      - "term-ref-s"
       - "termref"
       - "termrefs"
-      - "termref's"
-      - "termref(s)"
+      - "termref-s"
       - "term-reference"
       - "term-references"
-      - "term-reference's"
-      - "term-reference(s)"
+      - "term-reference-s"
     status: "proposed"
     created: 20220606
     updated: 20220804
@@ -3449,7 +3279,7 @@ entries:
     headingids:
       - "term-ref"
       - "purpose"
-      - "example-characteristic-{#example}"
+      - "example"
     termid: "concept:term-ref"
     vsntag: "documentation"
   - id: "term-selection-instruction"
@@ -3466,12 +3296,10 @@ entries:
     formPhrases:
       - "term-selection-instruction"
       - "term-selection-instructions"
-      - "term-selection-instruction's"
-      - "term-selection-instruction(s)"
+      - "term-selection-instruction-s"
       - "selection-instruction"
       - "selection-instructions"
-      - "selection-instruction's"
-      - "selection-instruction(s)"
+      - "selection-instruction-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -3499,12 +3327,10 @@ entries:
     formPhrases:
       - "term-type"
       - "term-types"
-      - "term-type's"
-      - "term-type(s)"
+      - "term-type-s"
       - "termtype"
       - "termtypes"
-      - "termtype's"
-      - "termtype(s)"
+      - "termtype-s"
     status: "proposed"
     created: 20220606
     updated: 20230801
@@ -3532,12 +3358,10 @@ entries:
     formPhrases:
       - "termid"
       - "termids"
-      - "termid's"
-      - "termid(s)"
+      - "termid-s"
       - "term-id"
       - "term-ids"
-      - "term-id's"
-      - "term-id(s)"
+      - "term-id-s"
     status: "proposed"
     created: 20220606
     updated: 20220809
@@ -3559,8 +3383,7 @@ entries:
     synonymOf: null
     formPhrases:
       - "terminology"
-      - "terminologys"
-      - "terminology's"
+      - "terminology-s"
       - "terminologies"
     status: "proposed"
     created: 20220606
@@ -3591,8 +3414,7 @@ entries:
     formPhrases:
       - "terminology-pattern"
       - "terminology-patterns"
-      - "terminology-pattern's"
-      - "terminology-pattern(s)"
+      - "terminology-pattern-s"
     status: "proposed"
     created: 20220606
     updated: 20220606
@@ -3601,14 +3423,14 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "patterns/pattern-terminology.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/patterns/pattern-terminology"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/patterns/terminology"
     headingids:
       - "create-and-maintain-terminologies"
       - "introduction"
       - "formalized-model"
-      - "white:-parties,-communities-{#white}"
-      - "green:-scopes---data-artifacts-for-referencing-and-documenting-knowledge-{#green}"
-      - "yellow:-intangible-concepts-{#yellow}"
+      - "white"
+      - "green"
+      - "yellow"
     termid: "pattern:terminology"
     vsntag: "documentation"
   - term: "terminology-identifier"
@@ -3623,8 +3445,7 @@ entries:
     formPhrases:
       - "terminology-identifier"
       - "terminology-identifiers"
-      - "terminology-identifier's"
-      - "terminology-identifier(s)"
+      - "terminology-identifier-s"
     status: "proposed"
     created: 20230929
     updated: 20230929
@@ -3633,7 +3454,7 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "terminology-identifier.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/syntax/31-terminology-identifier-syntax"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/syntax/terminology-identifier-syntax"
     headingids:
       - "terminology-identifiers"
       - "syntax"
@@ -3681,8 +3502,7 @@ entries:
     grouptags: null
     formPhrases:
       - "terms-community"
-      - "terms-communitys"
-      - "terms-community's"
+      - "terms-community-s"
       - "terms-communities"
     status: "proposed"
     created: 20220606
@@ -3736,16 +3556,13 @@ entries:
     formPhrases:
       - "tev2-text-conversion-tool"
       - "tev2-text-conversion-tools"
-      - "tev2-text-conversion-tool's"
-      - "tev2-text-conversion-tool(s)"
+      - "tev2-text-conversion-tool-s"
       - "text-conversion-tool"
       - "text-conversion-tools"
-      - "text-conversion-tool's"
-      - "text-conversion-tool(s)"
+      - "text-conversion-tool-s"
       - "conversion-tool"
       - "conversion-tools"
-      - "conversion-tool's"
-      - "conversion-tool(s)"
+      - "conversion-tool-s"
     status: "proposed"
     created: 20240108
     updated: 20240108
@@ -3771,12 +3588,10 @@ entries:
     formPhrases:
       - "tev2-tool"
       - "tev2-tools"
-      - "tev2-tool's"
-      - "tev2-tool(s)"
+      - "tev2-tool-s"
       - "tool"
       - "tools"
-      - "tool's"
-      - "tool(s)"
+      - "tool-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -3862,16 +3677,13 @@ entries:
     formPhrases:
       - "trrt"
       - "trrts"
-      - "trrt's"
-      - "trrt(s)"
+      - "trrt-s"
       - "termref-rendering-tool"
       - "termref-rendering-tools"
-      - "termref-rendering-tool's"
-      - "termref-rendering-tool(s)"
+      - "termref-rendering-tool-s"
       - "term-ref-rendering-tool"
       - "term-ref-rendering-tools"
-      - "term-ref-rendering-tool's"
-      - "term-ref-rendering-tool(s)"
+      - "term-ref-rendering-tool-s"
     status: "proposed"
     created: 20230731
     updated: 20230731
@@ -3880,20 +3692,20 @@ entries:
     originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
     scopetag: "tev2"
     locator: "trrt.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools/12-trrt"
+    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/specs/tools/trrt"
     headingids:
       - "term-reference-resolution-tool-(trrt)"
-      - "installing-the-tool-{#install}"
-      - "calling-the-tool-{#calling-the-tool}"
-      - "term-ref-resolution-{#what-it-does}"
-      - "trrt-interpreter-profile-{#interpreter-profile}"
-      - "trrt-predefined-interpreters-{#predefined-interpreters}"
-      - "the-`default`-interpreter-{#default-syntax}"
-      - "the-`alt`-(alternative)-interpreter-{#alt-syntax}"
-      - "processing-{#processing}"
-      - "finding-the-[mrg-entry](@)-associated-with-a-[termref](@)-{#finding-mrg-entry}"
-      - "trrt-converter-profile-{#converter-profile}"
-      - "trrt-predefined-converters-{#predefined-converters}"
+      - "install"
+      - "calling-the-tool"
+      - "what-it-does"
+      - "interpreter-profile"
+      - "predefined-interpreters"
+      - "default-syntax"
+      - "alt-syntax"
+      - "processing"
+      - "finding-mrg-entry"
+      - "converter-profile"
+      - "predefined-converters"
       - "the-`markdown-link`-converter"
       - "the-`html-link`-converter"
       - "the-`html-hovertext-link`-converter"
@@ -3961,16 +3773,13 @@ entries:
     formPhrases:
       - "versiontag"
       - "versiontags"
-      - "versiontag's"
-      - "versiontag(s)"
+      - "versiontag-s"
       - "version-tag"
       - "version-tags"
-      - "version-tag's"
-      - "version-tag(s)"
+      - "version-tag-s"
       - "vsntag"
       - "vsntags"
-      - "vsntag's"
-      - "vsntag(s)"
+      - "vsntag-s"
     status: "proposed"
     created: 20220606
     updated: 20220728
@@ -3999,8 +3808,7 @@ entries:
     grouptags: null
     formPhrases:
       - "vocabulary"
-      - "vocabularys"
-      - "vocabulary's"
+      - "vocabulary-s"
       - "vocabularies"
     status: "proposed"
     created: 20220606
