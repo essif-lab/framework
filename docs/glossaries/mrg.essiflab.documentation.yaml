@@ -915,7 +915,6 @@ entries:
     isa: null
     glossaryTerm: "Define"
     glossaryText: "to provide a criterion and a [term](@), where the criterion can be used by people to determine whether or not something is an instance/example of a [concept](@) (or other [semantic unit](@)), and the [term](@) is used to refer to that [concept](@), or an arbitrary instance thereof."
-    synonymOf: null
     grouptags:
       - "terminology"
     formPhrases:
@@ -2687,7 +2686,6 @@ entries:
     isa: null
     glossaryTerm: "Property (of a Concept)"
     glossaryText: "a connection or association between a [concept](@) and a primitive data element, such as a text or a number, that represents some characteristic that instances of the [concept](@) may have."
-    synonymOf: null
     grouptags:
       - "conceptual-modeling"
     formPhrases:
@@ -2742,7 +2740,6 @@ entries:
     isa: null
     glossaryTerm: "Relation (between Concepts)"
     glossaryText: "a (significant) connection or association between two or more [concepts](@). These connections define the way these [concepts](@) are interrelated, providing insights into how they interact and influence each other."
-    synonymOf: null
     grouptags:
       - "conceptual-modeling"
     formPhrases:
@@ -3128,9 +3125,7 @@ entries:
     isa: null
     glossaryTerm: "Semantic Unit"
     glossaryText: "a basic building block of meaning or representation that exists within the 'mind' of a [party](@) (i.e., in its [knowledge](@)). Examples include ideas, or [concepts](@), [properties](@) of [concepts](@), [relations](@) between [concepts](@), constraints over such [concepts](@) and [relations](@), etc."
-    hoverText: "a basic building block of meaning or representation that exists within the 'mind' of a party, e.g., a concept, relation, or property. Parties use terms (words/phrases) to refer to these intangible building blocks."
-    synonymOf: null
-    grouptags: null
+    grouptags: []
     formPhrases:
       - "semantic-unit"
       - "semantic-units"
