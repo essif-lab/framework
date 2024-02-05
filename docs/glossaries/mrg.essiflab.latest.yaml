@@ -3120,34 +3120,6 @@ entries:
       - "purpose"
     termid: "concept:self-sovereignty"
     vsntag: "default"
-  - id: "semantic-unit"
-    displayed_sidebar: "tev2SideBar"
-    term: "semantic-unit"
-    termType: "concept"
-    isa: null
-    glossaryTerm: "Semantic Unit"
-    glossaryText: "a basic building block of meaning or representation that exists within the 'mind' of a [party](@) (i.e., in its [knowledge](@)). Examples include ideas, or [concepts](@), [properties](@) of [concepts](@), [relations](@) between [concepts](@), constraints over such [concepts](@) and [relations](@), etc."
-    grouptags: []
-    formPhrases:
-      - "semantic-unit"
-      - "semantic-units"
-      - "semantic-unit-s"
-    status: "proposed"
-    created: 20220727
-    updated: 20220727
-    contributors: "RieksJ"
-    attribution: "[TNO Terminology Design](https://tno-terminology-design.github.io/tev2-specifications/docs)"
-    originalLicense: "[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
-    scopetag: "tev2"
-    locator: "semantic-unit.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-specifications/docs/terms/semantic-unit"
-    headingids:
-      - "semantic-unit"
-      - "summary"
-      - "purpose"
-      - "criteria"
-    termid: "concept:semantic-unit"
-    vsntag: "documentation"
   - id: "semantics"
     displayed_sidebar: "essifLabSideBar"
     termType: "concept"
