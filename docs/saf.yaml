@@ -40,7 +40,7 @@ versions:
   - vsntag: default # this version contains all terms that are curated by essiflab
     altvsntags: [ latest, documentation ] # alternative verstiontags
     termselection:
-    - "[concept,property,relation,pattern,semantic-unit]@tev2"
+    - "[concept,property,relation,pattern,semantic unit]@tev2"
     - term[glossary,dictionary,terminology,vocabulary]@tev2
     - term[semantics,term,define,definition]@tev2
     - termid[pattern:terminology]@tev2
