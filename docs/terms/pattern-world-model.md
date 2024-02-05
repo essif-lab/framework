@@ -19,7 +19,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 ## eSSIF-Lab World Model
 
 The **eSSIF-Lab World Model** consists of
-- the set of [concepts](@), as listed in the [Glossary](../essifLab-Glossary),
+- the set of [concepts](@), as listed in the [Glossary](../essifLab-glossary),
 - relations between these concepts, as explained in the various concept-descriptions, and in the various [patterns](@), as listed in the [Patterns List](../essifLab-pattern-list), and
 - a set of [Principles](../essifLab-principles) that we take as starting points for our thinking.
 
